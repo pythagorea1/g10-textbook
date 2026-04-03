@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Norway - Currency | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇳🇴 Norway</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link active">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip active">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Norway</a>
+        <span class="sep">/</span>
+        Currency
+      </div>
+      <h1 class="page-title">ノルウェー・クローネ（NOK）の歴史</h1>
+      <p class="page-subtitle">Norwegian Krone — 石油通貨の宿命、スカンジナビア通貨同盟からペトロカレンシーへ、GPFGと為替管理の構造</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">1875</div>
+          <div class="stat-label">スカンジナビア通貨同盟加盟（クローネ導入）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">EUR/NOK ~11.5</div>
+          <div class="stat-label">対ユーロレート（2024年末）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">USD/NOK ~11.0</div>
+          <div class="stat-label">対ドルレート（2024年末）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">I-44指数</div>
+          <div class="stat-label">貿易加重為替レート指数（44通貨）</div>
+        </div>
+      </div>
+
+      <!-- Section 1: History -->
+      <section>
+        <h2>1. NOKの通貨制度の変遷</h2>
+        <p>ノルウェー・クローネ（NOK）の歴史は、北欧の通貨統合、金本位制、固定相場制、そしてフロート制への移行という段階を経て現在に至る。G10通貨の中でもNOKは「ペトロカレンシー（石油通貨）」としての性格が最も強く、原油価格との相関がその動向を大きく左右する。</p>
+
+        <h3>通貨制度の主要な変遷</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr><th>期間</th><th>制度</th><th>詳細</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1816-1875</td><td>スペシエダーラー（Speciedaler）</td><td>ノルウェー独自通貨、銀本位制</td></tr>
+            <tr><td>1875-1914</td><td>スカンジナビア通貨同盟</td><td>クローネ導入、金本位制、1NOK = 1SEK = 1DKK</td></tr>
+            <tr><td>1914-1920</td><td>金本位制停止</td><td>第一次大戦、インフレ膨張</td></tr>
+            <tr><td>1920-1931</td><td>パリテ政策（Paripolitikken）</td><td>金本位制復帰を目指しデフレ政策、1928年旧平価復帰</td></tr>
+            <tr><td>1931-1939</td><td>管理フロート</td><td>金本位制離脱、ポンド連動</td></tr>
+            <tr><td>1940-1945</td><td>ドイツ占領期</td><td>強制的なライヒスマルク連動</td></tr>
+            <tr><td>1945-1971</td><td>ブレトンウッズ体制</td><td>ドル固定、1NOK = 0.179685g金</td></tr>
+            <tr><td>1972-1978</td><td>スネーク/バスケット</td><td>欧州為替スネーク参加、バスケット制移行</td></tr>
+            <tr><td>1978-1990</td><td>トレードウェイテッド・バスケット</td><td>貿易加重バスケットにペッグ</td></tr>
+            <tr><td>1990-1992</td><td>ECUペッグ</td><td>ECUに固定、1990年10月開始</td></tr>
+            <tr class="highlight-orange"><td>1992</td><td>ECUペッグ崩壊</td><td>ERM危機でペッグ放棄、変動相場制へ</td></tr>
+            <tr><td>1992-2001</td><td>管理フロート</td><td>為替安定を目標とした管理変動相場制</td></tr>
+            <tr><td>2001-現在</td><td>インフレターゲティング・フロート</td><td>インフレ目標に基づく自由変動相場制</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section 2: Scandinavian Monetary Union -->
+      <section>
+        <h2>2. スカンジナビア通貨同盟（1875-1914）</h2>
+        <p>1875年、ノルウェーはスウェーデン・デンマークと共にスカンジナビア通貨同盟（Skandinavisk myntunion）に参加し、金本位制に基づく共通通貨単位「クローネ」を導入した。1クローネ = 1/2480キログラムの金と定義され、三国の通貨は等価で交換可能であった。</p>
+        <p>この通貨同盟はユーロ圏の先駆的な試みとして注目されるが、共通の中央銀行や統一的な金融政策を持たなかった点でEMUとは根本的に異なる。第一次世界大戦の勃発により金本位制が停止され、通貨同盟は事実上崩壊した（正式廃止は1924年）。</p>
+      </section>
+
+      <!-- Section 3: Parity Policy -->
+      <section>
+        <h2>3. パリテ政策とデフレ（1920-1928）</h2>
+        <p>第一次世界大戦中のインフレで大幅に減価したクローネを戦前の金平価に戻すべく、ノルゲス・バンク総裁ニコライ・リッゲ（Nicolai Rygg）は「パリテ政策（Paripolitikken）」を推進した。この政策は引き締め的な金融政策と財政緊縮を通じてクローネの価値を回復させるものだったが、深刻なデフレと失業をもたらした。</p>
+        <p>1920年にクローネの対ドルレートは約1/3に減価していたが、リッゲの政策により1928年に旧金平価での復帰を達成した。しかし、この過程でノルウェー経済は1920年代を通じて低成長・高失業に苦しみ、パリテ政策はノルウェー経済史上最も論争的な金融政策の一つとなった。英国のチャーチル蔵相による1925年の金本位制復帰（旧平価）と類似の政策であり、同様の批判を受けた。</p>
+      </section>
+
+      <!-- Section 4: EUR/NOK & USD/NOK -->
+      <section>
+        <h2>4. EUR/NOK・USD/NOKの推移</h2>
+
+        <h3>主要為替レート年表</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr><th>年</th><th>USD/NOK</th><th>EUR/NOK</th><th>主要イベント</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1993</td><td>7.09</td><td>—</td><td>ECUペッグ崩壊後の安定化</td></tr>
+            <tr><td>1995</td><td>6.34</td><td>—</td><td>クローネ高、石油収入拡大</td></tr>
+            <tr><td>1998</td><td>7.60</td><td>—</td><td>石油価格暴落$10、NOK急落</td></tr>
+            <tr><td>1999</td><td>7.80</td><td>8.30</td><td>ユーロ導入</td></tr>
+            <tr><td>2001</td><td>8.99</td><td>8.05</td><td>IT後の変動、インフレ目標導入</td></tr>
+            <tr><td>2003</td><td>7.08</td><td>8.00</td><td>ノルウェー利下げ、NOK安</td></tr>
+            <tr class="highlight-green"><td>2008Q2</td><td>5.07</td><td>7.93</td><td>NOK最高値圏、石油$147</td></tr>
+            <tr class="highlight-red"><td>2008Q4</td><td>7.00</td><td>9.80</td><td>GFC、石油暴落、NOK急落</td></tr>
+            <tr><td>2010</td><td>5.86</td><td>8.00</td><td>回復、石油価格安定</td></tr>
+            <tr><td>2013</td><td>5.88</td><td>7.81</td><td>NOK高水準維持</td></tr>
+            <tr class="highlight-red"><td>2014-15</td><td>8.07</td><td>9.30</td><td>石油価格暴落$30、NOK大幅減価</td></tr>
+            <tr><td>2017</td><td>8.26</td><td>9.33</td><td>石油価格回復途上</td></tr>
+            <tr><td>2019</td><td>8.80</td><td>9.86</td><td>NOK安進行</td></tr>
+            <tr class="highlight-red"><td>2020年3月</td><td>11.30</td><td>12.45</td><td>COVID＋石油戦争、NOK史上最安値</td></tr>
+            <tr><td>2021</td><td>8.82</td><td>10.16</td><td>石油回復、利上げ開始</td></tr>
+            <tr><td>2022</td><td>9.86</td><td>10.51</td><td>ウクライナ危機、エネルギー高</td></tr>
+            <tr><td>2023</td><td>10.17</td><td>11.24</td><td>NOK安、構造的減価懸念</td></tr>
+            <tr><td>2024</td><td>11.00</td><td>11.50</td><td>NOK安継続、高金利維持にもかかわらず</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section 5: Petrocurrency -->
+      <section>
+        <h2>5. ペトロカレンシーとしてのNOK</h2>
+        <p>NOKはG10通貨の中で最も石油価格との相関が強い「ペトロカレンシー」として知られる。カナダドル（CAD）もコモディティ通貨としての性格を持つが、NOKの石油依存度はCADを上回る。</p>
+
+        <h3>石油価格とNOKの相関構造</h3>
+        <table class="data-table">
+          <thead>
+            <tr><th>チャネル</th><th>メカニズム</th><th>影響</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>貿易収支</td><td>石油・ガス輸出がGDPの15-25%</td><td>石油高→経常黒字拡大→NOK高</td></tr>
+            <tr><td>財政チャネル</td><td>石油税収→GPFG→海外投資</td><td>GPFGの外貨売却（NOK買い）は限定的</td></tr>
+            <tr><td>金融政策</td><td>石油高→経済過熱→利上げ</td><td>金利差拡大→NOK高</td></tr>
+            <tr><td>リスクセンチメント</td><td>NOKは高ベータ・プロシクリカル通貨</td><td>リスクオフ→NOK売り（石油安と同時）</td></tr>
+            <tr><td>GPFGリバランス</td><td>石油高→GPFG外貨流入→海外投資拡大</td><td>逆説的にNOK売り圧力</td></tr>
+          </tbody>
+        </table>
+        <p>特に注目すべきはGPFGの「逆説的効果」である。石油収入が増加するとGPFGへの拠出が増え、GPFGはその資金を海外に投資するため、石油収入の増加が直接的なNOK買い圧力にはなりにくい。むしろ、GPFGの海外投資フローは構造的なNOK売り圧力として作用する。この構造が、ノルウェーが世界有数の富裕国であるにもかかわらず、NOKが2013年以降構造的に減価してきた一因とされる。</p>
+
+        <h3>NOKの「構造的減価」問題（2013-2024）</h3>
+        <p>2013年のEUR/NOK 7.81を底に、NOKは10年以上にわたって減価トレンドが続いている。2024年のEUR/NOK 11.50は2013年比で約47%のNOK安であり、この持続的な減価はノルウェー国内で大きな政治的議論を巻き起こしている。</p>
+        <p>構造的減価の要因としては以下が指摘される:</p>
+        <ul>
+          <li><strong>石油セクターの縮小</strong>: 脱炭素トレンドによる長期的な石油需要減少期待</li>
+          <li><strong>GPFGの外貨投資フロー</strong>: 年間NOK 300-400Bの構造的なNOK売り</li>
+          <li><strong>生産性格差</strong>: 非石油セクターの競争力低下</li>
+          <li><strong>コスト高</strong>: ノルウェーの賃金水準はG10最高水準</li>
+          <li><strong>市場の小ささ</strong>: 流動性が低く、リスクオフ時の売り圧力に脆弱</li>
+        </ul>
+      </section>
+
+      <!-- Section 6: 2020 COVID NOK Crisis -->
+      <section>
+        <h2>6. 2020年3月 NOK危機</h2>
+        <p>2020年3月、COVID-19パンデミックとサウジ・ロシア石油戦争の同時発生により、NOKは史上最大の急落を経験した。EUR/NOKは7.81（2013年）から12.45まで一時到達し、USD/NOKも11.30に急落した。わずか数週間でNOKは対EURで約20%減価し、G10通貨の中で最も大きな下落率を記録した。</p>
+        <p>この急落はNOKのペトロカレンシーとしての脆弱性を鮮明に示した。原油価格がWTIでマイナス圏（-$37.63/バレル）に達する中、石油依存度の高いNOKは投資家のリスク回避行動の集中的な対象となった。ノルゲス・バンクは政策金利を1.50%から0.00%に緊急引き下げ（5月までに3回の利下げ）すると共に、為替市場での介入も検討されたが、実際の介入は行われなかった。</p>
+        <p>その後、石油価格の回復と世界的なリスク選好の改善により、NOKは部分的に回復したが、2013年の水準に戻ることはなく、構造的減価トレンドの中での「急性エピソード」として位置づけられる。</p>
+      </section>
+
+      <!-- Section 7: I-44 Index -->
+      <section>
+        <h2>7. I-44指数（貿易加重為替レート）</h2>
+        <p>ノルゲス・バンクはNOKの実効為替レートとして「I-44指数」を公表している。44の貿易相手国通貨に対するNOKの加重平均レートであり、2000年を基準年（=100）としている。</p>
+        <p>I-44指数は2013年頃に約90（NOK高）の水準にあったが、2024年には約130（NOK安）まで上昇しており、実効ベースでもNOKの構造的減価が確認される。この指数はノルゲス・バンクの金融政策レポートで定期的に参照され、為替パススルーによるインフレへの影響を評価する際の重要な指標となっている。</p>
+      </section>
+
+      <!-- Section 8: EU Referendum and NOK -->
+      <section>
+        <h2>8. EU加盟否決とNOK</h2>
+        <p>ノルウェーは1972年と1994年の2度にわたってEU加盟を国民投票で否決している。特に1994年の否決（52.2%対47.8%）は、NOKの長期的な位置づけに決定的な影響を与えた。ユーロ導入の選択肢は事実上消え、NOKは独立した小規模通貨として存続することとなった。</p>
+        <p>EU非加盟のまま欧州経済領域（EEA）に参加するという「ノルウェーモデル」は、貿易面では欧州市場へのアクセスを確保しつつ、通貨政策の独立性を維持するものである。しかし、ユーロ圏に属さないことはNOKの流動性の低さ（G10最低水準の取引量）の一因でもあり、石油価格変動時のボラティリティを増幅させている。</p>
+      </section>
+
+      <!-- Section 9: G10 Comparison -->
+      <section>
+        <h2>9. G10比較: 通貨制度</h2>
+        <table class="data-table sortable">
+          <thead>
+            <tr><th>通貨</th><th>現行制度</th><th>フロート移行年</th><th>特徴</th><th>石油相関</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>🇺🇸 USD</td><td>自由変動</td><td>1973</td><td>基軸通貨</td><td>逆相関</td></tr>
+            <tr><td>🇪🇺 EUR</td><td>自由変動</td><td>1999</td><td>第2の準備通貨</td><td>弱い負相関</td></tr>
+            <tr><td>🇯🇵 JPY</td><td>自由変動</td><td>1973</td><td>安全資産</td><td>輸入国・負相関</td></tr>
+            <tr><td>🇬🇧 GBP</td><td>自由変動</td><td>1992</td><td>北海油田あるが限定的</td><td>弱い正相関</td></tr>
+            <tr><td>🇨🇭 CHF</td><td>管理変動</td><td>2015</td><td>安全資産、SNB介入</td><td>無相関</td></tr>
+            <tr><td>🇦🇺 AUD</td><td>自由変動</td><td>1983</td><td>コモディティ通貨</td><td>正相関（鉄鉱石中心）</td></tr>
+            <tr><td>🇳🇿 NZD</td><td>自由変動</td><td>1985</td><td>高金利小国通貨</td><td>弱い正相関（乳製品）</td></tr>
+            <tr><td>🇨🇦 CAD</td><td>自由変動</td><td>1970</td><td>ペトロカレンシー</td><td>正相関（石油）</td></tr>
+            <tr><td>🇸🇪 SEK</td><td>自由変動</td><td>1992</td><td>産業通貨</td><td>弱い正相関</td></tr>
+            <tr class="highlight-row"><td>🇳🇴 NOK</td><td>自由変動</td><td>1992</td><td>ペトロカレンシー最強</td><td>G10最強の正相関</td></tr>
+          </tbody>
+        </table>
+        <p>NOKはG10通貨の中で石油価格との相関が最も強く、原油価格1%の変動に対してNOKは約0.3-0.5%動くとされる（CADは0.1-0.2%程度）。この高い石油感応度は、ノルウェー経済における石油・ガスセクターの比重の大きさ（GDP 15-25%、輸出の50-60%）を直接反映している。</p>
+      </section>
+
+      <!-- Sources -->
+      <footer class="sources">
+        <h3>出典・参考文献</h3>
+        <ol>
+          <li>Norges Bank, "Exchange Rate and Exchange Rate Index I-44", norges-bank.no</li>
+          <li>Norges Bank, "Monetary Policy Reports — Exchange Rate Analysis", norges-bank.no</li>
+          <li>IMF, "Annual Report on Exchange Arrangements and Exchange Restrictions", imf.org</li>
+          <li>Eitrheim, Ø., Klovland, J.T., & Qvigstad, J.F., "Historical Monetary Statistics for Norway", Norges Bank Occasional Papers, 2004</li>
+          <li>BIS, "Triennial Central Bank Survey: Foreign Exchange Turnover", bis.org</li>
+          <li>Norges Bank, "The Norwegian Krone: 200 Years of Monetary History", 2016</li>
+          <li>NBIM (Norges Bank Investment Management), "Annual Report", nbim.no</li>
+        </ol>
+        <p class="note">為替レートは年末時点の概算値。EUR/NOKは1999年以降のデータ。タカ/ハト分類は市場での一般的評価に基づく。</p>
+      </footer>
+    </article>
+
+    <nav class="page-nav">
+      <a href="13_long_rates.html" class="prev">← 前: Long-term Rates</a>
+      <a href="15_crises.html" class="next">次: Financial Crises →</a>
+    </nav>
+  </main>
+
+  <script>
+    document.querySelectorAll('.sortable th').forEach(th => {
+      th.style.cursor = 'pointer';
+      th.addEventListener('click', () => {
+        const table = th.closest('table');
+        const idx = Array.from(th.parentNode.children).indexOf(th);
+        const rows = Array.from(table.querySelectorAll('tbody tr'));
+        const dir = th.asc = !th.asc ? 1 : -1;
+        rows.sort((a, b) => {
+          const av = a.children[idx]?.textContent.trim() ?? '';
+          const bv = b.children[idx]?.textContent.trim() ?? '';
+          const an = parseFloat(av.replace(/[^0-9.\-]/g, ''));
+          const bn = parseFloat(bv.replace(/[^0-9.\-]/g, ''));
+          if (!isNaN(an) && !isNaN(bn)) return (an - bn) * dir;
+          return av.localeCompare(bv, 'ja') * dir;
+        });
+        rows.forEach(r => table.querySelector('tbody').appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>

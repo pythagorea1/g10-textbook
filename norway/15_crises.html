@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Norway - Financial Crises | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇳🇴 Norway</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link active">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip active">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Norway</a>
+        <span class="sep">/</span>
+        Financial Crises
+      </div>
+      <h1 class="page-title">ノルウェーの金融危機史</h1>
+      <p class="page-subtitle">Banking Crisis 1988-93・石油ショック・GFC・COVID — 石油富裕国を襲った危機と北欧モデルの危機管理</p>
+    </header>
+
+    <article>
+      <!-- Crisis Summary Table -->
+      <section>
+        <h2>主要金融危機サマリー</h2>
+        <table class="data-table sortable">
+          <thead>
+            <tr><th>危機</th><th>時期</th><th>株式下落率</th><th>政策金利変動</th><th>GDP影響</th><th>危機管理</th></tr>
+          </thead>
+          <tbody>
+            <tr class="highlight-orange"><td>パリテ政策デフレ</td><td>1920-28</td><td>—</td><td>引き締め</td><td>深刻なデフレ</td><td>金本位制復帰</td></tr>
+            <tr class="highlight-orange"><td>クリスチャニア・クラッハ（銀行恐慌）</td><td>1920-28</td><td>—</td><td>—</td><td>銀行破綻多数</td><td>ノルゲス・バンク介入</td></tr>
+            <tr class="highlight-red"><td>ノルウェー銀行危機</td><td>1988-93</td><td>-55%</td><td>13%→7%</td><td>累計-2%</td><td>3大銀行国有化</td></tr>
+            <tr class="highlight-orange"><td>1998年NOK危機</td><td>1997-98</td><td>-40%</td><td>3.5%→8%</td><td>減速</td><td>金利防衛</td></tr>
+            <tr class="highlight-red"><td>グローバル金融危機</td><td>2008-09</td><td>-64%</td><td>5.75%→1.25%</td><td>-1.7%</td><td>流動性供給・財政出動</td></tr>
+            <tr class="highlight-orange"><td>石油価格暴落</td><td>2014-16</td><td>-20%</td><td>1.50%→0.50%</td><td>+1%（減速）</td><td>財政対応、利下げ</td></tr>
+            <tr class="highlight-red"><td>COVID + 石油戦争</td><td>2020</td><td>-38%</td><td>1.50%→0.00%</td><td>-0.8%</td><td>金利0%、財政パッケージ</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Crisis 1: 1920s Banking Panic -->
+      <section>
+        <h2>1. クリスチャニア・クラッハと銀行恐慌（1920年代）</h2>
+        <p>1920年代のノルウェーは、パリテ政策に伴うデフレと深刻な銀行危機に見舞われた。第一次世界大戦中の海運・投機ブームで膨張した銀行信用が、戦後の引き締め政策により急速に収縮し、1920年から1928年にかけて約140の銀行が破綻した。</p>
+        <p>この銀行恐慌はノルウェー史上最悪の金融危機であり、銀行数は1920年の約200行から1930年には約100行に半減した。ノルゲス・バンクは「最後の貸し手」として資金供給を行ったが、クローネの金平価復帰（パリテ政策）と銀行救済という二つの目標の間で深刻なジレンマに直面した。</p>
+        <p>この経験は、1990年代の銀行危機における政府介入の迅速さの背景にある歴史的記憶として重要である。ノルウェーの政策当局は銀行破綻の連鎖がもたらす社会経済的コストを1920年代の経験から深く学んでいた。</p>
+      </section>
+
+      <!-- Crisis 2: Banking Crisis 1988-93 -->
+      <section>
+        <h2>2. ノルウェー銀行危機（1988-1993）</h2>
+        <p>1988年から1993年にかけてのノルウェー銀行危機は、同国の現代史における最大の金融危機であり、北欧銀行危機の一部として国際的にも広く研究されている。スウェーデン・フィンランドの銀行危機と合わせて「北欧三国銀行危機」と総称され、後の金融危機管理の教科書的事例となった。</p>
+
+        <h3>危機の原因</h3>
+        <h4>金融自由化の急速な進行（1984-85）</h4>
+        <p>1984年の融資規制撤廃と1985年の金利自由化により、銀行信用が急速に膨張した。規制時代に蓄積された需要が一気に解放され、1985-86年の銀行融資伸び率は年率20-30%に達した。住宅ローン、商業不動産融資、消費者信用が急拡大し、資産価格バブルが形成された。</p>
+
+        <h4>1986年石油価格暴落</h4>
+        <p>1986年のOPEC生産枠崩壊により、ブレント原油価格は$30から$10に急落した。石油収入の激減はノルウェー経済の基盤を揺るがし、不動産市場の崩壊と企業倒産の連鎖を引き起こした。</p>
+
+        <h4>ECUペッグ維持のための高金利</h4>
+        <p>1990年10月にECUペッグ制を採用したノルウェーは、為替レート維持のために13%という高金利を維持せざるを得なかった。既にストレス下にあった銀行システムにとって、この高金利政策は致命的な追い打ちとなった。</p>
+
+        <h3>危機の経過</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr><th>年</th><th>イベント</th><th>詳細</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1988</td><td>不良債権顕在化</td><td>貸倒損失がノルウェーの銀行史上最高水準に</td></tr>
+            <tr><td>1989</td><td>小規模銀行救済開始</td><td>銀行保険基金（Bankenes sikringsfond）が複数の貯蓄銀行を救済</td></tr>
+            <tr><td>1990</td><td>危機深刻化</td><td>大手銀行の資本不足が顕在化、銀行保険基金の資金枯渇</td></tr>
+            <tr><td>1991Q1</td><td>政府銀行基金設立</td><td>Statens Banksikringsfond — NOK 50Bの資本注入枠</td></tr>
+            <tr class="highlight-red"><td>1991Q4</td><td>フォケバンケン（Fokus Bank）国有化</td><td>政府が100%株式取得、株主ゼロ</td></tr>
+            <tr class="highlight-red"><td>1991Q4</td><td>クリスチャニアバンク国有化</td><td>Christiania Bank og Kreditkasse、政府が98.9%取得</td></tr>
+            <tr class="highlight-red"><td>1992</td><td>DnB国有化</td><td>Den norske Bank、ノルウェー最大手、政府が87.5%取得</td></tr>
+            <tr><td>1992Q4</td><td>ECUペッグ崩壊</td><td>ERM危機でペッグ放棄、フロート移行</td></tr>
+            <tr><td>1993</td><td>危機底打ち</td><td>経済回復開始、不良債権ピークアウト</td></tr>
+            <tr><td>1994-96</td><td>回復</td><td>銀行収益回復、株価上昇</td></tr>
+            <tr><td>2001</td><td>DnB NOR統合</td><td>DnBとGjensidige NOR合併、北欧最大級の金融グループ</td></tr>
+          </tbody>
+        </table>
+
+        <h3>危機管理の特徴: 「北欧モデル」</h3>
+        <p>ノルウェーの銀行危機管理は、後に「北欧モデル（Nordic Model of Crisis Resolution）」として国際的に高く評価された。その主要な特徴は:</p>
+        <ul>
+          <li><strong>株主責任の徹底</strong>: 既存株主の持分をゼロまたはほぼゼロに希薄化した上で政府が資本注入。2008年のGFCで各国が採用した「ベイルアウト」とは対照的</li>
+          <li><strong>迅速な介入</strong>: 危機の初期段階で政府銀行基金を設立し、大規模な資本注入枠を確保</li>
+          <li><strong>透明性</strong>: 不良債権の認識を銀行に強制し、損失を早期に顕在化させた</li>
+          <li><strong>一時的な国有化</strong>: 経営を安定化させた後、段階的に民営化（DnBの政府持分は2024年時点でも34%残存）</li>
+        </ul>
+        <p>ノルウェーの危機管理が成功した背景には、石油収入による財政余力があった。政府は銀行救済のために追加的な借入を大規模に行う必要がなく、財政的なストレスなく介入を実行できた。この「石油バッファー」の存在がなければ、危機はより深刻化した可能性が高い。</p>
+
+        <h3>コスト</h3>
+        <table class="data-table">
+          <thead>
+            <tr><th>項目</th><th>金額・比率</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>銀行セクター累積損失</td><td>GDP比約3%</td></tr>
+            <tr><td>政府資本注入</td><td>NOK ~30B（GDP比約3%）</td></tr>
+            <tr><td>OSEAX下落率</td><td>-55%（1987ピーク→1992ボトム）</td></tr>
+            <tr><td>失業率ピーク</td><td>6.5%（1993年）</td></tr>
+            <tr><td>住宅価格下落</td><td>-40%（実質、1987-93年）</td></tr>
+            <tr><td>政府回収率</td><td>100%超（DnB株の値上がり益含む）</td></tr>
+          </tbody>
+        </table>
+        <p>注目すべきは、政府が銀行危機対応で投入した資金を最終的に全額回収し、さらに利益を得たことである。DnBの政府持分（34%）は2024年時点でNOK 100B超の価値を持ち、危機対応は「納税者にとってプラスの投資」となった。</p>
+      </section>
+
+      <!-- Crisis 3: 1998 NOK Crisis -->
+      <section>
+        <h2>3. 1998年NOK危機</h2>
+        <p>1997年のアジア通貨危機と1998年のロシア危機に伴い、原油価格は$10/バレルまで暴落した。石油依存度の高いノルウェー経済への懸念からNOKは急落し、ノルゲス・バンクは為替防衛のために政策金利を3.50%から8.00%に引き上げた（1998年8月）。</p>
+        <p>この急速な利上げは国内経済に大きな負担をかけたが、ECUペッグ崩壊後の「管理フロート」体制の下で為替安定を最優先する政策判断であった。OSEAX指数は約40%下落したが、銀行システムは1990年代前半の危機後の構造改革により健全性を維持しており、システミックな危機には発展しなかった。</p>
+        <p>この1998年の経験は、2001年のインフレーションターゲティング導入の直接的な契機となった。為替安定を目標とする金融政策が石油価格ショック時に不適切な金利水準を強いるリスクが明白になり、より柔軟な政策フレームワークへの移行が求められた。</p>
+      </section>
+
+      <!-- Crisis 4: GFC 2008 -->
+      <section>
+        <h2>4. グローバル金融危機（2008-2009）</h2>
+        <p>2008年のGFCは、ノルウェーにとってOSEBX指数-64%という「G10最深」の株式市場下落をもたらした。石油価格が$147（2008年7月）から$32（2008年12月）に暴落し、石油関連株が指数の大きな部分を占めるノルウェー市場は壊滅的な打撃を受けた。</p>
+
+        <h3>GFCの影響と対応</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr><th>時期</th><th>イベント</th><th>影響</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>2008年7月</td><td>石油$147ピーク</td><td>OSEBX過去最高値更新</td></tr>
+            <tr><td>2008年9月</td><td>リーマン・ブラザーズ破綻</td><td>グローバル信用凍結、NOK急落</td></tr>
+            <tr class="highlight-red"><td>2008年10-11月</td><td>OSEBX急落</td><td>-64%（ピーク→ボトム）、G10最大の下落</td></tr>
+            <tr><td>2008年10月</td><td>緊急利下げ</td><td>5.75%→5.25%（初回利下げ）</td></tr>
+            <tr><td>2008年10月</td><td>銀行スワップ・ファシリティ</td><td>国債とカバードボンドのスワップ、流動性供給</td></tr>
+            <tr><td>2008年11月</td><td>政府銀行基金再設立</td><td>Statens finansfond — NOK 50B資本注入枠</td></tr>
+            <tr><td>2009年3月</td><td>OSEBX底値</td><td>約200ポイント（2008年5月の550から急落）</td></tr>
+            <tr><td>2009年6月</td><td>政策金利1.25%</td><td>7回の利下げで5.75%から1.25%へ</td></tr>
+            <tr><td>2009年後半</td><td>石油価格回復</td><td>$70台へ回復、OSEBX急反発</td></tr>
+          </tbody>
+        </table>
+
+        <p>ノルウェーのGFC対応は1990年代の銀行危機の経験を活かしたものであった。銀行スワップ・ファシリティ（国債とOMFの交換）は流動性危機を効果的に緩和し、Statens finansfondの迅速な設立は銀行への資本注入準備を示すことで市場信頼を維持した。実際には大規模な資本注入は不要であり、ノルウェーの銀行システムは米国・英国と比較してはるかに健全であった。</p>
+        <p>GPFGは2008-09年に約NOK 600B（当時約$100B）の評価損を被ったが、長期投資方針に基づき保有を継続。その後の市場回復で損失は全て回復した。この経験はGPFGの長期投資哲学の正しさを証明し、政治的な圧力（売却要求）に対する防波堤となった。</p>
+      </section>
+
+      <!-- Crisis 5: 2014 Oil Price Collapse -->
+      <section>
+        <h2>5. 2014年石油価格暴落</h2>
+        <p>2014年後半、ブレント原油価格は$115から$27（2016年1月）まで76%暴落した。ノルウェーにとってこれは「生活圏」の脅威であり、石油・ガスセクターで約5万人の雇用が失われた。南西部のスタヴァンゲル（Stavanger）地域は「ノルウェーのデトロイト」と揶揄されるほどの打撃を受けた。</p>
+
+        <h3>影響と対応</h3>
+        <ul>
+          <li><strong>OSEBX</strong>: 約-20%（エネルギーセクターはさらに深い下落）</li>
+          <li><strong>NOK</strong>: EUR/NOK 8.30→9.70（約17%減価）</li>
+          <li><strong>政策金利</strong>: 1.50%→0.50%（段階的利下げ）</li>
+          <li><strong>失業率</strong>: 3.5%→5.0%（スタヴァンゲル地域は8%超）</li>
+          <li><strong>GPFG</strong>: 石油収入減少で基金への拠出縮小、ハンドリングスレーゲルの3%ルールに基づく財政支出は維持</li>
+        </ul>
+        <p>この危機は、ノルウェー経済の石油依存度に対する国民的な議論を活性化させた。「グリーンシフト（det grønne skiftet）」への転換議論が加速し、2018年のStatoilからEquinorへの社名変更（equi = 平等、nor = ノルウェー）は、石油会社自身が脱石油のシグナルを発する象徴的な出来事となった。</p>
+      </section>
+
+      <!-- Crisis 6: COVID + Oil War 2020 -->
+      <section>
+        <h2>6. COVID-19 + 石油戦争（2020年）</h2>
+        <p>2020年3月、COVID-19パンデミックとサウジアラビア・ロシア間の石油戦争が同時に発生し、ノルウェーは「ダブルショック」に見舞われた。WTI原油先物がマイナス圏（-$37.63/バレル、2020年4月20日）に達する中、NOKは対EURで史上最安値（12.45）を記録し、OSEBXは-38%の急落を見せた。</p>
+
+        <h3>ノルゲス・バンクの緊急対応</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr><th>日付</th><th>措置</th><th>詳細</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>2020年3月13日</td><td>第1次緊急利下げ</td><td>1.50%→1.00%（-50bp）</td></tr>
+            <tr><td>2020年3月20日</td><td>第2次緊急利下げ</td><td>1.00%→0.25%（-75bp）</td></tr>
+            <tr><td>2020年5月7日</td><td>第3次利下げ</td><td>0.25%→0.00%（-25bp）、史上初のゼロ金利</td></tr>
+            <tr><td>2020年3月</td><td>F-ローン拡大</td><td>銀行への長期流動性供給</td></tr>
+            <tr><td>2020年3月</td><td>NOK介入検討</td><td>実際の介入は行われず</td></tr>
+            <tr><td>2020年3月</td><td>GPFG外貨売却</td><td>財政赤字補填のためGPFGからNOK引き出し</td></tr>
+          </tbody>
+        </table>
+
+        <p>COVID危機でのノルウェーの対応は、GPFGの「安全弁」としての機能が最も効果的に発揮された事例である。パンデミックによる税収減と財政支出増加を、GPFG からの引き出し増額（ハンドリングスレーゲルの3%ルールを一時的に超過）でファイナンスし、大規模な国債増発の必要性を限定した。</p>
+        <p>OSEBX は2020年3月のボトムから2024年末までに+160%以上回復し、G10最大級のリバウンドを記録した。特に2022年のウクライナ危機ではエネルギー価格高騰の恩恵を受け、Equinorの純利益がNOK 500Bに達するなど、石油国としての地位が逆に強みとなった。</p>
+      </section>
+
+      <!-- Section 7: Patterns -->
+      <section>
+        <h2>7. ノルウェーの危機パターン: 5つの構造的特徴</h2>
+
+        <h3>① 石油がトリガーとなる</h3>
+        <p>1986年、1998年、2008年、2014年、2020年のいずれの危機も、石油価格の急落がトリガーまたは増幅要因となっている。ノルウェーの金融危機は事実上「石油危機」と不可分であり、この構造は脱炭素が進まない限り変わらない。</p>
+
+        <h3>② GPFGが「安全弁」として機能</h3>
+        <p>1996年のGPFG設立以降、危機時の財政余力は格段に向上した。1988-93年の銀行危機では石油基金がなく財政負担が直接的であったが、2008年以降の危機ではGPFGからの引き出しが財政出動を支えた。</p>
+
+        <h3>③ 銀行危機管理のDNA</h3>
+        <p>1920年代と1988-93年の二度の銀行危機の経験が、迅速な政府介入と株主責任の徹底という「北欧モデル」のDNAを形成した。2008年のGFCでは、このDNAにより実際の介入を最小限に抑えつつ市場信頼を維持できた。</p>
+
+        <h3>④ 小国通貨の脆弱性</h3>
+        <p>NOKはG10で最も流動性が低い通貨の一つであり、リスクオフ時の売り圧力に脆弱である。2020年3月のNOK暴落（EUR/NOK 12.45）は、小国通貨×ペトロカレンシーという二重の脆弱性が顕在化した事例である。</p>
+
+        <h3>⑤ V字回復力</h3>
+        <p>石油価格の回復と強固な財政基盤により、ノルウェーの危機からの回復は他のG10諸国と比較して速い傾向がある。OSEBX は1993年以降の30年間で、複数の-30%超の急落を経験しながらも、累積リターンで+1500%超を記録している。</p>
+      </section>
+
+      <!-- Section 8: G10 Comparison -->
+      <section>
+        <h2>8. G10比較: 主要金融危機</h2>
+        <table class="data-table sortable">
+          <thead>
+            <tr><th>国</th><th>最大の危機</th><th>最大株式下落</th><th>銀行危機経験</th><th>危機管理評価</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>🇺🇸 米国</td><td>GFC 2008</td><td>-57%</td><td>S&L, GFC</td><td>TARP — 批判も最終利益</td></tr>
+            <tr><td>🇪🇺 ユーロ圏</td><td>欧州債務危機</td><td>-59%</td><td>PIIGS危機</td><td>遅い対応、OMT で安定</td></tr>
+            <tr><td>🇯🇵 日本</td><td>バブル崩壊</td><td>-82%</td><td>90s銀行危機</td><td>遅い対応、失われた30年</td></tr>
+            <tr><td>🇬🇧 英国</td><td>GFC 2008</td><td>-48%</td><td>2008 (RBS, HBOS)</td><td>迅速な国有化</td></tr>
+            <tr><td>🇨🇭 スイス</td><td>UBS/CS危機</td><td>-54%</td><td>UBS 2008, CS 2023</td><td>強制合併（CS→UBS）</td></tr>
+            <tr><td>🇦🇺 豪州</td><td>GFC 2008</td><td>-55%</td><td>なし（27年無不況）</td><td>預金保証、財政出動</td></tr>
+            <tr><td>🇳🇿 NZ</td><td>GFC 2008</td><td>-45%</td><td>なし</td><td>財政出動</td></tr>
+            <tr><td>🇨🇦 カナダ</td><td>GFC 2008</td><td>-50%</td><td>なし（規制が堅固）</td><td>銀行システム安定維持</td></tr>
+            <tr><td>🇸🇪 スウェーデン</td><td>銀行危機 1990-93</td><td>-60%</td><td>1990-93</td><td>北欧モデルの先駆、Securum</td></tr>
+            <tr class="highlight-row"><td>🇳🇴 ノルウェー</td><td>銀行危機 1988-93</td><td>-64%（GFC）</td><td>1920s, 1988-93</td><td>北欧モデル、GPFG安全弁</td></tr>
+          </tbody>
+        </table>
+        <p>ノルウェーはG10の中で最大の株式下落率（-64%、GFC時）を経験した国の一つであるが、同時に危機管理の評価は最も高いグループに属する。1988-93年の銀行危機管理は「株主責任＋迅速介入」のモデルとして、2008年のGFC後に世界中で参照された。IMFはノルウェーの危機管理を「ベストプラクティス」と評価している。</p>
+      </section>
+
+      <!-- Sources -->
+      <footer class="sources">
+        <h3>出典・参考文献</h3>
+        <ol>
+          <li>Norges Bank, "The Norwegian Banking Crisis", Occasional Papers No. 33, 2004</li>
+          <li>Steigum, E., "The Norwegian Banking Crisis in the 1990s: Effects and Lessons", Norwegian School of Economics</li>
+          <li>IMF, "Norway: Financial System Stability Assessment", imf.org</li>
+          <li>Norges Bank, "Financial Stability Reports", 2008-2024, norges-bank.no</li>
+          <li>Gerdrup, K., "Three Episodes of Financial Fragility in Norway since the 1890s", BIS Working Papers, 2003</li>
+          <li>Moe, T.G., Solheim, J.A., & Vale, B., "The Norwegian Banking Crisis", Norges Bank Occasional Papers No. 33, 2004</li>
+          <li>NBIM, "Annual Reports 2008-2024", nbim.no</li>
+          <li>Finanstilsynet, "Annual Reports on Financial Market Supervision", finanstilsynet.no</li>
+        </ol>
+        <p class="note">株式下落率はピーク→ボトムの概算値。危機管理評価は市場コンセンサスベースの定性的判断。</p>
+      </footer>
+    </article>
+
+    <nav class="page-nav">
+      <a href="14_currency.html" class="prev">← 前: Currency</a>
+      <a href="16_banking.html" class="next">次: Banking Sector →</a>
+    </nav>
+  </main>
+
+  <script>
+    document.querySelectorAll('.sortable th').forEach(th => {
+      th.style.cursor = 'pointer';
+      th.addEventListener('click', () => {
+        const table = th.closest('table');
+        const idx = Array.from(th.parentNode.children).indexOf(th);
+        const rows = Array.from(table.querySelectorAll('tbody tr'));
+        const dir = th.asc = !th.asc ? 1 : -1;
+        rows.sort((a, b) => {
+          const av = a.children[idx]?.textContent.trim() ?? '';
+          const bv = b.children[idx]?.textContent.trim() ?? '';
+          const an = parseFloat(av.replace(/[^0-9.\-]/g, ''));
+          const bn = parseFloat(bv.replace(/[^0-9.\-]/g, ''));
+          if (!isNaN(an) && !isNaN(bn)) return (an - bn) * dir;
+          return av.localeCompare(bv, 'ja') * dir;
+        });
+        rows.forEach(r => table.querySelector('tbody').appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>

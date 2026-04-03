@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Norway - Bond Market | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇳🇴 Norway</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link active">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip active">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Norway</a>
+        <span class="sep">/</span>
+        Bond Market
+      </div>
+      <h1 class="page-title">ノルウェー国債市場</h1>
+      <p class="page-subtitle">Norwegian Government Bonds — 石油富裕国の逆説：AAA格付でも小さな国債市場、GPFGが国内投資を禁止された世界最大のSWF保有国</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">AAA</div>
+          <div class="stat-label">信用格付（S&P / Moody's Aaa / Fitch）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">~NOK 550B</div>
+          <div class="stat-label">国債残高（2024年末）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">~25%</div>
+          <div class="stat-label">債務/GDP比率（G10最低水準）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">NOK 18T+</div>
+          <div class="stat-label">GPFG資産（国債残高の30倍超）</div>
+        </div>
+      </div>
+
+      <!-- Section 1: Overview -->
+      <section>
+        <h2>1. ノルウェー国債市場の概要</h2>
+        <p>ノルウェーの国債市場は、G10諸国の中で極めて異例の存在である。世界最大の政府系ファンド（GPFG、Government Pension Fund Global）を保有しながら、国債残高はGDP比約25%とG10最低水準にとどまる。石油収入がもたらす巨額の財政黒字により、政府は大規模な国債発行の必要性がないためである。</p>
+        <p>この「富裕国のパラドックス」は債券市場に独自の課題をもたらす。国債の供給が限られるため流動性が低く、ベンチマーク金利としての機能が他のG10諸国ほど発達していない。一方で、AAA格付と石油富によるソブリン信用力はG10最高水準であり、スプレッドは常にタイト（ドイツBundに近い水準）で推移してきた。</p>
+        <p>ノルウェーの国債は「Statsobligasjoner」と呼ばれ、財務省（Finansdepartementet）の指示の下、ノルゲス・バンク（Norges Bank）が発行・管理を行う。GPFGは国内資産への投資を禁止されているため、この巨額のSWFがノルウェー国債を購入することはない点も、他国と大きく異なる特徴である。</p>
+
+        <h3>国債の種類</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr><th>種類</th><th>ノルウェー語名</th><th>満期</th><th>特徴</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>国債（固定利付）</td><td>Statsobligasjoner</td><td>2-11年</td><td>主要ベンチマーク、セミアニュアルクーポン</td></tr>
+            <tr><td>短期国債</td><td>Statskasseveksler</td><td>3-12ヶ月</td><td>割引債（ゼロクーポン）、流動性管理</td></tr>
+            <tr><td>インフレ連動債</td><td>—</td><td>—</td><td>ノルウェーは未発行（発行残高なし）</td></tr>
+            <tr><td>地方債</td><td>Kommunalobligasjoner</td><td>1-10年</td><td>KBN（Kommunalbanken）経由が主流</td></tr>
+            <tr><td>カバードボンド</td><td>Obligasjoner med fortrinnsrett (OMF)</td><td>1-15年</td><td>2007年法制化、NOK 1.5T+市場</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section 2: Historical Development -->
+      <section>
+        <h2>2. ノルウェー国債市場の歴史的発展</h2>
+
+        <h3>黎明期〜石油発見前（1818-1969）</h3>
+        <p>ノルウェーの公的債務の歴史は1814年のスウェーデンからの独立（同君連合）に遡る。1818年にノルゲス・バンクが設立されると、政府は主にインフラ整備（鉄道、港湾）のために国債を発行した。19世紀のノルウェーは比較的貧しい北欧の農漁業国であり、国際資本市場（ロンドン、ハンブルク）での外貨建て借入が主流だった。</p>
+        <p>第一次世界大戦期には海運ブームで財政が潤い、戦間期にはパリテ政策（金本位制復帰）に伴うデフレで債務の実質負担が増大した。第二次世界大戦中のドイツ占領期（1940-45年）には占領軍による強制借入が行われ、戦後はマーシャルプランの恩恵を受けて復興した。</p>
+
+        <h3>石油時代の到来（1969-1990）</h3>
+        <p>1969年のエコフィスク（Ekofisk）油田発見は、ノルウェーの財政構造を根本的に変えた。1970年代は油田開発への巨額投資のため一時的に国債発行が増加したが、石油収入が本格化する1980年代以降、政府の借入ニーズは急速に縮小した。1986年の石油価格暴落は一時的な財政悪化をもたらしたものの、1990年代には石油基金（現GPFG）の設立により、石油収入の国債市場への影響は制度的に管理されるようになった。</p>
+
+        <h3>GPFG時代（1996-現在）</h3>
+        <p>1996年に政府石油基金（現GPFG）へ初の資金移転が行われ、2006年のGPFGへの改組を経て、ノルウェーの財政と国債市場の関係は決定的に変わった。石油収入は直接GPFG に流入し、政府予算には「ハンドリングスレーゲル（Handlingsregelen）」に基づき年間約3%のみが移転される。この仕組みにより、政府は大規模な国債発行を行う必要がなく、国債市場は「小さいまま」に維持されている。</p>
+      </section>
+
+      <!-- Section 3: Outstanding Debt -->
+      <section>
+        <h2>3. 国債残高の推移</h2>
+        <table class="data-table sortable">
+          <thead>
+            <tr><th>年</th><th>国債残高（NOK B）</th><th>債務/GDP比率</th><th>備考</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1990</td><td>~180</td><td>~28%</td><td>銀行危機前夜</td></tr>
+            <tr><td>1995</td><td>~250</td><td>~29%</td><td>銀行危機後の財政負担</td></tr>
+            <tr><td>2000</td><td>~270</td><td>~22%</td><td>石油収入拡大、GPFG蓄積開始</td></tr>
+            <tr><td>2005</td><td>~280</td><td>~18%</td><td>石油スーパーサイクル</td></tr>
+            <tr><td>2008</td><td>~300</td><td>~17%</td><td>GFC直前ピーク</td></tr>
+            <tr><td>2010</td><td>~350</td><td>~20%</td><td>GFC後の小幅増発</td></tr>
+            <tr><td>2015</td><td>~400</td><td>~24%</td><td>石油価格暴落後の財政対応</td></tr>
+            <tr><td>2020</td><td>~500</td><td>~30%</td><td>COVID対応で増発</td></tr>
+            <tr><td>2022</td><td>~520</td><td>~23%</td><td>エネルギー収入急増でGDP比低下</td></tr>
+            <tr><td>2024</td><td>~550</td><td>~25%</td><td>安定的水準維持</td></tr>
+          </tbody>
+        </table>
+        <p>注目すべきは、GPFG資産（NOK 18T超、2024年）が国債残高（NOK 550B）の30倍以上に達している点である。ノルウェー政府は事実上「ネット・クレジター（純債権者）」であり、国債を全額即座に償還する余力を持つ。この構造はG10のみならず世界的にも極めて珍しい。</p>
+      </section>
+
+      <!-- Section 4: Covered Bond Market -->
+      <section>
+        <h2>4. カバードボンド市場（OMF）</h2>
+        <p>ノルウェーの債券市場を語る上で、国債以上に重要なのがカバードボンド（OMF: Obligasjoner med fortrinnsrett）市場である。2007年の法制化以降急速に成長し、2024年時点で残高はNOK 1.5T超と、国債市場の約3倍の規模に達している。</p>
+        <p>OMF市場の急成長の背景には、ノルウェーの住宅市場の特殊性がある。住宅価格は1990年代から2020年代にかけて約6倍に上昇し、家計債務/可処分所得比率は230%超とG10最高水準に達した。銀行はこの住宅ローンを裏付けとしたOMFを発行し、国際資本市場から資金を調達してきた。</p>
+
+        <h3>主要OMF発行体</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr><th>発行体</th><th>親銀行</th><th>残高（NOK B概算）</th><th>格付</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>DNB Boligkreditt</td><td>DNB</td><td>~450</td><td>Aaa</td></tr>
+            <tr><td>SpareBank 1 Boligkreditt</td><td>SpareBank 1 Alliance</td><td>~200</td><td>Aaa</td></tr>
+            <tr><td>Nordea Eiendomskreditt</td><td>Nordea</td><td>~150</td><td>Aaa</td></tr>
+            <tr><td>SR-Boligkreditt</td><td>SpareBank 1 SR-Bank</td><td>~80</td><td>Aaa</td></tr>
+            <tr><td>Eika Boligkreditt</td><td>Eika Alliance</td><td>~70</td><td>Aaa</td></tr>
+          </tbody>
+        </table>
+        <p>OMF市場の存在は、ノルウェーの金融システムの安定性と脆弱性の両面を示す。住宅市場が堅調な限り高品質な資産として機能するが、住宅価格の急落シナリオでは銀行システム全体へのリスク波及経路となりうる。ノルゲス・バンクはこのリスクを「金融安定報告書（Financial Stability Report）」で繰り返し警告している。</p>
+      </section>
+
+      <!-- Section 5: Kommunalbanken -->
+      <section>
+        <h2>5. 地方金融公庫（KBN / Kommunalbanken）</h2>
+        <p>ノルウェーの地方債市場もG10で独特の構造を持つ。コミューナルバンケン（Kommunalbanken Norway, KBN）は、100%政府所有の地方金融公庫であり、ノルウェーの地方自治体（kommune）向け融資の約50%を提供している。KBNはAAA格付を有し、国際資本市場でグリーンボンドを含む多様な債券を発行している。</p>
+        <p>KBNの存在により、ノルウェーの地方自治体は個別に債券を発行する必要性が低く、地方債市場の分散化（fragmentation）が回避されている。これはドイツのレンダー債やスウェーデンの地方債市場とは対照的な構造である。</p>
+      </section>
+
+      <!-- Section 6: Foreign Participation -->
+      <section>
+        <h2>6. 外国人投資家と流動性</h2>
+        <p>ノルウェー国債の外国人保有比率は約60-65%（2024年時点）と、G10の中でも比較的高い水準にある。小規模な市場であるにもかかわらず外国人保有比率が高い背景には、AAA格付の安全資産としての需要、北欧ポートフォリオの分散先としての役割、およびNOK建て資産へのエクスポージャー需要がある。</p>
+        <p>一方で、市場規模の小ささは流動性の面で課題をもたらす。ビッド・アスク・スプレッドは米国債やドイツBundと比較して広く、大口取引は価格インパクトが大きい。プライマリー・ディーラー制度を通じて流動性の維持が図られているが、グローバルな債券インデックスにおけるノルウェー国債のウェイトは極めて小さい。</p>
+
+        <h3>プライマリー・ディーラー</h3>
+        <p>ノルゲス・バンクは国債のプライマリー・ディーラーとして以下の主要銀行を指定している（2024年時点）:</p>
+        <ul>
+          <li>DNB Markets</li>
+          <li>Nordea Markets</li>
+          <li>SEB</li>
+          <li>Danske Bank</li>
+          <li>Handelsbanken</li>
+        </ul>
+      </section>
+
+      <!-- Section 7: G10 Comparison -->
+      <section>
+        <h2>7. G10比較: 国債市場</h2>
+        <table class="data-table sortable">
+          <thead>
+            <tr><th>国</th><th>債務/GDP比率</th><th>格付（S&P）</th><th>国債残高規模</th><th>特徴</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>🇺🇸 米国</td><td>~123%</td><td>AA+</td><td>$34T+</td><td>世界最大、基軸通貨</td></tr>
+            <tr><td>🇪🇺 ユーロ圏（独）</td><td>~64%</td><td>AAA</td><td>€2.4T</td><td>欧州ベンチマーク</td></tr>
+            <tr><td>🇯🇵 日本</td><td>~255%</td><td>A+</td><td>¥1,100T+</td><td>日銀が50%超保有</td></tr>
+            <tr><td>🇬🇧 英国</td><td>~100%</td><td>AA</td><td>£2.5T+</td><td>Gilt市場、2022年LDI危機</td></tr>
+            <tr><td>🇨🇭 スイス</td><td>~38%</td><td>AAA</td><td>CHF 80B+</td><td>安全資産、マイナス金利</td></tr>
+            <tr><td>🇦🇺 豪州</td><td>~50%</td><td>AAA</td><td>A$900B+</td><td>コモディティ連動</td></tr>
+            <tr><td>🇳🇿 NZ</td><td>~42%</td><td>AA+</td><td>NZ$130B+</td><td>高金利、小規模</td></tr>
+            <tr><td>🇨🇦 カナダ</td><td>~65%</td><td>AAA</td><td>C$1.3T+</td><td>州債市場も大きい</td></tr>
+            <tr><td>🇸🇪 スウェーデン</td><td>~33%</td><td>AAA</td><td>SEK 1T+</td><td>低債務、カバードボンド大</td></tr>
+            <tr class="highlight-row"><td>🇳🇴 ノルウェー</td><td>~25%</td><td>AAA</td><td>NOK 550B</td><td>GPFG資産が国債の30倍超</td></tr>
+          </tbody>
+        </table>
+        <p>ノルウェーはG10の中で最低の債務/GDP比率を誇り、スイス・スウェーデンと共にAAA格付を維持する「フィスカル・チャンピオン」グループに属する。しかし、国債市場の小ささは流動性とベンチマーク機能の面で制約をもたらし、OMF市場がその空白を部分的に埋めている。</p>
+      </section>
+
+      <!-- Sources -->
+      <footer class="sources">
+        <h3>出典・参考文献</h3>
+        <ol>
+          <li>Norges Bank, "Government Debt Management", Annual Reports, norges-bank.no</li>
+          <li>Norwegian Ministry of Finance, "National Budget (Statsbudsjettet)", regjeringen.no</li>
+          <li>IMF, "Norway: Article IV Consultation Reports", imf.org</li>
+          <li>S&P Global Ratings, "Norway Sovereign Rating History", spglobal.com</li>
+          <li>Kommunalbanken Norway (KBN), "Annual Report", kbn.com</li>
+          <li>Norges Bank, "Financial Stability Report", norges-bank.no</li>
+          <li>BIS, "Debt Statistics", bis.org</li>
+          <li>Finanstilsynet, "Covered Bond Statistics", finanstilsynet.no</li>
+        </ol>
+        <p class="note">データは各種公的統計に基づく。国債残高は概算値。格付は2024年時点。</p>
+      </footer>
+    </article>
+
+    <nav class="page-nav">
+      <a href="10_equity_current.html" class="prev">← 前: Equity: 2020s</a>
+      <a href="12_short_rates.html" class="next">次: Short-term Rates →</a>
+    </nav>
+  </main>
+
+  <script>
+    document.querySelectorAll('.sortable th').forEach(th => {
+      th.style.cursor = 'pointer';
+      th.addEventListener('click', () => {
+        const table = th.closest('table');
+        const idx = Array.from(th.parentNode.children).indexOf(th);
+        const rows = Array.from(table.querySelectorAll('tbody tr'));
+        const dir = th.asc = !th.asc ? 1 : -1;
+        rows.sort((a, b) => {
+          const av = a.children[idx]?.textContent.trim() ?? '';
+          const bv = b.children[idx]?.textContent.trim() ?? '';
+          const an = parseFloat(av.replace(/[^0-9.\-]/g, ''));
+          const bn = parseFloat(bv.replace(/[^0-9.\-]/g, ''));
+          if (!isNaN(an) && !isNaN(bn)) return (an - bn) * dir;
+          return av.localeCompare(bv, 'ja') * dir;
+        });
+        rows.forEach(r => table.querySelector('tbody').appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>

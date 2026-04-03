@@ -151,7 +151,7 @@ g10_textbook/
 ### Phase 11: Norway (norway/)
 - [x] Task 39: Norway pages 1-5 — Central Bank (Norges Bank、SWF)、Policy Rate、Fiscal Policy (石油基金)、Employment、Inflation
 - [x] Task 40: Norway pages 6-10 — Equity (OBX, Oslo Børs)、Early〜2020s
-- [ ] Task 41: Norway pages 11-15 — Bond、Rates、Currency (NOK)、Crises
+- [x] Task 41: Norway pages 11-15 — Bond、Rates、Currency (NOK)、Crises
 - [ ] Task 42: Norway pages 16-20 — Banking、Corporate (Equinor, Statoil)、Regulation、Trade (石油・ガス)、Lessons
 
 ### Phase 12: Summary & Integration
