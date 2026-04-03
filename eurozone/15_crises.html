@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eurozone - Financial Crises | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇪🇺 Eurozone</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link active">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip active">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Eurozone</a>
+        <span class="sep">/</span>
+        Financial Crises
+      </div>
+      <h1 class="page-title">欧州の金融危機 (European Financial Crises)</h1>
+      <p class="page-subtitle">ERM危機から欧州債務危機まで — 通貨統合の代償と制度進化</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">1992</div>
+          <div class="stat-label">ERM危機（ブラック・ウェンズデー）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">2008-09</div>
+          <div class="stat-label">グローバル金融危機</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">2010-15</div>
+          <div class="stat-label">欧州ソブリン債務危機</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">2020</div>
+          <div class="stat-label">COVID-19パンデミック</div>
+        </div>
+      </div>
+
+      <!-- Section 1: 危機年表 -->
+      <section>
+        <h2>欧州金融危機の全体年表</h2>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>危機名</th>
+              <th>影響の深刻度</th>
+              <th>主要影響国</th>
+              <th>制度的結果</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1992-93</td><td class="crisis">ERM危機</td><td>★★★★</td><td>英国、イタリア、スペイン</td><td>ERM変動幅拡大、通貨統合加速</td></tr>
+            <tr><td>2000-03</td><td>ITバブル崩壊</td><td>★★★</td><td>ドイツ、フィンランド</td><td>安定成長協定の弱体化</td></tr>
+            <tr><td>2007-08</td><td class="crisis">サブプライム/リーマンショック</td><td>★★★★★</td><td>アイルランド、スペイン、ドイツ</td><td>銀行救済、財政悪化</td></tr>
+            <tr><td>2010-12</td><td class="crisis">欧州ソブリン債務危機（第1波）</td><td>★★★★★</td><td>ギリシャ、アイルランド、ポルトガル</td><td>EFSF/ESM設立、OMT</td></tr>
+            <tr><td>2012-15</td><td class="crisis">欧州ソブリン債務危機（第2波）</td><td>★★★★</td><td>スペイン、イタリア、キプロス</td><td>銀行同盟、APP/PSPP</td></tr>
+            <tr><td>2015</td><td class="crisis">ギリシャ第3次危機</td><td>★★★</td><td>ギリシャ</td><td>第3次支援プログラム</td></tr>
+            <tr><td>2020</td><td class="crisis">COVID-19パンデミック</td><td>★★★★★</td><td>全加盟国（イタリア特に深刻）</td><td>PEPP、NGEU共同債</td></tr>
+            <tr><td>2022</td><td>エネルギー危機</td><td>★★★</td><td>ドイツ（ロシア依存）</td><td>TPI導入</td></tr>
+          </tbody>
+        </table>
+        <p class="source">出典: ECB, IMF, European Commission 各年次報告書</p>
+      </section>
+
+      <!-- Section 2: ERM危機 -->
+      <section>
+        <h2>1992-93年 ERM危機</h2>
+        <p>ERM危機の根本原因は、ドイツ統一（1990年）に伴うブンデスバンクの高金利政策と、他のERM参加国の景気後退との矛盾にあった。ドイツは統一コストによるインフレ圧力に対処するため金融を引き締めたが、英国、イタリア、フランスなどは景気後退に直面しており、金利引き下げを必要としていた。ERMの固定相場制の下では、これらの国はドイツの高金利に追随せざるを得ず、自国経済の需要をさらに抑制する結果となった。</p>
+
+        <h3>主要通貨への影響</h3>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>通貨</th>
+              <th>危機前レート（対DEM）</th>
+              <th>危機後の結果</th>
+              <th>推定為替介入額</th>
+              <th>経済的影響</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="crisis">英ポンド (GBP)</td>
+              <td>2.95 DEM/GBP</td>
+              <td>ERM離脱、20%下落</td>
+              <td>£270億の外貨準備消耗</td>
+              <td>離脱後に景気回復、結果的にプラス</td>
+            </tr>
+            <tr>
+              <td class="crisis">イタリアリラ (ITL)</td>
+              <td>765 ITL/DEM</td>
+              <td>ERM離脱、25%下落</td>
+              <td>大規模介入</td>
+              <td>輸出回復、財政危機は継続</td>
+            </tr>
+            <tr>
+              <td>フランスフラン (FRF)</td>
+              <td>3.35 FRF/DEM</td>
+              <td>ERM残留（辛うじて）</td>
+              <td>日銀含む協調介入</td>
+              <td>「Franc Fort」政策の勝利</td>
+            </tr>
+            <tr>
+              <td class="crisis">スペインペセタ (ESP)</td>
+              <td>65 ESP/DEM</td>
+              <td>3回切り下げ（計25%）</td>
+              <td>大規模介入</td>
+              <td>観光・輸出回復</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="source">出典: BIS Annual Report (1993), Bank of England Archives, Bundesbank Monthly Report</p>
+
+        <p>フランスはドイツとの緊密な政治的連携（「仏独枢軸」）により、「Franc Fort（強いフラン）」政策を維持し、ERMからの離脱を免れた。この経験は、通貨危機への脆弱性を排除するためにも完全な通貨統合が必要であるとの仏独の確信を強め、ユーロ導入への政治的モメンタムを加速させた。</p>
+      </section>
+
+      <!-- Section 3: グローバル金融危機 -->
+      <section>
+        <h2>2007-09年 グローバル金融危機の欧州への波及</h2>
+        <p>米国のサブプライム危機に端を発するグローバル金融危機（GFC）は、欧州の金融システムにも甚大な打撃を与えた。欧州の銀行は米国のサブプライム関連証券に多額の投資を行っており、特にドイツのIKBドイツ産業銀行（2007年7月に事実上破綻）やフランスのBNPパリバ（2007年8月に3つのファンドの凍結を発表）が早期に影響を受けた。</p>
+
+        <h3>欧州の銀行救済と財政コスト</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>国</th>
+              <th>主要な銀行救済</th>
+              <th>財政コスト（推定GDP比）</th>
+              <th>方法</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="crisis">アイルランド</td>
+              <td>Anglo Irish Bank, AIB, Bank of Ireland</td>
+              <td class="crisis">~40% GDP</td>
+              <td>包括的銀行保証（2008年9月）</td>
+            </tr>
+            <tr>
+              <td class="crisis">ドイツ</td>
+              <td>IKB, Hypo Real Estate, Commerzbank</td>
+              <td>~2% GDP</td>
+              <td>SoFFin（金融市場安定化基金）設立</td>
+            </tr>
+            <tr>
+              <td class="crisis">フランス</td>
+              <td>Dexia（ベルギーと共同）</td>
+              <td>~1% GDP</td>
+              <td>資本注入、保証</td>
+            </tr>
+            <tr>
+              <td class="crisis">オランダ</td>
+              <td>ABN AMRO/Fortis, ING</td>
+              <td>~6% GDP</td>
+              <td>国有化、資本注入</td>
+            </tr>
+            <tr>
+              <td class="crisis">ベルギー</td>
+              <td>Dexia, Fortis</td>
+              <td>~4% GDP</td>
+              <td>国有化、資産分離</td>
+            </tr>
+            <tr>
+              <td class="crisis">スペイン</td>
+              <td>Cajas（貯蓄銀行群）</td>
+              <td>~5% GDP</td>
+              <td>FROB設立、後にESM支援</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="source">出典: European Commission, "State Aid Scoreboard" (2014); IMF, "Euro Area Policies" (2012)</p>
+
+        <p>アイルランドの事例は特に劇的であった。2008年9月30日、アイルランド政府は6つの銀行の全預金と負債に包括的な国家保証を供与した。しかし、不動産バブル崩壊による銀行損失の規模は政府の想定を大幅に超え、銀行救済コストはGDPの約40%に達した。この結果、アイルランドの財政赤字はGDP比30%を超え（2010年）、2010年11月にEU/IMF支援の要請を余儀なくされた。</p>
+      </section>
+
+      <!-- Section 4: 欧州ソブリン債務危機 -->
+      <section>
+        <h2>2010-15年 欧州ソブリン債務危機</h2>
+        <p>欧州ソブリン債務危機は、ユーロ圏の制度的欠陥を白日の下に晒した。単一の金融政策と分散した財政政策、「ノーベイルアウト」条項と実際の相互依存性、銀行部門とソブリンの「死のスパイラル」（doom loop）— これらの矛盾が一気に噴出した。</p>
+
+        <h3>ギリシャ — 危機の震源地</h3>
+        <p>2009年10月、パパンドレウ新政権が前政権の財政統計が粉飾されていたことを暴露した。財政赤字はGDP比3.7%と報告されていたが、実際には12.7%（後に15.6%に修正）であった。この衝撃は市場のユーロ圏ソブリンリスクに対する認識を根本的に変えた。</p>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>時期</th>
+              <th>イベント</th>
+              <th>ギリシャ10Y利回り</th>
+              <th>対応措置</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>2009年10月</td><td class="crisis">財政粉飾の発覚</td><td class="crisis">4.7% → 急騰開始</td><td>—</td></tr>
+            <tr><td>2010年5月</td><td class="crisis">第1次支援パッケージ</td><td class="crisis">12.5%</td><td>€110B（EU/IMF）、SMP開始</td></tr>
+            <tr><td>2011年7月</td><td class="crisis">第2次支援パッケージ合意</td><td class="crisis">16.8%</td><td>€130B、民間部門関与（PSI）決定</td></tr>
+            <tr><td>2012年3月</td><td class="crisis">PSI実施 — 民間債務53.5%カット</td><td class="crisis">44.2%（史上最高）</td><td>€206Bの債務削減</td></tr>
+            <tr><td>2012年7月</td><td>ドラギ「Whatever it takes」</td><td>25.8%</td><td>OMT発表</td></tr>
+            <tr><td>2015年1月</td><td class="crisis">シリザ政権誕生</td><td class="crisis">9.5%</td><td>緊縮反対、支援見直し要求</td></tr>
+            <tr><td>2015年6月</td><td class="crisis">銀行閉鎖、資本規制導入</td><td class="crisis">17.0%</td><td>ECBのELA上限凍結</td></tr>
+            <tr><td>2015年7月</td><td class="crisis">国民投票で緊縮「反対」</td><td class="crisis">15.0%</td><td>Grexit危機最高潮</td></tr>
+            <tr><td>2015年8月</td><td>第3次支援パッケージ合意</td><td>8.5%</td><td>€86B（ESM）</td></tr>
+            <tr><td>2018年8月</td><td>支援プログラム終了</td><td>4.2%</td><td>市場復帰</td></tr>
+            <tr><td>2024年末</td><td>投資適格回復（S&amp;P BBB-）</td><td>3.2%</td><td>スプレッド正常化</td></tr>
+          </tbody>
+        </table>
+        <p class="source">出典: European Commission, "Financial Assistance to Greece," ec.europa.eu; IMF, "Greece: Staff Reports"</p>
+
+        <h3>アイルランド — 銀行危機からソブリン危機へ</h3>
+        <p>アイルランドは「ケルトの虎」と呼ばれた1990-2000年代の急成長から、2008年の不動産バブル崩壊と銀行危機を経て、2010年11月にEU/IMF支援（€85B）を要請した。銀行の損失を国家が肩代わりした結果、銀行危機がソブリン危機に転化するという「死のスパイラル」の典型例となった。しかし、厳格な改革実施により2013年12月に支援プログラムから卒業し、ユーロ圏の「優等生」として回復した。</p>
+
+        <h3>ポルトガル — 構造改革の軌跡</h3>
+        <p>ポルトガルは2011年5月にEU/IMF支援（€78B）を要請した。ユーロ導入後の低成長と競争力喪失が根本原因であった。改革の実施により2014年5月に支援プログラムから卒業。その後、財政赤字を着実に削減し、2024年にはGDP比で黒字を達成するまでに改善した。</p>
+
+        <h3>スペイン — 不動産バブルと銀行再編</h3>
+        <p>スペインの危機は、1990年代後半から2007年まで続いた巨大な不動産バブルの崩壊に起因する。住宅価格は2007年のピークから約30%下落し、建設・不動産セクターの雇用が壊滅的な打撃を受けた。失業率は2013年に26.9%に達した。2012年7月、スペインは銀行部門に限定したESM支援（€41.3B、枠は€100B）を受け入れた。SAREB（不良資産管理銀行）が設立され、問題資産の分離が進められた。</p>
+
+        <h3>キプロス — 預金への課税</h3>
+        <p>2013年3月、キプロスの銀行危機に対して、EU/IMFは前例のない「預金へのレビー（課税）」を含む支援策を提示した。当初案では全預金に課税する計画で議会に否決されたが、最終的に€10万超の預金にベイルインが適用された。これは「銀行預金の安全性」に対する信認を揺るがし、後の銀行同盟における破綻処理指令（BRRD）の設計に大きな影響を与えた。</p>
+      </section>
+
+      <!-- Section 5: 制度的対応 -->
+      <section>
+        <h2>危機への制度的対応</h2>
+        <p>欧州債務危機は、ユーロ圏のガバナンス構造に根本的な変革を促した。「危機なくして改革なし」という欧州統合の伝統に従い、一連の制度が構築された。</p>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>制度/プログラム</th>
+              <th>設立年</th>
+              <th>規模/機能</th>
+              <th>意義</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>EFSF</strong> (European Financial Stability Facility)</td>
+              <td>2010</td>
+              <td>€440B保証能力（暫定）</td>
+              <td>初の欧州金融安全網、ギリシャ・アイルランド・ポルトガル支援</td>
+            </tr>
+            <tr>
+              <td><strong>ESM</strong> (European Stability Mechanism)</td>
+              <td>2012</td>
+              <td>€500B融資能力（恒久）</td>
+              <td>EFSFの後継、欧州版IMF</td>
+            </tr>
+            <tr>
+              <td><strong>SSM</strong> (Single Supervisory Mechanism)</td>
+              <td>2014</td>
+              <td>ECBによる大手銀行の直接監督</td>
+              <td>銀行同盟の第1の柱</td>
+            </tr>
+            <tr>
+              <td><strong>SRM</strong> (Single Resolution Mechanism)</td>
+              <td>2016</td>
+              <td>€55B SRF（破綻処理基金）</td>
+              <td>銀行同盟の第2の柱、ベイルイン原則</td>
+            </tr>
+            <tr>
+              <td><strong>OMT</strong> (Outright Monetary Transactions)</td>
+              <td>2012</td>
+              <td>無制限国債購入（条件付き）</td>
+              <td>「Whatever it takes」— 未使用だが決定的な効果</td>
+            </tr>
+            <tr>
+              <td><strong>NGEU</strong> (NextGenerationEU)</td>
+              <td>2020</td>
+              <td>€800B共同債</td>
+              <td>EU初の大規模共同債務、財政統合の一歩</td>
+            </tr>
+            <tr>
+              <td><strong>TPI</strong> (Transmission Protection Instrument)</td>
+              <td>2022</td>
+              <td>無制限（条件付き）</td>
+              <td>利上げ局面でのスプレッド拡大防止</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="source">出典: European Commission, ECB, ESM各公式サイト</p>
+      </section>
+
+      <!-- Section 6: ドラギの「Whatever it takes」 -->
+      <section>
+        <h2>「Whatever it takes」— 危機の転換点</h2>
+        <p>2012年7月26日、ロンドンの投資カンファレンスでECBのマリオ・ドラギ (Mario Draghi) 総裁が発した一言は、欧州金融史上最も影響力のある発言として歴史に刻まれた:</p>
+        <blockquote style="border-left: 3px solid var(--accent-green); padding-left: 1rem; margin: 1.5rem 0; font-style: italic; color: var(--accent-green);">
+          "Within our mandate, the ECB is ready to do whatever it takes to preserve the euro. And believe me, it will be enough."
+          <br><span style="color: var(--text-secondary); font-style: normal;">— マリオ・ドラギ (Mario Draghi), ECB総裁, 2012年7月26日</span>
+        </blockquote>
+        <p>この発言の前、ユーロ圏の崩壊確率は市場で相当程度織り込まれていた。スペインとイタリアの10年債利回りはそれぞれ7.5%と6.6%に達し、債務の持続可能性が疑問視されていた。ドラギの発言とそれに続くOMTの発表は、一弾も撃たずに（OMTは一度も発動されず）市場を安定化させた。</p>
+        <p>この出来事は「中央銀行のコミュニケーションの力」と「信認可能なバックストップの重要性」を実証する教科書的事例となった。OMTは法的にはドイツ連邦憲法裁判所と欧州司法裁判所で争われたが、2015年に合法と判断された。</p>
+      </section>
+
+      <!-- Section 7: COVID-19 -->
+      <section>
+        <h2>2020年 COVID-19パンデミック</h2>
+        <p>COVID-19パンデミックは、2010年代の債務危機とは異なる性質の危機を欧州にもたらした。全加盟国が同時に被害を受けたため、「南北対立」の構図ではなく連帯が求められる局面となった。</p>
+        <p>ECBは2020年3月18日にPEPP（パンデミック緊急購入プログラム、当初€750B、後に€1.85Tに拡大）を発表した。PEPPはPSPPと異なり、資本キー比率からの乖離が認められ、イタリアやスペインなど最も影響を受けた国の国債をより多く購入することが可能となった。</p>
+        <p>財政面では、安定成長協定の一般免責条項（General Escape Clause）が初めて発動され、各国は大規模な財政出動が可能となった。さらに2020年7月、EU首脳はNextGenerationEU（€800B）に合意し、EU名義の共同債発行という歴史的転換を実現した。「ハミルトン・モーメント」（米国建国初期にハミルトンが各州の戦時債務を連邦が引き受けた先例に倣う）と呼ばれたこの決定は、メルケル首相（ドイツ）とマクロン大統領（フランス）の合意が決定的であった。</p>
+      </section>
+
+      <!-- Section 8: 教訓と残された課題 -->
+      <section>
+        <h2>欧州の金融危機から得られた教訓</h2>
+        <ul>
+          <li><strong>「Too late, too little」から「Whatever it takes」へ</strong>: 初期対応の遅れがコストを拡大させた。ECBの決定的介入は、早期かつ大規模な対応の重要性を示した。</li>
+          <li><strong>銀行とソブリンの「死のスパイラル」</strong>: 銀行救済が財政を悪化させ、財政悪化が銀行のソブリン保有を通じて銀行を弱体化させる悪循環。銀行同盟の構築はこの断ち切りを目指すが、共通預金保険（EDIS）は未実現。</li>
+          <li><strong>「ノーベイルアウト」の限界</strong>: マーストリヒト条約の「ノーベイルアウト」条項は、危機時に事実上無視された。条約の精神と危機対応の現実との乖離は、制度設計の根本的問題を示す。</li>
+          <li><strong>財政統合の必要性</strong>: NGEUは一歩だが、恒久的な財政移転メカニズムなしには通貨同盟の安定は難しい。</li>
+          <li><strong>構造改革の痛み</strong>: 内的切り下げ（賃金・物価の調整）は、為替レート調整に比べてはるかに苦痛で時間がかかることが実証された。</li>
+        </ul>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>ECB, "The ECB's Response to the Financial Crisis," ECB Monthly Bulletin (2010)</li>
+        <li>European Commission, "Financial Assistance in EU Member States," ec.europa.eu</li>
+        <li>ESM, "Lending Toolkit," esm.europa.eu</li>
+        <li>IMF, "Euro Area Policies — Staff Reports," imf.org (2010-2015)</li>
+        <li>BIS, "The Great Financial Crisis — Lessons for Financial Stability Policies," BIS Annual Report (2009)</li>
+        <li>Draghi, M., "Speech at the Global Investment Conference," London, July 26, 2012</li>
+        <li>European Commission, "NextGenerationEU," ec.europa.eu (2020)</li>
+        <li>ECB, "Pandemic Emergency Purchase Programme (PEPP)," ecb.europa.eu</li>
+        <li>Brunnermeier, M., James, H., Landau, J.-P., "The Euro and the Battle of Ideas," Princeton University Press (2016)</li>
+        <li>Tooze, A., "Crashed: How a Decade of Financial Crises Changed the World," Viking (2018)</li>
+      </ol>
+      <p>※ 利回り・スプレッドデータはBloomberg Terminal、ECB Statistical Data Warehouseより取得。</p>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelectorAll('.sortable th').forEach((th, idx) => {
+      th.style.cursor = 'pointer';
+      th.addEventListener('click', () => {
+        const table = th.closest('table');
+        const tbody = table.querySelector('tbody');
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+        const dir = th.dataset.dir === 'asc' ? 'desc' : 'asc';
+        th.dataset.dir = dir;
+        rows.sort((a, b) => {
+          const av = a.children[idx]?.textContent.trim() ?? '';
+          const bv = b.children[idx]?.textContent.trim() ?? '';
+          const an = parseFloat(av.replace(/[^0-9.\-]/g, ''));
+          const bn = parseFloat(bv.replace(/[^0-9.\-]/g, ''));
+          if (!isNaN(an) && !isNaN(bn)) return dir === 'asc' ? an - bn : bn - an;
+          return dir === 'asc' ? av.localeCompare(bv, 'ja') : bv.localeCompare(av, 'ja');
+        });
+        rows.forEach(r => tbody.appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>

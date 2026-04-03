@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eurozone - Long-term Rates | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇪🇺 Eurozone</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link active">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip active">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Eurozone</a>
+        <span class="sep">/</span>
+        Long-term Rates
+      </div>
+      <h1 class="page-title">欧州長期金利の推移 (European Long-term Rates)</h1>
+      <p class="page-subtitle">10年Bund利回りの歴史的変動 — 収斂・発散・マイナス利回りの時代</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">-0.86%</div>
+          <div class="stat-label">10年Bund史上最低 (2020年3月)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">8.88%</div>
+          <div class="stat-label">10年Bund近代最高 (1990年)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">2.37%</div>
+          <div class="stat-label">10年Bund (2024年末)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">€18T</div>
+          <div class="stat-label">マイナス利回り債ピーク (2020年)</div>
+        </div>
+      </div>
+
+      <!-- Section 1: 長期金利の決定要因 -->
+      <section>
+        <h2>欧州長期金利の決定要因</h2>
+        <p>欧州の長期金利は、米国とは異なる複合的な要因によって形成される。ドイツBundの利回りは、ユーロ圏全体のインフレ期待、ECBの金融政策スタンス、世界的なリスク選好度、そして各国固有のソブリンリスクプレミアムの組み合わせで決まる。</p>
+        <p>特にユーロ圏においては、「分断された主権と統一された通貨」という構造的矛盾が長期金利の形成に独特の影響を与えている。各国の10年債利回りは、Bund（リスクフリーレート）に対するスプレッドとして市場で取引されるが、このスプレッドは当該国の財政状態、政治リスク、経済成長見通し、そしてECBの介入期待を反映する。</p>
+      </section>
+
+      <!-- Section 2: ドイツ統一前 -->
+      <section>
+        <h2>ドイツ統一前の長期金利 (1950s-1989)</h2>
+        <p>戦後西ドイツの長期金利は、ブンデスバンク（Bundesbank）の厳格なインフレ抑制政策を反映して、米国や英国に比べて相対的に低位で安定していた。ブンデスバンクは1957年の設立以来、物価安定を最優先課題とし、その信認がドイツ国債の「安全資産」としての地位を確立した。</p>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年代</th>
+              <th>独10年債利回り（平均）</th>
+              <th>インフレ率</th>
+              <th>主要イベント</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1960年代</td><td>6.0-7.0%</td><td>2-3%</td><td>経済の奇跡（Wirtschaftswunder）後期</td></tr>
+            <tr><td>1970年代前半</td><td class="rate-hike">8.0-9.5%</td><td class="rate-hike">5-7%</td><td>石油危機、世界的インフレ</td></tr>
+            <tr><td>1970年代後半</td><td>7.0-8.0%</td><td>3-4%</td><td>ブンデスバンクのインフレ抑制成功</td></tr>
+            <tr><td>1980年代前半</td><td class="rate-hike">7.5-9.0%</td><td>4-6%</td><td>第二次石油危機後</td></tr>
+            <tr><td>1980年代後半</td><td class="rate-cut">6.0-7.0%</td><td>1-2%</td><td>ディスインフレ期、EMS安定</td></tr>
+          </tbody>
+        </table>
+        <p class="source">出典: Bundesbank Historical Statistics, OECD Economic Outlook</p>
+        <p>1970年代の二度の石油危機においても、ブンデスバンクは厳格な金融引き締めによりインフレを相対的に低く抑えることに成功した。米国のFF金利が20%に達した1980年代初頭でも、ドイツの長期金利は10%を大きく超えることはなかった。この実績が「マルク（DM）= 安定の象徴」という評価を定着させ、後のユーロ設計においてブンデスバンクモデルが範となった理由でもある。</p>
+      </section>
+
+      <!-- Section 3: 統一後〜ユーロ導入 -->
+      <section>
+        <h2>ドイツ統一とERM危機 (1990-1998)</h2>
+        <p>1990年のドイツ統一は、欧州の長期金利環境を劇的に変えた。東西統一の費用を賄うための大規模な財政支出と東独マルクの過大な交換レートにより、インフレ圧力が高まった。ブンデスバンクは1992年に公定歩合を8.75%に引き上げ、10年Bund利回りは一時8.88%に達した。</p>
+        <p>この高金利政策は、欧州為替メカニズム（ERM）参加国に深刻な波及効果をもたらした。ERM参加国はドイツマルクとの為替レートを維持するため、自国の経済状況にかかわらず高金利を強いられ、1992年9月の「ブラック・ウェンズデー」でポンドとリラがERMを離脱する事態に発展した。</p>
+        <p>1993年以降、ブンデスバンクの利下げとインフレ安定化により長期金利は低下トレンドに入った。1999年のユーロ導入に向けた収斂過程で、加盟候補国の長期金利はドイツBundに接近していった。マーストリヒト条約の収斂基準（長期金利が最も低い3カ国の平均+2%以内）が、この金利収斂を制度的に促進した。</p>
+      </section>
+
+      <!-- Section 4: ユーロ導入後の収斂と発散 -->
+      <section>
+        <h2>ユーロ時代の収斂と発散 (1999-2024)</h2>
+        <p>ユーロ導入後の欧州長期金利の歴史は、大きく4つの時代に分けられる。</p>
+
+        <h3>第1期: 大収斂 (1999-2007)</h3>
+        <p>ユーロ導入直後、加盟国の10年債利回りはBundに急速に収斂した。イタリア、スペイン、ポルトガルなどの利回りはBundとの差がわずか10-30bpsにまで縮小した。市場は暗黙のうちに「ユーロ圏加盟国のデフォルトリスクはゼロに近い」と判断し、各国債を事実上同質の資産として扱った。この判断は後に致命的な誤りであったことが判明する。</p>
+
+        <h3>第2期: 大発散 — 欧州債務危機 (2008-2012)</h3>
+        <p>2008年のリーマンショックと続くギリシャの財政粉飾発覚（2009年10月）により、ユーロ圏のソブリンリスクが一気に顕在化した。周辺国の利回りは急騰し、Bundとの差は爆発的に拡大した。</p>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>国</th>
+              <th>10年債利回り最高値</th>
+              <th>時期</th>
+              <th>対Bundスプレッド</th>
+              <th>結果</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="crisis">ギリシャ</td><td class="crisis">44.21%</td><td>2012年3月</td><td class="crisis">4,260bps</td><td>2回のデフォルト、債務再編</td></tr>
+            <tr><td class="crisis">ポルトガル</td><td class="crisis">16.97%</td><td>2012年1月</td><td class="crisis">1,550bps</td><td>EU/IMF支援要請</td></tr>
+            <tr><td class="crisis">アイルランド</td><td class="crisis">14.08%</td><td>2011年7月</td><td class="crisis">1,180bps</td><td>EU/IMF支援要請</td></tr>
+            <tr><td class="crisis">スペイン</td><td class="crisis">7.62%</td><td>2012年7月</td><td class="crisis">640bps</td><td>銀行部門支援</td></tr>
+            <tr><td class="crisis">イタリア</td><td class="crisis">7.26%</td><td>2011年11月</td><td class="crisis">553bps</td><td>モンティ技術者政権</td></tr>
+            <tr><td class="rate-cut">ドイツ</td><td class="rate-cut">1.17%</td><td>2012年7月</td><td>—</td><td>安全資産への逃避</td></tr>
+          </tbody>
+        </table>
+        <p class="source">出典: ECB, Bloomberg, Refinitiv</p>
+        <p>この時期、ドイツBundは「安全資産への逃避」により利回りが急低下し、周辺国との格差が一層拡大するという皮肉な現象が生じた。2012年7月のドラギ総裁の「Whatever it takes」発言が転換点となり、OMT（アウトライト・マネタリー・トランザクション）の発表によりスプレッドは劇的に縮小した。注目すべきは、OMTは一度も発動されずに市場を安定化させたことであり、中央銀行の「コミュニケーションの力」を示す教科書的事例となった。</p>
+
+        <h3>第3期: マイナス利回りの時代 (2014-2021)</h3>
+        <p>ECBの量的緩和（APP/PSPP）とマイナス金利政策により、ユーロ圏の長期金利は歴史的低水準に沈んだ。2019-2020年にかけて、ドイツのイールドカーブ全体がマイナス領域に沈み、30年Bundですらマイナス利回りを記録した。世界全体でマイナス利回り債の残高は2020年12月に約$18兆に達し、その大部分が欧州と日本の国債であった。</p>
+        <p>このマイナス利回り環境は、欧州の年金基金、保険会社、銀行の収益モデルに深刻な打撃を与えた。長期債務を抱える機関投資家は「安全に投資しながらリターンを得る」ことが不可能となり、よりリスクの高い資産への「リーチ・フォー・イールド」を余儀なくされた。</p>
+
+        <h3>第4期: 金利正常化 (2022-現在)</h3>
+        <p>2022年のインフレ急騰を受け、ECBは7月に11年ぶりの利上げを実施。10年Bund利回りは2022年6月に急騰し、わずか数ヶ月でマイナス圏から2%超へと劇的に上昇した。2023年10月には一時3.0%近くに達し、2011年以来の高水準を記録した。2024年にはECBの利下げ転換により若干低下し、年末時点で2.37%となっている。</p>
+      </section>
+
+      <!-- Section 5: 各国10年債利回りの比較 -->
+      <section>
+        <h2>ユーロ圏主要国の10年債利回り比較</h2>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>🇩🇪 ドイツ</th>
+              <th>🇫🇷 フランス</th>
+              <th>🇮🇹 イタリア</th>
+              <th>🇪🇸 スペイン</th>
+              <th>🇬🇷 ギリシャ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1999</td><td>4.50%</td><td>4.62%</td><td>4.73%</td><td>4.73%</td><td>6.30%</td></tr>
+            <tr><td>2002</td><td>4.78%</td><td>4.86%</td><td>5.03%</td><td>4.96%</td><td>5.12%</td></tr>
+            <tr><td>2005</td><td>3.35%</td><td>3.41%</td><td>3.56%</td><td>3.39%</td><td>3.59%</td></tr>
+            <tr><td>2007</td><td>4.22%</td><td>4.30%</td><td>4.49%</td><td>4.31%</td><td>4.50%</td></tr>
+            <tr><td>2010</td><td class="rate-cut">2.74%</td><td>3.12%</td><td class="rate-hike">4.04%</td><td class="rate-hike">4.25%</td><td class="crisis">9.09%</td></tr>
+            <tr><td>2012</td><td class="rate-cut">1.50%</td><td>2.54%</td><td class="crisis">5.49%</td><td class="crisis">5.85%</td><td class="crisis">22.50%</td></tr>
+            <tr><td>2015</td><td class="rate-cut">0.50%</td><td class="rate-cut">0.84%</td><td>1.71%</td><td>1.73%</td><td class="crisis">9.67%</td></tr>
+            <tr><td>2019</td><td class="rate-cut">-0.27%</td><td>0.13%</td><td>1.42%</td><td>0.68%</td><td>1.51%</td></tr>
+            <tr><td>2020</td><td class="rate-cut">-0.57%</td><td class="rate-cut">-0.15%</td><td>0.68%</td><td>0.38%</td><td>0.89%</td></tr>
+            <tr><td>2022</td><td class="rate-hike">2.57%</td><td class="rate-hike">3.11%</td><td class="rate-hike">4.70%</td><td class="rate-hike">3.68%</td><td class="rate-hike">4.63%</td></tr>
+            <tr><td>2024</td><td>2.37%</td><td>3.20%</td><td>3.52%</td><td>3.06%</td><td>3.20%</td></tr>
+          </tbody>
+        </table>
+        <p class="source">出典: ECB Statistical Data Warehouse, Eurostat, Bloomberg</p>
+        <p>注目すべきは、ギリシャの10年債利回りが2024年時点でフランスと同水準（約3.2%）にまで低下していることである。これは2012年の22.5%から劇的な改善であり、ギリシャの財政再建の進展とECBのバックストップ機能への信認を反映している。一方、フランスのスプレッドは2024年に政治的不安定性を背景に拡大傾向にあり、OAT-Bund スプレッドは80bps超に達した。</p>
+      </section>
+
+      <!-- Section 6: インフレ連動債 -->
+      <section>
+        <h2>欧州インフレ連動債（ILB）市場</h2>
+        <p>ユーロ圏のインフレ連動債市場は、フランスが最大の発行体であり、OATi（フランスCPI連動）とOAT€i（ユーロ圏HICP連動）を定期的に発行している。ドイツもBund€i（HICP連動）、イタリアもBTP€i（HICP連動）およびBTP Italia（イタリアCPI連動、個人投資家向け）を発行している。</p>
+        <p>ブレークイーブン・インフレ率（BEI）は、名目利回りとインフレ連動債利回りの差として計算され、市場のインフレ期待を測る重要な指標となっている。ECBも政策判断において5年先5年のインフレスワップレートやBEIを重視している。</p>
+        <ul>
+          <li><strong>2015-2019年</strong>: 5Y5Yインフレスワップは1.2-1.7%で推移、ECBの2%目標を大幅に下回り、デフレリスクが意識された。</li>
+          <li><strong>2021-2022年</strong>: エネルギー価格高騰により、BEIは一時3%超に急上昇。</li>
+          <li><strong>2023-2024年</strong>: インフレ鈍化とともに2.0-2.3%に安定、ECB目標に整合的な水準に。</li>
+        </ul>
+      </section>
+
+      <!-- Section 7: スワップ市場 -->
+      <section>
+        <h2>金利スワップ市場とスワップスプレッド</h2>
+        <p>ユーロ圏の金利スワップ市場は、国債市場と並ぶ主要な長期金利の指標である。ユーロ金利スワップ（IRS）は€STRを変動金利の参照とし（旧来はEuribor）、固定金利と交換する取引である。</p>
+        <p>欧州特有の現象として、スワップスプレッド（スワップレート − Bund利回り）がしばしばマイナスとなることがある。これは米国市場との大きな違いであり、以下の要因が寄与している:</p>
+        <ul>
+          <li><strong>担保不足</strong>: ECBの大量国債購入によりBundの市場流通量が減少し、レポ市場でBundがスペシャル化（利回り低下）</li>
+          <li><strong>規制要因</strong>: バーゼルIII/IVの流動性規制により銀行がBundを保有する需要が増大</li>
+          <li><strong>リスクフリーレートの変化</strong>: スワップカーブが€STRベースに移行し、国債とスワップの裁定関係が変化</li>
+        </ul>
+        <p>10年スワップスプレッドは2020年以降、-20〜-50bpsのレンジで推移しており、Bundが「過度に高価（利回りが低い）」であることを示唆している。</p>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>ECB, "Long-term Interest Rate Statistics for EU Member States," ecb.europa.eu</li>
+        <li>Deutsche Bundesbank, "Capital Market Statistics — Yields on Debt Securities," bundesbank.de</li>
+        <li>Eurostat, "EMU Convergence Criterion — Interest Rates," ec.europa.eu/eurostat</li>
+        <li>ECB, "Inflation-Linked Bonds in the Euro Area," ECB Monthly Bulletin (2014)</li>
+        <li>Agence France Trésor, "Inflation-Linked Securities," aft.gouv.fr</li>
+        <li>BIS, "Global Safe Assets," BIS Working Papers No. 777 (2019)</li>
+        <li>IMF, "Negative Interest Rate Policies — Initial Experiences and Assessments," IMF Policy Paper (2017)</li>
+        <li>ECB, "The Determinants of Euro Area Sovereign Bond Yield Spreads," ECB Working Paper No. 1529</li>
+        <li>Eurex Exchange, "Euro-Bund Futures Contract Specifications," eurex.com</li>
+        <li>Bloomberg, "European Government Bond Yields," bloomberg.com (2024)</li>
+      </ol>
+      <p>※ 利回りデータはECB Statistical Data Warehouse、Bloomberg Terminalより取得。年次データは年末値を使用。</p>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelectorAll('.sortable th').forEach((th, idx) => {
+      th.style.cursor = 'pointer';
+      th.addEventListener('click', () => {
+        const table = th.closest('table');
+        const tbody = table.querySelector('tbody');
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+        const dir = th.dataset.dir === 'asc' ? 'desc' : 'asc';
+        th.dataset.dir = dir;
+        rows.sort((a, b) => {
+          const av = a.children[idx]?.textContent.trim() ?? '';
+          const bv = b.children[idx]?.textContent.trim() ?? '';
+          const an = parseFloat(av.replace(/[^0-9.\-]/g, ''));
+          const bn = parseFloat(bv.replace(/[^0-9.\-]/g, ''));
+          if (!isNaN(an) && !isNaN(bn)) return dir === 'asc' ? an - bn : bn - an;
+          return dir === 'asc' ? av.localeCompare(bv, 'ja') : bv.localeCompare(av, 'ja');
+        });
+        rows.forEach(r => tbody.appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>

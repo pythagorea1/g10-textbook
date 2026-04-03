@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eurozone - Bond Market | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇪🇺 Eurozone</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link active">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip active">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Eurozone</a>
+        <span class="sep">/</span>
+        Bond Market
+      </div>
+      <h1 class="page-title">欧州国債市場 (European Bond Market)</h1>
+      <p class="page-subtitle">Bund、BTP、OATスプレッドの構造 — 分断されたソブリン市場と統合への模索</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">€10T+</div>
+          <div class="stat-label">ユーロ圏国債残高 (2024年)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">Bund</div>
+          <div class="stat-label">ベンチマーク（独国債）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">19カ国</div>
+          <div class="stat-label">ユーロ圏加盟国</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">BTP-Bund</div>
+          <div class="stat-label">最重要スプレッド指標</div>
+        </div>
+      </div>
+
+      <!-- Section 1: 概観 -->
+      <section>
+        <h2>欧州国債市場の特殊性</h2>
+        <p>欧州の国債市場は、米国や日本と根本的に異なる構造を持つ。単一通貨ユーロを共有しながらも、財政政策は各加盟国が個別に運営するため、19カ国それぞれが独自のソブリン債を発行している。この「一つの通貨、多数の財政」という構造は、統一国債市場の不在を意味し、各国の信用力の違いがスプレッド（利回り格差）として表出する。</p>
+        <p>ドイツ国債（Bund）がユーロ圏の事実上のベンチマークとして機能し、イタリア国債（BTP）、フランス国債（OAT）、スペイン国債（Bonos）などとの利回り格差が市場の信認度を測る最重要指標となっている。この構造は2010年代の欧州債務危機において、スプレッドの急拡大が金融システム全体を揺るがすリスクとして顕在化した。</p>
+        <p>欧州中央銀行（ECB）は発足当初、加盟国の国債を直接購入する権限を持たなかったが、危機を通じて証券市場プログラム（SMP）、アウトライト・マネタリー・トランザクション（OMT）、資産購入プログラム（APP）、パンデミック緊急購入プログラム（PEPP）へと介入手段を拡大し、市場の安定化を図ってきた。</p>
+      </section>
+
+      <!-- Section 2: 各国国債の概要 -->
+      <section>
+        <h2>主要国の国債概要</h2>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>国名</th>
+              <th>国債名称</th>
+              <th>発行残高 (2024年概算)</th>
+              <th>格付 (S&amp;P)</th>
+              <th>10Y利回り (2024年末)</th>
+              <th>特徴</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>🇩🇪 ドイツ</td>
+              <td>Bund / Schatz / Bobl</td>
+              <td>€1.7T</td>
+              <td>AAA</td>
+              <td>2.37%</td>
+              <td>ユーロ圏ベンチマーク、最高信用力</td>
+            </tr>
+            <tr>
+              <td>🇫🇷 フランス</td>
+              <td>OAT (Obligations Assimilables du Trésor)</td>
+              <td>€2.4T</td>
+              <td>AA-</td>
+              <td>3.20%</td>
+              <td>ユーロ圏最大の発行体</td>
+            </tr>
+            <tr>
+              <td>🇮🇹 イタリア</td>
+              <td>BTP (Buoni del Tesoro Poliennali)</td>
+              <td>€2.3T</td>
+              <td>BBB</td>
+              <td>3.52%</td>
+              <td>高債務国、スプレッドの焦点</td>
+            </tr>
+            <tr>
+              <td>🇪🇸 スペイン</td>
+              <td>Bonos del Estado</td>
+              <td>€1.3T</td>
+              <td>A</td>
+              <td>3.06%</td>
+              <td>危機後に大幅回復</td>
+            </tr>
+            <tr>
+              <td>🇳🇱 オランダ</td>
+              <td>DSL (Dutch State Loans)</td>
+              <td>€0.4T</td>
+              <td>AAA</td>
+              <td>2.55%</td>
+              <td>Bundに近い信用力</td>
+            </tr>
+            <tr>
+              <td>🇧🇪 ベルギー</td>
+              <td>OLO (Obligations Linéaires)</td>
+              <td>€0.5T</td>
+              <td>AA</td>
+              <td>2.85%</td>
+              <td>高債務比率だが安定</td>
+            </tr>
+            <tr>
+              <td>🇦🇹 オーストリア</td>
+              <td>RAGB (Republic of Austria Government Bonds)</td>
+              <td>€0.3T</td>
+              <td>AA+</td>
+              <td>2.65%</td>
+              <td>100年債発行で話題</td>
+            </tr>
+            <tr>
+              <td>🇬🇷 ギリシャ</td>
+              <td>GGB (Greek Government Bonds)</td>
+              <td>€0.3T</td>
+              <td>BBB-</td>
+              <td>3.20%</td>
+              <td>債務危機のシンボル、投資適格回復</td>
+            </tr>
+            <tr>
+              <td>🇵🇹 ポルトガル</td>
+              <td>PGB (Portuguese Government Bonds)</td>
+              <td>€0.3T</td>
+              <td>A-</td>
+              <td>2.80%</td>
+              <td>財政健全化に成功</td>
+            </tr>
+            <tr>
+              <td>🇫🇮 フィンランド</td>
+              <td>RFGB (Republic of Finland Government Bonds)</td>
+              <td>€0.1T</td>
+              <td>AA+</td>
+              <td>2.60%</td>
+              <td>北欧の安全資産</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="source">出典: 各国財務省、S&amp;P Global Ratings (2024)、Bloomberg Terminal</p>
+      </section>
+
+      <!-- Section 3: Bundの歴史 -->
+      <section>
+        <h2>ドイツ国債（Bund）の歴史</h2>
+        <p>ドイツ連邦共和国の国債は、戦後復興期の1952年に最初の連邦債が発行されて以来、欧州金融市場の要石として機能してきた。1990年のドイツ統一に伴い発行額が急増したが、ドイツの財政規律への信認は維持され、Bundは欧州のリスクフリーレートの座を確立した。</p>
+        <p>1999年のユーロ導入後、Bundはユーロ建て国債のベンチマークとなった。当初、ユーロ圏各国の国債利回りはBundに収斂し、スプレッドはわずか数ベーシスポイントにまで縮小した。これは市場が「ユーロ圏加盟国のソブリンリスクは実質的に均一」と判断したことを意味するが、2009年以降の欧州債務危機でこの前提は根底から覆された。</p>
+        <p>2019年以降、ECBのマイナス金利政策と資産購入プログラムの影響により、Bund利回りはマイナス領域に沈んだ。10年Bundは2020年3月に-0.86%という歴史的低水準を記録。2022年のインフレ急騰とECBの利上げ転換により、利回りはプラス圏に戻り、2023年10月には一時3.0%近くまで上昇した。</p>
+
+        <h3>Bund利回りの歴史的推移</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>10年Bund利回り</th>
+              <th>主要イベント</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1990</td><td class="rate-hike">8.88%</td><td>ドイツ統一、財政拡大</td></tr>
+            <tr><td>1993</td><td class="rate-cut">5.66%</td><td>ERM危機後の緩和</td></tr>
+            <tr><td>1999</td><td>4.50%</td><td>ユーロ導入</td></tr>
+            <tr><td>2000</td><td class="rate-hike">5.26%</td><td>ITバブル期</td></tr>
+            <tr><td>2005</td><td class="rate-cut">3.35%</td><td>低インフレ環境</td></tr>
+            <tr><td>2007</td><td class="rate-hike">4.22%</td><td>世界的好況</td></tr>
+            <tr><td>2008</td><td class="rate-cut">2.95%</td><td>リーマンショック、安全資産需要</td></tr>
+            <tr><td>2012</td><td class="rate-cut">1.30%</td><td>欧州債務危機、Bund逃避</td></tr>
+            <tr><td>2016</td><td class="rate-cut">-0.13%</td><td>ECBマイナス金利、初の利回りマイナス</td></tr>
+            <tr><td>2019</td><td class="rate-cut">-0.37%</td><td>世界的金利低下</td></tr>
+            <tr><td>2020</td><td class="rate-cut">-0.57%</td><td>COVID-19パンデミック</td></tr>
+            <tr><td>2022</td><td class="rate-hike">2.57%</td><td>ECB利上げ転換</td></tr>
+            <tr><td>2023</td><td class="rate-hike">2.56%</td><td>引き締め継続</td></tr>
+            <tr><td>2024</td><td>2.37%</td><td>利下げサイクル開始</td></tr>
+          </tbody>
+        </table>
+        <p class="source">出典: Bundesbank, ECB Statistical Data Warehouse, Bloomberg</p>
+      </section>
+
+      <!-- Section 4: BTP-Bund スプレッド -->
+      <section>
+        <h2>BTP-Bundスプレッド — 欧州リスクのバロメーター</h2>
+        <p>イタリア国債（BTP）とドイツ国債（Bund）の10年物利回り格差は、ユーロ圏の金融安定性を測る最重要指標として市場参加者に注視されている。このスプレッドは、イタリアの財政リスク、ユーロ圏の分裂リスク、ECBの政策の信認度を反映する複合的な指標である。</p>
+
+        <h3>BTP-Bundスプレッドの推移</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>時期</th>
+              <th>スプレッド (bps)</th>
+              <th>背景</th>
+              <th>市場環境</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1999-2007</td><td class="rate-cut">10-30</td><td>ユーロ導入初期の収斂</td><td>「リスクフリー」と見なされた時代</td></tr>
+            <tr><td>2008年10月</td><td class="crisis">130</td><td>リーマンショック</td><td>信用リスク再認識</td></tr>
+            <tr><td>2010年5月</td><td class="crisis">180</td><td>ギリシャ危機波及</td><td>周辺国リスク拡大</td></tr>
+            <tr><td>2011年11月</td><td class="crisis">553</td><td>イタリア債務危機ピーク</td><td>ベルルスコーニ退陣</td></tr>
+            <tr><td>2012年7月</td><td class="crisis">537</td><td>ユーロ崩壊リスク</td><td>ドラギ「Whatever it takes」直前</td></tr>
+            <tr><td>2012年9月</td><td>350</td><td>OMT発表後</td><td>劇的な安定化</td></tr>
+            <tr><td>2014年</td><td class="rate-cut">135</td><td>ECB緩和期待</td><td>APP開始前</td></tr>
+            <tr><td>2018年5月</td><td class="crisis">320</td><td>イタリア連立政権危機</td><td>反EU政党の台頭</td></tr>
+            <tr><td>2020年3月</td><td class="crisis">280</td><td>COVID-19パンデミック</td><td>PEPP発表で安定化</td></tr>
+            <tr><td>2022年6月</td><td class="crisis">250</td><td>ECB利上げ懸念</td><td>TPI導入</td></tr>
+            <tr><td>2024年末</td><td>115</td><td>相対的安定</td><td>イタリア財政改善</td></tr>
+          </tbody>
+        </table>
+        <p class="source">出典: ECB, Bloomberg, Refinitiv</p>
+
+        <p>2011-2012年の危機時には、BTP-Bundスプレッドが500bpsを超え、イタリアの10年債利回りは7%を突破した。7%は一般に「持続不可能な水準」とされ、ギリシャ、ポルトガル、アイルランドがこの水準を超えた後に国際支援を要請している。2012年7月のドラギ総裁の「Whatever it takes」発言とOMTの創設は、スプレッドを劇的に縮小させ、ECBの最も効果的な政策介入の一つとして歴史に刻まれた。</p>
+      </section>
+
+      <!-- Section 5: イールドカーブ構造 -->
+      <section>
+        <h2>欧州のイールドカーブ構造</h2>
+        <p>欧州の国債イールドカーブは、各国が異なる信用力を持つため、国ごとに異なるカーブが存在する。ドイツのBundカーブがリスクフリーカーブとして機能し、他国のカーブはBundに対するスプレッドとして解釈される。</p>
+
+        <h3>発行年限の構造</h3>
+        <p>主要国は以下の年限で定期的に国債を発行している:</p>
+        <ul>
+          <li><strong>短期</strong>: 3ヶ月、6ヶ月、12ヶ月（ドイツのBubills、フランスのBTF、イタリアのBOT）</li>
+          <li><strong>中期</strong>: 2年（Schatz）、5年（Bobl）、7年</li>
+          <li><strong>長期</strong>: 10年（Bund）、15年、20年、30年</li>
+          <li><strong>超長期</strong>: 50年（フランス、ベルギー）、100年（オーストリア、2017年発行）</li>
+        </ul>
+        <p>オーストリアが2017年に発行した100年債（2117年満期、クーポン2.1%）は、超低金利環境を象徴する商品として大きな話題を呼んだ。発行時70%超だった価格は、2022年の金利上昇で一時35%近くまで下落するなど、デュレーションリスクの恐ろしさを如実に示した。</p>
+      </section>
+
+      <!-- Section 6: ECBの国債購入プログラム -->
+      <section>
+        <h2>ECBの国債購入プログラムの変遷</h2>
+        <p>ECBは発足当初、加盟国国債の直接購入を明確に禁止していたが、欧州債務危機を契機に段階的に市場介入手段を拡充していった。この転換は、ユーロ圏の金融安定にとって決定的な意味を持った。</p>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>プログラム</th>
+              <th>期間</th>
+              <th>規模</th>
+              <th>目的</th>
+              <th>特徴</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>SMP (Securities Markets Programme)</td>
+              <td>2010-2012</td>
+              <td>€210B</td>
+              <td>債務危機の鎮静化</td>
+              <td>不胎化、周辺国中心</td>
+            </tr>
+            <tr>
+              <td>OMT (Outright Monetary Transactions)</td>
+              <td>2012年発表</td>
+              <td>無制限（未使用）</td>
+              <td>ユーロ崩壊リスクの排除</td>
+              <td>条件付き、「Whatever it takes」</td>
+            </tr>
+            <tr>
+              <td>APP/PSPP (Public Sector Purchase Programme)</td>
+              <td>2015-2018, 2019-2022</td>
+              <td>€2.6T（公的セクター分）</td>
+              <td>デフレ対策、金融緩和</td>
+              <td>資本キー比率に基づく配分</td>
+            </tr>
+            <tr>
+              <td>PEPP (Pandemic Emergency Purchase Programme)</td>
+              <td>2020-2022</td>
+              <td>€1.85T</td>
+              <td>パンデミック対応</td>
+              <td>資本キー比率に柔軟性</td>
+            </tr>
+            <tr>
+              <td>TPI (Transmission Protection Instrument)</td>
+              <td>2022年導入</td>
+              <td>無制限</td>
+              <td>不当なスプレッド拡大防止</td>
+              <td>条件付き、OMTの後継的位置付け</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="source">出典: ECB公式プレスリリース、ECB Annual Reports</p>
+
+        <p>PSPPは資本キー（各国中銀のECBへの出資比率）に基づき国債を購入した。ドイツ（約26%）、フランス（約20%）、イタリア（約17%）の順に購入額が割り当てられたが、PEPPではイタリアやスペインなど影響の大きい国への配分に柔軟性が認められ、より効果的な安定化が可能となった。</p>
+      </section>
+
+      <!-- Section 7: 共同債の議論 -->
+      <section>
+        <h2>欧州共同債（Eurobond）への道</h2>
+        <p>ユーロ圏統一国債の構想は2010年代の債務危機以来繰り返し議論されてきたが、ドイツなど財政健全国の強い反対により実現しなかった。しかし、COVID-19パンデミックを契機に、2020年7月にEU復興基金「NextGenerationEU（NGEU）」が合意され、欧州委員会が最大€800Bの共同債を発行することが決定された。</p>
+        <p>これは事実上の「ユーロボンド」であり、EU加盟国が共同で債務を負う歴史的転換点とされる。ただし、NGEUは一時的な措置として設計されており、恒久的な財政統合への道筋はまだ明確ではない。市場参加者はNGEU債をBundとは別のベンチマークとして位置付けており、Bundとの間に20-50bps程度のスプレッドが形成されている。</p>
+        <p>2025年にはドイツの「債務ブレーキ」（Schuldenbremse）の緩和が議論され、防衛費拡大のための特別基金設立が決定された。これはドイツの財政政策の根本的転換であり、Bund供給増加を通じて欧州国債市場全体に影響を与えている。</p>
+      </section>
+
+      <!-- Section 8: 市場インフラ -->
+      <section>
+        <h2>市場インフラと取引構造</h2>
+        <p>欧州国債市場の取引インフラも各国で分断されている。主要な取引プラットフォームと清算機関は以下の通り:</p>
+        <ul>
+          <li><strong>MTS (Mercato Telematico dei Titoli di Stato)</strong>: 欧州最大の国債電子取引プラットフォーム。1988年にイタリアで設立され、後に欧州全域に拡大。</li>
+          <li><strong>Eurex</strong>: ドイツ・フランクフルト拠点の先物・オプション取引所。Bund先物は世界で最も取引量の多い国債先物の一つ。</li>
+          <li><strong>Euroclear / Clearstream</strong>: 欧州の二大国際証券決済機関。国債のクロスボーダー取引の決済を担う。</li>
+          <li><strong>T2S (TARGET2-Securities)</strong>: ECBが運営する統一証券決済プラットフォーム。2015年導入、欧州の決済統合を推進。</li>
+        </ul>
+        <p>Bund先物（Euro-Bund Future）はEurexで取引され、ユーロ圏金利市場の最重要デリバティブ商品である。1日の取引量は通常100万枚以上に達し、金利ヘッジ、投機、裁定取引に広く利用されている。</p>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>ECB, "Euro Area Securities Issues Statistics," ecb.europa.eu (2024)</li>
+        <li>Deutsche Bundesbank, "Capital Market Statistics," bundesbank.de</li>
+        <li>Agence France Trésor, "Key Figures," aft.gouv.fr (2024)</li>
+        <li>Italian Treasury, "Government Debt," dt.mef.gov.it (2024)</li>
+        <li>S&amp;P Global Ratings, "Sovereign Ratings List," spglobal.com (2024)</li>
+        <li>ECB, "Asset Purchase Programmes," ecb.europa.eu</li>
+        <li>European Commission, "NextGenerationEU," ec.europa.eu</li>
+        <li>Eurex Exchange, "Euro-Bund Futures," eurex.com</li>
+        <li>BIS, "Quarterly Review — International banking and financial market developments" (2024)</li>
+        <li>IMF, "Fiscal Monitor," imf.org (2024)</li>
+      </ol>
+      <p>※ 利回り・スプレッドデータはBloomberg Terminal、Refinitivより取得。格付は各格付機関の最新公表値に基づく。</p>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelectorAll('.sortable th').forEach((th, idx) => {
+      th.style.cursor = 'pointer';
+      th.addEventListener('click', () => {
+        const table = th.closest('table');
+        const tbody = table.querySelector('tbody');
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+        const dir = th.dataset.dir === 'asc' ? 'desc' : 'asc';
+        th.dataset.dir = dir;
+        rows.sort((a, b) => {
+          const av = a.children[idx]?.textContent.trim() ?? '';
+          const bv = b.children[idx]?.textContent.trim() ?? '';
+          const an = parseFloat(av.replace(/[^0-9.\-]/g, ''));
+          const bn = parseFloat(bv.replace(/[^0-9.\-]/g, ''));
+          if (!isNaN(an) && !isNaN(bn)) return dir === 'asc' ? an - bn : bn - an;
+          return dir === 'asc' ? av.localeCompare(bv, 'ja') : bv.localeCompare(av, 'ja');
+        });
+        rows.forEach(r => tbody.appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>

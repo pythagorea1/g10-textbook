@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eurozone - Short-term Rates | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇪🇺 Eurozone</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link active">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip active">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Eurozone</a>
+        <span class="sep">/</span>
+        Short-term Rates
+      </div>
+      <h1 class="page-title">欧州短期金利市場 (European Short-term Rates)</h1>
+      <p class="page-subtitle">Euribor、€STR、EONIA — インターバンク市場と短期金融市場の構造</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">€STR</div>
+          <div class="stat-label">新ベンチマーク金利 (2019年〜)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">Euribor</div>
+          <div class="stat-label">ターム金利ベンチマーク</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">€150T+</div>
+          <div class="stat-label">Euribor連動デリバティブ想定元本</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">3.16%</div>
+          <div class="stat-label">€STR (2024年12月)</div>
+        </div>
+      </div>
+
+      <!-- Section 1: 概要 -->
+      <section>
+        <h2>欧州短期金利市場の概観</h2>
+        <p>欧州の短期金利市場は、ECBの金融政策が最も直接的に波及する領域である。ECBの主要政策金利（主要リファイナンスオペ金利、預金ファシリティ金利、限界貸出ファシリティ金利）は、銀行間の翌日物金利を通じて短期金融市場全体に伝播する。</p>
+        <p>ユーロ圏の短期金利ベンチマークは、2019年を境に大きな転換を遂げた。LIBORスキャンダルを契機としたベンチマーク改革により、旧来のEONIA（Euro OverNight Index Average）から€STR（Euro Short-Term Rate）への移行が進められ、EONIAは2022年1月3日に公表を停止した。一方、ターム金利であるEuriborはハイブリッド方式への改革を経て存続している。</p>
+      </section>
+
+      <!-- Section 2: ECBの政策金利体系 -->
+      <section>
+        <h2>ECBの政策金利体系</h2>
+        <p>ECBは3つの主要政策金利を設定し、翌日物金利のコリドー（回廊）を形成している:</p>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>政策金利</th>
+              <th>水準 (2024年12月)</th>
+              <th>機能</th>
+              <th>歴史的役割</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>限界貸出ファシリティ金利</strong> (Marginal Lending Facility)</td>
+              <td class="rate-hike">3.65%</td>
+              <td>コリドー上限、銀行への翌日物貸出</td>
+              <td>流動性の最終供給手段</td>
+            </tr>
+            <tr>
+              <td><strong>主要リファイナンスオペ金利</strong> (Main Refinancing Operations Rate)</td>
+              <td>3.40%</td>
+              <td>主要オペの最低入札金利</td>
+              <td>2008年以前の主要政策金利</td>
+            </tr>
+            <tr>
+              <td><strong>預金ファシリティ金利</strong> (Deposit Facility Rate)</td>
+              <td class="rate-cut">3.00%</td>
+              <td>コリドー下限、銀行の余剰準備預金</td>
+              <td>2014年以降の実質的な主要政策金利</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="source">出典: ECB, "Key ECB Interest Rates," ecb.europa.eu (2024年12月)</p>
+
+        <p>2008年の金融危機以前は、MRO金利がECBの主要な政策金利として機能していた。しかし、危機後の大量流動性供給により銀行の余剰準備が急増し、翌日物金利は預金ファシリティ金利に張り付くようになった。このため、2014年以降は預金ファシリティ金利が事実上の主要政策金利となっている。2023年9月にはコリドーの幅が従来の200bpsから150bpsに縮小され、2024年9月にはさらに15bpsに狭められた。</p>
+      </section>
+
+      <!-- Section 3: EONIA → €STR -->
+      <section>
+        <h2>EONIAから€STRへの移行</h2>
+        <p>EONIA（Euro OverNight Index Average）は1999年のユーロ導入と同時に開始された翌日物金利ベンチマークである。ユーロ圏の主要28行のパネルバンクが報告する無担保翌日物貸出金利の加重平均として算出されていた。</p>
+        <p>しかし、2012年のLIBORスキャンダルを契機に、報告ベースのベンチマーク金利の信頼性に対する懸念が高まった。欧州マネーマーケット協会（EMMI）はEONIAの改革を試みたが、取引量の減少により実際の取引に基づくベンチマークとしての維持が困難となった。</p>
+
+        <h3>€STR（Euro Short-Term Rate）の特徴</h3>
+        <ul>
+          <li><strong>算出開始</strong>: 2019年10月1日</li>
+          <li><strong>算出方法</strong>: 実際の翌日物無担保借入取引に基づくボリューム加重トリム平均</li>
+          <li><strong>算出主体</strong>: ECB（従来のEONIAはEMMIが算出）</li>
+          <li><strong>データソース</strong>: MMSRデータ（約50行、1日€30-40B程度の取引量）</li>
+          <li><strong>公表時間</strong>: T+1営業日 8:00 CET</li>
+        </ul>
+
+        <h3>移行タイムライン</h3>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>日付</th>
+              <th>イベント</th>
+              <th>影響</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>2017年9月</td><td>ECBワーキンググループ設置</td><td>代替金利の検討開始</td></tr>
+            <tr><td>2018年9月</td><td>€STRを推奨代替金利に選定</td><td>EONIAの後継確定</td></tr>
+            <tr><td>2019年10月1日</td><td>€STR算出・公表開始</td><td>EONIA = €STR + 8.5bps に再定義</td></tr>
+            <tr><td>2022年1月3日</td><td>EONIA公表停止</td><td>完全移行完了</td></tr>
+          </tbody>
+        </table>
+        <p class="source">出典: ECB, "Euro Short-Term Rate (€STR)," ecb.europa.eu; EMMI, "EONIA Reform"</p>
+        <p>移行期間中、EONIAは€STR + 8.5bpsとして再定義された。この固定スプレッドは、EONIAが無担保貸出金利（供給サイド）、€STRが無担保借入金利（需要サイド）であることの構造的差異を反映している。</p>
+      </section>
+
+      <!-- Section 4: Euribor -->
+      <section>
+        <h2>Euribor — 欧州のターム金利ベンチマーク</h2>
+        <p>Euribor（Euro Interbank Offered Rate）は、ユーロ圏のインターバンク市場におけるターム金利（期間1週間〜12ヶ月）のベンチマークである。1999年のユーロ導入と同時に算出が開始され、住宅ローン、企業ローン、デリバティブなど€150兆を超える金融商品の参照金利として利用されている。</p>
+
+        <h3>Euriborの推移</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>3M Euribor</th>
+              <th>6M Euribor</th>
+              <th>12M Euribor</th>
+              <th>背景</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1999</td><td>2.96%</td><td>3.04%</td><td>3.21%</td><td>ユーロ導入初年度</td></tr>
+            <tr><td>2000</td><td class="rate-hike">4.93%</td><td class="rate-hike">5.04%</td><td class="rate-hike">5.09%</td><td>ECB利上げサイクル</td></tr>
+            <tr><td>2003</td><td class="rate-cut">2.33%</td><td class="rate-cut">2.34%</td><td class="rate-cut">2.38%</td><td>ITバブル後の緩和</td></tr>
+            <tr><td>2007</td><td class="rate-hike">4.68%</td><td class="rate-hike">4.73%</td><td class="rate-hike">4.79%</td><td>利上げサイクル頂点</td></tr>
+            <tr><td>2008年10月</td><td class="crisis">5.39%</td><td class="crisis">5.45%</td><td class="crisis">5.50%</td><td>リーマンショック、信用逼迫</td></tr>
+            <tr><td>2009</td><td class="rate-cut">0.70%</td><td class="rate-cut">0.99%</td><td class="rate-cut">1.24%</td><td>ECB大幅利下げ</td></tr>
+            <tr><td>2012</td><td class="rate-cut">0.19%</td><td class="rate-cut">0.32%</td><td class="rate-cut">0.54%</td><td>欧州債務危機</td></tr>
+            <tr><td>2015</td><td class="rate-cut">-0.13%</td><td class="rate-cut">-0.04%</td><td>0.06%</td><td>ECBマイナス金利・QE</td></tr>
+            <tr><td>2019</td><td class="rate-cut">-0.38%</td><td class="rate-cut">-0.33%</td><td class="rate-cut">-0.25%</td><td>マイナス金利深化</td></tr>
+            <tr><td>2021</td><td class="rate-cut">-0.57%</td><td class="rate-cut">-0.53%</td><td class="rate-cut">-0.50%</td><td>パンデミック緩和</td></tr>
+            <tr><td>2022年末</td><td class="rate-hike">2.13%</td><td class="rate-hike">2.69%</td><td class="rate-hike">3.29%</td><td>ECB急速利上げ</td></tr>
+            <tr><td>2023年末</td><td class="rate-hike">3.91%</td><td class="rate-hike">3.86%</td><td class="rate-hike">3.68%</td><td>利上げサイクル頂点</td></tr>
+            <tr><td>2024年末</td><td>2.91%</td><td>2.82%</td><td>2.65%</td><td>利下げサイクル開始</td></tr>
+          </tbody>
+        </table>
+        <p class="source">出典: EMMI (European Money Markets Institute), ecb.europa.eu</p>
+
+        <h3>Euribor改革 — ハイブリッド方式への移行</h3>
+        <p>LIBORスキャンダル後、EMMIはEuriborの算出方法を段階的に改革した。2019年にはウォーターフォール方式（ハイブリッド方式）が導入され、以下の3段階で金利が決定される:</p>
+        <ol>
+          <li><strong>レベル1</strong>: 実際の無担保インターバンク取引（最優先）</li>
+          <li><strong>レベル2</strong>: 類似市場からの取引・調整データ</li>
+          <li><strong>レベル3</strong>: 市場データに基づくエキスパート判断（最終手段）</li>
+        </ol>
+        <p>この改革により、Euriborは実取引データを基盤としつつ、取引量不足時にも安定的に算出可能な仕組みとなった。LIBORとは異なり、Euriborは廃止ではなく改革による存続が選択された。</p>
+      </section>
+
+      <!-- Section 5: マイナス金利時代 -->
+      <section>
+        <h2>マイナス金利時代 (2014-2022)</h2>
+        <p>ECBは2014年6月に預金ファシリティ金利を-0.10%に引き下げ、主要中央銀行として初めてマイナス金利政策を導入した。その後、段階的に-0.50%（2019年9月）まで引き下げられた。この政策は約8年間続き、2022年7月にようやく終了した。</p>
+        <p>マイナス金利政策は短期金融市場に以下の影響を与えた:</p>
+        <ul>
+          <li><strong>銀行収益への圧迫</strong>: 超過準備に対するマイナス金利は銀行にとって事実上の税金として機能。ECBは2019年に階層型準備制度（Tiering）を導入し、一部の準備をマイナス金利から免除した。</li>
+          <li><strong>マネーマーケットファンドの苦境</strong>: 運用利回りがマイナスに沈み、多くのファンドが規模縮小や手数料免除を余儀なくされた。</li>
+          <li><strong>レポ市場の歪み</strong>: 担保付き金利がさらに深いマイナスとなり、質の高い担保（Bund等）の不足が深刻化。</li>
+          <li><strong>短期国債の利回り</strong>: ドイツのBubillsは-0.90%近くまで低下、投資家は「安全資産を保有するコスト」を支払う異例の状況が続いた。</li>
+        </ul>
+      </section>
+
+      <!-- Section 6: レポ市場 -->
+      <section>
+        <h2>欧州レポ市場</h2>
+        <p>レポ（Repurchase Agreement）市場は、欧州の短期資金調達・運用の中核をなす。国債を担保とした短期借入・貸出が行われ、銀行の流動性管理、中央銀行オペの主要チャネル、国債市場の流動性供給源として機能している。</p>
+        <p>欧州レポ市場の規模はICMAの調査によると約€8.7兆（2024年6月時点、総額ベース）に達する。主な特徴は以下の通り:</p>
+        <ul>
+          <li><strong>GC（General Collateral）レポ</strong>: 特定銘柄を指定しない担保付き取引。資金調達・運用が主目的。</li>
+          <li><strong>スペシャルレポ</strong>: 特定銘柄を指定。特定の国債を借りることが主目的で、しばしば一般金利より低い「スペシャル金利」で取引される。</li>
+          <li><strong>CCP（中央清算機関）</strong>: Eurex Clearing、LCH SA等を通じたCCP清算の比率が上昇。</li>
+        </ul>
+        <p>ECBの大量国債購入プログラムにより、市場で流通する高品質担保が減少し、レポ市場における担保不足問題が深刻化した。ECBは証券貸借ファシリティを設けてPSPP保有国債を貸し出すことで、市場機能の維持を図った。</p>
+      </section>
+
+      <!-- Section 7: コマーシャルペーパー -->
+      <section>
+        <h2>欧州コマーシャルペーパー市場</h2>
+        <p>ユーロ・コマーシャルペーパー（ECP）市場は、企業や金融機関の短期資金調達手段として重要な役割を果たしている。主要なプログラムには以下がある:</p>
+        <ul>
+          <li><strong>ECP (Euro Commercial Paper)</strong>: ユーロ建ての無担保短期社債。通常1-364日の期間。</li>
+          <li><strong>ABCP (Asset-Backed Commercial Paper)</strong>: 資産を裏付けとする短期証券。SPVを通じて発行。</li>
+          <li><strong>NEU CP (Negotiable European Commercial Paper)</strong>: フランス市場で発展した短期債市場（旧称Billets de Trésorerie）。</li>
+        </ul>
+        <p>ECBのCBPP（カバードボンド購入プログラム）やCSPP（社債購入プログラム）は間接的にCP市場にも影響を与え、企業の資金調達コストを低下させた。2020年のパンデミック時には、PEPPの対象にNEU CPが含まれ、CP市場の安定化に貢献した。</p>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>ECB, "Euro Short-Term Rate (€STR)," ecb.europa.eu</li>
+        <li>EMMI, "Euribor Rates," emmi-benchmarks.eu</li>
+        <li>ECB, "Key ECB Interest Rates," ecb.europa.eu</li>
+        <li>EMMI, "Euribor Hybrid Methodology," emmi-benchmarks.eu (2019)</li>
+        <li>ECB, "Money Market Statistical Reporting (MMSR)," ecb.europa.eu</li>
+        <li>ICMA, "European Repo Market Survey," icmagroup.org (2024)</li>
+        <li>ECB, "The Euro Short-Term Rate (€STR) Methodology and Policies," ecb.europa.eu (2018)</li>
+        <li>BIS, "Beyond LIBOR: A Primer on the New Benchmark Rates," bis.org (2019)</li>
+        <li>ECB, "Negative Interest Rate Policy," Economic Bulletin (2020)</li>
+        <li>Banque de France, "NEU CP Statistics," banque-france.fr</li>
+      </ol>
+      <p>※ 金利データはECB Statistical Data Warehouse、Bloomberg Terminalより取得。</p>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelectorAll('.sortable th').forEach((th, idx) => {
+      th.style.cursor = 'pointer';
+      th.addEventListener('click', () => {
+        const table = th.closest('table');
+        const tbody = table.querySelector('tbody');
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+        const dir = th.dataset.dir === 'asc' ? 'desc' : 'asc';
+        th.dataset.dir = dir;
+        rows.sort((a, b) => {
+          const av = a.children[idx]?.textContent.trim() ?? '';
+          const bv = b.children[idx]?.textContent.trim() ?? '';
+          const an = parseFloat(av.replace(/[^0-9.\-]/g, ''));
+          const bn = parseFloat(bv.replace(/[^0-9.\-]/g, ''));
+          if (!isNaN(an) && !isNaN(bn)) return dir === 'asc' ? an - bn : bn - an;
+          return dir === 'asc' ? av.localeCompare(bv, 'ja') : bv.localeCompare(av, 'ja');
+        });
+        rows.forEach(r => tbody.appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>
