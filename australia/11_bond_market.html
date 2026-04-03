@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Australia - Bond Market | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇦🇺 Australia</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link active">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip active">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Australia</a>
+        <span class="sep">/</span>
+        Bond Market
+      </div>
+      <h1 class="page-title">オーストラリア国債市場 (Australian Government Bond Market)</h1>
+      <p class="page-subtitle">Commonwealth Government Securities — AAA格付け、高利回りのG10国債、YCC実験とその崩壊</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">A$9,200億+</div>
+          <div class="stat-label">AGS残高 (2024年度)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">AAA</div>
+          <div class="stat-label">S&P / Fitch格付け</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">~22%</div>
+          <div class="stat-label">債務/GDP比率 (純債務)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">4.25%</div>
+          <div class="stat-label">10年債利回り (2024年末)</div>
+        </div>
+      </div>
+
+      <!-- Section 1: Overview -->
+      <section>
+        <h2>1. 豪州国債市場の概要</h2>
+        <p>
+          オーストラリア連邦政府証券（Australian Government Securities, AGS）は、連邦政府が発行する国債であり、オーストラリア政府財務管理局（Australian Office of Financial Management, AOFM）が発行・管理を行う。AGSはG10諸国の中で数少ないAAA格付けを維持する国債であり、アジア太平洋地域の「安全資産」としての役割を担う。
+        </p>
+        <p>
+          豪州国債市場の特徴は、<strong>相対的に高い利回り</strong>にある。オーストラリアは歴史的に他のG10諸国よりも高い政策金利を維持してきたため、国債利回りもG10の中で最高水準であることが多い。これは海外投資家にとって魅力的なキャリートレードの対象となり、AGSの海外保有比率は2012年には約76%に達した。その後低下し、2024年時点では約50%前後で推移している。
+        </p>
+        <p>
+          AGSの主要商品は以下の通り:
+        </p>
+        <ul>
+          <li><strong>Treasury Bonds（TB）</strong>: 固定利付き中長期債。2年、3年、5年、10年、12年、15年、20年、30年の満期。半年ごとのクーポン支払い</li>
+          <li><strong>Treasury Indexed Bonds（TIB）</strong>: インフレ連動債。元本がCPIに連動して調整される。1985年に導入</li>
+          <li><strong>Treasury Notes（TN）</strong>: 短期割引債。満期は通常13週、26週</li>
+        </ul>
+
+        <h3>AGS発行残高の推移</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr><th>年</th><th>AGS残高 (A$十億)</th><th>債務/GDP (%)</th><th>背景</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1990</td><td>52</td><td>12.8</td><td>Hawke/Keating時代の財政赤字</td></tr>
+            <tr><td>1996</td><td>96</td><td>18.5</td><td>Keating政権末期</td></tr>
+            <tr><td>2000</td><td>68</td><td>9.7</td><td>Howard政権の財政黒字、債務削減</td></tr>
+            <tr><td>2004</td><td>53</td><td>6.1</td><td>債務消滅の議論（市場流動性維持のため発行継続）</td></tr>
+            <tr><td>2008</td><td>55</td><td>4.9</td><td>GFC直前、最小水準</td></tr>
+            <tr class="highlight-orange"><td>2010</td><td>188</td><td>13.2</td><td>GFC刺激策で急増</td></tr>
+            <tr><td>2015</td><td>402</td><td>24.1</td><td>資源ブーム終了後の歳入減</td></tr>
+            <tr class="highlight-orange"><td>2020</td><td>684</td><td>34.5</td><td>COVID-19対応</td></tr>
+            <tr class="highlight-red"><td>2022</td><td>853</td><td>36.8</td><td>COVID後の財政正常化途上</td></tr>
+            <tr><td>2024</td><td>920+</td><td>~22 (純)</td><td>利払い増加が財政課題に</td></tr>
+          </tbody>
+        </table>
+        <cite>[1] AOFM, "Commonwealth Government Securities on Issue", aofm.gov.au, 2024</cite>
+      </section>
+
+      <!-- Section 2: Historical Development -->
+      <section>
+        <h2>2. 豪州国債市場の歴史的発展</h2>
+
+        <h3>2.1 初期の国債発行（植民地時代〜連邦成立）</h3>
+        <p>
+          オーストラリアの公的債務の歴史は植民地時代に遡る。各植民地（ニューサウスウェールズ、ビクトリアなど）は独自にロンドン市場で債券を発行し、鉄道・港湾などのインフラ整備資金を調達した。1901年の連邦成立後、連邦政府は各州の債務を引き継ぎ、統一的な国債発行を開始した。
+        </p>
+        <p>
+          1927年には<strong>オーストラリア融資評議会（Australian Loan Council）</strong>が設立され、連邦・州政府の借入を調整する仕組みが確立された。これは世界でも珍しい連邦制における財政調整メカニズムであった。
+        </p>
+
+        <h3>2.2 戦時国債と戦後の管理経済（1930s-1960s）</h3>
+        <p>
+          大恐慌期には連邦政府が<strong>プレミア計画（Premiers' Plan, 1931）</strong>を策定し、支出削減20%、金利引き下げ、為替切り下げを実施。国債市場は規制下に置かれ、金利はコモンウェルス銀行（後のRBA）が管理した。第二次世界大戦中は大量の戦時国債が発行され、国民への愛国的キャンペーン（「War Savings Certificates」）が展開された。戦後も国債市場は金利規制と「tap方式」（政府が価格を決定して継続販売）が続き、市場メカニズムが十分に機能しない時代が続いた。
+        </p>
+
+        <h3>2.3 金融自由化と近代的国債市場（1980s-1990s）</h3>
+        <p>
+          1982年の<strong>キャンベル委員会報告（Campbell Committee）</strong>を受けて、金融自由化が進展。1982年8月にTreasury Bondsのオークション方式が導入され、市場価格による価格発見メカニズムが確立した。1983年12月のAUDフロート移行と相まって、豪州国債は国際的に取引される近代的な金融商品となった。
+        </p>
+        <p>
+          1985年にはインフレ連動債（Treasury Indexed Bonds）が導入され、投資家にインフレヘッジの手段を提供。この時期、海外投資家の参入が急増し、豪州国債の国際化が進んだ。高金利が「キャリートレード」を呼び込み、日本の機関投資家を中心とした海外マネーが流入した。
+        </p>
+
+        <h3>2.4 債務消滅の危機（2000年代初頭）</h3>
+        <p>
+          Howard政権（1996-2007）下で連邦政府は大幅な財政黒字を達成し、AGS残高は急速に縮小した。2003年には財務省が「国債市場を廃止すべきか」という根本的な問いに直面した。最終的に、<strong>金融市場のベンチマーク機能維持</strong>のためにAGS発行を継続するという決定がなされた。この「債務のない国債市場」という逆説的状況は、豪州国債市場の特殊な歴史を象徴するエピソードである。
+        </p>
+        <cite>[2] Australian Treasury, "Review of the Commonwealth Government Securities Market", 2002-2003</cite>
+        <cite>[3] RBA, "The Australian Government Bond Market", Bulletin, 2010</cite>
+      </section>
+
+      <!-- Section 3: Yield Curve -->
+      <section>
+        <h2>3. イールドカーブの構造と変遷</h2>
+        <p>
+          豪州のイールドカーブは、一般的に順イールド（正常なスプレッド）を維持してきた。10年-2年スプレッドは長期的に平均100-150bps程度であるが、景気サイクルに応じて大きく変動する。
+        </p>
+
+        <h3>豪州イールドカーブの主要変動</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr><th>時期</th><th>2年利回り</th><th>10年利回り</th><th>スプレッド</th><th>カーブ形状</th><th>背景</th></tr>
+          </thead>
+          <tbody>
+            <tr class="highlight-red"><td>1990年初</td><td>14.5%</td><td>13.2%</td><td>-130bp</td><td>逆イールド</td><td>RBA引き締め、景気後退前</td></tr>
+            <tr><td>1993年</td><td>5.0%</td><td>6.8%</td><td>+180bp</td><td>急勾配化</td><td>景気回復期、大幅利下げ後</td></tr>
+            <tr><td>2000年</td><td>6.2%</td><td>6.0%</td><td>-20bp</td><td>フラット</td><td>ITバブル、債務削減</td></tr>
+            <tr><td>2008年9月</td><td>5.8%</td><td>5.5%</td><td>-30bp</td><td>フラット→逆転</td><td>GFC直前</td></tr>
+            <tr class="highlight-blue"><td>2009年3月</td><td>2.9%</td><td>4.3%</td><td>+140bp</td><td>急勾配化</td><td>GFC利下げ後</td></tr>
+            <tr><td>2015年</td><td>2.0%</td><td>2.9%</td><td>+90bp</td><td>順イールド</td><td>コモディティ下落期</td></tr>
+            <tr class="highlight-blue"><td>2020年4月</td><td>0.23%</td><td>0.89%</td><td>+66bp</td><td>フラット（低水準）</td><td>COVID + YCC</td></tr>
+            <tr class="highlight-orange"><td>2021年10月</td><td>0.12%</td><td>2.09%</td><td>+197bp</td><td>超急勾配化</td><td>YCC崩壊時</td></tr>
+            <tr class="highlight-red"><td>2023年10月</td><td>4.30%</td><td>4.95%</td><td>+65bp</td><td>順イールド</td><td>利上げサイクル終盤</td></tr>
+            <tr><td>2024年末</td><td>3.85%</td><td>4.25%</td><td>+40bp</td><td>やや平坦</td><td>利下げ期待</td></tr>
+          </tbody>
+        </table>
+        <cite>[4] RBA, Statistical Tables F2 "Capital Market Yields – Government Bonds", rba.gov.au</cite>
+      </section>
+
+      <!-- Section 4: YCC -->
+      <section>
+        <h2>4. YCC（イールドカーブ・コントロール）実験 (2020-2021)</h2>
+        <p>
+          2020年3月19日、RBAは政策金利を0.25%に引き下げると同時に、<strong>3年国債利回りを0.25%（後に0.10%）にターゲットする</strong>イールドカーブ・コントロール（YCC）を導入した。これは日本銀行に次ぐG10中銀による2例目のYCC採用であった。
+        </p>
+        <p>
+          YCCの導入当初は成功裏に機能した。RBAはApril 2024満期の3年国債を対象とし、必要に応じて無制限に購入する姿勢を示した。市場は中銀のコミットメントを信認し、実際の購入額は比較的小規模で済んだ。
+        </p>
+        <p>
+          しかし2021年に入ると、世界的なインフレ圧力の高まりと利上げ観測により、YCCの持続可能性に疑問が生じた。2021年10月下旬、ターゲット銘柄（April 2024）の利回りが急騰し、RBAはターゲット防衛のための介入を<strong>拒否</strong>。11月2日のRBA理事会でYCCの正式終了が発表された。ターゲット銘柄の利回りは0.10%から一時<strong>0.80%以上</strong>に急騰し、RBAは数十億豪ドルの評価損を被った。
+        </p>
+        <p>
+          この「YCC崩壊」は豪州債券市場の歴史における画期的なイベントであった。RBA自身が2022年に実施したレビューでは、YCCの導入は当初の状況では適切であったが、「出口戦略の設計が不十分」であり、コミュニケーションの失敗が市場の信認を損なったと総括された。この経験は、中央銀行が長期金利をコントロールすることの限界を示す貴重なケーススタディとなった。
+        </p>
+        <cite>[5] RBA, "Review of the Yield Target", 2022</cite>
+        <cite>[6] Debelle, G., "Monetary Policy During COVID", RBA Speech, 2021</cite>
+      </section>
+
+      <!-- Section 5: QE -->
+      <section>
+        <h2>5. 量的緩和（QE）プログラム</h2>
+        <p>
+          RBAはYCCと並行して、2020年11月から量的緩和プログラムを開始した。これはRBA史上初の本格的な国債購入プログラムであり、以下の段階で実施された:
+        </p>
+        <table class="data-table">
+          <thead>
+            <tr><th>プログラム</th><th>期間</th><th>購入額</th><th>対象</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>QE1</td><td>2020年11月〜2021年2月</td><td>A$1,000億</td><td>AGS + 州債（Semi-government）</td></tr>
+            <tr><td>QE2</td><td>2021年2月〜2021年9月</td><td>A$1,000億</td><td>同上</td></tr>
+            <tr><td>QE3</td><td>2021年9月〜2022年2月</td><td>A$40億/週→縮小</td><td>同上</td></tr>
+          </tbody>
+        </table>
+        <p>
+          最終的にRBAの国債保有残高は<strong>A$3,560億</strong>に達し、AGS発行残高の約36%を保有するに至った。これは国債市場の流動性に大きな影響を与え、ビッドアスクスプレッドの縮小や価格歪みを引き起こした。
+        </p>
+        <p>
+          2022年2月にQEは終了し、その後RBAは満期到来による自然減（パッシブQT）を通じてバランスシートを縮小している。能動的な売却（アクティブQT）は実施せず、市場への影響を最小化する方針がとられた。RBAレビューでは、QEプログラムが10年国債利回りを約30bps押し下げる効果があったと推計されている。
+        </p>
+        <cite>[7] RBA, "Review of the Bond Purchase Program", 2022</cite>
+      </section>
+
+      <!-- Section 6: Semi-Government Bonds -->
+      <section>
+        <h2>6. 州債市場（Semi-Government Bonds）</h2>
+        <p>
+          豪州債券市場のユニークな特徴の一つが、<strong>州債（Semi-Government Bonds）</strong>の存在である。ニューサウスウェールズ州、ビクトリア州、クイーンズランド州などの各州政府が発行する債券で、連邦政府債と合わせた市場は非常に大きい。
+        </p>
+        <p>
+          州債の残高は2024年時点でA$4,500億を超え、AGSと合わせた公的債券市場はA$1.4兆規模に達する。州債はAGSに対してスプレッド（通常20-80bps）で取引され、各州の財政状態・格付けによってスプレッドが異なる。ビクトリア州とNSW州のスプレッド差は市場の信用力評価を反映する重要なシグナルとなる。
+        </p>
+        <p>
+          RBAのQEプログラムでは州債も購入対象に含まれ、州債市場の流動性と価格発見に大きな影響を与えた。これは各州の資金調達コストに直接影響し、財政政策と金融政策の相互作用を示す事例となった。
+        </p>
+        <cite>[8] AOFM, "Annual Report 2023-24", aofm.gov.au</cite>
+      </section>
+
+      <!-- Section 7: International Comparison -->
+      <section>
+        <h2>7. 国際比較と投資家構成</h2>
+        <p>
+          豪州国債は、G10諸国の中で独特のポジションを占める。AAA格付けを維持しつつ、相対的に高い利回りを提供するため、国際的な投資家にとって魅力的な投資対象であった。
+        </p>
+
+        <h3>G10国債10年利回り比較（2024年末時点）</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr><th>国</th><th>10年利回り</th><th>格付け (S&P)</th><th>債務/GDP (%)</th><th>特徴</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>🇺🇸 米国</td><td>4.57%</td><td>AA+</td><td>123</td><td>世界最大の国債市場</td></tr>
+            <tr><td>🇩🇪 ドイツ</td><td>2.37%</td><td>AAA</td><td>64</td><td>ユーロ圏ベンチマーク</td></tr>
+            <tr><td>🇯🇵 日本</td><td>1.10%</td><td>A+</td><td>255</td><td>日銀が50%超保有</td></tr>
+            <tr><td>🇬🇧 英国</td><td>4.57%</td><td>AA</td><td>101</td><td>Gilts</td></tr>
+            <tr><td>🇨🇭 スイス</td><td>0.33%</td><td>AAA</td><td>41</td><td>避難通貨効果</td></tr>
+            <tr class="highlight-green"><td>🇦🇺 オーストラリア</td><td>4.25%</td><td>AAA</td><td>~22 (純)</td><td>高利回りAAA</td></tr>
+            <tr><td>🇳🇿 NZ</td><td>4.45%</td><td>AA+</td><td>43</td><td>豪州と連動</td></tr>
+            <tr><td>🇨🇦 カナダ</td><td>3.23%</td><td>AAA</td><td>107</td><td>米国と連動</td></tr>
+          </tbody>
+        </table>
+        <p>
+          豪州国債の特徴は「<strong>AAA格付け × 高利回り</strong>」の組み合わせにある。この稀少な特性は、ソブリンウェルスファンド、年金基金、中央銀行の外貨準備運用において重要なポートフォリオ配分先となる理由である。
+        </p>
+
+        <h3>AGS投資家構成の変遷</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr><th>投資家区分</th><th>2007年</th><th>2012年</th><th>2020年</th><th>2024年</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>海外投資家</td><td>52%</td><td>76%</td><td>55%</td><td>~50%</td></tr>
+            <tr><td>RBA（QE含む）</td><td>4%</td><td>6%</td><td>15%</td><td>~20%</td></tr>
+            <tr><td>国内銀行</td><td>18%</td><td>8%</td><td>12%</td><td>~12%</td></tr>
+            <tr><td>国内ファンド</td><td>20%</td><td>8%</td><td>14%</td><td>~15%</td></tr>
+            <tr><td>その他</td><td>6%</td><td>2%</td><td>4%</td><td>~3%</td></tr>
+          </tbody>
+        </table>
+        <cite>[9] ABS, "Australian National Accounts: Financial Accounts", 2024</cite>
+        <cite>[10] AOFM, "Investor Base Analysis", 2024</cite>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>AOFM, "Commonwealth Government Securities on Issue", aofm.gov.au, 2024</li>
+        <li>Australian Treasury, "Review of the Commonwealth Government Securities Market", 2002-2003</li>
+        <li>RBA, "The Australian Government Bond Market", Bulletin, 2010</li>
+        <li>RBA, Statistical Tables F2 "Capital Market Yields – Government Bonds", rba.gov.au</li>
+        <li>RBA, "Review of the Yield Target", 2022</li>
+        <li>Debelle, G., "Monetary Policy During COVID", RBA Speech, 2021</li>
+        <li>RBA, "Review of the Bond Purchase Program", 2022</li>
+        <li>AOFM, "Annual Report 2023-24", aofm.gov.au</li>
+        <li>ABS, "Australian National Accounts: Financial Accounts", 2024</li>
+        <li>AOFM, "Investor Base Analysis", 2024</li>
+      </ol>
+      <p class="note">※ タカ・ハト分類は市場での一般的評価に基づく。データは各機関の公式発表に基づくが、速報値は後に改定される場合がある。</p>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelectorAll('.sortable th').forEach((th, i) => {
+      th.style.cursor = 'pointer';
+      th.addEventListener('click', () => {
+        const table = th.closest('table');
+        const tbody = table.querySelector('tbody');
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+        const dir = th.dataset.dir === 'asc' ? 'desc' : 'asc';
+        th.dataset.dir = dir;
+        rows.sort((a, b) => {
+          const av = a.children[i]?.textContent.trim() ?? '';
+          const bv = b.children[i]?.textContent.trim() ?? '';
+          const an = parseFloat(av.replace(/[^0-9.\-]/g, ''));
+          const bn = parseFloat(bv.replace(/[^0-9.\-]/g, ''));
+          if (!isNaN(an) && !isNaN(bn)) return dir === 'asc' ? an - bn : bn - an;
+          return dir === 'asc' ? av.localeCompare(bv) : bv.localeCompare(av);
+        });
+        rows.forEach(r => tbody.appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>

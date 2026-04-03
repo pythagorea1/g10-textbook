@@ -127,7 +127,7 @@ g10_textbook/
 ### Phase 7: Australia (australia/)
 - [x] Task 23: Australia pages 1-5 — Central Bank (RBA)、Policy Rate、Fiscal Policy、Employment、Inflation
 - [x] Task 24: Australia pages 6-10 — Equity (ASX 200)、Early〜2020s
-- [ ] Task 25: Australia pages 11-15 — Bond、Rates、Currency (AUD)、Crises
+- [x] Task 25: Australia pages 11-15 — Bond、Rates、Currency (AUD)、Crises
 - [ ] Task 26: Australia pages 16-20 — Banking (Big 4)、Corporate (Mining)、Regulation、Trade (China依存)、Lessons
 
 ### Phase 8: New Zealand (newzealand/)
