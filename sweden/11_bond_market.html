@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweden - Bond Market | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇸🇪 Sweden</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link active">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip active">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Sweden</a>
+        <span class="sep">/</span>
+        Bond Market
+      </div>
+      <h1 class="page-title">スウェーデン国債市場 (Swedish Government Bond Market)</h1>
+      <p class="page-subtitle">Riksgälden（国債庁）管轄 — AAA/Aaa格付、国債残高約SEK 900B、G10最低水準の債務/GDP比を誇る財政優等生</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">~33%</div>
+          <div class="stat-label">政府債務/GDP比（G10最低水準）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">AAA/Aaa</div>
+          <div class="stat-label">ソブリン格付（S&amp;P/Moody's）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">SEK ~900B</div>
+          <div class="stat-label">国債残高（2024年）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">~30%</div>
+          <div class="stat-label">外国人保有比率</div>
+        </div>
+      </div>
+
+      <!-- 国債市場の概要 -->
+      <section>
+        <h2>国債市場の概要</h2>
+        <p>スウェーデン国債市場は、リクスイェルデン (Riksgälden / Swedish National Debt Office) が発行体として管理する。Riksgäldenは1789年に設立された世界最古級の国債管理機関であり、グスタフ3世 (Gustav III) のロシアとの戦費調達を契機に議会（Riksdag）直属の機関として創設された。現在は財務省の管轄下にありながらも、高い独立性を維持して国の借入・債務管理戦略を策定している。<cite>[1]</cite></p>
+
+        <p>スウェーデン国債は3つの主要カテゴリーに分類される。第一に、<strong>名目国債 (Nominella statsobligationer)</strong> は固定利付の中長期債で、2年、5年、10年を中心に発行される。残高はSEK約600Bで国債市場の中核を成す。第二に、<strong>インフレ連動債 (Realobligationer / Inflation-linked bonds)</strong> はCPIに連動する実質利回り商品で、1994年に導入された。第三に、<strong>国庫短期証券 (Statsskuldväxlar / T-bills)</strong> は1年以内の割引債で、政府の短期資金調達に用いられる。<cite>[1][2]</cite></p>
+
+        <p>スウェーデン国債市場の最大の特徴は、その相対的な小ささと高い信用力の組み合わせにある。政府債務のGDP比は約33%でG10諸国中最低水準であり、S&amp;P、Moody's、Fitchの3大格付機関すべてから最高格付を維持している。この財政健全性は1990年代の深刻な銀行危機後の徹底した財政再建の成果であり、余剰目標（サープラス・ターゲット）、支出上限（エクスペンディチャー・シーリング）、地方財政均衡規則の「財政三本柱」によって制度的に担保されている。<cite>[2][3]</cite></p>
+
+        <p>市場規模の小ささは流動性の制約を意味する。ベンチマーク国債の発行額は通常SEK 40-80B程度であり、米国財務省証券やドイツ国債 (Bund) と比較すると桁違いに小さい。このため、スウェーデン国債はリスクフリーレートとしての役割を果たしつつも、カバードボンド市場がスウェーデン債券市場の主役として機能するという独特の構造が生まれている。<cite>[4]</cite></p>
+      </section>
+
+      <!-- 国債市場の歴史年表 -->
+      <section>
+        <h2>国債市場の歴史年表</h2>
+        <p>スウェーデン国債の歴史は18世紀末に遡る。以下の年表は、約230年にわたる国債市場の進化を主要イベントとともに示す。1990年代の財政危機と、その後の劇的な再建過程は、ソブリン債務管理のケーススタディとして世界的に参照される。<cite>[1][5]</cite></p>
+
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>主要イベント</th>
+              <th>債務/GDP</th>
+              <th>10Y利回り</th>
+              <th>カテゴリー</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1789</td>
+              <td>Riksgälden設立 — グスタフ3世のロシア戦争の戦費調達のため議会直属機関として創設</td>
+              <td>—</td>
+              <td>—</td>
+              <td>制度</td>
+            </tr>
+            <tr>
+              <td>1834</td>
+              <td>最初の近代的国債発行 — ロンドン市場でポンド建てスウェーデン国債を発行</td>
+              <td>—</td>
+              <td>~4.5%</td>
+              <td>制度</td>
+            </tr>
+            <tr>
+              <td>1914</td>
+              <td>第一次世界大戦 — 中立国として戦費国債は限定的、金本位制停止</td>
+              <td>~20%</td>
+              <td>~5.0%</td>
+              <td>制度</td>
+            </tr>
+            <tr>
+              <td>1939-45</td>
+              <td>第二次世界大戦 — 武装中立維持、国防費拡大で国債発行増加</td>
+              <td>~50%</td>
+              <td>~3.5%</td>
+              <td>制度</td>
+            </tr>
+            <tr>
+              <td>1950-70s</td>
+              <td>スウェーデンモデル全盛期 — 高税収により国債発行は抑制的、規制金利下で低利回り</td>
+              <td>~25%</td>
+              <td>~6-8%</td>
+              <td>制度</td>
+            </tr>
+            <tr>
+              <td>1980</td>
+              <td>高インフレ期 — 名目利回り上昇、実質利回りはマイナス圏</td>
+              <td>~40%</td>
+              <td>~13%</td>
+              <td style="color: var(--negative-color);">利回り上昇</td>
+            </tr>
+            <tr>
+              <td>1985</td>
+              <td>11月革命 (November Revolution) — 金融自由化、金利規制撤廃により市場金利形成へ移行</td>
+              <td>~45%</td>
+              <td>~12.5%</td>
+              <td>制度</td>
+            </tr>
+            <tr class="crisis-row" style="background-color: rgba(255, 165, 0, 0.1);">
+              <td>1992</td>
+              <td>銀行危機・通貨危機 — 固定相場制崩壊、Riksbank 500%金利防衛、財政赤字急拡大</td>
+              <td>~55%</td>
+              <td>~10.5%</td>
+              <td style="color: orange;">危機</td>
+            </tr>
+            <tr class="crisis-row" style="background-color: rgba(255, 165, 0, 0.1);">
+              <td>1993</td>
+              <td>財政赤字GDP比11.4% — 戦後最悪の赤字、債務/GDP急上昇開始</td>
+              <td>~65%</td>
+              <td>~9.5%</td>
+              <td style="color: orange;">危機</td>
+            </tr>
+            <tr>
+              <td>1994</td>
+              <td>インフレ連動債 (Realobligationer) 導入 — 世界的潮流に合わせ実質利回り商品を提供</td>
+              <td>~72%</td>
+              <td>~9.8%</td>
+              <td>制度</td>
+            </tr>
+            <tr class="crisis-row" style="background-color: rgba(255, 165, 0, 0.1);">
+              <td>1996</td>
+              <td>債務/GDP比ピーク約80% — 危機後の累積赤字が頂点に達する</td>
+              <td class="negative">~80%</td>
+              <td>~8.0%</td>
+              <td style="color: orange;">危機</td>
+            </tr>
+            <tr>
+              <td>1997</td>
+              <td>財政再建本格化 — 余剰目標 (surplus target) 導入、支出上限フレームワーク確立</td>
+              <td>~75%</td>
+              <td>~6.5%</td>
+              <td style="color: var(--positive-color);">財政再建</td>
+            </tr>
+            <tr>
+              <td>2000</td>
+              <td>財政黒字達成 — IT好況と財政規律により財政収支が黒字に転換</td>
+              <td>~60%</td>
+              <td>~5.3%</td>
+              <td style="color: var(--positive-color);">財政再建</td>
+            </tr>
+            <tr>
+              <td>2003</td>
+              <td>ユーロ否決国民投票 — EU加盟もユーロ不採用、独自の金融政策・国債市場を維持</td>
+              <td>~52%</td>
+              <td>~4.6%</td>
+              <td>制度</td>
+            </tr>
+            <tr>
+              <td>2007</td>
+              <td>債務/GDP比40%割れ — 財政再建の成果が明確に、AAA格付の安定化</td>
+              <td>~38%</td>
+              <td>~4.2%</td>
+              <td style="color: var(--positive-color);">財政再建</td>
+            </tr>
+            <tr class="crisis-row" style="background-color: rgba(255, 165, 0, 0.1);">
+              <td>2008-09</td>
+              <td>GFC — バルト危機波及でスウェーデン銀行にストレス、Riksgälden銀行支援プログラム</td>
+              <td>~42%</td>
+              <td>~3.3%</td>
+              <td style="color: orange;">危機</td>
+            </tr>
+            <tr>
+              <td>2012</td>
+              <td>欧州債務危機中の安全資産 — ドイツと並ぶ「Safe Haven」として外国人需要増加</td>
+              <td>~38%</td>
+              <td>~1.5%</td>
+              <td style="color: var(--accent-color);">利回り低下</td>
+            </tr>
+            <tr>
+              <td>2015</td>
+              <td style="color: var(--accent-color);">Riksbank量的緩和開始 — マイナス金利下で国債買入、SEK 40B+の国債購入</td>
+              <td>~44%</td>
+              <td>~0.7%</td>
+              <td style="color: var(--accent-color);">利回り低下</td>
+            </tr>
+            <tr>
+              <td>2017</td>
+              <td>10年国債利回りマイナス圏到達 — Riksbank QE累積額SEK 280B超、市場機能への懸念</td>
+              <td>~41%</td>
+              <td>~0.5%</td>
+              <td style="color: var(--accent-color);">利回り低下</td>
+            </tr>
+            <tr>
+              <td>2019</td>
+              <td>Riksbank世界初のマイナス金利脱出 — レポレート0%復帰、国債買入ペース減速</td>
+              <td>~35%</td>
+              <td>~0.1%</td>
+              <td>制度</td>
+            </tr>
+            <tr class="crisis-row" style="background-color: rgba(255, 165, 0, 0.1);">
+              <td>2020</td>
+              <td>COVID-19パンデミック — Riksgälden借入急増SEK 150B+、Riksbank緊急QE再開</td>
+              <td>~40%</td>
+              <td>~0.0%</td>
+              <td style="color: orange;">危機</td>
+            </tr>
+            <tr>
+              <td>2022</td>
+              <td style="color: var(--negative-color);">インフレ急騰・QT開始 — Riksbank保有国債の売却開始、利回り急上昇+200bp</td>
+              <td>~33%</td>
+              <td>~2.0%</td>
+              <td style="color: var(--negative-color);">利回り上昇</td>
+            </tr>
+            <tr>
+              <td>2023</td>
+              <td>SBB危機波及 — 不動産企業信用不安でクレジットスプレッド拡大、国債は安全資産として需要</td>
+              <td>~31%</td>
+              <td>~2.7%</td>
+              <td style="color: var(--negative-color);">利回り上昇</td>
+            </tr>
+            <tr>
+              <td>2024</td>
+              <td>Riksbank利下げ開始 — レポレート4.00%→2.50%、国債利回り低下基調</td>
+              <td>~33%</td>
+              <td>~2.3%</td>
+              <td style="color: var(--accent-color);">利回り低下</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 利回りの歴史的推移 -->
+      <section>
+        <h2>利回りの歴史的推移</h2>
+        <p>スウェーデン国債10年物の利回りは、1980年代の二桁台から2010年代後半のマイナス圏まで、40年間で劇的な低下トレンドを辿った。この推移はグローバルなディスインフレと金利低下トレンドに沿うものだが、1990年代の財政危機による一時的なスプレッド拡大や、2015-2019年のRiksbank QEによるマイナス金利という特異な局面が含まれる。2022年以降はグローバルなインフレ正常化に伴い、利回りは2%台に回帰している。<cite>[2][6]</cite></p>
+
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>10Y利回り</th>
+              <th>独Bund比スプレッド</th>
+              <th>レポレート</th>
+              <th>備考</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1980</td>
+              <td class="negative">~13.0%</td>
+              <td>+450bp</td>
+              <td>—</td>
+              <td>高インフレ期、規制金利時代末期</td>
+            </tr>
+            <tr>
+              <td>1985</td>
+              <td class="negative">~12.5%</td>
+              <td>+550bp</td>
+              <td>—</td>
+              <td>11月革命（金融自由化）</td>
+            </tr>
+            <tr>
+              <td>1990</td>
+              <td class="negative">~13.5%</td>
+              <td>+500bp</td>
+              <td>—</td>
+              <td>不動産バブル崩壊前夜</td>
+            </tr>
+            <tr>
+              <td>1992</td>
+              <td class="negative">~10.5%</td>
+              <td>+350bp</td>
+              <td>500%*</td>
+              <td>通貨危機、短期金利500%の異常事態</td>
+            </tr>
+            <tr>
+              <td>1995</td>
+              <td>~10.2%</td>
+              <td>+350bp</td>
+              <td>8.91%</td>
+              <td>財政危機継続、高リスクプレミアム</td>
+            </tr>
+            <tr>
+              <td>1998</td>
+              <td>~5.0%</td>
+              <td>+80bp</td>
+              <td>3.85%</td>
+              <td>財政再建進展、EU収斂</td>
+            </tr>
+            <tr>
+              <td>2000</td>
+              <td>~5.3%</td>
+              <td>+20bp</td>
+              <td>3.75%</td>
+              <td>財政黒字達成、スプレッド縮小</td>
+            </tr>
+            <tr>
+              <td>2003</td>
+              <td>~4.6%</td>
+              <td>+40bp</td>
+              <td>2.75%</td>
+              <td>ユーロ否決、IT不況後の回復</td>
+            </tr>
+            <tr>
+              <td>2007</td>
+              <td>~4.2%</td>
+              <td>-5bp</td>
+              <td>3.50%</td>
+              <td>Bundとのスプレッド消滅、AAA安定</td>
+            </tr>
+            <tr>
+              <td>2009</td>
+              <td>~3.3%</td>
+              <td>+20bp</td>
+              <td>0.25%</td>
+              <td>GFC、バルト危機でスプレッド微拡大</td>
+            </tr>
+            <tr>
+              <td>2012</td>
+              <td>~1.5%</td>
+              <td>+10bp</td>
+              <td>1.00%</td>
+              <td>欧州債務危機、Safe Haven需要</td>
+            </tr>
+            <tr>
+              <td>2015</td>
+              <td>~0.7%</td>
+              <td>+10bp</td>
+              <td>-0.35%</td>
+              <td>Riksbank QE開始、マイナス金利導入</td>
+            </tr>
+            <tr>
+              <td>2017</td>
+              <td>~0.5%</td>
+              <td>+10bp</td>
+              <td>-0.50%</td>
+              <td>QE累積SEK 280B+、利回り過去最低圏</td>
+            </tr>
+            <tr>
+              <td>2019</td>
+              <td>~0.1%</td>
+              <td>+35bp</td>
+              <td>0.00%</td>
+              <td>マイナス金利脱出、ゼロ近辺で推移</td>
+            </tr>
+            <tr>
+              <td>2020</td>
+              <td>~0.0%</td>
+              <td>+55bp</td>
+              <td>0.00%</td>
+              <td>COVID QE、一時マイナス圏入り</td>
+            </tr>
+            <tr>
+              <td>2022</td>
+              <td class="negative">~2.0%</td>
+              <td>+55bp</td>
+              <td>2.50%</td>
+              <td>インフレ急騰、QT開始、債券暴落</td>
+            </tr>
+            <tr>
+              <td>2023</td>
+              <td class="negative">~2.7%</td>
+              <td>+30bp</td>
+              <td>4.00%</td>
+              <td>SBB危機、金利ピーク圏</td>
+            </tr>
+            <tr>
+              <td>2024</td>
+              <td>~2.3%</td>
+              <td>+15bp</td>
+              <td>2.50%</td>
+              <td>Riksbank利下げサイクル開始</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="note">* 1992年の500%金利は限界貸出金利（marginal lending rate）による一時的な通貨防衛措置。レポレート制度は1994年に正式導入。</p>
+      </section>
+
+      <!-- インフレ連動債 -->
+      <section>
+        <h2>インフレ連動債 (Realobligationer)</h2>
+        <p>スウェーデンは1994年にインフレ連動債（Realobligationer）を導入した。これは英国のIndex-Linked Gilts（1981年導入）やカナダのReal Return Bonds（1991年導入）に続くもので、スウェーデンCPI（消費者物価指数）に連動して元本が調整される仕組みである。導入の背景には、1990年代初頭の高インフレ経験からインフレ期待の安定化を図るRiksbankenの政策意図と、年金基金や保険会社の実質利回り確保ニーズがあった。<cite>[1][7]</cite></p>
+
+        <p>発行当初の実質利回りは約4%であったが、グローバルなディスインフレと金利低下の中で徐々に低下し、2015年のRiksbank QE期にはマイナス圏にまで沈んだ。ピーク時の残高はSEK約200Bに達したが、Riksgäldenは2020年代に入り新規発行を段階的に縮小しており、名目国債への回帰を進めている。この決定は、インフレ連動債の流動性の低さと発行コストの高さを理由とするものだが、2022年のインフレ急騰時にはインフレ連動債保有者が大きなリターンを享受し、発行縮小の判断について議論が再燃した。<cite>[1][7]</cite></p>
+
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>実質利回り（10Y）</th>
+              <th>残高（SEK B）</th>
+              <th>BEIスプレッド</th>
+              <th>備考</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1994</td>
+              <td>~4.0%</td>
+              <td>~20</td>
+              <td>—</td>
+              <td>初回発行</td>
+            </tr>
+            <tr>
+              <td>2000</td>
+              <td>~3.5%</td>
+              <td>~100</td>
+              <td>~1.8%</td>
+              <td>市場拡大期</td>
+            </tr>
+            <tr>
+              <td>2005</td>
+              <td>~1.8%</td>
+              <td>~170</td>
+              <td>~1.9%</td>
+              <td>年金基金需要増</td>
+            </tr>
+            <tr>
+              <td>2010</td>
+              <td>~1.0%</td>
+              <td>~200</td>
+              <td>~1.6%</td>
+              <td>残高ピーク圏</td>
+            </tr>
+            <tr>
+              <td>2015</td>
+              <td>~-0.5%</td>
+              <td>~200</td>
+              <td>~1.3%</td>
+              <td>QE下でマイナス実質利回り</td>
+            </tr>
+            <tr>
+              <td>2020</td>
+              <td>~-0.8%</td>
+              <td>~180</td>
+              <td>~1.2%</td>
+              <td>新規発行縮小開始</td>
+            </tr>
+            <tr>
+              <td>2022</td>
+              <td>~0.5%</td>
+              <td>~150</td>
+              <td>~2.5%</td>
+              <td>インフレ急騰でBEI拡大</td>
+            </tr>
+            <tr>
+              <td>2024</td>
+              <td>~0.8%</td>
+              <td>~130</td>
+              <td>~1.8%</td>
+              <td>段階的縮小継続</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- カバードボンド市場 -->
+      <section>
+        <h2>カバードボンド市場 (Säkerställda obligationer)</h2>
+        <p>スウェーデンの債券市場を理解する上で最も重要なセグメントは、国債ではなくカバードボンド（Säkerställda obligationer / Covered Bonds）である。スウェーデンのカバードボンド市場はGDP比で欧州最大級であり、残高はSEK約3兆（約USD 2,800億）に達する。これは国債残高の約3倍に相当し、スウェーデンの債券市場の主役はカバードボンドと言っても過言ではない。<cite>[4][8]</cite></p>
+
+        <p>カバードボンドの拡大は、スウェーデンの住宅市場構造と密接に関連している。スウェーデンでは住宅ローンの約70%が変動金利であり、カバードボンドの主要な裏付資産は住宅ローン債権である。2004年に施行されたカバードボンド法（Lag om utgivning av säkerställda obligationer）により法的枠組みが整備され、それ以前の住宅金融債（bostadsobligationer）から現行のカバードボンド制度に移行した。<cite>[8]</cite></p>
+
+        <p>主要発行体は以下の通りである。スタッズヒポテック (Stadshypotek / Handelsbanken系列) が最大の発行体であり、SEB系列のSEB Bostad、Nordea Hypotek (Nordea系列)、Swedbank Hypotek (Swedbank系列)、そして政府系のSBAB (Statens Bostadsfinansieringsaktiebolag) が続く。これらの発行体はスウェーデンの4大銀行グループに属しており、カバードボンド市場はスウェーデンの銀行システムの資金調達の中核を担っている。<cite>[4][8]</cite></p>
+
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>発行体</th>
+              <th>親銀行</th>
+              <th>残高（SEK B, 概算）</th>
+              <th>市場シェア</th>
+              <th>備考</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Stadshypotek</td>
+              <td>Handelsbanken</td>
+              <td>~900</td>
+              <td>~30%</td>
+              <td>最大の発行体、最高信用格付</td>
+            </tr>
+            <tr>
+              <td>Swedbank Hypotek</td>
+              <td>Swedbank</td>
+              <td>~750</td>
+              <td>~25%</td>
+              <td>旧住宅金融公庫系</td>
+            </tr>
+            <tr>
+              <td>Nordea Hypotek</td>
+              <td>Nordea</td>
+              <td>~550</td>
+              <td>~18%</td>
+              <td>北欧最大銀行グループ系列</td>
+            </tr>
+            <tr>
+              <td>SEB Bostad</td>
+              <td>SEB</td>
+              <td>~450</td>
+              <td>~15%</td>
+              <td>ヴァレンベリ家系列</td>
+            </tr>
+            <tr>
+              <td>SBAB</td>
+              <td>政府系 (100%国有)</td>
+              <td>~300</td>
+              <td>~10%</td>
+              <td>政府系住宅金融機関</td>
+            </tr>
+            <tr>
+              <td>その他</td>
+              <td>—</td>
+              <td>~50</td>
+              <td>~2%</td>
+              <td>Länsförsäkringar等</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>2022-2023年のSBB（Samhällsbyggnadsbolaget）危機は、カバードボンド市場にも波及した。SBBは商業不動産企業であったが、その信用不安がスウェーデンの不動産関連債券市場全体に影響を与え、カバードボンドのスプレッドも一時的に拡大した。しかし、カバードボンドの高い担保品質と法的保護により、スプレッドの拡大は限定的であり、市場の耐性が確認された。<cite>[4][9]</cite></p>
+      </section>
+
+      <!-- 外国人保有と市場構造 -->
+      <section>
+        <h2>外国人保有と市場構造</h2>
+        <p>スウェーデン国債の外国人保有比率は約30%で推移しており、ピーク時の2012年（欧州債務危機中）には約40%に達した。外国人投資家にとってのスウェーデン国債の魅力は、AAA格付、低い債務/GDP比、そしてSEKによる分散効果にある。しかし、市場規模の小ささから流動性に制約があり、大口取引時にはスプレッドが拡大しやすいという課題も指摘されている。<cite>[2][10]</cite></p>
+
+        <p>プライマリーディーラー制度は、Riksgäldenが指定する<strong>リクスイェルデン・ディーラー (Riksgäldsombud)</strong> が担う。2024年時点で7社が指定されており、ABN AMRO、Barclays、Danske Bank、Nordea、SEB、Swedbank、Handelsbankenがこの役割を果たしている。プライマリーディーラーは国債入札への参加義務と流通市場でのマーケットメイク義務を負い、見返りとしてRiksgäldenとの定期的な対話や特別なリバースレポ取引へのアクセスを得る。<cite>[1]</cite></p>
+
+        <p>ベンチマーク国債は通常、2年、5年、10年の3つの主要年限で発行される。Riksgäldenは各ベンチマーク債の残高をSEK 40-80B程度に維持するよう発行戦略を策定しており、流動性確保のためにベンチマーク銘柄数を絞る方針を採っている。これはドイツ（残高EUR 15-25B/銘柄）や米国（残高USD数十B/銘柄）と比較すると小規模であるが、スウェーデンの借入ニーズに対しては適切な規模とされている。<cite>[1][2]</cite></p>
+
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>投資家カテゴリー</th>
+              <th>国債保有シェア</th>
+              <th>特徴</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>外国人投資家</td>
+              <td>~30%</td>
+              <td>中央銀行、ソブリンウェルスファンド、年金基金等</td>
+            </tr>
+            <tr>
+              <td>Riksbank（中央銀行）</td>
+              <td>~25%</td>
+              <td>QE買入分（段階的にQTで縮小中）</td>
+            </tr>
+            <tr>
+              <td>AP基金（国民年金基金）</td>
+              <td>~15%</td>
+              <td>AP1-AP4、法定配分に基づく保有</td>
+            </tr>
+            <tr>
+              <td>保険会社</td>
+              <td>~15%</td>
+              <td>ALM（資産負債管理）目的</td>
+            </tr>
+            <tr>
+              <td>銀行・証券会社</td>
+              <td>~10%</td>
+              <td>流動性バッファー（LCR規制）目的</td>
+            </tr>
+            <tr>
+              <td>その他（個人・投信等）</td>
+              <td>~5%</td>
+              <td>直接保有は限定的</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Riksbank QEと国債市場 -->
+      <section>
+        <h2>Riksbank QEと国債市場への影響</h2>
+        <p>Riksbankは2015年2月にマイナス金利政策を導入すると同時に、国債の量的緩和（QE）プログラムを開始した。当初はSEK 10Bの国債購入からスタートしたが、その後段階的に拡大され、2017年末までにQE累積額はSEK 280B超に達した。これはスウェーデン名目国債残高の約40%に相当し、G10中央銀行のQE比率としてはBOJ（日本銀行）に次ぐ高水準であった。<cite>[6][11]</cite></p>
+
+        <p>RiksbanのQEは10年国債利回りを約100bp押し下げたと推計されており、利回りはゼロ近辺にまで低下した。2019年のマイナス金利脱出後もQE残高は維持されたが、2022年4月にRiksbankは量的引き締め（QT）を開始し、保有国債の段階的売却を進めている。2024年時点でRiksbankの国債保有額はピーク時から大幅に縮小しており、市場機能の正常化が進行中である。<cite>[6][11]</cite></p>
+
+        <p>QE期間中のスウェーデン国債市場では、いくつかの副作用が顕在化した。第一に、中央銀行の大量保有により市場に出回る国債の量が減少し、レポ市場でのスペシャルネス（特定銘柄の品薄）が頻発した。第二に、ビッド・アスク・スプレッドが拡大し、市場流動性が低下した。第三に、Riksbankが最大の保有者となることで、価格発見機能（プライス・ディスカバリー）が損なわれたとの批判が上がった。これらの問題はRiksbank自身も認識しており、QT開始の判断材料の一つとなった。<cite>[6]</cite></p>
+      </section>
+
+      <!-- G10比較 -->
+      <section>
+        <h2>G10諸国との比較</h2>
+        <p>スウェーデン国債市場をG10諸国と比較すると、その最大の特徴は圧倒的な財政健全性である。債務/GDP比約33%はG10最低水準であり、これは1990年代の深刻な財政危機からの復活の証である。一方で、市場規模の小ささは流動性の制約要因となっており、グローバルな債券インデックスにおけるウェイトも限定的である。AAA格付はドイツ、オーストラリア、スイスと並ぶ最高水準であり、スウェーデン国債の「安全資産」としての地位を裏付けている。<cite>[2][3][12]</cite></p>
+
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>国</th>
+              <th>通貨</th>
+              <th>格付（S&amp;P）</th>
+              <th>債務/GDP</th>
+              <th>10Y利回り</th>
+              <th>外国人保有</th>
+              <th>特徴</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>米国</td>
+              <td>USD</td>
+              <td>AA+</td>
+              <td>~123%</td>
+              <td>~4.2%</td>
+              <td>~30%</td>
+              <td>世界最大の国債市場、基軸通貨</td>
+            </tr>
+            <tr>
+              <td>ドイツ</td>
+              <td>EUR</td>
+              <td>AAA</td>
+              <td>~64%</td>
+              <td>~2.4%</td>
+              <td>~50%</td>
+              <td>欧州のベンチマーク、Bund</td>
+            </tr>
+            <tr>
+              <td>日本</td>
+              <td>JPY</td>
+              <td>A+</td>
+              <td>~255%</td>
+              <td>~1.0%</td>
+              <td>~14%</td>
+              <td>世界最大の債務/GDP、BOJ YCC</td>
+            </tr>
+            <tr>
+              <td>英国</td>
+              <td>GBP</td>
+              <td>AA</td>
+              <td>~100%</td>
+              <td>~4.1%</td>
+              <td>~28%</td>
+              <td>Gilts、Index-Linked先駆者</td>
+            </tr>
+            <tr>
+              <td>カナダ</td>
+              <td>CAD</td>
+              <td>AAA</td>
+              <td>~42%</td>
+              <td>~3.3%</td>
+              <td>~25%</td>
+              <td>州債市場が世界最大のサブソブリン</td>
+            </tr>
+            <tr>
+              <td>オーストラリア</td>
+              <td>AUD</td>
+              <td>AAA</td>
+              <td>~35%</td>
+              <td>~4.0%</td>
+              <td>~45%</td>
+              <td>高利回りAAA、外国人需要旺盛</td>
+            </tr>
+            <tr>
+              <td>スイス</td>
+              <td>CHF</td>
+              <td>AAA</td>
+              <td>~38%</td>
+              <td>~0.7%</td>
+              <td>~20%</td>
+              <td>低利回り安全資産、小規模市場</td>
+            </tr>
+            <tr style="background-color: rgba(0, 212, 170, 0.1);">
+              <td><strong>スウェーデン</strong></td>
+              <td><strong>SEK</strong></td>
+              <td><strong>AAA</strong></td>
+              <td class="positive"><strong>~33%</strong></td>
+              <td><strong>~2.3%</strong></td>
+              <td><strong>~30%</strong></td>
+              <td><strong>G10最低債務/GDP、カバードボンド主導</strong></td>
+            </tr>
+            <tr>
+              <td>ノルウェー</td>
+              <td>NOK</td>
+              <td>AAA</td>
+              <td>~40%</td>
+              <td>~3.5%</td>
+              <td>~35%</td>
+              <td>NBIM（政府年金基金）、石油収入</td>
+            </tr>
+            <tr>
+              <td>ニュージーランド</td>
+              <td>NZD</td>
+              <td>AA+</td>
+              <td>~45%</td>
+              <td>~4.5%</td>
+              <td>~55%</td>
+              <td>高利回り小国、外国人依存度高</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>Riksgälden (Swedish National Debt Office), "Central Government Borrowing: Forecast and Analysis," 2024, riksgalden.se</li>
+        <li>Riksgälden, "Swedish Government Debt: Annual Report 2024," riksgalden.se</li>
+        <li>IMF, "Sweden: Article IV Consultation Staff Report," 2024, imf.org</li>
+        <li>Riksbank, "Financial Stability Report," 2024, riksbank.se</li>
+        <li>Wetterberg, Gunnar, "Riksgälden 1789-2009: Att finansiera den svenska staten," Riksgälden/Atlantis, 2009</li>
+        <li>Riksbank, "Monetary Policy Report," 2024, riksbank.se — QE/QT累積額およびイールドインパクト推計</li>
+        <li>Riksgälden, "Inflation-linked Bonds: Market and Strategy," 2023, riksgalden.se</li>
+        <li>ECBC (European Covered Bond Council), "European Covered Bond Fact Book 2024," ecbc.eu</li>
+        <li>Finansinspektionen (FI), "Stability in the Financial System," 2024, fi.se — SBB危機の市場波及分析</li>
+        <li>SCB (Statistics Sweden), "Financial Accounts: Government Debt Holdings," 2024, scb.se</li>
+        <li>Andersson, Fredrik & Jonung, Lars, "The Swedish Experience with Negative Interest Rates," Lund University Working Paper, 2020</li>
+        <li>BIS, "BIS Quarterly Review: Government Bond Markets," 2024, bis.org</li>
+      </ol>
+      <p class="note">注: 利回りデータはBloomberg/Refinitiv端末ベースの年末値（一部は年中概算値）。債務/GDP比はIMF基準の一般政府ベース。外国人保有比率はSCB Financial Accounts統計に基づく。カバードボンド残高は各発行体の年次報告書およびECBCデータに基づく概算値。</p>
+
+      <div style="margin-top: 2rem; display: flex; justify-content: space-between;">
+        <a href="10_equity_current.html" style="color: var(--accent-color);">← 10. Equity: 2020s</a>
+        <a href="12_short_rates.html" style="color: var(--accent-color);">12. Short-term Rates →</a>
+      </div>
+    </footer>
+
+  </main>
+
+  <script>
+    document.querySelectorAll('.data-table.sortable th').forEach((th, i) => {
+      th.style.cursor = 'pointer';
+      th.addEventListener('click', () => {
+        const table = th.closest('table');
+        const tbody = table.querySelector('tbody');
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+        const dir = th.dataset.sort === 'asc' ? 'desc' : 'asc';
+        th.dataset.sort = dir;
+        rows.sort((a, b) => {
+          const av = a.children[i]?.textContent.trim() ?? '';
+          const bv = b.children[i]?.textContent.trim() ?? '';
+          const an = parseFloat(av.replace(/[^0-9.\-]/g, ''));
+          const bn = parseFloat(bv.replace(/[^0-9.\-]/g, ''));
+          if (!isNaN(an) && !isNaN(bn)) return dir === 'asc' ? an - bn : bn - an;
+          return dir === 'asc' ? av.localeCompare(bv) : bv.localeCompare(av);
+        });
+        rows.forEach(r => tbody.appendChild(r));
+      });
+    });
+  </script>
+
+</body>
+</html>

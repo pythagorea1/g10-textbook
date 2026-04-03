@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweden - Currency | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇸🇪 Sweden</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link active">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip active">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Sweden</a>
+        <span class="sep">/</span>
+        Currency
+      </div>
+      <h1 class="page-title">スウェーデン・クローナ（SEK）の歴史</h1>
+      <p class="page-subtitle">スカンジナビア通貨同盟からフロート制へ — ユーロ否決とクローナ安の長期トレンド</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">~11.40</div>
+          <div class="stat-label">EUR/SEK (2024年末)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">~10.50</div>
+          <div class="stat-label">USD/SEK (2024年末)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">KIX ~120</div>
+          <div class="stat-label">貿易加重為替レート指数</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">56%</div>
+          <div class="stat-label">ユーロ否決 (2003年国民投票)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">1873</div>
+          <div class="stat-label">スカンジナビア通貨同盟</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">1992/11/19</div>
+          <div class="stat-label">変動相場制移行日</div>
+        </div>
+      </div>
+
+      <!-- Section 1: History of SEK -->
+      <section class="content-section">
+        <h2>クローナの歴史</h2>
+        <p>
+          スウェーデン・クローナ (Swedish Krona, SEK) の歴史は、1873年のスカンジナビア通貨同盟 (Scandinavian Monetary Union) に遡る。スウェーデン、デンマーク、ノルウェーの3カ国は金本位制に基づく共通の通貨単位「クローナ (Crown)」を採用し、1クローナ = 金1/2480kgの金平価を設定した。この通貨同盟により、3カ国の通貨は等価で相互流通し、北欧圏における経済統合の基盤が形成された<cite>[1]</cite>。
+        </p>
+        <p>
+          しかし第一次世界大戦の勃発（1914年）により、各国は金本位制を停止。戦時中のインフレと経済格差の拡大により通貨同盟は事実上機能不全に陥り、1924年に正式に解散した。スウェーデンは1924年に独自の金本位制に復帰したが、大恐慌の影響を受けて1931年9月に離脱。注目すべきは、スウェーデンが1931年に世界初の「物価水準ターゲティング (Price Level Targeting)」を採用したことであり、これは現代の中央銀行政策の先駆けとなった<cite>[2]</cite>。
+        </p>
+        <p>
+          第二次世界大戦後のブレトンウッズ体制（1944-1971年）の下で、スウェーデン・クローナは米ドルに対して固定され（1ドル = 5.17クローナ）、為替安定の時代を享受した。1971年のニクソン・ショック後はスミソニアン合意を経て、1973年からは欧州通貨バスケット（スネーク）に参加。1977年以降は貿易加重バスケットに対するペッグに移行し、リクスバンク (Riksbank) が為替レートの安定を金融政策の中間目標として運営した<cite>[3]</cite>。
+        </p>
+        <p>
+          転換点は1991年5月に訪れた。スウェーデンはEU加盟を視野に入れ、クローナを欧州通貨単位 (ECU) に一方的にペッグした（1ECU = 7.40クローナ、変動幅+/-1.5%）。しかし1992年秋の欧州通貨危機 (ERM Crisis) の中で、リクスバンクは500%という異常な金利でペッグを防衛しようとしたが失敗。1992年11月19日、ペッグは放棄され、クローナは自由変動相場制に移行した。この日はスウェーデン金融史における最も劇的な転換点の一つとして記憶されている<cite>[4]</cite>。
+        </p>
+        <p>
+          変動相場制移行直後、クローナは対ECUで約25%下落した。しかしこの減価は輸出競争力の回復に寄与し、1990年代半ばの経済回復を支えた。1993年にリクスバンクはインフレターゲティング（目標2%）を採用し、為替レートから物価安定へと政策アンカーを転換した。以後、クローナは管理されたフロート (Managed Float) の下で推移し、リクスバンクは通常、為替介入を行わない方針を維持している<cite>[5]</cite>。
+        </p>
+      </section>
+
+      <!-- Section 2: Exchange Rate Regime Timeline -->
+      <section class="content-section">
+        <h2>為替制度の変遷年表</h2>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th data-sort>年</th>
+              <th>為替制度</th>
+              <th>詳細</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1873</td>
+              <td>スカンジナビア通貨同盟</td>
+              <td>スウェーデン・デンマーク・ノルウェー3カ国、金本位制に基づく通貨同盟。1クローナ = 金1/2480kg</td>
+            </tr>
+            <tr>
+              <td>1914</td>
+              <td style="color:#ffa502;">金本位制停止</td>
+              <td>第一次世界大戦勃発。金の兌換・輸出を停止</td>
+            </tr>
+            <tr>
+              <td>1924</td>
+              <td>金本位制復帰 / 通貨同盟解散</td>
+              <td>スカンジナビア通貨同盟正式解散。スウェーデン独自の金本位制へ</td>
+            </tr>
+            <tr>
+              <td>1931</td>
+              <td style="color:#ffa502;">金本位制離脱</td>
+              <td>大恐慌。9月に英国に続き離脱。物価水準ターゲティング採用（世界初）</td>
+            </tr>
+            <tr>
+              <td>1933</td>
+              <td>英ポンド・ペッグ</td>
+              <td>SEKを英ポンドに連動。対GBPレート安定化</td>
+            </tr>
+            <tr>
+              <td>1939-45</td>
+              <td>戦時為替管理</td>
+              <td>第二次世界大戦。資本規制・為替統制強化</td>
+            </tr>
+            <tr>
+              <td>1944</td>
+              <td>ブレトンウッズ体制</td>
+              <td>USD/SEK = 5.17に固定。IMF・世銀加盟</td>
+            </tr>
+            <tr>
+              <td>1969</td>
+              <td>切り下げ</td>
+              <td>USD/SEK = 5.17のまま維持（フランス・フラン切り下げ時も不変）</td>
+            </tr>
+            <tr>
+              <td>1971</td>
+              <td style="color:#ffa502;">ニクソン・ショック</td>
+              <td>ブレトンウッズ崩壊。スミソニアン合意を経て過渡期へ</td>
+            </tr>
+            <tr>
+              <td>1973</td>
+              <td>欧州スネーク参加</td>
+              <td>欧州共同フロート（スネーク）に参加。DM中心の変動幅制限</td>
+            </tr>
+            <tr>
+              <td>1977</td>
+              <td>貿易加重バスケット・ペッグ</td>
+              <td>スネーク離脱。15通貨の貿易加重バスケットに対するペッグ（変動幅+/-2.25%）</td>
+            </tr>
+            <tr>
+              <td>1981</td>
+              <td style="color:#ff6b6b;">16%切り下げ</td>
+              <td>社会民主党政権復帰。競争力回復のため大幅切り下げ</td>
+            </tr>
+            <tr>
+              <td>1985</td>
+              <td style="color:#ffa502;">11月革命（金融自由化）</td>
+              <td>資本規制撤廃。為替市場の自由化が進行</td>
+            </tr>
+            <tr>
+              <td>1991/5</td>
+              <td>ECUペッグ</td>
+              <td>一方的にECUにペッグ（1ECU = 7.40 SEK、+/-1.5%）。EU加盟準備</td>
+            </tr>
+            <tr>
+              <td style="color:#ff6b6b;">1992/11/19</td>
+              <td style="color:#ff6b6b;">変動相場制移行</td>
+              <td>500%金利防衛失敗。ECUペッグ放棄。対ECUで即座に~25%下落</td>
+            </tr>
+            <tr>
+              <td>1993</td>
+              <td style="color:#00d4aa;">インフレターゲティング採用</td>
+              <td>管理フロート。リクスバンク、CPI目標2%(+/-1%)を導入。為替から物価へアンカー転換</td>
+            </tr>
+            <tr>
+              <td>1995</td>
+              <td>EU加盟</td>
+              <td>EU加盟（1月1日）。ERM II参加義務なし（法的には将来のユーロ採用義務あり）</td>
+            </tr>
+            <tr>
+              <td style="color:#4ecdc4;">2003/9/14</td>
+              <td style="color:#4ecdc4;">ユーロ国民投票 — 否決</td>
+              <td>No 55.9% vs Yes 42.0%。アンナ・リンド (Anna Lindh) 外相暗殺事件（9/11）の3日後</td>
+            </tr>
+            <tr>
+              <td>2015-19</td>
+              <td>マイナス金利時代</td>
+              <td>レポレート-0.50%。SEK構造的弱体化の一因</td>
+            </tr>
+            <tr>
+              <td>2022-24</td>
+              <td>利上げサイクル</td>
+              <td>レポレート0%→4.00%。SEK一時11.90台（対EUR史上最安値圏）から回復</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="source">出典: Riksbank, "Exchange Rate Policy in Sweden", 2023; Jonung, L., "The Scandinavian Monetary Union", 2007; IMF Annual Reports</p>
+      </section>
+
+      <!-- Section 3: EUR/SEK History -->
+      <section class="content-section">
+        <h2>EUR/SEKの歴史的推移</h2>
+        <p>
+          1999年のユーロ導入時、EUR/SEKは約8.80で取引を開始した。ユーロ導入初期は欧州経済の不確実性もあり、クローナは比較的安定していた。しかし2000年代以降、EUR/SEKは構造的な上昇トレンド（クローナ安）を示しており、これはスウェーデン金融市場の構造的特性を反映している<cite>[6]</cite>。
+        </p>
+
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th data-sort>年</th>
+              <th data-sort>EUR/SEK (年末)</th>
+              <th>前年比変動</th>
+              <th>主要イベント</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1999</td>
+              <td>8.56</td>
+              <td>—</td>
+              <td>ユーロ導入。SEK相対的に堅調</td>
+            </tr>
+            <tr>
+              <td>2000</td>
+              <td>8.83</td>
+              <td style="color:#ff6b6b;">+3.2%</td>
+              <td>ITバブル期。ECB利上げ</td>
+            </tr>
+            <tr>
+              <td>2001</td>
+              <td>9.33</td>
+              <td style="color:#ff6b6b;">+5.7%</td>
+              <td>ITバブル崩壊。Ericsson危機、SEK大幅安</td>
+            </tr>
+            <tr>
+              <td>2002</td>
+              <td>9.15</td>
+              <td style="color:#00d4aa;">-1.9%</td>
+              <td>クローナ回復</td>
+            </tr>
+            <tr>
+              <td>2003</td>
+              <td>9.08</td>
+              <td style="color:#00d4aa;">-0.8%</td>
+              <td>ユーロ国民投票否決（9月）。直後SEK小幅安も回復</td>
+            </tr>
+            <tr>
+              <td>2004</td>
+              <td>9.02</td>
+              <td style="color:#00d4aa;">-0.7%</td>
+              <td>経済回復。リクスバンク利上げ準備</td>
+            </tr>
+            <tr>
+              <td>2005</td>
+              <td>9.39</td>
+              <td style="color:#ff6b6b;">+4.1%</td>
+              <td>SEK軟調</td>
+            </tr>
+            <tr>
+              <td>2006</td>
+              <td>9.04</td>
+              <td style="color:#00d4aa;">-3.7%</td>
+              <td>リクスバンク利上げサイクル。クローナ堅調</td>
+            </tr>
+            <tr>
+              <td>2007</td>
+              <td>9.44</td>
+              <td style="color:#ff6b6b;">+4.4%</td>
+              <td>サブプライム懸念。リスクオフでSEK安</td>
+            </tr>
+            <tr>
+              <td>2008</td>
+              <td style="color:#ff6b6b;">10.87</td>
+              <td style="color:#ff6b6b;">+15.1%</td>
+              <td style="color:#ffa502;">リーマン・ショック。バルト危機懸念。EUR/SEK急騰</td>
+            </tr>
+            <tr>
+              <td>2009</td>
+              <td>10.35</td>
+              <td style="color:#00d4aa;">-4.8%</td>
+              <td>リスクオン回復。Swedbank/SEB安定化</td>
+            </tr>
+            <tr>
+              <td>2010</td>
+              <td>8.97</td>
+              <td style="color:#00d4aa;">-13.3%</td>
+              <td>リクスバンク利上げ開始。SEK急回復</td>
+            </tr>
+            <tr>
+              <td>2011</td>
+              <td>8.94</td>
+              <td style="color:#00d4aa;">-0.3%</td>
+              <td>欧州債務危機だがスウェーデンはセーフヘイブン的位置</td>
+            </tr>
+            <tr>
+              <td>2012</td>
+              <td>8.58</td>
+              <td style="color:#00d4aa;">-4.0%</td>
+              <td>ドラギ "Whatever it takes"。SEK堅調</td>
+            </tr>
+            <tr>
+              <td>2013</td>
+              <td style="color:#00d4aa;">8.86</td>
+              <td style="color:#ff6b6b;">+3.3%</td>
+              <td>EUR/SEK底値圏。8.50近辺（2013年8月に年間最安値）</td>
+            </tr>
+            <tr>
+              <td>2014</td>
+              <td>9.52</td>
+              <td style="color:#ff6b6b;">+7.4%</td>
+              <td>リクスバンク利下げ開始。ゼロ金利へ</td>
+            </tr>
+            <tr>
+              <td>2015</td>
+              <td>9.19</td>
+              <td style="color:#00d4aa;">-3.5%</td>
+              <td>マイナス金利導入（-0.10%→-0.35%）。一時的にSEK回復も</td>
+            </tr>
+            <tr>
+              <td>2016</td>
+              <td>9.57</td>
+              <td style="color:#ff6b6b;">+4.1%</td>
+              <td>マイナス金利深掘り（-0.50%）。SEK継続的に弱体化</td>
+            </tr>
+            <tr>
+              <td>2017</td>
+              <td>9.85</td>
+              <td style="color:#ff6b6b;">+2.9%</td>
+              <td>ECBテーパリング期待もSEK回復せず</td>
+            </tr>
+            <tr>
+              <td>2018</td>
+              <td>10.28</td>
+              <td style="color:#ff6b6b;">+4.4%</td>
+              <td>不動産市場懸念。クローナ安トレンド継続</td>
+            </tr>
+            <tr>
+              <td>2019</td>
+              <td>10.43</td>
+              <td style="color:#ff6b6b;">+1.5%</td>
+              <td>リクスバンク、マイナス金利脱出（12月、0%へ）。効果限定的</td>
+            </tr>
+            <tr>
+              <td>2020</td>
+              <td>10.04</td>
+              <td style="color:#00d4aa;">-3.7%</td>
+              <td>COVID初期にSEK急落も年後半に回復（ロックダウンなし政策）</td>
+            </tr>
+            <tr>
+              <td>2021</td>
+              <td>10.30</td>
+              <td style="color:#ff6b6b;">+2.6%</td>
+              <td>リスクオン環境だがSEK恩恵限定</td>
+            </tr>
+            <tr>
+              <td>2022</td>
+              <td>11.12</td>
+              <td style="color:#ff6b6b;">+8.0%</td>
+              <td style="color:#ffa502;">ウクライナ侵攻。エネルギー危機。リクスバンク利上げもSEK急落</td>
+            </tr>
+            <tr>
+              <td>2023</td>
+              <td>11.10</td>
+              <td style="color:#00d4aa;">-0.2%</td>
+              <td>EUR/SEK 11.90台（史上最安値圏、2023年9月）。年末にかけ回復</td>
+            </tr>
+            <tr>
+              <td>2024</td>
+              <td>11.40</td>
+              <td style="color:#ff6b6b;">+2.7%</td>
+              <td>リクスバンク利下げ開始（2.50%へ）。クローナ安定せず</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>構造的減価トレンドの分析</h3>
+        <p>
+          EUR/SEKの長期チャートを俯瞰すると、1999年のユーロ導入時の~8.80から2023年の~11.90まで、約35%のクローナ減価が進行したことがわかる。特に2014年以降の減価は加速的であり、リクスバンクのマイナス金利政策、国債購入プログラム、そして不動産市場への懸念が複合的に作用した。2008年のリーマン・ショック時のEUR/SEK 11.00突破は一時的なストレスであったのに対し、2022-23年の11.00超えは構造的な弱さを反映している点が本質的に異なる<cite>[7]</cite>。
+        </p>
+        <p>
+          注目すべきは、2010-12年にEUR/SEKが8.50-9.00の範囲に回復した局面である。この時期はリクスバンクがG10中央銀行の中で最初に利上げを開始し、財政も健全で、欧州債務危機のセーフヘイブンとしてスウェーデン国債に資金が流入した。しかし、その後のリクスバンクの「早すぎた利上げの巻き戻し」と2015年からのマイナス金利政策が、この回復を完全に打ち消してしまった<cite>[8]</cite>。
+        </p>
+      </section>
+
+      <!-- Section 4: USD/SEK -->
+      <section class="content-section">
+        <h2>USD/SEKの推移</h2>
+        <p>
+          USD/SEKは、EUR/SEKとEUR/USDの合成レートとして決定されるため、ドルとユーロ双方の動向に影響を受ける。クローナの対ドルレートは、EUR/SEK以上にボラティリティが高い傾向がある<cite>[9]</cite>。
+        </p>
+
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th data-sort>年/時期</th>
+              <th data-sort>USD/SEK</th>
+              <th>背景</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1992年11月（ペッグ崩壊直前）</td>
+              <td>5.50</td>
+              <td>ECUペッグ時代の最終レベル</td>
+            </tr>
+            <tr>
+              <td>1993年（ペッグ崩壊後）</td>
+              <td>7.80</td>
+              <td>変動相場制移行後の大幅下落</td>
+            </tr>
+            <tr>
+              <td>1997年</td>
+              <td>7.90</td>
+              <td>アジア通貨危機。ドル高局面</td>
+            </tr>
+            <tr>
+              <td>2000年</td>
+              <td style="color:#ff6b6b;">9.54</td>
+              <td>ドル高ピーク。ITバブル期の資本流出</td>
+            </tr>
+            <tr>
+              <td>2001年</td>
+              <td>10.44</td>
+              <td>ITバブル崩壊。Ericsson危機でSEK最安値圏</td>
+            </tr>
+            <tr>
+              <td>2008年（GFC）</td>
+              <td style="color:#ff6b6b;">8.20</td>
+              <td>リーマン・ショック。ドル流動性危機でUSD急騰</td>
+            </tr>
+            <tr>
+              <td>2011年</td>
+              <td style="color:#00d4aa;">6.03</td>
+              <td>SEK最強値圏。リクスバンク利上げ + 欧州危機セーフヘイブン</td>
+            </tr>
+            <tr>
+              <td>2014年</td>
+              <td>7.81</td>
+              <td>リクスバンク利下げ開始</td>
+            </tr>
+            <tr>
+              <td>2016年</td>
+              <td>9.07</td>
+              <td>マイナス金利-0.50%。ドル高トランプ当選</td>
+            </tr>
+            <tr>
+              <td>2020年（COVID）</td>
+              <td>8.22</td>
+              <td>ドル安局面。年末にかけ回復</td>
+            </tr>
+            <tr>
+              <td>2022年9月</td>
+              <td style="color:#ff6b6b;">11.29</td>
+              <td>Fed積極利上げ。ドル独歩高。SEK二重安（対EUR・対USD）</td>
+            </tr>
+            <tr>
+              <td>2023年10月</td>
+              <td style="color:#ff6b6b;">11.35</td>
+              <td>USD/SEK史上最安値圏。リクスバンク介入示唆</td>
+            </tr>
+            <tr>
+              <td>2024年末</td>
+              <td>~10.50</td>
+              <td>Fed利下げ期待。SEK部分回復</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          USD/SEKの歴史的レンジは、1992年のペッグ崩壊前の5.50から2023年の11.35まで、約2倍の減価を記録した。特に2022年は、Fed の積極的利上げ（+425bp）とリクスバンクの出遅れが相まって、クローナは対ドルで歴史的な安値を記録した。2011年の6.03が近年のSEK最強値であり、そこからの約90%の減価は、スウェーデン経済の構造変化を如実に示している<cite>[10]</cite>。
+        </p>
+      </section>
+
+      <!-- Section 5: KIX Index -->
+      <section class="content-section">
+        <h2>KIX指数（貿易加重為替レート）</h2>
+        <p>
+          KIX指数 (Krona Index) は、リクスバンクが算出する貿易加重為替レート指数であり、スウェーデンの対外競争力を測定する主要指標である。1992年11月18日を基準日（指数 = 100）として設定されており、指数の上昇はクローナの実効的な減価を意味する<cite>[11]</cite>。
+        </p>
+
+        <h3>KIX指数の構成と方法論</h3>
+        <p>
+          KIX指数は約30カ国の通貨を含み、各通貨のウェイトはスウェーデンとの二国間貿易（輸出 + 輸入）のシェアに基づいて算出される。ウェイトは定期的に更新される。2024年時点の主要構成は以下の通りである:
+        </p>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>通貨</th>
+              <th>ウェイト (概算)</th>
+              <th>備考</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>EUR (ユーロ)</td>
+              <td style="color:#4ecdc4;">~47%</td>
+              <td>最大の貿易相手圏。ドイツ・フィンランド・フランスなど</td>
+            </tr>
+            <tr>
+              <td>USD (米ドル)</td>
+              <td>~10%</td>
+              <td>直接貿易 + ドル建て取引</td>
+            </tr>
+            <tr>
+              <td>NOK (ノルウェー・クローネ)</td>
+              <td>~9%</td>
+              <td>スカンジナビア最大の二国間貿易</td>
+            </tr>
+            <tr>
+              <td>GBP (英ポンド)</td>
+              <td>~7%</td>
+              <td>英国は重要な輸出先</td>
+            </tr>
+            <tr>
+              <td>DKK (デンマーク・クローネ)</td>
+              <td>~6%</td>
+              <td>北欧パートナー（EUR連動）</td>
+            </tr>
+            <tr>
+              <td>CNY (中国人民元)</td>
+              <td>~6%</td>
+              <td>輸入ウェイトが大きい</td>
+            </tr>
+            <tr>
+              <td>その他</td>
+              <td>~15%</td>
+              <td>PLN, JPY, CHF, KRW等</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>KIX指数の推移</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th data-sort>年</th>
+              <th data-sort>KIX指数 (年末)</th>
+              <th>解釈</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1992/11</td>
+              <td>100.0</td>
+              <td>基準日（ペッグ崩壊日）</td>
+            </tr>
+            <tr>
+              <td>1993</td>
+              <td style="color:#ff6b6b;">125</td>
+              <td>ペッグ崩壊後の大幅減価</td>
+            </tr>
+            <tr>
+              <td>1997</td>
+              <td>120</td>
+              <td>回復後安定</td>
+            </tr>
+            <tr>
+              <td>2000</td>
+              <td style="color:#ff6b6b;">131</td>
+              <td>ITバブル崩壊。SEK弱体化</td>
+            </tr>
+            <tr>
+              <td>2002</td>
+              <td>127</td>
+              <td>部分回復</td>
+            </tr>
+            <tr>
+              <td>2008</td>
+              <td style="color:#ff6b6b;">138</td>
+              <td>GFC。バルト危機懸念でSEK急落</td>
+            </tr>
+            <tr>
+              <td>2010</td>
+              <td style="color:#00d4aa;">108</td>
+              <td>リクスバンク利上げ。SEK大幅回復</td>
+            </tr>
+            <tr>
+              <td>2012</td>
+              <td style="color:#00d4aa;">106</td>
+              <td>KIX最強値圏。セーフヘイブン効果</td>
+            </tr>
+            <tr>
+              <td>2015</td>
+              <td>112</td>
+              <td>マイナス金利導入。減価開始</td>
+            </tr>
+            <tr>
+              <td>2018</td>
+              <td>120</td>
+              <td>マイナス金利の累積効果</td>
+            </tr>
+            <tr>
+              <td>2020</td>
+              <td>116</td>
+              <td>COVID後に一時回復</td>
+            </tr>
+            <tr>
+              <td>2022</td>
+              <td style="color:#ff6b6b;">133</td>
+              <td>ウクライナ危機。エネルギー高。大幅減価</td>
+            </tr>
+            <tr>
+              <td>2023</td>
+              <td style="color:#ff6b6b;">135</td>
+              <td>ペッグ崩壊以来の最弱水準に接近</td>
+            </tr>
+            <tr>
+              <td>2024</td>
+              <td>~128</td>
+              <td>利下げサイクルも部分回復</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="source">出典: Riksbank, "KIX - A Trade-Weighted Exchange Rate Index", Economic Review 2023; BIS Effective Exchange Rate Indices</p>
+      </section>
+
+      <!-- Section 6: Euro Referendum 2003 -->
+      <section class="content-section">
+        <h2>ユーロ国民投票 2003年</h2>
+        <p>
+          2003年9月14日に実施されたスウェーデンのユーロ採用に関する国民投票は、同国の通貨史における最も重要な政治的決定の一つである。結果はNo（反対）55.9%、Yes（賛成）42.0%、無効・白票2.1%であり、投票率は82.6%という高水準であった<cite>[12]</cite>。
+        </p>
+
+        <h3>背景と経緯</h3>
+        <p>
+          スウェーデンは1995年のEU加盟時、法的にはユーロ採用の義務を負っている（マーストリヒト条約）。しかしデンマークのように正式なオプトアウト (Opt-out) を獲得しておらず、代わりに「意図的にERM IIに参加しない」という事実上の迂回策により、ユーロ採用を回避してきた。2003年の国民投票は、この問題に対する民主的な決着を試みたものであった<cite>[13]</cite>。
+        </p>
+        <p>
+          賛成派の主要論点は、為替リスクの除去、貿易取引コストの低減、そしてEU政策決定への完全な参加であった。スウェーデンの輸出の約60%がユーロ圏向けであり、為替変動は企業にとって大きなコストとなっていた。一方、反対派は独自の金融政策の維持、リクスバンクの独立性、そしてスウェーデン福祉国家モデルへの影響を懸念した<cite>[14]</cite>。
+        </p>
+
+        <h3>アンナ・リンド暗殺事件</h3>
+        <p>
+          投票日の3日前、2003年9月11日、ユーロ賛成派の中心人物であったアンナ・リンド (Anna Lindh) 外務大臣が、ストックホルムの百貨店NKでミハイロ・ミヤイロヴィッチ (Mijailo Mijailovic) により刺殺された。リンド外相は人気政治家であり、将来の首相候補と目されていた。この悲劇にもかかわらず、国民投票は予定通り実施され、結果は反対派の勝利となった。事件が投票結果に与えた影響については、「同情票がYesに流れた可能性があるが、大勢は変わらなかった」というのが政治学者の大方の見解である<cite>[15]</cite>。
+        </p>
+
+        <h3>投票結果の地域分析</h3>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>地域</th>
+              <th>Yes (賛成)</th>
+              <th>No (反対)</th>
+              <th>特徴</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ストックホルム</td>
+              <td style="color:#00d4aa;">52%</td>
+              <td>46%</td>
+              <td>唯一のYes多数地域。金融・ビジネス中心地</td>
+            </tr>
+            <tr>
+              <td>マルメ/スコーネ</td>
+              <td>47%</td>
+              <td style="color:#ff6b6b;">51%</td>
+              <td>デンマーク国境。ユーロ圏に近いが僅差でNo</td>
+            </tr>
+            <tr>
+              <td>ヨーテボリ</td>
+              <td>40%</td>
+              <td style="color:#ff6b6b;">57%</td>
+              <td>工業都市。労組の影響力大</td>
+            </tr>
+            <tr>
+              <td>北部 (Norrland)</td>
+              <td>30%</td>
+              <td style="color:#ff6b6b;">67%</td>
+              <td>最もNo比率高い。EU懐疑主義強い</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>国民投票後のSEK</h3>
+        <p>
+          国民投票のNo結果を受けて、市場は比較的冷静に反応した。EUR/SEKは投票直前の9.10から投票後に一時9.20程度まで上昇したが、大きな混乱はなかった。市場は既にNoの結果を織り込んでおり、世論調査でも反対派が一貫してリードしていた。長期的には、ユーロ不採用がクローナの構造的弱体化の一因になったとする見方もあるが、因果関係は複雑である。2010年代の欧州債務危機時にはむしろ「独自通貨を持つ利点」が再評価される局面もあった<cite>[16]</cite>。
+        </p>
+      </section>
+
+      <!-- Section 7: Structural SEK Weakness -->
+      <section class="content-section">
+        <h2>クローナ安の構造的要因分析 (2015-2024)</h2>
+        <p>
+          2015年以降のクローナの構造的弱体化は、単一の要因では説明できない複合的な現象である。以下の要因が相互に作用し、SEKの長期的な減価トレンドを形成した<cite>[17]</cite>。
+        </p>
+
+        <h3>1. マイナス金利政策 (-0.50%, 2016-2019)</h3>
+        <p>
+          リクスバンクは2015年2月に世界で初めてマイナス金利を導入し（-0.10%）、2016年2月には-0.50%まで深掘りした。この政策はECBのマイナス金利（-0.40%）と合わせて、SEK/EUR金利差を大きく縮小させた。通常、金利差はSEKの対EUR減価を説明する最も重要な要因であり、リクスバンクの積極的な緩和がクローナ安を加速させた。2019年12月にリクスバンクは世界初のマイナス金利脱出を果たしたが（0%へ）、SEKは回復しなかった<cite>[18]</cite>。
+        </p>
+
+        <h3>2. 国債購入プログラム（量的緩和）</h3>
+        <p>
+          リクスバンクは2015-2017年に合計SEK 2,850億クローナ（GDP比約6%）の国債を購入した。スウェーデン国債市場は相対的に小規模（発行残高約SEK 7,000億）であるため、この購入は市場流動性を大きく毀損し、外国人投資家の国債保有比率低下を招いた。国債市場からの資本流出はSEK売り圧力に直結した<cite>[19]</cite>。
+        </p>
+
+        <h3>3. 不動産市場への懸念</h3>
+        <p>
+          スウェーデンの住宅価格は2000年代以降300%以上上昇し、家計債務のGDP比は90%超に達した。変動金利住宅ローンの比率が約70%と高く、金利上昇に対する脆弱性が指摘されてきた。2017年秋の住宅価格調整（-10%）は、外国人投資家のスウェーデン資産に対する信認を低下させ、SEK売りの一因となった<cite>[20]</cite>。
+        </p>
+
+        <h3>4. 交易条件 (Terms of Trade) の悪化</h3>
+        <p>
+          スウェーデンはエネルギー輸入国であり、2021-22年のエネルギー価格高騰は交易条件を悪化させた。電力危機（南部スウェーデンの電力価格高騰）も経済への下押し圧力となり、SEK安要因として作用した。ノルウェー（石油輸出国）のNOKと比較した際、この交易条件の差異がSEKのアンダーパフォームを部分的に説明する<cite>[21]</cite>。
+        </p>
+
+        <h3>5. 「小国通貨」効果</h3>
+        <p>
+          スウェーデンのGDPは世界のGDPの約0.6%であり、SEKの外為市場における取引量は限定的である（BIS調査でのシェア約2%）。グローバルなリスクオフ局面では、流動性の低い小国通貨が優先的に売られる傾向があり、SEKはこの「小国通貨プレミアム」の影響を受けやすい。特に2008年と2022年のリスクオフ局面でこの効果が顕著であった<cite>[22]</cite>。
+        </p>
+
+        <h3>SEK vs NOK — 北欧通貨の明暗</h3>
+        <p>
+          SEKとNOKはともに北欧の非ユーロ通貨であるが、2015年以降のパフォーマンスは大きく乖離した。NOKは原油価格に連動する「ペトロカレンシー」としての特性を持ち、2021-22年のエネルギー価格高騰時にはSEKを大幅にアウトパフォームした。また、ノルウェーの政府年金基金グローバル (GPFG, 通称「オイルファンド」、AUM US$1.7T超) の存在は、NOKに対する長期的な信認を支えている。これに対しスウェーデンには同様のソブリン・ウェルス・ファンドが存在しない<cite>[23]</cite>。
+        </p>
+      </section>
+
+      <!-- Section 8: G10 Currency Comparison -->
+      <section class="content-section">
+        <h2>G10通貨比較</h2>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th data-sort>通貨</th>
+              <th>為替制度</th>
+              <th>中央銀行</th>
+              <th data-sort>BIS取引量シェア</th>
+              <th data-sort>3Mキャリー (2024)</th>
+              <th>特性</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>USD</td>
+              <td>自由フロート</td>
+              <td>Fed</td>
+              <td>88.5%</td>
+              <td>5.33%</td>
+              <td>基軸通貨。最大の流動性</td>
+            </tr>
+            <tr>
+              <td>EUR</td>
+              <td>自由フロート</td>
+              <td>ECB</td>
+              <td>30.5%</td>
+              <td>3.75%</td>
+              <td>第2の準備通貨。20カ国共通</td>
+            </tr>
+            <tr>
+              <td>JPY</td>
+              <td>管理フロート</td>
+              <td>BOJ</td>
+              <td>16.7%</td>
+              <td>0.25%</td>
+              <td>キャリートレード調達通貨</td>
+            </tr>
+            <tr>
+              <td>GBP</td>
+              <td>自由フロート</td>
+              <td>BOE</td>
+              <td>12.9%</td>
+              <td>5.25%</td>
+              <td>歴史的基軸通貨</td>
+            </tr>
+            <tr>
+              <td>AUD</td>
+              <td>自由フロート</td>
+              <td>RBA</td>
+              <td>6.4%</td>
+              <td>4.35%</td>
+              <td>コモディティ通貨</td>
+            </tr>
+            <tr>
+              <td>CAD</td>
+              <td>自由フロート</td>
+              <td>BOC</td>
+              <td>6.2%</td>
+              <td>4.50%</td>
+              <td>ペトロカレンシー</td>
+            </tr>
+            <tr>
+              <td>CHF</td>
+              <td>管理フロート</td>
+              <td>SNB</td>
+              <td>5.2%</td>
+              <td>1.50%</td>
+              <td>セーフヘイブン。SNB介入多い</td>
+            </tr>
+            <tr>
+              <td>NZD</td>
+              <td>自由フロート</td>
+              <td>RBNZ</td>
+              <td>1.9%</td>
+              <td>5.50%</td>
+              <td>高金利通貨</td>
+            </tr>
+            <tr style="background:rgba(78,205,196,0.1);">
+              <td style="color:#4ecdc4;">SEK</td>
+              <td style="color:#4ecdc4;">管理フロート</td>
+              <td style="color:#4ecdc4;">Riksbank</td>
+              <td style="color:#4ecdc4;">2.2%</td>
+              <td style="color:#4ecdc4;">2.50%</td>
+              <td style="color:#4ecdc4;">小国通貨。構造的弱体化トレンド</td>
+            </tr>
+            <tr>
+              <td>NOK</td>
+              <td>管理フロート</td>
+              <td>Norges Bank</td>
+              <td>1.7%</td>
+              <td>4.50%</td>
+              <td>ペトロカレンシー。オイルファンド</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="source">出典: BIS Triennial Central Bank Survey 2022; 各中央銀行公表金利 (2024年末時点)</p>
+
+        <h3>SEKの位置付け</h3>
+        <p>
+          G10通貨の中でSEKは、BIS外為取引量で9位（NOKは10位）と最も流動性の低い部類に属する。2024年末時点のレポレート2.50%は、G10の中間水準であり、かつてのような明確なキャリー・アドバンテージもディスアドバンテージもない状態にある。SEKの最大の特徴は、先進国通貨としては異例の長期的減価トレンドであり、これは実質実効為替レート (REER) で見ても確認できる。IMFの推計によれば、SEKの実質実効為替レートは2024年時点でファンダメンタルズが示唆する水準を10-15%程度下回っている（過小評価）とされている<cite>[24]</cite>。
+        </p>
+        <p>
+          クローナの将来については、リクスバンクの金融政策正常化、不動産市場の安定化、そしてスウェーデンのNATO加盟（2024年3月）による地政学的リスクの低下が、SEK回復を支える要因として挙げられる。一方、ユーロ圏との金利差やグローバルなリスクセンチメントの変動が、引き続きSEKのボラティリティを規定する主要な要因であり続けるであろう<cite>[25]</cite>。
+        </p>
+      </section>
+
+    </article>
+
+    <!-- Footer: Sources -->
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>Jonung, L., "The Scandinavian Monetary Union 1873-1924", in <em>Monetary Regimes and Inflation</em>, 2007</li>
+        <li>Riksbank, "Sweden's Exchange Rate under the Classical Gold Standard 1873-1914", Working Paper No. 265, 2013</li>
+        <li>Riksbank, "Exchange Rate Policy in Sweden", <em>Economic Review</em>, 2023</li>
+        <li>Lindberg, H. and Soderlind, P., "Testing the Basic Target Zone Model on Swedish Data: 1834-1992", <em>European Economic Review</em>, 1994</li>
+        <li>Riksbank, "From Fixed to Floating: Exchange Rate Policy after the Crisis of 1992", Staff Memo, 2017</li>
+        <li>ECB, "Euro Foreign Exchange Reference Rates", Statistical Data Warehouse, 2024</li>
+        <li>Riksbank, "The Krona's Role in the Swedish Economy", <em>Monetary Policy Report</em>, October 2023</li>
+        <li>Svensson, L.E.O., "Why a Lower Repo Rate Path?", Riksbank Deputy Governor Speech, 2014</li>
+        <li>BIS, "Triennial Central Bank Survey of Foreign Exchange and OTC Derivatives Markets", 2022</li>
+        <li>Bloomberg, USD/SEK Historical Exchange Rate Data, 2024</li>
+        <li>Riksbank, "KIX - A Trade-Weighted Exchange Rate Index for the Krona", <em>Economic Review</em>, 2012 (updated 2023)</li>
+        <li>Swedish Election Authority (Valmyndigheten), "Folkomrostning om euro 2003 — Slutligt resultat", 2003</li>
+        <li>Treaty on European Union (Maastricht Treaty), Article 140; Protocol No. 15 (Denmark opt-out)</li>
+        <li>Alesina, A. and Persson, T., "Sweden and the Euro", <em>Swedish Economic Policy Review</em>, 2003</li>
+        <li>Widfeldt, A., "Elite Collusion and Public Defiance: Sweden's Euro Referendum in 2003", <em>West European Politics</em>, 2004</li>
+        <li>Agell, J., "The Euro Referendum: What Have We Learned?", <em>Swedish Economic Policy Review</em>, 2004</li>
+        <li>Riksbank, "Why Is the Krona So Weak?", <em>Economic Commentaries</em> No. 8, 2023</li>
+        <li>Riksbank, "Negative Interest Rates and the Exchange Rate", Working Paper No. 402, 2020</li>
+        <li>Riksbank, "The Riksbank's Government Bond Purchases", <em>Economic Review</em>, 2018</li>
+        <li>IMF, "Sweden: 2023 Article IV Consultation — Staff Report", Country Report No. 23/345, 2023</li>
+        <li>European Commission, "Macroeconomic Imbalance Procedure — Sweden Country Report", 2023</li>
+        <li>BIS, "Exchange Rate Dynamics and Small Open Economies", <em>BIS Quarterly Review</em>, September 2023</li>
+        <li>Norges Bank Investment Management, "Government Pension Fund Global Annual Report 2023", 2024</li>
+        <li>IMF, "External Sector Report: Global Imbalances", 2024</li>
+        <li>Riksbank, "Monetary Policy Report", February 2024</li>
+      </ol>
+      <p style="margin-top:1rem; font-style:italic; color:#888;">
+        注: 為替レートデータは各時点の年末終値または記載時点の概算値。歴代総裁のタカ/ハト分類は市場での一般的評価に基づく。KIX指数の構成ウェイトはリクスバンク公表の最新値に基づくが、年次で微調整される。
+      </p>
+    </footer>
+
+    <!-- Prev/Next Navigation -->
+    <div class="page-nav">
+      <a href="13_long_rates.html" class="prev">← 前: Long-term Rates</a>
+      <a href="15_crises.html" class="next">次: Financial Crises →</a>
+    </div>
+
+  </main>
+
+  <!-- Sortable Table Script -->
+  <script>
+    document.querySelectorAll('.sortable').forEach(table => {
+      const headers = table.querySelectorAll('th[data-sort]');
+      headers.forEach((header, index) => {
+        header.style.cursor = 'pointer';
+        header.addEventListener('click', () => {
+          const tbody = table.querySelector('tbody');
+          const rows = Array.from(tbody.querySelectorAll('tr'));
+          const isNumeric = rows.some(row => {
+            const cell = row.cells[index];
+            if (!cell) return false;
+            const text = cell.textContent.replace(/[~%+,]/g, '').trim();
+            return !isNaN(parseFloat(text));
+          });
+          const currentOrder = header.dataset.order || 'asc';
+          const newOrder = currentOrder === 'asc' ? 'desc' : 'asc';
+          header.dataset.order = newOrder;
+
+          // Clear other header indicators
+          headers.forEach(h => {
+            if (h !== header) {
+              h.dataset.order = '';
+              h.textContent = h.textContent.replace(/ [▲▼]/, '');
+            }
+          });
+          header.textContent = header.textContent.replace(/ [▲▼]/, '') + (newOrder === 'asc' ? ' ▲' : ' ▼');
+
+          rows.sort((a, b) => {
+            const aCell = a.cells[index];
+            const bCell = b.cells[index];
+            if (!aCell || !bCell) return 0;
+            let aVal = aCell.textContent.replace(/[~%+,]/g, '').trim();
+            let bVal = bCell.textContent.replace(/[~%+,]/g, '').trim();
+            if (isNumeric) {
+              aVal = parseFloat(aVal) || 0;
+              bVal = parseFloat(bVal) || 0;
+              return newOrder === 'asc' ? aVal - bVal : bVal - aVal;
+            }
+            return newOrder === 'asc' ? aVal.localeCompare(bVal, 'ja') : bVal.localeCompare(aVal, 'ja');
+          });
+          rows.forEach(row => tbody.appendChild(row));
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

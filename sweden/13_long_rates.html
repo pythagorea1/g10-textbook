@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweden - Long-term Rates | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇸🇪 Sweden</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link active">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip active">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Sweden</a>
+        <span class="sep">/</span>
+        Long-term Rates
+      </div>
+      <h1 class="page-title">スウェーデン長期金利の歴史</h1>
+      <p class="page-subtitle">10年国債利回り &mdash; 13%超から一時マイナスへ、そして正常化</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">~2.3%</div>
+          <div class="stat-label">現在の10Y利回り (2025)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">~13%</div>
+          <div class="stat-label">10Y過去最高 (1990)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">-0.15%</div>
+          <div class="stat-label">10Y過去最低 (2019)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">~40-60bp</div>
+          <div class="stat-label">SGB-Bundスプレッド（典型値）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">SEK ~900B</div>
+          <div class="stat-label">リクスバンク債券購入残高ピーク</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">~1,300bp</div>
+          <div class="stat-label">35年間の利回り低下幅 (1990-2019)</div>
+        </div>
+      </div>
+
+      <!-- Section 1: Overview -->
+      <section class="content-section">
+        <h2>長期金利の概要</h2>
+        <p>
+          スウェーデンの長期金利は、スウェーデン国債（Statsobligationer、通称SGB = Swedish Government Bond）の10年物利回りをベンチマークとする。SGBはスウェーデン国債庁（Riksgalden / Swedish National Debt Office）が発行・管理し、リクスバンク（Riksbank）の金融政策、財政政策、グローバルな金利環境、そしてSEKの為替リスクプレミアムの相互作用によって利回りが決定される<cite>[1]</cite>。
+        </p>
+        <p>
+          スウェーデンは財政的に極めて健全な国であり、政府債務のGDP比は約33%とG10諸国で最も低い水準にある。格付けはS&amp;PでAAA、MoodyでAaa、FitchでAAAと全主要格付機関から最高格付を維持している。この財政健全性は長期金利に対する信用リスクプレミアムを最小化しているが、ユーロ非加入国であることによる為替リスクプレミアムが存在し、ドイツ国債（Bund）に対するスプレッドは構造的にプラスを維持している<cite>[2]</cite>。
+        </p>
+        <p>
+          SGB市場は発行残高約SEK 8,000億（2024年末時点）と相対的に小規模であり、これは流動性プレミアムとしてBundスプレッドを押し上げる要因となっている。外国人投資家のSGB保有比率は約30%前後で推移しており、ノルウェー政府年金基金（GPFG）やアジアの中央銀行が主要な買い手である。リクスバンクのレポレートの変更は短期金利に直接的に影響するが、長期金利への波及は期待インフレ率、ターム・プレミアム、グローバルな金利連動を通じて間接的に行われる<cite>[3]</cite>。
+        </p>
+      </section>
+
+      <!-- Section 2: Historical Yield Table -->
+      <section class="content-section">
+        <h2>10年国債利回りの歴史的推移</h2>
+        <p>
+          以下のテーブルは、スウェーデン10年国債利回りの主要な転換点を年次ベースで示す。レポレート（1994年以降）との比較、及び当時の主要マクロイベントを併記している。
+        </p>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th data-sort>年</th>
+              <th data-sort>SGB 10Y (%)</th>
+              <th data-sort>レポレート (%)</th>
+              <th data-sort>Bund 10Y (%)</th>
+              <th data-sort>SGB-Bund (bp)</th>
+              <th>主要イベント</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1980</td>
+              <td>11.5%</td>
+              <td>n/a</td>
+              <td>8.5%</td>
+              <td style="color:#ff6b6b;">+300</td>
+              <td>第2次オイルショック後、高インフレ継続</td>
+            </tr>
+            <tr>
+              <td>1983</td>
+              <td>12.5%</td>
+              <td>n/a</td>
+              <td>8.0%</td>
+              <td style="color:#ff6b6b;">+450</td>
+              <td>SEK切り下げ（1982年16%）後のインフレ圧力</td>
+            </tr>
+            <tr>
+              <td>1985</td>
+              <td>13.0%</td>
+              <td>n/a</td>
+              <td>6.9%</td>
+              <td style="color:#ff6b6b;">+610</td>
+              <td>11月革命（金融自由化）、インフレ加速</td>
+            </tr>
+            <tr>
+              <td>1987</td>
+              <td>11.3%</td>
+              <td>n/a</td>
+              <td>6.2%</td>
+              <td style="color:#ff6b6b;">+510</td>
+              <td>ブラックマンデー、緩和的金融政策継続</td>
+            </tr>
+            <tr>
+              <td>1989</td>
+              <td>11.6%</td>
+              <td>n/a</td>
+              <td>7.0%</td>
+              <td style="color:#ff6b6b;">+460</td>
+              <td>不動産バブル膨張、税制改革議論</td>
+            </tr>
+            <tr>
+              <td>1990</td>
+              <td style="color:#ff6b6b;">13.2%</td>
+              <td>n/a</td>
+              <td>8.7%</td>
+              <td style="color:#ff6b6b;">+450</td>
+              <td>不動産バブル崩壊開始、金融危機前夜</td>
+            </tr>
+            <tr>
+              <td>1992</td>
+              <td style="color:#ff6b6b;">12.4%</td>
+              <td>n/a</td>
+              <td>7.8%</td>
+              <td style="color:#ff6b6b;">+460</td>
+              <td style="color:#ff9800;">SEKペッグ崩壊、500%金利、銀行危機</td>
+            </tr>
+            <tr>
+              <td>1993</td>
+              <td>8.5%</td>
+              <td>n/a</td>
+              <td>6.5%</td>
+              <td style="color:#ff6b6b;">+200</td>
+              <td>IT導入（2%目標）、変動相場制移行後の安定化</td>
+            </tr>
+            <tr>
+              <td>1994</td>
+              <td>9.7%</td>
+              <td>7.00%</td>
+              <td>7.1%</td>
+              <td style="color:#ff6b6b;">+260</td>
+              <td>グローバル債券暴落（Great Bond Massacre）、EU加盟決定</td>
+            </tr>
+            <tr>
+              <td>1995</td>
+              <td>10.2%</td>
+              <td>8.91%</td>
+              <td>6.9%</td>
+              <td style="color:#ff6b6b;">+330</td>
+              <td>EU加盟（1月）、財政再建開始、バリング危機</td>
+            </tr>
+            <tr>
+              <td>1996</td>
+              <td>8.0%</td>
+              <td>5.80%</td>
+              <td>6.2%</td>
+              <td style="color:#ff6b6b;">+180</td>
+              <td>財政再建進展、Bundコンバージェンストレード開始</td>
+            </tr>
+            <tr>
+              <td>1997</td>
+              <td>6.6%</td>
+              <td>4.10%</td>
+              <td>5.7%</td>
+              <td style="color:#ff6b6b;">+90</td>
+              <td>ユーロ収斂期待、スプレッド急縮小</td>
+            </tr>
+            <tr>
+              <td>1998</td>
+              <td>5.0%</td>
+              <td>3.40%</td>
+              <td>4.6%</td>
+              <td>+40</td>
+              <td>LTCM危機、安全資産への逃避</td>
+            </tr>
+            <tr>
+              <td>2000</td>
+              <td>5.4%</td>
+              <td>3.75%</td>
+              <td>5.3%</td>
+              <td>+10</td>
+              <td>ITバブルピーク、ユーロ参加期待でスプレッド最小化</td>
+            </tr>
+            <tr>
+              <td>2001</td>
+              <td>5.1%</td>
+              <td>3.75%</td>
+              <td>4.8%</td>
+              <td>+30</td>
+              <td>ITバブル崩壊、911テロ</td>
+            </tr>
+            <tr>
+              <td>2003</td>
+              <td>4.6%</td>
+              <td>2.75%</td>
+              <td>4.1%</td>
+              <td>+50</td>
+              <td style="color:#ff9800;">ユーロ国民投票否決（9月）、スプレッド拡大</td>
+            </tr>
+            <tr>
+              <td>2005</td>
+              <td>3.4%</td>
+              <td>1.50%</td>
+              <td>3.4%</td>
+              <td>0</td>
+              <td>グローバル低金利環境、スプレッドほぼ消滅</td>
+            </tr>
+            <tr>
+              <td>2007</td>
+              <td>4.2%</td>
+              <td>3.50%</td>
+              <td>4.2%</td>
+              <td>0</td>
+              <td>GFC前夜、リクスバンク利上げサイクル</td>
+            </tr>
+            <tr>
+              <td>2008</td>
+              <td>3.3%</td>
+              <td>2.00%</td>
+              <td>3.3%</td>
+              <td>0</td>
+              <td style="color:#ff9800;">GFC、安全資産需要、バルト危機波及</td>
+            </tr>
+            <tr>
+              <td>2009</td>
+              <td>3.3%</td>
+              <td>0.25%</td>
+              <td>3.2%</td>
+              <td>+10</td>
+              <td>リクスバンク0.25%まで利下げ</td>
+            </tr>
+            <tr>
+              <td>2011</td>
+              <td>2.6%</td>
+              <td>2.00%</td>
+              <td>2.6%</td>
+              <td>0</td>
+              <td>ユーロ債務危機、SGBに安全資産需要</td>
+            </tr>
+            <tr>
+              <td>2012</td>
+              <td>1.6%</td>
+              <td>1.25%</td>
+              <td>1.5%</td>
+              <td>+10</td>
+              <td>ECBドラギ「Whatever it takes」</td>
+            </tr>
+            <tr>
+              <td>2015</td>
+              <td>0.7%</td>
+              <td style="color:#4ecdc4;">-0.10%</td>
+              <td>0.5%</td>
+              <td>+20</td>
+              <td style="color:#4ecdc4;">リクスバンクマイナス金利導入、QE開始</td>
+            </tr>
+            <tr>
+              <td>2016</td>
+              <td>0.5%</td>
+              <td style="color:#4ecdc4;">-0.50%</td>
+              <td>0.1%</td>
+              <td>+40</td>
+              <td>マイナス金利深掘り、国債購入拡大</td>
+            </tr>
+            <tr>
+              <td>2017</td>
+              <td>0.7%</td>
+              <td style="color:#4ecdc4;">-0.50%</td>
+              <td>0.4%</td>
+              <td>+30</td>
+              <td>グローバルリフレトレード</td>
+            </tr>
+            <tr>
+              <td>2019</td>
+              <td style="color:#4ecdc4;">-0.15%</td>
+              <td>0.00%</td>
+              <td style="color:#4ecdc4;">-0.30%</td>
+              <td>+15</td>
+              <td style="color:#4ecdc4;">SGB 10Y一時マイナス圏突入、世界的低金利</td>
+            </tr>
+            <tr>
+              <td>2020</td>
+              <td>0.0%</td>
+              <td>0.00%</td>
+              <td style="color:#4ecdc4;">-0.55%</td>
+              <td>+55</td>
+              <td style="color:#ff9800;">COVID-19パンデミック、リクスバンクQE拡大</td>
+            </tr>
+            <tr>
+              <td>2021</td>
+              <td>0.3%</td>
+              <td>0.00%</td>
+              <td style="color:#4ecdc4;">-0.20%</td>
+              <td>+50</td>
+              <td>インフレ兆候、グローバル金利上昇開始</td>
+            </tr>
+            <tr>
+              <td>2022</td>
+              <td style="color:#ff6b6b;">2.0%</td>
+              <td style="color:#ff6b6b;">2.50%</td>
+              <td style="color:#ff6b6b;">2.1%</td>
+              <td>-10</td>
+              <td style="color:#ff6b6b;">インフレ10%超、リクスバンク急速利上げ、QT開始</td>
+            </tr>
+            <tr>
+              <td>2023</td>
+              <td style="color:#ff6b6b;">2.6%</td>
+              <td style="color:#ff6b6b;">4.00%</td>
+              <td style="color:#ff6b6b;">2.6%</td>
+              <td>0</td>
+              <td>SBB危機、不動産セクター懸念、レポレートピーク</td>
+            </tr>
+            <tr>
+              <td>2024</td>
+              <td>2.1%</td>
+              <td>2.50%</td>
+              <td>2.3%</td>
+              <td>-20</td>
+              <td>リクスバンク利下げ開始、インフレ正常化</td>
+            </tr>
+            <tr>
+              <td>2025</td>
+              <td>2.3%</td>
+              <td>2.25%</td>
+              <td>2.7%</td>
+              <td>-40</td>
+              <td>グローバル関税不確実性、防衛支出拡大議論</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="source">出典: Riksbank Statistical Database, Bloomberg, FRED <cite>[4]</cite></p>
+      </section>
+
+      <!-- Section 3: SGB-Bund Spread -->
+      <section class="content-section">
+        <h2>スウェーデン-ドイツ国債スプレッド分析</h2>
+        <p>
+          SGB-Bundスプレッド（スウェーデン10年国債利回りとドイツ10年国債利回りの差）は、スウェーデンの信用リスク、為替リスク、流動性プレミアムを総合的に反映する重要な市場指標である。このスプレッドの推移は、スウェーデンとユーロ圏の経済・金融関係の変遷を映し出す鏡であった<cite>[5]</cite>。
+        </p>
+
+        <h3>高スプレッド時代（1980年代-1990年代前半）：+300-600bp</h3>
+        <p>
+          1980年代のスウェーデンは高インフレ、頻繁なSEK切り下げ、拡張的財政政策の時代であり、Bundスプレッドは300-600bpの広いレンジで推移した。1985年の「11月革命」（金融自由化）はインフレ圧力を増大させ、1990年には不動産バブルのピークとともにスプレッドは450bp超に達した。1992年のSEKペッグ崩壊と銀行危機はスウェーデン債に対する市場の信認を大きく損ない、スプレッドは依然として高水準を維持した<cite>[6]</cite>。
+        </p>
+
+        <h3>コンバージェンス・トレード（1995-2003年）：+330bp → +50bp</h3>
+        <p>
+          1995年のEU加盟を契機に、スウェーデン国債のBundに対するスプレッドは劇的に縮小した。市場はスウェーデンのユーロ参加を織り込み始め、「コンバージェンス・トレード」が活発化した。財政余剰目標の導入（1997年）と急速な財政再建は信用リスクプレミアムを消滅させ、2000年前後にはスプレッドがほぼゼロに収斂した。しかし2003年9月のユーロ国民投票否決（55.9%が反対）はスプレッドを一時的に拡大させ、市場はスウェーデンの「永続的非ユーロ」ステータスを再評価せざるを得なくなった<cite>[7]</cite>。
+        </p>
+
+        <h3>ポスト国民投票からGFC（2003-2008年）：0-50bp</h3>
+        <p>
+          ユーロ不参加が確定しても、スウェーデンの強固な財政基盤とAAAの信用格付により、Bundスプレッドは0-50bpの狭いレンジに留まった。この時期のスプレッドの主要ドライバーは為替リスクプレミアムと流動性プレミアムであり、信用リスクの寄与は事実上ゼロであった<cite>[8]</cite>。
+        </p>
+
+        <h3>GFCとユーロ危機（2008-2014年）：-20bp ~ +50bp</h3>
+        <p>
+          2008年のGFCでは、バルト三国へのスウェーデン銀行のエクスポージャーが懸念され、Bundスプレッドは一時的に拡大した。しかし2011-2012年のユーロ圏債務危機においては、ユーロ非加入が逆にメリットとなり、SGBは「安全資産」として需要が集中した。この時期、SGBのBundスプレッドはほぼゼロ、あるいは一時的にマイナス（SGBがBundより低利回り）となる場面もあった。これは、ユーロ圏の分裂リスクを回避する資金がスウェーデンに流入したことを反映していた<cite>[9]</cite>。
+        </p>
+
+        <h3>マイナス金利・QE時代（2015-2021年）：+15-55bp</h3>
+        <p>
+          リクスバンクのマイナス金利政策（-0.50%）とQEの導入は、SGB利回りを歴史的低水準に押し下げた。しかしECBも同様にマイナス金利とQEを実施していたため、Bundスプレッドは+15-55bpのレンジで推移した。スプレッドの変動要因は主に、リクスバンクとECBの政策タイミングの差異、SGBの相対的な流動性の低さ、そしてSEKの為替変動であった<cite>[10]</cite>。
+        </p>
+
+        <h3>正常化と新展開（2022年-現在）：-40bp ~ +10bp</h3>
+        <p>
+          2022年以降、リクスバンクがECBより先行して利下げに転じたことで、SGB-Bundスプレッドは歴史的に珍しいマイナス圏に転じた。2024-2025年にはスプレッドが-20bp～-40bpで推移する場面が見られ、これはリクスバンクの緩和バイアスがECBより強いことを反映している。また、スウェーデンの防衛支出拡大とNATO加盟に伴う財政支出増の期待が長期的な財政見通しに影響を与えつつある<cite>[11]</cite>。
+        </p>
+      </section>
+
+      <!-- Section 4: Yield Curve -->
+      <section class="content-section">
+        <h2>イールドカーブの形状変化</h2>
+        <p>
+          SGBイールドカーブの形状は、リクスバンクの金融政策スタンス、インフレ期待、そしてターム・プレミアムを反映して大きく変動してきた。以下に主要局面での形状変化を分析する<cite>[12]</cite>。
+        </p>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>期間</th>
+              <th>カーブ形状</th>
+              <th>2Y (%)</th>
+              <th>10Y (%)</th>
+              <th>2s10s (bp)</th>
+              <th>背景</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1992年秋</td>
+              <td style="color:#ff9800;">逆イールド</td>
+              <td>20%+</td>
+              <td>12.4%</td>
+              <td style="color:#ff6b6b;">-800+</td>
+              <td>SEK防衛のための超短期金利500%、長期は危機後の正常化を織り込み</td>
+            </tr>
+            <tr>
+              <td>1995-1997</td>
+              <td style="color:#00d4aa;">スティープ</td>
+              <td>7.0%</td>
+              <td>9.5%</td>
+              <td style="color:#00d4aa;">+250</td>
+              <td>危機後の回復局面、レポレート引き下げ + インフレ不確実性</td>
+            </tr>
+            <tr>
+              <td>2005-2007</td>
+              <td>フラット</td>
+              <td>3.5%</td>
+              <td>3.8%</td>
+              <td>+30</td>
+              <td>安定成長、インフレ期待アンカー</td>
+            </tr>
+            <tr>
+              <td>2009-2010</td>
+              <td style="color:#00d4aa;">スティープ</td>
+              <td>0.8%</td>
+              <td>3.3%</td>
+              <td style="color:#00d4aa;">+250</td>
+              <td>GFC後の回復、レポレート0.25%</td>
+            </tr>
+            <tr>
+              <td>2016-2018</td>
+              <td style="color:#00d4aa;">スティープ</td>
+              <td style="color:#4ecdc4;">-0.6%</td>
+              <td>0.6%</td>
+              <td style="color:#00d4aa;">+120</td>
+              <td>マイナス金利-0.50%、QEによる短期抑制</td>
+            </tr>
+            <tr>
+              <td>2022Q4-2023</td>
+              <td style="color:#ff9800;">逆イールド</td>
+              <td>3.2%</td>
+              <td>2.4%</td>
+              <td style="color:#ff6b6b;">-80</td>
+              <td>急速利上げ（4.00%）、景気後退懸念</td>
+            </tr>
+            <tr>
+              <td>2024-2025</td>
+              <td style="color:#00d4aa;">正常化</td>
+              <td>2.0%</td>
+              <td>2.3%</td>
+              <td style="color:#00d4aa;">+30</td>
+              <td>利下げサイクル進行、カーブ正常化</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          1992年の通貨危機時には、SEK防衛のために限界貸出金利が一時500%に引き上げられたことで、2年-10年スプレッドは-800bp以上のエクストリームな逆イールドとなった。これは近代G10金利史上最も劇的なイールドカーブの歪みの一つである。危機後の正常化局面では、スティープなカーブが回復を主導した<cite>[13]</cite>。
+        </p>
+        <p>
+          2022-2023年の逆イールドはより一般的なパターンであり、リクスバンクの急速利上げ（0%→4.00%）が短期金利を長期金利以上に押し上げた結果である。2s10sスプレッドは一時-80bp程度まで逆転し、スウェーデン経済の景気後退（2023年GDP -0.2%）を正しく予告した<cite>[14]</cite>。
+        </p>
+      </section>
+
+      <!-- Section 5: QE Impact -->
+      <section class="content-section">
+        <h2>リクスバンクのQEと長期金利</h2>
+        <p>
+          リクスバンクは2015年2月にマイナス金利（レポレート -0.10%）を導入するとともに、国債買入プログラム（QE）を開始した。これは世界最古の中央銀行による初のQEであり、スウェーデン金融史上前例のない非伝統的金融政策への転換であった<cite>[15]</cite>。
+        </p>
+
+        <h3>QEプログラムの規模と内訳</h3>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>期間</th>
+              <th>プログラム</th>
+              <th>対象資産</th>
+              <th>購入額 (SEK)</th>
+              <th>備考</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2015-2017</td>
+              <td>国債買入第1弾</td>
+              <td>国債（SGB）</td>
+              <td>~2,800億</td>
+              <td>発行残高の約40%を保有</td>
+            </tr>
+            <tr>
+              <td>2018-2019</td>
+              <td>再投資フェーズ</td>
+              <td>国債（SGB）</td>
+              <td>再投資のみ</td>
+              <td>満期到来分の再投資で残高維持</td>
+            </tr>
+            <tr>
+              <td>2020.3-2021</td>
+              <td>COVID対応拡大</td>
+              <td>国債 + カバードボンド + CP + 地方債</td>
+              <td>~7,000億（累計）</td>
+              <td>資産クラスを大幅拡大</td>
+            </tr>
+            <tr>
+              <td>2021-2022</td>
+              <td>ピーク保有</td>
+              <td>全資産</td>
+              <td>~9,000億（ピーク）</td>
+              <td>GDP比約15%、バランスシート過去最大</td>
+            </tr>
+            <tr>
+              <td>2022.4-現在</td>
+              <td>QT（量的引き締め）</td>
+              <td>全資産（売却 + 満期非再投資）</td>
+              <td>削減中</td>
+              <td>満期到来分の非再投資 + 一部積極売却</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>長期金利への影響</h3>
+        <p>
+          リクスバンクの分析によると、QEによるSGB 10年利回りの押し下げ効果は累計で約30-70bpと推定されている（イベントスタディ手法に基づく）。QE発表直後の反応が最も大きく、2015年2月の最初のQE発表時には10年利回りが1日で約15bp低下した<cite>[16]</cite>。
+        </p>
+        <p>
+          しかしQEの副作用も顕著であった。SGB市場は元々小規模であり、リクスバンクが発行残高の40%超を保有したことで、流動性が著しく低下した。ビッド・アスクスプレッドの拡大、市場のプライスディスカバリー機能の低下が指摘され、プライマリーディーラーからの批判が強まった。Riksgalden（国債庁）は流動性維持のためにT-bill発行を増額し、国債入替入札を実施するなどの対応を余儀なくされた<cite>[17]</cite>。
+        </p>
+        <p>
+          2022年4月以降のQT（量的引き締め）フェーズでは、リクスバンクは満期到来分の非再投資に加え、一部の国債を市場で積極的に売却した。これは主要中央銀行の中でも積極的なQTアプローチであった。QTの開始と同時期の急速な利上げ（0%→4.00%）は、長期金利の急上昇を増幅し、SGB 10年利回りは2019年のマイナス圏から2023年には2.6%超まで上昇した<cite>[18]</cite>。
+        </p>
+      </section>
+
+      <!-- Section 6: Five Eras -->
+      <section class="content-section">
+        <h2>スウェーデン長期金利の5時代区分</h2>
+
+        <h3>第1期: 高金利時代（1980年代）</h3>
+        <p>
+          1980年代のスウェーデンは、規制された金融システムの自由化、高インフレ、拡張的財政政策が重なり、長期金利は11-13%の高水準で推移した。1982年のSEK16%切り下げと1985年の「11月革命」（金融規制撤廃）はインフレ期待を高め、国際的に見ても異常に高い長期金利水準を生んだ。Bundスプレッドは300-600bpと、同じAAA格付国としては極端に高い水準であった。この時期の長期金利は、スウェーデンのマクロ経済運営に対する市場の不信任を反映していた<cite>[19]</cite>。
+        </p>
+
+        <h3>第2期: コンバージェンス時代（1990年代）</h3>
+        <p>
+          1992年のSEKペッグ崩壊と銀行危機を経て、スウェーデンは構造的な経済改革に着手した。1993年のインフレ・ターゲティング導入、1995年のEU加盟、1997年の財政余剰目標の導入は、市場の信認を劇的に改善した。SGB 10年利回りは1990年の13.2%から2000年の5.4%まで約800bp低下し、Bundスプレッドは450bpからほぼゼロまで収斂した。この「コンバージェンス・トレード」は1990年代で最も利益を上げた債券トレードの一つであった<cite>[20]</cite>。
+        </p>
+
+        <h3>第3期: 低位安定時代（2000年代）</h3>
+        <p>
+          2003年のユーロ国民投票否決後も、スウェーデンの財政健全性と低インフレにより長期金利は3-5%の狭いレンジで安定推移した。グローバル貯蓄過剰（Global Savings Glut）とスウェーデンの経常収支黒字が構造的に金利を抑制した。2008年のGFCはバルト・エクスポージャーへの懸念から一時的にスプレッドを拡大させたが、スウェーデンの迅速な危機対応と強固な財政バッファにより速やかに正常化した<cite>[21]</cite>。
+        </p>
+
+        <h3>第4期: マイナス金利時代（2015-2019年）</h3>
+        <p>
+          2015年2月のマイナス金利導入とQE開始は、長期金利をかつてない低水準に押し下げた。SGB 10年利回りは2019年にG10国債としては極めて異例のマイナス圏（-0.15%）に突入した。世界最古の中央銀行が世界最古の国債市場でマイナス利回りを生み出すという歴史的皮肉が生じた。この超低金利環境はスウェーデンの住宅市場を過熱させ、家計債務のGDP比は190%を超えた。住宅ローンの約70%が変動金利であるスウェーデンでは、長期金利の動向が直接的に家計の可処分所得に影響するため、マイナス金利は消費を刺激する一方で金融安定性リスクを蓄積させた<cite>[22]</cite>。
+        </p>
+
+        <h3>第5期: 正常化と新時代（2022年-現在）</h3>
+        <p>
+          2022年のインフレ急加速（CPIF 10.2%）に伴い、リクスバンクは急速な利上げ（0%→4.00%）とQTを同時に実施した。SGB 10年利回りはマイナス圏から2.6%超まで約280bp上昇し、長期SGBの価格は20%以上下落した。特に2022-2023年の不動産セクター危機（SBB -96%）はスウェーデン固有のリスクとして顕在化し、カバードボンド市場のスプレッド拡大が金融システム全体にストレスを与えた<cite>[23]</cite>。
+        </p>
+        <p>
+          2024年にリクスバンクがG10先行で利下げを開始し（ECBに先行）、SGB 10年利回りは2%前後まで低下した。しかし構造的には、NATO加盟に伴う防衛支出の拡大（GDP比2%超目標）、グリーンスチール等のエネルギー転換投資、そして住宅市場の再活性化が長期金利の下限を支える要因として意識されている。市場は「超低金利への回帰はない」というコンセンサスを形成しつつある<cite>[24]</cite>。
+        </p>
+      </section>
+
+      <!-- Section 7: G10 Comparison -->
+      <section class="content-section">
+        <h2>G10長期金利比較</h2>
+        <p>
+          以下のテーブルは、G10主要国の10年国債利回りを主要な転換点で比較する。スウェーデンの位置づけの変化が明確に読み取れる。
+        </p>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th data-sort>国</th>
+              <th data-sort>1990</th>
+              <th data-sort>2000</th>
+              <th data-sort>2007</th>
+              <th data-sort>2012</th>
+              <th data-sort>2019</th>
+              <th data-sort>2023</th>
+              <th data-sort>2025</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>米国 (UST)</td>
+              <td>8.6%</td>
+              <td>6.0%</td>
+              <td>4.6%</td>
+              <td>1.8%</td>
+              <td>1.9%</td>
+              <td>4.6%</td>
+              <td>4.3%</td>
+            </tr>
+            <tr>
+              <td>ドイツ (Bund)</td>
+              <td>8.7%</td>
+              <td>5.3%</td>
+              <td>4.2%</td>
+              <td>1.5%</td>
+              <td style="color:#4ecdc4;">-0.3%</td>
+              <td>2.6%</td>
+              <td>2.7%</td>
+            </tr>
+            <tr>
+              <td>日本 (JGB)</td>
+              <td>7.0%</td>
+              <td>1.7%</td>
+              <td>1.7%</td>
+              <td>0.8%</td>
+              <td style="color:#4ecdc4;">-0.1%</td>
+              <td>0.7%</td>
+              <td>1.5%</td>
+            </tr>
+            <tr>
+              <td>英国 (Gilt)</td>
+              <td>11.1%</td>
+              <td>5.3%</td>
+              <td>5.0%</td>
+              <td>1.8%</td>
+              <td>0.8%</td>
+              <td>4.4%</td>
+              <td>4.5%</td>
+            </tr>
+            <tr>
+              <td>カナダ (GoC)</td>
+              <td>10.8%</td>
+              <td>5.9%</td>
+              <td>4.3%</td>
+              <td>1.8%</td>
+              <td>1.6%</td>
+              <td>3.8%</td>
+              <td>3.2%</td>
+            </tr>
+            <tr>
+              <td>豪州 (ACGB)</td>
+              <td>13.0%</td>
+              <td>6.3%</td>
+              <td>6.0%</td>
+              <td>3.3%</td>
+              <td>1.4%</td>
+              <td>4.5%</td>
+              <td>4.4%</td>
+            </tr>
+            <tr>
+              <td>NZ (NZGB)</td>
+              <td>12.5%</td>
+              <td>6.8%</td>
+              <td>6.3%</td>
+              <td>3.6%</td>
+              <td>1.5%</td>
+              <td>5.0%</td>
+              <td>4.6%</td>
+            </tr>
+            <tr style="background:rgba(0,212,170,0.1);">
+              <td><strong>スウェーデン (SGB)</strong></td>
+              <td><strong>13.2%</strong></td>
+              <td><strong>5.4%</strong></td>
+              <td><strong>4.2%</strong></td>
+              <td><strong>1.6%</strong></td>
+              <td style="color:#4ecdc4;"><strong>-0.15%</strong></td>
+              <td><strong>2.6%</strong></td>
+              <td><strong>2.3%</strong></td>
+            </tr>
+            <tr>
+              <td>ノルウェー (NGB)</td>
+              <td>10.7%</td>
+              <td>6.2%</td>
+              <td>4.8%</td>
+              <td>2.1%</td>
+              <td>1.5%</td>
+              <td>3.8%</td>
+              <td>3.5%</td>
+            </tr>
+            <tr>
+              <td>スイス (Conf)</td>
+              <td>6.4%</td>
+              <td>3.9%</td>
+              <td>3.0%</td>
+              <td>0.6%</td>
+              <td style="color:#4ecdc4;">-0.5%</td>
+              <td>1.0%</td>
+              <td>0.6%</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          1990年時点でスウェーデンのSGB 10年利回りは13.2%とG10最高水準であったが、2019年にはマイナス圏に突入し、ドイツ・日本・スイスと並ぶ世界最低利回りグループに入った。この35年間で約1,300bp（13ポイント）の低下は、G10で最も劇的な長期金利のディスインフレーションの軌跡である。2023年以降の正常化局面では、スウェーデンはG10の中で相対的に低い利回り水準を維持しており、これは健全な財政基盤とリクスバンクの先行利下げを反映している<cite>[25]</cite>。
+        </p>
+      </section>
+
+    </article>
+
+    <!-- Sources -->
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>Riksgalden (Swedish National Debt Office), "Swedish Government Bonds - Market Information", 2024</li>
+        <li>S&amp;P Global Ratings, "Sweden Sovereign Rating Report", AAA/Stable, 2024; Moody's, "Government of Sweden - Aaa Stable", 2024</li>
+        <li>Riksbank, "Financial Market Statistics", Statistical Database, 2025</li>
+        <li>Riksbank Statistical Database; Bloomberg Terminal; Federal Reserve Bank of St. Louis (FRED), "Sweden 10-Year Government Bond Yield"</li>
+        <li>Alexius, A. and Vredin, A., "The Role of the Exchange Rate for Monetary Policy: The Swedish Experience", Sveriges Riksbank, 2002</li>
+        <li>Riksbank, "Monetary Policy in Sweden - A Historical Perspective", 2018</li>
+        <li>Agell, J. et al., "The Swedish Boom to Bust Cycle: Tax Reform, Consumption and Asset Structure", Swedish Economic Policy Review, 1995</li>
+        <li>Riksgalden, "The Swedish Government Bond Market", Annual Report, various years</li>
+        <li>Floden, M., "The Euro Debate in Sweden", Swedish National Institute of Economic Research, 2011</li>
+        <li>Riksbank, "Asset Purchases and Financial Markets", Staff Memo, 2020</li>
+        <li>Bloomberg, "Sweden-Germany 10Y Spread Historical Data", accessed 2025</li>
+        <li>Riksbank, "Monetary Policy Report", various issues, 2015-2025</li>
+        <li>Holmberg, J., "The Swedish Financial Crisis of 1992 - An Anatomy", Uppsala University, 2003</li>
+        <li>Statistics Sweden (SCB), "GDP Growth Quarterly Data", 2023-2024</li>
+        <li>Riksbank, "Minutes of the Executive Board's Monetary Policy Meetings", February 2015</li>
+        <li>De Rezende, R. et al., "The Impact of QE on Swedish Government Bond Yields", Riksbank Working Paper No. 353, 2017</li>
+        <li>Riksgalden, "Central Government Borrowing - Forecast and Analysis", 2017-2022</li>
+        <li>Riksbank, "Account of Monetary Policy", Annual Review, 2022-2023</li>
+        <li>Jonung, L., "The Swedish Model for Resolving the Banking Crisis of 1991-93", European Commission, 2009</li>
+        <li>Svensson, L.E.O., "Monetary Policy in Sweden after the End of the Bretton Woods System", NBER Working Paper, 2014</li>
+        <li>IMF, "Sweden: Article IV Consultation", various years</li>
+        <li>Riksbank, "Financial Stability Report", 2019; Statistics Sweden (SCB), "Household Debt Statistics"</li>
+        <li>Finansinspektionen (FI), "The Swedish Mortgage Market", 2023; Bloomberg, "SBB Share Price History"</li>
+        <li>Riksbank, "Monetary Policy Report", September 2024; Swedish Government Fiscal Policy Framework, "Spring Budget 2025"</li>
+        <li>Bloomberg Terminal, "G10 10-Year Government Bond Yields - Comparative Data", accessed March 2025</li>
+      </ol>
+      <p style="margin-top:1rem; font-size:0.85em; color:#888;">
+        注: 歴史的な利回りデータは年末値または年間平均値を使用。市場データはBloomberg Terminalおよび各国中央銀行の統計データベースに基づく。スプレッド値は概算であり、日中変動を反映していない場合がある。
+      </p>
+    </footer>
+
+    <!-- Navigation -->
+    <div class="page-nav">
+      <a href="12_short_rates.html" class="prev">&#9664; 12. Short-term Rates</a>
+      <a href="14_currency.html" class="next">14. Currency &#9654;</a>
+    </div>
+  </main>
+
+  <script>
+    // Sortable tables
+    document.querySelectorAll('.sortable').forEach(table => {
+      const headers = table.querySelectorAll('th[data-sort]');
+      headers.forEach((header, index) => {
+        header.style.cursor = 'pointer';
+        header.addEventListener('click', () => {
+          const tbody = table.querySelector('tbody');
+          const rows = Array.from(tbody.querySelectorAll('tr'));
+          const isNumeric = rows.some(row => {
+            const cell = row.cells[index];
+            const text = cell ? cell.textContent.replace(/[%,+\-~bpSEKn\/a ]/g, '').trim() : '';
+            return !isNaN(parseFloat(text)) && text.length > 0;
+          });
+          const currentOrder = header.getAttribute('data-order') || 'asc';
+          const newOrder = currentOrder === 'asc' ? 'desc' : 'asc';
+          header.setAttribute('data-order', newOrder);
+          headers.forEach(h => { if (h !== header) h.removeAttribute('data-order'); });
+          rows.sort((a, b) => {
+            const aText = a.cells[index] ? a.cells[index].textContent.trim() : '';
+            const bText = b.cells[index] ? b.cells[index].textContent.trim() : '';
+            if (isNumeric) {
+              const aNum = parseFloat(aText.replace(/[%,+~bpSEKn\/a ]/g, '')) || 0;
+              const bNum = parseFloat(bText.replace(/[%,+~bpSEKn\/a ]/g, '')) || 0;
+              return newOrder === 'asc' ? aNum - bNum : bNum - aNum;
+            }
+            return newOrder === 'asc' ? aText.localeCompare(bText) : bText.localeCompare(aText);
+          });
+          rows.forEach(row => tbody.appendChild(row));
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweden - Financial Crises | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">&#9776;</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">&#x1F1F8;&#x1F1EA; Sweden</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link active">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip active">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">&#x1F3E0; Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">&#x1F4CA; G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Sweden</a>
+        <span class="sep">/</span>
+        Financial Crises
+      </div>
+      <h1 class="page-title">スウェーデンの金融危機史</h1>
+      <p class="page-subtitle">クロイガー事件から不動産危機、バルト危機、SBBショックまで &mdash; 危機管理の教科書国</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">6</div>
+          <div class="stat-label">主要金融危機（1932-2023）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" style="color:var(--accent-red);">1990-93</div>
+          <div class="stat-label">戦後最悪の銀行危機</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" style="color:var(--accent-orange);">SEK 65B+</div>
+          <div class="stat-label">銀行危機コスト（GDP比約4%）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" style="color:var(--accent-red);">-69%</div>
+          <div class="stat-label">OMXS30最大ドローダウン（2000-03）</div>
+        </div>
+      </div>
+
+      <p>
+        スウェーデンは小国ながら、20世紀から21世紀にかけて世界金融史に深く刻まれる複数の危機を経験してきた。1932年のクロイガー事件（Kreuger Crash）は世界恐慌期における最大級の企業詐欺であり、1990年代初頭の銀行危機は「バッドバンク」モデルの原型として2008年の世界金融危機（GFC）における各国の政策対応に直接的な影響を与えた。スウェーデンの危機管理モデルは、迅速な介入、透明性、損失の早期認識という3原則に基づき、IMFや各国中央銀行から「危機管理の教科書」として参照され続けている。本章では、クロイガー事件から2023年のSBB（Samhallsbyggnadsbolaget）ショックまで、スウェーデンが直面した主要な金融危機を体系的に分析する。
+      </p>
+
+      <!-- ============================================================ -->
+      <!-- Section 1: Crisis Timeline Overview -->
+      <!-- ============================================================ -->
+      <section>
+        <h2>1. 危機年表一覧</h2>
+        <p>以下の表は、1932年以降のスウェーデンにおける主要金融危機を時系列で整理したものである。各危機の規模、株式市場への影響、GDP成長率への打撃、および政策対応を一覧化した。</p>
+
+        <table class="sortable">
+          <thead>
+            <tr>
+              <th data-sort>危機名</th>
+              <th data-sort>期間</th>
+              <th data-sort>OMXS30影響</th>
+              <th data-sort>GDP影響</th>
+              <th>主要な政策対応</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:rgba(255,159,67,0.08);">
+              <td>クロイガー事件</td>
+              <td>1932</td>
+              <td>株価指数 -40%超</td>
+              <td>-5.2%</td>
+              <td>証券規制強化、銀行監督体制整備</td>
+            </tr>
+            <tr style="background:rgba(255,107,107,0.12);">
+              <td>銀行危機</td>
+              <td>1990-93</td>
+              <td>-60%</td>
+              <td>累計 -5.1%</td>
+              <td>包括保証、バッドバンク（Securum/Retriva）、Bankstodsnamnden設立</td>
+            </tr>
+            <tr style="background:rgba(255,159,67,0.08);">
+              <td>通貨危機</td>
+              <td>1992</td>
+              <td>（銀行危機と同時）</td>
+              <td>（同上）</td>
+              <td>限界金利500%、ペッグ放棄（11月19日）、フロート制移行</td>
+            </tr>
+            <tr style="background:rgba(255,159,67,0.08);">
+              <td>ITバブル崩壊</td>
+              <td>2000-03</td>
+              <td>-69%</td>
+              <td>+1.1%（浅い減速）</td>
+              <td>Ericsson大規模リストラ、利下げ（4.75%→2.75%）</td>
+            </tr>
+            <tr style="background:rgba(255,107,107,0.08);">
+              <td>GFC・バルト危機</td>
+              <td>2008-09</td>
+              <td>-56%</td>
+              <td>-5.2%</td>
+              <td>緊急流動性供給、バルト通貨支援、銀行安定化基金</td>
+            </tr>
+            <tr style="background:rgba(255,159,67,0.08);">
+              <td>金利ショック・SBB危機</td>
+              <td>2022-23</td>
+              <td>-25%（2022年）</td>
+              <td>-0.2%（2023年）</td>
+              <td>利上げ（0%→4.00%）、SBB格下げ、不動産市場調整</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="source"><cite>[1] Riksbank, "Financial Stability Reports", various years; [2] SCB (Statistics Sweden), GDP historical data; [3] Nasdaq Stockholm, OMXS30 historical prices.</cite></p>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- Section 2: Kreuger Crash 1932 -->
+      <!-- ============================================================ -->
+      <section>
+        <h2>2. クロイガー事件 (Kreuger Crash) 1932</h2>
+
+        <h3>「マッチ王」の帝国</h3>
+        <p>
+          イーヴァル・クロイガー（Ivar Kreuger, 1880-1932）は、スウェーデン出身の実業家であり、1920年代に世界のマッチ生産の約75%を支配する巨大帝国を築き上げた。クロイガーのビジネスモデルは単純かつ大胆であった。各国政府にマッチ生産の独占権と引き換えに大規模な融資を提供し、その融資資金を米国やヨーロッパの投資家から集めた社債・株式で調達した。ドイツ、フランス、ポーランド、トルコ、エクアドルなど15カ国以上と独占契約を締結し、「マッチ王」（Match King）の異名を取った。
+        </p>
+        <p>
+          しかし、その帝国の実態は精巧な詐欺であった。クロイガーは複雑な持株会社構造（400社以上）を使い、同一資産を複数の会社の帳簿に計上する「二重帳簿」を駆使していた。さらにはイタリア政府債券を偽造し、資産を水増しする手法まで用いていた。1929年のウォール街大暴落以降、新規資金調達が困難になると帝国は急速に崩壊し始めた。
+        </p>
+
+        <h3>崩壊と余波</h3>
+        <p>
+          1932年3月12日、クロイガーはパリのアパートで拳銃自殺した（他殺説も根強く残るが、公式には自殺と結論）。死後の調査で、負債総額は約US$250M（当時のスウェーデンGDPの約15%に相当）に達することが判明した。ストックホルム証券取引所は暴落し、クロイガー関連銘柄は無価値となった。スウェーデン経済全体への影響は甚大で、1932年のGDP成長率は-5.2%を記録した。
+        </p>
+        <p>
+          クロイガー事件はスウェーデンの金融規制を根本的に変えた。1934年には証券取引法が制定され、会計監査の義務化、持株会社の情報開示強化が実施された。また、米国においてもSEC（証券取引委員会）設立（1934年）の契機の一つとなり、国際的な証券規制強化の流れを加速させた。事件から90年以上が経過した今日でも、クロイガー事件は企業詐欺と規制の不備がいかに壊滅的な結果をもたらすかを示す古典的事例として金融史に記録されている。
+        </p>
+        <p class="source"><cite>[4] F. Partnoy, "The Match King: Ivar Kreuger, The Financial Genius Behind a Century of Wall Street Scandals", PublicAffairs, 2009; [5] Riksbank, "Kreuger Crash and Swedish Financial Regulation", Historical Papers.</cite></p>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- Section 3: 1990-93 Banking Crisis -->
+      <!-- ============================================================ -->
+      <section>
+        <h2>3. 1990-93年銀行危機 &mdash; スウェーデン危機管理の原点</h2>
+        <p>
+          1990年代初頭のスウェーデン銀行危機は、同国の戦後金融史において最も深刻かつ最も重要な危機である。この危機から生まれた「スウェーデン・モデル」は、2008年のGFCにおいて米国のTARP（Troubled Asset Relief Program）やアイルランドのNAMA（National Asset Management Agency）など、世界各国の危機対応の直接的なテンプレートとなった。
+        </p>
+
+        <h3>前史: 11月革命と信用バブル（1985-89）</h3>
+        <p>
+          危機の種は1985年11月21日の「11月革命」（Novemberrevolutionen）に遡る。この日、スウェーデン政府は銀行融資の数量規制を撤廃する大規模な金融自由化を実施した。それまでスウェーデンの銀行は、リクスバンクが設定する融資上限枠内でのみ貸出が許されていた。規制撤廃後、銀行は競うように融資を拡大し、融資残高は1986-89年の4年間で実質50%以上増加した。
+        </p>
+        <p>
+          信用拡大は不動産市場に集中した。ストックホルム、ヨーテボリ、マルメの商業不動産価格は1985-89年に名目で2倍以上に高騰した。住宅価格も同時期に約50%上昇した。高い限界税率（最高86%）の下で利払いの税控除が可能であったため、借入による不動産投資は税制上極めて有利であり、レバレッジが際限なく拡大する構造的要因があった。加えて、クローナのECU（欧州通貨単位）ペッグ制度が為替リスクを見かけ上抑制し、外国資本の流入を促した。
+        </p>
+
+        <h3>バブル崩壊（1990-91）</h3>
+        <p>
+          1990年、世界的な景気減速と1991年の税制改革（限界税率を86%から50%に引き下げ、同時に利払い控除を縮小）が引き金となり、不動産バブルは急速に崩壊した。商業不動産価格は1990年のピークから1993年にかけて実質で約50-60%下落した。不動産金融会社（ファイナンスボラーグ）が最初に破綻し始め、銀行の不良債権が急速に膨張した。
+        </p>
+
+        <table class="sortable">
+          <thead>
+            <tr>
+              <th data-sort>金融機関</th>
+              <th data-sort>種別</th>
+              <th>状況</th>
+              <th>政府対応</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:rgba(255,107,107,0.12);">
+              <td>Nordbanken</td>
+              <td>国有銀行</td>
+              <td>不良債権率17%超、技術的破綻</td>
+              <td>SEK 51B資本注入、不良資産をSecurumに移管</td>
+            </tr>
+            <tr style="background:rgba(255,107,107,0.12);">
+              <td>Gota Bank</td>
+              <td>商業銀行</td>
+              <td>1992年9月破綻、株主価値ゼロ</td>
+              <td>国有化後Nordbankenに統合</td>
+            </tr>
+            <tr style="background:rgba(255,159,67,0.08);">
+              <td>Forsta Sparbanken</td>
+              <td>貯蓄銀行</td>
+              <td>深刻な不良債権問題</td>
+              <td>Sparbanken Sverige（後のSwedbankの前身）に統合</td>
+            </tr>
+            <tr style="background:rgba(255,159,67,0.08);">
+              <td>S-E-Banken (SEB)</td>
+              <td>商業銀行</td>
+              <td>ヴァレンベリ家支配、自力再建</td>
+              <td>公的資金不使用（ただし包括保証の恩恵は享受）</td>
+            </tr>
+            <tr style="background:rgba(255,159,67,0.08);">
+              <td>Handelsbanken</td>
+              <td>商業銀行</td>
+              <td>保守的経営、相対的に軽微</td>
+              <td>公的支援不要</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>包括保証と「バッドバンク」モデル</h3>
+        <p>
+          1992年9月、ゴータ銀行（Gota Bank）の破綻を受け、スウェーデン政府はボー・ルンドグレン（Bo Lundgren）財務大臣のリーダーシップの下、歴史的な決断を下した。全銀行の預金者および債権者に対する包括保証（blanket guarantee）を宣言したのである。この保証は株主には及ばず、株主責任の原則が貫かれた点が後の各国のモデルと異なる重要な特徴であった。
+        </p>
+        <p>
+          同時に、政府はバンクストゥーズネムンデン（Bankstodsnamnden = Bank Support Authority）を設立し、危機対応の司令塔とした。最も革新的であったのは「バッドバンク」の創設である。国有銀行ノードバンケンの不良資産は「セキュラム」（Securum AB）に、ゴータ銀行の不良資産は「レトリーヴァ」（Retriva AB）にそれぞれ移管された。これらのバッドバンクは不良資産を時間をかけて処分・回収する任務を与えられ、最終的にSecurumは移管資産の80%以上を回収することに成功した。
+        </p>
+        <p>
+          銀行危機の総コストは、当初見積もられたSEK 65B（GDP比約4%）から、資産回収の進展により最終的にはGDP比約2%程度にまで圧縮された。これは日本の不良債権問題（GDP比約20%）やアイルランド銀行危機（GDP比約40%）と比較して著しく低い水準であり、スウェーデンモデルの有効性を示す証左とされている。
+        </p>
+
+        <h3>マクロ経済への打撃</h3>
+        <p>
+          銀行危機は実体経済に甚大な影響を与えた。GDPは1991年に-1.1%、1992年に-1.2%、1993年に-2.1%と3年連続マイナス成長を記録した（累計約-5.1%の経済縮小）。失業率は1990年の1.5%（事実上の完全雇用）から1993年には12.2%へと急上昇した。財政赤字はGDP比11.4%に達し、政府債務はGDP比約40%から1996年には約73%へと急膨張した。
+        </p>
+        <p>
+          しかし、1992年11月のクローナ切り下げ（ペッグ放棄後、SEKは対ECUで約25%減価）がスウェーデン経済の構造的転換点となった。輸出競争力が劇的に改善し、1994年以降のスウェーデンは力強い輸出主導の回復を遂げた。OMXS30は1992年の底値155から1999年には1,350へと約9倍に回復した。危機は同時に1990年代の財政再建と、余剰目標（surplus target）・支出上限（expenditure ceiling）・地方財政均衡制度という「財政の3本柱」の導入を促し、その後の財政健全化の礎となった。
+        </p>
+        <p class="source"><cite>[6] S. Ingves &amp; G. Lind, "The management of the bank crisis - in retrospect", Riksbank Quarterly Review, 1996; [7] P. Englund, "The Swedish banking crisis: roots and consequences", Oxford Review of Economic Policy, 1999; [8] Bo Lundgren, "Finanskrisen" (memoirs), 2015; [9] IMF, "Sweden: Financial System Stability Assessment", 2002.</cite></p>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- Section 4: 1992 Currency Crisis -->
+      <!-- ============================================================ -->
+      <section>
+        <h2>4. 通貨危機 1992年 &mdash; 500%金利とペッグ放棄</h2>
+
+        <p>
+          1992年のスウェーデン通貨危機は、銀行危機と同時進行で発生した「ツインクライシス」の通貨面である。欧州為替相場メカニズム（ERM）全体が投機的攻撃に晒された1992年秋、スウェーデンは欧州で最も劇的な通貨防衛と、その最終的な放棄を経験した。
+        </p>
+
+        <h3>SEK防衛戦</h3>
+        <p>
+          スウェーデンは1991年5月にECUペッグ制度（許容変動幅 &plusmn;1.5%）を導入していた。1992年夏以降、欧州通貨への投機的攻撃が激化し、9月16日には英ポンドがERM離脱（「ブラック・ウェンズデー」、ジョージ・ソロスの「イングランド銀行を破った男」として知られる事件）、同日イタリア・リラもERM離脱した。
+        </p>
+        <p>
+          リクスバンクはクローナ防衛のため、限界貸出金利を段階的に引き上げた。9月には24%に、そして9月16日深夜には<strong>500%</strong>（年率換算）という前代未聞の水準にまで引き上げた。これはオーバーナイト市場でSEKを借りてドルやマルクに交換する投機コストを事実上禁止的な水準にまで高めることを意図したものであった。同時にリクスバンクは外貨準備を用いた大規模な為替介入を実施した。
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>日付</th>
+              <th>限界金利</th>
+              <th>イベント</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1992年9月8日</td>
+              <td style="color:var(--accent-red);">16% → 24%</td>
+              <td>フィンランド・マルカのECU離脱を受け第一次引き上げ</td>
+            </tr>
+            <tr style="background:rgba(255,107,107,0.15);">
+              <td>1992年9月16日</td>
+              <td style="color:var(--accent-red);font-weight:bold;">500%</td>
+              <td>ブラック・ウェンズデー、ポンド・リラERM離脱、SEK防衛最大引き上げ</td>
+            </tr>
+            <tr>
+              <td>1992年9月下旬</td>
+              <td style="color:var(--accent-orange);">20%前後</td>
+              <td>一時的安定、段階的引き下げ</td>
+            </tr>
+            <tr>
+              <td>1992年11月19日</td>
+              <td>&mdash;</td>
+              <td style="color:var(--accent-red);font-weight:bold;">ECUペッグ放棄、変動相場制移行</td>
+            </tr>
+            <tr>
+              <td>1992年末</td>
+              <td>12.5%</td>
+              <td>SEK対ECU約25%減価</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>ペッグ放棄とその後</h3>
+        <p>
+          500%金利にもかかわらず投機圧力は収まらず、外貨準備の流出が続いた。1992年11月19日、リクスバンクはついにECUペッグを放棄し、変動相場制に移行した。クローナは即座に約10%下落し、年末までに対ECUで25%以上減価した。短期的には輸入物価の上昇とインフレ圧力をもたらしたが、中長期的には輸出セクターの競争力を劇的に改善し、1994年以降の力強い経済回復の基盤を築いた。
+        </p>
+        <p>
+          ペッグ放棄は同時にスウェーデンの金融政策フレームワークの転換点でもあった。1993年1月、リクスバンクはインフレーション・ターゲティング（目標2% &plusmn;1%の許容幅）を世界に先駆けて導入し（ニュージーランド1990年、カナダ1991年に次ぐ3番目）、この枠組みは今日まで継続している。
+        </p>
+        <p class="source"><cite>[10] Riksbank, "From fixed exchange rate to inflation targeting", Riksbank Studies, 2003; [11] L. Jonung, "The Swedish model for resolving the banking crisis of 1991-93", European Commission Economic Papers, 2009; [12] P. Englund &amp; V. Vihriala, "Financial Crises in the Nordic Countries", Bank of Finland Discussion Papers, 2003.</cite></p>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- Section 5: IT Bubble Crash 2000-03 -->
+      <!-- ============================================================ -->
+      <section>
+        <h2>5. ITバブル崩壊とEricsson危機 (2000-03)</h2>
+
+        <p>
+          2000年代初頭のITバブル崩壊は、テレコム・セクターの比重が極めて高かったスウェーデン株式市場に対してG10諸国中でも最大級の打撃を与えた。OMXS30は2000年3月の高値から2002年10月の安値まで<strong>-69%</strong>という壊滅的な下落を記録した。これはNASDAQの-78%に次ぐG10主要指数の下落率であった。
+        </p>
+
+        <h3>Ericsson: -95%の衝撃</h3>
+        <p>
+          危機の震源地はエリクソン（Telefonaktiebolaget LM Ericsson）であった。1999年末時点でエリクソンはストックホルム証券取引所の時価総額の約30%を占め、B株（議決権制限株）は世界で最も活発に取引される株式の一つであった。第3世代（3G）携帯電話ネットワークへの設備投資ブームを背景に、2000年3月のピーク時にはエリクソンの時価総額はSEK 1.5T（約US$180B）に達していた。
+        </p>
+        <p>
+          しかし、3Gライセンスオークション（欧州各国で総額US$100B以上が支払われた）後の通信事業者の財務悪化、設備投資の急激な削減、そして2000年3月のエリクソンのアルバカーキ工場火災（主要サプライヤーの半導体工場）が重なり、エリクソンの株価は壊滅的な下落を開始した。2000年3月のピーク約SEK 100から2002年10月にはSEK 5を下回り、<strong>下落率は-95%</strong>に達した。携帯端末事業の分離（ソニーとの合弁「Sony Ericsson」設立、2001年10月）、数万人規模のリストラ、そして事業構造の抜本的転換を余儀なくされた。
+        </p>
+
+        <h3>広範なテレコム・IT・セクターの崩壊</h3>
+        <p>
+          エリクソン以外にも、スウェーデンのIT・テレコム関連企業は軒並み壊滅的な株価下落を経験した。テリアソネラ（Telia、現Telia Company）は2000年のIPO価格SEK 85から2002年にはSEK 20以下に暴落した。フレームテクノロジー（Framtidsteknologi）などの新興IT企業の多くは完全に消滅した。キスタ・サイエンス・シティ（Kista Science City）のテック・ハブは空室率が急上昇し、「IT墓場」と呼ばれた。
+        </p>
+        <p>
+          ただし、1990年代の銀行危機と異なり、ITバブル崩壊はスウェーデンの銀行システムには限定的な影響しか与えなかった。銀行セクターは1990年代の危機後に保守的な融資姿勢を維持しており、IT企業向け融資は相対的に小規模であった。このため、GDPへの影響は2001年の+1.1%成長と軽微にとどまり、景気後退は回避された。リクスバンクは政策金利を2001年の4.75%から2003年の2.75%へと段階的に引き下げ、回復を支援した。
+        </p>
+        <p class="source"><cite>[13] Nasdaq OMX Stockholm, "OMXS30 Historical Data", 2000-2003; [14] Ericsson Annual Reports, 2000-2003; [15] Riksbank, "Financial Stability Report", 2001-2003.</cite></p>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- Section 6: GFC and Baltic Crisis -->
+      <!-- ============================================================ -->
+      <section>
+        <h2>6. GFCとバルト危機 (2008-09)</h2>
+
+        <p>
+          2008-09年の世界金融危機（Global Financial Crisis）は、スウェーデンに対して二重の打撃を与えた。一つはグローバルな金融市場の混乱による直接的影響であり、もう一つはスウェーデンの銀行のバルト三国（エストニア、ラトビア、リトアニア）への巨大なエクスポージャーを通じた間接的影響であった。後者は「バルト危機」として知られ、スウェーデン固有のリスク要因として国際的にも注目を集めた。
+        </p>
+
+        <h3>バルト・エクスポージャー: スウェーデン銀行の「新興市場リスク」</h3>
+        <p>
+          2000年代、スウェーデンの大手銀行はバルト三国の急速な経済成長を背景に、同地域で積極的な融資拡大を行った。スウェードバンク（Swedbank）はエストニアとラトビアの住宅ローン市場で最大手となり、SEB（Skandinaviska Enskilda Banken）はリトアニアとエストニアで主要なプレゼンスを築いた。2008年時点で、スウェーデンの銀行のバルト三国向けエクスポージャーはスウェーデンGDPの約20%に達していた。
+        </p>
+        <p>
+          バルト三国は2004年のEU加盟後、年率8-12%の経済成長を遂げていたが、その成長は不動産バブルと経常収支赤字（ラトビアはGDP比-22%）に依存していた。2008年後半、グローバルな信用収縮がバルト経済を直撃した。GDP下落率はエストニア-14.1%、ラトビア-17.7%、リトアニア-14.8%と、世界恐慌以来の水準を記録した。
+        </p>
+
+        <table class="sortable">
+          <thead>
+            <tr>
+              <th data-sort>銀行</th>
+              <th data-sort>株価下落（ピーク→安値）</th>
+              <th data-sort>バルト・エクスポージャー</th>
+              <th>主要リスク</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:rgba(255,107,107,0.12);">
+              <td>Swedbank</td>
+              <td style="color:var(--accent-red);font-weight:bold;">-89%</td>
+              <td>エストニア・ラトビア最大手</td>
+              <td>バルト住宅ローン不良債権急増</td>
+            </tr>
+            <tr style="background:rgba(255,107,107,0.08);">
+              <td>SEB</td>
+              <td style="color:var(--accent-red);">-82%</td>
+              <td>リトアニア・エストニア主要行</td>
+              <td>バルト企業融資の劣化</td>
+            </tr>
+            <tr style="background:rgba(255,159,67,0.08);">
+              <td>Nordea</td>
+              <td style="color:var(--accent-orange);">-72%</td>
+              <td>分散（北欧全体）</td>
+              <td>市場全体のリスクオフ</td>
+            </tr>
+            <tr>
+              <td>Handelsbanken</td>
+              <td style="color:var(--accent-orange);">-56%</td>
+              <td>バルト・エクスポージャー極小</td>
+              <td>相対的に堅調</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>政策対応</h3>
+        <p>
+          リクスバンクはステファン・イングヴェス（Stefan Ingves）総裁のもと、迅速な危機対応を実施した。政策金利は2008年10月の4.75%から2009年7月の0.25%へと急速に引き下げられた。リクスバンクはまた、エストニア中央銀行およびラトビア中央銀行との間でスワップ協定を締結し、バルト通貨の安定を支援した。これはバルト通貨のユーロペッグが崩壊した場合、スウェーデンの銀行が壊滅的な為替損失を被るリスクを回避するためであった。
+        </p>
+        <p>
+          スウェーデン政府は銀行安定化基金（Stabilitetsfonden）を設立し、SEK 15B規模の資本注入枠を用意した。しかし、最終的にはスウェーデンの銀行は自力で資本増強を実施し（Swedbankは2回の大規模増資を実施）、公的資金の直接注入は回避された。OMXS30は2007年7月の高値1,372から2009年3月の安値606まで-56%下落したが、2010年末には1,150まで回復した。
+        </p>
+        <p>
+          バルト危機の教訓として、スウェーデン金融監督庁（Finansinspektionen）はクロスボーダーの銀行監督を強化し、バーゼルIII規制の先行適用を推進した。スウェーデンの大手銀行のCET1比率要件は欧州平均を上回る水準（12-15%）に設定された。
+        </p>
+        <p class="source"><cite>[16] Riksbank, "Financial Crisis in the Baltic States", Financial Stability Report 2009; [17] Finansinspektionen, "Swedish banks' exposures to the Baltic countries", 2009; [18] IMF, "Sweden: 2009 Article IV Consultation", 2009; [19] Swedbank Annual Report, 2008-2009.</cite></p>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- Section 7: SBB Crisis 2022-23 -->
+      <!-- ============================================================ -->
+      <section>
+        <h2>7. 不動産・SBB危機 (2022-23)</h2>
+
+        <p>
+          2022-23年の不動産危機は、長年にわたるマイナス金利環境が生み出した構造的脆弱性が、急激な金利正常化によって顕在化した事例である。その象徴がSBB（Samhallsbyggnadsbolaget i Norden AB）の-96%という壊滅的な株価下落であった。
+        </p>
+
+        <h3>マイナス金利時代の不動産レバレッジ</h3>
+        <p>
+          スウェーデンの住宅ローンの約70%が変動金利型であるという特徴は、金利変動に対する家計の脆弱性を構造的に高めていた。リクスバンクのマイナス金利政策（2015-2019年、レポレート-0.50%）とその後の低金利環境（2020-2022年初、0%）の下で、不動産セクターは積極的にレバレッジを拡大した。商業不動産大手のSBBは、社会インフラ不動産（学校、政府庁舎、高齢者施設）への投資を借入金で急拡大し、帳簿上の資産は2018年のSEK 37BからSEK 164B（2022年）へと4倍以上に膨張した。
+        </p>
+
+        <h3>SBB: -96%の崩壊</h3>
+        <p>
+          2022年4月、リクスバンクが利上げサイクルを開始し、レポレートを0%から段階的に引き上げると、不動産セクターは急速に動揺し始めた。SBBのCEOイリヤ・バトリアン（Ilija Batljan）が築いた高レバレッジ・モデルは、金利上昇局面で致命的な弱点を露呈した。
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>時期</th>
+              <th>SBB株価（B株）</th>
+              <th>主要イベント</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2021年11月（ピーク）</td>
+              <td style="color:var(--accent-green);">SEK ~58</td>
+              <td>時価総額SEK 80B超、北欧最大級の不動産会社</td>
+            </tr>
+            <tr style="background:rgba(255,107,107,0.08);">
+              <td>2022年末</td>
+              <td style="color:var(--accent-orange);">SEK ~15</td>
+              <td>金利上昇、不動産価値見直し開始</td>
+            </tr>
+            <tr style="background:rgba(255,107,107,0.12);">
+              <td>2023年5月</td>
+              <td style="color:var(--accent-red);">SEK ~3</td>
+              <td>S&amp;PがBBB-からBB+に格下げ（投資適格喪失）</td>
+            </tr>
+            <tr style="background:rgba(255,107,107,0.15);">
+              <td>2023年9月（底値付近）</td>
+              <td style="color:var(--accent-red);font-weight:bold;">SEK ~2.3</td>
+              <td>資産売却、事業再編、CEO辞任</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          SBBの問題は同社に限定されなかった。カステルム（Castellum）、ファストファシャー・バスタッド（Fastighets AB Balder）、その他の北欧不動産会社も軒並み株価が50-70%下落した。スウェーデンの商業不動産セクター全体で社債スプレッドが急拡大し、社債市場の流動性が枯渇した。変動金利住宅ローンの利払い負担は家計を直撃し、住宅価格はピーク（2022年初）から約15-20%下落した。
+        </p>
+        <p>
+          ただし、1990年代の銀行危機とは異なり、スウェーデンの銀行システム自体は堅固であった。バーゼルIII規制の下で十分な自己資本を蓄積しており（CET1比率17-19%）、不動産セクターの損失は吸収可能な範囲にとどまった。リクスバンクは2024年5月にレポレートを3.75%へ引き下げ、利下げサイクルを開始した。
+        </p>
+        <p class="source"><cite>[20] Finansinspektionen, "Stability in the Financial System", 2023; [21] SBB Annual Report 2022-2023; [22] Riksbank, "Financial Stability Report", November 2023; [23] S&amp;P Global Ratings, "SBB Downgrade Report", May 2023.</cite></p>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- Section 8: Swedish Crisis Management Model -->
+      <!-- ============================================================ -->
+      <section>
+        <h2>8. スウェーデンの危機管理モデル &mdash; 世界の教科書</h2>
+
+        <p>
+          スウェーデンの1990年代銀行危機対応は、IMF、世界銀行、各国中央銀行によって「システミック・バンキング・クライシスへの模範的対応」として繰り返し引用されてきた。2008年のGFCにおいて、米国のハンク・ポールソン財務長官とティモシー・ガイトナーFRBニューヨーク連銀総裁は、スウェーデン・モデルを直接参照してTARPの設計に取り組んだことが知られている。
+        </p>
+
+        <h3>5つの原則</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>原則</th>
+              <th>スウェーデンの実践</th>
+              <th>GFC（2008）での応用</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><strong>迅速な介入</strong></td>
+              <td>Gota Bank破綻の翌日に包括保証を宣言</td>
+              <td>TARP（米国）、包括保証（アイルランド、2008年9月）</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><strong>損失の早期認識</strong></td>
+              <td>銀行に対し全損失の即時計上を要求</td>
+              <td>米国ストレステスト（SCAP）2009年</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><strong>バッドバンクによる分離</strong></td>
+              <td>Securum/Retrivaに不良資産を移管</td>
+              <td>NAMA（アイルランド）、SAREB（スペイン）</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><strong>株主責任の貫徹</strong></td>
+              <td>Gota Bank株主は全損、Nordbanken株主は大幅希薄化</td>
+              <td>一部実施（AIG、但しGM/Chryslerでは株主保護も）</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td><strong>透明性と独立機関</strong></td>
+              <td>Bankstodsnamndenの独立運営、議会への報告</td>
+              <td>SIGTARP（米国TARP監視機関）</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>成功の要因と限界</h3>
+        <p>
+          スウェーデン・モデルの成功にはいくつかの固有の条件があった。第一に、スウェーデンの銀行セクターは相対的に小規模（5大銀行に集中）であり、政府が全体を把握・管理することが可能であった。第二に、クローナの変動相場制移行が輸出主導の回復を可能にした（ユーロ圏内の危機国にはこの選択肢がない）。第三に、与野党を超えた政治的コンセンサスが迅速な意思決定を可能にした（保守党のカール・ビルト首相と社民党が協力）。
+        </p>
+        <p>
+          一方で、包括保証は全預金者・債権者を保護したため、モラルハザードのリスクを残した。また、危機後の住宅価格上昇トレンドは抑制されず、2022-23年のSBB危機に見られるように、不動産セクターの構造的脆弱性は完全には解消されていない。
+        </p>
+        <p class="source"><cite>[24] IMF, "Systemic Banking Crises Database", Laeven &amp; Valencia, 2018; [25] Bo Lundgren, speeches on Swedish crisis management model, 2008-2010; [26] H. Paulson, "On the Brink", 2010 (references to Swedish model); [27] BIS, "Resolution of banking crises: the good, the bad and the ugly", Working Paper No. 146, 2004.</cite></p>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- Section 9: G10 Crisis Comparison -->
+      <!-- ============================================================ -->
+      <section>
+        <h2>9. G10金融危機比較</h2>
+        <p>以下の表は、G10諸国における主要な金融危機の深刻度と対応を比較したものである。銀行危機の総コスト（GDP比）、株式市場の最大下落率、および危機対応の評価を一覧化した。</p>
+
+        <table class="sortable">
+          <thead>
+            <tr>
+              <th data-sort>国</th>
+              <th data-sort>最大の銀行危機</th>
+              <th data-sort>銀行危機コスト（GDP比）</th>
+              <th data-sort>株式最大下落</th>
+              <th>危機対応の特徴</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:rgba(0,212,170,0.08);">
+              <td><strong>スウェーデン</strong></td>
+              <td>1990-93年</td>
+              <td style="color:var(--accent-green);">~2%（最終）</td>
+              <td>-69%（IT崩壊時）</td>
+              <td>バッドバンク、包括保証、早期認識 &mdash; 世界のモデル</td>
+            </tr>
+            <tr>
+              <td>米国</td>
+              <td>2007-09年（GFC）</td>
+              <td>~4.5%</td>
+              <td>-57%（S&amp;P 500）</td>
+              <td>TARP、FRB非伝統的政策、AIG救済</td>
+            </tr>
+            <tr>
+              <td>日本</td>
+              <td>1997-2003年</td>
+              <td style="color:var(--accent-red);">~20%</td>
+              <td>-82%（日経、1989→2003）</td>
+              <td>「先送り」、長期不良債権問題、失われた20年</td>
+            </tr>
+            <tr>
+              <td>英国</td>
+              <td>2007-09年（GFC）</td>
+              <td>~8.8%</td>
+              <td>-48%（FTSE 100）</td>
+              <td>RBS・Lloyds国有化、包括保証</td>
+            </tr>
+            <tr>
+              <td>スイス</td>
+              <td>2008年（UBS）</td>
+              <td>~1.1%</td>
+              <td>-54%（SMI）</td>
+              <td>UBS救済、SNB不良資産買取</td>
+            </tr>
+            <tr>
+              <td>カナダ</td>
+              <td>GFC（軽微）</td>
+              <td style="color:var(--accent-green);">~0%</td>
+              <td>-50%（TSX）</td>
+              <td>G7唯一の銀行無救済、保守的規制の成功</td>
+            </tr>
+            <tr>
+              <td>オーストラリア</td>
+              <td>GFC（軽微）</td>
+              <td style="color:var(--accent-green);">~0%</td>
+              <td>-55%（ASX 200）</td>
+              <td>中国需要が下支え、預金保証導入</td>
+            </tr>
+            <tr>
+              <td>ニュージーランド</td>
+              <td>GFC（軽微）</td>
+              <td>~1%</td>
+              <td>-46%（NZX 50）</td>
+              <td>SCF破綻、預金保証スキーム導入</td>
+            </tr>
+            <tr>
+              <td>ノルウェー</td>
+              <td>1988-92年</td>
+              <td>~3%</td>
+              <td>-64%（OBX相当）</td>
+              <td>スウェーデンと類似のバッドバンク・モデル</td>
+            </tr>
+            <tr>
+              <td>ユーロ圏</td>
+              <td>2010-12年（債務危機）</td>
+              <td style="color:var(--accent-red);">国により5-40%</td>
+              <td>-60%+（PIIGS各国）</td>
+              <td>ESM/EFSF、ECBのOMT、ドラギ「whatever it takes」</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          スウェーデンの銀行危機コストがGDP比2%にとどまった背景には、バッドバンク（Securum）が不良資産を長期にわたって回収した結果、最終的な損失が当初見積もりを大幅に下回ったことがある。これは日本の「先送り」アプローチ（不良債権の認識と処理を遅延させ、結果として問題を長期化・拡大させた）と対照的な結果となった。カナダとオーストラリアはそもそも銀行危機を回避しており（保守的規制と資源需要による下支え）、ノルウェーはスウェーデンと同時期に類似の危機を経験し、同様のバッドバンク・アプローチで対応した北欧の「双子」と言える。
+        </p>
+        <p class="source"><cite>[28] IMF, "Systemic Banking Crises Revisited", Laeven &amp; Valencia, WP/18/206, 2018; [29] BIS Annual Reports, various years; [30] OECD, "Financial Crisis: Past, Present and Policy Responses", 2012.</cite></p>
+      </section>
+
+    </article>
+
+    <!-- Sources Footer -->
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>Riksbank, "Financial Stability Reports", various years.</li>
+        <li>SCB (Statistics Sweden), GDP historical data.</li>
+        <li>Nasdaq Stockholm, OMXS30 historical prices.</li>
+        <li>F. Partnoy, "The Match King: Ivar Kreuger, The Financial Genius Behind a Century of Wall Street Scandals", PublicAffairs, 2009.</li>
+        <li>Riksbank, "Kreuger Crash and Swedish Financial Regulation", Historical Papers.</li>
+        <li>S. Ingves &amp; G. Lind, "The management of the bank crisis - in retrospect", Riksbank Quarterly Review, 1996.</li>
+        <li>P. Englund, "The Swedish banking crisis: roots and consequences", Oxford Review of Economic Policy, 1999.</li>
+        <li>Bo Lundgren, "Finanskrisen" (memoirs), 2015.</li>
+        <li>IMF, "Sweden: Financial System Stability Assessment", 2002.</li>
+        <li>Riksbank, "From fixed exchange rate to inflation targeting", Riksbank Studies, 2003.</li>
+        <li>L. Jonung, "The Swedish model for resolving the banking crisis of 1991-93", European Commission Economic Papers, 2009.</li>
+        <li>P. Englund &amp; V. Vihriala, "Financial Crises in the Nordic Countries", Bank of Finland Discussion Papers, 2003.</li>
+        <li>Nasdaq OMX Stockholm, "OMXS30 Historical Data", 2000-2003.</li>
+        <li>Ericsson Annual Reports, 2000-2003.</li>
+        <li>Riksbank, "Financial Stability Report", 2001-2003.</li>
+        <li>Riksbank, "Financial Crisis in the Baltic States", Financial Stability Report 2009.</li>
+        <li>Finansinspektionen, "Swedish banks' exposures to the Baltic countries", 2009.</li>
+        <li>IMF, "Sweden: 2009 Article IV Consultation", 2009.</li>
+        <li>Swedbank Annual Report, 2008-2009.</li>
+        <li>Finansinspektionen, "Stability in the Financial System", 2023.</li>
+        <li>SBB Annual Report 2022-2023.</li>
+        <li>Riksbank, "Financial Stability Report", November 2023.</li>
+        <li>S&amp;P Global Ratings, "SBB Downgrade Report", May 2023.</li>
+        <li>IMF, "Systemic Banking Crises Database", Laeven &amp; Valencia, 2018.</li>
+        <li>Bo Lundgren, speeches on Swedish crisis management model, 2008-2010.</li>
+        <li>H. Paulson, "On the Brink", 2010.</li>
+        <li>BIS, "Resolution of banking crises: the good, the bad and the ugly", Working Paper No. 146, 2004.</li>
+        <li>IMF, "Systemic Banking Crises Revisited", Laeven &amp; Valencia, WP/18/206, 2018.</li>
+        <li>BIS Annual Reports, various years.</li>
+        <li>OECD, "Financial Crisis: Past, Present and Policy Responses", 2012.</li>
+      </ol>
+      <p style="margin-top:1rem; font-style:italic; color:#888;">
+        注: 株価下落率はピーク→ボトムの最大ドローダウンベースで計算。銀行危機コスト（GDP比）は各種推計により異なり、本表ではIMF Laeven &amp; Valencia (2018)のデータベースを主に参照した。クロイガー事件の株価影響はOMXS30算出前（1986年算出開始）であるため、ストックホルム証券取引所の総合指数に基づく推計値。歴史的データは出典により差異がある場合がある。
+      </p>
+    </footer>
+
+    <!-- Prev/Next Navigation -->
+    <div class="page-nav">
+      <a href="14_currency.html" class="prev">&larr; 前: Currency</a>
+      <a href="16_banking.html" class="next">次: Banking Sector &rarr;</a>
+    </div>
+
+  </main>
+
+  <!-- Sortable Table Script -->
+  <script>
+    document.querySelectorAll('.sortable').forEach(table => {
+      const headers = table.querySelectorAll('th[data-sort]');
+      headers.forEach((header, index) => {
+        header.style.cursor = 'pointer';
+        header.addEventListener('click', () => {
+          const tbody = table.querySelector('tbody');
+          const rows = Array.from(tbody.querySelectorAll('tr'));
+          const isNumeric = rows.some(row => {
+            const cell = row.cells[index];
+            if (!cell) return false;
+            const text = cell.textContent.replace(/[~%+,]/g, '').trim();
+            return !isNaN(parseFloat(text));
+          });
+          const currentOrder = header.dataset.order || 'asc';
+          const newOrder = currentOrder === 'asc' ? 'desc' : 'asc';
+          header.dataset.order = newOrder;
+
+          // Clear other header indicators
+          headers.forEach(h => {
+            if (h !== header) {
+              h.dataset.order = '';
+              h.textContent = h.textContent.replace(/ [▲▼]/, '');
+            }
+          });
+          header.textContent = header.textContent.replace(/ [▲▼]/, '') + (newOrder === 'asc' ? ' ▲' : ' ▼');
+
+          rows.sort((a, b) => {
+            const aCell = a.cells[index];
+            const bCell = b.cells[index];
+            if (!aCell || !bCell) return 0;
+            let aVal = aCell.textContent.replace(/[~%+,]/g, '').trim();
+            let bVal = bCell.textContent.replace(/[~%+,]/g, '').trim();
+            if (isNumeric) {
+              aVal = parseFloat(aVal) || 0;
+              bVal = parseFloat(bVal) || 0;
+              return newOrder === 'asc' ? aVal - bVal : bVal - aVal;
+            }
+            return newOrder === 'asc' ? aVal.localeCompare(bVal, 'ja') : bVal.localeCompare(aVal, 'ja');
+          });
+          rows.forEach(row => tbody.appendChild(row));
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

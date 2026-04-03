@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweden - Short-term Rates | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇸🇪 Sweden</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link active">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip active">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Sweden</a>
+        <span class="sep">/</span>
+        Short-term Rates
+      </div>
+      <h1 class="page-title">スウェーデン短期金利市場</h1>
+      <p class="page-subtitle">STIBOR・レポレート・短期国債（Statsskuldväxlar） — マイナス金利実験からSWESTR移行まで</p>
+    </header>
+
+    <article>
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">2.50%</div>
+          <div class="stat-label">レポレート (2025年3月)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">2.72%</div>
+          <div class="stat-label">STIBOR 3M (2025年3月)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">SEK ~125B</div>
+          <div class="stat-label">Statsskuldväxlar残高</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">RIX</div>
+          <div class="stat-label">RTGS決済システム (1990開始)</div>
+        </div>
+      </div>
+
+      <!-- Section 1: 短期金利市場の概要 -->
+      <section>
+        <h2>短期金利市場の概要</h2>
+        <p>スウェーデンの短期金利市場は、リクスバンク (Sveriges Riksbank) のレポレートを中心に構成されている。1994年にレポレートが主要政策金利として正式採用されて以降、±75bpのコリドー（回廊）システムがオーバーナイト金利をレポレート近辺にアンカーする役割を果たしてきた。</p>
+        <p>市場の主要構成要素は以下の4つである。第一に、リクスバンクのレポレートおよびスタンディング・ファシリティ（貸出/預金ファシリティ）。第二に、STIBOR（Stockholm Interbank Offered Rate）と呼ばれる銀行間取引金利ベンチマーク。第三に、リクスイェルデン (Riksgälden / Swedish National Debt Office) が発行する短期国債（Statsskuldväxlar）。第四に、銀行間インターバンク市場でのオーバーナイト取引およびレポ取引である。</p>
+        <p>スウェーデンの短期金融市場はG10諸国の中では比較的小規模だが、北欧地域の基準金利としての役割を担っている。特にSTIBOR 3Mは変動金利住宅ローン（全住宅ローンの約70%が変動金利）の参照レートとして、家計に対する金融政策の波及経路において決定的な重要性を持つ。このため、リクスバンクの金利変更は他のG10中銀以上に迅速かつ直接的に家計消費に影響する。</p>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>市場セグメント</th>
+              <th>主要商品</th>
+              <th>参加者</th>
+              <th>規模・特徴</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>政策金利</td>
+              <td>レポレート・コリドー</td>
+              <td>リクスバンク / 金融機関</td>
+              <td>±75bp回廊（2020年一時±10bpに縮小）</td>
+            </tr>
+            <tr>
+              <td>インターバンク</td>
+              <td>O/N・ターム取引</td>
+              <td>銀行・証券会社</td>
+              <td>日次取引量 SEK数十億規模</td>
+            </tr>
+            <tr>
+              <td>ベンチマーク金利</td>
+              <td>STIBOR (T/N〜6M)</td>
+              <td>パネル銀行7行</td>
+              <td>変動金利ローン・デリバティブの参照レート</td>
+            </tr>
+            <tr>
+              <td>RFR</td>
+              <td>SWESTR</td>
+              <td>リクスバンク / 市場</td>
+              <td>2021年9月算出開始、取引ベースの翌日物金利</td>
+            </tr>
+            <tr>
+              <td>短期国債</td>
+              <td>Statsskuldväxlar</td>
+              <td>リクスイェルデン / PD</td>
+              <td>3・6・12ヶ月物、残高SEK約125B</td>
+            </tr>
+            <tr>
+              <td>レポ市場</td>
+              <td>国債・カバードボンド担保</td>
+              <td>銀行・中銀・機関投資家</td>
+              <td>流動性管理の主要手段</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section 2: レポレートと短期金利の推移 -->
+      <section>
+        <h2>レポレートと短期金利の推移</h2>
+        <p>レポレートは1994年の導入以来、スウェーデン金融政策の主柱として機能してきた。以下の表は、レポレートとSTIBOR 3Mの主要な変遷を示す。1992年の通貨危機における限界金利500%から、2016年のマイナス0.50%まで、スウェーデンの短期金利は世界金融史上最も広い振幅を経験した国の一つである。</p>
+
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>時期</th>
+              <th>レポレート</th>
+              <th>STIBOR 3M (概算)</th>
+              <th>背景・イベント</th>
+              <th>区分</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="crisis-row">
+              <td>1992年9月</td>
+              <td>限界金利 500%</td>
+              <td>—</td>
+              <td>SEK防衛、ブラックウェンズデー</td>
+              <td style="color:#ff9800;">危機</td>
+            </tr>
+            <tr>
+              <td>1992年11月</td>
+              <td>変動相場制移行</td>
+              <td>—</td>
+              <td>ペッグ放棄、SEK -10%減価</td>
+              <td style="color:#ff9800;">危機</td>
+            </tr>
+            <tr>
+              <td>1994年6月</td>
+              <td>7.00%</td>
+              <td>7.50%</td>
+              <td>レポレート制度導入・IT準備</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>1996年1月</td>
+              <td>8.91%</td>
+              <td>9.20%</td>
+              <td>IT導入後初の引き締めサイクル頂点</td>
+              <td style="color:#ff6b6b;">利上げ</td>
+            </tr>
+            <tr>
+              <td>1999年3月</td>
+              <td>2.90%</td>
+              <td>3.20%</td>
+              <td>段階的利下げ完了、ゴルディロックス期</td>
+              <td style="color:#4ecdc4;">利下げ</td>
+            </tr>
+            <tr>
+              <td>2000年12月</td>
+              <td>4.00%</td>
+              <td>4.30%</td>
+              <td>ITバブル期の引き締め</td>
+              <td style="color:#ff6b6b;">利上げ</td>
+            </tr>
+            <tr>
+              <td>2002年3月</td>
+              <td>3.75%</td>
+              <td>4.10%</td>
+              <td>ITバブル崩壊後の追加引き上げ</td>
+              <td style="color:#ff6b6b;">利上げ</td>
+            </tr>
+            <tr>
+              <td>2005年6月</td>
+              <td>1.50%</td>
+              <td>1.75%</td>
+              <td>当時の史上最低水準</td>
+              <td style="color:#4ecdc4;">利下げ</td>
+            </tr>
+            <tr>
+              <td>2008年9月</td>
+              <td>4.75%</td>
+              <td>5.20%</td>
+              <td>GFC直前の引き締めサイクル頂点</td>
+              <td style="color:#ff6b6b;">利上げ</td>
+            </tr>
+            <tr>
+              <td>2009年7月</td>
+              <td>0.25%</td>
+              <td>0.55%</td>
+              <td>GFC緊急利下げ（-4.50%累計）</td>
+              <td style="color:#4ecdc4;">利下げ</td>
+            </tr>
+            <tr>
+              <td>2011年7月</td>
+              <td>2.00%</td>
+              <td>2.65%</td>
+              <td>時期尚早と批判された利上げサイクル頂点</td>
+              <td style="color:#ff6b6b;">利上げ</td>
+            </tr>
+            <tr>
+              <td>2014年10月</td>
+              <td>0.00%</td>
+              <td>0.27%</td>
+              <td>ゼロ金利到達</td>
+              <td style="color:#4ecdc4;">利下げ</td>
+            </tr>
+            <tr class="crisis-row">
+              <td>2015年2月</td>
+              <td>-0.10%</td>
+              <td>-0.05%</td>
+              <td>マイナス金利領域へ突入</td>
+              <td style="color:#ff9800;">マイナス</td>
+            </tr>
+            <tr class="crisis-row">
+              <td>2016年2月</td>
+              <td>-0.50%</td>
+              <td>-0.30%</td>
+              <td>マイナス金利の底（5年間維持）</td>
+              <td style="color:#ff9800;">マイナス</td>
+            </tr>
+            <tr>
+              <td>2019年1月</td>
+              <td>-0.25%</td>
+              <td>-0.08%</td>
+              <td>マイナス金利からの脱出開始</td>
+              <td style="color:#ff6b6b;">利上げ</td>
+            </tr>
+            <tr>
+              <td>2019年12月</td>
+              <td>0.00%</td>
+              <td>0.18%</td>
+              <td>世界初のマイナス金利脱出（ECBに先行）</td>
+              <td style="color:#ff6b6b;">利上げ</td>
+            </tr>
+            <tr>
+              <td>2020年3月</td>
+              <td>0.00%</td>
+              <td>0.35%</td>
+              <td>COVID危機（レポレートは据え置き）</td>
+              <td style="color:#ff9800;">危機</td>
+            </tr>
+            <tr>
+              <td>2022年4月</td>
+              <td>0.25%</td>
+              <td>0.40%</td>
+              <td>インフレ対応利上げ開始</td>
+              <td style="color:#ff6b6b;">利上げ</td>
+            </tr>
+            <tr>
+              <td>2023年9月</td>
+              <td>4.00%</td>
+              <td>4.20%</td>
+              <td>引き締めサイクル頂点（+400bp累計）</td>
+              <td style="color:#ff6b6b;">利上げ</td>
+            </tr>
+            <tr>
+              <td>2024年5月</td>
+              <td>3.75%</td>
+              <td>3.95%</td>
+              <td>利下げサイクル開始（G10先行）</td>
+              <td style="color:#4ecdc4;">利下げ</td>
+            </tr>
+            <tr>
+              <td>2024年12月</td>
+              <td>2.50%</td>
+              <td>2.72%</td>
+              <td>段階的利下げ継続</td>
+              <td style="color:#4ecdc4;">利下げ</td>
+            </tr>
+            <tr>
+              <td>2025年3月</td>
+              <td>2.50%</td>
+              <td>2.72%</td>
+              <td>据え置き、インフレ動向注視</td>
+              <td>—</td>
+            </tr>
+          </tbody>
+        </table>
+        <p><cite>出典: Sveriges Riksbank, "Interest Rate Decisions"; STIBOR fixing, Swedish Bankers' Association</cite></p>
+
+        <div class="callout callout-info">
+          <div class="callout-title">STIBOR 3Mとレポレートのスプレッド</div>
+          <p>STIBOR 3Mはレポレートに対して通常+15〜25bpのスプレッドで推移する。このスプレッドは信用リスクプレミアムおよびターム・プレミアムを反映する。GFC時（2008年10月）にはスプレッドが一時+100bp超に拡大し、インターバンク市場の機能不全を示した。マイナス金利期にはスプレッドが+20bp前後に安定し、市場のストレスは限定的であった。</p>
+        </div>
+      </section>
+
+      <!-- Section 3: STIBOR -->
+      <section>
+        <h2>STIBOR（ストックホルム銀行間取引金利）</h2>
+        <p>STIBOR (Stockholm Interbank Offered Rate) はスウェーデンのインターバンク市場における基準金利であり、1986年に算出が開始された。LIBORと同様のクオート・ベース（気配値ベース）の金利であったが、2013年のLIBORスキャンダル以降、大幅な改革を経て現在に至る。</p>
+
+        <h3>STIBORのテナー構造</h3>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>テナー</th>
+              <th>名称</th>
+              <th>算出方法</th>
+              <th>主な用途</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>T/N</td>
+              <td>Tomorrow/Next</td>
+              <td>実取引ベース + 専門家判断</td>
+              <td>オーバーナイト資金調達、デリバティブ</td>
+            </tr>
+            <tr>
+              <td>1W</td>
+              <td>1 Week</td>
+              <td>気配値 + ウォーターフォール</td>
+              <td>短期資金調達</td>
+            </tr>
+            <tr>
+              <td>1M</td>
+              <td>1 Month</td>
+              <td>気配値 + ウォーターフォール</td>
+              <td>CP・短期社債</td>
+            </tr>
+            <tr>
+              <td>2M</td>
+              <td>2 Month</td>
+              <td>気配値 + ウォーターフォール</td>
+              <td>中間テナー（利用は限定的）</td>
+            </tr>
+            <tr>
+              <td>3M</td>
+              <td>3 Month</td>
+              <td>気配値 + ウォーターフォール</td>
+              <td>変動金利住宅ローン・IRS・FRA</td>
+            </tr>
+            <tr>
+              <td>6M</td>
+              <td>6 Month</td>
+              <td>気配値 + ウォーターフォール</td>
+              <td>中長期変動金利ローン</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>パネル銀行</h3>
+        <p>STIBORのパネル銀行は2025年時点で以下の7行である。スウェーデンの大手4行（SEB, Handelsbanken, Nordea, Swedbank）に加え、外資系銀行が参加する。パネル銀行は毎営業日、各テナーの気配値をスウェーデン銀行協会 (Swedish Bankers' Association) に提出し、最高値と最低値を除外した平均値としてSTIBORが算出される。</p>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>パネル銀行</th>
+              <th>国籍</th>
+              <th>備考</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Skandinaviska Enskilda Banken (SEB)</td><td>スウェーデン</td><td>ヴァレンベリ家傘下</td></tr>
+            <tr><td>Svenska Handelsbanken</td><td>スウェーデン</td><td>分権経営で知られる</td></tr>
+            <tr><td>Nordea Bank</td><td>フィンランド (本社移転)</td><td>旧Nordbanken、北欧最大</td></tr>
+            <tr><td>Swedbank</td><td>スウェーデン</td><td>旧Föreningssparbanken</td></tr>
+            <tr><td>Danske Bank</td><td>デンマーク</td><td>北欧第2位</td></tr>
+            <tr><td>SBAB Bank</td><td>スウェーデン</td><td>住宅金融特化、国有</td></tr>
+            <tr><td>Länsförsäkringar Bank</td><td>スウェーデン</td><td>保険系銀行</td></tr>
+          </tbody>
+        </table>
+
+        <h3>STIBOR改革とLIBORスキャンダルの影響</h3>
+        <p>2012年のLIBOR不正操作スキャンダルはSTIBORにも波及した。スウェーデン金融監督庁 (Finansinspektionen, FI) による調査の結果、STIBORの算出プロセスにも透明性の欠如が指摘され、以下の改革が実施された。</p>
+        <ul>
+          <li><strong>2013年</strong>: FIがSTIBOR算出プロセスの調査を開始</li>
+          <li><strong>2014年</strong>: 新算出ガイドラインの導入、ウォーターフォール・アプローチ（実取引優先）の採用</li>
+          <li><strong>2017年</strong>: STIBORの管理機関がスウェーデン銀行協会からFinancial Benchmarks Sweden AB (FBS) に移管</li>
+          <li><strong>2018年</strong>: EU BMR (Benchmarks Regulation) への準拠作業開始</li>
+          <li><strong>2020年</strong>: STIBOR T/Nの算出方法をハイブリッド方式に変更（実取引データ優先）</li>
+        </ul>
+
+        <h3>SWESTR（Swedish krona Short Term Rate）への移行</h3>
+        <p>グローバルなベンチマーク改革の流れを受け、リクスバンクは2021年9月にSWESTR（スウェスター、Swedish krona Short Term Rate）の算出を開始した。SWESTRは銀行間のオーバーナイト無担保取引に基づくリスクフリー・レート（RFR）であり、STIBOR T/Nに代わる取引ベースの翌日物金利である。</p>
+        <p>SWESTRの特徴は以下の通りである。リクスバンクが算出・公表を担う（LIBORの教訓から管理機関の独立性と信頼性を重視）。実際の銀行間取引データに基づくため気配値ベースのSTIBORより操作耐性が高い。翌日物のみであるため、ターム物金利はSWESTR複利から導出する必要がある。</p>
+        <p>STIBORからSWESTRへの完全移行は段階的に進行中であり、2025年時点ではデリバティブ市場ではSWESTR参照のOIS取引が増加しているが、住宅ローンや企業向けローンでは依然としてSTIBOR 3Mが主要参照レートとして利用されている。リクスバンクはSTIBORの存続を容認しつつも、SWESTRへの市場移行を促進する姿勢を示している。</p>
+
+        <div class="callout callout-warning">
+          <div class="callout-title">STIBORとSWESTRの主な相違点</div>
+          <p><strong>STIBOR T/N</strong>: 気配値ベース（ウォーターフォール・アプローチ適用）、パネル銀行7行が提出、信用リスクプレミアムを含む。<br>
+          <strong>SWESTR</strong>: 取引ベース（実際の銀行間O/N取引）、リクスバンクが算出・公表、ほぼリスクフリー。両者のスプレッドは通常1〜5bp程度だが、市場ストレス時には拡大する。</p>
+        </div>
+      </section>
+
+      <!-- Section 4: 短期国債市場 -->
+      <section>
+        <h2>短期国債市場（Statsskuldväxlar）</h2>
+        <p>スウェーデンの短期国債はStatsskuldväxlar（スタッツシュールドヴェクスラル）と呼ばれ、リクスイェルデン (Riksgälden / Swedish National Debt Office) が発行する割引債（ディスカウント・ノート）である。政府の短期資金繰りと金融市場の流動性確保の両面で重要な役割を果たす。</p>
+
+        <h3>発行の仕組み</h3>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>項目</th>
+              <th>内容</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>発行機関</td><td>Riksgälden（リクスイェルデン / Swedish National Debt Office）</td></tr>
+            <tr><td>発行形態</td><td>割引債（ディスカウント方式）、額面SEK 1,000,000</td></tr>
+            <tr><td>満期</td><td>主に3ヶ月、6ヶ月、12ヶ月</td></tr>
+            <tr><td>入札頻度</td><td>原則として隔週（水曜日）</td></tr>
+            <tr><td>入札方式</td><td>多数価格入札（Multiple Price Auction）</td></tr>
+            <tr><td>プライマリーディーラー</td><td>6〜8社（SEB, Handelsbanken, Nordea, Swedbank, Danske Bank, etc.）</td></tr>
+            <tr><td>残高</td><td>約SEK 1,250億（2024年末）</td></tr>
+            <tr><td>決済</td><td>T+2、Euroclear Sweden</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Statsskuldväxlar利回りの推移</h3>
+        <p>スウェーデン政府の財政健全性（政府債務/GDP比率約33%、G10最低水準）を反映し、Statsskuldväxlarの利回りはドイツ国債（Bubills）とほぼ同水準で推移してきた。マイナス金利期（2015-2019年）には短期国債利回りもマイナスとなり、投資家は政府にSEKを貸し出して利息を支払うという異常な状態が生じた。</p>
+        <p>リクスイェルデンは財政黒字期にもStatsskuldväxlarの発行を一定水準に維持する方針をとっている。これは金融市場のインフラとしての国債市場の流動性を確保するためであり、2000年代の「国債消滅問題」（財政黒字による国債残高の急減がベンチマーク機能を損なう懸念）に対する教訓に基づく。</p>
+
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>時期</th>
+              <th>3M Statsskuldväxel利回り</th>
+              <th>レポレート</th>
+              <th>スプレッド (bp)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>2000年</td><td>4.05%</td><td>4.00%</td><td>+5</td></tr>
+            <tr><td>2005年</td><td>1.48%</td><td>1.50%</td><td>-2</td></tr>
+            <tr><td>2008年 (GFC前)</td><td>4.70%</td><td>4.75%</td><td>-5</td></tr>
+            <tr><td>2009年</td><td>0.20%</td><td>0.25%</td><td>-5</td></tr>
+            <tr><td>2012年</td><td>0.90%</td><td>1.00%</td><td>-10</td></tr>
+            <tr><td>2015年</td><td>-0.30%</td><td>-0.25%</td><td>-5</td></tr>
+            <tr><td>2017年</td><td>-0.65%</td><td>-0.50%</td><td>-15</td></tr>
+            <tr><td>2020年</td><td>-0.10%</td><td>0.00%</td><td>-10</td></tr>
+            <tr><td>2023年</td><td>3.85%</td><td>4.00%</td><td>-15</td></tr>
+            <tr><td>2024年末</td><td>2.40%</td><td>2.50%</td><td>-10</td></tr>
+          </tbody>
+        </table>
+        <p><cite>出典: Riksgälden, "Swedish Government Debt Statistics"; Sveriges Riksbank</cite></p>
+      </section>
+
+      <!-- Section 5: RIX決済システム -->
+      <section>
+        <h2>RIX決済システム</h2>
+        <p>RIXはリクスバンクが運営するスウェーデンのRTGS（即時グロス決済）システムであり、1990年に運用を開始した。金融機関間の大口SEK建て決済をリアルタイムで処理し、スウェーデンの金融インフラの中核を担う。</p>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>項目</th>
+              <th>内容</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>正式名称</td><td>RIX (Riksbankens system för överföring av stora belopp)</td></tr>
+            <tr><td>運営機関</td><td>Sveriges Riksbank</td></tr>
+            <tr><td>開始年</td><td>1990年</td></tr>
+            <tr><td>決済方式</td><td>RTGS（即時グロス決済）</td></tr>
+            <tr><td>通貨</td><td>SEK</td></tr>
+            <tr><td>参加者</td><td>約30の金融機関（銀行、CCP、CSD）</td></tr>
+            <tr><td>日次決済額</td><td>約SEK 5,000-7,000億（2023年平均）</td></tr>
+            <tr><td>稼働時間</td><td>07:00-18:00 CET（延長可能）</td></tr>
+          </tbody>
+        </table>
+
+        <h3>RIXの近代化プロジェクト</h3>
+        <p>リクスバンクは2020年代に入り、RIXの大規模な近代化プロジェクトを進めている。主な背景として、既存のRIXプラットフォームが技術的に老朽化していること、TARGET2（ユーロ圏）やLynx（カナダ）など他のG10各国のRTGSシステムが近代化を完了していること、ISO 20022メッセージ標準への移行が国際的に求められていることが挙げられる。</p>
+        <p>新RIXシステム（RIX-INST含む）は、ISO 20022準拠のメッセージング、24/7稼働に向けた設計、即時決済（instant payments）への対応、e-krona（CBDC）インフラとの連携可能性を特徴とする。2023年にSWIFTとの協力協定が締結され、国際送金の効率化も進められている。</p>
+
+        <div class="callout callout-info">
+          <div class="callout-title">RIXと流動性管理</div>
+          <p>RIXにおけるリクスバンクの流動性供給は、短期金利のコリドー維持の実務的基盤である。金融機関はRIXを通じてリクスバンクのスタンディング・ファシリティにアクセスし、余剰資金の預入（預金ファシリティ、レポレート-75bp）や不足資金の借入（貸出ファシリティ、レポレート+75bp）を行う。この枠組みがオーバーナイト金利のレポレート近辺への収斂を保証している。</p>
+        </div>
+      </section>
+
+      <!-- Section 6: マイナス金利時代の短期金利市場 -->
+      <section>
+        <h2>マイナス金利時代の短期金利市場 (2015-2019)</h2>
+        <p>リクスバンクは2015年2月にレポレートを-0.10%に引き下げ、マイナス金利の時代に突入した。2016年2月には-0.50%に達し、この水準は2018年12月まで維持された。スウェーデンのマイナス金利実験は、短期金融市場の構造と機能に深い影響を及ぼした。</p>
+
+        <h3>マネーマーケットへの影響</h3>
+        <p>マイナス金利環境下では、STIBOR全テナーがマイナスとなり、Statsskuldväxlarの利回りもマイナスに沈んだ。これにより、以下の構造的変化が生じた。</p>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>影響領域</th>
+              <th>具体的変化</th>
+              <th>評価</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>レポ市場</td>
+              <td>取引量は維持されたが、一部参加者は撤退。担保付取引のインセンティブ構造が変化</td>
+              <td style="color:#ff9800;">中立〜負</td>
+            </tr>
+            <tr>
+              <td>銀行預金</td>
+              <td>大口法人預金にマイナス金利適用。個人預金はゼロフロアを維持（銀行の利鞘圧縮）</td>
+              <td style="color:#ff6b6b;">負</td>
+            </tr>
+            <tr>
+              <td>MMF</td>
+              <td>マネーマーケットファンドの運用難。一部ファンドが募集停止・解散</td>
+              <td style="color:#ff6b6b;">負</td>
+            </tr>
+            <tr>
+              <td>住宅ローン</td>
+              <td>変動金利ローンの参照STIBOR 3Mがマイナスに。実効貸出金利は1.0-1.5%に低下</td>
+              <td style="color:#4ecdc4;">正（借り手）</td>
+            </tr>
+            <tr>
+              <td>キャッシュレス化</td>
+              <td>現金流通量がGDPの1%以下に急減（2019年）。世界最低水準</td>
+              <td style="color:#ff9800;">中立</td>
+            </tr>
+            <tr>
+              <td>銀行収益</td>
+              <td>NIM（純金利マージン）圧縮。しかしスウェーデンの銀行は手数料収入やコスト管理で対応</td>
+              <td style="color:#ff9800;">中立〜負</td>
+            </tr>
+            <tr>
+              <td>年金基金</td>
+              <td>運用利回り低下、負債の現在価値上昇。AP基金（国家年金バッファーファンド）の資産配分変更</td>
+              <td style="color:#ff6b6b;">負</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>マイナス金利からの脱出</h3>
+        <p>リクスバンクは2019年12月にレポレートを-0.25%から0.00%に引き上げ、世界の主要中央銀行で初めてマイナス金利からの脱出を果たした。この決定は「マイナス金利の長期化がもたらす副作用（特に現金機能の低下と金融安定性への懸念）が、追加的な金融緩和効果を上回る」という判断に基づくものであった。注目すべきは、この利上げがインフレ率が依然として目標の2%を下回る環境で行われた点であり、マイナス金利の「非対称的コスト」をリクスバンクが明確に認識したことを意味する。</p>
+        <p>ECBは2022年7月まで、スイス国立銀行は2022年9月まで、日本銀行は2024年3月までマイナス金利を維持した。スウェーデンの先行的な脱出は、小国開放経済の政策機動性の優位性を示すとともに、マイナス金利政策の限界に関する重要な示唆を国際金融コミュニティに提供した。</p>
+      </section>
+
+      <!-- Section 7: G10短期金利ベンチマーク比較 -->
+      <section>
+        <h2>G10短期金利ベンチマーク比較</h2>
+        <p>グローバルなベンチマーク改革により、G10各国は伝統的なIBOR（Interbank Offered Rate）からRFR（Risk-Free Rate）への移行を進めている。以下の表は各国の短期金利ベンチマークの構造を比較する。</p>
+
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>国</th>
+              <th>従来ベンチマーク</th>
+              <th>RFR（新ベンチマーク）</th>
+              <th>RFR算出開始</th>
+              <th>管理機関</th>
+              <th>移行状況 (2025年)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>米国</td>
+              <td>USD LIBOR</td>
+              <td>SOFR (Secured Overnight Financing Rate)</td>
+              <td>2018年4月</td>
+              <td>NY Fed</td>
+              <td>LIBOR廃止完了 (2023年6月)</td>
+            </tr>
+            <tr>
+              <td>英国</td>
+              <td>GBP LIBOR</td>
+              <td>SONIA (Sterling Overnight Index Average)</td>
+              <td>1997年 (改革2018年)</td>
+              <td>BOE</td>
+              <td>LIBOR廃止完了 (2021年12月)</td>
+            </tr>
+            <tr>
+              <td>ユーロ圏</td>
+              <td>EURIBOR</td>
+              <td>ESTR (Euro Short-Term Rate)</td>
+              <td>2019年10月</td>
+              <td>ECB</td>
+              <td>EURIBOR存続、ESTR並行</td>
+            </tr>
+            <tr>
+              <td>日本</td>
+              <td>TIBOR / JPY LIBOR</td>
+              <td>TONA (Tokyo Overnight Average Rate)</td>
+              <td>1996年 (改革2016年)</td>
+              <td>BOJ</td>
+              <td>JPY LIBOR廃止、TIBOR存続</td>
+            </tr>
+            <tr style="background: rgba(0,212,170,0.08);">
+              <td><strong>スウェーデン</strong></td>
+              <td><strong>STIBOR</strong></td>
+              <td><strong>SWESTR</strong></td>
+              <td><strong>2021年9月</strong></td>
+              <td><strong>Riksbank</strong></td>
+              <td><strong>STIBOR存続、SWESTR並行</strong></td>
+            </tr>
+            <tr>
+              <td>スイス</td>
+              <td>CHF LIBOR</td>
+              <td>SARON (Swiss Average Rate Overnight)</td>
+              <td>2009年 (改革2017年)</td>
+              <td>SIX Swiss Exchange</td>
+              <td>LIBOR廃止完了、SARON移行済</td>
+            </tr>
+            <tr>
+              <td>カナダ</td>
+              <td>CDOR</td>
+              <td>CORRA (Canadian Overnight Repo Rate Average)</td>
+              <td>1997年 (改革2020年)</td>
+              <td>BOC</td>
+              <td>CDOR廃止 (2024年6月)</td>
+            </tr>
+            <tr>
+              <td>オーストラリア</td>
+              <td>BBSW</td>
+              <td>AONIA (AUD Overnight Index Average)</td>
+              <td>2004年</td>
+              <td>RBA</td>
+              <td>BBSW存続、AONIA並行</td>
+            </tr>
+            <tr>
+              <td>ニュージーランド</td>
+              <td>BKBM</td>
+              <td>OCR関連レート</td>
+              <td>—</td>
+              <td>RBNZ</td>
+              <td>BKBM存続</td>
+            </tr>
+            <tr>
+              <td>ノルウェー</td>
+              <td>NIBOR</td>
+              <td>NOWA (Norwegian Overnight Weighted Average)</td>
+              <td>2013年</td>
+              <td>Norges Bank</td>
+              <td>NIBOR存続、NOWA並行</td>
+            </tr>
+          </tbody>
+        </table>
+        <p><cite>出典: FSB, "Progress on LIBOR Transition", 2024; BIS, "Beyond LIBOR: A primer on the new benchmark rates", 2019; 各国中央銀行ウェブサイト</cite></p>
+
+        <div class="callout callout-info">
+          <div class="callout-title">スウェーデンの移行アプローチの特徴</div>
+          <p>スウェーデンはSTIBORの「存続」とSWESTRの「並行運用」というデュアル・ベンチマーク・アプローチを採用している。これはユーロ圏（EURIBOR+ESTR）やノルウェー（NIBOR+NOWA）と類似し、英国・米国（LIBOR完全廃止）やカナダ（CDOR廃止）とは異なる。STIBORが変動金利住宅ローンに深く組み込まれていること、中小金融機関のシステム対応に時間を要することから、急激な移行は金融安定性リスクを伴うと判断された。</p>
+        </div>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>Sveriges Riksbank, "Interest Rate Decisions", riksbank.se</li>
+        <li>Sveriges Riksbank, "SWESTR - Swedish krona Short Term Rate", riksbank.se</li>
+        <li>Sveriges Riksbank, "The RIX Payment System", riksbank.se</li>
+        <li>Sveriges Riksbank, "Financial Infrastructure Report", various years, riksbank.se</li>
+        <li>Swedish Bankers' Association / Financial Benchmarks Sweden AB, "STIBOR Fixing", stibor.se</li>
+        <li>Riksgälden (Swedish National Debt Office), "Government Debt Statistics and Auction Results", riksgalden.se</li>
+        <li>Riksgälden, "Central Government Borrowing: Forecast and Analysis", various years</li>
+        <li>Finansinspektionen (FI), "STIBOR Review Report", 2013</li>
+        <li>FSB (Financial Stability Board), "Progress on LIBOR Transition", 2024</li>
+        <li>BIS, "Beyond LIBOR: A primer on the new benchmark rates", BIS Quarterly Review, March 2019</li>
+        <li>IMF, "Sweden: Financial System Stability Assessment", various years, imf.org</li>
+        <li>Svensson, Lars E.O., "Evaluating Monetary Policy", Riksbank, 2009</li>
+      </ol>
+
+      <div style="margin-top:2rem; display:flex; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+        <a href="11_bond_market.html" style="color:var(--accent-color);">← 前: Bond Market</a>
+        <a href="13_long_rates.html" style="color:var(--accent-color);">次: Long-term Rates →</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelectorAll('.sortable th').forEach(th => {
+      th.style.cursor = 'pointer';
+      th.addEventListener('click', () => {
+        const table = th.closest('table');
+        const tbody = table.querySelector('tbody');
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+        const idx = Array.from(th.parentNode.children).indexOf(th);
+        const asc = th.dataset.sort !== 'asc';
+        rows.sort((a, b) => {
+          const at = a.children[idx]?.textContent.trim() || '';
+          const bt = b.children[idx]?.textContent.trim() || '';
+          const an = parseFloat(at), bn = parseFloat(bt);
+          if (!isNaN(an) && !isNaN(bn)) return asc ? an - bn : bn - an;
+          return asc ? at.localeCompare(bt, 'ja') : bt.localeCompare(at, 'ja');
+        });
+        rows.forEach(r => tbody.appendChild(r));
+        table.querySelectorAll('th').forEach(h => delete h.dataset.sort);
+        th.dataset.sort = asc ? 'asc' : 'desc';
+      });
+    });
+  </script>
+</body>
+</html>
