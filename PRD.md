@@ -104,7 +104,7 @@ g10_textbook/
 - [x] Task 7: Eurozone pages 1-5 — Central Bank (Bundesbank→ECB、歴代総裁、タカ/ハト)、Policy Rate (ERM, ECB rates)、Fiscal Policy (SGP, 債務危機)、Employment、Inflation
 - [x] Task 8: Eurozone pages 6-10 — Equity (DAX, Euro Stoxx 50, CAC 40)、Early History、Modern Era (統合)、2000s-2010s (欧州債務危機)、2020s
 - [x] Task 9: Eurozone pages 11-15 — Bond Market (Bund, BTP spread)、Short-term Rates (Euribor)、Long-term Rates、Currency (DEM→EUR)、Crises (ERM crisis, 債務危機)
-- [ ] Task 10: Eurozone pages 16-20 — Banking、Corporate、Regulation (MiFID, Banking Union)、Trade、Lessons
+- [x] Task 10: Eurozone pages 16-20 — Banking、Corporate、Regulation (MiFID, Banking Union)、Trade、Lessons
 
 ### Phase 4: Japan (japan/)
 - [ ] Task 11: Japan pages 1-5 — Central Bank (BOJ歴代総裁、YCC、QQE)、Policy Rate (ゼロ金利、マイナス金利)、Fiscal Policy (財政出動、債務/GDP 200%超)、Employment (終身雇用→変化)、Inflation (デフレ30年)

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eurozone - Banking Sector | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇪🇺 Eurozone</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link active">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip active">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Eurozone</a>
+        <span class="sep">/</span>
+        Banking Sector
+      </div>
+      <h1 class="page-title">欧州銀行セクターの歴史 (European Banking Sector)</h1>
+      <p class="page-subtitle">ユニバーサルバンク伝統から銀行同盟へ — 統合・危機・再編の軌跡</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">~4,500</div>
+          <div class="stat-label">ユーロ圏信用機関数（2024年）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">€28T+</div>
+          <div class="stat-label">ユーロ圏銀行総資産</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">109行</div>
+          <div class="stat-label">ECB直接監督対象（SSM）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">300%+</div>
+          <div class="stat-label">銀行資産/GDP比率</div>
+        </div>
+      </div>
+
+      <!-- Introduction -->
+      <section>
+        <h2>欧州銀行制度の特徴</h2>
+        <p>欧州の銀行セクターは、米国とは根本的に異なる構造を持つ。最大の特徴は「ユニバーサルバンク」(Universal Banking) モデルであり、商業銀行業務と投資銀行業務を一つの機関で兼営する伝統がある。19世紀のドイツで発展したこのモデルは、産業革命期に企業の長期資金需要に応えるために銀行が株式持ち合いや監査役会への派遣を通じて産業と深く結びつく「ハウスバンク」(Hausbank) 制度を生み出した。この銀行中心型金融システム (bank-centric financial system) は、米国の市場中心型 (market-centric) と対照的であり、企業の資金調達の約70%が銀行経由で行われる。</p>
+        <p>もう一つの特徴は、欧州銀行セクターの多様性である。大手商業銀行 (Geschäftsbanken) の他に、ドイツの公的貯蓄銀行 (Sparkassen、約370行)、信用協同組合 (Genossenschaftsbanken、約700行)、フランスの相互銀行 (Crédit Agricole、BPCE)、イタリアの財団系銀行 (Fondazioni) など、非営利・協同組合型の金融機関が大きな市場シェアを占める。この「三本柱制度」(Three-Pillar System) は金融包摂に寄与する一方で、収益性の低さと統合の遅れという課題を抱えている。</p>
+      </section>
+
+      <!-- Major Banks Table -->
+      <section>
+        <h2>ユーロ圏主要銀行（2024年）</h2>
+        <table class="sortable">
+          <thead>
+            <tr>
+              <th>銀行名</th>
+              <th>国</th>
+              <th>総資産（€B）</th>
+              <th>CET1比率</th>
+              <th>設立年</th>
+              <th>特徴</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>BNP Paribas</td>
+              <td>🇫🇷 フランス</td>
+              <td>2,591</td>
+              <td>13.2%</td>
+              <td>2000</td>
+              <td>欧州最大、CIB強み</td>
+            </tr>
+            <tr>
+              <td>Crédit Agricole Group</td>
+              <td>🇫🇷 フランス</td>
+              <td>2,379</td>
+              <td>17.5%</td>
+              <td>1894</td>
+              <td>相互銀行、農業起源</td>
+            </tr>
+            <tr>
+              <td>Société Générale</td>
+              <td>🇫🇷 フランス</td>
+              <td>1,554</td>
+              <td>13.3%</td>
+              <td>1864</td>
+              <td>デリバティブ強い</td>
+            </tr>
+            <tr>
+              <td>Deutsche Bank</td>
+              <td>🇩🇪 ドイツ</td>
+              <td>1,312</td>
+              <td>13.9%</td>
+              <td>1870</td>
+              <td>IB再構築中</td>
+            </tr>
+            <tr>
+              <td>BPCE Group</td>
+              <td>🇫🇷 フランス</td>
+              <td>1,501</td>
+              <td>15.6%</td>
+              <td>2009</td>
+              <td>Natixis統合</td>
+            </tr>
+            <tr>
+              <td>ING Group</td>
+              <td>🇳🇱 オランダ</td>
+              <td>1,043</td>
+              <td>14.7%</td>
+              <td>1991</td>
+              <td>デジタルバンキング先駆</td>
+            </tr>
+            <tr>
+              <td>Intesa Sanpaolo</td>
+              <td>🇮🇹 イタリア</td>
+              <td>975</td>
+              <td>13.7%</td>
+              <td>2007</td>
+              <td>イタリア最大</td>
+            </tr>
+            <tr>
+              <td>UniCredit</td>
+              <td>🇮🇹 イタリア</td>
+              <td>884</td>
+              <td>15.9%</td>
+              <td>1998</td>
+              <td>Commerzbank買収試行</td>
+            </tr>
+            <tr>
+              <td>Santander</td>
+              <td>🇪🇸 スペイン</td>
+              <td>1,797</td>
+              <td>12.5%</td>
+              <td>1857</td>
+              <td>ラテンアメリカ展開</td>
+            </tr>
+            <tr>
+              <td>BBVA</td>
+              <td>🇪🇸 スペイン</td>
+              <td>775</td>
+              <td>12.9%</td>
+              <td>1857</td>
+              <td>トルコ・メキシコ展開</td>
+            </tr>
+            <tr>
+              <td>Commerzbank</td>
+              <td>🇩🇪 ドイツ</td>
+              <td>507</td>
+              <td>14.8%</td>
+              <td>1870</td>
+              <td>UniCredit買収標的</td>
+            </tr>
+            <tr>
+              <td>KfW</td>
+              <td>🇩🇪 ドイツ</td>
+              <td>546</td>
+              <td>—</td>
+              <td>1948</td>
+              <td>政府系開発銀行</td>
+            </tr>
+          </tbody>
+        </table>
+        <cite>出典: ECB Statistical Data Warehouse, 各行年次報告書 (2024), S&P Global Market Intelligence</cite>
+      </section>
+
+      <!-- Historical Development -->
+      <section>
+        <h2>欧州銀行史の変遷</h2>
+        <table class="sortable">
+          <thead>
+            <tr>
+              <th>時代</th>
+              <th>期間</th>
+              <th>主要な動き</th>
+              <th>銀行数の変化</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>産業革命期</td>
+              <td>1800s-1900s</td>
+              <td>ユニバーサルバンク発展、Grossbanken設立（Deutsche Bank 1870、Dresdner 1872、Commerzbank 1870）</td>
+              <td>急増</td>
+            </tr>
+            <tr>
+              <td>二度の世界大戦</td>
+              <td>1914-1945</td>
+              <td>ハイパーインフレ、銀行危機（1931年Danat銀行破綻）、国有化、再建</td>
+              <td>統合・国有化</td>
+            </tr>
+            <tr>
+              <td>戦後復興期</td>
+              <td>1945-1970s</td>
+              <td>Sparkassen・Genossenschaftsbanken再建、ドイツ三本柱確立、フランス銀行国有化（1945）</td>
+              <td>安定</td>
+            </tr>
+            <tr>
+              <td>自由化時代</td>
+              <td>1980s-1990s</td>
+              <td>ミッテラン国有化（1982）→再民営化（1986）、EU銀行指令（1989）、単一パスポート制度</td>
+              <td>~12,000→~9,000</td>
+            </tr>
+            <tr>
+              <td>ユーロ導入期</td>
+              <td>1999-2007</td>
+              <td>国境を超えたM&A、BNP+Paribas合併、HVB+UniCredit、ABN AMRO争奪戦</td>
+              <td>~9,000→~6,500</td>
+            </tr>
+            <tr>
+              <td>GFC・債務危機</td>
+              <td>2008-2014</td>
+              <td class="crisis-highlight">大規模公的資金注入、NPL急増、デレバレッジ</td>
+              <td>~6,500→~5,500</td>
+            </tr>
+            <tr>
+              <td>銀行同盟時代</td>
+              <td>2014-2022</td>
+              <td>SSM開始、低金利による収益圧迫、フィンテック台頭</td>
+              <td>~5,500→~4,500</td>
+            </tr>
+            <tr>
+              <td>金利正常化</td>
+              <td>2022-現在</td>
+              <td>金利上昇で収益急改善、銀行株100%超上昇、M&A再開</td>
+              <td>~4,500</td>
+            </tr>
+          </tbody>
+        </table>
+        <cite>出典: ECB, "Report on financial structures" (2024); BIS, "Annual Report" (various years)</cite>
+      </section>
+
+      <!-- German Banking System -->
+      <section>
+        <h2>ドイツの三本柱制度 (Three-Pillar System)</h2>
+        <p>ドイツの銀行制度は欧州で最もユニークであり、世界的にも例を見ない三本柱構造を維持している。第一の柱は民間商業銀行 (Geschäftsbanken) で、ドイツ銀行 (Deutsche Bank)、コメルツ銀行 (Commerzbank) が代表格である。第二の柱は公的貯蓄銀行 (Sparkassen-Finanzgruppe) で、約370の地方貯蓄銀行とその中央機関であるランデスバンク (Landesbanken) から構成される。第三の柱は信用協同組合 (Genossenschaftliche FinanzGruppe) で、約700の地域信用組合とDZ Bankを中央機関とする。</p>
+        <p>Sparkassenは地域密着型であり、公的使命 (öffentlicher Auftrag) として中小企業 (Mittelstand) への融資と金融包摂を担う。しかし、ランデスバンク (Landesbanken) は2000年代に政府保証の廃止（2005年、EU国家補助規制）後、利回り追求からサブプライム関連商品に投資し、GFC時に巨額損失を計上した。WestLB（2012年解体）、HSH Nordbank（2018年売却・改名）、BayernLB（€10B超の公的支援）など、ランデスバンクの危機は三本柱制度の構造的問題を露呈した。</p>
+        <table class="sortable">
+          <thead>
+            <tr>
+              <th>柱</th>
+              <th>機関数</th>
+              <th>市場シェア</th>
+              <th>代表的機関</th>
+              <th>課題</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>民間銀行</td>
+              <td>~250</td>
+              <td>~40%</td>
+              <td>Deutsche Bank, Commerzbank</td>
+              <td>グローバル競争力低下</td>
+            </tr>
+            <tr>
+              <td>貯蓄銀行 (Sparkassen)</td>
+              <td>~370 + 5 Landesbanken</td>
+              <td>~26%</td>
+              <td>LBBW, Helaba, BayernLB</td>
+              <td>Landesbank再編</td>
+            </tr>
+            <tr>
+              <td>協同組合銀行</td>
+              <td>~700</td>
+              <td>~20%</td>
+              <td>DZ Bank, Volksbanken</td>
+              <td>デジタル化対応</td>
+            </tr>
+          </tbody>
+        </table>
+        <cite>出典: Deutsche Bundesbank, "Banking statistics" (2024); Association of German Banks</cite>
+      </section>
+
+      <!-- GFC Impact -->
+      <section>
+        <h2>GFC期の銀行救済</h2>
+        <p>2008年のグローバル金融危機は、欧州の銀行セクターに壊滅的な打撃を与えた。米国のサブプライム住宅ローン関連の証券化商品への投資に加え、欧州独自の問題 — 不動産バブル（スペイン、アイルランド）、ソブリン・バンクの悪循環 (sovereign-bank doom loop)、国境を超えた銀行監督の不在 — が被害を拡大させた。</p>
+        <table class="sortable">
+          <thead>
+            <tr>
+              <th>国</th>
+              <th>主要銀行問題</th>
+              <th>公的支援規模</th>
+              <th>手法</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>🇩🇪 ドイツ</td>
+              <td>IKB, Hypo Real Estate, WestLB, Commerzbank</td>
+              <td>€480B（保証含む）</td>
+              <td>SoFFin設立、資本注入+保証</td>
+            </tr>
+            <tr>
+              <td>🇫🇷 フランス</td>
+              <td>Dexia（ベルギーと共同）、一部CIB損失</td>
+              <td>€360B（保証含む）</td>
+              <td>SFEF融資保証、資本注入</td>
+            </tr>
+            <tr>
+              <td>🇮🇪 アイルランド</td>
+              <td>Anglo Irish Bank, AIB, Bank of Ireland</td>
+              <td>~€64B（GDP比40%）</td>
+              <td>包括的保証→国有化→ESM/IMF支援</td>
+            </tr>
+            <tr>
+              <td>🇪🇸 スペイン</td>
+              <td>Bankia (BFA-Bankia), Cajas</td>
+              <td>€41.3B（ESM）</td>
+              <td>FROB設立、Cajas統合、バッドバンクSAREBを設立</td>
+            </tr>
+            <tr>
+              <td>🇳🇱 オランダ</td>
+              <td>ABN AMRO (Fortis解体後)、ING、SNS Reaal</td>
+              <td>€30B+</td>
+              <td>ABN AMRO国有化、ING資本注入</td>
+            </tr>
+            <tr>
+              <td>🇧🇪 ベルギー</td>
+              <td>Fortis、Dexia</td>
+              <td>€20B+</td>
+              <td>Fortis分割（BNP Paribas Fortis）</td>
+            </tr>
+            <tr>
+              <td>🇨🇾 キプロス</td>
+              <td>Laiki Bank, Bank of Cyprus</td>
+              <td>€10B（2013年）</td>
+              <td>史上初のベイルイン（預金者負担）</td>
+            </tr>
+          </tbody>
+        </table>
+        <cite>出典: European Commission, "State Aid Scoreboard" (2015); ECB, "Financial Stability Review" (various years)</cite>
+      </section>
+
+      <!-- NPL Problem -->
+      <section>
+        <h2>不良債権 (NPL) 問題</h2>
+        <p>GFCと欧州債務危機の遺産として、ユーロ圏銀行は巨額の不良債権 (Non-Performing Loans) を抱えることになった。ピーク時（2015年）にはユーロ圏全体のNPL残高は約€1兆に達し、NPL比率は6.7%であった。特にイタリア（NPL比率17.1%、残高€350B超）、ギリシャ（同46.7%）、キプロス（同47.8%）、ポルトガル（同19.2%）で深刻であった。</p>
+        <p>NPLの重荷は銀行の新規融資能力を制約し、実体経済の回復を遅らせるという悪循環を生んだ。ECBは2017年に「NPLガイダンス」を公表し、銀行にNPL削減計画の策定を義務付けた。同時に、各国でバッドバンク（イタリアのGACS保証スキーム、スペインのSAREB）やNPL市場の整備（2017年以降、NPL取引市場が活性化）が進んだ。2024年にはユーロ圏全体のNPL比率は1.9%まで低下し、歴史的低水準となった。</p>
+        <table class="sortable">
+          <thead>
+            <tr>
+              <th>国</th>
+              <th>NPL比率ピーク</th>
+              <th>ピーク年</th>
+              <th>2024年NPL比率</th>
+              <th>改善幅</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>🇬🇷 ギリシャ</td>
+              <td>46.7%</td>
+              <td>2016</td>
+              <td>5.2%</td>
+              <td>-41.5pts</td>
+            </tr>
+            <tr>
+              <td>🇨🇾 キプロス</td>
+              <td>47.8%</td>
+              <td>2015</td>
+              <td>3.4%</td>
+              <td>-44.4pts</td>
+            </tr>
+            <tr>
+              <td>🇮🇹 イタリア</td>
+              <td>17.1%</td>
+              <td>2015</td>
+              <td>2.4%</td>
+              <td>-14.7pts</td>
+            </tr>
+            <tr>
+              <td>🇵🇹 ポルトガル</td>
+              <td>19.2%</td>
+              <td>2016</td>
+              <td>2.8%</td>
+              <td>-16.4pts</td>
+            </tr>
+            <tr>
+              <td>🇪🇸 スペイン</td>
+              <td>13.6%</td>
+              <td>2013</td>
+              <td>2.9%</td>
+              <td>-10.7pts</td>
+            </tr>
+            <tr>
+              <td>🇮🇪 アイルランド</td>
+              <td>25.7%</td>
+              <td>2013</td>
+              <td>1.5%</td>
+              <td>-24.2pts</td>
+            </tr>
+            <tr>
+              <td>ユーロ圏平均</td>
+              <td>6.7%</td>
+              <td>2015</td>
+              <td>1.9%</td>
+              <td>-4.8pts</td>
+            </tr>
+          </tbody>
+        </table>
+        <cite>出典: ECB, "Supervisory Banking Statistics" (2024); EBA, "Risk Dashboard" (Q3 2024)</cite>
+      </section>
+
+      <!-- Deutsche Bank Saga -->
+      <section>
+        <h2>ドイツ銀行の栄枯盛衰 (Deutsche Bank)</h2>
+        <p>ドイツ銀行 (Deutsche Bank) の物語は、欧州銀行セクター全体の縮図である。1870年にベルリンで設立された同行は、20世紀を通じてドイツ産業の「ハウスバンク」として機能し、ダイムラー・ベンツやシーメンスの監査役会に役員を送り込むなど、産業と銀行の密接な関係を体現していた。</p>
+        <p>1990年代以降、グローバル投資銀行への変貌を目指し、モルガン・グレンフェル (Morgan Grenfell, 1989年)、バンカーズ・トラスト (Bankers Trust, 1999年) を買収。2007年には株価が€100を超え、グローバル投資銀行のトップ5に名を連ねた。しかし、GFC後には累計€20B超の訴訟費用（LIBOR操作、為替不正操作、マネーロンダリング、ミラー・トレード）を支払い、2016年には米司法省から$14Bの和解金を要求され（最終的に$7.2B）、株価は€6まで急落。「欧州のリーマン」と呼ばれる事態に陥った。</p>
+        <p>2019年、クリスティアン・ゼーヴィング (Christian Sewing) CEOの下で大規模リストラを断行。株式トレーディングから撤退し、1.8万人を削減。2022年以降の金利上昇を追い風に収益が改善し、2024年には純利益€5B超を達成、株価は€16以上に回復した。しかし、かつてのグローバルIBとしての地位への復帰には程遠く、時価総額は米系大手の1/10以下に留まる。</p>
+        <cite>出典: Deutsche Bank Annual Reports (various years); Financial Times, "Deutsche Bank's decade of decline" (2019)</cite>
+      </section>
+
+      <!-- 2022 Bank Revival -->
+      <section>
+        <h2>2022-2025年: 欧州銀行のルネサンス</h2>
+        <p>2022年のECBによる急速な利上げサイクル（0→4.50%）は、欧州銀行セクターに劇的な転換をもたらした。マイナス金利時代には純金利収入 (NII: Net Interest Income) が圧縮され、ROEは5-6%と資本コスト（約10%）を大幅に下回っていた。しかし、預金と貸出の金利差（NIM: Net Interest Margin）の拡大により、2023-2024年にはNIIが前年比20-30%増加し、ROEは10%超に改善した銀行が続出した。</p>
+        <p>特に注目されたのは、イタリアのUniCreditである。アンドレア・オルセル (Andrea Orcel) CEOの下でコスト削減と株主還元を徹底し、2024年のROEは16%超、時価総額は€60B超に達した。2024年にはCommerzbank株式の28%を取得し、欧州初の真の国境を超えた銀行合併の可能性が浮上した。ドイツ政府は当初反対したが、欧州統合の論理から阻止は困難との見方も強い。</p>
+        <p>STOXX Europe 600 Banks指数は2022年10月の底値から2025年初頭まで100%超上昇し、10年以上続いた「バリュートラップ」からの脱却を市場に印象づけた。しかし、ECBの利下げサイクル入り、AIによるフィンテック競争激化、商業用不動産 (CRE) リスクなど、新たな課題も浮上している。</p>
+        <cite>出典: ECB, "Financial Stability Review" (Nov 2024); Bloomberg, "European Banks Stage Comeback" (2024)</cite>
+      </section>
+
+      <!-- Cross-border M&A -->
+      <section>
+        <h2>国境を超えたM&A: 欧州銀行統合の課題</h2>
+        <p>ユーロ導入時、多くの政策担当者は通貨統合が銀行セクターの国境を超えた統合を加速させると期待した。しかし25年が経過した今、欧州の銀行統合は主に国内で進み、真の汎欧州銀行はほとんど誕生していない。その理由は多層的である。</p>
+        <p>第一に、銀行規制・監督は2014年のSSM設立まで各国当局に委ねられており、「ナショナル・チャンピオン」を維持したい政治的圧力が強かった。第二に、税制・会社法・破綻処理法の各国間の相違が統合のコストを高めた。第三に、預金保険制度の統一（EDIS: European Deposit Insurance Scheme）が政治的に頓挫し、銀行同盟の「第三の柱」が未完成のままである。ドイツのSparkassenは預金保険統一に強く反対しており、相互保証制度 (Institutional Protection Scheme) の維持を求めている。</p>
+        <p>2024-2025年のUniCredit-Commerzbank案件は、この構造的障壁を試す最初の本格的テストケースとなり得る。成功すれば、欧州銀行統合の新たな章が開かれるが、ドイツの政治的抵抗は根強い。</p>
+        <cite>出典: ECB, "Financial Integration in Europe" (2024); Enria, A., "The case for cross-border mergers" (2023)</cite>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>ECB, "Report on financial structures", European Central Bank (2024)</li>
+        <li>ECB, "Supervisory Banking Statistics", European Central Bank (2024)</li>
+        <li>ECB, "Financial Stability Review", European Central Bank (Nov 2024)</li>
+        <li>ECB, "Financial Integration in Europe", European Central Bank (2024)</li>
+        <li>EBA, "Risk Dashboard", European Banking Authority (Q3 2024)</li>
+        <li>European Commission, "State Aid Scoreboard" (2015)</li>
+        <li>Deutsche Bundesbank, "Banking statistics" (2024)</li>
+        <li>BIS, "Annual Report", Bank for International Settlements (various years)</li>
+        <li>S&P Global Market Intelligence, "European Bank Rankings" (2024)</li>
+        <li>Financial Times, "Deutsche Bank's decade of decline" (2019)</li>
+        <li>Enria, A., "The case for cross-border mergers", ECB Banking Supervision (2023)</li>
+      </ol>
+      <p class="note">※ 銀行の資産規模・比率は2024年末時点のデータに基づく。NPL比率は各国当局の定義差異により厳密な国際比較には注意が必要。</p>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelectorAll('.sortable th').forEach(th => {
+      th.addEventListener('click', function() {
+        const table = th.closest('table');
+        const idx = Array.from(th.parentNode.children).indexOf(th);
+        const rows = Array.from(table.querySelectorAll('tbody tr'));
+        const dir = th.asc = !th.asc ? 1 : -1;
+        rows.sort((a, b) => {
+          const av = a.children[idx].textContent.trim();
+          const bv = b.children[idx].textContent.trim();
+          const an = parseFloat(av.replace(/[^0-9.\-]/g, ''));
+          const bn = parseFloat(bv.replace(/[^0-9.\-]/g, ''));
+          if (!isNaN(an) && !isNaN(bn)) return (an - bn) * dir;
+          return av.localeCompare(bv, 'ja') * dir;
+        });
+        rows.forEach(r => table.querySelector('tbody').appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>
