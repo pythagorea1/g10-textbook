@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japan - Regulatory Framework | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇯🇵 Japan</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link active">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip active">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Japan</a>
+        <span class="sep">/</span>
+        Regulatory Framework
+      </div>
+      <h1 class="page-title">日本の金融規制の変遷 (Regulatory Framework)</h1>
+      <p class="page-subtitle">護送船団方式から金融ビッグバン、そしてFSAの時代へ</p>
+    </header>
+
+    <article>
+      <!-- 1. Overview -->
+      <section>
+        <h2>1. 日本の金融規制体制の概観</h2>
+        <p>
+          日本の金融規制の歴史は、「保護と統制」から「自由化と監督」への転換の歴史である。戦後から1990年代まで、大蔵省（現：財務省）が金融行政を一手に担い、「護送船団方式」(convoy system) と呼ばれる手厚い保護行政を展開した。この体制は金融システムの安定をもたらしたが、同時にモラルハザードと競争力の低下を招いた。1990年代の金融危機を経て、規制体制は根本的に改革され、2000年に金融庁 (Financial Services Agency, FSA) が設立されて独立した金融監督が始まった。
+        </p>
+
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>機関</th>
+              <th>設立年</th>
+              <th>役割</th>
+              <th>前身</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>金融庁 (FSA)</strong></td>
+              <td>2000</td>
+              <td>金融行政の企画立案・検査監督</td>
+              <td>金融監督庁（1998年設立）</td>
+            </tr>
+            <tr>
+              <td><strong>財務省</strong></td>
+              <td>2001</td>
+              <td>国庫・通貨・国債管理、為替政策</td>
+              <td>大蔵省（1869年設立）</td>
+            </tr>
+            <tr>
+              <td><strong>日本銀行</strong></td>
+              <td>1882</td>
+              <td>金融政策、金融システム安定、考査</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td><strong>証券取引等監視委員会 (SESC)</strong></td>
+              <td>1992</td>
+              <td>市場監視、インサイダー取引等の調査</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td><strong>預金保険機構 (DIC)</strong></td>
+              <td>1971</td>
+              <td>預金保険、破綻処理</td>
+              <td>—</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 2. MOF Era -->
+      <section>
+        <h2>2. 大蔵省支配の時代（1945-1998年）</h2>
+        <p>
+          戦後日本の金融規制は大蔵省の圧倒的な権限の下に置かれた。大蔵省は予算編成、税制、金融行政を一手に担う「最強官庁」であり、銀行局・証券局・国際金融局を通じて金融業界を監督した。大蔵省と金融業界の関係は「護送船団方式」と称され、弱い銀行も含めて全体が守られる代わりに、大蔵省の「行政指導」（法的拘束力のない口頭での指示）に従うことが求められた。
+        </p>
+        <p>
+          この体制には、金利規制（臨時金利調整法）、参入規制（銀行免許制）、業務規制（銀行・証券・保険の分離）、支店設置規制、為替管理（外国為替管理法）など、多層的な規制が含まれていた。これらの規制は金融システムの安定に寄与した一方、イノベーションの阻害、消費者選択の制限、海外市場との乖離といった副作用をもたらした。
+        </p>
+        <p>
+          1990年代の金融危機に際して、大蔵省は危機対応の遅れ、不良債権問題の隠蔽、金融業界との癒着（接待スキャンダル）などで激しい批判を浴びた。1995年には大蔵省職員が金融機関から過剰接待を受けていたことが発覚し（大蔵省接待汚職事件）、これが金融行政の大蔵省からの分離を加速させる契機となった。
+        </p>
+      </section>
+
+      <!-- 3. Big Bang -->
+      <section>
+        <h2>3. 金融ビッグバン（1996-2001年）</h2>
+        <p>
+          1996年11月、橋本龍太郎首相は日本版「金融ビッグバン」(Financial Big Bang) を宣言した。これは1986年の英国ビッグバンに倣い、「フリー（自由）・フェア（公正）・グローバル（国際化）」を3原則として、日本の金融市場を2001年までにニューヨーク・ロンドンと並ぶ国際金融センターに改革しようとする壮大な計画であった。
+        </p>
+
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>改革内容</th>
+              <th>分類</th>
+              <th>影響</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1996</td>
+              <td>金融ビッグバン宣言</td>
+              <td>全般</td>
+              <td class="positive">改革の号砲</td>
+            </tr>
+            <tr>
+              <td>1997</td>
+              <td>独占禁止法改正（持株会社の解禁）</td>
+              <td>自由化</td>
+              <td class="positive">金融持株会社の設立が可能に</td>
+            </tr>
+            <tr>
+              <td>1998</td>
+              <td>外国為替管理法の全面改正（外為法改正）</td>
+              <td>グローバル化</td>
+              <td class="positive">為替取引の完全自由化</td>
+            </tr>
+            <tr>
+              <td>1998</td>
+              <td>金融システム改革法</td>
+              <td>全般</td>
+              <td class="positive">銀行・証券・保険の相互参入促進</td>
+            </tr>
+            <tr>
+              <td>1998</td>
+              <td>金融監督庁設立</td>
+              <td>公正</td>
+              <td class="positive">大蔵省から検査監督機能を分離</td>
+            </tr>
+            <tr>
+              <td>1998</td>
+              <td>改正日銀法施行</td>
+              <td>独立性</td>
+              <td class="positive">日銀の金融政策独立性を強化</td>
+            </tr>
+            <tr>
+              <td>1999</td>
+              <td>株式売買委託手数料の完全自由化</td>
+              <td>自由化</td>
+              <td class="positive">ネット証券の台頭</td>
+            </tr>
+            <tr>
+              <td>2000</td>
+              <td>金融庁設立（金融監督庁を改組）</td>
+              <td>公正</td>
+              <td class="positive">企画立案機能も統合</td>
+            </tr>
+            <tr>
+              <td>2001</td>
+              <td>ペイオフ凍結延長（→2005年4月解禁）</td>
+              <td>安定</td>
+              <td class="neutral">段階的な預金保護見直し</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          金融ビッグバンの結果、日本の金融市場は大きく変貌した。ネット証券（SBI証券、楽天証券等）の台頭により個人投資家の取引コストは劇的に低下し、外国金融機関の日本市場への参入も進んだ。しかし、改革が進行中にアジア通貨危機（1997年）と国内の金融危機が重なり、当初の目標であった「東京を国際金融センターに」という野心は十分に達成されなかったとの評価が一般的である。
+        </p>
+      </section>
+
+      <!-- 4. FSA Era -->
+      <section>
+        <h2>4. 金融庁の時代（2000年-現在）</h2>
+        <p>
+          2000年に設立された金融庁は、初代長官の日野正晴 (Masaharu Hino) の下、金融機関の検査・監督を担った。しかし金融庁の転換点となったのは、2002年に就任した竹中平蔵 (Heizo Takenaka) 金融担当大臣の下で策定された「金融再生プログラム」（竹中プラン）である。竹中プランは不良債権比率の半減を目標に掲げ、資産査定の厳格化、自己資本の充実、ガバナンスの強化を3本柱とした。
+        </p>
+        <p>
+          その後の金融庁は、「ルールベース」（細則主義）から「プリンシプルベース」（原則主義）への転換を進めた。2014年以降は「フィデューシャリー・デューティー」（顧客本位の業務運営原則）を金融業界に求め、投資信託の手数料開示改善や仕組み債販売の適正化など、投資家保護を強化した。2018年からは「金融行政のこれまでの実践と今後の方針」（金融行政方針）を毎年公表し、透明性のある行政運営を目指している。
+        </p>
+      </section>
+
+      <!-- 5. Basel and International -->
+      <section>
+        <h2>5. バーゼル規制と国際基準への対応</h2>
+        <p>
+          日本の銀行規制はバーゼル委員会 (Basel Committee on Banking Supervision) の国際基準と密接に連動してきた。特に1988年のバーゼルI（BIS規制）導入は、日本のバブル崩壊と不良債権問題に大きな影響を与えた。国際業務を行う銀行に自己資本比率8%以上を求めるこの規制は、不良債権によって自己資本が毀損した日本の銀行の貸出能力を大きく制約し、「貸し渋り」「貸し剥がし」として実体経済に深刻な影響を与えた。
+        </p>
+
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>バーゼル規制</th>
+              <th>導入年（日本）</th>
+              <th>主な内容</th>
+              <th>日本への影響</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>バーゼルI</td>
+              <td>1993</td>
+              <td>自己資本比率8%以上（国際基準行）</td>
+              <td class="negative">貸し渋りの一因</td>
+            </tr>
+            <tr>
+              <td>バーゼルII</td>
+              <td>2007</td>
+              <td>リスク計測の高度化、3つの柱</td>
+              <td class="neutral">内部格付手法の導入</td>
+            </tr>
+            <tr>
+              <td>バーゼルIII</td>
+              <td>2013-</td>
+              <td>自己資本の質の強化、流動性規制</td>
+              <td class="positive">邦銀の財務健全化を促進</td>
+            </tr>
+            <tr>
+              <td>バーゼルIII最終化</td>
+              <td>2025-</td>
+              <td>リスクアセット計算の標準化</td>
+              <td class="neutral">段階的導入中</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 6. Modern Challenges -->
+      <section>
+        <h2>6. 現代の規制課題</h2>
+        <p>
+          2020年代の日本の金融規制は、デジタル化への対応、サステナビリティ金融（ESG/気候変動リスク）、暗号資産・ステーブルコインの規制、サイバーセキュリティ、マネーロンダリング対策（AML/CFT）など、新たな課題に直面している。
+        </p>
+        <p>
+          暗号資産の規制においては、日本は世界に先駆けて2017年に改正資金決済法により暗号資産交換業を登録制とし、規制枠組みを整備した先進国の一つである。2018年のコインチェック事件（NEM約580億円相当の不正流出）を受けて規制はさらに強化され、金融庁は暗号資産交換業者への検査を厳格化した。2023年にはステーブルコインに関する法整備（改正資金決済法）も行われた。
+        </p>
+        <p>
+          また、NISA（少額投資非課税制度）の拡充も重要な規制改革である。2014年に導入されたNISAは、2024年1月に「新NISA」として大幅に拡充され、年間投資枠の拡大（つみたて投資枠120万円＋成長投資枠240万円）と非課税期間の無期限化が実現した。これは「貯蓄から投資へ」の政策目標を加速させる施策として位置づけられており、個人投資家の市場参加を促進している。
+        </p>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考資料</h3>
+      <ol>
+        <li>金融庁, 「金融行政のこれまでの実践と今後の方針」, 各年度版, <cite>fsa.go.jp</cite></li>
+        <li>金融庁, 「金融システムの現状と課題」, 各年版, <cite>fsa.go.jp</cite></li>
+        <li>財務省, 「金融制度改革の経緯」, <cite>mof.go.jp</cite></li>
+        <li>日本銀行, 「金融システムレポート」, 各年版, <cite>boj.or.jp</cite></li>
+        <li>BIS, "Basel Framework", <cite>bis.org</cite></li>
+        <li>内閣府, 「資産所得倍増プラン」, 2022年, <cite>cao.go.jp</cite></li>
+        <li>橋本龍太郎, 金融ビッグバン構想に関する記者会見, 1996年11月</li>
+        <li>竹中平蔵, 「金融再生プログラム」, 2002年10月, <cite>fsa.go.jp</cite></li>
+        <li>FATF, "Mutual Evaluation Report: Japan", 2021年, <cite>fatf-gafi.org</cite></li>
+        <li>※ 各規制の導入年は日本国内における適用開始年。バーゼル規制の適用は段階的に行われる場合がある。</li>
+      </ol>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelectorAll('.sortable th').forEach(th => {
+      th.style.cursor = 'pointer';
+      th.addEventListener('click', () => {
+        const table = th.closest('table');
+        const idx = Array.from(th.parentNode.children).indexOf(th);
+        const rows = Array.from(table.querySelectorAll('tbody tr'));
+        const dir = th.asc = !th.asc ? 1 : -1;
+        rows.sort((a, b) => {
+          const av = a.children[idx].textContent.trim();
+          const bv = b.children[idx].textContent.trim();
+          return !isNaN(av) && !isNaN(bv) ? dir * (av - bv) : dir * av.localeCompare(bv, 'ja');
+        });
+        rows.forEach(r => table.querySelector('tbody').appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>
