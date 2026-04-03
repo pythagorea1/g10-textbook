@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweden - Regulatory Framework | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">&#9776;</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">&#x1F1F8;&#x1F1EA; Sweden</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link active">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip active">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">&#x1F3E0; Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">&#x1F4CA; G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Sweden</a>
+        <span class="sep">/</span>
+        Regulatory Framework
+      </div>
+      <h1 class="page-title">スウェーデンの金融規制フレームワーク (Regulatory Framework)</h1>
+      <p class="page-subtitle">FI（金融監督庁）を中心とする規制体制、EU規制との整合、マクロプルーデンシャル政策、そしてAML改革</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">FI</div>
+          <div class="stat-label">Finansinspektionen（金融監督庁、1991年設立）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">1995</div>
+          <div class="stat-label">EU加盟年</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">CET1 18%+</div>
+          <div class="stat-label">大手銀行の自己資本比率（G10最高水準）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">2003</div>
+          <div class="stat-label">ユーロ加盟国民投票否決</div>
+        </div>
+      </div>
+
+      <!-- ============================================ -->
+      <section>
+        <h2>1. 規制機関の構造</h2>
+        <p>スウェーデンの金融規制は、複数の機関が明確な役割分担のもとで運営する体制となっている：</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>機関</th>
+              <th>英名</th>
+              <th>設立</th>
+              <th>管轄</th>
+              <th>報告先</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Finansinspektionen (FI)</strong></td>
+              <td>Financial Supervisory Authority</td>
+              <td>1991</td>
+              <td>銀行・証券・保険の健全性監督、市場規制、消費者保護</td>
+              <td>財務省</td>
+            </tr>
+            <tr>
+              <td><strong>Sveriges Riksbank</strong></td>
+              <td>Central Bank of Sweden</td>
+              <td>1668</td>
+              <td>金融政策、金融安定、決済システム</td>
+              <td>議会（Riksdag）</td>
+            </tr>
+            <tr>
+              <td><strong>Riksgälden</strong></td>
+              <td>National Debt Office</td>
+              <td>1789</td>
+              <td>国債管理、銀行破綻処理（Resolution Authority）、預金保証</td>
+              <td>財務省</td>
+            </tr>
+            <tr>
+              <td><strong>Finansdepartementet</strong></td>
+              <td>Ministry of Finance</td>
+              <td>-</td>
+              <td>金融政策の立案、規制の法制化</td>
+              <td>首相・議会</td>
+            </tr>
+            <tr>
+              <td><strong>Finanspolitiska rådet</strong></td>
+              <td>Fiscal Policy Council</td>
+              <td>2007</td>
+              <td>財政政策の独立評価</td>
+              <td>議会</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>金融安定協議会（Financial Stability Council）</h3>
+        <p>2013年に設立された金融安定協議会は、FI、リクスバンク、Riksgälden、財務省の4機関で構成される。定期的な協議を通じてシステミック・リスクの監視と対応を調整する。法的拘束力はないが、マクロプルーデンシャル政策の方向性を決定する事実上の最高機関である。これは英国のFPCや米国のFSOCに相当する。</p>
+        <cite>[1] FI, "About Finansinspektionen," 2024; [2] Riksbank, "Financial Stability Framework in Sweden," 2023</cite>
+      </section>
+
+      <!-- ============================================ -->
+      <section>
+        <h2>2. 金融規制の歴史的変遷</h2>
+
+        <table>
+          <thead>
+            <tr><th>年</th><th>規制イベント</th><th>背景と影響</th></tr>
+          </thead>
+          <tbody>
+            <tr class="crisis-row">
+              <td>1668</td>
+              <td>リクスバンク設立</td>
+              <td>ストックホルム銀行破綻を受け、議会直属の銀行として設立。世界初の中央銀行</td>
+            </tr>
+            <tr>
+              <td>1897</td>
+              <td>リクスバンク法制定</td>
+              <td>紙幣発行の独占権をリクスバンクに付与</td>
+            </tr>
+            <tr class="crisis-row">
+              <td>1932</td>
+              <td>クロイガー事件後の規制強化</td>
+              <td>証券取引法制定、金融監督体制の整備開始</td>
+            </tr>
+            <tr>
+              <td>1950s-80s</td>
+              <td>規制時代</td>
+              <td>金利規制、貸出規制、為替管理。銀行は「公共事業」的存在</td>
+            </tr>
+            <tr class="rate-hike">
+              <td>1985</td>
+              <td>11月革命（金融自由化）</td>
+              <td>貸出金利上限撤廃。信用爆発→不動産バブル→1990年代銀行危機の遠因</td>
+            </tr>
+            <tr class="crisis-row">
+              <td>1991</td>
+              <td>FI（Finansinspektionen）設立</td>
+              <td>銀行監督局と保険監督局を統合。統合型金融監督の先駆け</td>
+            </tr>
+            <tr class="crisis-row">
+              <td>1992</td>
+              <td>銀行危機対応法制</td>
+              <td>包括的政府保証、Securum（バッドバンク）設立根拠法</td>
+            </tr>
+            <tr>
+              <td>1993</td>
+              <td>銀行支援庁設立</td>
+              <td>独立した危機管理機関。後のEU BRRD（銀行再建・破綻処理指令）のモデル</td>
+            </tr>
+            <tr>
+              <td>1995</td>
+              <td>EU加盟</td>
+              <td>EU金融規制の適用開始。単一パスポート制度</td>
+            </tr>
+            <tr>
+              <td>1999</td>
+              <td>リクスバンク独立性強化</td>
+              <td>新リクスバンク法。政策決定の独立性を法的に保障</td>
+            </tr>
+            <tr>
+              <td>2003</td>
+              <td>ユーロ国民投票否決</td>
+              <td>55.9%が反対。Banking Union非参加、独自の規制体制維持の根拠</td>
+            </tr>
+            <tr>
+              <td>2007</td>
+              <td>MiFID I 導入</td>
+              <td>EU証券市場規制。取引の透明性・投資家保護の強化</td>
+            </tr>
+            <tr>
+              <td>2010</td>
+              <td>LTV上限85%導入</td>
+              <td>FIによるマクロプルーデンシャル措置の第一弾</td>
+            </tr>
+            <tr>
+              <td>2013</td>
+              <td>CRD IV/CRR 導入</td>
+              <td>Basel III のEU実装。スウェーデンは上乗せ（add-on）で厳格運用</td>
+            </tr>
+            <tr>
+              <td>2014</td>
+              <td>BRRD導入・Riksgäldenが破綻処理当局に</td>
+              <td>銀行の破綻処理メカニズム。ベイルイン条項の適用</td>
+            </tr>
+            <tr>
+              <td>2016</td>
+              <td>アモチゼーション要件導入</td>
+              <td>LTV 50%超に年1%の元金返済義務。住宅市場過熱への対応</td>
+            </tr>
+            <tr>
+              <td>2018</td>
+              <td>MiFID II/MiFIR、GDPR</td>
+              <td>投資家保護強化、データ保護規制</td>
+            </tr>
+            <tr class="crisis-row">
+              <td>2019-20</td>
+              <td>AML改革</td>
+              <td>Swedbankスキャンダルを受けた規制強化。FI罰金権限の拡大</td>
+            </tr>
+            <tr>
+              <td>2022-23</td>
+              <td>カウンターシクリカル・バッファー調整</td>
+              <td>COVID後の一時的緩和→再引上げ（2.0%）</td>
+            </tr>
+            <tr>
+              <td>2024</td>
+              <td>DORA（デジタルオペレーショナルレジリエンス法）</td>
+              <td>EU全域のICTリスク管理規制</td>
+            </tr>
+          </tbody>
+        </table>
+        <cite>[3] FI, "Regulatory History of Swedish Financial Markets," 2024; [4] Jonung, Lars, "Financial Regulation in Sweden: A Historical Perspective," <em>Lund University Working Paper</em>, 2020</cite>
+      </section>
+
+      <!-- ============================================ -->
+      <section>
+        <h2>3. マクロプルーデンシャル政策</h2>
+        <p>スウェーデンは1990年代銀行危機の経験から、マクロプルーデンシャル政策の積極的な採用国である。FIがマクロプルーデンシャル当局としての機能を担い、以下のツールを運用している：</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>ツール</th>
+              <th>導入年</th>
+              <th>現行水準</th>
+              <th>目的</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>LTV上限</strong></td>
+              <td>2010</td>
+              <td>85%</td>
+              <td>住宅ローンの過剰レバレッジ抑制</td>
+            </tr>
+            <tr>
+              <td><strong>アモチゼーション要件</strong></td>
+              <td>2016/2018</td>
+              <td>LTV50%超: 年1%<br>LTV70%超: 年2%<br>所得比4.5倍超: 年1%追加</td>
+              <td>住宅ローン債務の漸減促進</td>
+            </tr>
+            <tr>
+              <td><strong>カウンターシクリカル・バッファー</strong></td>
+              <td>2014</td>
+              <td>2.0%（2023年再引上げ）</td>
+              <td>景気循環に応じた資本の積増し</td>
+            </tr>
+            <tr>
+              <td><strong>システム重要銀行バッファー</strong></td>
+              <td>2015</td>
+              <td>CET1 3%追加</td>
+              <td>SIB（Big 4）への追加資本要件</td>
+            </tr>
+            <tr>
+              <td><strong>リスクウェイト・フロア</strong></td>
+              <td>2013</td>
+              <td>住宅ローンRW 25%</td>
+              <td>内部モデルによるRW過小評価の是正</td>
+            </tr>
+            <tr>
+              <td><strong>流動性カバレッジ比率（LCR）</strong></td>
+              <td>2013</td>
+              <td>通貨別（EUR, USD, SEK）で100%</td>
+              <td>短期流動性リスクの管理（通貨別要件はスウェーデン固有）</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>スウェーデンのマクロプルーデンシャル政策の特徴は、(1) EU基準を上回る厳格な運用（gold-plating）、(2) 住宅市場に重点を置いた設計、(3) FIとリクスバンクの「建設的緊張関係」（リクスバンクは常により厳格な措置を求め、FIがバランスを取る構造）にある。この二重チェック体制は、単一当局モデルの弱点（regulatory capture）を緩和する機能を果たしている。</p>
+        <cite>[5] FI, "Macroprudential Policy in Sweden," 2024; [6] ESRB, "Country-Specific Recommendations: Sweden," 2023</cite>
+      </section>
+
+      <!-- ============================================ -->
+      <section>
+        <h2>4. EU規制とスウェーデンの独自性</h2>
+        <p>スウェーデンはEU加盟国であるが、ユーロ非採用国として独自の規制上の立場を維持している：</p>
+
+        <h3>Banking Union（銀行同盟）非参加</h3>
+        <p>スウェーデンはユーロ圏外であるため、ECBの単一監督メカニズム（SSM）と単一破綻処理メカニズム（SRM）に参加していない。Big 4のうちNordeaが2018年にフィンランドへ本社移転したことで、同行のみECB/SSM監督下に入った。残るSEB、Handelsbanken、Swedbankは引き続きFIの監督下にある。</p>
+
+        <p>Banking Union非参加のメリットとデメリット：</p>
+        <ul>
+          <li><strong>メリット</strong>：国内事情に即したきめ細かい監督、迅速な意思決定、マクロプルーデンシャル政策の柔軟性</li>
+          <li><strong>デメリット</strong>：クロスボーダー銀行（Nordea）の監督分断、危機時のECB流動性支援へのアクセス制限、規制裁定のリスク</li>
+        </ul>
+
+        <h3>EU規制のスウェーデン実装</h3>
+        <p>主要なEU金融規制はスウェーデン国内法に移植されるが、多くの場合スウェーデンはEU最低基準を上回る要件を課している。これは「ゴールドプレーティング」と呼ばれ、特に銀行の自己資本要件で顕著である。スウェーデンのBig 4銀行のCET1比率は平均18%以上と、EU平均の約15%を大幅に上回る。</p>
+        <cite>[7] FI, "Sweden and the Banking Union," Policy Report, 2022; [8] ECB, "SSM Annual Report," 2024</cite>
+      </section>
+
+      <!-- ============================================ -->
+      <section>
+        <h2>5. AML（マネーロンダリング対策）改革</h2>
+        <p>2019年のSwedbankスキャンダルは、スウェーデンのAML規制体制の根本的な見直しを迫った。バルト三国のSwedbankおよびDanske Bank支店を通じて、ロシア・旧ソ連諸国からの疑わしい資金が数千億クローナ規模で流入していた疑惑は、北欧の「クリーン」なイメージに大きな打撃を与えた。</p>
+
+        <h3>AML改革の主要措置</h3>
+        <table>
+          <thead>
+            <tr><th>年</th><th>措置</th><th>内容</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2019</td>
+              <td>Swedbank CEO解任</td>
+              <td>ビルギッテ・ボネセン解任。SVTテレビのUppdrag Granskning報道が契機</td>
+            </tr>
+            <tr>
+              <td>2020</td>
+              <td>FI罰金SEK 40億</td>
+              <td>Swedbankへの過去最大の行政処分</td>
+            </tr>
+            <tr>
+              <td>2020</td>
+              <td>SEB罰金SEK 10億</td>
+              <td>バルト三国でのAML不備に対する処分</td>
+            </tr>
+            <tr>
+              <td>2020</td>
+              <td>AML法改正</td>
+              <td>FIの調査権限・制裁権限の大幅強化</td>
+            </tr>
+            <tr>
+              <td>2021</td>
+              <td>Nordic AML協力合意</td>
+              <td>北欧5カ国のFIU（金融情報ユニット）間の情報共有強化</td>
+            </tr>
+            <tr>
+              <td>2024</td>
+              <td>EU AMLA（AML当局）設立</td>
+              <td>EU全域のAML監督の統一化。フランクフルトに設置</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>AMLスキャンダルの教訓は、(1) クロスボーダー銀行活動に対する監督体制の不十分さ、(2) ホスト国（バルト三国）とホーム国（スウェーデン）の監督責任の曖昧さ、(3) 利益追求と規制遵守のトレードオフにおいて経営陣のインセンティブ構造が規制遵守を軽視していたこと、である。</p>
+        <cite>[9] FI, "Anti-Money Laundering Supervision Report," 2024; [10] SVT, "Uppdrag Granskning: Swedbank och penningtvätten," 2019</cite>
+      </section>
+
+      <!-- ============================================ -->
+      <section>
+        <h2>6. 証券市場規制</h2>
+        <h3>取引所の変遷</h3>
+        <p>ストックホルム証券取引所は1863年に設立され、1993年に株式会社化（OM Stockholmsbörsen）、2003年にヘルシンキ証券取引所と合併（OMX）、2008年にNasdaq OMXとなり、現在はNasdaq Inc.の完全子会社として運営されている。この一連の統合は、欧州の取引所統合の典型例である。</p>
+
+        <h3>市場濫用規制</h3>
+        <p>EU市場濫用規制（MAR、2016年適用）のもと、FIはインサイダー取引と市場操作の監視を行う。スウェーデンは北欧の中でもインサイダー取引の摘発に積極的であり、2020年代には年間20-30件の調査を実施している。2023年にはSBB（Samhällsbyggnadsbolaget）の会長イリヤ・バティアン（Ilija Batljan）がインサイダー取引容疑で調査対象となった。</p>
+
+        <h3>二重議決権株式の規制</h3>
+        <p>スウェーデンは伝統的に二重議決権（A株/B株）制度を認めており、コーポレートガバナンス・コード（2004年導入、最新改訂2020年）は二重議決権を禁止していない。しかし、EU Listing Actの議論においてワンシェア・ワンボート原則の導入が議論されており、スウェーデンはスカンジナビア諸国やオランダと共に二重議決権の維持を主張している。</p>
+        <cite>[11] FI, "Market Supervision Annual Report," 2024; [12] Swedish Corporate Governance Board, "Swedish Corporate Governance Code," 2020</cite>
+      </section>
+
+      <!-- ============================================ -->
+      <section>
+        <h2>7. G10規制フレームワーク比較</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>項目</th>
+              <th>🇸🇪 Sweden</th>
+              <th>🇺🇸 US</th>
+              <th>🇬🇧 UK</th>
+              <th>🇪🇺 Eurozone</th>
+              <th>🇨🇭 Switzerland</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>統合型監督</td>
+              <td class="positive">Yes (FI)</td>
+              <td>No（分立型）</td>
+              <td>ツインピーク</td>
+              <td>ECB + 各国</td>
+              <td>Yes (FINMA)</td>
+            </tr>
+            <tr>
+              <td>Banking Union参加</td>
+              <td>No</td>
+              <td>N/A</td>
+              <td>No</td>
+              <td class="positive">Yes</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>大手銀行CET1</td>
+              <td class="positive">18%+</td>
+              <td>~13%</td>
+              <td>~14%</td>
+              <td>~15%</td>
+              <td>~14%</td>
+            </tr>
+            <tr>
+              <td>LTV上限</td>
+              <td>85%</td>
+              <td>なし（実質的に80%）</td>
+              <td>なし（ストレステスト）</td>
+              <td>国による</td>
+              <td>なし（自主規制）</td>
+            </tr>
+            <tr>
+              <td>二重議決権</td>
+              <td class="positive">広く許容</td>
+              <td>許容</td>
+              <td>原則禁止</td>
+              <td>国による</td>
+              <td>一部許容</td>
+            </tr>
+            <tr>
+              <td>マクロプルーデンシャル</td>
+              <td class="positive">積極的</td>
+              <td>FSOC（限定的）</td>
+              <td>FPC（積極的）</td>
+              <td>ECB + ESRB</td>
+              <td>SNB（限定的）</td>
+            </tr>
+          </tbody>
+        </table>
+        <cite>[13] BIS, "Regulatory Consistency Assessment Reports," 2024; [14] IMF, "FSAP Sweden," 2023</cite>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>FI (Finansinspektionen), "About Finansinspektionen," 2024</li>
+        <li>Riksbank, "Financial Stability Framework in Sweden," 2023</li>
+        <li>FI, "Regulatory History of Swedish Financial Markets," 2024</li>
+        <li>Jonung, Lars, "Financial Regulation in Sweden: A Historical Perspective," <em>Lund University Working Paper</em>, 2020</li>
+        <li>FI, "Macroprudential Policy in Sweden," 2024</li>
+        <li>ESRB (European Systemic Risk Board), "Country-Specific Recommendations: Sweden," 2023</li>
+        <li>FI, "Sweden and the Banking Union," Policy Report, 2022</li>
+        <li>ECB, "SSM Annual Report," 2024</li>
+        <li>FI, "Anti-Money Laundering Supervision Report," 2024</li>
+        <li>SVT, "Uppdrag Granskning: Swedbank och penningtvätten," 2019</li>
+        <li>FI, "Market Supervision Annual Report," 2024</li>
+        <li>Swedish Corporate Governance Board, "Swedish Corporate Governance Code," 2020</li>
+        <li>BIS, "Regulatory Consistency Assessment Reports," 2024</li>
+        <li>IMF, "FSAP Sweden," 2023</li>
+      </ol>
+      <p class="note">※ CET1比率等の数値は各機関の公表データに基づく概算値。規制の詳細は改定の可能性があり、最新情報はFI公式サイトを参照。</p>
+    </footer>
+
+    <nav class="page-nav">
+      <a href="17_corporate.html" class="prev">&larr; Prev: Corporate &amp; Indices</a>
+      <a href="19_trade.html" class="next">Next: International Trade &rarr;</a>
+    </nav>
+  </main>
+
+  <script>
+    document.querySelectorAll('table').forEach(t => {
+      const headers = t.querySelectorAll('th');
+      headers.forEach((h, i) => {
+        h.style.cursor = 'pointer';
+        h.addEventListener('click', () => {
+          const rows = Array.from(t.querySelectorAll('tbody tr'));
+          const dir = h.dataset.sort === 'asc' ? -1 : 1;
+          h.dataset.sort = dir === 1 ? 'asc' : 'desc';
+          rows.sort((a, b) => {
+            const x = a.cells[i]?.textContent.trim() || '';
+            const y = b.cells[i]?.textContent.trim() || '';
+            const nx = parseFloat(x.replace(/[^0-9.\-]/g, ''));
+            const ny = parseFloat(y.replace(/[^0-9.\-]/g, ''));
+            if (!isNaN(nx) && !isNaN(ny)) return (nx - ny) * dir;
+            return x.localeCompare(y, 'ja') * dir;
+          });
+          rows.forEach(r => t.querySelector('tbody').appendChild(r));
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
