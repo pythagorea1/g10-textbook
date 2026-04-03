@@ -131,7 +131,7 @@ g10_textbook/
 - [x] Task 26: Australia pages 16-20 — Banking (Big 4)、Corporate (Mining)、Regulation、Trade (China依存)、Lessons
 
 ### Phase 8: New Zealand (newzealand/)
-- [ ] Task 27: NZ pages 1-5 — Central Bank (RBNZ、インフレターゲット先駆者)、Policy Rate、Fiscal Policy、Employment、Inflation
+- [x] Task 27: NZ pages 1-5 — Central Bank (RBNZ、インフレターゲット先駆者)、Policy Rate、Fiscal Policy、Employment、Inflation
 - [ ] Task 28: NZ pages 6-10 — Equity (NZX 50)、Early〜2020s
 - [ ] Task 29: NZ pages 11-15 — Bond、Rates、Currency (NZD)、Crises
 - [ ] Task 30: NZ pages 16-20 — Banking、Corporate (Dairy)、Regulation、Trade、Lessons
