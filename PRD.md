@@ -156,7 +156,7 @@ g10_textbook/
 
 ### Phase 12: Summary & Integration
 - [x] Task 43: G10 Summary Timeline (summary/g10_timeline.html) — N年×10カ国の大型テーブル（1900年代〜現在）。政策金利、株価指数、主要イベントを年ごとに横断比較。ソース付き。
-- [ ] Task 44: Navigation & Polish — 全ページのナビゲーション統一、リンク検証、index.html更新、目次生成。最終チェック。
+- [x] Task 44: Navigation & Polish — 全ページのナビゲーション統一、リンク検証、index.html更新、目次生成。最終チェック。
 
 ## Constraints
 - 全ページHTML（スタンドアロン、外部CSS参照のみ）

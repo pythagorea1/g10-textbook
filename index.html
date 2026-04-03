@@ -157,8 +157,71 @@
       font-size: 0.8rem;
     }
 
+    /* Full TOC */
+    .toc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .toc-country {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 1rem 1.2rem;
+    }
+    .toc-country-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--accent-green);
+      margin-bottom: 0.6rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .toc-country-title a {
+      color: var(--accent-green);
+      text-decoration: none;
+    }
+    .toc-country-title a:hover { text-decoration: underline; }
+    .toc-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .toc-links li {
+      margin: 0.15rem 0;
+    }
+    .toc-links a {
+      font-size: 0.78rem;
+      font-family: var(--font-mono);
+      color: var(--text-secondary);
+      text-decoration: none;
+      display: block;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      transition: all var(--transition);
+    }
+    .toc-links a:hover {
+      color: var(--accent-teal);
+      background: rgba(78,205,196,0.06);
+    }
+    .toc-links .toc-num {
+      color: var(--text-muted);
+      margin-right: 0.3rem;
+    }
+    .toc-category {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-top: 0.5rem;
+      margin-bottom: 0.15rem;
+      padding-left: 0.4rem;
+    }
+
     @media (max-width: 768px) {
       .country-grid { grid-template-columns: 1fr; }
+      .toc-grid { grid-template-columns: 1fr; }
       .index-hero h1 { font-size: 1.4rem; }
       .index-container { padding: 1rem; }
     }
@@ -184,6 +247,7 @@
     <a href="summary/g10_timeline.html" class="quick-link">G10 横断年表</a>
     <a href="#countries" class="quick-link">各国ページ一覧</a>
     <a href="#overview" class="quick-link">概要テーブル</a>
+    <a href="#toc" class="quick-link">全ページ目次</a>
     <a href="#structure" class="quick-link">ページ構成</a>
   </div>
 
@@ -492,6 +556,419 @@
           <tr><td>20</td><td>Key Lessons</td><td>総括</td><td>歴史から学ぶ教訓、注目イベント</td></tr>
         </tbody>
       </table>
+    </div>
+  </section>
+
+  <!-- Full Table of Contents -->
+  <section id="toc" class="overview-section">
+    <h2 class="section-title">Full Table of Contents — 全ページ目次 (200+ pages)</h2>
+
+    <div style="margin-bottom:1rem;">
+      <a href="summary/g10_timeline.html" class="quick-link" style="display:inline-flex;">📊 G10 Summary Timeline — 10カ国横断比較メガテーブル (1900-2025)</a>
+    </div>
+
+    <div class="toc-grid">
+
+      <!-- US -->
+      <div class="toc-country">
+        <div class="toc-country-title">&#x1F1FA;&#x1F1F8; <a href="us/01_central_bank.html">米国 (United States)</a></div>
+        <div class="toc-category">金融政策</div>
+        <ul class="toc-links">
+          <li><a href="us/01_central_bank.html"><span class="toc-num">01</span> Central Bank Timeline — Fed設立・歴代議長・FOMC</a></li>
+          <li><a href="us/02_policy_rate.html"><span class="toc-num">02</span> Policy Rate — FFレート推移・利上げ/利下げサイクル</a></li>
+        </ul>
+        <div class="toc-category">マクロ経済</div>
+        <ul class="toc-links">
+          <li><a href="us/03_fiscal_policy.html"><span class="toc-num">03</span> Fiscal Policy — 財政パッケージ・債務/GDP推移</a></li>
+          <li><a href="us/04_employment.html"><span class="toc-num">04</span> Employment — 雇用統計・失業率・労働市場</a></li>
+          <li><a href="us/05_inflation.html"><span class="toc-num">05</span> Inflation — CPI/PCE・インフレターゲット</a></li>
+        </ul>
+        <div class="toc-category">株式市場</div>
+        <ul class="toc-links">
+          <li><a href="us/06_equity_overview.html"><span class="toc-num">06</span> Equity Overview — S&amp;P 500・DJIA・NASDAQ</a></li>
+          <li><a href="us/07_equity_early.html"><span class="toc-num">07</span> Early History — NYSE 1792〜1970s</a></li>
+          <li><a href="us/08_equity_modern.html"><span class="toc-num">08</span> Modern Era — 1980s-1990s</a></li>
+          <li><a href="us/09_equity_recent.html"><span class="toc-num">09</span> 2000s-2010s — ITバブル・GFC・回復</a></li>
+          <li><a href="us/10_equity_current.html"><span class="toc-num">10</span> 2020s — COVID・AI相場</a></li>
+        </ul>
+        <div class="toc-category">債券・金利・為替</div>
+        <ul class="toc-links">
+          <li><a href="us/11_bond_market.html"><span class="toc-num">11</span> Bond Market — Treasury市場</a></li>
+          <li><a href="us/12_short_rates.html"><span class="toc-num">12</span> Short-term Rates — T-Bills・SOFR</a></li>
+          <li><a href="us/13_long_rates.html"><span class="toc-num">13</span> Long-term Rates — 10Y/30Y利回り</a></li>
+          <li><a href="us/14_currency.html"><span class="toc-num">14</span> Currency — USD・ドルインデックス</a></li>
+          <li><a href="us/15_crises.html"><span class="toc-num">15</span> Financial Crises — 1907〜COVID</a></li>
+        </ul>
+        <div class="toc-category">金融制度</div>
+        <ul class="toc-links">
+          <li><a href="us/16_banking.html"><span class="toc-num">16</span> Banking Sector — 銀行制度の発展</a></li>
+          <li><a href="us/17_corporate.html"><span class="toc-num">17</span> Corporate &amp; Indices — セクター変遷</a></li>
+          <li><a href="us/18_regulation.html"><span class="toc-num">18</span> Regulation — Glass-Steagall〜Dodd-Frank</a></li>
+          <li><a href="us/19_trade.html"><span class="toc-num">19</span> International Trade — 貿易赤字・資本フロー</a></li>
+          <li><a href="us/20_lessons.html"><span class="toc-num">20</span> Key Lessons — 歴史から学ぶ教訓</a></li>
+        </ul>
+      </div>
+
+      <!-- Eurozone -->
+      <div class="toc-country">
+        <div class="toc-country-title">&#x1F1EA;&#x1F1FA; <a href="eurozone/01_central_bank.html">ユーロ圏 (Eurozone)</a></div>
+        <div class="toc-category">金融政策</div>
+        <ul class="toc-links">
+          <li><a href="eurozone/01_central_bank.html"><span class="toc-num">01</span> Central Bank — Bundesbank→ECB・歴代総裁</a></li>
+          <li><a href="eurozone/02_policy_rate.html"><span class="toc-num">02</span> Policy Rate — ERM・ECB金利</a></li>
+        </ul>
+        <div class="toc-category">マクロ経済</div>
+        <ul class="toc-links">
+          <li><a href="eurozone/03_fiscal_policy.html"><span class="toc-num">03</span> Fiscal Policy — SGP・債務危機</a></li>
+          <li><a href="eurozone/04_employment.html"><span class="toc-num">04</span> Employment — 雇用統計・労働市場</a></li>
+          <li><a href="eurozone/05_inflation.html"><span class="toc-num">05</span> Inflation — HICP・インフレターゲット</a></li>
+        </ul>
+        <div class="toc-category">株式市場</div>
+        <ul class="toc-links">
+          <li><a href="eurozone/06_equity_overview.html"><span class="toc-num">06</span> Equity Overview — Euro Stoxx 50・DAX・CAC</a></li>
+          <li><a href="eurozone/07_equity_early.html"><span class="toc-num">07</span> Early History — 欧州証取の起源</a></li>
+          <li><a href="eurozone/08_equity_modern.html"><span class="toc-num">08</span> Modern Era — 統合・自由化</a></li>
+          <li><a href="eurozone/09_equity_recent.html"><span class="toc-num">09</span> 2000s-2010s — 欧州債務危機</a></li>
+          <li><a href="eurozone/10_equity_current.html"><span class="toc-num">10</span> 2020s — COVID・エネルギー危機</a></li>
+        </ul>
+        <div class="toc-category">債券・金利・為替</div>
+        <ul class="toc-links">
+          <li><a href="eurozone/11_bond_market.html"><span class="toc-num">11</span> Bond Market — Bund・BTPスプレッド</a></li>
+          <li><a href="eurozone/12_short_rates.html"><span class="toc-num">12</span> Short-term Rates — Euribor</a></li>
+          <li><a href="eurozone/13_long_rates.html"><span class="toc-num">13</span> Long-term Rates — 長期金利推移</a></li>
+          <li><a href="eurozone/14_currency.html"><span class="toc-num">14</span> Currency — DEM→EUR・通貨統合</a></li>
+          <li><a href="eurozone/15_crises.html"><span class="toc-num">15</span> Financial Crises — ERM危機・債務危機</a></li>
+        </ul>
+        <div class="toc-category">金融制度</div>
+        <ul class="toc-links">
+          <li><a href="eurozone/16_banking.html"><span class="toc-num">16</span> Banking Sector — 欧州銀行制度</a></li>
+          <li><a href="eurozone/17_corporate.html"><span class="toc-num">17</span> Corporate &amp; Indices — 主要企業</a></li>
+          <li><a href="eurozone/18_regulation.html"><span class="toc-num">18</span> Regulation — MiFID・Banking Union</a></li>
+          <li><a href="eurozone/19_trade.html"><span class="toc-num">19</span> International Trade — 域内外貿易</a></li>
+          <li><a href="eurozone/20_lessons.html"><span class="toc-num">20</span> Key Lessons — 通貨統合の教訓</a></li>
+        </ul>
+      </div>
+
+      <!-- Japan -->
+      <div class="toc-country">
+        <div class="toc-country-title">&#x1F1EF;&#x1F1F5; <a href="japan/01_central_bank.html">日本 (Japan)</a></div>
+        <div class="toc-category">金融政策</div>
+        <ul class="toc-links">
+          <li><a href="japan/01_central_bank.html"><span class="toc-num">01</span> Central Bank — BOJ歴代総裁・YCC・QQE</a></li>
+          <li><a href="japan/02_policy_rate.html"><span class="toc-num">02</span> Policy Rate — ゼロ金利・マイナス金利</a></li>
+        </ul>
+        <div class="toc-category">マクロ経済</div>
+        <ul class="toc-links">
+          <li><a href="japan/03_fiscal_policy.html"><span class="toc-num">03</span> Fiscal Policy — 財政出動・債務/GDP 200%超</a></li>
+          <li><a href="japan/04_employment.html"><span class="toc-num">04</span> Employment — 終身雇用→変化</a></li>
+          <li><a href="japan/05_inflation.html"><span class="toc-num">05</span> Inflation — デフレ30年・2%目標</a></li>
+        </ul>
+        <div class="toc-category">株式市場</div>
+        <ul class="toc-links">
+          <li><a href="japan/06_equity_overview.html"><span class="toc-num">06</span> Equity Overview — 日経225・TOPIX</a></li>
+          <li><a href="japan/07_equity_early.html"><span class="toc-num">07</span> Early History — 東証1878〜高度成長</a></li>
+          <li><a href="japan/08_equity_modern.html"><span class="toc-num">08</span> Modern Era — バブル経済</a></li>
+          <li><a href="japan/09_equity_recent.html"><span class="toc-num">09</span> 2000s-2010s — 失われた20年</a></li>
+          <li><a href="japan/10_equity_current.html"><span class="toc-num">10</span> 2020s — バフェット効果・最高値更新</a></li>
+        </ul>
+        <div class="toc-category">債券・金利・為替</div>
+        <ul class="toc-links">
+          <li><a href="japan/11_bond_market.html"><span class="toc-num">11</span> Bond Market — JGB・日銀保有比率</a></li>
+          <li><a href="japan/12_short_rates.html"><span class="toc-num">12</span> Short-term Rates — 無担保コール</a></li>
+          <li><a href="japan/13_long_rates.html"><span class="toc-num">13</span> Long-term Rates — 10Y JGB</a></li>
+          <li><a href="japan/14_currency.html"><span class="toc-num">14</span> Currency — 円・プラザ合意</a></li>
+          <li><a href="japan/15_crises.html"><span class="toc-num">15</span> Financial Crises — バブル崩壊・銀行危機</a></li>
+        </ul>
+        <div class="toc-category">金融制度</div>
+        <ul class="toc-links">
+          <li><a href="japan/16_banking.html"><span class="toc-num">16</span> Banking Sector — メガバンク形成</a></li>
+          <li><a href="japan/17_corporate.html"><span class="toc-num">17</span> Corporate &amp; Indices — keiretsu→改革</a></li>
+          <li><a href="japan/18_regulation.html"><span class="toc-num">18</span> Regulation — 金融ビッグバン</a></li>
+          <li><a href="japan/19_trade.html"><span class="toc-num">19</span> International Trade — 貿易黒字→変化</a></li>
+          <li><a href="japan/20_lessons.html"><span class="toc-num">20</span> Key Lessons — 失われた30年の教訓</a></li>
+        </ul>
+      </div>
+
+      <!-- UK -->
+      <div class="toc-country">
+        <div class="toc-country-title">&#x1F1EC;&#x1F1E7; <a href="uk/01_central_bank.html">英国 (United Kingdom)</a></div>
+        <div class="toc-category">金融政策</div>
+        <ul class="toc-links">
+          <li><a href="uk/01_central_bank.html"><span class="toc-num">01</span> Central Bank — BOE 1694〜・MPC</a></li>
+          <li><a href="uk/02_policy_rate.html"><span class="toc-num">02</span> Policy Rate — Bank Rate推移</a></li>
+        </ul>
+        <div class="toc-category">マクロ経済</div>
+        <ul class="toc-links">
+          <li><a href="uk/03_fiscal_policy.html"><span class="toc-num">03</span> Fiscal Policy — Austerity・財政政策</a></li>
+          <li><a href="uk/04_employment.html"><span class="toc-num">04</span> Employment — 雇用統計・労働市場</a></li>
+          <li><a href="uk/05_inflation.html"><span class="toc-num">05</span> Inflation — RPI/CPI・IT導入</a></li>
+        </ul>
+        <div class="toc-category">株式市場</div>
+        <ul class="toc-links">
+          <li><a href="uk/06_equity_overview.html"><span class="toc-num">06</span> Equity Overview — FTSE 100・LSE</a></li>
+          <li><a href="uk/07_equity_early.html"><span class="toc-num">07</span> Early History — South Sea Bubble〜</a></li>
+          <li><a href="uk/08_equity_modern.html"><span class="toc-num">08</span> Modern Era — Big Bang 1986</a></li>
+          <li><a href="uk/09_equity_recent.html"><span class="toc-num">09</span> 2000s-2010s — GFC・回復</a></li>
+          <li><a href="uk/10_equity_current.html"><span class="toc-num">10</span> 2020s — Brexit・COVID</a></li>
+        </ul>
+        <div class="toc-category">債券・金利・為替</div>
+        <ul class="toc-links">
+          <li><a href="uk/11_bond_market.html"><span class="toc-num">11</span> Bond Market — Gilts</a></li>
+          <li><a href="uk/12_short_rates.html"><span class="toc-num">12</span> Short-term Rates — SONIA</a></li>
+          <li><a href="uk/13_long_rates.html"><span class="toc-num">13</span> Long-term Rates — 長期金利</a></li>
+          <li><a href="uk/14_currency.html"><span class="toc-num">14</span> Currency — GBP・Black Wednesday</a></li>
+          <li><a href="uk/15_crises.html"><span class="toc-num">15</span> Financial Crises — Barings〜GFC</a></li>
+        </ul>
+        <div class="toc-category">金融制度</div>
+        <ul class="toc-links">
+          <li><a href="uk/16_banking.html"><span class="toc-num">16</span> Banking Sector — 英国銀行制度</a></li>
+          <li><a href="uk/17_corporate.html"><span class="toc-num">17</span> Corporate &amp; Indices — 主要企業</a></li>
+          <li><a href="uk/18_regulation.html"><span class="toc-num">18</span> Regulation — FCA・PRA</a></li>
+          <li><a href="uk/19_trade.html"><span class="toc-num">19</span> International Trade — Brexit影響</a></li>
+          <li><a href="uk/20_lessons.html"><span class="toc-num">20</span> Key Lessons — 帝国衰退と金融革新</a></li>
+        </ul>
+      </div>
+
+      <!-- Switzerland -->
+      <div class="toc-country">
+        <div class="toc-country-title">&#x1F1E8;&#x1F1ED; <a href="switzerland/01_central_bank.html">スイス (Switzerland)</a></div>
+        <div class="toc-category">金融政策</div>
+        <ul class="toc-links">
+          <li><a href="switzerland/01_central_bank.html"><span class="toc-num">01</span> Central Bank — SNB・フラン上限政策</a></li>
+          <li><a href="switzerland/02_policy_rate.html"><span class="toc-num">02</span> Policy Rate — マイナス金利</a></li>
+        </ul>
+        <div class="toc-category">マクロ経済</div>
+        <ul class="toc-links">
+          <li><a href="switzerland/03_fiscal_policy.html"><span class="toc-num">03</span> Fiscal Policy — 債務ブレーキ制度</a></li>
+          <li><a href="switzerland/04_employment.html"><span class="toc-num">04</span> Employment — 雇用統計</a></li>
+          <li><a href="switzerland/05_inflation.html"><span class="toc-num">05</span> Inflation — 低インフレ体質</a></li>
+        </ul>
+        <div class="toc-category">株式市場</div>
+        <ul class="toc-links">
+          <li><a href="switzerland/06_equity_overview.html"><span class="toc-num">06</span> Equity Overview — SMI・SIX</a></li>
+          <li><a href="switzerland/07_equity_early.html"><span class="toc-num">07</span> Early History — スイス証取の起源</a></li>
+          <li><a href="switzerland/08_equity_modern.html"><span class="toc-num">08</span> Modern Era — 金融センター発展</a></li>
+          <li><a href="switzerland/09_equity_recent.html"><span class="toc-num">09</span> 2000s-2010s — UBS危機・SNBショック</a></li>
+          <li><a href="switzerland/10_equity_current.html"><span class="toc-num">10</span> 2020s — CS破綻・UBS統合</a></li>
+        </ul>
+        <div class="toc-category">債券・金利・為替</div>
+        <ul class="toc-links">
+          <li><a href="switzerland/11_bond_market.html"><span class="toc-num">11</span> Bond Market — スイス国債</a></li>
+          <li><a href="switzerland/12_short_rates.html"><span class="toc-num">12</span> Short-term Rates — SARON</a></li>
+          <li><a href="switzerland/13_long_rates.html"><span class="toc-num">13</span> Long-term Rates — 長期金利</a></li>
+          <li><a href="switzerland/14_currency.html"><span class="toc-num">14</span> Currency — CHFショック2015</a></li>
+          <li><a href="switzerland/15_crises.html"><span class="toc-num">15</span> Financial Crises — UBS/CS危機</a></li>
+        </ul>
+        <div class="toc-category">金融制度</div>
+        <ul class="toc-links">
+          <li><a href="switzerland/16_banking.html"><span class="toc-num">16</span> Banking Sector — UBS・CS・プライベートバンク</a></li>
+          <li><a href="switzerland/17_corporate.html"><span class="toc-num">17</span> Corporate &amp; Indices — Nestl&eacute;・Roche</a></li>
+          <li><a href="switzerland/18_regulation.html"><span class="toc-num">18</span> Regulation — FINMA・TBTF規制</a></li>
+          <li><a href="switzerland/19_trade.html"><span class="toc-num">19</span> International Trade — 貿易・資本フロー</a></li>
+          <li><a href="switzerland/20_lessons.html"><span class="toc-num">20</span> Key Lessons — 金融立国の教訓</a></li>
+        </ul>
+      </div>
+
+      <!-- Australia -->
+      <div class="toc-country">
+        <div class="toc-country-title">&#x1F1E6;&#x1F1FA; <a href="australia/01_central_bank.html">豪州 (Australia)</a></div>
+        <div class="toc-category">金融政策</div>
+        <ul class="toc-links">
+          <li><a href="australia/01_central_bank.html"><span class="toc-num">01</span> Central Bank — RBA・金融政策</a></li>
+          <li><a href="australia/02_policy_rate.html"><span class="toc-num">02</span> Policy Rate — Cash Rate推移</a></li>
+        </ul>
+        <div class="toc-category">マクロ経済</div>
+        <ul class="toc-links">
+          <li><a href="australia/03_fiscal_policy.html"><span class="toc-num">03</span> Fiscal Policy — 財政政策・資源ブーム</a></li>
+          <li><a href="australia/04_employment.html"><span class="toc-num">04</span> Employment — 雇用統計</a></li>
+          <li><a href="australia/05_inflation.html"><span class="toc-num">05</span> Inflation — IT 2-3%バンド</a></li>
+        </ul>
+        <div class="toc-category">株式市場</div>
+        <ul class="toc-links">
+          <li><a href="australia/06_equity_overview.html"><span class="toc-num">06</span> Equity Overview — ASX 200</a></li>
+          <li><a href="australia/07_equity_early.html"><span class="toc-num">07</span> Early History — 豪州証取の起源</a></li>
+          <li><a href="australia/08_equity_modern.html"><span class="toc-num">08</span> Modern Era — 金融自由化</a></li>
+          <li><a href="australia/09_equity_recent.html"><span class="toc-num">09</span> 2000s-2010s — 資源ブーム・GFC</a></li>
+          <li><a href="australia/10_equity_current.html"><span class="toc-num">10</span> 2020s — COVID・テック成長</a></li>
+        </ul>
+        <div class="toc-category">債券・金利・為替</div>
+        <ul class="toc-links">
+          <li><a href="australia/11_bond_market.html"><span class="toc-num">11</span> Bond Market — 豪国債・ACGB</a></li>
+          <li><a href="australia/12_short_rates.html"><span class="toc-num">12</span> Short-term Rates — BBSW・AONIA</a></li>
+          <li><a href="australia/13_long_rates.html"><span class="toc-num">13</span> Long-term Rates — 長期金利</a></li>
+          <li><a href="australia/14_currency.html"><span class="toc-num">14</span> Currency — AUD・資源通貨</a></li>
+          <li><a href="australia/15_crises.html"><span class="toc-num">15</span> Financial Crises — 1890s〜GFC</a></li>
+        </ul>
+        <div class="toc-category">金融制度</div>
+        <ul class="toc-links">
+          <li><a href="australia/16_banking.html"><span class="toc-num">16</span> Banking Sector — Big 4銀行</a></li>
+          <li><a href="australia/17_corporate.html"><span class="toc-num">17</span> Corporate &amp; Indices — 資源・金融</a></li>
+          <li><a href="australia/18_regulation.html"><span class="toc-num">18</span> Regulation — APRA・ASIC</a></li>
+          <li><a href="australia/19_trade.html"><span class="toc-num">19</span> International Trade — 中国依存</a></li>
+          <li><a href="australia/20_lessons.html"><span class="toc-num">20</span> Key Lessons — 30年無景気後退の教訓</a></li>
+        </ul>
+      </div>
+
+      <!-- New Zealand -->
+      <div class="toc-country">
+        <div class="toc-country-title">&#x1F1F3;&#x1F1FF; <a href="newzealand/01_central_bank.html">ニュージーランド (New Zealand)</a></div>
+        <div class="toc-category">金融政策</div>
+        <ul class="toc-links">
+          <li><a href="newzealand/01_central_bank.html"><span class="toc-num">01</span> Central Bank — RBNZ・IT先駆者</a></li>
+          <li><a href="newzealand/02_policy_rate.html"><span class="toc-num">02</span> Policy Rate — OCR推移</a></li>
+        </ul>
+        <div class="toc-category">マクロ経済</div>
+        <ul class="toc-links">
+          <li><a href="newzealand/03_fiscal_policy.html"><span class="toc-num">03</span> Fiscal Policy — Rogernomics</a></li>
+          <li><a href="newzealand/04_employment.html"><span class="toc-num">04</span> Employment — 雇用統計</a></li>
+          <li><a href="newzealand/05_inflation.html"><span class="toc-num">05</span> Inflation — 世界初IT 1-3%</a></li>
+        </ul>
+        <div class="toc-category">株式市場</div>
+        <ul class="toc-links">
+          <li><a href="newzealand/06_equity_overview.html"><span class="toc-num">06</span> Equity Overview — NZX 50</a></li>
+          <li><a href="newzealand/07_equity_early.html"><span class="toc-num">07</span> Early History — NZ証取の起源</a></li>
+          <li><a href="newzealand/08_equity_modern.html"><span class="toc-num">08</span> Modern Era — 改革と自由化</a></li>
+          <li><a href="newzealand/09_equity_recent.html"><span class="toc-num">09</span> 2000s-2010s — 回復期</a></li>
+          <li><a href="newzealand/10_equity_current.html"><span class="toc-num">10</span> 2020s — COVID・住宅市場</a></li>
+        </ul>
+        <div class="toc-category">債券・金利・為替</div>
+        <ul class="toc-links">
+          <li><a href="newzealand/11_bond_market.html"><span class="toc-num">11</span> Bond Market — NZGB</a></li>
+          <li><a href="newzealand/12_short_rates.html"><span class="toc-num">12</span> Short-term Rates — BKBM</a></li>
+          <li><a href="newzealand/13_long_rates.html"><span class="toc-num">13</span> Long-term Rates — 長期金利</a></li>
+          <li><a href="newzealand/14_currency.html"><span class="toc-num">14</span> Currency — NZD・キウイ</a></li>
+          <li><a href="newzealand/15_crises.html"><span class="toc-num">15</span> Financial Crises — 1987〜GFC</a></li>
+        </ul>
+        <div class="toc-category">金融制度</div>
+        <ul class="toc-links">
+          <li><a href="newzealand/16_banking.html"><span class="toc-num">16</span> Banking Sector — 豪銀行支配</a></li>
+          <li><a href="newzealand/17_corporate.html"><span class="toc-num">17</span> Corporate &amp; Indices — 酪農・テック</a></li>
+          <li><a href="newzealand/18_regulation.html"><span class="toc-num">18</span> Regulation — 金融規制</a></li>
+          <li><a href="newzealand/19_trade.html"><span class="toc-num">19</span> International Trade — 酪農輸出</a></li>
+          <li><a href="newzealand/20_lessons.html"><span class="toc-num">20</span> Key Lessons — 小国開放経済の教訓</a></li>
+        </ul>
+      </div>
+
+      <!-- Canada -->
+      <div class="toc-country">
+        <div class="toc-country-title">&#x1F1E8;&#x1F1E6; <a href="canada/01_central_bank.html">カナダ (Canada)</a></div>
+        <div class="toc-category">金融政策</div>
+        <ul class="toc-links">
+          <li><a href="canada/01_central_bank.html"><span class="toc-num">01</span> Central Bank — BOC・金融政策</a></li>
+          <li><a href="canada/02_policy_rate.html"><span class="toc-num">02</span> Policy Rate — Overnight Rate</a></li>
+        </ul>
+        <div class="toc-category">マクロ経済</div>
+        <ul class="toc-links">
+          <li><a href="canada/03_fiscal_policy.html"><span class="toc-num">03</span> Fiscal Policy — 財政再建</a></li>
+          <li><a href="canada/04_employment.html"><span class="toc-num">04</span> Employment — 雇用統計</a></li>
+          <li><a href="canada/05_inflation.html"><span class="toc-num">05</span> Inflation — IT 1-3%バンド</a></li>
+        </ul>
+        <div class="toc-category">株式市場</div>
+        <ul class="toc-links">
+          <li><a href="canada/06_equity_overview.html"><span class="toc-num">06</span> Equity Overview — TSX Composite</a></li>
+          <li><a href="canada/07_equity_early.html"><span class="toc-num">07</span> Early History — TSE設立〜</a></li>
+          <li><a href="canada/08_equity_modern.html"><span class="toc-num">08</span> Modern Era — 自由貿易・資源</a></li>
+          <li><a href="canada/09_equity_recent.html"><span class="toc-num">09</span> 2000s-2010s — 資源ブーム・GFC</a></li>
+          <li><a href="canada/10_equity_current.html"><span class="toc-num">10</span> 2020s — COVID・テック・大麻</a></li>
+        </ul>
+        <div class="toc-category">債券・金利・為替</div>
+        <ul class="toc-links">
+          <li><a href="canada/11_bond_market.html"><span class="toc-num">11</span> Bond Market — カナダ国債</a></li>
+          <li><a href="canada/12_short_rates.html"><span class="toc-num">12</span> Short-term Rates — CORRA</a></li>
+          <li><a href="canada/13_long_rates.html"><span class="toc-num">13</span> Long-term Rates — 長期金利</a></li>
+          <li><a href="canada/14_currency.html"><span class="toc-num">14</span> Currency — CAD・Loonie</a></li>
+          <li><a href="canada/15_crises.html"><span class="toc-num">15</span> Financial Crises — GFC耐性</a></li>
+        </ul>
+        <div class="toc-category">金融制度</div>
+        <ul class="toc-links">
+          <li><a href="canada/16_banking.html"><span class="toc-num">16</span> Banking Sector — Big 5銀行</a></li>
+          <li><a href="canada/17_corporate.html"><span class="toc-num">17</span> Corporate &amp; Indices — エネルギー・鉱業</a></li>
+          <li><a href="canada/18_regulation.html"><span class="toc-num">18</span> Regulation — OSFI</a></li>
+          <li><a href="canada/19_trade.html"><span class="toc-num">19</span> International Trade — NAFTA/USMCA</a></li>
+          <li><a href="canada/20_lessons.html"><span class="toc-num">20</span> Key Lessons — 安定性の教訓</a></li>
+        </ul>
+      </div>
+
+      <!-- Sweden -->
+      <div class="toc-country">
+        <div class="toc-country-title">&#x1F1F8;&#x1F1EA; <a href="sweden/01_central_bank.html">スウェーデン (Sweden)</a></div>
+        <div class="toc-category">金融政策</div>
+        <ul class="toc-links">
+          <li><a href="sweden/01_central_bank.html"><span class="toc-num">01</span> Central Bank — Riksbank 1668・世界最古</a></li>
+          <li><a href="sweden/02_policy_rate.html"><span class="toc-num">02</span> Policy Rate — マイナス金利</a></li>
+        </ul>
+        <div class="toc-category">マクロ経済</div>
+        <ul class="toc-links">
+          <li><a href="sweden/03_fiscal_policy.html"><span class="toc-num">03</span> Fiscal Policy — 福祉国家財政</a></li>
+          <li><a href="sweden/04_employment.html"><span class="toc-num">04</span> Employment — 雇用統計</a></li>
+          <li><a href="sweden/05_inflation.html"><span class="toc-num">05</span> Inflation — IT 2%目標</a></li>
+        </ul>
+        <div class="toc-category">株式市場</div>
+        <ul class="toc-links">
+          <li><a href="sweden/06_equity_overview.html"><span class="toc-num">06</span> Equity Overview — OMX Stockholm 30</a></li>
+          <li><a href="sweden/07_equity_early.html"><span class="toc-num">07</span> Early History — ストックホルム証取</a></li>
+          <li><a href="sweden/08_equity_modern.html"><span class="toc-num">08</span> Modern Era — 1990s銀行危機・回復</a></li>
+          <li><a href="sweden/09_equity_recent.html"><span class="toc-num">09</span> 2000s-2010s — テック・Ericsson</a></li>
+          <li><a href="sweden/10_equity_current.html"><span class="toc-num">10</span> 2020s — Spotify・フィンテック</a></li>
+        </ul>
+        <div class="toc-category">債券・金利・為替</div>
+        <ul class="toc-links">
+          <li><a href="sweden/11_bond_market.html"><span class="toc-num">11</span> Bond Market — スウェーデン国債</a></li>
+          <li><a href="sweden/12_short_rates.html"><span class="toc-num">12</span> Short-term Rates — STIBOR・SWESTR</a></li>
+          <li><a href="sweden/13_long_rates.html"><span class="toc-num">13</span> Long-term Rates — 長期金利</a></li>
+          <li><a href="sweden/14_currency.html"><span class="toc-num">14</span> Currency — SEK・EU非加盟</a></li>
+          <li><a href="sweden/15_crises.html"><span class="toc-num">15</span> Financial Crises — 1990s銀行危機</a></li>
+        </ul>
+        <div class="toc-category">金融制度</div>
+        <ul class="toc-links">
+          <li><a href="sweden/16_banking.html"><span class="toc-num">16</span> Banking Sector — Nordea・SEB・Handelsbanken</a></li>
+          <li><a href="sweden/17_corporate.html"><span class="toc-num">17</span> Corporate &amp; Indices — Ericsson・Volvo</a></li>
+          <li><a href="sweden/18_regulation.html"><span class="toc-num">18</span> Regulation — Finansinspektionen</a></li>
+          <li><a href="sweden/19_trade.html"><span class="toc-num">19</span> International Trade — 輸出主導型</a></li>
+          <li><a href="sweden/20_lessons.html"><span class="toc-num">20</span> Key Lessons — 北欧モデルの教訓</a></li>
+        </ul>
+      </div>
+
+      <!-- Norway -->
+      <div class="toc-country">
+        <div class="toc-country-title">&#x1F1F3;&#x1F1F4; <a href="norway/01_central_bank.html">ノルウェー (Norway)</a></div>
+        <div class="toc-category">金融政策</div>
+        <ul class="toc-links">
+          <li><a href="norway/01_central_bank.html"><span class="toc-num">01</span> Central Bank — Norges Bank・GPFG</a></li>
+          <li><a href="norway/02_policy_rate.html"><span class="toc-num">02</span> Policy Rate — サイトデポジットレート</a></li>
+        </ul>
+        <div class="toc-category">マクロ経済</div>
+        <ul class="toc-links">
+          <li><a href="norway/03_fiscal_policy.html"><span class="toc-num">03</span> Fiscal Policy — GPFG・3%ルール</a></li>
+          <li><a href="norway/04_employment.html"><span class="toc-num">04</span> Employment — 三者協調体制</a></li>
+          <li><a href="norway/05_inflation.html"><span class="toc-num">05</span> Inflation — CPI-ATE・2%目標</a></li>
+        </ul>
+        <div class="toc-category">株式市場</div>
+        <ul class="toc-links">
+          <li><a href="norway/06_equity_overview.html"><span class="toc-num">06</span> Equity Overview — OBX・Oslo B&oslash;rs</a></li>
+          <li><a href="norway/07_equity_early.html"><span class="toc-num">07</span> Early History — 1819設立〜石油発見</a></li>
+          <li><a href="norway/08_equity_modern.html"><span class="toc-num">08</span> Modern Era — 銀行危機・石油ブーム</a></li>
+          <li><a href="norway/09_equity_recent.html"><span class="toc-num">09</span> 2000s-2010s — 資源スーパーサイクル</a></li>
+          <li><a href="norway/10_equity_current.html"><span class="toc-num">10</span> 2020s — ウクライナ危機・GPFG NOK18T+</a></li>
+        </ul>
+        <div class="toc-category">債券・金利・為替</div>
+        <ul class="toc-links">
+          <li><a href="norway/11_bond_market.html"><span class="toc-num">11</span> Bond Market — Statsobligasjoner・OMF</a></li>
+          <li><a href="norway/12_short_rates.html"><span class="toc-num">12</span> Short-term Rates — NIBOR・NOWA</a></li>
+          <li><a href="norway/13_long_rates.html"><span class="toc-num">13</span> Long-term Rates — 長期金利</a></li>
+          <li><a href="norway/14_currency.html"><span class="toc-num">14</span> Currency — NOK・ペトロカレンシー</a></li>
+          <li><a href="norway/15_crises.html"><span class="toc-num">15</span> Financial Crises — 銀行危機・石油暴落</a></li>
+        </ul>
+        <div class="toc-category">金融制度</div>
+        <ul class="toc-links">
+          <li><a href="norway/16_banking.html"><span class="toc-num">16</span> Banking Sector — DNB・貯蓄銀行</a></li>
+          <li><a href="norway/17_corporate.html"><span class="toc-num">17</span> Corporate &amp; Indices — Equinor・国家所有</a></li>
+          <li><a href="norway/18_regulation.html"><span class="toc-num">18</span> Regulation — Finanstilsynet</a></li>
+          <li><a href="norway/19_trade.html"><span class="toc-num">19</span> International Trade — 石油ガス輸出</a></li>
+          <li><a href="norway/20_lessons.html"><span class="toc-num">20</span> Key Lessons — 資源の呪い回避</a></li>
+        </ul>
+      </div>
+
     </div>
   </section>
 
