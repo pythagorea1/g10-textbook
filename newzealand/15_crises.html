@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Zealand - Financial Crises | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇳🇿 New Zealand</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link active">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip active">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">New Zealand</a>
+        <span class="sep">/</span>
+        Financial Crises
+      </div>
+      <h1 class="page-title">ニュージーランドの金融危機史 (NZ Financial Crises)</h1>
+      <p class="page-subtitle">1987年クラッシュ、ファイナンスカンパニー危機、カンタベリー地震、COVID-19 — 小国経済の脆弱性と回復力</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">-59%</div>
+          <div class="stat-label">1987年株式クラッシュ (世界最悪)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">50+社</div>
+          <div class="stat-label">ファイナンスカンパニー破綻 (2006-12)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">NZ$400億+</div>
+          <div class="stat-label">カンタベリー地震被害 (2010-11)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">NZ$620億</div>
+          <div class="stat-label">COVID-19財政対応 (GDP 16%)</div>
+        </div>
+      </div>
+
+      <!-- Crisis Timeline -->
+      <section>
+        <h2>NZ金融危機年表</h2>
+        <div class="table-container">
+          <table class="data-table sortable">
+            <thead>
+              <tr>
+                <th>年</th>
+                <th>危機名称</th>
+                <th>株式市場影響</th>
+                <th>GDP影響</th>
+                <th>政策対応</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1890s</td><td>植民地銀行危機</td><td>—</td><td>深刻な不況</td><td>銀行再編</td></tr>
+              <tr><td>1930s</td><td>大恐慌</td><td>—</td><td>輸出-46%</td><td>為替切り下げ、RBNZ設立</td></tr>
+              <tr class="highlight-red"><td>1987</td><td>株式市場クラッシュ</td><td>NZSE -59%</td><td>長期不況入り</td><td>規制強化（証券法改正）</td></tr>
+              <tr class="highlight-orange"><td>1997-98</td><td>アジア金融危機</td><td>-30%</td><td>GDP減速</td><td>MCI → OCR移行のきっかけ</td></tr>
+              <tr><td>2001</td><td>ITバブル崩壊</td><td>-15%</td><td>軽微</td><td>OCR利下げ</td></tr>
+              <tr class="highlight-red"><td>2006-12</td><td>ファイナンスカンパニー危機</td><td>—</td><td>NZ$3B+損失</td><td>預金保証、規制改革</td></tr>
+              <tr class="highlight-orange"><td>2008-09</td><td>グローバル金融危機</td><td>-38%</td><td>-1.6%</td><td>OCR 575bp利下げ</td></tr>
+              <tr class="highlight-red"><td>2010-11</td><td>カンタベリー地震</td><td>限定的</td><td>NZ$400B+被害</td><td>再建支出、EQC</td></tr>
+              <tr class="highlight-orange"><td>2020</td><td>COVID-19</td><td>-30%→V字回復</td><td>-2.1%</td><td>NZ$620B支出、LSAP</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Crisis 1: 1987 Crash -->
+      <section>
+        <h2>1. 1987年株式市場クラッシュ — 世界最悪の暴落</h2>
+        <p>1987年のニュージーランド株式市場クラッシュは、世界の主要市場の中で最も深刻な暴落であった。NZSE（ニュージーランド証券取引所）は1987年初頭から10月のブラックマンデー後にかけて<strong>59%の下落</strong>を記録し、その後の回復には<strong>17年</strong>（2004年まで）を要した。</p>
+
+        <h3>バブル形成（1984-87年）</h3>
+        <p>ロジャーノミクスによる急速な金融自由化は、規制なき資本主義の実験場を生んだ。1984年の規制撤廃後、企業は容易に資金を調達できるようになり、投機的な企業買収と資産バブルが急膨張した。NZSEは1984年から1987年のピークまで<strong>+300%以上</strong>上昇した。</p>
+
+        <h3>「コーポレート・カウボーイズ」の時代</h3>
+        <p>バブル期のNZは「コーポレート・カウボーイズ（Corporate Cowboys）」と呼ばれる企業家グループに支配された。彼らの多くは後に詐欺や違法行為で告発された:</p>
+        <ul>
+          <li><strong>エクイティコープ（Equiticorp）</strong>: アラン・ホーキンス（Allan Hawkins）率いるコングロマリット。1988年に破綻。ホーキンスは詐欺罪で有罪判決（6年の禁固刑）。NZ最大の企業詐欺事件とされた。</li>
+          <li><strong>チェイス・コーポレーション（Chase Corporation）</strong>: 1988年破綻。投資家に約NZ$2億の損失をもたらした。</li>
+          <li><strong>ジャッジ・コーポレーション（Judge Corporation）</strong>: ブルース・ジャッジ（Bruce Judge）の企業帝国。脱税で有罪。</li>
+        </ul>
+
+        <h3>クラッシュの影響</h3>
+        <p>1987年クラッシュの影響はNZ経済に深く長期的な傷を残した。株式市場の時価総額は数十億ドル消失し、不動産市場も連動して下落。企業倒産が相次ぎ、失業率は1991年に11.2%のピークに達した。NZの株式文化は壊滅的な打撃を受け、「株式投資は危険」という世代的トラウマが長年にわたり個人の資産配分に影響を与えた。</p>
+        <p>クラッシュの教訓から、NZは1988年に証券法の全面改正を行い、開示規制の強化、インサイダー取引規制の導入、証券委員会（Securities Commission）の権限強化を実施した。しかし、その後のファイナンスカンパニー危機が示すように、規制の実効性には依然として課題が残った。</p>
+      </section>
+
+      <!-- Crisis 2: Finance Company Crisis -->
+      <section>
+        <h2>2. ファイナンスカンパニー危機（2006-2012）</h2>
+        <p>2006年から2012年にかけて、NZでは<strong>50社以上のファイナンスカンパニー（ノンバンク金融機関）</strong>が破綻し、約20万人の投資家が合計NZ$30億以上の損失を被った。これはNZ史上最大級の金融スキャンダルであり、規制体制の根本的な欠陥を露呈した。</p>
+
+        <h3>ファイナンスカンパニーとは</h3>
+        <p>NZのファイナンスカンパニーは、個人から預金（debentures）を集め、不動産開発や消費者ローンに融資する規制の緩いノンバンクであった。銀行とは異なりRBNZの健全性規制の対象外で、預金保護もなかった。高金利（銀行預金の2-3倍）を提供することで、主にリテール投資家（多くは退職者）から資金を集めていた。</p>
+
+        <h3>主要な破綻事例</h3>
+        <div class="table-container">
+          <table class="data-table sortable">
+            <thead>
+              <tr>
+                <th>会社名</th>
+                <th>破綻年</th>
+                <th>投資家損失</th>
+                <th>投資家数</th>
+                <th>結果</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="highlight-red"><td>Bridgecorp</td><td>2007</td><td>NZ$4.59億</td><td>14,500人</td><td>創業者Rod Petricevic禁固6年</td></tr>
+              <tr class="highlight-red"><td>Finance & Investments (Nathans)</td><td>2007</td><td>NZ$1.74億</td><td>7,000人</td><td>清算</td></tr>
+              <tr class="highlight-red"><td>South Canterbury Finance</td><td>2010</td><td>NZ$16億</td><td>35,000人</td><td>政府保証で<strong>NZ$16億</strong>公的負担</td></tr>
+              <tr class="highlight-orange"><td>Hanover Finance</td><td>2008</td><td>NZ$5.54億</td><td>16,500人</td><td>Mark Hotchin/Eric Watson罰金</td></tr>
+              <tr><td>Strategic Finance</td><td>2008</td><td>NZ$3.25億</td><td>11,000人</td><td>清算</td></tr>
+              <tr><td>Capital + Merchant Finance</td><td>2007</td><td>NZ$1.67億</td><td>—</td><td>取締役禁固刑</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>サウス・カンタベリー・ファイナンス（SCF）</h3>
+        <p>2010年のSCF破綻は危機の頂点であった。SCFは南カンタベリー地方の有力者アラン・ハバード（Allan Hubbard）が設立した地域密着型ファイナンスカンパニーだったが、不動産開発融資の不良債権化で経営破綻した。問題は、政府が2008年に導入した<strong>リテール預金保証制度（Crown Retail Deposit Guarantee Scheme）</strong>がSCFにも適用されていたことで、政府はNZ$16億の保証を履行する義務を負った。</p>
+        <p>この保証の履行はNZ史上最大の政府救済（bailout）となり、一人の納税者あたり約NZ$400の負担に相当した。「モラルハザードの教科書的事例」として国際的にも研究対象となった。</p>
+
+        <h3>危機後の規制改革</h3>
+        <ul>
+          <li><strong>金融市場庁（Financial Markets Authority, FMA）設立（2011年）</strong>: 証券委員会を発展的に改組</li>
+          <li><strong>ノンバンク預金受入機関（NBDT）規制導入（2010年）</strong>: RBNZによる健全性規制</li>
+          <li><strong>金融市場行為法（Financial Markets Conduct Act, FMCA）制定（2013年）</strong>: 包括的な金融規制法</li>
+          <li><strong>預金保証制度の廃止（2011年）</strong>: モラルハザード防止のため制度終了</li>
+        </ul>
+      </section>
+
+      <!-- Crisis 3: Canterbury Earthquakes -->
+      <section>
+        <h2>3. カンタベリー地震（2010-2011）</h2>
+        <p>2010年9月のダーフィールド地震（M7.1）と2011年2月のクライストチャーチ地震（M6.3）は、NZ史上最大の自然災害による金融危機を引き起こした。特に2011年2月の地震では<strong>185人が死亡</strong>し、クライストチャーチCBD（中央ビジネス地区）が壊滅的な被害を受けた。</p>
+
+        <h3>経済・金融への影響</h3>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>影響項目</th>
+                <th>規模</th>
+                <th>詳細</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="highlight-red"><td>総被害額</td><td>NZ$400億+</td><td>GDPの約20%に相当</td></tr>
+              <tr><td>保険金支払い</td><td>NZ$310億</td><td>世界保険史上最大級の自然災害損害</td></tr>
+              <tr><td>EQC支払い</td><td>NZ$120億</td><td>地震委員会（Earthquake Commission）</td></tr>
+              <tr><td>再保険市場への影響</td><td>甚大</td><td>NZの保険料大幅上昇</td></tr>
+              <tr><td>CBD建物</td><td>1,500+棟取壊し</td><td>クライストチャーチCBDほぼ全壊</td></tr>
+              <tr class="highlight-blue"><td>再建投資</td><td>NZ$400億+</td><td>2012-2025年の長期再建プログラム</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>金融市場への波及</h3>
+        <p>地震の金融市場への影響は、株式市場では意外にも限定的だった。NZXは地震直後に一時下落したが、再建需要への期待と海外からの保険金流入（NZD買い要因）により急速に回復した。むしろ、再建ブームはNZのGDP成長を押し上げ、2012-15年のカンタベリー再建はNZ経済の重要なドライバーとなった。</p>
+        <p>一方、保険セクターへの影響は深刻だった。地震委員会（EQC）は当初想定を大幅に超える請求に直面し、再保険の購入条件が大幅に悪化した。NZ全体の地震保険料は2倍以上に上昇し、一部地域ではカバー自体が困難になった。AMI Insurance（カンタベリー最大の保険会社）は政府救済を受け、後にIAG NZに売却された。</p>
+
+        <h3>EQCと地震リスクファイナンス</h3>
+        <p>地震委員会（Earthquake Commission, EQC）は1945年設立の国営保険機関で、住宅の自然災害保険を提供する。カンタベリー地震はEQCの財政能力を超える規模の災害であり、NZ$120億の支払いはEQC基金（NZ$60億）を超えた。政府保証が発動され、残額は再保険と政府予算から補填された。</p>
+        <p>この経験を踏まえ、2019年のEQC法改正では、カバー上限の引き上げ（NZ$100,000→NZ$150,000）、手続きの簡素化、再保険プログラムの強化が実施された。NZの地震リスクファイナンスモデルは、日本の地震保険制度やカリフォルニアのCEA（California Earthquake Authority）と並ぶ先進的な自然災害保険制度として国際的に研究されている。</p>
+      </section>
+
+      <!-- Crisis 4: GFC -->
+      <section>
+        <h2>4. グローバル金融危機（2008-09）</h2>
+        <p>GFC（Global Financial Crisis）のNZへの影響は、他のG10諸国と比較して相対的に軽微であった。これは、①NZの銀行が米国サブプライム資産への直接エクスポージャーを持たなかったこと、②豪州の大手4行（Big 4）の子会社が主体のシンプルな銀行構造、③RBNZの迅速な金融緩和（OCRを8.25%→2.50%、575bp利下げ）、によるものだった。</p>
+
+        <h3>NZへの伝播経路</h3>
+        <ul>
+          <li><strong>貿易チャネル</strong>: 乳製品等コモディティ価格の急落（GDT -40%）</li>
+          <li><strong>金融チャネル</strong>: キャリートレードの巻き戻し（NZD -27%）、銀行間市場のストレス</li>
+          <li><strong>信頼チャネル</strong>: 消費者・企業マインドの急激な悪化</li>
+          <li><strong>ファイナンスカンパニー危機との複合</strong>: 既に進行中のノンバンク危機を深刻化</li>
+        </ul>
+
+        <h3>政策対応</h3>
+        <p>RBNZはG10中でも最も積極的な利下げを実施した。2008年7月のOCR 8.25%から2009年4月の2.50%まで、わずか9ヶ月で<strong>575bp</strong>の利下げを行った。NZの高い出発点（G10最高金利）が大幅な緩和余地を提供し、伝統的な金融政策ツールのみで対応できた（QEは不要だった）。</p>
+        <p>財政面では、政府はNZ$125億の景気刺激策を実施し、個人所得税の減税やインフラ投資の前倒しを行った。ファイナンスカンパニー危機との複合的対応として、リテール預金保証制度も導入された（前述のSCF問題を引き起こした制度）。</p>
+        <p>NZ経済は2009年に-1.6%のGDP成長率を記録したが、豪州（-0.3%）に次いでG10中2番目に軽微な景気後退にとどまった。NZXは2009年3月に底打ちし、2013年までにGFC前のピークを回復した。</p>
+      </section>
+
+      <!-- Crisis 5: COVID-19 -->
+      <section>
+        <h2>5. COVID-19パンデミック（2020）</h2>
+        <p>2020年のCOVID-19パンデミックに対するニュージーランドの対応は、「排除戦略（elimination strategy）」という世界的にもユニークなアプローチで知られる。アーダーン（Jacinda Ardern）首相の下、NZは厳格な国境封鎖と4段階のアラートレベル・システムを導入し、2020年半ばには「COVID-19フリー」を達成した。</p>
+
+        <h3>金融市場への影響と対応</h3>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>指標</th>
+                <th>ショック</th>
+                <th>回復</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>NZX 50</td><td>-30%（2月-3月）</td><td>2020年9月に新高値</td></tr>
+              <tr><td>NZD/USD</td><td>0.67→0.57（-15%）</td><td>0.72（年末）</td></tr>
+              <tr><td>10年NZGB</td><td>1.0%→0.54%（史上最低）</td><td>0.99%（年末）</td></tr>
+              <tr><td>住宅価格</td><td>一時停滞</td><td>+20%（年間）</td></tr>
+              <tr><td>GDP</td><td>Q2: -11%（四半期）</td><td>Q3: +14%（V字回復）</td></tr>
+              <tr><td>失業率</td><td>5.3%ピーク</td><td>3.4%まで低下（2022年）</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>前例のない政策対応</h3>
+        <p>COVID-19対応は、NZ金融史上最大規模の政策出動となった:</p>
+        <ul>
+          <li><strong>金融政策</strong>: OCR 1.00%→0.25%（75bp利下げ）、LSAP NZ$530億、FLP NZ$190億</li>
+          <li><strong>財政政策</strong>: NZ$620億（GDP 16%相当）の財政支出パッケージ</li>
+          <li><strong>賃金補助金（Wage Subsidy Scheme）</strong>: NZ$180億、170万人以上の労働者をカバー</li>
+          <li><strong>中小企業ローン（Small Business Cashflow Loan）</strong>: 無利子融資</li>
+          <li><strong>住宅ローン猶予（Mortgage Deferral Scheme）</strong>: 6ヶ月間の返済猶予</li>
+        </ul>
+
+        <h3>後遺症 — インフレと住宅バブル</h3>
+        <p>COVID-19対応の大規模な財政・金融緩和は、深刻な後遺症をもたらした。2021-22年にかけて住宅価格は+45%の爆発的上昇を記録し、NZの住宅取得能力（affordability）は先進国中最悪水準に悪化した。インフレ率は2022年に7.3%に達し、RBNZは2021年10月からG10最速の利上げ（0.25%→5.50%、525bp）を開始した。</p>
+        <p>この急激な引き締めは2023年にNZを技術的リセッション（2四半期連続マイナス成長）に追い込み、住宅価格は2022年ピークから-15%下落した。LSAP関連のNZ$110億超の損失はRBNZの信認に疑問を投げかけ、独立レビューが実施された。COVID-19対応は「やり過ぎ（too much, too fast）」だったのか、という政策議論は2020年代のNZ金融政策における最大のテーマとなっている。</p>
+      </section>
+
+      <!-- Section: Lessons -->
+      <section>
+        <h2>NZ金融危機からの教訓</h2>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>危機</th>
+                <th>主な教訓</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1987年クラッシュ</td><td>急速な規制緩和には適切な監督体制の整備が不可欠。投機バブルは規制の真空地帯で膨張する</td></tr>
+              <tr><td>ファイナンスカンパニー危機</td><td>「ノンバンク」の規制ギャップは致命的。預金保証のモラルハザード。リテール投資家保護の重要性</td></tr>
+              <tr><td>カンタベリー地震</td><td>自然災害リスクの事前ファイナンスの重要性。EQCモデルの限界と改善</td></tr>
+              <tr><td>GFC</td><td>シンプルな銀行構造の強靭性。高金利出発点の緩和余地の価値</td></tr>
+              <tr><td>COVID-19</td><td>小規模開放経済での大規模QEのリスク。政策の規模と出口戦略のバランス</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>RBNZ, "Financial Stability Report," various years (2006-2024)</li>
+        <li>RBNZ, "Review of the Large Scale Asset Purchases Programme," 2023</li>
+        <li>FMA (Financial Markets Authority), "Annual Report," various years</li>
+        <li>NZ Treasury, "Budget Economic and Fiscal Update," various years</li>
+        <li>Parliamentary Library, "Finance Company Failures — Background Note," 2011</li>
+        <li>Canterbury Earthquake Recovery Authority (CERA), "Recovery Strategy for Greater Christchurch," 2012</li>
+        <li>EQC (Earthquake Commission), "Annual Report," various years</li>
+        <li>Bollard, Alan, "Crisis: One Central Bank Governor and the Global Financial Collapse," Auckland University Press, 2010</li>
+        <li>Singleton, John et al., "Innovation and Independence: The Reserve Bank of New Zealand 1973-2002," Auckland University Press, 2006</li>
+        <li>Grimes, Arthur & Aitken, Andrew, "Housing Supply, Land Costs and Price Adjustment," NZ Economic Papers, 2010</li>
+        <li>IMF, "New Zealand — Article IV Consultation," various years</li>
+      </ol>
+      <p><em>※ 株式市場データはNZX/Bloomberg、マクロ経済データはStats NZ/RBNZ/NZ Treasuryを主要ソースとして使用。</em></p>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelectorAll('.data-table.sortable th').forEach((th, index) => {
+      th.style.cursor = 'pointer';
+      th.addEventListener('click', () => {
+        const table = th.closest('table');
+        const tbody = table.querySelector('tbody');
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+        const isAsc = th.classList.contains('sort-asc');
+        table.querySelectorAll('th').forEach(h => h.classList.remove('sort-asc', 'sort-desc'));
+        th.classList.toggle('sort-asc', !isAsc);
+        th.classList.toggle('sort-desc', isAsc);
+        rows.sort((a, b) => {
+          const aText = a.children[index]?.textContent.trim() || '';
+          const bText = b.children[index]?.textContent.trim() || '';
+          const aNum = parseFloat(aText.replace(/[^0-9.\-]/g, ''));
+          const bNum = parseFloat(bText.replace(/[^0-9.\-]/g, ''));
+          if (!isNaN(aNum) && !isNaN(bNum)) return isAsc ? bNum - aNum : aNum - bNum;
+          return isAsc ? bText.localeCompare(aText) : aText.localeCompare(bText);
+        });
+        rows.forEach(r => tbody.appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>
