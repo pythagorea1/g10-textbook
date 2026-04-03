@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canada - Inflation | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇨🇦 Canada</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link active">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip active">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Canada</a>
+        <span class="sep">/</span>
+        Inflation
+      </div>
+      <h1 class="page-title">カナダのインフレーションの歴史</h1>
+      <p class="page-subtitle">12.9%から-0.9%まで — インフレターゲティング30年の成功とCOVID後の試練</p>
+    </header>
+
+    <article>
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">12.9%</div>
+          <div class="stat-label">CPI最高 (1981年6月)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">-0.9%</div>
+          <div class="stat-label">CPI最低 (2009年7月)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">8.1%</div>
+          <div class="stat-label">COVIDピーク (2022年6月)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">1.9%</div>
+          <div class="stat-label">IT導入後平均 (1991-2020)</div>
+        </div>
+      </div>
+
+      <!-- インフレ指標の概要 -->
+      <section>
+        <h2>カナダのインフレ指標体系</h2>
+        <p>カナダの物価安定は Consumer Price Index (CPI) を用いて測定される。Statistics Canada が毎月発表するCPIは、カナダの都市部における約700品目の消費者物価バスケットの加重平均変化を測定する。BOCのインフレターゲットは「CPI総合指数 (All-items CPI)」の前年同月比2%（許容範囲1-3%）である。</p>
+
+        <h3>コアインフレ指標</h3>
+        <p>BOCは政策判断にあたり、複数のコアインフレ指標を活用している：</p>
+        <ul>
+          <li><strong>CPI-trim</strong> — CPI構成品目の加重分布において、両端のそれぞれ20%をトリムした加重中央値。ボラティリティの大きい品目の影響を排除</li>
+          <li><strong>CPI-median</strong> — CPI構成品目の加重中央値。分布の中心的傾向を把握</li>
+          <li><strong>CPI-common</strong> — 共通因子モデル (Common Component) により、全品目に共通するインフレ圧力を抽出（2016年導入、2024年に廃止）</li>
+        </ul>
+        <p>これらのコア指標は2016年に従来のCPIXに代わって導入された。CPIXは食料とエネルギーを単純除外する手法であったが、BOCはより統計的に洗練された手法へ移行した。BOCは2024年にCPI-commonの公表を停止し、CPI-trimとCPI-medianの2指標体制に簡素化した。</p>
+      </section>
+
+      <!-- インフレの歴史 -->
+      <section>
+        <h2>インフレの歴史的推移</h2>
+
+        <h3>戦後安定期 (1945-1965)</h3>
+        <p>第二次世界大戦直後は統制解除に伴う物価上昇があったが（1947年CPI +14.3%）、1950年代-60年代前半は概ね1-3%の安定したインフレ率であった。この時期はブレトンウッズ体制下の固定相場制がインフレの「自動安定装置」として機能していた。</p>
+
+        <h3>大インフレ期 (1965-1982)</h3>
+        <p>1965年以降、ベトナム戦争に伴う米国のインフレが貿易を通じてカナダに伝播し、インフレ率は上昇基調に入った。1973年の第一次石油危機でCPIは10.9%に跳ね上がり、1975年にはトルドー政権が「反インフレ審議会 (Anti-Inflation Board: AIB)」を設置して賃金・物価統制を導入した（1975-78年）。しかし、1979年の第二次石油危機で再びインフレが加速し、1981年6月に12.9%のピークに達した。</p>
+        <p>この時期のカナダのインフレは米国と概ね同期していたが、カナダドルの下落がインフレ圧力を増幅するチャネルが特徴的であった。中央銀行のマネタリズム実験（M1ターゲティング、1975-82年）は部分的にしか成功せず、最終的にはボルカー型の超高金利政策によってインフレが抑制された。</p>
+
+        <h3>ディスインフレ期 (1982-1991)</h3>
+        <p>1981年の21%超の金利と深刻な景気後退により、インフレ率は急速に低下した。1984年には4.4%まで低下したが、1980年代後半には再び5%台に上昇。ジョン・クロウ総裁は1988年のハンソン・レクチャー (Hanson Lecture) で「物価安定」を金融政策の究極の目標として宣言し、積極的な引き締めによりインフレ率を4%台まで引き下げた。</p>
+        <p>クロウの引き締めはカナダ経済に深刻な景気後退をもたらし（1990-92年、失業率12%超）、政治的には非常に不人気であったが、インフレ期待のリセットという点では成功した。</p>
+
+        <h3>インフレターゲティング期 (1991-2020) — 30年間の成功</h3>
+        <p>1991年2月のインフレターゲット導入は、カナダの物価安定の歴史における最も重要な転換点であった。導入時のCPIは6.9%であったが、段階的に低下し1993年には1.8%に到達した。以降30年間、CPIは概ね1-3%のターゲットレンジ内に収まった。</p>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>期間</th>
+              <th>平均CPI (%)</th>
+              <th>標準偏差</th>
+              <th>ターゲットレンジ内比率</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>IT導入前 (1971-1991)</td><td>7.1</td><td>3.2</td><td>—</td></tr>
+            <tr class="highlight-green"><td>IT導入後 (1991-2020)</td><td>1.9</td><td>0.9</td><td>約70%</td></tr>
+            <tr><td>パンデミック期 (2020-2024)</td><td>4.1</td><td>2.4</td><td>約30%</td></tr>
+          </tbody>
+        </table>
+
+        <p>インフレターゲティングの成功要因として以下が挙げられる：</p>
+        <ul>
+          <li><strong>明確なコミュニケーション</strong> — 目標の数値化と定期的な見通し公表</li>
+          <li><strong>期待のアンカリング</strong> — 長期インフレ期待が2%近辺に安定</li>
+          <li><strong>5年更新メカニズム</strong> — 政府との定期的な合意更新が制度の正当性を維持</li>
+          <li><strong>財政政策との整合性</strong> — 1990年代の財政再建がインフレ抑制を支援</li>
+        </ul>
+      </section>
+
+      <!-- COVID後のインフレ -->
+      <section>
+        <h2>COVID後のインフレショック (2021-2024)</h2>
+        <p>2021年春からカナダのCPIは急上昇を始め、2022年6月に8.1%に達した。これは1983年以来39年ぶりの高水準であった。主な要因は：</p>
+        <ul>
+          <li><strong>供給サイド</strong> — グローバルサプライチェーンの混乱、半導体不足、中古車価格高騰</li>
+          <li><strong>エネルギー</strong> — ロシア・ウクライナ戦争によるエネルギー価格急騰（ガソリン+48%）</li>
+          <li><strong>住宅</strong> — 住宅ローン金利コスト（CPI構成の大きな部分）の上昇、家賃の急騰</li>
+          <li><strong>需要サイド</strong> — COVID期間中のC$3,540億財政支出とQEによる過剰流動性</li>
+          <li><strong>移民増加</strong> — 人口急増による住宅・サービス需要の圧力</li>
+        </ul>
+
+        <p>BOCのマックレム総裁は、2021年半ばまでインフレは「一時的 (transitory)」と評価していたが、2021年末にはこの見解を撤回し、2022年3月から利上げを開始した。計475bpの利上げ（0.25%→5.00%）により、CPIは2023年末には3.1%、2024年末には1.8%まで低下した。</p>
+
+        <div class="callout callout-warning">
+          <div class="callout-title">カナダ固有のインフレ要因: 住宅ローン金利</div>
+          <p>カナダのCPI算出において、住宅ローン金利コスト (Mortgage Interest Cost: MIC) はCPIバスケットの約3%を占める。米国のCPIには住宅ローン金利が含まれていないため、BOCが金利を引き上げるとCPIの住宅ローン金利コスト要因が上昇するという逆説的な状況が生じる。2023年にはMIC要因だけでCPIを約1ポイント押し上げており、BOCの金融政策の効果測定を複雑にした。</p>
+        </div>
+      </section>
+
+      <!-- CPI推移テーブル -->
+      <section>
+        <h2>CPI推移テーブル（年平均）</h2>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>CPI (%)</th>
+              <th>コアCPI (%)</th>
+              <th>政策金利 (%)</th>
+              <th>主要イベント</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1970</td><td>3.3</td><td>—</td><td>6.00</td><td>インフレ上昇開始</td></tr>
+            <tr class="highlight-red"><td>1974</td><td>10.9</td><td>—</td><td>9.25</td><td>第一次石油危機</td></tr>
+            <tr><td>1976</td><td>7.5</td><td>—</td><td>9.25</td><td>AIB賃金・物価統制</td></tr>
+            <tr class="highlight-red"><td>1981</td><td>12.5</td><td>—</td><td>21.03</td><td>第二次石油危機ピーク</td></tr>
+            <tr><td>1984</td><td>4.4</td><td>—</td><td>11.17</td><td>ディスインフレ</td></tr>
+            <tr><td>1988</td><td>4.0</td><td>—</td><td>10.50</td><td>クロウのハンソン・レクチャー</td></tr>
+            <tr><td>1991</td><td>5.6</td><td>4.3</td><td>8.93</td><td>IT導入年</td></tr>
+            <tr><td>1993</td><td>1.8</td><td>2.1</td><td>4.93</td><td>ターゲットレンジ到達</td></tr>
+            <tr><td>1997</td><td>1.6</td><td>1.6</td><td>3.50</td><td>安定期</td></tr>
+            <tr><td>2000</td><td>2.7</td><td>1.5</td><td>5.75</td><td>エネルギー価格上昇</td></tr>
+            <tr><td>2003</td><td>2.8</td><td>2.2</td><td>2.75</td><td>回復期</td></tr>
+            <tr><td>2007</td><td>2.1</td><td>2.1</td><td>4.25</td><td>コモディティブーム</td></tr>
+            <tr class="highlight-blue"><td>2009</td><td>0.3</td><td>1.8</td><td>0.25</td><td>GFC後デフレ近接（7月 -0.9%）</td></tr>
+            <tr><td>2015</td><td>1.1</td><td>2.2</td><td>0.50</td><td>原油急落でヘッドライン低下</td></tr>
+            <tr><td>2019</td><td>1.9</td><td>2.1</td><td>1.75</td><td>COVID前、完璧なアンカリング</td></tr>
+            <tr><td>2020</td><td>0.7</td><td>1.6</td><td>0.25</td><td>COVID需要蒸発</td></tr>
+            <tr><td>2021</td><td>3.4</td><td>2.6</td><td>0.25</td><td>インフレ加速開始「一時的」</td></tr>
+            <tr class="highlight-red"><td>2022</td><td>6.8</td><td>5.0</td><td>4.25</td><td>39年ぶり高水準（6月 8.1%ピーク）</td></tr>
+            <tr><td>2023</td><td>3.9</td><td>3.5</td><td>5.00</td><td>ディスインフレ進行</td></tr>
+            <tr class="highlight-green"><td>2024</td><td>2.4</td><td>2.5</td><td>3.25</td><td>ターゲット近辺に回帰</td></tr>
+            <tr><td>2025</td><td>2.1</td><td>2.3</td><td>2.75</td><td>安定化</td></tr>
+          </tbody>
+        </table>
+        <p class="source">出典: Statistics Canada, Consumer Price Index Table 18-10-0004-01; Bank of Canada, "Core Measures of Inflation"</p>
+      </section>
+
+      <!-- インフレ期待 -->
+      <section>
+        <h2>インフレ期待のアンカリング</h2>
+        <p>インフレターゲティングの最大の成果は、インフレ期待（将来のインフレに関する家計・企業・市場参加者の予想）の安定化である。BOCは複数の指標でインフレ期待を測定している：</p>
+
+        <h3>1. Canadian Survey of Consumer Expectations (CSCE)</h3>
+        <p>BOCが四半期ごとに実施する消費者調査。2024年時点の2年先インフレ期待は約3.0%で、COVID前の2.0%より高止まりしている。</p>
+
+        <h3>2. Business Outlook Survey (BOS)</h3>
+        <p>BOCが四半期ごとに約100社の企業経営者に実施するサーベイ。企業のインフレ期待は消費者よりアンカーされており、2024年時点で2-3%レンジに回帰している。</p>
+
+        <h3>3. ブレーク・イーブン・インフレ率 (BEI)</h3>
+        <p>カナダ政府はReal Return Bonds (RRBs、インフレ連動国債) を発行しており、名目国債との利回り差からBEIを算出できる。ただし、2022年にカナダ政府はRRBの新規発行を停止する方針を発表しており、流動性低下によりBEIの信頼性は低下している。</p>
+
+        <div class="callout callout-info">
+          <div class="callout-title">インフレ期待の「再アンカリング」</div>
+          <p>2022-23年のインフレショックは、30年間安定していたインフレ期待を動揺させた。消費者のインフレ期待は5%超まで上昇し、BOCの信認が試された。しかし、2024年にかけてCPIがターゲット近辺に回帰すると、期待も徐々に低下した。BOCはこのエピソードを「インフレ期待のアンカリングは永続的ではなく、中央銀行の継続的な努力によって維持される」という教訓として位置づけている。</p>
+        </div>
+      </section>
+
+      <!-- 住宅インフレ -->
+      <section>
+        <h2>住宅インフレ: カナダ最大の構造的課題</h2>
+        <p>カナダのインフレを語る上で住宅セクターは避けて通れない。CPIバスケットにおける「住居 (Shelter)」のウェイトは約30%と大きく、その中には住宅ローン金利コスト、家賃、住宅保険、固定資産税、メンテナンス費が含まれる。</p>
+        <p>2023-24年にかけて、CPIの住居カテゴリーは前年比+6-7%で推移し、CPI全体の約半分を占める要因となった。特に家賃は主要都市で前年比+8-10%上昇しており、移民急増と住宅供給不足が主因である。カナダ住宅ローン・住宅公社 (CMHC) は、2030年までに580万戸の新規住宅建設が必要と試算しているが、現在の建設ペース（年間約25万戸）では大幅に不足する。</p>
+        <p>住宅インフレは金融政策の伝達メカニズムを複雑にしている。BOCの利上げは住宅ローン金利を上昇させるが、これがCPIの住宅ローン金利コスト要因を押し上げるため、ヘッドラインCPIの低下が遅れるという構造的問題がある。</p>
+      </section>
+
+      <!-- G10比較 -->
+      <section>
+        <h2>G10インフレ比較（2024年平均）</h2>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>国</th>
+              <th>ヘッドライン (%)</th>
+              <th>コア (%)</th>
+              <th>目標 (%)</th>
+              <th>目標達成度</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>🇺🇸 米国</td><td>2.9</td><td>3.3</td><td>2.0</td><td>目標超</td></tr>
+            <tr><td>🇪🇺 ユーロ圏</td><td>2.4</td><td>2.9</td><td>2.0</td><td>目標近辺</td></tr>
+            <tr><td>🇯🇵 日本</td><td>2.7</td><td>2.8</td><td>2.0</td><td>目標超</td></tr>
+            <tr><td>🇬🇧 英国</td><td>2.6</td><td>3.4</td><td>2.0</td><td>目標超</td></tr>
+            <tr><td>🇨🇭 スイス</td><td>1.1</td><td>1.0</td><td>0-2</td><td>達成</td></tr>
+            <tr><td>🇦🇺 豪州</td><td>3.5</td><td>3.8</td><td>2-3</td><td>目標超</td></tr>
+            <tr><td>🇳🇿 NZ</td><td>3.0</td><td>3.2</td><td>1-3</td><td>レンジ上限</td></tr>
+            <tr class="highlight-green"><td>🇨🇦 カナダ</td><td>2.4</td><td>2.5</td><td>1-3 (2%)</td><td>目標近辺</td></tr>
+            <tr><td>🇸🇪 スウェーデン</td><td>2.3</td><td>2.5</td><td>2.0</td><td>目標近辺</td></tr>
+            <tr><td>🇳🇴 ノルウェー</td><td>3.2</td><td>3.5</td><td>2.0</td><td>目標超</td></tr>
+          </tbody>
+        </table>
+        <p class="source">出典: 各国統計局, 各国中央銀行, 2024年通年データ</p>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>Statistics Canada, "Consumer Price Index", Table 18-10-0004-01, statcan.gc.ca</li>
+        <li>Bank of Canada, "Core Measures of Inflation", bankofcanada.ca</li>
+        <li>Bank of Canada, "Canadian Survey of Consumer Expectations", quarterly</li>
+        <li>Bank of Canada, "Business Outlook Survey", quarterly</li>
+        <li>Bank of Canada, "Renewal of the Inflation-Control Target", 2021</li>
+        <li>Crow, J., "The Work of Canadian Monetary Policy", Bank of Canada Review, 1988</li>
+        <li>Mishkin, F. & Schmidt-Hebbel, K., "Does Inflation Targeting Make a Difference?", NBER Working Paper, 2007</li>
+        <li>CMHC, "Canada's Housing Supply Shortages", 2023</li>
+        <li>Macklem, T., "Getting Inflation Back to Target", Remarks, October 2023</li>
+        <li>Statistics Canada, "Consumer Price Index: Annual Review", various years</li>
+      </ol>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelectorAll('.sortable th').forEach((th, idx) => {
+      th.style.cursor = 'pointer';
+      th.addEventListener('click', () => {
+        const table = th.closest('table');
+        const tbody = table.querySelector('tbody');
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+        const dir = th.dataset.sort === 'asc' ? 'desc' : 'asc';
+        th.dataset.sort = dir;
+        rows.sort((a, b) => {
+          const av = a.children[idx]?.textContent.trim() ?? '';
+          const bv = b.children[idx]?.textContent.trim() ?? '';
+          const an = parseFloat(av.replace(/[^0-9.\-]/g, ''));
+          const bn = parseFloat(bv.replace(/[^0-9.\-]/g, ''));
+          if (!isNaN(an) && !isNaN(bn)) return dir === 'asc' ? an - bn : bn - an;
+          return dir === 'asc' ? av.localeCompare(bv, 'ja') : bv.localeCompare(av, 'ja');
+        });
+        rows.forEach(r => tbody.appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>

@@ -137,7 +137,7 @@ g10_textbook/
 - [x] Task 30: NZ pages 16-20 — Banking、Corporate (Dairy)、Regulation、Trade、Lessons
 
 ### Phase 9: Canada (canada/)
-- [ ] Task 31: Canada pages 1-5 — Central Bank (BOC)、Policy Rate、Fiscal Policy、Employment、Inflation
+- [x] Task 31: Canada pages 1-5 — Central Bank (BOC)、Policy Rate、Fiscal Policy、Employment、Inflation
 - [ ] Task 32: Canada pages 6-10 — Equity (TSX)、Early〜2020s
 - [ ] Task 33: Canada pages 11-15 — Bond、Rates、Currency (CAD, Loonie)、Crises
 - [ ] Task 34: Canada pages 16-20 — Banking (Big 5)、Corporate (Energy, Mining)、Regulation (OSFI)、Trade (NAFTA/USMCA)、Lessons
