@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G10 Markets Historical Textbook</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    /* Index-specific: no sidebar layout, full-width */
+    body { display: block; }
+    .index-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    .index-hero {
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+      border-bottom: 1px solid var(--border-color);
+      margin-bottom: 2.5rem;
+    }
+    .index-hero h1 {
+      font-size: 2rem;
+      font-family: var(--font-mono);
+      color: var(--accent-green);
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+    }
+    .index-hero .subtitle {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      max-width: 700px;
+      margin: 0.8rem auto 0;
+      line-height: 1.8;
+    }
+    .index-hero .badge {
+      display: inline-block;
+      margin-top: 1.2rem;
+      padding: 0.3rem 0.8rem;
+      font-size: 0.75rem;
+      font-family: var(--font-mono);
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 3px;
+      color: var(--text-muted);
+    }
+
+    .section-title {
+      font-size: 1.1rem;
+      font-family: var(--font-mono);
+      color: var(--accent-teal);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    /* Country Cards Grid */
+    .country-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 1.2rem;
+      margin-bottom: 3rem;
+    }
+    .country-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 1.2rem 1.4rem;
+      transition: all var(--transition);
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .country-card:hover {
+      border-color: var(--accent-green);
+      background: rgba(0,212,170,0.04);
+      text-decoration: none;
+      transform: translateY(-2px);
+    }
+    .country-card .card-header {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      margin-bottom: 0.6rem;
+    }
+    .country-card .card-flag {
+      font-size: 1.8rem;
+      line-height: 1;
+    }
+    .country-card .card-name {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+    .country-card .card-name-en {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+    .country-card .card-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.6rem;
+    }
+    .country-card .meta-tag {
+      font-size: 0.72rem;
+      font-family: var(--font-mono);
+      padding: 0.15rem 0.5rem;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 3px;
+      color: var(--text-secondary);
+    }
+    .country-card .card-desc {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      margin-top: 0.5rem;
+      line-height: 1.6;
+    }
+
+    /* Overview Table */
+    .overview-section { margin-bottom: 3rem; }
+
+    /* Quick Links */
+    .quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 3rem;
+    }
+    .quick-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.5rem 1rem;
+      font-size: 0.85rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      color: var(--text-secondary);
+      transition: all var(--transition);
+    }
+    .quick-link:hover {
+      border-color: var(--accent-teal);
+      color: var(--accent-teal);
+      text-decoration: none;
+    }
+
+    .index-footer {
+      text-align: center;
+      padding: 2rem 0;
+      border-top: 1px solid var(--border-color);
+      color: var(--text-muted);
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 768px) {
+      .country-grid { grid-template-columns: 1fr; }
+      .index-hero h1 { font-size: 1.4rem; }
+      .index-container { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="index-container">
+
+  <!-- Hero -->
+  <header class="index-hero">
+    <h1>G10 Markets Historical Textbook</h1>
+    <p class="subtitle">
+      G10通貨国（米国、ユーロ圏、日本、英国、スイス、豪州、NZ、カナダ、スウェーデン、ノルウェー）の
+      株式市場・金利市場・金融政策の歴史を網羅するデジタル教科書。
+      各国20ページ、合計200ページ超の包括的リファレンス。
+    </p>
+    <span class="badge">10 Countries &middot; 200+ Pages &middot; Sources Cited</span>
+  </header>
+
+  <!-- Quick Links -->
+  <div class="quick-links">
+    <a href="summary/g10_timeline.html" class="quick-link">G10 横断年表</a>
+    <a href="#countries" class="quick-link">各国ページ一覧</a>
+    <a href="#overview" class="quick-link">概要テーブル</a>
+    <a href="#structure" class="quick-link">ページ構成</a>
+  </div>
+
+  <!-- Country Cards -->
+  <section id="countries">
+    <h2 class="section-title">Countries</h2>
+    <div class="country-grid">
+
+      <a href="us/01_central_bank.html" class="country-card">
+        <div class="card-header">
+          <span class="card-flag">&#x1F1FA;&#x1F1F8;</span>
+          <div>
+            <div class="card-name">米国</div>
+            <div class="card-name-en">United States</div>
+          </div>
+        </div>
+        <div class="card-meta">
+          <span class="meta-tag">USD</span>
+          <span class="meta-tag">Federal Reserve</span>
+          <span class="meta-tag">S&amp;P 500</span>
+        </div>
+        <div class="card-desc">世界最大の金融市場。Fed設立(1913)から現在まで、株式・債券・金利市場の歴史を網羅。</div>
+      </a>
+
+      <a href="eurozone/01_central_bank.html" class="country-card">
+        <div class="card-header">
+          <span class="card-flag">&#x1F1EA;&#x1F1FA;</span>
+          <div>
+            <div class="card-name">ユーロ圏</div>
+            <div class="card-name-en">Eurozone</div>
+          </div>
+        </div>
+        <div class="card-meta">
+          <span class="meta-tag">EUR</span>
+          <span class="meta-tag">ECB / Bundesbank</span>
+          <span class="meta-tag">Euro Stoxx 50</span>
+        </div>
+        <div class="card-desc">Bundesbank時代からECB設立、通貨統合、欧州債務危機まで。DAX・CAC含むユーロ圏市場。</div>
+      </a>
+
+      <a href="japan/01_central_bank.html" class="country-card">
+        <div class="card-header">
+          <span class="card-flag">&#x1F1EF;&#x1F1F5;</span>
+          <div>
+            <div class="card-name">日本</div>
+            <div class="card-name-en">Japan</div>
+          </div>
+        </div>
+        <div class="card-meta">
+          <span class="meta-tag">JPY</span>
+          <span class="meta-tag">Bank of Japan</span>
+          <span class="meta-tag">Nikkei 225</span>
+        </div>
+        <div class="card-desc">バブル経済と崩壊、失われた30年、ゼロ金利・YCC・QQE。世界最大の国債市場。</div>
+      </a>
+
+      <a href="uk/01_central_bank.html" class="country-card">
+        <div class="card-header">
+          <span class="card-flag">&#x1F1EC;&#x1F1E7;</span>
+          <div>
+            <div class="card-name">英国</div>
+            <div class="card-name-en">United Kingdom</div>
+          </div>
+        </div>
+        <div class="card-meta">
+          <span class="meta-tag">GBP</span>
+          <span class="meta-tag">Bank of England</span>
+          <span class="meta-tag">FTSE 100</span>
+        </div>
+        <div class="card-desc">BOE(1694設立)は世界最古級の中央銀行。Big Bang、Black Wednesday、Brexit。</div>
+      </a>
+
+      <a href="switzerland/01_central_bank.html" class="country-card">
+        <div class="card-header">
+          <span class="card-flag">&#x1F1E8;&#x1F1ED;</span>
+          <div>
+            <div class="card-name">スイス</div>
+            <div class="card-name-en">Switzerland</div>
+          </div>
+        </div>
+        <div class="card-meta">
+          <span class="meta-tag">CHF</span>
+          <span class="meta-tag">SNB</span>
+          <span class="meta-tag">SMI</span>
+        </div>
+        <div class="card-desc">安全通貨CHF、マイナス金利政策、フラン上限撤廃ショック(2015)。UBS・Credit Suisse。</div>
+      </a>
+
+      <a href="australia/01_central_bank.html" class="country-card">
+        <div class="card-header">
+          <span class="card-flag">&#x1F1E6;&#x1F1FA;</span>
+          <div>
+            <div class="card-name">豪州</div>
+            <div class="card-name-en">Australia</div>
+          </div>
+        </div>
+        <div class="card-meta">
+          <span class="meta-tag">AUD</span>
+          <span class="meta-tag">RBA</span>
+          <span class="meta-tag">ASX 200</span>
+        </div>
+        <div class="card-desc">資源国通貨AUD、中国依存の経済構造、Big 4銀行体制、30年景気後退なしの記録。</div>
+      </a>
+
+      <a href="newzealand/01_central_bank.html" class="country-card">
+        <div class="card-header">
+          <span class="card-flag">&#x1F1F3;&#x1F1FF;</span>
+          <div>
+            <div class="card-name">ニュージーランド</div>
+            <div class="card-name-en">New Zealand</div>
+          </div>
+        </div>
+        <div class="card-meta">
+          <span class="meta-tag">NZD</span>
+          <span class="meta-tag">RBNZ</span>
+          <span class="meta-tag">NZX 50</span>
+        </div>
+        <div class="card-desc">世界初のインフレターゲット導入(1990)。酪農・農業中心の小規模開放経済。</div>
+      </a>
+
+      <a href="canada/01_central_bank.html" class="country-card">
+        <div class="card-header">
+          <span class="card-flag">&#x1F1E8;&#x1F1E6;</span>
+          <div>
+            <div class="card-name">カナダ</div>
+            <div class="card-name-en">Canada</div>
+          </div>
+        </div>
+        <div class="card-meta">
+          <span class="meta-tag">CAD</span>
+          <span class="meta-tag">Bank of Canada</span>
+          <span class="meta-tag">TSX Composite</span>
+        </div>
+        <div class="card-desc">資源・エネルギー大国、Big 5銀行の安定性、NAFTA/USMCA体制下の米国依存。</div>
+      </a>
+
+      <a href="sweden/01_central_bank.html" class="country-card">
+        <div class="card-header">
+          <span class="card-flag">&#x1F1F8;&#x1F1EA;</span>
+          <div>
+            <div class="card-name">スウェーデン</div>
+            <div class="card-name-en">Sweden</div>
+          </div>
+        </div>
+        <div class="card-meta">
+          <span class="meta-tag">SEK</span>
+          <span class="meta-tag">Riksbank</span>
+          <span class="meta-tag">OMX Stockholm 30</span>
+        </div>
+        <div class="card-desc">世界最古の中央銀行Riksbank(1668)。1990年代銀行危機、マイナス金利の先駆者。</div>
+      </a>
+
+      <a href="norway/01_central_bank.html" class="country-card">
+        <div class="card-header">
+          <span class="card-flag">&#x1F1F3;&#x1F1F4;</span>
+          <div>
+            <div class="card-name">ノルウェー</div>
+            <div class="card-name-en">Norway</div>
+          </div>
+        </div>
+        <div class="card-meta">
+          <span class="meta-tag">NOK</span>
+          <span class="meta-tag">Norges Bank</span>
+          <span class="meta-tag">OBX</span>
+        </div>
+        <div class="card-desc">世界最大の政府系ファンド(GPFG)、石油・ガス経済、独自の財政ルール。</div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Overview Table -->
+  <section id="overview" class="overview-section">
+    <h2 class="section-title">G10 Overview</h2>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th data-sort="string">国</th>
+            <th data-sort="string">中央銀行</th>
+            <th data-sort="string">通貨</th>
+            <th data-sort="string">主要株価指数</th>
+            <th data-sort="number">中銀設立年</th>
+            <th data-sort="string">政策特徴</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>米国 (US)</td>
+            <td>Federal Reserve (Fed)</td>
+            <td>USD</td>
+            <td>S&amp;P 500, DJIA, NASDAQ</td>
+            <td>1913</td>
+            <td>Dual mandate（雇用・物価）</td>
+          </tr>
+          <tr>
+            <td>ユーロ圏 (EU)</td>
+            <td>ECB / Bundesbank</td>
+            <td>EUR (旧DEM等)</td>
+            <td>Euro Stoxx 50, DAX, CAC 40</td>
+            <td>1998</td>
+            <td>物価安定の単一目標</td>
+          </tr>
+          <tr>
+            <td>日本 (JP)</td>
+            <td>Bank of Japan (BOJ)</td>
+            <td>JPY</td>
+            <td>Nikkei 225, TOPIX</td>
+            <td>1882</td>
+            <td>YCC, QQE, マイナス金利</td>
+          </tr>
+          <tr>
+            <td>英国 (UK)</td>
+            <td>Bank of England (BOE)</td>
+            <td>GBP</td>
+            <td>FTSE 100</td>
+            <td>1694</td>
+            <td>インフレターゲット2%</td>
+          </tr>
+          <tr>
+            <td>スイス (CH)</td>
+            <td>Swiss National Bank (SNB)</td>
+            <td>CHF</td>
+            <td>SMI</td>
+            <td>1907</td>
+            <td>物価安定、為替介入</td>
+          </tr>
+          <tr>
+            <td>豪州 (AU)</td>
+            <td>Reserve Bank of Australia (RBA)</td>
+            <td>AUD</td>
+            <td>ASX 200</td>
+            <td>1960</td>
+            <td>インフレターゲット2-3%</td>
+          </tr>
+          <tr>
+            <td>NZ</td>
+            <td>Reserve Bank of NZ (RBNZ)</td>
+            <td>NZD</td>
+            <td>NZX 50</td>
+            <td>1934</td>
+            <td>IT先駆者(1990), Dual mandate</td>
+          </tr>
+          <tr>
+            <td>カナダ (CA)</td>
+            <td>Bank of Canada (BOC)</td>
+            <td>CAD</td>
+            <td>TSX Composite</td>
+            <td>1934</td>
+            <td>インフレターゲット2%</td>
+          </tr>
+          <tr>
+            <td>スウェーデン (SE)</td>
+            <td>Riksbank</td>
+            <td>SEK</td>
+            <td>OMX Stockholm 30</td>
+            <td>1668</td>
+            <td>世界最古中銀、IT 2%</td>
+          </tr>
+          <tr>
+            <td>ノルウェー (NO)</td>
+            <td>Norges Bank</td>
+            <td>NOK</td>
+            <td>OBX</td>
+            <td>1816</td>
+            <td>IT 2%, SWF運用</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Page Structure -->
+  <section id="structure" class="overview-section">
+    <h2 class="section-title">Page Structure (per country)</h2>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th data-sort="number">#</th>
+            <th data-sort="string">ページ</th>
+            <th data-sort="string">カテゴリ</th>
+            <th>内容</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>01</td><td>Central Bank Timeline</td><td>金融政策</td><td>中銀設立、歴代総裁/理事のタカ・ハト属性、金融政策の変遷年表</td></tr>
+          <tr><td>02</td><td>Policy Rate History</td><td>金融政策</td><td>政策金利の推移、主要な利上げ/利下げサイクル</td></tr>
+          <tr><td>03</td><td>Fiscal Policy</td><td>マクロ経済</td><td>財政政策の歴史、主要パッケージ、債務/GDP推移</td></tr>
+          <tr><td>04</td><td>Employment</td><td>マクロ経済</td><td>雇用統計の推移、失業率、労働市場構造の変化</td></tr>
+          <tr><td>05</td><td>Inflation</td><td>マクロ経済</td><td>CPI/PCE推移、インフレターゲット導入</td></tr>
+          <tr><td>06</td><td>Equity Market Overview</td><td>株式</td><td>主要株価指数、時価総額推移、市場構造</td></tr>
+          <tr><td>07</td><td>Equity: Early History</td><td>株式</td><td>証券取引所設立〜1970年代</td></tr>
+          <tr><td>08</td><td>Equity: Modern Era</td><td>株式</td><td>1980年代〜1990年代（バブル、自由化）</td></tr>
+          <tr><td>09</td><td>Equity: 2000s-2010s</td><td>株式</td><td>ITバブル崩壊、GFC、回復期</td></tr>
+          <tr><td>10</td><td>Equity: 2020s</td><td>株式</td><td>COVID、AI相場、現在まで</td></tr>
+          <tr><td>11</td><td>Bond Market</td><td>債券</td><td>国債市場の発展、イールドカーブ構造</td></tr>
+          <tr><td>12</td><td>Short-term Rates</td><td>金利</td><td>短期金利市場（TB, CP, LIBOR/SOFR等）</td></tr>
+          <tr><td>13</td><td>Long-term Rates</td><td>金利</td><td>長期金利の推移、10年債利回りの歴史</td></tr>
+          <tr><td>14</td><td>Currency</td><td>為替</td><td>為替レートの歴史、通貨制度の変遷</td></tr>
+          <tr><td>15</td><td>Financial Crises</td><td>危機</td><td>主要な金融危機とその影響</td></tr>
+          <tr><td>16</td><td>Banking Sector</td><td>金融機関</td><td>銀行制度の発展、主要銀行</td></tr>
+          <tr><td>17</td><td>Corporate &amp; Indices</td><td>企業</td><td>主要企業、セクター構成の変遷</td></tr>
+          <tr><td>18</td><td>Regulatory Framework</td><td>規制</td><td>金融規制の変遷</td></tr>
+          <tr><td>19</td><td>International Trade</td><td>貿易</td><td>貿易・資本フローの歴史</td></tr>
+          <tr><td>20</td><td>Key Lessons</td><td>総括</td><td>歴史から学ぶ教訓、注目イベント</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Sources -->
+  <section class="overview-section">
+    <h2 class="section-title">Primary Sources</h2>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>機関</th>
+            <th>URL</th>
+            <th>データ範囲</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Federal Reserve</td><td>federalreserve.gov</td><td>米国金融政策、FOMC議事録</td></tr>
+          <tr><td>European Central Bank</td><td>ecb.europa.eu</td><td>ユーロ圏金融政策、統計</td></tr>
+          <tr><td>Bank of Japan</td><td>boj.or.jp</td><td>日本金融政策、金融統計</td></tr>
+          <tr><td>Bank of England</td><td>bankofengland.co.uk</td><td>英国金融政策、歴史的データ</td></tr>
+          <tr><td>Swiss National Bank</td><td>snb.ch</td><td>スイス金融政策</td></tr>
+          <tr><td>Reserve Bank of Australia</td><td>rba.gov.au</td><td>豪州金融政策</td></tr>
+          <tr><td>Reserve Bank of NZ</td><td>rbnz.govt.nz</td><td>NZ金融政策</td></tr>
+          <tr><td>Bank of Canada</td><td>bankofcanada.ca</td><td>カナダ金融政策</td></tr>
+          <tr><td>Riksbank</td><td>riksbank.se</td><td>スウェーデン金融政策</td></tr>
+          <tr><td>Norges Bank</td><td>norges-bank.no</td><td>ノルウェー金融政策</td></tr>
+          <tr><td>BIS</td><td>bis.org</td><td>国際金融統計、クロスボーダーデータ</td></tr>
+          <tr><td>IMF</td><td>imf.org</td><td>世界経済見通し、IFS</td></tr>
+          <tr><td>FRED (St. Louis Fed)</td><td>fred.stlouisfed.org</td><td>経済・金融データベース</td></tr>
+          <tr><td>World Bank</td><td>worldbank.org</td><td>開発指標、WDI</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="index-footer">
+    <p>G10 Markets Historical Textbook &mdash; G10通貨国の株式市場・金利市場の歴史</p>
+    <p style="margin-top:0.3rem;">Data sources: Federal Reserve, ECB, BOJ, BOE, SNB, RBA, RBNZ, BOC, Riksbank, Norges Bank, BIS, IMF, FRED, World Bank</p>
+  </footer>
+
+</div>
+
+<!-- Table Sort Script -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('th[data-sort]').forEach(function(th) {
+    th.style.cursor = 'pointer';
+    th.addEventListener('click', function() {
+      var table = th.closest('table');
+      var tbody = table.querySelector('tbody');
+      var rows = Array.from(tbody.querySelectorAll('tr'));
+      var colIndex = Array.from(th.parentNode.children).indexOf(th);
+      var sortType = th.getAttribute('data-sort');
+      var isAsc = th.classList.contains('sort-asc');
+
+      table.querySelectorAll('th').forEach(function(h) {
+        h.classList.remove('sort-asc', 'sort-desc');
+      });
+      th.classList.add(isAsc ? 'sort-desc' : 'sort-asc');
+
+      rows.sort(function(a, b) {
+        var aVal = a.children[colIndex].textContent.trim();
+        var bVal = b.children[colIndex].textContent.trim();
+        if (sortType === 'number') {
+          aVal = parseFloat(aVal.replace(/[^0-9.\-]/g, '')) || 0;
+          bVal = parseFloat(bVal.replace(/[^0-9.\-]/g, '')) || 0;
+        } else {
+          aVal = aVal.toLowerCase();
+          bVal = bVal.toLowerCase();
+        }
+        if (aVal < bVal) return isAsc ? 1 : -1;
+        if (aVal > bVal) return isAsc ? -1 : 1;
+        return 0;
+      });
+      rows.forEach(function(row) { tbody.appendChild(row); });
+    });
+  });
+});
+</script>
+
+</body>
+</html>

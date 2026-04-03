@@ -2,3 +2,4 @@
 # Format: [timestamp] Task N: description — status
 
 [2026-04-03 iter-2] Task 1: Created assets/style.css (587 lines, Bloomberg-style dark theme with responsive tables, timeline components, sortable table headers, stat cards, citation styles, mobile responsive) and templates/base.html (175 lines, full page template with sidebar nav, country chips, breadcrumb, table sort JS, mobile toggle) — DONE
+[2026-04-03 iter-3] Task 2: Created index.html — G10 top page with hero section, 10 country cards (flags, metadata tags, descriptions), overview table (country/central bank/currency/index/founding year/policy features), page structure table (20 pages per country), primary sources table, sortable columns, responsive grid layout, quick links — DONE

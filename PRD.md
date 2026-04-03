@@ -92,7 +92,7 @@ g10_textbook/
 
 ### Phase 1: Infrastructure
 - [x] Task 1: Create shared CSS (assets/style.css) — Bloomberg-style dark theme, responsive tables, timeline components, navigation. Create HTML template (templates/base.html) with header, sidebar nav, footer.
-- [ ] Task 2: Create index.html — G10全体のトップページ。各国へのリンク、概要テーブル。
+- [x] Task 2: Create index.html — G10全体のトップページ。各国へのリンク、概要テーブル。
 
 ### Phase 2: United States (us/)
 - [ ] Task 3: US pages 1-5 — Central Bank (Fed設立1913〜歴代議長全員のタカ/ハト属性、FOMC構成)、Policy Rate、Fiscal Policy、Employment、Inflation
