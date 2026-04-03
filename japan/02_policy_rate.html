@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japan - Policy Rate History | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇯🇵 Japan</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link active">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip active">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Japan</a>
+        <span class="sep">/</span>
+        Policy Rate History
+      </div>
+      <h1 class="page-title">政策金利の歴史</h1>
+      <p class="page-subtitle">公定歩合からゼロ金利、マイナス金利、そして「金利のある世界」への回帰</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">0.50%</div>
+          <div class="stat-label">現在の政策金利 (2025年1月〜)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">9.00%</div>
+          <div class="stat-label">過去最高 (1973年/1980年)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">-0.10%</div>
+          <div class="stat-label">過去最低 (2016-2024年)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">25年</div>
+          <div class="stat-label">実質ゼロ金利期間</div>
+        </div>
+      </div>
+
+      <!-- 政策金利の枠組み変遷 -->
+      <section>
+        <h2>政策金利の枠組み変遷</h2>
+        <p>日本銀行の政策金利は、時代とともにその操作対象と名称が大きく変遷してきた。この変遷自体が、日本の金融政策の独自性を物語っている<cite>[1]</cite>。</p>
+
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>期間</th>
+              <th>操作対象</th>
+              <th>名称</th>
+              <th>特徴</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1882-1994</td>
+              <td>公定歩合</td>
+              <td>基準割引率および基準貸付利率</td>
+              <td>日銀が民間銀行に貸し出す際の金利。規制金利時代は預金・貸出金利に連動し絶大な影響力</td>
+            </tr>
+            <tr>
+              <td>1995-1998</td>
+              <td>無担保コールレート（O/N）</td>
+              <td>コールレート誘導目標</td>
+              <td>金利自由化の完了に伴い、短期金融市場の金利を操作目標に変更</td>
+            </tr>
+            <tr>
+              <td>1999-2000</td>
+              <td>無担保コールレート（O/N）≈0%</td>
+              <td>ゼロ金利政策</td>
+              <td>「デフレ懸念の払拭が展望できるまで」継続する時間軸政策を初導入</td>
+            </tr>
+            <tr>
+              <td>2001-2006</td>
+              <td>日銀当座預金残高</td>
+              <td>量的緩和政策（QE）</td>
+              <td>操作目標を金利から量に変更。CPI前年比0%以上で解除する「コミットメント」</td>
+            </tr>
+            <tr>
+              <td>2006-2008</td>
+              <td>無担保コールレート（O/N）</td>
+              <td>通常の金利誘導</td>
+              <td>量的緩和解除後、通常の金利操作に復帰。0%→0.25%→0.50%</td>
+            </tr>
+            <tr>
+              <td>2008-2013</td>
+              <td>無担保コールレート（O/N）0-0.10%</td>
+              <td>実質ゼロ金利＋包括緩和</td>
+              <td>GFC対応。資産買入等基金（国債・ETF・REIT・CP・社債）</td>
+            </tr>
+            <tr>
+              <td>2013-2016.1</td>
+              <td>マネタリーベース</td>
+              <td>量的・質的金融緩和（QQE）</td>
+              <td>操作目標を再び量に。年間60-70兆円（後に80兆円）のマネタリーベース増加</td>
+            </tr>
+            <tr>
+              <td>2016.1-2016.9</td>
+              <td>日銀当座預金の一部に-0.1%</td>
+              <td>マイナス金利付きQQE</td>
+              <td>三層構造：基礎残高+0.1%/マクロ加算0%/政策金利残高-0.1%</td>
+            </tr>
+            <tr>
+              <td>2016.9-2024.3</td>
+              <td>短期-0.1% ＋ 10年0%程度</td>
+              <td>YCC付きQQE</td>
+              <td>短期金利と長期金利の両方を操作する世界唯一の枠組み</td>
+            </tr>
+            <tr>
+              <td>2024.3-現在</td>
+              <td>無担保コールレート（O/N）</td>
+              <td>通常の金利誘導（正常化）</td>
+              <td>マイナス金利・YCC撤廃。0→0.25%→0.50%。17年ぶりの利上げサイクル</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 公定歩合の歴史 -->
+      <section>
+        <h2>公定歩合の歴史（1882-1995）</h2>
+        <p>公定歩合は日本銀行設立から100年以上にわたり金融政策の中核的手段であった。規制金利時代には、公定歩合の変更が預金金利・貸出金利に自動的に反映されるため、その政策効果は現在の政策金利以上に直接的であった。金利自由化の進展（1979年CD市場創設〜1994年普通預金金利自由化完了）により、公定歩合の重要性は徐々に低下した<cite>[2]</cite>。</p>
+
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年月</th>
+              <th>公定歩合</th>
+              <th>変更幅</th>
+              <th>背景</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1973年4月</td>
+              <td>5.50%</td>
+              <td>+0.75%</td>
+              <td>過剰流動性、列島改造ブーム</td>
+            </tr>
+            <tr>
+              <td>1973年12月</td>
+              <td>9.00%</td>
+              <td>+2.00%</td>
+              <td>第一次石油危機。狂乱物価（CPI +23%）</td>
+            </tr>
+            <tr>
+              <td>1975年4月</td>
+              <td>6.50%</td>
+              <td>-2.50%</td>
+              <td>景気後退。戦後初のマイナス成長</td>
+            </tr>
+            <tr>
+              <td>1977年3月</td>
+              <td>4.25%</td>
+              <td>段階的</td>
+              <td>インフレ沈静化</td>
+            </tr>
+            <tr>
+              <td>1979年4月</td>
+              <td>4.25%</td>
+              <td>+0.75%</td>
+              <td>第二次石油危機への対応開始</td>
+            </tr>
+            <tr>
+              <td>1980年3月</td>
+              <td>9.00%</td>
+              <td>+2.75%</td>
+              <td>第二次石油危機ピーク。CPI +8%</td>
+            </tr>
+            <tr>
+              <td>1983年10月</td>
+              <td>5.00%</td>
+              <td>段階的</td>
+              <td>インフレ沈静化、景気回復</td>
+            </tr>
+            <tr>
+              <td>1986年1月</td>
+              <td>4.50%</td>
+              <td>-0.50%</td>
+              <td>プラザ合意後の円高不況対応</td>
+            </tr>
+            <tr>
+              <td>1987年2月</td>
+              <td>2.50%</td>
+              <td>段階的</td>
+              <td>ルーブル合意。円高阻止のため利下げ継続。バブルの火種</td>
+            </tr>
+            <tr>
+              <td>1989年5月</td>
+              <td>3.25%</td>
+              <td>+0.75%</td>
+              <td>三重野総裁のバブル退治開始</td>
+            </tr>
+            <tr>
+              <td>1990年8月</td>
+              <td>6.00%</td>
+              <td>+1.00%</td>
+              <td>公定歩合6%到達。日経平均は年初38,915円→年末23,848円</td>
+            </tr>
+            <tr>
+              <td>1991年7月</td>
+              <td>5.50%</td>
+              <td>-0.50%</td>
+              <td>バブル崩壊。利下げに転換</td>
+            </tr>
+            <tr>
+              <td>1993年2月</td>
+              <td>2.50%</td>
+              <td>段階的</td>
+              <td>バブル後不況の深刻化</td>
+            </tr>
+            <tr>
+              <td>1995年9月</td>
+              <td>0.50%</td>
+              <td>-0.50%</td>
+              <td>史上最低。阪神大震災、円高79円台、住専問題</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 主要な利上げ/利下げサイクル -->
+      <section>
+        <h2>主要な利上げ/利下げサイクル</h2>
+
+        <h3>第一次石油危機サイクル（1973-1977）</h3>
+        <p>1973年のOPEC石油禁輸は日本経済に壊滅的な打撃を与えた。石油輸入依存度が極めて高い日本では、CPI上昇率が23.1%（1974年）に達する「狂乱物価」が発生した。日銀は公定歩合を9%まで引き上げ、窓口規制を強化して対応した。その結果、1975年には戦後初のマイナス成長（-1.2%）を記録したが、インフレは比較的速やかに沈静化し、第二次石油危機時の対応に活かされた<cite>[3]</cite>。</p>
+
+        <h3>バブル醸成と崩壊（1985-1995）</h3>
+        <p>プラザ合意後の円高対応として公定歩合は2.5%に引き下げられ、この水準が2年3か月間維持された。低金利と金融自由化、土地神話が相まってバブルが膨張した。日経平均は1989年12月29日に38,915.87円の史上最高値を記録。三重野総裁は「平成の鬼平」と呼ばれる強力な引き締めを実施し、公定歩合を6%まで引き上げた。しかしバブル崩壊は日本経済に構造的なダメージを与え、その後30年に及ぶデフレと低成長の入口となった<cite>[4]</cite>。</p>
+
+        <h3>ゼロ金利・量的緩和の世界（1999-2024）</h3>
+        <p>1999年2月のゼロ金利政策導入から2024年3月のマイナス金利解除まで、日本は四半世紀にわたり実質的にゼロないしマイナスの政策金利環境にあった（2006-2008年の短い正常化期間を除く）。この長期にわたる超低金利は、銀行の収益性低下、円キャリートレードの隆盛、不動産価格への影響、そして「日本化（Japanification）」という概念の誕生をもたらした。世界の金融政策史上、これほど長期にわたる超低金利は前例がない<cite>[5]</cite>。</p>
+
+        <h3>正常化サイクル（2024-現在）</h3>
+        <p>2024年3月のマイナス金利解除は「歴史的転換」と位置づけられた。春闘での33年ぶりの高い賃上げ率（5.28%）が決め手となった。2024年7月の0.25%への利上げ後、8月5日に日経平均が4,451円安（-12.4%）という過去最大の下落幅を記録する「令和のブラックマンデー」が発生した。円キャリートレードの巻き戻しが主因とされる。内田副総裁の「金融市場が不安定な状況で利上げすることはない」との発言で市場は安定化し、2025年1月に0.50%への追加利上げが実施された。市場は2025年中の0.75%への利上げを織り込んでいる<cite>[6]</cite>。</p>
+      </section>
+
+      <!-- ゼロ金利の2000年解除論争 -->
+      <section>
+        <h2>歴史的論争：2000年8月ゼロ金利解除</h2>
+        <p>2000年8月11日のゼロ金利解除は、日銀の独立性と政策判断をめぐる最も激しい論争の一つとなった。速水総裁率いる政策委員会は、景気回復の兆しとITバブルによる資産価格上昇を理由にゼロ金利の解除を決定した。政府は日銀法第19条に基づく「議決延期請求」を行ったが、政策委員会はこれを否決した（反対3：賛成6）<cite>[7]</cite>。</p>
+        <p>この決定の僅か数か月後にITバブルが崩壊し、日本経済は再びデフレに陥った。2001年3月には量的緩和の導入に追い込まれた。この経験は「日銀の早すぎる引き締め」のトラウマとなり、以降20年以上にわたり日銀の政策正常化を困難にした要因の一つとされる。市場では「日銀ショック」「速水ショック」とも呼ばれ、中央銀行のコミュニケーションと信認の重要性を示す教訓となった。</p>
+      </section>
+
+      <!-- マイナス金利の実験 -->
+      <section>
+        <h2>マイナス金利の実験（2016-2024）</h2>
+        <p>2016年1月29日、黒田総裁はサプライズでマイナス金利政策の導入を発表した。ECB（2014年6月）やスイス国立銀行（2015年1月）に続く導入だったが、日銀の手法は独特であった。既存の当座預金にマイナス金利を適用すると銀行収益に壊滅的な影響を与えるため、「三層構造」を設計した<cite>[8]</cite>。</p>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>層</th>
+              <th>適用金利</th>
+              <th>対象</th>
+              <th>残高規模（概算）</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>基礎残高</td>
+              <td>+0.10%</td>
+              <td>2015年平均残高（既存残高の保護）</td>
+              <td>約210兆円</td>
+            </tr>
+            <tr>
+              <td>マクロ加算残高</td>
+              <td>0.00%</td>
+              <td>所要準備額＋日銀が定める基準額</td>
+              <td>約40兆円</td>
+            </tr>
+            <tr>
+              <td>政策金利残高</td>
+              <td>-0.10%</td>
+              <td>上記を超える部分（限界的な残高）</td>
+              <td>約10-30兆円</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>マイナス金利の効果は複合的であった。イールドカーブのフラットニングが進行し、10年国債利回りはマイナス0.30%まで低下した。しかし、銀行の貸出金利と預金金利のスプレッド（NIM）が圧縮され、特に地方銀行の収益性が大きく悪化した。「リバーサル・レート」（金利が低すぎるとかえって金融仲介機能を損ない、緩和効果が反転する水準）の議論が活発化し、2016年9月のYCC導入により、日銀は長期金利を0%程度に「釘付け」する方向に軸足を転換した。</p>
+      </section>
+
+      <!-- 日本と他国の比較 -->
+      <section>
+        <h2>G10諸国との政策金利比較（2024年末時点）</h2>
+
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>国・地域</th>
+              <th>政策金利 (2024年末)</th>
+              <th>2022-23年利上げ幅</th>
+              <th>ゼロ/マイナス金利期間</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="highlight-row">
+              <td>🇯🇵 日本</td>
+              <td>0.25%</td>
+              <td>+0.35%</td>
+              <td>約25年（1999-2024）</td>
+            </tr>
+            <tr>
+              <td>🇺🇸 米国</td>
+              <td>4.25-4.50%</td>
+              <td>+525bp</td>
+              <td>約7年（2008-2015）</td>
+            </tr>
+            <tr>
+              <td>🇪🇺 ユーロ圏</td>
+              <td>3.00%</td>
+              <td>+450bp</td>
+              <td>約8年（2014-2022）</td>
+            </tr>
+            <tr>
+              <td>🇬🇧 英国</td>
+              <td>4.75%</td>
+              <td>+515bp</td>
+              <td>約15年（2009-2024低金利）</td>
+            </tr>
+            <tr>
+              <td>🇨🇭 スイス</td>
+              <td>0.50%</td>
+              <td>+250bp</td>
+              <td>約8年（2015-2022）</td>
+            </tr>
+            <tr>
+              <td>🇦🇺 豪州</td>
+              <td>4.35%</td>
+              <td>+425bp</td>
+              <td>なし（0.10%が最低）</td>
+            </tr>
+            <tr>
+              <td>🇸🇪 スウェーデン</td>
+              <td>2.50%</td>
+              <td>+400bp</td>
+              <td>約5年（2015-2019）</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>日本の政策金利は、他のG10諸国と比較して際立った異質性を示している。2022-2023年に世界中の中央銀行が数十年ぶりの積極的な利上げを行った中、日銀はマイナス金利とYCCを維持し続けた。この「日銀一人負け」状態が2022年から2024年にかけての急激な円安（ドル/円151→161円台）の主要因となった。日銀の正常化ペースは他国と比較して極めて緩やかであり、「金利のある世界」への移行は段階的に進行中である<cite>[9]</cite>。</p>
+      </section>
+
+      <!-- ターミナルレートの議論 -->
+      <section>
+        <h2>ターミナルレート（中立金利）の議論</h2>
+        <p>日銀の利上げサイクルにおける最終到達点（ターミナルレート）は市場の大きな関心事である。日銀は2024年4月の「経済・物価情勢の展望（展望レポート）」で自然利子率（r*）の推計を公表し、-1.0%〜+0.5%のレンジと示した。名目中立金利は自然利子率にインフレ目標2%を加えたものと考えると、1.0%〜2.5%のレンジとなる<cite>[10]</cite>。</p>
+        <p>市場のコンセンサスとしては、2025-2026年にかけて0.75%〜1.0%程度が利上げの到達点と見られているが、日本経済の潜在成長率の低さ（0.5%程度）、高齢化による貯蓄超過、政府債務の利払い負担（金利1%上昇で年間約10兆円の追加利払い）を考慮すると、歴史的に見ても低い水準に留まる可能性が高い。「金利のある世界」とは言え、かつての公定歩合5-6%の時代とは構造的に異なるのである。</p>
+      </section>
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>日本銀行, 「金融政策の枠組み」各種声明 <a href="https://www.boj.or.jp/mopo/outline/">boj.or.jp/mopo/outline</a></li>
+        <li>日本銀行金融研究所, 「わが国における金利の自由化」, 1997年 <a href="https://www.imes.boj.or.jp/">imes.boj.or.jp</a></li>
+        <li>OECD, "Economic Surveys: Japan", Various years; IMF Article IV Reports</li>
+        <li>翁邦雄, 「日本銀行」, ちくま新書, 2013年; 西野智彦, 「平成金融史」, 中公新書, 2019年</li>
+        <li>Bernanke, B., "Japanese Monetary Policy: A Case of Self-Induced Paralysis?", 2000; Eggertsson, G. and Woodford, M., "The Zero Bound on Interest Rates and Optimal Monetary Policy", 2003</li>
+        <li>日本銀行, 「金融政策決定会合の決定内容」, 2024-2025年 <a href="https://www.boj.or.jp/mopo/mpmdeci/">boj.or.jp/mopo/mpmdeci</a></li>
+        <li>植田和男, 「ゼロ金利との闘い」, 日本経済新聞出版社, 2005年; 白川方明, 「中央銀行」, 東洋経済新報社, 2018年</li>
+        <li>日本銀行, 「マイナス金利付き量的・質的金融緩和の導入」, 2016年1月 <a href="https://www.boj.or.jp/">boj.or.jp</a></li>
+        <li>BIS, "Annual Economic Report", 2023-2024; "Unconventional monetary policies: a re-appraisal", 2019 <a href="https://www.bis.org/">bis.org</a></li>
+        <li>日本銀行, 「経済・物価情勢の展望」, 2024年4月; Holston, Laubach, Williams, "Measuring the Natural Rate of Interest", 2017</li>
+        <li>Federal Reserve Bank of St. Louis, FRED Database <a href="https://fred.stlouisfed.org/">fred.stlouisfed.org</a></li>
+      </ol>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelectorAll('.data-table.sortable thead th').forEach((th, idx) => {
+      th.style.cursor = 'pointer';
+      th.addEventListener('click', function() {
+        const table = th.closest('table');
+        const tbody = table.querySelector('tbody');
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+        const dir = th.classList.contains('sort-asc') ? -1 : 1;
+        table.querySelectorAll('th').forEach(h => h.classList.remove('sort-asc','sort-desc'));
+        th.classList.add(dir === 1 ? 'sort-asc' : 'sort-desc');
+        rows.sort((a, b) => {
+          const aText = a.children[idx]?.textContent.trim() || '';
+          const bText = b.children[idx]?.textContent.trim() || '';
+          const aNum = parseFloat(aText.replace(/[^0-9.\-]/g, ''));
+          const bNum = parseFloat(bText.replace(/[^0-9.\-]/g, ''));
+          if (!isNaN(aNum) && !isNaN(bNum)) return (aNum - bNum) * dir;
+          return aText.localeCompare(bText, 'ja') * dir;
+        });
+        rows.forEach(row => tbody.appendChild(row));
+      });
+    });
+  </script>
+</body>
+</html>

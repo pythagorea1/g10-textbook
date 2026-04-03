@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japan - Fiscal Policy | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇯🇵 Japan</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link active">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip active">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Japan</a>
+        <span class="sep">/</span>
+        Fiscal Policy
+      </div>
+      <h1 class="page-title">財政政策の歴史</h1>
+      <p class="page-subtitle">高度成長の財政基盤から世界最大の債務国家へ — 債務/GDP 260%の構造</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">260%</div>
+          <div class="stat-label">政府債務/GDP (2024年)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">¥1,286兆</div>
+          <div class="stat-label">国・地方の長期債務残高</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">¥112兆</div>
+          <div class="stat-label">一般会計予算 (FY2024)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">10%</div>
+          <div class="stat-label">消費税率 (2019年〜)</div>
+        </div>
+      </div>
+
+      <!-- 財政政策の歴史 -->
+      <section>
+        <h2>財政政策の変遷</h2>
+        <p>日本の財政政策は、戦後復興期の均衡財政主義から高度成長期の積極財政、そしてバブル崩壊後の度重なる景気対策による債務累積へと変遷してきた。先進国最悪の債務/GDP比率を記録しながらも、国債金利が低位に留まり続けるという「日本の財政パラドクス」は、金融市場において最も重要な構造的テーマの一つである<cite>[1]</cite>。</p>
+
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>時期</th>
+              <th>主要政策</th>
+              <th>特徴</th>
+              <th>債務/GDP</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1947-1965</td>
+              <td>均衡財政主義</td>
+              <td>財政法第4条（赤字国債禁止）。ドッジ・ライン超緊縮。朝鮮戦争特需</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>1965-1975</td>
+              <td>建設国債の発行開始</td>
+              <td>1965年不況で初の赤字国債。高度成長の財政基盤。田中角栄「日本列島改造論」</td>
+              <td>約10%</td>
+            </tr>
+            <tr>
+              <td>1975-1982</td>
+              <td>赤字国債の常態化</td>
+              <td>石油危機後の税収減。1975年特例公債法で赤字国債発行。大平蔵相の一般消費税構想（頓挫）</td>
+              <td>約50%</td>
+            </tr>
+            <tr>
+              <td>1982-1990</td>
+              <td>財政再建路線</td>
+              <td>土光臨調「増税なき財政再建」。中曽根行革。消費税導入（1989年3%）。バブル税収で改善</td>
+              <td>約65%</td>
+            </tr>
+            <tr>
+              <td>1990-1997</td>
+              <td>景気対策の繰り返し</td>
+              <td>バブル崩壊後の経済対策（1992-95年で合計60兆円超）。公共事業主体の「ケインズ型」対策</td>
+              <td>約90%</td>
+            </tr>
+            <tr>
+              <td>1997-1998</td>
+              <td>橋本財政構造改革</td>
+              <td>消費税5%引き上げ（1997年4月）。財政構造改革法。金融システム危機と景気後退を招き撤回</td>
+              <td>約105%</td>
+            </tr>
+            <tr>
+              <td>1998-2006</td>
+              <td>積極財政への回帰</td>
+              <td>小渕「世界一の借金王」（緊急経済対策40兆円超）。小泉構造改革（歳出抑制、郵政民営化）</td>
+              <td>約160%</td>
+            </tr>
+            <tr>
+              <td>2008-2012</td>
+              <td>リーマン・ショック対応</td>
+              <td>大規模経済対策。民主党政権「子ども手当」。東日本大震災復興（25兆円）</td>
+              <td>約210%</td>
+            </tr>
+            <tr>
+              <td>2013-2019</td>
+              <td>アベノミクス「三本の矢」</td>
+              <td>大胆な金融政策＋機動的な財政政策＋成長戦略。消費税8%（2014年）→10%（2019年）</td>
+              <td>約235%</td>
+            </tr>
+            <tr>
+              <td>2020-現在</td>
+              <td>COVID対応と財政拡張</td>
+              <td>コロナ対策事業規模300兆円超。10万円特別定額給付金。防衛費増額（GDP2%目標）</td>
+              <td>約260%</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 主要な財政パッケージ -->
+      <section>
+        <h2>主要な財政パッケージ</h2>
+
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>名称</th>
+              <th>規模</th>
+              <th>背景と評価</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1992-1995</td>
+              <td>バブル後経済対策（累計）</td>
+              <td>約65兆円</td>
+              <td>公共事業中心。「コンクリートから人へ」の原型的批判。乗数効果は低下傾向</td>
+            </tr>
+            <tr>
+              <td>1998</td>
+              <td>小渕緊急経済対策</td>
+              <td>約40兆円</td>
+              <td>金融システム危機対応。地域振興券2万円。「世界一の借金王」発言</td>
+            </tr>
+            <tr>
+              <td>2009</td>
+              <td>経済危機対策</td>
+              <td>約56.8兆円</td>
+              <td>リーマン・ショック対応。エコポイント、エコカー減税</td>
+            </tr>
+            <tr>
+              <td>2011</td>
+              <td>東日本大震災復興</td>
+              <td>約25兆円</td>
+              <td>復興特別税（所得税2.1%上乗せ25年間、法人税10%3年間）。復興庁設置</td>
+            </tr>
+            <tr>
+              <td>2020</td>
+              <td>COVID第1次補正予算</td>
+              <td>約25.7兆円</td>
+              <td>特別定額給付金10万円（約12.7兆円）。持続化給付金。GoToキャンペーン</td>
+            </tr>
+            <tr>
+              <td>2020</td>
+              <td>COVID第2次補正予算</td>
+              <td>約31.9兆円</td>
+              <td>家賃支援給付金。地方創生臨時交付金追加</td>
+            </tr>
+            <tr>
+              <td>2021</td>
+              <td>コロナ克服・新時代開拓のための経済対策</td>
+              <td>約55.7兆円</td>
+              <td>18歳以下10万円給付。事業復活支援金。半導体支援</td>
+            </tr>
+            <tr>
+              <td>2022</td>
+              <td>物価高騰・賃上げ総合対策</td>
+              <td>約39兆円</td>
+              <td>ガソリン補助金。電気・ガス代支援。全国旅行支援</td>
+            </tr>
+            <tr>
+              <td>2023</td>
+              <td>デフレ完全脱却のための経済対策</td>
+              <td>約17兆円</td>
+              <td>所得税減税4万円。低所得世帯7万円給付。半導体・GX投資</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 債務/GDP推移 -->
+      <section>
+        <h2>政府債務/GDP比率の推移</h2>
+        <p>日本の政府債務/GDP比率は、先進国で突出して高い水準にある。IMFの定義による一般政府総債務ベースでは約260%、純債務ベースでも約160%に達する。この乖離は、約200兆円に及ぶ政府金融資産（外貨準備、GPIF等への出資）の存在による<cite>[2]</cite>。</p>
+
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>債務/GDP（総債務）</th>
+              <th>債務/GDP（純債務）</th>
+              <th>名目GDP（兆円）</th>
+              <th>主要イベント</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1980</td>
+              <td>50%</td>
+              <td>15%</td>
+              <td>253</td>
+              <td>第二次石油危機後</td>
+            </tr>
+            <tr>
+              <td>1990</td>
+              <td>65%</td>
+              <td>10%</td>
+              <td>451</td>
+              <td>バブル景気のピーク。税収60兆円超</td>
+            </tr>
+            <tr>
+              <td>1995</td>
+              <td>90%</td>
+              <td>25%</td>
+              <td>505</td>
+              <td>バブル崩壊後の景気対策で急増</td>
+            </tr>
+            <tr>
+              <td>2000</td>
+              <td>135%</td>
+              <td>60%</td>
+              <td>510</td>
+              <td>金融システム危機対応後</td>
+            </tr>
+            <tr>
+              <td>2005</td>
+              <td>175%</td>
+              <td>80%</td>
+              <td>524</td>
+              <td>小泉改革期。プライマリーバランス改善目標</td>
+            </tr>
+            <tr>
+              <td>2010</td>
+              <td>210%</td>
+              <td>115%</td>
+              <td>505</td>
+              <td>リーマン・ショック対応後</td>
+            </tr>
+            <tr>
+              <td>2015</td>
+              <td>230%</td>
+              <td>125%</td>
+              <td>538</td>
+              <td>アベノミクス初期。消費税8%</td>
+            </tr>
+            <tr>
+              <td>2020</td>
+              <td>254%</td>
+              <td>155%</td>
+              <td>539</td>
+              <td>COVID対応で過去最大の国債発行</td>
+            </tr>
+            <tr>
+              <td>2024</td>
+              <td>260%</td>
+              <td>160%</td>
+              <td>607</td>
+              <td>名目GDP増加も債務増加ペースが上回る</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 消費税の歴史 -->
+      <section>
+        <h2>消費税の歴史</h2>
+        <p>消費税は日本の財政再建の中核的歳入源として位置づけられてきたが、その導入・引き上げの過程は政治的な激動を伴うものであった<cite>[3]</cite>。</p>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>税率</th>
+              <th>首相</th>
+              <th>経緯と影響</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1979</td>
+              <td>—（頓挫）</td>
+              <td>大平正芳</td>
+              <td>一般消費税構想。党内反発で断念。総選挙敗北</td>
+            </tr>
+            <tr>
+              <td>1987</td>
+              <td>—（頓挫）</td>
+              <td>中曽根康弘</td>
+              <td>売上税法案。参院で廃案</td>
+            </tr>
+            <tr>
+              <td>1989年4月</td>
+              <td>3%</td>
+              <td>竹下登</td>
+              <td>消費税導入。リクルート事件と合わせて退陣</td>
+            </tr>
+            <tr>
+              <td>1997年4月</td>
+              <td>5%</td>
+              <td>橋本龍太郎</td>
+              <td>増税＋特別減税廃止＋医療費負担増の「9兆円の国民負担増」。景気後退・金融危機を招き財政再建路線は頓挫</td>
+            </tr>
+            <tr>
+              <td>2014年4月</td>
+              <td>8%</td>
+              <td>安倍晋三</td>
+              <td>アベノミクス下で実施。駆け込み需要の反動で4-6月期GDP年率-7.1%。10%への引き上げを2度延期</td>
+            </tr>
+            <tr>
+              <td>2019年10月</td>
+              <td>10%</td>
+              <td>安倍晋三</td>
+              <td>軽減税率8%（食料品等）導入。キャッシュレスポイント還元。COVID直前のタイミング</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>消費税引き上げの度に景気が悪化するという「消費税トラウマ」は、日本の財政再建を著しく困難にしている。1997年と2014年の経験から、政治的にさらなる引き上げ（15%以上）は極めて困難とされる。しかし、社会保障費の増大（年間約130兆円、うち約50%が公費負担）を考えると、消費税率の引き上げなくして持続的な財政運営は困難であるという構造的矛盾を抱えている。</p>
+      </section>
+
+      <!-- 財政パラドクス -->
+      <section>
+        <h2>「日本の財政パラドクス」</h2>
+        <p>先進国最悪の債務/GDP比率にもかかわらず、日本国債の金利が極めて低い水準に留まり続ける「日本の財政パラドクス」は、以下の構造的要因によって説明される<cite>[4][5]</cite>。</p>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>要因</th>
+              <th>内容</th>
+              <th>データ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>国内消化構造</td>
+              <td>国債の約90%が国内で保有。「国民の貯蓄が政府に貸し出される」構造</td>
+              <td>海外保有比率: 約14%（米国: 約30%）</td>
+            </tr>
+            <tr>
+              <td>日銀の大量保有</td>
+              <td>日銀が国債残高の約53%を保有。最大の買い手かつ保有者</td>
+              <td>日銀保有: 約590兆円（2024年）</td>
+            </tr>
+            <tr>
+              <td>経常収支黒字</td>
+              <td>対外純資産世界最大。円資産への構造的需要</td>
+              <td>対外純資産: 約471兆円（2023年、33年連続世界一）</td>
+            </tr>
+            <tr>
+              <td>家計貯蓄</td>
+              <td>家計金融資産2,141兆円（2024年）のうち約52%が現預金</td>
+              <td>現預金: 約1,100兆円</td>
+            </tr>
+            <tr>
+              <td>デフレ期待</td>
+              <td>30年間のデフレにより低金利が「当たり前」と認識</td>
+              <td>期待インフレ率: 長期にわたり1%未満</td>
+            </tr>
+            <tr>
+              <td>自国通貨建て</td>
+              <td>国債の100%が円建て。日銀が最後の買い手として機能</td>
+              <td>外貨建て国債: 0%</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>しかし、2024年以降の金利正常化は、この「パラドクス」の前提を揺るがしつつある。金利1%の上昇は年間約10兆円の追加利払いを意味し、国債費は一般会計の30%超に達する可能性がある。また、日銀の国債買入減額（量的引き締め、QT）の開始は、最大の買い手の退場を意味する。「金利のある世界」への回帰は、日本の財政運営にとっても歴史的な転換点である<cite>[6]</cite>。</p>
+      </section>
+
+      <!-- プライマリーバランス -->
+      <section>
+        <h2>プライマリーバランス（PB）黒字化目標</h2>
+        <p>日本政府は2025年度のPB黒字化を財政健全化目標として掲げてきた。PBは税収等の歳入から国債費を除く歳出を引いたものであり、フロー（毎年の収支）の改善指標である。2024年度は名目GDPの成長とインフレによる税収増で、PBは黒字化近傍まで改善した。しかし、PBが黒字化しても債務/GDPの安定化には不十分であり（名目金利＞名目成長率の場合）、真の財政再建には利払いを含む財政収支の改善が必要とされる<cite>[7]</cite>。</p>
+        <p>皮肉なことに、日本の財政状況を最も改善しているのは「インフレ」であり、名目GDP成長率の上昇が税収を押し上げ、既存債務の実質的な軽減をもたらしている。「インフレ税」による暗黙の債務圧縮は、明示的な増税や歳出削減よりも政治的に容易であるが、その持続性と公平性については議論がある。</p>
+      </section>
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>財務省, 「日本の財政関係資料」, 各年度 <a href="https://www.mof.go.jp/policy/budget/">mof.go.jp</a></li>
+        <li>IMF, "World Economic Outlook Database", April 2024; "Japan: Article IV Consultation", Various years <a href="https://www.imf.org/">imf.org</a></li>
+        <li>財務省, 「消費税の歴史」; 五百旗頭真編, 「戦後日本の財政」, 有斐閣, 2010年</li>
+        <li>Hoshi, T. and Ito, T., "Defying Gravity: Can Japanese Sovereign Debt Continue to Increase Without a Crisis?", Economic Policy, 2014</li>
+        <li>日本銀行, 「資金循環統計」, 2024年 <a href="https://www.boj.or.jp/statistics/sj/">boj.or.jp</a></li>
+        <li>内閣府, 「中長期の経済財政に関する試算」, 2024年7月 <a href="https://www5.cao.go.jp/">cao.go.jp</a></li>
+        <li>OECD, "Economic Surveys: Japan", 2024 <a href="https://www.oecd.org/">oecd.org</a></li>
+        <li>World Bank, "World Development Indicators" <a href="https://data.worldbank.org/">worldbank.org</a></li>
+        <li>BIS, "Fiscal sustainability and central banks", Working Paper, 2023 <a href="https://www.bis.org/">bis.org</a></li>
+        <li>Federal Reserve Bank of St. Louis, FRED Database <a href="https://fred.stlouisfed.org/">fred.stlouisfed.org</a></li>
+      </ol>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelectorAll('.data-table.sortable thead th').forEach((th, idx) => {
+      th.style.cursor = 'pointer';
+      th.addEventListener('click', function() {
+        const table = th.closest('table');
+        const tbody = table.querySelector('tbody');
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+        const dir = th.classList.contains('sort-asc') ? -1 : 1;
+        table.querySelectorAll('th').forEach(h => h.classList.remove('sort-asc','sort-desc'));
+        th.classList.add(dir === 1 ? 'sort-asc' : 'sort-desc');
+        rows.sort((a, b) => {
+          const aText = a.children[idx]?.textContent.trim() || '';
+          const bText = b.children[idx]?.textContent.trim() || '';
+          const aNum = parseFloat(aText.replace(/[^0-9.\-]/g, ''));
+          const bNum = parseFloat(bText.replace(/[^0-9.\-]/g, ''));
+          if (!isNaN(aNum) && !isNaN(bNum)) return (aNum - bNum) * dir;
+          return aText.localeCompare(bText, 'ja') * dir;
+        });
+        rows.forEach(row => tbody.appendChild(row));
+      });
+    });
+  </script>
+</body>
+</html>
