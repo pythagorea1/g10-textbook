@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Australia - Banking Sector | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇦🇺 Australia</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link active">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip active">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Australia</a>
+        <span class="sep">/</span>
+        Banking Sector
+      </div>
+      <h1 class="page-title">オーストラリア銀行セクター (Australian Banking Sector)</h1>
+      <p class="page-subtitle">Big 4寡占体制 — GFCを無傷で乗り越えた世界で最も収益性の高い銀行システム</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">A$5.8兆+</div>
+          <div class="stat-label">銀行セクター総資産 (2024)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">Big 4</div>
+          <div class="stat-label">主要銀行数</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">~75%</div>
+          <div class="stat-label">Big 4の住宅ローンシェア</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">AAA</div>
+          <div class="stat-label">ソブリン格付け</div>
+        </div>
+      </div>
+
+      <!-- Section: Overview -->
+      <section>
+        <h2>銀行システムの概観</h2>
+        <p>
+          オーストラリアの銀行システムは、G10諸国の中でも極めて集中度の高い構造を持つ。コモンウェルス銀行 (Commonwealth Bank of Australia, CBA)、ウェストパック (Westpac Banking Corporation)、ANZ (Australia and New Zealand Banking Group)、ナショナル・オーストラリア銀行 (National Australia Bank, NAB) の「Big 4」が銀行セクター総資産の約80%、住宅ローン市場の約75%を占める寡占体制を形成している。<cite>[1]</cite>
+        </p>
+        <p>
+          この高い集中度は、規模の経済によるコスト効率と安定性をもたらす一方、競争の制限と消費者への不利な条件という批判も受けてきた。2018年のヘイン王立委員会 (Hayne Royal Commission) は、この寡占構造が生んだモラルハザードと顧客軽視の文化を厳しく指弾した。<cite>[2]</cite>
+        </p>
+        <p>
+          オーストラリアの銀行は、2008年のグローバル金融危機 (GFC) を世界の主要銀行の中でほぼ無傷で乗り越えた数少ない銀行システムの一つである。これは、保守的な融資基準、国内集中型のビジネスモデル、APRAによる厳格な監督、そして政府の預金保証スキーム (Financial Claims Scheme) の迅速な導入によるものであった。<cite>[3]</cite>
+        </p>
+      </section>
+
+      <!-- Section: Big 4 -->
+      <section>
+        <h2>Big 4 プロフィール</h2>
+        <table class="sortable">
+          <thead>
+            <tr>
+              <th>銀行</th>
+              <th>設立年</th>
+              <th>総資産 (A$B, 2024)</th>
+              <th>時価総額 (A$B, 2024)</th>
+              <th>ROE (2024)</th>
+              <th>Tier 1比率</th>
+              <th>特徴</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>CBA</strong></td>
+              <td>1911</td>
+              <td>~1,280</td>
+              <td>~230</td>
+              <td>~13.5%</td>
+              <td>~12.3%</td>
+              <td>政府設立→1991年民営化、リテール最大手、テクノロジーリーダー</td>
+            </tr>
+            <tr>
+              <td><strong>Westpac</strong></td>
+              <td>1817</td>
+              <td>~930</td>
+              <td>~85</td>
+              <td>~10.5%</td>
+              <td>~12.5%</td>
+              <td>豪州最古の銀行、2019年AML違反A$13億罰金</td>
+            </tr>
+            <tr>
+              <td><strong>NAB</strong></td>
+              <td>1858</td>
+              <td>~950</td>
+              <td>~100</td>
+              <td>~11.0%</td>
+              <td>~12.1%</td>
+              <td>ビジネスバンキング最大手、英国撤退で国内回帰</td>
+            </tr>
+            <tr>
+              <td><strong>ANZ</strong></td>
+              <td>1835</td>
+              <td>~1,000</td>
+              <td>~80</td>
+              <td>~10.0%</td>
+              <td>~13.2%</td>
+              <td>アジア太平洋戦略、Suncorp銀行部門買収2024</td>
+            </tr>
+          </tbody>
+        </table>
+        <cite>[1] APRA, "Monthly Authorised Deposit-taking Institution Statistics", 2024</cite>
+      </section>
+
+      <!-- Section: Early History -->
+      <section>
+        <h2>銀行制度の歴史的発展</h2>
+        <h3>植民地期〜連邦化 (1817〜1901)</h3>
+        <p>
+          オーストラリアの銀行業は、1817年のバンク・オブ・ニューサウスウェールズ (Bank of New South Wales、後のウェストパック) の設立に始まる。これは植民地に設立された最初の銀行であり、英国の植民地支配下での経済発展を金融面から支えた。1851年のゴールドラッシュは銀行業の急速な拡大をもたらし、1860年代までにメルボルンとシドニーに多数の銀行が設立された。<cite>[4]</cite>
+        </p>
+        <p>
+          しかし、1890年代の金融恐慌は銀行システムに壊滅的な打撃を与えた。不動産投機バブルの崩壊により、13の銀行が破綻し、預金者が大きな損失を被った。この経験は、その後のオーストラリアの保守的な銀行文化の原点となった。1893年にはCommercial Bank of Australiaを含む主要銀行が支払い停止に追い込まれ、預金の強制的な再構築（reconstruction）が行われた。<cite>[5]</cite>
+        </p>
+
+        <h3>連邦化〜第二次大戦 (1901〜1945)</h3>
+        <p>
+          1901年のオーストラリア連邦成立後、通貨・銀行制度の統一が進められた。1911年にはアンドリュー・フィッシャー (Andrew Fisher) 労働党政権がコモンウェルス銀行を政府系銀行として設立した。当初は商業銀行と中央銀行の両機能を併せ持つ独特の機関であった。<cite>[6]</cite>
+        </p>
+        <p>
+          大恐慌期 (1929-33) には銀行システムは深刻なストレスにさらされたが、1890年代の教訓から蓄積された資本バッファーにより、大規模な銀行破綻は回避された。第二次大戦中は、コモンウェルス銀行が戦時金融統制の中心的役割を果たし、政府の戦費調達を支えた。<cite>[7]</cite>
+        </p>
+
+        <h3>規制時代 (1945〜1983)</h3>
+        <p>
+          戦後、チフリー (Chifley) 労働党政権は1947年に銀行国有化を試みたが、最高裁で違憲と判断された。代わりに、1945年銀行法 (Banking Act 1945) による厳格な規制体制が敷かれた。金利規制、融資量規制 (Qualitative Lending Guidelines)、外国銀行の参入禁止など、いわゆる「金融抑圧 (financial repression)」の時代であった。<cite>[8]</cite>
+        </p>
+        <p>
+          この規制環境下で、Big 4は安定した利ザヤを享受し、「3-6-3ルール」（3%で預金を集め、6%で貸し出し、3時にゴルフ場へ）と揶揄されるほどの安定したビジネスモデルを確立した。一方、ノンバンク金融機関（building societies、credit unions）が規制の隙間で成長した。
+        </p>
+
+        <h3>自由化と再編 (1983〜2000)</h3>
+        <p>
+          1981年のキャンベル委員会 (Campbell Committee) 勧告に基づき、ホーク＝キーティング (Hawke-Keating) 労働党政権は1983年から金融自由化を断行した。主な改革は以下の通りである：<cite>[9]</cite>
+        </p>
+        <ul>
+          <li><strong>1983年</strong>: 豪ドル変動相場制移行、外国為替管理撤廃</li>
+          <li><strong>1985年</strong>: 外国銀行16行に銀行免許付与（シティバンク、チェース・マンハッタン等）</li>
+          <li><strong>1985〜88年</strong>: 金利規制段階的撤廃</li>
+          <li><strong>1991年</strong>: コモンウェルス銀行民営化開始（第1次売出 A$81億）</li>
+          <li><strong>1993年</strong>: コモンウェルス銀行第2次売出</li>
+          <li><strong>1996年</strong>: コモンウェルス銀行完全民営化（第3次売出）</li>
+          <li><strong>1997年</strong>: ウォリス委員会 (Wallis Inquiry)、APRA設立勧告</li>
+          <li><strong>1998年</strong>: APRA (Australian Prudential Regulation Authority) 設立</li>
+        </ul>
+        <p>
+          自由化はクレジット拡大をもたらし、1980年代後半の過剰融資が1990-91年のリセッションの一因となった。この時期にはステート・バンク・オブ・ビクトリア (State Bank of Victoria)、ステート・バンク・オブ・サウスオーストラリア (State Bank of South Australia)、トライコンチネンタル (Tricontinental Corporation) などの州政府系銀行が深刻な損失を被り、Big 4への吸収が進んだ。<cite>[10]</cite>
+        </p>
+      </section>
+
+      <!-- Section: Four Pillars Policy -->
+      <section>
+        <h2>四本柱政策 (Four Pillars Policy)</h2>
+        <p>
+          1990年のポール・キーティング (Paul Keating) 財務大臣による「四本柱政策」は、Big 4間の合併を禁止する非公式な政策方針である。正式な法律ではなく、財務大臣の裁量による合併認可拒否の宣言であるが、以来一貫して維持されてきた。<cite>[11]</cite>
+        </p>
+        <p>
+          この政策の背景には、銀行の集中度がさらに高まることへの懸念と、地方部や中小企業への金融サービスの維持がある。批判者は、国際競争力の観点から合併を認めるべきだと主張するが、歴代政権はこの方針を堅持してきた。2024年のANZによるサンコープ (Suncorp) 銀行部門買収は、Big 4ではなかったサンコープが対象であったため、四本柱政策には抵触しないと判断された。<cite>[12]</cite>
+        </p>
+      </section>
+
+      <!-- Section: GFC -->
+      <section>
+        <h2>GFCにおけるオーストラリア銀行の耐性</h2>
+        <p>
+          2008年のグローバル金融危機において、オーストラリアの銀行は世界の主要銀行システムの中で最も強靭な耐性を示した。Big 4は公的資本注入を一切受けず、配当削減すら行わなかった（CBAは実質的に増配）。この耐性の要因は複合的である：<cite>[3]</cite>
+        </p>
+        <ul>
+          <li><strong>限定的なサブプライム・エクスポージャー</strong>: オーストラリアの銀行はCDOやMBS等の複雑な証券化商品への投資が限定的であった</li>
+          <li><strong>オリジネート・トゥ・ホールド・モデル</strong>: 住宅ローンの大部分をバランスシートに保持し、証券化比率が低かった</li>
+          <li><strong>フルリコース・ローン</strong>: 米国と異なり、ノンリコース（返済義務なし）ではなくフルリコース（全額返済義務）の住宅ローンが主流であり、戦略的デフォルトのインセンティブが低かった</li>
+          <li><strong>APRAの厳格な監督</strong>: バーゼルIIの先行採用、ストレステストの実施</li>
+          <li><strong>政府の迅速な対応</strong>: 預金保証スキーム（A$25万まで、後にA$100万）、ホールセール・ファンディング保証</li>
+          <li><strong>RBAの流動性供給</strong>: レポ市場を通じた積極的な流動性供給</li>
+        </ul>
+        <p>
+          ただし、ホールセール・ファンディングへの依存度の高さ（預金比率が相対的に低い）は、グローバル資金市場のストレス時に脆弱性をもたらすリスクとして認識された。GFC後、Big 4は預金調達比率を約50%から約60%以上に引き上げる構造的な転換を進めた。<cite>[13]</cite>
+        </p>
+      </section>
+
+      <!-- Section: Royal Commission -->
+      <section>
+        <h2>ヘイン王立委員会 (Royal Commission into Misconduct, 2018-2019)</h2>
+        <p>
+          2017年、度重なる金融スキャンダルを受けてターンブル (Turnbull) 政権は銀行・金融サービス業界の不正行為に関する王立委員会を設置した。ケネス・ヘイン (Kenneth Hayne) 元連邦裁判所判事が委員長を務めた。<cite>[2]</cite>
+        </p>
+        <p>
+          王立委員会は76回の公聴会で衝撃的な証言を引き出した。主な発見は以下の通りである：
+        </p>
+        <ul>
+          <li><strong>手数料なしサービス (Fees for No Service)</strong>: Big 4とAMPが、サービスを提供していない顧客から数十億ドルの手数料を徴収していた</li>
+          <li><strong>不適切な融資</strong>: 返済能力の不十分な審査による過剰融資、特に住宅ローン</li>
+          <li><strong>保険の不正販売</strong>: CBAのコムインシュアー (CommInsure) が、障害保険の支払いを不当に拒否していた事例</li>
+          <li><strong>スーパーアニュエーションの利益相反</strong>: ファンドマネージャーが顧客の利益よりも自社の利益を優先</li>
+          <li><strong>先住民コミュニティへの搾取的融資</strong>: 遠隔地の先住民コミュニティに対する不適切な金融商品の販売</li>
+        </ul>
+        <p>
+          ヘイン最終報告書 (2019年2月) は76の勧告を提出した。政府は全勧告の受入を表明し、主な対応として：BEAR (Banking Executive Accountability Regime) の強化、金融アドバイザーの教育基準引き上げ、利益相反構造の解消、コンプライアンス文化の根本的改革を求めた。Big 4は合計でA$100億以上の顧客への補償金を支払った。<cite>[14]</cite>
+        </p>
+      </section>
+
+      <!-- Section: Housing -->
+      <section>
+        <h2>住宅ローン市場と不動産リスク</h2>
+        <p>
+          オーストラリアの銀行セクターの最大のリスク要因は、住宅ローンへの集中度の高さである。Big 4の総融資残高の約60-65%が住宅ローンで構成されており、住宅価格の大幅下落は銀行システム全体に重大なリスクをもたらしうる。<cite>[15]</cite>
+        </p>
+        <p>
+          オーストラリアの住宅価格は、シドニーの中央値がA$130万 (2024年) に達するなど世界的にも高水準にある。住宅価格/所得比率は約9倍と、G10諸国の中で最も高い水準の一つである。この「住宅バブル」の持続可能性は長年にわたり議論されてきたが、人口増加（移民）、土地供給制限、税制優遇（ネガティブ・ギアリング）により、大規模な価格崩壊は発生していない。<cite>[16]</cite>
+        </p>
+        <p>
+          APRAはマクロプルーデンシャル政策を積極的に活用し、投資用住宅ローンの成長率制限 (2014年: 年10%上限)、インタレスト・オンリー・ローンの比率制限 (2017年: 新規の30%上限)、借入時のサービサビリティ・バッファー (2021年: 3%ポイント上乗せ) などを導入して住宅市場の過熱抑制に努めてきた。<cite>[17]</cite>
+        </p>
+      </section>
+
+      <!-- Section: Non-Big 4 -->
+      <section>
+        <h2>Big 4以外の金融機関</h2>
+        <h3>マッコーリー・グループ (Macquarie Group)</h3>
+        <p>
+          1969年にヒル・サミュエル・オーストラリア (Hill Samuel Australia) として設立され、1985年にマッコーリー銀行に改称。インフラ投資、資産運用、コモディティ・トレーディングに強みを持ち、「ミリオネア・ファクトリー」の異名を持つ。2024年時点で時価総額はA$800億超と、Big 4に次ぐ第5の金融機関である。ただし、伝統的な預金・融資業務よりも投資銀行・資産運用業務が中心であり、Big 4とは異なるビジネスモデルを展開している。<cite>[18]</cite>
+        </p>
+        <h3>地方銀行・中小金融機関</h3>
+        <p>
+          ベンディゴ＆アデレード銀行 (Bendigo and Adelaide Bank)、バンク・オブ・クイーンズランド (Bank of Queensland) などの地方銀行は、コミュニティバンキングモデルで差別化を図っている。クレジット・ユニオン (信用組合) やビルディング・ソサエティ（住宅金融組合）も存在するが、2010年代以降の規制統一により多くが「相互銀行 (mutual bank)」に転換した。<cite>[19]</cite>
+        </p>
+        <h3>ネオバンク・フィンテック</h3>
+        <p>
+          2010年代後半からは、Judo Bank（中小企業向け、2021年ASX上場）、Tyro Payments（決済）、Zip Co（BNPL＝Buy Now Pay Later）などのフィンテック企業が台頭した。Afterpay（2021年にBlockに約A$390億で買収）は、BNPL分野でグローバルな成功を収めた豪州発フィンテックの代表格である。<cite>[20]</cite>
+        </p>
+      </section>
+
+      <!-- Section: Timeline -->
+      <section>
+        <h2>銀行セクター主要年表</h2>
+        <table class="sortable">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>出来事</th>
+              <th>影響</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1817</td><td>Bank of NSW設立（現Westpac）</td><td>豪州最初の銀行</td></tr>
+            <tr><td>1835</td><td>Bank of Australasia設立（現ANZ）</td><td>植民地間銀行ネットワーク</td></tr>
+            <tr><td>1858</td><td>National Bank of Australasia設立（現NAB）</td><td>ビクトリア州拠点</td></tr>
+            <tr class="crisis-row"><td>1893</td><td>銀行恐慌 — 13行破綻</td><td>預金者に甚大な損失</td></tr>
+            <tr><td>1911</td><td>コモンウェルス銀行設立（政府系）</td><td>中央銀行機能も兼務</td></tr>
+            <tr><td>1945</td><td>Banking Act 1945制定</td><td>金融規制時代の開始</td></tr>
+            <tr><td>1947</td><td>銀行国有化法案 — 最高裁で違憲</td><td>民間銀行制度の維持</td></tr>
+            <tr><td>1960</td><td>RBA設立 — CBA中央銀行機能分離</td><td>中銀と商業銀行の分離</td></tr>
+            <tr><td>1981</td><td>キャンベル委員会報告書</td><td>金融自由化の設計図</td></tr>
+            <tr><td>1985</td><td>外国銀行16行に免許付与</td><td>競争環境の変化</td></tr>
+            <tr class="crisis-row"><td>1990-91</td><td>州立銀行危機（SBV, SBSA）</td><td>Big 4への統合加速</td></tr>
+            <tr><td>1990</td><td>四本柱政策発表</td><td>Big 4間合併の禁止</td></tr>
+            <tr><td>1991-96</td><td>CBA民営化（3段階）</td><td>政府系銀行の完全民営化</td></tr>
+            <tr><td>1997</td><td>ウォリス委員会報告書</td><td>APRA設立の勧告</td></tr>
+            <tr><td>1998</td><td>APRA設立</td><td>プルーデンシャル監督の統一</td></tr>
+            <tr><td>2008</td><td>GFC — Big 4無傷、預金保証導入</td><td>国際的信頼の確立</td></tr>
+            <tr><td>2014</td><td>APRA投資用ローン成長率制限</td><td>住宅市場マクロプルーデンシャル政策</td></tr>
+            <tr class="crisis-row"><td>2018-19</td><td>ヘイン王立委員会</td><td>A$100億+の顧客補償</td></tr>
+            <tr><td>2019</td><td>Westpac AML違反 — A$13億罰金</td><td>史上最大のコンプライアンス罰金</td></tr>
+            <tr><td>2021</td><td>Afterpay → Block買収 A$390億</td><td>BNPL時代の象徴</td></tr>
+            <tr><td>2024</td><td>ANZ、Suncorp銀行部門買収完了</td><td>Big 4拡大</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section: International Comparison -->
+      <section>
+        <h2>国際比較 — G10銀行システム</h2>
+        <table class="sortable">
+          <thead>
+            <tr>
+              <th>国</th>
+              <th>銀行集中度 (Top 5資産シェア)</th>
+              <th>GFCでの公的資本注入</th>
+              <th>ROE (2024, 概算)</th>
+              <th>住宅ローン/GDP</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>🇦🇺 オーストラリア</td><td>~85%</td><td style="color: var(--accent-green)">なし</td><td>~11%</td><td>~95%</td></tr>
+            <tr><td>🇺🇸 米国</td><td>~45%</td><td style="color: var(--accent-red)">$2,500億 TARP</td><td>~12%</td><td>~55%</td></tr>
+            <tr><td>🇬🇧 英国</td><td>~65%</td><td style="color: var(--accent-red)">£650億</td><td>~10%</td><td>~65%</td></tr>
+            <tr><td>🇨🇭 スイス</td><td>~55%</td><td style="color: var(--accent-red)">CHF 680億 (UBS)</td><td>~8%</td><td>~130%</td></tr>
+            <tr><td>🇨🇦 カナダ</td><td>~80%</td><td style="color: var(--accent-green)">なし</td><td>~13%</td><td>~75%</td></tr>
+            <tr><td>🇯🇵 日本</td><td>~50%</td><td style="color: var(--accent-red)">¥12.4兆</td><td>~7%</td><td>~45%</td></tr>
+          </tbody>
+        </table>
+        <cite>[1][3] APRA, BIS, "Banking System Comparisons", 各国中央銀行統計, 2024</cite>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>APRA, "Monthly Authorised Deposit-taking Institution Statistics", apra.gov.au, 2024</li>
+        <li>Hayne, K., "Royal Commission into Misconduct in the Banking, Superannuation and Financial Services Industry — Final Report", 2019</li>
+        <li>RBA, "The Australian Financial System", Financial Stability Review, various issues</li>
+        <li>Butlin, S.J., "The Australian Monetary System 1851-1914", 1986</li>
+        <li>Fisher, C. & Kent, C., "Two Depressions, One Banking Collapse", RBA Research Discussion Paper, 1999</li>
+        <li>Gollan, R., "The Commonwealth Bank of Australia: Origins and Early History", ANU Press, 1968</li>
+        <li>Schedvin, C.B., "Australia and the Great Depression", Sydney University Press, 1970</li>
+        <li>Merrett, D.T., "The Australian Banking System", Oxford Handbook of Banking History, 2018</li>
+        <li>Grenville, S., "The Evolution of Financial Deregulation", RBA Conference Volume, 1991</li>
+        <li>Sykes, T., "The Bold Riders: Behind Australia's Corporate Collapses", Allen & Unwin, 1994</li>
+        <li>Treasury, "Four Pillars Policy — Statement", various Treasurers' statements, 1990-2024</li>
+        <li>ACCC, "Decision on ANZ-Suncorp Merger", 2024</li>
+        <li>Davis, K., "Banking Concentration and Financial Stability", Melbourne Centre for Financial Studies, 2011</li>
+        <li>ASIC, "Royal Commission Remediation Progress Report", asic.gov.au, 2023</li>
+        <li>APRA, "Quarterly Authorised Deposit-taking Institution Property Exposures", 2024</li>
+        <li>CoreLogic, "Housing Market Update", corelogic.com.au, 2024</li>
+        <li>APRA, "Macroprudential Policy Framework", Information Paper, 2021</li>
+        <li>Macquarie Group, "Annual Report 2024", macquarie.com</li>
+        <li>COBA (Customer Owned Banking Association), "Sector Report", 2024</li>
+        <li>ASIC, "The Afterpay-Block Acquisition", Regulatory Filing, 2022</li>
+      </ol>
+      <p class="note">※ 銀行の財務データは各行の年次報告書および APRA 統計に基づく概算値。ROE・Tier 1 比率は各行の報告基準により若干異なる場合がある。</p>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelectorAll('.sortable th').forEach((th, i) => {
+      th.style.cursor = 'pointer';
+      th.addEventListener('click', () => {
+        const table = th.closest('table');
+        const tbody = table.querySelector('tbody');
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+        const dir = th.dataset.dir === 'asc' ? 'desc' : 'asc';
+        th.dataset.dir = dir;
+        rows.sort((a, b) => {
+          const av = a.children[i]?.textContent.trim() ?? '';
+          const bv = b.children[i]?.textContent.trim() ?? '';
+          const an = parseFloat(av.replace(/[^0-9.\-]/g, ''));
+          const bn = parseFloat(bv.replace(/[^0-9.\-]/g, ''));
+          if (!isNaN(an) && !isNaN(bn)) return dir === 'asc' ? an - bn : bn - an;
+          return dir === 'asc' ? av.localeCompare(bv) : bv.localeCompare(av);
+        });
+        rows.forEach(r => tbody.appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>
