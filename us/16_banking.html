@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>United States - Banking Sector | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇺🇸 United States</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link active">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip active">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">United States</a>
+        <span class="sep">/</span>
+        Banking Sector
+      </div>
+      <h1 class="page-title">米国銀行セクターの歴史 (U.S. Banking Sector)</h1>
+      <p class="page-subtitle">国法銀行制度からメガバンク時代へ — 統合・危機・変革の250年</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">4,600+</div>
+          <div class="stat-label">FDIC加盟銀行数（2024年）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">~14,000</div>
+          <div class="stat-label">1980年代ピーク時銀行数</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">$23.7T</div>
+          <div class="stat-label">商業銀行総資産（2024年）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">Top 4: 44%</div>
+          <div class="stat-label">資産集中度（上位4行）</div>
+        </div>
+      </div>
+
+      <!-- Introduction -->
+      <section>
+        <h2>銀行制度の成り立ち</h2>
+        <p>米国の銀行制度は、建国期の政治的対立に根ざしている。アレクサンダー・ハミルトン (Alexander Hamilton) が1791年に設立した第一合衆国銀行 (First Bank of the United States) は、中央銀行的機能を持つ国法銀行であったが、トーマス・ジェファーソン (Thomas Jefferson) 率いる反連邦主義者の反対により1811年に認可更新を拒否された。この連邦vs州の対立は米国銀行史の通奏低音であり、今日まで続く「二元銀行制度」(dual banking system) の起源となった。</p>
+        <p>1816年に設立された第二合衆国銀行 (Second Bank of the United States) もアンドリュー・ジャクソン (Andrew Jackson) 大統領の「銀行戦争」(Bank War) により1836年に消滅。以後1863年の国法銀行法 (National Banking Act) まで、米国は中央銀行なき「フリーバンキング時代」(Free Banking Era, 1837-1863) に突入した。各州が独自に銀行認可を行い、数千の銀行が独自の紙幣を発行するカオス的状況が続いた。</p>
+        <p>1907年のパニックを契機に、ジョン・ピアポント・モルガン (J.P. Morgan) 個人による市場救済の限界が認識され、1913年の連邦準備法 (Federal Reserve Act) により連邦準備制度 (Federal Reserve System) が設立された。これにより「最後の貸し手」(lender of last resort) 機能が制度化された。</p>
+      </section>
+
+      <!-- Banking Eras Timeline -->
+      <section>
+        <h2>米国銀行史の時代区分</h2>
+        <table class="sortable">
+          <thead>
+            <tr>
+              <th>時代</th>
+              <th>期間</th>
+              <th>特徴</th>
+              <th>銀行数推移</th>
+              <th>主要イベント</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>建国期</td>
+              <td>1791–1836</td>
+              <td>国法銀行の実験</td>
+              <td>数十→数百</td>
+              <td>第一・第二合衆国銀行、銀行戦争</td>
+            </tr>
+            <tr>
+              <td>フリーバンキング</td>
+              <td>1837–1863</td>
+              <td>州認可銀行乱立</td>
+              <td>~1,500</td>
+              <td>ワイルドキャット銀行、紙幣乱発</td>
+            </tr>
+            <tr>
+              <td>国法銀行時代</td>
+              <td>1863–1913</td>
+              <td>連邦認可と州認可の二元制</td>
+              <td>~7,000–12,000</td>
+              <td>国法銀行法、1907年パニック</td>
+            </tr>
+            <tr>
+              <td>Fed設立〜大恐慌</td>
+              <td>1913–1933</td>
+              <td>中央銀行制度確立</td>
+              <td>~25,000→14,000</td>
+              <td>Fed設立、大恐慌で9,000行破綻</td>
+            </tr>
+            <tr class="highlight-orange">
+              <td>規制強化時代</td>
+              <td>1933–1980</td>
+              <td>Glass-Steagall体制</td>
+              <td>~14,000</td>
+              <td>FDIC設立、Reg Q金利規制、州際業務禁止</td>
+            </tr>
+            <tr>
+              <td>自由化・統合</td>
+              <td>1980–1999</td>
+              <td>規制緩和と大統合</td>
+              <td>14,000→8,500</td>
+              <td>S&L危機、Riegle-Neal法、GLBA</td>
+            </tr>
+            <tr class="highlight-orange">
+              <td>メガバンク時代</td>
+              <td>1999–2008</td>
+              <td>ユニバーサルバンキング</td>
+              <td>8,500→7,000</td>
+              <td>Citi/Travelers合併、サブプライム</td>
+            </tr>
+            <tr>
+              <td>GFC後</td>
+              <td>2008–2023</td>
+              <td>再規制と集中加速</td>
+              <td>7,000→4,600</td>
+              <td>Dodd-Frank、TBTF問題、SVB破綻</td>
+            </tr>
+            <tr>
+              <td>AI・フィンテック時代</td>
+              <td>2023–</td>
+              <td>デジタル変革</td>
+              <td>~4,500</td>
+              <td>BaaS、ネオバンク、CBDC議論</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Major Banks -->
+      <section>
+        <h2>米国主要銀行一覧（2024年時点）</h2>
+        <p>GFC後の統合加速により、米国銀行セクターは「Big 4」と呼ばれる4大商業銀行に資産が集中している。1990年には上位5行のシェアは約10%に過ぎなかったが、2024年には上位4行だけで約44%を占める。この集中度の急上昇は、規制緩和と危機時の救済合併 (shotgun marriage) の産物である。</p>
+        <table class="sortable">
+          <thead>
+            <tr>
+              <th>銀行名</th>
+              <th>総資産（2024年）</th>
+              <th>設立年</th>
+              <th>本社</th>
+              <th>主要な統合・変遷</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>JPMorgan Chase</td>
+              <td>$3.9T</td>
+              <td>2000年（合併）</td>
+              <td>New York, NY</td>
+              <td>Chase Manhattan + J.P. Morgan (2000)、Bear Stearns (2008)、WaMu (2008)</td>
+            </tr>
+            <tr>
+              <td>Bank of America</td>
+              <td>$3.3T</td>
+              <td>1998年（合併）</td>
+              <td>Charlotte, NC</td>
+              <td>NationsBank + BankAmerica (1998)、Merrill Lynch (2008)、Countrywide (2008)</td>
+            </tr>
+            <tr>
+              <td>Citigroup</td>
+              <td>$2.4T</td>
+              <td>1998年（合併）</td>
+              <td>New York, NY</td>
+              <td>Citicorp + Travelers (1998)、TARP $45B受領 (2008)</td>
+            </tr>
+            <tr>
+              <td>Wells Fargo</td>
+              <td>$1.9T</td>
+              <td>1852年</td>
+              <td>San Francisco, CA</td>
+              <td>Norwest合併 (1998)、Wachovia買収 (2008)、不正口座事件 (2016)</td>
+            </tr>
+            <tr>
+              <td>Goldman Sachs</td>
+              <td>$1.6T</td>
+              <td>1869年</td>
+              <td>New York, NY</td>
+              <td>2008年にBHC転換、Marcus (消費者銀行) 2016開始→縮小</td>
+            </tr>
+            <tr>
+              <td>Morgan Stanley</td>
+              <td>$1.2T</td>
+              <td>1935年</td>
+              <td>New York, NY</td>
+              <td>Glass-Steagallによりモルガン分離、E*TRADE買収 (2020)</td>
+            </tr>
+            <tr>
+              <td>U.S. Bancorp</td>
+              <td>$0.7T</td>
+              <td>1863年</td>
+              <td>Minneapolis, MN</td>
+              <td>MUFG Union Bank買収 (2022)、スーパーリージョナル</td>
+            </tr>
+            <tr>
+              <td>PNC Financial</td>
+              <td>$0.6T</td>
+              <td>1845年</td>
+              <td>Pittsburgh, PA</td>
+              <td>BBVA USA買収 (2021)、東海岸メガリージョナル</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- S&L Crisis Detail -->
+      <section>
+        <h2>S&L危機と銀行業界への影響（1980年代–1990年代）</h2>
+        <p>貯蓄貸付組合 (Savings and Loan Associations, S&L) は住宅ローンに特化した金融機関で、Regulation Q（預金金利上限規制）の下で安定した利ざやを享受していた。しかし1979年のボルカー・ショック (Volcker Shock) で短期金利が20%超に急騰すると、長期固定金利の住宅ローンを抱えるS&Lは壊滅的な逆ざやに陥った。</p>
+        <p>1980年の預金金融機関規制緩和法 (DIDMCA) と1982年のガーンセントジャーメイン法 (Garn-St. Germain Act) はS&Lの投資範囲を大幅に拡大したが、これが不動産投機やジャンクボンド投資への暴走を招いた。FDICの姉妹機関であるFSLIC (連邦貯蓄貸付保険公社) の保険基金は枯渇し、最終的に1989年の金融機関改革回復施行法 (FIRREA) によりFSLICは廃止、整理信託公社 (Resolution Trust Corporation, RTC) が不良資産の処理を担った。</p>
+        <p>S&L危機の結果、約1,000のS&Lが破綻し、納税者負担は推定$1,300億以上に達した。この教訓は「規制緩和と監督不十分の組み合わせは必ず危機を招く」というものであり、後のGFCでも同じパターンが繰り返された。</p>
+      </section>
+
+      <!-- GFC Banking Impact -->
+      <section>
+        <h2>GFC（2008年）と銀行再編</h2>
+        <p>2008年の世界金融危機は、米国銀行セクターの地図を根本的に書き換えた。独立系投資銀行5社 (Big Five) のうち、ベアスターンズ (Bear Stearns) はJPMorganに$2/株で救済買収され、リーマンブラザーズ (Lehman Brothers) は破綻、メリルリンチ (Merrill Lynch) はBank of Americaに吸収された。残るゴールドマンサックス (Goldman Sachs) とモルガンスタンレー (Morgan Stanley) はFedの監督下に入るため銀行持株会社 (Bank Holding Company, BHC) に転換した。</p>
+
+        <table class="sortable">
+          <thead>
+            <tr>
+              <th>投資銀行</th>
+              <th>GFC前資産</th>
+              <th>結末</th>
+              <th>買収者/救済形態</th>
+              <th>価格/コスト</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="highlight-orange">
+              <td>Bear Stearns</td>
+              <td>$395B</td>
+              <td>救済買収</td>
+              <td>JPMorgan Chase</td>
+              <td>$10/株（当初$2→引上げ）</td>
+            </tr>
+            <tr class="highlight-red">
+              <td>Lehman Brothers</td>
+              <td>$639B</td>
+              <td>破綻（Chapter 11）</td>
+              <td>なし（Barclays/Nomuraが一部買収）</td>
+              <td>史上最大倒産</td>
+            </tr>
+            <tr class="highlight-orange">
+              <td>Merrill Lynch</td>
+              <td>$1.0T</td>
+              <td>救済買収</td>
+              <td>Bank of America</td>
+              <td>$50B（$29/株）</td>
+            </tr>
+            <tr>
+              <td>Goldman Sachs</td>
+              <td>$1.1T</td>
+              <td>BHC転換</td>
+              <td>TARP $10B + Berkshire $5B</td>
+              <td>独立維持</td>
+            </tr>
+            <tr>
+              <td>Morgan Stanley</td>
+              <td>$1.0T</td>
+              <td>BHC転換</td>
+              <td>TARP $10B + MUFG $9B</td>
+              <td>独立維持</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>商業銀行側でも、ワシントン・ミューチュアル (Washington Mutual, WaMu) がFDIC管理下に入りJPMorganに売却（米国史上最大の銀行破綻、資産$307B）、ワコビア (Wachovia) はウェルズファーゴ (Wells Fargo) に買収された。財務省のTARP (Troubled Asset Relief Program) は主要金融機関に計$2,050億を注入し、最終的にはほぼ全額が返済された。</p>
+      </section>
+
+      <!-- TBTF and Systemic Risk -->
+      <section>
+        <h2>「大きすぎて潰せない」(Too Big to Fail) 問題</h2>
+        <p>TBTF問題は1984年のコンチネンタル・イリノイ (Continental Illinois) 救済で初めて顕在化した。当時同行は米国第7位の銀行であったが、FDICは全預金（付保限度超を含む）を保護する異例の措置を取った。連邦議会公聴会でOCC（通貨監督庁）のコンプトローラーが「上位11行は大きすぎて潰せない」と証言し、この概念が公式に認知された。</p>
+        <p>GFC後、ドッドフランク法 (Dodd-Frank Act, 2010) はこの問題に対処するため、(1) GSIB (Global Systemically Important Banks) 指定と追加資本要件、(2) 生前遺言 (Living Will) の義務化、(3) 秩序ある清算権限 (Orderly Liquidation Authority, OLA) を導入した。しかし2023年のSVB破綻時にFDICが付保上限($250,000)を超える全預金を保護したことは、TBTF問題が中堅銀行にまで拡大したことを示唆した。</p>
+      </section>
+
+      <!-- SVB Crisis 2023 -->
+      <section>
+        <h2>2023年地方銀行危機 — SVB・Signature・First Republic</h2>
+        <p>2023年3月、シリコンバレー銀行 (Silicon Valley Bank, SVB) が米国史上2番目の規模で破綻した（資産$209B）。原因は(1) テック系スタートアップ預金の集中（無保険預金比率94%）、(2) 長期債ポートフォリオの含み損（金利上昇による$17.7Bの未実現損失）、(3) SNSによる取付騒ぎの加速（デジタルバンクラン）の複合要因であった。</p>
+        <p>同月にシグネチャー銀行 (Signature Bank, 資産$110B) も破綻。5月にはファースト・リパブリック銀行 (First Republic Bank, 資産$229B) がFDIC管理下に入りJPMorganに売却された。3行合計の資産は$548Bに達し、2008年を上回る規模であった。FDICの預金保険基金 (Deposit Insurance Fund) への負担は推定$316億に上った。</p>
+        <p>この危機は、金利リスク管理の失敗、預金集中のリスク、SNS時代の取付騒ぎ速度（SVBは48時間で$42Bが流出）という新たな課題を浮き彫りにした。</p>
+      </section>
+
+      <!-- Community vs Mega Banks -->
+      <section>
+        <h2>コミュニティバンクの役割と統合の課題</h2>
+        <p>米国の銀行制度の特異性は、メガバンクとコミュニティバンクが共存する二層構造にある。2024年時点で資産$10B未満のコミュニティバンクは約4,000行（全体の87%）を占めるが、総資産シェアはわずか15%程度である。しかしコミュニティバンクは農村部や中小企業への融資で不可欠な役割を果たしており、SBA (中小企業庁) ローンの約60%はコミュニティバンク経由で実行されている。</p>
+        <p>規制コストの上昇とフィンテックとの競争により、コミュニティバンクの数は減少の一途をたどっている。1985年に約14,000行あった商業銀行は2024年には4,600行を下回り、年間100行超のペースで統合が進んでいる。この統合トレンドは効率性を高める一方、金融アクセスの地域格差（バンキング砂漠化）という社会問題も生んでいる。</p>
+      </section>
+
+      <!-- Fintech Disruption -->
+      <section>
+        <h2>フィンテックとバンキングの未来</h2>
+        <p>2010年代以降、フィンテック企業が伝統的銀行業務を急速に侵食している。決済 (PayPal, Stripe, Square)、融資 (SoFi, LendingClub)、ネオバンク (Chime, Current) が銀行ライセンスなしでBaaS (Banking-as-a-Service) モデルにより銀行サービスを提供している。2023年時点で米国のネオバンクユーザーは約6,000万人に達した。</p>
+        <p>しかし2023年のSynapse (BaaS仲介業者) 破綻は、フィンテック-銀行連携モデルのリスクを露呈した。約10万の口座で$85Mの資金が凍結され、FDICの保険対象外のグレーゾーンが問題化した。OCC、FDIC、FRBは2024年以降、BaaSパートナーシップに対する監督強化を進めている。</p>
+        <p>中央銀行デジタル通貨 (CBDC) については、Fedは2022年に「Money and Payments: The U.S. Dollar in the Age of Digital Transformation」を公表し調査段階にあるが、議会の承認なしには発行しない方針を示している。プライバシー懸念と銀行仲介排除 (disintermediation) リスクから、米国のCBDC導入は他のG10諸国より慎重である。</p>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>FDIC, <em>Historical Statistics on Banking</em>, fdic.gov/analysis/historical (各年データ)</li>
+        <li>Federal Reserve, <em>Large Commercial Banks</em>, Quarterly Report, federalreserve.gov</li>
+        <li>FDIC, <em>Crisis and Response: An FDIC History 2008–2013</em>, 2017</li>
+        <li>Barth, J.R., <em>The Rise and Fall of the U.S. Mortgage and Credit Markets</em>, Wiley, 2009</li>
+        <li>Curry, T. & Shibut, L., "The Cost of the Savings and Loan Crisis," <em>FDIC Banking Review</em>, 2000</li>
+        <li>Federal Reserve Bank of Richmond, <em>Too Big to Fail: The Hazards of Bank Bailouts</em>, Stern & Feldman, 2004</li>
+        <li>FDIC, <em>The First Fifty Years: A History of the FDIC 1933–1983</em>, 1984</li>
+        <li>Board of Governors of the Federal Reserve System, <em>Money and Payments: The U.S. Dollar in the Age of Digital Transformation</em>, January 2022</li>
+        <li>OCC, <em>Annual Report</em>, occ.treas.gov (各年)</li>
+        <li>S&P Global Market Intelligence, <em>U.S. Bank M&A Data</em>, 2024</li>
+        <li>FDIC, "FDIC Acts to Protect All Depositors of Silicon Valley Bank," Press Release, March 12, 2023</li>
+        <li>Gorton, G., <em>Slapped by the Invisible Hand: The Panic of 2007</em>, Oxford University Press, 2010</li>
+      </ol>
+      <p class="source-note">※銀行の資産額は各年度末時点の概算値であり、為替変動や会計基準の変更により変動します。タカ/ハト分類と同様、銀行の特性評価は市場の一般的認識に基づきます。</p>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelectorAll('.sortable th').forEach(th => {
+      th.addEventListener('click', function () {
+        const table = th.closest('table');
+        const idx = Array.from(th.parentNode.children).indexOf(th);
+        const rows = Array.from(table.querySelectorAll('tbody tr'));
+        const dir = th.classList.contains('sort-asc') ? -1 : 1;
+        table.querySelectorAll('th').forEach(h => h.classList.remove('sort-asc', 'sort-desc'));
+        th.classList.add(dir === 1 ? 'sort-asc' : 'sort-desc');
+        rows.sort((a, b) => {
+          const at = a.children[idx]?.textContent.trim() ?? '';
+          const bt = b.children[idx]?.textContent.trim() ?? '';
+          const an = parseFloat(at.replace(/[^0-9.\-]/g, ''));
+          const bn = parseFloat(bt.replace(/[^0-9.\-]/g, ''));
+          if (!isNaN(an) && !isNaN(bn)) return (an - bn) * dir;
+          return at.localeCompare(bt, 'ja') * dir;
+        });
+        const tbody = table.querySelector('tbody');
+        rows.forEach(r => tbody.appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>

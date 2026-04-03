@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>United States - Regulatory Framework | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇺🇸 United States</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link active">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip active">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">United States</a>
+        <span class="sep">/</span>
+        Regulatory Framework
+      </div>
+      <h1 class="page-title">米国金融規制の変遷 (Regulatory Framework)</h1>
+      <p class="page-subtitle">Glass-Steagallからドッドフランクへ — 規制と緩和の振り子</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">5+</div>
+          <div class="stat-label">連邦金融規制機関数</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">1933</div>
+          <div class="stat-label">Glass-Steagall法制定</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">2010</div>
+          <div class="stat-label">Dodd-Frank法制定</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">848頁</div>
+          <div class="stat-label">Dodd-Frank法の条文数</div>
+        </div>
+      </div>
+
+      <!-- Regulatory Bodies -->
+      <section>
+        <h2>米国の金融規制機関</h2>
+        <p>米国の金融規制体制は、他のG10諸国と比較して極めて複雑な分散型構造を取っている。英国やオーストラリアのような「ツインピークス」モデル（健全性規制と行為規制の二本柱）とは異なり、米国は業態別・機能別に複数の規制機関が並立している。この構造は歴史的経緯の産物であり、縦割り行政の弊害と規制裁定 (regulatory arbitrage) の温床になるという批判がある一方、チェック・アンド・バランスの観点から擁護する声もある。</p>
+
+        <table class="sortable">
+          <thead>
+            <tr>
+              <th>規制機関</th>
+              <th>設立年</th>
+              <th>管轄対象</th>
+              <th>主要機能</th>
+              <th>設立契機</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>OCC (通貨監督庁)</td>
+              <td>1863</td>
+              <td>国法銀行、連邦貯蓄金融機関</td>
+              <td>銀行認可、健全性監督</td>
+              <td>国法銀行法</td>
+            </tr>
+            <tr>
+              <td>Federal Reserve (Fed)</td>
+              <td>1913</td>
+              <td>BHC、州加盟銀行、GSIB</td>
+              <td>金融政策、銀行監督、金融安定</td>
+              <td>1907年パニック</td>
+            </tr>
+            <tr>
+              <td>FDIC (連邦預金保険公社)</td>
+              <td>1933</td>
+              <td>FDIC加盟銀行（州非加盟）</td>
+              <td>預金保険、破綻処理</td>
+              <td>大恐慌の銀行取付</td>
+            </tr>
+            <tr>
+              <td>SEC (証券取引委員会)</td>
+              <td>1934</td>
+              <td>証券市場、上場企業、投資顧問</td>
+              <td>開示規制、市場監視、投資家保護</td>
+              <td>1929年株式市場暴落</td>
+            </tr>
+            <tr>
+              <td>CFTC (商品先物取引委員会)</td>
+              <td>1974</td>
+              <td>先物・デリバティブ市場</td>
+              <td>市場監視、不正防止</td>
+              <td>商品先物取引委員会法</td>
+            </tr>
+            <tr>
+              <td>NCUA (信用組合管理局)</td>
+              <td>1970</td>
+              <td>連邦信用組合</td>
+              <td>健全性監督、信用組合保険</td>
+              <td>信用組合法改正</td>
+            </tr>
+            <tr>
+              <td>CFPB (消費者金融保護局)</td>
+              <td>2010</td>
+              <td>消費者金融商品</td>
+              <td>消費者保護、不当行為取締り</td>
+              <td>Dodd-Frank法</td>
+            </tr>
+            <tr>
+              <td>FSOC (金融安定監督評議会)</td>
+              <td>2010</td>
+              <td>システミックリスク</td>
+              <td>マクロプルーデンシャル監視</td>
+              <td>Dodd-Frank法</td>
+            </tr>
+            <tr>
+              <td>FINRA (金融業規制機構)</td>
+              <td>2007</td>
+              <td>証券ブローカーディーラー</td>
+              <td>自主規制、試験・登録</td>
+              <td>NASD + NYSE Regulation統合</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Major Legislation Timeline -->
+      <section>
+        <h2>金融規制立法の歴史</h2>
+        <p>米国の金融規制は「危機→規制強化→安定→規制緩和→次の危機」という周期的パターンを繰り返してきた。この「規制の振り子」(regulatory pendulum) は、市場の自由と金融安定のバランスを巡る政治的・経済的な力学の帰結である。</p>
+
+        <table class="sortable">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>法律名</th>
+              <th>方向</th>
+              <th>主要内容</th>
+              <th>契機</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1863</td>
+              <td>国法銀行法 (National Banking Act)</td>
+              <td class="highlight-blue">規制</td>
+              <td>連邦銀行認可制度、統一通貨</td>
+              <td>南北戦争の財政需要</td>
+            </tr>
+            <tr>
+              <td>1913</td>
+              <td>連邦準備法 (Federal Reserve Act)</td>
+              <td class="highlight-blue">規制</td>
+              <td>Fed設立、最後の貸し手機能</td>
+              <td>1907年パニック</td>
+            </tr>
+            <tr class="highlight-blue">
+              <td>1933</td>
+              <td>グラス・スティーガル法 (Glass-Steagall Act)</td>
+              <td>規制</td>
+              <td>商業銀行と投資銀行の分離、FDIC設立</td>
+              <td>大恐慌</td>
+            </tr>
+            <tr>
+              <td>1934</td>
+              <td>証券取引所法 (Securities Exchange Act)</td>
+              <td class="highlight-blue">規制</td>
+              <td>SEC設立、取引所登録制</td>
+              <td>1929年暴落</td>
+            </tr>
+            <tr>
+              <td>1940</td>
+              <td>投資会社法 (Investment Company Act)</td>
+              <td class="highlight-blue">規制</td>
+              <td>投信規制、利益相反防止</td>
+              <td>投資信託の不正</td>
+            </tr>
+            <tr>
+              <td>1956</td>
+              <td>銀行持株会社法 (Bank Holding Company Act)</td>
+              <td class="highlight-blue">規制</td>
+              <td>BHCのFed監督、非銀行業務制限</td>
+              <td>銀行集中の懸念</td>
+            </tr>
+            <tr class="highlight-red">
+              <td>1980</td>
+              <td>DIDMCA (預金金融機関規制緩和法)</td>
+              <td>緩和</td>
+              <td>預金金利規制 (Reg Q) 段階的撤廃</td>
+              <td>高金利環境での資金流出</td>
+            </tr>
+            <tr class="highlight-red">
+              <td>1982</td>
+              <td>ガーンセントジャーメイン法</td>
+              <td>緩和</td>
+              <td>S&Lの投資範囲拡大</td>
+              <td>S&Lの逆ざや問題</td>
+            </tr>
+            <tr>
+              <td>1989</td>
+              <td>FIRREA (金融機関改革回復施行法)</td>
+              <td class="highlight-blue">規制</td>
+              <td>RTC設立、S&L監督強化</td>
+              <td>S&L危機</td>
+            </tr>
+            <tr class="highlight-red">
+              <td>1994</td>
+              <td>リーグルニール法 (Riegle-Neal Act)</td>
+              <td>緩和</td>
+              <td>州際銀行業務・支店設置の解禁</td>
+              <td>州際規制の非効率</td>
+            </tr>
+            <tr class="highlight-red">
+              <td>1999</td>
+              <td>GLBA (グラムリーチブライリー法)</td>
+              <td>緩和</td>
+              <td>Glass-Steagall実質撤廃、金融持株会社</td>
+              <td>Citi-Travelers合併の追認</td>
+            </tr>
+            <tr>
+              <td>2002</td>
+              <td>SOX (サーベインズ・オクスリー法)</td>
+              <td class="highlight-blue">規制</td>
+              <td>内部統制、CEO/CFO認証、PCAOB設立</td>
+              <td>Enron/WorldCom不正会計</td>
+            </tr>
+            <tr class="highlight-blue">
+              <td>2010</td>
+              <td>ドッドフランク法 (Dodd-Frank Act)</td>
+              <td>規制</td>
+              <td>ボルカールール、GSIB規制、CFPB設立、OLA</td>
+              <td>GFC (2008)</td>
+            </tr>
+            <tr class="highlight-red">
+              <td>2018</td>
+              <td>経済成長・規制緩和・消費者保護法 (S.2155)</td>
+              <td>緩和</td>
+              <td>Dodd-Frank一部緩和（閾値$50B→$250B）</td>
+              <td>中小銀行の負担軽減</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Glass-Steagall Deep Dive -->
+      <section>
+        <h2>グラス・スティーガル法 — 66年間の分離と撤廃</h2>
+        <p>1933年のグラス・スティーガル法 (Banking Act of 1933) は、大恐慌を受けて商業銀行と投資銀行の業務を厳格に分離した画期的な立法であった。上院銀行委員会のカーター・グラス (Carter Glass) と下院銀行委員会のヘンリー・スティーガル (Henry Steagall) の名を冠するこの法律は、(1) 商業銀行による証券引受・売買の禁止 (Section 16, 20, 21, 32)、(2) 連邦預金保険制度 (FDIC) の創設を柱とした。</p>
+        <p>J.P. Morgan & Co.はこの法律により商業銀行を選択し、投資銀行部門はモルガン・スタンレー (Morgan Stanley) として1935年に分離された。これが両社の起源の分岐点である。</p>
+        <p>しかし1980年代以降、金融のグローバル化と業態間競争の激化により、Glass-Steagallの壁は段階的に浸食された。Fedは「Section 20子会社」による限定的な証券業務を認め始め、1999年のグラムリーチブライリー法 (Gramm-Leach-Bliley Act, GLBA) でSection 20, 32が撤廃された。これによりシティコープ (Citicorp) とトラベラーズ (Travelers Group) の合併が正式に認められ、シティグループ (Citigroup) が誕生した。</p>
+        <p>GFC後、Glass-Steagall復活の議論が再燃したが、実現には至っていない。代わりにドッドフランク法のボルカールール (Volcker Rule) が銀行の自己勘定取引を制限する「部分的復活」として機能している。</p>
+      </section>
+
+      <!-- Dodd-Frank Deep Dive -->
+      <section>
+        <h2>ドッドフランク法 (2010) — GFC後の包括的再規制</h2>
+        <p>ドッドフランク・ウォール街改革消費者保護法 (Dodd-Frank Wall Street Reform and Consumer Protection Act) は、GFC後の2010年7月に成立した包括的金融規制改革法である。クリストファー・ドッド (Christopher Dodd) 上院議員とバーニー・フランク (Barney Frank) 下院議員の名を冠し、848ページ、16章 (Title)、390以上の規則制定を要する大型法律であった。</p>
+
+        <table class="sortable">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>規定名</th>
+              <th>主要内容</th>
+              <th>影響</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>I</td>
+              <td>金融安定</td>
+              <td>FSOC設立、SIFI指定</td>
+              <td>マクロプルーデンシャル監視体制</td>
+            </tr>
+            <tr>
+              <td>II</td>
+              <td>秩序ある清算</td>
+              <td>OLA (Orderly Liquidation Authority)</td>
+              <td>TBTF問題への制度的対応</td>
+            </tr>
+            <tr>
+              <td>III</td>
+              <td>監督権限移転</td>
+              <td>OTS廃止、OCC/Fed/FDICへ移管</td>
+              <td>監督体制の簡素化</td>
+            </tr>
+            <tr>
+              <td>VI</td>
+              <td>ボルカールール</td>
+              <td>銀行の自己勘定取引・PE/HF出資制限</td>
+              <td>トレーディング収益の減少</td>
+            </tr>
+            <tr>
+              <td>VII</td>
+              <td>デリバティブ規制</td>
+              <td>OTCデリバティブの中央清算義務、SEF取引</td>
+              <td>透明性向上、カウンターパーティリスク削減</td>
+            </tr>
+            <tr>
+              <td>IX</td>
+              <td>投資家保護</td>
+              <td>SEC権限強化、信用格付機関規制</td>
+              <td>格付会社の利益相反対応</td>
+            </tr>
+            <tr>
+              <td>X</td>
+              <td>消費者保護</td>
+              <td>CFPB設立</td>
+              <td>消費者金融の統一的監督</td>
+            </tr>
+            <tr>
+              <td>XIV</td>
+              <td>住宅ローン改革</td>
+              <td>適格住宅ローン (QM) 基準、返済能力確認義務</td>
+              <td>サブプライムローン再発防止</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Basel Accords -->
+      <section>
+        <h2>バーゼル規制と米国の対応</h2>
+        <p>国際的な銀行資本規制であるバーゼル合意 (Basel Accords) は、1988年のバーゼルI以来、米国の銀行規制に大きな影響を与えてきた。バーゼルIは最低自己資本比率8%を定め、バーゼルII (2004年) はリスク感応度を高めた「3つの柱」(最低資本、監督上の検証、市場規律) を導入した。しかし米国はバーゼルIIの完全適用を大手行のみに限定し、中小銀行には簡素化版を適用した。</p>
+        <p>GFC後のバーゼルIII (2010年) はCET1比率4.5%、Tier1比率6%、総資本比率8%を基本とし、GSIBには追加のサーチャージ（1-3.5%）を課した。米国はバーゼルIII最終化 (Basel III Endgame / Basel 3.1) の実施を巡り、2023-2024年にかけて激しいロビー活動が展開され、当初案から大幅に修正された。Fed副議長マイケル・バー (Michael Barr) が2024年9月に提案を再修正し、大手行の資本増加幅を当初の+19%から+9%に半減させた。</p>
+      </section>
+
+      <!-- Regulatory Arbitrage & Crypto -->
+      <section>
+        <h2>規制裁定と新たなフロンティア — 暗号資産規制</h2>
+        <p>米国の分散型規制体制は、規制裁定 (regulatory arbitrage) の余地を生んでいる。2023年のSVB破綻は、2018年のDodd-Frank緩和法 (S.2155) が強化ストレステストの閾値を$50Bから$250Bに引き上げたことで、資産$209BのSVBが強化監督の対象外となっていたことを露呈した。</p>
+        <p>暗号資産規制では、SECとCFTCの管轄争いが市場の不確実性を高めている。SEC（ゲーリー・ゲンスラー委員長、2021-2025）はビットコインとイーサリアム以外のほとんどの暗号資産を「証券」と位置づけ、執行行動 (enforcement action) による「規制」を推進した。一方、2024年5月に成立したFIT21法 (Financial Innovation and Technology for the 21st Century Act) は暗号資産の規制管轄をCFTCに大幅に移管する内容であり、SECの権限が縮小される方向に向かっている。</p>
+        <p>2024年1月にSECがビットコイン現物ETFを承認したことは、暗号資産の制度化における転換点となった。BlackRockのiShares Bitcoin Trust (IBIT) は上場初年で$50B以上の資産を集め、ETF史上最速の資産成長を記録した。</p>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>U.S. Congress, "Dodd-Frank Wall Street Reform and Consumer Protection Act," Public Law 111-203, 2010</li>
+        <li>U.S. Congress, "Banking Act of 1933 (Glass-Steagall Act)," Public Law 73-66</li>
+        <li>U.S. Congress, "Gramm-Leach-Bliley Act," Public Law 106-102, 1999</li>
+        <li>Federal Reserve, "Regulatory Capital Rules: Large Banking Organizations (Basel III Endgame)," Federal Register, 2023</li>
+        <li>SEC, "Strategic Plan, Fiscal Years 2022-2026," sec.gov</li>
+        <li>Barr, M.S., "Holistic Capital Review," Vice Chair for Supervision Speech, September 2024</li>
+        <li>FDIC, <em>An Examination of the Banking Crises of the 1980s and Early 1990s</em>, Volume 1, 1997</li>
+        <li>Calomiris, C.W. & Haber, S.H., <em>Fragile by Design: The Political Origins of Banking Crises and Scarce Credit</em>, Princeton University Press, 2014</li>
+        <li>U.S. Congress, "Financial Innovation and Technology for the 21st Century Act (FIT21)," H.R.4763, 2024</li>
+        <li>SEC, "Order Granting Accelerated Approval of Spot Bitcoin ETP," January 10, 2024</li>
+        <li>Basel Committee on Banking Supervision, "Basel III: A Global Regulatory Framework," BIS, 2010</li>
+      </ol>
+      <p class="source-note">※金融規制は継続的に改正されており、本文は2025年初時点の情報に基づきます。各法律の解釈は規制当局のガイダンスと裁判所の判断により変遷します。</p>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelectorAll('.sortable th').forEach(th => {
+      th.addEventListener('click', function () {
+        const table = th.closest('table');
+        const idx = Array.from(th.parentNode.children).indexOf(th);
+        const rows = Array.from(table.querySelectorAll('tbody tr'));
+        const dir = th.classList.contains('sort-asc') ? -1 : 1;
+        table.querySelectorAll('th').forEach(h => h.classList.remove('sort-asc', 'sort-desc'));
+        th.classList.add(dir === 1 ? 'sort-asc' : 'sort-desc');
+        rows.sort((a, b) => {
+          const at = a.children[idx]?.textContent.trim() ?? '';
+          const bt = b.children[idx]?.textContent.trim() ?? '';
+          const an = parseFloat(at.replace(/[^0-9.\-]/g, ''));
+          const bn = parseFloat(bt.replace(/[^0-9.\-]/g, ''));
+          if (!isNaN(an) && !isNaN(bn)) return (an - bn) * dir;
+          return at.localeCompare(bt, 'ja') * dir;
+        });
+        const tbody = table.querySelector('tbody');
+        rows.forEach(r => tbody.appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>
