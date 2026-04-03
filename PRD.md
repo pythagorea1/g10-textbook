@@ -115,7 +115,7 @@ g10_textbook/
 ### Phase 5: United Kingdom (uk/)
 - [x] Task 15: UK pages 1-5 — Central Bank (BOE 1694〜、歴代総裁、MPC)、Policy Rate、Fiscal Policy (austerity)、Employment、Inflation
 - [x] Task 16: UK pages 6-10 — Equity (FTSE 100, LSE)、Early History (South Sea Bubble)、Modern Era (Big Bang 1986)、2000s-2010s、2020s (Brexit)
-- [ ] Task 17: UK pages 11-15 — Bond Market (Gilts)、Short-term Rates (SONIA)、Long-term Rates、Currency (GBP, Black Wednesday)、Crises
+- [x] Task 17: UK pages 11-15 — Bond Market (Gilts)、Short-term Rates (SONIA)、Long-term Rates、Currency (GBP, Black Wednesday)、Crises
 - [ ] Task 18: UK pages 16-20 — Banking、Corporate、Regulation (FCA)、Trade (Brexit impact)、Lessons
 
 ### Phase 6: Switzerland (switzerland/)

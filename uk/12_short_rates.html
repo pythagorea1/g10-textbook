@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UK - Short-term Rates | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇬🇧 United Kingdom</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link active">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip active">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">United Kingdom</a>
+        <span class="sep">/</span>
+        Short-term Rates
+      </div>
+      <h1 class="page-title">英国短期金利市場 (UK Short-term Rates)</h1>
+      <p class="page-subtitle">LIBORの故郷からSONIAへ — 世界の短期金利ベンチマークを形成してきた英国マネー市場</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">SONIA</div>
+          <div class="stat-label">現行の主要短期金利指標</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">1986年</div>
+          <div class="stat-label">LIBOR正式運用開始</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">2021年末</div>
+          <div class="stat-label">GBP LIBOR公表停止</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">5.25%</div>
+          <div class="stat-label">Bank Rate ピーク (2023-24)</div>
+        </div>
+      </div>
+
+      <!-- Section 1: Overview -->
+      <section>
+        <h2>英国短期金利市場の概要</h2>
+        <p>
+          英国のマネー市場（短期金利市場）は、ロンドンの国際金融センターとしての地位を反映し、世界で最も重要かつ流動性の高い短期金融市場の一つである。歴史的に、ロンドン銀行間取引金利 (London Interbank Offered Rate, LIBOR) は英国発の金利指標として世界の金融市場の基盤を成してきた<cite>[1]</cite>。
+        </p>
+        <p>
+          英国の短期金利はイングランド銀行 (BOE) の政策金利「バンク・レート (Bank Rate)」を起点として形成される。BOEは公開市場操作を通じてバンク・レートを翌日物金利市場に波及させ、短期イールドカーブ全体に影響を及ぼす。主要な短期金利指標としては、SONIA（Sterling Overnight Index Average）、T-Bills（短期国庫証券）、レポ金利、およびOIS（Overnight Index Swap）がある<cite>[2]</cite>。
+        </p>
+      </section>
+
+      <!-- Section 2: LIBOR -->
+      <section>
+        <h2>LIBOR — 世界を支配した金利指標の興亡</h2>
+        <p>
+          LIBORは1969年頃からロンドンのユーロダラー市場で非公式に使用され始め、1986年に英国銀行協会 (British Bankers' Association, BBA) の管理下で正式な基準金利として制度化された。LIBORは5通貨（USD, GBP, EUR, JPY, CHF）×7テナー（翌日物〜12ヶ月）の35レートで構成され、パネル銀行が提示するレートの中央値として算出された<cite>[3]</cite>。
+        </p>
+        <p>
+          ピーク時には全世界で推定350兆ドル相当の金融商品（変動金利ローン、金利スワップ、住宅ローン等）がLIBORに連動しており、「世界で最も重要な数字」とも呼ばれた。しかし、LIBORは実際の取引ではなく銀行の「自己申告」に基づくレートであり、この構造的欠陥が後に大規模な不正操作スキャンダルにつながった<cite>[4]</cite>。
+        </p>
+
+        <h3>LIBORスキャンダルの経緯</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>イベント</th>
+              <th>詳細</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2005-09</td>
+              <td>不正操作の実行期間</td>
+              <td>複数の銀行トレーダーがLIBOR提示レートを操作</td>
+            </tr>
+            <tr>
+              <td>2008</td>
+              <td>GFC時の異常値発覚</td>
+              <td>銀行が自行の信用リスクを隠すためレートを低く申告</td>
+            </tr>
+            <tr class="event-crisis">
+              <td>2012</td>
+              <td>バークレイズ (Barclays) に制裁金</td>
+              <td>£2.9億の罰金、CEO辞任。LIBOR不正の実態が公に</td>
+            </tr>
+            <tr>
+              <td>2012</td>
+              <td>ウィートリー・レビュー (Wheatley Review)</td>
+              <td>LIBOR改革を勧告、管理をBBAからICE Benchmark Administrationに移管</td>
+            </tr>
+            <tr>
+              <td>2013-15</td>
+              <td>他行にも制裁拡大</td>
+              <td>UBS、RBS、Deutsche Bank、Rabobank等に累計90億ドル超の罰金</td>
+            </tr>
+            <tr>
+              <td>2017</td>
+              <td>FCA、LIBOR廃止方針を発表</td>
+              <td>アンドリュー・ベイリー (Andrew Bailey) FCA長官が2021年末までの廃止を宣言</td>
+            </tr>
+            <tr>
+              <td>2021年末</td>
+              <td>GBP LIBOR公表停止</td>
+              <td>SONIAへの移行完了</td>
+            </tr>
+            <tr>
+              <td>2023年6月</td>
+              <td>USD LIBOR公表停止</td>
+              <td>全通貨でLIBOR完全廃止</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section 3: SONIA -->
+      <section>
+        <h2>SONIA — LIBORの後継指標</h2>
+        <p>
+          SONIA（Sterling Overnight Index Average）は、銀行間の無担保翌日物ポンド建て取引の加重平均金利である。1997年にWholesale Markets Brokers' Associationにより導入され、2016年からBOEが管理を引き継いだ<cite>[5]</cite>。
+        </p>
+        <p>
+          LIBORとSONIAの根本的な違いは、LIBORが銀行の自己申告に基づく「推定値」であったのに対し、SONIAは実際の取引データに基づく「実測値」である点にある。SONIAは毎営業日約£40-50億相当の実取引から算出されており、操作のリスクが極めて低い<cite>[6]</cite>。
+        </p>
+
+        <h3>LIBORとSONIAの比較</h3>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>項目</th>
+              <th>GBP LIBOR</th>
+              <th>SONIA</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>算出根拠</td>
+              <td>パネル銀行の申告（推定値）</td>
+              <td>実取引データ（実測値）</td>
+            </tr>
+            <tr>
+              <td>テナー</td>
+              <td>翌日物〜12ヶ月（7テナー）</td>
+              <td>翌日物のみ</td>
+            </tr>
+            <tr>
+              <td>管理者</td>
+              <td>ICE Benchmark Administration</td>
+              <td>Bank of England</td>
+            </tr>
+            <tr>
+              <td>信用リスク</td>
+              <td>含む（銀行間無担保）</td>
+              <td>含む（銀行間無担保、翌日物）</td>
+            </tr>
+            <tr>
+              <td>日次取引量</td>
+              <td>少数の申告のみ</td>
+              <td>£40-50億/日</td>
+            </tr>
+            <tr>
+              <td>ターム構造</td>
+              <td>あり（各テナーで公表）</td>
+              <td>なし（OISから間接的に構築）</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          SONIAが翌日物のみであるため、ターム（期間）構造を必要とする商品（変動金利ローン等）ではSONIAの後決め複利 (compounded in arrears) や、TSRR（Term SONIA Reference Rate）が利用される。TSRRはICE Benchmark Administrationが算出するフォワードルッキングなターム物金利で、LIBORの利便性をある程度代替する<cite>[7]</cite>。
+        </p>
+      </section>
+
+      <!-- Section 4: Other Short-term Instruments -->
+      <section>
+        <h2>その他の短期金融商品</h2>
+
+        <h3>Treasury Bills (短期国庫証券)</h3>
+        <p>
+          英国T-Billsは英国債務管理局 (DMO) が毎週入札により発行する短期割引債で、通常1ヶ月、3ヶ月、6ヶ月の3つの満期がある。政府の短期資金繰り管理と、マネーマーケット参加者の流動性管理に使用される。リスクフリーレートの指標としてギルトイールドカーブの短期ゾーンの構築に寄与する<cite>[8]</cite>。
+        </p>
+
+        <h3>レポ市場 (Gilt Repo)</h3>
+        <p>
+          ギルトを担保とするレポ（現先取引）市場は英国マネー市場の中核を成す。BOEはレポ操作を通じて市場に流動性を供給し、バンク・レートの波及を図る。2024年時点のギルトレポ市場の残高は約£5,000億超に達する<cite>[9]</cite>。
+        </p>
+
+        <h3>コマーシャル・ペーパー (CP)</h3>
+        <p>
+          ユーロ・コマーシャル・ペーパー (ECP) 市場はロンドンを中心に発達しており、企業や金融機関の短期資金調達手段として機能する。ポンド建てCPに加え、ドル建てやユーロ建てのCPもロンドン市場で活発に取引される<cite>[10]</cite>。
+        </p>
+      </section>
+
+      <!-- Section 5: Short Rate History -->
+      <section>
+        <h2>短期金利の歴史的推移</h2>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>Bank Rate</th>
+              <th>3M LIBOR/SONIA</th>
+              <th>主要背景</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1979</td>
+              <td>17.0%</td>
+              <td>—</td>
+              <td>サッチャー政権のマネタリズム政策</td>
+            </tr>
+            <tr>
+              <td>1985</td>
+              <td>12.0%</td>
+              <td>12.5%</td>
+              <td>インフレ抑制継続</td>
+            </tr>
+            <tr class="event-hike">
+              <td>1990</td>
+              <td>15.0%</td>
+              <td>15.3%</td>
+              <td>ERM加盟維持のための高金利</td>
+            </tr>
+            <tr class="event-crisis">
+              <td>1992</td>
+              <td>7.0%</td>
+              <td>7.5%</td>
+              <td>ブラック・ウェンズデー後の利下げ</td>
+            </tr>
+            <tr>
+              <td>1997</td>
+              <td>7.25%</td>
+              <td>7.5%</td>
+              <td>BOE独立、MPC設立</td>
+            </tr>
+            <tr>
+              <td>2003</td>
+              <td>3.50%</td>
+              <td>3.65%</td>
+              <td>ITバブル崩壊後の緩和</td>
+            </tr>
+            <tr>
+              <td>2007</td>
+              <td>5.75%</td>
+              <td>6.30%</td>
+              <td>GFC直前のピーク</td>
+            </tr>
+            <tr class="event-cut">
+              <td>2009</td>
+              <td>0.50%</td>
+              <td>0.65%</td>
+              <td>GFC対応、歴史的低金利</td>
+            </tr>
+            <tr class="event-cut">
+              <td>2016</td>
+              <td>0.25%</td>
+              <td>0.38%</td>
+              <td>Brexit国民投票後の緊急利下げ</td>
+            </tr>
+            <tr class="event-cut">
+              <td>2020</td>
+              <td>0.10%</td>
+              <td>0.05% (SONIA)</td>
+              <td>COVID-19対応、史上最低</td>
+            </tr>
+            <tr class="event-hike">
+              <td>2023</td>
+              <td>5.25%</td>
+              <td>5.20% (SONIA)</td>
+              <td>インフレ対応の急速利上げ</td>
+            </tr>
+            <tr>
+              <td>2024</td>
+              <td>4.75%</td>
+              <td>4.70% (SONIA)</td>
+              <td>利下げサイクル開始</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section 6: OIS and Swap Markets -->
+      <section>
+        <h2>OIS・金利スワップ市場</h2>
+        <p>
+          SONIAを参照金利とするOIS（Overnight Index Swap）市場は、BOEの政策金利パスに対する市場期待を反映する最も重要な指標の一つである。OISカーブから導出される「インプライド・バンク・レート」は、市場参加者が予想する将来の利上げ・利下げのタイミングと幅を示す<cite>[11]</cite>。
+        </p>
+        <p>
+          ロンドンは世界最大の金利スワップ取引拠点であり、全世界のOTC金利デリバティブ取引の約50%がロンドンで執行される。2012年のLIBORスキャンダル以降、OTCデリバティブの中央清算（セントラル・クリアリング）が義務化され、LCH（London Clearing House）がグローバルな金利スワップ清算の中心的役割を果たしている<cite>[12]</cite>。
+        </p>
+      </section>
+
+      <!-- Sources -->
+      <footer class="sources">
+        <h3>出典・参考文献</h3>
+        <ol>
+          <li>BIS, "Triennial Central Bank Survey: OTC Interest Rate Derivatives", 2022</li>
+          <li>Bank of England, "Sterling Money Markets: An Overview", bankofengland.co.uk</li>
+          <li>British Bankers' Association, "BBA LIBOR — Historical Overview", 1986-2014</li>
+          <li>Financial Stability Board, "Reforming Major Interest Rate Benchmarks", 2014</li>
+          <li>Bank of England, "SONIA: Key Features and Policies", bankofengland.co.uk</li>
+          <li>Bank of England, "SONIA — Sterling Overnight Index Average", 2018 Reform Documentation</li>
+          <li>ICE Benchmark Administration, "Term SONIA Reference Rate (TSRR)", theice.com</li>
+          <li>UK Debt Management Office, "Treasury Bill Tender Results", dmo.gov.uk</li>
+          <li>ICMA / Bank of England, "UK Gilt Repo Market — Overview", 2023</li>
+          <li>Bank of England, "Commercial Paper Markets in the UK", Quarterly Bulletin, various years</li>
+          <li>Bank of England, "Yield Curve Data — OIS-implied Bank Rate Path", bankofengland.co.uk</li>
+          <li>LCH Group / London Stock Exchange Group, "SwapClear — Global Clearing Statistics", lch.com</li>
+        </ol>
+        <p class="note">※ LIBOR/SONIAの数値は各時点の概算値。市場コンセンサスに基づく記述を含む。</p>
+      </footer>
+    </article>
+
+    <nav class="page-nav">
+      <a href="11_bond_market.html" class="prev">← 11. Bond Market</a>
+      <a href="13_long_rates.html" class="next">13. Long-term Rates →</a>
+    </nav>
+  </main>
+
+  <script>
+    document.querySelectorAll('.sortable th').forEach(th => {
+      th.style.cursor = 'pointer';
+      th.addEventListener('click', () => {
+        const table = th.closest('table');
+        const tbody = table.querySelector('tbody');
+        const idx = Array.from(th.parentNode.children).indexOf(th);
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+        const dir = th.asc = !th.asc ? 1 : -1;
+        rows.sort((a, b) => {
+          const at = a.children[idx]?.textContent.trim() ?? '';
+          const bt = b.children[idx]?.textContent.trim() ?? '';
+          return !isNaN(parseFloat(at)) && !isNaN(parseFloat(bt))
+            ? dir * (parseFloat(at) - parseFloat(bt))
+            : dir * at.localeCompare(bt, 'ja');
+        });
+        rows.forEach(r => tbody.appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>

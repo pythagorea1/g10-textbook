@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UK - Financial Crises | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇬🇧 United Kingdom</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link active">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip active">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">United Kingdom</a>
+        <span class="sep">/</span>
+        Financial Crises
+      </div>
+      <h1 class="page-title">英国の金融危機史 (UK Financial Crises)</h1>
+      <p class="page-subtitle">南海泡沫事件からLDI危機まで — 金融イノベーションの中心地が経験してきた危機の歴史</p>
+    </header>
+
+    <article>
+      <!-- Crisis Timeline Overview -->
+      <section>
+        <h2>英国の主要金融危機一覧</h2>
+        <p>
+          英国は世界の金融イノベーションの中心地として発展してきた一方、数多くの金融危機をも経験してきた。ロンドン・シティの国際性ゆえに、英国の危機はしばしば世界的な波及効果を持ち、また海外発の危機も英国に深刻な影響を及ぼしてきた。以下に主要な危機を年代順に概観する<cite>[1]</cite>。
+        </p>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>危機名</th>
+              <th>種類</th>
+              <th>深刻度</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="event-crisis">
+              <td>1720</td>
+              <td>南海泡沫事件 (South Sea Bubble)</td>
+              <td>バブル崩壊</td>
+              <td>★★★★★</td>
+            </tr>
+            <tr class="event-crisis">
+              <td>1866</td>
+              <td>オーバーレンド・ガーニー危機</td>
+              <td>銀行危機</td>
+              <td>★★★★</td>
+            </tr>
+            <tr class="event-crisis">
+              <td>1890</td>
+              <td>ベアリングス危機</td>
+              <td>銀行危機</td>
+              <td>★★★★</td>
+            </tr>
+            <tr class="event-crisis">
+              <td>1931</td>
+              <td>金本位制離脱</td>
+              <td>通貨危機</td>
+              <td>★★★★★</td>
+            </tr>
+            <tr class="event-crisis">
+              <td>1973-75</td>
+              <td>セカンダリー・バンキング危機</td>
+              <td>銀行危機</td>
+              <td>★★★</td>
+            </tr>
+            <tr class="event-crisis">
+              <td>1976</td>
+              <td>IMF危機</td>
+              <td>通貨・財政危機</td>
+              <td>★★★★</td>
+            </tr>
+            <tr class="event-crisis">
+              <td>1992</td>
+              <td>ブラック・ウェンズデー (ERM危機)</td>
+              <td>通貨危機</td>
+              <td>★★★★</td>
+            </tr>
+            <tr class="event-crisis">
+              <td>1995</td>
+              <td>ベアリングス銀行破綻</td>
+              <td>不正取引</td>
+              <td>★★★</td>
+            </tr>
+            <tr class="event-crisis">
+              <td>2007-09</td>
+              <td>世界金融危機 (GFC)</td>
+              <td>システミック危機</td>
+              <td>★★★★★</td>
+            </tr>
+            <tr class="event-crisis">
+              <td>2022</td>
+              <td>LDI危機（ミニ・バジェット）</td>
+              <td>債券市場危機</td>
+              <td>★★★★</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Crisis 1: South Sea Bubble -->
+      <section>
+        <h2>南海泡沫事件 (South Sea Bubble) — 1720年</h2>
+        <p>
+          南海泡沫事件は近代資本主義史上最初の大規模な投機バブルの一つであり、英国金融史の原点ともいえる危機である。南海会社 (South Sea Company) は1711年にスペイン領南米との貿易独占権を持つ特許会社として設立されたが、実際の貿易収益はほとんどなく、主に政府債務の引き受けを事業の核としていた<cite>[2]</cite>。
+        </p>
+        <p>
+          1720年、南海会社は政府債務の全額引き受けと引き換えに株式を発行するスキームを提案し、議会の承認を得た。投機熱は急速に過熱し、株価は1720年1月の£128から6月には£1,050にまで急騰した。しかし夏以降、実体のない利益への疑念が広がり、株価は年末までに£124にまで暴落した<cite>[3]</cite>。
+        </p>
+        <p>
+          この危機により多数の投資家が破産し、政治的スキャンダルにも発展した。物理学者アイザック・ニュートン (Isaac Newton) も南海株で推定2万ポンド（現在の数百万ポンド相当）を失い、「天体の動きは計算できるが、人間の狂気は計算できない」と述べたとされる<cite>[4]</cite>。
+        </p>
+        <p>
+          事件後、英国議会は「バブル法 (Bubble Act, 1720)」を制定し、議会の許可なく株式会社を設立することを禁止した。この法律は1825年まで存続し、英国の会社制度と資本市場の発展を100年以上にわたって制約した<cite>[5]</cite>。
+        </p>
+      </section>
+
+      <!-- Crisis 2: Overend Gurney -->
+      <section>
+        <h2>オーバーレンド・ガーニー危機 — 1866年</h2>
+        <p>
+          オーバーレンド・ガーニー社 (Overend, Gurney & Company) はロンドン最大の手形割引会社であり、「ロンバード・ストリートのコーナーストーン」と呼ばれるほどの存在であった。しかし、投機的な融資の失敗により1866年5月に破綻し、「ブラック・フライデー」と呼ばれるパニックを引き起こした<cite>[6]</cite>。
+        </p>
+        <p>
+          この危機は現代の中央銀行の「最後の貸し手 (Lender of Last Resort)」機能の確立に直接つながった。ジャーナリストで経済評論家のウォルター・バジョット (Walter Bagehot) は著書『ロンバード街 (Lombard Street, 1873)』において、中央銀行は危機時に「良質な担保に対して、高い金利で、自由に貸し出すべき」というバジョット原則を提唱した。この原則は150年後の現在も中央銀行の危機対応の基本フレームワークとして生きている<cite>[7]</cite>。
+        </p>
+      </section>
+
+      <!-- Crisis 3: Barings 1890 -->
+      <section>
+        <h2>ベアリングス危機 — 1890年</h2>
+        <p>
+          ベアリングス銀行 (Baring Brothers) は英国最古級のマーチャントバンクであり、ナポレオン戦争後のフランスの賠償金処理も手がけた名門であった。しかし、アルゼンチン向け融資の焦げ付きにより1890年に経営危機に陥った<cite>[8]</cite>。
+        </p>
+        <p>
+          BOE総裁ウィリアム・リデルスデール (William Lidderdale) は、ベアリングスの破綻がロンドン金融市場全体のシステミック・リスクに発展することを恐れ、主要銀行による救済コンソーシアムを組織した。ロスチャイルド家 (Rothschild) をはじめとする金融機関が出資し、ベアリングスは再建された。これは史上初の組織的な「大きすぎて潰せない (too big to fail)」救済であったとも評される<cite>[9]</cite>。
+        </p>
+      </section>
+
+      <!-- Crisis 4: 1976 IMF Crisis -->
+      <section>
+        <h2>IMF危機 — 1976年</h2>
+        <p>
+          1976年、英国は先進国として前例のないIMF（国際通貨基金）への救済融資申請に追い込まれた。ポンドは対ドルで$2.00から$1.57にまで急落し、英国の国際的威信は大きく傷ついた<cite>[10]</cite>。
+        </p>
+        <p>
+          背景には1970年代初頭からの慢性的なインフレ（年率20%超）、石油危機の影響、労使紛争の激化（「不満の冬 (Winter of Discontent)」へとつながる流れ）、そして財政赤字の拡大があった。ジェームズ・キャラハン (James Callaghan) 首相はIMFから39億ドルの融資を受ける代わりに、厳しい財政緊縮策を受け入れた<cite>[11]</cite>。
+        </p>
+        <p>
+          IMF危機は英国経済政策の転換点となった。ケインズ主義的な需要管理政策の限界が露呈し、マネタリズムへの移行、そして1979年のマーガレット・サッチャー (Margaret Thatcher) 政権誕生の伏線となった<cite>[12]</cite>。
+        </p>
+      </section>
+
+      <!-- Crisis 5: GFC -->
+      <section>
+        <h2>世界金融危機 (GFC) — 2007-2009年</h2>
+        <p>
+          2007-2009年の世界金融危機は英国において特に深刻な影響をもたらした。英国の金融セクターのGDP比が他の主要国に比べて突出して大きかったため、銀行危機の実体経済への波及効果も甚大であった<cite>[13]</cite>。
+        </p>
+
+        <h3>主要イベント年表</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>日付</th>
+              <th>イベント</th>
+              <th>影響</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="event-crisis">
+              <td>2007年9月</td>
+              <td>ノーザン・ロック (Northern Rock) 取り付け騒ぎ</td>
+              <td>英国で150年ぶりの銀行取り付け。預金者が支店に殺到</td>
+            </tr>
+            <tr>
+              <td>2008年2月</td>
+              <td>ノーザン・ロック国有化</td>
+              <td>英国政府が主要銀行を国有化する初の事例</td>
+            </tr>
+            <tr class="event-crisis">
+              <td>2008年9月</td>
+              <td>リーマン・ブラザーズ破綻</td>
+              <td>世界的なクレジット凍結、英国銀行セクターに波及</td>
+            </tr>
+            <tr class="event-crisis">
+              <td>2008年10月</td>
+              <td>英国銀行救済パッケージ発表</td>
+              <td>RBS、Lloyds/HBOSに公的資金注入。総額£500億の資本増強</td>
+            </tr>
+            <tr>
+              <td>2008年10月</td>
+              <td>RBS (Royal Bank of Scotland) 部分国有化</td>
+              <td>政府が84%の株式を取得。当時世界最大の銀行損失（£241億）</td>
+            </tr>
+            <tr>
+              <td>2008年10月</td>
+              <td>Lloyds TSBとHBOS合併</td>
+              <td>競争法の例外適用による救済合併。政府が43%を保有</td>
+            </tr>
+            <tr class="event-cut">
+              <td>2009年3月</td>
+              <td>Bank Rate 0.5%、QE開始</td>
+              <td>BOEが316年の歴史で最低金利に。ギルト買入プログラム開始</td>
+            </tr>
+            <tr>
+              <td>2009年</td>
+              <td>GDP -4.3%の大幅マイナス成長</td>
+              <td>1930年代以来最悪の景気後退</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          GFCにおける英国政府の銀行救済コストは、資本注入、資産保証、融資保証を含めると総額1兆ポンドを超えたと推定される。財政赤字はGDP比11%にまで拡大し、以後10年以上にわたる緊縮財政（austerity）政策の出発点となった<cite>[14]</cite>。
+        </p>
+      </section>
+
+      <!-- Crisis 6: Barings 1995 -->
+      <section>
+        <h2>ベアリングス銀行破綻 — 1995年</h2>
+        <p>
+          1995年2月、233年の歴史を持つ名門ベアリングス銀行が破綻した。シンガポールオフィスのトレーダー、ニック・リーソン (Nick Leeson) による不正取引が原因であった。リーソンは日経225先物とオプションのポジションを秘密裏に積み上げ、1995年1月の阪神・淡路大震災による日本市場の急落で損失が一気に拡大した。最終的な損失は約8.3億ポンドに達し、銀行の自己資本を完全に超過した<cite>[15]</cite>。
+        </p>
+        <p>
+          BOEは1890年の危機時とは異なり、今回はシステミック・リスクがないと判断して救済を行わなかった。ベアリングスはオランダのING（Internationale Nederlanden Groep）に£1で売却された。この事件は金融機関のリスク管理とオペレーショナルリスクへの意識を劇的に高め、バーゼル規制の強化につながった<cite>[16]</cite>。
+        </p>
+      </section>
+
+      <!-- Crisis 7: LDI Crisis 2022 -->
+      <section>
+        <h2>LDI危機 — 2022年</h2>
+        <p>
+          2022年9月のLDI（Liability-Driven Investment）危機は、財政政策の失敗がいかに迅速に金融市場の混乱を引き起こすかを示す現代の教科書的事例である。リズ・トラス (Liz Truss) 政権のクワジ・クワーテング (Kwasi Kwarteng) 財務相が発表した「ミニ・バジェット」（450億ポンドの無財源減税）は、市場の財政信認を瞬時に崩壊させた<cite>[17]</cite>。
+        </p>
+        <p>
+          30年ギルト利回りは数日で150bp以上急騰し、英国の確定給付年金基金が広く採用していたLDI戦略が連鎖的に破綻した。LDIは金利スワップとレポ取引を通じたレバレッジにより年金負債をヘッジする戦略であったが、利回りの急騰によりマージンコールが発生し、年金基金はコラテラルを確保するためにギルトを投げ売りし、利回りがさらに上昇するという悪循環に陥った<cite>[18]</cite>。
+        </p>
+        <p>
+          9月28日、BOEは金融安定のために臨時ギルト買入（最大650億ポンド枠）を実施し、市場を安定させた。トラス首相は就任45日で辞任し、英国史上最短命の首相となった。LDI危機は以下の教訓を残した:
+        </p>
+        <ul>
+          <li>財政政策の信認は債券市場を通じて即座に試される（ボンド・ヴィジランテの健在）</li>
+          <li>ノンバンク金融機関（NBFI）のレバレッジは新たなシステミック・リスク源である</li>
+          <li>中央銀行は引き締め局面でも金融安定のために緊急緩和を迫られうる</li>
+          <li>年金基金のALM戦略におけるレバレッジには限度がある</li>
+        </ul>
+        <cite>[19]</cite>
+      </section>
+
+      <!-- Section: Patterns -->
+      <section>
+        <h2>英国金融危機の共通パターン</h2>
+        <p>
+          英国の金融危機史を俯瞰すると、いくつかの共通パターンが浮かび上がる。第一に、金融イノベーションとレバレッジの過度な蓄積が危機の土壌を作る点である。南海泡沫の株式投機、ベアリングスのアルゼンチン融資、GFC前のサブプライムCDO、LDI危機のレバレッジ金利スワップ — いずれも金融の「進化」が行き過ぎた結果であった<cite>[20]</cite>。
+        </p>
+        <p>
+          第二に、英国の危機は通貨の信認と密接に結びついている。金本位制離脱、ポンド切り下げ、ERM危機、Brexit後のポンド急落 — ポンドの価値は英国の政策信認のバロメーターであり続けてきた。第三に、各危機は規制改革の契機となり、バブル法（1720年）、バジョット原則（1873年）、FSA設立（2000年）、FCA/PRA設立（2013年）へとつながった<cite>[21]</cite>。
+        </p>
+      </section>
+
+      <!-- Sources -->
+      <footer class="sources">
+        <h3>出典・参考文献</h3>
+        <ol>
+          <li>Reinhart, C. and Rogoff, K., "This Time Is Different: Eight Centuries of Financial Folly", 2009</li>
+          <li>Carswell, J., "The South Sea Bubble", 1960</li>
+          <li>Dale, R., "The First Crash: Lessons from the South Sea Bubble", 2004</li>
+          <li>Kindleberger, C. and Aliber, R., "Manias, Panics, and Crashes", 7th Edition, 2015</li>
+          <li>Harris, R., "Industrializing English Law: Entrepreneurship and Business Organization", 2000</li>
+          <li>King, W.T.C., "History of the London Discount Market", 1936</li>
+          <li>Bagehot, W., "Lombard Street: A Description of the Money Market", 1873</li>
+          <li>Ziegler, P., "The Sixth Great Power: A History of One of the Greatest of All Banking Families", 1988</li>
+          <li>Bank of England, "Financial Stability Review — The Barings Crisis", 1996</li>
+          <li>Burk, K. and Cairncross, A., "Goodbye, Great Britain: The 1976 IMF Crisis", 1992</li>
+          <li>Healey, D., "The Time of My Life", 1989</li>
+          <li>Bank of England, "A Millennium of Macroeconomic Data", 2017</li>
+          <li>Turner, A., "Between Debt and the Devil", 2015</li>
+          <li>National Audit Office, "Taxpayer Support for UK Banks: FAQs", 2018</li>
+          <li>Rawnsley, J., "The Rise and Fall of Barings", 1995</li>
+          <li>Board of Banking Supervision, "Report of the Board of Banking Supervision Inquiry into the Circumstances of the Collapse of Barings", 1995</li>
+          <li>Institute for Fiscal Studies, "The Mini-Budget Response", September 2022</li>
+          <li>Bank of England, Financial Policy Committee, "Financial Stability Report", December 2022</li>
+          <li>House of Commons Treasury Committee, "Lessons from the LDI Crisis", 2023</li>
+          <li>Haldane, A., "Rethinking the Financial Network", Bank of England Speech, 2009</li>
+          <li>Capie, F., "The Bank of England: 1950s to 1979", Cambridge University Press, 2010</li>
+        </ol>
+        <p class="note">※ 危機の深刻度（★評価）は経済的影響・制度変革のインパクトに基づく筆者の評価。市場コンセンサスベース。</p>
+      </footer>
+    </article>
+
+    <nav class="page-nav">
+      <a href="14_currency.html" class="prev">← 14. Currency</a>
+      <a href="16_banking.html" class="next">16. Banking Sector →</a>
+    </nav>
+  </main>
+
+  <script>
+    document.querySelectorAll('.sortable th').forEach(th => {
+      th.style.cursor = 'pointer';
+      th.addEventListener('click', () => {
+        const table = th.closest('table');
+        const tbody = table.querySelector('tbody');
+        const idx = Array.from(th.parentNode.children).indexOf(th);
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+        const dir = th.asc = !th.asc ? 1 : -1;
+        rows.sort((a, b) => {
+          const at = a.children[idx]?.textContent.trim() ?? '';
+          const bt = b.children[idx]?.textContent.trim() ?? '';
+          return !isNaN(parseFloat(at)) && !isNaN(parseFloat(bt))
+            ? dir * (parseFloat(at) - parseFloat(bt))
+            : dir * at.localeCompare(bt, 'ja');
+        });
+        rows.forEach(r => tbody.appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>

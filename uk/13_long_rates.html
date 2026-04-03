@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UK - Long-term Rates | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇬🇧 United Kingdom</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link active">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip active">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">United Kingdom</a>
+        <span class="sep">/</span>
+        Long-term Rates
+      </div>
+      <h1 class="page-title">英国長期金利の歴史 (UK Long-term Rates)</h1>
+      <p class="page-subtitle">10年ギルト利回りに映る300年の経済史 — 戦争、インフレ、QE、そしてLDI危機</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">~4.5%</div>
+          <div class="stat-label">10年ギルト利回り (2024年)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">0.07%</div>
+          <div class="stat-label">10年ギルト史上最低 (2020年8月)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">16.3%</div>
+          <div class="stat-label">10年ギルト史上最高 (1974年)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">~40年</div>
+          <div class="stat-label">長期金利低下トレンド (1981-2020)</div>
+        </div>
+      </div>
+
+      <!-- Section 1: Long-run Perspective -->
+      <section>
+        <h2>超長期的視点 — コンソル債から10年ギルトへ</h2>
+        <p>
+          英国の長期金利は世界で最も長い連続データを持つ金融指標の一つである。18世紀のコンソル債利回りから現代の10年ギルト利回りまで、300年以上にわたるデータが存在し、経済史研究の貴重な資産となっている<cite>[1]</cite>。
+        </p>
+        <p>
+          18世紀から19世紀にかけて、コンソル債の利回りは概ね3-5%の範囲で推移した。ナポレオン戦争中（1793-1815年）には6%近くまで上昇したが、戦後の長い平和と帝国の繁栄の中で3%を下回る水準にまで低下した。ヴィクトリア朝後期（1890年代）にはコンソル債利回りは約2.5%と、当時の世界最低水準であった。これは大英帝国の信用力と金本位制下のデフレ圧力を反映していた<cite>[2]</cite>。
+        </p>
+        <p>
+          20世紀に入ると両世界大戦と戦後のインフレにより長期金利は上昇基調に転じた。特に1970年代のスタグフレーション期には10年ギルト利回りは二桁に達し、1974年には16.3%を記録した。その後、1980年代以降の約40年にわたる「グレート・モデレーション」と呼ばれるインフレ低下・金融緩和の時代を経て、2020年には0.07%という歴史的最低水準にまで低下した<cite>[3]</cite>。
+        </p>
+      </section>
+
+      <!-- Section 2: 10Y Gilt Timeline -->
+      <section>
+        <h2>10年ギルト利回りの推移</h2>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>10年ギルト利回り</th>
+              <th>Bank Rate</th>
+              <th>CPI前年比</th>
+              <th>主要背景</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1960</td>
+              <td>5.4%</td>
+              <td>5.0%</td>
+              <td>1.0%</td>
+              <td>戦後の安定成長期</td>
+            </tr>
+            <tr>
+              <td>1967</td>
+              <td>6.7%</td>
+              <td>6.5%</td>
+              <td>2.5%</td>
+              <td>ポンド切り下げ（$2.80→$2.40）</td>
+            </tr>
+            <tr class="event-hike">
+              <td>1974</td>
+              <td>16.3%</td>
+              <td>13.0%</td>
+              <td>16.0%</td>
+              <td>第一次オイルショック、スタグフレーション</td>
+            </tr>
+            <tr class="event-hike">
+              <td>1979</td>
+              <td>13.0%</td>
+              <td>17.0%</td>
+              <td>13.4%</td>
+              <td>サッチャー政権発足、マネタリズム政策</td>
+            </tr>
+            <tr>
+              <td>1985</td>
+              <td>10.6%</td>
+              <td>12.0%</td>
+              <td>6.1%</td>
+              <td>インフレ鎮静化進む</td>
+            </tr>
+            <tr class="event-hike">
+              <td>1990</td>
+              <td>11.8%</td>
+              <td>15.0%</td>
+              <td>9.5%</td>
+              <td>ERM加盟、高金利政策</td>
+            </tr>
+            <tr>
+              <td>1993</td>
+              <td>7.5%</td>
+              <td>6.0%</td>
+              <td>1.6%</td>
+              <td>ERM離脱後の金利正常化</td>
+            </tr>
+            <tr>
+              <td>1997</td>
+              <td>7.1%</td>
+              <td>7.25%</td>
+              <td>1.8%</td>
+              <td>BOE独立、インフレターゲット2%</td>
+            </tr>
+            <tr>
+              <td>2000</td>
+              <td>5.2%</td>
+              <td>6.0%</td>
+              <td>0.8%</td>
+              <td>信認効果で長期金利低下</td>
+            </tr>
+            <tr>
+              <td>2006</td>
+              <td>4.5%</td>
+              <td>5.0%</td>
+              <td>2.3%</td>
+              <td>GFC直前の安定期</td>
+            </tr>
+            <tr class="event-crisis">
+              <td>2009</td>
+              <td>3.6%</td>
+              <td>0.5%</td>
+              <td>2.2%</td>
+              <td>GFC後のQE開始</td>
+            </tr>
+            <tr>
+              <td>2012</td>
+              <td>1.8%</td>
+              <td>0.5%</td>
+              <td>2.8%</td>
+              <td>追加QE、欧州債務危機</td>
+            </tr>
+            <tr class="event-cut">
+              <td>2016</td>
+              <td>0.8%</td>
+              <td>0.25%</td>
+              <td>0.7%</td>
+              <td>Brexit投票後の利下げ・QE拡大</td>
+            </tr>
+            <tr class="event-cut">
+              <td>2020</td>
+              <td>0.3%</td>
+              <td>0.10%</td>
+              <td>0.9%</td>
+              <td>COVID-19、大規模QE（8月に0.07%の最低値）</td>
+            </tr>
+            <tr class="event-crisis">
+              <td>2022</td>
+              <td>3.7%</td>
+              <td>3.50%</td>
+              <td>10.5%</td>
+              <td>インフレ急騰、LDI危機</td>
+            </tr>
+            <tr>
+              <td>2024</td>
+              <td>4.5%</td>
+              <td>4.75%</td>
+              <td>2.5%</td>
+              <td>高金利持続、QT進行</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section 3: Drivers of Long Rates -->
+      <section>
+        <h2>長期金利の決定要因</h2>
+        <p>
+          英国の長期金利は複数の構造的要因によって決定される。以下にその主要なドライバーを分析する。
+        </p>
+
+        <h3>1. インフレ期待</h3>
+        <p>
+          長期金利の最大の決定要因はインフレ期待である。1970年代のスタグフレーション期には市場のインフレ期待が暴走し、10年ギルト利回りは16%を超えた。逆に、1992年以降のインフレターゲット導入と2%目標の定着により、インフレ期待はアンカーされ、長期金利は構造的な低下トレンドに入った。物価連動ギルト (ILGs) から算出されるブレークイーブン・インフレ率 (BEI) は、市場のインフレ期待を直接観察できる指標として重要である<cite>[4]</cite>。
+        </p>
+
+        <h3>2. 財政政策と政府債務</h3>
+        <p>
+          財政の持続可能性に対する市場の評価は、ギルトのタームプレミアムに直接影響する。2022年のミニ・バジェットはこの関係を劇的に示した。無財源減税の発表後、30年ギルト利回りは数日で150bp以上急騰し、「ボンド・ヴィジランテ」が財政規律を強制する古典的事例となった<cite>[5]</cite>。
+        </p>
+
+        <h3>3. BOEの金融政策（QE/QT）</h3>
+        <p>
+          QEは長期金利に対して直接的かつ大規模な影響を与えた。BOEの分析によれば、QEはギルトのタームプレミアムを累計で約100bp低下させたと推定されている。しかし、QTへの移行に伴い、この効果は徐々に巻き戻されつつある<cite>[6]</cite>。
+        </p>
+
+        <h3>4. 年金基金の構造的需要</h3>
+        <p>
+          英国の確定給付 (DB) 年金基金は、長期負債のヘッジのために超長期ギルト（30-50年）への構造的な需要を持つ。この需要はイールドカーブの長期ゾーンを押し下げる「年金効果」を生み出し、時にフラットまたは逆イールドの一因となった。LDI戦略の普及はこの効果をレバレッジにより増幅させたが、2022年の危機でその脆弱性が露呈した<cite>[7]</cite>。
+        </p>
+
+        <h3>5. グローバル要因</h3>
+        <p>
+          英国長期金利は米国債やBund（独国債）の利回りと高い相関を持つ。グローバルな「セービング・グラット (savings glut)」やリスクオフ時の資金フロー、海外中銀の外貨準備運用もギルト利回りに影響を与える<cite>[8]</cite>。
+        </p>
+      </section>
+
+      <!-- Section 4: Gilt-Bund Spread -->
+      <section>
+        <h2>ギルト-Bundスプレッド</h2>
+        <p>
+          10年ギルトと10年Bund（ドイツ国債）のスプレッドは、英国とユーロ圏の金融政策・財政見通しの差異を反映する重要な指標である。Brexit以前は概ね50-100bpの範囲で推移していたが、Brexit国民投票後は拡大傾向にあり、2022年のLDI危機時には一時200bpを超えた<cite>[9]</cite>。
+        </p>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>10Y ギルト</th>
+              <th>10Y Bund</th>
+              <th>スプレッド (bp)</th>
+              <th>背景</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2005</td>
+              <td>4.5%</td>
+              <td>3.4%</td>
+              <td>110</td>
+              <td>BOEの相対的タカ派姿勢</td>
+            </tr>
+            <tr>
+              <td>2010</td>
+              <td>3.6%</td>
+              <td>2.7%</td>
+              <td>90</td>
+              <td>GFC後の正常化過程</td>
+            </tr>
+            <tr>
+              <td>2015</td>
+              <td>1.9%</td>
+              <td>0.5%</td>
+              <td>140</td>
+              <td>ECBのQE開始でBund低下</td>
+            </tr>
+            <tr class="event-crisis">
+              <td>2016</td>
+              <td>1.2%</td>
+              <td>0.1%</td>
+              <td>110</td>
+              <td>Brexit投票後、ともに低下</td>
+            </tr>
+            <tr>
+              <td>2019</td>
+              <td>0.8%</td>
+              <td>-0.3%</td>
+              <td>110</td>
+              <td>Bundマイナス金利域</td>
+            </tr>
+            <tr class="event-crisis">
+              <td>2022</td>
+              <td>3.7%</td>
+              <td>2.1%</td>
+              <td>160</td>
+              <td>LDI危機でギルト売り加速</td>
+            </tr>
+            <tr>
+              <td>2024</td>
+              <td>4.5%</td>
+              <td>2.6%</td>
+              <td>190</td>
+              <td>財政懸念でスプレッド拡大継続</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section 5: Real Yields -->
+      <section>
+        <h2>実質金利の推移</h2>
+        <p>
+          物価連動ギルト (ILGs) から観察される実質金利は、実体経済における資金調達コストと投資リターンの基礎を反映する。2010年代にはQEと構造的なセービング・グラットにより10年物実質利回りは-3%台にまで低下した。しかし、2022年以降の利上げとQT開始により実質金利はプラス圏に回復し、2024年時点では約1.5%前後で推移している<cite>[10]</cite>。
+        </p>
+        <p>
+          実質金利のマイナス領域への長期的な滞留は、資産価格の過大評価、年金基金の負債膨張、およびLDI戦略への過度な依存を助長した。2022年の危機は、人為的に抑制された実質金利が正常化に向かう過程で生じた調整コストの大きさを示している<cite>[11]</cite>。
+        </p>
+      </section>
+
+      <!-- Sources -->
+      <footer class="sources">
+        <h3>出典・参考文献</h3>
+        <ol>
+          <li>Bank of England, "A Millennium of Macroeconomic Data", Thomas, R. and Dimsdale, N., 2017</li>
+          <li>Homer, S. and Sylla, R., "A History of Interest Rates", 4th Edition, 2005</li>
+          <li>Bank of England, "Historical Gilt Yield Data", bankofengland.co.uk</li>
+          <li>Bank of England, "Inflation Expectations from Index-Linked Gilts", Quarterly Bulletin, various years</li>
+          <li>Institute for Fiscal Studies, "The 2022 Autumn Statement in Context", November 2022</li>
+          <li>Bank of England, "The Impact of QE on Gilt Yields", Staff Working Paper No. 624, 2016</li>
+          <li>Pension Protection Fund / The Pensions Regulator, "LDI and UK DB Pension Schemes", 2023</li>
+          <li>BIS, "Global Factor in Neutral Interest Rates", Working Papers No. 732, 2018</li>
+          <li>Bloomberg / Refinitiv, Gilt-Bund spread data, various years</li>
+          <li>Bank of England, "Index-Linked Gilt Real Yield Curve Data", bankofengland.co.uk</li>
+          <li>Bank of England, Financial Stability Report, "Risks from Leverage in Non-Bank Finance", December 2022</li>
+        </ol>
+        <p class="note">※ 利回りデータは年末または年央の概算値。歴史的データはBOE Millennium Datasetに基づく。</p>
+      </footer>
+    </article>
+
+    <nav class="page-nav">
+      <a href="12_short_rates.html" class="prev">← 12. Short-term Rates</a>
+      <a href="14_currency.html" class="next">14. Currency →</a>
+    </nav>
+  </main>
+
+  <script>
+    document.querySelectorAll('.sortable th').forEach(th => {
+      th.style.cursor = 'pointer';
+      th.addEventListener('click', () => {
+        const table = th.closest('table');
+        const tbody = table.querySelector('tbody');
+        const idx = Array.from(th.parentNode.children).indexOf(th);
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+        const dir = th.asc = !th.asc ? 1 : -1;
+        rows.sort((a, b) => {
+          const at = a.children[idx]?.textContent.trim() ?? '';
+          const bt = b.children[idx]?.textContent.trim() ?? '';
+          return !isNaN(parseFloat(at)) && !isNaN(parseFloat(bt))
+            ? dir * (parseFloat(at) - parseFloat(bt))
+            : dir * at.localeCompare(bt, 'ja');
+        });
+        rows.forEach(r => tbody.appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>

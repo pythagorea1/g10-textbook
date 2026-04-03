@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UK - Bond Market | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇬🇧 United Kingdom</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link active">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip active">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">United Kingdom</a>
+        <span class="sep">/</span>
+        Bond Market
+      </div>
+      <h1 class="page-title">英国国債市場 — ギルト (UK Gilt Market)</h1>
+      <p class="page-subtitle">世界最古の政府債券市場の一つ — 戦費調達から現代のLDI危機まで300年超の歴史</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">£2.6兆+</div>
+          <div class="stat-label">ギルト残高 (2024年度末)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">1694年</div>
+          <div class="stat-label">最初の政府債発行</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">AAA→AA</div>
+          <div class="stat-label">格付け推移 (Moody's)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">~30%</div>
+          <div class="stat-label">海外投資家保有比率</div>
+        </div>
+      </div>
+
+      <!-- Section 1: Overview -->
+      <section>
+        <h2>ギルト市場の概要</h2>
+        <p>
+          英国政府債券は「ギルト (Gilt-edged securities)」と呼ばれる。この名称は、かつて債券証書の縁が金箔（gilt edge）で装飾されていたことに由来し、英国政府の信用力の高さを象徴する。ギルト市場は世界で最も歴史の長い政府債券市場の一つであり、イングランド銀行 (Bank of England, BOE) の設立と同時期の1694年に起源を持つ<cite>[1]</cite>。
+        </p>
+        <p>
+          ギルトは英国政府の資金調達手段として中心的な役割を果たしてきた。特にナポレオン戦争、両世界大戦、そして2008年の世界金融危機 (GFC) やCOVID-19パンデミック後の大規模財政出動において、ギルト発行は急増した。2024年度末時点でのギルト残高は約2.6兆ポンドに達し、GDP比約100%に相当する<cite>[2]</cite>。
+        </p>
+        <p>
+          ギルト市場の管理は、2002年以降、英国債務管理局 (Debt Management Office, DMO) が担っている。それ以前はイングランド銀行が国債の発行・管理を行っていたが、BOEの金融政策の独立性を確保するために分離された<cite>[3]</cite>。
+        </p>
+      </section>
+
+      <!-- Section 2: Types of Gilts -->
+      <section>
+        <h2>ギルトの種類</h2>
+        <p>
+          ギルト市場には複数の種類の債券が存在し、それぞれ異なる投資家ニーズに対応している。
+        </p>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>種類</th>
+              <th>英語名</th>
+              <th>概要</th>
+              <th>主な投資家</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>普通ギルト</td>
+              <td>Conventional Gilts</td>
+              <td>固定クーポン、固定満期の標準的な国債。2年、5年、10年、30年が主要年限</td>
+              <td>銀行、年金基金、海外中銀</td>
+            </tr>
+            <tr>
+              <td>物価連動ギルト</td>
+              <td>Index-Linked Gilts (ILGs)</td>
+              <td>元本・クーポンがRPI（小売物価指数）に連動。1981年導入</td>
+              <td>年金基金、保険会社</td>
+            </tr>
+            <tr>
+              <td>短期国庫証券</td>
+              <td>Treasury Bills (T-Bills)</td>
+              <td>割引発行、1-6ヶ月の短期債。流動性管理用</td>
+              <td>マネーマーケットファンド、銀行</td>
+            </tr>
+            <tr>
+              <td>グリーンギルト</td>
+              <td>Green Gilts</td>
+              <td>環境関連支出に充当。2021年9月初発行</td>
+              <td>ESG投資家、ソブリンファンド</td>
+            </tr>
+            <tr>
+              <td class="event-crisis">永久債（過去）</td>
+              <td>Consols / War Loans</td>
+              <td>満期のない永久債。2015年に全額償還完了</td>
+              <td>（歴史的）個人・機関投資家</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          物価連動ギルト (ILGs) は1981年にマーガレット・サッチャー (Margaret Thatcher) 政権下で導入された。当初は年金基金のみが購入可能だったが、後に一般投資家にも開放された。ILGsはギルト残高全体の約25%を占め、英国のブレークイーブン・インフレ率の算出に不可欠な指標となっている<cite>[4]</cite>。
+        </p>
+        <p>
+          歴史的に注目すべきは「コンソル債 (Consols)」である。これは満期のない永久債で、1751年に初めて発行された。ナポレオン戦争やクリミア戦争の戦費調達にも活用され、英国財政の象徴的存在であった。最後のコンソル債（第一次世界大戦時の戦時公債を含む）は2015年に政府により全額償還され、264年にわたる歴史に幕を閉じた<cite>[5]</cite>。
+        </p>
+      </section>
+
+      <!-- Section 3: Historical Timeline -->
+      <section>
+        <h2>ギルト市場の歴史年表</h2>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>イベント</th>
+              <th>影響</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1694</td>
+              <td>イングランド銀行設立、最初の政府債発行</td>
+              <td>ウィリアム3世の対仏戦争資金として120万ポンド調達</td>
+            </tr>
+            <tr>
+              <td>1751</td>
+              <td>コンソル債 (Consols) 初発行</td>
+              <td>世界初の永久債、後に英国財政の象徴に</td>
+            </tr>
+            <tr class="event-crisis">
+              <td>1815</td>
+              <td>ナポレオン戦争終結時の国債残高ピーク</td>
+              <td>債務/GDP比約250%に達する</td>
+            </tr>
+            <tr>
+              <td>1914-18</td>
+              <td>第一次世界大戦・戦時公債発行</td>
+              <td>War Loans発行、国民への直接販売キャンペーン</td>
+            </tr>
+            <tr>
+              <td>1939-45</td>
+              <td>第二次世界大戦・大規模国債発行</td>
+              <td>債務/GDP比約270%（戦後ピーク）</td>
+            </tr>
+            <tr>
+              <td>1981</td>
+              <td>物価連動ギルト (ILGs) 導入</td>
+              <td>インフレヘッジ手段として年金基金に普及</td>
+            </tr>
+            <tr>
+              <td>1986</td>
+              <td>ビッグバン改革、ギルト市場近代化</td>
+              <td>ギルト・エッジ・マーケット・メーカー (GEMM) 制度導入</td>
+            </tr>
+            <tr>
+              <td>1998</td>
+              <td>BOEの金融政策独立</td>
+              <td>国債管理とのコンフリクト懸念から分離議論進展</td>
+            </tr>
+            <tr>
+              <td>2002</td>
+              <td>英国債務管理局 (DMO) 設立</td>
+              <td>国債発行・管理がBOEからDMOに移管</td>
+            </tr>
+            <tr>
+              <td>2009</td>
+              <td>量的緩和 (QE) 開始</td>
+              <td>BOEがギルト大量購入、利回り低下</td>
+            </tr>
+            <tr>
+              <td>2013</td>
+              <td>英国、Moody'sからAAA格付け喪失</td>
+              <td>財政赤字拡大を理由にAa1に格下げ</td>
+            </tr>
+            <tr>
+              <td>2015</td>
+              <td>最後のコンソル債・戦時公債償還</td>
+              <td>264年の永久債の歴史に終止符</td>
+            </tr>
+            <tr>
+              <td>2020</td>
+              <td>COVID-19パンデミック、大規模ギルト発行</td>
+              <td>2020/21年度の純発行額は過去最高の約4,860億ポンド</td>
+            </tr>
+            <tr>
+              <td>2021</td>
+              <td>グリーンギルト初発行</td>
+              <td>環境・気候変動対策への資金充当</td>
+            </tr>
+            <tr class="event-crisis">
+              <td>2022</td>
+              <td>LDI危機（ミニ・バジェット・ショック）</td>
+              <td>長期ギルト利回り急騰、年金基金のLDI戦略が崩壊、BOE緊急介入</td>
+            </tr>
+            <tr>
+              <td>2024</td>
+              <td>QT（量的引き締め）継続</td>
+              <td>BOEがギルト保有を段階的に縮小</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section 4: Yield Curve Structure -->
+      <section>
+        <h2>イールドカーブの構造</h2>
+        <p>
+          ギルトのイールドカーブは英国金融市場の基盤を成す。カーブの形状は、BOEの政策金利見通し、インフレ期待、財政見通し、そしてグローバルなリスクセンチメントを反映する。通常、短期ゾーンはBOEの政策金利 (Bank Rate) に強く連動し、長期ゾーンは財政の持続可能性やインフレ期待の影響を受ける<cite>[6]</cite>。
+        </p>
+        <p>
+          英国ギルト市場の特徴的な点は、超長期債（50年債）の存在である。年金基金のALM（資産負債管理）ニーズから超長期ゾーンの需要が強く、DMOは定期的に50年ギルトを発行している。この需要構造が2022年のLDI危機において脆弱性を露呈させることとなった<cite>[7]</cite>。
+        </p>
+
+        <h3>主要年限別ギルト利回りの推移</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>2年</th>
+              <th>5年</th>
+              <th>10年</th>
+              <th>30年</th>
+              <th>主要背景</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1990</td>
+              <td>14.0%</td>
+              <td>13.5%</td>
+              <td>12.0%</td>
+              <td>11.5%</td>
+              <td>ERM加盟前の高金利政策</td>
+            </tr>
+            <tr>
+              <td>1995</td>
+              <td>7.0%</td>
+              <td>7.5%</td>
+              <td>8.0%</td>
+              <td>8.2%</td>
+              <td>ERM離脱後のインフレ安定化</td>
+            </tr>
+            <tr>
+              <td>2000</td>
+              <td>5.8%</td>
+              <td>5.5%</td>
+              <td>5.2%</td>
+              <td>4.7%</td>
+              <td>BOE独立後の安定期</td>
+            </tr>
+            <tr>
+              <td>2005</td>
+              <td>4.3%</td>
+              <td>4.4%</td>
+              <td>4.5%</td>
+              <td>4.2%</td>
+              <td>グレート・モデレーション期</td>
+            </tr>
+            <tr class="event-crisis">
+              <td>2009</td>
+              <td>1.1%</td>
+              <td>2.7%</td>
+              <td>3.6%</td>
+              <td>4.3%</td>
+              <td>GFC後のQE開始、Bank Rate 0.5%</td>
+            </tr>
+            <tr>
+              <td>2012</td>
+              <td>0.3%</td>
+              <td>0.8%</td>
+              <td>1.8%</td>
+              <td>3.0%</td>
+              <td>追加QE、欧州債務危機の波及</td>
+            </tr>
+            <tr>
+              <td>2016</td>
+              <td>0.1%</td>
+              <td>0.4%</td>
+              <td>0.8%</td>
+              <td>1.6%</td>
+              <td>Brexit国民投票後の利下げ・QE拡大</td>
+            </tr>
+            <tr>
+              <td>2020</td>
+              <td>0.05%</td>
+              <td>0.1%</td>
+              <td>0.3%</td>
+              <td>0.8%</td>
+              <td>COVID-19、Bank Rate 0.1%、大規模QE</td>
+            </tr>
+            <tr class="event-hike">
+              <td>2022末</td>
+              <td>3.5%</td>
+              <td>3.6%</td>
+              <td>3.7%</td>
+              <td>3.9%</td>
+              <td>急速利上げ、LDI危機後の調整</td>
+            </tr>
+            <tr>
+              <td>2024</td>
+              <td>4.3%</td>
+              <td>4.0%</td>
+              <td>4.1%</td>
+              <td>4.6%</td>
+              <td>Bank Rate 5.25%→利下げ開始</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section 5: QE and Gilt Market -->
+      <section>
+        <h2>量的緩和 (QE) とギルト市場</h2>
+        <p>
+          2009年3月、BOEは政策金利を0.5%に引き下げた上で、量的緩和 (Quantitative Easing, QE) を開始した。これはBOEの300年超の歴史において前例のない措置であった。BOEは資産買入ファシリティ (Asset Purchase Facility, APF) を通じてギルトを大量に購入し、長期金利の低下と金融緩和効果の波及を図った<cite>[8]</cite>。
+        </p>
+        <p>
+          QEの規模は段階的に拡大された。GFC後の初期QEでは累計3,750億ポンドのギルトが購入された。2016年のBrexit国民投票後にはさらに拡大され、2020年のCOVID-19パンデミックでは最終的に累計8,750億ポンドに達した。ピーク時にはBOEがギルト発行残高の約40%を保有する状態となった<cite>[9]</cite>。
+        </p>
+        <p>
+          2022年2月以降、BOEは量的引き締め (Quantitative Tightening, QT) に移行し、保有ギルトの段階的な削減を進めている。満期到来分の非再投資に加え、能動的な市場売却も実施されており、ギルト市場の需給構造は大きな転換期を迎えている<cite>[10]</cite>。
+        </p>
+      </section>
+
+      <!-- Section 6: LDI Crisis 2022 -->
+      <section>
+        <h2>2022年LDI危機 — ミニ・バジェット・ショック</h2>
+        <p>
+          2022年9月23日、リズ・トラス (Liz Truss) 首相の下でクワジ・クワーテング (Kwasi Kwarteng) 財務相が発表した「ミニ・バジェット」は、ギルト市場に歴史的な混乱を引き起こした。総額450億ポンドの無財源減税を含む財政パッケージは、市場の信認を瞬時に失墜させた<cite>[11]</cite>。
+        </p>
+        <p>
+          長期ギルト利回りは発表後数日で100bp以上急騰し、30年ギルトは一時5%を超えた。この利回り急騰が英国年金基金が広く採用していたLDI（Liability-Driven Investment：負債駆動型投資）戦略のマージンコールを連鎖的に引き起こした。LDI戦略では金利スワップやレポ取引を通じてレバレッジを活用しており、利回り急騰によりコラテラル（担保）の追加拠出が必要となったが、年金基金は短期間での流動性確保が困難であった<cite>[12]</cite>。
+        </p>
+        <p>
+          9月28日、BOEは金融安定を理由に緊急のギルト買入プログラムを発表し、650億ポンドの一時的な買入枠を設定した。この介入により市場は安定を取り戻したが、トラス首相は就任わずか45日で辞任に追い込まれた。LDI危機は、財政政策の信認が債券市場を通じて即座に試される現代の「ボンド・ヴィジランテ (bond vigilante)」の力を示す象徴的事例となった<cite>[13]</cite>。
+        </p>
+      </section>
+
+      <!-- Section 7: Market Structure -->
+      <section>
+        <h2>ギルト市場の構造と参加者</h2>
+        <p>
+          ギルトの発行はDMOが管理し、入札方式（オークション）と個別引受方式（シンジケーション）の両方が用いられる。プライマリーディーラーはギルト・エッジ・マーケット・メーカー (Gilt-Edged Market Makers, GEMMs) と呼ばれ、2024年時点で約12社が指定されている<cite>[14]</cite>。
+        </p>
+
+        <h3>主要投資家の保有構成（2024年推定）</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>投資家カテゴリー</th>
+              <th>保有比率</th>
+              <th>主な動機</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>イングランド銀行 (BOE/APF)</td>
+              <td>~25%（QT進行中）</td>
+              <td>QE政策、段階的縮小中</td>
+            </tr>
+            <tr>
+              <td>年金基金・保険会社</td>
+              <td>~28%</td>
+              <td>ALM、LDI戦略、長期債需要</td>
+            </tr>
+            <tr>
+              <td>海外投資家</td>
+              <td>~30%</td>
+              <td>準備資産、利回り追求、分散投資</td>
+            </tr>
+            <tr>
+              <td>英国銀行セクター</td>
+              <td>~10%</td>
+              <td>流動性規制 (LCR)、担保</td>
+            </tr>
+            <tr>
+              <td>その他（個人、ファンド等）</td>
+              <td>~7%</td>
+              <td>リテール投資、インデックスファンド</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Sources -->
+      <footer class="sources">
+        <h3>出典・参考文献</h3>
+        <ol>
+          <li>Bank of England, "A Millennium of Macroeconomic Data", 2017</li>
+          <li>UK Debt Management Office (DMO), "Annual Review 2023-24", dmo.gov.uk</li>
+          <li>HM Treasury, "Debt and Reserves Management Report 2002", gov.uk</li>
+          <li>DMO, "Index-Linked Gilts — A Guide", dmo.gov.uk</li>
+          <li>HM Treasury, "Redemption of War Loans and Consols", 2014-2015, gov.uk</li>
+          <li>Bank of England, "Yield Curve Data and Methodology", bankofengland.co.uk</li>
+          <li>Financial Conduct Authority / Bank of England, "LDI — Lessons Learned", 2023</li>
+          <li>Bank of England, "Asset Purchase Facility: Gilt Purchases", 2009, bankofengland.co.uk</li>
+          <li>Bank of England, "Monetary Policy Report", various years, bankofengland.co.uk</li>
+          <li>Bank of England, "Quantitative Tightening — Market Notice", 2022-2024</li>
+          <li>Institute for Fiscal Studies (IFS), "The Mini-Budget: An Assessment", September 2022</li>
+          <li>Financial Policy Committee, "Financial Stability Report — LDI and Leverage", December 2022</li>
+          <li>House of Commons Treasury Committee, "Lessons from the LDI Crisis", 2023</li>
+          <li>DMO, "Gilt-Edged Market Makers (GEMMs) — List and Obligations", dmo.gov.uk</li>
+        </ol>
+        <p class="note">※ 投資家保有比率はBOE統計およびDMO報告書に基づく推定値。タカ・ハト分類等の評価は市場コンセンサスベース。</p>
+      </footer>
+    </article>
+
+    <nav class="page-nav">
+      <a href="10_equity_current.html" class="prev">← 10. Equity: 2020s</a>
+      <a href="12_short_rates.html" class="next">12. Short-term Rates →</a>
+    </nav>
+  </main>
+
+  <script>
+    document.querySelectorAll('.sortable th').forEach(th => {
+      th.style.cursor = 'pointer';
+      th.addEventListener('click', () => {
+        const table = th.closest('table');
+        const tbody = table.querySelector('tbody');
+        const idx = Array.from(th.parentNode.children).indexOf(th);
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+        const dir = th.asc = !th.asc ? 1 : -1;
+        rows.sort((a, b) => {
+          const at = a.children[idx]?.textContent.trim() ?? '';
+          const bt = b.children[idx]?.textContent.trim() ?? '';
+          return !isNaN(parseFloat(at)) && !isNaN(parseFloat(bt))
+            ? dir * (parseFloat(at) - parseFloat(bt))
+            : dir * at.localeCompare(bt, 'ja');
+        });
+        rows.forEach(r => tbody.appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>
