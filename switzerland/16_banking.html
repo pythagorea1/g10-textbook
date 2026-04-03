@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Switzerland - Banking Sector | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇨🇭 Switzerland</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link active">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip active">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Switzerland</a>
+        <span class="sep">/</span>
+        Banking Sector
+      </div>
+      <h1 class="page-title">スイスの銀行セクター (Swiss Banking Sector)</h1>
+      <p class="page-subtitle">銀行秘密から信頼の崩壊へ — UBS・クレディスイスの興亡とスイス金融センターの変容</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">CHF 3.6兆+</div>
+          <div class="stat-label">銀行総資産 (2024年)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">GDP比 ~480%</div>
+          <div class="stat-label">銀行資産/GDP比率</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">約240行</div>
+          <div class="stat-label">認可銀行数 (2024年)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">~9.4%</div>
+          <div class="stat-label">金融セクターGDP寄与</div>
+        </div>
+      </div>
+
+      <!-- Overview -->
+      <section>
+        <h2>スイス銀行セクターの概要</h2>
+        <p>
+          スイスの銀行セクターは、人口わずか880万人の小国でありながら、世界有数の規模と影響力を持つ金融システムである。スイスは伝統的に「銀行秘密」(Bankgeheimnis / Banking Secrecy) を柱とした国際的な資産管理ハブとして発展し、クロスボーダー・ウェルスマネジメントで世界シェア約25%を占めてきた<cite>[1]</cite>。銀行総資産はGDP比で約480%に達し、G10諸国の中でも突出して高い水準にある。
+        </p>
+        <p>
+          スイスの銀行システムは、大手銀行（Grossbanken）、州立銀行（Kantonalbanken）、地方銀行・貯蓄銀行（Regionalbanken）、プライベートバンク（Privatbankiers）、外国銀行支店（Ausländische Banken）など、多層的な構造を持つ。特に2つのグローバル・システマティカリー・インポータント・バンク（G-SIB）であったUBSとクレディ・スイス (Credit Suisse) がシステムの中核を形成していたが、2023年のクレディ・スイス破綻・UBS吸収合併により、スイスの銀行セクターは歴史的な構造変化を迎えた<cite>[2]</cite>。
+        </p>
+      </section>
+
+      <!-- Banking Categories -->
+      <section>
+        <h2>スイスの銀行カテゴリー</h2>
+        <table>
+          <thead>
+            <tr><th>カテゴリー</th><th>行数 (2024年)</th><th>総資産 (CHF)</th><th>特徴</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="event-crisis">大手銀行 (Grossbanken)</td><td>1 (UBS)</td><td>~1.7兆</td><td>G-SIB、投資銀行・資産管理のグローバル展開</td></tr>
+            <tr><td>州立銀行 (Kantonalbanken)</td><td>24</td><td>~7,200億</td><td>各州政府が出資・保証、リテール・住宅ローン中心</td></tr>
+            <tr><td>ライファイゼン (Raiffeisen)</td><td>1 (220支店)</td><td>~2,700億</td><td>協同組合銀行、地域密着型、住宅ローン第3位</td></tr>
+            <tr><td>地方・貯蓄銀行</td><td>~40</td><td>~1,200億</td><td>地域密着、保守的な経営</td></tr>
+            <tr><td class="event-hike">プライベートバンク</td><td>~90</td><td>~4,500億</td><td>富裕層向け資産管理、伝統的なスイス銀行業の象徴</td></tr>
+            <tr><td>外国銀行支店</td><td>~25</td><td>~2,000億</td><td>HSBCなどの在スイス拠点</td></tr>
+          </tbody>
+        </table>
+        <p class="source">出典: SNB Banking Statistics 2024<cite>[3]</cite>、FINMA Annual Report 2023<cite>[4]</cite></p>
+      </section>
+
+      <!-- History -->
+      <section>
+        <h2>スイス銀行業の歴史的発展</h2>
+
+        <h3>起源と銀行秘密の確立 (〜1930年代)</h3>
+        <p>
+          スイスの銀行業の起源は中世に遡る。ジュネーブは16世紀からカルヴァン派のプロテスタント商人を中心とした金融センターとして機能し、バーゼルは貿易金融の拠点として発展した。1856年にはクレディ・スイス (Schweizerische Kreditanstalt) が、1862年にはスイス銀行協会 (Schweizerische Bankiervereinigung) の前身が設立された<cite>[5]</cite>。
+        </p>
+        <p>
+          スイス銀行業の最大の特徴である「銀行秘密」は、1934年連邦銀行法 (Bundesgesetz über die Banken und Sparkassen) 第47条により法的に確立された。この法律は、銀行員が顧客情報を第三者に開示することを刑事罰の対象としたもので、表向きはナチスドイツによるユダヤ人資産の追跡を防ぐためとされたが、実際にはスイスの金融センターとしての競争力を制度化する意図があった<cite>[6]</cite>。この銀行秘密制度が、スイスを世界最大のオフショア金融センターへと押し上げる原動力となった。
+        </p>
+
+        <h3>戦後の成長と国際化 (1945-1990年代)</h3>
+        <p>
+          第二次世界大戦後、スイスは政治的中立と銀行秘密を武器に、世界中の富裕層・機関投資家の資金を引き付けた。1945年時点で約CHF 200億だった銀行預金は、1970年代にはCHF 2,000億を超え、急速に拡大した<cite>[7]</cite>。特にSBC (Schweizerischer Bankverein)、UBS (Union Bank of Switzerland)、クレディ・スイスの「ビッグ3」が国際業務を急拡大し、ロンドン・ニューヨークでの存在感を高めた。
+        </p>
+        <p>
+          1990年代には、スイスの銀行業は大きな転換点を迎えた。1996年、第二次世界大戦中のホロコースト犠牲者の休眠口座問題が国際的なスキャンダルとなり、スイスの銀行は最終的にUSD 12.5億の和解金を支払った（1998年ボルカー委員会報告）<cite>[8]</cite>。この事件はスイス銀行業の「清潔な」イメージに最初の傷をつけた。
+        </p>
+        <p>
+          1998年、SBCとUnion Bank of Switzerlandが合併し、新生UBSが誕生した。これは当時ヨーロッパ最大の銀行合併であり、新UBSは総資産でシティグループに次ぐ世界第2位の金融機関となった<cite>[9]</cite>。
+        </p>
+
+        <h3>グローバル金融危機とUBS救済 (2007-2009)</h3>
+        <p>
+          2007-2008年のグローバル金融危機（GFC）は、スイスの銀行セクターに深刻な打撃を与えた。UBSは米国のサブプライムモーゲージ関連で約USD 500億の損失を計上し、2008年10月にスイス政府からCHF 60億の資本注入とSNBによるCHF 540億の不良資産買取ファシリティの支援を受けた<cite>[10]</cite>。UBSの株価は2007年のピークから約80%下落し、約1万人の人員削減が行われた。
+        </p>
+        <p>
+          同時期に、米国IRSとの脱税幇助問題が浮上し、UBSは2009年にUSD 7.8億の罰金を支払い、約4,450人の米国人顧客口座情報を開示することを余儀なくされた<cite>[11]</cite>。これはスイスの銀行秘密制度の実質的な崩壊の始まりとなった。
+        </p>
+
+        <h3>銀行秘密の終焉 (2009-2018)</h3>
+        <p>
+          GFC後、国際的な税務透明性の圧力が急速に高まった。2009年のG20ロンドンサミットでスイスはOECDグレーリストに掲載され、二国間租税情報交換協定の締結を迫られた。2014年にはOECDの共通報告基準（CRS: Common Reporting Standard）に署名し、2017年から自動的情報交換（AEOI）を開始した<cite>[12]</cite>。
+        </p>
+        <p>
+          この透明性への移行により、スイスのオフショア資産管理ビジネスは構造的な転換を迫られた。未申告資産は急速に流出し、一部のプライベートバンクは廃業を余儀なくされた。しかし、スイスは「コンプライアント・ウェルスマネジメント」（合法的な資産管理）へのシフトにより、クロスボーダー資産管理の世界首位の座を維持している<cite>[13]</cite>。
+        </p>
+
+        <h3>クレディ・スイスの崩壊 (2021-2023)</h3>
+        <p>
+          クレディ・スイスの崩壊は、スイス銀行史上最大の事件である。同行は2021年のアルケゴス・キャピタル・マネジメント (Archegos Capital Management) 破綻で約USD 55億、グリーンシル・キャピタル (Greensill Capital) 関連でUSD 30億超の損失を計上し、信用不安が拡大した<cite>[14]</cite>。
+        </p>
+        <p>
+          2022年秋にはSNS上で「クレディ・スイスは破綻間近」との噂が拡散し、大規模な預金流出（2022年第4四半期にCHF 1,100億超）が発生。2023年3月15日、サウジ・ナショナル・バンク（最大株主）が追加出資を拒否したことで株価が急落し、CDS（クレジット・デフォルト・スワップ）は過去最高の1,000bps超に達した<cite>[15]</cite>。
+        </p>
+        <p>
+          2023年3月19日、スイス連邦政府・SNB・FINMAの共同介入により、UBSがクレディ・スイスをCHF 30億で救済買収することが発表された。AT1債（追加Tier1資本、いわゆるCoCo債）はCHF 160億が全額毀損（ゼロ償却）され、国際的な債券市場に大きな衝撃を与えた<cite>[16]</cite>。この合併により、UBSの総資産はCHF 1.7兆、運用資産は約USD 5.7兆に達し、スイスGDPの約2倍に相当する「メガバンク」が誕生した。
+        </p>
+      </section>
+
+      <!-- Major Banks Timeline -->
+      <section>
+        <h2>スイス主要銀行の変遷年表</h2>
+        <table class="sortable">
+          <thead>
+            <tr><th>年</th><th>出来事</th><th>影響</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1856</td><td>クレディ・スイス (SKA) 設立</td><td class="event-cut">鉄道・産業金融の主力銀行として成長</td></tr>
+            <tr><td>1862</td><td>SBC (Basler Bankverein) 設立</td><td>バーゼル拠点の国際銀行へ発展</td></tr>
+            <tr><td>1912</td><td>Union Bank of Switzerland (UBS) 設立</td><td>チューリッヒ拠点、資産管理に強み</td></tr>
+            <tr><td>1934</td><td class="event-crisis">銀行秘密法制定</td><td class="event-crisis">顧客情報開示に刑事罰、オフショアセンター化の法的基盤</td></tr>
+            <tr><td>1945-70</td><td>戦後急成長期</td><td>中立国の利点を活かし国際資金を集積</td></tr>
+            <tr><td>1996-98</td><td class="event-crisis">ホロコースト休眠口座問題</td><td class="event-crisis">USD 12.5億の和解金支払い、国際的イメージ悪化</td></tr>
+            <tr><td>1998</td><td>SBC + UBS → 新生UBS合併</td><td>欧州最大の銀行合併、世界第2位の金融機関</td></tr>
+            <tr><td>2008</td><td class="event-crisis">UBS救済 (GFC)</td><td class="event-crisis">CHF 60億の政府資本注入、USD 500億の損失</td></tr>
+            <tr><td>2009</td><td class="event-crisis">UBS脱税幇助問題</td><td class="event-crisis">USD 7.8億罰金、4,450口座情報開示、銀行秘密崩壊の始まり</td></tr>
+            <tr><td>2014</td><td>OECD CRS署名</td><td>自動的情報交換への移行、銀行秘密の実質的終焉</td></tr>
+            <tr><td>2021</td><td class="event-crisis">CS: アルケゴス・グリーンシル損失</td><td class="event-crisis">USD 85億超の損失、経営陣刷新</td></tr>
+            <tr><td>2022 Q4</td><td class="event-crisis">CS: 大規模預金流出</td><td class="event-crisis">CHF 1,100億超の預金流出、信用危機</td></tr>
+            <tr><td>2023/3</td><td class="event-crisis">CS破綻・UBS救済買収</td><td class="event-crisis">CHF 30億で買収、AT1債CHF 160億全損、G-SIB統合</td></tr>
+            <tr><td>2024</td><td>UBS統合完了</td><td>総資産CHF 1.7兆、運用資産USD 5.7兆の巨大銀行</td></tr>
+          </tbody>
+        </table>
+        <p class="source">出典: SNB<cite>[3]</cite>、FINMA<cite>[4]</cite>、UBS Annual Report 2024<cite>[17]</cite></p>
+      </section>
+
+      <!-- Kantonalbanken -->
+      <section>
+        <h2>州立銀行 (Kantonalbanken) の役割</h2>
+        <p>
+          スイスの銀行システムにおいて独特の存在が、24行の州立銀行（カントナルバンク）である。各州（カントン）が設立・出資し、多くの場合は州政府による預金保証が付されている。チューリッヒ州立銀行 (Zürcher Kantonalbank, ZKB) はスイス国内第4位の銀行であり、総資産約CHF 2,000億を誇る<cite>[18]</cite>。
+        </p>
+        <p>
+          州立銀行はリテール業務・住宅ローン・中小企業融資を中心とし、保守的な経営で知られる。GFCやクレディ・スイス危機でも安定した業績を維持し、スイスの銀行システムの「安定装置」として機能してきた。住宅ローン市場ではシェア約35%を占め、UBSに次ぐ第2位のポジションにある<cite>[19]</cite>。州政府保証があるため、格付けはAAA水準の銀行が多く、調達コストの優位性がある。
+        </p>
+      </section>
+
+      <!-- Private Banking -->
+      <section>
+        <h2>プライベートバンクの伝統と変容</h2>
+        <p>
+          スイスのプライベートバンクは、18世紀ジュネーブに起源を持つ「バンキエ・プリヴェ」（Bankiers Privés）の伝統を受け継ぐ。無限責任のパートナーシップ形態で運営され、顧客との長期的な信頼関係を基盤とする資産管理が特徴であった。ピクテ (Pictet)、ロンバー・オディエ (Lombard Odier)、ジュリアス・ベア (Julius Bär) などが代表的な存在である<cite>[20]</cite>。
+        </p>
+        <p>
+          しかし、銀行秘密の終焉と規制強化により、プライベートバンクの数は2000年代の約150行から2024年には約90行に減少した。小規模な銀行はコンプライアンスコストの負担に耐えられず、廃業・合併が相次いだ。生き残った銀行は、単なる秘匿性ではなく、運用能力・ESG対応・デジタル化で差別化する方向に転換している<cite>[21]</cite>。
+        </p>
+      </section>
+
+      <!-- Sources -->
+      <footer class="sources">
+        <h3>出典・参考文献</h3>
+        <ol>
+          <li>[1] Boston Consulting Group, "Global Wealth Report 2024" — クロスボーダー資産管理のスイスシェア</li>
+          <li>[2] SNB, "Banks in Switzerland 2023" — 銀行セクターの構造統計</li>
+          <li>[3] SNB Banking Statistics, Monthly Bulletin 2024</li>
+          <li>[4] FINMA Annual Report 2023</li>
+          <li>[5] Swiss Bankers Association (SBA), "The Swiss Financial Centre: History and Key Facts", 2022</li>
+          <li>[6] Guex, Sébastien, "The Origins of the Swiss Banking Secrecy Law and Its Repercussions for Swiss Federal Policy", Business History Review, 1999</li>
+          <li>[7] SNB Historical Statistics, Balance Sheet Data 1907-2000</li>
+          <li>[8] Independent Committee of Eminent Persons (Volcker Committee), "Report on Dormant Accounts of Victims of Nazi Persecution in Swiss Banks", 1999</li>
+          <li>[9] UBS, "Our History" — 1998 SBC-UBS merger</li>
+          <li>[10] SNB, "Stabilisation Fund: Final Report", 2013</li>
+          <li>[11] U.S. Department of Justice, "UBS Enters into Deferred Prosecution Agreement", 2009</li>
+          <li>[12] OECD, "Standard for Automatic Exchange of Financial Account Information in Tax Matters (CRS)", 2014</li>
+          <li>[13] Boston Consulting Group, "Global Wealth Report 2024" — compliant wealth management trends</li>
+          <li>[14] Credit Suisse, Annual Report 2021 — Archegos/Greensill losses</li>
+          <li>[15] Bloomberg, "Credit Suisse CDS Surge Past 1,000 Basis Points", March 2023</li>
+          <li>[16] FINMA, "FINMA approves merger of UBS and Credit Suisse", March 19, 2023</li>
+          <li>[17] UBS, Annual Report 2024</li>
+          <li>[18] Zürcher Kantonalbank, Annual Report 2023</li>
+          <li>[19] SNB, "Mortgage Market Statistics 2024"</li>
+          <li>[20] Association of Swiss Private Banks, "Private Banking in Switzerland", 2023</li>
+          <li>[21] KPMG, "Clarity on Swiss Private Banking", 2024 — industry consolidation trends</li>
+        </ol>
+        <p><em>※ 銀行資産・シェア等のデータは各機関の公式統計に基づく。最新の統計はSNB・FINMAの年次報告書を参照。</em></p>
+      </footer>
+    </article>
+  </main>
+
+  <script>
+    document.querySelectorAll('.sortable th').forEach((th, i) => {
+      th.style.cursor = 'pointer';
+      th.addEventListener('click', () => {
+        const table = th.closest('table');
+        const tbody = table.querySelector('tbody');
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+        const dir = th.dataset.dir === 'asc' ? 'desc' : 'asc';
+        th.dataset.dir = dir;
+        rows.sort((a, b) => {
+          const av = a.children[i]?.textContent.trim() ?? '';
+          const bv = b.children[i]?.textContent.trim() ?? '';
+          return dir === 'asc' ? av.localeCompare(bv, 'ja', {numeric: true}) : bv.localeCompare(av, 'ja', {numeric: true});
+        });
+        rows.forEach(r => tbody.appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>
