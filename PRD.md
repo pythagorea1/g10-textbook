@@ -144,7 +144,7 @@ g10_textbook/
 
 ### Phase 10: Sweden (sweden/)
 - [x] Task 35: Sweden pages 1-5 — Central Bank (Riksbank 1668、世界最古)、Policy Rate (マイナス金利)、Fiscal Policy、Employment、Inflation
-- [ ] Task 36: Sweden pages 6-10 — Equity (OMX Stockholm 30)、Early〜2020s
+- [x] Task 36: Sweden pages 6-10 — Equity (OMX Stockholm 30)、Early〜2020s
 - [ ] Task 37: Sweden pages 11-15 — Bond、Rates、Currency (SEK)、Crises (1990s banking crisis)
 - [ ] Task 38: Sweden pages 16-20 — Banking (Nordea等)、Corporate (Ericsson, Volvo)、Regulation、Trade、Lessons
 
