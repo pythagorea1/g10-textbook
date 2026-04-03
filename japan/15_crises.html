@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japan - Financial Crises | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇯🇵 Japan</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link active">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip active">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Japan</a>
+        <span class="sep">/</span>
+        Financial Crises
+      </div>
+      <h1 class="page-title">日本の金融危機 (Financial Crises in Japan)</h1>
+      <p class="page-subtitle">バブル崩壊、銀行危機、そして「失われた30年」— 世界が学ぶべき教訓の宝庫</p>
+    </header>
+
+    <article>
+      <!-- Crisis Timeline Overview -->
+      <section>
+        <h2>1. 日本の金融危機年表</h2>
+        <p>
+          日本は戦後、複数の深刻な金融危機を経験してきた。中でも1990年代のバブル崩壊とその後の銀行危機は、先進国における資産バブルとバランスシート不況の典型例として、世界中の政策担当者と学術研究者に研究されてきた。2008年のリーマンショック時、各国の政策当局者は日本の経験を参照し、「日本の失敗を繰り返すまい」として迅速な金融・財政対応を行った。
+        </p>
+
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>危機名</th>
+              <th>影響度</th>
+              <th>主な影響</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1927</td>
+              <td class="event-crisis">昭和金融恐慌</td>
+              <td>深刻</td>
+              <td>取り付け騒ぎ、銀行大量破綻、モラトリアム令</td>
+            </tr>
+            <tr>
+              <td>1990-1992</td>
+              <td class="event-crisis">バブル崩壊</td>
+              <td>壊滅的</td>
+              <td>株価・不動産暴落、不良債権問題の始まり</td>
+            </tr>
+            <tr>
+              <td>1995</td>
+              <td class="event-crisis">住専問題</td>
+              <td>重大</td>
+              <td>公的資金投入問題、金融行政の混乱</td>
+            </tr>
+            <tr>
+              <td>1997-1998</td>
+              <td class="event-crisis">銀行危機（第一波）</td>
+              <td>壊滅的</td>
+              <td>山一証券・北海道拓殖銀行破綻、信用収縮</td>
+            </tr>
+            <tr>
+              <td>2003</td>
+              <td class="event-crisis">銀行危機（第二波）</td>
+              <td>重大</td>
+              <td>りそな銀行実質国有化、メガバンク不良債権処理</td>
+            </tr>
+            <tr>
+              <td>2008</td>
+              <td class="event-crisis">リーマンショック</td>
+              <td>重大</td>
+              <td>輸出急減、株価暴落、円高。銀行への直接的打撃は限定的</td>
+            </tr>
+            <tr>
+              <td>2011</td>
+              <td class="event-crisis">東日本大震災</td>
+              <td>重大</td>
+              <td>経済活動停止、サプライチェーン寸断、原発事故</td>
+            </tr>
+            <tr>
+              <td>2020</td>
+              <td class="event-crisis">COVID-19ショック</td>
+              <td>一時的に深刻</td>
+              <td>緊急事態宣言、GDP急減、日銀の追加緩和</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section 2: Bubble and Collapse -->
+      <section>
+        <h2>2. バブル経済とその崩壊（1985-1992年）</h2>
+        <p>
+          日本のバブル経済は、1985年のプラザ合意後の急激な円高に対応するための金融緩和に端を発する。日銀は公定歩合を1985年の5.0%から1987年には2.5%まで引き下げ、過剰流動性が不動産と株式市場に流入した。
+        </p>
+        <p>
+          バブルのピーク時（1989年末）、日経平均は38,915円87銭の史上最高値を記録。東京都心の商業地価は1985年比で約3倍に上昇し、「山手線内側の土地でアメリカ全土が買える」と言われた。銀行は不動産を担保に融資を拡大し、ノンバンク（住宅金融専門会社＝住専）も積極的に不動産向け貸出を行った。
+        </p>
+        <p>
+          1989年5月、日銀の三重野康総裁は「平成の鬼平」と呼ばれる強力な引き締めに転じ、公定歩合を段階的に6.0%まで引き上げた。さらに、大蔵省（現財務省）が不動産向け融資の総量規制を導入。これらの政策引き締めがバブル崩壊のきっかけとなった。
+        </p>
+        <p>
+          日経平均は1990年初頭から急落を開始し、1990年10月には約20,000円まで下落（ピークから約49%の下落）。不動産価格も1991年から下落に転じ、商業地価は最終的にピーク比で約87%下落した。バブル崩壊による資産価値の毀損額は、株式と不動産を合わせて推定1,500兆円に達するとされ、日本のGDPの約3年分に相当する天文学的な損失であった。
+        </p>
+      </section>
+
+      <!-- Section 3: Banking Crisis -->
+      <section>
+        <h2>3. 銀行危機（1995-2003年）</h2>
+        <p>
+          バブル崩壊後、日本の銀行は膨大な不良債権を抱えたが、当初は問題の深刻さが過小評価された。大蔵省と銀行業界は「護送船団方式」の延長線上で問題を先送りし、不良債権の処理は遅々として進まなかった。
+        </p>
+
+        <h3>住専問題（1995年）</h3>
+        <p>
+          住宅金融専門会社（住専）7社は、バブル期に不動産向け融資を急拡大し、バブル崩壊後に約6.4兆円の不良債権を抱えて経営破綻した。1996年の住専処理法により6,850億円の公的資金が投入されたが、国民の強い反発を招き、「税金で銀行を救済するのか」という世論の反発が政治問題化した。この国民感情が、その後の公的資金投入を遅らせる一因となった。
+        </p>
+
+        <h3>1997-1998年の金融危機</h3>
+        <p>
+          1997年11月、日本の金融史上最も深刻な月を迎えた。三洋証券がコール市場でデフォルトし（戦後初のインターバンク市場でのデフォルト）、北海道拓殖銀行が経営破綻（都市銀行として戦後初の破綻）、そして準大手証券の山一證券が自主廃業を発表した。山一證券の野澤正平社長が記者会見で「社員は悪くありません」と涙ながらに訴えた映像は、日本の金融危機を象徴するシーンとなった。
+        </p>
+        <p>
+          1998年には日本長期信用銀行（長銀）と日本債券信用銀行（日債銀）が相次いで国有化された。この一連の破綻は「ジャパン・プレミアム」と呼ばれる日本の銀行に対するリスクプレミアムを生み出し、海外市場での円資金調達コストが上昇した。
+        </p>
+        <p>
+          1998-1999年にかけて、金融再生法と早期健全化法が成立し、主要銀行に対する約7.5兆円の公的資金注入が実施された。しかし、不良債権処理は依然として不十分であり、「ゾンビ企業」（本来なら破綻すべき企業が銀行の追い貸しで存続）の問題が経済全体の生産性を低下させた。
+        </p>
+
+        <h3>りそな危機と不良債権処理の完了（2003年）</h3>
+        <p>
+          2003年5月、りそな銀行（旧大和銀行とあさひ銀行の統合行）の自己資本比率が基準を下回り、約2兆円の公的資金が注入されて実質国有化された。これは「大きすぎて潰せない（too big to fail）」政策の日本版であり、預金者保護と金融システムの安定が優先された。
+        </p>
+        <p>
+          りそな危機を転機として、小泉政権の竹中平蔵金融担当大臣のもとで不良債権処理が加速した。「金融再生プログラム」により、主要銀行の不良債権比率は2002年3月の8.4%から2005年3月には2.9%まで低下し、約10年に及んだ銀行危機はようやく終息に向かった。
+        </p>
+      </section>
+
+      <!-- Section 4: 1927 Crisis -->
+      <section>
+        <h2>4. 昭和金融恐慌（1927年）</h2>
+        <p>
+          昭和金融恐慌は、第一次世界大戦後の不良債権問題が顕在化した危機である。1923年の関東大震災で被害を受けた手形（震災手形）の処理をめぐる国会答弁中、片岡直温蔵相が「渡辺銀行が破綻した」と失言（実際にはまだ破綻していなかった）。この発言が取り付け騒ぎを引き起こし、中小銀行が相次いで破綻した。
+        </p>
+        <p>
+          鈴木商店の破綻とその主力銀行である台湾銀行の経営危機に拡大し、政府は3週間のモラトリアム（支払猶予令）を発令。日銀は「最後の貸し手」として大量の緊急融資を実施し、危機を収束させた。この経験は、中央銀行の流動性供給機能の重要性を示す歴史的事例であり、その後の金融危機対応の原型となった。
+        </p>
+      </section>
+
+      <!-- Section 5: External Crises Impact -->
+      <section>
+        <h2>5. 外的ショックの影響</h2>
+
+        <h3>リーマンショック（2008年）</h3>
+        <p>
+          2008年9月のリーマン・ブラザーズ破綻に端を発する世界金融危機は、日本の銀行セクターへの直接的な影響は限定的であった（サブプライム関連損失が相対的に小さかった）。しかし、輸出の急減（前年比-30%以上）、急激な円高（120円台→90円台）、株価暴落（日経平均が7,000円を下回る場面も）により、実体経済には深刻な打撃を受けた。
+        </p>
+        <p>
+          日銀は政策金利を0.3%から0.1%に引き下げ、CP・社債の買入れ、銀行への資本注入支援など、非伝統的金融政策を拡大した。政府は約15兆円規模の景気対策（エコカー減税、定額給付金等）を実施した。
+        </p>
+
+        <h3>東日本大震災（2011年）</h3>
+        <p>
+          2011年3月11日のマグニチュード9.0の大地震、津波、そして福島第一原子力発電所事故は、人的・経済的に甚大な被害をもたらした。直接の経済損失は約16-25兆円と推計され、サプライチェーンの寸断は世界中の製造業に影響を及ぼした。
+        </p>
+        <p>
+          為替市場では、日本の保険会社が保険金支払いのために海外資産を売却して円に戻すとの思惑（レパトリエーション期待）から、円が急騰した。USD/JPYは一時76.25円まで下落し、G7は協調介入を実施して円高を抑制した。日銀は約100兆円規模の緊急流動性供給を実施し、金融システムの安定を確保した。
+        </p>
+
+        <h3>COVID-19ショック（2020年）</h3>
+        <p>
+          2020年のCOVID-19パンデミックは、2度の緊急事態宣言を経て日本経済に深刻な打撃を与えた。2020年4-6月期のGDPは前期比年率-28.1%と戦後最大の落ち込みを記録した。日銀はETF買入れ上限を年間12兆円に倍増させ、CP・社債買入れ枠を拡大し、中小企業向け特別オペを実施した。政府は総額約77兆円の経済対策（特別定額給付金10万円含む）を打ち出した。
+        </p>
+      </section>
+
+      <!-- Section 6: Lessons -->
+      <section>
+        <h2>6. 日本の金融危機から得られる教訓</h2>
+        <p>
+          日本の金融危機の歴史は、世界の政策担当者にとって貴重な教訓の宝庫である。以下に主要な教訓をまとめる：
+        </p>
+        <ul>
+          <li><strong>不良債権処理の遅延は経済全体を蝕む:</strong> 日本の銀行は10年以上にわたり不良債権の処理を先送りし、その間「ゾンビ企業」への追い貸しが経済の新陳代謝を阻害した。2008年のGFC時、米欧はこの教訓を活かして迅速な銀行資本増強と不良資産買取を実施した。</li>
+          <li><strong>バブルの芽は早期に摘むべき:</strong> 日銀は1987-1989年のバブル膨張期に低金利を維持し続け、引き締めが遅れた。資産価格バブルに対するプロアクティブな金融政策（「リーン・アゲインスト・ザ・ウィンド」）の必要性が認識された。</li>
+          <li><strong>ゼロ金利制約下での政策運営の困難さ:</strong> 日銀は世界で初めてゼロ金利政策、量的緩和、マイナス金利を経験し、非伝統的金融政策の効果と限界を示した。金利がゼロに達した後の追加緩和手段は限られ、副作用（市場機能の低下、円安等）との兼ね合いが常に課題となる。</li>
+          <li><strong>デフレからの脱却は極めて困難:</strong> 日本のデフレは1998年頃から始まり、完全な脱却には約25年を要した。デフレ期待が一度定着すると、賃金・物価の下方硬直性が自己強化的に作用し、政策対応が効きにくくなる。</li>
+          <li><strong>財政と金融政策の協調が重要:</strong> 金融政策だけではデフレからの脱却は困難であり、財政政策との協調（ポリシーミックス）が不可欠である。アベノミクスの「3本の矢」（金融緩和、財政出動、成長戦略）は、この教訓を踏まえたものであった。</li>
+        </ul>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>日本銀行, "金融システムレポート", 各号, <cite>boj.or.jp/research/brp/fsr/</cite></li>
+        <li>金融庁, "金融再生プログラム", 2002年, <cite>fsa.go.jp/</cite></li>
+        <li>預金保険機構, "年報", 各年版, <cite>dic.go.jp/</cite></li>
+        <li>IMF, "Japan: Financial System Stability Assessment", 各年版, <cite>imf.org/en/Countries/JPN</cite></li>
+        <li>BIS, "Japan's banking crisis — lessons and implications", Working Paper, <cite>bis.org/publ/work/</cite></li>
+        <li>Richard Koo, "The Holy Grail of Macroeconomics: Lessons from Japan's Great Recession", Wiley, 2008年</li>
+        <li>内閣府, "年次経済財政報告（経済財政白書）", 各年版, <cite>cao.go.jp/</cite></li>
+        <li>西村吉正, "日本の金融制度改革", 東洋経済新報社, 2003年</li>
+        <li>竹中平蔵, "構造改革の真実 — 竹中平蔵大臣日誌", 日本経済新聞社, 2006年</li>
+        <li>日本銀行金融研究所, "昭和金融恐慌の研究", 各種研究報告</li>
+      </ol>
+      <p class="note">注: 経済データは各時点の概算値。不良債権比率等は金融庁公表データに基づく。</p>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelectorAll('.sortable th').forEach(th => {
+      th.style.cursor = 'pointer';
+      th.addEventListener('click', () => {
+        const table = th.closest('table');
+        const idx = Array.from(th.parentNode.children).indexOf(th);
+        const rows = Array.from(table.querySelectorAll('tbody tr'));
+        const dir = th.asc = !th.asc ? 1 : -1;
+        rows.sort((a, b) => {
+          const av = a.children[idx].textContent.trim();
+          const bv = b.children[idx].textContent.trim();
+          const an = parseFloat(av.replace(/[^0-9.\-]/g, ''));
+          const bn = parseFloat(bv.replace(/[^0-9.\-]/g, ''));
+          if (!isNaN(an) && !isNaN(bn)) return (an - bn) * dir;
+          return av.localeCompare(bv, 'ja') * dir;
+        });
+        rows.forEach(r => table.querySelector('tbody').appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>

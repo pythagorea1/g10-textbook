@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japan - Bond Market | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇯🇵 Japan</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link active">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip active">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Japan</a>
+        <span class="sep">/</span>
+        Bond Market
+      </div>
+      <h1 class="page-title">日本国債市場 (Japanese Government Bond Market)</h1>
+      <p class="page-subtitle">世界最大級の国債市場 — JGB残高1,000兆円超、日銀が半分以上を保有する異形の構造</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">¥1,066兆</div>
+          <div class="stat-label">JGB発行残高 (2024年度末)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">~53%</div>
+          <div class="stat-label">日銀保有比率 (2024年)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">260%超</div>
+          <div class="stat-label">政府債務/GDP比率</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">AA+/A+</div>
+          <div class="stat-label">S&amp;P / Moody's格付け</div>
+        </div>
+      </div>
+
+      <!-- Section 1: Overview -->
+      <section>
+        <h2>1. JGB市場の概観</h2>
+        <p>
+          日本国債（JGB: Japanese Government Bond）市場は、米国債市場に次ぐ世界第2位の国債市場である。2024年度末時点でJGBの発行残高は約1,066兆円に達し、日本のGDPの2倍を超える規模となっている。この巨額の債務残高にもかかわらず、日本国債は長年にわたり極めて低い利回りで取引されてきた。これは国内投資家（銀行、保険会社、年金基金）による安定的な需要と、2013年以降の日銀による大規模買入れが主因である。
+        </p>
+        <p>
+          JGB市場の最大の特徴は、発行体（日本政府）と最大の保有者（日本銀行）の関係である。2013年の「量的・質的金融緩和（QQE）」開始以降、日銀はJGBを大量に購入し続け、2024年時点で発行済みJGBの約53%を保有するに至った。この異例の状況は、市場流動性の低下や価格発見機能の毀損といった副作用を生んでいる。
+        </p>
+        <p>
+          JGBの種類は多岐にわたる。満期別に2年債、5年債、10年債、20年債、30年債、40年債が定期的に発行されており、2024年には50年債の発行も検討された。また、物価連動国債（JGBi）、変動利付国債、個人向け国債なども存在する。10年債が最も流動性が高く、ベンチマークとして広く参照される。
+        </p>
+      </section>
+
+      <!-- Section 2: Historical Development -->
+      <section>
+        <h2>2. JGB市場の歴史的発展</h2>
+        <p>
+          日本における国債発行の歴史は明治時代に遡る。1870年（明治3年）、明治政府はロンドン市場で初の外債を発行した。国内向けの国債発行は1878年に始まり、日清戦争（1894-95年）や日露戦争（1904-05年）の戦費調達が大きな転機となった。特に日露戦争では、高橋是清がロンドン・ニューヨーク市場で大規模な外債発行に成功し、これが日本の国際金融市場への本格参入となった。
+        </p>
+        <p>
+          戦後、1947年の財政法第4条により、原則として国債発行が禁止された（「均衡財政主義」）。しかし1965年、佐藤栄作内閣が戦後初の赤字国債を発行し、この原則は事実上崩れた。1970年代のオイルショック後には大量発行が常態化し、1975年度には歳入の約26%を国債が占めるようになった。
+        </p>
+        <p>
+          1980年代のバブル期には税収増加により国債依存度は一時低下したが、1990年代のバブル崩壊後、景気対策としての大型補正予算が相次ぎ、国債発行額は急増した。1998年には小渕恵三首相が「世界一の借金王」を自称するほどの財政拡大が行われ、JGB残高は急速に膨張していった。
+        </p>
+
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>JGB残高（兆円）</th>
+              <th>対GDP比</th>
+              <th>主要イベント</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1965</td>
+              <td>0.2</td>
+              <td>0.6%</td>
+              <td class="event-crisis">戦後初の赤字国債発行</td>
+            </tr>
+            <tr>
+              <td>1975</td>
+              <td>15</td>
+              <td>9.6%</td>
+              <td class="event-crisis">オイルショック後の大量発行開始</td>
+            </tr>
+            <tr>
+              <td>1985</td>
+              <td>134</td>
+              <td>40.5%</td>
+              <td>プラザ合意、財政再建論議</td>
+            </tr>
+            <tr>
+              <td>1990</td>
+              <td>166</td>
+              <td>37.0%</td>
+              <td>バブル期の税収増で依存度低下</td>
+            </tr>
+            <tr>
+              <td>1995</td>
+              <td>225</td>
+              <td>45.2%</td>
+              <td class="event-crisis">阪神大震災、景気対策で急増</td>
+            </tr>
+            <tr>
+              <td>2000</td>
+              <td>368</td>
+              <td>71.6%</td>
+              <td class="event-crisis">小渕財政拡大の結果</td>
+            </tr>
+            <tr>
+              <td>2005</td>
+              <td>527</td>
+              <td>100.5%</td>
+              <td>債務/GDP100%突破</td>
+            </tr>
+            <tr>
+              <td>2010</td>
+              <td>637</td>
+              <td>131.1%</td>
+              <td class="event-crisis">GFC後の大型景気対策</td>
+            </tr>
+            <tr>
+              <td>2013</td>
+              <td>743</td>
+              <td>152.0%</td>
+              <td class="event-rate-cut">黒田バズーカ、日銀大量買入開始</td>
+            </tr>
+            <tr>
+              <td>2016</td>
+              <td>838</td>
+              <td>163.0%</td>
+              <td class="event-rate-cut">YCC（イールドカーブ・コントロール）導入</td>
+            </tr>
+            <tr>
+              <td>2020</td>
+              <td>945</td>
+              <td>177.0%</td>
+              <td class="event-crisis">COVID-19対策で発行急増</td>
+            </tr>
+            <tr>
+              <td>2024</td>
+              <td>1,066</td>
+              <td>214.0%</td>
+              <td class="event-rate-hike">日銀、量的引き締め（QT）開始</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section 3: BOJ Holdings -->
+      <section>
+        <h2>3. 日銀のJGB保有と市場への影響</h2>
+        <p>
+          日本銀行のJGB保有は、金融政策の歴史と密接に関連している。2001年の量的緩和（QE）開始時、日銀のJGB保有額は約60兆円（発行残高の約15%）であった。その後、2013年4月の「量的・質的金融緩和（QQE）」、通称「黒田バズーカ」により、日銀は年間約50兆円ペースでJGBを購入し始めた。2014年10月の「QQE2」では購入ペースが年間80兆円に引き上げられた。
+        </p>
+        <p>
+          2016年9月には「イールドカーブ・コントロール（YCC）」が導入され、10年JGB利回りを0%程度に誘導する政策が開始された。YCC下では、日銀は目標利回りを維持するために必要な量のJGBを購入する形となり、購入量は市場状況に応じて変動するようになった。2022年以降、世界的なインフレと金利上昇圧力の中で、YCCの許容変動幅は段階的に拡大された（±0.25%→±0.50%→±1.0%）。
+        </p>
+        <p>
+          2024年3月、日銀はマイナス金利政策を解除し、YCCも事実上撤廃した。同年7月には政策金利を0.25%に引き上げるとともに、JGB買入れの減額計画（量的引き締め：QT）を公表した。月間買入れ額を約6兆円から段階的に約3兆円に縮小する計画であり、日銀のJGB保有比率は徐々に低下していく見通しである。
+        </p>
+
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>日銀JGB保有額（兆円）</th>
+              <th>保有比率</th>
+              <th>政策フレームワーク</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2000</td>
+              <td>~50</td>
+              <td>~14%</td>
+              <td>ゼロ金利政策</td>
+            </tr>
+            <tr>
+              <td>2005</td>
+              <td>~67</td>
+              <td>~13%</td>
+              <td>量的緩和（QE）</td>
+            </tr>
+            <tr>
+              <td>2010</td>
+              <td>~77</td>
+              <td>~12%</td>
+              <td>包括的金融緩和</td>
+            </tr>
+            <tr>
+              <td>2013</td>
+              <td>~130</td>
+              <td>~17%</td>
+              <td class="event-rate-cut">QQE開始（黒田バズーカ）</td>
+            </tr>
+            <tr>
+              <td>2016</td>
+              <td>~390</td>
+              <td>~37%</td>
+              <td class="event-rate-cut">YCC導入</td>
+            </tr>
+            <tr>
+              <td>2020</td>
+              <td>~490</td>
+              <td>~44%</td>
+              <td>COVID対応で購入加速</td>
+            </tr>
+            <tr>
+              <td>2022</td>
+              <td>~540</td>
+              <td>~50%</td>
+              <td class="event-crisis">YCC防衛で大量指値オペ</td>
+            </tr>
+            <tr>
+              <td>2024</td>
+              <td>~580</td>
+              <td>~53%</td>
+              <td class="event-rate-hike">QT開始、買入減額</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section 4: Yield Curve Structure -->
+      <section>
+        <h2>4. イールドカーブの構造と特徴</h2>
+        <p>
+          日本のイールドカーブは、長年にわたり独特の形状を示してきた。デフレ環境と超低金利政策の結果、カーブ全体が極めてフラットな水準に押し下げられ、2016年のYCC導入後は10年までのゾーンが人為的に0%近辺に固定された。これにより、カーブはYCC対象外の超長期ゾーン（20年、30年、40年）でのみスティープ化するという歪んだ構造となった。
+        </p>
+        <p>
+          JGBのイールドカーブは以下の主要年限で構成される：
+        </p>
+        <ul>
+          <li><strong>短期（2年）:</strong> 政策金利に最も連動。マイナス金利期には-0.1%以下で取引</li>
+          <li><strong>中期（5年）:</strong> 金融政策期待と景気見通しを反映</li>
+          <li><strong>長期（10年）:</strong> ベンチマーク。YCC下では0%±許容幅で誘導</li>
+          <li><strong>超長期（20-40年）:</strong> 生保・年金の ALM需要が主要ドライバー。相対的に自由な価格形成</li>
+        </ul>
+        <p>
+          2022-2023年にかけて、世界的な金利上昇とYCC維持の間で大きな緊張が生じた。海外投機筋がJGB先物を大量にショートし、日銀は10年利回り上限を守るために過去最大級の指値オペ（無制限の固定利率買入れ）を実施した。この結果、10年物の取引は日銀オペに集中し、通常の市場取引がほぼ消失する「債券市場機能の喪失」が問題化した。
+        </p>
+        <p>
+          2024年のYCC撤廃と利上げ開始により、カーブは徐々に正常化に向かっている。短期ゾーンはプラス利回りに復帰し、10年利回りも1%を超える水準まで上昇した。超長期ゾーンでは2024-2025年にかけて利回りが急上昇し、30年JGBが一時3%に迫る場面も見られた。これは日銀のQTと財政持続可能性への懸念が複合的に作用した結果である。
+        </p>
+      </section>
+
+      <!-- Section 5: Investor Base -->
+      <section>
+        <h2>5. JGBの投資家構成</h2>
+        <p>
+          JGB市場の投資家構成は、他の先進国国債市場と大きく異なる。最大の特徴は、発行残高の9割以上が国内投資家に保有されていることである。この「ホームバイアス」がJGB市場の安定性の源泉であり、巨額の政府債務にもかかわらずデフォルトリスクが極めて低いと見なされる理由の一つである。
+        </p>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>投資家カテゴリー</th>
+              <th>保有比率 (2024年)</th>
+              <th>特徴</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>日本銀行</td>
+              <td>~53%</td>
+              <td>QQE/YCC政策により最大保有者に</td>
+            </tr>
+            <tr>
+              <td>銀行（預金取扱機関）</td>
+              <td>~12%</td>
+              <td>ALM運用、担保利用。QQE前は最大保有者</td>
+            </tr>
+            <tr>
+              <td>生命保険</td>
+              <td>~10%</td>
+              <td>超長期債の主要買い手。負債デュレーションマッチング</td>
+            </tr>
+            <tr>
+              <td>年金基金</td>
+              <td>~5%</td>
+              <td>GPIF含む。近年は外債・株式にシフト</td>
+            </tr>
+            <tr>
+              <td>海外投資家</td>
+              <td>~7%</td>
+              <td>先物市場では約7割を占め、影響力大</td>
+            </tr>
+            <tr>
+              <td>公的年金（GPIF等）</td>
+              <td>~4%</td>
+              <td>国内債券比率を段階的に引き下げ</td>
+            </tr>
+            <tr>
+              <td>その他（個人、投信等）</td>
+              <td>~9%</td>
+              <td>個人向け国債（変動10年型等）が人気</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          注目すべきは、海外投資家の保有比率は約7%と小さいものの、JGB先物市場（大阪取引所）では取引の約70%を海外勢が占めている点である。このため、現物市場の安定性と先物市場のボラティリティが共存する独特の市場構造が形成されている。特に2022年のYCCアタック時には、海外ヘッジファンドが先物を通じて大量のショートポジションを構築し、日銀との攻防が世界的な注目を集めた。
+        </p>
+      </section>
+
+      <!-- Section 6: JGB Futures -->
+      <section>
+        <h2>6. JGB先物市場</h2>
+        <p>
+          JGB先物は1985年10月に東京証券取引所で取引開始された（現在は大阪取引所に統合）。10年JGB先物は日本の金利デリバティブ市場の中核であり、1日の取引高は数兆円に達する。受渡適格銘柄は残存期間7年以上11年未満のJGBで、標準的なクーポンは6%（2013年以降は3%に変更）として計算される。
+        </p>
+        <p>
+          JGB先物市場は、現物市場と比較していくつかの特徴がある。第一に、海外投資家の参加比率が圧倒的に高い。第二に、レバレッジを効かせた取引が可能なため、投機的な売買が活発である。第三に、チーペスト・トゥ・デリバー（CTD）銘柄の変動が市場ダイナミクスに大きな影響を与える。
+        </p>
+        <p>
+          2016年のマイナス金利導入後、先物価格は額面を大幅に上回る水準（152-155円台）で推移し、金利計算上の異常値が頻発した。2022-2023年のYCC攻防時には、先物の急落と日銀の現物買入れの間で大きなベーシスリスクが発生し、裁定取引の困難さから市場参加者の撤退が相次いだ。
+        </p>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>日本銀行, "資金循環統計", 各年版, <cite>boj.or.jp/statistics/sj/</cite></li>
+        <li>財務省, "国債管理政策の概要", 各年版, <cite>mof.go.jp/jgbs/</cite></li>
+        <li>財務省, "日本の財政関係資料", 2024年, <cite>mof.go.jp/policy/budget/</cite></li>
+        <li>日本銀行, "金融政策の推移", <cite>boj.or.jp/mopo/outline/</cite></li>
+        <li>BIS, "Quarterly Review — JGB market structure", 各号, <cite>bis.org/publ/qtrpdf/</cite></li>
+        <li>IMF, "Japan: Article IV Consultation", 各年版, <cite>imf.org/en/Countries/JPN</cite></li>
+        <li>S&P Global Ratings, "Japan Sovereign Rating", 各年版</li>
+        <li>大阪取引所, "JGB先物取引の概要", <cite>jpx.co.jp/derivatives/</cite></li>
+        <li>GPIF, "業務概況書", 各年版, <cite>gpif.go.jp/</cite></li>
+        <li>高橋是清, 日露戦争時の外債発行に関する歴史的資料（各種）</li>
+      </ol>
+      <p class="note">注: 日銀保有比率は日本銀行「資金循環統計」に基づく概算値。市場データは各時点の概算。</p>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelectorAll('.sortable th').forEach(th => {
+      th.style.cursor = 'pointer';
+      th.addEventListener('click', () => {
+        const table = th.closest('table');
+        const idx = Array.from(th.parentNode.children).indexOf(th);
+        const rows = Array.from(table.querySelectorAll('tbody tr'));
+        const dir = th.asc = !th.asc ? 1 : -1;
+        rows.sort((a, b) => {
+          const av = a.children[idx].textContent.trim();
+          const bv = b.children[idx].textContent.trim();
+          const an = parseFloat(av.replace(/[^0-9.\-]/g, ''));
+          const bn = parseFloat(bv.replace(/[^0-9.\-]/g, ''));
+          if (!isNaN(an) && !isNaN(bn)) return (an - bn) * dir;
+          return av.localeCompare(bv, 'ja') * dir;
+        });
+        rows.forEach(r => table.querySelector('tbody').appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japan - Long-term Rates | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇯🇵 Japan</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link active">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip active">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Japan</a>
+        <span class="sep">/</span>
+        Long-term Rates
+      </div>
+      <h1 class="page-title">日本の長期金利 (Japanese Long-term Interest Rates)</h1>
+      <p class="page-subtitle">10年JGB利回りの40年 — 8%からマイナス圏、そして正常化への道</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">~1.5%</div>
+          <div class="stat-label">10年JGB利回り (2025年3月)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">-0.29%</div>
+          <div class="stat-label">10年JGB史上最低 (2016年7月)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">8.7%</div>
+          <div class="stat-label">10年JGB史上最高 (1990年9月)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">2016-2024</div>
+          <div class="stat-label">YCC（イールドカーブ・コントロール）期間</div>
+        </div>
+      </div>
+
+      <!-- Section 1: Overview -->
+      <section>
+        <h2>1. 長期金利の概観</h2>
+        <p>
+          日本の長期金利は、10年国債（JGB）利回りをベンチマークとして広く参照される。10年JGB利回りは、住宅ローン金利、企業の長期借入金利、生命保険の予定利率など、日本経済全体の資金コストに影響を与える最も重要な金利指標である。
+        </p>
+        <p>
+          1980年代後半のバブル期、10年JGB利回りは一時8%を超え、日本の高度成長期の名残りを留めていた。しかし、1990年代以降のデフレと低成長により、利回りは一貫して低下トレンドを描き、2016年には世界の主要国で初めて10年国債利回りがマイナス圏に沈むという歴史的事態を迎えた。
+        </p>
+        <p>
+          この40年にわたる長期金利の低下は、「日本化（Japanification）」として国際金融市場で広く議論され、他の先進国が同様の低金利環境に向かうのではないかという懸念の原型となった。2024年以降の日銀の政策正常化は、この四半世紀に及ぶ超低金利時代の終焉を意味するものとして注目されている。
+        </p>
+      </section>
+
+      <!-- Section 2: Historical Timeline -->
+      <section>
+        <h2>2. 10年JGB利回りの歴史的推移</h2>
+
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>10年JGB利回り</th>
+              <th>背景・イベント</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1985</td>
+              <td>6.3%</td>
+              <td>プラザ合意前、高金利時代</td>
+            </tr>
+            <tr>
+              <td>1987</td>
+              <td>4.2%</td>
+              <td>プラザ合意後の利下げ、ブラックマンデー</td>
+            </tr>
+            <tr>
+              <td>1989</td>
+              <td>5.5%</td>
+              <td class="event-rate-hike">バブルピーク、日銀引き締め開始</td>
+            </tr>
+            <tr>
+              <td>1990年9月</td>
+              <td>8.7%</td>
+              <td class="event-rate-hike">史上最高利回り。バブル崩壊と引き締めの影響</td>
+            </tr>
+            <tr>
+              <td>1993</td>
+              <td>4.0%</td>
+              <td class="event-rate-cut">景気後退で急低下</td>
+            </tr>
+            <tr>
+              <td>1995</td>
+              <td>2.5%</td>
+              <td class="event-rate-cut">超円高、阪神大震災、大規模緩和</td>
+            </tr>
+            <tr>
+              <td>1997</td>
+              <td>2.0%</td>
+              <td class="event-crisis">アジア通貨危機、山一証券破綻</td>
+            </tr>
+            <tr>
+              <td>1998</td>
+              <td>0.77%</td>
+              <td class="event-crisis">一時的に1%割れ（世界初）。「JGBバブル」</td>
+            </tr>
+            <tr>
+              <td>1999</td>
+              <td>1.7%</td>
+              <td class="event-crisis">資金循環ショック（VaRショック）で急騰</td>
+            </tr>
+            <tr>
+              <td>2003年6月</td>
+              <td>0.43%</td>
+              <td class="event-rate-cut">量的緩和下の史上最低水準（当時）</td>
+            </tr>
+            <tr>
+              <td>2003年9月</td>
+              <td>1.6%</td>
+              <td class="event-crisis">VaRショック — 銀行の一斉売りで急騰</td>
+            </tr>
+            <tr>
+              <td>2006</td>
+              <td>1.9%</td>
+              <td class="event-rate-hike">量的緩和解除、利上げ</td>
+            </tr>
+            <tr>
+              <td>2008</td>
+              <td>1.2%</td>
+              <td class="event-crisis">リーマンショック、安全資産需要</td>
+            </tr>
+            <tr>
+              <td>2013</td>
+              <td>0.7%</td>
+              <td class="event-rate-cut">QQE開始で一時急騰後に低下</td>
+            </tr>
+            <tr>
+              <td>2016年2月</td>
+              <td>0.0%</td>
+              <td class="event-rate-cut">マイナス金利導入</td>
+            </tr>
+            <tr>
+              <td>2016年7月</td>
+              <td>-0.29%</td>
+              <td class="event-rate-cut">史上最低利回り（マイナス圏）</td>
+            </tr>
+            <tr>
+              <td>2016年9月</td>
+              <td>0.0%</td>
+              <td>YCC導入、10年利回り0%誘導目標</td>
+            </tr>
+            <tr>
+              <td>2022年12月</td>
+              <td>0.50%</td>
+              <td class="event-rate-hike">YCC許容幅拡大（±0.25%→±0.50%）</td>
+            </tr>
+            <tr>
+              <td>2023年10月</td>
+              <td>0.95%</td>
+              <td class="event-rate-hike">YCC上限1.0%に事実上拡大</td>
+            </tr>
+            <tr>
+              <td>2024年3月</td>
+              <td>0.75%</td>
+              <td class="event-rate-hike">YCC撤廃、マイナス金利解除</td>
+            </tr>
+            <tr>
+              <td>2025年3月</td>
+              <td>~1.5%</td>
+              <td class="event-rate-hike">日銀利上げ継続、長期金利上昇</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section 3: VaR Shock -->
+      <section>
+        <h2>3. VaRショック（2003年）と流動性リスク</h2>
+        <p>
+          2003年のVaRショックは、JGB市場の歴史上最も劇的なイベントの一つである。2003年6月、10年JGB利回りは0.43%まで低下し、当時の史上最低を記録した。しかし、同年8-9月にかけて利回りは急反転し、わずか数か月で1.6%台まで上昇した（価格ベースで約8%の下落）。
+        </p>
+        <p>
+          この急変動の背景には、銀行のリスク管理手法であるVaR（Value at Risk）モデルが関与していた。利回りの上昇（価格の下落）がVaRを増大させ、リスク枠の上限に達した銀行が一斉にJGBを売却。売却が更なる利回り上昇を招き、さらにVaRが増大するという負のスパイラルが発生した。
+        </p>
+        <p>
+          VaRショックは、リスク管理モデルの同質化（全銀行が同じモデルを使用）が市場の脆弱性を高めるという教訓を残した。また、日銀の超低金利政策が「一方向の相場観」を形成し、反転時のショックを増幅させるメカニズムも浮き彫りになった。この経験は、2016年以降のYCC期間における市場機能の議論でも頻繁に参照されている。
+        </p>
+      </section>
+
+      <!-- Section 4: YCC Era -->
+      <section>
+        <h2>4. YCC時代（2016-2024年）</h2>
+        <p>
+          2016年9月に導入されたイールドカーブ・コントロール（YCC）は、中央銀行が長期金利を直接ターゲットにするという前例のない政策であった。日銀は10年JGB利回りを「ゼロ%程度」に誘導することを表明し、必要に応じて無制限に国債を購入する姿勢を示した。
+        </p>
+        <p>
+          YCC初期（2016-2021年）は比較的安定的に運営された。世界的な低インフレ環境の中、10年JGB利回りはゼロ近辺で推移し、日銀の買入れ量は「ステルステーパリング」と呼ばれるように徐々に減少した。しかし、2022年に世界的なインフレが急上昇し、各国中銀が急速な利上げに転じると、日本と海外の金利差が急拡大し、YCCに対する投機的な攻撃が始まった。
+        </p>
+        <p>
+          2022年12月、日銀は突如10年利回りの許容変動幅を±0.25%から±0.50%に拡大（「事実上の利上げ」）。2023年7月にはさらに±0.50%を「めど」とし1.0%を上限とする柔軟化を実施。最終的に2024年3月、マイナス金利解除とともにYCCは事実上撤廃された。
+        </p>
+        <p>
+          YCC時代の教訓として、長期金利を人為的に抑制する政策には以下の副作用が伴うことが確認された：市場流動性の枯渇、価格発見機能の喪失、為替への過度な圧力（円安）、そして出口戦略の困難さである。これらの経験は、今後の中央銀行政策のあり方を考える上で重要な先例となっている。
+        </p>
+      </section>
+
+      <!-- Section 5: Super-long JGBs -->
+      <section>
+        <h2>5. 超長期債市場（20年、30年、40年JGB）</h2>
+        <p>
+          日本は世界でも数少ない40年国債を発行する国の一つである。超長期JGB市場は、主に生命保険会社と年金基金のALM（資産負債管理）ニーズに支えられている。生保は長期の保険契約に対応するため、30年や40年の超長期債を必要とし、この構造的な需要がJGB超長期ゾーンの特異な動きを生み出している。
+        </p>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>年限</th>
+              <th>発行開始年</th>
+              <th>2025年3月利回り</th>
+              <th>主要投資家</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>20年</td>
+              <td>1987年</td>
+              <td>~2.2%</td>
+              <td>生保、年金、海外投資家</td>
+            </tr>
+            <tr>
+              <td>30年</td>
+              <td>1999年</td>
+              <td>~2.7%</td>
+              <td>生保（ALM）、年金</td>
+            </tr>
+            <tr>
+              <td>40年</td>
+              <td>2007年</td>
+              <td>~3.0%</td>
+              <td>生保（超長期負債マッチング）</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          2024-2025年にかけて、超長期JGB利回りは急激に上昇した。30年JGBは2024年初の1.7%から2025年には2.7-3.0%に上昇し、40年JGBも3%に接近した。この上昇の要因は複合的で、日銀のQT（量的引き締め）開始、財政持続可能性への懸念の高まり、生保のALM見直し（金利上昇局面での買い控え）、そしてグローバルなターム・プレミアムの上昇が重なったものである。
+        </p>
+        <p>
+          超長期金利の急上昇は、住宅ローン（特に固定金利型）や企業の長期資金調達コストに直接的な影響を与え、日銀の出口戦略における難しさを浮き彫りにした。同時に、長年のマイナス金利・ゼロ金利で苦しんでいた生命保険会社にとっては、運用環境の改善という側面もあった。
+        </p>
+      </section>
+
+      <!-- Section 6: International Comparison -->
+      <section>
+        <h2>6. 国際比較と「日本化」議論</h2>
+        <p>
+          日本の長期金利は、1990年代後半から2020年代初頭まで、主要先進国の中で最も低い水準で推移し続けた。この現象は「日本化（Japanification）」と呼ばれ、人口減少・高齢化、慢性的なデフレ、巨額の政府債務にもかかわらず金利が低位に張り付くという構造が、他の先進国でも再現されうるのではないかという議論を巻き起こした。
+        </p>
+        <p>
+          実際に、2010年代にはユーロ圏（特にドイツ）が日本に似た低金利環境に突入し、ドイツ10年国債利回りも2020年にマイナス圏に沈んだ。しかし、2022年以降のインフレ急上昇により、欧米の金利は急反転して上昇した。日本でも遅れて金利上昇が始まったが、そのペースは欧米と比較して緩やかであり、日本の長期金利が主要国の中で最低という構図は2025年時点でも基本的に維持されている。
+        </p>
+        <p>
+          日本の経験は、「低金利が構造的（人口動態、デフレ期待）であっても、インフレが起これば金利は上昇する」「ただし、巨額の政府債務と中央銀行の国債保有が金利上昇のペースとパスを歪める」という教訓を提供している。長期金利の行方は、日本の財政持続可能性とインフレ期待の推移によって決定されると考えられている。
+        </p>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>日本銀行, "金融経済統計月報 — 長期金利", <cite>boj.or.jp/statistics/boj/other/</cite></li>
+        <li>財務省, "国債金利情報", <cite>mof.go.jp/jgbs/reference/interest_rate/</cite></li>
+        <li>日本銀行, "イールドカーブ・コントロールの運営方針", 各決定会合, <cite>boj.or.jp/mopo/mpmdeci/</cite></li>
+        <li>BIS, "Long-term interest rates in G10 economies", Working Papers, <cite>bis.org/publ/work/</cite></li>
+        <li>IMF, "Global Financial Stability Report", 各号, <cite>imf.org/en/Publications/GFSR</cite></li>
+        <li>生命保険協会, "生命保険事業概況", 各年版, <cite>seiho.or.jp/</cite></li>
+        <li>日本銀行, "金融システムレポート", 各号, <cite>boj.or.jp/research/brp/fsr/</cite></li>
+        <li>FRED, "Japan 10-Year Bond Yield", Federal Reserve Bank of St. Louis, <cite>fred.stlouisfed.org/</cite></li>
+        <li>植田和男, "日本のマクロ経済政策 — 教訓と課題", 各種講演録</li>
+        <li>日本経済研究センター, "VaRショックの分析", 2003年</li>
+      </ol>
+      <p class="note">注: 利回りデータは各時点の概算値。YCC運営の詳細は日銀の金融政策決定会合声明に基づく。</p>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelectorAll('.sortable th').forEach(th => {
+      th.style.cursor = 'pointer';
+      th.addEventListener('click', () => {
+        const table = th.closest('table');
+        const idx = Array.from(th.parentNode.children).indexOf(th);
+        const rows = Array.from(table.querySelectorAll('tbody tr'));
+        const dir = th.asc = !th.asc ? 1 : -1;
+        rows.sort((a, b) => {
+          const av = a.children[idx].textContent.trim();
+          const bv = b.children[idx].textContent.trim();
+          const an = parseFloat(av.replace(/[^0-9.\-]/g, ''));
+          const bn = parseFloat(bv.replace(/[^0-9.\-]/g, ''));
+          if (!isNaN(an) && !isNaN(bn)) return (an - bn) * dir;
+          return av.localeCompare(bv, 'ja') * dir;
+        });
+        rows.forEach(r => table.querySelector('tbody').appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>

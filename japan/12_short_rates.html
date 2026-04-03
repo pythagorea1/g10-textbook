@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japan - Short-term Rates | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇯🇵 Japan</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link active">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip active">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Japan</a>
+        <span class="sep">/</span>
+        Short-term Rates
+      </div>
+      <h1 class="page-title">日本の短期金利市場 (Japanese Short-term Interest Rates)</h1>
+      <p class="page-subtitle">無担保コールレート、TIBOR、TONA — 世界初のゼロ金利・マイナス金利を経験した市場</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">0.50%</div>
+          <div class="stat-label">無担保コールO/N (2025年3月)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">TONA</div>
+          <div class="stat-label">新ベンチマーク金利 (LIBOR後継)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">1999年</div>
+          <div class="stat-label">世界初のゼロ金利政策</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">2016年</div>
+          <div class="stat-label">マイナス金利導入</div>
+        </div>
+      </div>
+
+      <!-- Section 1: Overview -->
+      <section>
+        <h2>1. 短期金利市場の概観</h2>
+        <p>
+          日本の短期金利市場は、コール市場を中心に発展してきた。コール市場とは、金融機関同士が短期資金を融通し合うインターバンク市場であり、その中心金利である「無担保コール翌日物（O/N）レート」が日本銀行の政策金利として機能してきた。この金利は、日銀の金融調節（オペレーション）を通じて誘導される。
+        </p>
+        <p>
+          日本のコール市場は1902年に始まり、120年以上の歴史を持つ。当初は有担保取引が中心であったが、1985年以降、無担保コール取引が拡大し、1998年に日銀が政策ターゲットを無担保コールO/Nレートに変更して以降、短期金利市場の中核となった。
+        </p>
+        <p>
+          コール市場以外にも、国庫短期証券（TB/FB、現在はT-Bill）市場、コマーシャル・ペーパー（CP）市場、レポ市場（現先・現担）、円TIBOR/LIBOR市場など、多様な短期金融市場が存在する。2021年のLIBOR廃止に伴い、日本ではTONA（Tokyo Overnight Average Rate、無担保コールO/N物レートの加重平均）がリスク・フリー・レート（RFR）として採用された。
+        </p>
+      </section>
+
+      <!-- Section 2: Call Market History -->
+      <section>
+        <h2>2. コール市場の歴史</h2>
+        <p>
+          コール市場の歴史は、日本の金融政策の歴史そのものである。戦後の復興期には、日銀の窓口指導（moral suasion）と公定歩合が金利体系の中心であった。コール市場は日銀の金融調節を補完する役割を果たし、銀行の短期資金過不足を調整する場として機能した。
+        </p>
+        <p>
+          1994年10月の金利自由化完了により、コールレートは市場の需給で決定されるようになった。これにより、日銀の金融政策はコールレートの「誘導目標」を設定する形に移行した。1998年にはそれが公式化され、無担保コールO/Nレートが政策金利ターゲットとして明示された。
+        </p>
+
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>無担保コールO/N</th>
+              <th>政策動向</th>
+              <th>背景</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1990</td>
+              <td>~7.0%</td>
+              <td class="event-rate-hike">バブル抑制の急速な引き締め</td>
+              <td>公定歩合6.0%、バブル崩壊直前</td>
+            </tr>
+            <tr>
+              <td>1991</td>
+              <td>~7.5%</td>
+              <td class="event-rate-hike">引き締めピーク</td>
+              <td>株価・不動産急落開始</td>
+            </tr>
+            <tr>
+              <td>1993</td>
+              <td>~2.5%</td>
+              <td class="event-rate-cut">急速な利下げ</td>
+              <td>バブル崩壊の深刻化</td>
+            </tr>
+            <tr>
+              <td>1995</td>
+              <td>~0.5%</td>
+              <td class="event-rate-cut">公定歩合0.5%に</td>
+              <td>超円高、阪神大震災</td>
+            </tr>
+            <tr>
+              <td>1999年2月</td>
+              <td>~0.03%</td>
+              <td class="event-rate-cut">ゼロ金利政策（ZIRP）開始</td>
+              <td>世界初、速水総裁「デフレ懸念払拭まで」</td>
+            </tr>
+            <tr>
+              <td>2000年8月</td>
+              <td>0.25%</td>
+              <td class="event-rate-hike">ゼロ金利解除</td>
+              <td>ITバブル、政府の反対を押し切って利上げ</td>
+            </tr>
+            <tr>
+              <td>2001年3月</td>
+              <td>~0.01%</td>
+              <td class="event-rate-cut">量的緩和（QE）開始</td>
+              <td>ターゲットを金利→当座預金残高に変更</td>
+            </tr>
+            <tr>
+              <td>2006年7月</td>
+              <td>0.25%</td>
+              <td class="event-rate-hike">QE解除・ゼロ金利解除</td>
+              <td>景気回復を受けて正常化</td>
+            </tr>
+            <tr>
+              <td>2007年2月</td>
+              <td>0.50%</td>
+              <td class="event-rate-hike">追加利上げ</td>
+              <td>世界的好景気</td>
+            </tr>
+            <tr>
+              <td>2008年12月</td>
+              <td>0.10%</td>
+              <td class="event-rate-cut">GFC対応利下げ</td>
+              <td>リーマンショック</td>
+            </tr>
+            <tr>
+              <td>2013年4月</td>
+              <td>~0.07%</td>
+              <td class="event-rate-cut">QQE開始</td>
+              <td>黒田バズーカ、大量の資金供給</td>
+            </tr>
+            <tr>
+              <td>2016年2月</td>
+              <td>-0.05%</td>
+              <td class="event-rate-cut">マイナス金利（-0.1%）導入</td>
+              <td>三層構造の当座預金制度</td>
+            </tr>
+            <tr>
+              <td>2024年3月</td>
+              <td>0.0-0.1%</td>
+              <td class="event-rate-hike">マイナス金利解除</td>
+              <td>17年ぶりの利上げ</td>
+            </tr>
+            <tr>
+              <td>2024年7月</td>
+              <td>0.25%</td>
+              <td class="event-rate-hike">追加利上げ</td>
+              <td>植田総裁、正常化路線</td>
+            </tr>
+            <tr>
+              <td>2025年1月</td>
+              <td>0.50%</td>
+              <td class="event-rate-hike">追加利上げ</td>
+              <td>インフレ持続を確認</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section 3: T-Bill Market -->
+      <section>
+        <h2>3. 国庫短期証券（T-Bill）市場</h2>
+        <p>
+          日本の短期国債市場は、かつてTB（割引短期国債）とFB（政府短期証券）に分かれていたが、2009年2月に統合され「国庫短期証券（T-Bill）」となった。T-Billは割引方式で発行され、3か月物（13週間）、6か月物、1年物がある。3か月物T-Billが最も流動性が高く、短期金融市場のベンチマークの一つとなっている。
+        </p>
+        <p>
+          T-Bill市場は2016年のマイナス金利導入後、利回りがマイナス圏で推移する異常な状態が続いた。これは日銀の大量購入と、海外中央銀行による外貨準備としての需要（為替ヘッジ後のプラスリターン）が要因であった。特に2016-2022年の期間、3か月T-Bill利回りは-0.1%〜-0.3%のレンジで推移し、事実上「お金を払って政府に貸す」という奇妙な状態が常態化した。
+        </p>
+        <p>
+          2024年のマイナス金利解除後、T-Bill利回りはプラス圏に復帰し、2025年初頭には0.3-0.5%程度で取引されるようになった。T-Bill市場の正常化は、短期金融市場全体の機能回復を象徴するものとして注目されている。
+        </p>
+      </section>
+
+      <!-- Section 4: TIBOR and Benchmark Reform -->
+      <section>
+        <h2>4. TIBORとベンチマーク改革</h2>
+        <p>
+          TIBOR（Tokyo Interbank Offered Rate、東京銀行間取引金利）は、1995年に全銀協（全国銀行協会）が公表を開始した円の銀行間取引金利である。ロンドンのLIBORと同様に、レファレンスバンク（主要銀行）の提示レートを基に算出される。日本円TIBORとユーロ円TIBORの2種類が存在する。
+        </p>
+        <p>
+          TIBORは住宅ローンの変動金利、企業向け融資、金利スワップ等の参照金利として広く利用されてきた。しかし、2012年のLIBOR不正操作問題を受けて、世界的にベンチマーク金利改革が進められ、日本でもリスク・フリー・レートへの移行が課題となった。
+        </p>
+        <p>
+          2021年末のLIBOR廃止（円LIBORを含む）に伴い、日本ではTONA（Tokyo Overnight Average Rate）がリスク・フリー・レートとして選定された。TONAは無担保コール翌日物取引の加重平均金利であり、日本銀行が算出・公表している。デリバティブ市場ではTONA参照のOIS（Overnight Index Swap）が急速に拡大し、2024年時点で円金利スワップ市場の主流となっている。
+        </p>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>ベンチマーク</th>
+              <th>算出機関</th>
+              <th>特徴</th>
+              <th>現状（2025年）</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>TONA</td>
+              <td>日本銀行</td>
+              <td>無担保コールO/N加重平均。RFR</td>
+              <td>主要ベンチマーク。OISの参照金利</td>
+            </tr>
+            <tr>
+              <td>日本円TIBOR</td>
+              <td>全銀協TIBOR運営機関</td>
+              <td>銀行間取引金利。1W〜12M</td>
+              <td>融資・住宅ローンで継続利用</td>
+            </tr>
+            <tr>
+              <td>ユーロ円TIBOR</td>
+              <td>全銀協TIBOR運営機関</td>
+              <td>オフショア円金利</td>
+              <td>2024年末で公表停止</td>
+            </tr>
+            <tr>
+              <td>円LIBOR</td>
+              <td>ICE (旧BBA)</td>
+              <td>ロンドン市場の円金利</td>
+              <td>2021年末で廃止</td>
+            </tr>
+            <tr>
+              <td>TORF</td>
+              <td>QUICK Benchmarks</td>
+              <td>TONAベースのターム物金利</td>
+              <td>ローン等で利用拡大中</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section 5: CP Market -->
+      <section>
+        <h2>5. CP（コマーシャル・ペーパー）市場</h2>
+        <p>
+          日本のCP市場は1987年に解禁され、企業の短期資金調達手段として発展してきた。当初は銀行引受方式（引受CP）のみであったが、1998年に電子CP（短期社債）が導入され、ペーパーレス化が進んだ。2003年の社債株式振替法改正により、完全電子化が実現した。
+        </p>
+        <p>
+          CP発行残高は2024年時点で約25-30兆円であり、発行体は大手金融機関、商社、電力会社、自動車メーカー等の高格付企業が中心である。満期は1-3か月が最も多く、最長で1年である。格付けはa-1（S&P）やP-1（Moody's）の最上位格が大半を占める。
+        </p>
+        <p>
+          2008年のリーマンショック時にはCP市場が一時的に機能不全に陥り、日銀がCP買入れオペ（企業金融支援特別オペ）を実施して市場を安定させた。2020年のCOVID危機でも同様にCP買入れが行われ、日銀の最後の貸し手機能が発揮された。これらの経験は、短期金融市場における中央銀行のバックストップ機能の重要性を示している。
+        </p>
+      </section>
+
+      <!-- Section 6: Repo Market -->
+      <section>
+        <h2>6. レポ市場</h2>
+        <p>
+          日本のレポ市場は「現先取引」と「現担レポ」の二つの形態で発展してきた。現先取引（買戻条件付売買）は古くからの日本型レポであり、現担レポ（GCレポ、SCレポ）は国際標準に近い形態である。2001年にはRTGS（即時グロス決済）化が行われ、決済リスクの軽減が図られた。
+        </p>
+        <p>
+          GC（General Collateral）レポ金利は、無担保コールレートと並ぶ短期金利の指標であり、JGB等の国債を担保とした有担保取引の金利である。SC（Special Collateral）レポは特定銘柄を対象とし、その銘柄の借入コストを反映する。JGB先物の受渡に関連するSCレポは、先物市場と現物市場の裁定に重要な役割を果たしている。
+        </p>
+        <p>
+          2018年には日本証券クリアリング機構（JSCC）によるレポ取引の清算集中が本格化し、カウンターパーティリスクの軽減と市場の透明性向上が進んだ。レポ市場の取引残高は2024年時点で約150-200兆円に達し、短期金融市場の中核インフラとなっている。
+        </p>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>日本銀行, "金融市場調節方針の推移", <cite>boj.or.jp/mopo/mpmdeci/</cite></li>
+        <li>日本銀行, "TONA（東京ターム物リスク・フリー・レート）", <cite>boj.or.jp/paym/referrate/</cite></li>
+        <li>全銀協TIBOR運営機関, "TIBOR", <cite>jbatibor.or.jp/</cite></li>
+        <li>財務省, "国庫短期証券（T-Bill）", <cite>mof.go.jp/jgbs/auction/tbill.htm</cite></li>
+        <li>日本銀行, "短観・金融市場統計", 各号, <cite>boj.or.jp/statistics/</cite></li>
+        <li>BIS, "Reform of reference rate benchmarks", <cite>bis.org/about/bisih/topics/fmis/</cite></li>
+        <li>日本証券クリアリング機構 (JSCC), "レポ取引の清算", <cite>jpx.co.jp/jscc/</cite></li>
+        <li>金融庁, "金利指標の適切な選択と利用等に関する市中協議", 2019年</li>
+        <li>QUICK Benchmarks, "TORF（東京ターム物リスク・フリー・レート）", <cite>quickbenchmarks.com/</cite></li>
+        <li>日本銀行金融市場局, "コール市場の現状", 各年版</li>
+      </ol>
+      <p class="note">注: 金利データは各時点の概算値。政策金利変更日は日銀発表に基づく。</p>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelectorAll('.sortable th').forEach(th => {
+      th.style.cursor = 'pointer';
+      th.addEventListener('click', () => {
+        const table = th.closest('table');
+        const idx = Array.from(th.parentNode.children).indexOf(th);
+        const rows = Array.from(table.querySelectorAll('tbody tr'));
+        const dir = th.asc = !th.asc ? 1 : -1;
+        rows.sort((a, b) => {
+          const av = a.children[idx].textContent.trim();
+          const bv = b.children[idx].textContent.trim();
+          const an = parseFloat(av.replace(/[^0-9.\-]/g, ''));
+          const bn = parseFloat(bv.replace(/[^0-9.\-]/g, ''));
+          if (!isNaN(an) && !isNaN(bn)) return (an - bn) * dir;
+          return av.localeCompare(bv, 'ja') * dir;
+        });
+        rows.forEach(r => table.querySelector('tbody').appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>
