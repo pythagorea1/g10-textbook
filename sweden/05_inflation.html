@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweden - Inflation | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇸🇪 Sweden</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link active">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip active">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Sweden</a>
+        <span class="sep">/</span>
+        Inflation
+      </div>
+      <h1 class="page-title">スウェーデンのインフレーション</h1>
+      <p class="page-subtitle">物価水準ターゲットの先駆者(1931) → IT制度(1993) → ディスインフレ苦闘 → 2022年CPIF 10%超 — CPI/CPIF二元指標とSEK減価の物価インパクト</p>
+    </header>
+
+    <article>
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">2.0%</div>
+          <div class="stat-label">インフレ目標 (CPIF)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value red">13.7%</div>
+          <div class="stat-label">CPI最高値 (1980)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value red">10.2%</div>
+          <div class="stat-label">CPIF最高値 (2022年12月)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">1.8%</div>
+          <div class="stat-label">IT導入後平均 (1995-2019)</div>
+        </div>
+      </div>
+
+      <!-- インフレ指標体系 -->
+      <section>
+        <h2>インフレ指標体系</h2>
+        <p>スウェーデンのインフレ計測は独自の二元体系を採用している。2017年にリクスバンクは公式ターゲット指標をCPIからCPIF（CPIF = CPI with a Fixed interest rate）に変更した。これは金利変動が住宅ローンコストを通じてCPIに直接影響する「循環的汚染」を排除するための措置であった。</p>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>指標</th>
+              <th>正式名称</th>
+              <th>特徴</th>
+              <th>役割</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CPI</td>
+              <td>Consumer Price Index</td>
+              <td>住宅ローン金利コスト含む</td>
+              <td>2017年まで公式ターゲット。法定年金等のインデクセーション</td>
+            </tr>
+            <tr class="highlight-row">
+              <td>CPIF</td>
+              <td>CPI with Fixed interest rate</td>
+              <td>住宅ローン金利を固定化</td>
+              <td>2017年〜 公式ターゲット指標（2%目標）</td>
+            </tr>
+            <tr>
+              <td>CPIF excl. energy</td>
+              <td>CPIF excluding energy</td>
+              <td>エネルギー価格除外</td>
+              <td>基調インフレの補助指標</td>
+            </tr>
+            <tr>
+              <td>KPIF</td>
+              <td>（CPIFのスウェーデン語略称）</td>
+              <td>CPIFと同一</td>
+              <td>スウェーデン語文献で使用</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="callout callout-warning">
+          <div class="callout-title">CPI vs. CPIF の乖離問題</div>
+          <p>CPIとCPIFの乖離は金利変動期に顕著になる。例えば2023年にはCPIF（基調インフレ）が低下傾向にある一方、CPIは利上げに伴う住宅ローンコスト増加で高止まりした。スウェーデンの変動金利住宅ローン比率が約70%と高いため、この効果は特に大きい。利上げが「インフレを押し上げる」という逆説的な状況が生じ、リクスバンクの政策コミュニケーションを複雑にしている。</p>
+        </div>
+      </section>
+
+      <!-- インフレ史の時代区分 -->
+      <section>
+        <h2>インフレ史の時代区分</h2>
+
+        <h3>第1期: 物価水準ターゲットの実験 (1931-1937)</h3>
+        <p>1931年の金本位制離脱後、スウェーデンは世界で初めて明示的な物価安定目標を採用した。エコノミストのグスタフ・カッセル (Gustav Cassel) やクヌート・ヴィクセル (Knut Wicksell) の理論的影響のもと、リクスバンクは消費者物価指数の安定を政策目標として掲げた。この期間のインフレ率は概ね安定し、実験は成功と評価された。</p>
+        <p>ヴィクセルの「自然利子率」概念 — 物価水準に対して中立的な利子率の水準 — は、現代の中央銀行理論の礎石となった。リクスバンクがこの理論を実践に移した最初の中央銀行であることは、金融政策史上極めて重要である。</p>
+
+        <h3>第2期: 戦後インフレと規制 (1945-1975)</h3>
+        <p>戦後のスウェーデンは穏やかなインフレ（年2-5%）を経験した。ブレトンウッズ体制下の固定相場制が名目アンカーとして機能し、物価統制と信用規制がインフレ抑制の補助的手段であった。しかし1960年代後半から賃金-物価スパイラルの兆候が現れ、連帯賃金政策の下でもインフレ圧力が蓄積した。</p>
+
+        <h3>第3期: スタグフレーション期 (1975-1992)</h3>
+        <p>1970年代の石油危機以降、スウェーデンのインフレは慢性的に高水準となった。CPIインフレ率は1980年に13.7%のピークに達し、1980年代を通じて7-10%の水準で推移した。この時期のインフレは、拡張的財政政策、通貨切り下げ（1977、1981、1982年）、寡占的賃金交渉構造が複合的に作用した結果であった。</p>
+        <p>特に1982年の16%SEK切り下げは、輸出競争力の回復を目的としたものであったが、輸入物価の上昇を通じてインフレを加速させた。「切り下げ→インフレ→賃金上昇→競争力低下→再切り下げ」の悪循環（devaluation cycle）は、スウェーデン経済政策の最大の課題であった。</p>
+
+        <h3>第4期: IT導入とディスインフレ (1993-2014)</h3>
+        <p>1993年のインフレターゲット導入は、インフレの構造的転換点となった。1992年のSEK暴落に伴う一時的な輸入インフレ上昇（1993年CPI 4.7%）の後、インフレ率は急速に低下し、1996年にはCPI 0.5%にまで低下した。</p>
+        <p>1990年代後半から2010年代前半にかけて、CPIインフレは概ね2%前後で推移したが、しばしば目標を下回った。2010年代前半には、リクスバンクの「時期尚早な利上げ」（2010-2011年）がディスインフレを加速させ、CPIFインフレ率は2014年に0.5%にまで低下した。この経験が2015年のマイナス金利導入の直接的な引き金となった。</p>
+        <p>IT導入後（1995-2019年）のCPIF平均インフレ率は約1.8%と、目標の2%をわずかに下回った。「目標以下のインフレ」がスウェーデンの常態であり、これはグローバルなディスインフレ傾向、テクノロジーの価格押し下げ効果、移民による賃金抑制効果を反映していた。</p>
+
+        <h3>第5期: インフレ急騰と正常化 (2021-現在)</h3>
+        <p>2021年後半から始まったグローバルなインフレ急騰は、スウェーデンにも強烈に波及した。CPIFインフレ率は2022年12月に10.2%のピークに達し — IT導入以来30年間で最悪の数字であった。</p>
+        <p>スウェーデンのインフレが他のG10諸国より高かった要因として、以下が挙げられる：</p>
+        <ul>
+          <li><strong>SEK減価</strong> — 2022-2023年にSEKはEURに対して約10%減価し、輸入物価を押し上げた。小国開放経済として為替パススルーが大きい</li>
+          <li><strong>電力価格</strong> — ロシア・ウクライナ紛争によるヨーロッパのエネルギー危機が直撃。南部の電力価格が北部の10倍に達する南北格差も発生</li>
+          <li><strong>食品価格</strong> — 輸入依存度の高い食品セクターでSEK安が増幅</li>
+        </ul>
+        <p>2023年後半からCPIFインフレは急速に低下し、2024年後半には2%前後に回帰した。ただしサービスインフレの粘着性が残り、賃金上昇率は3-4%の水準が続いている。</p>
+      </section>
+
+      <!-- インフレ推移テーブル -->
+      <section>
+        <h2>インフレ率推移テーブル (CPI / CPIF)</h2>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>CPI</th>
+              <th>CPIF</th>
+              <th>政策金利</th>
+              <th>主要イベント</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1970</td><td>7.0%</td><td>—</td><td>—</td><td>賃金スパイラル開始</td></tr>
+            <tr><td>1975</td><td>9.8%</td><td>—</td><td>—</td><td>第1次石油危機の影響</td></tr>
+            <tr class="highlight-row"><td>1980</td><td>13.7%</td><td>—</td><td>—</td><td>第2次石油危機。戦後最高値</td></tr>
+            <tr><td>1985</td><td>7.4%</td><td>—</td><td>—</td><td>信用自由化直後</td></tr>
+            <tr><td>1990</td><td>10.5%</td><td>—</td><td>—</td><td>バブルピーク。不動産・賃金インフレ</td></tr>
+            <tr><td>1993</td><td>4.7%</td><td>—</td><td>8.00%</td><td>IT導入年。SEK暴落後の輸入インフレ</td></tr>
+            <tr><td>1996</td><td>0.5%</td><td>1.3%</td><td>5.25%</td><td>ディスインフレ達成。IT信認確立</td></tr>
+            <tr><td>2000</td><td>1.3%</td><td>1.8%</td><td>3.75%</td><td>ITバブル期。安定</td></tr>
+            <tr><td>2005</td><td>0.8%</td><td>1.2%</td><td>1.50%</td><td>グローバルディスインフレ</td></tr>
+            <tr><td>2008</td><td>3.5%</td><td>2.7%</td><td>4.75%</td><td>GFC前。エネルギー・食品価格上昇</td></tr>
+            <tr><td>2009</td><td>-0.3%</td><td>1.7%</td><td>0.25%</td><td>GFC。CPI/CPIF大幅乖離（金利低下効果）</td></tr>
+            <tr><td>2014</td><td>-0.2%</td><td>0.5%</td><td>0.00%</td><td>デフレリスク。マイナス金利への序曲</td></tr>
+            <tr><td>2015</td><td>0.0%</td><td>0.9%</td><td>-0.35%</td><td>マイナス金利導入年</td></tr>
+            <tr><td>2017</td><td>1.8%</td><td>2.0%</td><td>-0.50%</td><td>CPIF公式ターゲット化。目標到達</td></tr>
+            <tr><td>2019</td><td>1.8%</td><td>1.7%</td><td>0.00%</td><td>マイナス金利脱出</td></tr>
+            <tr><td>2020</td><td>0.5%</td><td>0.5%</td><td>0.00%</td><td>COVID。需要減退でディスインフレ</td></tr>
+            <tr><td>2021</td><td>2.2%</td><td>2.4%</td><td>0.00%</td><td>回復期。サプライチェーン問題開始</td></tr>
+            <tr class="highlight-row"><td>2022</td><td>8.4%</td><td>7.7%</td><td>2.50%</td><td>インフレ急騰。エネルギー・食品・SEK安</td></tr>
+            <tr><td>2023</td><td>8.5%</td><td>6.0%</td><td>4.00%</td><td>CPI高止まり（住宅ローンコスト上昇）。CPIF低下開始</td></tr>
+            <tr><td>2024</td><td>2.3%</td><td>1.8%</td><td>2.50%</td><td>正常化。目標圏内回帰</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- インフレ期待 -->
+      <section>
+        <h2>インフレ期待とアンカリング</h2>
+        <p>スウェーデンのインフレ期待は、ITフレームワークの信認を測る重要な指標である。リクスバンクはProspera調査（金融市場参加者、企業、労使組織への定期調査）を通じて1年先・2年先・5年先のインフレ期待を計測している。</p>
+        <p>IT導入後の1990年代後半から2019年まで、5年先インフレ期待は概ね2.0-2.2%で安定的にアンカーされていた。2022年のインフレ急騰時には一時的に2.5%超に上昇したが、リクスバンクの積極的な利上げ対応により2024年には2%近辺に再アンカーされた。</p>
+        <p>注目すべきは、2010年代のディスインフレ期にもインフレ期待が目標の2%近辺で安定していたことである。実績インフレが持続的に目標を下回ったにもかかわらず期待がアンカーされていたことは、IT制度の信認の強さを示すと同時に、「期待はアンカーされているがインフレ自体は目標を達成できない」というIT体制の限界も露呈した。</p>
+      </section>
+
+      <!-- 連帯賃金政策と物価 -->
+      <section>
+        <h2>賃金とインフレの相互作用</h2>
+        <p>スウェーデンの賃金交渉は独自の構造を持つ。「競争セクターの産業協約（Industriavtalet、1997年）」により、輸出産業（特に製造業）の賃金交渉が先行し、国内サービス部門がこれに追随する「パターン・バーゲニング」体制が確立されている。これは輸出競争力を維持しつつ、賃金インフレを抑制する仕組みである。</p>
+        <p>2023年の賃金交渉では、高インフレを背景に労働組合が4%超の賃上げを要求し、最終的に約4.1%（2年契約）で妥結した。これは過去20年間の2-3%の賃上げ水準と比較して高い。リクスバンクはこの賃上げ率がサービスインフレの粘着性に寄与する可能性を警戒しつつも、賃金-物価スパイラルの再現には至っていないと評価している。</p>
+      </section>
+
+      <!-- G10比較 -->
+      <section>
+        <h2>G10インフレ比較 (2022年ピーク時)</h2>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>国</th>
+              <th>ピーク値</th>
+              <th>時期</th>
+              <th>2024年末</th>
+              <th>特記事項</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="highlight-row"><td>🇸🇪 スウェーデン (CPIF)</td><td>10.2%</td><td>2022年12月</td><td>1.8%</td><td>SEK安による増幅</td></tr>
+            <tr><td>🇬🇧 英国</td><td>11.1%</td><td>2022年10月</td><td>2.5%</td><td>エネルギー・食品主導</td></tr>
+            <tr><td>🇪🇺 ユーロ圏</td><td>10.6%</td><td>2022年10月</td><td>2.4%</td><td>ロシアガス依存度高</td></tr>
+            <tr><td>🇺🇸 米国</td><td>9.1%</td><td>2022年6月</td><td>2.7%</td><td>労働市場タイト</td></tr>
+            <tr><td>🇳🇴 ノルウェー</td><td>7.5%</td><td>2022年10月</td><td>3.0%</td><td>エネルギー輸出国で相対的に軽微</td></tr>
+            <tr><td>🇦🇺 豪州</td><td>7.8%</td><td>2022年12月</td><td>3.2%</td><td>住宅・食品主導</td></tr>
+            <tr><td>🇨🇦 カナダ</td><td>8.1%</td><td>2022年6月</td><td>2.0%</td><td>急速な正常化</td></tr>
+            <tr><td>🇨🇭 スイス</td><td>3.5%</td><td>2022年8月</td><td>1.1%</td><td>CHF高が抑制要因</td></tr>
+            <tr><td>🇯🇵 日本</td><td>4.3%</td><td>2023年1月</td><td>2.5%</td><td>円安＋エネルギー</td></tr>
+          </tbody>
+        </table>
+        <p>スウェーデンのインフレがG10で比較的高かった最大の要因はSEK減価である。小国開放経済として為替パススルー（為替変動が輸入物価を通じて消費者物価に伝播する度合い）が大きく、同じユーロ圏のインフレ環境でもSEK安により増幅された。逆にスイスはCHF高がインフレを抑制するバッファーとなった — 小国通貨の方向性がインフレに与える影響の好対照例である。</p>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>Statistics Sweden (SCB), "Consumer Price Index", scb.se</li>
+        <li>Sveriges Riksbank, "Monetary Policy Reports", various years, riksbank.se</li>
+        <li>Sveriges Riksbank, "Inflation in Sweden", Economic Review, various years</li>
+        <li>Prospera/Kantar Sifo, "Inflation Expectations Survey", various years</li>
+        <li>Berg, Claes & Jonung, Lars, "Pioneering Price Level Targeting: The Swedish Experience 1931-1937", Journal of Monetary Economics, 1999</li>
+        <li>Svensson, Lars E.O., "Monetary Policy and Real Stabilization", NBER Working Paper, 2003</li>
+        <li>Mediation Office (Medlingsinstitutet), "Annual Report on Wage Formation", mi.se</li>
+        <li>OECD, "Economic Surveys: Sweden", various years, oecd.org</li>
+        <li>IMF, "World Economic Outlook Database", imf.org</li>
+        <li>Eurostat, "HICP Statistics", ec.europa.eu/eurostat</li>
+      </ol>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelectorAll('.sortable th').forEach(th => {
+      th.style.cursor = 'pointer';
+      th.addEventListener('click', () => {
+        const table = th.closest('table');
+        const tbody = table.querySelector('tbody');
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+        const idx = Array.from(th.parentNode.children).indexOf(th);
+        const asc = th.dataset.sort !== 'asc';
+        rows.sort((a, b) => {
+          const at = a.children[idx]?.textContent.trim() || '';
+          const bt = b.children[idx]?.textContent.trim() || '';
+          const an = parseFloat(at), bn = parseFloat(bt);
+          if (!isNaN(an) && !isNaN(bn)) return asc ? an - bn : bn - an;
+          return asc ? at.localeCompare(bt, 'ja') : bt.localeCompare(at, 'ja');
+        });
+        rows.forEach(r => tbody.appendChild(r));
+        table.querySelectorAll('th').forEach(h => delete h.dataset.sort);
+        th.dataset.sort = asc ? 'asc' : 'desc';
+      });
+    });
+  </script>
+</body>
+</html>
