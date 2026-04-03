@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>United States - Financial Crises | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇺🇸 United States</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link active">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip active">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">United States</a>
+        <span class="sep">/</span>
+        Financial Crises
+      </div>
+      <h1 class="page-title">米国金融危機の歴史 (U.S. Financial Crises)</h1>
+      <p class="page-subtitle">1907年パニックからCOVIDショックまで — 危機の構造と教訓</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">12+</div>
+          <div class="stat-label">主要金融危機（1900年〜）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">-89%</div>
+          <div class="stat-label">最大下落率（1929-32年）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">$498B</div>
+          <div class="stat-label">TARP救済規模（2008年）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">10年</div>
+          <td>大恐慌の期間</td>
+        </div>
+      </div>
+
+      <!-- Crisis Summary Table -->
+      <section>
+        <h2>米国金融危機一覧</h2>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>危機名</th>
+              <th>種類</th>
+              <th>株式下落</th>
+              <th>失業率ピーク</th>
+              <th>GDP影響</th>
+              <th>政策対応</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1907</td>
+              <td class="highlight-orange">ニッカーボッカー恐慌</td>
+              <td>銀行パニック</td>
+              <td>-49%</td>
+              <td>—</td>
+              <td>深刻な不況</td>
+              <td>JPモルガンによる私的救済</td>
+            </tr>
+            <tr>
+              <td>1929-33</td>
+              <td class="highlight-red">大恐慌（Great Depression）</td>
+              <td>株式暴落+銀行危機</td>
+              <td>-89%</td>
+              <td>24.9%</td>
+              <td>-26.3%</td>
+              <td>ニューディール政策</td>
+            </tr>
+            <tr>
+              <td>1973-74</td>
+              <td class="highlight-orange">石油危機・スタグフレーション</td>
+              <td>外部ショック</td>
+              <td>-48%</td>
+              <td>9.0%</td>
+              <td>-3.2%</td>
+              <td>価格統制（効果なし）</td>
+            </tr>
+            <tr>
+              <td>1987</td>
+              <td class="highlight-orange">ブラックマンデー</td>
+              <td>株式市場暴落</td>
+              <td>-33.5%</td>
+              <td>影響軽微</td>
+              <td>軽微</td>
+              <td>FRB流動性供給</td>
+            </tr>
+            <tr>
+              <td>1986-95</td>
+              <td class="highlight-orange">S&amp;L危機</td>
+              <td>銀行・貯蓄機関危機</td>
+              <td>—</td>
+              <td>7.8%</td>
+              <td>軽度不況</td>
+              <td>RTC設立、$160B+の処理費用</td>
+            </tr>
+            <tr>
+              <td>1998</td>
+              <td class="highlight-orange">LTCM危機</td>
+              <td>ヘッジファンド破綻</td>
+              <td>-19.3%</td>
+              <td>影響軽微</td>
+              <td>軽微</td>
+              <td>NY連銀仲介の民間救済</td>
+            </tr>
+            <tr>
+              <td>2000-02</td>
+              <td class="highlight-orange">ITバブル崩壊</td>
+              <td>株式バブル崩壊</td>
+              <td>-49% (S&P), -78% (NASDAQ)</td>
+              <td>6.3%</td>
+              <td>軽度不況</td>
+              <td>FRB利下げ（6.50%→1.00%）</td>
+            </tr>
+            <tr>
+              <td>2007-09</td>
+              <td class="highlight-red">世界金融危機（GFC）</td>
+              <td>住宅バブル+銀行危機</td>
+              <td>-57%</td>
+              <td>10.0%</td>
+              <td>-4.3%</td>
+              <td>TARP, QE, ゼロ金利</td>
+            </tr>
+            <tr>
+              <td>2020</td>
+              <td class="highlight-orange">COVIDショック</td>
+              <td>パンデミック</td>
+              <td>-34%</td>
+              <td>14.7%</td>
+              <td>-3.5%</td>
+              <td>無制限QE, CARES Act $2.2T</td>
+            </tr>
+            <tr>
+              <td>2023</td>
+              <td>地銀危機（SVB等）</td>
+              <td>銀行危機（限定的）</td>
+              <td>-7%（銀行株）</td>
+              <td>影響軽微</td>
+              <td>軽微</td>
+              <td>BTFP, 預金全額保護</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 1907 Panic -->
+      <section>
+        <h2>1907年パニック（Panic of 1907）</h2>
+        <p>1907年のニッカーボッカー恐慌（Knickerbocker Crisis）は、米国における最後の「中央銀行なき金融危機」であった。ニッカーボッカー信託会社（Knickerbocker Trust Company）の破綻をきっかけに、銀行への取り付け騒ぎ（Bank Run）が全米に波及した<cite>[1]</cite>。</p>
+
+        <p>この危機を収束させたのは、JPモルガン（J.P. Morgan）個人の信用力と資金力であった。モルガンは主要銀行家を自邸に集め、破綻寸前の信託会社への資金注入を取り纏めた。この経験は、一個人の判断に金融システムの安定を委ねることの危険性を示し、1913年の連邦準備法（Federal Reserve Act）による中央銀行設立の直接的な契機となった。</p>
+      </section>
+
+      <!-- Great Depression -->
+      <section>
+        <h2>大恐慌（1929-1939年）</h2>
+        <p>1929年10月の株式市場暴落（Black Thursday / Black Tuesday）に始まる大恐慌は、米国史上最悪の経済危機であり、現代のマクロ経済政策と金融規制の原点となった<cite>[2]</cite>。</p>
+
+        <h3>大恐慌の経過</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年月</th>
+              <th>イベント</th>
+              <th>DJIA</th>
+              <th>影響</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1929年9月</td><td>DJIA最高値</td><td class="highlight-green">381</td><td>過剰楽観のピーク</td></tr>
+            <tr><td>1929年10月24日</td><td class="highlight-red">Black Thursday</td><td>299</td><td>パニック売り開始</td></tr>
+            <tr><td>1929年10月29日</td><td class="highlight-red">Black Tuesday</td><td>230</td><td>1日で12%下落</td></tr>
+            <tr><td>1930年6月</td><td>Smoot-Hawley関税法成立</td><td>—</td><td>国際貿易が崩壊</td></tr>
+            <tr><td>1930年12月</td><td>Bank of United States破綻</td><td>—</td><td>銀行パニック第1波</td></tr>
+            <tr><td>1931年</td><td>銀行破綻2,000行超</td><td>—</td><td>信用収縮の深刻化</td></tr>
+            <tr><td>1932年7月</td><td class="highlight-red">DJIA底値</td><td class="highlight-red">41</td><td>ピークから-89.2%</td></tr>
+            <tr><td>1933年3月</td><td>FDR就任・銀行休日宣言</td><td>—</td><td>全銀行を一時閉鎖</td></tr>
+            <tr><td>1933年6月</td><td>Glass-Steagall法成立</td><td>—</td><td>商業銀行と投資銀行の分離</td></tr>
+            <tr><td>1933年</td><td>FDIC設立</td><td>—</td><td>預金保険制度の創設</td></tr>
+            <tr><td>1934年</td><td>SEC設立</td><td>—</td><td>証券市場の規制強化</td></tr>
+            <tr><td>1937-38年</td><td>「不況の中の不況」</td><td>—</td><td>早すぎる財政引締めで再悪化</td></tr>
+            <tr><td>1954年11月</td><td>DJIA、1929年高値回復</td><td>381+</td><td>回復に25年</td></tr>
+          </tbody>
+        </table>
+
+        <p>大恐慌の原因については経済学者の間で長い論争が続いてきた。ミルトン・フリードマン (Milton Friedman) とアンナ・シュワルツ (Anna Schwartz) は、FRBが通貨供給量を33%も縮小させた金融政策の失敗が主因と主張した。一方、ジョン・メイナード・ケインズ (John Maynard Keynes) の流れを汲む学派は、投資の崩壊と「流動性の罠」に着目した。ベン・バーナンキ (Ben Bernanke) は信用仲介機能の破壊（銀行破綻の連鎖による信用収縮）を強調し、この分析が2008年GFC時の政策対応に大きな影響を与えた<cite>[3]</cite>。</p>
+      </section>
+
+      <!-- S&L Crisis -->
+      <section>
+        <h2>S&L危機（1986-1995年）</h2>
+        <p>貯蓄貸付組合（Savings & Loan Associations, S&Ls）は、住宅ローンの提供を主目的とする金融機関であった。1980年代の金利自由化により、S&Lは固定金利の住宅ローン資産と変動金利の預金負債の間で深刻な金利リスクミスマッチに直面した<cite>[4]</cite>。</p>
+
+        <p>規制緩和により商業不動産やジャンクボンドへの投資が認められると、多くのS&Lが投機的な投資に走った。最終的に約1,043のS&Lが破綻し、整理信託公社（RTC: Resolution Trust Corporation）が設立されて不良資産の処理に当たった。納税者負担は$130B以上に達した。この危機は、金利リスク管理の重要性、規制緩和と監督の適切なバランス、そしてモラルハザードの問題を示す教訓となった。</p>
+      </section>
+
+      <!-- LTCM -->
+      <section>
+        <h2>LTCM危機（1998年）</h2>
+        <p>ロングターム・キャピタル・マネジメント（Long-Term Capital Management, LTCM）は、ノーベル経済学賞受賞者のマイロン・ショールズ (Myron Scholes) とロバート・マートン (Robert Merton) を擁するヘッジファンドであった。相対的な価格差異を利用する収束トレード（Convergence Trade）を高レバレッジ（自己資本$4.8Bに対して$125Bのポジション、名目$1.25Tのデリバティブ）で展開していた<cite>[5]</cite>。</p>
+
+        <p>1998年8月のロシアデフォルトにより、「安全資産への逃避」（Flight to Quality）が発生し、LTCMが収益源としていたスプレッドが逆方向に急拡大した。LTCMは4ヶ月で自己資本の92%を喪失し、カウンターパーティリスクの連鎖的波及を恐れたNY連銀のティモシー・ガイトナー (Timothy Geithner、当時NY連銀） とウィリアム・マクドノー (William McDonough、NY連銀総裁) の仲介により、14の金融機関が$3.6Bを出資して救済パッケージを組成した。</p>
+
+        <p>LTCMの失敗は、①モデルリスク（正規分布の仮定が極端な市場環境で崩壊）、②レバレッジの危険性、③流動性リスクの過小評価、④相関リスク（通常は無相関の資産クラスが危機時に一斉に同方向に動く）、という金融市場の根本的なリスクを凝縮した事例であった。「Too Big to Fail」概念の先駆けともなった。</p>
+      </section>
+
+      <!-- GFC -->
+      <section>
+        <h2>世界金融危機 — GFC（2007-2009年）</h2>
+        <p>2007-2009年の世界金融危機（Global Financial Crisis, GFC）は、大恐慌以来最悪の金融危機であり、現代金融システムの脆弱性を根底から暴露した<cite>[6]</cite>。</p>
+
+        <h3>GFCの経過</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年月</th>
+              <th>イベント</th>
+              <th>S&P 500</th>
+              <th>影響</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>2006年</td><td>住宅価格ピーク（Case-Shiller指数）</td><td>—</td><td>サブプライムの延滞率上昇開始</td></tr>
+            <tr><td>2007年2月</td><td>HSBC、サブプライム損失を警告</td><td>—</td><td>最初の大手金融機関の警告</td></tr>
+            <tr><td>2007年6月</td><td>Bear Stearns傘下ファンド破綻</td><td>—</td><td>CDO市場の凍結</td></tr>
+            <tr><td>2007年8月</td><td class="highlight-orange">BNPパリバショック</td><td>—</td><td>欧州にも波及、インターバンク市場凍結</td></tr>
+            <tr><td>2007年9月</td><td>Northern Rock取り付け騒ぎ（英）</td><td>—</td><td>2007年以来初の英国銀行パニック</td></tr>
+            <tr><td>2008年3月</td><td class="highlight-red">Bear Stearns破綻 → JPMが買収</td><td>—</td><td>FRB仲介、$2/株（後に$10）</td></tr>
+            <tr><td>2008年9月7日</td><td class="highlight-red">Fannie Mae & Freddie Mac国有化</td><td>—</td><td>$200B政府保証</td></tr>
+            <tr><td>2008年9月15日</td><td class="highlight-red">リーマン・ブラザーズ破綻</td><td>—</td><td>金融システム全体のパニック</td></tr>
+            <tr><td>2008年9月16日</td><td class="highlight-red">AIG救済（$85B→最終$182B）</td><td>—</td><td>CDS市場の連鎖破綻防止</td></tr>
+            <tr><td>2008年9月</td><td>Reserve Primary Fund — Break the Buck</td><td>—</td><td>MMF全体から$300B流出</td></tr>
+            <tr><td>2008年10月3日</td><td>TARP法成立（$700B → 実行$431B）</td><td>—</td><td>銀行への資本注入</td></tr>
+            <tr><td>2008年11月</td><td>QE1開始</td><td>—</td><td>MBS + 国債購入</td></tr>
+            <tr><td>2008年12月</td><td>FF金利 0-0.25%（ゼロ金利政策）</td><td>—</td><td>非伝統的金融政策の開始</td></tr>
+            <tr><td>2009年3月9日</td><td class="highlight-red">S&P 500底値</td><td class="highlight-red">677</td><td>2007年10月高値(1,565)から-57%</td></tr>
+            <tr><td>2009年6月</td><td>NBER景気後退終了</td><td>—</td><td>18ヶ月の不況</td></tr>
+            <tr><td>2010年7月</td><td>Dodd-Frank法成立</td><td>—</td><td>金融規制の大幅強化</td></tr>
+          </tbody>
+        </table>
+
+        <h3>GFCの構造的原因</h3>
+        <p>GFCは複数の要因が連鎖的に作用して発生した：</p>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>カテゴリー</th>
+              <th>要因</th>
+              <th>メカニズム</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>マクロ環境</td>
+              <td>グリーンスパン・プット + 低金利長期化</td>
+              <td>リスクテイクの過剰促進（モラルハザード）</td>
+            </tr>
+            <tr>
+              <td>住宅市場</td>
+              <td>サブプライムローンの急増</td>
+              <td>NINJA ローン（No Income, No Job, No Assets）</td>
+            </tr>
+            <tr>
+              <td>証券化</td>
+              <td>CDO/CDO² の不透明な構造</td>
+              <td>リスクの分散ではなくリスクの隠蔽</td>
+            </tr>
+            <tr>
+              <td>格付け</td>
+              <td>格付機関のインセンティブ歪み</td>
+              <td>発行体が格付けを支払う構造 → 甘い格付け</td>
+            </tr>
+            <tr>
+              <td>レバレッジ</td>
+              <td>投資銀行のレバレッジ30-40倍</td>
+              <td>わずかな資産価値下落で債務超過</td>
+            </tr>
+            <tr>
+              <td>CDS市場</td>
+              <td>AIG等のCDS売り手の集中リスク</td>
+              <td>相手方リスクの過小評価</td>
+            </tr>
+            <tr>
+              <td>規制</td>
+              <td>シャドーバンキングの規制不在</td>
+              <td>規制の外側でシステミックリスクが蓄積</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>GFCの教訓は、バーナンキFRB議長の言葉に集約される：「金融危機の中で最も危険なのは、パニックそのものがもたらす信用収縮の悪循環である」。この認識に基づき、FRBは「最後の貸し手」として前例のない規模の流動性供給を行い、財務省は銀行への資本注入（TARP）を実施した。結果として金融システムの全面崩壊は回避されたが、その代償として「Too Big to Fail」問題が鮮明になり、金融機関の暗黙の政府保証に対する社会的反発（Occupy Wall Street運動）を生んだ<cite>[7]</cite>。</p>
+      </section>
+
+      <!-- COVID -->
+      <section>
+        <h2>COVIDショック（2020年3月）</h2>
+        <p>2020年3月のCOVIDショックは、金融市場史上最速の暴落と最速の回復を記録した<cite>[8]</cite>。</p>
+
+        <h3>COVIDショックの経過</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>日付</th>
+              <th>イベント</th>
+              <th>S&P 500</th>
+              <th>市場反応</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>2020年2月19日</td><td>S&P 500 過去最高値</td><td class="highlight-green">3,386</td><td>コロナ前のピーク</td></tr>
+            <tr><td>2020年3月9日</td><td class="highlight-red">Black Monday — 第1回サーキットブレーカー</td><td>2,746</td><td>-7.6%、取引一時停止</td></tr>
+            <tr><td>2020年3月12日</td><td class="highlight-red">Black Thursday — 第2回サーキットブレーカー</td><td>2,480</td><td>-9.5%、1987年以来最悪</td></tr>
+            <tr><td>2020年3月15日</td><td>FRB緊急利下げ（0-0.25%）+ QE再開</td><td>—</td><td>日曜の緊急発表</td></tr>
+            <tr><td>2020年3月16日</td><td class="highlight-red">第3回サーキットブレーカー</td><td>2,386</td><td>-12.0%</td></tr>
+            <tr><td>2020年3月18日</td><td>国債市場の流動性枯渇</td><td>—</td><td>Dash for Cash（現金化の殺到）</td></tr>
+            <tr><td>2020年3月23日</td><td>FRB「無制限QE」発表</td><td class="highlight-red">2,237</td><td>底値 — ピークから-34%（23日間）</td></tr>
+            <tr><td>2020年3月27日</td><td>CARES Act成立（$2.2T）</td><td>—</td><td>史上最大の財政出動</td></tr>
+            <tr><td>2020年4月9日</td><td>FRB、社債・HY ETF購入発表</td><td>—</td><td>中央銀行がジャンク債市場を支援</td></tr>
+            <tr><td>2020年8月18日</td><td>S&P 500、過去最高値回復</td><td class="highlight-green">3,390</td><td>底値から+52%（5ヶ月で回復）</td></tr>
+          </tbody>
+        </table>
+
+        <p>COVIDショックの特異性は、①パンデミックという金融市場外の原因、②史上最速の暴落スピード（23日で-34%）、③政策対応の圧倒的な速さと規模（FRBが1週間で$1T超の流動性供給）、④回復の速さ（5ヶ月で最高値回復）にある。「Dash for Cash」（現金化への殺到）は国債市場すら一時的に機能不全に陥らせ、FRBは事実上あらゆる資産クラスの買い手として「最後のマーケットメーカー」の役割を果たした<cite>[9]</cite>。</p>
+
+        <p>しかし、この「何でも買う」（Whatever it Takes）アプローチの副作用は2021-2022年のインフレとして顕在化した。財政出動$5T超とFRBの$4.6T資産購入が需要を過剰に刺激し、サプライチェーン混乱と相まって40年ぶりのインフレ（CPI 9.1%）をもたらした。「危機対応は正しかったが、出口が遅すぎた」という批判は、大恐慌期の「早すぎた引締め」と対照的であり、金融政策のタイミングの難しさを改めて示した。</p>
+      </section>
+
+      <!-- Section: Common Patterns -->
+      <section>
+        <h2>金融危機の共通パターン</h2>
+        <p>カーメン・ラインハート (Carmen Reinhart) とケネス・ロゴフ (Kenneth Rogoff) の研究<cite>[10]</cite>に基づけば、金融危機には以下の共通パターンがある：</p>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>段階</th>
+              <th>特徴</th>
+              <th>典型的な兆候</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1. 信用膨張期</td>
+              <td>「This Time is Different」— 今回は違うという楽観</td>
+              <td>レバレッジ拡大、資産価格急騰、新しい金融商品の普及</td>
+            </tr>
+            <tr>
+              <td>2. バブルのピーク</td>
+              <td>ミンスキー・モーメント — 投機の限界</td>
+              <td>流動性の過剰、過度な楽観、ボラティリティの低下</td>
+            </tr>
+            <tr>
+              <td>3. パニック期</td>
+              <td>信用収縮の悪循環</td>
+              <td>資産の投げ売り、カウンターパーティリスクの連鎖、取り付け騒ぎ</td>
+            </tr>
+            <tr>
+              <td>4. 政策対応</td>
+              <td>最後の貸し手としての中央銀行</td>
+              <td>流動性供給、金利引下げ、資本注入、財政出動</td>
+            </tr>
+            <tr>
+              <td>5. 回復期</td>
+              <td>デレバレッジと規制強化</td>
+              <td>新規制の導入、バランスシート調整、「失われたN年」</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>ハイマン・ミンスキー (Hyman Minsky) の「金融不安定性仮説」（Financial Instability Hypothesis）は、安定した経済環境そのものが不安定性の種を蒔くと主張する。安定期にはリスクテイクが過剰になり、「ヘッジ金融」→「投機的金融」→「ポンジ金融」へと借入構造が悪化する。この理論はGFC後に再評価され、マクロプルーデンス政策の理論的基盤となった<cite>[11]</cite>。</p>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>Bruner, R.F. and Carr, S.D., <em>The Panic of 1907: Lessons Learned from the Market's Perfect Storm</em>, Wiley, 2007</li>
+        <li>Galbraith, J.K., <em>The Great Crash, 1929</em>, Houghton Mifflin, 1954</li>
+        <li>Bernanke, B.S., "Nonmonetary Effects of the Financial Crisis in the Propagation of the Great Depression," <em>American Economic Review</em>, 1983</li>
+        <li>FDIC, "History of the Eighties — Lessons for the Future," <a href="https://www.fdic.gov/bank/historical/history/" target="_blank">fdic.gov</a></li>
+        <li>Lowenstein, R., <em>When Genius Failed: The Rise and Fall of Long-Term Capital Management</em>, Random House, 2000</li>
+        <li>Financial Crisis Inquiry Commission, <em>The Financial Crisis Inquiry Report</em>, U.S. Government, 2011</li>
+        <li>Bernanke, B.S., Geithner, T.F., Paulson, H.M., <em>Firefighting: The Financial Crisis and Its Lessons</em>, Penguin, 2019</li>
+        <li>Federal Reserve Bank of New York, "COVID-19 and the Financial System," 2020</li>
+        <li>Duffie, D., "Still the World's Safe Haven? Redesigning the U.S. Treasury Market After the COVID-19 Crisis," Brookings, 2020</li>
+        <li>Reinhart, C.M. and Rogoff, K.S., <em>This Time Is Different: Eight Centuries of Financial Folly</em>, Princeton, 2009</li>
+        <li>Minsky, H.P., <em>Stabilizing an Unstable Economy</em>, Yale University Press, 1986</li>
+      </ol>
+      <p class="source-note">※金融危機の分析には複数の視点があり、本文中の解釈は主要な学術文献と市場コンセンサスに基づくものです。</p>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelectorAll('.sortable th').forEach(th => {
+      th.addEventListener('click', function () {
+        const table = th.closest('table');
+        const idx = Array.from(th.parentNode.children).indexOf(th);
+        const rows = Array.from(table.querySelectorAll('tbody tr'));
+        const dir = th.classList.contains('sort-asc') ? -1 : 1;
+        table.querySelectorAll('th').forEach(h => h.classList.remove('sort-asc', 'sort-desc'));
+        th.classList.add(dir === 1 ? 'sort-asc' : 'sort-desc');
+        rows.sort((a, b) => {
+          const at = a.children[idx]?.textContent.trim() ?? '';
+          const bt = b.children[idx]?.textContent.trim() ?? '';
+          const an = parseFloat(at.replace(/[^0-9.\-]/g, ''));
+          const bn = parseFloat(bt.replace(/[^0-9.\-]/g, ''));
+          if (!isNaN(an) && !isNaN(bn)) return (an - bn) * dir;
+          return at.localeCompare(bt, 'ja') * dir;
+        });
+        const tbody = table.querySelector('tbody');
+        rows.forEach(r => tbody.appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>

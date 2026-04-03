@@ -97,7 +97,7 @@ g10_textbook/
 ### Phase 2: United States (us/)
 - [x] Task 3: US pages 1-5 — Central Bank (Fed設立1913〜歴代議長全員のタカ/ハト属性、FOMC構成)、Policy Rate、Fiscal Policy、Employment、Inflation
 - [x] Task 4: US pages 6-10 — Equity Market Overview (S&P500, DJIA, NASDAQ)、Early History (NYSE 1792〜)、Modern Era (1980s-90s)、2000s-2010s、2020s
-- [ ] Task 5: US pages 11-15 — Bond Market (Treasury market)、Short-term Rates (Fed Funds, T-Bills, SOFR)、Long-term Rates (10Y/30Y)、Currency (USD index)、Financial Crises (1907, 1929, S&L, LTCM, GFC, COVID)
+- [x] Task 5: US pages 11-15 — Bond Market (Treasury market)、Short-term Rates (Fed Funds, T-Bills, SOFR)、Long-term Rates (10Y/30Y)、Currency (USD index)、Financial Crises (1907, 1929, S&L, LTCM, GFC, COVID)
 - [ ] Task 6: US pages 16-20 — Banking Sector、Corporate & Indices (セクター変遷)、Regulation (Glass-Steagall, Dodd-Frank)、Trade (貿易赤字)、Key Lessons
 
 ### Phase 3: Eurozone (eurozone/)

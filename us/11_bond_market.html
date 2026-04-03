@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>United States - Bond Market | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇺🇸 United States</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link active">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip active">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">United States</a>
+        <span class="sep">/</span>
+        Bond Market
+      </div>
+      <h1 class="page-title">米国債券市場 (U.S. Bond Market)</h1>
+      <p class="page-subtitle">世界最大・最深の国債市場 — 米国財務省証券とイールドカーブの構造</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">$27T+</div>
+          <div class="stat-label">発行残高 (2024年)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">$800B+</div>
+          <div class="stat-label">日次取引高</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">1790</div>
+          <div class="stat-label">初回国債発行年</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">AAA/AA+</div>
+          <div class="stat-label">信用格付け</div>
+        </div>
+      </div>
+
+      <!-- Section 1: Overview -->
+      <section>
+        <h2>米国債市場の概要</h2>
+        <p>米国財務省証券（U.S. Treasury Securities）市場は、世界最大かつ最も流動性の高い債券市場である。グローバルな金融システムにおいて「リスクフリーレート」の基準として機能し、全ての金融資産の価格形成において参照される。2024年時点の発行残高は27兆ドルを超え、1日の取引高は8,000億ドルに達する<cite>[1]</cite>。</p>
+
+        <p>米国債市場の重要性は単なる規模にとどまらない。ドル建て資産の安全資産（Safe Haven）としての需要、中央銀行の外貨準備における中核的役割、金融政策のトランスミッション・メカニズム、そしてデリバティブ市場の参照レートとしての機能を併せ持つ。連邦準備制度（FRB）は公開市場操作を通じて国債市場に直接介入し、政策金利の誘導やバランスシート政策（QE/QT）を遂行する<cite>[2]</cite>。</p>
+
+        <p>米国債のもう一つの重要な特性は、その「深さ」（depth）と「弾力性」（resilience）にある。2020年3月のCOVID-19パニック時や2023年の地銀危機時においても、一時的な流動性低下が生じたものの、市場は最終的に機能を維持した。ただし、近年はプライマリーディーラーのマーケットメイク能力の低下や、ヘッジファンドのベーシストレードの拡大により、市場の脆弱性に対する懸念が高まっている<cite>[3]</cite>。</p>
+      </section>
+
+      <!-- Section 2: Treasury Securities Types -->
+      <section>
+        <h2>財務省証券の種類</h2>
+        <p>米国財務省は様々な満期と構造の証券を発行しており、それぞれが異なる投資家ニーズと市場機能に対応している。</p>
+
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>証券種別</th>
+              <th>英語名</th>
+              <th>満期</th>
+              <th>利払い</th>
+              <th>発行残高（2024年概算）</th>
+              <th>特徴</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>財務省短期証券</td>
+              <td>Treasury Bills (T-Bills)</td>
+              <td>4週間〜1年</td>
+              <td>割引発行（ゼロクーポン）</td>
+              <td>$6.0T</td>
+              <td>短期資金運用の中核</td>
+            </tr>
+            <tr>
+              <td>財務省中期証券</td>
+              <td>Treasury Notes (T-Notes)</td>
+              <td>2年〜10年</td>
+              <td>半年毎</td>
+              <td>$13.5T</td>
+              <td>最大の発行セグメント</td>
+            </tr>
+            <tr>
+              <td>財務省長期証券</td>
+              <td>Treasury Bonds (T-Bonds)</td>
+              <td>20年・30年</td>
+              <td>半年毎</td>
+              <td>$4.5T</td>
+              <td>年金・保険のALM用</td>
+            </tr>
+            <tr>
+              <td>物価連動国債</td>
+              <td>TIPS</td>
+              <td>5年・10年・30年</td>
+              <td>半年毎（実質金利）</td>
+              <td>$2.0T</td>
+              <td>インフレ期待の指標</td>
+            </tr>
+            <tr>
+              <td>変動利付証券</td>
+              <td>FRN (Floating Rate Notes)</td>
+              <td>2年</td>
+              <td>四半期毎</td>
+              <td>$0.6T</td>
+              <td>2014年導入、短期金利連動</td>
+            </tr>
+            <tr>
+              <td>貯蓄国債</td>
+              <td>I-Bonds / EE-Bonds</td>
+              <td>最長30年</td>
+              <td>半年毎（累積）</td>
+              <td>$0.2T</td>
+              <td>個人投資家向け、非市場性</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section 3: History -->
+      <section>
+        <h2>米国債市場の歴史</h2>
+        <p>米国債の歴史は国家の歴史そのものである。独立戦争の戦費調達から始まり、南北戦争、世界大戦、そして現代の財政政策まで、国債は常にアメリカの公共政策の中核にあった。初代財務長官アレクサンダー・ハミルトン (Alexander Hamilton) は1790年に独立戦争の州債務を連邦政府が引き受ける計画を推進し、「国債は適度であれば国家の祝福である」（a national debt, if not excessive, will be to us a national blessing）と述べた<cite>[4]</cite>。</p>
+
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年代</th>
+              <th>主要イベント</th>
+              <th>債務残高</th>
+              <th>対GDP比</th>
+              <th>備考</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1790</td>
+              <td>連邦債務の引受け（ハミルトン計画）</td>
+              <td>$75M</td>
+              <td>約30%</td>
+              <td>独立戦争債務の統合</td>
+            </tr>
+            <tr>
+              <td>1835</td>
+              <td class="highlight-green">国債完済（ジャクソン大統領）</td>
+              <td>$0</td>
+              <td>0%</td>
+              <td>米国史上唯一の無借金</td>
+            </tr>
+            <tr>
+              <td>1865</td>
+              <td class="highlight-orange">南北戦争終結</td>
+              <td>$2.7B</td>
+              <td>約30%</td>
+              <td>戦費調達で急増</td>
+            </tr>
+            <tr>
+              <td>1917-18</td>
+              <td>第一次世界大戦（Liberty Bonds）</td>
+              <td>$25.5B</td>
+              <td>約33%</td>
+              <td>個人向け国債の大量販売</td>
+            </tr>
+            <tr>
+              <td>1945</td>
+              <td class="highlight-orange">第二次世界大戦終結</td>
+              <td>$259B</td>
+              <td>119%</td>
+              <td>戦時債務のピーク</td>
+            </tr>
+            <tr>
+              <td>1951</td>
+              <td class="highlight-green">財務省・FRB合意（Treasury-Fed Accord）</td>
+              <td>—</td>
+              <td>—</td>
+              <td>FRBの金融政策独立確立</td>
+            </tr>
+            <tr>
+              <td>1971</td>
+              <td class="highlight-orange">ニクソンショック（金本位制離脱）</td>
+              <td>$398B</td>
+              <td>35%</td>
+              <td>ドルの金兌換停止</td>
+            </tr>
+            <tr>
+              <td>1979-81</td>
+              <td class="highlight-red">ボルカーショック — 金利20%超</td>
+              <td>$909B</td>
+              <td>31%</td>
+              <td>債券市場大暴落</td>
+            </tr>
+            <tr>
+              <td>1981-2000</td>
+              <td class="highlight-green">グレートブルマーケット（Great Bond Bull Market）</td>
+              <td>—</td>
+              <td>—</td>
+              <td>金利低下で40年間の上昇相場</td>
+            </tr>
+            <tr>
+              <td>1997</td>
+              <td>TIPS導入（物価連動国債）</td>
+              <td>—</td>
+              <td>—</td>
+              <td>インフレ期待の市場価格化</td>
+            </tr>
+            <tr>
+              <td>2001</td>
+              <td>30年債発行停止</td>
+              <td>$5.8T</td>
+              <td>54%</td>
+              <td>財政黒字期（2006年再開）</td>
+            </tr>
+            <tr>
+              <td>2008-09</td>
+              <td class="highlight-orange">GFC — QE1開始</td>
+              <td>$11.9T</td>
+              <td>82%</td>
+              <td>FRBが大量国債購入開始</td>
+            </tr>
+            <tr>
+              <td>2011</td>
+              <td class="highlight-red">S&P格下げ（AAA→AA+）</td>
+              <td>$14.8T</td>
+              <td>96%</td>
+              <td>債務上限危機</td>
+            </tr>
+            <tr>
+              <td>2020</td>
+              <td class="highlight-orange">COVID-19 — 無制限QE</td>
+              <td>$27.7T</td>
+              <td>129%</td>
+              <td>FRBが月$1,200億購入</td>
+            </tr>
+            <tr>
+              <td>2022-23</td>
+              <td class="highlight-red">QT開始 — 債券弱気相場</td>
+              <td>$31.4T</td>
+              <td>120%</td>
+              <td>利上げで大幅損失</td>
+            </tr>
+            <tr>
+              <td>2024-25</td>
+              <td>財政赤字拡大と供給懸念</td>
+              <td>$35T+</td>
+              <td>123%</td>
+              <td>タームプレミアム拡大</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section 4: Yield Curve -->
+      <section>
+        <h2>イールドカーブの構造と意味</h2>
+        <p>イールドカーブ（利回り曲線）は、異なる満期の国債利回りをプロットしたものであり、金融市場における最も重要な指標の一つである。通常は右上がり（Normally Sloping）であり、長期債ほど高い利回りが要求される。これは期間プレミアム（Term Premium）を反映する<cite>[5]</cite>。</p>
+
+        <p>イールドカーブの形状は以下の3つの要素で説明される：</p>
+        <ul>
+          <li><strong>期待仮説（Expectations Hypothesis）</strong>：長期金利は将来の短期金利の期待値の平均</li>
+          <li><strong>期間プレミアム（Term Premium）</strong>：長期保有に伴うリスク補償</li>
+          <li><strong>流動性プレミアム（Liquidity Premium）</strong>：特定年限の需給による歪み</li>
+        </ul>
+
+        <h3>イールドカーブの形状と景気</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>形状</th>
+              <th>英語名</th>
+              <th>2Y-10Y スプレッド</th>
+              <th>シグナル</th>
+              <th>直近発生例</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>順イールド</td>
+              <td>Normal / Steep</td>
+              <td>+100bp以上</td>
+              <td>景気拡大期待</td>
+              <td>2021年3月（+160bp）</td>
+            </tr>
+            <tr>
+              <td>フラット</td>
+              <td>Flat</td>
+              <td>±25bp</td>
+              <td>景気減速懸念</td>
+              <td>2018年後半</td>
+            </tr>
+            <tr>
+              <td class="highlight-red">逆イールド</td>
+              <td>Inverted</td>
+              <td>マイナス</td>
+              <td>景気後退シグナル（的中率高）</td>
+              <td>2022年7月〜2024年9月（-108bp記録）</td>
+            </tr>
+            <tr>
+              <td>ベアスティープ</td>
+              <td>Bear Steepening</td>
+              <td>拡大（長期金利主導）</td>
+              <td>インフレ/財政懸念</td>
+              <td>2023年8-10月</td>
+            </tr>
+            <tr>
+              <td>ブルスティープ</td>
+              <td>Bull Steepening</td>
+              <td>拡大（短期金利主導）</td>
+              <td>利下げ期待</td>
+              <td>2024年9月（利下げ開始後）</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>2Y-10Yスプレッドの逆転（Inversion）は、過去60年間で7回の景気後退のうち、全てを事前に予測した実績がある。ただし、タイミングの精度にはばらつきがあり、逆転から景気後退開始まで6ヶ月〜24ヶ月のラグがある。2022年7月に始まった逆イールドは約26ヶ月続き、最大-108bpに達した。これは1980年代以来最も深い逆転であった<cite>[6]</cite>。</p>
+      </section>
+
+      <!-- Section 5: Market Structure -->
+      <section>
+        <h2>市場構造とプライマリーディーラー</h2>
+        <p>米国債市場は発行市場（Primary Market）と流通市場（Secondary Market）で構成される。発行はニューヨーク連銀が管理するオークション方式で行われ、プライマリーディーラー（Primary Dealers）が入札義務を負う<cite>[7]</cite>。</p>
+
+        <h3>プライマリーディーラー一覧（2024年時点、主要）</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>ディーラー名</th>
+              <th>親会社/国籍</th>
+              <th>指定年</th>
+              <th>備考</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>J.P. Morgan Securities</td><td>🇺🇸 JPMorgan Chase</td><td>—</td><td>最大手</td></tr>
+            <tr><td>Goldman Sachs & Co.</td><td>🇺🇸 Goldman Sachs</td><td>—</td><td>主要ディーラー</td></tr>
+            <tr><td>Morgan Stanley & Co.</td><td>🇺🇸 Morgan Stanley</td><td>—</td><td>主要ディーラー</td></tr>
+            <tr><td>Citigroup Global Markets</td><td>🇺🇸 Citigroup</td><td>—</td><td>主要ディーラー</td></tr>
+            <tr><td>Barclays Capital</td><td>🇬🇧 Barclays</td><td>—</td><td>欧州系主要</td></tr>
+            <tr><td>BNP Paribas Securities</td><td>🇫🇷 BNP Paribas</td><td>—</td><td>欧州系</td></tr>
+            <tr><td>Deutsche Bank Securities</td><td>🇩🇪 Deutsche Bank</td><td>—</td><td>欧州系</td></tr>
+            <tr><td>Nomura Securities International</td><td>🇯🇵 野村ホールディングス</td><td>—</td><td>アジア系唯一</td></tr>
+            <tr><td>TD Securities (USA)</td><td>🇨🇦 TD Bank</td><td>—</td><td>カナダ系</td></tr>
+          </tbody>
+        </table>
+        <p>※上記は主要ディーラーの抜粋。2024年時点で合計25社が指定されている。プライマリーディーラーはオークションへの参加義務とFRBの公開市場操作のカウンターパーティとしての役割を担う。</p>
+
+        <h3>オークション方式</h3>
+        <p>米国債のオークションはシングルプライス方式（Dutch Auction）で実施される。応札者は価格（または利回り）を指定して入札し、落札はカットオフ利回りで統一される。入札者は「競争入札」（Competitive Bid）と「非競争入札」（Noncompetitive Bid）に分かれ、個人投資家は非競争入札で額面$10,000まで応札可能<cite>[8]</cite>。</p>
+
+        <p>流通市場ではBrokerTec（CMEグループ）やeSpeed（BGC Partners）などの電子取引プラットフォームが主要な取引場所となっている。国債のOn-the-Run（最新発行銘柄）とOff-the-Run（旧発行銘柄）の間には流動性の差があり、On-the-Run銘柄はベンチマークとして特に重要な役割を果たす。</p>
+      </section>
+
+      <!-- Section 6: Major Holders -->
+      <section>
+        <h2>主要保有者構成</h2>
+        <p>米国債の保有構造は過去20年間で大きく変化した。かつては海外中央銀行（特に中国・日本）の保有比率が注目されたが、近年はFRBのバランスシート拡大と国内投資家の比重が増大している<cite>[9]</cite>。</p>
+
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>保有者カテゴリー</th>
+              <th>保有額（2024年概算）</th>
+              <th>比率</th>
+              <th>変化傾向</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>連邦準備制度（FRB）</td><td>$4.6T</td><td>17%</td><td>QT進行中で減少</td></tr>
+            <tr><td>海外投資家（合計）</td><td>$8.1T</td><td>30%</td><td>横ばい〜微減</td></tr>
+            <tr><td>　うち日本</td><td>$1.1T</td><td>4%</td><td>減少傾向</td></tr>
+            <tr><td>　うち中国</td><td>$0.8T</td><td>3%</td><td>大幅減少</td></tr>
+            <tr><td>　うち英国（含カストディ）</td><td>$0.7T</td><td>3%</td><td>増加</td></tr>
+            <tr><td>米国投資信託・ETF</td><td>$3.8T</td><td>14%</td><td>増加</td></tr>
+            <tr><td>商業銀行</td><td>$1.5T</td><td>6%</td><td>SVB危機後横ばい</td></tr>
+            <tr><td>年金基金</td><td>$2.2T</td><td>8%</td><td>ALM需要で安定</td></tr>
+            <tr><td>保険会社</td><td>$0.4T</td><td>2%</td><td>安定</td></tr>
+            <tr><td>州・地方政府</td><td>$1.2T</td><td>4%</td><td>安定</td></tr>
+            <tr><td>その他（個人・ヘッジファンド等）</td><td>$4.2T</td><td>15%</td><td>ベーシストレード拡大</td></tr>
+          </tbody>
+        </table>
+
+        <p>注目すべき構造変化として、中国の保有額は2013年のピーク（$1.3T）から$0.8Tに減少しており、地政学的リスク軽減策と見られている。一方、ヘッジファンドによる現物-先物のベーシストレード（Cash-Futures Basis Trade）は推定$1T規模に達し、市場のレバレッジとシステミックリスクの観点からFRBや金融安定監視委員会（FSOC）が注視している<cite>[10]</cite>。</p>
+      </section>
+
+      <!-- Section 7: QE/QT Impact -->
+      <section>
+        <h2>量的緩和（QE）と量的引締め（QT）</h2>
+        <p>2008年のGFC以降、FRBは伝統的な金利政策に加えて、国債の大量購入（量的緩和、QE）を政策ツールとして採用した。これにより国債市場の構造は根本的に変化した。</p>
+
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>プログラム</th>
+              <th>期間</th>
+              <th>購入対象</th>
+              <th>規模</th>
+              <th>10年金利への影響</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="highlight-blue">QE1</td>
+              <td>2008年11月〜2010年3月</td>
+              <td>国債 + MBS</td>
+              <td>$1.75T</td>
+              <td>▼約100bp</td>
+            </tr>
+            <tr>
+              <td class="highlight-blue">QE2</td>
+              <td>2010年11月〜2011年6月</td>
+              <td>国債のみ</td>
+              <td>$600B</td>
+              <td>▼約20bp</td>
+            </tr>
+            <tr>
+              <td class="highlight-blue">Operation Twist</td>
+              <td>2011年9月〜2012年12月</td>
+              <td>短期売・長期買</td>
+              <td>$667B</td>
+              <td>▼約15bp</td>
+            </tr>
+            <tr>
+              <td class="highlight-blue">QE3</td>
+              <td>2012年9月〜2014年10月</td>
+              <td>国債$45B/月 + MBS$40B/月</td>
+              <td>$1.6T</td>
+              <td>▼約50bp</td>
+            </tr>
+            <tr>
+              <td class="highlight-red">QT1</td>
+              <td>2017年10月〜2019年8月</td>
+              <td>償還再投資停止</td>
+              <td>▲$700B</td>
+              <td>レポ市場混乱（2019年9月）</td>
+            </tr>
+            <tr>
+              <td class="highlight-blue">COVID QE</td>
+              <td>2020年3月〜2022年3月</td>
+              <td>国債$80B/月 + MBS$40B/月</td>
+              <td>$4.6T</td>
+              <td>▼約150bp</td>
+            </tr>
+            <tr>
+              <td class="highlight-red">QT2</td>
+              <td>2022年6月〜</td>
+              <td>国債$60B/月→$25B/月</td>
+              <td>▲$1.8T（2024年末時点）</td>
+              <td>タームプレミアム拡大</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>QEは長期金利の低下を通じて経済を刺激する「ポートフォリオ・リバランス効果」と、FRBのコミットメントを示す「シグナリング効果」の2つのチャネルで機能した。しかし、副作用として国債市場の価格発見機能の低下、金融機関のリスクテイク促進、出口戦略の困難さが指摘された<cite>[11]</cite>。</p>
+      </section>
+
+      <!-- Section 8: Key Concepts -->
+      <section>
+        <h2>債券市場の主要概念</h2>
+
+        <h3>デュレーションとコンベクシティ</h3>
+        <p>デュレーション（Duration）は金利変動に対する債券価格の感応度を測る指標であり、債券ポートフォリオ管理の基本概念である。10年債のデュレーションは約8.5年であり、金利が100bp上昇すると価格は約8.5%下落する。2022年の利上げサイクルでは、長期債の価格下落が深刻であり、30年債は一時50%近い含み損を記録した<cite>[12]</cite>。</p>
+
+        <h3>ブレークイーブン・インフレ率（BEI）</h3>
+        <p>通常の国債利回りとTIPS利回りの差はブレークイーブン・インフレ率（BEI）と呼ばれ、市場のインフレ期待を反映する。10年BEIは通常2.0%〜2.5%の範囲にあり、FRBの2%目標と整合的な水準とされる。2022年3月にはBEIが3.0%を超え、インフレ不安の高まりを示した。</p>
+
+        <h3>タームプレミアム</h3>
+        <p>タームプレミアム（Term Premium）は、投資家が長期債を保有するために要求する追加的な利回りである。ACMモデル（Adrian, Crump, Moench）やKWモデル（Kim-Wright）で推定される。QE期間中はタームプレミアムが負の値まで低下したが、2023年後半にはプラスに転じ、財政赤字拡大と国債供給増加への懸念を反映した<cite>[13]</cite>。</p>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>U.S. Department of the Treasury, "Treasury Securities Outstanding," 2024, <a href="https://fiscaldata.treasury.gov" target="_blank">fiscaldata.treasury.gov</a></li>
+        <li>Federal Reserve Bank of New York, "Open Market Operations," <a href="https://www.newyorkfed.org/markets/domestic-market-operations" target="_blank">newyorkfed.org</a></li>
+        <li>Duffie, D., "Still the World's Safe Haven? Redesigning the U.S. Treasury Market After the COVID-19 Crisis," Brookings, 2020</li>
+        <li>Sylla, R., "A History of the U.S. National Debt," in <em>A History of Interest Rates</em>, Wiley, 2005</li>
+        <li>Federal Reserve Bank of San Francisco, "Why Does the Yield Curve Slope Matter for Monetary Policy?" Economic Letter, 2018</li>
+        <li>Federal Reserve Bank of St. Louis, "The Yield Curve as a Leading Indicator," FRED Blog, 2024</li>
+        <li>Federal Reserve Bank of New York, "Primary Dealers," <a href="https://www.newyorkfed.org/markets/primarydealers" target="_blank">newyorkfed.org</a></li>
+        <li>TreasuryDirect, "Auctions," <a href="https://www.treasurydirect.gov/auctions/" target="_blank">treasurydirect.gov</a></li>
+        <li>U.S. Treasury, "Major Foreign Holders of Treasury Securities," TIC Data</li>
+        <li>Financial Stability Oversight Council (FSOC), "Annual Report," 2023</li>
+        <li>Bernanke, B.S., "The New Tools of Monetary Policy," AEA Presidential Address, 2020</li>
+        <li>Bloomberg, "The Great Bond Bear Market of 2022," 2022</li>
+        <li>Adrian, T., Crump, R.K., Moench, E., "Pricing the Term Structure with Linear Regressions," FRBNY Staff Report, 2013</li>
+      </ol>
+      <p class="source-note">※歴代総裁のタカ/ハト分類等、市場の評価に基づく記述は市場コンセンサスを参考としたものであり、絶対的な評価ではありません。</p>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelectorAll('.sortable th').forEach(th => {
+      th.addEventListener('click', function () {
+        const table = th.closest('table');
+        const idx = Array.from(th.parentNode.children).indexOf(th);
+        const rows = Array.from(table.querySelectorAll('tbody tr'));
+        const dir = th.classList.contains('sort-asc') ? -1 : 1;
+        table.querySelectorAll('th').forEach(h => h.classList.remove('sort-asc', 'sort-desc'));
+        th.classList.add(dir === 1 ? 'sort-asc' : 'sort-desc');
+        rows.sort((a, b) => {
+          const at = a.children[idx]?.textContent.trim() ?? '';
+          const bt = b.children[idx]?.textContent.trim() ?? '';
+          const an = parseFloat(at.replace(/[^0-9.\-]/g, ''));
+          const bn = parseFloat(bt.replace(/[^0-9.\-]/g, ''));
+          if (!isNaN(an) && !isNaN(bn)) return (an - bn) * dir;
+          return at.localeCompare(bt, 'ja') * dir;
+        });
+        const tbody = table.querySelector('tbody');
+        rows.forEach(r => tbody.appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>

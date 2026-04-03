@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>United States - Short-term Rates | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇺🇸 United States</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link active">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip active">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">United States</a>
+        <span class="sep">/</span>
+        Short-term Rates
+      </div>
+      <h1 class="page-title">米国短期金利市場 (U.S. Short-term Rates)</h1>
+      <p class="page-subtitle">Fed Funds、T-Bills、SOFR — 金融政策の最前線</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">5.25-5.50%</div>
+          <div class="stat-label">FF金利目標（2024年9月前）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">$6T+</div>
+          <div class="stat-label">T-Bill発行残高</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">$2.2T</div>
+          <div class="stat-label">SOFR日次取引高</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">2023年</div>
+          <div class="stat-label">LIBOR完全停止年</div>
+        </div>
+      </div>
+
+      <!-- Section 1: Overview -->
+      <section>
+        <h2>短期金利市場の概要</h2>
+        <p>米国の短期金利市場は、金融政策のトランスミッション・メカニズムの最前線に位置する。連邦準備制度（FRB）はフェデラルファンド（FF）金利の目標レンジを設定し、公開市場操作やスタンディング・ファシリティを通じてこの目標を実現する。短期金利は銀行間の資金融通から企業の運転資金調達、マネーマーケットファンド（MMF）の運用まで、金融システム全体の基盤となっている<cite>[1]</cite>。</p>
+
+        <p>短期金利市場の構成要素は多岐にわたる。FF市場、レポ市場（Repo Market）、T-Bill市場、コマーシャルペーパー（CP）市場、そしてLIBORに代わるSOFRなどのベンチマーク金利が相互に連動しながら、膨大な資金の配分を行っている。これらの市場の総取引量は1日あたり数兆ドルに達する。</p>
+      </section>
+
+      <!-- Section 2: Fed Funds Market -->
+      <section>
+        <h2>フェデラルファンド（FF）市場</h2>
+        <p>FF市場は、預金取扱機関（銀行）が連邦準備銀行に預ける準備預金を翌日物（Overnight）で貸借する市場である。FRBの政策目標金利であるFF金利は、このFF市場における加重平均レート（EFFR: Effective Federal Funds Rate）で測定される<cite>[2]</cite>。</p>
+
+        <h3>FF金利の誘導メカニズムの進化</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>時代</th>
+              <th>メカニズム</th>
+              <th>特徴</th>
+              <th>課題</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>〜2008年</td>
+              <td>スカース・リザーブ体制</td>
+              <td>準備預金が希少 → 公開市場操作で微調整</td>
+              <td>日次オペが必要</td>
+            </tr>
+            <tr>
+              <td>2008年〜</td>
+              <td>アバンダント・リザーブ体制（Floor System）</td>
+              <td>超過準備への付利（IOER/IORB）で金利の下限を設定</td>
+              <td>バランスシート肥大</td>
+            </tr>
+            <tr>
+              <td>2013年〜</td>
+              <td>ON RRP導入</td>
+              <td>非銀行（MMF等）にもFRBとの取引を開放 → 金利の実効的フロア</td>
+              <td>MMFの資金吸収</td>
+            </tr>
+            <tr>
+              <td>2021年〜</td>
+              <td>SRF（Standing Repo Facility）導入</td>
+              <td>レポ金利の上限を設定 → 天井と床の「コリドー」完成</td>
+              <td>利用実績は限定的</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>2008年のGFC以前、FF市場は日次$200B規模の活発な市場であったが、QEによる準備預金の大量供給（$3T超）により、銀行間の資金融通需要は大幅に減少した。現在のFF市場の取引量は日次$80-100B程度で、主要な参加者は政府支援機関（GSE: Fannie Mae, Freddie Mac等）であり、彼らはFRBに準備預金を預けられないため、IORB以下の金利でFF市場に資金を供給する<cite>[3]</cite>。</p>
+      </section>
+
+      <!-- Section 3: Repo Market -->
+      <section>
+        <h2>レポ市場（Repo Market）</h2>
+        <p>レポ取引（Repurchase Agreement）は、証券を担保として短期資金を調達する取引であり、米国金融市場において最も重要な短期資金調達手段の一つである。米国レポ市場の規模は日次$4T以上に達し、銀行、証券会社、ヘッジファンド、MMF、FRBなど多様な参加者が関与する<cite>[4]</cite>。</p>
+
+        <h3>レポ市場の構造</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>市場セグメント</th>
+              <th>参加者</th>
+              <th>担保</th>
+              <th>規模（日次概算）</th>
+              <th>特徴</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>トライパーティ・レポ</td>
+              <td>銀行、ディーラー vs MMF等</td>
+              <td>国債、エージェンシーMBS</td>
+              <td>$2.5T</td>
+              <td>BNY Mellon/JPMがクリアリング</td>
+            </tr>
+            <tr>
+              <td>バイラテラル・レポ</td>
+              <td>ディーラー vs ヘッジファンド</td>
+              <td>国債、社債等</td>
+              <td>$1.0T</td>
+              <td>カウンターパーティリスク</td>
+            </tr>
+            <tr>
+              <td>GCF Repo（DVP）</td>
+              <td>ディーラー間</td>
+              <td>国債</td>
+              <td>$0.5T</td>
+              <td>FICC（DTCC子会社）経由</td>
+            </tr>
+            <tr>
+              <td>FRB ON RRP</td>
+              <td>FRB vs MMF等</td>
+              <td>国債</td>
+              <td>ピーク$2.5T（2022年末）</td>
+              <td>金利フロアとして機能</td>
+            </tr>
+            <tr>
+              <td>FRB SRF</td>
+              <td>FRB vs プライマリーディーラー</td>
+              <td>国債</td>
+              <td>限定的</td>
+              <td>金利天井として機能</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>2019年9月レポ市場混乱（Repo Crisis）</h3>
+        <p>2019年9月16-17日、翌日物レポ金利が通常の2%台から一時10%に急騰する異常事態が発生した。原因は法人税納付期限とTreasury入札決済の重複により、銀行システムの準備預金が一時的に不足したことであった。この事件はFRBのQT（バランスシート縮小）が準備預金の過剰状態から適正水準への移行を超えて進行していた可能性を示し、FRBは緊急のレポ・オペとT-Bill購入を開始した<cite>[5]</cite>。</p>
+
+        <p>この経験を踏まえ、FRBは2021年7月にSRF（Standing Repo Facility）を設立し、プライマリーディーラーが常時FRBからレポ資金を調達できる仕組みを整備した。これにより、レポ市場の金利スパイクリスクは大幅に軽減された。</p>
+      </section>
+
+      <!-- Section 4: T-Bills -->
+      <section>
+        <h2>財務省短期証券（T-Bills）</h2>
+        <p>T-Billsは満期4週間、8週間、13週間、17週間、26週間、52週間の割引債であり、最も安全で流動性の高い短期金融商品として位置づけられる。2023-2024年にかけて財務省は利付債よりもT-Billの発行比率を引き上げ、T-Bill発行残高は$6Tを超えた<cite>[6]</cite>。</p>
+
+        <h3>T-Bill利回りの主要局面</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>時期</th>
+              <th>3ヶ月T-Bill利回り</th>
+              <th>背景</th>
+              <th>市場環境</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1981年5月</td>
+              <td class="highlight-red">16.30%</td>
+              <td>ボルカー引締めのピーク</td>
+              <td>インフレ対策の超金融引締め</td>
+            </tr>
+            <tr>
+              <td>1992年</td>
+              <td>3.00%</td>
+              <td>S&L危機後の緩和</td>
+              <td>景気回復初期</td>
+            </tr>
+            <tr>
+              <td>2000年12月</td>
+              <td>5.90%</td>
+              <td>ITバブルピーク</td>
+              <td>FRBの引締め末期</td>
+            </tr>
+            <tr>
+              <td>2003年6月</td>
+              <td>0.88%</td>
+              <td>ITバブル崩壊後の緩和</td>
+              <td>デフレ懸念</td>
+            </tr>
+            <tr>
+              <td>2007年8月</td>
+              <td>4.95%</td>
+              <td>GFC直前</td>
+              <td>サブプライム問題顕在化</td>
+            </tr>
+            <tr>
+              <td>2008年12月</td>
+              <td class="highlight-blue">0.01%</td>
+              <td>GFC — ゼロ金利政策</td>
+              <td>安全資産逃避</td>
+            </tr>
+            <tr>
+              <td>2015年12月</td>
+              <td>0.20%</td>
+              <td>利上げ開始</td>
+              <td>7年ぶりの利上げ</td>
+            </tr>
+            <tr>
+              <td>2020年3月</td>
+              <td class="highlight-blue">0.01%</td>
+              <td>COVID-19パンデミック</td>
+              <td>一時マイナス利回りも</td>
+            </tr>
+            <tr>
+              <td>2023年7月</td>
+              <td class="highlight-red">5.50%</td>
+              <td>FRBの急速利上げ</td>
+              <td>MMFに資金殺到</td>
+            </tr>
+            <tr>
+              <td>2024年12月</td>
+              <td>4.35%</td>
+              <td>利下げサイクル開始後</td>
+              <td>3回の25bp利下げ後</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>財務省のT-Bill発行比率の増加は「T-Bill イシュアンス・シフト」と呼ばれ、2023年後半のジャネット・イエレン (Janet Yellen) 財務長官の判断で、長期債の発行増加を抑制しつつ短期債で資金調達を賄う戦略が採られた。これはイールドカーブの長期部分への圧力を軽減する効果があった一方、短期的な借り換えリスクの増大と、MMFへの資金集中という副作用を伴った<cite>[7]</cite>。</p>
+      </section>
+
+      <!-- Section 5: LIBOR to SOFR -->
+      <section>
+        <h2>LIBOR からSOFRへの移行</h2>
+        <p>ロンドン銀行間取引金利（LIBOR: London Interbank Offered Rate）は、1986年の正式導入以降、約$300Tの金融商品（変動金利ローン、金利スワップ、住宅ローン等）の参照レートとして使用されてきた。しかし、2012年に複数の大手銀行によるLIBOR不正操作（LIBOR Scandal）が発覚し、代替金利への移行が不可避となった<cite>[8]</cite>。</p>
+
+        <h3>LIBOR→SOFR移行タイムライン</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>イベント</th>
+              <th>影響</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2012</td>
+              <td class="highlight-red">LIBOR不正操作スキャンダル発覚</td>
+              <td>Barclays等に巨額罰金、信頼崩壊</td>
+            </tr>
+            <tr>
+              <td>2014</td>
+              <td>FSBが代替金利指標の開発を勧告</td>
+              <td>各国で代替金利検討開始</td>
+            </tr>
+            <tr>
+              <td>2017</td>
+              <td>ARRC（代替参照金利委員会）がSOFRを推薦</td>
+              <td>米ドルLIBORの後継決定</td>
+            </tr>
+            <tr>
+              <td>2018年4月</td>
+              <td class="highlight-green">SOFR公表開始</td>
+              <td>NY連銀が日次公表</td>
+            </tr>
+            <tr>
+              <td>2020年</td>
+              <td>CMEがSOFR先物上場</td>
+              <td>デリバティブ市場の移行開始</td>
+            </tr>
+            <tr>
+              <td>2021年末</td>
+              <td>非米ドルLIBOR停止</td>
+              <td>GBP, EUR, CHF, JPYのLIBOR廃止</td>
+            </tr>
+            <tr>
+              <td>2023年6月30日</td>
+              <td class="highlight-red">米ドルLIBOR完全停止</td>
+              <td>残存契約はSOFR+スプレッド調整へ</td>
+            </tr>
+            <tr>
+              <td>2024-25年</td>
+              <td>SOFR市場の成熟</td>
+              <td>ターム物SOFR（CME）の普及拡大</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>SOFRの特徴</h3>
+        <p>SOFR（Secured Overnight Financing Rate）は、米国債を担保とした翌日物レポ取引の加重中央値レートである。LIBORとの主要な違いは以下の通り：</p>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>項目</th>
+              <th>LIBOR</th>
+              <th>SOFR</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>レートの性質</td>
+              <td>無担保（Unsecured）</td>
+              <td>有担保（Secured）</td>
+            </tr>
+            <tr>
+              <td>算出方法</td>
+              <td>パネル行の申告ベース</td>
+              <td>実取引ベース（$1T+/日）</td>
+            </tr>
+            <tr>
+              <td>信用リスク</td>
+              <td>含む（銀行信用リスク）</td>
+              <td>含まない（ほぼリスクフリー）</td>
+            </tr>
+            <tr>
+              <td>ターム構造</td>
+              <td>O/N, 1M, 3M, 6M, 12M</td>
+              <td>基本はO/Nのみ（Term SOFRは後から）</td>
+            </tr>
+            <tr>
+              <td>操作リスク</td>
+              <td>高い（申告ベース）</td>
+              <td>低い（実取引ベース）</td>
+            </tr>
+            <tr>
+              <td>管理機関</td>
+              <td>ICE</td>
+              <td>NY連銀</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>移行の最大の課題は「ターム物」の不在であった。LIBORは3ヶ月物や6ヶ月物などフォワードルッキングなターム構造を持っていたが、SOFRはO/N（翌日物）のみである。CMEが算出するTerm SOFRは2021年に導入されたが、デリバティブ市場では後決め複利（Compounded in Arrears）SOFRの使用が推奨されている<cite>[9]</cite>。</p>
+      </section>
+
+      <!-- Section 6: Money Market Funds -->
+      <section>
+        <h2>マネーマーケットファンド（MMF）</h2>
+        <p>MMFは短期金利市場の最大の機関投資家の一つであり、2024年時点の運用残高は$6.5Tに達する。MMFは主にT-Bills、レポ、CP、CDに投資し、投資家にとっては銀行預金に代わる流動性管理手段として機能する<cite>[10]</cite>。</p>
+
+        <p>2008年のGFCでは、リーマン・ブラザーズ (Lehman Brothers) のCPを保有していたReserve Primary FundがNAV（純資産価値）$1を割り込む「ブレイク・ザ・バック」（Breaking the Buck）を経験し、MMF全体からの大規模な資金流出が発生した。これを受けてSECは2010年と2014年に規制を強化し、プライムMMFには変動NAV（Floating NAV）が義務づけられた。</p>
+
+        <p>2023年の利上げ局面では、銀行預金からMMFへの大規模な資金シフト（Great Deposit Migration）が発生した。銀行が預金金利を引き上げない中、MMFは5%前後の利回りを提供し、特にSVB破綻後はこの動きが加速した。ON RRP（Overnight Reverse Repo）ファシリティはこの余剰資金の受け皿として$2.5Tまで膨張した後、T-Billの大量発行に伴い$0.3Tまで縮小した<cite>[11]</cite>。</p>
+      </section>
+
+      <!-- Section 7: CP Market -->
+      <section>
+        <h2>コマーシャルペーパー（CP）市場</h2>
+        <p>CPは企業が発行する無担保の短期約束手形（通常270日以内）であり、大企業の運転資金調達手段として重要な役割を果たす。CP市場の残高は約$1.2T（2024年）であり、金融CP（Financial CP）と非金融CP（Non-Financial CP）に大別される<cite>[12]</cite>。</p>
+
+        <p>ABCP（Asset-Backed Commercial Paper）は2007年のGFC前に$1.2Tまで拡大したが、サブプライム関連資産の信用不安により市場が凍結し、FRBはCPFF（Commercial Paper Funding Facility）を設立して市場を支援した。COVID-19危機時にも同様のファシリティが再導入された。CP市場はLIBOR/SOFRに近い金利で取引され、短期金利市場の重要な構成要素であり続けている。</p>
+      </section>
+
+      <!-- Section 8: Key Short-term Benchmarks -->
+      <section>
+        <h2>主要短期金利ベンチマーク一覧</h2>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>ベンチマーク</th>
+              <th>英語名</th>
+              <th>算出機関</th>
+              <th>性質</th>
+              <th>用途</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>EFFR</td>
+              <td>Effective Federal Funds Rate</td>
+              <td>NY連銀</td>
+              <td>無担保O/N、銀行間</td>
+              <td>政策金利の指標</td>
+            </tr>
+            <tr>
+              <td>SOFR</td>
+              <td>Secured Overnight Financing Rate</td>
+              <td>NY連銀</td>
+              <td>有担保O/N、レポベース</td>
+              <td>LIBORの後継、デリバティブ</td>
+            </tr>
+            <tr>
+              <td>OBFR</td>
+              <td>Overnight Bank Funding Rate</td>
+              <td>NY連銀</td>
+              <td>FF + ユーロドル加重平均</td>
+              <td>銀行の調達コスト指標</td>
+            </tr>
+            <tr>
+              <td>IORB</td>
+              <td>Interest on Reserve Balances</td>
+              <td>FRB</td>
+              <td>FRBが銀行準備に付利</td>
+              <td>FF金利のアンカー</td>
+            </tr>
+            <tr>
+              <td>ON RRP</td>
+              <td>Overnight Reverse Repo Rate</td>
+              <td>FRB</td>
+              <td>FRBとMMF等の取引</td>
+              <td>金利フロア</td>
+            </tr>
+            <tr>
+              <td>GC Repo Rate</td>
+              <td>General Collateral Repo Rate</td>
+              <td>DTCC</td>
+              <td>国債担保レポ</td>
+              <td>市場の資金需給指標</td>
+            </tr>
+            <tr>
+              <td>T-Bill Rate</td>
+              <td>Treasury Bill Rate</td>
+              <td>財務省</td>
+              <td>割引債利回り</td>
+              <td>リスクフリーレートの近似</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>Federal Reserve Bank of New York, "Money Markets," <a href="https://www.newyorkfed.org/markets" target="_blank">newyorkfed.org</a></li>
+        <li>Federal Reserve, "Policy Tools — Federal Funds Rate," <a href="https://www.federalreserve.gov/monetarypolicy/openmarket.htm" target="_blank">federalreserve.gov</a></li>
+        <li>Afonso, G., Giannone, D., La Spada, G., Williams, J.C., "Scarce, Abundant, or Ample? A Time-Varying Model of the Reserve Demand Curve," FRBNY, 2022</li>
+        <li>Copeland, A., Martin, A., Walker, M., "Repo Runs: Evidence from the Tri-Party Repo Market," Journal of Finance, 2014</li>
+        <li>Anbil, S., Anderson, A., Senyuz, Z., "What Happened in Money Markets in September 2019?" FEDS Notes, Federal Reserve Board, 2020</li>
+        <li>U.S. Department of the Treasury, "Quarterly Refunding Statement," 2024</li>
+        <li>Greenwood, R., Hanson, S., Stein, J., "The Optimal Maturity of Government Debt," Brookings Papers, 2023</li>
+        <li>McConnell, P., "The LIBOR Scandal: A Timeline," Risk.net, 2017</li>
+        <li>ARRC (Alternative Reference Rates Committee), "SOFR: A User's Guide," 2021, <a href="https://www.newyorkfed.org/arrc" target="_blank">newyorkfed.org</a></li>
+        <li>ICI (Investment Company Institute), "Money Market Fund Assets," Weekly Report, 2024</li>
+        <li>Federal Reserve Bank of St. Louis, "Overnight Reverse Repurchase Agreements," FRED, <a href="https://fred.stlouisfed.org/series/RRPONTSYD" target="_blank">fred.stlouisfed.org</a></li>
+        <li>Federal Reserve, "Commercial Paper Outstanding," Statistical Release, 2024</li>
+      </ol>
+      <p class="source-note">※短期金利の水準は日次で変動するため、本文中の数値は記載時点のものです。最新値は各公表機関のウェブサイトをご参照ください。</p>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelectorAll('.sortable th').forEach(th => {
+      th.addEventListener('click', function () {
+        const table = th.closest('table');
+        const idx = Array.from(th.parentNode.children).indexOf(th);
+        const rows = Array.from(table.querySelectorAll('tbody tr'));
+        const dir = th.classList.contains('sort-asc') ? -1 : 1;
+        table.querySelectorAll('th').forEach(h => h.classList.remove('sort-asc', 'sort-desc'));
+        th.classList.add(dir === 1 ? 'sort-asc' : 'sort-desc');
+        rows.sort((a, b) => {
+          const at = a.children[idx]?.textContent.trim() ?? '';
+          const bt = b.children[idx]?.textContent.trim() ?? '';
+          const an = parseFloat(at.replace(/[^0-9.\-]/g, ''));
+          const bn = parseFloat(bt.replace(/[^0-9.\-]/g, ''));
+          if (!isNaN(an) && !isNaN(bn)) return (an - bn) * dir;
+          return at.localeCompare(bt, 'ja') * dir;
+        });
+        const tbody = table.querySelector('tbody');
+        rows.forEach(r => tbody.appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>

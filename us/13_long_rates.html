@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>United States - Long-term Rates | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇺🇸 United States</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link active">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip active">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">United States</a>
+        <span class="sep">/</span>
+        Long-term Rates
+      </div>
+      <h1 class="page-title">米国長期金利 (U.S. Long-term Rates)</h1>
+      <p class="page-subtitle">10年債・30年債 — 世界の金融市場を支配する長期金利の200年史</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">15.84%</div>
+          <div class="stat-label">10Y最高（1981年9月）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">0.52%</div>
+          <div class="stat-label">10Y最低（2020年8月）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">4.2-4.7%</div>
+          <div class="stat-label">10Y現在レンジ（2025年）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">40年</div>
+          <div class="stat-label">グレートブルマーケット期間</div>
+        </div>
+      </div>
+
+      <!-- Section 1: Overview -->
+      <section>
+        <h2>長期金利の重要性</h2>
+        <p>米国10年債利回り（10-Year Treasury Yield）は、世界の金融市場において最も重要な単一の指標と言っても過言ではない。住宅ローン金利、企業の資金調達コスト、株式のバリュエーション（株式リスクプレミアム）、新興国の資本フロー、そして各国中央銀行の政策判断に至るまで、10年債利回りは広範な影響を及ぼす<cite>[1]</cite>。</p>
+
+        <p>30年債利回りは年金基金や保険会社のALM（資産負債管理）において特に重要であり、超長期の割引率として機能する。また、住宅ローン金利（30年固定）は30年債利回りに連動するため、住宅市場への直接的な影響チャネルを持つ。米国では住宅ローンの大半が30年固定金利であり、これは他のG10諸国（変動金利が主流の国が多い）とは大きく異なる特徴である<cite>[2]</cite>。</p>
+      </section>
+
+      <!-- Section 2: Historical Timeline -->
+      <section>
+        <h2>10年債利回りの歴史的推移</h2>
+        <p>米国長期金利の歴史は、大きく4つの時代に分けることができる。</p>
+
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>10Y利回り</th>
+              <th>主要イベント</th>
+              <th>背景・文脈</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1790s</td>
+              <td>6.0%</td>
+              <td>建国初期の連邦債</td>
+              <td>ハミルトンの債務統合</td>
+            </tr>
+            <tr>
+              <td>1865</td>
+              <td>5.5%</td>
+              <td>南北戦争終結</td>
+              <td>戦時プレミアム</td>
+            </tr>
+            <tr>
+              <td>1900</td>
+              <td>3.0%</td>
+              <td>金本位制下の安定期</td>
+              <td>デフレ傾向、低成長</td>
+            </tr>
+            <tr>
+              <td>1920</td>
+              <td>5.1%</td>
+              <td>WWI後のインフレ</td>
+              <td>戦時経済の余波</td>
+            </tr>
+            <tr>
+              <td>1940</td>
+              <td class="highlight-blue">2.0%</td>
+              <td>WWII — FRBの国債価格支持政策</td>
+              <td>イールドカーブ・コントロール（元祖YCC）</td>
+            </tr>
+            <tr>
+              <td>1951</td>
+              <td>2.6%</td>
+              <td>財務省・FRB合意（Treasury-Fed Accord）</td>
+              <td>FRBが国債支持義務から解放</td>
+            </tr>
+            <tr>
+              <td>1960</td>
+              <td>4.0%</td>
+              <td>ケネディ政権</td>
+              <td>Operation Twist（元祖）</td>
+            </tr>
+            <tr>
+              <td>1970</td>
+              <td>7.4%</td>
+              <td>ニクソンショック前夜</td>
+              <td>インフレ上昇開始</td>
+            </tr>
+            <tr>
+              <td>1975</td>
+              <td>8.0%</td>
+              <td>スタグフレーション</td>
+              <td>石油危機の影響</td>
+            </tr>
+            <tr>
+              <td class="highlight-red">1981年9月</td>
+              <td class="highlight-red">15.84%</td>
+              <td>ボルカーショック — 過去最高利回り</td>
+              <td>インフレ退治のための超引締め</td>
+            </tr>
+            <tr>
+              <td>1987</td>
+              <td>9.4%</td>
+              <td>ブラックマンデー前</td>
+              <td>利回り上昇が株式暴落の一因</td>
+            </tr>
+            <tr>
+              <td>1994</td>
+              <td>8.0%</td>
+              <td class="highlight-red">債券大虐殺（Bond Massacre）</td>
+              <td>FRB利上げで長期金利急騰</td>
+            </tr>
+            <tr>
+              <td>2000</td>
+              <td>6.4%</td>
+              <td>ITバブルピーク</td>
+              <td>財政黒字と需給好転</td>
+            </tr>
+            <tr>
+              <td>2003</td>
+              <td>3.3%</td>
+              <td>ITバブル崩壊後の緩和</td>
+              <td>デフレ恐怖</td>
+            </tr>
+            <tr>
+              <td>2006</td>
+              <td>5.1%</td>
+              <td>利上げサイクルのピーク</td>
+              <td>グリーンスパンの謎（Conundrum）</td>
+            </tr>
+            <tr>
+              <td>2008年12月</td>
+              <td>2.1%</td>
+              <td>GFC — 安全資産逃避</td>
+              <td>QE1開始</td>
+            </tr>
+            <tr>
+              <td>2012年7月</td>
+              <td>1.4%</td>
+              <td>欧州債務危機 + QE3期待</td>
+              <td>歴史的低水準（当時）</td>
+            </tr>
+            <tr>
+              <td>2016年7月</td>
+              <td>1.4%</td>
+              <td>Brexit + 世界的低金利</td>
+              <td>マイナス金利政策の波及</td>
+            </tr>
+            <tr>
+              <td>2018年10月</td>
+              <td>3.2%</td>
+              <td>FRBの利上げ + QT</td>
+              <td>パウエル「中立からは程遠い」発言</td>
+            </tr>
+            <tr>
+              <td class="highlight-blue">2020年8月</td>
+              <td class="highlight-blue">0.52%</td>
+              <td>COVID-19 — 過去最低利回り</td>
+              <td>無制限QE、ゼロ金利</td>
+            </tr>
+            <tr>
+              <td>2022年10月</td>
+              <td>4.3%</td>
+              <td>FRBの急速利上げ</td>
+              <td>債券弱気相場の深化</td>
+            </tr>
+            <tr>
+              <td>2023年10月</td>
+              <td class="highlight-red">5.0%</td>
+              <td>「Higher for Longer」+ 財政懸念</td>
+              <td>2007年以来の高水準、タームプレミアム急拡大</td>
+            </tr>
+            <tr>
+              <td>2025年3月</td>
+              <td>4.2%</td>
+              <td>利下げサイクル進行中</td>
+              <td>景気減速懸念と財政赤字の綱引き</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section 3: Great Bond Bull Market -->
+      <section>
+        <h2>グレートブルマーケット（1981-2020）</h2>
+        <p>1981年9月のピーク（15.84%）から2020年8月の底（0.52%）まで、米国長期金利は約40年にわたる歴史的な低下トレンドを記録した。この「グレートブルマーケット」（Great Bond Bull Market）は、債券投資家に株式に匹敵するトータルリターンをもたらした<cite>[3]</cite>。</p>
+
+        <h3>長期金利低下の構造的要因</h3>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>要因</th>
+              <th>メカニズム</th>
+              <th>影響度</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>インフレ期待の低下</td>
+              <td>ボルカーの信頼回復 → 中央銀行の独立性確立 → インフレターゲット</td>
+              <td>★★★★★</td>
+            </tr>
+            <tr>
+              <td>グローバリゼーション</td>
+              <td>中国のWTO加盟（2001年）→ 財のデフレ圧力 → 「グローバル貯蓄過剰」</td>
+              <td>★★★★</td>
+            </tr>
+            <tr>
+              <td>人口動態</td>
+              <td>先進国の高齢化 → 安全資産需要増 → 自然利子率（r*）の低下</td>
+              <td>★★★★</td>
+            </tr>
+            <tr>
+              <td>生産性低下</td>
+              <td>技術革新の停滞（2005年以降）→ 潜在成長率の低下</td>
+              <td>★★★</td>
+            </tr>
+            <tr>
+              <td>中央銀行のQE</td>
+              <td>FRB、ECB、BOJ、BOEによる大量国債購入 → タームプレミアム圧縮</td>
+              <td>★★★★</td>
+            </tr>
+            <tr>
+              <td>規制要因</td>
+              <td>バーゼルIII → 銀行のHQLA（高品質流動資産）需要 → 国債需要増</td>
+              <td>★★★</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>このブルマーケットの終焉は2021-2022年のインフレ急騰とFRBの急速利上げによってもたらされた。2022年は米国長期国債にとって1788年以来最悪のリターン（-30%超）を記録し、「債券弱気相場」（Bond Bear Market）の到来を印象づけた<cite>[4]</cite>。</p>
+      </section>
+
+      <!-- Section 4: Greenspan Conundrum -->
+      <section>
+        <h2>グリーンスパンの謎（Greenspan's Conundrum）</h2>
+        <p>2004-2006年の利上げサイクルにおいて、FRBがFF金利を1.00%から5.25%まで引き上げたにもかかわらず、10年債利回りはほとんど上昇しなかった。当時のアラン・グリーンスパン (Alan Greenspan) FRB議長はこの現象を「謎」（Conundrum）と呼んだ<cite>[5]</cite>。</p>
+
+        <p>このConundrumの主な要因として、以下が指摘された：</p>
+        <ul>
+          <li><strong>グローバル貯蓄過剰（Global Saving Glut）</strong>：ベン・バーナンキ (Ben Bernanke) が提唱した仮説。アジア通貨危機後の新興国が経常黒字を米国債に投資</li>
+          <li><strong>中国・日本の米国債購入</strong>：外貨準備の運用先として米国債を大量購入</li>
+          <li><strong>年金・保険のALM需要</strong>：金利低下局面でのデュレーション延長ニーズ</li>
+          <li><strong>インフレ期待の安定</strong>：FRBの信認が確立し、長期インフレ期待が2%近辺にアンカー</li>
+        </ul>
+        <p>この現象は、長期金利が短期の政策金利だけでなく、グローバルな資本フロー、構造的な貯蓄投資バランス、そしてタームプレミアムによって決定されることを鮮明に示した。</p>
+      </section>
+
+      <!-- Section 5: 2022-2023 Bear Market -->
+      <section>
+        <h2>2022-2023年 債券弱気相場</h2>
+        <p>2022年はグローバル債券市場にとって歴史的な敗北の年となった。FRBは3月から12月にかけてFF金利を0-0.25%から4.25-4.50%まで425bp引き上げ（1980年代以来最速のペース）、10年債利回りは1.5%から4.3%に急騰した<cite>[6]</cite>。</p>
+
+        <h3>2022-2023年の債券損失</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>資産クラス</th>
+              <th>2022年リターン</th>
+              <th>2023年リターン</th>
+              <th>備考</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bloomberg U.S. Aggregate</td>
+              <td class="highlight-red">-13.0%</td>
+              <td class="highlight-green">+5.5%</td>
+              <td>1976年以来最悪</td>
+            </tr>
+            <tr>
+              <td>長期国債（20Y+）</td>
+              <td class="highlight-red">-31.2%</td>
+              <td class="highlight-green">+3.8%</td>
+              <td>TLT ETFで測定</td>
+            </tr>
+            <tr>
+              <td>10年国債</td>
+              <td class="highlight-red">-17.8%</td>
+              <td class="highlight-green">+3.6%</td>
+              <td>デュレーション約8.5年</td>
+            </tr>
+            <tr>
+              <td>TIPS</td>
+              <td class="highlight-red">-11.8%</td>
+              <td class="highlight-green">+3.8%</td>
+              <td>実質金利急騰</td>
+            </tr>
+            <tr>
+              <td>投資適格社債</td>
+              <td class="highlight-red">-15.8%</td>
+              <td class="highlight-green">+8.4%</td>
+              <td>スプレッド拡大 + 金利上昇</td>
+            </tr>
+            <tr>
+              <td>60/40ポートフォリオ</td>
+              <td class="highlight-red">-16.9%</td>
+              <td class="highlight-green">+17.7%</td>
+              <td>株債券同時下落（分散効果消失）</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>2022年の特筆すべき点は、株式と債券が同時に大幅下落したことである。伝統的な60/40ポートフォリオ（株式60%、債券40%）はインフレ期には分散効果が失われることが改めて示された。これは1970年代以来の現象であり、「インフレが債券と株式の相関をプラスに転じさせる」という理論的予測と整合的であった<cite>[7]</cite>。</p>
+
+        <p>2023年10月には10年債利回りが一時5.0%に達し、2007年以来の高水準を記録した。この急騰は、①FRBの「Higher for Longer」メッセージ、②米財務省の大型リファンディング（長期債発行増加計画）、③タームプレミアムの急拡大、④格付け会社フィッチ (Fitch) による米国格下げ（AAA→AA+）が重なった結果であった。</p>
+      </section>
+
+      <!-- Section 6: SVB and Duration Risk -->
+      <section>
+        <h2>SVB危機とデュレーションリスク</h2>
+        <p>2023年3月のシリコンバレー銀行（SVB）破綻は、長期金利上昇がもたらす金融システムリスクを劇的に示した。SVBは低金利環境で集めた預金を長期国債とMBSに投資していたが、2022年の金利急騰により保有証券に$150B超の含み損が発生した。預金流出圧力により含み損の実現を余儀なくされ、資本不足に陥った<cite>[8]</cite>。</p>
+
+        <p>SVBの失敗は個別銀行の問題にとどまらず、米国銀行セクター全体の保有証券含み損（unrealized losses）が$620Bに達していることが明らかになった。FDICのデータによれば、2023年末時点でも$478Bの含み損が残存しており、金利が当面高止まりする「Higher for Longer」環境下での銀行セクターの脆弱性を浮き彫りにした。</p>
+      </section>
+
+      <!-- Section 7: 30-Year Bond -->
+      <section>
+        <h2>30年債の特殊な役割</h2>
+        <p>30年国債（Long Bond）は米国債市場の中で特殊な位置を占める。年金基金や生命保険会社にとって、超長期の負債をマッチングするための不可欠な資産であり、その需給動向は長期金利の構造に大きな影響を与える<cite>[9]</cite>。</p>
+
+        <h3>30年債の主要な歴史</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>30Y利回り</th>
+              <th>イベント</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1977</td><td>7.7%</td><td>30年債の定期発行開始</td></tr>
+            <tr><td>1981年10月</td><td class="highlight-red">15.21%</td><td>過去最高利回り</td></tr>
+            <tr><td>2001年10月</td><td>5.3%</td><td>発行停止発表（財政黒字期）</td></tr>
+            <tr><td>2006年2月</td><td>4.5%</td><td>発行再開</td></tr>
+            <tr><td>2020年3月</td><td class="highlight-blue">0.99%</td><td>初めて1%割れ（COVID-19パニック）</td></tr>
+            <tr><td>2020年8月</td><td class="highlight-blue">1.20%</td><td>過去最低近辺で推移</td></tr>
+            <tr><td>2023年10月</td><td class="highlight-red">5.11%</td><td>2007年以来の高水準</td></tr>
+            <tr><td>2025年3月</td><td>4.6%</td><td>財政赤字懸念とタームプレミアム</td></tr>
+          </tbody>
+        </table>
+
+        <p>2001年に一度発行が停止された30年債は、年金業界からの強い要望を受けて2006年に再開された。このエピソードは、長期金利市場における「制度的需要」（Institutional Demand）の重要性を示すものであった。近年は英国のLDI（Liability-Driven Investment）危機（2022年9月）が示したように、年金基金のレバレッジとデュレーションマッチングが超長期金利の急変動の原因となりうることが認識されている<cite>[10]</cite>。</p>
+      </section>
+
+      <!-- Section 8: Determinants -->
+      <section>
+        <h2>長期金利の決定要因</h2>
+        <p>長期金利は以下の分解式で理解できる：</p>
+        <div style="background:var(--bg-tertiary); padding:1rem; border-radius:0.5rem; margin:1rem 0; font-family:monospace; font-size:1.1rem; text-align:center;">
+          長期名目金利 = 実質中立金利（r*） + インフレ期待 + タームプレミアム
+        </div>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>要因</th>
+              <th>決定メカニズム</th>
+              <th>現在の推定値（2025年）</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>実質中立金利（r*）</td>
+              <td>潜在成長率、人口動態、生産性で決定。Laubach-Williams モデル等で推定</td>
+              <td>0.5-1.5%（議論中）</td>
+            </tr>
+            <tr>
+              <td>10年インフレ期待</td>
+              <td>BEI（TIPS-Nominal スプレッド）、サーベイ（Michigan、SPF）</td>
+              <td>2.2-2.5%</td>
+            </tr>
+            <tr>
+              <td>タームプレミアム</td>
+              <td>ACMモデル、KWモデルで推定。QE/QTと財政赤字が主要ドライバー</td>
+              <td>+0.3-0.8%（プラス転換）</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>2020年代に入り、r*の水準がGFC前の水準に回帰したのか、あるいは構造的に低いままなのかという議論が活発化している。AI革命による生産性向上の可能性、財政赤字の恒常化による政府需要の増大、脱グローバリゼーションによるインフレ圧力など、相反する要因が長期金利の方向性を不透明にしている<cite>[11]</cite>。</p>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>Federal Reserve Bank of St. Louis, "10-Year Treasury Constant Maturity Rate," FRED, <a href="https://fred.stlouisfed.org/series/DGS10" target="_blank">fred.stlouisfed.org</a></li>
+        <li>Mortgage Bankers Association, "Mortgage Rate Determination," MBA Research, 2023</li>
+        <li>Homer, S. and Sylla, R., <em>A History of Interest Rates</em>, 4th Edition, Wiley, 2005</li>
+        <li>McQuarrie, E.F., "The US Bond Market Before 1926: Investor Total Return from 1793," SSRN, 2023</li>
+        <li>Greenspan, A., "Testimony before the Committee on Banking, Housing, and Urban Affairs," U.S. Senate, February 2005</li>
+        <li>Federal Reserve, "Monetary Policy Report," February 2023</li>
+        <li>Antti, I., Chambers, D., Dimson, E., "When Stock-Bond Diversification Fails," Financial Analysts Journal, 2023</li>
+        <li>FDIC, "Report on Silicon Valley Bank," April 2023</li>
+        <li>Krishnamurthy, A., Vissing-Jorgensen, A., "The Aggregate Demand for Treasury Debt," Journal of Political Economy, 2012</li>
+        <li>Bank of England, "Financial Stability Report — LDI Analysis," November 2022</li>
+        <li>Federal Reserve Bank of New York, "Measuring the Natural Rate of Interest," <a href="https://www.newyorkfed.org/research/policy/rstar" target="_blank">newyorkfed.org</a></li>
+      </ol>
+      <p class="source-note">※金利水準は日次で変動します。本文中の数値は執筆時点のものであり、最新値はFREDまたは各公表機関をご確認ください。</p>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelectorAll('.sortable th').forEach(th => {
+      th.addEventListener('click', function () {
+        const table = th.closest('table');
+        const idx = Array.from(th.parentNode.children).indexOf(th);
+        const rows = Array.from(table.querySelectorAll('tbody tr'));
+        const dir = th.classList.contains('sort-asc') ? -1 : 1;
+        table.querySelectorAll('th').forEach(h => h.classList.remove('sort-asc', 'sort-desc'));
+        th.classList.add(dir === 1 ? 'sort-asc' : 'sort-desc');
+        rows.sort((a, b) => {
+          const at = a.children[idx]?.textContent.trim() ?? '';
+          const bt = b.children[idx]?.textContent.trim() ?? '';
+          const an = parseFloat(at.replace(/[^0-9.\-]/g, ''));
+          const bn = parseFloat(bt.replace(/[^0-9.\-]/g, ''));
+          if (!isNaN(an) && !isNaN(bn)) return (an - bn) * dir;
+          return at.localeCompare(bt, 'ja') * dir;
+        });
+        const tbody = table.querySelector('tbody');
+        rows.forEach(r => tbody.appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>
