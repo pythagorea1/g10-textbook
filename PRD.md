@@ -134,7 +134,7 @@ g10_textbook/
 - [x] Task 27: NZ pages 1-5 — Central Bank (RBNZ、インフレターゲット先駆者)、Policy Rate、Fiscal Policy、Employment、Inflation
 - [x] Task 28: NZ pages 6-10 — Equity (NZX 50)、Early〜2020s
 - [x] Task 29: NZ pages 11-15 — Bond、Rates、Currency (NZD)、Crises
-- [ ] Task 30: NZ pages 16-20 — Banking、Corporate (Dairy)、Regulation、Trade、Lessons
+- [x] Task 30: NZ pages 16-20 — Banking、Corporate (Dairy)、Regulation、Trade、Lessons
 
 ### Phase 9: Canada (canada/)
 - [ ] Task 31: Canada pages 1-5 — Central Bank (BOC)、Policy Rate、Fiscal Policy、Employment、Inflation
