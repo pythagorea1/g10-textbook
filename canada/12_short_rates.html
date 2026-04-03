@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canada - Short-term Rates | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇨🇦 Canada</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link active">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip active">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Canada</a>
+        <span class="sep">/</span>
+        Short-term Rates
+      </div>
+      <h1 class="page-title">カナダ短期金利市場 (Canadian Short-term Rates)</h1>
+      <p class="page-subtitle">CDOR廃止からCORRA移行 — カナダのベンチマーク金利改革とマネーマーケットの進化</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">±25bp</div>
+          <div class="stat-label">BOCオーバーナイト金利コリドー</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">CORRA</div>
+          <div class="stat-label">新ベンチマーク金利 (2024~)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">2024年6月</div>
+          <div class="stat-label">CDOR廃止日</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">Lynx</div>
+          <div class="stat-label">大口決済システム (2022~)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">C$200B+</div>
+          <div class="stat-label">T-Bill残高</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">6行</div>
+          <div class="stat-label">旧CDORパネル銀行数</div>
+        </div>
+      </div>
+
+      <!-- Overnight Rate -->
+      <section class="content-section">
+        <h2>オーバーナイト金利ターゲティング</h2>
+        <p>
+          カナダ中央銀行 (BOC) は、1994年からオーバーナイト金利（翌日物金利）をターゲットとする金融政策運営を行っている。それ以前のカナダの金融政策は、バンクレート（公定歩合）を政策金利とし、銀行準備金の量を操作するリザーブ・ターゲティングの色彩が強かった。しかし金融自由化の進展に伴い、準備金の需要が不安定化し、量的目標による政策運営が困難になったことから、金利ターゲティングへの移行が行われた<cite>[1]</cite>。
+        </p>
+        <p>
+          BOCのオーバーナイト金利ターゲットは、オペレーティング・バンド（金利コリドー）方式で実装されている。バンクレート（BOCからの借入金利）がコリドーの上限、BOCへの預金金利が下限を形成し、その幅は±25bp（合計50bp）である。マーケット参加者は、この上限と下限の間でオーバーナイト資金の貸借を行い、BOCはスタンディング・ファシリティと日々のオペレーションを通じてオーバーナイト金利をターゲット付近に誘導する<cite>[2]</cite>。
+        </p>
+        <p>
+          2020年のCOVIDパンデミック時には、大規模な流動性供給の結果、オーバーナイト金利がコリドーの下限（預金金利）に張り付く「フロア・システム」の状態が生じた。これは、BOCの大量のGoC債購入（QE）により、銀行システムに過剰な決済残高（セトルメント・バランス）が蓄積されたためである。BOCはQT（量的引き締め）によりこれらの残高を段階的に吸収し、コリドー・システムへの復帰を目指しているが、2024年時点でも完全な回復には至っていない<cite>[3]</cite>。
+        </p>
+      </section>
+
+      <!-- LVTS to Lynx -->
+      <section class="content-section">
+        <h2>決済システム: LVTSからLynxへ</h2>
+        <p>
+          カナダの大口決済システムは、1999年に稼働を開始した大口資金振替システム (Large Value Transfer System / LVTS) が長年にわたり中核を担ってきた。LVTSはリアルタイムグロス決済 (RTGS) とネッティングのハイブリッド方式を採用しており、日々C$1,500億超の決済を処理していた。BOCのオーバーナイト金利ターゲティングは、LVTS参加者の日中および日末の決済残高を通じて実現されていた<cite>[4]</cite>。
+        </p>
+        <p>
+          2022年8月、LVTSは新しい決済システム「Lynx」に置き換えられた。LynxはSWIFTのISO 20022メッセージ標準に基づくリアルタイムグロス決済 (RTGS) システムであり、Payments Canada（カナダ決済協会）が運営している。LynxはLVTSの「Tranche 2」（ネッティング方式）を廃止し、すべての決済をグロス方式で行う純粋なRTGSに移行した。この変更は、システミックリスクの削減と国際標準への準拠を目的としている<cite>[5]</cite>。
+        </p>
+      </section>
+
+      <!-- CORRA -->
+      <section class="content-section">
+        <h2>CORRA (Canadian Overnight Repo Rate Average)</h2>
+        <p>
+          CORRA (Canadian Overnight Repo Rate Average) は、カナダのオーバーナイト・レポ市場における取引加重平均金利であり、CDORの後継としてカナダの主要な無リスクベンチマーク金利 (Risk-Free Rate / RFR) に指定されている。CORRAの算出はBOCが担当しており、GoC債を担保とするオーバーナイト一般担保レポ取引（GC Repo）の実際の取引データに基づいて計算される<cite>[6]</cite>。
+        </p>
+        <p>
+          CORRAの歴史は1997年に遡り、当初はカナダ・デポジトリー・フォー・セキュリティーズ (CDS) がGoC債のレポ取引データから算出していた。しかし長年にわたり算出方法の改善が求められ、2020年6月に「強化版CORRA (Enhanced CORRA)」としてBOCによる新しい算出方法に移行した。新CORRAはトライパーティ・レポを含む広範な取引データを使用し、トリム平均で算出されるため、操作耐性と代表性が大幅に向上している<cite>[7]</cite>。
+        </p>
+        <p>
+          CORRA派生商品として、OIS（オーバーナイト・インデックス・スワップ）が最も重要な取引手段である。CORRA OISの取引量は2020年以降急速に拡大し、CDORベースのスワップに代わって市場の中心的な金利デリバティブとなった。また、ターム・CORRA（1M、3M等の先物ベースのフォワード・レート）もLCH（London Clearing House）やCMEグループで清算されるようになり、CORRAエコシステムの整備が進んでいる<cite>[8]</cite>。
+        </p>
+      </section>
+
+      <!-- CDOR Transition -->
+      <section class="content-section">
+        <h2>CDOR廃止とベンチマーク金利改革</h2>
+        <p>
+          CDOR (Canadian Dollar Offered Rate) は、カナダドル建て銀行間貸出金利のベンチマークとして1988年から算出されていた。CDORは6行のパネル銀行（RBC、TD、BMO、BNS、CIBC、ナショナルバンク）がバンカーズ・アクセプタンス (BA) の引受レートを提示し、その中間値として算出されていた。CDORはカナダ版のLIBORとして、変動金利ローン、金利スワップ、変動利付債（FRN）等の広範な金融商品のベンチマークとして使用され、CDORを参照する金融商品の想定元本はC$20兆を超えていた<cite>[9]</cite>。
+        </p>
+        <p>
+          2012年のLIBOR不正操作スキャンダルを受けて、金融安定理事会 (FSB) はグローバルなベンチマーク金利改革を推進し、カナダでもCDORの代替金利への移行が検討された。2020年にカナダ代替参照金利作業委員会 (Canadian Alternative Reference Rate Working Committee / CARR) が正式に設立され、CORRAをCDORの後継ベンチマークとして推奨した。CARRはBOC、OSFI、主要金融機関の代表者で構成され、移行のロードマップを策定した<cite>[10]</cite>。
+        </p>
+        <p>
+          CDORの廃止プロセスは段階的に進められた。2021年12月にRefinitiv（CDORの管理者）がCDORの廃止日を2024年6月28日と発表。以降、新規CDORベースの取引は段階的に停止され、既存のCDOR参照契約にはフォールバック条項（CORRA+スプレッド調整値への移行）が導入された。2024年6月28日をもってCDORの算出は正式に停止し、カナダのベンチマーク金利は完全にCORRAベースに移行した。この移行はLIBOR廃止と並ぶG10最大級のベンチマーク金利改革であった<cite>[11]</cite>。
+        </p>
+
+        <div class="timeline-entry rate-hike">
+          <div class="timeline-date">2024年6月28日</div>
+          <div class="timeline-content">
+            <strong>CDOR廃止</strong> — 36年間続いたカナダのベンチマーク金利が正式に終了。C$20兆超の金融商品がCORRAベースに移行完了。
+          </div>
+        </div>
+      </section>
+
+      <!-- Treasury Bills -->
+      <section class="content-section">
+        <h2>政府短期証券 (Treasury Bills)</h2>
+        <p>
+          カナダ政府短期証券 (Government of Canada Treasury Bills / T-Bills) は、連邦政府が発行する割引型の短期証券であり、3ヶ月（91日）、6ヶ月（182日）、12ヶ月（364日）の3種類が定期的にオークションで発行される。T-Bill残高はC$2,000億超で推移しており、カナダのマネーマーケットの中核的な商品である。オークションは隔週で実施され、GSDs（政府証券ディストリビューター）が入札する<cite>[12]</cite>。
+        </p>
+        <p>
+          T-Bill利回りはBOCのオーバーナイト金利ターゲットに密接に連動するが、流動性プレミアム、供給量、リスクオフ時の安全資産需要等の要因によりオーバーナイト金利からの乖離が生じることがある。2008年のGFC時には、「フライト・トゥ・クオリティ」によりT-Bill利回りがオーバーナイト金利を大幅に下回る現象が発生した。2020年3月のCOVID危機でも同様の動きが見られ、3ヶ月T-Billの利回りが一時的にマイナス圏に接近した<cite>[13]</cite>。
+        </p>
+      </section>
+
+      <!-- BAs -->
+      <section class="content-section">
+        <h2>バンカーズ・アクセプタンス (BAs)</h2>
+        <p>
+          バンカーズ・アクセプタンス (Bankers' Acceptances / BAs) は、カナダのマネーマーケットにおいて長年にわたり重要な役割を果たしてきた短期金融商品である。BAは銀行が引き受け（アクセプト）を行う短期の約束手形であり、引受銀行の信用が付加されるため、コマーシャルペーパー (CP) より一般的に低い利回りで取引される。BA金利はCDORの算出基盤であり、CDORは本質的に「BAの引受レート」であった<cite>[14]</cite>。
+        </p>
+        <p>
+          しかし、CDORの廃止に伴い、BAの役割は大幅に縮小している。BA市場は歴史的にカナダ企業の短期資金調達の主要手段であったが、CPやCORRAベースのローンへの移行が進み、BA発行残高は2020年代に入って急減した。BAはカナダ金融史の中で独特の位置を占めており、CDORとともにカナダのマネーマーケットの構造を象徴する商品であった。その衰退は、グローバルなベンチマーク金利改革がカナダの金融市場構造そのものを変容させた証左である<cite>[15]</cite>。
+        </p>
+      </section>
+
+      <!-- Key Rate History -->
+      <section class="content-section">
+        <h2>主要短期金利の推移</h2>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th data-sort>年</th>
+              <th data-sort>BOC O/N目標</th>
+              <th data-sort>3M T-Bill</th>
+              <th data-sort>CDOR 3M / CORRA</th>
+              <th>市場環境</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1981</td>
+              <td style="color:#ff6b6b;">21.0%</td>
+              <td style="color:#ff6b6b;">18.5%</td>
+              <td>N/A</td>
+              <td>ボルカー連動、Bank Rate過去最高</td>
+            </tr>
+            <tr>
+              <td>1990</td>
+              <td style="color:#ff6b6b;">13.0%</td>
+              <td style="color:#ff6b6b;">12.8%</td>
+              <td>13.2%</td>
+              <td>クロウ総裁インフレ退治、リセッション</td>
+            </tr>
+            <tr>
+              <td>1994</td>
+              <td>5.5%</td>
+              <td>5.8%</td>
+              <td>6.2%</td>
+              <td>オーバーナイト金利ターゲティング導入</td>
+            </tr>
+            <tr>
+              <td>1995</td>
+              <td style="color:#ff6b6b;">7.0%</td>
+              <td style="color:#ff6b6b;">7.2%</td>
+              <td style="color:#ff6b6b;">7.5%</td>
+              <td style="color:#ffa502;">ケベック住民投票危機、CAD急落</td>
+            </tr>
+            <tr>
+              <td>1998</td>
+              <td style="color:#ff6b6b;">5.5%</td>
+              <td>5.0%</td>
+              <td>5.3%</td>
+              <td style="color:#ffa502;">LTCM危機、CAD過去最安値</td>
+            </tr>
+            <tr>
+              <td>2001</td>
+              <td style="color:#4ecdc4;">2.0%</td>
+              <td style="color:#4ecdc4;">2.2%</td>
+              <td style="color:#4ecdc4;">2.4%</td>
+              <td>ITバブル崩壊、緊急利下げ</td>
+            </tr>
+            <tr>
+              <td>2007</td>
+              <td>4.5%</td>
+              <td>4.3%</td>
+              <td>4.7%</td>
+              <td>利上げサイクルピーク、ABCP危機前夜</td>
+            </tr>
+            <tr>
+              <td>2008</td>
+              <td style="color:#ffa502;">1.5%</td>
+              <td style="color:#ffa502;">1.2%</td>
+              <td style="color:#ffa502;">2.8%</td>
+              <td style="color:#ffa502;">GFC、CDOR-O/Nスプレッド急拡大130bp</td>
+            </tr>
+            <tr>
+              <td>2009</td>
+              <td style="color:#4ecdc4;">0.25%</td>
+              <td style="color:#4ecdc4;">0.15%</td>
+              <td style="color:#4ecdc4;">0.50%</td>
+              <td>過去最低金利、条件付きフォワードガイダンス</td>
+            </tr>
+            <tr>
+              <td>2015</td>
+              <td style="color:#4ecdc4;">0.50%</td>
+              <td style="color:#4ecdc4;">0.45%</td>
+              <td style="color:#4ecdc4;">0.75%</td>
+              <td>原油暴落、2回の緊急利下げ</td>
+            </tr>
+            <tr>
+              <td>2018</td>
+              <td>1.75%</td>
+              <td>1.65%</td>
+              <td>2.00%</td>
+              <td>利上げサイクル一服</td>
+            </tr>
+            <tr>
+              <td>2020</td>
+              <td style="color:#4ecdc4;">0.25%</td>
+              <td style="color:#4ecdc4;">0.10%</td>
+              <td style="color:#4ecdc4;">0.22%</td>
+              <td style="color:#ffa502;">COVID、3週間で150bp利下げ</td>
+            </tr>
+            <tr>
+              <td>2023</td>
+              <td style="color:#ff6b6b;">5.00%</td>
+              <td style="color:#ff6b6b;">5.10%</td>
+              <td style="color:#ff6b6b;">4.95% (CORRA)</td>
+              <td>過去最速の利上げサイクル完了</td>
+            </tr>
+            <tr>
+              <td>2024</td>
+              <td style="color:#4ecdc4;">3.75%</td>
+              <td style="color:#4ecdc4;">3.60%</td>
+              <td style="color:#4ecdc4;">3.70% (CORRA)</td>
+              <td>G7先行利下げ、CDOR廃止</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="table-note">出所: Bank of Canada, Bloomberg, CARR. 年末時点の概算値。2024年以降はCORRA。色分け: <span style="color:#ff6b6b;">赤=引き締め</span>、<span style="color:#4ecdc4;">青=緩和</span>、<span style="color:#ffa502;">橙=危機</span><cite>[16]</cite></p>
+      </section>
+
+      <!-- COVID Liquidity -->
+      <section class="content-section">
+        <h2>COVID-19と非常時の流動性供給</h2>
+        <p>
+          2020年3月のCOVIDショック時、カナダのマネーマーケットは深刻な流動性逼迫に見舞われた。T-Billのビッド・アスク・スプレッドは通常の10倍以上に拡大し、BAやCP市場では事実上の取引停止状態が発生した。BOCはマネーマーケットの安定化のため、前例のない規模の流動性供給ファシリティを導入した<cite>[17]</cite>。
+        </p>
+        <p>
+          主要な措置として、(1) スタンディング・ターム流動性ファシリティ (Standing Term Liquidity Facility / STLF) — 銀行に対する幅広い担保による最大180日のターム資金供給、(2) 州債・社債買入プログラム (Provincial Bond Purchase Program / PBPP、Corporate Bond Purchase Program / CBPP) — 州債・投資適格社債の流通市場買入、(3) バンカーズ・アクセプタンス買入ファシリティ — BA市場の流動性支援、(4) カナダ・モーゲージ・ボンド買入プログラム (CMBP) — CMBの買入によるモーゲージ市場支援が実施された<cite>[18]</cite>。
+        </p>
+        <p>
+          これらのファシリティは、マネーマーケットの機能回復に効果を発揮し、CDOR-オーバーナイト金利スプレッドは2020年4月をピークに急速に縮小した。BOCは2020年後半から段階的にファシリティを縮小・終了し、2021年末までにほぼすべての非常時ファシリティが停止された。COVID危機は、BOCが「最後の貸し手」機能を従来のオーバーナイト貸出を超えて大幅に拡大した初めてのケースであり、カナダの金融安定政策の転換点となった<cite>[19]</cite>。
+        </p>
+      </section>
+
+      <!-- Commercial Paper -->
+      <section class="content-section">
+        <h2>コマーシャルペーパー (CP) 市場</h2>
+        <p>
+          カナダのコマーシャルペーパー (Commercial Paper / CP) 市場は、企業や金融機関が短期（通常1日-1年）の無担保債務証券を発行する市場である。カナダのCP市場規模はC$500-800億程度で推移しており、米国の巨大なCP市場に比べると小規模であるが、カナダの大企業や銀行にとって重要な短期資金調達手段となっている<cite>[20]</cite>。
+        </p>
+        <p>
+          カナダのCP市場が注目を集めたのは、2007年のABCP（資産担保コマーシャルペーパー）危機である。カナダ独自の非銀行ABCP（銀行スポンサーではないビークルが発行するABCP）がC$320億の凍結に至り、カナダ金融史上最大の非銀行金融危機となった。この事件は、CP市場のリスク認識を根本的に変え、規制強化と市場構造の改革につながった。ABCP危機の詳細はページ15（金融危機）で扱う<cite>[21]</cite>。
+        </p>
+      </section>
+
+      <!-- G10 Benchmark Comparison -->
+      <section class="content-section">
+        <h2>G10ベンチマーク金利比較</h2>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th data-sort>国</th>
+              <th data-sort>政策金利</th>
+              <th data-sort>旧ベンチマーク</th>
+              <th data-sort>新RFR</th>
+              <th data-sort>移行状況</th>
+              <th>管理者</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>🇺🇸 米国</td>
+              <td>Fed Funds Rate</td>
+              <td>USD LIBOR</td>
+              <td>SOFR</td>
+              <td>完了 (2023)</td>
+              <td>NY Fed</td>
+            </tr>
+            <tr>
+              <td>🇬🇧 英国</td>
+              <td>Bank Rate</td>
+              <td>GBP LIBOR</td>
+              <td>SONIA</td>
+              <td>完了 (2021)</td>
+              <td>BOE</td>
+            </tr>
+            <tr>
+              <td>🇪🇺 ユーロ圏</td>
+              <td>Deposit Facility Rate</td>
+              <td>EURIBOR / EONIA</td>
+              <td>ESTR</td>
+              <td>EONIA完了、EURIBOR継続</td>
+              <td>ECB</td>
+            </tr>
+            <tr>
+              <td>🇯🇵 日本</td>
+              <td>無担O/Nコールレート</td>
+              <td>JPY LIBOR / TIBOR</td>
+              <td>TONA</td>
+              <td>LIBOR完了、TIBOR継続</td>
+              <td>BOJ</td>
+            </tr>
+            <tr style="background-color:rgba(0,212,170,0.1);">
+              <td>🇨🇦 <strong>カナダ</strong></td>
+              <td><strong>O/N Rate Target</strong></td>
+              <td><strong>CDOR</strong></td>
+              <td><strong>CORRA</strong></td>
+              <td><strong>完了 (2024)</strong></td>
+              <td><strong>BOC</strong></td>
+            </tr>
+            <tr>
+              <td>🇨🇭 スイス</td>
+              <td>SNB Policy Rate</td>
+              <td>CHF LIBOR</td>
+              <td>SARON</td>
+              <td>完了 (2021)</td>
+              <td>SIX</td>
+            </tr>
+            <tr>
+              <td>🇦🇺 豪州</td>
+              <td>Cash Rate</td>
+              <td>BBSW</td>
+              <td>AONIA</td>
+              <td>BBSW継続、AONIA補完</td>
+              <td>ASX/RBA</td>
+            </tr>
+            <tr>
+              <td>🇳🇿 NZ</td>
+              <td>OCR</td>
+              <td>BKBM</td>
+              <td>複数RFR検討中</td>
+              <td>BKBM改革継続</td>
+              <td>RBNZ</td>
+            </tr>
+            <tr>
+              <td>🇸🇪 スウェーデン</td>
+              <td>Repo Rate</td>
+              <td>STIBOR</td>
+              <td>SWESTR</td>
+              <td>STIBOR継続、SWESTR補完</td>
+              <td>Riksbank</td>
+            </tr>
+            <tr>
+              <td>🇳🇴 ノルウェー</td>
+              <td>Sight Deposit Rate</td>
+              <td>NIBOR</td>
+              <td>NOWA</td>
+              <td>NIBOR継続、NOWA補完</td>
+              <td>Norges Bank</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="table-note">出所: FSB, 各国中央銀行, ISDA. 2024年時点の状況<cite>[22]</cite></p>
+      </section>
+
+      <!-- Money Market Timeline -->
+      <section class="content-section">
+        <h2>カナダ短期金利市場の主要年表</h2>
+
+        <div class="timeline-entry">
+          <div class="timeline-date">1935</div>
+          <div class="timeline-content">
+            <strong>BOC設立</strong> — Bank Rate（公定歩合）による金融政策運営開始。当初2.5%に設定。
+          </div>
+        </div>
+        <div class="timeline-entry">
+          <div class="timeline-date">1954</div>
+          <div class="timeline-content">
+            <strong>フローティング・バンクレート導入</strong> — Bank RateをT-Bill利回りに連動させる方式に移行（91日T-Bill利回り+25bp）。
+          </div>
+        </div>
+        <div class="timeline-entry">
+          <div class="timeline-date">1980</div>
+          <div class="timeline-content">
+            <strong>バンクレート変動制復活</strong> — 一時的な固定制を経て、T-Bill連動方式に復帰。
+          </div>
+        </div>
+        <div class="timeline-entry rate-hike">
+          <div class="timeline-date">1981</div>
+          <div class="timeline-content">
+            <strong>Bank Rate 21%</strong> — ボルカー連動の過去最高金利。3M T-Bill 18.5%。
+          </div>
+        </div>
+        <div class="timeline-entry">
+          <div class="timeline-date">1988</div>
+          <div class="timeline-content">
+            <strong>CDOR算出開始</strong> — 6行のパネル銀行によるBA引受レートのベンチマーク。
+          </div>
+        </div>
+        <div class="timeline-entry">
+          <div class="timeline-date">1994</div>
+          <div class="timeline-content">
+            <strong>オーバーナイト金利ターゲティング導入</strong> — Bank RateからO/N金利へ政策金利の枠組みを変更。
+          </div>
+        </div>
+        <div class="timeline-entry">
+          <div class="timeline-date">1999</div>
+          <div class="timeline-content">
+            <strong>LVTS稼働開始</strong> — 大口決済の電子化、リアルタイム処理の実現。
+          </div>
+        </div>
+        <div class="timeline-entry crisis">
+          <div class="timeline-date">2007-08</div>
+          <div class="timeline-content">
+            <strong>ABCP危機 / GFC</strong> — CDOR-O/Nスプレッドが130bp超に急拡大。マネーマーケット凍結。
+          </div>
+        </div>
+        <div class="timeline-entry rate-cut">
+          <div class="timeline-date">2009</div>
+          <div class="timeline-content">
+            <strong>O/N金利 0.25%</strong> — 過去最低金利。条件付きフォワードガイダンス導入。
+          </div>
+        </div>
+        <div class="timeline-entry">
+          <div class="timeline-date">2020</div>
+          <div class="timeline-content">
+            <strong>強化版CORRA算出開始</strong> — BOCによる新算出方法。CDOR移行の基盤整備。
+          </div>
+        </div>
+        <div class="timeline-entry crisis">
+          <div class="timeline-date">2020年3月</div>
+          <div class="timeline-content">
+            <strong>COVID流動性危機</strong> — BOCが非常時ファシリティを複数導入。3週間で150bp利下げ。
+          </div>
+        </div>
+        <div class="timeline-entry">
+          <div class="timeline-date">2022年8月</div>
+          <div class="timeline-content">
+            <strong>Lynx稼働開始</strong> — LVTSからRTGS方式の新決済システムに移行。
+          </div>
+        </div>
+        <div class="timeline-entry rate-hike">
+          <div class="timeline-date">2023年7月</div>
+          <div class="timeline-content">
+            <strong>O/N金利 5.00%</strong> — 過去最速の利上げサイクルで425bp引き上げ完了。
+          </div>
+        </div>
+        <div class="timeline-entry">
+          <div class="timeline-date">2024年6月</div>
+          <div class="timeline-content">
+            <strong>CDOR廃止</strong> — 36年間のベンチマーク金利が終了。CORRAへ完全移行。
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>Bank of Canada, "A Primer on the Implementation of Monetary Policy in the LVTS Environment," 1999</li>
+        <li>Bank of Canada, "Operating Framework for the Implementation of Monetary Policy," 2020</li>
+        <li>Bank of Canada, "The Relationship between the Operating Band and Settlement Balances," Staff Discussion Paper, 2023</li>
+        <li>Payments Canada, "LVTS Rules," various editions; Bank of Canada, "LVTS Primer," 2019</li>
+        <li>Payments Canada, "Lynx: Canada's High-Value Payment System," 2022</li>
+        <li>Bank of Canada, "CORRA: Canadian Overnight Repo Rate Average," methodology document</li>
+        <li>Bank of Canada, "Enhanced CORRA Methodology," 2020</li>
+        <li>CARR, "CORRA-Related Derivatives Market Progress," quarterly reports</li>
+        <li>CARR, "CDOR: Background and History," 2020; Refinitiv/RBSL, "CDOR Methodology"</li>
+        <li>CARR, "Recommendations for a Transition from CDOR," 2021</li>
+        <li>OSFI/BOC/CARR, "CDOR Transition Milestones and Final Cessation," 2024</li>
+        <li>Department of Finance Canada, "Treasury Bills — Terms and Conditions"</li>
+        <li>Bank of Canada, "Money Market Yields and Indicators," daily data</li>
+        <li>Bank of Canada, "Bankers' Acceptances: A Canadian Perspective," Staff Working Paper</li>
+        <li>CARR, "Impact of CDOR Cessation on Bankers' Acceptances," 2022</li>
+        <li>Bank of Canada, "Selected Bond Yields," historical data series; Bloomberg terminal</li>
+        <li>Bank of Canada, "Financial System Review," June 2020</li>
+        <li>Bank of Canada, "COVID-19: Actions to Support the Economy and Financial System," program summaries</li>
+        <li>Bank of Canada, "Monetary Policy Report," October 2021</li>
+        <li>Bank of Canada, "Canadian Financial Statistics," Table C2 — Commercial Paper</li>
+        <li>Chant, John, "The ABCP Crisis in Canada: The Implications for the Regulation of Financial Markets," 2009</li>
+        <li>FSB, "Reforming Major Interest Rate Benchmarks," progress report, 2024; ISDA, "Benchmark Reform and Transition from LIBOR"</li>
+      </ol>
+      <p><em>注: 金利データは概算値であり、正確な日次データは各一次ソースを参照されたい。</em></p>
+    </footer>
+  </main>
+
+<script>
+document.querySelectorAll('th[data-sort]').forEach(th => {
+  th.style.cursor = 'pointer';
+  th.addEventListener('click', () => {
+    const table = th.closest('table');
+    const tbody = table.querySelector('tbody');
+    const idx = Array.from(th.parentNode.children).indexOf(th);
+    const rows = Array.from(tbody.querySelectorAll('tr'));
+    const dir = th.asc = !th.asc ? 1 : -1;
+    rows.sort((a, b) => {
+      const av = a.children[idx]?.textContent.trim() ?? '';
+      const bv = b.children[idx]?.textContent.trim() ?? '';
+      const an = parseFloat(av.replace(/[^0-9.\-]/g, ''));
+      const bn = parseFloat(bv.replace(/[^0-9.\-]/g, ''));
+      if (!isNaN(an) && !isNaN(bn)) return (an - bn) * dir;
+      return av.localeCompare(bv, 'ja') * dir;
+    });
+    rows.forEach(r => tbody.appendChild(r));
+  });
+});
+</script>
+
+</body>
+</html>

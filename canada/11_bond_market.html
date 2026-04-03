@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canada - Bond Market | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇨🇦 Canada</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link active">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip active">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Canada</a>
+        <span class="sep">/</span>
+        Bond Market
+      </div>
+      <h1 class="page-title">カナダ債券市場 (Canadian Bond Market)</h1>
+      <p class="page-subtitle">GoC Bonds — AA+/Aaa格付、残高C$1.2兆超、世界最大のサブソブリン州債市場を擁するG7国</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">C$1.2T+</div>
+          <div class="stat-label">GoC Bonds残高</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">AA+ / Aaa</div>
+          <div class="stat-label">S&P / Moody's格付</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">~12</div>
+          <div class="stat-label">プライマリーディーラー数</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">~25-30%</div>
+          <div class="stat-label">外国人保有比率</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">C$340B+</div>
+          <div class="stat-label">BOC COVID QE購入額</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">C$500B+</div>
+          <div class="stat-label">州債市場規模</div>
+        </div>
+      </div>
+
+      <!-- Overview -->
+      <section class="content-section">
+        <h2>カナダ国債市場の概観</h2>
+        <p>
+          カナダ政府債券 (Government of Canada Bonds / GoC Bonds) は、カナダ連邦政府が発行するソブリン債であり、S&Pから「AA+」、ムーディーズから「Aaa」の最高水準の格付を取得している。2024年時点の連邦政府債務残高はC$1.2兆を超え、GDP比約42%の水準にある。カナダ国債市場は、G7諸国の中では相対的に小規模であるが、流動性が高く、安全資産としての需要が根強い。特にカナダの財政規律の歴史 — 1990年代後半に連続11年の財政黒字を達成した実績 — は、投資家の信頼の基盤となっている<cite>[1]</cite>。
+        </p>
+        <p>
+          カナダ債券市場の特徴として、連邦政府債に加えて州政府債（Provincial Bonds）が巨大な市場を形成していることが挙げられる。オンタリオ州、ケベック州、アルバータ州を筆頭とする10州・3準州がそれぞれ独自の債券を発行しており、合計残高はC$5,000億を超える。これは世界最大のサブソブリン債市場であり、カナダ独自のフェデラリズム（連邦主義）の産物である。州債はGoC債に対してスプレッドが付加され、財政状況や経済構造（アルバータの原油依存等）によってスプレッドが変動する<cite>[2]</cite>。
+        </p>
+      </section>
+
+      <!-- Historical Development -->
+      <section class="content-section">
+        <h2>歴史的発展</h2>
+
+        <h3>連邦結成から二度の世界大戦 (1867-1945)</h3>
+        <p>
+          カナダの国債市場の歴史は1867年の連邦結成 (Confederation) に遡る。英領北アメリカ法 (British North America Act) によりカナダ自治領が成立した際、旧植民地の債務が連邦政府に引き継がれ、これが最初の連邦債務となった。初期のカナダ政府債はロンドンのシティで発行・取引されており、カナダは大英帝国の資本市場に深く依存していた。19世紀後半の大陸横断鉄道建設（CPR、1881-1885年）は巨額の政府保証債発行を伴い、カナダの信用市場の発展を促した<cite>[3]</cite>。
+        </p>
+        <p>
+          第一次世界大戦はカナダ債券市場の転換点となった。1915年に「ビクトリー・ボンド (Victory Bonds)」の国内販売が開始され、カナダ国民が初めて大規模に自国政府債を購入する機会を得た。4回のビクトリー・ボンド発行で合計C$20億以上が調達され、これは当時のカナダGDPの約40%に相当する驚異的な金額であった。第二次世界大戦でも同様のビクトリー・ボンド・キャンペーンが実施され、累計C$120億超が調達された。これらの戦時国債は、カナダの国内債券市場をロンドン依存から自立させる契機となった<cite>[4]</cite>。
+        </p>
+
+        <h3>戦後から高インフレ時代 (1945-1981)</h3>
+        <p>
+          戦後、カナダ政府は積極的な債務管理を行い、戦時債務のGDP比を着実に削減した。1960年代まではインフレが低水準で推移し、GoC 10年債利回りは3-6%のレンジで安定していた。しかし1970年代に入ると、オイルショックとスタグフレーションの影響でインフレが加速し、債券利回りは急騰を始める。1981年にはBoC Bank Rateが21%に達し、GoC 10年債利回りも過去最高の約16%を記録した。この時期、カナダの債券投資家は壊滅的な損失を被り、債券は「証券化された没収 (confiscation certificates)」と揶揄された<cite>[5]</cite>。
+        </p>
+
+        <h3>ディスインフレから財政再建 (1981-2000)</h3>
+        <p>
+          1981年のピーク以降、カナダはボルカー・ショック後の米国と連動してディスインフレの時代に入った。1991年のインフレ・ターゲティング導入は債券市場に構造的な転換をもたらし、インフレ期待の安定化を通じてリスクプレミアムが圧縮された。しかし1990年代前半、カナダは財政危機に直面する。連邦政府債務がGDP比68.4%に達し、ウォール・ストリート・ジャーナルに「名誉第三世界国家」と揶揄された<cite>[6]</cite>。
+        </p>
+        <p>
+          1995年のポール・マーティン (Paul Martin) 財務相による緊縮財政パッケージは、カナダ債券市場の転換点となった。歳出削減と経済成長の好循環により、1997年度からG7初の連続財政黒字を達成。債務残高GDP比は2007年度に28.3%まで低下し、GoC債のスプレッドは大幅に縮小した。この財政再建の成功は、カナダ国債の「セーフヘイブン」としての地位を確立し、外国人投資家の保有比率が上昇する契機となった<cite>[7]</cite>。
+        </p>
+
+        <h3>低金利時代からCOVID、QT (2000-現在)</h3>
+        <p>
+          2000年代以降、グローバルな低金利環境の中でGoC債利回りは趨勢的に低下した。2008年のGFC（世界金融危機）ではGoC債が安全資産として買われ、10年債利回りは2%台まで低下した。2020年のCOVID-19パンデミックでは、BoC（カナダ中央銀行）が初めて量的緩和 (QE) を実施し、GoC債をC$3,400億以上購入した。これにより10年債利回りは過去最低の約0.43%まで低下した<cite>[8]</cite>。
+        </p>
+        <p>
+          2022年以降、BoCは量的引き締め (QT) に転じ、満期到来分のGoC債の再投資を停止した。同時に急速な利上げ（425bp）が実施されたことで、GoC債の価格は急落し、特に長期債は-30%以上の損失を記録した。2024年にはBoCがG7に先駆けて利下げサイクルを開始し、債券市場は回復に転じたが、QT継続による供給圧力とのバランスが新たな課題となっている<cite>[9]</cite>。
+        </p>
+      </section>
+
+      <!-- Primary Dealer System -->
+      <section class="content-section">
+        <h2>プライマリーディーラー制度</h2>
+        <p>
+          カナダのGoC債の発行・流通は、政府証券ディストリビューター (Government Securities Distributors / GSDs) と呼ばれるプライマリーディーラーを通じて行われる。GSDs は約12社で構成され、カナダのビッグ5銀行の証券子会社（RBC ドミニオン証券、TD証券、BMOキャピタルマーケッツ、スコシアバンク・キャピタルマーケッツ、CIBCキャピタルマーケッツ）に加え、ナショナルバンク、デジャルダン、および数社の外資系ディーラー（JPモルガン、ゴールドマン・サックス等）が含まれる<cite>[10]</cite>。
+        </p>
+        <p>
+          GSDs はGoC債のオークションに参加する義務を負い、流通市場でのマーケットメイキングを行う。カナダのオークション方式は複数価格入札（ダッチ方式ではなく差別価格方式）であり、2Y、3Y、5Y、10Y、30Yの各年限で定期的にオークションが実施される。財務省はカナダ債務管理戦略 (Debt Management Strategy) を毎年公表し、年限別の発行計画を明らかにしている<cite>[11]</cite>。
+        </p>
+      </section>
+
+      <!-- GoC Bond Yield History Table -->
+      <section class="content-section">
+        <h2>GoC債利回り推移</h2>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th data-sort>年</th>
+              <th data-sort>2Y</th>
+              <th data-sort>5Y</th>
+              <th data-sort>10Y</th>
+              <th data-sort>30Y</th>
+              <th>主要イベント</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1981</td>
+              <td style="color:#ff6b6b;">17.5%</td>
+              <td style="color:#ff6b6b;">16.8%</td>
+              <td style="color:#ff6b6b;">15.8%</td>
+              <td style="color:#ff6b6b;">15.2%</td>
+              <td>ボルカー・ショック連動、Bank Rate 21%</td>
+            </tr>
+            <tr>
+              <td>1985</td>
+              <td>10.5%</td>
+              <td>10.8%</td>
+              <td>11.0%</td>
+              <td>11.3%</td>
+              <td>ディスインフレ開始</td>
+            </tr>
+            <tr>
+              <td>1990</td>
+              <td style="color:#ff6b6b;">12.8%</td>
+              <td style="color:#ff6b6b;">11.5%</td>
+              <td style="color:#ff6b6b;">10.8%</td>
+              <td style="color:#ff6b6b;">10.5%</td>
+              <td>BOC引き締め、リセッション突入</td>
+            </tr>
+            <tr>
+              <td>1991</td>
+              <td>8.9%</td>
+              <td>9.2%</td>
+              <td>9.5%</td>
+              <td>9.8%</td>
+              <td>インフレ・ターゲティング導入</td>
+            </tr>
+            <tr>
+              <td>1995</td>
+              <td>7.5%</td>
+              <td>7.8%</td>
+              <td>8.1%</td>
+              <td>8.5%</td>
+              <td style="color:#ffa502;">財政危機「名誉第三世界」、ケベック住民投票</td>
+            </tr>
+            <tr>
+              <td>2000</td>
+              <td>5.8%</td>
+              <td>5.7%</td>
+              <td>5.6%</td>
+              <td>5.8%</td>
+              <td>財政黒字達成、ITバブルピーク</td>
+            </tr>
+            <tr>
+              <td>2003</td>
+              <td>3.0%</td>
+              <td>3.8%</td>
+              <td>4.8%</td>
+              <td>5.3%</td>
+              <td>利下げサイクル完了</td>
+            </tr>
+            <tr>
+              <td>2007</td>
+              <td>4.3%</td>
+              <td>4.2%</td>
+              <td>4.3%</td>
+              <td>4.2%</td>
+              <td>利上げサイクルピーク、ABCP危機前夜</td>
+            </tr>
+            <tr>
+              <td>2009</td>
+              <td style="color:#4ecdc4;">0.9%</td>
+              <td style="color:#4ecdc4;">2.0%</td>
+              <td style="color:#4ecdc4;">3.2%</td>
+              <td style="color:#4ecdc4;">3.8%</td>
+              <td style="color:#ffa502;">GFC、BOC 0.25%へ緊急利下げ</td>
+            </tr>
+            <tr>
+              <td>2012</td>
+              <td>1.1%</td>
+              <td>1.3%</td>
+              <td>1.8%</td>
+              <td>2.4%</td>
+              <td>欧州ソブリン危機波及</td>
+            </tr>
+            <tr>
+              <td>2015</td>
+              <td style="color:#4ecdc4;">0.5%</td>
+              <td style="color:#4ecdc4;">0.7%</td>
+              <td style="color:#4ecdc4;">1.5%</td>
+              <td style="color:#4ecdc4;">2.1%</td>
+              <td>原油暴落、BOC緊急利下げ</td>
+            </tr>
+            <tr>
+              <td>2019</td>
+              <td>1.7%</td>
+              <td>1.6%</td>
+              <td>1.6%</td>
+              <td>1.8%</td>
+              <td>イールドカーブフラット化</td>
+            </tr>
+            <tr>
+              <td>2020</td>
+              <td style="color:#4ecdc4;">0.25%</td>
+              <td style="color:#4ecdc4;">0.39%</td>
+              <td style="color:#4ecdc4;">0.68%</td>
+              <td style="color:#4ecdc4;">1.21%</td>
+              <td style="color:#ffa502;">COVID、BOC初QE、過去最低利回り</td>
+            </tr>
+            <tr>
+              <td>2022</td>
+              <td style="color:#ff6b6b;">4.2%</td>
+              <td style="color:#ff6b6b;">3.6%</td>
+              <td style="color:#ff6b6b;">3.3%</td>
+              <td style="color:#ff6b6b;">3.2%</td>
+              <td style="color:#ff6b6b;">425bp利上げ、債券クラッシュ</td>
+            </tr>
+            <tr>
+              <td>2024</td>
+              <td>3.6%</td>
+              <td>3.2%</td>
+              <td>3.4%</td>
+              <td>3.5%</td>
+              <td>BOC G7先行利下げ開始</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="table-note">出所: Bank of Canada, Bloomberg. 年末時点の利回り（概算値）。色分け: <span style="color:#ff6b6b;">赤=利上げ/高金利局面</span>、<span style="color:#4ecdc4;">青=利下げ/低金利局面</span>、<span style="color:#ffa502;">橙=危機</span></p>
+      </section>
+
+      <!-- Provincial Bonds -->
+      <section class="content-section">
+        <h2>州債市場 (Provincial Bonds)</h2>
+        <p>
+          カナダの州債市場は、世界最大のサブソブリン債市場である。カナダの10州・3準州はそれぞれ独立した信用格付を持ち、独自の債券を発行する権限を有する。これはカナダの連邦制度において、医療、教育、社会インフラ等の主要な公共サービスが州政府の管轄であることに起因する。州債の合計残高はC$5,000億を超え、GoC債と並ぶ機関投資家の主要投資対象となっている<cite>[12]</cite>。
+        </p>
+
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th data-sort>州</th>
+              <th data-sort>格付 (S&P)</th>
+              <th data-sort>残高概算</th>
+              <th data-sort>10Yスプレッド (vs GoC, bp)</th>
+              <th>特記事項</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>オンタリオ州 (Ontario)</td>
+              <td>AA-</td>
+              <td>C$420B+</td>
+              <td>55-75</td>
+              <td>最大発行体、カナダGDPの40%、自動車・金融</td>
+            </tr>
+            <tr>
+              <td>ケベック州 (Quebec)</td>
+              <td>AA-</td>
+              <td>C$230B+</td>
+              <td>50-70</td>
+              <td>水力発電Hydro-Quebec、独立運動リスク（歴史的）</td>
+            </tr>
+            <tr>
+              <td>アルバータ州 (Alberta)</td>
+              <td>A+</td>
+              <td>C$90B+</td>
+              <td>65-100</td>
+              <td>原油依存、WTI連動でスプレッド変動大</td>
+            </tr>
+            <tr>
+              <td>ブリティッシュコロンビア州 (BC)</td>
+              <td>AA+</td>
+              <td>C$95B+</td>
+              <td>40-55</td>
+              <td>多角化経済、最高格付州の一つ</td>
+            </tr>
+            <tr>
+              <td>サスカチュワン州 (Saskatchewan)</td>
+              <td>AA</td>
+              <td>C$25B+</td>
+              <td>55-70</td>
+              <td>農業・ポタシュ（カリウム肥料）</td>
+            </tr>
+            <tr>
+              <td>マニトバ州 (Manitoba)</td>
+              <td>A+</td>
+              <td>C$30B+</td>
+              <td>60-80</td>
+              <td>水力発電、農業</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="table-note">出所: 各州財務省、S&P Global Ratings, DBRS Morningstar. スプレッドは2023-2024年のレンジ概算<cite>[13]</cite></p>
+
+        <p>
+          州債スプレッドは各州の財政状況、経済構造、信用格付によって異なるが、アルバータ州のスプレッドは原油価格との相関が高く、2014-2016年の原油暴落時にはスプレッドが100bp超に拡大した。一方、ケベック州は1995年の独立住民投票（賛成49.4%で僅差で否決）の際にスプレッドが急拡大した歴史を持つ。近年はオンタリオ州の巨額の債務残高（G7サブソブリン最大）が市場の注目を集めており、オンタリオ州債の年間発行額はC$400-500億に達する<cite>[14]</cite>。
+        </p>
+      </section>
+
+      <!-- Canada Mortgage Bonds -->
+      <section class="content-section">
+        <h2>カナダ・モーゲージ債 (Canada Mortgage Bonds / CMB)</h2>
+        <p>
+          カナダ・モーゲージ債 (CMB) は、カナダ住宅金融公社 (Canada Mortgage and Housing Corporation / CMHC) がNHA MBS (National Housing Act Mortgage-Backed Securities) プログラムを通じて発行する政府保証付きモーゲージ証券である。CMHCはカナダ政府の100%出資機関であり、CMBにはカナダ政府の明示的保証が付されている。このため、CMBの利回りはGoC債に対して小幅なスプレッド（10-30bp程度）で取引される<cite>[15]</cite>。
+        </p>
+        <p>
+          NHA MBSプログラムは、カナダの住宅ローン市場の流動性を高め、モーゲージ金利を低く抑える役割を果たしている。金融機関はCMHC保険付きのモーゲージをプールしてNHA MBSを組成し、さらにCMHCがこれらをCMBに証券化する。2007-2009年のGFC時には、このCMHCの保証メカニズムがカナダの住宅ローン市場の安定性を支え、米国のサブプライム危機のような事態を回避する一因となった。ただし、批判者はCMHCの保証がカナダの住宅バブルを助長していると指摘しており、2012年以降、政府はCMHC保険の適用条件を段階的に厳格化している<cite>[16]</cite>。
+        </p>
+      </section>
+
+      <!-- Corporate Bonds & Maple Bonds -->
+      <section class="content-section">
+        <h2>社債市場とメープル・ボンド</h2>
+        <p>
+          カナダの社債市場は、GoC債・州債に比べると規模が小さいものの、着実に成長してきた。投資適格 (IG) 社債の発行残高はC$5,000億超で、銀行、パイプライン・公益企業、通信会社が主要な発行体である。カナダのビッグ5銀行は社債市場最大の発行体であり、シニア無担保債やカバードボンド、NVCC (Non-Viability Contingent Capital) 条件付き劣後債を幅広く発行している<cite>[17]</cite>。
+        </p>
+        <p>
+          メープル・ボンド (Maple Bond) は、外国の発行体がカナダドル建てでカナダ国内市場にて発行する債券であり、日本の「サムライ債」、オーストラリアの「カンガルー債」に相当する。世界銀行、欧州復興開発銀行 (EBRD)、米国企業などが主要な発行体である。メープル・ボンド市場は2005年頃に本格的に発展し、外国投資家がカナダドル建てのリターンを求める需要と、外国発行体がカナダの投資家基盤にアクセスする需要の双方に応えている<cite>[18]</cite>。
+        </p>
+      </section>
+
+      <!-- Real Return Bonds -->
+      <section class="content-section">
+        <h2>実質利回り債 (Real Return Bonds / RRBs)</h2>
+        <p>
+          カナダ政府は1991年にインフレ連動債である実質利回り債 (Real Return Bonds / RRBs) の発行を開始した。RRBsは元本がカナダCPI（消費者物価指数）に連動して調整されるため、実質購買力を保全したい年金基金や保険会社にとって重要な投資手段であった。RRBsのブレークイーブン・インフレ率 (BEI) は、市場のインフレ期待を測る指標として広く参照された<cite>[19]</cite>。
+        </p>
+        <p>
+          しかし、2022年11月にカナダ財務省は新規RRBsの発行停止を発表した。理由として、発行コストの高さ（通常のGoC債に対するコスト優位性の消失）、市場流動性の低下、発行残高のGDP比での縮小が挙げられた。この決定はインフレ連動債投資家の間で議論を呼んだが、既存のRRBs（最終満期2054年12月）は引き続き流通市場で取引されている。カナダは英国のインデックスリンクト・ギルト、米国のTIPSに次いでG7で3番目にインフレ連動債を導入した国であった<cite>[20]</cite>。
+        </p>
+      </section>
+
+      <!-- BOC QE/QT -->
+      <section class="content-section">
+        <h2>BOCの量的緩和と量的引き締め</h2>
+        <p>
+          2020年3月、カナダ中央銀行 (BOC) は創設86年の歴史で初めて量的緩和 (QE) を実施した。当初はGoC債市場の機能不全を是正するための市場安定化措置として開始されたが、その後は金融緩和の手段として拡大された。BOCはGoC債をC$3,400億以上購入し、バランスシートをC$120億（2020年2月）からC$5,750億（2021年ピーク）に約5倍に膨張させた<cite>[21]</cite>。
+        </p>
+        <p>
+          QEの影響は顕著であった。GoC 10年債の利回りは推定100bp以上圧縮され、ターム・プレミアムは歴史的な低水準に抑制された。しかし、2021年後半からインフレが急加速すると、BOCは2022年4月にQTを開始し、満期到来分のGoC債の再投資を停止した。QTの進行により、BOCのGoC債保有残高は2024年末までにC$2,000億以下に減少した。QTは「バックグラウンド・プロセス」として自動的に進行しているが、供給増加によるイールド上昇圧力と、BOCの利下げによる下押し圧力が拮抗する複雑な市場環境を生み出している<cite>[22]</cite>。
+        </p>
+      </section>
+
+      <!-- Foreign Ownership -->
+      <section class="content-section">
+        <h2>外国人保有とクロスボーダー資金フロー</h2>
+        <p>
+          GoC債の外国人保有比率は約25-30%で推移しており、これはG7諸国の中では中程度の水準である（日本国債の約7%に対し、米国債の約30%に近い）。主な外国人投資家は、米国の資産運用会社、アジアの中央銀行（為替準備の分散投資）、欧州の年金基金である。カナダドルはIMFのSDR構成通貨ではないが、各国中央銀行の外貨準備における配分は徐々に拡大している<cite>[23]</cite>。
+        </p>
+        <p>
+          外国人投資家のGoC債保有は、カナダの経常収支赤字を反映する資本流入の一部であり、CAD（カナダドル）の為替レートとも密接に関連する。BOC-Fed（連邦準備制度理事会）の金利差が拡大する局面では、外国人投資家のGoC債への投資意欲が変化し、CADの為替レートに影響を与える。2022-2024年のBOC-Fed金利差逆転（BOCがFedより先に利下げ）は、外国人投資家のGoC債離れとCAD安を同時に引き起こした<cite>[24]</cite>。
+        </p>
+      </section>
+
+      <!-- G10 Comparison -->
+      <section class="content-section">
+        <h2>G10国債市場比較</h2>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th data-sort>国</th>
+              <th data-sort>格付 (S&P)</th>
+              <th data-sort>国債残高 (概算)</th>
+              <th data-sort>債務/GDP比</th>
+              <th data-sort>10Y利回り (2024)</th>
+              <th data-sort>外国人保有比率</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>🇺🇸 米国</td>
+              <td>AA+</td>
+              <td>US$26T+</td>
+              <td>~123%</td>
+              <td>~4.2%</td>
+              <td>~30%</td>
+            </tr>
+            <tr>
+              <td>🇯🇵 日本</td>
+              <td>A+</td>
+              <td>¥1,100T+</td>
+              <td>~255%</td>
+              <td>~0.9%</td>
+              <td>~7%</td>
+            </tr>
+            <tr>
+              <td>🇬🇧 英国</td>
+              <td>AA</td>
+              <td>£2.5T+</td>
+              <td>~100%</td>
+              <td>~4.0%</td>
+              <td>~28%</td>
+            </tr>
+            <tr>
+              <td>🇩🇪 ドイツ</td>
+              <td>AAA</td>
+              <td>€1.6T+</td>
+              <td>~64%</td>
+              <td>~2.3%</td>
+              <td>~50%</td>
+            </tr>
+            <tr style="background-color:rgba(0,212,170,0.1);">
+              <td>🇨🇦 <strong>カナダ</strong></td>
+              <td><strong>AA+</strong></td>
+              <td><strong>C$1.2T+</strong></td>
+              <td><strong>~42%</strong></td>
+              <td><strong>~3.4%</strong></td>
+              <td><strong>~27%</strong></td>
+            </tr>
+            <tr>
+              <td>🇦🇺 豪州</td>
+              <td>AAA</td>
+              <td>A$900B+</td>
+              <td>~35%</td>
+              <td>~4.3%</td>
+              <td>~45%</td>
+            </tr>
+            <tr>
+              <td>🇳🇿 NZ</td>
+              <td>AA+</td>
+              <td>NZ$135B+</td>
+              <td>~42%</td>
+              <td>~4.5%</td>
+              <td>~42%</td>
+            </tr>
+            <tr>
+              <td>🇨🇭 スイス</td>
+              <td>AAA</td>
+              <td>CHF100B+</td>
+              <td>~38%</td>
+              <td>~0.7%</td>
+              <td>~35%</td>
+            </tr>
+            <tr>
+              <td>🇸🇪 スウェーデン</td>
+              <td>AAA</td>
+              <td>SEK900B+</td>
+              <td>~33%</td>
+              <td>~2.3%</td>
+              <td>~30%</td>
+            </tr>
+            <tr>
+              <td>🇳🇴 ノルウェー</td>
+              <td>AAA</td>
+              <td>NOK600B+</td>
+              <td>~40%</td>
+              <td>~3.5%</td>
+              <td>~35%</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="table-note">出所: IMF, 各国財務省, Bloomberg. 2024年概算値。カナダの債務/GDP比は連邦政府のみ（州を含む一般政府は~107%）<cite>[25]</cite></p>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>Department of Finance Canada, "Fiscal Reference Tables," 2024</li>
+        <li>Bank of Canada, "Review of the Canadian Bond Market," Financial System Review, various years</li>
+        <li>E.P. Neufeld, "The Financial System of Canada," Macmillan, 1972</li>
+        <li>Canada War Museum, "Victory Bonds," https://www.warmuseum.ca/</li>
+        <li>James Powell, "A History of the Canadian Dollar," Bank of Canada, 2005</li>
+        <li>Wall Street Journal, editorial on Canada fiscal crisis, 1995</li>
+        <li>Department of Finance Canada, "Debt Management Strategy," various years</li>
+        <li>Bank of Canada, "Monetary Policy Report," April 2020</li>
+        <li>Bank of Canada, "Summary of Governing Council Deliberations," 2024</li>
+        <li>Bank of Canada, "Government Securities Auctions," https://www.bankofcanada.ca/markets/government-securities-auctions/</li>
+        <li>Department of Finance Canada, "Debt Management Strategy 2024-25"</li>
+        <li>RBC Capital Markets, "Canadian Provincial Bond Market Overview," 2024</li>
+        <li>S&P Global Ratings, "Canadian Provinces and Territories," various reports</li>
+        <li>Ontario Financing Authority, "Annual Report," 2024</li>
+        <li>CMHC, "NHA Mortgage-Backed Securities Program," https://www.cmhc-schl.gc.ca/</li>
+        <li>CMHC, "Canada Mortgage Bonds Program Guide," 2024</li>
+        <li>DBRS Morningstar, "Canadian Corporate Bond Market Review," 2024</li>
+        <li>Bank of Canada, "The Maple Bond Market," Staff Working Paper, 2007</li>
+        <li>Department of Finance Canada, "Real Return Bonds," program description</li>
+        <li>Department of Finance Canada, "Fall Economic Statement 2022" — RRB discontinuation announcement</li>
+        <li>Bank of Canada, "Bank of Canada Balance Sheet," weekly data</li>
+        <li>Bank of Canada, "Quantitative Tightening: The Canadian Experience," Staff Discussion Paper, 2023</li>
+        <li>IMF, "Currency Composition of Official Foreign Exchange Reserves (COFER)," 2024</li>
+        <li>Statistics Canada, "International Investment Position," Table 36-10-0580</li>
+        <li>IMF, "World Economic Outlook Database," October 2024; Bloomberg terminal data</li>
+      </ol>
+      <p><em>注: タカ/ハト分類および市場評価は市場コンセンサスベースの一般的評価に基づく。利回りデータは概算値であり、正確な数値は各一次ソースを参照されたい。</em></p>
+    </footer>
+  </main>
+
+<script>
+document.querySelectorAll('th[data-sort]').forEach(th => {
+  th.style.cursor = 'pointer';
+  th.addEventListener('click', () => {
+    const table = th.closest('table');
+    const tbody = table.querySelector('tbody');
+    const idx = Array.from(th.parentNode.children).indexOf(th);
+    const rows = Array.from(tbody.querySelectorAll('tr'));
+    const dir = th.asc = !th.asc ? 1 : -1;
+    rows.sort((a, b) => {
+      const av = a.children[idx]?.textContent.trim() ?? '';
+      const bv = b.children[idx]?.textContent.trim() ?? '';
+      const an = parseFloat(av.replace(/[^0-9.\-]/g, ''));
+      const bn = parseFloat(bv.replace(/[^0-9.\-]/g, ''));
+      if (!isNaN(an) && !isNaN(bn)) return (an - bn) * dir;
+      return av.localeCompare(bv, 'ja') * dir;
+    });
+    rows.forEach(r => tbody.appendChild(r));
+  });
+});
+</script>
+
+</body>
+</html>

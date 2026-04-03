@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canada - Long-term Rates | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇨🇦 Canada</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link active">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip active">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Canada</a>
+        <span class="sep">/</span>
+        Long-term Rates
+      </div>
+      <h1 class="page-title">カナダ長期金利 (Canadian Long-term Rates)</h1>
+      <p class="page-subtitle">GoC 10年債 — 17.5% (1981) から 0.43% (2020) への40年間の世俗的ブルマーケット、そして2022年の歴史的反転</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">17.5%</div>
+          <div class="stat-label">10Y過去最高 (1981)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">0.43%</div>
+          <div class="stat-label">10Y過去最低 (2020)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">~1,700bp</div>
+          <div class="stat-label">40年間の利回り低下幅</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">±50bp</div>
+          <div class="stat-label">カナダ-米国10Yスプレッド（典型値）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">-30%+</div>
+          <div class="stat-label">2022年長期債損失</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">4回</div>
+          <div class="stat-label">イールドカーブ逆転 (1990~)</div>
+        </div>
+      </div>
+
+      <!-- 5 Eras -->
+      <section class="content-section">
+        <h2>カナダ長期金利の5つの時代</h2>
+        <p>
+          カナダの長期金利（GoC 10年債利回り）の歴史は、大きく5つの時代に区分できる。各時代はマクロ経済環境、金融政策フレームワーク、グローバルな資本フローの変化を反映しており、カナダ経済と金融市場の構造変化を映し出す鏡である<cite>[1]</cite>。
+        </p>
+
+        <h3>第1期: 安定期 (1935-1960年代前半)</h3>
+        <p>
+          BOC設立（1935年）からの約30年間、カナダの長期金利は比較的安定していた。GoC長期債の利回りは3-5%のレンジで推移し、インフレは概ね抑制されていた。戦後のブレトンウッズ体制の下で為替レートが固定されており（ただしカナダは1950-1962年に例外的にフロート）、金融政策の自由度は限定的であった。この時期の債券市場は、保険会社や年金基金などの機関投資家による「バイ・アンド・ホールド」が主流であり、流通市場の取引量は限定的であった<cite>[2]</cite>。
+        </p>
+
+        <h3>第2期: グレート・インフレーション (1960年代後半-1981)</h3>
+        <p>
+          1960年代後半からベトナム戦争に伴う米国のインフレがカナダに波及し、長期金利は上昇トレンドに入った。1970年代の2度のオイルショック（1973年、1979年）はインフレを加速させ、カナダのCPIは1981年に12.5%に達した。GoC 10年債利回りは1981年9月に過去最高の約17.5%を記録した。この時期は債券投資家にとって「暗黒時代」であり、長期債の保有者はインフレによる実質購買力の侵食と価格下落のダブルパンチを受けた<cite>[3]</cite>。
+        </p>
+        <p>
+          カナダの長期金利は米国の長期金利と高い相関を示すが、1981年のピーク時にはGoC 10年債利回りが米国10年債（US Treasury 10Y）を上回っていた。これは、カナダのインフレ率が米国より高く、財政赤字の拡大に対する市場の懸念が反映されたものである。カナダ-米国10年スプレッドは一時+100bp以上に達した<cite>[4]</cite>。
+        </p>
+
+        <h3>第3期: ディスインフレと財政再建 (1981-2000)</h3>
+        <p>
+          1981年をピークに、カナダの長期金利は趨勢的に低下を始めた。1991年のインフレ・ターゲティング（IT）導入はこの低下トレンドを加速させた重要な制度的転換であった。ITにより市場のインフレ期待が2%の目標値にアンカーされ、長期債に求められるインフレリスクプレミアムが構造的に縮小した<cite>[5]</cite>。
+        </p>
+        <p>
+          しかし1990年代前半のカナダの財政危機は、長期金利の低下を一時的に阻害した。連邦政府債務がGDP比68.4%に達し、市場はカナダのソブリン信用リスクを意識した。1994-1995年のメキシコ・テキーラ危機の余波で新興国リスクが意識される中、カナダの長期金利は米国に対して大幅なスプレッドを維持した。しかし1995年以降のマーティン財務相による劇的な財政再建は、カナダ-米国スプレッドの急速な縮小をもたらし、1999年にはスプレッドがほぼゼロに収斂した<cite>[6]</cite>。
+        </p>
+
+        <h3>第4期: 低金利時代 (2000-2020)</h3>
+        <p>
+          2000年代以降、グローバルな構造要因 — グローバル貯蓄過剰 (Global Savings Glut)、中国のUST/GoC債購入、人口高齢化による安全資産需要、中央銀行のフォワードガイダンス — がカナダの長期金利を趨勢的に押し下げた。GoC 10年債利回りは2000年の約5.6%から2019年末の約1.6%まで低下した<cite>[7]</cite>。
+        </p>
+        <p>
+          この間、2008年のGFC（世界金融危機）は長期金利の急低下をもたらし、GoC 10年債は一時2%を割り込んだ。しかしBOCは米国FedやECBと異なりQEを実施せず、フォワードガイダンスと低金利政策のみで対応した。2014-2016年の原油暴落時にもGoC 10年債は安全資産として買われ、利回りは1%台前半まで低下した<cite>[8]</cite>。
+        </p>
+
+        <h3>第5期: 正常化と新時代 (2020-現在)</h3>
+        <p>
+          2020年3月のCOVID-19ショックにより、GoC 10年債利回りは過去最低の約0.43%を記録した。BOCは初めてQEを実施し、GoC債をC$3,400億以上購入した。QEによるターム・プレミアムの圧縮は推定100bp以上とされる<cite>[9]</cite>。
+        </p>
+        <p>
+          しかし2021年後半からのインフレ急加速（CPIが8.1%に到達）に伴い、BOCは史上最速の利上げサイクル（425bp）を実施した。GoC 10年債利回りは2023年10月に約4.2%まで上昇し、2020年底値からは約+380bpの急上昇となった。長期債（30年）の価格は-30%以上下落し、「40年間の債券ブルマーケットの終焉」が意識された。2024年にBOCがG7先行で利下げを開始し、10年債利回りは3%台前半に低下したが、構造的に高い水準での推移が続いている<cite>[10]</cite>。
+        </p>
+      </section>
+
+      <!-- 10Y Yield Table -->
+      <section class="content-section">
+        <h2>GoC 10年債利回り詳細推移</h2>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th data-sort>年</th>
+              <th data-sort>GoC 10Y (%)</th>
+              <th data-sort>UST 10Y (%)</th>
+              <th data-sort>CA-US スプレッド (bp)</th>
+              <th>時代区分 / イベント</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1970</td>
+              <td>7.9%</td>
+              <td>7.4%</td>
+              <td style="color:#ff6b6b;">+50</td>
+              <td>フロート移行、インフレ加速開始</td>
+            </tr>
+            <tr>
+              <td>1975</td>
+              <td>9.0%</td>
+              <td>8.0%</td>
+              <td style="color:#ff6b6b;">+100</td>
+              <td>第1次オイルショック後</td>
+            </tr>
+            <tr>
+              <td>1981</td>
+              <td style="color:#ff6b6b;">17.5%</td>
+              <td style="color:#ff6b6b;">15.8%</td>
+              <td style="color:#ff6b6b;">+170</td>
+              <td>過去最高、ボルカー・ショック</td>
+            </tr>
+            <tr>
+              <td>1985</td>
+              <td>11.0%</td>
+              <td>10.6%</td>
+              <td>+40</td>
+              <td>ディスインフレ開始</td>
+            </tr>
+            <tr>
+              <td>1990</td>
+              <td>10.8%</td>
+              <td>8.6%</td>
+              <td style="color:#ff6b6b;">+220</td>
+              <td style="color:#ffa502;">BOC高金利政策、リセッション</td>
+            </tr>
+            <tr>
+              <td>1991</td>
+              <td>9.5%</td>
+              <td>7.9%</td>
+              <td style="color:#ff6b6b;">+160</td>
+              <td>IT導入、財政赤字拡大</td>
+            </tr>
+            <tr>
+              <td>1995</td>
+              <td>8.1%</td>
+              <td>6.6%</td>
+              <td style="color:#ff6b6b;">+150</td>
+              <td style="color:#ffa502;">財政危機、ケベック住民投票</td>
+            </tr>
+            <tr>
+              <td>2000</td>
+              <td>5.6%</td>
+              <td>5.1%</td>
+              <td>+50</td>
+              <td>財政黒字達成、スプレッド縮小</td>
+            </tr>
+            <tr>
+              <td>2005</td>
+              <td>4.1%</td>
+              <td>4.4%</td>
+              <td style="color:#4ecdc4;">-30</td>
+              <td>カナダ財政優等生、逆転</td>
+            </tr>
+            <tr>
+              <td>2007</td>
+              <td>4.3%</td>
+              <td>4.6%</td>
+              <td style="color:#4ecdc4;">-30</td>
+              <td>利上げサイクルピーク</td>
+            </tr>
+            <tr>
+              <td>2009</td>
+              <td>3.2%</td>
+              <td>3.3%</td>
+              <td>-10</td>
+              <td style="color:#ffa502;">GFC後、安全資産ラリー</td>
+            </tr>
+            <tr>
+              <td>2012</td>
+              <td>1.8%</td>
+              <td>1.8%</td>
+              <td>0</td>
+              <td>欧州危機、グローバル低金利</td>
+            </tr>
+            <tr>
+              <td>2016</td>
+              <td>1.7%</td>
+              <td>2.4%</td>
+              <td style="color:#4ecdc4;">-70</td>
+              <td>原油暴落後、BOC低金利維持</td>
+            </tr>
+            <tr>
+              <td>2019</td>
+              <td>1.6%</td>
+              <td>1.9%</td>
+              <td style="color:#4ecdc4;">-30</td>
+              <td>イールドカーブフラット化</td>
+            </tr>
+            <tr>
+              <td>2020</td>
+              <td style="color:#4ecdc4;">0.68%</td>
+              <td style="color:#4ecdc4;">0.93%</td>
+              <td style="color:#4ecdc4;">-25</td>
+              <td style="color:#ffa502;">COVID、BOC QE、過去最低</td>
+            </tr>
+            <tr>
+              <td>2022</td>
+              <td style="color:#ff6b6b;">3.3%</td>
+              <td style="color:#ff6b6b;">3.9%</td>
+              <td style="color:#4ecdc4;">-60</td>
+              <td style="color:#ff6b6b;">425bp利上げ、債券クラッシュ</td>
+            </tr>
+            <tr>
+              <td>2023</td>
+              <td style="color:#ff6b6b;">3.4%</td>
+              <td style="color:#ff6b6b;">3.9%</td>
+              <td style="color:#4ecdc4;">-50</td>
+              <td>インバージョン長期化</td>
+            </tr>
+            <tr>
+              <td>2024</td>
+              <td>3.2%</td>
+              <td>4.3%</td>
+              <td style="color:#4ecdc4;">-110</td>
+              <td>BOC-Fed乖離、CA先行利下げ</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="table-note">出所: Bank of Canada, FRED (Federal Reserve Economic Data), Bloomberg. 年末時点の概算値<cite>[11]</cite></p>
+      </section>
+
+      <!-- Canada-US Spread -->
+      <section class="content-section">
+        <h2>カナダ-米国10年スプレッドの構造的ドライバー</h2>
+        <p>
+          カナダ-米国10年スプレッド（GoC 10Y - UST 10Y）は、カナダ債券市場を分析する上で最も重要な指標の一つである。歴史的にこのスプレッドは±50bpの範囲で推移することが多いが、構造的な要因の変化により大きく逸脱することがある<cite>[12]</cite>。
+        </p>
+        <p>
+          <strong>財政要因:</strong> カナダ-米国スプレッドの最大の構造的ドライバーは、両国の相対的な財政状況である。1990年代前半のカナダ財政危機時にはスプレッドが+220bpに達したが、1995年以降の劇的な財政再建により2000年代には逆にカナダがマイナススプレッド（カナダの利回りが米国より低い）となった。これは、市場がカナダの財政優等生ぶりを評価し、GoC債にプレミアムを付与した結果である<cite>[13]</cite>。
+        </p>
+        <p>
+          <strong>BOC-Fed政策金利差:</strong> 短期金利の差は長期スプレッドにも波及する。2024年にBOCがFedに先駆けて利下げを開始すると、カナダ-米国スプレッドは-110bpまで拡大した。これはBOC-Fed政策金利差（BOC 3.75% vs Fed 4.50-4.75%）が長期金利に反映されたものである<cite>[14]</cite>。
+        </p>
+        <p>
+          <strong>コモディティ価格:</strong> 原油価格の上昇はカナダ経済にポジティブ（成長加速→金利上昇期待）であり、米国経済にはまちまちの影響を与えるため、原油高はカナダ-米国スプレッドの拡大（カナダの利回り上昇方向）に寄与する傾向がある。逆に原油暴落はスプレッドの縮小を招く<cite>[15]</cite>。
+        </p>
+      </section>
+
+      <!-- 30Y Bond -->
+      <section class="content-section">
+        <h2>30年債と超長期債需要</h2>
+        <p>
+          カナダ政府は1998年に30年債の発行を再開した。30年債は1970年代に発行されていたが、1990年代前半に一時中断されていた。再開の背景には、カナダの年金基金や保険会社からの超長期デュレーション需要の増大がある。カナダの確定給付型年金（DB年金）の資産規模はC$2兆超であり、負債のデュレーション（通常15-25年）にマッチする長期資産への需要が構造的に存在する<cite>[16]</cite>。
+        </p>
+        <p>
+          しかし、カナダの超長期債市場は米国や英国に比べて小規模であり、50年債や永久債（コンソル）は発行していない。このため、カナダの年金基金は超長期の金利リスクをヘッジするために金利スワップを活用する必要がある。2022年の急速な金利上昇は、年金基金のLDI（負債駆動型投資）戦略に大きな影響を与え、英国のギルト危機（2022年9月のLDI危機）と類似したリスクがカナダにも存在することが意識された<cite>[17]</cite>。
+        </p>
+      </section>
+
+      <!-- Provincial Spreads -->
+      <section class="content-section">
+        <h2>州債スプレッドと長期金利</h2>
+        <p>
+          州債の長期金利は、GoC債利回りに信用スプレッドが上乗せされる形で決定される。オンタリオ州10年債のGoC対比スプレッドは通常55-75bpで推移するが、市場のストレス時には大幅に拡大する。2020年3月のCOVID危機時にはオンタリオ州10年スプレッドが一時150bp超に拡大し、州債市場の流動性枯渇が深刻な問題となった。BOCは異例の州債買入プログラム (Provincial Bond Purchase Program / PBPP) を導入し、州債スプレッドの安定化に介入した<cite>[18]</cite>。
+        </p>
+        <p>
+          アルバータ州のスプレッドは原油価格との高い相関を示す。WTI原油価格がUS$40/バレルを下回った2015-2016年には、アルバータ州10年スプレッドが100bp超に拡大し、格付け機関によるダウングレード（S&PがAA+からA+に格下げ）も発生した。一方、2021-2022年の原油高局面ではスプレッドが縮小し、アルバータ州の財政は一時的に黒字化した<cite>[19]</cite>。
+        </p>
+      </section>
+
+      <!-- Yield Curve Inversions -->
+      <section class="content-section">
+        <h2>イールドカーブ逆転とリセッション予測</h2>
+        <p>
+          カナダのイールドカーブ（GoC 2年-10年スプレッド）の逆転は、米国と同様にリセッションの先行指標として高い的中率を持つ。1990年以降、カナダでは4回の顕著なイールドカーブ逆転が発生しており、いずれもリセッションまたは著しい景気減速に先行した<cite>[20]</cite>。
+        </p>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th data-sort>逆転時期</th>
+              <th data-sort>最大逆転幅 (bp)</th>
+              <th data-sort>リセッション開始</th>
+              <th data-sort>リードタイム</th>
+              <th>背景</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1989-1990</td>
+              <td style="color:#ff6b6b;">-200bp</td>
+              <td>1990 Q2</td>
+              <td>~12ヶ月</td>
+              <td>BOC 14%引き締め、不動産崩壊</td>
+            </tr>
+            <tr>
+              <td>2000</td>
+              <td style="color:#ff6b6b;">-80bp</td>
+              <td>2001 Q1 (マイルド)</td>
+              <td>~10ヶ月</td>
+              <td>ITバブル崩壊</td>
+            </tr>
+            <tr>
+              <td>2006-2007</td>
+              <td style="color:#ff6b6b;">-30bp</td>
+              <td>2008 Q4</td>
+              <td>~18ヶ月</td>
+              <td>GFC前、カナダは遅延</td>
+            </tr>
+            <tr>
+              <td>2022-2024</td>
+              <td style="color:#ff6b6b;">-120bp</td>
+              <td>テクニカルリセッション?</td>
+              <td>進行中</td>
+              <td>425bp利上げ、最長逆転期間</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="table-note">出所: Bank of Canada, Statistics Canada. 逆転幅はGoC 2Y-10Yスプレッドの最大値<cite>[21]</cite></p>
+
+        <p>
+          2022-2024年のイールドカーブ逆転は、深さ（最大-120bp）と持続期間の両面で過去最大級であり、市場はカナダのリセッション入りを強く織り込んだ。実際に2023年にはGDP成長率が一時的にマイナスに転じ（テクニカルリセッション）、人口1人当たりGDPは8四半期連続で減少した。しかし、大量移民によるヘッドラインGDPの押し上げにより、「統計上はリセッション回避、実感はリセッション」という異例の状況が生じた<cite>[22]</cite>。
+        </p>
+      </section>
+
+      <!-- Real Yields & BEI -->
+      <section class="content-section">
+        <h2>実質利回りとブレークイーブン・インフレ率</h2>
+        <p>
+          カナダの実質利回りは、実質利回り債 (Real Return Bonds / RRBs) のイールドとして直接観測される。RRBsのブレークイーブン・インフレ率 (BEI) は、名目GoC債利回りとRRBs利回りの差として計算され、市場のインフレ期待の代理指標として広く使用されてきた<cite>[23]</cite>。
+        </p>
+        <p>
+          2020年代の実質利回りの動きは注目に値する。COVID QE期には実質利回りがマイナス1%以下に沈み、債券投資家は「実質ベースでの確定的な損失」を受け入れる状況であった。2022年の利上げサイクルで実質利回りはプラス圏に回復し、2023年には約+2%に達した。実質利回りのプラス転換は、株式のバリュエーション（PER）やリスク資産全般に対する割引率の上昇を意味し、カナダの資産価格（特に不動産）に大きな下押し圧力を与えた<cite>[24]</cite>。
+        </p>
+        <p>
+          なお、2022年11月にカナダ政府はRRBsの新規発行停止を発表したため、カナダの市場ベースのインフレ期待指標としてのBEIは徐々に参照しにくくなっている。今後はインフレスワップやサーベイベースのインフレ期待がより重要な役割を果たすことになる<cite>[25]</cite>。
+        </p>
+      </section>
+
+      <!-- Duration Risk 2022 -->
+      <section class="content-section">
+        <h2>2022年債券クラッシュとデュレーションリスク</h2>
+        <p>
+          2022年のGoC債の価格下落は、カナダ債券市場の歴史において最も深刻な年間損失をもたらした。FTSE Canada Universe Bond Indexは2022年に-11.7%のトータルリターンを記録し、インデックスの算出開始（1980年）以来の最大の年間損失となった。長期債セクターはさらに深刻で、GoC 30年債は価格ベースで-30%以上の下落を経験した<cite>[26]</cite>。
+        </p>
+        <p>
+          この「債券クラッシュ」は、40年間続いた債券ブルマーケットの中で積み上がったデュレーションリスクが顕在化したものであった。低金利環境下で発行された長期債のデュレーション（金利感応度）は極めて高く、わずか250bpの金利上昇でも価格に壊滅的な影響を与えた。カナダの年金基金、保険会社、個人投資家は巨額の評価損を被り、「債券はリスクフリーではない」という基本原則が改めて認識される結果となった<cite>[27]</cite>。
+        </p>
+      </section>
+
+      <!-- G10 Comparison -->
+      <section class="content-section">
+        <h2>G10長期金利国際比較 (2024年)</h2>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th data-sort>国</th>
+              <th data-sort>10Y利回り (%)</th>
+              <th data-sort>30Y利回り (%)</th>
+              <th data-sort>2Y-10Yスプレッド (bp)</th>
+              <th data-sort>2022年10Y損失 (概算)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>🇺🇸 米国</td>
+              <td>4.3%</td>
+              <td>4.5%</td>
+              <td>+10</td>
+              <td>-17%</td>
+            </tr>
+            <tr>
+              <td>🇯🇵 日本</td>
+              <td>0.9%</td>
+              <td>1.9%</td>
+              <td>+50</td>
+              <td>-5%</td>
+            </tr>
+            <tr>
+              <td>🇬🇧 英国</td>
+              <td>4.0%</td>
+              <td>4.6%</td>
+              <td>+20</td>
+              <td>-25%</td>
+            </tr>
+            <tr>
+              <td>🇩🇪 ドイツ</td>
+              <td>2.3%</td>
+              <td>2.5%</td>
+              <td>+15</td>
+              <td>-20%</td>
+            </tr>
+            <tr style="background-color:rgba(0,212,170,0.1);">
+              <td>🇨🇦 <strong>カナダ</strong></td>
+              <td><strong>3.2%</strong></td>
+              <td><strong>3.4%</strong></td>
+              <td><strong>-40</strong></td>
+              <td><strong>-18%</strong></td>
+            </tr>
+            <tr>
+              <td>🇦🇺 豪州</td>
+              <td>4.3%</td>
+              <td>4.7%</td>
+              <td>+25</td>
+              <td>-15%</td>
+            </tr>
+            <tr>
+              <td>🇳🇿 NZ</td>
+              <td>4.5%</td>
+              <td>4.8%</td>
+              <td>+10</td>
+              <td>-14%</td>
+            </tr>
+            <tr>
+              <td>🇨🇭 スイス</td>
+              <td>0.7%</td>
+              <td>0.9%</td>
+              <td>+30</td>
+              <td>-12%</td>
+            </tr>
+            <tr>
+              <td>🇸🇪 スウェーデン</td>
+              <td>2.3%</td>
+              <td>2.4%</td>
+              <td>+5</td>
+              <td>-16%</td>
+            </tr>
+            <tr>
+              <td>🇳🇴 ノルウェー</td>
+              <td>3.5%</td>
+              <td>3.7%</td>
+              <td>+15</td>
+              <td>-13%</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="table-note">出所: Bloomberg, 各国中央銀行. 2024年末概算値。損失は10年債価格ベースの概算<cite>[28]</cite></p>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>Bank of Canada, "A History of Canadian Government Bond Yields," staff research</li>
+        <li>E.P. Neufeld, "The Financial System of Canada," Macmillan, 1972</li>
+        <li>Bank of Canada, "Monetary Policy Report," various issues, 1980-1982</li>
+        <li>Bank of Canada, "The Canada-US Interest Rate Spread," Staff Working Paper, various years</li>
+        <li>Mishkin, Frederic and Serletis, Apostolos, "The Economics of Money, Banking, and Financial Markets," Canadian edition</li>
+        <li>Department of Finance Canada, "Fiscal Reference Tables," 2024</li>
+        <li>Bank of Canada, "Neutral Rate of Interest in Canada," Staff Discussion Paper</li>
+        <li>Bank of Canada, "Monetary Policy Report," 2008-2016 issues</li>
+        <li>Bank of Canada, "Government of Canada Bond Purchase Program," program terms</li>
+        <li>Bank of Canada, "Monetary Policy Report," January 2025</li>
+        <li>Bank of Canada, "Selected Bond Yields," historical data; FRED, "10-Year Government Bond Yields"</li>
+        <li>CIBC Capital Markets, "The Canada-US Bond Spread: What Drives It?" research note, 2024</li>
+        <li>TD Securities, "Canadian Fixed Income Strategy," various issues</li>
+        <li>Bank of Canada, "Summary of Governing Council Deliberations," 2024</li>
+        <li>RBC Capital Markets, "Commodity Currencies and Fixed Income," 2023</li>
+        <li>Department of Finance Canada, "Debt Management Strategy," annual reports</li>
+        <li>BMO Capital Markets, "Canadian Pension Fund LDI Trends," 2023</li>
+        <li>Bank of Canada, "Provincial Bond Purchase Program," program description, 2020</li>
+        <li>S&P Global Ratings, "Province of Alberta," rating action, 2016</li>
+        <li>Estrella, Arturo, "The Yield Curve as a Leading Indicator," Federal Reserve Bank of New York</li>
+        <li>Bank of Canada, "The Yield Curve as a Predictor of Recessions in Canada," Staff Working Paper</li>
+        <li>Statistics Canada, "GDP per capita," Table 36-10-0104</li>
+        <li>Bank of Canada, "Real Return Bonds and Inflation Expectations"</li>
+        <li>Bank of Canada, "Financial System Review," 2023</li>
+        <li>Department of Finance Canada, "Fall Economic Statement 2022"</li>
+        <li>FTSE Russell, "FTSE Canada Universe Bond Index," factsheet, 2023</li>
+        <li>Scotiabank, "Canadian Fixed Income Outlook 2023"</li>
+        <li>Bloomberg terminal data; various central bank websites</li>
+      </ol>
+      <p><em>注: 利回りデータは概算値であり、正確な日次データは各一次ソースを参照されたい。</em></p>
+    </footer>
+  </main>
+
+<script>
+document.querySelectorAll('th[data-sort]').forEach(th => {
+  th.style.cursor = 'pointer';
+  th.addEventListener('click', () => {
+    const table = th.closest('table');
+    const tbody = table.querySelector('tbody');
+    const idx = Array.from(th.parentNode.children).indexOf(th);
+    const rows = Array.from(tbody.querySelectorAll('tr'));
+    const dir = th.asc = !th.asc ? 1 : -1;
+    rows.sort((a, b) => {
+      const av = a.children[idx]?.textContent.trim() ?? '';
+      const bv = b.children[idx]?.textContent.trim() ?? '';
+      const an = parseFloat(av.replace(/[^0-9.\-]/g, ''));
+      const bn = parseFloat(bv.replace(/[^0-9.\-]/g, ''));
+      if (!isNaN(an) && !isNaN(bn)) return (an - bn) * dir;
+      return av.localeCompare(bv, 'ja') * dir;
+    });
+    rows.forEach(r => tbody.appendChild(r));
+  });
+});
+</script>
+
+</body>
+</html>

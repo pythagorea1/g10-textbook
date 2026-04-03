@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canada - Currency | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇨🇦 Canada</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link active">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip active">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Canada</a>
+        <span class="sep">/</span>
+        Currency
+      </div>
+      <h1 class="page-title">カナダドルの歴史 (History of the Canadian Dollar — Loonie)</h1>
+      <p class="page-subtitle">ルーニー — ペトロカレンシー、ブレトンウッズ離脱先駆者、パリティ到達と構造的過小評価の通貨史</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">1858</div>
+          <div class="stat-label">カナダドル導入年</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">US$1.0817</div>
+          <div class="stat-label">ATH (2007年11月)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">US$0.6179</div>
+          <div class="stat-label">ATL (2002年1月)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">1950-62</div>
+          <div class="stat-label">ブレトンウッズ例外フロート期間</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">6位</div>
+          <div class="stat-label">BIS外為取引量ランク</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">1987</div>
+          <div class="stat-label">ルーニーコイン導入年</div>
+        </div>
+      </div>
+
+      <!-- Pre-history -->
+      <section class="content-section">
+        <h2>カナダドル前史: 植民地時代の通貨</h2>
+        <p>
+          カナダの通貨史は、北米植民地時代の混沌とした通貨環境に遡る。17-18世紀のヌーベルフランス（フランス領カナダ）では、フランス本国からの貨幣供給不足を補うため、「カード・マネー (Card Money)」と呼ばれるトランプカードに署名した応急通貨が使用された。これは北米で最初の紙幣の一つとされている<cite>[1]</cite>。
+        </p>
+        <p>
+          英国による征服（1763年）後、ハリファックス通貨 (Halifax Currency) やニューヨーク通貨など複数の計算通貨が並存する混乱期が続いた。1841年のプロヴィンス・オブ・カナダ成立後、英ポンド・スターリング建ての「カナダ・ポンド」が公式通貨となったが、実際には英ポンド、米ドル、スペイン・ドル、フランス通貨が混在する多通貨環境であった<cite>[2]</cite>。
+        </p>
+      </section>
+
+      <!-- Establishment -->
+      <section class="content-section">
+        <h2>カナダドルの確立 (1858-1914)</h2>
+        <p>
+          1858年、カナダは英ポンド制から十進法のドル制へ移行し、「カナダドル (Canadian Dollar)」が公式通貨として確立された。当初のカナダドルは米ドルとほぼ等価に設定され、金本位制に基づいていた。1867年の連邦結成 (Confederation) 後、1871年の統一通貨法 (Uniform Currency Act) により、カナダドルが全自治領の単一通貨として法制化された<cite>[3]</cite>。
+        </p>
+        <p>
+          金本位制の下で、カナダドルは米ドルに対してほぼパリティ（等価）を維持していた。しかし1914年の第一次世界大戦勃発に伴い、カナダは金本位制を停止。戦時中の通貨供給拡大によりインフレが進行したが、1926年に金本位制に復帰した。ただし大恐慌の影響で1931年に再び金本位制を離脱し、以後カナダは金本位制に復帰することはなかった<cite>[4]</cite>。
+        </p>
+      </section>
+
+      <!-- Bretton Woods Exception -->
+      <section class="content-section">
+        <h2>ブレトンウッズ体制の異端児 (1950-1962)</h2>
+        <p>
+          1944年のブレトンウッズ協定により、カナダドルは米ドルに対して固定相場（C$1 = US$0.9091、すなわちUS$1 = C$1.10）に設定された。しかしカナダは1950年、朝鮮戦争ブームによる資本流入圧力を受けて、ブレトンウッズ体制加盟国としては異例の変動相場制への移行を決断した。これは、IMFの固定相場制の枠組みの中で自発的にフロートした唯一の主要国のケースであった<cite>[5]</cite>。
+        </p>
+        <p>
+          この「カナダの変動相場制実験 (Canadian Floating Rate Experiment)」は、金融経済学の歴史において重要な先例となった。1950-1962年の12年間、カナダドルは市場の需給に基づいて変動し、一時は米ドルに対してプレミアム（US$1.06 = C$1）で取引された。この実験は、変動相場制が安定的に機能し得ることを実証し、後のブレトンウッズ体制崩壊（1971年）後の変動相場制への移行に理論的・実証的基盤を提供した<cite>[6]</cite>。
+        </p>
+        <p>
+          しかし、1961年の「コイン事件 (Coyne Affair)」— BOC総裁ジェームズ・コイン (James Coyne) と政府の対立 — が金融市場の不安定化を招き、1962年にカナダは再びUS$1 = C$1.081の固定相場に復帰した。だが固定相場の維持は困難であり、1970年に再び変動相場制に移行。以後、カナダドルは継続的にフロートしている<cite>[7]</cite>。
+        </p>
+      </section>
+
+      <!-- CAD/USD Historical Table -->
+      <section class="content-section">
+        <h2>CAD/USD為替レート推移</h2>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th data-sort>年</th>
+              <th data-sort>CAD/USD (年末)</th>
+              <th data-sort>USD/CAD (年末)</th>
+              <th>主要イベント</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1950</td>
+              <td>0.95</td>
+              <td>1.053</td>
+              <td>フロート移行、朝鮮戦争ブーム</td>
+            </tr>
+            <tr>
+              <td>1957</td>
+              <td style="color:#00d4aa;">1.04</td>
+              <td>0.962</td>
+              <td>米ドルに対してプレミアム</td>
+            </tr>
+            <tr>
+              <td>1962</td>
+              <td>0.925</td>
+              <td>1.081</td>
+              <td>固定相場復帰（US$1=C$1.081）</td>
+            </tr>
+            <tr>
+              <td>1970</td>
+              <td>0.96</td>
+              <td>1.042</td>
+              <td>再フロート</td>
+            </tr>
+            <tr>
+              <td>1976</td>
+              <td style="color:#00d4aa;">1.014</td>
+              <td>0.986</td>
+              <td>パリティ回復</td>
+            </tr>
+            <tr>
+              <td>1986</td>
+              <td>0.72</td>
+              <td>1.389</td>
+              <td>原油暴落、CAD大幅安</td>
+            </tr>
+            <tr>
+              <td>1991</td>
+              <td>0.87</td>
+              <td>1.149</td>
+              <td>BOC高金利政策によるCAD高</td>
+            </tr>
+            <tr>
+              <td>1995</td>
+              <td>0.73</td>
+              <td>1.370</td>
+              <td style="color:#ffa502;">財政危機、ケベック住民投票</td>
+            </tr>
+            <tr>
+              <td>1998</td>
+              <td style="color:#ff6b6b;">0.65</td>
+              <td style="color:#ff6b6b;">1.538</td>
+              <td style="color:#ffa502;">LTCM/アジア危機、CAD急落</td>
+            </tr>
+            <tr>
+              <td>2002</td>
+              <td style="color:#ff6b6b;">0.6179</td>
+              <td style="color:#ff6b6b;">1.618</td>
+              <td>過去最安値 (ATL)</td>
+            </tr>
+            <tr>
+              <td>2005</td>
+              <td>0.86</td>
+              <td>1.163</td>
+              <td>コモディティスーパーサイクル開始</td>
+            </tr>
+            <tr>
+              <td>2007</td>
+              <td style="color:#00d4aa;">1.0817</td>
+              <td style="color:#00d4aa;">0.924</td>
+              <td>過去最高値 (ATH)、原油US$100+</td>
+            </tr>
+            <tr>
+              <td>2009</td>
+              <td>0.96</td>
+              <td>1.042</td>
+              <td>GFC後の回復</td>
+            </tr>
+            <tr>
+              <td>2011</td>
+              <td style="color:#00d4aa;">1.02</td>
+              <td style="color:#00d4aa;">0.980</td>
+              <td>パリティ圏、原油高</td>
+            </tr>
+            <tr>
+              <td>2015</td>
+              <td style="color:#ff6b6b;">0.72</td>
+              <td style="color:#ff6b6b;">1.389</td>
+              <td>原油暴落US$26</td>
+            </tr>
+            <tr>
+              <td>2019</td>
+              <td>0.77</td>
+              <td>1.299</td>
+              <td>レンジ取引</td>
+            </tr>
+            <tr>
+              <td>2021</td>
+              <td>0.79</td>
+              <td>1.266</td>
+              <td>コモディティ回復</td>
+            </tr>
+            <tr>
+              <td>2024</td>
+              <td style="color:#ff6b6b;">0.695</td>
+              <td style="color:#ff6b6b;">1.439</td>
+              <td>BOC-Fed乖離、トランプ関税懸念</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="table-note">出所: Bank of Canada, "Exchange Rates," historical data. CAD/USDは1CAD当たりの米ドル価値。色分け: <span style="color:#00d4aa;">緑=CAD高</span>、<span style="color:#ff6b6b;">赤=CAD安</span><cite>[8]</cite></p>
+      </section>
+
+      <!-- Petrocurrency -->
+      <section class="content-section">
+        <h2>ペトロカレンシーとしてのカナダドル</h2>
+        <p>
+          カナダドルは、G10通貨の中でも特にコモディティ価格（特に原油）との相関が高い「ペトロカレンシー (Petrocurrency)」として知られている。カナダは世界第4位の原油生産国であり、オイルサンド（アルバータ州）を中心とする確認埋蔵量は世界第3位（ベネズエラ、サウジアラビアに次ぐ）である。原油輸出はカナダの貿易収支において最大の黒字項目であり、原油価格の変動がCADの為替レートに直接的な影響を与える<cite>[9]</cite>。
+        </p>
+        <p>
+          CAD/USDとWTI原油価格の相関係数は、長期的に0.5-0.8の範囲で推移しており、特に原油価格が大幅に変動する局面では相関が強まる。2002年の原油US$20/バレル→2008年のUS$147/バレルという大幅上昇局面では、CADはUS$0.62からUS$1.08まで約75%上昇した。逆に2014年の原油暴落（US$110→US$26）では、CADはUS$0.94からUS$0.69まで約27%下落した<cite>[10]</cite>。
+        </p>
+        <p>
+          ただし、カナダの原油の主要ベンチマークであるWCS (Western Canadian Select) は、パイプライン容量制約や品質差（重質油）により、WTIに対して恒常的なディスカウント（US$10-30/バレル）で取引される。2018年末にはこのWCS-WTIスプレッドがUS$43/バレルまで拡大し、アルバータ州が生産制限を実施する事態に至った。このパイプライン制約は、原油高がカナダ経済に還元される度合いを低下させ、CADの原油感応度を部分的に弱めている<cite>[11]</cite>。
+        </p>
+      </section>
+
+      <!-- Terms of Trade -->
+      <section class="content-section">
+        <h2>交易条件とコモディティ価格</h2>
+        <p>
+          カナダの交易条件 (Terms of Trade) は、コモディティ価格の変動に大きく左右される。カナダの主要輸出品目は原油、天然ガス、金属・鉱物、木材、農産物であり、これらの国際価格が上昇すると交易条件が改善し、CADに上昇圧力が生じる。逆にコモディティ価格の下落は交易条件の悪化とCAD安をもたらす<cite>[12]</cite>。
+        </p>
+        <p>
+          BOC（カナダ中央銀行）は独自の「カナダ非エネルギー商品価格指数 (Bank of Canada Commodity Price Index / BCPI)」を算出しており、エネルギーと非エネルギーの寄与を分離して分析している。長期的には、CADの実質実効為替レート (REER) はBCPIと高い相関を示す。2003-2013年のコモディティスーパーサイクル期にはCADの実質実効為替レートが大幅に上昇し、カナダの製造業（特にオンタリオ州の自動車産業）が「オランダ病 (Dutch Disease)」に見舞われたとの議論が生じた<cite>[13]</cite>。
+        </p>
+      </section>
+
+      <!-- BOC Intervention -->
+      <section class="content-section">
+        <h2>BOCの為替介入方針</h2>
+        <p>
+          BOCの為替政策は基本的に「非介入主義 (Non-interventionist)」である。カナダは1998年9月以降、為替市場への直接介入を行っていない。1998年の最後の介入は、アジア/LTCM危機によるCADの急落（US$0.63台まで下落）に対する協調介入であり、米連邦準備制度 (Fed) との共同作戦であった<cite>[14]</cite>。
+        </p>
+        <p>
+          BOCの公式見解は、「変動相場制がカナダ経済の外的ショックへの調整メカニズムとして機能している」というものであり、為替レートの水準にターゲットを設けていない。ただし、BOCは「無秩序な市場環境 (disorderly market conditions)」においては介入する権限を保持しており、外貨準備（約US$1,000億）をその目的で維持している。カナダの非介入方針は、日本やスイスの積極的な介入姿勢とは対照的であり、G10の中でもオーストラリアに次いで介入頻度が低い<cite>[15]</cite>。
+        </p>
+      </section>
+
+      <!-- Loonie and Toonie -->
+      <section class="content-section">
+        <h2>ルーニーとトゥーニー: カナダの硬貨文化</h2>
+        <p>
+          「ルーニー (Loonie)」は、1987年に導入されたカナダの1ドル硬貨の愛称であり、硬貨の裏面に描かれたルーン（アビ）という水鳥に由来する。ルーニーの導入は、それまでの1ドル紙幣の廃止と同時に行われ、硬貨化による耐久性向上とコスト削減が目的であった。「ルーニー」という名称は、カナダドルそのものの代名詞として広く使われるようになり、為替市場でもトレーダーがCADを「ルーニー」と呼ぶのが慣例となっている<cite>[16]</cite>。
+        </p>
+        <p>
+          1996年には2ドル硬貨「トゥーニー (Toonie)」が導入された。これは "Two" と "Loonie" を組み合わせた造語である。トゥーニーはバイメタル（二色金属）硬貨であり、ホッキョクグマが表面に描かれている。2ドル紙幣の廃止と同時に導入された。ルーニーとトゥーニーは、カナダ人のアイデンティティの一部として文化的にも重要な存在であり、カナダがいち早く低額紙幣を硬貨化した事例は、他国の通貨政策に影響を与えた<cite>[17]</cite>。
+        </p>
+      </section>
+
+      <!-- Interest Rate Differential -->
+      <section class="content-section">
+        <h2>金利差とCADフロー</h2>
+        <p>
+          BOC-Fed政策金利差は、CAD/USDの短期的な変動を説明する最も重要な変数の一つである。一般に、BOCの政策金利がFedを上回る局面ではCADに上昇圧力が生じ、逆にBOCがFedを下回る局面ではCAD安圧力が生じる<cite>[18]</cite>。
+        </p>
+        <p>
+          2024年のBOC-Fed政策金利乖離は、この関係を鮮明に示した。BOCが2024年6月にG7先行で利下げを開始し、政策金利を5.00%から段階的に3.25%まで引き下げた一方、Fedは9月まで据え置きを続けた。この結果、BOC-Fed金利差はマイナス125bp以上に拡大し、CADは2020年のパンデミック安値を下回るUS$0.695まで下落した。これは、金利差がカナダへの資本フローを決定する上で決定的に重要であることを示している<cite>[19]</cite>。
+        </p>
+      </section>
+
+      <!-- PPP -->
+      <section class="content-section">
+        <h2>購買力平価とビッグマック指数</h2>
+        <p>
+          カナダドルの長期均衡レートを測る指標として、購買力平価 (Purchasing Power Parity / PPP) がある。OECDのPPPベースのCAD/USDレートは約1.23（US$1 = C$1.23）であり、2024年の市場レート（US$1 = C$1.44）と比較するとCADはPPPに対して約15%過小評価されている<cite>[20]</cite>。
+        </p>
+        <p>
+          エコノミスト誌の「ビッグマック指数 (Big Mac Index)」も、CADの構造的過小評価を示唆している。2024年時点で、カナダのビッグマック価格はC$7.47（約US$5.19）、米国はUS$5.69であり、ビッグマック指数ベースではCADはUS$0.76（実際のUS$0.695に対してプレミアム）が適正水準と算出される。ただしPPPは長期的な均衡概念であり、短期的な為替レートの予測には限界がある<cite>[21]</cite>。
+        </p>
+      </section>
+
+      <!-- Safe Haven -->
+      <section class="content-section">
+        <h2>リスクオン/オフとCADの特性</h2>
+        <p>
+          G10通貨の中で、カナダドルは「リスクオン通貨」に分類される。すなわち、グローバルなリスク選好度が高い局面（株高、コモディティ高）ではCADが買われ、リスクオフ局面（金融危機、地政学リスク）ではCADが売られる傾向がある。これはCADのコモディティ通貨としての特性に起因する<cite>[22]</cite>。
+        </p>
+        <p>
+          ただし、カナダドルは「安全通貨」の要素も併せ持つ。カナダの安定した政治制度、AAA/AA+の信用格付、堅固な銀行システムは、CADに対する一定の信頼を支えている。このため、新興国通貨が急落するような危機局面では、CADは「コモディティ通貨の中のセーフヘイブン」として相対的に底堅く推移することがある。2020年のCOVID危機時、CADは豪ドル (AUD) やNZドル (NZD) に比べて下落幅が限定的であった<cite>[23]</cite>。
+        </p>
+      </section>
+
+      <!-- G10 Comparison -->
+      <section class="content-section">
+        <h2>G10通貨比較</h2>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th data-sort>通貨</th>
+              <th data-sort>BIS日次取引量 (US$B)</th>
+              <th data-sort>外貨準備シェア</th>
+              <th data-sort>対USD 2024年末</th>
+              <th>特性</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>🇺🇸 USD</td>
+              <td>6,600</td>
+              <td>58.4%</td>
+              <td>—</td>
+              <td>基軸通貨</td>
+            </tr>
+            <tr>
+              <td>🇪🇺 EUR</td>
+              <td>2,300</td>
+              <td>20.5%</td>
+              <td>1.04</td>
+              <td>第2の準備通貨</td>
+            </tr>
+            <tr>
+              <td>🇯🇵 JPY</td>
+              <td>1,250</td>
+              <td>5.8%</td>
+              <td>157</td>
+              <td>安全通貨、キャリートレード</td>
+            </tr>
+            <tr>
+              <td>🇬🇧 GBP</td>
+              <td>970</td>
+              <td>4.9%</td>
+              <td>1.26</td>
+              <td>歴史的基軸通貨</td>
+            </tr>
+            <tr style="background-color:rgba(0,212,170,0.1);">
+              <td>🇨🇦 <strong>CAD</strong></td>
+              <td><strong>530</strong></td>
+              <td><strong>2.5%</strong></td>
+              <td><strong>1.44</strong></td>
+              <td><strong>ペトロカレンシー、ルーニー</strong></td>
+            </tr>
+            <tr>
+              <td>🇦🇺 AUD</td>
+              <td>480</td>
+              <td>1.8%</td>
+              <td>0.62</td>
+              <td>コモディティ通貨、キャリー</td>
+            </tr>
+            <tr>
+              <td>🇨🇭 CHF</td>
+              <td>390</td>
+              <td>0.2%</td>
+              <td>0.90</td>
+              <td>安全通貨</td>
+            </tr>
+            <tr>
+              <td>🇸🇪 SEK</td>
+              <td>260</td>
+              <td>0.2%</td>
+              <td>11.0</td>
+              <td>小国開放経済</td>
+            </tr>
+            <tr>
+              <td>🇳🇿 NZD</td>
+              <td>170</td>
+              <td>0.1%</td>
+              <td>0.56</td>
+              <td>キャリー通貨、乳製品連動</td>
+            </tr>
+            <tr>
+              <td>🇳🇴 NOK</td>
+              <td>140</td>
+              <td>0.1%</td>
+              <td>11.3</td>
+              <td>石油通貨、SWF</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="table-note">出所: BIS Triennial Central Bank Survey 2022, IMF COFER 2024, Bloomberg. 取引量は日次平均（片側）<cite>[24]</cite></p>
+      </section>
+
+      <!-- 2022-2024 -->
+      <section class="content-section">
+        <h2>2022-2024年: BOC-Fed乖離とCAD安</h2>
+        <p>
+          2022年以降のCADの動きは、BOCとFedの金融政策の乖離によって大きく左右された。2022年のインフレ急加速局面では、BOCとFedがほぼ同時に利上げを進め、CAD/USDは0.76-0.79の狭いレンジで推移した。しかし2024年に入ると状況が一変する<cite>[25]</cite>。
+        </p>
+        <p>
+          2024年6月、BOCはG7中央銀行で最初に利下げを実施した。カナダ経済の減速（人口1人当たりGDPの8四半期連続減少）、住宅市場の冷え込み、消費の弱さを背景に、BOCは政策金利を5.00%から段階的に3.25%まで引き下げた。一方、Fedは堅調な米国経済を背景に9月まで据え置きを続け、その後も慎重な利下げにとどまった。この政策乖離はCADに強い下押し圧力を加え、2024年末にはCADはUS$0.695まで下落した<cite>[26]</cite>。
+        </p>
+        <p>
+          さらに2024年末には、ドナルド・トランプ (Donald Trump) 大統領の再選に伴う「トランプ関税」懸念がCADに追加の下押し圧力を与えた。カナダの対米輸出依存度は約75%に達しており、25%の関税が課された場合のカナダ経済への打撃は甚大である。関税懸念はCADの「テールリスク」として市場に織り込まれ、オプション市場ではCADプットのスキュー（下方リスクプレミアム）が急拡大した<cite>[27]</cite>。
+        </p>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>Powell, James, "A History of the Canadian Dollar," Bank of Canada, 2005</li>
+        <li>McCullough, A.B., "Money and Exchange in Canada to 1900," Dundurn Press, 1984</li>
+        <li>Bank of Canada, "The Canadian Dollar: A Perspective," 2008</li>
+        <li>Bordo, Michael D. et al., "Canada and the Gold Standard," NBER Working Paper</li>
+        <li>Friedman, Milton, "The Case for Flexible Exchange Rates," 1953 — references Canadian float</li>
+        <li>Muirhead, Bruce, "Against the Odds: The Public Life and Times of Louis Rasminsky," 1999</li>
+        <li>Powell, James, "A History of the Canadian Dollar," Bank of Canada — Coyne Affair chapter</li>
+        <li>Bank of Canada, "Exchange Rates," daily and monthly data series</li>
+        <li>Natural Resources Canada, "Energy Fact Book," 2024</li>
+        <li>Issa, Ramzi et al., "Oil Prices and the Canadian Dollar," Bank of Canada Staff Working Paper</li>
+        <li>Alberta Energy Regulator, "ST98: Alberta Energy Outlook," 2024</li>
+        <li>Bank of Canada, "Commodity Price Index (BCPI)," methodology and data</li>
+        <li>Beine, Michel et al., "Dutch Disease and the Canadian Economy," Canadian Public Policy</li>
+        <li>Bank of Canada, "Annual Report," 1998 — intervention section</li>
+        <li>Department of Finance Canada, "Official International Reserves," monthly data</li>
+        <li>Royal Canadian Mint, "History of the Loonie," https://www.mint.ca/</li>
+        <li>Royal Canadian Mint, "The Toonie," https://www.mint.ca/</li>
+        <li>Bank of Canada, "Exchange Rate Pass-Through and Monetary Policy," Staff Working Paper</li>
+        <li>Bank of Canada, "Monetary Policy Report," October 2024</li>
+        <li>OECD, "Purchasing Power Parities (PPPs)," 2024</li>
+        <li>The Economist, "Big Mac Index," July 2024</li>
+        <li>BIS, "Triennial Central Bank Survey of Foreign Exchange and OTC Derivatives Markets," 2022</li>
+        <li>Habib, Maurizio M. and Stracca, Livio, "Getting Beyond Carry Trade: What Makes a Safe Haven Currency?" ECB Working Paper</li>
+        <li>BIS, "Triennial Survey 2022"; IMF, "COFER database"</li>
+        <li>Bank of Canada, "Summary of Governing Council Deliberations," 2024</li>
+        <li>Bank of Canada, "Monetary Policy Report," January 2025</li>
+        <li>Scotiabank, "Trump Tariffs: Impact on CAD," FX Strategy note, 2024</li>
+      </ol>
+      <p><em>注: 為替レートデータは概算値であり、正確な日次データはBank of Canada公式データを参照されたい。</em></p>
+    </footer>
+  </main>
+
+<script>
+document.querySelectorAll('th[data-sort]').forEach(th => {
+  th.style.cursor = 'pointer';
+  th.addEventListener('click', () => {
+    const table = th.closest('table');
+    const tbody = table.querySelector('tbody');
+    const idx = Array.from(th.parentNode.children).indexOf(th);
+    const rows = Array.from(tbody.querySelectorAll('tr'));
+    const dir = th.asc = !th.asc ? 1 : -1;
+    rows.sort((a, b) => {
+      const av = a.children[idx]?.textContent.trim() ?? '';
+      const bv = b.children[idx]?.textContent.trim() ?? '';
+      const an = parseFloat(av.replace(/[^0-9.\-]/g, ''));
+      const bn = parseFloat(bv.replace(/[^0-9.\-]/g, ''));
+      if (!isNaN(an) && !isNaN(bn)) return (an - bn) * dir;
+      return av.localeCompare(bv, 'ja') * dir;
+    });
+    rows.forEach(r => tbody.appendChild(r));
+  });
+});
+</script>
+
+</body>
+</html>
