@@ -1,0 +1,2 @@
+# G10 Markets Historical Textbook — Progress Log
+# Format: [timestamp] Task N: description — status
