@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canada - Regulatory Framework | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇨🇦 Canada</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link active">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip active">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Canada</a>
+        <span class="sep">/</span>
+        Regulatory Framework
+      </div>
+      <h1 class="page-title">カナダの金融規制 (Canadian Regulatory Framework)</h1>
+      <p class="page-subtitle">OSFI・連邦-州二元体制・Bank Act 10年レビュー — G7最安定の金融システムを支える規制アーキテクチャ</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">OSFI</div>
+          <div class="stat-label">連邦金融監督の中核 (1987年設立)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">13</div>
+          <div class="stat-label">州・準州の証券規制当局</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">10年</div>
+          <div class="stat-label">Bank Actサンセット条項見直し周期</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">1871年〜</div>
+          <div class="stat-label">Bank Act制定（連邦銀行法の起源）</div>
+        </div>
+      </div>
+
+      <!-- Section 1: Regulatory Architecture -->
+      <section>
+        <h2>1. カナダ金融規制のアーキテクチャ</h2>
+        <p>カナダの金融規制は、連邦政府と州政府の二元的な管轄構造の下に構築されている。連邦政府は銀行（Bank Act）、保険（Insurance Companies Act）、信託・貸付（Trust and Loan Companies Act）を監督し、州政府が証券規制、信用組合、不動産・モーゲージ仲介を管轄する。この二元構造はカナダ連邦制の反映であり、全国統一証券規制当局の設立が数十年にわたり議論されてきたにもかかわらず、州の管轄権への配慮から実現していない。</p>
+
+        <h3>主要規制機関一覧</h3>
+        <table>
+          <thead>
+            <tr>
+              <th data-sort>機関</th>
+              <th data-sort>設立</th>
+              <th data-sort>管轄</th>
+              <th data-sort>役割</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>OSFI (Office of the Superintendent of Financial Institutions)</strong></td>
+              <td>1987</td>
+              <td>連邦</td>
+              <td>銀行・保険・年金のプルーデンシャル規制</td>
+            </tr>
+            <tr>
+              <td><strong>Bank of Canada (BOC)</strong></td>
+              <td>1934</td>
+              <td>連邦</td>
+              <td>金融政策、決済システム監視、金融安定</td>
+            </tr>
+            <tr>
+              <td><strong>CDIC (Canada Deposit Insurance Corporation)</strong></td>
+              <td>1967</td>
+              <td>連邦</td>
+              <td>預金保険（C$100K/口座カテゴリ）</td>
+            </tr>
+            <tr>
+              <td><strong>FCAC (Financial Consumer Agency of Canada)</strong></td>
+              <td>2001</td>
+              <td>連邦</td>
+              <td>消費者保護、コンプライアンス監視</td>
+            </tr>
+            <tr>
+              <td><strong>FINTRAC (Financial Transactions and Reports Analysis Centre)</strong></td>
+              <td>2000</td>
+              <td>連邦</td>
+              <td>AML/CFT（資金洗浄・テロ資金防止）</td>
+            </tr>
+            <tr>
+              <td><strong>CSA (Canadian Securities Administrators)</strong></td>
+              <td>—</td>
+              <td>州横断</td>
+              <td>13州・準州証券規制当局の調整機関</td>
+            </tr>
+            <tr>
+              <td><strong>OSC (Ontario Securities Commission)</strong></td>
+              <td>1931</td>
+              <td>オンタリオ州</td>
+              <td>カナダ最大の州証券規制当局</td>
+            </tr>
+            <tr>
+              <td><strong>AMF (Autorité des marchés financiers)</strong></td>
+              <td>2004</td>
+              <td>ケベック州</td>
+              <td>ケベック州の金融規制統合機関</td>
+            </tr>
+            <tr>
+              <td><strong>IIROC → CIRO (Canadian Investment Regulatory Organization)</strong></td>
+              <td>2023 (統合)</td>
+              <td>自主規制</td>
+              <td>投資ディーラー・マーケットの自主規制</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section 2: OSFI -->
+      <section>
+        <h2>2. OSFI — カナダ金融安定の守護者</h2>
+        <p>金融機関監督局 (OSFI: Office of the Superintendent of Financial Institutions) は、1985年のCCB/Northland Bank破綻を受けて1987年に設立された連邦機関であり、銀行、保険会社、連邦認可の信託会社・年金基金のプルーデンシャル（健全性）規制を担う。OSFIの特徴は、その規制哲学にある：</p>
+
+        <h3>OSFIの4原則</h3>
+        <ul>
+          <li><strong>「リスクベース・アプローチ」</strong>：画一的なルール適用ではなく、各機関のリスクプロファイルに応じた監督強度の調整</li>
+          <li><strong>「早期介入」(Early Intervention)</strong>：問題が深刻化する前に段階的な介入措置を発動する「ステージング」システム</li>
+          <li><strong>「破綻を完全に防ぐことはOSFIの義務ではない」</strong>：モラルハザード回避のため、ゼロ・フェイラーの約束はしない</li>
+          <li><strong>「規則と裁量のバランス」</strong>：米国の詳細なルールベースと英国の原則主義の中間に位置</li>
+        </ul>
+
+        <h3>OSFIの主要ガイドライン</h3>
+        <table>
+          <thead>
+            <tr>
+              <th data-sort>ガイドライン</th>
+              <th data-sort>対象</th>
+              <th data-sort>内容</th>
+              <th data-sort>改訂年</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>B-20</strong></td>
+              <td>住宅ローン</td>
+              <td>ストレステスト（契約金利+200bpまたは5.25%）</td>
+              <td>2018</td>
+            </tr>
+            <tr>
+              <td><strong>B-6</strong></td>
+              <td>流動性</td>
+              <td>流動性適切性要件 (LAR)</td>
+              <td>2019</td>
+            </tr>
+            <tr>
+              <td><strong>A-1</strong></td>
+              <td>自己資本</td>
+              <td>バーゼルIII準拠の自己資本比率要件</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td><strong>E-23</strong></td>
+              <td>サードパーティ</td>
+              <td>第三者リスク管理（クラウド等）</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td><strong>B-13</strong></td>
+              <td>テクノロジー</td>
+              <td>テクノロジー・サイバーリスク管理</td>
+              <td>2022</td>
+            </tr>
+            <tr>
+              <td><strong>B-15</strong></td>
+              <td>気候</td>
+              <td>気候リスク管理（TCFD整合）</td>
+              <td>2023</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="info-box">
+          <h4>📊 OSFIとGFC：なぜカナダは安定していたか</h4>
+          <p>OSFIの保守的な姿勢が2008年GFCにおけるカナダの銀行の安定性に直接貢献した。具体的には、①レバレッジ比率の上限を厳格に維持（米国のSECが投資銀行に40:1を許可した時期にもカナダは20:1以下）、②オフバランスシートSIV（構造化投資ビークル）の実質的な制限、③住宅ローンの証券化モデルをCMHC保証に限定、④原始回帰 (originate-to-hold) モデルの維持。当時のOSFI長官ジュリー・ディクソン (Julie Dickson) は「我々はルールを守った。特別なことはしていない。他の国がルールを緩めただけだ」と述べている。</p>
+        </div>
+      </section>
+
+      <!-- Section 3: Bank Act -->
+      <section>
+        <h2>3. Bank Act — 10年ごとの進化</h2>
+        <p>1871年に制定されたBank Actは、カナダの銀行法の根幹をなす連邦法である。最も特徴的な仕組みは「サンセット条項 (sunset clause)」であり、銀行の認可が定期的に失効するため、議会が10年（以前は5年）ごとに法律全体を見直し、更新する必要がある。これにより、立法府が金融規制の現代性を定期的に検証する制度的メカニズムが組み込まれている。</p>
+
+        <h3>Bank Act改正の主要マイルストーン</h3>
+        <table>
+          <thead>
+            <tr>
+              <th data-sort>年</th>
+              <th data-sort>改正内容</th>
+              <th data-sort>背景・影響</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1871</td><td>Bank Act制定</td><td>連邦政府の銀行認可権確立</td></tr>
+            <tr><td>1923</td><td>Home Bank破綻後の改正</td><td>監督体制強化、Inspector General of Banks設置</td></tr>
+            <tr><td>1954</td><td>金利上限撤廃</td><td>銀行の個人ローン参入を実質的に解禁</td></tr>
+            <tr><td>1967</td><td>ポーター委員会に基づく改正</td><td>外国銀行参入の道を開く、CDIC設立</td></tr>
+            <tr><td>1980</td><td>Schedule II（外国銀行子会社）創設</td><td>外国銀行の正式参入</td></tr>
+            <tr><td>1987</td><td>OSFI設立法</td><td>CCB/Northland破綻を受けた統合的監督</td></tr>
+            <tr><td>1992</td><td>「四本の柱」緩和</td><td>銀行の証券・保険・信託業参入許可</td></tr>
+            <tr><td>1999</td><td>Schedule III（外国銀行支店）創設</td><td>外国銀行の支店形態での参入を許可</td></tr>
+            <tr><td>2001</td><td>マッケイ・タスクフォース後の改正</td><td>中小銀行設立要件緩和、消費者保護強化</td></tr>
+            <tr><td>2012</td><td>サンセット条項延長（5年→10年に変更議論）</td><td>見直し周期の延長</td></tr>
+            <tr><td>2018</td><td>bail-in制度の法制化</td><td>TLAC (Total Loss-Absorbing Capacity) の導入</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section 4: Securities Regulation -->
+      <section>
+        <h2>4. 証券規制 — 州管轄の特異性</h2>
+        <p>カナダはG7諸国で唯一、全国統一の証券規制当局を持たない国である。証券規制は各州・準州の管轄であり、13の規制当局がそれぞれ独立して活動している。この「パスポート・システム (passport system)」の下では、一つの州で承認を受ければ他州でも原則として営業できるが、オンタリオ州（OSC）はパスポート・システムに完全には参加しておらず、事実上の二重チェックが残存している。</p>
+
+        <h3>全国統一規制当局への長い道のり</h3>
+        <p>連邦政府は2003年以降、Cooperative Capital Markets Regulatory System (CCMRS) の設立を推進してきたが、ケベック州とアルバータ州が州権侵害として反対し、2011年には最高裁判所が連邦政府による一方的な設立は違憲と判断した。その後、「協力的アプローチ」が模索され、2023年時点ではBC州、オンタリオ州を含む一部の州が参加するCapital Markets Regulatory Authority (CMRA) の設立が進行中であるが、ケベック州の不参加が最大の障壁として残っている。</p>
+
+        <h3>CSA (Canadian Securities Administrators) の役割</h3>
+        <p>全国統一規制当局の不在を補うため、13の州・準州規制当局が構成するCSAが事実上の調整機関として機能している。CSAはNational Instruments (NI) と呼ばれる共通規則を策定し、各州が個別に採択する形式をとる。主要なNIには以下がある：</p>
+        <ul>
+          <li><strong>NI 31-103</strong>：登録要件、免除、継続義務</li>
+          <li><strong>NI 43-101</strong>：鉱物プロジェクトの開示基準（Bre-X事件を契機に制定）</li>
+          <li><strong>NI 81-102</strong>：投資信託の規制</li>
+          <li><strong>NI 51-102</strong>：継続的開示義務</li>
+          <li><strong>NI 52-109</strong>：CEOおよびCFOによる開示認証（SOX法類似）</li>
+        </ul>
+      </section>
+
+      <!-- Section 5: CIRO -->
+      <section>
+        <h2>5. CIRO — 自主規制の統合</h2>
+        <p>2023年1月、投資業界規制機構 (IIROC: Investment Industry Regulatory Organization of Canada) とミューチュアルファンドディーラー協会 (MFDA) が統合し、カナダ投資規制機構 (CIRO: Canadian Investment Regulatory Organization) が発足した。CIROは投資ディーラー、ミューチュアルファンドディーラー、マーケットプレイスの自主規制を担う。</p>
+        <p>この統合は、投資商品の複雑化とチャネルの融合に対応するための構造改革であり、投資家にとってはよりシームレスな規制環境が期待される。CIROはまた、Canadian Investor Protection Fund (CIPF) を通じて投資家保護を提供し、ディーラーの破綻時にC$100万（各口座カテゴリ）までの補償を行う。</p>
+      </section>
+
+      <!-- Section 6: AML/CFT -->
+      <section>
+        <h2>6. AML/CFT と FINTRAC</h2>
+        <p>カナダの資金洗浄防止・テロ資金対策 (AML/CFT) は、2000年に設立されたFINTRAC (Financial Transactions and Reports Analysis Centre of Canada) が中核を担う。Proceeds of Crime (Money Laundering) and Terrorist Financing Act (PCMLTFA) に基づき、金融機関、不動産業者、宝石商、暗号資産取引所等に対して取引報告義務を課している。</p>
+        <p>しかし、カナダのAML体制にはいくつかの構造的な脆弱性が指摘されてきた：</p>
+        <ul>
+          <li><strong>バンクーバー・マネーロンダリング問題</strong>：BC州のカジノ・不動産を通じた資金洗浄が「バンクーバー・モデル (Vancouver Model)」として国際的に注目。2019年のカレン委員会 (Cullen Commission) が調査を実施</li>
+          <li><strong>「スノー・ウォッシング (Snow Washing)」</strong>：カナダの受益者開示が不十分で、法人の実質的支配者の特定が困難であるとの国際的批判</li>
+          <li><strong>TD Bank AML罰金 (2024)</strong>：米国での資金洗浄防止法違反により約US$30億の罰金。カナダの銀行の国際展開におけるコンプライアンスリスクが顕在化</li>
+        </ul>
+        <p>これらの問題を受け、連邦政府は2023年以降、受益者所有権レジストリ（beneficial ownership registry）の義務化を進めている。</p>
+      </section>
+
+      <!-- Section 7: Timeline -->
+      <section>
+        <h2>7. カナダ金融規制の主要年表</h2>
+        <table>
+          <thead>
+            <tr>
+              <th data-sort>年</th>
+              <th data-sort>イベント</th>
+              <th data-sort>影響</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1871</td><td>Bank Act制定</td><td>連邦銀行法の起源</td></tr>
+            <tr><td>1923</td><td>Home Bank破綻、Inspector General設置</td><td>銀行監督の開始</td></tr>
+            <tr><td>1934</td><td>Bank of Canada Act</td><td>中央銀行設立</td></tr>
+            <tr><td>1967</td><td>CDIC設立、金利規制緩和</td><td>預金保険と自由化の両立</td></tr>
+            <tr><td>1985</td><td>CCB/Northland Bank破綻</td><td>監督体制見直しの契機</td></tr>
+            <tr><td>1987</td><td>OSFI設立</td><td>統合的プルーデンシャル規制</td></tr>
+            <tr><td>1992</td><td>四本の柱政策撤廃</td><td>ユニバーサル・バンキングへ</td></tr>
+            <tr><td>1997</td><td>NI 43-101制定（Bre-X事件後）</td><td>鉱物資源報告基準の確立</td></tr>
+            <tr><td>1998</td><td>銀行合併却下</td><td>Big 5体制維持の決定</td></tr>
+            <tr><td>2000</td><td>FINTRAC設立</td><td>AML/CFT体制の構築</td></tr>
+            <tr><td>2001</td><td>FCAC設立</td><td>金融消費者保護</td></tr>
+            <tr><td>2007-08</td><td>ABCP危機・GFC</td><td>OSFIの保守的規制が評価される</td></tr>
+            <tr><td>2011</td><td>最高裁：全国証券規制当局は違憲</td><td>協力的アプローチへ転換</td></tr>
+            <tr><td>2018</td><td>B-20ストレステスト強化 / bail-in法制化</td><td>住宅ローン規制・銀行破綻処理</td></tr>
+            <tr><td>2023</td><td>CIRO発足（IIROC+MFDA統合）</td><td>自主規制体制の近代化</td></tr>
+            <tr><td>2023</td><td>受益者所有権レジストリ義務化</td><td>AML強化、透明性向上</td></tr>
+            <tr style="background-color: rgba(255, 107, 107, 0.15);">
+              <td>2024</td><td>TD Bank AML罰金 ~US$3B</td><td>国際展開のコンプライアンスリスク</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section 8: G10 Comparison -->
+      <section>
+        <h2>8. G10諸国の規制体制比較</h2>
+        <table>
+          <thead>
+            <tr>
+              <th data-sort>国</th>
+              <th data-sort>プルーデンシャル規制</th>
+              <th data-sort>証券規制</th>
+              <th data-sort>統一規制当局</th>
+              <th data-sort>規制スタイル</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>🇨🇦 カナダ</td>
+              <td>OSFI</td>
+              <td>13州規制当局/CSA</td>
+              <td class="value-negative">なし</td>
+              <td>ルール/裁量ハイブリッド</td>
+            </tr>
+            <tr>
+              <td>🇺🇸 米国</td>
+              <td>OCC/Fed/FDIC</td>
+              <td>SEC/CFTC</td>
+              <td class="value-negative">なし（複数機関）</td>
+              <td>ルールベース</td>
+            </tr>
+            <tr>
+              <td>🇬🇧 英国</td>
+              <td>PRA</td>
+              <td>FCA</td>
+              <td class="value-positive">ツインピーク</td>
+              <td>原則主義</td>
+            </tr>
+            <tr>
+              <td>🇦🇺 豪州</td>
+              <td>APRA</td>
+              <td>ASIC</td>
+              <td class="value-positive">ツインピーク</td>
+              <td>原則主義</td>
+            </tr>
+            <tr>
+              <td>🇯🇵 日本</td>
+              <td colspan="2">金融庁 (FSA)</td>
+              <td class="value-positive">統一</td>
+              <td>ルールベース→原則移行中</td>
+            </tr>
+            <tr>
+              <td>🇨🇭 スイス</td>
+              <td colspan="2">FINMA</td>
+              <td class="value-positive">統一</td>
+              <td>原則主義</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>OSFI, "About OSFI" and "Supervisory Framework," osfi-bsif.gc.ca</li>
+        <li>Department of Finance Canada, "Bank Act Review," various years</li>
+        <li>Canadian Securities Administrators (CSA), "National Instruments," csa-acvm.ca</li>
+        <li>CIRO, "About CIRO," 2023 — ciro-ocri.ca</li>
+        <li>FINTRAC, "Annual Report," various years</li>
+        <li>Supreme Court of Canada, "Reference re Securities Act," 2011 SCC 66</li>
+        <li>Cullen Commission, "Report on Money Laundering in British Columbia," 2022</li>
+        <li>IMF, "Canada: Financial System Stability Assessment," 2014, 2019</li>
+        <li>CDIC, "Coverage Information," cdic.ca</li>
+        <li>Dickson, Julie, speeches as Superintendent of OSFI, 2006-2014</li>
+        <li>MacKay Task Force, "Change, Challenge, Opportunity: Report of the Task Force on the Future of the Canadian Financial Services Sector," 1998</li>
+      </ol>
+      <p><em>注: 規制機関の役割・権限は随時改正される。最新情報は各機関の公式サイトを参照されたい。</em></p>
+    </footer>
+  </main>
+
+<script>
+document.querySelectorAll('th[data-sort]').forEach(th => {
+  th.style.cursor = 'pointer';
+  th.addEventListener('click', () => {
+    const table = th.closest('table');
+    const tbody = table.querySelector('tbody');
+    const idx = Array.from(th.parentNode.children).indexOf(th);
+    const rows = Array.from(tbody.querySelectorAll('tr'));
+    const dir = th.asc = !th.asc ? 1 : -1;
+    rows.sort((a, b) => {
+      const av = a.children[idx]?.textContent.trim() ?? '';
+      const bv = b.children[idx]?.textContent.trim() ?? '';
+      const an = parseFloat(av.replace(/[^0-9.\-]/g, ''));
+      const bn = parseFloat(bv.replace(/[^0-9.\-]/g, ''));
+      if (!isNaN(an) && !isNaN(bn)) return (an - bn) * dir;
+      return av.localeCompare(bv, 'ja') * dir;
+    });
+    rows.forEach(r => tbody.appendChild(r));
+  });
+});
+</script>
+
+</body>
+</html>

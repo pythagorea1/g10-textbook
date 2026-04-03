@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canada - Banking Sector | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇨🇦 Canada</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link active">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip active">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Canada</a>
+        <span class="sep">/</span>
+        Banking Sector
+      </div>
+      <h1 class="page-title">カナダの銀行セクター (Canadian Banking Sector)</h1>
+      <p class="page-subtitle">Big 5寡占体制 — GFC無救済のG7唯一国、OSFI保守的規制、そして「退屈な銀行業」が生む安定性</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">Big 5</div>
+          <div class="stat-label">5大銀行が資産90%+支配</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">C$7T+</div>
+          <div class="stat-label">銀行総資産 (2024)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">0</div>
+          <div class="stat-label">GFC中の主要銀行救済件数</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">1923年〜</div>
+          <div class="stat-label">1985年CCB/Northland破綻まで銀行破綻ゼロ</div>
+        </div>
+      </div>
+
+      <!-- Section 1: Overview -->
+      <section>
+        <h2>1. カナダ銀行制度の概要</h2>
+        <p>カナダの銀行制度は、世界で最も安定したシステムの一つとして広く認知されている。その中核をなすのが「Big 5」（5大銀行）と呼ばれる5つのスケジュールI銀行（国内法人銀行）であり、これらが銀行総資産の約90%を支配する寡占構造である。この高度な集中は、米国の数千行に及ぶ分散型とは対照的であり、「退屈な銀行業 (Boring Banking)」と称される保守的な経営文化を生み出してきた。</p>
+        <p>カナダの銀行は連邦政府の認可を受け（Bank Act に基づく）、金融機関監督局 (OSFI: Office of the Superintendent of Financial Institutions) の監督下に置かれる。Bank Act は1871年に制定され、以後10年ごとに「サンセット条項」により見直される仕組みとなっている。この定期的な見直しが、制度の漸進的な近代化と安定性の両立を可能にしてきた。</p>
+
+        <h3>銀行の分類</h3>
+        <table>
+          <thead>
+            <tr>
+              <th data-sort>カテゴリ</th>
+              <th data-sort>定義</th>
+              <th data-sort>主要例</th>
+              <th data-sort>銀行数 (概算)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>スケジュールI</td>
+              <td>カナダ法人、広範な株式保有 (10%上限)</td>
+              <td>RBC, TD, BMO, Scotiabank, CIBC</td>
+              <td>~25</td>
+            </tr>
+            <tr>
+              <td>スケジュールII</td>
+              <td>カナダ法人、外国親会社の子会社</td>
+              <td>HSBC Canada, Citibank Canada</td>
+              <td>~25</td>
+            </tr>
+            <tr>
+              <td>スケジュールIII</td>
+              <td>外国銀行の支店</td>
+              <td>各国銀行のカナダ支店</td>
+              <td>~30</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section 2: Big 5 -->
+      <section>
+        <h2>2. Big 5 — カナダ5大銀行</h2>
+        <p>カナダの金融システムの支柱をなすBig 5は、いずれも19世紀に設立された歴史ある機関であり、商業銀行・投資銀行・保険・資産運用を統合するユニバーサル・バンキング・モデルを採用している。2008年のGFCにおいて、これら5行はいずれも政府の直接的な資本注入を受けることなく存続したG7唯一の事例となった。</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th data-sort>銀行名</th>
+              <th data-sort>設立</th>
+              <th data-sort>総資産 (C$, 2024)</th>
+              <th data-sort>時価総額 (C$, 2024)</th>
+              <th data-sort>ROE (2024)</th>
+              <th data-sort>特徴</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Royal Bank of Canada (RBC)</strong></td>
+              <td>1869</td>
+              <td>~C$2.1T</td>
+              <td>~C$235B</td>
+              <td>~14%</td>
+              <td>カナダ最大、資本市場強い、ウェルスマネジメント</td>
+            </tr>
+            <tr>
+              <td><strong>TD Bank (Toronto-Dominion)</strong></td>
+              <td>1955 (合併)</td>
+              <td>~C$1.9T</td>
+              <td>~C$155B</td>
+              <td>~11%</td>
+              <td>米国東海岸に1,100+支店、リテール強い</td>
+            </tr>
+            <tr>
+              <td><strong>BMO (Bank of Montreal)</strong></td>
+              <td>1817</td>
+              <td>~C$1.3T</td>
+              <td>~C$95B</td>
+              <td>~11%</td>
+              <td>カナダ最古、2023年Bank of the West買収</td>
+            </tr>
+            <tr>
+              <td><strong>Scotiabank (Bank of Nova Scotia)</strong></td>
+              <td>1832</td>
+              <td>~C$1.4T</td>
+              <td>~C$85B</td>
+              <td>~10%</td>
+              <td>中南米・カリブに強い「カナダの国際銀行」</td>
+            </tr>
+            <tr>
+              <td><strong>CIBC (Canadian Imperial Bank of Commerce)</strong></td>
+              <td>1961 (合併)</td>
+              <td>~C$1.0T</td>
+              <td>~C$65B</td>
+              <td>~12%</td>
+              <td>国内リテール中心、2007年サブプライム損失C$6.7B</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="info-box">
+          <h4>📊 国際的文脈：Big 5の規模</h4>
+          <p>RBCは2024年時点でグローバル時価総額ランキングで概ね上位15位以内に入り、カナダのGDPの約80%に匹敵する資産規模を持つ。一方、集中度の観点ではオーストラリアのBig 4と類似するが、カナダのBig 5は米国市場への大規模展開を特徴とする点で独自性がある。TD Bankは米国東海岸でJPモルガン・チェースに次ぐ支店網を持ち、BMOは2023年にBank of the Westを約US$163億で買収した。</p>
+        </div>
+      </section>
+
+      <!-- Section 3: History -->
+      <section>
+        <h2>3. カナダ銀行業の歴史</h2>
+
+        <h3>3.1 草創期 (1817-1920年代)</h3>
+        <p>カナダ初の銀行であるBank of Montreal (BMO) は1817年に設立され、1867年の連邦成立（Confederation）以前から経済の基盤を形成していた。1871年のBank Act制定により連邦政府が銀行の認可権を掌握し、支店銀行制度（branch banking）が確立された。これは米国の単位銀行制度（unit banking）と決定的に異なり、カナダの銀行が全国展開する基盤となった。</p>
+        <p>19世紀末から20世紀初頭にかけて、多くの小規模銀行が合併・統合され、銀行数は1874年の51行から1928年には11行にまで集約された。この自然淘汰と合併の波が、後のBig 5寡占体制の礎を築いた。</p>
+
+        <h3>3.2 大恐慌と安定性 (1930年代)</h3>
+        <p>1930年代の大恐慌 (Great Depression) において、カナダの銀行は一行も破綻しなかった。これは米国で約9,000行が破綻したこととは対照的であり、支店銀行制度による地理的分散、保守的な融資慣行、そして寡占構造による暗黙の協調がその要因とされる。この経験が「カナダの銀行は破綻しない」という神話の起源となった。</p>
+
+        <h3>3.3 戦後〜規制緩和 (1945-1990年代)</h3>
+        <p>戦後のカナダ銀行業は「4本の柱 (Four Pillars)」政策の下に置かれた。これは銀行、信託会社、保険会社、証券会社の4業態を厳格に分離する制度であり、米国のグラス・スティーガル法に類似していた。1987年の金融改革でこの壁は段階的に撤廃され、Big 5は証券子会社を設立してユニバーサル・バンキングへと移行した。</p>
+        <p>1985年のCanadian Commercial Bank (CCB) とNorthland Bankの破綻はカナダ預金保険公社 (CDIC) 設立後初の主要銀行破綻であり、監督体制強化の契機となった。1987年にはOSFIが設立され、今日に至る強固な規制フレームワークの基盤が確立された。</p>
+
+        <h3>3.4 合併阻止と構造維持 (1998年)</h3>
+        <p>1998年、RBCとBMO、TDとCIBCがそれぞれ合併を発表したが、ポール・マーティン財務大臣（後の首相）がこれを却下した。「カナダの銀行は大きすぎて（合併を）許可できない ("too big to merge")」という判断であり、これがBig 5体制を現在まで維持する決定的な転換点となった。合併が実現していればBig 3体制となり、集中度はさらに高まっていた。</p>
+
+        <h3>3.5 GFCとカナダの例外 (2008-2009年)</h3>
+        <p>2008-2009年のGFCにおいて、カナダのBig 5はG7諸国で唯一、政府の直接的な資本注入（bailout）を受けなかった。その要因は複合的である：</p>
+        <ul>
+          <li><strong>OSFIの保守的な監督</strong>：レバレッジ比率の上限を厳格に適用、米国のSIVやCDO-squaredへの過度なエクスポージャーを制限</li>
+          <li><strong>証券化市場の構造</strong>：カナダはCMHCによる政府保証付きMBSが中心で、米国のプライベートレーベル証券化に比べ透明性が高かった</li>
+          <li><strong>「原始回帰」(originate-to-hold)</strong>：カナダの銀行は貸出を自己バランスシートに保持する傾向が強く、米国のoriginate-to-distributeモデルのモラルハザードを回避</li>
+          <li><strong>寡占構造</strong>：少数の大銀行が支配するため、規制当局との密接なコミュニケーションが可能</li>
+        </ul>
+        <p>ただし、カナダ政府はInsured Mortgage Purchase Program (IMPP) を通じてC$690億のMBSを銀行から買い取り、流動性支援を行った。これは「救済ではない」とされるが、実質的な支援であったとの議論もある。</p>
+      </section>
+
+      <!-- Section 4: Beyond Big 5 -->
+      <section>
+        <h2>4. Big 5以外の金融機関</h2>
+
+        <h3>4.1 National Bank of Canada (6番目の大銀行)</h3>
+        <p>National Bank of Canada（Banque Nationale du Canada）はケベック州に本拠を置くスケジュールI銀行で、実質的には「Big 6」の一角をなす。総資産約C$4,000億（2024年）で、ケベック州ではBig 5に匹敵するリテールプレゼンスを持つ。2023年にはカナダの6つのDSIBs（国内システム上重要な銀行）の一つに指定された。</p>
+
+        <h3>4.2 信用組合・協同組合 (Credit Unions / Caisses Populaires)</h3>
+        <p>カナダの信用組合セクターは銀行資産全体の約5-7%を占め、Desjardins Group（ケベック州、総資産C$4,000億超）が圧倒的最大である。Desjardinsはアルフォンス・デジャルダン (Alphonse Desjardins) が1900年に設立した一つのcaisse populaire（信用組合）から発展し、現在はカナダ最大の協同組合金融機関として銀行・保険・資産運用を統合する。</p>
+
+        <h3>4.3 外国銀行</h3>
+        <p>1999年の規制改正以降、外国銀行は支店形態（スケジュールIII）でカナダに参入可能となった。しかし、Big 5の圧倒的な支店網とブランド力に阻まれ、リテール市場への浸透は限定的である。注目すべきは、2022年にHSBC CanadaがRBCに約C$135億で売却されたことで、これは外国銀行がカナダ・リテール市場で競争することの困難さを象徴する出来事であった。</p>
+
+        <h3>4.4 フィンテックとデジタル・チャレンジャー</h3>
+        <p>2010年代後半以降、Wealthsimple（ロボアドバイザー→フルサービス）、EQ Bank（Equitable Bankのデジタルバンク、高金利預金）、Koho（ネオバンク）等のフィンテック企業が台頭している。しかし、カナダのフィンテック市場は英国やシンガポールに比べると発展が遅く、Big 5がデジタル投資で先手を打つことで、ディスラプションは限定的にとどまっている。</p>
+      </section>
+
+      <!-- Section 5: US Expansion -->
+      <section>
+        <h2>5. 米国市場への展開</h2>
+        <p>カナダのBig 5にとって、国内市場の飽和に対する成長戦略の主軸は米国進出である。特にTD BankとBMOが積極的な買収戦略を展開してきた。</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th data-sort>年</th>
+              <th data-sort>銀行</th>
+              <th data-sort>買収先</th>
+              <th data-sort>金額</th>
+              <th data-sort>備考</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2005</td>
+              <td>TD</td>
+              <td>Banknorth Group</td>
+              <td>US$3.8B</td>
+              <td>米国進出の起点</td>
+            </tr>
+            <tr>
+              <td>2008</td>
+              <td>TD</td>
+              <td>Commerce Bancorp</td>
+              <td>US$8.5B</td>
+              <td>東海岸リテール拡大</td>
+            </tr>
+            <tr>
+              <td>2011</td>
+              <td>BMO</td>
+              <td>Marshall & Ilsley</td>
+              <td>US$4.1B</td>
+              <td>中西部拡大</td>
+            </tr>
+            <tr>
+              <td>2017</td>
+              <td>RBC</td>
+              <td>City National Bank</td>
+              <td>US$5.4B</td>
+              <td>ウェルスマネジメント</td>
+            </tr>
+            <tr>
+              <td>2023</td>
+              <td>BMO</td>
+              <td>Bank of the West</td>
+              <td>US$16.3B</td>
+              <td>BNPパリバから、西海岸進出</td>
+            </tr>
+            <tr>
+              <td>2023</td>
+              <td>RBC</td>
+              <td>HSBC Canada</td>
+              <td>C$13.5B</td>
+              <td>カナダ国内、外国人顧客基盤</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>しかし、米国進出にはリスクも伴う。TD Bankは2024年に米国でのAML（アンチ・マネーロンダリング）法令違反により約US$30億の罰金を科される見通しとなり、米国での資産成長に上限を課される事態に陥った。これはカナダの「退屈な銀行業」が国際展開においては必ずしも適用されない現実を示した。</p>
+      </section>
+
+      <!-- Section 6: Mortgage Market -->
+      <section>
+        <h2>6. 住宅ローン市場とCMHC</h2>
+        <p>カナダの銀行にとって住宅ローンは最大の資産クラスであり、総貸出の約50%を占める。カナダ住宅金融公社 (CMHC: Canada Mortgage and Housing Corporation) による保証制度が市場の基盤を形成している。</p>
+
+        <h3>カナダ住宅ローン市場の特徴</h3>
+        <ul>
+          <li><strong>頭金20%未満は保険義務</strong>：CMHC、Sagen (旧Genworth Canada)、Canada Guaranty の3社が提供</li>
+          <li><strong>5年固定金利が主流</strong>：米国の30年固定とは異なり、5年ごとに金利見直し → 金利リスクが借り手に転嫁</li>
+          <li><strong>フルリコース</strong>：カナダの大半の州ではストラテジック・デフォルト（戦略的債務不履行）が困難 → 米国のノンリコースとの構造的相違</li>
+          <li><strong>ストレステスト (B-20ガイドライン)</strong>：2018年以降、契約金利+200bpまたは5.25%のいずれか高い方で返済能力を審査</li>
+        </ul>
+
+        <p>2020年代のカナダ住宅バブルは深刻な社会問題となり、トロントとバンクーバーの住宅価格は年収の10倍以上に達した。しかし、OSFIのB-20ガイドラインと銀行の保守的な融資基準により、米国型のサブプライム危機は回避されている。住宅ローン延滞率は2024年時点でも0.2%前後と極めて低い水準を維持している。</p>
+      </section>
+
+      <!-- Section 7: G10 Comparison -->
+      <section>
+        <h2>7. G10諸国との比較</h2>
+        <table>
+          <thead>
+            <tr>
+              <th data-sort>国</th>
+              <th data-sort>主要銀行数</th>
+              <th data-sort>集中度 (上位5行)</th>
+              <th data-sort>GFC銀行救済</th>
+              <th data-sort>預金保険上限</th>
+              <th data-sort>特徴</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>🇨🇦 カナダ</td>
+              <td>Big 5 (+1)</td>
+              <td>~90%</td>
+              <td class="value-positive">なし</td>
+              <td>C$100K/口座</td>
+              <td>寡占・保守的・OSFI</td>
+            </tr>
+            <tr>
+              <td>🇺🇸 米国</td>
+              <td>~4,500+</td>
+              <td>~45%</td>
+              <td class="value-negative">TARP $700B</td>
+              <td>$250K</td>
+              <td>分散・SVB破綻2023</td>
+            </tr>
+            <tr>
+              <td>🇬🇧 英国</td>
+              <td>Big 5</td>
+              <td>~70%</td>
+              <td class="value-negative">RBS/Lloyds救済</td>
+              <td>£85K</td>
+              <td>チャレンジャーバンク活発</td>
+            </tr>
+            <tr>
+              <td>🇦🇺 豪州</td>
+              <td>Big 4</td>
+              <td>~80%</td>
+              <td class="value-positive">なし</td>
+              <td>A$250K</td>
+              <td>類似モデル、Royal Commission</td>
+            </tr>
+            <tr>
+              <td>🇨🇭 スイス</td>
+              <td>Big 2→1</td>
+              <td>~50%</td>
+              <td class="value-negative">UBS 2008/CS 2023</td>
+              <td>CHF 100K</td>
+              <td>CS危機後UBS一強</td>
+            </tr>
+            <tr>
+              <td>🇯🇵 日本</td>
+              <td>メガ3</td>
+              <td>~50%</td>
+              <td class="value-negative">公的資金注入</td>
+              <td>¥10M</td>
+              <td>バブル後統合</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section 8: Timeline -->
+      <section>
+        <h2>8. カナダ銀行業の主要年表</h2>
+        <table>
+          <thead>
+            <tr>
+              <th data-sort>年</th>
+              <th data-sort>イベント</th>
+              <th data-sort>影響</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1817</td><td>Bank of Montreal設立</td><td>カナダ初の銀行</td></tr>
+            <tr><td>1832</td><td>Bank of Nova Scotia設立</td><td>後のScotiabank</td></tr>
+            <tr><td>1869</td><td>Royal Bank of Canada前身設立</td><td>現在のカナダ最大銀行</td></tr>
+            <tr><td>1871</td><td>Bank Act制定</td><td>連邦政府が銀行認可権を掌握</td></tr>
+            <tr><td>1934</td><td>Bank of Canada設立</td><td>中央銀行機能の国有化</td></tr>
+            <tr><td>1967</td><td>CDIC設立</td><td>預金保険制度開始</td></tr>
+            <tr><td>1980</td><td>四本の柱政策の緩和開始</td><td>銀行の証券業参入</td></tr>
+            <tr><td>1985</td><td>CCB・Northland Bank破綻</td><td>OSFI設立の契機</td></tr>
+            <tr><td>1987</td><td>OSFI設立</td><td>統合的金融監督の開始</td></tr>
+            <tr><td>1998</td><td>Big 5合併計画却下</td><td>"Too big to merge" — 5行体制維持</td></tr>
+            <tr><td>2007-08</td><td>ABCP危機・GFC</td><td>G7唯一の無救済、IMPP C$690B</td></tr>
+            <tr><td>2013</td><td>CDIC bail-in制度導入検討</td><td>納税者負担回避の枠組み</td></tr>
+            <tr><td>2018</td><td>B-20ストレステスト強化</td><td>住宅ローン審査厳格化</td></tr>
+            <tr><td>2022</td><td>HSBC Canada → RBC売却合意</td><td>外国銀行リテール撤退</td></tr>
+            <tr><td>2023</td><td>BMO Bank of the West買収完了</td><td>米国西海岸進出</td></tr>
+            <tr style="background-color: rgba(255, 107, 107, 0.15);">
+              <td>2024</td><td>TD Bank AML罰金 ~US$3B</td><td>米国成長制限、規制リスク顕在化</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>OSFI, "Annual Report," various years — osfi-bsif.gc.ca</li>
+        <li>Bank of Canada, "Financial System Review," various years</li>
+        <li>CDIC, "Annual Report," various years — cdic.ca</li>
+        <li>Canadian Bankers Association (CBA), "Banking Industry Statistics," 2024</li>
+        <li>Bordo, Michael et al., "Why Didn't Canada Have a Banking Crisis in 2008?" NBER Working Paper No. 17312, 2011</li>
+        <li>IMF, "Canada: Financial System Stability Assessment," 2019</li>
+        <li>Calomiris, Charles & Haber, Stephen, "Fragile by Design," Princeton University Press, 2014</li>
+        <li>各銀行年次報告書 (RBC, TD, BMO, Scotiabank, CIBC)</li>
+        <li>Department of Finance Canada, "Bank Mergers," 1998 decision</li>
+        <li>CMHC, "Residential Mortgage Industry Report," 2024</li>
+        <li>U.S. Department of Justice, "TD Bank AML Settlement," 2024</li>
+      </ol>
+      <p><em>注: 資産規模・時価総額等は概算値であり、各一次ソースを参照されたい。タカ/ハト分類等は市場での一般的評価に基づく。</em></p>
+    </footer>
+  </main>
+
+<script>
+document.querySelectorAll('th[data-sort]').forEach(th => {
+  th.style.cursor = 'pointer';
+  th.addEventListener('click', () => {
+    const table = th.closest('table');
+    const tbody = table.querySelector('tbody');
+    const idx = Array.from(th.parentNode.children).indexOf(th);
+    const rows = Array.from(tbody.querySelectorAll('tr'));
+    const dir = th.asc = !th.asc ? 1 : -1;
+    rows.sort((a, b) => {
+      const av = a.children[idx]?.textContent.trim() ?? '';
+      const bv = b.children[idx]?.textContent.trim() ?? '';
+      const an = parseFloat(av.replace(/[^0-9.\-]/g, ''));
+      const bn = parseFloat(bv.replace(/[^0-9.\-]/g, ''));
+      if (!isNaN(an) && !isNaN(bn)) return (an - bn) * dir;
+      return av.localeCompare(bv, 'ja') * dir;
+    });
+    rows.forEach(r => tbody.appendChild(r));
+  });
+});
+</script>
+
+</body>
+</html>

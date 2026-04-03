@@ -140,7 +140,7 @@ g10_textbook/
 - [x] Task 31: Canada pages 1-5 — Central Bank (BOC)、Policy Rate、Fiscal Policy、Employment、Inflation
 - [x] Task 32: Canada pages 6-10 — Equity (TSX)、Early〜2020s
 - [x] Task 33: Canada pages 11-15 — Bond、Rates、Currency (CAD, Loonie)、Crises
-- [ ] Task 34: Canada pages 16-20 — Banking (Big 5)、Corporate (Energy, Mining)、Regulation (OSFI)、Trade (NAFTA/USMCA)、Lessons
+- [x] Task 34: Canada pages 16-20 — Banking (Big 5)、Corporate (Energy, Mining)、Regulation (OSFI)、Trade (NAFTA/USMCA)、Lessons
 
 ### Phase 10: Sweden (sweden/)
 - [ ] Task 35: Sweden pages 1-5 — Central Bank (Riksbank 1668、世界最古)、Policy Rate (マイナス金利)、Fiscal Policy、Employment、Inflation

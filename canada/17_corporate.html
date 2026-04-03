@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canada - Corporate &amp; Indices | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇨🇦 Canada</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link active">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip active">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Canada</a>
+        <span class="sep">/</span>
+        Corporate &amp; Indices
+      </div>
+      <h1 class="page-title">カナダの企業とインデックス (Canadian Corporates &amp; Indices)</h1>
+      <p class="page-subtitle">金融32%・エネルギー17%・素材12% — 資源と金融が支配するTSXの構造と、Shopify・Nortel・Bre-Xの興亡</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">C$3.5T+</div>
+          <div class="stat-label">TSX時価総額 (2024)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">~240銘柄</div>
+          <div class="stat-label">S&P/TSX Composite構成</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">~1,500</div>
+          <div class="stat-label">TSX上場企業数</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">1,800+</div>
+          <div class="stat-label">TSXV上場企業（ジュニア市場）</div>
+        </div>
+      </div>
+
+      <!-- Section 1: Index System -->
+      <section>
+        <h2>1. カナダのインデックス体系</h2>
+        <p>カナダの株式市場を代表するインデックスは、S&P/TSX Composite Indexである。S&Pダウ・ジョーンズとTMX Group（TSX運営会社）が共同で算出し、時価総額加重型で約240銘柄を含む。その他の主要インデックスも含めた体系は以下の通り。</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th data-sort>インデックス</th>
+              <th data-sort>構成銘柄数</th>
+              <th data-sort>特徴</th>
+              <th data-sort>算出開始</th>
+              <th data-sort>基準値</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>S&P/TSX Composite</strong></td>
+              <td>~240</td>
+              <td>主要インデックス、時価総額加重</td>
+              <td>1977 (旧TSE 300は1975)</td>
+              <td>1,000 (1975年)</td>
+            </tr>
+            <tr>
+              <td><strong>S&P/TSX 60</strong></td>
+              <td>60</td>
+              <td>大型株、先物・ETF (XIU) の基準</td>
+              <td>1999</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td><strong>S&P/TSX Venture Composite</strong></td>
+              <td>~500</td>
+              <td>TSXV上場のジュニア企業</td>
+              <td>2001</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td><strong>S&P/TSX SmallCap</strong></td>
+              <td>~220</td>
+              <td>Composite外の小型株</td>
+              <td>—</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td><strong>S&P/TSX Capped Energy</strong></td>
+              <td>~40</td>
+              <td>エネルギーセクター（10%上限）</td>
+              <td>—</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td><strong>S&P/TSX Capped Financials</strong></td>
+              <td>~30</td>
+              <td>金融セクター（10%上限）</td>
+              <td>—</td>
+              <td>—</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="info-box">
+          <h4>📊 TSE 300 → S&P/TSX Compositeの変遷</h4>
+          <p>2002年、旧Toronto Stock Exchange (TSE) 300 Indexは、S&Pダウ・ジョーンズとの提携によりS&P/TSX Compositeに改称された。最大の変更点は、Nortel Networksのような単一銘柄がインデックスの36%を占めるような極端な集中を避けるため、構成基準の厳格化とキャッピング（上限制限）の導入であった。Nortelの教訓は、インデックス設計における集中リスク管理の重要性を世界に示した。</p>
+        </div>
+      </section>
+
+      <!-- Section 2: Sector Composition -->
+      <section>
+        <h2>2. セクター構成と変遷</h2>
+        <p>S&P/TSX Compositeの最大の特徴は、金融とエネルギー・素材（資源）セクターの圧倒的な比率である。これは米国のS&P 500がテクノロジーに大きく偏重する構造とは対照的であり、カナダ市場のリターン特性を根本的に規定している。</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th data-sort>セクター</th>
+              <th data-sort>TSX比率 (2024)</th>
+              <th data-sort>S&P 500比率 (2024)</th>
+              <th data-sort>代表企業</th>
+              <th data-sort>特記事項</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>金融 (Financials)</strong></td>
+              <td>~32%</td>
+              <td>~13%</td>
+              <td>RBC, TD, BMO, Scotiabank, Manulife</td>
+              <td>Big 5 + 保険 + 資産運用</td>
+            </tr>
+            <tr>
+              <td><strong>エネルギー (Energy)</strong></td>
+              <td>~17%</td>
+              <td>~4%</td>
+              <td>Canadian Natural, Suncor, Enbridge</td>
+              <td>原油価格に高感応度</td>
+            </tr>
+            <tr>
+              <td><strong>素材 (Materials)</strong></td>
+              <td>~12%</td>
+              <td>~2%</td>
+              <td>Barrick Gold, Nutrien, Teck</td>
+              <td>金・銅・カリウム・ウラン</td>
+            </tr>
+            <tr>
+              <td><strong>情報技術 (IT)</strong></td>
+              <td>~8%</td>
+              <td>~30%</td>
+              <td>Shopify, Constellation Software, CGI</td>
+              <td>Shopify支配的、成長中</td>
+            </tr>
+            <tr>
+              <td><strong>通信 (Telecom)</strong></td>
+              <td>~5%</td>
+              <td>~2%</td>
+              <td>BCE, Telus, Rogers</td>
+              <td>Big 3寡占、高配当</td>
+            </tr>
+            <tr>
+              <td><strong>公益 (Utilities)</strong></td>
+              <td>~4%</td>
+              <td>~2%</td>
+              <td>Fortis, Emera, Brookfield Renewable</td>
+              <td>安定配当セクター</td>
+            </tr>
+            <tr>
+              <td><strong>資本財 (Industrials)</strong></td>
+              <td>~13%</td>
+              <td>~9%</td>
+              <td>CNR, CP Rail, CAE, WSP Global</td>
+              <td>鉄道2社がG7最効率</td>
+            </tr>
+            <tr>
+              <td><strong>不動産 (Real Estate)</strong></td>
+              <td>~3%</td>
+              <td>~2%</td>
+              <td>Brookfield Asset Mgmt, RioCan</td>
+              <td>Brookfieldグループ</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>セクター構成の歴史的変遷</h3>
+        <p>カナダ市場のセクター構成は時代とともに劇的に変化してきた：</p>
+        <ul>
+          <li><strong>1990年代末</strong>：Nortel Networksの急成長によりテクノロジーセクターが一時36%を占有。しかし2000年の崩壊で実質ゼロに</li>
+          <li><strong>2000年代</strong>：コモディティ・スーパーサイクルでエネルギー・素材が合計40%超に。中国の需要がカナダ市場を牽引</li>
+          <li><strong>2014-2016年</strong>：原油価格暴落（WTI $110→$26）でエネルギーセクターが急縮小。金融の相対的重要性が上昇</li>
+          <li><strong>2020年代</strong>：Shopifyの台頭でITセクターが復活するも、2022年の-80%下落で再び縮小。エネルギーはESG逆風下でも好調</li>
+        </ul>
+      </section>
+
+      <!-- Section 3: Iconic Companies -->
+      <section>
+        <h2>3. カナダの象徴的企業</h2>
+
+        <h3>3.1 Nortel Networks — カナダ最大の企業崩壊</h3>
+        <p>Nortel Networks（旧Northern Telecom）は、カナダのテレコム機器大手として1895年に設立された。2000年のドットコムバブル絶頂期にはTSEの36%、時価総額C$3,980億を占め、カナダ最大の企業であった。Nortelの株価は2000年7月にC$124.50の最高値を記録したが、会計不正の発覚とテレコムバブルの崩壊により急落。2009年1月に破産法を申請し、時価総額は実質ゼロとなった。</p>
+        <p>Nortelの崩壊は、単一銘柄がインデックスを支配するリスクを世界に示し、S&P/TSX Compositeの構成ルール改革の直接的契機となった。また、特許ポートフォリオはApple、Microsoft、Sony等のコンソーシアムにUS$45億で売却され、「死後のNortel」としてテクノロジー史に異例の足跡を残した。</p>
+
+        <h3>3.2 Bre-X Minerals — 世界最大の鉱山詐欺</h3>
+        <p>1997年のBre-X事件は、カナダ株式市場史上最大のスキャンダルである。インドネシア・ブサン金鉱山の金埋蔵量を捏造し、TSXV（当時はAlberta Stock Exchange）で時価総額C$60億に達した後、詐欺が発覚してゼロに暴落。首席地質学者マイケル・デ・グスマン (Michael de Guzman) はヘリコプターから転落死（自殺と推定）し、首席探鉱者デビッド・ウォルシュ (David Walsh) は訴追前にフィリピンで死去した。</p>
+        <p>この事件は、カナダの鉱業報告基準の全面的見直しを促し、NI 43-101（鉱物資源・鉱物埋蔵量の報告基準）の制定につながった。</p>
+
+        <h3>3.3 Shopify — カナダのテック・チャンピオン</h3>
+        <p>2015年にNYSEとTSXに同時上場したShopifyは、ドイツ生まれのトビアス・リュトケ (Tobias Lütke) がオタワで設立したeコマースプラットフォームである。COVID-19パンデミック中に時価総額C$2,500億に達し、一時RBCを抜いてカナダ最大の企業となった。しかし2022年の金利上昇局面で株価は最高値から-80%下落し、バリュエーション調整の厳しさを示した。2024年時点では回復基調にあり、GMV（流通総額）はUS$2,000億超に成長している。</p>
+
+        <h3>3.4 カナダの鉄道 — 大陸横断インフラ</h3>
+        <p>Canadian National Railway (CNR) とCanadian Pacific Kansas City (CPKC) は、カナダ経済の背骨をなすインフラ企業である。特にCPKCは2023年にKansas City Southernとの合併を完了し、カナダ・米国・メキシコを縦断する唯一の鉄道となった。カナダの鉄道2社はG7諸国で最も効率的な貨物鉄道として知られ、営業比率 (Operating Ratio) は約60%と、米国の大手を上回る水準を維持している。</p>
+
+        <h3>3.5 Brookfield — カナダのオルタナティブ投資の巨人</h3>
+        <p>Brookfield Asset Management (BAM) は、トロントに本拠を置く世界有数のオルタナティブ資産運用会社で、AUM（運用資産残高）はUS$9,000億超（2024年）に達する。不動産、インフラ、再生可能エネルギー、プライベートエクイティ、クレジットを横断し、Brookfield Corporation (BN) を通じて複数の上場パートナーシップを運営するユニークな構造を持つ。</p>
+      </section>
+
+      <!-- Section 4: Top Companies Table -->
+      <section>
+        <h2>4. S&P/TSX Composite 上位企業 (2024年)</h2>
+        <table>
+          <thead>
+            <tr>
+              <th data-sort>順位</th>
+              <th data-sort>企業名</th>
+              <th data-sort>セクター</th>
+              <th data-sort>時価総額 (C$)</th>
+              <th data-sort>配当利回り</th>
+              <th data-sort>備考</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Royal Bank of Canada</td><td>金融</td><td>~C$235B</td><td>~3.5%</td><td>カナダ最大、米国展開</td></tr>
+            <tr><td>2</td><td>Shopify</td><td>IT</td><td>~C$165B</td><td>0%</td><td>eコマースPF、高成長</td></tr>
+            <tr><td>3</td><td>TD Bank</td><td>金融</td><td>~C$155B</td><td>~4.5%</td><td>米国1,100+支店</td></tr>
+            <tr><td>4</td><td>Enbridge</td><td>エネルギー</td><td>~C$110B</td><td>~6.5%</td><td>パイプライン最大手</td></tr>
+            <tr><td>5</td><td>Canadian Natural Resources</td><td>エネルギー</td><td>~C$100B</td><td>~4.0%</td><td>オイルサンド最大手</td></tr>
+            <tr><td>6</td><td>BMO Financial</td><td>金融</td><td>~C$95B</td><td>~4.5%</td><td>カナダ最古の銀行</td></tr>
+            <tr><td>7</td><td>Brookfield Corp</td><td>金融</td><td>~C$90B</td><td>~0.7%</td><td>オルタナティブ投資</td></tr>
+            <tr><td>8</td><td>CNR</td><td>資本財</td><td>~C$90B</td><td>~2.0%</td><td>大陸横断鉄道</td></tr>
+            <tr><td>9</td><td>Scotiabank</td><td>金融</td><td>~C$85B</td><td>~5.5%</td><td>中南米に強い</td></tr>
+            <tr><td>10</td><td>Constellation Software</td><td>IT</td><td>~C$80B</td><td>~0.1%</td><td>VMS買収ロールアップ</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section 5: Dividend Culture -->
+      <section>
+        <h2>5. カナダの配当文化</h2>
+        <p>カナダ株式市場の際立った特徴は、「配当文化」の浸透である。S&P/TSX Compositeの平均配当利回りは約3%で、S&P 500の約1.5%を大きく上回る。この高配当体質はいくつかの構造的要因に基づいている：</p>
+        <ul>
+          <li><strong>配当税額控除 (Dividend Tax Credit, DTC)</strong>：カナダの税制は、カナダ法人からの「適格配当 (eligible dividend)」に対して税額控除を付与し、個人投資家にとって配当収入が有利な構造を作り出している</li>
+          <li><strong>セクター構成</strong>：金融・エネルギー・通信・公益といった高配当セクターが市場の大半を占める</li>
+          <li><strong>年金基金の需要</strong>：CPP投資委員会 (CPPIB)、Ontario Teachers' Pension Plan (OTPP)、Caisse de dépôt et placement du Québec (CDPQ) 等の巨大年金基金がインカム重視で投資</li>
+          <li><strong>カナダン・ディビデンド・アリストクラッツ</strong>：5年以上連続増配企業で構成されるS&P/TSX Canadian Dividend Aristocratsは約80銘柄を含む</li>
+        </ul>
+
+        <div class="info-box">
+          <h4>📊 配当利回り国際比較</h4>
+          <p>TSX Compositeの配当利回り（~3%）は、豪州ASX 200（~4%）に次いでG10先進国市場で第2位の水準である。日本のTOPIX（~2%）や米国S&P 500（~1.5%）を上回り、特にリタイアメント・インカム投資家にとってカナダ市場は魅力的な位置づけにある。</p>
+        </div>
+      </section>
+
+      <!-- Section 6: NYSE Interlisting -->
+      <section>
+        <h2>6. NYSE/NASDAQ二重上場</h2>
+        <p>カナダの大企業の多くは、TSXとNYSE/NASDAQの双方に上場する「インターリスティング (interlisting)」戦略を採用している。これにより米国の機関投資家へのアクセスが拡大し、流動性が向上する一方、米国SEC規制への準拠コストも発生する。</p>
+        <p>主要なインターリスティング銘柄にはRBC、TD、BMO、Shopify、Enbridge、Barrick Gold、CNR、Thomson Reuters等がある。特にShopifyは2015年のIPO以来NYSE上場を主要マーケットとして位置づけ、売上高の大半を米国から得ている。逆に、一部のカナダ企業（Brookfieldグループなど）はTSX上場を維持しながらNYSEにも上場し、カナダの投資家基盤を重視する姿勢を示している。</p>
+      </section>
+
+      <!-- Section 7: TSXV -->
+      <section>
+        <h2>7. TSX Venture Exchange (TSXV) — ジュニア市場</h2>
+        <p>TSX Venture Exchange（TSXV）は世界最大のジュニア株式市場であり、主にマイニング（鉱業）とエネルギーの探鉱・開発ステージの企業が上場する。2024年時点で約1,800社が上場し、その多くは時価総額C$1億未満の超小型株である。</p>
+        <p>TSXVの歴史は、バンクーバー証券取引所 (VSE) の「詐欺の都」という悪評と表裏一体である。1999年のVSE・ASE（アルバータ証券取引所）・CDNX統合を経て2001年にTSXVが誕生し、上場基準の厳格化が進められた。しかし、投機的な「シェル・カンパニー」取引や大麻銘柄バブル（2017-2018年）に見られるように、ジュニア市場特有のリスクは依然として存在する。</p>
+        <p>一方で、TSXVは「卒業制度 (graduation)」を通じてTSX本則市場への昇格パスを提供しており、Shopify、First Quantum Minerals、Teck Resources等の現在の大型銘柄もTSXV（またはその前身取引所）から卒業した企業である。</p>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>TMX Group, "Listed Issuers Statistics," monthly data, 2024</li>
+        <li>S&P Dow Jones Indices, "S&P/TSX Composite Index Methodology," 2024</li>
+        <li>Bank of Canada, "Financial System Review," various years</li>
+        <li>Statistics Canada, "Table 10-10-0135: Financial market statistics"</li>
+        <li>Ontario Securities Commission, "In the Matter of Bre-X Minerals Ltd.," 1997-2002</li>
+        <li>Nortel Networks, "Annual Report," 2000, and Ontario Superior Court of Justice, insolvency records</li>
+        <li>Shopify Inc., "Annual Report (10-K)," various years, SEC filings</li>
+        <li>Canada Revenue Agency, "Dividend Tax Credit," tax guide, 2024</li>
+        <li>TSX Venture Exchange, "Listing Standards," 2024</li>
+        <li>CPKC, "Annual Information Form," 2024</li>
+        <li>Brookfield Asset Management, "Investor Presentation," 2024</li>
+      </ol>
+      <p><em>注: 時価総額・配当利回り等は概算値であり、日々変動する。正確な数値は各一次ソースを参照されたい。</em></p>
+    </footer>
+  </main>
+
+<script>
+document.querySelectorAll('th[data-sort]').forEach(th => {
+  th.style.cursor = 'pointer';
+  th.addEventListener('click', () => {
+    const table = th.closest('table');
+    const tbody = table.querySelector('tbody');
+    const idx = Array.from(th.parentNode.children).indexOf(th);
+    const rows = Array.from(tbody.querySelectorAll('tr'));
+    const dir = th.asc = !th.asc ? 1 : -1;
+    rows.sort((a, b) => {
+      const av = a.children[idx]?.textContent.trim() ?? '';
+      const bv = b.children[idx]?.textContent.trim() ?? '';
+      const an = parseFloat(av.replace(/[^0-9.\-]/g, ''));
+      const bn = parseFloat(bv.replace(/[^0-9.\-]/g, ''));
+      if (!isNaN(an) && !isNaN(bn)) return (an - bn) * dir;
+      return av.localeCompare(bv, 'ja') * dir;
+    });
+    rows.forEach(r => tbody.appendChild(r));
+  });
+});
+</script>
+
+</body>
+</html>
