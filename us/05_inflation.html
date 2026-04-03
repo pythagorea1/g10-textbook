@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>United States - Inflation | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇺🇸 United States</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link active">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip active">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">United States</a>
+        <span class="sep">/</span>
+        Inflation
+      </div>
+      <h1 class="page-title">インフレーションの歴史 (Inflation)</h1>
+      <p class="page-subtitle">CPI・PCEの推移、グレートインフレーション、デフレリスク、2020年代のインフレサージ</p>
+    </header>
+
+    <article>
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">2.8%</div>
+          <div class="stat-label">CPI前年比 (2025年初)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">2.0%</div>
+          <div class="stat-label">Fedインフレ目標 (PCE)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">14.8%</div>
+          <div class="stat-label">過去最高CPI (1980年3月)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">9.1%</div>
+          <div class="stat-label">直近ピーク (2022年6月)</div>
+        </div>
+      </div>
+
+      <h2>インフレ指標の種類</h2>
+      <p>米国で使用される主要なインフレ指標は以下の通りである：</p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th data-sort="string">指標<span class="sort-arrow"></span></th>
+              <th data-sort="string">正式名称<span class="sort-arrow"></span></th>
+              <th data-sort="string">発表機関<span class="sort-arrow"></span></th>
+              <th data-sort="string">特徴<span class="sort-arrow"></span></th>
+              <th data-sort="string">Fed公式目標<span class="sort-arrow"></span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CPI</td>
+              <td>Consumer Price Index</td>
+              <td>BLS</td>
+              <td>都市消費者の支出バスケット。住居費のウェイトが大きい（約36%）。固定バスケット方式</td>
+              <td>参考指標</td>
+            </tr>
+            <tr>
+              <td>コアCPI</td>
+              <td>CPI ex Food & Energy</td>
+              <td>BLS</td>
+              <td>食料品・エネルギーを除くCPI。基調的インフレの把握に使用</td>
+              <td>参考指標</td>
+            </tr>
+            <tr>
+              <td>PCE</td>
+              <td>Personal Consumption Expenditures Price Index</td>
+              <td>BEA</td>
+              <td>連鎖加重方式でバスケットが毎期更新。医療費の捕捉がCPIより広い。CPIより0.3-0.5%低い傾向</td>
+              <td class="cell-positive">公式目標 (2%)</td>
+            </tr>
+            <tr>
+              <td>コアPCE</td>
+              <td>PCE ex Food & Energy</td>
+              <td>BEA</td>
+              <td>Fedが最も重視する指標。FOMC声明やSEPで使用</td>
+              <td class="cell-positive">最重視指標</td>
+            </tr>
+            <tr>
+              <td>PPI</td>
+              <td>Producer Price Index</td>
+              <td>BLS</td>
+              <td>生産者物価。CPIの先行指標として注目</td>
+              <td>参考指標</td>
+            </tr>
+            <tr>
+              <td>BEI</td>
+              <td>Breakeven Inflation Rate</td>
+              <td>市場ベース</td>
+              <td>名目国債とTIPS（物価連動債）の利回り差。市場のインフレ期待を反映</td>
+              <td>期待指標</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>インフレの歴史的推移</h2>
+
+      <h3>金本位制時代のインフレ/デフレ（〜1933年）</h3>
+      <p>金本位制の下では、長期的な物価水準は比較的安定していたが、短期的にはインフレとデフレが交互に発生した。南北戦争（1861-65年）ではグリーンバック（不換紙幣）発行によりインフレが加速し、戦後はデフレ期に入った。第一次世界大戦中（1917-18年）は年率20%近いインフレが発生したが、戦後の1920-21年には激しいデフレ（年率-15%）が起こった。大恐慌期（1929-33年）には累計で約25%の物価下落が記録された。<sup class="ref">[1]</sup></p>
+
+      <h3>戦後インフレとブレトンウッズ体制（1945-1971年）</h3>
+      <p>第二次世界大戦後、価格統制の解除に伴い一時的なインフレが発生した（1946年にCPI前年比+18.1%）。その後ブレトンウッズ体制の下でインフレは比較的穏やかに推移し、1950年代〜1960年代前半は年率1-3%程度であった。しかし1960年代後半、ベトナム戦争の戦費と「偉大な社会」プログラムの支出が重なり、インフレ圧力が徐々に高まっていった。<sup class="ref">[2]</sup></p>
+
+      <h3>グレートインフレーション（1965-1982年）</h3>
+      <p>1965年から1982年にかけての約17年間は、米国のインフレ史上最も重要な時期であり、「グレートインフレーション（Great Inflation）」と呼ばれる。この時期のインフレは複数の要因が複合的に作用した：</p>
+      <ul>
+        <li><strong>需要要因</strong>：ベトナム戦争の戦費と社会保障支出の同時拡大（LBJ政権の「銃とバター」政策）</li>
+        <li><strong>供給ショック</strong>：1973年の第一次石油危機（OPEC禁輸）と1979年の第二次石油危機（イラン革命）</li>
+        <li><strong>金融政策の失敗</strong>：アーサー・バーンズ議長のもと、Fedはニクソン政権からの政治的圧力もあり、十分な引き締めを行わなかった</li>
+        <li><strong>通貨制度の変化</strong>：1971年のニクソンショック（金ドル兌換停止）により、物価のアンカーが失われた</li>
+        <li><strong>インフレ期待のアンアンカリング</strong>：高インフレが長期化する中で、労働者は高い賃上げを要求し、企業はコスト上昇を価格に転嫁する「賃金・物価スパイラル」が形成された</li>
+      </ul>
+      <p>CPI前年比は1974年に12.3%、1980年3月には14.8%に達した。グレートインフレーションの終結には、ポール・ボルカー議長によるFF金利20%超の劇的な引き締め（ボルカーショック）が必要であった。深い景気後退と10%を超える失業率という甚大なコストを伴ったが、インフレ率は1983年までに3%台に低下し、Fedの信認が回復した。<sup class="ref">[3]</sup></p>
+
+      <h3>グレートモデレーション（1982-2007年）</h3>
+      <p>ボルカーのインフレ退治以降、米国のインフレ率は長期にわたり低位安定した。この約25年間は「グレートモデレーション（Great Moderation）」と呼ばれ、インフレ率は概ね2-4%の範囲で推移した。グレートモデレーションの要因としては：(1) Fedの信認確立と実効的なインフレ期待のアンカリング、(2) グローバリゼーションによる安価な輸入品の流入（特に中国）、(3) 技術革新による生産性向上、(4) サプライチェーンの効率化、などが挙げられる。<sup class="ref">[4]</sup></p>
+
+      <h3>低インフレ・デフレ懸念の時代（2008-2020年）</h3>
+      <p>2008年のGFC後、インフレ率はFedの2%目標を持続的に下回る状態が続いた。大規模な量的緩和（QE）にもかかわらず、コアPCEは2012年から2020年の間、大半の期間で2%未満であった。このディスインフレ環境の背景には：</p>
+      <ul>
+        <li>GFC後の需要不足とデレバレッジ（家計・金融機関の債務圧縮）</li>
+        <li>テクノロジーによる価格低下圧力（「アマゾン効果」等）</li>
+        <li>グローバルな貯蓄過剰（Global Savings Glut）</li>
+        <li>低インフレ期待の自己実現的固定化</li>
+      </ul>
+      <p>この長期的な低インフレは、Fedが2020年に平均インフレ目標（AIT）を採用するきっかけとなった。2%を下回った分を後で取り戻す「メイクアップ戦略」により、インフレ期待を2%にしっかりアンカーする狙いであった。<sup class="ref">[5]</sup></p>
+
+      <h3>2021-2023年のインフレサージ</h3>
+      <p>2021年春から始まった急激なインフレは、多くの中央銀行関係者とエコノミストの予想を裏切るものであった。CPI前年比は2022年6月に9.1%（40年ぶりの高水準）に達した。</p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th data-sort="string">時期<span class="sort-arrow"></span></th>
+              <th data-sort="number">CPI前年比<span class="sort-arrow"></span></th>
+              <th data-sort="number">コアPCE<span class="sort-arrow"></span></th>
+              <th data-sort="string">主要ドライバー<span class="sort-arrow"></span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2020年12月</td>
+              <td class="num">1.4%</td>
+              <td class="num">1.5%</td>
+              <td>パンデミック下の低インフレ</td>
+            </tr>
+            <tr>
+              <td>2021年6月</td>
+              <td class="num rate-hike">5.4%</td>
+              <td class="num rate-hike">3.5%</td>
+              <td>中古車価格急騰。供給制約。ベース効果。Fed「一時的 (transitory)」と主張</td>
+            </tr>
+            <tr>
+              <td>2021年12月</td>
+              <td class="num rate-hike">7.0%</td>
+              <td class="num rate-hike">4.9%</td>
+              <td>サプライチェーン混乱深刻化。賃金上昇加速。Fed「一時的」表現を撤回（11月）</td>
+            </tr>
+            <tr>
+              <td>2022年3月</td>
+              <td class="num rate-hike">8.5%</td>
+              <td class="num rate-hike">5.2%</td>
+              <td>ロシアのウクライナ侵攻によるエネルギー・食料品価格急騰。Fed利上げ開始</td>
+            </tr>
+            <tr>
+              <td>2022年6月</td>
+              <td class="num cell-crisis">9.1%</td>
+              <td class="num rate-hike">4.8%</td>
+              <td class="cell-crisis">40年ぶりのCPIピーク。ガソリン$5/ガロン超。75bps利上げ開始</td>
+            </tr>
+            <tr>
+              <td>2022年12月</td>
+              <td class="num rate-hike">6.5%</td>
+              <td class="num rate-hike">4.4%</td>
+              <td>エネルギー価格低下で総合CPI低下。コアは粘着的</td>
+            </tr>
+            <tr>
+              <td>2023年6月</td>
+              <td class="num">3.0%</td>
+              <td class="num">4.1%</td>
+              <td>財のディスインフレ進行。サービスインフレ（住居費、賃金連動）が粘着的</td>
+            </tr>
+            <tr>
+              <td>2023年12月</td>
+              <td class="num">3.4%</td>
+              <td class="num">2.9%</td>
+              <td>ディスインフレ継続。「ラストマイル」問題が焦点に</td>
+            </tr>
+            <tr>
+              <td>2024年6月</td>
+              <td class="num">3.0%</td>
+              <td class="num">2.6%</td>
+              <td>住居費インフレの徐々な低下。サービスインフレの粘着性</td>
+            </tr>
+            <tr>
+              <td>2024年12月</td>
+              <td class="num">2.9%</td>
+              <td class="num">2.8%</td>
+              <td>2%目標への最終局面。利下げ開始（9月）</td>
+            </tr>
+            <tr>
+              <td>2025年2月</td>
+              <td class="num">2.8%</td>
+              <td class="num">2.7%</td>
+              <td>関税政策によるインフレ再燃リスクが浮上</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>「一時的 (Transitory)」議論の教訓</h2>
+      <p>2021年のインフレ初期段階で、パウエル議長を含むFed幹部の多くは、インフレは「一時的 (transitory)」であると繰り返し主張した。この判断は、(1) COVID後の供給制約は時間とともに解消される、(2) 中古車価格などの一時的なカテゴリが押し上げている、(3) 長期のインフレ期待は依然アンカーされている、という見方に基づいていた。<sup class="ref">[6]</sup></p>
+      <p>しかし、インフレが広範なカテゴリに波及し、賃金上昇を通じたセカンドラウンド効果が顕在化する中で、「一時的」との表現は2021年11月のFOMC声明から削除された。この判断ミスは利上げ開始を数ヶ月遅らせ、結果としてより急激な引き締めを必要とした。「一時的」議論は、中央銀行のコミュニケーションとフォワードルッキングな政策判断の重要性を改めて示す事例として、今後長く参照されるであろう。<sup class="ref">[7]</sup></p>
+
+      <h2>インフレ期待のアンカリング</h2>
+      <p>現代の金融政策理論では、実際のインフレ率と同等かそれ以上に、インフレ「期待」の安定が重要視される。主要なインフレ期待の指標には以下がある：</p>
+      <ul>
+        <li><strong>ミシガン大学消費者調査</strong>：1年先・5-10年先のインフレ期待。消費者心理を反映</li>
+        <li><strong>NY連銀消費者期待調査 (SCE)</strong>：中央値と分布。3年先も含む</li>
+        <li><strong>SPF（Survey of Professional Forecasters）</strong>：フィラデルフィア連銀。プロのエコノミスト予測</li>
+        <li><strong>TIPS BEI（ブレークイーブン・インフレ率）</strong>：5年・10年のBEI。市場ベースの期待</li>
+        <li><strong>5年先5年物インフレスワップ</strong>：Fed内部で重視される長期期待指標</li>
+      </ul>
+      <p>2022年のインフレサージ局面でも、長期のインフレ期待（5年先5年物BEIやSPF 10年先予測）は比較的安定を保った。これは、ボルカー以来のFedの信認の蓄積の成果であり、1970年代の「アンアンカリング」の再来が避けられた重要な要因である。<sup class="ref">[8]</sup></p>
+
+      <div class="info-box highlight">
+        <h4>スーパーコアCPI</h4>
+        <p>パウエル議長が2022年後半以降に繰り返し言及した指標。正式名称は「コアサービスCPI ex 住居費（Core Services CPI ex Housing）」。住居費（計測上のラグが大きい）と財（すでにディスインフレ）を除いたサービス価格で、賃金圧力を最も直接的に反映するとされる。2023-24年のFedのインフレ評価において中心的な役割を果たした。</p>
+      </div>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>Bureau of Labor Statistics, "Consumer Price Index Historical Tables", bls.gov/cpi</li>
+        <li>FRED, "Consumer Price Index for All Urban Consumers (CPI-U)", fred.stlouisfed.org/series/CPIAUCSL</li>
+        <li>J. Bradford DeLong, "America's Peacetime Inflation: The 1970s", in Romer &amp; Romer eds., "Reducing Inflation", 1997. Allan Meltzer, "Origins of the Great Inflation", Federal Reserve Bank of St. Louis Review, 2005</li>
+        <li>James Stock &amp; Mark Watson, "Has the Business Cycle Changed and Why?", NBER Macroeconomics Annual, 2002</li>
+        <li>Board of Governors, "Statement on Longer-Run Goals and Monetary Policy Strategy", Revised August 2020</li>
+        <li>Jerome Powell, Multiple FOMC Press Conferences, 2021. "Transitory" terminology analysis by Brookings Institution, 2022</li>
+        <li>Ricardo Reis, "Losing the Inflation Anchor", Brookings Papers on Economic Activity, 2022</li>
+        <li>Michael Bauer &amp; Eric Swanson, "A Reassessment of Monetary Policy Surprises and High-Frequency Identification", NBER Working Paper, 2023</li>
+      </ol>
+    </footer>
+
+    <nav class="page-nav">
+      <a href="04_employment.html" class="prev">Employment</a>
+      <a href="06_equity_overview.html" class="next">Equity Market Overview</a>
+    </nav>
+  </main>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('th[data-sort]').forEach(function(th) {
+      th.addEventListener('click', function() {
+        var table = th.closest('table');
+        var tbody = table.querySelector('tbody');
+        var rows = Array.from(tbody.querySelectorAll('tr'));
+        var colIndex = Array.from(th.parentNode.children).indexOf(th);
+        var sortType = th.getAttribute('data-sort');
+        var isAsc = th.classList.contains('sort-asc');
+        table.querySelectorAll('th').forEach(function(h) {
+          h.classList.remove('sort-asc', 'sort-desc');
+        });
+        th.classList.add(isAsc ? 'sort-desc' : 'sort-asc');
+        rows.sort(function(a, b) {
+          var aVal = a.children[colIndex].textContent.trim();
+          var bVal = b.children[colIndex].textContent.trim();
+          if (sortType === 'number') {
+            aVal = parseFloat(aVal.replace(/[^0-9.\-]/g, '')) || 0;
+            bVal = parseFloat(bVal.replace(/[^0-9.\-]/g, '')) || 0;
+          } else {
+            aVal = aVal.toLowerCase();
+            bVal = bVal.toLowerCase();
+          }
+          if (aVal < bVal) return isAsc ? 1 : -1;
+          if (aVal > bVal) return isAsc ? -1 : 1;
+          return 0;
+        });
+        rows.forEach(function(row) { tbody.appendChild(row); });
+      });
+    });
+    var currentPage = window.location.pathname.split('/').pop();
+    document.querySelectorAll('.sidebar-link').forEach(function(link) {
+      if (link.getAttribute('href') === currentPage) link.classList.add('active');
+    });
+  });
+  </script>
+
+</body>
+</html>
