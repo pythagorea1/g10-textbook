@@ -120,7 +120,7 @@ g10_textbook/
 
 ### Phase 6: Switzerland (switzerland/)
 - [x] Task 19: Switzerland pages 1-5 — Central Bank (SNB、フラン上限政策)、Policy Rate (マイナス金利)、Fiscal Policy、Employment、Inflation
-- [ ] Task 20: Switzerland pages 6-10 — Equity (SMI, SIX)、Early〜2020s
+- [x] Task 20: Switzerland pages 6-10 — Equity (SMI, SIX)、Early〜2020s
 - [ ] Task 21: Switzerland pages 11-15 — Bond、Rates、Currency (CHFショック2015)、Crises
 - [ ] Task 22: Switzerland pages 16-20 — Banking (UBS/CS)、Corporate、Regulation、Trade、Lessons
 
