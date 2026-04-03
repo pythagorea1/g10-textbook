@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Switzerland - Financial Crises | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇨🇭 Switzerland</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link active">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip active">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Switzerland</a>
+        <span class="sep">/</span>
+        Financial Crises
+      </div>
+      <h1 class="page-title">スイスの金融危機史 (Swiss Financial Crises)</h1>
+      <p class="page-subtitle">不動産バブル崩壊、UBS救済、CHFショック、クレディ・スイス崩壊 — 安全な国の不安定な瞬間</p>
+    </header>
+
+    <article>
+      <!-- Crisis Summary Table -->
+      <section>
+        <h2>スイス主要金融危機一覧</h2>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>危機</th>
+              <th>年</th>
+              <th>種類</th>
+              <th>規模/影響</th>
+              <th>政策対応</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="highlight-orange">
+              <td>Schweizerische Volksbank危機</td>
+              <td>1933-34</td>
+              <td>銀行危機</td>
+              <td>国内第2位行が経営危機</td>
+              <td>連邦政府が救済、1945年に清算</td>
+            </tr>
+            <tr class="highlight-orange">
+              <td>Chiasso事件</td>
+              <td>1977</td>
+              <td>不正取引</td>
+              <td>Credit Suisseキアッソ支店のCHF 22億不正</td>
+              <td>CS損失計上、経営陣刷新</td>
+            </tr>
+            <tr class="highlight-red">
+              <td>不動産バブル崩壊</td>
+              <td>1990-96</td>
+              <td>不動産・銀行危機</td>
+              <td>GDP -2%、不動産価格-40%、地方銀行多数破綻</td>
+              <td>SNB緩和、銀行再編、預金保険強化</td>
+            </tr>
+            <tr class="highlight-orange">
+              <td>Swissair「グラウンディング」</td>
+              <td>2001</td>
+              <td>企業破綻</td>
+              <td>国営航空会社が資金枯渇で運航停止</td>
+              <td>連邦政府が一部救済、Swiss Internationalに再編</td>
+            </tr>
+            <tr class="highlight-red">
+              <td>UBS危機（GFC）</td>
+              <td>2007-09</td>
+              <td>銀行危機</td>
+              <td>UBS損失$500億超、TBTF問題</td>
+              <td>連邦政府CHF 60億資本注入、SNBが不良資産CHF 600億購入</td>
+            </tr>
+            <tr class="highlight-red">
+              <td>CHFショック（Francogeddon）</td>
+              <td>2015</td>
+              <td>為替危機</td>
+              <td>CHF 30%急騰、FXブローカー破綻</td>
+              <td>SNBマイナス金利(-0.75%)維持</td>
+            </tr>
+            <tr class="highlight-red">
+              <td>クレディ・スイス崩壊</td>
+              <td>2023</td>
+              <td>銀行危機</td>
+              <td>167年の歴史を持つG-SIBが破綻、UBSが$32億で買収</td>
+              <td>緊急法令、SNBが流動性支援CHF 1,000億超</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section 1: 1990s Real Estate Crisis -->
+      <section>
+        <h2>1990年代不動産バブル崩壊</h2>
+        <p>
+          1980年代後半、スイスは不動産投機ブームに沸いた。低金利と規制緩和を背景に、商業・住宅不動産価格が急騰。特にチューリッヒ、ジュネーブ、バーゼルの主要都市圏では、不動産価格が1985年から1989年にかけて50-80%上昇した<cite>[1]</cite>。
+        </p>
+        <p>
+          バブルの背景には、以下の要因があった:
+        </p>
+        <ul>
+          <li><strong>信用拡大</strong>: 地方銀行（Kantonalbanken）やRaiffeisenが不動産融資を積極的に拡大</li>
+          <li><strong>規制の緩さ</strong>: 自己資本比率規制が不十分、LTV（担保掛目）制限が事実上なし</li>
+          <li><strong>投機的需要</strong>: 外国人投資家によるスイス不動産購入の規制緩和</li>
+          <li><strong>SNBの金融引き締め遅れ</strong>: インフレ上昇に対する利上げが遅かった</li>
+        </ul>
+        <p>
+          SNBが1989年から急速に金融を引き締めた（ディスカウントレート: 3.5% → 7%）結果、バブルは崩壊。不動産価格は1990年のピークから1996年までに平均40%下落し、一部の商業不動産は60%以上の下落を記録した<cite>[2]</cite>。
+        </p>
+
+        <h3>銀行セクターへの影響</h3>
+        <p>
+          不動産バブル崩壊は地方銀行セクターに壊滅的な打撃を与えた。1991年から1996年にかけて、スイスの銀行数は約400行から350行に減少（約50行が破綻・合併・清算）。特にカントン銀行（Kantonalbanken）のうち、ベルン州立銀行（Berner Kantonalbank）は$30億超の損失を計上し、州政府が救済に乗り出した。ソロトゥルン州立銀行は1994年に破綻した<cite>[3]</cite>。
+        </p>
+        <p>
+          この経験は、スイスの銀行規制強化の転機となった。不動産担保融資のLTV規制、自己資本規制の厳格化、そして後のバーゼルII/III導入時のスイスの積極的な姿勢の原動力となった。
+        </p>
+      </section>
+
+      <!-- Section 2: Swissair Grounding -->
+      <section>
+        <h2>2001年 — スイス航空「グラウンディング」</h2>
+        <p>
+          2001年10月2日、スイスの国営航空会社Swissairが資金枯渇により全便の運航を突如停止した（「Grounding」）。これは金融危機そのものではないが、スイスの企業統治の欠陥と金融機関の監督体制の問題を露呈した国家的トラウマであった<cite>[4]</cite>。
+        </p>
+        <p>
+          Swissairは1990年代後半に「ハンター戦略」（Hunter Strategy）と呼ばれる積極的な海外航空会社買収戦略を展開したが、買収先（Sabena、LOT等）の業績不振と9.11テロ後の航空需要急減により資金繰りが悪化。メインバンクであったUBSとCredit Suisseが追加融資を拒否し、運航停止に至った。
+        </p>
+        <p>
+          スイス連邦政府はCHF 20億の緊急融資を行い、Swissairの後継としてSwiss International Air Linesが2002年に設立された。その後Swissは2005年にLufthansaに買収された。この事件は「スイスの銀行は国益よりも自行の利益を優先する」という批判を生み、後のTBTF（Too Big To Fail）議論の伏線となった。
+        </p>
+      </section>
+
+      <!-- Section 3: UBS GFC Crisis -->
+      <section>
+        <h2>2007-2009年 — UBS危機（世界金融危機）</h2>
+        <p>
+          世界金融危機（GFC）において、UBSはサブプライム関連の損失で欧州最大級の打撃を受けた。UBSの損失総額は$500億を超え、これはスイスGDPの約10%に相当する巨額であった<cite>[5]</cite>。
+        </p>
+
+        <h3>UBS危機の時系列</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>時期</th>
+              <th>イベント</th>
+              <th>UBS株価 (CHF)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>2007年6月</td><td>サブプライム問題表面化前</td><td>~75</td></tr>
+            <tr><td>2007年10月</td><td>UBSが最初の大規模評価損を発表（$37億）</td><td>63</td></tr>
+            <tr><td>2007年12月</td><td>シンガポール政府投資公社（GIC）がCHF 110億出資</td><td>52</td></tr>
+            <tr class="highlight-red"><td>2008年4月</td><td>追加損失発表、累計損失$380億に。マルセル・オスペル（Marcel Ospel）会長辞任</td><td>34</td></tr>
+            <tr class="highlight-red"><td>2008年10月</td><td>スイス政府がCHF 60億の資本注入（強制転換社債）</td><td>18</td></tr>
+            <tr class="highlight-red"><td>2008年10月</td><td>SNBが不良資産買い取りファンド（StabFund）設立、CHF 600億の有害資産を購入</td><td>16</td></tr>
+            <tr class="highlight-red"><td>2009年3月</td><td>UBS株価最安値</td><td>8.20</td></tr>
+            <tr><td>2009年8月</td><td>UBSが米国と$7.8億で和解（脱税幇助問題）</td><td>16</td></tr>
+            <tr><td>2009年8月</td><td>スイス政府がUBS株式売却（CHF 12億の利益）</td><td>16</td></tr>
+            <tr><td>2013年11月</td><td>SNBのStabFundが完全清算（利益を計上して終了）</td><td>17</td></tr>
+          </tbody>
+        </table>
+
+        <h3>UBS危機の構造的要因</h3>
+        <ul>
+          <li><strong>巨大すぎるバランスシート</strong>: GFC前のUBSの総資産は約$2兆で、スイスGDPの約4倍。TBTF問題の典型例</li>
+          <li><strong>投資銀行部門の暴走</strong>: ニューヨーク拠点のFixed Income部門が$1,000億超のサブプライム関連ポジションを構築</li>
+          <li><strong>リスク管理の失敗</strong>: 本社チューリッヒとNY拠点の乖離、VaRモデルの限界</li>
+          <li><strong>銀行秘密との矛盾</strong>: 米国IRSとの脱税幇助問題が同時進行し、レピュテーション危機が加速</li>
+        </ul>
+        <p>
+          UBS危機の結果、スイスは「Too Big To Fail」規制を世界に先駆けて導入した。2011年のTBTF法により、UBSとCredit Suisseに追加自己資本要件（スイス・フィニッシュ）が課された。SNBのStabFundは結果的に利益を出して終了したが、この成功は「TBTF問題は解決可能」という過度な楽観をもたらし、2023年のCS崩壊時の油断につながったとの指摘もある<cite>[6]</cite>。
+        </p>
+      </section>
+
+      <!-- Section 4: CHF Shock 2015 -->
+      <section>
+        <h2>2015年 — CHFショック（フランコゲドン）</h2>
+        <p>
+          2015年1月15日のSNBによるEUR/CHF下限撤廃については<a href="14_currency.html">通貨ページ</a>で詳述しているが、金融危機の観点から補足する。
+        </p>
+        <p>
+          CHFショックは「伝統的な金融危機」（銀行破綻やシステミック・リスク）とは性質が異なり、「中央銀行の政策変更による市場の急激な再評価」という新しいタイプの危機であった。損失は主にFX市場の参加者に集中し、スイスの銀行システム自体は相対的に安定を維持した<cite>[7]</cite>。
+        </p>
+        <p>
+          しかし、この事件はいくつかの重要な教訓を残した:
+        </p>
+        <ul>
+          <li><strong>中央銀行の信頼性</strong>: SNBは撤廃の数日前まで下限維持を約束しており、「中央銀行の言葉」への信頼が世界的に低下</li>
+          <li><strong>流動性リスク</strong>: 極端な一方向の動きでは市場の流動性が瞬時に消失し、ストップロスが機能しない</li>
+          <li><strong>リテール投資家の脆弱性</strong>: レバレッジFX取引のリスクが改めて浮き彫りに</li>
+          <li><strong>小国の中央銀行の限界</strong>: 無限の為替介入は政治的・経済的に持続不可能</li>
+        </ul>
+      </section>
+
+      <!-- Section 5: Credit Suisse Collapse -->
+      <section>
+        <h2>2023年 — クレディ・スイス崩壊</h2>
+        <p>
+          2023年3月19日、167年の歴史を持つクレディ・スイス（Credit Suisse, CS）がUBSに$32億（CHF 30億）で買収された。これはG-SIB（グローバルにシステム上重要な銀行）が破綻し、緊急救済される史上初のケースであり、2008年のリーマン・ブラザーズ以来最大の銀行危機と評された<cite>[8]</cite>。
+        </p>
+
+        <h3>CS崩壊の時系列</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>時期</th>
+              <th>イベント</th>
+              <th>CS株価 (CHF)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>2021年3月</td><td>Archegos Capital破綻 — CS $55億損失</td><td>10.20</td></tr>
+            <tr><td>2021年3月</td><td>Greensill Capital破綻 — CS $30億のファンド凍結</td><td>10.00</td></tr>
+            <tr><td>2021年11月</td><td>トーマス・ゴットシュタイン（Thomas Gottstein）CEO辞任</td><td>8.50</td></tr>
+            <tr><td>2022年7月</td><td>ウルリッヒ・ケルナー（Ulrich Körner）CEO就任、大規模リストラ発表</td><td>5.50</td></tr>
+            <tr class="highlight-red"><td>2022年10月</td><td>SNS上で「CS破綻」の噂拡散、預金流出加速</td><td>3.90</td></tr>
+            <tr class="highlight-red"><td>2022年Q4</td><td>CHF 1,100億超の顧客資金流出</td><td>2.90</td></tr>
+            <tr><td>2023年2月</td><td>2022年通期赤字CHF 73億、5年間で累計損失CHF 150億超</td><td>2.80</td></tr>
+            <tr class="highlight-red"><td>2023年3月15日</td><td>サウジ・ナショナル・バンク（最大株主9.9%）が追加出資を拒否</td><td>1.86</td></tr>
+            <tr class="highlight-red"><td>2023年3月16日</td><td>SNBがCHF 500億の流動性供給を発表</td><td>1.97</td></tr>
+            <tr class="highlight-red"><td>2023年3月19日（日曜日）</td><td>スイス政府緊急会合：UBSがCSを$32億で買収合意</td><td>0.76（月曜終値）</td></tr>
+            <tr><td>2023年6月12日</td><td>UBS・CS合併完了</td><td>—</td></tr>
+          </tbody>
+        </table>
+
+        <h3>CSの連続的スキャンダル</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>スキャンダル</th>
+              <th>損失/罰金</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>2014</td><td>米国脱税幇助で有罪答弁</td><td>$26億罰金</td></tr>
+            <tr><td>2019</td><td>スパイゲート事件（元幹部の尾行・監視）</td><td>CEO辞任、レピュテーション損害</td></tr>
+            <tr><td>2020</td><td>ルチン腐敗スキャンダル（Luckin Coffee $8億粉飾）</td><td>融資損失</td></tr>
+            <tr><td>2021</td><td>Greensill Capital崩壊</td><td>$30億凍結</td></tr>
+            <tr><td>2021</td><td>Archegos Capital崩壊</td><td>$55億損失</td></tr>
+            <tr><td>2022</td><td>Suisse Secrets（漏洩顧客データ）</td><td>レピュテーション崩壊</td></tr>
+            <tr><td>2022</td><td>モザンビーク「まぐろ債券」（Tuna Bond）事件有罪判決</td><td>$4.75億罰金</td></tr>
+          </tbody>
+        </table>
+
+        <h3>救済の構造</h3>
+        <ul>
+          <li><strong>買収価格</strong>: CHF 30億（$32億）— CSの帳簿価格の約5%、前週金曜終値の60%ディスカウント</li>
+          <li><strong>AT1債の無価値化</strong>: CHF 160億のAT1債（CoCo債）が全額損失。株主より先にAT1保有者が損失を被るという、通常の優先順位の逆転が国際的な論争に<cite>[9]</cite></li>
+          <li><strong>SNBの流動性支援</strong>: CHF 1,000億超の流動性ファシリティ（ELA + 新設PLB）</li>
+          <li><strong>政府保証</strong>: UBSに対するCHF 90億の損失保証</li>
+          <li><strong>緊急法令（Notrecht）</strong>: 議会承認なしの緊急閣議決定で買収を承認。株主投票も省略</li>
+        </ul>
+
+        <h3>システミックな影響</h3>
+        <p>
+          CS崩壊は、以下の点でグローバルな金融規制に根本的な問いを投げかけた:
+        </p>
+        <ul>
+          <li><strong>TBTF解決策の破綻</strong>: 2008年以降に構築されたTBTF規制（回復・処理計画、TLAC要件等）は、実際の危機では機能しなかった。CSの「回復計画」は発動されず、結局は政府の緊急介入に頼った</li>
+          <li><strong>AT1市場への打撃</strong>: AT1債の無価値化は、バーゼルIII下で$2,750億規模に成長していたAT1市場に激震をもたらした。「株式より先にAT1がゼロになる」先例は、AT1のリスクプレミアムを恒久的に引き上げた</li>
+          <li><strong>「スイスの銀行の安全神話」の崩壊</strong>: UBSの救済（2008年）に続くCSの崩壊は、スイスの金融センターとしてのレピュテーションに深刻な打撃を与えた</li>
+          <li><strong>超巨大UBSの誕生</strong>: 合併後のUBSは運用資産$5兆超、スイスGDPの約2倍のバランスシートを持つ「メガバンク中のメガバンク」となり、TBTF問題がさらに深刻化<cite>[10]</cite></li>
+        </ul>
+      </section>
+
+      <!-- Section 6: Common Patterns -->
+      <section>
+        <h2>スイスの金融危機に共通するパターン</h2>
+        <p>
+          スイスの金融危機の歴史を振り返ると、いくつかの繰り返しパターンが浮かび上がる<cite>[11]</cite>:
+        </p>
+        <ul>
+          <li><strong>「安全」であることの油断</strong>: スイスの高い格付けと安全資産としての地位が、リスク管理の弛緩を招く。UBSもCSも「スイスの銀行だから安全」という過信がリスクテイクを助長</li>
+          <li><strong>グローバル業務とローカル規制のミスマッチ</strong>: UBSのNY Fixed Income部門もCSのPrime Brokerage部門も、グローバルな業務に対してスイスの規制監督が追いつかなかった</li>
+          <li><strong>不動産リスクの常在性</strong>: 1990年代の不動産バブル崩壊の教訓にもかかわらず、2020年代にもスイスの不動産価格は過熱の兆候を示している</li>
+          <li><strong>小国のG-SIB問題</strong>: スイスのGDPに対する銀行セクターの規模は他国に比べて極端に大きく、「大きすぎて救えない」リスクが構造的に存在する</li>
+          <li><strong>政治的介入の遅さ</strong>: 直接民主制と合議制政府は平時の安定には寄与するが、危機時の迅速な意思決定を困難にする場合がある</li>
+        </ul>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>Swiss National Bank, "Historical Monetary Statistics", snb.ch</li>
+        <li>Danthine, J.-P. & Donaldson, J.B., "The Swiss Real Estate Crisis — Lessons for Today", SNB Economic Studies, 2015</li>
+        <li>Birchler, U. & Bütler, M., "Information Economics — Chapter on Swiss Banking Crises", University of Zurich, 2007</li>
+        <li>Moser, J., "Swissair's Downfall — Corporate Governance Failures", Swiss Journal of Business Research, 2005</li>
+        <li>UBS, "Shareholder Report on UBS's Write-Downs", April 2008</li>
+        <li>Swiss Federal Council, "Too Big to Fail Report", March 2011</li>
+        <li>BIS, "The SNB's unconventional monetary policy and the foreign exchange market", BIS Quarterly Review, March 2015</li>
+        <li>Swiss Federal Council, "Ordinance on Additional Liquidity Assistance Loans and the Granting of Federal Default Guarantees", March 16, 2023</li>
+        <li>Financial Times, "Credit Suisse AT1 wipeout triggers global bondholder fury", March 20, 2023</li>
+        <li>Swiss Federal Department of Finance, "Report on Banking Stability — Lessons from the Credit Suisse Crisis", April 2024</li>
+        <li>IMF, "Switzerland: Financial System Stability Assessment", 2019 & 2024</li>
+        <li>Jordà, Ò. et al., "The rate of return on everything, 1870-2015", NBER Working Paper, 2019</li>
+      </ol>
+      <p class="note">注: 株価データは各時点の概算値。CSの最終取引価格はUBS買収発表前の最終取引日ベース。</p>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelectorAll('.data-table.sortable th').forEach(th => {
+      th.addEventListener('click', function() {
+        const table = th.closest('table');
+        const idx = Array.from(th.parentNode.children).indexOf(th);
+        const rows = Array.from(table.querySelectorAll('tbody tr'));
+        const dir = th.classList.contains('sort-asc') ? -1 : 1;
+        table.querySelectorAll('th').forEach(h => h.classList.remove('sort-asc','sort-desc'));
+        th.classList.add(dir === 1 ? 'sort-asc' : 'sort-desc');
+        rows.sort((a, b) => {
+          const av = a.children[idx]?.textContent.trim() ?? '';
+          const bv = b.children[idx]?.textContent.trim() ?? '';
+          const an = parseFloat(av.replace(/[^0-9.\-]/g,''));
+          const bn = parseFloat(bv.replace(/[^0-9.\-]/g,''));
+          if (!isNaN(an) && !isNaN(bn)) return (an - bn) * dir;
+          return av.localeCompare(bv, 'ja') * dir;
+        });
+        rows.forEach(r => table.querySelector('tbody').appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>

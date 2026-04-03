@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Switzerland - Short-term Rates | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇨🇭 Switzerland</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link active">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip active">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Switzerland</a>
+        <span class="sep">/</span>
+        Short-term Rates
+      </div>
+      <h1 class="page-title">スイス短期金利市場 (Swiss Short-term Rates)</h1>
+      <p class="page-subtitle">SARON、マネーマーケット、LIBOR→SARONへの移行 — スイスの短期金融市場の構造と変遷</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">SARON</div>
+          <div class="stat-label">主要短期金利指標 (2021年〜)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">0.50%</div>
+          <div class="stat-label">SNB政策金利 (2024年12月)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">CHF 1,400億+</div>
+          <div class="stat-label">担保付翌日物取引量 (日次)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">2021年末</div>
+          <div class="stat-label">CHF LIBOR廃止</div>
+        </div>
+      </div>
+
+      <!-- Section 1: Overview -->
+      <section>
+        <h2>スイス短期金融市場の概要</h2>
+        <p>
+          スイスの短期金融市場は、SNBの金融政策の伝達メカニズムの中核を担っている。SNBは2019年6月に政策フレームワークを変更し、従来の3ヶ月CHF LIBOR目標レンジから、SNBポリシーレート（SNB policy rate）への移行を完了した。このポリシーレートは、担保付翌日物金利であるSARON（Swiss Average Rate Overnight）の水準をガイドするものである<cite>[1]</cite>。
+        </p>
+        <p>
+          スイスの短期金融市場の特徴は、その小規模性と高い集中度にある。市場参加者は限られた数の大手銀行と外国銀行の在スイス支店に集中しており、SNBの金融政策オペレーションが市場の金利形成に大きな影響力を持つ。また、2015年以降のマイナス金利環境では、短期市場の機能に前例のない挑戦が生じた。
+        </p>
+      </section>
+
+      <!-- Section 2: Key Benchmarks -->
+      <section>
+        <h2>主要短期金利指標</h2>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>指標名</th>
+              <th>正式名称</th>
+              <th>計算方法</th>
+              <th>管理者</th>
+              <th>ステータス</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>SARON</strong></td>
+              <td>Swiss Average Rate Overnight</td>
+              <td>SIX repo市場の担保付翌日物取引の出来高加重平均</td>
+              <td>SIX Exchange</td>
+              <td>✅ 現行基準</td>
+            </tr>
+            <tr>
+              <td>CHF LIBOR</td>
+              <td>CHF London Interbank Offered Rate</td>
+              <td>ロンドンのパネル銀行の報告金利の中央値</td>
+              <td>ICE (旧BBA)</td>
+              <td>❌ 2021年末廃止</td>
+            </tr>
+            <tr>
+              <td>SNB Policy Rate</td>
+              <td>SNBポリシーレート</td>
+              <td>SNBが設定する政策金利目標</td>
+              <td>SNB</td>
+              <td>✅ 2019年6月〜</td>
+            </tr>
+            <tr>
+              <td>SARON Compound</td>
+              <td>SARON複利</td>
+              <td>SARONの期間複利（1M, 3M, 6M等）</td>
+              <td>SIX Exchange</td>
+              <td>✅ ローン・デリバティブ基準</td>
+            </tr>
+            <tr>
+              <td>TOIS (廃止)</td>
+              <td>Tom/Next Indexed Swap</td>
+              <td>翌日/翌々日のOISレート</td>
+              <td>ICAP</td>
+              <td>❌ SARONに代替</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section 3: SARON Deep Dive -->
+      <section>
+        <h2>SARON — スイスの新たな基準金利</h2>
+        <p>
+          SARON（Swiss Average Rate Overnight）は、SIXが管理する担保付翌日物金利であり、2009年に導入された。SIXのインターバンク・レポ市場における実取引と拘束力のある気配値（binding quotes）に基づいて算出される。CHF LIBORの代替指標として2017年にスイス国立金利ワーキンググループ（NWG）がSARONを推奨し、2021年末のLIBOR廃止に伴い、スイスの金融システムの中核的ベンチマークとなった<cite>[2]</cite>。
+        </p>
+
+        <h3>SARONの特徴</h3>
+        <ul>
+          <li><strong>取引ベース</strong>: 実際の取引データに基づくため、LIBORのような操作リスクが低い</li>
+          <li><strong>担保付</strong>: GCレポ（General Collateral Repo）取引に基づくため、信用リスクを含まない（ほぼリスクフリーレート）</li>
+          <li><strong>翌日物</strong>: ターム物のLIBOR（1M, 3M, 6M等）とは異なり翌日物のみ。ターム金利はSARON複利で近似</li>
+          <li><strong>堅牢性</strong>: 日次取引量CHF 1,000億以上の深い市場に裏付けられている</li>
+        </ul>
+
+        <h3>CHF LIBOR → SARON 移行タイムライン</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>イベント</th>
+              <th>影響</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>2009</td><td>SARON導入（SIX）</td><td>レポ市場ベースの新指標として公表開始</td></tr>
+            <tr><td>2012</td><td>LIBOR不正操作スキャンダル</td><td>ベンチマーク改革の機運、UBSも関与（€14億罰金）</td></tr>
+            <tr><td>2014</td><td>FSBがリスクフリーレートへの移行を提言</td><td>各国で代替指標の選定開始</td></tr>
+            <tr><td>2017</td><td>NWGがSARONをCHF LIBOR代替に推奨</td><td>移行計画の本格始動</td></tr>
+            <tr class="highlight-blue"><td>2019年6月</td><td>SNBが政策金利をLIBOR目標からSNBポリシーレートに変更</td><td>SARON連動の金融政策へ移行</td></tr>
+            <tr><td>2019-2021</td><td>SARON連動商品の拡大（住宅ローン、デリバティブ）</td><td>移行の実務的進展</td></tr>
+            <tr class="highlight-red"><td>2021年12月31日</td><td>CHF LIBOR最終公表</td><td>全CHF金利商品がSARON基準に移行完了</td></tr>
+            <tr><td>2022-2025</td><td>SARON市場の成熟</td><td>先物、オプション市場の発展</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section 4: SNB Monetary Policy Operations -->
+      <section>
+        <h2>SNBの金融政策オペレーション</h2>
+        <p>
+          SNBは短期金利をポリシーレート近辺に誘導するため、以下のオペレーションを活用している<cite>[3]</cite>:
+        </p>
+
+        <h3>主要オペレーション</h3>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>オペレーション</th>
+              <th>目的</th>
+              <th>方向</th>
+              <th>期間</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>レポ取引（通常）</td>
+              <td>流動性供給/吸収</td>
+              <td>双方向</td>
+              <td>翌日物〜数週間</td>
+            </tr>
+            <tr>
+              <td>SNBビル（SNB Bills）</td>
+              <td>過剰流動性の吸収</td>
+              <td>吸収</td>
+              <td>1週間〜12ヶ月</td>
+            </tr>
+            <tr>
+              <td>スタンディング・ファシリティ</td>
+              <td>緊急時の流動性供給</td>
+              <td>供給</td>
+              <td>翌日物</td>
+            </tr>
+            <tr>
+              <td>為替介入</td>
+              <td>CHF高抑制/通貨政策</td>
+              <td>外貨購入/売却</td>
+              <td>スポット</td>
+            </tr>
+            <tr>
+              <td>当座預金付利</td>
+              <td>マイナス金利の伝達</td>
+              <td>−（課金）</td>
+              <td>翌日物</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>マイナス金利下の当座預金制度</h3>
+        <p>
+          2015-2022年のマイナス金利期間中、SNBは銀行の当座預金に対してマイナス金利（-0.75%）を課した。ただし、全額に課金するのではなく「免除額（exemption threshold）」を設定し、一定額まではマイナス金利を適用しない段階制を採用した。この仕組みにより、銀行の収益性への過度な打撃を回避しつつ、市場金利をマイナス圏に誘導することに成功した<cite>[4]</cite>。
+        </p>
+        <p>
+          免除額は各銀行の最低準備預金の20倍に設定されていた（2019年11月以降は25倍に引き上げ）。この制度設計はECBの2段階付利制度（tiering）の先駆けとなり、他の中央銀行のマイナス金利政策の参考事例となった。
+        </p>
+      </section>
+
+      <!-- Section 5: Repo Market -->
+      <section>
+        <h2>スイス・レポ市場</h2>
+        <p>
+          スイスのインターバンク・レポ市場は、SIXが運営する電子取引プラットフォーム上で取引される。この市場はSARONの算出基盤であるとともに、SNBの金融政策オペレーションの主要な実行場所でもある<cite>[5]</cite>。
+        </p>
+        <p>
+          スイスのレポ市場の特徴として、取引の大部分がGC（General Collateral）バスケット方式で行われる点がある。GCバスケットには、スイス連邦債のほか、主要国の国債やPfandbriefeなどの高格付け債券が含まれる。このバスケット方式により、個別銘柄の需給に左右されない安定的な金利形成が実現されている。
+        </p>
+        <p>
+          マイナス金利期間中はレポ市場の取引量が一時的に減少したが、SARONの重要性増大に伴い、2021年以降は取引量が回復・拡大している。日次平均取引量はCHF 1,000-1,500億に達しており、SARONの堅牢性を支えている。
+        </p>
+      </section>
+
+      <!-- Section 6: Short Rate History -->
+      <section>
+        <h2>短期金利の推移</h2>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>年</th>
+              <th>3ヶ月CHF金利</th>
+              <th>SNB政策金利</th>
+              <th>背景</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1990</td><td>8.5%</td><td>—</td><td>不動産バブル期、引き締め</td></tr>
+            <tr><td>1995</td><td>2.5%</td><td>—</td><td>バブル崩壊後の緩和</td></tr>
+            <tr><td>2000</td><td>3.0%</td><td>—</td><td>ITバブル期</td></tr>
+            <tr><td>2003</td><td>0.3%</td><td>—</td><td>グローバル緩和局面</td></tr>
+            <tr><td>2007</td><td>2.8%</td><td>—</td><td>GFC前の利上げサイクル</td></tr>
+            <tr class="highlight-blue"><td>2009</td><td>0.3%</td><td>—</td><td>GFC対応の大幅緩和</td></tr>
+            <tr class="highlight-blue"><td>2012</td><td>0.0%</td><td>—</td><td>ユーロ危機、ゼロ金利近辺</td></tr>
+            <tr class="highlight-blue"><td>2015</td><td>-0.75%</td><td>-0.75%</td><td>マイナス金利導入</td></tr>
+            <tr class="highlight-blue"><td>2019</td><td>-0.75%</td><td>-0.75%</td><td>マイナス金利長期化</td></tr>
+            <tr><td>2020</td><td>-0.75%</td><td>-0.75%</td><td>COVID-19（金利据え置き）</td></tr>
+            <tr class="highlight-red"><td>2022</td><td>1.00%</td><td>1.00%</td><td>利上げサイクル（-0.75%→1.00%）</td></tr>
+            <tr><td>2023</td><td>1.75%</td><td>1.75%</td><td>利上げピーク</td></tr>
+            <tr><td>2024</td><td>0.50%</td><td>0.50%</td><td>3回利下げ（3月/6月/9月/12月）</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Section 7: Money Market Instruments -->
+      <section>
+        <h2>短期金融商品</h2>
+        <p>
+          スイスの短期金融市場では、以下の商品が取引されている:
+        </p>
+        <ul>
+          <li><strong>連邦短期債（MMDC）</strong>: 連邦政府が発行する割引短期証券。満期3-12ヶ月。国債供給不足の中で希少な安全資産</li>
+          <li><strong>SNBビル</strong>: SNBが流動性吸収目的で発行する短期証券。マイナス金利時代に銀行の余剰資金の受け皿として重要な役割</li>
+          <li><strong>コマーシャル・ペーパー（CP）</strong>: 企業が発行する短期無担保証券。CHF建てCP市場は比較的小規模</li>
+          <li><strong>譲渡性預金（CD）</strong>: 銀行が発行する短期証券</li>
+          <li><strong>SARON先物</strong>: SIXで取引されるSARON連動の先物契約。2024年からEurexでも上場</li>
+        </ul>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>Swiss National Bank, "Monetary policy implementation — the SNB's approach", SNB Quarterly Bulletin, 2019</li>
+        <li>NWG (National Working Group on CHF Reference Rates), "Transition from CHF LIBOR to SARON", 2021, snb.ch</li>
+        <li>Swiss National Bank, "Monetary Policy Instruments", snb.ch</li>
+        <li>Swiss National Bank, "Negative interest — Implementation", snb.ch</li>
+        <li>SIX Swiss Exchange, "Swiss Repo Market — Statistics and Overview", six-group.com</li>
+        <li>BIS, "Beyond LIBOR: a primer on the new benchmark rates", BIS Quarterly Review, March 2019</li>
+        <li>Fuhrer, L.M. et al., "The LIBOR scandal and its aftermath — a view from Switzerland", SNB Economic Studies, 2017</li>
+        <li>ISDA, "Benchmark Reform and Transition from LIBOR", 2021</li>
+        <li>IMF, "Switzerland: Financial System Stability Assessment", 2019</li>
+        <li>Altavilla, C. et al., "Monetary policy and bank profitability in a low interest rate environment", ECB Working Paper, 2018</li>
+      </ol>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelectorAll('.data-table.sortable th').forEach(th => {
+      th.addEventListener('click', function() {
+        const table = th.closest('table');
+        const idx = Array.from(th.parentNode.children).indexOf(th);
+        const rows = Array.from(table.querySelectorAll('tbody tr'));
+        const dir = th.classList.contains('sort-asc') ? -1 : 1;
+        table.querySelectorAll('th').forEach(h => h.classList.remove('sort-asc','sort-desc'));
+        th.classList.add(dir === 1 ? 'sort-asc' : 'sort-desc');
+        rows.sort((a, b) => {
+          const av = a.children[idx]?.textContent.trim() ?? '';
+          const bv = b.children[idx]?.textContent.trim() ?? '';
+          const an = parseFloat(av.replace(/[^0-9.\-]/g,''));
+          const bn = parseFloat(bv.replace(/[^0-9.\-]/g,''));
+          if (!isNaN(an) && !isNaN(bn)) return (an - bn) * dir;
+          return av.localeCompare(bv, 'ja') * dir;
+        });
+        rows.forEach(r => table.querySelector('tbody').appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>
