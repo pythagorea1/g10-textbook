@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UK - Corporate &amp; Indices | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇬🇧 United Kingdom</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link active">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip active">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">United Kingdom</a>
+        <span class="sep">/</span>
+        Corporate &amp; Indices
+      </div>
+      <h1 class="page-title">英国の主要企業と株価指数 (UK Corporate &amp; Indices)</h1>
+      <p class="page-subtitle">FTSE 100の構成変遷と英国産業構造の変化</p>
+    </header>
+
+    <article>
+      <!-- FTSE Index Family -->
+      <section>
+        <h2>FTSE指数ファミリー</h2>
+        <p>
+          FTSE（フッツィー）指数は、FTSE Russell（ロンドン証券取引所グループ傘下）が算出する英国の主要株価指数群である。1984年1月3日にFTSE 100が基準値1,000で算出を開始して以来、英国株式市場のベンチマークとして機能してきた<cite>[1]</cite>。
+        </p>
+        <table class="sortable">
+          <thead>
+            <tr><th>指数</th><th>算出開始</th><th>構成銘柄数</th><th>特徴</th><th>時価総額カバー率</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>FTSE 100</td><td>1984年</td><td>100</td><td>大型株。LSE上場の時価総額上位100社</td><td>約80%</td></tr>
+            <tr><td>FTSE 250</td><td>1992年</td><td>250</td><td>中型株。FTSE 100に次ぐ250社。英国内需への感度が高い</td><td>約15%</td></tr>
+            <tr><td>FTSE 350</td><td>1992年</td><td>350</td><td>FTSE 100 + FTSE 250</td><td>約95%</td></tr>
+            <tr><td>FTSE All-Share</td><td>1962年</td><td>約600</td><td>LSE上場の流動性基準を満たす全銘柄</td><td>約98%</td></tr>
+            <tr><td>FTSE AIM All-Share</td><td>1996年</td><td>約700</td><td>AIM（Alternative Investment Market）上場の成長企業</td><td>AIM全体</td></tr>
+            <tr><td>FTSE SmallCap</td><td>1992年</td><td>約250</td><td>FTSE All-Share からFTSE 350を除いた小型株</td><td>約3%</td></tr>
+          </tbody>
+        </table>
+        <p class="source">出典: [1] FTSE Russell, "FTSE UK Index Series factsheet", 2024</p>
+      </section>
+
+      <!-- FTSE 100 Sector Composition -->
+      <section>
+        <h2>FTSE 100のセクター構成変遷</h2>
+        <p>
+          FTSE 100の特徴は、米国のS&P 500と比較してテクノロジーセクターのウェイトが極めて低く、代わりに金融、エネルギー、素材、ヘルスケア、消費財の比率が高いことである。この構成は「オールドエコノミー」偏重と評されることが多く、2010年代以降のテック主導の米国株式市場との乖離（パフォーマンス・ギャップ）の一因となっている<cite>[2]</cite>。
+        </p>
+        <table class="sortable">
+          <thead>
+            <tr><th>セクター</th><th>2000年</th><th>2010年</th><th>2020年</th><th>2024年</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>金融 (Financials)</td><td>24%</td><td>21%</td><td>18%</td><td>20%</td></tr>
+            <tr><td>エネルギー (Energy)</td><td>13%</td><td>18%</td><td>10%</td><td>13%</td></tr>
+            <tr><td>消費財 (Consumer Staples)</td><td>10%</td><td>14%</td><td>18%</td><td>16%</td></tr>
+            <tr><td>ヘルスケア (Healthcare)</td><td>11%</td><td>8%</td><td>14%</td><td>13%</td></tr>
+            <tr><td>素材 (Materials)</td><td>5%</td><td>14%</td><td>9%</td><td>8%</td></tr>
+            <tr><td>工業 (Industrials)</td><td>9%</td><td>7%</td><td>11%</td><td>12%</td></tr>
+            <tr><td>通信 (Telecom/Communication)</td><td>14%</td><td>7%</td><td>4%</td><td>3%</td></tr>
+            <tr><td>テクノロジー (Technology)</td><td>5%</td><td>1%</td><td>2%</td><td>2%</td></tr>
+            <tr><td>公益事業 (Utilities)</td><td>4%</td><td>5%</td><td>4%</td><td>4%</td></tr>
+            <tr><td>不動産 (Real Estate)</td><td>2%</td><td>2%</td><td>3%</td><td>3%</td></tr>
+            <tr><td>一般消費財 (Consumer Discretionary)</td><td>3%</td><td>3%</td><td>7%</td><td>6%</td></tr>
+          </tbody>
+        </table>
+        <p>
+          注目すべきは、2000年の通信セクターが14%と高い比重を占めていた点である。これはドットコム・バブル期にボーダフォン (Vodafone) の時価総額が英国市場全体の約10%に達したためである。その後のバブル崩壊でボーダフォンは急落し、通信セクターのウェイトは大幅に低下した<cite>[3]</cite>。
+        </p>
+        <p class="source">出典: [2] FTSE Russell, "FTSE 100 sector weights historical data", 2024 [3] London Stock Exchange, "Monthly factsheets", various years</p>
+      </section>
+
+      <!-- Top Companies -->
+      <section>
+        <h2>FTSE 100 時価総額上位企業（2024年）</h2>
+        <table class="sortable">
+          <thead>
+            <tr><th>順位</th><th>企業名</th><th>セクター</th><th>時価総額（十億GBP）</th><th>海外売上比率</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>アストラゼネカ (AstraZeneca)</td><td>ヘルスケア</td><td>約190</td><td>約95%</td></tr>
+            <tr><td>2</td><td>シェル (Shell)</td><td>エネルギー</td><td>約175</td><td>約90%</td></tr>
+            <tr><td>3</td><td>HSBC Holdings</td><td>金融</td><td>約130</td><td>約85%</td></tr>
+            <tr><td>4</td><td>ユニリーバ (Unilever)</td><td>消費財</td><td>約105</td><td>約95%</td></tr>
+            <tr><td>5</td><td>BP</td><td>エネルギー</td><td>約80</td><td>約90%</td></tr>
+            <tr><td>6</td><td>リオ・ティント (Rio Tinto)</td><td>素材</td><td>約78</td><td>約99%</td></tr>
+            <tr><td>7</td><td>グラクソ・スミスクライン (GSK)</td><td>ヘルスケア</td><td>約70</td><td>約90%</td></tr>
+            <tr><td>8</td><td>ディアジオ (Diageo)</td><td>消費財</td><td>約62</td><td>約90%</td></tr>
+            <tr><td>9</td><td>BAT (British American Tobacco)</td><td>消費財</td><td>約58</td><td>約95%</td></tr>
+            <tr><td>10</td><td>レキット (Reckitt Benckiser)</td><td>消費財</td><td>約35</td><td>約90%</td></tr>
+          </tbody>
+        </table>
+        <p>
+          FTSE 100の特筆すべき特徴は、構成企業の海外売上比率が平均約75%と極めて高いことである。これは英国企業のグローバル展開を反映しており、FTSE 100は「英国経済の指標」というよりも「英国に上場するグローバル企業のバスケット」としての性格が強い。そのため、ポンド安は FTSE 100にとってプラス要因となることが多い（海外収益のポンド換算額が増加するため）<cite>[4]</cite>。
+        </p>
+        <p class="source">出典: [4] London Stock Exchange, "FTSE 100 company profiles", 2024</p>
+      </section>
+
+      <!-- Historical Corporate Milestones -->
+      <section>
+        <h2>英国企業の主要マイルストーン</h2>
+        <table class="sortable">
+          <thead>
+            <tr><th>年</th><th>出来事</th><th>意義</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1600</td><td>東インド会社 (East India Company) 設立</td><td>世界初の株式会社の一つ。海外貿易と植民地経営の先駆</td></tr>
+            <tr><td>1720</td><td>南海泡沫事件 (South Sea Bubble)</td><td>投機バブル崩壊。バブル法 (Bubble Act) 制定、株式会社設立を制限</td></tr>
+            <tr><td>1855</td><td>有限責任法 (Limited Liability Act)</td><td>有限責任会社の設立が一般化、企業活動の活性化</td></tr>
+            <tr><td>1899</td><td>シェル・トランスポート設立（後のロイヤル・ダッチ・シェル）</td><td>英国発の石油メジャーの誕生</td></tr>
+            <tr><td>1926</td><td>ICI (Imperial Chemical Industries) 設立</td><td>英国最大の化学企業。1990年代に分割・売却</td></tr>
+            <tr><td>1968</td><td>GEC-English Electric合併</td><td>英国最大の製造業コングロマリット形成</td></tr>
+            <tr><td>1984</td><td>BT (British Telecom) 民営化</td><td>サッチャー民営化の象徴。個人株主文化の創出</td></tr>
+            <tr><td>1986</td><td>BP民営化（完了）、ガス公社 (British Gas) 民営化</td><td>国有企業の大規模民営化プログラム</td></tr>
+            <tr><td>1999</td><td>ボーダフォン (Vodafone) がマンネスマン (Mannesmann) を買収</td><td>当時の世界最大の敵対的買収（1,830億USD）</td></tr>
+            <tr><td>2000</td><td>ボーダフォンが時価総額で英国最大に</td><td>ITバブルのピーク。後に大幅下落</td></tr>
+            <tr><td>2016</td><td>ARM Holdings がソフトバンクに買収（約240億GBP）</td><td>英国最大のテック企業が外資に。頭脳流出への懸念</td></tr>
+            <tr><td>2020</td><td>ロイヤル・ダッチ・シェルが本社をオランダから英国に統合</td><td>「Shell plc」に改名、ロンドン一本化</td></tr>
+            <tr><td>2022</td><td>アストラゼネカがFTSE 100最大の企業に</td><td>COVID-19ワクチン開発が評価。時価総額でシェルを抜く</td></tr>
+          </tbody>
+        </table>
+        <p class="source">出典: [5] London Stock Exchange, "Historical FTSE 100 constituents", various years [6] Financial Times, "UK corporate history timeline", 2024</p>
+      </section>
+
+      <!-- Privatisation Legacy -->
+      <section>
+        <h2>民営化の遺産（1980-90年代）</h2>
+        <p>
+          マーガレット・サッチャー (Margaret Thatcher) 政権（1979-1990年）とジョン・メージャー (John Major) 政権（1990-1997年）の民営化プログラムは、英国の企業景観を根本的に変えた。国有企業の株式市場への上場は、FTSE 100の構成を大きく変化させるとともに、個人株主数を急増させた<cite>[7]</cite>。
+        </p>
+        <table class="sortable">
+          <thead>
+            <tr><th>年</th><th>企業</th><th>セクター</th><th>売却収入（十億GBP）</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1984</td><td>BT (British Telecom)</td><td>通信</td><td>3.9</td></tr>
+            <tr><td>1986</td><td>British Gas</td><td>エネルギー</td><td>5.4</td></tr>
+            <tr><td>1987</td><td>British Airways</td><td>航空</td><td>0.9</td></tr>
+            <tr><td>1987</td><td>BP（政府持分売却）</td><td>エネルギー</td><td>7.2</td></tr>
+            <tr><td>1988</td><td>British Steel</td><td>素材</td><td>2.4</td></tr>
+            <tr><td>1989</td><td>水道10社（Water companies）</td><td>公益事業</td><td>5.2</td></tr>
+            <tr><td>1990-91</td><td>電力会社12社（Electricity companies）</td><td>公益事業</td><td>8.0</td></tr>
+            <tr><td>1993</td><td>British Coal</td><td>エネルギー</td><td>0.8</td></tr>
+            <tr><td>1996</td><td>Railtrack（鉄道インフラ）</td><td>運輸</td><td>1.9</td></tr>
+          </tbody>
+        </table>
+        <p>
+          民営化は総額約600億ポンドの政府収入を生み出し、個人株主数は1979年の約300万人から1990年代初頭には約1,100万人に増加した。しかし、多くの個人株主は早期に持分を売却し、長期的な株主文化の定着には至らなかった。また、鉄道（Railtrack、2001年破綻）や水道会社の民営化については、サービス品質やインフラ投資不足の観点から批判が続いている<cite>[8]</cite>。
+        </p>
+        <p class="source">出典: [7] HM Treasury, "Privatisation history", various publications [8] Institute for Government, "Privatisation", 2023</p>
+      </section>
+
+      <!-- London Stock Exchange Listings -->
+      <section>
+        <h2>LSE上場動向と課題</h2>
+        <p>
+          近年、LSE（ロンドン証券取引所）の上場企業数は減少傾向にある。FTSE All-Shareの構成銘柄数は2008年の約700社から2024年には約600社に減少した。原因として、（1）プライベート・エクイティによる非公開化、（2）米国市場への上場移転（ARM、CRH、Flutter Entertainmentなど）、（3）新規IPOの低迷が挙げられる<cite>[9]</cite>。
+        </p>
+        <p>
+          特に懸念されるのは、テクノロジー企業のLSE離れである。2023年にARMがロンドンではなくNASDAQに上場したことは象徴的であった。英国政府とFCAは上場規則の改革（2024年の新上場ルール施行）やデュアルクラス株式の容認などの対策を進めているが、ニューヨークとの競争は激化している<cite>[10]</cite>。
+        </p>
+        <p>
+          一方、LSEは2007年にイタリアのボルサ・イタリアーナ (Borsa Italiana) を買収し、2021年にリフィニティブ (Refinitiv) を270億USDで買収することで、データ・分析サービス企業への転換を図っている。取引所運営よりもデータ・テクノロジー収益の比率が高まっており、LSEグループ自体の事業構造が大きく変化している<cite>[11]</cite>。
+        </p>
+        <p class="source">出典: [9] New Financial, "The shrinking UK stock market", 2024 [10] FCA, "Primary Markets Effectiveness Review", 2024 [11] LSEG, Annual Report 2023</p>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>FTSE Russell, "FTSE UK Index Series factsheet", 2024</li>
+        <li>FTSE Russell, "FTSE 100 sector weights historical data", 2024</li>
+        <li>London Stock Exchange, "Monthly factsheets", various years</li>
+        <li>London Stock Exchange, "FTSE 100 company profiles", 2024</li>
+        <li>London Stock Exchange, "Historical FTSE 100 constituents", various years</li>
+        <li>Financial Times, "UK corporate history timeline", 2024</li>
+        <li>HM Treasury, "Privatisation history", various publications</li>
+        <li>Institute for Government, "Privatisation", 2023</li>
+        <li>New Financial, "The shrinking UK stock market", 2024</li>
+        <li>FCA, "Primary Markets Effectiveness Review", 2024</li>
+        <li>LSEG (London Stock Exchange Group), Annual Report 2023</li>
+      </ol>
+      <p><em>※時価総額およびセクター構成比は概数であり、各時点での市場状況により変動します。</em></p>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelectorAll('.sortable th').forEach(th => {
+      th.style.cursor = 'pointer';
+      th.addEventListener('click', () => {
+        const table = th.closest('table'), idx = [...th.parentNode.children].indexOf(th);
+        const rows = [...table.tBodies[0].rows];
+        const dir = th.asc = !th.asc ? 1 : -1;
+        rows.sort((a, b) => {
+          const x = a.cells[idx].textContent.trim(), y = b.cells[idx].textContent.trim();
+          return dir * (isNaN(x) || isNaN(y) ? x.localeCompare(y, 'ja') : x - y);
+        });
+        rows.forEach(r => table.tBodies[0].appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>
