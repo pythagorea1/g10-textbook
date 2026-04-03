@@ -108,7 +108,7 @@ g10_textbook/
 
 ### Phase 4: Japan (japan/)
 - [x] Task 11: Japan pages 1-5 — Central Bank (BOJ歴代総裁、YCC、QQE)、Policy Rate (ゼロ金利、マイナス金利)、Fiscal Policy (財政出動、債務/GDP 200%超)、Employment (終身雇用→変化)、Inflation (デフレ30年)
-- [ ] Task 12: Japan pages 6-10 — Equity (日経225, TOPIX)、Early History (東証1878)、Modern Era (バブル経済)、2000s-2010s (失われた20年)、2020s (バフェット効果)
+- [x] Task 12: Japan pages 6-10 — Equity (日経225, TOPIX)、Early History (東証1878)、Modern Era (バブル経済)、2000s-2010s (失われた20年)、2020s (バフェット効果)
 - [ ] Task 13: Japan pages 11-15 — Bond Market (JGB, 日銀保有比率)、Short-term Rates (無担保コール)、Long-term Rates (10Y JGB)、Currency (円, プラザ合意)、Crises (バブル崩壊、銀行危機)
 - [ ] Task 14: Japan pages 16-20 — Banking (メガバンク形成)、Corporate (keiretsu→改革)、Regulation (金融ビッグバン)、Trade (貿易黒字→変化)、Lessons
 
