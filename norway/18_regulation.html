@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Norway - Regulatory Framework | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇳🇴 Norway</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link active">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip active">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Norway</a>
+        <span class="sep">/</span>
+        Regulatory Framework
+      </div>
+      <h1 class="page-title">ノルウェーの金融規制フレームワーク (Regulatory Framework)</h1>
+      <p class="page-subtitle">Finanstilsynet統合監督・EEAによるEU規制準用・石油税制78%・マクロプルーデンシャル政策</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">Finanstilsynet</div>
+          <div class="stat-label">金融監督庁 — 1986年設立の統合型監督機関</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">EEA</div>
+          <div class="stat-label">EU非加盟だがEEA協定によりEU金融規制を準用</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">CET1 18%+</div>
+          <div class="stat-label">銀行自己資本要件 — G10最高水準</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">78%</div>
+          <div class="stat-label">石油会社限界税率（通常22%+特別56%）</div>
+        </div>
+      </div>
+
+      <!-- Regulatory Architecture -->
+      <section>
+        <h2>規制機関の構造</h2>
+        <p>ノルウェーの金融規制は、3つの主要機関の協力体制で運営されている。この構造はスウェーデン・デンマークの統合型監督モデルに類似するが、Norges Bankの金融安定担当部門が独立した役割を果たす点が特徴的である。</p>
+
+        <table class="data-table">
+          <thead>
+            <tr><th>機関</th><th>英語名</th><th>設立年</th><th>主要機能</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Finanstilsynet</strong></td>
+              <td>Financial Supervisory Authority of Norway</td>
+              <td>1986</td>
+              <td>銀行・保険・証券・年金の統合監督。個別金融機関の健全性審査、市場行為監督、消費者保護</td>
+            </tr>
+            <tr>
+              <td><strong>Norges Bank（金融安定局）</strong></td>
+              <td>Norges Bank Financial Stability</td>
+              <td>1816/2019法改正</td>
+              <td>マクロプルーデンシャル政策、カウンターシクリカルバッファー設定、金融安定レポート発行、最後の貸し手</td>
+            </tr>
+            <tr>
+              <td><strong>財務省</strong></td>
+              <td>Ministry of Finance</td>
+              <td>—</td>
+              <td>金融規制の立法、Finanstilsynetの上位監督、国際規制交渉（EEA/バーゼル）</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Regulatory History -->
+      <section>
+        <h2>金融規制の変遷</h2>
+        <table class="data-table sortable">
+          <thead>
+            <tr><th>年</th><th>規制・法律</th><th>内容</th><th>影響</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1961</td>
+              <td>銀行法制定</td>
+              <td>商業銀行と貯蓄銀行の規制を統一</td>
+              <td>戦後規制体制の確立</td>
+            </tr>
+            <tr>
+              <td>1984-86</td>
+              <td class="rate-cut">金融自由化</td>
+              <td>信用統制撤廃、金利自由化、外資規制緩和</td>
+              <td>信用膨張→不動産バブル→銀行危機の遠因</td>
+            </tr>
+            <tr>
+              <td>1986</td>
+              <td>Kredittilsynet設立</td>
+              <td>銀行・保険・証券の統合監督機関（後のFinanstilsynet）</td>
+              <td>G10で最も早い統合型監督の一つ</td>
+            </tr>
+            <tr>
+              <td>1991</td>
+              <td class="crisis-event">政府銀行保険基金(GBIF)法</td>
+              <td>銀行危機対応の法的枠組み。政府が銀行に直接資本注入する権限</td>
+              <td>DnC/Kreditkassen国有化の法的根拠</td>
+            </tr>
+            <tr>
+              <td>1994</td>
+              <td>EEA協定発効</td>
+              <td>EU金融規制（銀行指令、投資サービス指令等）をノルウェーに準用</td>
+              <td>EU非加盟でありながら単一市場のルールに従う独特の立場</td>
+            </tr>
+            <tr>
+              <td>2004</td>
+              <td>バーゼルII導入準備</td>
+              <td>リスクベース自己資本規制への移行</td>
+              <td>IRBモデル承認プロセス</td>
+            </tr>
+            <tr>
+              <td>2009</td>
+              <td>Kredittilsynet → Finanstilsynet改名</td>
+              <td>「信用監督」から「金融監督」へ名称変更</td>
+              <td>監督範囲の拡大を反映</td>
+            </tr>
+            <tr>
+              <td>2013</td>
+              <td>CRD IV/CRR導入</td>
+              <td>バーゼルIIIをEEA経由でノルウェーに適用。CET1要件の大幅引き上げ</td>
+              <td>ノルウェーの銀行は欧州で最も高い自己資本比率を要求</td>
+            </tr>
+            <tr>
+              <td>2015</td>
+              <td>住宅ローン規制（Boliglånsforskriften）</td>
+              <td>LTV上限85%、DSR（債務返済比率）制限、アモチゼーション義務</td>
+              <td>住宅バブル抑制策</td>
+            </tr>
+            <tr>
+              <td>2017</td>
+              <td>オスロ特別規制</td>
+              <td>オスロ市内の住宅ローンにLTV上限60%（セカンドハウス）等の追加規制</td>
+              <td>オスロの住宅価格高騰への対応</td>
+            </tr>
+            <tr>
+              <td>2019</td>
+              <td>新中央銀行法</td>
+              <td>Norges Bankのガバナンス改革。理事会と金融政策委員会の分離。NBIM（GPFG運用）の独立性強化</td>
+              <td>金融政策とGPFG運用のガバナンス明確化</td>
+            </tr>
+            <tr>
+              <td>2022</td>
+              <td class="crisis-event">カウンターシクリカルバッファー 2.5%に引き上げ</td>
+              <td>COVID後の信用拡大とリスク蓄積に対応</td>
+              <td>G10で最も高いCCyBの一つ</td>
+            </tr>
+            <tr>
+              <td>2023</td>
+              <td>サーモン資源レント税（grunnrenteskatt）導入</td>
+              <td>養殖業に25%の資源レント税を課税</td>
+              <td>石油・水力発電に続く第3の資源レント課税</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- EEA and EU Relations -->
+      <section>
+        <h2>EEAとEU金融規制の関係</h2>
+        <p>ノルウェーは1972年と1994年の2度にわたりEU加盟を国民投票で否決したが、1994年発効のEEA（欧州経済領域）協定により、EU単一市場の規制をほぼ全面的に受け入れている。金融セクターにおいては、これは事実上「規制を受けるが意思決定に参加しない」状態を意味する。</p>
+
+        <h3>EEA経由で適用されるEU金融規制</h3>
+        <table class="data-table">
+          <thead>
+            <tr><th>EU規制</th><th>ノルウェーでの適用</th><th>特記事項</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CRD IV/V & CRR（銀行自己資本）</td>
+              <td>適用 — ただしノルウェーは上乗せ規制あり</td>
+              <td>CET1要件はEU基準を上回る18%+</td>
+            </tr>
+            <tr>
+              <td>MiFID II/MiFIR（金融商品市場）</td>
+              <td>適用</td>
+              <td>Euronext Oslo運営に直接影響</td>
+            </tr>
+            <tr>
+              <td>Solvency II（保険）</td>
+              <td>適用</td>
+              <td>Storebrand、Gjensidige等に適用</td>
+            </tr>
+            <tr>
+              <td>GDPR（個人データ保護）</td>
+              <td>適用（Personopplysningsloven）</td>
+              <td>Datatilsynet（データ保護庁）が監督</td>
+            </tr>
+            <tr>
+              <td>PSD2（決済サービス）</td>
+              <td>適用</td>
+              <td>オープンバンキング義務</td>
+            </tr>
+            <tr>
+              <td>AMLD（マネーロンダリング対策）</td>
+              <td>適用（Hvitvaskingsloven）</td>
+              <td>Økokrim（経済犯罪対策局）が執行</td>
+            </tr>
+            <tr>
+              <td>EU Banking Union</td>
+              <td><strong>非参加</strong></td>
+              <td>EEA義務の範囲外。ECBの直接監督を受けない</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>重要な例外はEU Banking Unionへの非参加である。ノルウェーの銀行はECBの単一監督メカニズム（SSM）の対象外であり、Finanstilsynetが独立に監督を行う。この「EEAのグレーゾーン」は、北欧を跨いで活動するNordeaやDNBにとって、規制の不整合を生む可能性がある。Nordeaが2018年に本社をヘルシンキに移転した背景には、Banking Union内でのECB監督を選択するという戦略的判断があった。</p>
+      </section>
+
+      <!-- Oil Taxation -->
+      <section>
+        <h2>石油税制 — 78%の限界税率</h2>
+        <p>ノルウェーの石油税制はG10で最もユニークな規制フレームワークの一つである。石油会社の利益には通常法人税（22%）に加え、特別石油税（56%）が課され、限界税率は78%に達する。この高い税率にもかかわらず、ノルウェー大陸棚での石油・ガス探査・開発への投資は継続しており、これは税制設計の巧みさを示している。</p>
+
+        <h3>石油税制の構造</h3>
+        <table class="data-table">
+          <thead>
+            <tr><th>要素</th><th>税率/内容</th><th>目的</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>通常法人税</td>
+              <td>22%</td>
+              <td>全企業に適用される標準税率</td>
+            </tr>
+            <tr>
+              <td>特別石油税（Særskatt）</td>
+              <td>56%（2022年以降、旧51.8%から引上げ）</td>
+              <td>石油資源からの超過利潤に対する資源レント課税</td>
+            </tr>
+            <tr>
+              <td>合計限界税率</td>
+              <td>78%</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>探査費用の還付</td>
+              <td>78%の税還付</td>
+              <td>探査投資インセンティブの維持</td>
+            </tr>
+            <tr>
+              <td>uplift（控除加算）</td>
+              <td>投資額の一定%を追加控除</td>
+              <td>高税率下でも投資を促進する仕組み</td>
+            </tr>
+            <tr>
+              <td>SDØE（国家直接財政権益）</td>
+              <td>ライセンスの一定割合を国家が直接保有</td>
+              <td>税制とは別に、国家が石油生産の利益を直接取得</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>この税制の核心は「78%課税するが、投資コストの78%も還付する」という対称性にある。つまり、国家がリスクとリターンの78%を引き受け、企業は22%のリスクとリターンを負担する。この設計により、経済学的に正の期待リターンを持つプロジェクトは78%課税下でも投資判断が歪まない（中立的課税）。IMFはこの税制を「資源国の理想的モデル」と評価している。</p>
+      </section>
+
+      <!-- Macro-prudential -->
+      <section>
+        <h2>マクロプルーデンシャル政策</h2>
+        <p>ノルウェーは2013年以降、マクロプルーデンシャル政策ツールを積極的に活用している。特に住宅市場の過熱抑制が重要な政策課題であり、複数のツールが同時に運用されている。</p>
+
+        <table class="data-table">
+          <thead>
+            <tr><th>ツール</th><th>設定値</th><th>設定機関</th><th>目的</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>カウンターシクリカルバッファー (CCyB)</td>
+              <td>2.5% (2023-)</td>
+              <td>Norges Bank（提案）→財務省（決定）</td>
+              <td>信用サイクルの過熱抑制</td>
+            </tr>
+            <tr>
+              <td>システミック・リスク・バッファー</td>
+              <td>4.5%</td>
+              <td>財務省</td>
+              <td>構造的システミックリスクへの対応</td>
+            </tr>
+            <tr>
+              <td>LTV上限</td>
+              <td>85%（オスロのセカンドハウス60%）</td>
+              <td>Finanstilsynet/財務省</td>
+              <td>住宅バブル抑制</td>
+            </tr>
+            <tr>
+              <td>DTI（債務所得比率）上限</td>
+              <td>総債務≤年収の5倍</td>
+              <td>Finanstilsynet/財務省</td>
+              <td>家計の過剰債務抑制</td>
+            </tr>
+            <tr>
+              <td>アモチゼーション要件</td>
+              <td>LTV 60%超の場合2.5%/年返済義務</td>
+              <td>Finanstilsynet</td>
+              <td>インタレスト・オンリーの制限</td>
+            </tr>
+            <tr>
+              <td>ストレステスト要件</td>
+              <td>金利+5%ポイント上昇に耐えうること</td>
+              <td>Finanstilsynet</td>
+              <td>金利上昇時のデフォルトリスク軽減</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>ノルウェーのCET1自己資本要件は、バッファーを含めると約18%に達し、G10で最も高い水準にある。これはスウェーデン（同程度）と並んで北欧の慎重な規制姿勢を反映しており、1988-93年の銀行危機の教訓が直接反映されている。</p>
+      </section>
+
+      <!-- G10 Comparison -->
+      <section>
+        <h2>G10金融規制比較</h2>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>国</th>
+              <th>監督構造</th>
+              <th>CET1要件</th>
+              <th>LTV規制</th>
+              <th>特徴的規制</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="highlight-row">
+              <td>🇳🇴 ノルウェー</td>
+              <td>統合型（Finanstilsynet）</td>
+              <td>~18%</td>
+              <td>85%</td>
+              <td>石油税78%、EEA準用、資源レント税</td>
+            </tr>
+            <tr>
+              <td>🇺🇸 米国</td>
+              <td>分散型（Fed/OCC/FDIC/SEC）</td>
+              <td>~10-13%</td>
+              <td>なし（GSE基準）</td>
+              <td>Dodd-Frank、ボルカー・ルール</td>
+            </tr>
+            <tr>
+              <td>🇪🇺 ユーロ圏</td>
+              <td>SSM+国内監督</td>
+              <td>~12-15%</td>
+              <td>国別</td>
+              <td>Banking Union、SRM</td>
+            </tr>
+            <tr>
+              <td>🇯🇵 日本</td>
+              <td>統合型（金融庁）</td>
+              <td>~11%</td>
+              <td>なし</td>
+              <td>ゆるい規制伝統、株式持合い</td>
+            </tr>
+            <tr>
+              <td>🇬🇧 英国</td>
+              <td>ツインピーク（PRA+FCA）</td>
+              <td>~14%</td>
+              <td>所得連動</td>
+              <td>リングフェンシング、Brexit後の独自路線</td>
+            </tr>
+            <tr>
+              <td>🇨🇭 スイス</td>
+              <td>統合型（FINMA）</td>
+              <td>~14%(TBTF追加)</td>
+              <td>~80%（自主規制）</td>
+              <td>TBTF特別要件、CS危機後改革</td>
+            </tr>
+            <tr>
+              <td>🇦🇺 豪州</td>
+              <td>ツインピーク（APRA+ASIC）</td>
+              <td>~12%</td>
+              <td>なし（APRA指導）</td>
+              <td>スーパーアニュエーション規制</td>
+            </tr>
+            <tr>
+              <td>🇳🇿 NZ</td>
+              <td>統合型（RBNZ+FMA）</td>
+              <td>~16%</td>
+              <td>80%</td>
+              <td>OBR、預金保険なし→2024年導入</td>
+            </tr>
+            <tr>
+              <td>🇨🇦 カナダ</td>
+              <td>分散型（OSFI+各州）</td>
+              <td>~13%</td>
+              <td>80%(保険付95%)</td>
+              <td>CMHC住宅保険、GFC無傷</td>
+            </tr>
+            <tr>
+              <td>🇸🇪 スウェーデン</td>
+              <td>統合型（FI）</td>
+              <td>~18%</td>
+              <td>85%</td>
+              <td>アモチゼーション要件、キャッシュレス規制</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Sources -->
+      <footer class="sources">
+        <h3>出典・参考文献</h3>
+        <ol>
+          <li>Finanstilsynet, "Annual Reports", finanstilsynet.no</li>
+          <li>Norges Bank, "Financial Stability Reports", norges-bank.no</li>
+          <li>Ministry of Finance, "Petroleum Taxation", regjeringen.no</li>
+          <li>Norwegian Petroleum Directorate, "Norwegian Petroleum: Taxes and Duties", norskpetroleum.no</li>
+          <li>IMF, "Norway: Article IV Consultation Reports", imf.org</li>
+          <li>EEA Joint Committee, "Financial Services Legislation", efta.int</li>
+          <li>BIS, "Financial Stability Institute: Macroprudential Policy Survey", bis.org</li>
+          <li>Norges Bank, "Countercyclical Capital Buffer Decisions", norges-bank.no</li>
+          <li>OECD, "Norway Economic Survey", oecd.org</li>
+        </ol>
+        <p class="note">CET1要件はバッファーを含む概算値。各国の規制構造は簡略化して記載。</p>
+      </footer>
+    </article>
+
+    <nav class="page-nav">
+      <a href="17_corporate.html" class="prev">← 前: Corporate &amp; Indices</a>
+      <a href="19_trade.html" class="next">次: International Trade →</a>
+    </nav>
+  </main>
+
+  <script>
+    document.querySelectorAll('.sortable th').forEach(th => {
+      th.style.cursor = 'pointer';
+      th.addEventListener('click', () => {
+        const table = th.closest('table');
+        const idx = Array.from(th.parentNode.children).indexOf(th);
+        const rows = Array.from(table.querySelectorAll('tbody tr'));
+        const dir = th.asc = !th.asc ? 1 : -1;
+        rows.sort((a, b) => {
+          const av = a.children[idx]?.textContent.trim() ?? '';
+          const bv = b.children[idx]?.textContent.trim() ?? '';
+          const an = parseFloat(av.replace(/[^0-9.\-]/g, ''));
+          const bn = parseFloat(bv.replace(/[^0-9.\-]/g, ''));
+          if (!isNaN(an) && !isNaN(bn)) return (an - bn) * dir;
+          return av.localeCompare(bv, 'ja') * dir;
+        });
+        rows.forEach(r => table.querySelector('tbody').appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>

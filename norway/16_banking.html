@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Norway - Banking Sector | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇳🇴 Norway</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link active">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip active">NO</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">Norway</a>
+        <span class="sep">/</span>
+        Banking Sector
+      </div>
+      <h1 class="page-title">ノルウェーの銀行セクター (Norwegian Banking Sector)</h1>
+      <p class="page-subtitle">国家所有・北欧統合・1988-93年危機からの再建 — DNB支配と貯蓄銀行伝統の共存</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">DNB</div>
+          <div class="stat-label">圧倒的最大手 — 総資産NOK 3.5T+、国内シェア30%超</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">34%</div>
+          <div class="stat-label">政府のDNB株式保有比率</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">~120</div>
+          <div class="stat-label">貯蓄銀行（Sparebanker）数 — 地域密着型</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">GDP 220%</div>
+          <div class="stat-label">銀行セクター総資産/GDP比率</div>
+        </div>
+      </div>
+
+      <!-- Historical Overview -->
+      <section>
+        <h2>ノルウェー銀行業の歴史的発展</h2>
+        <p>ノルウェーの銀行制度は、1822年に設立されたクリスチャニア・スパレバンク (Christiania Sparebank) に始まる。これはノルウェー初の貯蓄銀行であり、北欧の銀行業における「貯蓄銀行伝統」の原点となった。商業銀行としては1848年設立のクリスチャニア・バンク・オグ・クレディットカッセ (Christiania Bank og Kreditkasse、後のKreditkassen) が最古の部類に属する。</p>
+
+        <p>19世紀後半から20世紀初頭にかけて、ノルウェーの銀行業は海運業・漁業・木材産業と密接に結びついて発展した。1920年代には銀行恐慌が発生し、140行以上が経営困難に陥った。この経験は、ノルウェーの慎重な銀行規制の伝統の出発点となった。</p>
+
+        <p>第二次世界大戦後、ノルウェーは「規制金利政策」(lavrentepolitikk) の下で銀行業を厳格に管理した。信用配分は政府が統制し、銀行は事実上の準公的機関として機能した。1984-86年の金融自由化は銀行業に劇的な変化をもたらしたが、その後の不動産バブルと崩壊が1988-93年の銀行危機を引き起こした。この危機管理において、ノルウェーは「北欧モデル」の原型となる手法 — 株主責任の徹底・迅速な公的資金注入・バッドバンク不使用 — を採用し、国際的に高い評価を得た。</p>
+      </section>
+
+      <!-- Major Banks Table -->
+      <section>
+        <h2>主要銀行一覧</h2>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>銀行名</th>
+              <th>設立年</th>
+              <th>種別</th>
+              <th>総資産(NOK B)</th>
+              <th>国家保有%</th>
+              <th>特徴</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>DNB ASA</strong></td>
+              <td>1822/2003統合</td>
+              <td>商業銀行</td>
+              <td>~3,500</td>
+              <td>34.0%</td>
+              <td>ノルウェー最大手、ノルディック大手、海運・エネルギー融資</td>
+            </tr>
+            <tr>
+              <td>Nordea Norge</td>
+              <td>2001(統合)</td>
+              <td>外国系子会社</td>
+              <td>~800</td>
+              <td>—</td>
+              <td>フィンランド本社の北欧最大手ノルウェー法人</td>
+            </tr>
+            <tr>
+              <td>SpareBank 1 SR-Bank</td>
+              <td>1839</td>
+              <td>貯蓄銀行</td>
+              <td>~350</td>
+              <td>—</td>
+              <td>ノルウェー最大の貯蓄銀行（スタヴァンゲル拠点）</td>
+            </tr>
+            <tr>
+              <td>SpareBank 1 SMN</td>
+              <td>1823</td>
+              <td>貯蓄銀行</td>
+              <td>~250</td>
+              <td>—</td>
+              <td>中部ノルウェー最大（トロンハイム拠点）</td>
+            </tr>
+            <tr>
+              <td>SpareBank 1 Østlandet</td>
+              <td>1845</td>
+              <td>貯蓄銀行</td>
+              <td>~200</td>
+              <td>—</td>
+              <td>東部ノルウェー最大の貯蓄銀行</td>
+            </tr>
+            <tr>
+              <td>SpareBank 1 Nord-Norge</td>
+              <td>1836</td>
+              <td>貯蓄銀行</td>
+              <td>~120</td>
+              <td>—</td>
+              <td>北部ノルウェー最大</td>
+            </tr>
+            <tr>
+              <td>Handelsbanken Norge</td>
+              <td>1871(本社)</td>
+              <td>外国系支店</td>
+              <td>~150</td>
+              <td>—</td>
+              <td>スウェーデン系、分権型経営モデル</td>
+            </tr>
+            <tr>
+              <td>Danske Bank Norge</td>
+              <td>1871(本社)</td>
+              <td>外国系支店</td>
+              <td>~120</td>
+              <td>—</td>
+              <td>デンマーク系、個人・法人向け</td>
+            </tr>
+            <tr>
+              <td>Sbanken (現DNB傘下)</td>
+              <td>2000</td>
+              <td>ネット銀行</td>
+              <td>~100</td>
+              <td>—</td>
+              <td>ノルウェー初のネット専業銀行（2021年DNBが買収）</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- DNB Section -->
+      <section>
+        <h2>DNB — ノルウェーのナショナル・チャンピオン</h2>
+        <p>DNBはノルウェーの銀行業を象徴する存在であり、国内預金シェア約30%、住宅ローンシェア約25%を占める圧倒的最大手である。その歴史は複雑な合併の連続として理解される。</p>
+
+        <h3>DNBの形成史</h3>
+        <table class="data-table">
+          <thead>
+            <tr><th>年</th><th>イベント</th><th>意義</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1822</td><td>Christiania Sparebank設立</td><td>ノルウェー初の貯蓄銀行</td></tr>
+            <tr><td>1857</td><td>Den norske Creditbank (DnC) 設立</td><td>主要商業銀行の源流</td></tr>
+            <tr><td>1848</td><td>Christiania Bank og Kreditkasse設立</td><td>もう一つの主要商業銀行</td></tr>
+            <tr><td>1990</td><td class="crisis-event">銀行危機 — DnC・Kreditkassen経営危機</td><td>政府銀行保険基金(GBIF)による介入</td></tr>
+            <tr><td>1991</td><td class="crisis-event">DnC・Bergen Bank合併 → DnB設立</td><td>危機下の再編、政府がDnB株式の過半数取得</td></tr>
+            <tr><td>1991</td><td class="crisis-event">Kreditkassen国有化（政府100%保有）</td><td>株主価値ゼロ、北欧モデルの核心</td></tr>
+            <tr><td>2000</td><td>Kreditkassen → MeritaNordbanken（後のNordea）に売却</td><td>北欧統合の一環</td></tr>
+            <tr><td>2003</td><td>DnB + Gjensidige NOR → DnB NOR</td><td>ノルウェー最大の金融グループ誕生</td></tr>
+            <tr><td>2011</td><td>DnB NOR → DNBにブランド変更</td><td>シンプルなブランド戦略</td></tr>
+            <tr><td>2021</td><td>Sbanken買収（NOK 11.1B）</td><td>デジタル戦略の加速、競争当局の審査を通過</td></tr>
+          </tbody>
+        </table>
+
+        <p>政府はDNB株式の34%を保有しているが、これは1991年の銀行危機時に取得した株式を段階的に売却した結果である。政府の保有は「安定株主」としての役割を果たしており、経営への直接介入は限定的である。ノルウェー政府の方針は、株式保有を通じて戦略的に重要な企業のノルウェーへの本社所在を確保することにある。</p>
+      </section>
+
+      <!-- Savings Banks -->
+      <section>
+        <h2>貯蓄銀行（Sparebanker）— ノルウェーの特異性</h2>
+        <p>ノルウェーの銀行セクターの際立った特徴は、約120の貯蓄銀行が依然として重要な役割を果たしていることである。G10諸国の中で、貯蓄銀行がこれほど活発に機能している国はドイツ（Sparkassen）とノルウェーのみである。</p>
+
+        <p>ノルウェーの貯蓄銀行は、1823年の最初の設立以来、地域コミュニティに密着した経営を行ってきた。1988-93年の銀行危機では商業銀行が壊滅的打撃を受けたのに対し、貯蓄銀行の多くは比較的健全な経営を維持した。この経験が貯蓄銀行モデルの存続を正当化する結果となった。</p>
+
+        <h3>SpareBank 1アライアンス</h3>
+        <p>1996年に設立されたSpareBank 1アライアンスは、ノルウェーの独立系貯蓄銀行による戦略的提携である。参加行は独立した法的主体を維持しつつ、IT基盤、決済システム、商品開発、資産運用を共同で行う。主要メンバー4行（SR-Bank、SMN、Østlandet、Nord-Norge）の合計資産はNOK 900B+に達し、DNBに次ぐ第2のバンキング・グループとして機能している。</p>
+
+        <p>貯蓄銀行は伝統的に「所有者なき銀行」として運営されてきたが、2009年の法改正により「エクイティ証券」(egenkapitalbevis、ECC) の発行が可能となり、一部の貯蓄銀行はオスロ証券取引所に上場している。ECCは配当権を持つが議決権は制限されており、貯蓄銀行の「コミュニティ志向」と「資本市場アクセス」の両立を図る独自のガバナンス構造となっている。</p>
+      </section>
+
+      <!-- Banking Crisis 1988-93 -->
+      <section>
+        <h2>1988-93年銀行危機 — 銀行セクターへの影響</h2>
+        <p>1984-86年の金融自由化は、数十年にわたる信用統制からの急激な解放をもたらした。銀行は競争的に融資を拡大し、特に不動産向け融資が急増した。1986年の石油価格暴落をきっかけに不動産市場が崩壊し、1988年から3大商業銀行（DnC、Bergen Bank、Kreditkassen）が相次いで経営危機に陥った。</p>
+
+        <table class="data-table">
+          <thead>
+            <tr><th>銀行</th><th>危機の経緯</th><th>政府対応</th><th>結末</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>DnC / Bergen Bank</strong></td>
+              <td>不良債権急増、自己資本毀損</td>
+              <td>1991年政府が両行の合併を仲介、DnB設立。政府がDnB株式の過半数取得</td>
+              <td>政府は段階的に持分を売却、現在34%保有</td>
+            </tr>
+            <tr>
+              <td><strong>Kreditkassen</strong></td>
+              <td>最も深刻な損失、既存株式価値ゼロ</td>
+              <td>1991年完全国有化。株主は全損</td>
+              <td>2000年にMeritaNordbanken（→Nordea）に売却</td>
+            </tr>
+            <tr>
+              <td><strong>Fokus Bank</strong></td>
+              <td>経営危機、再建</td>
+              <td>政府支援による再建</td>
+              <td>後にDanske Bankに買収</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>この危機管理の特徴は、(1) 株主責任の徹底（既存株主がまず損失を吸収）、(2) 預金者保護の確保、(3) 銀行の継続的運営の維持、(4) スウェーデンのSecurumのようなバッドバンクを使用しなかったこと、にある。ノルウェーの手法はIMFにより「ベストプラクティス」と評価され、2008年のGFC後に多くの国で参照された。</p>
+      </section>
+
+      <!-- Payment System -->
+      <section>
+        <h2>決済システムとデジタル化</h2>
+        <p>ノルウェーはG10の中で最もキャッシュレス化が進んだ国の一つであり、現金使用率はわずか3-4%にまで低下している（2024年時点）。これはスウェーデン（同程度）と並んで世界最低水準である。</p>
+
+        <h3>主要な決済インフラ</h3>
+        <table class="data-table">
+          <thead>
+            <tr><th>システム</th><th>概要</th><th>取扱量</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>BankAxept</strong></td>
+              <td>ノルウェー国内のデビットカード決済ネットワーク（1991年開始）。国内店頭決済の60%+</td>
+              <td>年間20億件+</td>
+            </tr>
+            <tr>
+              <td><strong>Vipps</strong></td>
+              <td>DNB主導のモバイル決済アプリ（2015年開始）。P2P送金・店頭決済・請求書支払い。ユーザー430万人+（人口の80%+）</td>
+              <td>年間10億件+</td>
+            </tr>
+            <tr>
+              <td><strong>NBO</strong></td>
+              <td>Norges Bank決済システム (Norges Banks Oppgjørssystem)。銀行間大口決済のRTGS</td>
+              <td>日次NOK 250B+</td>
+            </tr>
+            <tr>
+              <td><strong>NICS</strong></td>
+              <td>Norwegian Interbank Clearing System。リテール決済のクリアリング</td>
+              <td>日次1,500万件+</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>Vippsは2022年にデンマークのMobilePay、フィンランドのPivoとの統合を試みたが、欧州委員会の競争法審査により断念。2024年現在、Vippsはノルウェー国内に特化したサービスとして運営されている。BankAxeptは国際ブランド（Visa/Mastercard）との「コ・バッジング」により、国内ではBankAxept、海外では国際ブランドとして機能するデュアルカードモデルを採用している。</p>
+      </section>
+
+      <!-- Housing Finance -->
+      <section>
+        <h2>住宅金融とカバードボンド</h2>
+        <p>ノルウェーの家計債務はGDP比約100%に達しており、その大部分が住宅ローンである。住宅ローンの約95%が変動金利型であることはG10の中でも突出した特徴であり、中央銀行の政策金利変更が家計の可処分所得に直接的かつ迅速に波及する。</p>
+
+        <p>住宅金融のリファイナンスはカバードボンド（obligasjoner med fortrinnsrett、OMF）市場を通じて行われる。OMF市場はNOK 1.5T+に達し、国債市場の約3倍の規模を持つ。主要な発行体はDNB Boligkreditt（DNBの住宅ローン専門子会社）とKommunalbanken（地方公共団体金融公庫、KBN）である。</p>
+
+        <p>OMF市場の急速な拡大は、ノルウェーの金融安定性にとって重要な論点である。Finanstilsynet（金融監督庁）は住宅ローンのLTV（担保評価額に対する融資比率）規制を段階的に強化し、2015年以降はLTV上限85%、オスロ市内では追加規制（2017年以降）を適用している。</p>
+      </section>
+
+      <!-- G10 Comparison -->
+      <section>
+        <h2>G10銀行セクター比較</h2>
+        <table class="data-table sortable">
+          <thead>
+            <tr>
+              <th>国</th>
+              <th>銀行資産/GDP</th>
+              <th>最大手銀行</th>
+              <th>集中度(上位5行)</th>
+              <th>国家所有</th>
+              <th>特徴</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="highlight-row">
+              <td>🇳🇴 ノルウェー</td>
+              <td>~220%</td>
+              <td>DNB</td>
+              <td>~65%</td>
+              <td>34%(DNB)</td>
+              <td>貯蓄銀行120行、OMFカバードボンド主導</td>
+            </tr>
+            <tr>
+              <td>🇺🇸 米国</td>
+              <td>~95%</td>
+              <td>JPMorgan Chase</td>
+              <td>~45%</td>
+              <td>なし</td>
+              <td>大手4行+数千の地方銀行</td>
+            </tr>
+            <tr>
+              <td>🇪🇺 ユーロ圏</td>
+              <td>~260%</td>
+              <td>BNP Paribas</td>
+              <td>~35%(独)</td>
+              <td>一部</td>
+              <td>国別に大きく異なる構造</td>
+            </tr>
+            <tr>
+              <td>🇯🇵 日本</td>
+              <td>~340%</td>
+              <td>MUFG</td>
+              <td>~50%</td>
+              <td>なし(ゆうちょ除く)</td>
+              <td>メガバンク3行体制</td>
+            </tr>
+            <tr>
+              <td>🇬🇧 英国</td>
+              <td>~350%</td>
+              <td>HSBC</td>
+              <td>~60%</td>
+              <td>NatWest一部</td>
+              <td>国際金融センター、グローバル銀行</td>
+            </tr>
+            <tr>
+              <td>🇨🇭 スイス</td>
+              <td>~480%</td>
+              <td>UBS(+CS統合)</td>
+              <td>~70%</td>
+              <td>カントン銀行</td>
+              <td>プライベートバンキング、CS危機2023</td>
+            </tr>
+            <tr>
+              <td>🇦🇺 豪州</td>
+              <td>~180%</td>
+              <td>CBA</td>
+              <td>~75%</td>
+              <td>なし</td>
+              <td>Big 4寡占、住宅ローン主導</td>
+            </tr>
+            <tr>
+              <td>🇳🇿 NZ</td>
+              <td>~170%</td>
+              <td>ANZ NZ</td>
+              <td>~90%</td>
+              <td>Kiwibank</td>
+              <td>豪州Big 4の子会社が支配</td>
+            </tr>
+            <tr>
+              <td>🇨🇦 カナダ</td>
+              <td>~280%</td>
+              <td>RBC</td>
+              <td>~80%</td>
+              <td>なし</td>
+              <td>Big 5寡占、GFC無傷</td>
+            </tr>
+            <tr>
+              <td>🇸🇪 スウェーデン</td>
+              <td>~400%</td>
+              <td>Nordea</td>
+              <td>~80%</td>
+              <td>なし</td>
+              <td>Big 4、バルト展開、キャッシュレス</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>ノルウェーの銀行セクターはGDP比で見ると中程度の規模であるが、DNBの一強体制と約120の貯蓄銀行の共存という独特の構造を持つ。政府の戦略的株式保有は、北欧諸国の中でもノルウェーに特徴的な要素であり、Equinor (67%)、Telenor (54%)、DNB (34%) など主要企業への国家関与が大きい。</p>
+      </section>
+
+      <!-- Sources -->
+      <footer class="sources">
+        <h3>出典・参考文献</h3>
+        <ol>
+          <li>Norges Bank, "The Norwegian Banking Crisis", Occasional Papers No. 33, 2004</li>
+          <li>Finanstilsynet, "Annual Report on Financial Institutions", finanstilsynet.no, 2024</li>
+          <li>DNB ASA, "Annual Reports 2020-2024", dnb.no</li>
+          <li>SpareBank 1 Alliance, "Annual Reports", sparebank1.no</li>
+          <li>Norges Bank, "Financial Infrastructure Reports", norges-bank.no</li>
+          <li>IMF, "Norway: Financial System Stability Assessment", 2020</li>
+          <li>BIS, "Payment, clearing and settlement systems in Norway", bis.org</li>
+          <li>Eitrheim, Ø., Klovland, J.T., Qvigstad, J.F., "Historical Monetary Statistics for Norway", Norges Bank, 2007</li>
+          <li>Moe, T.G., Solheim, J.A., & Vale, B., "The Norwegian Banking Crisis", Norges Bank, 2004</li>
+        </ol>
+        <p class="note">銀行資産・シェア等は概算値。タカ/ハト分類と同様、市場コンセンサスベースの定性的判断を含む。</p>
+      </footer>
+    </article>
+
+    <nav class="page-nav">
+      <a href="15_crises.html" class="prev">← 前: Financial Crises</a>
+      <a href="17_corporate.html" class="next">次: Corporate & Indices →</a>
+    </nav>
+  </main>
+
+  <script>
+    document.querySelectorAll('.sortable th').forEach(th => {
+      th.style.cursor = 'pointer';
+      th.addEventListener('click', () => {
+        const table = th.closest('table');
+        const idx = Array.from(th.parentNode.children).indexOf(th);
+        const rows = Array.from(table.querySelectorAll('tbody tr'));
+        const dir = th.asc = !th.asc ? 1 : -1;
+        rows.sort((a, b) => {
+          const av = a.children[idx]?.textContent.trim() ?? '';
+          const bv = b.children[idx]?.textContent.trim() ?? '';
+          const an = parseFloat(av.replace(/[^0-9.\-]/g, ''));
+          const bn = parseFloat(bv.replace(/[^0-9.\-]/g, ''));
+          if (!isNaN(an) && !isNaN(bn)) return (an - bn) * dir;
+          return av.localeCompare(bv, 'ja') * dir;
+        });
+        rows.forEach(r => table.querySelector('tbody').appendChild(r));
+      });
+    });
+  </script>
+</body>
+</html>

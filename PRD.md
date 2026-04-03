@@ -152,7 +152,7 @@ g10_textbook/
 - [x] Task 39: Norway pages 1-5 — Central Bank (Norges Bank、SWF)、Policy Rate、Fiscal Policy (石油基金)、Employment、Inflation
 - [x] Task 40: Norway pages 6-10 — Equity (OBX, Oslo Børs)、Early〜2020s
 - [x] Task 41: Norway pages 11-15 — Bond、Rates、Currency (NOK)、Crises
-- [ ] Task 42: Norway pages 16-20 — Banking、Corporate (Equinor, Statoil)、Regulation、Trade (石油・ガス)、Lessons
+- [x] Task 42: Norway pages 16-20 — Banking、Corporate (Equinor, Statoil)、Regulation、Trade (石油・ガス)、Lessons
 
 ### Phase 12: Summary & Integration
 - [ ] Task 43: G10 Summary Timeline (summary/g10_timeline.html) — N年×10カ国の大型テーブル（1900年代〜現在）。政策金利、株価指数、主要イベントを年ごとに横断比較。ソース付き。
