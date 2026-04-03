@@ -91,7 +91,7 @@ g10_textbook/
 ## Tasks
 
 ### Phase 1: Infrastructure
-- [ ] Task 1: Create shared CSS (assets/style.css) — Bloomberg-style dark theme, responsive tables, timeline components, navigation. Create HTML template (templates/base.html) with header, sidebar nav, footer.
+- [x] Task 1: Create shared CSS (assets/style.css) — Bloomberg-style dark theme, responsive tables, timeline components, navigation. Create HTML template (templates/base.html) with header, sidebar nav, footer.
 - [ ] Task 2: Create index.html — G10全体のトップページ。各国へのリンク、概要テーブル。
 
 ### Phase 2: United States (us/)

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{PAGE_TITLE}} | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+  <!-- Mobile Menu Toggle -->
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <!-- Sidebar Navigation -->
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+
+    <!-- Current Country Pages -->
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">{{COUNTRY_NAME}}</div>
+      <!-- Example page links — replace per country -->
+      <a href="01_central_bank.html" class="sidebar-link">01. Central Bank Timeline</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. Policy Rate History</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. Fiscal Policy</a>
+      <a href="04_employment.html" class="sidebar-link">04. Employment</a>
+      <a href="05_inflation.html" class="sidebar-link">05. Inflation</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. Equity Market Overview</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. Equity: Early History</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. Equity: Modern Era</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. Equity: 2000s-2010s</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. Equity: 2020s</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. Bond Market</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. Short-term Rates</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. Long-term Rates</a>
+      <a href="14_currency.html" class="sidebar-link">14. Currency</a>
+      <a href="15_crises.html" class="sidebar-link">15. Financial Crises</a>
+      <a href="16_banking.html" class="sidebar-link">16. Banking Sector</a>
+      <a href="17_corporate.html" class="sidebar-link">17. Corporate &amp; Indices</a>
+      <a href="18_regulation.html" class="sidebar-link">18. Regulatory Framework</a>
+      <a href="19_trade.html" class="sidebar-link">19. International Trade</a>
+      <a href="20_lessons.html" class="sidebar-link">20. Key Lessons</a>
+    </div>
+
+    <!-- Other Countries -->
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">Countries</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+    </div>
+
+    <!-- Home & Summary Links -->
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 Top Page</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10 Timeline</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">G10 Textbook</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">{{COUNTRY_NAME}}</a>
+        <span class="sep">/</span>
+        {{PAGE_SHORT_TITLE}}
+      </div>
+      <h1 class="page-title">{{PAGE_TITLE}}</h1>
+      <p class="page-subtitle">{{PAGE_SUBTITLE}}</p>
+    </header>
+
+    <article>
+      <!-- Page content goes here -->
+    </article>
+
+    <!-- Sources -->
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <!-- <li>Source Author/Institution, "Title", Year, URL</li> -->
+      </ol>
+    </footer>
+
+    <!-- Page Navigation -->
+    <nav class="page-nav">
+      <a href="{{PREV_PAGE}}" class="prev">{{PREV_TITLE}}</a>
+      <a href="{{NEXT_PAGE}}" class="next">{{NEXT_TITLE}}</a>
+    </nav>
+  </main>
+
+  <!-- Table Sort Script -->
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Sortable tables
+    document.querySelectorAll('th[data-sort]').forEach(function(th) {
+      th.addEventListener('click', function() {
+        var table = th.closest('table');
+        var tbody = table.querySelector('tbody');
+        var rows = Array.from(tbody.querySelectorAll('tr'));
+        var colIndex = Array.from(th.parentNode.children).indexOf(th);
+        var sortType = th.getAttribute('data-sort'); // 'string', 'number', 'date'
+        var isAsc = th.classList.contains('sort-asc');
+
+        // Reset other headers
+        table.querySelectorAll('th').forEach(function(h) {
+          h.classList.remove('sort-asc', 'sort-desc');
+        });
+
+        th.classList.add(isAsc ? 'sort-desc' : 'sort-asc');
+
+        rows.sort(function(a, b) {
+          var aVal = a.children[colIndex].textContent.trim();
+          var bVal = b.children[colIndex].textContent.trim();
+
+          if (sortType === 'number') {
+            aVal = parseFloat(aVal.replace(/[^0-9.\-]/g, '')) || 0;
+            bVal = parseFloat(bVal.replace(/[^0-9.\-]/g, '')) || 0;
+          } else if (sortType === 'date') {
+            aVal = new Date(aVal).getTime() || 0;
+            bVal = new Date(bVal).getTime() || 0;
+          } else {
+            aVal = aVal.toLowerCase();
+            bVal = bVal.toLowerCase();
+          }
+
+          if (aVal < bVal) return isAsc ? 1 : -1;
+          if (aVal > bVal) return isAsc ? -1 : 1;
+          return 0;
+        });
+
+        rows.forEach(function(row) { tbody.appendChild(row); });
+      });
+    });
+
+    // Mobile sidebar: close on link click
+    document.querySelectorAll('.sidebar-link').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.querySelector('.sidebar').classList.remove('open');
+      });
+    });
+
+    // Highlight active page in sidebar
+    var currentPage = window.location.pathname.split('/').pop();
+    document.querySelectorAll('.sidebar-link').forEach(function(link) {
+      if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active');
+      }
+    });
+
+    // Highlight active country chip
+    var pathParts = window.location.pathname.split('/');
+    var currentDir = pathParts[pathParts.length - 2];
+    document.querySelectorAll('.country-chip').forEach(function(chip) {
+      if (chip.getAttribute('href').includes('/' + currentDir + '/')) {
+        chip.classList.add('active');
+      }
+    });
+  });
+  </script>
+
+</body>
+</html>

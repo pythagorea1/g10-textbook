@@ -1,2 +1,4 @@
 # G10 Markets Historical Textbook — Progress Log
 # Format: [timestamp] Task N: description — status
+
+[2026-04-03 iter-2] Task 1: Created assets/style.css (587 lines, Bloomberg-style dark theme with responsive tables, timeline components, sortable table headers, stat cards, citation styles, mobile responsive) and templates/base.html (175 lines, full page template with sidebar nav, country chips, breadcrumb, table sort JS, mobile toggle) — DONE
