@@ -29,7 +29,7 @@ index.htmlは既に更新済み。各国ページの情報を最新化する。
 - [x] Task 9: norway/01_central_bank.html — Norges Bank総裁Ida Wolden Bache、理事会の確認・更新
 
 ### Phase 2: 政策金利ページ（02_policy_rate.html）
-- [ ] Task 10: japan/02_policy_rate.html — 2024年マイナス金利解除、YCC終了、2025年1月利上げ（0.5%）を反映
+- [x] Task 10: japan/02_policy_rate.html — 2024年マイナス金利解除、YCC終了、2025年1月利上げ（0.5%）を反映
 - [ ] Task 11: us/02_policy_rate.html — 2024-2025年の利下げサイクルを反映
 - [ ] Task 12: eurozone/02_policy_rate.html — ECB利下げサイクル（2024年6月開始）を反映
 - [ ] Task 13: uk/02_policy_rate.html — BOE利下げ動向を反映
