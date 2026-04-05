@@ -58,7 +58,7 @@ index.htmlは既に更新済み。各国ページの情報を最新化する。
 - [x] Task 28: switzerland/16_banking.htmlを確認し、Credit Suisse破綻→UBS統合（2023年）が適切に記述されているか確認
 
 ### Phase 7: 最終チェック
-- [ ] Task 29: 全200ページのHTMLリンク切れをチェック（内部リンクのみ）。壊れたリンクがあれば修正
+- [x] Task 29: 全200ページのHTMLリンク切れをチェック（内部リンクのみ）。壊れたリンクがあれば修正
 - [ ] Task 30: progress.txtに最終サマリーを記載。全体の修正件数・主要変更点をまとめる
 
 ## Constraints
