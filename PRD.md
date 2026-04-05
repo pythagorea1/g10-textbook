@@ -32,7 +32,7 @@ index.htmlは既に更新済み。各国ページの情報を最新化する。
 - [x] Task 10: japan/02_policy_rate.html — 2024年マイナス金利解除、YCC終了、2025年1月利上げ（0.5%）を反映
 - [x] Task 11: us/02_policy_rate.html — 2024-2025年の利下げサイクルを反映
 - [x] Task 12: eurozone/02_policy_rate.html — ECB利下げサイクル（2024年6月開始）を反映
-- [ ] Task 13: uk/02_policy_rate.html — BOE利下げ動向を反映
+- [x] Task 13: uk/02_policy_rate.html — BOE利下げ動向を反映
 - [ ] Task 14: switzerland/02_policy_rate.html — SNB利下げ（2024年3月開始、先進国初）を反映
 - [ ] Task 15: australia/02_policy_rate.html — RBA金利動向を反映
 - [ ] Task 16: newzealand/02_policy_rate.html — RBNZ利下げサイクルを反映
