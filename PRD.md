@@ -55,7 +55,7 @@ index.htmlは既に更新済み。各国ページの情報を最新化する。
 
 ### Phase 6: 危機・銀行・規制ページ（15-18）確認
 - [x] Task 27: 全10カ国の15_crises.htmlをスキャンし、2023年SVB/CS破綻が反映されているか確認
-- [ ] Task 28: switzerland/16_banking.htmlを確認し、Credit Suisse破綻→UBS統合（2023年）が適切に記述されているか確認
+- [x] Task 28: switzerland/16_banking.htmlを確認し、Credit Suisse破綻→UBS統合（2023年）が適切に記述されているか確認
 
 ### Phase 7: 最終チェック
 - [ ] Task 29: 全200ページのHTMLリンク切れをチェック（内部リンクのみ）。壊れたリンクがあれば修正
