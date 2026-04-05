@@ -21,7 +21,7 @@ index.htmlは既に更新済み。各国ページの情報を最新化する。
 - [x] Task 1: us/01_central_bank.html — Fed議長・FOMC委員の情報を確認し、古い情報があれば修正。Powell任期（2026年5月）に関する注記追加。政策金利の最新推移を反映
 - [x] Task 2: eurozone/01_central_bank.html — ECB総裁・理事会メンバーの確認。Lagarde任期、最新政策（利下げサイクル等）を反映
 - [x] Task 3: uk/01_central_bank.html — BOE総裁Bailey・MPC委員の確認。政策金利推移の最新化
-- [ ] Task 4: switzerland/01_central_bank.html — SNB議長をMartin Schlegelに更新。Thomas Jordan退任（2024年9月）を反映。理事会メンバー更新
+- [x] Task 4: switzerland/01_central_bank.html — SNB議長をMartin Schlegelに更新。Thomas Jordan退任（2024年9月）を反映。理事会メンバー更新
 - [ ] Task 5: australia/01_central_bank.html — RBA総裁Michele Bullock、理事会メンバーの確認。2023年RBA改革（デュアルボード制）の反映
 - [ ] Task 6: newzealand/01_central_bank.html — RBNZ総裁をAnna Bremanに更新。Adrian Orr辞任（2025年3月）→Christian Hawkesby暫定→Breman就任（2025年12月）の経緯を追加
 - [ ] Task 7: canada/01_central_bank.html — BOC総裁Tiff Macklem、政策金利推移の確認・更新
