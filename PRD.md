@@ -26,7 +26,7 @@ index.htmlは既に更新済み。各国ページの情報を最新化する。
 - [x] Task 6: newzealand/01_central_bank.html — RBNZ総裁をAnna Bremanに更新。Adrian Orr辞任（2025年3月）→Christian Hawkesby暫定→Breman就任（2025年12月）の経緯を追加
 - [x] Task 7: canada/01_central_bank.html — BOC総裁Tiff Macklem、政策金利推移の確認・更新
 - [x] Task 8: sweden/01_central_bank.html — Riksbank総裁Erik Thedéen、理事会メンバーの確認。Breman RBNZ移籍に伴う変更
-- [ ] Task 9: norway/01_central_bank.html — Norges Bank総裁Ida Wolden Bache、理事会の確認・更新
+- [x] Task 9: norway/01_central_bank.html — Norges Bank総裁Ida Wolden Bache、理事会の確認・更新
 
 ### Phase 2: 政策金利ページ（02_policy_rate.html）
 - [ ] Task 10: japan/02_policy_rate.html — 2024年マイナス金利解除、YCC終了、2025年1月利上げ（0.5%）を反映
