@@ -37,7 +37,7 @@ index.htmlは既に更新済み。各国ページの情報を最新化する。
 - [x] Task 15: australia/02_policy_rate.html — RBA金利動向を反映
 - [x] Task 16: newzealand/02_policy_rate.html — RBNZ利下げサイクルを反映
 - [x] Task 17: canada/02_policy_rate.html — BOC利下げ（2024年6月開始）を反映
-- [ ] Task 18: sweden/02_policy_rate.html — Riksbank利下げを反映
+- [x] Task 18: sweden/02_policy_rate.html — Riksbank利下げを反映
 - [ ] Task 19: norway/02_policy_rate.html — Norges Bank金利動向を反映
 
 ### Phase 3: マクロ経済ページ（03-05）確認
