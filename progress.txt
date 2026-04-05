@@ -494,3 +494,18 @@
     - 利回り年表に2025行追加: 10Y 0.35%、政策金利0.25%安定、CHF安全資産需要
   - Norway (norway/11_bond_market.html):
     - 変更なし（利回り年表なし、市場構造中心のページで2024年データが最新）
+
+[2026-04-06] Task 27: 全10カ国の15_crises.htmlスキャン（SVB/CS 2023年破綻の反映確認）— COMPLETED
+  スキャン結果:
+  - US (us/15_crises.html): SVBは概要テーブルに1行のみ → 専用セクション「2023年地方銀行危機」を新規追加
+    - SVB破綻タイムライン（3/8〜5/1）を8行テーブルで記載
+    - Signature Bank、First Republic Bank破綻を含む
+    - 根本原因（金利リスク集中、無保険預金93%、デジタル・バンクラン）を解説
+    - 政策対応（BTFP、預金全額保護）と教訓（SNS時代のバンクラン加速、ドッド・フランク緩和の影響）
+    - 出典3件追加（FDIC, Fed OIG, Fed Review）
+  - Switzerland (switzerland/15_crises.html): 既にCredit Suisse崩壊の包括的セクションあり — 変更不要
+    - 2023年3月19日のUBS買収、AT1債全額ワイプアウト、崩壊タイムライン等を詳細に記述済み
+  - Sweden (sweden/15_crises.html): 2023年SBB不動産危機を既に記述済み — 変更不要
+  - Norway (norway/15_crises.html): 国際比較テーブルにCS 2023参照あり — 変更不要
+  - UK (uk/15_crises.html): 最新は2022年LDI危機。SVB/CSは英国の国内危機ではないため追加不要
+  - 他5カ国（JP, EU, AU, NZ, CA）: SVB/CS破綻は当該国の国内危機に該当せず、追加不要
