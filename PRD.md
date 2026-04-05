@@ -41,7 +41,7 @@ index.htmlは既に更新済み。各国ページの情報を最新化する。
 - [x] Task 19: norway/02_policy_rate.html — Norges Bank金利動向を反映
 
 ### Phase 3: マクロ経済ページ（03-05）確認
-- [ ] Task 20: 全10カ国の03_fiscal_policy.htmlをスキャンし、明らかに古い情報や誤りがあれば修正（例: 米国のIRA/CHIPS Act未反映、日本の財政出動等）
+- [x] Task 20: 全10カ国の03_fiscal_policy.htmlをスキャンし、明らかに古い情報や誤りがあれば修正（例: 米国のIRA/CHIPS Act未反映、日本の財政出動等）
 - [ ] Task 21: 全10カ国の04_employment.htmlをスキャンし、コロナ後の労働市場回復・最新トレンドが反映されているか確認
 - [ ] Task 22: 全10カ国の05_inflation.htmlをスキャンし、2022-2024年のインフレ急騰・鎮静化が適切に記述されているか確認
 
