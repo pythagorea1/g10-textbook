@@ -12,7 +12,7 @@
 
 - [x] Task 1: assets/charts.js を修正。注釈ラベルの衝突回避ロジックを追加：(a) ラベルを上下交互に配置（above/below）、(b) X座標が近接する場合は縦に積み上げる、(c) リーダー線を追加してマーカー→ラベルを結ぶ、(d) 必要なら短縮表記（例: "Black Monday" だけ）
 - [x] Task 2: assets/style.css の .chart-annotation スタイルを更新。背景にダークな半透明矩形（rect）を入れて文字を読みやすくする。font-sizeは10px固定。.chart-annotation-bg, .chart-annotation-line を追加
-- [ ] Task 3: us/02_policy_rate.html — 既存チャートを再生成。注釈密度を下げる（重要イベント6個に絞る）+ 上下交互配置を適用。視覚確認のためHTMLを再読込してSVG構造を検証
+- [x] Task 3: us/02_policy_rate.html — 既存チャートを再生成。注釈密度を下げる（重要イベント6個に絞る）+ 上下交互配置を適用。視覚確認のためHTMLを再読込してSVG構造を検証
 - [ ] Task 4: us/06_equity_overview.html, us/13_long_rates.html, us/15_crises.html を再生成（注釈整理）
 - [ ] Task 5: japan/02_policy_rate.html, japan/06_equity_overview.html, japan/13_long_rates.html, japan/14_currency.html を再生成（注釈整理）
 - [ ] Task 6: 残りの既存チャートページ（eurozone, uk, switzerland, australia, newzealand, canada, sweden, norway の 02/06/13/14/15）を一括スキャンし、注釈密度が高いものだけリトライ。Glob+Grepで `chart-annotation` 数が10以上のファイルを抽出

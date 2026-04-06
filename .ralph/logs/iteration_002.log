@@ -1,6 +1,6 @@
-=== Iteration 2 === 2026-04-06 23:22:51 ===
+=== Iteration 2 === 2026-04-07 07:36:37 ===
 Exit code: 0
-Duration: 111s
+Duration: 39s
 
-Task 2 complete. Created `assets/charts.js` with 5 reusable vanilla-JS SVG chart renderers (annotated line, bar, event timeline, dual-axis, gantt). 29 tasks remaining.
+Task 2 complete. Added `.chart-annotation-bg`, `.chart-annotation-line` styles and updated `.chart-annotation text` to 10px with dark stroke paint-order outline for legibility against chart backgrounds.
 

@@ -1,6 +1,6 @@
-=== Iteration 1 === 2026-04-06 23:21:39 ===
+=== Iteration 1 === 2026-04-07 07:35:39 ===
 Exit code: 0
-Duration: 67s
+Duration: 53s
 
-Task 1 complete. Added Chart Components CSS section to assets/style.css and committed.
+Task 1 complete. charts.js now alternates labels above/below, stacks horizontally-close labels, draws leader lines, adds dark bg rects, trims to 6 events / 18 chars.
 

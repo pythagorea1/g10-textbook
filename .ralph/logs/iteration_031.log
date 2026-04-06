@@ -1,14 +1,8 @@
-=== Iteration 31 === 2026-04-03 23:53:53 ===
+=== Iteration 31 === 2026-04-07 00:08:32 ===
 Exit code: 0
-Duration: 1289s
+Duration: 90s
 
-Task 31 complete. Created Canada pages 1-5 (1,727 lines total):
+Task 31 complete: charts.js script tag added to all 200 country HTML pages, PRD updated, committed.
 
-- **01_central_bank.html** — BOC 1934年設立、Governing Council 6名コンセンサス型、歴代総裁10名全員タカ/ハト分類、5つの政策フレームワーク時代（M1マネタリズム→IT 1991 G7初→QE 2020初導入）、38エントリー年表
-- **02_policy_rate.html** — 21.03%→0.25%、8つの金利サイクル（カーニー "Go Early Go Big"、G7初利下げ2024）、BOC-Fed金利差3時代分析
-- **03_fiscal_policy.html** — 連邦主義構造、マーティン財政再建（68.4%→28.3%、11年連続黒字）、COVID C$3,540億
-- **04_employment.html** — 移民年100万人超、カナダ-米国失業率ギャップ分析、「生産性は緊急事態」
-- **05_inflation.html** — IT 30年間平均1.9%の成功、COVID 8.1%ショック、住宅MIC逆説問題
-
-Progress: 31/44 tasks complete, 13 remaining.
+EXIT_SIGNAL: COMPLETE
 
