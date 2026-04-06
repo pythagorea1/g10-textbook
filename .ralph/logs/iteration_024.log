@@ -1,14 +1,6 @@
-=== Iteration 24 === 2026-04-05 23:49:56 ===
+=== Iteration 24 === 2026-04-06 23:55:28 ===
 Exit code: 0
-Duration: 285s
+Duration: 58s
 
-Task 24 completed. Summary:
-
-**Scanned all 10 countries' `06_equity_overview.html`** and updated 3 files with missing historical milestones:
-
-- **Japan**: Added Nikkei 40,000 breakthrough (March 2024), 42,426 all-time high (July 2024), and Aug 5 crash (-4,451 pts / -12.4%, worst single-day drop ever surpassing 1987 Black Monday)
-- **Eurozone**: Added 2025 row to market cap table (DAX 25,420, +23% year), noted defense spending/ECB rate cuts as drivers
-- **UK**: Added 2025 milestone (FTSE 100 broke 9,000, approached 10,000, +21% year — first time outperforming S&P 500)
-
-The other 7 countries (US, CH, AU, NZ, CA, SE, NO) had 2024 year-end data already reflected and no critical gaps in the overview pages. 6 remaining tasks in PRD.md.
+Task 24 complete. BOC policy rate chart (1975-2026) with 9 annotations added.
 

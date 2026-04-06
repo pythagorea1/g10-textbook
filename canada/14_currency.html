@@ -140,6 +140,49 @@
       <!-- CAD/USD Historical Table -->
       <section class="content-section">
         <h2>CAD/USD為替レート推移</h2>
+        <figure class="chart-figure">
+          <figcaption class="chart-title">USDCAD 長期チャート (1970-2026) — ペトロカレンシーと原油相関</figcaption>
+          <svg class="svg-chart" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet">
+            <g class="chart-grid">
+              <line x1="60" y1="50" x2="60" y2="360" stroke="rgba(255,255,255,0.15)"/>
+              <line x1="60" y1="360" x2="780" y2="360" stroke="rgba(255,255,255,0.15)"/>
+              <line x1="60" y1="50" x2="780" y2="50" stroke="rgba(255,255,255,0.05)"/>
+              <line x1="60" y1="138" x2="780" y2="138" stroke="rgba(255,255,255,0.05)"/>
+              <line x1="60" y1="227" x2="780" y2="227" stroke="rgba(255,255,255,0.05)"/>
+              <line x1="60" y1="316" x2="780" y2="316" stroke="rgba(255,255,255,0.05)"/>
+            </g>
+            <g class="chart-axis" fill="rgba(255,255,255,0.6)" font-size="10">
+              <text x="55" y="55" text-anchor="end">1.65</text>
+              <text x="55" y="143" text-anchor="end">1.45</text>
+              <text x="55" y="232" text-anchor="end">1.25</text>
+              <text x="55" y="321" text-anchor="end">1.05</text>
+              <text x="60" y="378">1970</text>
+              <text x="252" y="378">1985</text>
+              <text x="471" y="378">2002</text>
+              <text x="651" y="378">2016</text>
+              <text x="780" y="378" text-anchor="end">2026</text>
+            </g>
+            <path class="chart-line" d="M 60,333 L 137,333 L 189,254 L 253,161 L 317,267 L 381,178 L 420,103 L 471,81 L 536,342 L 549,240 L 587,329 L 626,267 L 651,187 L 703,218 L 729,178 L 754,143 L 780,161" fill="none" stroke="#00d4aa" stroke-width="2"/>
+            <g class="chart-annotation" font-size="11">
+              <circle cx="253" cy="161" r="5" fill="#ff6b6b"/>
+              <line x1="253" y1="161" x2="253" y2="125" stroke="#ff6b6b" stroke-width="1"/>
+              <text x="253" y="120" text-anchor="middle" fill="#ff6b6b">1985 プラザ合意 1.40</text>
+              <circle cx="471" cy="81" r="5" fill="#ff6b6b"/>
+              <line x1="471" y1="81" x2="471" y2="65" stroke="#ff6b6b" stroke-width="1"/>
+              <text x="471" y="60" text-anchor="middle" fill="#ff6b6b">2002 史上最高 1.61</text>
+              <circle cx="536" cy="342" r="5" fill="#4ecdc4"/>
+              <line x1="536" y1="342" x2="536" y2="385" stroke="#4ecdc4" stroke-width="1"/>
+              <text x="536" y="397" text-anchor="middle" fill="#4ecdc4">2007 パリティ (原油$147)</text>
+              <circle cx="651" cy="187" r="5" fill="#ff6b6b"/>
+              <line x1="651" y1="187" x2="651" y2="155" stroke="#ff6b6b" stroke-width="1"/>
+              <text x="651" y="150" text-anchor="middle" fill="#ff6b6b">2016 原油暴落 1.46</text>
+              <circle cx="754" cy="143" r="5" fill="#ff6b6b"/>
+              <line x1="754" y1="143" x2="754" y2="105" stroke="#ff6b6b" stroke-width="1"/>
+              <text x="754" y="100" text-anchor="middle" fill="#ff6b6b">2024 BOC-Fed乖離 1.44</text>
+            </g>
+          </svg>
+          <p class="chart-caption">出典: BOC, FRED. CADは原油価格と強く逆相関 (USDCADは逆向き)。2002年以降の資源スーパーサイクルでパリティ達成、2014年以降の原油下落でCAD安基調。</p>
+        </figure>
         <table class="data-table sortable">
           <thead>
             <tr>

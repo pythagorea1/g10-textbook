@@ -60,7 +60,7 @@ G10通貨国の金融市場教科書（200ページ超）に、テキスト中�
 ### Phase 7: NZ・カナダ
 - [x] Task 23: newzealand/02_policy_rate.html — RBNZ OCR推移 + 1990年世界初IT導入、最近の利上げ・利下げの注釈
 - [x] Task 24: canada/02_policy_rate.html — BOC Overnight Rate推移 + 2022利上げ、2024年6月先進国一番乗り利下げの注釈
-- [ ] Task 25: canada/14_currency.html — USDCAD長期 + 原油相関の注釈
+- [x] Task 25: canada/14_currency.html — USDCAD長期 + 原油相関の注釈
 
 ### Phase 8: 北欧
 - [ ] Task 26: sweden/02_policy_rate.html — Riksbank Repo Rate推移 + マイナス金利の先駆者(2015)、2024利下げの注釈
