@@ -23,7 +23,7 @@ G10通貨国の金融市場教科書（200ページ超）に、テキスト中�
 
 ### Phase 0: 共通基盤（必須・最初に実施）
 - [x] Task 1: assets/style.css に「Chart Components」セクションを追加。.svg-chart, .chart-title, .chart-axis, .chart-line, .chart-area, .chart-marker, .chart-annotation, .chart-grid, .chart-legend のスタイルを定義（ダークテーマに合わせた配色）
-- [ ] Task 2: assets/charts.js を新規作成。再利用可能なJS関数群: renderAnnotatedLineChart(containerId, data, events), renderBarChart, renderEventTimeline 等。SVGをDOMに動的生成する純Vanilla JS。各ページから読み込む
+- [x] Task 2: assets/charts.js を新規作成。再利用可能なJS関数群: renderAnnotatedLineChart(containerId, data, events), renderBarChart, renderEventTimeline 等。SVGをDOMに動的生成する純Vanilla JS。各ページから読み込む
 
 ### Phase 1: 米国（US）— 最も重要な国
 - [ ] Task 3: us/02_policy_rate.html — Fed Funds Rate長期推移チャート（1955-2026）+ Volcker利上げ・GFC利下げ・QE開始・2022利上げ・2024利下げ等の注釈

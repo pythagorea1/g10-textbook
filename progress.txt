@@ -7,3 +7,4 @@
 # Previous loop completed content review/update tasks (Tasks 1-30 of old PRD).
 # This new loop focuses on visualization improvements.
 [2026-04-06T23:22:43+09:00] Task 1: Added Chart Components CSS section to assets/style.css (.svg-chart, .chart-title, .chart-axis, .chart-line, .chart-area, .chart-marker, .chart-annotation, .chart-grid, .chart-legend) with Bloomberg dark theme styling and print fallback.
+[2026-04-06T23:24:40+09:00] Task 2: created assets/charts.js with renderAnnotatedLineChart, renderBarChart, renderEventTimeline, renderDualAxisChart, renderGanttChart (pure vanilla JS, no external deps)
