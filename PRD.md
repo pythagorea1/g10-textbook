@@ -53,7 +53,7 @@ G10通貨国の金融市場教科書（200ページ超）に、テキスト中�
 - [x] Task 19: switzerland/15_crises.html — UBS/CS危機タイムライン（2008 UBS救済、2023 CS破綻→UBS統合）
 
 ### Phase 6: 豪州（AU）
-- [ ] Task 20: australia/02_policy_rate.html — RBA Cash Rate推移 + 2010年代低金利、コロナ、2022利上げサイクルの注釈
+- [x] Task 20: australia/02_policy_rate.html — RBA Cash Rate推移 + 2010年代低金利、コロナ、2022利上げサイクルの注釈
 - [ ] Task 21: australia/06_equity_overview.html — ASX 200長期チャート + 資源ブーム、GFC、COVID、最近のレンジ相場の注釈
 - [ ] Task 22: australia/14_currency.html — AUDUSD長期チャート + 資源スーパーサイクル(2011 1.10超)、コモディティ相関の注釈
 

@@ -1,18 +1,6 @@
-=== Iteration 18 === 2026-04-05 23:17:39 ===
+=== Iteration 18 === 2026-04-06 23:47:19 ===
 Exit code: 0
-Duration: 209s
+Duration: 67s
 
-**Task 18 完了。**
-
-`sweden/02_policy_rate.html` を2026年4月時点の最新情報に更新:
-
-- **現在のレポレート**: 2.50% → **1.75%** に更新
-- **利下げサイクル全容を反映**: 2024年5月〜2025年9月、計8回・累計-225bp（4.00%→1.75%）
-  - 2024年: 5回（5月、8月、9月、11月[50bp]、12月）
-  - 2025年: 3回（1月→2.25%、6月→2.00%、9月→1.75%）
-- **2026年据え置き**: 1月・3月連続据え置き、レート・パス見通し横ばい
-- **政策金利テーブル**: 2025年・2026年の行を追加
-- **G10比較テーブル**: 2025年末の行を追加（北欧2カ国の金融政策乖離を解説）
-
-残タスク: 12件（Task 19〜30）
+Task 18 complete. Added an annotated EUR/CHF long-term chart (1999-2026) to switzerland/14_currency.html highlighting the 2011 1.20 floor introduction and 2015 Francogeddon shock.
 
