@@ -71,3 +71,4 @@ Tue Apr  7 08:07:32     2026 Task 20: added eurozone employment + HICP charts
 [Tue Apr  7 08:19:10     2026] Task 25: SMI charts added to switzerland 06/09/10
 Tue Apr  7 08:20:44     2026 Task 26: AU fiscal/employment/inflation charts
 [Tue Apr  7 08:22:40     2026] Task 27: AU 09/10 ASX charts + AU 13 10Y yield chart
+[Tue Apr  7 08:24:44     2026] Task 28: NZ fiscal/employment/inflation charts

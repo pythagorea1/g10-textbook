@@ -51,7 +51,7 @@
 - [x] Task 27: australia/09_equity_recent.html, australia/10_equity_current.html, australia/13_long_rates.html
 
 ## Phase 7: NZ — 漏れ埋め
-- [ ] Task 28: newzealand/03_fiscal_policy.html, newzealand/04_employment.html, newzealand/05_inflation.html
+- [x] Task 28: newzealand/03_fiscal_policy.html, newzealand/04_employment.html, newzealand/05_inflation.html
 - [ ] Task 29: newzealand/06_equity_overview.html, newzealand/14_currency.html
 
 ## Phase 8: カナダ — 漏れ埋め
