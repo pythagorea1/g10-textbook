@@ -1,6 +1,6 @@
-=== Iteration 8 === 2026-04-06 23:32:25 ===
+=== Iteration 8 === 2026-04-07 07:49:33 ===
 Exit code: 0
-Duration: 94s
+Duration: 76s
 
-Task 8 complete. Added Nikkei 225 long-term log-scale chart (1970-2026) to japan/06_equity_overview.html with annotations for the 1989 bubble peak (¥38,915), 2003/2009 lows, Abenomics rally, COVID, and 2024 all-time-high breakthrough.
+Task 8 complete: added US unemployment chart (1948-2026) to us/04_employment.html with 6 alternating annotations.
 
