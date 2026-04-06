@@ -43,7 +43,7 @@
 - [x] Task 23: uk/09_equity_recent.html, uk/10_equity_current.html — FTSE100 期間別
 
 ## Phase 5: スイス（CH）— 漏れ埋め
-- [ ] Task 24: switzerland/03_fiscal_policy.html, switzerland/04_employment.html, switzerland/05_inflation.html
+- [x] Task 24: switzerland/03_fiscal_policy.html, switzerland/04_employment.html, switzerland/05_inflation.html
 - [ ] Task 25: switzerland/06_equity_overview.html, switzerland/09_equity_recent.html, switzerland/10_equity_current.html — SMI チャート
 
 ## Phase 6: 豪州（AU）— 漏れ埋め
