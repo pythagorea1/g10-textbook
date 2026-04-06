@@ -15,7 +15,7 @@
 - [x] Task 3: us/02_policy_rate.html — 既存チャートを再生成。注釈密度を下げる（重要イベント6個に絞る）+ 上下交互配置を適用。視覚確認のためHTMLを再読込してSVG構造を検証
 - [x] Task 4: us/06_equity_overview.html, us/13_long_rates.html, us/15_crises.html を再生成（注釈整理）
 - [x] Task 5: japan/02_policy_rate.html, japan/06_equity_overview.html, japan/13_long_rates.html, japan/14_currency.html を再生成（注釈整理）
-- [ ] Task 6: 残りの既存チャートページ（eurozone, uk, switzerland, australia, newzealand, canada, sweden, norway の 02/06/13/14/15）を一括スキャンし、注釈密度が高いものだけリトライ。Glob+Grepで `chart-annotation` 数が10以上のファイルを抽出
+- [x] Task 6: 残りの既存チャートページ（eurozone, uk, switzerland, australia, newzealand, canada, sweden, norway の 02/06/13/14/15）を一括スキャンし、注釈密度が高いものだけリトライ。Glob+Grepで `chart-annotation` 数が10以上のファイルを抽出
 
 ## Phase 1: 米国（US）— 漏れ埋め
 - [ ] Task 7: us/03_fiscal_policy.html — 債務/GDP比 推移チャート（1940-2026, %）+ 注釈（WWII、Reagan減税、IRA/CHIPS等）

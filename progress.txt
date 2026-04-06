@@ -49,3 +49,4 @@ Tue Apr  7 00:09:58     2026: Task 31 - added charts.js script tag to all 200 co
 
 [2026-04-07T07:42:01+09:00] Task 4: regenerated us/06_equity_overview + us/13_long_rates annotations with alt top/bottom rows + bg rects (viewBox 0 0 800 420). us/15_crises is a vertical timeline with 60px row spacing - already non-overlapping, no changes needed.
 [2026-04-06T22:45:46Z] Task 5: regenerated japan/02_policy_rate, 06_equity_overview, 13_long_rates, 14_currency annotation blocks. 6-or-fewer events alternating above/below with .chart-annotation-bg/-line. Standardized font-size=10.
+[2026-04-07 iter7] Task 6: scanned country 02/06/13/14/15 charts. Found uk/02_policy_rate.html & norway/02_policy_rate.html with 10 annotations each. Reduced both to 6 key markers with bg rects + alternating above/below placement. Other files <=8 acceptable.
