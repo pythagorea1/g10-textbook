@@ -93,6 +93,66 @@
         </div>
       </div>
 
+      <!-- S&P 500 Long-term Annotated Chart -->
+      <figure class="chart-figure">
+        <figcaption class="chart-title">S&amp;P 500 Long-term Chart (1950-2026, Log Scale)</figcaption>
+        <svg class="svg-chart" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet" role="img" aria-label="S&amp;P 500 long-term log chart">
+          <g class="chart-grid" stroke="rgba(255,255,255,0.06)" stroke-width="1">
+            <line x1="60" y1="50" x2="60" y2="360"/>
+            <line x1="60" y1="360" x2="780" y2="360"/>
+            <line x1="60" y1="325" x2="780" y2="325"/>
+            <line x1="60" y1="264" x2="780" y2="264"/>
+            <line x1="60" y1="209" x2="780" y2="209"/>
+            <line x1="60" y1="148" x2="780" y2="148"/>
+            <line x1="60" y1="93" x2="780" y2="93"/>
+          </g>
+          <g class="chart-axis" fill="rgba(255,255,255,0.55)" font-size="10" font-family="system-ui,sans-serif">
+            <text x="55" y="328" text-anchor="end">30</text>
+            <text x="55" y="267" text-anchor="end">100</text>
+            <text x="55" y="212" text-anchor="end">300</text>
+            <text x="55" y="151" text-anchor="end">1000</text>
+            <text x="55" y="96" text-anchor="end">3000</text>
+            <text x="60" y="378">1950</text>
+            <text x="155" y="378" text-anchor="middle">1960</text>
+            <text x="250" y="378" text-anchor="middle">1970</text>
+            <text x="344" y="378" text-anchor="middle">1980</text>
+            <text x="439" y="378" text-anchor="middle">1990</text>
+            <text x="534" y="378" text-anchor="middle">2000</text>
+            <text x="628" y="378" text-anchor="middle">2010</text>
+            <text x="723" y="378" text-anchor="middle">2020</text>
+            <text x="780" y="378" text-anchor="end">2026</text>
+          </g>
+          <path class="chart-line" fill="none" stroke="#00d4aa" stroke-width="2" stroke-linejoin="round"
+                d="M 60,354 L 155,292 L 250,270 L 344,259 L 411,203 L 414,220 L 439,204 L 534,127 L 560,161 L 607,126 L 618,168 L 657,117 L 723,108 L 742,84 L 761,59 L 780,57"/>
+          <g class="chart-annotation" font-family="system-ui,sans-serif" font-size="11">
+            <circle cx="411" cy="203" r="4" fill="#ff6b6b"/>
+            <line x1="411" y1="203" x2="411" y2="178" stroke="#ff6b6b" stroke-width="1"/>
+            <text x="411" y="173" text-anchor="middle" fill="#ff6b6b">1987-10 ブラックマンデー</text>
+
+            <circle cx="534" cy="127" r="4" fill="#ff6b6b"/>
+            <line x1="534" y1="127" x2="534" y2="102" stroke="#ff6b6b" stroke-width="1"/>
+            <text x="534" y="97" text-anchor="middle" fill="#ff6b6b">2000-03 ドットコムピーク</text>
+
+            <circle cx="607" cy="126" r="4" fill="#ff6b6b"/>
+            <line x1="607" y1="126" x2="607" y2="78" stroke="#ff6b6b" stroke-width="1"/>
+            <text x="607" y="73" text-anchor="middle" fill="#ff6b6b">2007-10 GFC前ピーク</text>
+
+            <circle cx="618" cy="168" r="4" fill="#4ecdc4"/>
+            <line x1="618" y1="168" x2="640" y2="195" stroke="#4ecdc4" stroke-width="1"/>
+            <text x="643" y="198" fill="#4ecdc4">2009-03 底値 666</text>
+
+            <circle cx="723" cy="108" r="4" fill="#4ecdc4"/>
+            <line x1="723" y1="108" x2="700" y2="135" stroke="#4ecdc4" stroke-width="1"/>
+            <text x="697" y="138" text-anchor="end" fill="#4ecdc4">2020-03 COVID底</text>
+
+            <circle cx="761" cy="59" r="4" fill="#00d4aa"/>
+            <line x1="761" y1="59" x2="761" y2="40" stroke="#00d4aa" stroke-width="1"/>
+            <text x="775" y="44" text-anchor="end" fill="#00d4aa">2024- AI相場最高値</text>
+          </g>
+        </svg>
+        <p class="chart-caption">出典: S&amp;P Dow Jones Indices, FRED. 月末値ベース・対数軸。主要転換点を注釈表示。</p>
+      </figure>
+
       <!-- Section 1: Market Structure -->
       <section>
         <h2>市場構造と主要取引所</h2>
