@@ -58,7 +58,7 @@ G10通貨国の金融市場教科書（200ページ超）に、テキスト中�
 - [x] Task 22: australia/14_currency.html — AUDUSD長期チャート + 資源スーパーサイクル(2011 1.10超)、コモディティ相関の注釈
 
 ### Phase 7: NZ・カナダ
-- [ ] Task 23: newzealand/02_policy_rate.html — RBNZ OCR推移 + 1990年世界初IT導入、最近の利上げ・利下げの注釈
+- [x] Task 23: newzealand/02_policy_rate.html — RBNZ OCR推移 + 1990年世界初IT導入、最近の利上げ・利下げの注釈
 - [ ] Task 24: canada/02_policy_rate.html — BOC Overnight Rate推移 + 2022利上げ、2024年6月先進国一番乗り利下げの注釈
 - [ ] Task 25: canada/14_currency.html — USDCAD長期 + 原油相関の注釈
 
