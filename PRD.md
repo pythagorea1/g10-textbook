@@ -39,7 +39,7 @@
 - [x] Task 21: eurozone/09_equity_recent.html, eurozone/10_equity_current.html — Stoxx 50 2000-2019, 2020-2026
 
 ## Phase 4: 英国（UK）— 漏れ埋め
-- [ ] Task 22: uk/03_fiscal_policy.html, uk/04_employment.html, uk/05_inflation.html
+- [x] Task 22: uk/03_fiscal_policy.html, uk/04_employment.html, uk/05_inflation.html
 - [ ] Task 23: uk/09_equity_recent.html, uk/10_equity_current.html — FTSE100 期間別
 
 ## Phase 5: スイス（CH）— 漏れ埋め
