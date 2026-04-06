@@ -108,7 +108,7 @@
 
         <figure class="chart-figure">
           <figcaption class="chart-title">U.S. 10-Year Treasury Yield (1962-2026)</figcaption>
-          <svg class="svg-chart" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet">
+          <svg class="svg-chart" viewBox="0 0 800 420" preserveAspectRatio="xMidYMid meet">
             <g class="chart-grid">
               <line x1="60" y1="50" x2="60" y2="360" stroke="rgba(255,255,255,0.15)"/>
               <line x1="60" y1="360" x2="780" y2="360" stroke="rgba(255,255,255,0.15)"/>
@@ -131,26 +131,36 @@
             </g>
             <path class="chart-line" fill="none" stroke="#00d4aa" stroke-width="2"
               d="M 60,284 L 94,277 L 150,217 L 206,205 L 262,137 L 274,53 L 285,108 L 319,155 L 375,193 L 420,222 L 465,257 L 487,244 L 521,283 L 555,269 L 577,288 L 622,325 L 667,325 L 690,304 L 712,343 L 724,331 L 735,284 L 746,263 L 757,279 L 769,277"/>
-            <g class="chart-annotation">
-              <circle cx="274" cy="53" r="5" fill="#ff6b6b"/>
-              <line x1="274" y1="53" x2="274" y2="35" stroke="#ff6b6b" stroke-width="1"/>
-              <text x="274" y="30" text-anchor="middle" fill="#ff6b6b" font-size="11">1981-09 ボルカー 15.84%</text>
+            <g class="chart-annotation" font-size="10">
+              <!-- 1981 Volcker peak (top row) -->
+              <circle cx="274" cy="53" r="4" fill="#ff6b6b"/>
+              <line class="chart-annotation-line" x1="274" y1="49" x2="274" y2="32" stroke="#ff6b6b" stroke-width="1"/>
+              <rect class="chart-annotation-bg" x="222" y="18" width="104" height="14" rx="2" fill="rgba(0,0,0,0.7)"/>
+              <text x="274" y="29" text-anchor="middle" fill="#ff6b6b">1981 Volcker 15.84%</text>
 
-              <circle cx="420" cy="222" r="5" fill="#ff6b6b"/>
-              <line x1="420" y1="222" x2="420" y2="195" stroke="#ff6b6b" stroke-width="1"/>
-              <text x="420" y="190" text-anchor="middle" fill="#ff6b6b" font-size="11">1994 債券大虐殺</text>
+              <!-- 1994 Bond Massacre (bottom row) -->
+              <circle cx="420" cy="222" r="4" fill="#ff6b6b"/>
+              <line class="chart-annotation-line" x1="420" y1="226" x2="420" y2="394" stroke="#ff6b6b" stroke-width="1"/>
+              <rect class="chart-annotation-bg" x="365" y="394" width="110" height="14" rx="2" fill="rgba(0,0,0,0.7)"/>
+              <text x="420" y="405" text-anchor="middle" fill="#ff6b6b">1994 Bond Massacre</text>
 
-              <circle cx="577" cy="288" r="5" fill="#4ecdc4"/>
-              <line x1="577" y1="288" x2="577" y2="315" stroke="#4ecdc4" stroke-width="1"/>
-              <text x="577" y="328" text-anchor="middle" fill="#4ecdc4" font-size="11">2008 GFC・QE1開始</text>
+              <!-- 2008 GFC / QE1 (top row) -->
+              <circle cx="577" cy="288" r="4" fill="#4ecdc4"/>
+              <line class="chart-annotation-line" x1="577" y1="284" x2="577" y2="32" stroke="#4ecdc4" stroke-width="1"/>
+              <rect class="chart-annotation-bg" x="535" y="18" width="84" height="14" rx="2" fill="rgba(0,0,0,0.7)"/>
+              <text x="577" y="29" text-anchor="middle" fill="#4ecdc4">2008 GFC / QE1</text>
 
-              <circle cx="712" cy="343" r="5" fill="#4ecdc4"/>
-              <line x1="712" y1="343" x2="660" y2="355" stroke="#4ecdc4" stroke-width="1"/>
-              <text x="640" y="358" text-anchor="end" fill="#4ecdc4" font-size="11">2020-08 0.52% 史上最低</text>
+              <!-- 2020 0.52% record low (bottom row) -->
+              <circle cx="712" cy="343" r="4" fill="#4ecdc4"/>
+              <line class="chart-annotation-line" x1="712" y1="347" x2="712" y2="394" stroke="#4ecdc4" stroke-width="1"/>
+              <rect class="chart-annotation-bg" x="654" y="394" width="116" height="14" rx="2" fill="rgba(0,0,0,0.7)"/>
+              <text x="712" y="405" text-anchor="middle" fill="#4ecdc4">2020 0.52% Record Low</text>
 
-              <circle cx="746" cy="263" r="5" fill="#ff6b6b"/>
-              <line x1="746" y1="263" x2="760" y2="235" stroke="#ff6b6b" stroke-width="1"/>
-              <text x="775" y="232" text-anchor="end" fill="#ff6b6b" font-size="11">2023-10 5.0% 急騰</text>
+              <!-- 2023 5.0% spike (top row) -->
+              <circle cx="746" cy="263" r="4" fill="#ff6b6b"/>
+              <line class="chart-annotation-line" x1="746" y1="259" x2="746" y2="32" stroke="#ff6b6b" stroke-width="1"/>
+              <rect class="chart-annotation-bg" x="700" y="18" width="92" height="14" rx="2" fill="rgba(0,0,0,0.7)"/>
+              <text x="746" y="29" text-anchor="middle" fill="#ff6b6b">2023 5.0% Spike</text>
             </g>
           </svg>
           <p class="chart-caption">出典: FRED (DGS10). ボルカー期高金利→40年低下トレンド→2022-23年急騰の3局面。</p>

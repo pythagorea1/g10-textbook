@@ -46,3 +46,5 @@ Tue Apr  7 00:09:58     2026: Task 31 - added charts.js script tag to all 200 co
 2026-04-06T22:36:30Z Task 1: charts.js annotation collision avoidance (alt above/below, stacking, leader lines, bg rect, max 6 events, label trim 18ch)
 [2026-04-07 07:37:13] Task 2: Added .chart-annotation-bg, .chart-annotation-line styles; chart-annotation text now 10px with dark stroke paint-order for legibility.
 [2026-04-06T22:38:38Z] Task 3: us/02_policy_rate.html — annotations reduced 6→5, alternating above/below, bg rect added, viewBox→420
+
+[2026-04-07T07:42:01+09:00] Task 4: regenerated us/06_equity_overview + us/13_long_rates annotations with alt top/bottom rows + bg rects (viewBox 0 0 800 420). us/15_crises is a vertical timeline with 60px row spacing - already non-overlapping, no changes needed.

@@ -1,6 +1,6 @@
-=== Iteration 3 === 2026-04-06 23:24:48 ===
+=== Iteration 3 === 2026-04-07 07:37:21 ===
 Exit code: 0
-Duration: 113s
+Duration: 79s
 
-Task 3 complete. FF Rate chart added with 6 annotations to us/02_policy_rate.html.
+Task 3 done. Reduced annotations 6→5, applied alternating above/below layout with bg rects, viewBox→420.
 
