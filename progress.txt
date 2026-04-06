@@ -91,3 +91,11 @@ Total chart-less files: ~110. Most are qualitative pages (16-20). Recommendation
 Task 36 complete.
 
 [2026-04-07 iter38] Task 37: scanned all 02_policy_rate and 06_equity_overview pages. Strict count of class="chart-annotation" returns 0 files >10. Earlier raw grep counts inflated by chart-annotation-bg/-line classes. No remediation needed.
+
+[2026-04-07 iter39] Task 38: Phase 2 final summary
+- Added charts (Tasks 7-35): ~50+ new SVG charts across US/JP/EU/UK/CH/AU/NZ/CA/SE/NO covering fiscal, employment, inflation, equity (recent/current), bonds, currency, crises.
+- Annotation engine fix (Tasks 1-6): charts.js + style.css updated for alt above/below placement, dark bg rect, leader lines. Re-audited 02/06 pages — all under 10 annotations.
+- Audit (Task 36): ~110 chart-less HTML files; most are qualitative (07/08/16-20). Priority gaps for future loop: 09/10/11/12/13/15 in non-US/JP markets.
+- Files modified: ~60 HTML pages + assets/charts.js + assets/style.css.
+- Remaining: qualitative pages (07/08/16-20) could get textual timelines; 11/12/13/15 charts for smaller G10 markets.
+Phase 2 COMPLETE.
