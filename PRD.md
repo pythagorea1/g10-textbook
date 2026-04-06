@@ -63,7 +63,7 @@ G10通貨国の金融市場教科書（200ページ超）に、テキスト中�
 - [x] Task 25: canada/14_currency.html — USDCAD長期 + 原油相関の注釈
 
 ### Phase 8: 北欧
-- [ ] Task 26: sweden/02_policy_rate.html — Riksbank Repo Rate推移 + マイナス金利の先駆者(2015)、2024利下げの注釈
+- [x] Task 26: sweden/02_policy_rate.html — Riksbank Repo Rate推移 + マイナス金利の先駆者(2015)、2024利下げの注釈
 - [ ] Task 27: norway/02_policy_rate.html — Norges Bank政策金利 + 石油価格相関、2024利上げ継続の注釈
 - [ ] Task 28: norway/14_currency.html — USDNOK + 油価相関チャート
 
