@@ -79,3 +79,13 @@ Tue Apr  7 08:20:44     2026 Task 26: AU fiscal/employment/inflation charts
 [2026-04-07T08:33:47] Task 33: Added OMXS30 chart to sweden/06_equity_overview.html and USD/SEK chart to sweden/14_currency.html
 2026-04-07 Task 34: NO 03/04/05 charts (GPFG, unemployment, CPI)
 [2026-04-07T08:36:51] Task 35: NO OBX equity overview chart + crises bar chart
+
+[2026-04-07 Iter37] Task 36: Audit chart-less pages
+Scanned all 10 country dirs. Pages without svg-chart (need consideration):
+- Common across all: 07_equity_early, 08_equity_modern, 16_banking, 17_corporate, 18_regulation, 19_trade, 20_lessons (historical/qualitative — timelines could be added later, low priority)
+- Missing equity_recent/current: newzealand, sweden, norway (09/10) — candidates for follow-up
+- Missing bond/rates infrastructure: most non-US/JP for 11/12/13 — candidates
+- Missing 15_crises: japan, uk, australia, newzealand, canada, sweden
+- Missing 14_currency: us, eurozone
+Total chart-less files: ~110. Most are qualitative pages (16-20). Recommendation: prioritize 09/10/11/12/13/15 gaps in a future loop. For 07/08/16-20 a textual timeline would suffice.
+Task 36 complete.
