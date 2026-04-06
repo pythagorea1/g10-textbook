@@ -68,3 +68,4 @@ Tue Apr  7 08:07:32     2026 Task 20: added eurozone employment + HICP charts
 [iter23 2026-04-07] Task 22: added SVG charts to uk/03_fiscal_policy (debt/GDP 1945-2025), uk/04_employment (unemployment 1970-2026), uk/05_inflation (CPI 1970-2026). 6 annotations each, alt label placement.
 [Tue Apr  7 08:14:33     2026] Task 23: added FTSE 100 charts to uk/09 (2000-2019) and uk/10 (2020-2025)
 [Tue Apr  7 08:17:10     2026] Task 24: Added charts to switzerland 03/04/05 (debt/GDP, unemployment, CPI)
+[Tue Apr  7 08:19:10     2026] Task 25: SMI charts added to switzerland 06/09/10

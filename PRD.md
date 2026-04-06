@@ -44,7 +44,7 @@
 
 ## Phase 5: スイス（CH）— 漏れ埋め
 - [x] Task 24: switzerland/03_fiscal_policy.html, switzerland/04_employment.html, switzerland/05_inflation.html
-- [ ] Task 25: switzerland/06_equity_overview.html, switzerland/09_equity_recent.html, switzerland/10_equity_current.html — SMI チャート
+- [x] Task 25: switzerland/06_equity_overview.html, switzerland/09_equity_recent.html, switzerland/10_equity_current.html — SMI チャート
 
 ## Phase 6: 豪州（AU）— 漏れ埋め
 - [ ] Task 26: australia/03_fiscal_policy.html, australia/04_employment.html, australia/05_inflation.html

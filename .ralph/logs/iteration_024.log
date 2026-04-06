@@ -1,6 +1,6 @@
-=== Iteration 24 === 2026-04-06 23:55:28 ===
+=== Iteration 24 === 2026-04-07 08:14:42 ===
 Exit code: 0
-Duration: 58s
+Duration: 155s
 
-Task 24 complete. BOC policy rate chart (1975-2026) with 9 annotations added.
+Task 24 complete. Added inline SVG charts to switzerland/03_fiscal_policy.html (debt/GDP 1990-2024), 04_employment.html (unemployment 1980-2024), and 05_inflation.html (CPI 1970-2024) with annotated key events.
 
