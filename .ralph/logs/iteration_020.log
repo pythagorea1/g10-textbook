@@ -1,6 +1,6 @@
-=== Iteration 20 === 2026-04-06 23:49:47 ===
+=== Iteration 20 === 2026-04-07 08:06:12 ===
 Exit code: 0
-Duration: 88s
+Duration: 85s
 
-Task 20 done.
+Task 20 complete. Added unemployment chart to eurozone/04_employment.html and HICP YoY chart to eurozone/05_inflation.html with 5-6 annotations each.
 

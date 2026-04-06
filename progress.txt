@@ -64,3 +64,4 @@ Tue Apr  7 07:53:29     2026 Task 10: us/09_equity_recent.html S&P500 2000-2019 
 [2026-04-07T08:04:33] Task 18: japan/11_bond_market.html - added JGB outstanding + BOJ holding ratio dual-axis chart 1990-2026 with 5 annotations
 [Tue Apr  7 08:06:05     2026] Task 19: eurozone/03_fiscal_policy.html — added DE/ES/IT/GR debt/GDP chart 1995-2024 with 6 annotations
 Tue Apr  7 08:07:32     2026 Task 20: added eurozone employment + HICP charts
+2026年 4月  7日 火曜日 08:09:25     Task 21: eurozone 09/10 equity Stoxx50 charts added
