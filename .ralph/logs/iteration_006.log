@@ -1,17 +1,6 @@
-=== Iteration 6 === 2026-04-05 22:29:17 ===
+=== Iteration 6 === 2026-04-06 23:29:33 ===
 Exit code: 0
-Duration: 296s
+Duration: 81s
 
-**Task 6 completed.** Updated `newzealand/01_central_bank.html` with:
-
-- **Adrian Orr resignation** (March 2025) — added end date and context (budget dispute with government)
-- **Christian Hawkesby** acting governor row (March–November 2025)
-- **Anna Breman** new governor row (December 2025–present) — first woman and first foreign national as RBNZ Governor, former Riksbank First Deputy Governor
-- **MPC members** fully refreshed to April 2026: Breman (chair), Silk, Conway, Hansen, Gai, Gourley (6 members)
-- **OCR** updated from 3.50% → 2.25% (9 cuts totaling 325bp since August 2024)
-- **Timeline** updated: 2024 detailed (3 cuts), 2025 (6 cuts + governance upheaval), 2026 new row (hold at 2.25%)
-- **Policy framework** section expanded with 2025 governance transition narrative
-- 3 new sources added
-
-Progress: **6 completed, 24 remaining.**
+Task 6 complete. Added vertical event-timeline SVG with 11 major US financial crises (1907 Panic → 2023 SVB) to us/15_crises.html, marked PRD task done, updated progress.txt, and committed.
 
