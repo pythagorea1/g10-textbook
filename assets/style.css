@@ -843,8 +843,37 @@ figcaption.chart-title {
 }
 .svg-chart .chart-annotation text {
   fill: #ff6b6b;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 500;
+  paint-order: stroke;
+  stroke: rgba(15,15,30,0.85);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+}
+.svg-chart .chart-annotation-bg {
+  fill: rgba(15, 15, 30, 0.78);
+  stroke: rgba(255, 107, 107, 0.4);
+  stroke-width: 0.5;
+  rx: 2;
+  ry: 2;
+}
+.svg-chart .chart-annotation.positive .chart-annotation-bg {
+  stroke: rgba(0, 212, 170, 0.4);
+}
+.svg-chart .chart-annotation.neutral .chart-annotation-bg {
+  stroke: rgba(78, 205, 196, 0.4);
+}
+.svg-chart .chart-annotation-line {
+  stroke: rgba(255, 107, 107, 0.7);
+  stroke-width: 1;
+  stroke-dasharray: 2 2;
+  fill: none;
+}
+.svg-chart .chart-annotation.positive .chart-annotation-line {
+  stroke: rgba(0, 212, 170, 0.7);
+}
+.svg-chart .chart-annotation.neutral .chart-annotation-line {
+  stroke: rgba(78, 205, 196, 0.7);
 }
 .svg-chart .chart-annotation.positive circle,
 .svg-chart .chart-annotation.positive line { stroke: #00d4aa; }
