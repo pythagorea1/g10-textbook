@@ -34,7 +34,7 @@
 - [x] Task 18: japan/11_bond_market.html — JGB発行残高 + 日銀保有比率チャート
 
 ## Phase 3: ユーロ圏（EU）— 漏れ埋め
-- [ ] Task 19: eurozone/03_fiscal_policy.html — ユーロ圏債務/GDP推移 + PIIGSとコアの対比
+- [x] Task 19: eurozone/03_fiscal_policy.html — ユーロ圏債務/GDP推移 + PIIGSとコアの対比
 - [ ] Task 20: eurozone/04_employment.html, eurozone/05_inflation.html — 失業率・HICP推移
 - [ ] Task 21: eurozone/09_equity_recent.html, eurozone/10_equity_current.html — Stoxx 50 2000-2019, 2020-2026
 
