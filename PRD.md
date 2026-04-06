@@ -55,7 +55,7 @@
 - [x] Task 29: newzealand/06_equity_overview.html, newzealand/14_currency.html
 
 ## Phase 8: カナダ — 漏れ埋め
-- [ ] Task 30: canada/03_fiscal_policy.html, canada/04_employment.html, canada/05_inflation.html
+- [x] Task 30: canada/03_fiscal_policy.html, canada/04_employment.html, canada/05_inflation.html
 - [ ] Task 31: canada/06_equity_overview.html, canada/09_equity_recent.html, canada/10_equity_current.html
 
 ## Phase 9: 北欧 — 漏れ埋め
