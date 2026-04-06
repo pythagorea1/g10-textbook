@@ -30,7 +30,7 @@
 - [x] Task 14: japan/03_fiscal_policy.html — 債務/GDP推移（1980-2026, %）+ 注釈（バブル崩壊財政出動、コロナ、260%超）
 - [x] Task 15: japan/04_employment.html — 失業率推移（1980-2026）+ 注釈（バブル期2%、失業率5.5%ピーク2002、2.4%最低）
 - [x] Task 16: japan/05_inflation.html — CPI推移（1970-2026）+ 注釈（オイルショック、デフレ期、2024 2%超え）
-- [ ] Task 17: japan/09_equity_recent.html, japan/10_equity_current.html — Nikkei 2000-2019, 2020-2026チャート両方
+- [x] Task 17: japan/09_equity_recent.html, japan/10_equity_current.html — Nikkei 2000-2019, 2020-2026チャート両方
 - [ ] Task 18: japan/11_bond_market.html — JGB発行残高 + 日銀保有比率チャート
 
 ## Phase 3: ユーロ圏（EU）— 漏れ埋め

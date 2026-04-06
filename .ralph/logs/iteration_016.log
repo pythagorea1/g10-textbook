@@ -1,6 +1,6 @@
-=== Iteration 16 === 2026-04-06 23:45:02 ===
+=== Iteration 16 === 2026-04-07 07:59:59 ===
 Exit code: 0
-Duration: 65s
+Duration: 73s
 
-Task 16 complete: Added GBP/USD long-term annotated SVG chart (1971-2026) to uk/14_currency.html with annotations for 1985 dollar peak, 1992 Black Wednesday, 2007 GFC peak, 2016 Brexit, and 2022 Truss shock.
+Task 16 complete. Added Japan CPI YoY chart (1970-2026) to japan/05_inflation.html with 6 annotations covering 狂乱物価, 第二次OS, デフレ突入, リーマン後, 消費税8%, and 2023 30年ぶり高インフレ.
 
