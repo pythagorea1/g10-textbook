@@ -92,6 +92,61 @@
         </div>
       </div>
 
+      <figure class="chart-figure">
+        <figcaption class="chart-title">Federal Funds Rate (年次平均, 1955-2026)</figcaption>
+        <svg class="svg-chart" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet">
+          <g class="chart-grid">
+            <line x1="60" y1="50" x2="60" y2="360" stroke="rgba(255,255,255,0.15)"/>
+            <line x1="60" y1="360" x2="780" y2="360" stroke="rgba(255,255,255,0.15)"/>
+            <line x1="60" y1="50" x2="780" y2="50" stroke="rgba(255,255,255,0.05)"/>
+            <line x1="60" y1="127.5" x2="780" y2="127.5" stroke="rgba(255,255,255,0.05)"/>
+            <line x1="60" y1="205" x2="780" y2="205" stroke="rgba(255,255,255,0.05)"/>
+            <line x1="60" y1="282.5" x2="780" y2="282.5" stroke="rgba(255,255,255,0.05)"/>
+          </g>
+          <g class="chart-axis" fill="rgba(255,255,255,0.6)" font-size="10">
+            <text x="55" y="54" text-anchor="end">20%</text>
+            <text x="55" y="131" text-anchor="end">15%</text>
+            <text x="55" y="209" text-anchor="end">10%</text>
+            <text x="55" y="286" text-anchor="end">5%</text>
+            <text x="55" y="363" text-anchor="end">0%</text>
+            <text x="60" y="378">1955</text>
+            <text x="212" y="378">1970</text>
+            <text x="364" y="378">1985</text>
+            <text x="517" y="378">2000</text>
+            <text x="669" y="378">2015</text>
+            <text x="780" y="378" text-anchor="end">2026</text>
+          </g>
+          <path class="chart-line" fill="none" stroke="#00d4aa" stroke-width="2"
+            d="M 60,332 L 111,310 L 161,296 L 212,248 L 263,270 L 313,152 L 324,106 L 334,169 L 344,219 L 354,202 L 364,234 L 374,255 L 385,256 L 395,242 L 405,217 L 415,234 L 425,272 L 435,306 L 446,314 L 456,295 L 466,270 L 476,278 L 486,275 L 496,276 L 507,283 L 517,264 L 527,300 L 537,334 L 547,343 L 557,338 L 568,310 L 578,283 L 588,283 L 598,331 L 608,358 L 618,358 L 629,359 L 639,358 L 649,358 L 659,359 L 669,358 L 679,354 L 690,345 L 700,332 L 710,326 L 720,354 L 730,359 L 740,334 L 750,283 L 761,278 L 771,293 L 781,304"/>
+          <g class="chart-annotation" font-size="11">
+            <circle cx="324" cy="106" r="5" fill="#ff6b6b"/>
+            <line x1="324" y1="106" x2="324" y2="78" stroke="#ff6b6b" stroke-width="1"/>
+            <text x="324" y="72" text-anchor="middle" fill="#ff6b6b">1981 Volcker 19%</text>
+
+            <circle cx="608" cy="358" r="5" fill="#4ecdc4"/>
+            <line x1="608" y1="358" x2="560" y2="388" stroke="#4ecdc4" stroke-width="1"/>
+            <text x="555" y="392" text-anchor="end" fill="#4ecdc4">2008-12 ZIRP+QE開始</text>
+
+            <circle cx="669" cy="358" r="5" fill="#ffd166"/>
+            <line x1="669" y1="358" x2="669" y2="395" stroke="#ffd166" stroke-width="1"/>
+            <text x="669" y="398" text-anchor="middle" fill="#ffd166">2015-12 利上げ再開</text>
+
+            <circle cx="720" cy="354" r="5" fill="#ff6b6b"/>
+            <line x1="720" y1="354" x2="720" y2="395" stroke="#ff6b6b" stroke-width="1"/>
+            <text x="720" y="398" text-anchor="middle" fill="#ff6b6b">2020-03 COVID緊急ゼロ</text>
+
+            <circle cx="750" cy="283" r="5" fill="#ff6b6b"/>
+            <line x1="750" y1="283" x2="750" y2="240" stroke="#ff6b6b" stroke-width="1"/>
+            <text x="750" y="234" text-anchor="middle" fill="#ff6b6b">2023 5.50% (22年ぶり高水準)</text>
+
+            <circle cx="761" cy="278" r="5" fill="#4ecdc4"/>
+            <line x1="761" y1="278" x2="785" y2="200" stroke="#4ecdc4" stroke-width="1"/>
+            <text x="788" y="196" text-anchor="end" fill="#4ecdc4">2024-09 利下げ開始</text>
+          </g>
+        </svg>
+        <p class="chart-caption">出典: FRED (FEDFUNDS, 年次平均). 1981年のVolckerショックでFF金利は瞬間的に20%超に達し、その後40年以上下降トレンドが続いた。2022-23年の急速な引き締めは1980年代以降で最速ペース。</p>
+      </figure>
+
       <h2>フェデラルファンド金利とは</h2>
       <p>フェデラルファンド金利（Federal Funds Rate、FF金利）は、米国の銀行間で短期資金（通常はオーバーナイト）を貸し借りする際の金利である。FOMC（連邦公開市場委員会）がFF金利の誘導目標レンジを設定し、ニューヨーク連銀のオープンマーケットデスクが公開市場操作を通じてこの目標に実効金利を近づける。<sup class="ref">[1]</sup></p>
       <p>FF金利は米国のみならず世界の金融市場の基準金利として機能し、住宅ローン金利、企業の借入コスト、新興国への資本フロー、為替レートなどに広範な影響を及ぼす。「世界で最も重要な金利」と呼ばれる所以である。</p>

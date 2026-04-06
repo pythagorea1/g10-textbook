@@ -26,7 +26,7 @@ G10通貨国の金融市場教科書（200ページ超）に、テキスト中�
 - [x] Task 2: assets/charts.js を新規作成。再利用可能なJS関数群: renderAnnotatedLineChart(containerId, data, events), renderBarChart, renderEventTimeline 等。SVGをDOMに動的生成する純Vanilla JS。各ページから読み込む
 
 ### Phase 1: 米国（US）— 最も重要な国
-- [ ] Task 3: us/02_policy_rate.html — Fed Funds Rate長期推移チャート（1955-2026）+ Volcker利上げ・GFC利下げ・QE開始・2022利上げ・2024利下げ等の注釈
+- [x] Task 3: us/02_policy_rate.html — Fed Funds Rate長期推移チャート（1955-2026）+ Volcker利上げ・GFC利下げ・QE開始・2022利上げ・2024利下げ等の注釈
 - [ ] Task 4: us/06_equity_overview.html — S&P 500長期チャート（1950-2026, 対数軸）+ ブラックマンデー・ドットコム・GFC・COVID・AI相場の注釈マーカー
 - [ ] Task 5: us/13_long_rates.html — 10年米国債利回り長期チャート（1962-2026）+ Volcker期高金利・低金利時代・2022急騰の注釈
 - [ ] Task 6: us/15_crises.html — 主要危機のevent-timeline縦タイムライン（1907パニック〜SVB破綻まで）
