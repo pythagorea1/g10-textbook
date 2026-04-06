@@ -1,105 +1,101 @@
-# Project: G10 Textbook — ビジュアル化大改修
+# Project: G10 Textbook — Visualization Phase 2 (Fix + Coverage)
 
 ## Overview
-G10通貨国の金融市場教科書（200ページ超）に、テキスト中心の構成を見直して**インラインSVGチャート＋注釈マーカー**を全面導入する。
-現状は文章だらけで可読性が低い。各ページのトピックに応じたチャートを描き、グラフ上に主要イベント（バブル、危機、利上げ等）の注釈を直接表示する。
+前回ループでチャート追加したが、(1) 注釈テキストが重なって読めない、(2) 多くのページにチャートが無い漏れが多発している。
+本ループは「注釈レイアウト修正 + チャート漏れ全埋め」を目的とする。
 
-## ビジュアル化の方針
-- **オフライン動作必須**: 純粋なインラインSVG（外部CDN・API禁止）
-- **データはハードコード**: yfinance等は使えないので、月次/年次の代表値を直接配列として埋め込む
-- **注釈マーカー必須**: チャート上にイベント点（●）+ラベル線+テキストを配置し、何があったか一目で分かるようにする
-- **既存デザイン尊重**: Bloomberg風ダークテーマ。アクセントカラー（#00d4aa, #ff6b6b, #4ecdc4等）を使う
-- **レスポンシブ**: SVGはviewBoxで可変。preserveAspectRatio対応
+## ユーザー指摘の問題
+1. **チャート上の文字が重なっている** — us/02_policy_rate.html, us/09_equity_recent.html などで注釈ラベルが密集して読めない
+2. **チャートが無いページが多い** — 03_fiscal_policy, 04_employment, 05_inflation, 09_equity_recent, 10_equity_current, 11_bond_market, 12_short_rates 等
 
-## チャート種類
-1. **annotated-line-chart**: 株価/金利の長期推移＋イベント注釈（最重要）
-2. **bar-chart**: 政策金利推移の段階的バー
-3. **dual-axis-chart**: 為替と金利、株価とPER等の2軸
-4. **stacked-area**: GDP構成、債務/GDP比等
-5. **event-timeline**: 横軸時間の縦タイムライン（年表ビジュアル化）
-6. **heat-strip**: 年ごとリターンを色分けセル
+## Phase 0: 注釈レイアウトエンジン修正（最優先）
 
-## Tasks
+- [x] Task 1: assets/charts.js を修正。注釈ラベルの衝突回避ロジックを追加：(a) ラベルを上下交互に配置（above/below）、(b) X座標が近接する場合は縦に積み上げる、(c) リーダー線を追加してマーカー→ラベルを結ぶ、(d) 必要なら短縮表記（例: "Black Monday" だけ）
+- [ ] Task 2: assets/style.css の .chart-annotation スタイルを更新。背景にダークな半透明矩形（rect）を入れて文字を読みやすくする。font-sizeは10px固定。.chart-annotation-bg, .chart-annotation-line を追加
+- [ ] Task 3: us/02_policy_rate.html — 既存チャートを再生成。注釈密度を下げる（重要イベント6個に絞る）+ 上下交互配置を適用。視覚確認のためHTMLを再読込してSVG構造を検証
+- [ ] Task 4: us/06_equity_overview.html, us/13_long_rates.html, us/15_crises.html を再生成（注釈整理）
+- [ ] Task 5: japan/02_policy_rate.html, japan/06_equity_overview.html, japan/13_long_rates.html, japan/14_currency.html を再生成（注釈整理）
+- [ ] Task 6: 残りの既存チャートページ（eurozone, uk, switzerland, australia, newzealand, canada, sweden, norway の 02/06/13/14/15）を一括スキャンし、注釈密度が高いものだけリトライ。Glob+Grepで `chart-annotation` 数が10以上のファイルを抽出
 
-### Phase 0: 共通基盤（必須・最初に実施）
-- [x] Task 1: assets/style.css に「Chart Components」セクションを追加。.svg-chart, .chart-title, .chart-axis, .chart-line, .chart-area, .chart-marker, .chart-annotation, .chart-grid, .chart-legend のスタイルを定義（ダークテーマに合わせた配色）
-- [x] Task 2: assets/charts.js を新規作成。再利用可能なJS関数群: renderAnnotatedLineChart(containerId, data, events), renderBarChart, renderEventTimeline 等。SVGをDOMに動的生成する純Vanilla JS。各ページから読み込む
+## Phase 1: 米国（US）— 漏れ埋め
+- [ ] Task 7: us/03_fiscal_policy.html — 債務/GDP比 推移チャート（1940-2026, %）+ 注釈（WWII、Reagan減税、IRA/CHIPS等）
+- [ ] Task 8: us/04_employment.html — 失業率推移チャート（1948-2026, %）+ 注釈（70sスタグフレーション、GFC10%、COVID14.7%、3.4%最低）
+- [ ] Task 9: us/05_inflation.html — CPI YoY推移チャート（1960-2026, %）+ 注釈（70sインフレ、Volcker、2022 9.1%ピーク）
+- [ ] Task 10: us/09_equity_recent.html — S&P500 2000-2019チャート + 注釈（ドットコム崩壊、住宅バブル、リーマン、QE回復、2018下落）
+- [ ] Task 11: us/10_equity_current.html — S&P500 2020-2026チャート + 注釈（COVID、AI相場、2024最高値、2025調整等）
+- [ ] Task 12: us/11_bond_market.html — 米国債発行残高チャート（1980-2026, $trillion）+ 注釈（GFC膨張、QE、2024 35T突破）
+- [ ] Task 13: us/12_short_rates.html — Fed Funds vs SOFR vs T-Bill 3M 短期金利チャート
 
-### Phase 1: 米国（US）— 最も重要な国
-- [x] Task 3: us/02_policy_rate.html — Fed Funds Rate長期推移チャート（1955-2026）+ Volcker利上げ・GFC利下げ・QE開始・2022利上げ・2024利下げ等の注釈
-- [x] Task 4: us/06_equity_overview.html — S&P 500長期チャート（1950-2026, 対数軸）+ ブラックマンデー・ドットコム・GFC・COVID・AI相場の注釈マーカー
-- [x] Task 5: us/13_long_rates.html — 10年米国債利回り長期チャート（1962-2026）+ Volcker期高金利・低金利時代・2022急騰の注釈
-- [x] Task 6: us/15_crises.html — 主要危機のevent-timeline縦タイムライン（1907パニック〜SVB破綻まで）
+## Phase 2: 日本（JP）— 漏れ埋め
+- [ ] Task 14: japan/03_fiscal_policy.html — 債務/GDP推移（1980-2026, %）+ 注釈（バブル崩壊財政出動、コロナ、260%超）
+- [ ] Task 15: japan/04_employment.html — 失業率推移（1980-2026）+ 注釈（バブル期2%、失業率5.5%ピーク2002、2.4%最低）
+- [ ] Task 16: japan/05_inflation.html — CPI推移（1970-2026）+ 注釈（オイルショック、デフレ期、2024 2%超え）
+- [ ] Task 17: japan/09_equity_recent.html, japan/10_equity_current.html — Nikkei 2000-2019, 2020-2026チャート両方
+- [ ] Task 18: japan/11_bond_market.html — JGB発行残高 + 日銀保有比率チャート
 
-### Phase 2: 日本（JP）
-- [x] Task 7: japan/02_policy_rate.html — 政策金利推移チャート（1985-2026）+ バブル期高金利、ゼロ金利導入(1999)、量的緩和、マイナス金利(2016)、解除(2024)、2025利上げの注釈
-- [x] Task 8: japan/06_equity_overview.html — 日経225長期チャート（1970-2026, 対数軸）+ バブル天井38915円(1989)、失われた30年、2024年34年ぶり最高値更新の注釈
-- [x] Task 9: japan/13_long_rates.html — 10年JGB利回り推移（1985-2026）+ YCC開始・解除の注釈
-- [x] Task 10: japan/14_currency.html — USDJPY長期チャート（1971-2026）+ プラザ合意、79円台超円高、161円台円安(2024)の注釈
+## Phase 3: ユーロ圏（EU）— 漏れ埋め
+- [ ] Task 19: eurozone/03_fiscal_policy.html — ユーロ圏債務/GDP推移 + PIIGSとコアの対比
+- [ ] Task 20: eurozone/04_employment.html, eurozone/05_inflation.html — 失業率・HICP推移
+- [ ] Task 21: eurozone/09_equity_recent.html, eurozone/10_equity_current.html — Stoxx 50 2000-2019, 2020-2026
 
-### Phase 3: ユーロ圏（EU）
-- [x] Task 11: eurozone/02_policy_rate.html — ECB主要リファイナンス金利推移（1999-2026）+ 危機対応・マイナス金利・2022利上げ・2024利下げの注釈
-- [x] Task 12: eurozone/06_equity_overview.html — Euro Stoxx 50 + DAX チャート（1990-2026）+ ドットコム、GFC、欧州債務危機、COVID、エネルギー危機の注釈
-- [x] Task 13: eurozone/15_crises.html — 欧州債務危機タイムライン（PIIGS各国スプレッド推移ビジュアル含む）
+## Phase 4: 英国（UK）— 漏れ埋め
+- [ ] Task 22: uk/03_fiscal_policy.html, uk/04_employment.html, uk/05_inflation.html
+- [ ] Task 23: uk/09_equity_recent.html, uk/10_equity_current.html — FTSE100 期間別
 
-### Phase 4: 英国（UK）
-- [x] Task 14: uk/02_policy_rate.html — Bank Rate推移（1975-2026）+ ERM危機、Brexit、トラスショック、2024利下げの注釈
-- [x] Task 15: uk/06_equity_overview.html — FTSE 100長期チャート（1984-2026）+ Big Bang、ブラックウェンズデー、Brexit、COVIDの注釈
-- [x] Task 16: uk/14_currency.html — GBPUSD長期チャート + ERM離脱、Brexit、トラスショックの注釈
+## Phase 5: スイス（CH）— 漏れ埋め
+- [ ] Task 24: switzerland/03_fiscal_policy.html, switzerland/04_employment.html, switzerland/05_inflation.html
+- [ ] Task 25: switzerland/06_equity_overview.html, switzerland/09_equity_recent.html, switzerland/10_equity_current.html — SMI チャート
 
-### Phase 5: スイス（CH）
-- [x] Task 17: switzerland/02_policy_rate.html — SNB政策金利推移 + マイナス金利導入・解除、2024年3月利下げ（先進国初）の注釈
-- [x] Task 18: switzerland/14_currency.html — EURCHFチャート + 1.20上限導入(2011)・撤廃ショック(2015)の劇的注釈
-- [x] Task 19: switzerland/15_crises.html — UBS/CS危機タイムライン（2008 UBS救済、2023 CS破綻→UBS統合）
+## Phase 6: 豪州（AU）— 漏れ埋め
+- [ ] Task 26: australia/03_fiscal_policy.html, australia/04_employment.html, australia/05_inflation.html
+- [ ] Task 27: australia/09_equity_recent.html, australia/10_equity_current.html, australia/13_long_rates.html
 
-### Phase 6: 豪州（AU）
-- [x] Task 20: australia/02_policy_rate.html — RBA Cash Rate推移 + 2010年代低金利、コロナ、2022利上げサイクルの注釈
-- [x] Task 21: australia/06_equity_overview.html — ASX 200長期チャート + 資源ブーム、GFC、COVID、最近のレンジ相場の注釈
-- [x] Task 22: australia/14_currency.html — AUDUSD長期チャート + 資源スーパーサイクル(2011 1.10超)、コモディティ相関の注釈
+## Phase 7: NZ — 漏れ埋め
+- [ ] Task 28: newzealand/03_fiscal_policy.html, newzealand/04_employment.html, newzealand/05_inflation.html
+- [ ] Task 29: newzealand/06_equity_overview.html, newzealand/14_currency.html
 
-### Phase 7: NZ・カナダ
-- [x] Task 23: newzealand/02_policy_rate.html — RBNZ OCR推移 + 1990年世界初IT導入、最近の利上げ・利下げの注釈
-- [x] Task 24: canada/02_policy_rate.html — BOC Overnight Rate推移 + 2022利上げ、2024年6月先進国一番乗り利下げの注釈
-- [x] Task 25: canada/14_currency.html — USDCAD長期 + 原油相関の注釈
+## Phase 8: カナダ — 漏れ埋め
+- [ ] Task 30: canada/03_fiscal_policy.html, canada/04_employment.html, canada/05_inflation.html
+- [ ] Task 31: canada/06_equity_overview.html, canada/09_equity_recent.html, canada/10_equity_current.html
 
-### Phase 8: 北欧
-- [x] Task 26: sweden/02_policy_rate.html — Riksbank Repo Rate推移 + マイナス金利の先駆者(2015)、2024利下げの注釈
-- [x] Task 27: norway/02_policy_rate.html — Norges Bank政策金利 + 石油価格相関、2024利上げ継続の注釈
-- [x] Task 28: norway/14_currency.html — USDNOK + 油価相関チャート
+## Phase 9: 北欧 — 漏れ埋め
+- [ ] Task 32: sweden/03_fiscal_policy.html, sweden/04_employment.html, sweden/05_inflation.html
+- [ ] Task 33: sweden/06_equity_overview.html, sweden/14_currency.html
+- [ ] Task 34: norway/03_fiscal_policy.html, norway/04_employment.html, norway/05_inflation.html
+- [ ] Task 35: norway/06_equity_overview.html (OBX), norway/15_crises.html
 
-### Phase 9: 横断・最終
-- [x] Task 29: index.html の Policy Rate Comparison を「年次推移ライン」に拡張。10カ国の政策金利推移を1つのチャートで重ねる（凡例＋ホバー）
-- [x] Task 30: 全カントリー 01_central_bank.html の歴代総裁テーブルの上に、議長別在任期間ガントチャート（横棒）を追加（例: Fedなら Greenspan→Bernanke→Yellen→Powell の在任期間をビジュアル化）
-- [x] Task 31: 全ページに「assets/charts.js」スクリプトタグを自動追加するBashスクリプトを実行
+## Phase 10: 監査と最終
+- [ ] Task 36: 全200ページをスキャンし、`grep -L 'svg-chart' *.html` で「chart要素を一切持たないページ」リストを作成（progress.txtに記録）。明らかにビジュアル化が必要なページ（07/08/16/17/18/19/20）に最低1つはチャートまたはタイムラインを追加可能か検討
+- [ ] Task 37: 全 02_policy_rate / 06_equity_overview ページを再度スキャン。注釈ラベル数が10超のファイルがあれば再修正
+- [ ] Task 38: progress.txt にPhase 2の最終サマリーを記載（追加チャート総数、修正ファイル数、残課題）
 
 ## Constraints
-- **外部CDN/JS libraryは使わない**（オフラインHTML）
-- **データはハードコード**（月次/年次の代表値を配列で。少数精鋭で良い）
-- **正確な数値が分からない場合はWebSearchで確認**
-- **既存のテキスト・テーブルは削除しない**。チャートは追加する形で挿入
-- **チャートは記事の上部または該当セクションの先頭に配置**（読者がすぐ見られる位置）
-- **イベント注釈は最重要部分のみ**（10個以下推奨。多すぎると読めない）
-- 1タスク = 1ファイル更新を原則とする
+- **外部CDN/library禁止** — 純粋なインラインSVG + Vanilla JS
+- **データはハードコード** — 月次/年次代表値の配列
+- **既存テキスト・テーブル削除禁止** — チャートは追加挿入のみ
+- **注釈は6個以下を推奨** — 多すぎたら主要なものだけに絞る
+- **ラベル位置は上下交互** — 連続するラベルが重ならないように
+- **チャート1つあたり viewBox="0 0 800 420"** 推奨。下部40pxは注釈用余白を確保
+- **数値はWebSearchで確認可能** — 推測しない
 
 ## Notes
-### SVGチャート設計指針
-- viewBox="0 0 800 400" 程度のサイズ
-- 上部余白50px（タイトル）、左60px（Y軸ラベル）、下部40px（X軸ラベル）、右20px
-- グリッド線は薄い半透明（rgba(255,255,255,0.05)）
-- ラインは2-3px、アクセントカラー
-- 面塗りはグラデーション（上濃→下薄）
-- 注釈マーカーは●（半径4-6px）+細い縦線+テキストラベル
-- フォントサイズ: タイトル14px、軸ラベル10px、注釈11px
+### 注釈衝突回避アルゴリズム（charts.jsに実装）
+```javascript
+// イベントをX座標でソート → ラベルを上下交互配置 → 縦衝突したらY方向にオフセット
+function placeAnnotations(events, chartWidth) {
+  const sorted = [...events].sort((a, b) => a.x - b.x);
+  return sorted.map((ev, i) => ({
+    ...ev,
+    labelY: i % 2 === 0 ? ev.y - 30 : ev.y + 30,  // 上下交互
+    labelAnchor: ev.x < 60 ? 'start' : ev.x > chartWidth - 60 ? 'end' : 'middle'
+  }));
+}
+```
 
-### データソース（参考）
-- US: FRED (FEDFUNDS, SP500, DGS10) — 値はWebSearchで確認
-- JP: BOJ統計、日経新聞 — 主要転換点の値
-- 各国中銀公式サイト
-
-### 注釈例（米国S&P500）
-- 1987-10: ブラックマンデー（-22%/日）
-- 2000-03: ドットコムピーク
-- 2007-10: GFC前ピーク
-- 2009-03: 底値666
-- 2020-03: COVID底
-- 2024-2025: AI相場で最高値更新
+### 検証コマンド
+```bash
+# チャート数カウント
+grep -c '<svg class="svg-chart"' [file.html]
+# 注釈数カウント
+grep -c 'chart-annotation' [file.html]
+```

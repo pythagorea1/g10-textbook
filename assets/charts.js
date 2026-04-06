@@ -166,26 +166,54 @@
       lbl.textContent = formatX(xv);
     });
 
-    // events / annotations
-    var levels = [pad.top + 10, pad.top + 28, pad.top + 46];
-    events.forEach(function (ev, idx) {
+    // events / annotations — collision-avoidance: alternate above/below, stack on overlap
+    var trimmed = events.slice(0, 6);
+    var placed = trimmed.map(function (ev, idx) {
       var ex = x(ev.x);
-      var ey = (ev.y != null)
-        ? y(ev.y)
-        : interpolateY(data, ev.x, x, y);
-      var labelY = levels[idx % levels.length];
+      var ey = (ev.y != null) ? y(ev.y) : interpolateY(data, ev.x, x, y);
+      return { ev: ev, ex: ex, ey: ey, idx: idx, above: idx % 2 === 0 };
+    });
+    // sort by ex to detect horizontal neighbors
+    var sortedAbove = placed.filter(function (p) { return p.above; }).sort(function (a, b) { return a.ex - b.ex; });
+    var sortedBelow = placed.filter(function (p) { return !p.above; }).sort(function (a, b) { return a.ex - b.ex; });
+    function stack(list, base, dir) {
+      var lastX = -999, level = 0;
+      list.forEach(function (p) {
+        if (p.ex - lastX < 90) level += 1; else level = 0;
+        p.labelY = base + dir * level * 14;
+        lastX = p.ex;
+      });
+    }
+    stack(sortedAbove, pad.top + 12, 1);   // above area: grow downward but stay near top
+    stack(sortedBelow, H - pad.bottom + 14, 1); // below area: grow downward in bottom margin
+    placed.forEach(function (p) {
+      var ev = p.ev;
+      var ex = p.ex, ey = p.ey, labelY = p.labelY;
       var color = ev.color || '#ff6b6b';
+      var label = (ev.label || '').slice(0, 18);
       var g = el('g', { 'class': 'chart-annotation' }, svg);
+      // leader line from marker to label
       el('line', {
-        x1: ex, y1: ey, x2: ex, y2: labelY + 4,
+        'class': 'chart-annotation-line',
+        x1: ex, y1: ey, x2: ex, y2: labelY + (p.above ? 4 : -8),
         stroke: color, 'stroke-width': '1', 'stroke-dasharray': '2,2'
       }, g);
-      el('circle', { cx: ex, cy: ey, r: '4', fill: color }, g);
-      var txt = el('text', {
-        x: ex, y: labelY, 'text-anchor': 'middle',
-        fill: color, 'font-size': '11'
+      el('circle', { cx: ex, cy: ey, r: '3.5', fill: color }, g);
+      // background rect for readability
+      var charW = 5.6;
+      var w = Math.max(label.length * charW + 6, 20);
+      var anchor = ex < pad.left + w / 2 ? 'start' : (ex > W - pad.right - w / 2 ? 'end' : 'middle');
+      var rectX = anchor === 'start' ? ex - 3 : (anchor === 'end' ? ex - w + 3 : ex - w / 2);
+      el('rect', {
+        'class': 'chart-annotation-bg',
+        x: rectX, y: labelY - 9, width: w, height: 12, rx: '2',
+        fill: 'rgba(10,12,18,0.78)', stroke: color, 'stroke-width': '0.5'
       }, g);
-      txt.textContent = ev.label;
+      var txt = el('text', {
+        x: ex, y: labelY, 'text-anchor': anchor,
+        fill: color, 'font-size': '10'
+      }, g);
+      txt.textContent = label;
     });
 
     container.appendChild(built.figure);
