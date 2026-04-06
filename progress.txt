@@ -42,3 +42,4 @@ ts Mon Apr  6 23:44:54     2026 Task 15: FTSE 100 annotated chart added to uk/06
 [2026-04-06T15:03:39Z] Task 29: Added G10 6-country policy rate annual line chart (2000-2025) to index.html with annotations
 
 [2026-04-07 00:08] Task 30: governor tenure gantt charts inserted into all 10 01_central_bank.html files via scripts/gen_gantt.py
+Tue Apr  7 00:09:58     2026: Task 31 - added charts.js script tag to all 200 country HTML pages
