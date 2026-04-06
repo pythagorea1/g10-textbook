@@ -139,6 +139,57 @@
       <section>
         <h2>4. EUR/NOK・USD/NOKの推移</h2>
 
+        <figure class="chart-figure">
+          <figcaption class="chart-title">USD/NOK Long-term Chart with Oil Price Annotations (1993-2025)</figcaption>
+          <svg class="svg-chart" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet">
+            <g class="chart-grid" stroke="rgba(255,255,255,0.06)" stroke-width="1">
+              <line x1="60" y1="50" x2="60" y2="360"/>
+              <line x1="60" y1="360" x2="780" y2="360"/>
+              <line x1="60" y1="50" x2="780" y2="50"/>
+              <line x1="60" y1="138" x2="780" y2="138"/>
+              <line x1="60" y1="227" x2="780" y2="227"/>
+              <line x1="60" y1="316" x2="780" y2="316"/>
+            </g>
+            <g class="chart-axis" fill="#888" font-size="10" font-family="sans-serif">
+              <text x="55" y="54" text-anchor="end">12</text>
+              <text x="55" y="142" text-anchor="end">10</text>
+              <text x="55" y="231" text-anchor="end">8</text>
+              <text x="55" y="320" text-anchor="end">6</text>
+              <text x="55" y="364" text-anchor="end">5</text>
+              <text x="60" y="378">1993</text>
+              <text x="240" y="378">2001</text>
+              <text x="397" y="378">2008</text>
+              <text x="555" y="378">2015</text>
+              <text x="673" y="378">2020</text>
+              <text x="780" y="378" text-anchor="end">2025</text>
+            </g>
+            <path class="chart-line" fill="none" stroke="#00d4aa" stroke-width="2.2"
+              d="M 60,267 L 105,301 L 173,245 L 240,183 L 285,268 L 398,357 L 414,271 L 443,324 L 510,323 L 555,224 L 600,216 L 645,192 L 673,81 L 690,191 L 713,145 L 735,131 L 758,94 L 780,125"/>
+            <g class="chart-annotation" font-family="sans-serif">
+              <circle cx="173" cy="245" r="4" fill="#ff6b6b"/>
+              <line x1="173" y1="245" x2="173" y2="200" stroke="#ff6b6b" stroke-width="1"/>
+              <text x="173" y="195" text-anchor="middle" fill="#ff6b6b" font-size="11">1998 石油$10 NOK急落</text>
+
+              <circle cx="398" cy="357" r="4" fill="#4ecdc4"/>
+              <line x1="398" y1="357" x2="398" y2="335" stroke="#4ecdc4" stroke-width="1"/>
+              <text x="398" y="332" text-anchor="middle" fill="#4ecdc4" font-size="11">2008Q2 NOK最高値5.07 (石油$147)</text>
+
+              <circle cx="555" cy="224" r="4" fill="#ff6b6b"/>
+              <line x1="555" y1="224" x2="555" y2="170" stroke="#ff6b6b" stroke-width="1"/>
+              <text x="555" y="165" text-anchor="middle" fill="#ff6b6b" font-size="11">2014-15 石油$30暴落</text>
+
+              <circle cx="673" cy="81" r="5" fill="#ff6b6b"/>
+              <line x1="673" y1="81" x2="673" y2="60" stroke="#ff6b6b" stroke-width="1"/>
+              <text x="673" y="55" text-anchor="middle" fill="#ff6b6b" font-size="11">2020-03 COVID+石油戦争 11.30</text>
+
+              <circle cx="758" cy="94" r="4" fill="#ffa500"/>
+              <line x1="758" y1="94" x2="700" y2="105" stroke="#ffa500" stroke-width="1"/>
+              <text x="697" y="108" text-anchor="end" fill="#ffa500" font-size="11">2024 構造的NOK安 11.00</text>
+            </g>
+          </svg>
+          <p class="chart-caption">出典: Norges Bank, BIS. USD/NOK年末値（2008・2020は異常変動時点）。NOKは原油価格に最も強く相関するG10通貨。</p>
+        </figure>
+
         <h3>主要為替レート年表</h3>
         <table class="data-table sortable">
           <thead>
