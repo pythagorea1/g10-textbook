@@ -1,15 +1,6 @@
-=== Iteration 23 === 2026-04-05 23:44:06 ===
+=== Iteration 23 === 2026-04-06 23:53:55 ===
 Exit code: 0
-Duration: 345s
+Duration: 88s
 
-**Task 23 complete.** Scanned all 10 countries' `10_equity_current.html` pages for AI boom / 2024-2025 coverage:
-
-- **6 countries already adequate** (Eurozone, UK, Australia, NZ, Canada, Switzerland) — all had good AI/2024-2025 coverage
-- **4 countries updated:**
-  - **US**: Added Liberation Day tariff crash specifics (April 2, S&P -12% in 4 days, 90-day pause +9.5% rebound)
-  - **Japan**: Added 2025 Q1 row to annual table (Nikkei ~35,600), new section on Trump tariff shock (auto 25% tariff, Nikkei to 33,780)
-  - **Sweden**: Fixed Riksbank rate from "→2.50%" to cumulative 8 cuts to 1.75% (aligned with Task 18), added 2025 Q1 row
-  - **Norway**: Fixed Norges Bank rate to reflect 2 cuts from 4.50% to 4.00% (aligned with Task 19), added tariff shock impact
-
-7 remaining tasks in PRD.md. Stopping here for this iteration.
+Task 23 complete. RBNZ OCR annotated chart (1999-2026) added with 9 event markers covering the 8.25% peak, GFC -575bp, Christchurch earthquake, 2019 surprise cut, COVID, G10-fastest hike, 5.50% peak, and 2024-25 easing cycle.
 

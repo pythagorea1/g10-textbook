@@ -34,3 +34,4 @@ ts Mon Apr  6 23:44:54     2026 Task 15: FTSE 100 annotated chart added to uk/06
 [Mon Apr  6 23:52:31     2026] Task 21: ASX 200 annotated chart added to australia/06_equity_overview.html
 [Mon Apr  6 23:53:46     2026] Task 22: AUDUSD annotated chart added to australia/14_currency.html
 [2026-04-06 iter24] Task 23: newzealand/02_policy_rate.html - added RBNZ OCR annotated SVG chart (1999-2026) with 9 event markers
+[Mon Apr  6 23:56:24     2026] Task 24: canada/02_policy_rate.html — BOC policy rate annotated chart 1975-2026
