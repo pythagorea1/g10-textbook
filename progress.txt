@@ -20,3 +20,4 @@
 Mon Apr  6 23:35:20     2026 Task 9: japan/13_long_rates.html — annotated 10Y JGB yield chart 1985-2025 with 8 events (1990 high, 1998 sub-1%, 2003 VaR, 2016 NIRP, YCC start/expand/end, 2025 1.5%)
 [Mon Apr  6 23:36:40     2026] Task 10: japan/14_currency.html USDJPY 1971-2026 chart added
 [Mon Apr  6 23:38:04     2026] Task 11: ECB MRO annotated chart added to eurozone/02_policy_rate.html
+[Mon Apr  6 23:39:49     2026] Task 12: Added DAX 1990-2025 log-scale annotated SVG chart to eurozone/06_equity_overview.html
