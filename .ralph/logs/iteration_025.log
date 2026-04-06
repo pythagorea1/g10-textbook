@@ -1,6 +1,6 @@
-=== Iteration 25 === 2026-04-06 23:56:32 ===
+=== Iteration 25 === 2026-04-07 08:17:22 ===
 Exit code: 0
-Duration: 83s
+Duration: 111s
 
-Task 25 complete: USDCAD long-term chart with oil-correlation annotations added.
+Task 25 complete. Added SMI charts to switzerland 06_equity_overview.html (1990-2025), 09_equity_recent.html (2000-2019), and 10_equity_current.html (2020-2026).
 

@@ -69,3 +69,4 @@ Tue Apr  7 08:07:32     2026 Task 20: added eurozone employment + HICP charts
 [Tue Apr  7 08:14:33     2026] Task 23: added FTSE 100 charts to uk/09 (2000-2019) and uk/10 (2020-2025)
 [Tue Apr  7 08:17:10     2026] Task 24: Added charts to switzerland 03/04/05 (debt/GDP, unemployment, CPI)
 [Tue Apr  7 08:19:10     2026] Task 25: SMI charts added to switzerland 06/09/10
+Tue Apr  7 08:20:44     2026 Task 26: AU fiscal/employment/inflation charts
