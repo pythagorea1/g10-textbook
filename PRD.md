@@ -60,7 +60,7 @@
 
 ## Phase 9: 北欧 — 漏れ埋め
 - [x] Task 32: sweden/03_fiscal_policy.html, sweden/04_employment.html, sweden/05_inflation.html
-- [ ] Task 33: sweden/06_equity_overview.html, sweden/14_currency.html
+- [x] Task 33: sweden/06_equity_overview.html, sweden/14_currency.html
 - [ ] Task 34: norway/03_fiscal_policy.html, norway/04_employment.html, norway/05_inflation.html
 - [ ] Task 35: norway/06_equity_overview.html (OBX), norway/15_crises.html
 
