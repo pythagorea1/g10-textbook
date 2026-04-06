@@ -48,7 +48,7 @@ G10通貨国の金融市場教科書（200ページ超）に、テキスト中�
 - [x] Task 16: uk/14_currency.html — GBPUSD長期チャート + ERM離脱、Brexit、トラスショックの注釈
 
 ### Phase 5: スイス（CH）
-- [ ] Task 17: switzerland/02_policy_rate.html — SNB政策金利推移 + マイナス金利導入・解除、2024年3月利下げ（先進国初）の注釈
+- [x] Task 17: switzerland/02_policy_rate.html — SNB政策金利推移 + マイナス金利導入・解除、2024年3月利下げ（先進国初）の注釈
 - [ ] Task 18: switzerland/14_currency.html — EURCHFチャート + 1.20上限導入(2011)・撤廃ショック(2015)の劇的注釈
 - [ ] Task 19: switzerland/15_crises.html — UBS/CS危機タイムライン（2008 UBS救済、2023 CS破綻→UBS統合）
 

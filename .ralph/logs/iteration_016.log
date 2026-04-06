@@ -1,16 +1,6 @@
-=== Iteration 16 === 2026-04-05 23:09:14 ===
+=== Iteration 16 === 2026-04-06 23:45:02 ===
 Exit code: 0
-Duration: 203s
+Duration: 65s
 
-Task 16 completed. Updated `newzealand/02_policy_rate.html` with:
-
-- **RBNZ利下げサイクル全9回**: 5.50% → 2.25%（2024年8月〜2025年11月、累計-325bp）
-- **2024年**: 3回利下げ（-125bp）— 8月-25bp、10月-50bp、11月-50bp
-- **2025年**: 6回利下げ（-200bp）— 2月-50bp、4月-25bp、5月-25bp、8月-25bp、10月-50bp、11月-25bp
-- **2026年2月**: 据え置き（2.25%）、利下げサイクル終了
-- **2026年見通し**: OCRトラック2.38%、エコノミスト予想は年末2.50%
-- OCR推移テーブルに8行追加、G10比較テーブルを2026年4月時点に更新
-- NZ金利がAU・USより低いという歴史的逆転を記述
-
-Progress: **16/30 tasks completed**, 14 remaining.
+Task 16 complete: Added GBP/USD long-term annotated SVG chart (1971-2026) to uk/14_currency.html with annotations for 1985 dollar peak, 1992 Black Wednesday, 2007 GFC peak, 2016 Brexit, and 2022 Truss shock.
 

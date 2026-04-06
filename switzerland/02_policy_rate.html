@@ -92,6 +92,68 @@
         </div>
       </div>
 
+      <figure class="chart-figure">
+        <figcaption class="chart-title">SNB Policy Rate (1975–2026)</figcaption>
+        <svg class="svg-chart" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet">
+          <g class="chart-grid">
+            <line x1="60" y1="50" x2="60" y2="360" stroke="rgba(255,255,255,0.15)"/>
+            <line x1="60" y1="360" x2="780" y2="360" stroke="rgba(255,255,255,0.15)"/>
+            <line x1="60" y1="50" x2="780" y2="50" stroke="rgba(255,255,255,0.05)"/>
+            <line x1="60" y1="120" x2="780" y2="120" stroke="rgba(255,255,255,0.05)"/>
+            <line x1="60" y1="190" x2="780" y2="190" stroke="rgba(255,255,255,0.05)"/>
+            <line x1="60" y1="260" x2="780" y2="260" stroke="rgba(255,255,255,0.05)"/>
+            <line x1="60" y1="330" x2="780" y2="330" stroke="rgba(255,255,255,0.05)"/>
+          </g>
+          <g class="chart-axis" fill="rgba(255,255,255,0.6)" font-size="10">
+            <text x="55" y="54" text-anchor="end">8%</text>
+            <text x="55" y="124" text-anchor="end">6%</text>
+            <text x="55" y="194" text-anchor="end">4%</text>
+            <text x="55" y="264" text-anchor="end">2%</text>
+            <text x="55" y="334" text-anchor="end">0%</text>
+            <text x="55" y="358" text-anchor="end">-1%</text>
+            <text x="60" y="378">1975</text>
+            <text x="200" y="378">1985</text>
+            <text x="340" y="378">1995</text>
+            <text x="480" y="378">2005</text>
+            <text x="620" y="378">2015</text>
+            <text x="780" y="378" text-anchor="end">2026</text>
+          </g>
+          <!-- y: 0%=330, 1%=295, scale 35px/% -->
+          <path class="chart-line" fill="none" stroke="#00d4aa" stroke-width="2"
+            d="M 60,225 L 80,260 L 100,295 L 120,295 L 140,260 L 160,225 L 180,190 L 200,155 L 220,120 L 235,85 L 250,120 L 280,155 L 310,225 L 340,260 L 360,295 L 390,260 L 420,260 L 450,225 L 480,295 L 500,260 L 520,190 L 540,225 L 560,295 L 580,330 L 600,330 L 615,330 L 630,330 L 650,346 L 680,356 L 700,356 L 715,356 L 720,356 L 730,313 L 740,295 L 750,260 L 758,243 L 765,260 L 772,295 L 778,330"/>
+          <g class="chart-annotation">
+            <circle cx="235" cy="85" r="5" fill="#ff6b6b"/>
+            <line x1="235" y1="85" x2="235" y2="60" stroke="#ff6b6b" stroke-width="1"/>
+            <text x="235" y="55" text-anchor="middle" fill="#ff6b6b" font-size="11">1991 7% 不動産バブル</text>
+
+            <circle cx="580" cy="330" r="5" fill="#4ecdc4"/>
+            <line x1="580" y1="330" x2="580" y2="100" stroke="#4ecdc4" stroke-width="1"/>
+            <text x="580" y="95" text-anchor="middle" fill="#4ecdc4" font-size="11">2011 EUR/CHF 1.20上限</text>
+
+            <circle cx="615" cy="356" r="5" fill="#ff6b6b"/>
+            <line x1="615" y1="356" x2="615" y2="200" stroke="#ff6b6b" stroke-width="1"/>
+            <text x="615" y="195" text-anchor="middle" fill="#ff6b6b" font-size="11">2015-01 -0.75% (世界最低)</text>
+
+            <circle cx="720" cy="356" r="5" fill="#ffd166"/>
+            <line x1="720" y1="356" x2="720" y2="155" stroke="#ffd166" stroke-width="1"/>
+            <text x="720" y="150" text-anchor="middle" fill="#ffd166" font-size="11">2022-06 マイナス金利解除</text>
+
+            <circle cx="758" cy="243" r="5" fill="#ffd166"/>
+            <line x1="758" y1="243" x2="758" y2="220" stroke="#ffd166" stroke-width="1"/>
+            <text x="758" y="215" text-anchor="middle" fill="#ffd166" font-size="11">2023 1.75%</text>
+
+            <circle cx="765" cy="260" r="5" fill="#00d4aa"/>
+            <line x1="765" y1="260" x2="700" y2="285" stroke="#00d4aa" stroke-width="1"/>
+            <text x="700" y="282" text-anchor="end" fill="#00d4aa" font-size="11">2024-03 先進国初の利下げ</text>
+
+            <circle cx="778" cy="330" r="5" fill="#00d4aa"/>
+            <line x1="778" y1="330" x2="700" y2="320" stroke="#00d4aa" stroke-width="1"/>
+            <text x="700" y="318" text-anchor="end" fill="#00d4aa" font-size="11">2025-06 0.00%</text>
+          </g>
+        </svg>
+        <p class="chart-caption">出典: SNB Press Releases. 1975年以降の主要転換点を示す（1991年7%ピーク、2015年-0.75%、2024年先進国初の利下げ転換）。</p>
+      </figure>
+
       <!-- 概観 -->
       <section>
         <h2>概観</h2>
