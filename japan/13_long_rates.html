@@ -139,37 +139,36 @@
           <path class="chart-line" fill="none" stroke="#00d4aa" stroke-width="2"
                 d="M 60,133.7 L 95.1,198.8 L 130.2,158.5 L 161.0,59.3 L 200.5,205 L 235.6,251.5 L 270.7,267 L 288.3,305.1 L 305.9,276.3 L 384.9,315.7 L 389.3,279.4 L 428.8,270.1 L 463.9,291.8 L 551.7,307.3 L 606.1,329 L 613.2,338 L 617.6,329 L 725.5,313.5 L 741.3,299.55 L 748.4,305.75 L 766,282.5"/>
           <g class="chart-annotation" font-size="10">
-            <circle cx="161" cy="59.3" r="5" fill="#ff6b6b"/>
-            <line x1="161" y1="59.3" x2="161" y2="42" stroke="#ff6b6b"/>
-            <text x="161" y="38" text-anchor="middle" fill="#ff6b6b">1990 史上最高 8.7%</text>
+            <!-- 6 key events, alternating above/below with bg rects -->
+            <circle cx="161" cy="59.3" r="4" fill="#ff6b6b"/>
+            <line class="chart-annotation-line" x1="161" y1="59.3" x2="161" y2="42" stroke="#ff6b6b" stroke-width="1"/>
+            <rect class="chart-annotation-bg" x="121" y="28" width="80" height="14" rx="2" fill="rgba(0,0,0,0.7)"/>
+            <text x="161" y="38" text-anchor="middle" fill="#ff6b6b">1990 高値 8.7%</text>
 
-            <circle cx="288.3" cy="305.1" r="5" fill="#4ecdc4"/>
-            <line x1="288.3" y1="305.1" x2="288.3" y2="155" stroke="#4ecdc4"/>
-            <text x="288.3" y="150" text-anchor="middle" fill="#4ecdc4">1998 1%割れ 0.77%</text>
+            <circle cx="288" cy="305" r="4" fill="#4ecdc4"/>
+            <line class="chart-annotation-line" x1="288" y1="305" x2="288" y2="388" stroke="#4ecdc4" stroke-width="1"/>
+            <rect class="chart-annotation-bg" x="248" y="390" width="80" height="14" rx="2" fill="rgba(0,0,0,0.7)"/>
+            <text x="288" y="400" text-anchor="middle" fill="#4ecdc4">1998 1%割れ</text>
 
-            <circle cx="389.3" cy="279.4" r="5" fill="#ff6b6b"/>
-            <line x1="389.3" y1="279.4" x2="389.3" y2="225" stroke="#ff6b6b"/>
-            <text x="389.3" y="220" text-anchor="middle" fill="#ff6b6b">2003 VaRショック</text>
+            <circle cx="389" cy="279" r="4" fill="#ff6b6b"/>
+            <line class="chart-annotation-line" x1="389" y1="279" x2="389" y2="258" stroke="#ff6b6b" stroke-width="1"/>
+            <rect class="chart-annotation-bg" x="349" y="244" width="80" height="14" rx="2" fill="rgba(0,0,0,0.7)"/>
+            <text x="389" y="254" text-anchor="middle" fill="#ff6b6b">2003 VaRショック</text>
 
-            <circle cx="613.2" cy="338" r="5" fill="#4ecdc4"/>
-            <line x1="613.2" y1="338" x2="555" y2="355" stroke="#4ecdc4"/>
-            <text x="500" y="358" text-anchor="middle" fill="#4ecdc4">2016 マイナス金利 -0.29%</text>
+            <circle cx="617" cy="329" r="4" fill="#ffd166"/>
+            <line class="chart-annotation-line" x1="617" y1="329" x2="617" y2="388" stroke="#ffd166" stroke-width="1"/>
+            <rect class="chart-annotation-bg" x="577" y="390" width="80" height="14" rx="2" fill="rgba(0,0,0,0.7)"/>
+            <text x="617" y="400" text-anchor="middle" fill="#ffd166">2016 YCC開始</text>
 
-            <circle cx="617.6" cy="329" r="5" fill="#ffd166"/>
-            <line x1="617.6" y1="329" x2="617.6" y2="200" stroke="#ffd166"/>
-            <text x="617.6" y="195" text-anchor="middle" fill="#ffd166">2016-09 YCC開始</text>
+            <circle cx="748" cy="305" r="4" fill="#ff6b6b"/>
+            <line class="chart-annotation-line" x1="748" y1="305" x2="748" y2="278" stroke="#ff6b6b" stroke-width="1"/>
+            <rect class="chart-annotation-bg" x="708" y="264" width="80" height="14" rx="2" fill="rgba(0,0,0,0.7)"/>
+            <text x="748" y="274" text-anchor="middle" fill="#ff6b6b">2024 YCC撤廃</text>
 
-            <circle cx="725.5" cy="313.5" r="5" fill="#ffd166"/>
-            <line x1="725.5" y1="313.5" x2="700" y2="265" stroke="#ffd166"/>
-            <text x="700" y="260" text-anchor="middle" fill="#ffd166">2022-12 YCC幅拡大</text>
-
-            <circle cx="748.4" cy="305.75" r="5" fill="#ff6b6b"/>
-            <line x1="748.4" y1="305.75" x2="748.4" y2="120" stroke="#ff6b6b"/>
-            <text x="748.4" y="115" text-anchor="middle" fill="#ff6b6b">2024-03 YCC撤廃</text>
-
-            <circle cx="766" cy="282.5" r="5" fill="#00d4aa"/>
-            <line x1="766" y1="282.5" x2="766" y2="85" stroke="#00d4aa"/>
-            <text x="766" y="80" text-anchor="end" fill="#00d4aa">2025 ~1.5%</text>
+            <circle cx="766" cy="282" r="4" fill="#00d4aa"/>
+            <line class="chart-annotation-line" x1="766" y1="282" x2="766" y2="388" stroke="#00d4aa" stroke-width="1"/>
+            <rect class="chart-annotation-bg" x="724" y="390" width="76" height="14" rx="2" fill="rgba(0,0,0,0.7)"/>
+            <text x="762" y="400" text-anchor="middle" fill="#00d4aa">2025 ~1.5%</text>
           </g>
         </svg>
         <p class="chart-caption">出典: 財務省、日本銀行、FRED. 主要転換点を注釈表示。1990年バブル期高金利からマイナス圏、そして正常化まで40年の軌跡。</p>

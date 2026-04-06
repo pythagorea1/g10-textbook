@@ -113,34 +113,37 @@
           </g>
           <path class="chart-line" fill="none" stroke="#00d4aa" stroke-width="2"
             d="M 60,333 L 124,261 L 189,215 L 253,158 L 316,57 L 343,135 L 381,120 L 420,153 L 446,153 L 484,209 L 536,133 L 565,216 L 600,180 L 639,124 L 677,119 L 706,137 L 716,85 L 741,71 L 762,49 L 780,57"/>
-          <g class="chart-annotation">
-            <circle cx="316" cy="57" r="5" fill="#ff6b6b"/>
-            <line x1="316" y1="57" x2="316" y2="32" stroke="#ff6b6b" stroke-width="1"/>
-            <text x="316" y="27" text-anchor="middle" fill="#ff6b6b" font-size="11">1989-12 バブル天井 38,915円</text>
+          <g class="chart-annotation" font-size="10">
+            <!-- 6 key events, alternating above/below with bg rects -->
+            <circle cx="316" cy="57" r="4" fill="#ff6b6b"/>
+            <line class="chart-annotation-line" x1="316" y1="57" x2="316" y2="40" stroke="#ff6b6b" stroke-width="1"/>
+            <rect class="chart-annotation-bg" x="270" y="26" width="92" height="14" rx="2" fill="rgba(0,0,0,0.7)"/>
+            <text x="316" y="36" text-anchor="middle" fill="#ff6b6b">1989 バブル天井38,915</text>
 
-            <circle cx="565" cy="216" r="5" fill="#ff6b6b"/>
-            <line x1="565" y1="216" x2="565" y2="246" stroke="#ff6b6b" stroke-width="1"/>
-            <text x="565" y="260" text-anchor="middle" fill="#ff6b6b" font-size="11">2009-03 リーマン後底 7,055</text>
+            <circle cx="484" cy="209" r="4" fill="#ff6b6b"/>
+            <line class="chart-annotation-line" x1="484" y1="209" x2="484" y2="240" stroke="#ff6b6b" stroke-width="1"/>
+            <rect class="chart-annotation-bg" x="446" y="240" width="76" height="14" rx="2" fill="rgba(0,0,0,0.7)"/>
+            <text x="484" y="250" text-anchor="middle" fill="#ff6b6b">2003 ITバブル底</text>
 
-            <circle cx="484" cy="209" r="5" fill="#ff6b6b"/>
-            <line x1="484" y1="209" x2="484" y2="239" stroke="#ff6b6b" stroke-width="1"/>
-            <text x="484" y="253" text-anchor="middle" fill="#ff6b6b" font-size="11">2003 ITバブル後底</text>
+            <circle cx="565" cy="216" r="4" fill="#ff6b6b"/>
+            <line class="chart-annotation-line" x1="565" y1="216" x2="565" y2="186" stroke="#ff6b6b" stroke-width="1"/>
+            <rect class="chart-annotation-bg" x="525" y="172" width="80" height="14" rx="2" fill="rgba(0,0,0,0.7)"/>
+            <text x="565" y="182" text-anchor="middle" fill="#ff6b6b">2009 リーマン底</text>
 
-            <circle cx="639" cy="124" r="5" fill="#4ecdc4"/>
-            <line x1="639" y1="124" x2="639" y2="94" stroke="#4ecdc4" stroke-width="1"/>
-            <text x="639" y="89" text-anchor="middle" fill="#4ecdc4" font-size="11">2013-15 アベノミクス相場</text>
+            <circle cx="639" cy="124" r="4" fill="#4ecdc4"/>
+            <line class="chart-annotation-line" x1="639" y1="124" x2="639" y2="156" stroke="#4ecdc4" stroke-width="1"/>
+            <rect class="chart-annotation-bg" x="599" y="156" width="80" height="14" rx="2" fill="rgba(0,0,0,0.7)"/>
+            <text x="639" y="166" text-anchor="middle" fill="#4ecdc4">2013 アベノミクス</text>
 
-            <circle cx="706" cy="137" r="5" fill="#ff6b6b"/>
-            <line x1="706" y1="137" x2="690" y2="170" stroke="#ff6b6b" stroke-width="1"/>
-            <text x="685" y="183" text-anchor="middle" fill="#ff6b6b" font-size="11">2020-03 COVID</text>
+            <circle cx="706" cy="137" r="4" fill="#ff6b6b"/>
+            <line class="chart-annotation-line" x1="706" y1="137" x2="706" y2="106" stroke="#ff6b6b" stroke-width="1"/>
+            <rect class="chart-annotation-bg" x="670" y="92" width="72" height="14" rx="2" fill="rgba(0,0,0,0.7)"/>
+            <text x="706" y="102" text-anchor="middle" fill="#ff6b6b">2020 COVID</text>
 
-            <circle cx="762" cy="49" r="6" fill="#00d4aa"/>
-            <line x1="762" y1="49" x2="745" y2="20" stroke="#00d4aa" stroke-width="1"/>
-            <text x="745" y="15" text-anchor="end" fill="#00d4aa" font-size="11">2024-07 史上最高値 42,224</text>
-
-            <circle cx="741" cy="71" r="5" fill="#00d4aa"/>
-            <line x1="741" y1="71" x2="720" y2="45" stroke="#00d4aa" stroke-width="1"/>
-            <text x="715" y="40" text-anchor="end" fill="#00d4aa" font-size="11">2024-02 34年ぶり高値更新</text>
+            <circle cx="762" cy="49" r="4" fill="#00d4aa"/>
+            <line class="chart-annotation-line" x1="762" y1="49" x2="762" y2="80" stroke="#00d4aa" stroke-width="1"/>
+            <rect class="chart-annotation-bg" x="710" y="80" width="92" height="14" rx="2" fill="rgba(0,0,0,0.7)"/>
+            <text x="756" y="90" text-anchor="middle" fill="#00d4aa">2024 最高値42,224</text>
           </g>
           <g class="chart-axis">
             <text x="60" y="380" fill="#888" font-size="10">1970</text>
