@@ -54,3 +54,4 @@ Tue Apr  7 00:09:58     2026: Task 31 - added charts.js script tag to all 200 co
 [2026-04-07 iter9] Task 8: us/04_employment.html unemployment chart 1948-2026 added (6 annotations: 1958, 75 stagfl, 82 Volcker, 09 GFC, 20 COVID, 23 low)
 [Tue Apr  7 07:52:15     2026] Task 9: us/05_inflation.html CPI 1960-2026 chart added
 Tue Apr  7 07:53:29     2026 Task 10: us/09_equity_recent.html S&P500 2000-2019 chart added
+[Tue Apr  7 07:54:49     2026] Task 11: added S&P500 2020-2026 chart to us/10_equity_current.html
