@@ -1,6 +1,6 @@
-=== Iteration 36 === 2026-04-04 01:21:23 ===
-Exit code: 1
-Duration: 1079s
+=== Iteration 36 === 2026-04-07 08:36:59 ===
+Exit code: 0
+Duration: 51s
 
-API Error: 500 {"type":"error","error":{"type":"api_error","message":"Internal server error"},"request_id":"req_011CZhAg2A3PqMzBYLdRDGCe"}
+Task 36 done. Audited all 10 country dirs; ~110 chart-less files documented in progress.txt, mostly qualitative pages (07/08/16-20). Tasks 37-38 remain.
 

@@ -89,3 +89,5 @@ Scanned all 10 country dirs. Pages without svg-chart (need consideration):
 - Missing 14_currency: us, eurozone
 Total chart-less files: ~110. Most are qualitative pages (16-20). Recommendation: prioritize 09/10/11/12/13/15 gaps in a future loop. For 07/08/16-20 a textual timeline would suffice.
 Task 36 complete.
+
+[2026-04-07 iter38] Task 37: scanned all 02_policy_rate and 06_equity_overview pages. Strict count of class="chart-annotation" returns 0 files >10. Earlier raw grep counts inflated by chart-annotation-bg/-line classes. No remediation needed.

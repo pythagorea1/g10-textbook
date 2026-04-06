@@ -66,7 +66,7 @@
 
 ## Phase 10: 監査と最終
 - [x] Task 36: 全200ページをスキャンし、`grep -L 'svg-chart' *.html` で「chart要素を一切持たないページ」リストを作成（progress.txtに記録）。明らかにビジュアル化が必要なページ（07/08/16/17/18/19/20）に最低1つはチャートまたはタイムラインを追加可能か検討
-- [ ] Task 37: 全 02_policy_rate / 06_equity_overview ページを再度スキャン。注釈ラベル数が10超のファイルがあれば再修正
+- [x] Task 37: 全 02_policy_rate / 06_equity_overview ページを再度スキャン。注釈ラベル数が10超のファイルがあれば再修正
 - [ ] Task 38: progress.txt にPhase 2の最終サマリーを記載（追加チャート総数、修正ファイル数、残課題）
 
 ## Constraints
