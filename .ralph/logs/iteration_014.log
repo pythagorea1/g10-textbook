@@ -1,6 +1,6 @@
-=== Iteration 14 === 2026-04-06 23:42:09 ===
+=== Iteration 14 === 2026-04-07 07:57:35 ===
 Exit code: 0
-Duration: 87s
+Duration: 66s
 
-Task 14 complete. Added annotated SVG Bank Rate chart (1975-2026) with 10 event markers to uk/02_policy_rate.html.
+Task 14 complete: added Japan debt/GDP chart (1980-2026) with 6 alternating annotations to japan/03_fiscal_policy.html.
 
