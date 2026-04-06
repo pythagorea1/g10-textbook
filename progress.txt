@@ -23,3 +23,4 @@ Mon Apr  6 23:35:20     2026 Task 9: japan/13_long_rates.html — annotated 10Y 
 [Mon Apr  6 23:39:49     2026] Task 12: Added DAX 1990-2025 log-scale annotated SVG chart to eurozone/06_equity_overview.html
 [2026-04-06 23:42] Task 13: Added PIIGS 10Y yield chart (2008-2018) with 5 country lines (GR/IE/PT/ES/IT) and 5 annotations to eurozone/15_crises.html
 [2026-04-06T23:43:34+09:00] Task 14: added Bank Rate annotated SVG chart (1975-2026) to uk/02_policy_rate.html with 10 annotations (Thatcher 17%, Lawson 15%, ERM exit, GFC, low-rate era, Brexit, COVID 0.10%, LDI, 2023 5.25%, 2026 hold)
+ts Mon Apr  6 23:44:54     2026 Task 15: FTSE 100 annotated chart added to uk/06_equity_overview.html
