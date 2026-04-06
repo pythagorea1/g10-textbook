@@ -1,103 +1,81 @@
-# G10 Markets Historical Textbook — Ralph-Loop Instructions
+# G10 Textbook — Visualization Overhaul (Ralph-Loop Instructions)
 
 ## Project
-G10通貨国の株式市場・金利市場の歴史をカバーするHTML教科書を作成する。各国20ページ、合計200ページ超。
+G10通貨国の金融市場教科書（200ページ超）に、インラインSVGチャート＋注釈マーカーを全面導入する。
+テキスト中心の構成を見直し、読者が一目で歴史的文脈を掴めるようにする。
 
 ## Workflow (EVERY iteration)
 1. **Read PRD.md** — 最初の未完了タスク (- [ ]) を見つける
 2. **Read progress.txt** — 前イテレーションの作業を把握する
-3. **実装する** — そのタスクを完全に実装する
-4. **検証する** — 作成したHTMLファイルが正しく生成されたことを確認（ファイル存在、基本構造）
-5. **PRD.md を更新** — 完了タスクを - [x] に変更
-6. **progress.txt を更新** — ログエントリを追記
-7. **Git commit** — 変更をコミット
-8. **全タスク完了時** — EXIT_SIGNAL: COMPLETE を出力
+3. **(必要なら) WebSearchで数値確認** — チャートに使うデータポイントの正確性を担保
+4. **対象HTMLファイルを読む** — 既存構造を把握
+5. **インラインSVGチャートを実装** — 既存テキストは削除せず、適切な位置に追加挿入
+6. **検証** — HTMLをBashで `grep` してSVG要素が含まれていることを確認
+7. **PRD.md を更新** — 完了タスクを - [x] に変更
+8. **progress.txt を更新** — 何を追加したか記録
+9. **Git commit** — 変更をコミット（git initされていなければスキップ）
+10. **全タスク完了時** — EXIT_SIGNAL: COMPLETE を出力
 
 ## Rules
 - 1イテレーション = 1タスクのみ
 - 質問せず自律的に判断する
-- 完了前に必ず検証する
-- EXIT_SIGNAL: COMPLETE は全タスク完了時のみ
+- **外部CDN/library禁止** — 純粋なインラインSVG + Vanilla JS
+- **データはハードコード** — 月次/年次代表値を配列で埋め込む
+- **既存コンテンツを削除しない** — 追加のみ
+- **注釈マーカーは10個以下** — 多すぎると読めない
+- 数値は推測ではなくWebSearchで確認すること
 
-## Content Guidelines
+## SVG Chart Implementation Pattern
 
-### ページ構造
-各HTMLページは以下の構造に従う:
+### 基本構造
 ```html
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>[Country] - [Topic] | G10 Markets Textbook</title>
-  <link rel="stylesheet" href="../assets/style.css">
-</head>
-<body>
-  <nav class="sidebar"><!-- 各国ページ一覧 --></nav>
-  <main class="content">
-    <header><!-- ページタイトル、パンくずリスト --></header>
-    <article><!-- 本文 --></article>
-    <footer class="sources"><!-- 出典一覧 --></footer>
-  </main>
-  <script>/* テーブルソート等 */</script>
-</body>
-</html>
+<figure class="chart-figure">
+  <figcaption class="chart-title">S&amp;P 500 Long-term Chart (1950-2026)</figcaption>
+  <svg class="svg-chart" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet">
+    <!-- グリッド線 -->
+    <g class="chart-grid">
+      <line x1="60" y1="50" x2="60" y2="360" />
+      <line x1="60" y1="360" x2="780" y2="360" />
+      <!-- 横グリッド -->
+    </g>
+    <!-- 価格ライン -->
+    <path class="chart-line" d="M 60,300 L 100,280 L ..." fill="none" stroke="#00d4aa" stroke-width="2"/>
+    <!-- 注釈マーカー -->
+    <g class="chart-annotation">
+      <circle cx="350" cy="120" r="5" fill="#ff6b6b"/>
+      <line x1="350" y1="120" x2="350" y2="80" stroke="#ff6b6b" stroke-width="1"/>
+      <text x="350" y="75" text-anchor="middle" fill="#ff6b6b" font-size="11">2000 ドットコムピーク</text>
+    </g>
+    <!-- X/Y軸ラベル -->
+    <g class="chart-axis">
+      <text x="60" y="380">1950</text>
+      <text x="780" y="380" text-anchor="end">2026</text>
+    </g>
+  </svg>
+  <p class="chart-caption">出典: S&amp;P, FRED. 主要イベントを注釈表示。</p>
+</figure>
 ```
 
-### Central Bank Timeline Page (各国 page 1)
-必ず以下を含む:
-- **中央銀行の設立経緯と使命**
-- **歴代総裁/議長の一覧テーブル**: 名前、在任期間、タカ/ハト属性（🦅/🕊️アイコン）、主要な政策決定
-- **現在の政策委員会メンバー**: 名前、就任日、タカ/ハト属性
-- **金融政策の変遷年表**: 年、政策金利、主要イベント
-- **政策フレームワークの変化**: インフレターゲット導入、QE開始など
+### 注釈の質
+注釈は「いつ何が起きたか」を直接伝える。例:
+- "1987-10 ブラックマンデー -22%"
+- "2008-09 リーマン破綻"
+- "2020-03 COVID底"
+- "2024-02 日経 34年ぶり最高値更新"
 
-### データ表現
-- 年表は `<table>` タグで構造化
-- ソート可能にする（vanilla JS）
-- 重要イベントは色分け（利上げ=赤系、利下げ=青系、危機=オレンジ系）
-- 全データに出典を `<cite>` または脚注で明記
+### データ精度
+- 月次データで十分（年次でも可）
+- 主要転換点・ピーク・ボトムは正確に
+- 中間データはスムージングOK
 
-### ソース/出典ルール
-- 各セクションの末尾に出典リスト
-- フォーマット: `[番号] 著者/機関, "タイトル", 年, URL（可能な場合）`
-- 推測や不確実な情報は「市場コンセンサスベース」等と注記
-- 歴代総裁のタカ/ハト分類は市場での一般的評価に基づく旨を明記
+## File Locations
+- 共通CSS: assets/style.css （Phase 0で .svg-chart 等のスタイルを追加）
+- 共通JS: assets/charts.js （Phase 0で作成）
+- 各ページ: us/, japan/, eurozone/, uk/, switzerland/, australia/, newzealand/, canada/, sweden/, norway/
 
-### デザイン
-- Bloomberg Terminal風ダークテーマ
-- フォント: monospace系（数字）+ sans-serif（テキスト）
-- カラーパレット: 背景 #1a1a2e, テキスト #e0e0e0, アクセント #00d4aa (green), #ff6b6b (red), #4ecdc4 (teal)
-- テーブルはストライプ行、ホバーハイライト
-- レスポンシブ（モバイル対応）
-
-### 言語
-- メインは日本語
-- 固有名詞（人名、機関名）は英語併記
-- 例: 「アラン・グリーンスパン (Alan Greenspan)」
-
-### Content Depth
-各ページは十分な深さを持つこと:
-- 最低2000文字/ページ（日本語テキスト部分）
-- 年表テーブルは主要イベントを網羅（重要年は漏れなく）
-- 単なる箇条書きではなく、文脈と分析を含む narrative
-- 出来事の因果関係を説明する
-
-### Template Usage
-- templates/base.html の構造を参考にする（コピーではなく参照）
-- assets/style.css を全ページで共有
-- ナビゲーションは各国20ページ + 他国へのリンク
-
-### File Naming
-- 各国ディレクトリ: us/, eurozone/, japan/, uk/, switzerland/, australia/, newzealand/, canada/, sweden/, norway/
-- ページファイル: 01_central_bank.html 〜 20_lessons.html
-- 番号は2桁ゼロ埋め
-
-## Quality Checklist (per page)
-- [ ] HTMLが正しい構造（DOCTYPE, charset, viewport）
-- [ ] style.cssへのリンクが正しいパス
-- [ ] ナビゲーションが機能する
-- [ ] 全データに出典が記載
-- [ ] テーブルが適切にフォーマット
-- [ ] 2000文字以上の実質的コンテンツ
-- [ ] 固有名詞に英語併記
+## Verification
+タスク完了前に必ず:
+```bash
+grep -c '<svg' [updated_file.html]   # SVGが追加されたか確認
+grep -c 'chart-annotation' [file]    # 注釈が含まれるか
+```

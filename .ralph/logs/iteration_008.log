@@ -1,0 +1,21 @@
+=== Iteration 8 === 2026-04-05 22:37:45 ===
+Exit code: 0
+Duration: 286s
+
+Task 8 complete. Here's a summary of what was updated in `sweden/01_central_bank.html`:
+
+**Executive Board (6名→5名)**
+- New Riksbank Act (2023) reduced board from 6 to 5 members
+- Anna Breman removed (left for RBNZ Governor, Dec 2025)
+- Aino Bunge promoted to First Deputy Governor (Oct 2025)
+- Martin Flodén removed (term ended May 2024), replaced by Anna Seim
+- Göran Hjelm added as new Deputy Governor (March 2026, replacing Breman's seat)
+- Corrected erroneous entries (Hadžialić, "Pål Jonson")
+
+**Policy Rate**
+- 2024: 4.00% → 2.50% (5 cuts, -150bp)
+- 2025: 2.50% → 1.75% (3 cuts: Jan/Jun/Sep)
+- 2026: unchanged at 1.75% (Jan & Mar holds)
+
+**Progress: 8 completed, 22 remaining.**
+

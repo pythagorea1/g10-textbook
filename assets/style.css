@@ -575,6 +575,176 @@ sup.ref:hover {
   }
 }
 
+/* --- TTS Reader --- */
+.tts-highlight {
+  background: rgba(0, 212, 170, 0.15) !important;
+  border-left: 3px solid var(--accent-green) !important;
+  padding-left: 0.6rem !important;
+  border-radius: 4px;
+  transition: background 0.3s ease, border-left 0.3s ease;
+}
+
+/* Floating Action Button */
+.tts-fab {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--accent-green);
+  color: var(--bg-primary);
+  border: none;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0, 212, 170, 0.35);
+  z-index: 1000;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.tts-fab:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 24px rgba(0, 212, 170, 0.5);
+}
+.tts-fab-visible {
+  display: flex;
+}
+
+/* Control Panel */
+.tts-panel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1001;
+  transform: translateY(100%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.tts-panel-visible {
+  transform: translateY(0);
+}
+.tts-panel-inner {
+  background: var(--bg-sidebar);
+  border-top: 1px solid var(--border-color);
+  padding: 0.7rem 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.tts-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.tts-btn {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, border-color 0.15s;
+}
+.tts-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--border-hover);
+}
+.tts-btn-play {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border-color: var(--accent-green);
+}
+.tts-btn-play:hover {
+  background: rgba(0, 212, 170, 0.15);
+}
+.tts-btn-active {
+  background: rgba(0, 212, 170, 0.2);
+  border-color: var(--accent-green);
+}
+
+.tts-btn-close {
+  width: 28px;
+  height: 28px;
+  border: none;
+  margin-left: auto;
+  opacity: 0.6;
+}
+.tts-btn-close:hover {
+  opacity: 1;
+}
+
+/* Speed Slider */
+.tts-speed {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.tts-speed-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+.tts-speed-slider {
+  width: 80px;
+  accent-color: var(--accent-green);
+  cursor: pointer;
+}
+.tts-speed-value {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--accent-green);
+  min-width: 2.5em;
+}
+
+/* Progress */
+.tts-progress-text {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+/* Voice Info */
+.tts-voice-info {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 160px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .tts-fab {
+    bottom: 1rem;
+    right: 1rem;
+    width: 46px;
+    height: 46px;
+  }
+  .tts-panel-inner {
+    padding: 0.5rem 0.8rem;
+    gap: 0.6rem;
+  }
+  .tts-voice-info {
+    display: none;
+  }
+  .tts-speed-slider {
+    width: 60px;
+  }
+}
+
 /* --- Print --- */
 @media print {
   .sidebar, .menu-toggle, .page-nav { display: none; }
@@ -584,4 +754,127 @@ sup.ref:hover {
   table { border: 1px solid #ccc; }
   th { background: #eee; color: #333; border-bottom-color: #ccc; }
   td { border-bottom-color: #eee; }
+}
+
+/* ============================================
+   Chart Components (Inline SVG, Bloomberg Dark)
+   ============================================ */
+.chart-figure {
+  margin: 24px 0 32px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+}
+.chart-figure .chart-title,
+figcaption.chart-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #e8e8e8;
+  margin-bottom: 8px;
+  letter-spacing: 0.2px;
+}
+.chart-figure .chart-caption {
+  font-size: 11px;
+  color: #888;
+  margin-top: 6px;
+  font-style: italic;
+}
+.svg-chart {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: transparent;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+.svg-chart .chart-grid line {
+  stroke: rgba(255, 255, 255, 0.06);
+  stroke-width: 1;
+}
+.svg-chart .chart-grid line.axis {
+  stroke: rgba(255, 255, 255, 0.25);
+}
+.svg-chart .chart-axis text {
+  fill: #888;
+  font-size: 10px;
+}
+.svg-chart .chart-axis-label {
+  fill: #aaa;
+  font-size: 11px;
+  font-weight: 500;
+}
+.svg-chart .chart-line {
+  fill: none;
+  stroke: #00d4aa;
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+.svg-chart .chart-line.secondary {
+  stroke: #4ecdc4;
+}
+.svg-chart .chart-line.tertiary {
+  stroke: #ffb84d;
+}
+.svg-chart .chart-area {
+  fill: url(#chartAreaGradient);
+  opacity: 0.6;
+}
+.svg-chart .chart-bar {
+  fill: #00d4aa;
+}
+.svg-chart .chart-bar.negative {
+  fill: #ff6b6b;
+}
+.svg-chart .chart-marker {
+  fill: #ff6b6b;
+  stroke: #1a1a1a;
+  stroke-width: 1.5;
+}
+.svg-chart .chart-annotation circle {
+  fill: #ff6b6b;
+  stroke: #1a1a1a;
+  stroke-width: 1.5;
+}
+.svg-chart .chart-annotation line {
+  stroke: #ff6b6b;
+  stroke-width: 1;
+  stroke-dasharray: 2 2;
+}
+.svg-chart .chart-annotation text {
+  fill: #ff6b6b;
+  font-size: 11px;
+  font-weight: 500;
+}
+.svg-chart .chart-annotation.positive circle,
+.svg-chart .chart-annotation.positive line { stroke: #00d4aa; }
+.svg-chart .chart-annotation.positive circle { fill: #00d4aa; }
+.svg-chart .chart-annotation.positive text { fill: #00d4aa; }
+.svg-chart .chart-annotation.neutral circle,
+.svg-chart .chart-annotation.neutral line { stroke: #4ecdc4; }
+.svg-chart .chart-annotation.neutral circle { fill: #4ecdc4; }
+.svg-chart .chart-annotation.neutral text { fill: #4ecdc4; }
+.svg-chart .chart-legend rect { stroke: none; }
+.svg-chart .chart-legend text {
+  fill: #ccc;
+  font-size: 11px;
+}
+.svg-chart .event-row line {
+  stroke: rgba(255, 255, 255, 0.15);
+}
+.svg-chart .event-row circle {
+  fill: #00d4aa;
+  stroke: #1a1a1a;
+  stroke-width: 1.5;
+}
+.svg-chart .event-row text {
+  fill: #ddd;
+  font-size: 11px;
+}
+@media print {
+  .chart-figure { background: white; border-color: #ccc; }
+  .svg-chart .chart-axis text,
+  .svg-chart .chart-legend text { fill: #333; }
+  .chart-figure .chart-title { color: #111; }
+  .chart-figure .chart-caption { color: #555; }
 }

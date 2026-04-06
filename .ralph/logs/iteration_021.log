@@ -1,0 +1,21 @@
+=== Iteration 21 === 2026-04-05 23:31:53 ===
+Exit code: 0
+Duration: 496s
+
+**Task 21 completed.** Updated all 10 countries' `04_employment.html` with 2025-2026 labor market data:
+
+| Country | Key Change |
+|---------|-----------|
+| **UK** | 4.0% → 5.2% (biggest shift, 2021-high) |
+| **Switzerland** | 2.3% → 2.8% (ILO 5.1%) |
+| **Norway** | 3.5% → 4.3% + G10 comparison table updated |
+| **Canada** | Added 2025 row (7.1% peak Aug-Sep) |
+| **New Zealand** | ~5.0% projection → 5.4% actual |
+| **US** | 4.3% (Mar 2026), federal gov't -355K jobs |
+| **Japan** | Shunto 5.46% interim → 5.32% final |
+| **Sweden** | 8.4% → 8.8%, foreign-born gap narrowing |
+| **Australia** | ~4.0% → ~4.1% (minor) |
+| **Eurozone** | Already current (Jan 2025 6.3%), no change |
+
+Progress: **21 of 30 tasks completed**, 9 remaining.
+

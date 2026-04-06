@@ -1,0 +1,11 @@
+=== Iteration 12 === 2026-04-05 22:53:52 ===
+Exit code: 0
+Duration: 187s
+
+Task 12 complete. Updated `eurozone/02_policy_rate.html`:
+
+- **Stat cards**: MRO 2.65%→2.15%, DFR 2.50%→2.00% (2026年4月時点)
+- **Narrative**: 第5サイクルを全面改訂 — 2024年4回(-100bp) + 2025年4回(-100bp) = 累計8回でDFR 2.00%到達、2025年7月以降据え置き継続
+- **Table**: 6行追加 (2024年10月・12月, 2025年1月・4月・6月, 2026年4月据え置き)
+- **Source [16]** added for 2025-2026 ECB press releases
+
