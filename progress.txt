@@ -16,3 +16,4 @@
 [2026-04-06] Task 5: Added 10Y UST yield chart (1962-2026) to us/13_long_rates.html with 5 annotations (Volcker peak, 1994 bond massacre, GFC, COVID low, 2023 5%).
 [Mon Apr  6 23:30:51     2026] Task 6: us/15_crises.html - added vertical event-timeline SVG with 11 major US financial crises (1907 Panic → 2023 SVB)
 [2026-04-06 23:32] Task 7: japan/02_policy_rate.html — Added annotated policy rate SVG chart 1985-2026 with 9 annotations (Louvre 2.5%, Mieno bubble bust 6%, 1995 0.5%, 1999 ZIRP, 2000 exit, 2013 QQE, 2016 NIRP, 2024 exit, 2025.12 0.75%).
+[Mon Apr  6 23:33:54     2026] Task 8: Nikkei 225 long-term log-scale chart added to japan/06_equity_overview.html with bubble peak/lost decades/2024 ATH annotations

@@ -93,6 +93,67 @@
         </div>
       </div>
 
+      <figure class="chart-figure">
+        <figcaption class="chart-title">日経225 長期チャート (1970-2026, 対数軸)</figcaption>
+        <svg class="svg-chart" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet">
+          <g class="chart-grid">
+            <line x1="60" y1="50" x2="60" y2="360" stroke="rgba(255,255,255,0.2)"/>
+            <line x1="60" y1="360" x2="780" y2="360" stroke="rgba(255,255,255,0.2)"/>
+            <line x1="60" y1="333" x2="780" y2="333" stroke="rgba(255,255,255,0.05)"/>
+            <line x1="60" y1="248" x2="780" y2="248" stroke="rgba(255,255,255,0.05)"/>
+            <line x1="60" y1="183" x2="780" y2="183" stroke="rgba(255,255,255,0.05)"/>
+            <line x1="60" y1="119" x2="780" y2="119" stroke="rgba(255,255,255,0.05)"/>
+            <line x1="60" y1="54" x2="780" y2="54" stroke="rgba(255,255,255,0.05)"/>
+            <text x="55" y="336" text-anchor="end" fill="#888" font-size="10">2,000</text>
+            <text x="55" y="251" text-anchor="end" fill="#888" font-size="10">5,000</text>
+            <text x="55" y="186" text-anchor="end" fill="#888" font-size="10">10,000</text>
+            <text x="55" y="122" text-anchor="end" fill="#888" font-size="10">20,000</text>
+            <text x="55" y="57" text-anchor="end" fill="#888" font-size="10">40,000</text>
+          </g>
+          <path class="chart-line" fill="none" stroke="#00d4aa" stroke-width="2"
+            d="M 60,333 L 124,261 L 189,215 L 253,158 L 316,57 L 343,135 L 381,120 L 420,153 L 446,153 L 484,209 L 536,133 L 565,216 L 600,180 L 639,124 L 677,119 L 706,137 L 716,85 L 741,71 L 762,49 L 780,57"/>
+          <g class="chart-annotation">
+            <circle cx="316" cy="57" r="5" fill="#ff6b6b"/>
+            <line x1="316" y1="57" x2="316" y2="32" stroke="#ff6b6b" stroke-width="1"/>
+            <text x="316" y="27" text-anchor="middle" fill="#ff6b6b" font-size="11">1989-12 バブル天井 38,915円</text>
+
+            <circle cx="565" cy="216" r="5" fill="#ff6b6b"/>
+            <line x1="565" y1="216" x2="565" y2="246" stroke="#ff6b6b" stroke-width="1"/>
+            <text x="565" y="260" text-anchor="middle" fill="#ff6b6b" font-size="11">2009-03 リーマン後底 7,055</text>
+
+            <circle cx="484" cy="209" r="5" fill="#ff6b6b"/>
+            <line x1="484" y1="209" x2="484" y2="239" stroke="#ff6b6b" stroke-width="1"/>
+            <text x="484" y="253" text-anchor="middle" fill="#ff6b6b" font-size="11">2003 ITバブル後底</text>
+
+            <circle cx="639" cy="124" r="5" fill="#4ecdc4"/>
+            <line x1="639" y1="124" x2="639" y2="94" stroke="#4ecdc4" stroke-width="1"/>
+            <text x="639" y="89" text-anchor="middle" fill="#4ecdc4" font-size="11">2013-15 アベノミクス相場</text>
+
+            <circle cx="706" cy="137" r="5" fill="#ff6b6b"/>
+            <line x1="706" y1="137" x2="690" y2="170" stroke="#ff6b6b" stroke-width="1"/>
+            <text x="685" y="183" text-anchor="middle" fill="#ff6b6b" font-size="11">2020-03 COVID</text>
+
+            <circle cx="762" cy="49" r="6" fill="#00d4aa"/>
+            <line x1="762" y1="49" x2="745" y2="20" stroke="#00d4aa" stroke-width="1"/>
+            <text x="745" y="15" text-anchor="end" fill="#00d4aa" font-size="11">2024-07 史上最高値 42,224</text>
+
+            <circle cx="741" cy="71" r="5" fill="#00d4aa"/>
+            <line x1="741" y1="71" x2="720" y2="45" stroke="#00d4aa" stroke-width="1"/>
+            <text x="715" y="40" text-anchor="end" fill="#00d4aa" font-size="11">2024-02 34年ぶり高値更新</text>
+          </g>
+          <g class="chart-axis">
+            <text x="60" y="380" fill="#888" font-size="10">1970</text>
+            <text x="189" y="380" fill="#888" font-size="10">1980</text>
+            <text x="316" y="380" fill="#888" font-size="10">1990</text>
+            <text x="446" y="380" fill="#888" font-size="10">2000</text>
+            <text x="575" y="380" fill="#888" font-size="10">2010</text>
+            <text x="700" y="380" fill="#888" font-size="10">2020</text>
+            <text x="780" y="380" text-anchor="end" fill="#888" font-size="10">2026</text>
+          </g>
+        </svg>
+        <p class="chart-caption">出典: 日経新聞、東証. 対数軸で表示。1989年末38,915円のバブル天井を34年かけて更新した「失われた時代」を可視化。</p>
+      </figure>
+
       <!-- Section 1: Market Structure -->
       <section>
         <h2>市場構造と主要取引所</h2>
