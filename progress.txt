@@ -51,3 +51,4 @@ Tue Apr  7 00:09:58     2026: Task 31 - added charts.js script tag to all 200 co
 [2026-04-06T22:45:46Z] Task 5: regenerated japan/02_policy_rate, 06_equity_overview, 13_long_rates, 14_currency annotation blocks. 6-or-fewer events alternating above/below with .chart-annotation-bg/-line. Standardized font-size=10.
 [2026-04-07 iter7] Task 6: scanned country 02/06/13/14/15 charts. Found uk/02_policy_rate.html & norway/02_policy_rate.html with 10 annotations each. Reduced both to 6 key markers with bg rects + alternating above/below placement. Other files <=8 acceptable.
 [Tue Apr  7 07:49:26     2026] Task 7: added Debt/GDP chart to us/03_fiscal_policy.html
+[2026-04-07 iter9] Task 8: us/04_employment.html unemployment chart 1948-2026 added (6 annotations: 1958, 75 stagfl, 82 Volcker, 09 GFC, 20 COVID, 23 low)
