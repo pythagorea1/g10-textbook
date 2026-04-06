@@ -17,3 +17,4 @@
 [Mon Apr  6 23:30:51     2026] Task 6: us/15_crises.html - added vertical event-timeline SVG with 11 major US financial crises (1907 Panic → 2023 SVB)
 [2026-04-06 23:32] Task 7: japan/02_policy_rate.html — Added annotated policy rate SVG chart 1985-2026 with 9 annotations (Louvre 2.5%, Mieno bubble bust 6%, 1995 0.5%, 1999 ZIRP, 2000 exit, 2013 QQE, 2016 NIRP, 2024 exit, 2025.12 0.75%).
 [Mon Apr  6 23:33:54     2026] Task 8: Nikkei 225 long-term log-scale chart added to japan/06_equity_overview.html with bubble peak/lost decades/2024 ATH annotations
+Mon Apr  6 23:35:20     2026 Task 9: japan/13_long_rates.html — annotated 10Y JGB yield chart 1985-2025 with 8 events (1990 high, 1998 sub-1%, 2003 VaR, 2016 NIRP, YCC start/expand/end, 2025 1.5%)
