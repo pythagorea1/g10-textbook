@@ -1,15 +1,6 @@
-=== Iteration 15 === 2026-04-05 23:05:07 ===
+=== Iteration 15 === 2026-04-06 23:43:42 ===
 Exit code: 0
-Duration: 242s
+Duration: 75s
 
-**Task 15 completed.** Updated `australia/02_policy_rate.html` with:
-
-- **2025 cutting cycle**: 3 cuts (Feb/May/Aug) bringing cash rate from 4.35% → 3.60% (-75bp), then Nov/Dec holds
-- **2026 hiking reversal**: Feb hike to 3.85% (unanimous, first G10 post-COVID re-hike), Mar hike to 4.10% (5-4 split, Middle East tensions)
-- **V-shaped trajectory** narrative — unique among G10 central banks
-- **G10 comparison table** (all 10 countries, April 2026)
-- 2 new rows in the cycle summary table
-- Updated sources [14]-[16]
-
-Progress: **15 of 30 tasks completed**, 15 remaining.
+Task 15 complete. FTSE 100 long-term log-scale chart with 7 annotations (Big Bang, ERM exit, Dotcom peak, GFC, Brexit, COVID, 2025 high) added.
 
