@@ -57,3 +57,4 @@ Tue Apr  7 07:53:29     2026 Task 10: us/09_equity_recent.html S&P500 2000-2019 
 [Tue Apr  7 07:54:49     2026] Task 11: added S&P500 2020-2026 chart to us/10_equity_current.html
 [2026-04-07 07:56] Task 12: added US Treasury debt 1980-2026 chart to us/11_bond_market.html with 6 annotations
 [2026-04-07T07:57:28] Task 13: us/12_short_rates.html — Fed Funds vs T-Bill 3M chart 1990-2026 with 6 annotations
+[Tue Apr  7 07:58:39     2026] Task 14: japan/03_fiscal_policy.html — added debt/GDP chart 1980-2026 with 6 annotations

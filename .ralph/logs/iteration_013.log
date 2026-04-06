@@ -1,6 +1,6 @@
-=== Iteration 13 === 2026-04-06 23:39:57 ===
+=== Iteration 13 === 2026-04-07 07:56:21 ===
 Exit code: 0
-Duration: 126s
+Duration: 69s
 
-Task 13 complete. PIIGS 10Y yield chart added with 5 country lines and 5 event annotations.
+Task 13 complete. Added Fed Funds vs 3M T-Bill chart (1990-2026) with 6 annotations to us/12_short_rates.html.
 
