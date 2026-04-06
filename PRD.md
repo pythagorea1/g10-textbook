@@ -24,7 +24,7 @@
 - [x] Task 10: us/09_equity_recent.html — S&P500 2000-2019チャート + 注釈（ドットコム崩壊、住宅バブル、リーマン、QE回復、2018下落）
 - [x] Task 11: us/10_equity_current.html — S&P500 2020-2026チャート + 注釈（COVID、AI相場、2024最高値、2025調整等）
 - [x] Task 12: us/11_bond_market.html — 米国債発行残高チャート（1980-2026, $trillion）+ 注釈（GFC膨張、QE、2024 35T突破）
-- [ ] Task 13: us/12_short_rates.html — Fed Funds vs SOFR vs T-Bill 3M 短期金利チャート
+- [x] Task 13: us/12_short_rates.html — Fed Funds vs SOFR vs T-Bill 3M 短期金利チャート
 
 ## Phase 2: 日本（JP）— 漏れ埋め
 - [ ] Task 14: japan/03_fiscal_policy.html — 債務/GDP推移（1980-2026, %）+ 注釈（バブル崩壊財政出動、コロナ、260%超）

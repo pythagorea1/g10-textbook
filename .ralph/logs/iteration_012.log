@@ -1,6 +1,6 @@
-=== Iteration 12 === 2026-04-06 23:38:13 ===
+=== Iteration 12 === 2026-04-07 07:54:57 ===
 Exit code: 0
-Duration: 98s
+Duration: 79s
 
-Task 12 complete. Added DAX 1990-2025 log-scale annotated chart to eurozone/06_equity_overview.html with markers for ITバブル、GFC、欧州債務危機、COVID、2024-25高値更新.
+Task 12 complete: added US Treasury debt outstanding chart (1980-2026) to us/11_bond_market.html with 6 alternating annotations.
 

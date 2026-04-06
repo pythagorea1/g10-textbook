@@ -100,6 +100,83 @@
         <p>米国の短期金利市場は、金融政策のトランスミッション・メカニズムの最前線に位置する。連邦準備制度（FRB）はフェデラルファンド（FF）金利の目標レンジを設定し、公開市場操作やスタンディング・ファシリティを通じてこの目標を実現する。短期金利は銀行間の資金融通から企業の運転資金調達、マネーマーケットファンド（MMF）の運用まで、金融システム全体の基盤となっている<cite>[1]</cite>。</p>
 
         <p>短期金利市場の構成要素は多岐にわたる。FF市場、レポ市場（Repo Market）、T-Bill市場、コマーシャルペーパー（CP）市場、そしてLIBORに代わるSOFRなどのベンチマーク金利が相互に連動しながら、膨大な資金の配分を行っている。これらの市場の総取引量は1日あたり数兆ドルに達する。</p>
+
+        <figure class="chart-figure">
+          <figcaption class="chart-title">米国短期金利推移 — Fed Funds実効レート vs 3ヶ月T-Bill (1990-2026, %)</figcaption>
+          <svg class="svg-chart" viewBox="0 0 800 420" preserveAspectRatio="xMidYMid meet">
+            <g class="chart-grid">
+              <line x1="60" y1="50" x2="60" y2="340"/>
+              <line x1="60" y1="340" x2="780" y2="340"/>
+              <line x1="60" y1="290" x2="780" y2="290" stroke-dasharray="2,2"/>
+              <line x1="60" y1="240" x2="780" y2="240" stroke-dasharray="2,2"/>
+              <line x1="60" y1="190" x2="780" y2="190" stroke-dasharray="2,2"/>
+              <line x1="60" y1="140" x2="780" y2="140" stroke-dasharray="2,2"/>
+              <line x1="60" y1="90" x2="780" y2="90" stroke-dasharray="2,2"/>
+            </g>
+            <g class="chart-axis">
+              <text x="55" y="343" text-anchor="end">0%</text>
+              <text x="55" y="293" text-anchor="end">2%</text>
+              <text x="55" y="243" text-anchor="end">4%</text>
+              <text x="55" y="193" text-anchor="end">6%</text>
+              <text x="55" y="143" text-anchor="end">8%</text>
+              <text x="55" y="93" text-anchor="end">10%</text>
+              <text x="60" y="358">1990</text>
+              <text x="220" y="358">2000</text>
+              <text x="380" y="358">2008</text>
+              <text x="540" y="358">2016</text>
+              <text x="780" y="358" text-anchor="end">2026</text>
+            </g>
+            <!-- Fed Funds line: 1990(8.1) 92(3.5) 95(5.8) 00(6.4) 03(1.0) 06(5.0) 07(5.25) 08(0.25) 12(0.15) 15(0.4) 18(2.4) 20(0.1) 22(4.5) 23(5.33) 24(4.5) 26(3.5) -->
+            <path class="chart-line" d="M 60,137 L 90,253 L 120,195 L 180,180 L 220,180 L 260,315 L 300,275 L 340,209 L 360,206 L 380,334 L 460,337 L 510,330 L 570,280 L 620,338 L 660,228 L 700,207 L 740,228 L 780,253" fill="none" stroke="#00d4aa" stroke-width="2.2"/>
+            <!-- T-Bill 3M line slightly below -->
+            <path class="chart-line" d="M 60,142 L 90,253 L 120,200 L 180,182 L 220,193 L 260,318 L 300,278 L 340,216 L 360,216 L 380,338 L 460,338 L 510,335 L 570,283 L 620,338 L 660,232 L 700,210 L 740,231 L 780,255" fill="none" stroke="#5b9dff" stroke-width="1.6" stroke-dasharray="3,3"/>
+            <!-- Legend -->
+            <g font-size="10">
+              <line x1="560" y1="65" x2="585" y2="65" stroke="#00d4aa" stroke-width="2.2"/>
+              <text x="590" y="68" fill="#00d4aa">Fed Funds 実効</text>
+              <line x1="680" y1="65" x2="705" y2="65" stroke="#5b9dff" stroke-width="1.6" stroke-dasharray="3,3"/>
+              <text x="710" y="68" fill="#5b9dff">3M T-Bill</text>
+            </g>
+            <!-- Annotations: 6 events, alternating -->
+            <g class="chart-annotation">
+              <circle cx="90" cy="253" r="4" fill="#ff6b6b"/>
+              <line x1="90" y1="253" x2="90" y2="290" stroke="#ff6b6b" stroke-width="1"/>
+              <rect x="55" y="292" width="80" height="14" class="chart-annotation-bg"/>
+              <text x="95" y="303" text-anchor="middle" font-size="10" fill="#ff6b6b">'92 緩和3%</text>
+            </g>
+            <g class="chart-annotation">
+              <circle cx="220" cy="180" r="4" fill="#ff6b6b"/>
+              <line x1="220" y1="180" x2="220" y2="148" stroke="#ff6b6b" stroke-width="1"/>
+              <rect x="185" y="135" width="80" height="14" class="chart-annotation-bg"/>
+              <text x="225" y="146" text-anchor="middle" font-size="10" fill="#ff6b6b">'00 IT 6.4%</text>
+            </g>
+            <g class="chart-annotation">
+              <circle cx="260" cy="315" r="4" fill="#ff6b6b"/>
+              <line x1="260" y1="315" x2="260" y2="290" stroke="#ff6b6b" stroke-width="1"/>
+              <rect x="225" y="277" width="80" height="14" class="chart-annotation-bg"/>
+              <text x="265" y="288" text-anchor="middle" font-size="10" fill="#ff6b6b">'03 1%</text>
+            </g>
+            <g class="chart-annotation">
+              <circle cx="380" cy="334" r="4" fill="#ff6b6b"/>
+              <line x1="380" y1="334" x2="380" y2="100" stroke="#ff6b6b" stroke-width="1"/>
+              <rect x="345" y="100" width="100" height="14" class="chart-annotation-bg"/>
+              <text x="395" y="111" text-anchor="middle" font-size="10" fill="#ff6b6b">'08 GFC ZIRP</text>
+            </g>
+            <g class="chart-annotation">
+              <circle cx="620" cy="338" r="4" fill="#ff6b6b"/>
+              <line x1="620" y1="338" x2="620" y2="180" stroke="#ff6b6b" stroke-width="1"/>
+              <rect x="585" y="180" width="100" height="14" class="chart-annotation-bg"/>
+              <text x="635" y="191" text-anchor="middle" font-size="10" fill="#ff6b6b">'20 COVID 0%</text>
+            </g>
+            <g class="chart-annotation">
+              <circle cx="700" cy="207" r="4" fill="#ff6b6b"/>
+              <line x1="700" y1="207" x2="700" y2="240" stroke="#ff6b6b" stroke-width="1"/>
+              <rect x="665" y="242" width="100" height="14" class="chart-annotation-bg"/>
+              <text x="715" y="253" text-anchor="middle" font-size="10" fill="#ff6b6b">'23 5.33%ピーク</text>
+            </g>
+          </svg>
+          <p class="chart-caption">出典: FRED (DFF, DTB3). Fed Funds Effective Rateと3ヶ月T-Bill利回りの年次代表値。両者はFRBのスタンスを反映してほぼ連動。</p>
+        </figure>
       </section>
 
       <!-- Section 2: Fed Funds Market -->
