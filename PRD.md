@@ -40,7 +40,7 @@
 
 ## Phase 4: 英国（UK）— 漏れ埋め
 - [x] Task 22: uk/03_fiscal_policy.html, uk/04_employment.html, uk/05_inflation.html
-- [ ] Task 23: uk/09_equity_recent.html, uk/10_equity_current.html — FTSE100 期間別
+- [x] Task 23: uk/09_equity_recent.html, uk/10_equity_current.html — FTSE100 期間別
 
 ## Phase 5: スイス（CH）— 漏れ埋め
 - [ ] Task 24: switzerland/03_fiscal_policy.html, switzerland/04_employment.html, switzerland/05_inflation.html

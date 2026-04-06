@@ -91,6 +91,51 @@
       <!-- Section 2: FTSE 100 Timeline -->
       <section>
         <h2>FTSE 100 年次推移（2020年〜2025年）</h2>
+        <figure class="chart-figure">
+          <figcaption class="chart-title">FTSE 100 年次終値（2020-2025）</figcaption>
+          <svg class="svg-chart" viewBox="0 0 800 420" preserveAspectRatio="xMidYMid meet">
+            <g class="chart-grid">
+              <line x1="60" y1="60" x2="780" y2="60"/>
+              <line x1="60" y1="195" x2="780" y2="195"/>
+              <line x1="60" y1="330" x2="780" y2="330"/>
+              <line x1="60" y1="60" x2="60" y2="330"/>
+            </g>
+            <g class="chart-axis">
+              <text x="50" y="64" text-anchor="end">9000</text>
+              <text x="50" y="199" text-anchor="end">7500</text>
+              <text x="50" y="334" text-anchor="end">6000</text>
+              <text x="60" y="350">2020</text>
+              <text x="420" y="350" text-anchor="middle">2022</text>
+              <text x="780" y="350" text-anchor="end">2025</text>
+            </g>
+            <path class="chart-line" d="M 60,288.5 L 204,205.3 L 348,199.3 L 492,174 L 636,134.4 L 780,105" fill="none" stroke="#00d4aa" stroke-width="2"/>
+            <g class="chart-annotation">
+              <circle cx="60" cy="288.5" r="4" fill="#ff6b6b"/>
+              <line class="chart-annotation-line" x1="60" y1="288.5" x2="60" y2="268" stroke="#ff6b6b"/>
+              <rect class="chart-annotation-bg" x="38" y="256" width="100" height="14"/>
+              <text x="88" y="266" text-anchor="middle" fill="#fff" font-size="10">2020 COVID -34%</text>
+            </g>
+            <g class="chart-annotation">
+              <circle cx="348" cy="199.3" r="4" fill="#ffd93d"/>
+              <line class="chart-annotation-line" x1="348" y1="199.3" x2="348" y2="220" stroke="#ffd93d"/>
+              <rect class="chart-annotation-bg" x="305" y="220" width="90" height="14"/>
+              <text x="350" y="230" text-anchor="middle" fill="#fff" font-size="10">2022 LDI危機</text>
+            </g>
+            <g class="chart-annotation">
+              <circle cx="636" cy="134.4" r="4" fill="#00d4aa"/>
+              <line class="chart-annotation-line" x1="636" y1="134.4" x2="636" y2="114" stroke="#00d4aa"/>
+              <rect class="chart-annotation-bg" x="590" y="102" width="100" height="14"/>
+              <text x="640" y="112" text-anchor="middle" fill="#fff" font-size="10">2024 8000突破</text>
+            </g>
+            <g class="chart-annotation">
+              <circle cx="780" cy="105" r="4" fill="#00d4aa"/>
+              <line class="chart-annotation-line" x1="780" y1="105" x2="780" y2="125" stroke="#00d4aa"/>
+              <rect class="chart-annotation-bg" x="710" y="125" width="80" height="14"/>
+              <text x="750" y="135" text-anchor="middle" fill="#fff" font-size="10">2025 最高値</text>
+            </g>
+          </svg>
+          <p class="chart-caption">出典: LSE, FTSE Russell. 2025年は推定値。</p>
+        </figure>
         <table class="data-table sortable">
           <thead>
             <tr>
