@@ -1,17 +1,6 @@
-=== Iteration 28 === 2026-04-06 00:15:44 ===
+=== Iteration 28 === 2026-04-07 00:00:40 ===
 Exit code: 0
-Duration: 176s
+Duration: 70s
 
-**Task 28 完了。** `switzerland/16_banking.html` を更新しました。
-
-**変更内容:**
-- 既存のCS崩壊セクション（2021-2023）は正確で包括的であることを確認
-- 新セクション「UBS統合とTBTF規制改革 (2024-2026)」を追加:
-  - **UBS統合進捗**: 120万顧客移行完了、USD 107億コスト削減達成、2025年純利益USD 77.7億、2026年末に実質完了予定
-  - **PUK報告書** (2024年12月): CS経営陣・FINMAの責任認定、20の勧告
-  - **TBTF規制強化案** (2025年6月): UBSに最大USD 260億の追加資本要件、ボーナスクローバック制度、2028年施行予定
-- 年表テーブルに2024-2026年の4行を追加
-- 出典2件追加
-
-**残タスク: 2件** (Task 29: リンク切れチェック、Task 30: 最終サマリー)
+Task 28 complete. USD/NOK annotated chart added to norway/14_currency.html with oil-driven event markers (1998 oil crash, 2008 NOK peak, 2014-15 oil collapse, 2020 COVID, 2024 structural weakness). 3 tasks remain (29-31).
 

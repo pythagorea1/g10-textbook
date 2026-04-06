@@ -712,6 +712,93 @@
         <!-- Populated by JS -->
       </div>
     </div>
+
+    <figure class="chart-figure" style="margin-top:1.5rem;">
+      <figcaption class="chart-title">G10 Policy Rates &mdash; 10-Country Annual History (2000-2025)</figcaption>
+      <svg class="svg-chart" viewBox="0 0 900 460" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+        <!-- Grid -->
+        <g class="chart-grid" stroke="rgba(255,255,255,0.06)" stroke-width="1">
+          <line x1="60" y1="50" x2="60" y2="380"/>
+          <line x1="60" y1="380" x2="860" y2="380"/>
+          <line x1="60" y1="50" x2="860" y2="50"/>
+          <line x1="60" y1="116" x2="860" y2="116"/>
+          <line x1="60" y1="182" x2="860" y2="182"/>
+          <line x1="60" y1="248" x2="860" y2="248"/>
+          <line x1="60" y1="314" x2="860" y2="314"/>
+        </g>
+        <!-- Y axis labels (rate %) 10..-1 mapped 50..380 -->
+        <g class="chart-axis" fill="#8a8f98" font-size="10" font-family="sans-serif">
+          <text x="55" y="54" text-anchor="end">10%</text>
+          <text x="55" y="120" text-anchor="end">8%</text>
+          <text x="55" y="186" text-anchor="end">6%</text>
+          <text x="55" y="252" text-anchor="end">4%</text>
+          <text x="55" y="318" text-anchor="end">2%</text>
+          <text x="55" y="384" text-anchor="end">0%</text>
+        </g>
+        <!-- X axis labels: 2000..2025, x = 60 + (year-2000)*32 -->
+        <g class="chart-axis" fill="#8a8f98" font-size="10" font-family="sans-serif">
+          <text x="60" y="398" text-anchor="middle">2000</text>
+          <text x="220" y="398" text-anchor="middle">2005</text>
+          <text x="380" y="398" text-anchor="middle">2010</text>
+          <text x="540" y="398" text-anchor="middle">2015</text>
+          <text x="700" y="398" text-anchor="middle">2020</text>
+          <text x="860" y="398" text-anchor="middle">2025</text>
+        </g>
+        <!-- Lines: y = 380 - rate*33 -->
+        <!-- US Fed Funds: 6.5,3.75,1.25,1.0,2.25,4.25,5.25,4.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.5,0.75,1.5,2.5,1.75,0.25,0.25,4.5,5.5,4.5,4.0 -->
+        <path fill="none" stroke="#00d4aa" stroke-width="2" d="M60,165.5 L92,256.25 L124,338.75 L156,347 L188,305.75 L220,239.75 L252,206.75 L284,239.75 L316,371.75 L348,371.75 L380,371.75 L412,371.75 L444,371.75 L476,371.75 L508,371.75 L540,363.5 L572,355.25 L604,330.5 L636,297.5 L668,322.25 L700,371.75 L732,371.75 L764,231.5 L796,198.5 L828,231.5 L860,248"/>
+        <!-- ECB Refi: 4.75,3.25,2.75,2.0,2.0,2.25,3.5,4.0,2.5,1.0,1.0,1.0,0.75,0.25,0.05,0.05,0,0,0,0,0,0,2.5,4.5,3.0,2.5 -->
+        <path fill="none" stroke="#4ecdc4" stroke-width="2" d="M60,223.25 L92,272.75 L124,289.25 L156,314 L188,314 L220,305.75 L252,264.5 L284,248 L316,297.5 L348,347 L380,347 L412,347 L444,355.25 L476,371.75 L508,378.35 L540,378.35 L572,380 L604,380 L636,380 L668,380 L700,380 L732,380 L764,297.5 L796,231.5 L828,281 L860,297.5"/>
+        <!-- BOJ: 0.5,0.25,0.1,0.1,0.1,0.1,0.25,0.5,0.3,0.1,0.1,0.1,0.1,0.1,0.1,0.1,-0.1,-0.1,-0.1,-0.1,-0.1,-0.1,-0.1,-0.1,0.1,0.5 -->
+        <path fill="none" stroke="#ff6b6b" stroke-width="2" d="M60,363.5 L92,371.75 L124,376.7 L156,376.7 L188,376.7 L220,376.7 L252,371.75 L284,363.5 L316,370.1 L348,376.7 L380,376.7 L412,376.7 L444,376.7 L476,376.7 L508,376.7 L540,376.7 L572,383.3 L604,383.3 L636,383.3 L668,383.3 L700,383.3 L732,383.3 L764,383.3 L796,383.3 L828,376.7 L860,363.5"/>
+        <!-- BOE: 6.0,4.0,4.0,3.75,4.75,4.5,5.0,5.5,2.0,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.25,0.5,0.75,0.75,0.1,0.25,3.5,5.25,4.75,4.5 -->
+        <path fill="none" stroke="#ffd166" stroke-width="2" d="M60,182 L92,248 L124,248 L156,256.25 L188,223.25 L220,231.5 L252,215 L284,198.5 L316,314 L348,363.5 L380,363.5 L412,363.5 L444,363.5 L476,363.5 L508,363.5 L540,363.5 L572,371.75 L604,363.5 L636,355.25 L668,355.25 L700,376.7 L732,371.75 L764,264.5 L796,206.75 L828,223.25 L860,231.5"/>
+        <!-- SNB: 3.0,1.0,0.75,0.25,0.75,1.0,2.0,2.75,0.5,0.25,0.25,0,-0.25,-0.75,-0.75,-0.75,-0.75,-0.75,-0.75,-0.75,-0.75,-0.75,1.0,1.75,0.5,0.5 -->
+        <path fill="none" stroke="#a78bfa" stroke-width="2" d="M60,281 L92,347 L124,355.25 L156,371.75 L188,355.25 L220,347 L252,314 L284,289.25 L316,363.5 L348,371.75 L380,371.75 L412,380 L444,388.25 L476,404.75 L508,404.75 L540,404.75 L572,404.75 L604,404.75 L636,404.75 L668,404.75 L700,404.75 L732,404.75 L764,347 L796,322.25 L828,363.5 L860,363.5"/>
+        <!-- Norway: 7.0,7.0,6.5,2.25,1.75,2.25,3.5,5.25,3.0,1.75,2.0,1.75,1.5,1.5,1.25,0.75,0.5,0.5,0.75,1.5,0.0,0.5,2.75,4.5,4.5,4.25 -->
+        <path fill="none" stroke="#60a5fa" stroke-width="2" d="M60,149 L92,149 L124,165.5 L156,305.75 L188,322.25 L220,305.75 L252,264.5 L284,206.75 L316,281 L348,322.25 L380,314 L412,322.25 L444,330.5 L476,330.5 L508,338.75 L540,355.25 L572,363.5 L604,363.5 L636,355.25 L668,330.5 L700,380 L732,363.5 L764,289.25 L796,231.5 L828,231.5 L860,239.75"/>
+        <!-- All-time recent end markers labelled -->
+        <g class="chart-annotation">
+          <circle cx="252" cy="206.75" r="4" fill="#00d4aa"/>
+          <line x1="252" y1="206.75" x2="252" y2="170" stroke="#00d4aa" stroke-width="1"/>
+          <text x="252" y="165" text-anchor="middle" fill="#00d4aa" font-size="11">2006-07 Fed 5.25%</text>
+
+          <circle cx="348" cy="371.75" r="4" fill="#ff6b6b"/>
+          <line x1="348" y1="371.75" x2="380" y2="420" stroke="#ff6b6b" stroke-width="1"/>
+          <text x="384" y="425" fill="#ff6b6b" font-size="11">2008-09 GFC ZIRP/QE</text>
+
+          <circle cx="476" cy="404.75" r="4" fill="#a78bfa"/>
+          <line x1="476" y1="404.75" x2="476" y2="438" stroke="#a78bfa" stroke-width="1"/>
+          <text x="476" y="450" text-anchor="middle" fill="#a78bfa" font-size="11">2015 SNB -0.75%（マイナス金利）</text>
+
+          <circle cx="572" cy="383.3" r="4" fill="#ff6b6b"/>
+          <line x1="572" y1="383.3" x2="600" y2="430" stroke="#ff6b6b" stroke-width="1"/>
+          <text x="604" y="435" fill="#ff6b6b" font-size="11">2016 BOJ -0.1%</text>
+
+          <circle cx="700" cy="371.75" r="4" fill="#00d4aa"/>
+          <line x1="700" y1="371.75" x2="700" y2="335" stroke="#00d4aa" stroke-width="1"/>
+          <text x="700" y="330" text-anchor="middle" fill="#00d4aa" font-size="11">2020 COVID 0%</text>
+
+          <circle cx="796" cy="198.5" r="4" fill="#00d4aa"/>
+          <line x1="796" y1="198.5" x2="796" y2="160" stroke="#00d4aa" stroke-width="1"/>
+          <text x="796" y="155" text-anchor="middle" fill="#00d4aa" font-size="11">2023 Fed 5.5%（22年ぶり高水準）</text>
+
+          <circle cx="860" cy="363.5" r="4" fill="#ff6b6b"/>
+          <line x1="860" y1="363.5" x2="828" y2="335" stroke="#ff6b6b" stroke-width="1"/>
+          <text x="824" y="330" text-anchor="end" fill="#ff6b6b" font-size="11">2024-25 BOJ利上げ 0.5%</text>
+        </g>
+        <!-- Legend -->
+        <g class="chart-legend" font-size="11" font-family="sans-serif">
+          <rect x="60" y="420" width="14" height="3" fill="#00d4aa"/><text x="80" y="424" fill="#cdd2d8">US Fed</text>
+          <rect x="140" y="420" width="14" height="3" fill="#4ecdc4"/><text x="160" y="424" fill="#cdd2d8">ECB</text>
+          <rect x="200" y="420" width="14" height="3" fill="#ff6b6b"/><text x="220" y="424" fill="#cdd2d8">BOJ</text>
+          <rect x="260" y="420" width="14" height="3" fill="#ffd166"/><text x="280" y="424" fill="#cdd2d8">BOE</text>
+          <rect x="320" y="420" width="14" height="3" fill="#a78bfa"/><text x="340" y="424" fill="#cdd2d8">SNB</text>
+          <rect x="380" y="420" width="14" height="3" fill="#60a5fa"/><text x="400" y="424" fill="#cdd2d8">Norges Bank</text>
+        </g>
+      </svg>
+      <p class="chart-caption">出典: 各国中銀公式資料。年末値ベース（概算）。6カ国に絞ることで視認性を確保。SNB/BOJのマイナス金利期、Fed/BOEの2022-23利上げサイクル、2024年以降の利下げ転換が一覧できる。</p>
+    </figure>
   </section>
 
   <!-- ===== Overview Table ===== -->

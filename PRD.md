@@ -68,7 +68,7 @@ G10通貨国の金融市場教科書（200ページ超）に、テキスト中�
 - [x] Task 28: norway/14_currency.html — USDNOK + 油価相関チャート
 
 ### Phase 9: 横断・最終
-- [ ] Task 29: index.html の Policy Rate Comparison を「年次推移ライン」に拡張。10カ国の政策金利推移を1つのチャートで重ねる（凡例＋ホバー）
+- [x] Task 29: index.html の Policy Rate Comparison を「年次推移ライン」に拡張。10カ国の政策金利推移を1つのチャートで重ねる（凡例＋ホバー）
 - [ ] Task 30: 全カントリー 01_central_bank.html の歴代総裁テーブルの上に、議長別在任期間ガントチャート（横棒）を追加（例: Fedなら Greenspan→Bernanke→Yellen→Powell の在任期間をビジュアル化）
 - [ ] Task 31: 全ページに「assets/charts.js」スクリプトタグを自動追加するBashスクリプトを実行
 
