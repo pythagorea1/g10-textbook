@@ -38,7 +38,7 @@ G10通貨国の金融市場教科書（200ページ超）に、テキスト中�
 - [x] Task 10: japan/14_currency.html — USDJPY長期チャート（1971-2026）+ プラザ合意、79円台超円高、161円台円安(2024)の注釈
 
 ### Phase 3: ユーロ圏（EU）
-- [ ] Task 11: eurozone/02_policy_rate.html — ECB主要リファイナンス金利推移（1999-2026）+ 危機対応・マイナス金利・2022利上げ・2024利下げの注釈
+- [x] Task 11: eurozone/02_policy_rate.html — ECB主要リファイナンス金利推移（1999-2026）+ 危機対応・マイナス金利・2022利上げ・2024利下げの注釈
 - [ ] Task 12: eurozone/06_equity_overview.html — Euro Stoxx 50 + DAX チャート（1990-2026）+ ドットコム、GFC、欧州債務危機、COVID、エネルギー危機の注釈
 - [ ] Task 13: eurozone/15_crises.html — 欧州債務危機タイムライン（PIIGS各国スプレッド推移ビジュアル含む）
 

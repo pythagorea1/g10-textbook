@@ -19,3 +19,4 @@
 [Mon Apr  6 23:33:54     2026] Task 8: Nikkei 225 long-term log-scale chart added to japan/06_equity_overview.html with bubble peak/lost decades/2024 ATH annotations
 Mon Apr  6 23:35:20     2026 Task 9: japan/13_long_rates.html — annotated 10Y JGB yield chart 1985-2025 with 8 events (1990 high, 1998 sub-1%, 2003 VaR, 2016 NIRP, YCC start/expand/end, 2025 1.5%)
 [Mon Apr  6 23:36:40     2026] Task 10: japan/14_currency.html USDJPY 1971-2026 chart added
+[Mon Apr  6 23:38:04     2026] Task 11: ECB MRO annotated chart added to eurozone/02_policy_rate.html
