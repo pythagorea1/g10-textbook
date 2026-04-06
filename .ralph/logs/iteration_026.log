@@ -1,6 +1,6 @@
-=== Iteration 26 === 2026-04-06 23:58:00 ===
+=== Iteration 26 === 2026-04-07 08:19:18 ===
 Exit code: 0
-Duration: 75s
+Duration: 90s
 
-Task 26 complete. Added Riksbank repo rate (1994-2026) annotated SVG chart with markers for 1992 limit-rate 500%, 2009 GFC bottom, 2015-19 negative rates, 2019 exit, 2023 4.00% peak, and 2025-26 1.75%.
+Task 26 complete. Added debt/GDP, unemployment, and CPI charts to australia/03, /04, /05.
 
