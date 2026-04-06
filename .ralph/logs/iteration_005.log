@@ -1,13 +1,6 @@
-=== Iteration 5 === 2026-04-05 22:24:21 ===
+=== Iteration 5 === 2026-04-06 23:28:13 ===
 Exit code: 0
-Duration: 291s
+Duration: 76s
 
-**Task 5 completed.** Updated `australia/01_central_bank.html` with:
-
-- **RBA組織改革反映**: 2025年3月施行のデュアルボード制（金融政策委員会 + ガバナンス委員会）を全面記述
-- **金融政策委員会メンバー**: 9名を2026年4月時点に全面更新（ウィルキンソン財務長官、フライ＝マッキビン、バーカー、プレストン等の新メンバー追加）
-- **キャッシュレート**: 4.10%（2026年3月）に更新。2025年3回利下げ→2026年2回利上げの経緯を年表に反映
-- **出典追加**: プレストン任命、2026年MPB声明
-
-Progress: **5 completed, 25 remaining.**
+Task 5 complete. Added annotated 10Y UST yield chart (1962-2026) with Volcker peak, 1994 bond massacre, GFC, COVID low, and 2023 急騰 annotations.
 

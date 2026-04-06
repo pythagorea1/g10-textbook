@@ -14,3 +14,4 @@
 
 [2026-04-06T23:28:04+09:00] Task 4: Added S&P 500 long-term annotated SVG chart (1950-2026, log scale) to us/06_equity_overview.html with 6 annotations (Black Monday, Dotcom peak, GFC peak, 2009 bottom 666, COVID bottom, AI rally highs).
 [2026-04-06] Task 5: Added 10Y UST yield chart (1962-2026) to us/13_long_rates.html with 5 annotations (Volcker peak, 1994 bond massacre, GFC, COVID low, 2023 5%).
+[Mon Apr  6 23:30:51     2026] Task 6: us/15_crises.html - added vertical event-timeline SVG with 11 major US financial crises (1907 Panic → 2023 SVB)
