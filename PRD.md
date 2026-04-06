@@ -28,7 +28,7 @@ G10通貨国の金融市場教科書（200ページ超）に、テキスト中�
 ### Phase 1: 米国（US）— 最も重要な国
 - [x] Task 3: us/02_policy_rate.html — Fed Funds Rate長期推移チャート（1955-2026）+ Volcker利上げ・GFC利下げ・QE開始・2022利上げ・2024利下げ等の注釈
 - [x] Task 4: us/06_equity_overview.html — S&P 500長期チャート（1950-2026, 対数軸）+ ブラックマンデー・ドットコム・GFC・COVID・AI相場の注釈マーカー
-- [ ] Task 5: us/13_long_rates.html — 10年米国債利回り長期チャート（1962-2026）+ Volcker期高金利・低金利時代・2022急騰の注釈
+- [x] Task 5: us/13_long_rates.html — 10年米国債利回り長期チャート（1962-2026）+ Volcker期高金利・低金利時代・2022急騰の注釈
 - [ ] Task 6: us/15_crises.html — 主要危機のevent-timeline縦タイムライン（1907パニック〜SVB破綻まで）
 
 ### Phase 2: 日本（JP）

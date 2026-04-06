@@ -13,3 +13,4 @@
 [2026-04-06 iter4] Task 3: us/02_policy_rate.html - Fed Funds Rate chart (1955-2026) added with 6 annotation markers (Volcker, ZIRP, 2015 hike, COVID, 2023 peak, 2024 cut).
 
 [2026-04-06T23:28:04+09:00] Task 4: Added S&P 500 long-term annotated SVG chart (1950-2026, log scale) to us/06_equity_overview.html with 6 annotations (Black Monday, Dotcom peak, GFC peak, 2009 bottom 666, COVID bottom, AI rally highs).
+[2026-04-06] Task 5: Added 10Y UST yield chart (1962-2026) to us/13_long_rates.html with 5 annotations (Volcker peak, 1994 bond massacre, GFC, COVID low, 2023 5%).
