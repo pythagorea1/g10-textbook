@@ -156,6 +156,63 @@
       <!-- 債務/GDP推移 -->
       <section>
         <h2>政府債務/GDP比の推移</h2>
+        <figure class="chart-figure">
+          <figcaption class="chart-title">Sweden Government Debt / GDP (1970-2026)</figcaption>
+          <svg class="svg-chart" viewBox="0 0 800 420" preserveAspectRatio="xMidYMid meet">
+            <g class="chart-grid">
+              <line x1="60" y1="50" x2="60" y2="340"/>
+              <line x1="60" y1="340" x2="780" y2="340"/>
+              <line x1="60" y1="120" x2="780" y2="120" stroke-dasharray="2,3"/>
+              <line x1="60" y1="200" x2="780" y2="200" stroke-dasharray="2,3"/>
+              <line x1="60" y1="270" x2="780" y2="270" stroke-dasharray="2,3"/>
+            </g>
+            <g class="chart-axis">
+              <text x="50" y="125" text-anchor="end">75%</text>
+              <text x="50" y="205" text-anchor="end">50%</text>
+              <text x="50" y="275" text-anchor="end">25%</text>
+              <text x="50" y="345" text-anchor="end">0%</text>
+              <text x="60" y="360">1970</text>
+              <text x="220" y="360">1985</text>
+              <text x="400" y="360">2000</text>
+              <text x="580" y="360">2015</text>
+              <text x="780" y="360" text-anchor="end">2026</text>
+            </g>
+            <path class="chart-line" fill="none" stroke="#4dabf7" stroke-width="2"
+              d="M 60,310 L 120,275 L 180,237 L 240,203 L 300,275 L 340,135 L 400,170 L 460,180 L 520,217 L 580,202 L 640,236 L 680,200 L 720,237 L 760,237"/>
+            <g class="chart-annotation">
+              <circle cx="340" cy="135" r="4" fill="#ff6b6b"/>
+              <line x1="340" y1="135" x2="340" y2="95" stroke="#ff6b6b" stroke-width="1"/>
+              <rect x="295" y="80" width="90" height="14" fill="rgba(0,0,0,0.7)"/>
+              <text x="340" y="91" text-anchor="middle" fill="#ff6b6b" font-size="10">1996 73%ピーク</text>
+            </g>
+            <g class="chart-annotation">
+              <circle cx="240" cy="203" r="4" fill="#ffd43b"/>
+              <line x1="240" y1="203" x2="240" y2="240" stroke="#ffd43b" stroke-width="1"/>
+              <rect x="195" y="240" width="90" height="14" fill="rgba(0,0,0,0.7)"/>
+              <text x="240" y="251" text-anchor="middle" fill="#ffd43b" font-size="10">1990 バブル黒字</text>
+            </g>
+            <g class="chart-annotation">
+              <circle cx="460" cy="180" r="4" fill="#51cf66"/>
+              <line x1="460" y1="180" x2="460" y2="140" stroke="#51cf66" stroke-width="1"/>
+              <rect x="415" y="125" width="90" height="14" fill="rgba(0,0,0,0.7)"/>
+              <text x="460" y="136" text-anchor="middle" fill="#51cf66" font-size="10">2008 GFC前38%</text>
+            </g>
+            <g class="chart-annotation">
+              <circle cx="680" cy="200" r="4" fill="#ffd43b"/>
+              <line x1="680" y1="200" x2="680" y2="240" stroke="#ffd43b" stroke-width="1"/>
+              <rect x="635" y="240" width="90" height="14" fill="rgba(0,0,0,0.7)"/>
+              <text x="680" y="251" text-anchor="middle" fill="#ffd43b" font-size="10">2020 COVID</text>
+            </g>
+            <g class="chart-annotation">
+              <circle cx="760" cy="237" r="4" fill="#51cf66"/>
+              <line x1="760" y1="237" x2="760" y2="277" stroke="#51cf66" stroke-width="1"/>
+              <rect x="700" y="277" width="80" height="14" fill="rgba(0,0,0,0.7)"/>
+              <text x="740" y="288" text-anchor="middle" fill="#51cf66" font-size="10">2024 33%</text>
+            </g>
+          </svg>
+          <p class="chart-caption">出典: Riksgälden, IMF WEO. 1990年代危機後の財政再建で債務比率は半減し、G10最低水準を維持。</p>
+        </figure>
+
         <table class="data-table sortable">
           <thead>
             <tr>
