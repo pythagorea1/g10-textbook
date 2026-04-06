@@ -1,6 +1,6 @@
-=== Iteration 6 === 2026-04-06 23:29:33 ===
+=== Iteration 6 === 2026-04-07 07:45:55 ===
 Exit code: 0
-Duration: 81s
+Duration: 144s
 
-Task 6 complete. Added vertical event-timeline SVG with 11 major US financial crises (1907 Panic → 2023 SVB) to us/15_crises.html, marked PRD task done, updated progress.txt, and committed.
+Task 6 done. Reduced uk/02_policy_rate.html and norway/02_policy_rate.html from 10 annotations to 6 each with background rects and alternating placement.
 

@@ -18,7 +18,7 @@
 - [x] Task 6: 残りの既存チャートページ（eurozone, uk, switzerland, australia, newzealand, canada, sweden, norway の 02/06/13/14/15）を一括スキャンし、注釈密度が高いものだけリトライ。Glob+Grepで `chart-annotation` 数が10以上のファイルを抽出
 
 ## Phase 1: 米国（US）— 漏れ埋め
-- [ ] Task 7: us/03_fiscal_policy.html — 債務/GDP比 推移チャート（1940-2026, %）+ 注釈（WWII、Reagan減税、IRA/CHIPS等）
+- [x] Task 7: us/03_fiscal_policy.html — 債務/GDP比 推移チャート（1940-2026, %）+ 注釈（WWII、Reagan減税、IRA/CHIPS等）
 - [ ] Task 8: us/04_employment.html — 失業率推移チャート（1948-2026, %）+ 注釈（70sスタグフレーション、GFC10%、COVID14.7%、3.4%最低）
 - [ ] Task 9: us/05_inflation.html — CPI YoY推移チャート（1960-2026, %）+ 注釈（70sインフレ、Volcker、2022 9.1%ピーク）
 - [ ] Task 10: us/09_equity_recent.html — S&P500 2000-2019チャート + 注釈（ドットコム崩壊、住宅バブル、リーマン、QE回復、2018下落）
