@@ -93,6 +93,94 @@
         </div>
       </div>
 
+      <!-- Annotated SVG Chart -->
+      <figure class="chart-figure">
+        <figcaption class="chart-title">Norges Bank Sight Deposit Rate (1985-2026)</figcaption>
+        <svg class="svg-chart" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <linearGradient id="noRateGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#00d4aa" stop-opacity="0.4"/>
+              <stop offset="100%" stop-color="#00d4aa" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <g class="chart-grid" stroke="rgba(255,255,255,0.08)" stroke-width="1">
+            <line x1="60" y1="50" x2="60" y2="360"/>
+            <line x1="60" y1="360" x2="780" y2="360"/>
+            <line x1="60" y1="290" x2="780" y2="290"/>
+            <line x1="60" y1="220" x2="780" y2="220"/>
+            <line x1="60" y1="150" x2="780" y2="150"/>
+            <line x1="60" y1="80" x2="780" y2="80"/>
+          </g>
+          <g class="chart-axis" fill="rgba(255,255,255,0.6)" font-size="10">
+            <text x="55" y="364" text-anchor="end">0%</text>
+            <text x="55" y="294" text-anchor="end">3%</text>
+            <text x="55" y="224" text-anchor="end">6%</text>
+            <text x="55" y="154" text-anchor="end">9%</text>
+            <text x="55" y="84" text-anchor="end">12%</text>
+            <text x="60" y="378">1985</text>
+            <text x="235" y="378">1995</text>
+            <text x="410" y="378">2005</text>
+            <text x="585" y="378">2015</text>
+            <text x="780" y="378" text-anchor="end">2026</text>
+          </g>
+          <!-- Approx data points: x = 60 + (year-1985)/41*720 ; y = 360 - rate/15*280 -->
+          <path class="chart-area" fill="url(#noRateGrad)" d="M 60,153 L 78,107 L 95,153 L 113,153 L 130,200 L 148,247 L 165,233 L 183,267 L 200,289 L 218,277 L 235,205 L 253,219 L 270,251 L 288,261 L 305,233 L 323,238 L 340,247 L 358,256 L 375,265 L 393,289 L 410,289 L 428,294 L 445,299 L 463,303 L 480,290 L 498,253 L 515,256 L 533,253 L 550,275 L 568,285 L 585,313 L 603,313 L 620,294 L 638,294 L 655,285 L 673,299 L 690,360 L 708,346 L 725,304 L 743,253 L 760,276 L 780,286 L 780,360 L 60,360 Z"/>
+          <path class="chart-line" fill="none" stroke="#00d4aa" stroke-width="2.2" d="M 60,153 L 78,107 L 95,153 L 113,153 L 130,200 L 148,247 L 165,233 L 183,267 L 200,289 L 218,277 L 235,205 L 253,219 L 270,251 L 288,261 L 305,233 L 323,238 L 340,247 L 358,256 L 375,265 L 393,289 L 410,289 L 428,294 L 445,299 L 463,303 L 480,290 L 498,253 L 515,256 L 533,253 L 550,275 L 568,285 L 585,313 L 603,313 L 620,294 L 638,294 L 655,285 L 673,299 L 690,360 L 708,346 L 725,304 L 743,253 L 760,276 L 780,286"/>
+          <!-- Annotations -->
+          <g class="chart-annotation">
+            <circle cx="78" cy="107" r="5" fill="#ff6b6b"/>
+            <line x1="78" y1="107" x2="78" y2="70" stroke="#ff6b6b" stroke-width="1"/>
+            <text x="78" y="65" text-anchor="middle" fill="#ff6b6b" font-size="11">1987 ピーク 13%</text>
+          </g>
+          <g class="chart-annotation">
+            <circle cx="218" cy="277" r="5" fill="#ffd166"/>
+            <line x1="218" y1="277" x2="218" y2="245" stroke="#ffd166" stroke-width="1"/>
+            <text x="218" y="240" text-anchor="middle" fill="#ffd166" font-size="11">1992 ECUペッグ放棄</text>
+          </g>
+          <g class="chart-annotation">
+            <circle cx="270" cy="251" r="5" fill="#ff6b6b"/>
+            <line x1="270" y1="251" x2="270" y2="120" stroke="#ff6b6b" stroke-width="1"/>
+            <text x="270" y="115" text-anchor="middle" fill="#ff6b6b" font-size="11">1998 NOK防衛 8%</text>
+          </g>
+          <g class="chart-annotation">
+            <circle cx="340" cy="247" r="5" fill="#4ecdc4"/>
+            <line x1="340" y1="247" x2="340" y2="195" stroke="#4ecdc4" stroke-width="1"/>
+            <text x="340" y="190" text-anchor="middle" fill="#4ecdc4" font-size="11">2001 ITターゲット導入</text>
+          </g>
+          <g class="chart-annotation">
+            <circle cx="480" cy="290" r="5" fill="#ff6b6b"/>
+            <line x1="480" y1="290" x2="480" y2="200" stroke="#ff6b6b" stroke-width="1"/>
+            <text x="480" y="195" text-anchor="middle" fill="#ff6b6b" font-size="11">2008 GFC前 5.75%</text>
+          </g>
+          <g class="chart-annotation">
+            <circle cx="585" cy="313" r="5" fill="#ffd166"/>
+            <line x1="585" y1="313" x2="585" y2="345" stroke="#ffd166" stroke-width="1"/>
+            <text x="585" y="358" text-anchor="middle" fill="#ffd166" font-size="11">2014 油価急落</text>
+          </g>
+          <g class="chart-annotation">
+            <circle cx="690" cy="360" r="5" fill="#ff6b6b"/>
+            <line x1="690" y1="360" x2="690" y2="330" stroke="#ff6b6b" stroke-width="1"/>
+            <text x="690" y="325" text-anchor="middle" fill="#ff6b6b" font-size="11">2020 史上初0%</text>
+          </g>
+          <g class="chart-annotation">
+            <circle cx="708" cy="346" r="5" fill="#4ecdc4"/>
+            <line x1="708" y1="346" x2="730" y2="320" stroke="#4ecdc4" stroke-width="1"/>
+            <text x="745" y="318" fill="#4ecdc4" font-size="11">2021/9 G10最速利上げ</text>
+          </g>
+          <g class="chart-annotation">
+            <circle cx="743" cy="253" r="5" fill="#ff6b6b"/>
+            <line x1="743" y1="253" x2="743" y2="220" stroke="#ff6b6b" stroke-width="1"/>
+            <text x="743" y="215" text-anchor="middle" fill="#ff6b6b" font-size="11">2023 ピーク 4.5%</text>
+          </g>
+          <g class="chart-annotation">
+            <circle cx="780" cy="286" r="5" fill="#ffd166"/>
+            <line x1="780" y1="286" x2="770" y2="265" stroke="#ffd166" stroke-width="1"/>
+            <text x="775" y="260" text-anchor="end" fill="#ffd166" font-size="11">2026 4% 再利上げ示唆</text>
+          </g>
+        </svg>
+        <p class="chart-caption">出典: Norges Bank Sight Deposit Rate. 石油価格・通貨安と連動した独特のサイクル。G10で最も慎重な利下げペース。</p>
+      </figure>
+
       <!-- 政策金利の仕組み -->
       <section>
         <h2>政策金利の仕組み</h2>
