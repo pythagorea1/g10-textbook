@@ -1,12 +1,6 @@
-=== Iteration 17 === 2026-04-05 23:12:43 ===
+=== Iteration 17 === 2026-04-06 23:46:12 ===
 Exit code: 0
-Duration: 291s
+Duration: 62s
 
-Task 17 complete. Updated `canada/02_policy_rate.html` with:
-
-- **BOC利下げサイクル全9回**: 5.00%→2.25%（累計-275bp、2024年6月〜2025年10月）
-- **詳細テーブル新設**: 全14回の決定（9回利下げ+5回据え置き）を一覧化
-- **第8サイクル解説を全面改訂**: 2024年5回175bp→2025年前半2回50bp→3回据え置き→2回50bp再利下げの流れを詳述
-- **G10比較テーブルを2026年4月時点に更新**: Fed 3.50-3.75%、BOJ 0.75%、SNB 0.00%、BOE 3.75%等
-- **BOC-Fed金利差**: -140bp（2026年4月時点）に更新
+Task 17 complete. SNB policy rate chart (1975–2026) added with 7 annotation markers covering 1991 7% peak, 2011 EUR/CHF floor, 2015 -0.75%, 2022 exit, 2024 first-mover cut, and 2025 return to 0%.
 
