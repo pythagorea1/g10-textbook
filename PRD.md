@@ -56,7 +56,7 @@
 
 ## Phase 8: カナダ — 漏れ埋め
 - [x] Task 30: canada/03_fiscal_policy.html, canada/04_employment.html, canada/05_inflation.html
-- [ ] Task 31: canada/06_equity_overview.html, canada/09_equity_recent.html, canada/10_equity_current.html
+- [x] Task 31: canada/06_equity_overview.html, canada/09_equity_recent.html, canada/10_equity_current.html
 
 ## Phase 9: 北欧 — 漏れ埋め
 - [ ] Task 32: sweden/03_fiscal_policy.html, sweden/04_employment.html, sweden/05_inflation.html

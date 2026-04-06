@@ -1,6 +1,6 @@
-=== Iteration 30 === 2026-04-07 00:03:45 ===
+=== Iteration 30 === 2026-04-07 08:26:57 ===
 Exit code: 0
-Duration: 282s
+Duration: 101s
 
-Task 30 complete. Added in-line SVG governor-tenure gantt charts to all 10 country `01_central_bank.html` files via `scripts/gen_gantt.py`. Task 31 remains.
+Task 30 complete. Added debt/GDP, unemployment, and CPI charts to Canada pages 03/04/05.
 

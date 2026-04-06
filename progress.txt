@@ -74,3 +74,4 @@ Tue Apr  7 08:20:44     2026 Task 26: AU fiscal/employment/inflation charts
 [Tue Apr  7 08:24:44     2026] Task 28: NZ fiscal/employment/inflation charts
 [$(date +%H:%M)] Task 29: NZ NZX50 + NZD/USD charts
 [Tue Apr  7 08:28:36     2026] Task 30: Added CA fiscal/employment/inflation charts
+[Tue Apr  7 08:30:26     2026] Task 31: Added TSX charts to canada/06,09,10_equity pages
