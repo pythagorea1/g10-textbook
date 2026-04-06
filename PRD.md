@@ -43,7 +43,7 @@ G10通貨国の金融市場教科書（200ページ超）に、テキスト中�
 - [x] Task 13: eurozone/15_crises.html — 欧州債務危機タイムライン（PIIGS各国スプレッド推移ビジュアル含む）
 
 ### Phase 4: 英国（UK）
-- [ ] Task 14: uk/02_policy_rate.html — Bank Rate推移（1975-2026）+ ERM危機、Brexit、トラスショック、2024利下げの注釈
+- [x] Task 14: uk/02_policy_rate.html — Bank Rate推移（1975-2026）+ ERM危機、Brexit、トラスショック、2024利下げの注釈
 - [ ] Task 15: uk/06_equity_overview.html — FTSE 100長期チャート（1984-2026）+ Big Bang、ブラックウェンズデー、Brexit、COVIDの注釈
 - [ ] Task 16: uk/14_currency.html — GBPUSD長期チャート + ERM離脱、Brexit、トラスショックの注釈
 
