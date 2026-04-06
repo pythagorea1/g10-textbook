@@ -50,7 +50,7 @@ G10通貨国の金融市場教科書（200ページ超）に、テキスト中�
 ### Phase 5: スイス（CH）
 - [x] Task 17: switzerland/02_policy_rate.html — SNB政策金利推移 + マイナス金利導入・解除、2024年3月利下げ（先進国初）の注釈
 - [x] Task 18: switzerland/14_currency.html — EURCHFチャート + 1.20上限導入(2011)・撤廃ショック(2015)の劇的注釈
-- [ ] Task 19: switzerland/15_crises.html — UBS/CS危機タイムライン（2008 UBS救済、2023 CS破綻→UBS統合）
+- [x] Task 19: switzerland/15_crises.html — UBS/CS危機タイムライン（2008 UBS救済、2023 CS破綻→UBS統合）
 
 ### Phase 6: 豪州（AU）
 - [ ] Task 20: australia/02_policy_rate.html — RBA Cash Rate推移 + 2010年代低金利、コロナ、2022利上げサイクルの注釈
