@@ -59,3 +59,4 @@ Tue Apr  7 07:53:29     2026 Task 10: us/09_equity_recent.html S&P500 2000-2019 
 [2026-04-07T07:57:28] Task 13: us/12_short_rates.html — Fed Funds vs T-Bill 3M chart 1990-2026 with 6 annotations
 [Tue Apr  7 07:58:39     2026] Task 14: japan/03_fiscal_policy.html — added debt/GDP chart 1980-2026 with 6 annotations
 [Tue Apr  7 07:59:51     2026] Task 15: japan/04_employment.html unemployment chart 1980-2026 added
+[2026-04-07T08:01:07] Task16: japan/05_inflation.html CPI 1970-2026 chart added
