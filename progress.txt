@@ -110,3 +110,4 @@ Tue Apr  7 09:44:31     2026 Task 3: japan/01 summary dashboard added
 [2026-04-07T09:51:51+09:00] Task 9: Canada summary dashboard added to canada/01_central_bank.html
 [2026-04-07T09:53:29] Task 10: sweden/01_central_bank.html summary dashboard added
 Tue Apr  7 09:55:01     2026 Task 11: Added Norway country summary dashboard to norway/01_central_bank.html
+[2026-04-07T00:58Z] Task 12: Added inline SVG charts to us/07,08,16,17,18,19,20 (timeline, log price chart, bank bars, sector pie, regulation timeline, trade bars, drawdown bars).
