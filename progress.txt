@@ -143,3 +143,4 @@ Tue Apr  7 09:55:01     2026 Task 11: Added Norway country summary dashboard to 
 [2026-04-07T06:13:46Z] Task 6: Created summary/geopolitical_map.html with timeline, event list, world map, detail panel layout. Loads world_map.svg inline via fetch and initializes GeoMap engine.
 
 [2026-04-07T06:15:05Z] Task 7: Added category filter UI (7 checkboxes + Clear button) to summary/geopolitical_map.html, wired to GeoMap.setCategoryFilter(); added .category-filter styles to assets/geomap.css.
+[2026-04-07T15:16:34+09:00] Task 8: compare mode added to geopolitical_map.html (second GeoMap instance + select)

@@ -27,6 +27,12 @@
     <label><input type="checkbox" value="パンデミック"> パンデミック</label>
     <button type="button" id="category-filter-clear" class="category-filter-clear">Clear</button>
   </div>
+  <div id="compare-controls" class="compare-controls">
+    <label><input type="checkbox" id="compare-toggle"> 🔀 Compare mode</label>
+    <select id="compare-event-select" disabled>
+      <option value="">-- Select second event --</option>
+    </select>
+  </div>
 </section>
 
 <main class="geomap-layout">
@@ -37,6 +43,10 @@
 
   <section class="geomap-main">
     <div id="world-map" class="world-map-container"></div>
+    <div id="world-map-b" class="world-map-container compare-pane" hidden></div>
+    <div id="event-detail-b" class="event-detail-panel compare-pane" hidden>
+      <p class="muted">比較イベントを選択してください。</p>
+    </div>
   </section>
 
   <aside class="geomap-sidebar-right">
@@ -89,6 +99,58 @@
   document.getElementById('category-filter-clear').addEventListener('click', () => {
     checkboxes.forEach(c => { c.checked = false; });
     applyFilter();
+  });
+
+  // Compare mode: second map instance side-by-side
+  const compareToggle = document.getElementById('compare-toggle');
+  const compareSelect = document.getElementById('compare-event-select');
+  const mapBContainer = document.getElementById('world-map-b');
+  const detailB = document.getElementById('event-detail-b');
+  let mapB = null;
+
+  // Populate compare select with all events
+  const allEvents = (map.events || []).slice().sort((a, b) =>
+    (a.year - b.year) || ((a.month || 0) - (b.month || 0))
+  );
+  allEvents.forEach(ev => {
+    const opt = document.createElement('option');
+    opt.value = ev.id;
+    opt.textContent = `${ev.year} · ${ev.title}`;
+    compareSelect.appendChild(opt);
+  });
+
+  compareToggle.addEventListener('change', async () => {
+    const on = compareToggle.checked;
+    compareSelect.disabled = !on;
+    mapBContainer.hidden = !on;
+    detailB.hidden = !on;
+    document.body.classList.toggle('compare-active', on);
+    if (on && !mapB) {
+      try {
+        const res = await fetch('../assets/world_map.svg');
+        mapBContainer.innerHTML = await res.text();
+      } catch (e) {
+        mapBContainer.innerHTML = '<p class="error">地図読み込み失敗</p>';
+        return;
+      }
+      mapB = new GeoMap({
+        mapContainer: '#world-map-b',
+        detailContainer: '#event-detail-b',
+        yearRange: [1970, 2026]
+      });
+      mapB.events = map.events;
+      if (typeof mapB.init === 'function') mapB.init();
+    }
+  });
+
+  compareSelect.addEventListener('change', () => {
+    if (mapB && compareSelect.value) {
+      mapB.highlightEvent(compareSelect.value);
+      if (typeof mapB.updateDetailPanel === 'function') {
+        const ev = map.events.find(e => e.id === compareSelect.value);
+        if (ev) mapB.updateDetailPanel(ev);
+      }
+    }
   });
 })();
 </script>
