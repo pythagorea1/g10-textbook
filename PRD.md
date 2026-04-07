@@ -70,7 +70,7 @@
   - 設定: 1セッションあたり10問 or 20問 or 全問選択可能
 
 ### Phase 3: 統合
-- [ ] Task 12: index.html のクイックリンクとカード上部に「📝 Quiz Mode」リンクバナー追加。Geopolitical Map と並べて目立つ位置に
+- [x] Task 12: index.html のクイックリンクとカード上部に「📝 Quiz Mode」リンクバナー追加。Geopolitical Map と並べて目立つ位置に
 - [ ] Task 13: 各国 01_central_bank.html の Summary Dashboard に「→ Quiz でこの国を学ぶ」リンクを追加（クイズページにcountry=USなどクエリパラメータ付き）
 
 ### Phase 4: 検証・拡張

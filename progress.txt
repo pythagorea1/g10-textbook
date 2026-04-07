@@ -173,3 +173,4 @@ Tue Apr  7 19:11:12     2026 Task 8: q_geopolitics.js 30問追加
 [2026-04-07T10:14:24Z] Task 10: assets/quiz.js — QuizEngine class (start/renderStart/renderQuestion/submitAnswer/renderResult), shuffle, localStorage best scores, history, progress bar, 5-choice buttons, explanation panel with related link, restart.
 
 [2026-04-07T19:15:31+09:00] Task 11: created summary/quiz.html — loads 8 data files + quiz.js, bootstraps QuizEngine, supports ?category= query param
+[2026-04-07 19:16:32] Task 12: index.html quick-link + banner for Quiz Mode
