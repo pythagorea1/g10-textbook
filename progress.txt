@@ -149,3 +149,4 @@ Tue Apr  7 09:55:01     2026 Task 11: Added Norway country summary dashboard to 
 [2026-04-07] Task 11: added Geopolitical Map link to summary/g10_timeline.html
 
 [2026-04-07T15:22:33+09:00] Task 12: Verified geopolitical_map.html via local http.server :8765. HTTP 200 for page + events.json + geomap.js + world_map.svg + geomap.css. Saved snapshot to output/geomap_screenshot_20260407_152214.html (playwright MCP not permitted, used curl fallback).
+[2026-04-07T15:23:26+09:00] Task 13: verified geopolitical_events.json has 50 events (>=30), no additions needed.
