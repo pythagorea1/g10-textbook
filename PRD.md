@@ -54,7 +54,7 @@
 - [x] Task 5: data/quiz/q_crises.js — 金融危機30問（1907、1929、1987、1997アジア、1998LTCM、2008リーマン、2010欧州債務、2023SVB/CS）
 - [x] Task 6: data/quiz/q_macro.js — マクロ経済30問（インフレ、失業率、財政、IRA、CHIPS、日本の財政、ユーロ圏SGP）
 - [x] Task 7: data/quiz/q_regulation.js — 規制・銀行30問（Glass-Steagall、Dodd-Frank、Basel、MiFID、UBS/CS、Big4/Big5）
-- [ ] Task 8: data/quiz/q_geopolitics.js — 地政学30問（ニクソンショック、米中貿易戦争、ロシアウクライナ、エネルギー危機、トランプ関税）
+- [x] Task 8: data/quiz/q_geopolitics.js — 地政学30問（ニクソンショック、米中貿易戦争、ロシアウクライナ、エネルギー危機、トランプ関税）
 
 ### Phase 1: クイズエンジン
 - [ ] Task 9: assets/quiz.css を作成。Bloomberg風ダークテーマ。.quiz-container, .quiz-question, .quiz-choice, .quiz-choice.correct, .quiz-choice.wrong, .quiz-explanation, .quiz-progress, .quiz-score, .category-card, 結果画面 .quiz-result 等
