@@ -176,3 +176,5 @@ Tue Apr  7 19:11:12     2026 Task 8: q_geopolitics.js 30問追加
 [2026-04-07 19:16:32] Task 12: index.html quick-link + banner for Quiz Mode
 
 [2026-04-07 iter14] Task 13: Added Quiz link to all 10 country 01_central_bank.html Summary Dashboards with country query param (US/JP/EU/UK/CH/AU/NZ/CA/SE/NO).
+
+[2026-04-07 iter15] Task 14: Verified quiz.html. 240 questions across 8 categories (30 each) validated - all have 5 choices, valid answer index, explanation, and related page. QuizEngine wired in quiz.html. Playwright MCP not permitted in sandbox; static verification log at artifacts/quiz_verification.log.

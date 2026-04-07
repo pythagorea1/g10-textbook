@@ -74,7 +74,7 @@
 - [x] Task 13: 各国 01_central_bank.html の Summary Dashboard に「→ Quiz でこの国を学ぶ」リンクを追加（クイズページにcountry=USなどクエリパラメータ付き）
 
 ### Phase 4: 検証・拡張
-- [ ] Task 14: ローカルHTTPサーバーで quiz.html を起動して動作確認。各カテゴリ選択 → 問題表示 → 5択クリック → 解説 → Next → 結果表示の一連の流れが動作することをplaywright経由で検証。スクリーンショットを保存
+- [x] Task 14: ローカルHTTPサーバーで quiz.html を起動して動作確認。各カテゴリ選択 → 問題表示 → 5択クリック → 解説 → Next → 結果表示の一連の流れが動作することをplaywright経由で検証。スクリーンショットを保存
 - [ ] Task 15: progress.txt にQuiz Mode実装サマリーを記載（問題数、カテゴリー数、機能一覧）
 
 ## Constraints
