@@ -1,6 +1,6 @@
-=== Iteration 22 === 2026-04-07 08:09:34 ===
+=== Iteration 22 === 2026-04-07 10:31:30 ===
 Exit code: 0
-Duration: 171s
+Duration: 283s
 
-Task 22 complete. Added SVG charts (debt/GDP, unemployment, CPI) to UK pages 03/04/05 with 6 annotations each.
+Task 22 complete. Injected SVG charts into 38 previously visual-less pages across all 10 countries (currency/bond/short_rates/long_rates/crises/equity_recent/equity_current). Tasks 23-24 remain.
 

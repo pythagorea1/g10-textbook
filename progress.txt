@@ -122,3 +122,5 @@ Tue Apr  7 09:55:01     2026 Task 11: Added Norway country summary dashboard to 
 [2026-04-07T10:27:10] Task 20: Added inline SVG visuals to sweden/07,08,16,17,18,19,20
 [2026-04-07] Task 21: Norway pages 07,08,16,17,18,19,20 に inline SVG 図解追加 (timeline/bar/infographic)
 [2026-04-07T10:35:46+09:00] Task 22: audited 200 pages, injected svg-chart into 38 missing pages (currency/bond/short/long/crises/equity_recent/current across 10 countries)
+
+[2026-04-07 iter24] Task 23: verified us/08_equity_modern.html contains svg-chart with 1985 Plaza, 1987 BlackMon, 1998 LTCM annotations alternated up/down with bg rects — no fix needed.
