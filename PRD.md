@@ -1,133 +1,139 @@
-# Project: G10 Textbook — Interactive Geopolitical World Map
+# Project: G10 Textbook — Quiz Mode
 
 ## Overview
-新規ページ `summary/geopolitical_map.html` を作成。世界地図上で年・イベントを選択すると、そのイベントが各国に与えたインパクトと国際関係の流れ（資金/政策/外交フロー）を可視化する。
-G10通貨国を中心に、地政学リスクと金融市場の連動を直感的に追えるダッシュボード。
+教科書の知識を能動的に学べるクイズモード（5択選択式・解説付き・カテゴリー別）を実装する。
+新規ページ `summary/quiz.html` を作成し、カテゴリー選択 → 出題 → 回答 → 解説 → スコアの流れで学習可能にする。
 
 ## 機能要件
-1. **インタラクティブ世界地図** — SVG。G10通貨国（US/EU/JP/UK/CH/AU/NZ/CA/SE/NO）と主要関連国（CN/RU/SA/UA等）を表示
-2. **タイムラインスライダー** — 1970-2026の年スライダー
-3. **イベント選択リスト** — 年に紐づくイベントをサイドパネルに表示。クリックで地図に反映
-4. **地図上の表現**:
-   - 影響国を色強度で表示（赤=深刻、橙=中、黄=軽微）
-   - 国間の関係を**矢印**（資金フロー/政策連動/制裁/外交）で結ぶ
-   - 影響国にツールチップ（具体的な数値・出来事）
-5. **イベント詳細パネル** — 選択イベントの背景・影響・教訓を表示
+1. **5択選択式** (multiple choice)
+2. **カテゴリー別** — 8カテゴリーから選択 or 全カテゴリーランダム
+3. **解説必須** — 正解/不正解の理由 + 関連ページへのリンク
+4. **スコア表示** — 正答率、連続正解、ベスト記録（localStorage）
+5. **問題シャッフル** — 毎回ランダム順
+6. **難易度** — easy/medium/hard 表示
+7. **オフライン動作** — 純HTML+JS、外部CDN禁止
+
+## カテゴリー
+1. 🏦 中央銀行・金融政策（Fed/ECB/BOJ等の歴史・現職・政策）
+2. 📈 株式市場（指数・歴史・主要イベント）
+3. 💵 為替・通貨（主要通貨・通貨制度・歴史的な為替イベント）
+4. 📊 債券・金利（国債市場・利回り・サイクル）
+5. ⚡ 金融危機（歴史的な危機・原因・影響）
+6. 📉 マクロ経済（インフレ・雇用・財政）
+7. 🏛️ 規制・銀行制度（規制変遷・主要銀行）
+8. 🌍 地政学（国際関係・貿易戦争・制裁）
 
 ## Tasks
 
-### Phase 0: データ設計（最優先・JSON生成）
-- [x] Task 1: data/geopolitical_events.json を新規作成。50+の地政学/金融イベントを以下のスキーマで定義
-```json
+### Phase 0: クイズ問題データ（カテゴリー別JS）
+
+各カテゴリ20-30問、合計200+問を目指す。スキーマ:
+```javascript
 {
-  "events": [
-    {
-      "id": "nixon_shock_1971",
-      "year": 1971,
-      "month": 8,
-      "title": "ニクソン・ショック（金兌換停止）",
-      "category": "通貨制度",
-      "severity": "critical",
-      "epicenter": "US",
-      "affected": [
-        {"country": "US", "impact": "critical", "note": "ドル防衛のため金兌換停止"},
-        {"country": "JP", "impact": "high", "note": "円が変動相場制へ移行"},
-        {"country": "EU", "impact": "high", "note": "欧州通貨もフロート化"}
-      ],
-      "flows": [
-        {"from": "US", "to": "JP", "type": "currency_pressure", "label": "ドル離れ"},
-        {"from": "US", "to": "EU", "type": "currency_pressure"}
-      ],
-      "narrative": "1971年8月15日、ニクソン大統領は金とドルの兌換停止を発表..."
-    }
-  ]
+  id: "fed-volcker-1",
+  category: "中央銀行",
+  difficulty: "medium",
+  question: "1979年にFRB議長に就任し、徹底したインフレ退治のため政策金利を20%まで引き上げた人物は？",
+  choices: [
+    "アラン・グリーンスパン",
+    "ポール・ボルカー",
+    "ベン・バーナンキ",
+    "ジャネット・イエレン",
+    "ジェローム・パウエル"
+  ],
+  answer: 1,  // index
+  explanation: "ポール・ボルカー(Paul Volcker)は1979-1987年のFRB議長。第2次オイルショック後の二桁インフレに対し、FFレートを最高20%まで引き上げる超金融引き締めを断行。1982年までに二桁インフレを鎮静化させた。",
+  related: "us/01_central_bank.html"
 }
 ```
-カテゴリー: 通貨制度/金融危機/中央銀行/地政学/エネルギー/貿易戦争/パンデミック
-重要イベント例:
-- 1971 ニクソン・ショック
-- 1973 第1次オイルショック
-- 1979 第2次オイルショック・Volcker利上げ
-- 1985 プラザ合意
-- 1987 ブラックマンデー
-- 1989 ベルリンの壁崩壊
-- 1990 日本バブル崩壊
-- 1992 ERM危機・ブラックウェンズデー
-- 1994 メキシコ危機
-- 1997 アジア通貨危機
-- 1998 LTCM・ロシア危機
-- 2000 ドットコム崩壊
-- 2001 9/11
-- 2008 リーマンショック
-- 2010 欧州ソブリン危機
-- 2011 福島原発事故
-- 2014 ロシアのクリミア併合
-- 2015 SNB CHFショック・チャイナショック
-- 2016 Brexit投票・トランプ当選
-- 2018 米中貿易戦争
-- 2020 COVID-19
-- 2022 ロシアのウクライナ侵攻・エネルギー危機
-- 2023 SVB/CS破綻・銀行危機
-- 2024 日銀マイナス金利解除・中東緊張
-- 2025 トランプ関税
 
-### Phase 1: 世界地図SVG基盤
-- [x] Task 2: assets/world_map.svg を作成。簡略化された世界地図SVG（数十カ国の polygons、各国に id="country-XX" を持たせる）。G10は精度高く、その他は簡略化。Mercator風のviewBox。各国にdefault fillと.affected, .epicenter等のクラス用意。data-name属性に英語国名
-- [x] Task 3: assets/geomap.css を作成（または既存style.cssに追記）。.world-map基本スタイル、.country base/hover/affected-low/mid/high/critical/epicenterの色定義、.flow-arrow stroke styles、.event-list、.event-card、.event-detail-panel、.timeline-slider のスタイル
+- [x] Task 1: data/quiz/q_central_bank.js を作成。中央銀行・金融政策カテゴリの問題30問（Fed歴代議長、ECB、BOJ、SNB、各国政策決定の重要事項、現職人事を含む2026年4月時点の正確な情報）
+- [ ] Task 2: data/quiz/q_equity.js — 株式市場30問（NYSE/NASDAQ歴史、日経バブル、FTSE、DAX、Black Monday、ドットコム、リーマン後、AI相場等）
+- [ ] Task 3: data/quiz/q_fx.js — 為替・通貨30問（ブレトンウッズ、プラザ合意、CHF上限撤廃、Brexit、円安、各通貨の特徴）
+- [ ] Task 4: data/quiz/q_bonds.js — 債券・金利30問（10Y UST、JGB、Bund、Volcker期、QE、YCC、2022債券暴落）
+- [ ] Task 5: data/quiz/q_crises.js — 金融危機30問（1907、1929、1987、1997アジア、1998LTCM、2008リーマン、2010欧州債務、2023SVB/CS）
+- [ ] Task 6: data/quiz/q_macro.js — マクロ経済30問（インフレ、失業率、財政、IRA、CHIPS、日本の財政、ユーロ圏SGP）
+- [ ] Task 7: data/quiz/q_regulation.js — 規制・銀行30問（Glass-Steagall、Dodd-Frank、Basel、MiFID、UBS/CS、Big4/Big5）
+- [ ] Task 8: data/quiz/q_geopolitics.js — 地政学30問（ニクソンショック、米中貿易戦争、ロシアウクライナ、エネルギー危機、トランプ関税）
 
-### Phase 2: インタラクティブ地図エンジン
-- [x] Task 4: assets/geomap.js を作成。クラスGeoMap with: loadEvents(jsonUrl), renderTimelineSlider(containerId, yearRange), renderEventList(containerId, year), highlightEvent(eventId), drawFlows(flows), updateDetailPanel(event), tooltips. SVG操作、矢印は path/marker-end で描画。年スライダーはinput[type=range]で実装
-- [x] Task 5: assets/geomap.js に矢印描画ロジック追加。drawArrow(fromCountryId, toCountryId, type) — 国の中心座標から bezier curve で矢印を描く。flowタイプによって色分け（contagion=赤、policy=青、trade=緑、capital=橙）
+### Phase 1: クイズエンジン
+- [ ] Task 9: assets/quiz.css を作成。Bloomberg風ダークテーマ。.quiz-container, .quiz-question, .quiz-choice, .quiz-choice.correct, .quiz-choice.wrong, .quiz-explanation, .quiz-progress, .quiz-score, .category-card, 結果画面 .quiz-result 等
+- [ ] Task 10: assets/quiz.js を作成。クラスQuizEngine: loadQuestions(category|all), shuffle, nextQuestion, submitAnswer, showExplanation, calculateScore, saveBestScore (localStorage), restart, getStats. 5択ボタン、解説パネル、進捗バーをレンダリング
 
-### Phase 3: メインページ作成
-- [x] Task 6: summary/geopolitical_map.html を新規作成。レイアウト: 上部にタイトル+年スライダー、左サイドにイベントリスト、中央に世界地図SVG、右サイドにイベント詳細パネル。レスポンシブ対応（モバイルは縦積み）。assets/geomap.js, assets/world_map.svg をロード
-- [x] Task 7: summary/geopolitical_map.html に「カテゴリーフィルター」追加（通貨制度/金融危機/地政学/エネルギー等のチェックボックス）。フィルターでイベントリストを絞り込む
-- [x] Task 8: summary/geopolitical_map.html に「比較モード」追加（2つのイベントを並べてマップを2分割表示できるようにする）。任意機能だが入れると深い分析可能
+### Phase 2: メインページ
+- [ ] Task 11: summary/quiz.html を新規作成。レイアウト:
+  - **トップ**: タイトル、ベストスコア表示
+  - **カテゴリー選択画面**: 8カテゴリーカード（アイコン+名前+問題数+ベストスコア）+「全カテゴリーランダム」ボタン
+  - **クイズ画面**: 進捗バー、現在の問題、5択ボタン、Submit
+  - **解説画面**: 正誤表示、解説テキスト、関連ページリンク、Next ボタン
+  - **結果画面**: スコア、正答率、カテゴリー別内訳、Restart/カテゴリー選択へ戻る
+  - 設定: 1セッションあたり10問 or 20問 or 全問選択可能
 
-### Phase 4: 統合・リンク追加
-- [x] Task 9: index.html の Quick Links と Country Cards 上部に「🌍 Geopolitical Map」リンクを追加。stats-bar の下、country-grid の上に大きめのバナーカードで配置
-- [x] Task 10: 各国の 01_central_bank.html の Historical Highlights タイムラインに「→ Geopolitical Map で見る」リンクを追加（イベントごとに対応するイベントIDへリンクして該当年・イベントを自動選択）
-- [x] Task 11: summary/g10_timeline.html（既存横断年表）にも「Geopolitical Map」へのリンクを追加
+### Phase 3: 統合
+- [ ] Task 12: index.html のクイックリンクとカード上部に「📝 Quiz Mode」リンクバナー追加。Geopolitical Map と並べて目立つ位置に
+- [ ] Task 13: 各国 01_central_bank.html の Summary Dashboard に「→ Quiz でこの国を学ぶ」リンクを追加（クイズページにcountry=USなどクエリパラメータ付き）
 
-### Phase 5: 検証と最終調整
-- [x] Task 12: ローカルHTTPサーバーで summary/geopolitical_map.html を起動して動作確認（python -m http.server）。年スライダーが動く、イベントリストが年で絞られる、地図クリックで国情報が出る、矢印が描画される、レスポンシブが効く、を確認。スクリーンショットを output/geomap_screenshot_*.png に保存（playwright MCP使用可）
-- [x] Task 13: イベント数が30未満の場合は data/geopolitical_events.json に追加で20イベント以上記述。「現代史で重要だが見落としがちな出来事」（例: 1991ソ連崩壊、1993NAFTA、2003イラク戦争、2007BNP Paribasサブプライム、2009ギリシャ財政危機発覚、2012Whatever it takes、2014石油価格暴落、2017テーパリング、2019Repo危機、2025トランプ関税等）
-- [x] Task 14: progress.txt に最終サマリー記載
+### Phase 4: 検証・拡張
+- [ ] Task 14: ローカルHTTPサーバーで quiz.html を起動して動作確認。各カテゴリ選択 → 問題表示 → 5択クリック → 解説 → Next → 結果表示の一連の流れが動作することをplaywright経由で検証。スクリーンショットを保存
+- [ ] Task 15: progress.txt にQuiz Mode実装サマリーを記載（問題数、カテゴリー数、機能一覧）
 
 ## Constraints
-- **外部CDN/library禁止** — 純粋なインラインSVG + Vanilla JS
-- **オフライン動作** — file://でも動くこと（fetch JSONはローカル相対パスでOK、ただしCORS問題があるためJSONではなくinline scriptで埋め込む選択肢も考慮）
-- **既存ページに干渉しない** — 新規ページとして作成。既存のCSS/JSを破壊しない
-- **データはハードコード or ローカルJSON** — fetch失敗対策にinlineフォールバックも検討
-- **G10中心** — その他の国は影響国として登場するときのみ表示
+- 純HTML + Vanilla JS + CSS。外部CDN/library禁止
+- データは別ファイル（data/quiz/q_*.js）にwindow.QUIZ_QUESTIONS_*配列として埋め込み
+- localStorage でベストスコア保存
+- file://でも動作すること
+- 解説は教科書の該当ページに合わせた事実ベース
+- 2026年4月時点の最新情報（特に現職中銀総裁、最近の利上げ・利下げ等）
 
 ## Notes
 
-### 矢印タイプと色
-| type | 色 | 用途 |
-|------|---|------|
-| contagion | #ff6b6b (赤) | 危機伝播 |
-| policy | #5b8def (青) | 政策連動・協調介入 |
-| trade | #00d4aa (緑) | 貿易・関税 |
-| capital | #ff9f43 (橙) | 資金フロー |
-| sanction | #ffd93d (黄) | 制裁 |
-
-### 国Severity色
-| severity | 色 |
-|----------|---|
-| epicenter | #ff4444 (濃赤、震源地) |
-| critical | #ff6b6b (赤) |
-| high | #ff9f43 (橙) |
-| medium | #ffd93d (黄) |
-| low | #4ecdc4 (薄緑) |
-| neutral | #2a2a4a (グレー) |
-
-### 動作確認手順
-```bash
-cd C:/Users/PC_user/OneDrive/G10_research/g10_textbook
-python -m http.server 8080
-# ブラウザで http://localhost:8080/summary/geopolitical_map.html
+### クイズ画面UIフロー
+```
+[Start Screen]
+  カテゴリーカード × 8
+  ↓ select
+[Quiz Screen]
+  Q1: ...
+  ○ A
+  ○ B
+  ○ C  ← clicked
+  ○ D
+  ○ E
+  [Submit]
+  ↓
+[Explanation Screen]
+  ✗ 不正解 — 正解はB
+  解説: ...
+  [Next →]
+  ↓ (10 questions)
+[Result Screen]
+  Score: 7/10 (70%)
+  正解: 7問 / 不正解: 3問
+  [Restart] [カテゴリー選択へ]
 ```
 
-### CORS対策
-file://でJSON fetchが効かない場合、events JSONを別の.jsファイルとして書き出してwindow.GEOPOLITICAL_EVENTS = {...}でグローバルに設定する方法も可。
+### localStorage キー
+- `g10quiz_best_<category>` — カテゴリー別ベスト正答率
+- `g10quiz_history` — 直近10回の成績
+- `g10quiz_total_correct` — 累計正解数
+
+### サンプル問題
+カテゴリー「中央銀行」:
+> Q. 2024年3月に日銀がマイナス金利政策を解除した時の総裁は？
+> A) 黒田東彦
+> B) 白川方明
+> C) 福井俊彦
+> D) **植田和男**
+> E) 山口廣秀
+> 
+> 解説: 植田和男総裁は2023年4月就任。2024年3月19日の金融政策決定会合でマイナス金利解除（無担保コール翌日物を0〜0.1%に）、YCC撤廃、ETF・J-REIT新規買入終了を決定。これは17年ぶりの利上げで、量的・質的金融緩和の終了を意味した。
+
+カテゴリー「為替」:
+> Q. 1985年9月、ニューヨークのプラザホテルで合意され、急激なドル安を誘導したのは？
+> A) ルーブル合意
+> B) **プラザ合意**
+> C) ブレトンウッズ協定
+> D) ジャマイカ合意
+> E) スミソニアン合意
+> 
+> 解説: 1985年9月22日、G5（日米英仏独）財務相・中央銀行総裁会議で合意。当時の高金利・ドル高による米国貿易赤字是正を目的とし、各国が協調介入でドル安を誘導。USD/JPYは1年で240円→150円台へ。日本のバブル経済の引き金にもなった。
