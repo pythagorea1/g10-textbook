@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geopolitical Map — G10 Textbook</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/geomap.css">
+</head>
+<body>
+<header class="page-header">
+  <nav class="breadcrumb"><a href="../index.html">← Home</a></nav>
+  <h1>🌍 Geopolitical Map (1970–2026)</h1>
+  <p class="subtitle">世界地図上で地政学イベントの国際的影響と資金・政策フローを可視化</p>
+</header>
+
+<section class="geomap-toolbar">
+  <div id="timeline" class="timeline-slider"></div>
+  <div id="category-filter" class="category-filter">
+    <span class="category-filter-label">Category:</span>
+    <label><input type="checkbox" value="通貨制度"> 通貨制度</label>
+    <label><input type="checkbox" value="金融危機"> 金融危機</label>
+    <label><input type="checkbox" value="中央銀行"> 中央銀行</label>
+    <label><input type="checkbox" value="地政学"> 地政学</label>
+    <label><input type="checkbox" value="エネルギー"> エネルギー</label>
+    <label><input type="checkbox" value="貿易戦争"> 貿易戦争</label>
+    <label><input type="checkbox" value="パンデミック"> パンデミック</label>
+    <button type="button" id="category-filter-clear" class="category-filter-clear">Clear</button>
+  </div>
+  <div id="compare-controls" class="compare-controls">
+    <label><input type="checkbox" id="compare-toggle"> 🔀 Compare mode</label>
+    <select id="compare-event-select" disabled>
+      <option value="">-- Select second event --</option>
+    </select>
+  </div>
+</section>
+
+<main class="geomap-layout">
+  <aside class="geomap-sidebar-left">
+    <h2>Events</h2>
+    <div id="event-list" class="event-list"></div>
+  </aside>
+
+  <section class="geomap-main">
+    <div id="world-map" class="world-map-container"></div>
+    <div id="world-map-b" class="world-map-container compare-pane" hidden></div>
+    <div id="event-detail-b" class="event-detail-panel compare-pane" hidden>
+      <p class="muted">比較イベントを選択してください。</p>
+    </div>
+  </section>
+
+  <aside class="geomap-sidebar-right">
+    <h2>Detail</h2>
+    <div id="event-detail" class="event-detail-panel">
+      <p class="muted">イベントを選択すると詳細を表示します。</p>
+    </div>
+  </aside>
+</main>
+
+<footer class="page-footer">
+  <p>G10 Textbook · Pure SVG + Vanilla JS · Offline-ready</p>
+</footer>
+
+<script src="../assets/geomap.js"></script>
+<script>
+(async function () {
+  // Load world map SVG inline (avoid CORS on file://)
+  const mapContainer = document.getElementById('world-map');
+  try {
+    const res = await fetch('../assets/world_map.svg');
+    mapContainer.innerHTML = await res.text();
+  } catch (e) {
+    mapContainer.innerHTML = '<p class="error">世界地図SVGの読み込みに失敗しました。HTTPサーバー経由で開いてください (python -m http.server).</p>';
+  }
+
+  const map = new GeoMap({
+    mapContainer: '#world-map',
+    timelineContainer: '#timeline',
+    eventListContainer: '#event-list',
+    detailContainer: '#event-detail',
+    yearRange: [1970, 2026]
+  });
+
+  try {
+    await map.loadEvents('../data/geopolitical_events.json');
+  } catch (e) {
+    console.error('Failed to load events:', e);
+  }
+  if (typeof map.init === 'function') map.init();
+
+  // Category filter wiring
+  const filterEl = document.getElementById('category-filter');
+  const checkboxes = filterEl.querySelectorAll('input[type=checkbox]');
+  const applyFilter = () => {
+    const active = Array.from(checkboxes).filter(c => c.checked).map(c => c.value);
+    map.setCategoryFilter(active);
+  };
+  checkboxes.forEach(c => c.addEventListener('change', applyFilter));
+  document.getElementById('category-filter-clear').addEventListener('click', () => {
+    checkboxes.forEach(c => { c.checked = false; });
+    applyFilter();
+  });
+
+  // Compare mode: second map instance side-by-side
+  const compareToggle = document.getElementById('compare-toggle');
+  const compareSelect = document.getElementById('compare-event-select');
+  const mapBContainer = document.getElementById('world-map-b');
+  const detailB = document.getElementById('event-detail-b');
+  let mapB = null;
+
+  // Populate compare select with all events
+  const allEvents = (map.events || []).slice().sort((a, b) =>
+    (a.year - b.year) || ((a.month || 0) - (b.month || 0))
+  );
+  allEvents.forEach(ev => {
+    const opt = document.createElement('option');
+    opt.value = ev.id;
+    opt.textContent = `${ev.year} · ${ev.title}`;
+    compareSelect.appendChild(opt);
+  });
+
+  compareToggle.addEventListener('change', async () => {
+    const on = compareToggle.checked;
+    compareSelect.disabled = !on;
+    mapBContainer.hidden = !on;
+    detailB.hidden = !on;
+    document.body.classList.toggle('compare-active', on);
+    if (on && !mapB) {
+      try {
+        const res = await fetch('../assets/world_map.svg');
+        mapBContainer.innerHTML = await res.text();
+      } catch (e) {
+        mapBContainer.innerHTML = '<p class="error">地図読み込み失敗</p>';
+        return;
+      }
+      mapB = new GeoMap({
+        mapContainer: '#world-map-b',
+        detailContainer: '#event-detail-b',
+        yearRange: [1970, 2026]
+      });
+      mapB.events = map.events;
+      if (typeof mapB.init === 'function') mapB.init();
+    }
+  });
+
+  compareSelect.addEventListener('change', () => {
+    if (mapB && compareSelect.value) {
+      mapB.highlightEvent(compareSelect.value);
+      if (typeof mapB.updateDetailPanel === 'function') {
+        const ev = map.events.find(e => e.id === compareSelect.value);
+        if (ev) mapB.updateDetailPanel(ev);
+      }
+    }
+  });
+})();
+</script>
+</body>
+</html>
