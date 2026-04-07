@@ -51,7 +51,7 @@ Phase 2では主要データページ（02, 06, 13, 14等）にチャートを�
 - [x] Task 15: 英国（UK） — uk/07, uk/08, uk/16, uk/17, uk/18, uk/19, uk/20
 - [x] Task 16: スイス（CH） — switzerland/07, switzerland/08, switzerland/16, switzerland/17, switzerland/18, switzerland/19, switzerland/20
 - [x] Task 17: 豪州（AU） — australia/07, australia/08, australia/16, australia/17, australia/18, australia/19, australia/20
-- [ ] Task 18: NZ — newzealand/07, newzealand/08, newzealand/16, newzealand/17, newzealand/18, newzealand/19, newzealand/20
+- [x] Task 18: NZ — newzealand/07, newzealand/08, newzealand/16, newzealand/17, newzealand/18, newzealand/19, newzealand/20
 - [ ] Task 19: カナダ — canada/07, canada/08, canada/16, canada/17, canada/18, canada/19, canada/20
 - [ ] Task 20: スウェーデン — sweden/07, sweden/08, sweden/16, sweden/17, sweden/18, sweden/19, sweden/20
 - [ ] Task 21: ノルウェー — norway/07, norway/08, norway/16, norway/17, norway/18, norway/19, norway/20
