@@ -28,7 +28,7 @@ Phase 2では主要データページ（02, 06, 13, 14等）にチャートを�
 - [x] Task 8: newzealand/01_central_bank.html にサマリーダッシュボード追加（RBNZ 1934、NZD、NZX50、世界初IT 1990、Orr辞任2025、Breman就任）
 - [x] Task 9: canada/01_central_bank.html にサマリーダッシュボード追加（BOC 1934、CAD、TSX、GFC耐性、2024先進国一番乗り利下げ）
 - [x] Task 10: sweden/01_central_bank.html にサマリーダッシュボード追加（Riksbank 1668 世界最古、SEK、OMX30、1990s銀行危機、マイナス金利先駆者2015）
-- [ ] Task 11: norway/01_central_bank.html にサマリーダッシュボード追加（Norges Bank 1816、NOK、OBX、石油発見1969、GPFG世界最大SWF、1990s銀行危機）
+- [x] Task 11: norway/01_central_bank.html にサマリーダッシュボード追加（Norges Bank 1816、NOK、OBX、石油発見1969、GPFG世界最大SWF、1990s銀行危機）
 
 ## Phase 2: 未図解セクションの一括ビジュアル化
 
