@@ -48,7 +48,7 @@
 ```
 
 - [x] Task 1: data/quiz/q_central_bank.js を作成。中央銀行・金融政策カテゴリの問題30問（Fed歴代議長、ECB、BOJ、SNB、各国政策決定の重要事項、現職人事を含む2026年4月時点の正確な情報）
-- [ ] Task 2: data/quiz/q_equity.js — 株式市場30問（NYSE/NASDAQ歴史、日経バブル、FTSE、DAX、Black Monday、ドットコム、リーマン後、AI相場等）
+- [x] Task 2: data/quiz/q_equity.js — 株式市場30問（NYSE/NASDAQ歴史、日経バブル、FTSE、DAX、Black Monday、ドットコム、リーマン後、AI相場等）
 - [ ] Task 3: data/quiz/q_fx.js — 為替・通貨30問（ブレトンウッズ、プラザ合意、CHF上限撤廃、Brexit、円安、各通貨の特徴）
 - [ ] Task 4: data/quiz/q_bonds.js — 債券・金利30問（10Y UST、JGB、Bund、Volcker期、QE、YCC、2022債券暴落）
 - [ ] Task 5: data/quiz/q_crises.js — 金融危機30問（1907、1929、1987、1997アジア、1998LTCM、2008リーマン、2010欧州債務、2023SVB/CS）

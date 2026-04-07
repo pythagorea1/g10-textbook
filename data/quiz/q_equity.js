@@ -1,0 +1,304 @@
+// Quiz questions: 株式市場 (Equity Markets)
+// 30 questions covering NYSE/NASDAQ history, Nikkei bubble, FTSE, DAX, Black Monday, Dot-com, Lehman, AI rally
+window.QUIZ_QUESTIONS_EQUITY = [
+  {
+    id: "eq-1",
+    category: "株式市場",
+    difficulty: "easy",
+    question: "世界最大の証券取引所（時価総額ベース、2026年）は？",
+    choices: ["ロンドン証券取引所(LSE)", "東京証券取引所(TSE)", "ニューヨーク証券取引所(NYSE)", "上海証券取引所(SSE)", "ナスダック(NASDAQ)"],
+    answer: 2,
+    explanation: "NYSEは時価総額約28兆ドル超で世界最大。次いでNASDAQが約25兆ドル規模。上海・東京・LSEは大きく差をつけられている。",
+    related: "us/02_equity.html"
+  },
+  {
+    id: "eq-2",
+    category: "株式市場",
+    difficulty: "easy",
+    question: "S&P 500指数の構成銘柄数は？",
+    choices: ["100", "300", "500", "1000", "2000"],
+    answer: 2,
+    explanation: "S&P 500は米国大型株500銘柄で構成される時価総額加重平均指数。1957年にStandard & Poor's社により算出開始。",
+    related: "us/02_equity.html"
+  },
+  {
+    id: "eq-3",
+    category: "株式市場",
+    difficulty: "medium",
+    question: "1987年10月19日、ダウ平均が1日で約22.6%下落したこの日は何と呼ばれる？",
+    choices: ["ブラックフライデー", "ブラックマンデー", "ブラックサーズデー", "ブラックチューズデー", "ブラックウェンズデー"],
+    answer: 1,
+    explanation: "1987年10月19日（月曜）のブラックマンデー。ダウは508ポイント(-22.6%)下落し、史上最大の1日下落率。プログラム売買とポートフォリオインシュアランスが暴落を増幅した。",
+    related: "us/02_equity.html"
+  },
+  {
+    id: "eq-4",
+    category: "株式市場",
+    difficulty: "medium",
+    question: "日経平均株価の史上最高値38,915円を記録したのはいつ？",
+    choices: ["1987年12月", "1989年12月", "1990年6月", "1991年1月", "2000年3月"],
+    answer: 1,
+    explanation: "1989年12月29日の大納会で38,915円87銭を記録。これはバブル相場のピーク。その後34年以上この高値を更新できず、2024年2月にようやく突破した。",
+    related: "japan/02_equity.html"
+  },
+  {
+    id: "eq-5",
+    category: "株式市場",
+    difficulty: "medium",
+    question: "日経平均がバブル高値38,915円を34年ぶりに更新したのはいつ？",
+    choices: ["2023年5月", "2023年11月", "2024年2月", "2024年7月", "2025年1月"],
+    answer: 2,
+    explanation: "2024年2月22日、日経平均は39,098円で引け、1989年12月29日の史上最高値を34年ぶりに更新。半導体関連とバリュー株主導の上昇相場によるもの。",
+    related: "japan/02_equity.html"
+  },
+  {
+    id: "eq-6",
+    category: "株式市場",
+    difficulty: "easy",
+    question: "NASDAQ総合指数が初めて5,000を超え、ドットコムバブルのピークをつけたのは？",
+    choices: ["1999年12月", "2000年3月", "2000年9月", "2001年1月", "2001年9月"],
+    answer: 1,
+    explanation: "2000年3月10日にNASDAQ総合は5,048.62で終値ピーク。その後2年半で約78%下落。5,000を再び回復するのは2015年と15年を要した。",
+    related: "us/02_equity.html"
+  },
+  {
+    id: "eq-7",
+    category: "株式市場",
+    difficulty: "medium",
+    question: "リーマン・ブラザーズが破綻した日付は？",
+    choices: ["2008年3月16日", "2008年7月11日", "2008年9月15日", "2008年10月6日", "2009年3月9日"],
+    answer: 2,
+    explanation: "2008年9月15日にリーマンがChapter 11申請。負債総額6,130億ドルは米史上最大の倒産。世界金融危機の象徴的イベント。",
+    related: "us/05_crisis.html"
+  },
+  {
+    id: "eq-8",
+    category: "株式市場",
+    difficulty: "hard",
+    question: "S&P 500のリーマン後の安値は2009年3月9日、終値いくら？",
+    choices: ["約480", "約550", "約676", "約750", "約820"],
+    answer: 2,
+    explanation: "2009年3月9日、S&P 500は676.53で引け、2008年以降の下落局面の底。ピーク(1,565)から約57%下落。ここから史上最長の強気相場が始まった。",
+    related: "us/02_equity.html"
+  },
+  {
+    id: "eq-9",
+    category: "株式市場",
+    difficulty: "easy",
+    question: "ドイツの株価指数DAXの構成銘柄数は（2021年9月以降）？",
+    choices: ["25", "30", "40", "50", "100"],
+    answer: 2,
+    explanation: "DAXは2021年9月に30銘柄から40銘柄に拡大。ワイヤーカード事件後のガバナンス改革の一環。フランクフルト証取上場の独大型株で構成。",
+    related: "eurozone/02_equity.html"
+  },
+  {
+    id: "eq-10",
+    category: "株式市場",
+    difficulty: "medium",
+    question: "FTSE 100指数の算出開始年は？",
+    choices: ["1935年", "1962年", "1984年", "1990年", "1995年"],
+    answer: 2,
+    explanation: "FTSE 100は1984年1月3日に1,000ポイントで算出開始。ロンドン証取上場の時価総額上位100銘柄で構成。",
+    related: "uk/02_equity.html"
+  },
+  {
+    id: "eq-11",
+    category: "株式市場",
+    difficulty: "medium",
+    question: "「Magnificent Seven」と呼ばれる米巨大テックに含まれない企業は？",
+    choices: ["Apple", "Microsoft", "Nvidia", "Netflix", "Tesla"],
+    answer: 3,
+    explanation: "Mag 7 = Apple, Microsoft, Alphabet, Amazon, Nvidia, Meta, Tesla。NetflixはFAANGの一員だったがMag 7には含まれない。2023-2024年のAI相場でS&P 500を牽引した。",
+    related: "us/02_equity.html"
+  },
+  {
+    id: "eq-12",
+    category: "株式市場",
+    difficulty: "hard",
+    question: "Nvidiaが時価総額で初めて3兆ドルを突破したのは？",
+    choices: ["2023年5月", "2023年11月", "2024年2月", "2024年6月", "2024年10月"],
+    answer: 3,
+    explanation: "2024年6月、NvidiaはAppleを抜いて時価総額3兆ドルを突破し、一時は世界首位に立った。生成AI向けGPU需要が業績を押し上げた。",
+    related: "us/02_equity.html"
+  },
+  {
+    id: "eq-13",
+    category: "株式市場",
+    difficulty: "easy",
+    question: "ダウ工業株30種平均が初めて10,000ドルを突破したのは？",
+    choices: ["1995年", "1999年", "2003年", "2006年", "2009年"],
+    answer: 1,
+    explanation: "1999年3月29日、ダウは初の10,000ドル台終値。ドットコムブーム真っ只中。その後2000-2002年に3割超下落するが、これが心理的節目となった。",
+    related: "us/02_equity.html"
+  },
+  {
+    id: "eq-14",
+    category: "株式市場",
+    difficulty: "medium",
+    question: "TOPIX（東証株価指数）の基準日と基準値は？",
+    choices: ["1949年5月16日=100", "1968年1月4日=100", "1975年1月4日=100", "1989年1月4日=1000", "2000年1月4日=1000"],
+    answer: 1,
+    explanation: "TOPIXは1968年1月4日終値を100として算出。東証一部（現在はプライム市場中心）全銘柄の時価総額加重平均。日経平均と並ぶ日本の代表指数。",
+    related: "japan/02_equity.html"
+  },
+  {
+    id: "eq-15",
+    category: "株式市場",
+    difficulty: "medium",
+    question: "COVID-19パンデミックによるS&P 500の2020年3月安値までの下落率は？",
+    choices: ["約-15%", "約-24%", "約-34%", "約-45%", "約-55%"],
+    answer: 2,
+    explanation: "2020年2月19日のピーク3,386から3月23日の2,237まで約34%下落。史上最速の弱気相場入り(約22日)。ただしFedの無制限QEで急回復し8月には高値更新。",
+    related: "us/02_equity.html"
+  },
+  {
+    id: "eq-16",
+    category: "株式市場",
+    difficulty: "hard",
+    question: "2023年にAI相場の主役となり、年間で約240%上昇した銘柄は？",
+    choices: ["Apple", "Microsoft", "Nvidia", "Meta", "Tesla"],
+    answer: 2,
+    explanation: "Nvidiaは2023年に約239%上昇。ChatGPTブームで生成AI向けH100 GPUが飛ぶように売れ、データセンター売上が急拡大。決算ごとに株価が急騰した。",
+    related: "us/02_equity.html"
+  },
+  {
+    id: "eq-17",
+    category: "株式市場",
+    difficulty: "medium",
+    question: "スイスの代表的株価指数SMIの構成銘柄数は？",
+    choices: ["15", "20", "25", "30", "40"],
+    answer: 1,
+    explanation: "Swiss Market Index(SMI)は20銘柄。ネスレ、ノバルティス、ロシュの3社で約50%を占める集中指数。ディフェンシブ性が強い。",
+    related: "switzerland/02_equity.html"
+  },
+  {
+    id: "eq-18",
+    category: "株式市場",
+    difficulty: "easy",
+    question: "東証が2022年4月に市場区分を再編して導入した最上位市場は？",
+    choices: ["スタンダード市場", "グロース市場", "プライム市場", "マザーズ市場", "JASDAQ"],
+    answer: 2,
+    explanation: "2022年4月4日、東証は従来の市場第一部・二部・マザーズ・JASDAQをプライム・スタンダード・グロースの3市場に再編。プライムは流通時価総額100億円以上等の厳格要件。",
+    related: "japan/02_equity.html"
+  },
+  {
+    id: "eq-19",
+    category: "株式市場",
+    difficulty: "medium",
+    question: "1997年7月に始まったアジア通貨危機で最初に変動相場制移行を迫られた国は？",
+    choices: ["韓国", "インドネシア", "タイ", "マレーシア", "フィリピン"],
+    answer: 2,
+    explanation: "1997年7月2日、タイがバーツのドルペッグを放棄し変動相場制に移行。これが引き金となりインドネシア、韓国へ危機が波及し、アジア株式市場は軒並み暴落した。",
+    related: "japan/05_crisis.html"
+  },
+  {
+    id: "eq-20",
+    category: "株式市場",
+    difficulty: "hard",
+    question: "1929年の世界恐慌で、ダウ平均が大暴落した「暗黒の木曜日」は？",
+    choices: ["1929年9月3日", "1929年10月24日", "1929年10月29日", "1929年11月13日", "1930年4月17日"],
+    answer: 1,
+    explanation: "1929年10月24日(木)のブラック・サーズデーでパニック売り発生。続く10月29日(火)のブラック・チューズデーでさらに大暴落。ダウはピークから約89%下落(1932年7月まで)。",
+    related: "us/05_crisis.html"
+  },
+  {
+    id: "eq-21",
+    category: "株式市場",
+    difficulty: "medium",
+    question: "カナダの代表的株価指数は？",
+    choices: ["S&P/TSX Composite", "BEL 20", "OBX", "OMX", "NZX 50"],
+    answer: 0,
+    explanation: "S&P/TSX Composite IndexはトロントSE上場の大型・中型株約230銘柄。エネルギー・素材・金融セクターの比率が高いのが特徴。",
+    related: "canada/02_equity.html"
+  },
+  {
+    id: "eq-22",
+    category: "株式市場",
+    difficulty: "medium",
+    question: "オーストラリアの代表指数ASX 200の運営会社は？",
+    choices: ["FTSE Russell", "MSCI", "S&P Dow Jones Indices", "Euronext", "ASX独自"],
+    answer: 2,
+    explanation: "S&P/ASX 200はS&P Dow Jones Indicesが算出。オーストラリア証取上場の時価総額上位200銘柄。資源・銀行株のウェイトが大きい。",
+    related: "australia/02_equity.html"
+  },
+  {
+    id: "eq-23",
+    category: "株式市場",
+    difficulty: "hard",
+    question: "ユーロ圏代表指数Euro Stoxx 50の構成国として含まれないのは？",
+    choices: ["ドイツ", "フランス", "イタリア", "スペイン", "スイス"],
+    answer: 4,
+    explanation: "Euro Stoxx 50はユーロ導入国のブルーチップ50銘柄で構成。スイスはユーロ非加盟のため含まれない。独仏の比率が約65%を占める。",
+    related: "eurozone/02_equity.html"
+  },
+  {
+    id: "eq-24",
+    category: "株式市場",
+    difficulty: "medium",
+    question: "2023年5月に日経平均が33年ぶりの高値を更新した要因として最も影響が大きかったのは？",
+    choices: ["米国QE再開", "バフェット氏の日本商社投資発言", "黒田日銀総裁の政策転換", "中国経済回復", "原油価格下落"],
+    answer: 1,
+    explanation: "2023年4月にウォーレン・バフェット氏が来日し五大商社株保有増を表明、日本市場への強気姿勢を示した。これが海外投資家のジャパンパッシング解消を促進し、日経平均は5月に33年ぶり高値を更新した。",
+    related: "japan/02_equity.html"
+  },
+  {
+    id: "eq-25",
+    category: "株式市場",
+    difficulty: "easy",
+    question: "ニューヨーク証券取引所(NYSE)が位置する通りの名前は？",
+    choices: ["Broadway", "Wall Street", "Fifth Avenue", "Madison Avenue", "Park Avenue"],
+    answer: 1,
+    explanation: "NYSEはマンハッタン南部Wall Street 11番地に所在。1792年の「Buttonwood Agreement」が起源で、現在は世界最大の証券取引所。",
+    related: "us/02_equity.html"
+  },
+  {
+    id: "eq-26",
+    category: "株式市場",
+    difficulty: "medium",
+    question: "日経平均株価の構成銘柄数は？",
+    choices: ["100", "150", "200", "225", "300"],
+    answer: 3,
+    explanation: "日経平均(日経225)は東証プライム市場上場の代表的225銘柄で構成される株価平均型指数(ダウ式)。1950年9月から日本経済新聞社が算出。",
+    related: "japan/02_equity.html"
+  },
+  {
+    id: "eq-27",
+    category: "株式市場",
+    difficulty: "hard",
+    question: "2024年8月5日、日経平均が史上最大の下落幅(約-4,451円)を記録した主因は？",
+    choices: ["米地銀破綻", "中国不動産危機", "日銀利上げ+米景気懸念による円キャリー巻き戻し", "トランプ関税発表", "原油急騰"],
+    answer: 2,
+    explanation: "2024年8月5日、日経平均は-4,451円(-12.4%)で史上最大の下落幅。直前の日銀0.25%利上げと米7月雇用統計悪化が円キャリートレード巻き戻しを誘発。翌日は史上最大の上昇でリバウンドした。",
+    related: "japan/02_equity.html"
+  },
+  {
+    id: "eq-28",
+    category: "株式市場",
+    difficulty: "medium",
+    question: "Glass-Steagall法廃止後、商業銀行と投資銀行の兼業を可能にした1999年の法律は？",
+    choices: ["Sarbanes-Oxley Act", "Dodd-Frank Act", "Gramm-Leach-Bliley Act", "Volcker Rule", "CHIPS Act"],
+    answer: 2,
+    explanation: "1999年のGramm-Leach-Bliley法がGlass-Steagall法を事実上撤廃し、商業銀行・投資銀行・保険の統合を可能にした。これがシティグループ等の巨大金融コングロマリット誕生を促した。",
+    related: "us/07_regulation.html"
+  },
+  {
+    id: "eq-29",
+    category: "株式市場",
+    difficulty: "hard",
+    question: "東証が2023年3月に上場企業に要請した、株価純資産倍率(PBR)改善対策の対象は？",
+    choices: ["PBR 0.5倍以下", "PBR 0.8倍以下", "PBR 1倍割れ", "PBR 1.5倍以下", "PBR 2倍以下"],
+    answer: 2,
+    explanation: "2023年3月31日、東証はPBR 1倍割れのプライム・スタンダード上場企業に対し「資本コストや株価を意識した経営」の開示・実行を要請。これが2023-2024年の日本株高の原動力の一つとなった。",
+    related: "japan/02_equity.html"
+  },
+  {
+    id: "eq-30",
+    category: "株式市場",
+    difficulty: "medium",
+    question: "NASDAQ総合指数の算出開始年は？",
+    choices: ["1961年", "1971年", "1981年", "1985年", "1990年"],
+    answer: 1,
+    explanation: "NASDAQは1971年2月8日に100ポイントを基準値として算出開始。世界初の電子証券取引システムとして誕生し、後にハイテク株の中心市場となった。",
+    related: "us/02_equity.html"
+  }
+];

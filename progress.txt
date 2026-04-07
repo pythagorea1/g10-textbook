@@ -161,3 +161,4 @@ Tue Apr  7 09:55:01     2026 Task 11: Added Norway country summary dashboard to 
 - Constraints honored: pure inline SVG + Vanilla JS, no external CDN, offline capable, existing content preserved.
 - All 14 tasks complete. Geopolitical Map feature ready for use.
 [2026-04-07 18:53] Task 1: created data/quiz/q_central_bank.js with 30 central bank questions
+[2026-04-07T18:55:46] Task 2: q_equity.js 30問作成
