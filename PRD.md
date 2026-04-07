@@ -72,7 +72,7 @@ G10通貨国を中心に、地政学リスクと金融市場の連動を直感�
 - 2025 トランプ関税
 
 ### Phase 1: 世界地図SVG基盤
-- [ ] Task 2: assets/world_map.svg を作成。簡略化された世界地図SVG（数十カ国の polygons、各国に id="country-XX" を持たせる）。G10は精度高く、その他は簡略化。Mercator風のviewBox。各国にdefault fillと.affected, .epicenter等のクラス用意。data-name属性に英語国名
+- [x] Task 2: assets/world_map.svg を作成。簡略化された世界地図SVG（数十カ国の polygons、各国に id="country-XX" を持たせる）。G10は精度高く、その他は簡略化。Mercator風のviewBox。各国にdefault fillと.affected, .epicenter等のクラス用意。data-name属性に英語国名
 - [ ] Task 3: assets/geomap.css を作成（または既存style.cssに追記）。.world-map基本スタイル、.country base/hover/affected-low/mid/high/critical/epicenterの色定義、.flow-arrow stroke styles、.event-list、.event-card、.event-detail-panel、.timeline-slider のスタイル
 
 ### Phase 2: インタラクティブ地図エンジン

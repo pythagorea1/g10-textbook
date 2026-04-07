@@ -133,3 +133,5 @@ Tue Apr  7 09:55:01     2026 Task 11: Added Norway country summary dashboard to 
 - Result: 200/200 pages now carry at least one visual element (svg-chart, summary-dashboard, pie-chart, donut-chart, or historical-timeline)
 - Constraints honored: no external CDN, inline SVG only, existing content preserved, annotation rules (<=6 events, alternating, <=10 chars) followed.
 [Tue Apr  7 15:07:28     2026] Task 1: created data/geopolitical_events.json with 50 geopolitical/financial events (1971 Nixon -> 2025 Trump tariffs)
+
+[2026-04-07 15:08:51] Task 2: assets/world_map.svg created — simplified Mercator world map, G10 polygons with id=country-XX, data-name/data-code, arrow markers (contagion/policy/trade/capital/sanction), flow-arrows overlay group.

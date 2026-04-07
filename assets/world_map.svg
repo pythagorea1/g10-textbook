@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" preserveAspectRatio="xMidYMid meet" class="world-map">
+  <!-- Simplified Mercator-like world map. G10 + major related countries.
+       Each country is a polygon with id="country-XX" and data-name attribute.
+       Coordinates are approximate, intended for visualization, not cartographic accuracy. -->
+  <defs>
+    <marker id="arrow-contagion" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#ff6b6b"/>
+    </marker>
+    <marker id="arrow-policy" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5b8def"/>
+    </marker>
+    <marker id="arrow-trade" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#00d4aa"/>
+    </marker>
+    <marker id="arrow-capital" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#ff9f43"/>
+    </marker>
+    <marker id="arrow-sanction" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#ffd93d"/>
+    </marker>
+  </defs>
+
+  <!-- Ocean background -->
+  <rect x="0" y="0" width="1000" height="500" fill="#0a1530"/>
+
+  <!-- Grid lines (latitude/longitude hints) -->
+  <g class="map-grid" stroke="#1a2540" stroke-width="0.5" fill="none">
+    <line x1="0" y1="125" x2="1000" y2="125"/>
+    <line x1="0" y1="250" x2="1000" y2="250"/>
+    <line x1="0" y1="375" x2="1000" y2="375"/>
+    <line x1="250" y1="0" x2="250" y2="500"/>
+    <line x1="500" y1="0" x2="500" y2="500"/>
+    <line x1="750" y1="0" x2="750" y2="500"/>
+  </g>
+
+  <g class="countries">
+    <!-- North America -->
+    <polygon id="country-CA" class="country g10" data-name="Canada" data-code="CA"
+      points="120,80 290,70 330,130 310,160 250,170 180,165 130,150 100,120"/>
+    <polygon id="country-US" class="country g10" data-name="United States" data-code="US"
+      points="130,170 310,165 330,220 290,245 200,250 140,230 110,200"/>
+    <polygon id="country-MX" class="country" data-name="Mexico" data-code="MX"
+      points="160,255 240,250 265,285 220,310 180,300 155,280"/>
+
+    <!-- South America -->
+    <polygon id="country-BR" class="country" data-name="Brazil" data-code="BR"
+      points="290,320 360,310 380,380 340,420 300,410 280,360"/>
+    <polygon id="country-AR" class="country" data-name="Argentina" data-code="AR"
+      points="275,410 320,415 315,470 285,480 270,445"/>
+
+    <!-- Europe (G10) -->
+    <polygon id="country-UK" class="country g10" data-name="United Kingdom" data-code="UK"
+      points="470,130 495,125 500,155 480,165 465,150"/>
+    <polygon id="country-EU" class="country g10" data-name="Eurozone" data-code="EU"
+      points="500,150 565,140 585,175 560,200 510,195 495,170"/>
+    <polygon id="country-CH" class="country g10" data-name="Switzerland" data-code="CH"
+      points="525,175 545,172 550,188 530,192"/>
+    <polygon id="country-SE" class="country g10" data-name="Sweden" data-code="SE"
+      points="540,90 565,85 575,135 555,140 545,115"/>
+    <polygon id="country-NO" class="country g10" data-name="Norway" data-code="NO"
+      points="515,75 545,70 555,115 530,125 510,105"/>
+
+    <!-- Russia -->
+    <polygon id="country-RU" class="country" data-name="Russia" data-code="RU"
+      points="580,80 860,70 880,160 700,175 600,160 570,120"/>
+    <polygon id="country-UA" class="country" data-name="Ukraine" data-code="UA"
+      points="585,165 625,160 635,185 600,195 580,180"/>
+
+    <!-- Middle East / Africa -->
+    <polygon id="country-SA" class="country" data-name="Saudi Arabia" data-code="SA"
+      points="590,230 645,225 655,275 615,285 585,260"/>
+    <polygon id="country-IR" class="country" data-name="Iran" data-code="IR"
+      points="650,210 695,205 705,250 665,255 645,230"/>
+    <polygon id="country-IL" class="country" data-name="Israel" data-code="IL"
+      points="575,225 585,222 587,238 576,240"/>
+    <polygon id="country-EG" class="country" data-name="Egypt" data-code="EG"
+      points="555,240 590,238 595,270 565,275"/>
+    <polygon id="country-ZA" class="country" data-name="South Africa" data-code="ZA"
+      points="555,390 605,385 615,425 575,440 550,415"/>
+
+    <!-- Asia -->
+    <polygon id="country-CN" class="country" data-name="China" data-code="CN"
+      points="720,170 830,165 845,230 780,250 725,230 710,200"/>
+    <polygon id="country-IN" class="country" data-name="India" data-code="IN"
+      points="695,245 745,240 755,290 720,310 690,285"/>
+    <polygon id="country-JP" class="country g10" data-name="Japan" data-code="JP"
+      points="860,195 885,190 895,220 875,235 855,215"/>
+    <polygon id="country-KR" class="country" data-name="South Korea" data-code="KR"
+      points="840,205 855,203 858,225 842,228"/>
+    <polygon id="country-TW" class="country" data-name="Taiwan" data-code="TW"
+      points="830,240 840,238 843,253 832,255"/>
+
+    <!-- Oceania (G10) -->
+    <polygon id="country-AU" class="country g10" data-name="Australia" data-code="AU"
+      points="805,360 895,350 910,410 860,435 810,420 795,385"/>
+    <polygon id="country-NZ" class="country g10" data-name="New Zealand" data-code="NZ"
+      points="925,415 955,410 960,440 935,445"/>
+  </g>
+
+  <!-- Label layer (G10 codes) -->
+  <g class="country-labels" font-family="sans-serif" font-size="10" fill="#e8ecf4" pointer-events="none">
+    <text x="210" y="210" text-anchor="middle">US</text>
+    <text x="215" y="115" text-anchor="middle">CA</text>
+    <text x="485" y="148" text-anchor="middle">UK</text>
+    <text x="540" y="175" text-anchor="middle">EU</text>
+    <text x="538" y="185" text-anchor="middle" font-size="8">CH</text>
+    <text x="558" y="115" text-anchor="middle">SE</text>
+    <text x="532" y="100" text-anchor="middle">NO</text>
+    <text x="875" y="215" text-anchor="middle">JP</text>
+    <text x="852" y="395" text-anchor="middle">AU</text>
+    <text x="945" y="430" text-anchor="middle">NZ</text>
+  </g>
+
+  <!-- Flow arrow overlay (populated dynamically by geomap.js) -->
+  <g class="flow-arrows"></g>
+</svg>
