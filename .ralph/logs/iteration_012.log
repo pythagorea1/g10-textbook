@@ -1,6 +1,6 @@
-=== Iteration 12 === 2026-04-07 15:21:08 ===
+=== Iteration 12 === 2026-04-07 19:15:39 ===
 Exit code: 0
-Duration: 86s
+Duration: 55s
 
-Task 12 done. All assets serve HTTP 200; snapshot saved to output/.
+Task 12 complete.
 

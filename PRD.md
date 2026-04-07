@@ -71,7 +71,7 @@
 
 ### Phase 3: 統合
 - [x] Task 12: index.html のクイックリンクとカード上部に「📝 Quiz Mode」リンクバナー追加。Geopolitical Map と並べて目立つ位置に
-- [ ] Task 13: 各国 01_central_bank.html の Summary Dashboard に「→ Quiz でこの国を学ぶ」リンクを追加（クイズページにcountry=USなどクエリパラメータ付き）
+- [x] Task 13: 各国 01_central_bank.html の Summary Dashboard に「→ Quiz でこの国を学ぶ」リンクを追加（クイズページにcountry=USなどクエリパラメータ付き）
 
 ### Phase 4: 検証・拡張
 - [ ] Task 14: ローカルHTTPサーバーで quiz.html を起動して動作確認。各カテゴリ選択 → 問題表示 → 5択クリック → 解説 → Next → 結果表示の一連の流れが動作することをplaywright経由で検証。スクリーンショットを保存
