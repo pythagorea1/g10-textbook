@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# G10 Textbook — Geopolitical Map
+# G10 Textbook — Quiz Mode
 MAX_ITERATIONS=25
 COOLDOWN_SECONDS=5
 MAX_CONSECUTIVE_ERRORS=10

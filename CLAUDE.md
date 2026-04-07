@@ -1,8 +1,15 @@
-# G10 Textbook — Interactive Geopolitical World Map
+# G10 Textbook — Quiz Mode
 
 ## Project
-新規ページ summary/geopolitical_map.html を作成。世界地図上で年・イベント選択により地政学イベントの国際的影響を可視化する。
-純SVG + Vanilla JS、外部CDN禁止、オフライン動作必須。
+教科書の知識を能動的に学べる5択クイズモードを実装する。新規ページ summary/quiz.html。
+カテゴリー別、解説付き、ベストスコア記録(localStorage)。純HTML+JS、外部CDN禁止、file://動作。
+
+## Critical Rules
+- 問題は事実ベース。2026年4月時点の最新情報を使用（必要ならWebSearchで確認）
+- 5択は紛らわしい選択肢を含めること（明らかに間違いだけだとつまらない）
+- 解説は2-4文で根拠と背景を説明
+- related フィールドで関連教科書ページへのリンクを必ず付ける
+- 各カテゴリ最低25問、目標30問
 
 ## CRITICAL: 注釈ラベル配置ルール
 チャート上の注釈ラベルが重ならないよう、以下を厳守:

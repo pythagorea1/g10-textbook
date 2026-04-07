@@ -1,0 +1,304 @@
+// Quiz questions: 金融危機 (Financial Crises)
+// 30 questions — 2026年4月時点
+window.QUIZ_QUESTIONS_CRISES = [
+  {
+    id: "crises-1907-1",
+    category: "金融危機",
+    difficulty: "hard",
+    question: "1907年恐慌でJPモルガンが私財を投じて救済に動いた結果、後に設立された機関は？",
+    choices: ["SEC", "FDIC", "連邦準備制度(FRB)", "OCC", "CFTC"],
+    answer: 2,
+    explanation: "1907年恐慌(Knickerbocker Crisis)では中央銀行不在のなかJPモルガンが銀行団を組成し救済。この経験から1913年連邦準備法が成立し、FRBが設立された。",
+    related: "us/01_central_bank.html"
+  },
+  {
+    id: "crises-1929-1",
+    category: "金融危機",
+    difficulty: "easy",
+    question: "1929年10月、NYダウ大暴落のきっかけとなった『暗黒の木曜日』は何月何日？",
+    choices: ["10月24日", "10月25日", "10月28日", "10月29日", "11月1日"],
+    answer: 0,
+    explanation: "1929年10月24日(木)がBlack Thursday。続く28日Black Monday(-12.8%)、29日Black Tuesday(-11.7%)で株価は崩壊し、世界恐慌の引き金となった。",
+    related: "us/03_equity.html"
+  },
+  {
+    id: "crises-1929-2",
+    category: "金融危機",
+    difficulty: "medium",
+    question: "世界恐慌期(1929-1932)の米国株(ダウ)のピークから底値までの下落率はおよそ何%？",
+    choices: ["-35%", "-50%", "-67%", "-89%", "-95%"],
+    answer: 3,
+    explanation: "NYダウは1929年9月の381から1932年7月の41まで約-89%下落。史上最大の株価下落率で、回復に約25年を要した。",
+    related: "us/03_equity.html"
+  },
+  {
+    id: "crises-1987-1",
+    category: "金融危機",
+    difficulty: "easy",
+    question: "1987年10月19日『ブラックマンデー』のNYダウ下落率は？",
+    choices: ["約-10%", "約-15%", "約-22.6%", "約-30%", "約-40%"],
+    answer: 2,
+    explanation: "1987年10月19日、NYダウは1日で-22.6%(-508pt)下落。史上最大の1日下落率。ポートフォリオ・インシュアランスのプログラム売りが要因とされる。",
+    related: "us/03_equity.html"
+  },
+  {
+    id: "crises-1987-2",
+    category: "金融危機",
+    difficulty: "medium",
+    question: "ブラックマンデー後、流動性供給で市場を救ったFRB議長は？",
+    choices: ["ポール・ボルカー", "アラン・グリーンスパン", "ウィリアム・マーチン", "アーサー・バーンズ", "ベン・バーナンキ"],
+    answer: 1,
+    explanation: "就任2ヶ月目のグリーンスパンは『FRBは流動性の源泉として機能する用意がある』と声明、迅速な資金供給で市場を安定化させた。",
+    related: "us/01_central_bank.html"
+  },
+  {
+    id: "crises-asia-1",
+    category: "金融危機",
+    difficulty: "easy",
+    question: "1997年アジア通貨危機の発端となった、切り下げを迫られた通貨は？",
+    choices: ["韓国ウォン", "インドネシア・ルピア", "タイ・バーツ", "マレーシア・リンギット", "フィリピン・ペソ"],
+    answer: 2,
+    explanation: "1997年7月2日、タイがバーツのドルペッグを放棄し変動相場制へ移行。即座に-20%下落し、危機はインドネシア、韓国等へ波及した。",
+    related: "us/04_fx.html"
+  },
+  {
+    id: "crises-asia-2",
+    category: "金融危機",
+    difficulty: "medium",
+    question: "アジア通貨危機でIMF支援を受けなかった国は？",
+    choices: ["韓国", "インドネシア", "タイ", "マレーシア", "フィリピン"],
+    answer: 3,
+    explanation: "マレーシアのマハティール首相はIMF支援を拒否し、1998年9月に資本規制を導入、リンギットをドルペッグに戻す独自路線を取った。",
+    related: "us/04_fx.html"
+  },
+  {
+    id: "crises-ltcm-1",
+    category: "金融危機",
+    difficulty: "medium",
+    question: "1998年に破綻しFRB主導で救済されたヘッジファンドは？",
+    choices: ["Quantum Fund", "LTCM", "Tiger Management", "Amaranth", "Galleon Group"],
+    answer: 1,
+    explanation: "LTCM(Long-Term Capital Management)はノーベル賞学者マートン・ショールズらを擁したが、ロシア危機(1998年8月)の波及で破綻。FRB主導で大手銀行14行が36億ドルを出資し救済した。",
+    related: "us/02_bonds.html"
+  },
+  {
+    id: "crises-russia-1",
+    category: "金融危機",
+    difficulty: "medium",
+    question: "1998年8月のロシア金融危機でデフォルトした債務は？",
+    choices: ["外貨建て国債", "ルーブル建てGKO(短期国債)", "地方債", "企業社債のみ", "政府保証銀行債"],
+    answer: 1,
+    explanation: "1998年8月17日、ロシアはルーブル切り下げとGKO(ルーブル建て短期国債)のデフォルトを宣言。自国通貨建て国債のデフォルトは異例で市場に衝撃を与えた。",
+    related: "us/02_bonds.html"
+  },
+  {
+    id: "crises-dotcom-1",
+    category: "金融危機",
+    difficulty: "easy",
+    question: "ドットコムバブル崩壊でNASDAQ総合指数がピークを付けた年月は？",
+    choices: ["1999年12月", "2000年3月", "2000年9月", "2001年1月", "2001年9月"],
+    answer: 1,
+    explanation: "NASDAQは2000年3月10日に5,048.62のピーク。以降2年で-78%下落し、1,114(2002年10月)まで下げた。2015年にようやくピークを更新。",
+    related: "us/03_equity.html"
+  },
+  {
+    id: "crises-lehman-1",
+    category: "金融危機",
+    difficulty: "easy",
+    question: "リーマン・ブラザーズが破綻した日付は？",
+    choices: ["2008年3月16日", "2008年7月11日", "2008年9月15日", "2008年10月3日", "2008年11月23日"],
+    answer: 2,
+    explanation: "2008年9月15日、リーマン・ブラザーズは連邦破産法11章を申請。負債総額約6,130億ドルで米史上最大の倒産。世界金融危機の象徴的事件となった。",
+    related: "us/07_banks.html"
+  },
+  {
+    id: "crises-lehman-2",
+    category: "金融危機",
+    difficulty: "medium",
+    question: "リーマン破綻直前の2008年3月、FRB仲介でJPモルガンに救済買収された投資銀行は？",
+    choices: ["メリルリンチ", "ベア・スターンズ", "モルガン・スタンレー", "ゴールドマン・サックス", "ワコビア"],
+    answer: 1,
+    explanation: "2008年3月16日、ベア・スターンズはJPモルガン・チェースに1株2ドル(後に10ドルへ修正)で買収された。FRBが290億ドルの融資を提供した。",
+    related: "us/07_banks.html"
+  },
+  {
+    id: "crises-lehman-3",
+    category: "金融危機",
+    difficulty: "medium",
+    question: "リーマン破綻と同じ週にFRBが救済したAIGへの当初の融資枠は？",
+    choices: ["200億ドル", "450億ドル", "850億ドル", "1500億ドル", "7000億ドル"],
+    answer: 2,
+    explanation: "2008年9月16日、FRBはAIGに850億ドルの融資枠を設定し事実上国有化。CDS契約の連鎖デフォルトを防ぐため。最終的に総支援額は1,820億ドルに達した。",
+    related: "us/07_banks.html"
+  },
+  {
+    id: "crises-tarp-1",
+    category: "金融危機",
+    difficulty: "medium",
+    question: "2008年に成立した不良資産救済プログラム(TARP)の規模は？",
+    choices: ["1500億ドル", "3500億ドル", "7000億ドル", "1兆ドル", "2兆ドル"],
+    answer: 2,
+    explanation: "TARP(Troubled Asset Relief Program)は2008年10月3日のEESA法で7,000億ドル規模を承認。大手銀行への資本注入・自動車産業救済に使われた。",
+    related: "us/07_banks.html"
+  },
+  {
+    id: "crises-eurozone-1",
+    category: "金融危機",
+    difficulty: "easy",
+    question: "欧州債務危機で最初にEU/IMF支援を要請した国は？",
+    choices: ["ポルトガル", "アイルランド", "ギリシャ", "スペイン", "イタリア"],
+    answer: 2,
+    explanation: "2010年4月、ギリシャが財政赤字粉飾発覚後にEU/IMFへ支援要請。第1次支援1,100億ユーロで始まり、2012年の債務再編(PSI)、2015年の第3次支援まで続いた。",
+    related: "eurozone/06_crises.html"
+  },
+  {
+    id: "crises-draghi-1",
+    category: "金融危機",
+    difficulty: "easy",
+    question: "2012年7月『ユーロを守るためにあらゆる手段を取る』と発言したECB総裁は？",
+    choices: ["ジャン＝クロード・トリシェ", "マリオ・ドラギ", "クリスティーヌ・ラガルド", "ヴィム・ダイゼンベルク", "イェンス・ヴァイトマン"],
+    answer: 1,
+    explanation: "2012年7月26日ロンドン講演でドラギは『Whatever it takes』と発言。9月にOMT(Outright Monetary Transactions)導入を発表し、欧州債務危機の転換点となった。",
+    related: "eurozone/01_central_bank.html"
+  },
+  {
+    id: "crises-cyprus-1",
+    category: "金融危機",
+    difficulty: "hard",
+    question: "2013年のキプロス危機で特徴的だった救済策は？",
+    choices: ["ECB直接融資", "ドイツによる単独救済", "預金者へのベイルイン(負担)", "ユーロ離脱", "デジタル通貨発行"],
+    answer: 2,
+    explanation: "2013年3月、キプロス救済では初めて銀行預金者に対するベイルインが適用され、10万ユーロ超の預金に最大47.5%のヘアカットが課された。",
+    related: "eurozone/06_crises.html"
+  },
+  {
+    id: "crises-2015-chf-1",
+    category: "金融危機",
+    difficulty: "medium",
+    question: "2015年1月15日、SNB(スイス中銀)が突然撤廃した政策は？",
+    choices: ["マイナス金利", "QE", "EUR/CHF 1.20下限", "金準備制度", "CHF完全変動制"],
+    answer: 2,
+    explanation: "2015年1月15日、SNBはEUR/CHF 1.20の下限設定を突然撤廃。CHFは一瞬で-30%急騰し、多数のFXブローカー(アルパリ等)が破綻した。",
+    related: "switzerland/04_fx.html"
+  },
+  {
+    id: "crises-china-2015-1",
+    category: "金融危機",
+    difficulty: "medium",
+    question: "2015年夏の中国株急落でピークを付けた上海総合指数は？",
+    choices: ["約3,500", "約4,500", "約5,178", "約6,000", "約6,500"],
+    answer: 2,
+    explanation: "2015年6月12日に上海総合は5,178のピーク。その後2ヶ月で-43%下落し、8月24日の『ブラックマンデー』で世界株式市場も動揺した。",
+    related: "us/03_equity.html"
+  },
+  {
+    id: "crises-covid-1",
+    category: "金融危機",
+    difficulty: "easy",
+    question: "COVID-19ショックでS&P500が底を付けた日は？",
+    choices: ["2020年2月28日", "2020年3月9日", "2020年3月23日", "2020年4月1日", "2020年5月15日"],
+    answer: 2,
+    explanation: "S&P500は2020年3月23日の2,237で底入れ。ピーク(3,386、2月19日)から約-34%下落も、FRBの無制限QE・ゼロ金利で急回復し8月には最高値を更新した。",
+    related: "us/03_equity.html"
+  },
+  {
+    id: "crises-covid-2",
+    category: "金融危機",
+    difficulty: "medium",
+    question: "COVID-19対応でFRBが2020年3月15日に決めたFFレート目標は？",
+    choices: ["0.25-0.50%", "0.00-0.25%", "-0.10%", "0.50-0.75%", "1.00-1.25%"],
+    answer: 1,
+    explanation: "2020年3月15日(日)の緊急FOMCでFFレートを0.00-0.25%へ100bp緊急利下げ。同時に7,000億ドルのQE再開を発表した。",
+    related: "us/01_central_bank.html"
+  },
+  {
+    id: "crises-2022-bonds-1",
+    category: "金融危機",
+    difficulty: "medium",
+    question: "2022年の米国債(Bloomberg US Aggregate)のトータルリターンは約何%だったか？",
+    choices: ["-5%", "-8%", "-13%", "-18%", "-25%"],
+    answer: 2,
+    explanation: "2022年のBloomberg US Aggregate Bond Indexは約-13%と史上最悪。FRBの急速な利上げ(年間425bp)で40年続いた債券強気相場の終焉を印象付けた。",
+    related: "us/02_bonds.html"
+  },
+  {
+    id: "crises-gilt-1",
+    category: "金融危機",
+    difficulty: "medium",
+    question: "2022年9月、英国債が暴落しBOEが緊急介入するきっかけとなった政策発表は？",
+    choices: ["ブレグジット延期", "トラス首相のミニ予算", "スコットランド独立", "エネルギー価格上限", "法人税引き上げ"],
+    answer: 1,
+    explanation: "2022年9月23日、トラス政権のクワーテング財務相が減税中心の『ミニ予算』を発表。英国債利回りが急騰しLDI年金ファンドが担保不足に陥ったため、BOEは9月28日に長期国債の緊急買入を発表した。",
+    related: "uk/02_bonds.html"
+  },
+  {
+    id: "crises-svb-1",
+    category: "金融危機",
+    difficulty: "easy",
+    question: "2023年3月に破綻したシリコンバレー銀行(SVB)の規模は米史上何番目？",
+    choices: ["1位", "2位", "3位", "5位", "10位"],
+    answer: 1,
+    explanation: "2023年3月10日に経営破綻したSVBは資産約2,090億ドルで、ワシントン・ミューチュアル(2008年)に次ぐ米史上2番目の銀行破綻。",
+    related: "us/07_banks.html"
+  },
+  {
+    id: "crises-svb-2",
+    category: "金融危機",
+    difficulty: "medium",
+    question: "SVB破綻と同じ週に破綻したニューヨーク州の銀行は？",
+    choices: ["Signature Bank", "First Republic Bank", "Silvergate Capital", "Pacific Western", "上記Silvergateと2行"],
+    answer: 4,
+    explanation: "2023年3月8日にSilvergate Capitalが清算発表、3月12日にSignature Bankが閉鎖。暗号資産関連でSilvergate、SVB翌日にSignatureが破綻した。First Republicは5月に破綻。",
+    related: "us/07_banks.html"
+  },
+  {
+    id: "crises-cs-1",
+    category: "金融危機",
+    difficulty: "easy",
+    question: "2023年3月、UBSに緊急買収された大手スイス銀行は？",
+    choices: ["クレディ・スイス", "ジュリアス・ベア", "ピクテ", "ロンバード・オディエ", "レイフアイゼン"],
+    answer: 0,
+    explanation: "2023年3月19日、クレディ・スイス(CS)はUBSに約30億CHFで買収された。SNBは1,000億CHFの流動性支援を提供し、167年の歴史を持つCSは消滅した。",
+    related: "switzerland/07_banks.html"
+  },
+  {
+    id: "crises-cs-2",
+    category: "金融危機",
+    difficulty: "hard",
+    question: "CS救済で物議を醸したのは、何が株式より先にゼロ評価(wiped out)されたことか？",
+    choices: ["シニア債", "劣後債", "AT1債(CoCo債)", "カバードボンド", "預金"],
+    answer: 2,
+    explanation: "通常の破綻順序と異なり、AT1債(約160億CHF)が株主より先にゼロ評価された。従来の資本ヒエラルキーを覆す判断で、欧州AT1市場に一時的な混乱を招いた。",
+    related: "switzerland/07_banks.html"
+  },
+  {
+    id: "crises-2023-china-1",
+    category: "金融危機",
+    difficulty: "medium",
+    question: "2021年以降デフォルトし中国不動産危機の象徴となった大手デベロッパーは？",
+    choices: ["碧桂園(カントリー・ガーデン)", "恒大集団(Evergrande)", "万科", "保利地産", "融創中国"],
+    answer: 1,
+    explanation: "恒大集団は負債約3,000億ドルを抱え2021年末にドル建て債デフォルト、2024年1月に香港裁判所が清算命令を出した。中国不動産不況の象徴となった。",
+    related: "us/07_banks.html"
+  },
+  {
+    id: "crises-japan-1",
+    category: "金融危機",
+    difficulty: "hard",
+    question: "1997年11月に自主廃業を発表した日本の大手証券会社は？",
+    choices: ["野村証券", "大和証券", "山一證券", "日興証券", "三洋証券"],
+    answer: 2,
+    explanation: "1997年11月24日、山一證券は簿外債務(飛ばし)問題で自主廃業を発表。100年の歴史に幕を閉じ、社長の『社員は悪くありません』記者会見が象徴的。同月には北海道拓殖銀行も破綻。",
+    related: "japan/07_banks.html"
+  },
+  {
+    id: "crises-japan-2",
+    category: "金融危機",
+    difficulty: "hard",
+    question: "日本のバブル崩壊後、1998年に一時国有化された長期信用銀行は？",
+    choices: ["日本興業銀行", "日本長期信用銀行", "日本債券信用銀行", "上記2行とも(LTCBとNCB)", "北海道拓殖銀行"],
+    answer: 3,
+    explanation: "1998年10月に日本長期信用銀行(LTCB)が、同年12月に日本債券信用銀行(NCB)が特別公的管理(一時国有化)された。LTCBは後に新生銀行、NCBはあおぞら銀行となった。",
+    related: "japan/07_banks.html"
+  }
+];

@@ -1,6 +1,6 @@
-=== Iteration 2 === 2026-04-07 15:07:36 ===
+=== Iteration 2 === 2026-04-07 18:53:39 ===
 Exit code: 0
-Duration: 77s
+Duration: 131s
 
-Task 2 complete: created `assets/world_map.svg` with simplified G10 world map (polygons, data-name, arrow markers, flow-arrows overlay).
+Task 2 complete: created `data/quiz/q_equity.js` with 30 equity market questions covering NYSE/NASDAQ, Nikkei bubble, Black Monday, dot-com, Lehman, AI rally, and 2024 events.
 

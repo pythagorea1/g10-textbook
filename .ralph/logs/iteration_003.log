@@ -1,6 +1,6 @@
-=== Iteration 3 === 2026-04-07 15:08:59 ===
+=== Iteration 3 === 2026-04-07 18:55:55 ===
 Exit code: 0
-Duration: 66s
+Duration: 158s
 
-Task 3 complete: created `assets/geomap.css` with all required styles.
+Task 3 complete: added `data/quiz/q_fx.js` with 30 FX/currency questions covering Bretton Woods, Plaza/Louvre, CHF cap, Brexit, yen interventions, carry trades, DXY components, etc.
 
