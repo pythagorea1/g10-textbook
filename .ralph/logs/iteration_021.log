@@ -1,6 +1,6 @@
-=== Iteration 21 === 2026-04-07 08:07:42 ===
+=== Iteration 21 === 2026-04-07 10:27:18 ===
 Exit code: 0
-Duration: 107s
+Duration: 246s
 
-Task 21 complete. Added Euro Stoxx 50 charts to eurozone/09 (2000-2019) and 10 (2020-2026) with 6 and 5 annotations respectively, committed as 1511e3b.
+Task 21 complete. Norway pages 07, 08, 16, 17, 18, 19, 20 now have inline SVG visuals (timelines, bar charts, and a key-metrics infographic). 3 tasks remain (22–24).
 
