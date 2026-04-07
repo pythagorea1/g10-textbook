@@ -182,8 +182,13 @@
       if (!p1 || !p2) return;
       const layer = svg.querySelector('#flow-layer');
       const color = FLOW_COLORS[type] || '#ffffff';
-      const mx = (p1.x + p2.x) / 2;
-      const my = (p1.y + p2.y) / 2 - Math.abs(p2.x - p1.x) * 0.25 - 20;
+      // Bezier control point: perpendicular offset from midpoint for smooth arc
+      const dx = p2.x - p1.x;
+      const dy = p2.y - p1.y;
+      const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+      const curvature = Math.min(0.35, 40 / dist + 0.15);
+      const mx = (p1.x + p2.x) / 2 + (-dy / dist) * dist * curvature;
+      const my = (p1.y + p2.y) / 2 + (dx / dist) * dist * curvature - 10;
       const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
       path.setAttribute('d', `M ${p1.x},${p1.y} Q ${mx},${my} ${p2.x},${p2.y}`);
       path.setAttribute('fill', 'none');

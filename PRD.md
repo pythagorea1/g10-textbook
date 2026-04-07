@@ -77,7 +77,7 @@ G10通貨国を中心に、地政学リスクと金融市場の連動を直感�
 
 ### Phase 2: インタラクティブ地図エンジン
 - [x] Task 4: assets/geomap.js を作成。クラスGeoMap with: loadEvents(jsonUrl), renderTimelineSlider(containerId, yearRange), renderEventList(containerId, year), highlightEvent(eventId), drawFlows(flows), updateDetailPanel(event), tooltips. SVG操作、矢印は path/marker-end で描画。年スライダーはinput[type=range]で実装
-- [ ] Task 5: assets/geomap.js に矢印描画ロジック追加。drawArrow(fromCountryId, toCountryId, type) — 国の中心座標から bezier curve で矢印を描く。flowタイプによって色分け（contagion=赤、policy=青、trade=緑、capital=橙）
+- [x] Task 5: assets/geomap.js に矢印描画ロジック追加。drawArrow(fromCountryId, toCountryId, type) — 国の中心座標から bezier curve で矢印を描く。flowタイプによって色分け（contagion=赤、policy=青、trade=緑、capital=橙）
 
 ### Phase 3: メインページ作成
 - [ ] Task 6: summary/geopolitical_map.html を新規作成。レイアウト: 上部にタイトル+年スライダー、左サイドにイベントリスト、中央に世界地図SVG、右サイドにイベント詳細パネル。レスポンシブ対応（モバイルは縦積み）。assets/geomap.js, assets/world_map.svg をロード
