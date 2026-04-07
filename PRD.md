@@ -76,7 +76,7 @@ G10通貨国を中心に、地政学リスクと金融市場の連動を直感�
 - [x] Task 3: assets/geomap.css を作成（または既存style.cssに追記）。.world-map基本スタイル、.country base/hover/affected-low/mid/high/critical/epicenterの色定義、.flow-arrow stroke styles、.event-list、.event-card、.event-detail-panel、.timeline-slider のスタイル
 
 ### Phase 2: インタラクティブ地図エンジン
-- [ ] Task 4: assets/geomap.js を作成。クラスGeoMap with: loadEvents(jsonUrl), renderTimelineSlider(containerId, yearRange), renderEventList(containerId, year), highlightEvent(eventId), drawFlows(flows), updateDetailPanel(event), tooltips. SVG操作、矢印は path/marker-end で描画。年スライダーはinput[type=range]で実装
+- [x] Task 4: assets/geomap.js を作成。クラスGeoMap with: loadEvents(jsonUrl), renderTimelineSlider(containerId, yearRange), renderEventList(containerId, year), highlightEvent(eventId), drawFlows(flows), updateDetailPanel(event), tooltips. SVG操作、矢印は path/marker-end で描画。年スライダーはinput[type=range]で実装
 - [ ] Task 5: assets/geomap.js に矢印描画ロジック追加。drawArrow(fromCountryId, toCountryId, type) — 国の中心座標から bezier curve で矢印を描く。flowタイプによって色分け（contagion=赤、policy=青、trade=緑、capital=橙）
 
 ### Phase 3: メインページ作成

@@ -136,3 +136,5 @@ Tue Apr  7 09:55:01     2026 Task 11: Added Norway country summary dashboard to 
 
 [2026-04-07 15:08:51] Task 2: assets/world_map.svg created — simplified Mercator world map, G10 polygons with id=country-XX, data-name/data-code, arrow markers (contagion/policy/trade/capital/sanction), flow-arrows overlay group.
 [2026-04-07T15:10:02] Task 3: Created assets/geomap.css with styles for world-map, country severities, flow arrows, timeline slider, event list/cards, detail panel, tooltip, category filter, layout grid, legend.
+
+[Tue Apr  7 15:11:43     2026] Task 4: Created assets/geomap.js — GeoMap class with loadEvents, renderTimelineSlider, renderEventList, highlightEvent, drawFlows (bezier+marker-end), drawArrow, updateDetailPanel, tooltips, category filter.
