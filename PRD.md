@@ -57,7 +57,7 @@
 - [x] Task 8: data/quiz/q_geopolitics.js — 地政学30問（ニクソンショック、米中貿易戦争、ロシアウクライナ、エネルギー危機、トランプ関税）
 
 ### Phase 1: クイズエンジン
-- [ ] Task 9: assets/quiz.css を作成。Bloomberg風ダークテーマ。.quiz-container, .quiz-question, .quiz-choice, .quiz-choice.correct, .quiz-choice.wrong, .quiz-explanation, .quiz-progress, .quiz-score, .category-card, 結果画面 .quiz-result 等
+- [x] Task 9: assets/quiz.css を作成。Bloomberg風ダークテーマ。.quiz-container, .quiz-question, .quiz-choice, .quiz-choice.correct, .quiz-choice.wrong, .quiz-explanation, .quiz-progress, .quiz-score, .category-card, 結果画面 .quiz-result 等
 - [ ] Task 10: assets/quiz.js を作成。クラスQuizEngine: loadQuestions(category|all), shuffle, nextQuestion, submitAnswer, showExplanation, calculateScore, saveBestScore (localStorage), restart, getStats. 5択ボタン、解説パネル、進捗バーをレンダリング
 
 ### Phase 2: メインページ
