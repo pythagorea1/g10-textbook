@@ -165,3 +165,4 @@ Tue Apr  7 09:55:01     2026 Task 11: Added Norway country summary dashboard to 
 [2026-04-07T18:58:29+09:00] Task 3: created data/quiz/q_fx.js (30 FX questions)
 [2026-04-07] Task 4: q_bonds.js created with 30 bond/rates questions
 [Tue Apr  7 19:03:47     2026] Task 5: q_crises.js 30問追加 (1907恐慌、1929、1987BM、アジア97、LTCM、Lehman/AIG/TARP、欧州債務/Draghi/キプロス、CHF2015、COVID、2022債券、Gilt、SVB/CS/AT1、中国不動産、山一/LTCB)
+[Tue Apr  7 19:06:16     2026] Task 6: q_macro.js 30問 (CPI/PCE/NFP/IRA/CHIPS/SGP/NGEU/春闘/GPFG/M2/財政乗数等)
