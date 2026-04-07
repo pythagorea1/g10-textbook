@@ -49,7 +49,7 @@ Phase 2では主要データページ（02, 06, 13, 14等）にチャートを�
 - [x] Task 13: 日本（JP） — japan/07, japan/08, japan/16, japan/17, japan/18, japan/19, japan/20
 - [x] Task 14: ユーロ圏（EU） — eurozone/07, eurozone/08, eurozone/16, eurozone/17, eurozone/18, eurozone/19, eurozone/20
 - [x] Task 15: 英国（UK） — uk/07, uk/08, uk/16, uk/17, uk/18, uk/19, uk/20
-- [ ] Task 16: スイス（CH） — switzerland/07, switzerland/08, switzerland/16, switzerland/17, switzerland/18, switzerland/19, switzerland/20
+- [x] Task 16: スイス（CH） — switzerland/07, switzerland/08, switzerland/16, switzerland/17, switzerland/18, switzerland/19, switzerland/20
 - [ ] Task 17: 豪州（AU） — australia/07, australia/08, australia/16, australia/17, australia/18, australia/19, australia/20
 - [ ] Task 18: NZ — newzealand/07, newzealand/08, newzealand/16, newzealand/17, newzealand/18, newzealand/19, newzealand/20
 - [ ] Task 19: カナダ — canada/07, canada/08, canada/16, canada/17, canada/18, canada/19, canada/20

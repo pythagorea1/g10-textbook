@@ -115,3 +115,4 @@ Tue Apr  7 09:55:01     2026 Task 11: Added Norway country summary dashboard to 
 [2026-04-07 iter14] Task 13: Added inline SVG figures to japan/07 (exchange timeline), 08 (Nikkei225 long-term chart), 16 (megabank assets bar), 17 (TOPIX sector pie), 18 (regulation timeline), 19 (trade partners bar), 20 (key-number infographic).
 [2026-04-07 iter15] Task 14: Added inline SVG figures to eurozone/07,08,16,17,18,19,20 (timeline, DAX chart, bank assets bar, sector pie, regulation timeline, trade partners bar, lessons timeline)
 [2026-04-07T01:09:00Z] Task 15: UK pages 07,08,16,17,18,19,20 — added inline SVG visuals (timeline, FTSE chart, bank bars, sector pie, regulation timeline, trade bars, lessons infographic)
+[2026-04-07T10:12:44+09:00] Task 16: Added SVG visuals to switzerland/07,08,16,17,18,19,20 (exchange timeline, SMI chart, bank assets bar, sector pie, regulation timeline, export partners bar, key numbers)
