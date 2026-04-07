@@ -1,101 +1,99 @@
-# Project: G10 Textbook — Visualization Phase 2 (Fix + Coverage)
+# Project: G10 Textbook — Visualization Phase 3 (全セクション図解 + 国別サマリー)
 
 ## Overview
-前回ループでチャート追加したが、(1) 注釈テキストが重なって読めない、(2) 多くのページにチャートが無い漏れが多発している。
-本ループは「注釈レイアウト修正 + チャート漏れ全埋め」を目的とする。
+Phase 2では主要データページ（02, 06, 13, 14等）にチャートを追加したが、まだ未図解のセクションが多い:
+- 07_equity_early, 08_equity_modern — 古い株価/取引所史
+- 16_banking, 17_corporate, 18_regulation, 19_trade, 20_lessons — 銀行・規制・貿易・総括
 
-## ユーザー指摘の問題
-1. **チャート上の文字が重なっている** — us/02_policy_rate.html, us/09_equity_recent.html などで注釈ラベルが密集して読めない
-2. **チャートが無いページが多い** — 03_fiscal_policy, 04_employment, 05_inflation, 09_equity_recent, 10_equity_current, 11_bond_market, 12_short_rates 等
+本ループは以下を実現する:
+1. **全セクションに最低1つの図解を追加**（単純なチャートでなくとも、タイムライン・円グラフ・ピクトグラム・バーチャート等）
+2. **各国01_central_bank.htmlの先頭に「国別サマリーダッシュボード」を追加**（20ページの見取り図、主要指標、ハイライト）
 
-## Phase 0: 注釈レイアウトエンジン修正（最優先）
+## Phase 0: インフォグラフィック基盤
 
-- [x] Task 1: assets/charts.js を修正。注釈ラベルの衝突回避ロジックを追加：(a) ラベルを上下交互に配置（above/below）、(b) X座標が近接する場合は縦に積み上げる、(c) リーダー線を追加してマーカー→ラベルを結ぶ、(d) 必要なら短縮表記（例: "Black Monday" だけ）
-- [x] Task 2: assets/style.css の .chart-annotation スタイルを更新。背景にダークな半透明矩形（rect）を入れて文字を読みやすくする。font-sizeは10px固定。.chart-annotation-bg, .chart-annotation-line を追加
-- [x] Task 3: us/02_policy_rate.html — 既存チャートを再生成。注釈密度を下げる（重要イベント6個に絞る）+ 上下交互配置を適用。視覚確認のためHTMLを再読込してSVG構造を検証
-- [x] Task 4: us/06_equity_overview.html, us/13_long_rates.html, us/15_crises.html を再生成（注釈整理）
-- [x] Task 5: japan/02_policy_rate.html, japan/06_equity_overview.html, japan/13_long_rates.html, japan/14_currency.html を再生成（注釈整理）
-- [x] Task 6: 残りの既存チャートページ（eurozone, uk, switzerland, australia, newzealand, canada, sweden, norway の 02/06/13/14/15）を一括スキャンし、注釈密度が高いものだけリトライ。Glob+Grepで `chart-annotation` 数が10以上のファイルを抽出
+- [x] Task 1: assets/charts.js に以下の関数を追加: renderPieChart(containerId, slices), renderDonutChart, renderHorizontalBarChart, renderStackedBar, renderSummaryDashboard（country summary用の複合コンポーネント）, renderHistoricalTimeline（縦タイムライン、イベントカード形式）。既存のrenderAnnotatedLineChart等は残す。assets/style.css に .summary-dashboard, .dashboard-stat, .dashboard-highlight, .pie-chart, .donut-chart, .horizontal-bar などのスタイルを追加
 
-## Phase 1: 米国（US）— 漏れ埋め
-- [x] Task 7: us/03_fiscal_policy.html — 債務/GDP比 推移チャート（1940-2026, %）+ 注釈（WWII、Reagan減税、IRA/CHIPS等）
-- [x] Task 8: us/04_employment.html — 失業率推移チャート（1948-2026, %）+ 注釈（70sスタグフレーション、GFC10%、COVID14.7%、3.4%最低）
-- [x] Task 9: us/05_inflation.html — CPI YoY推移チャート（1960-2026, %）+ 注釈（70sインフレ、Volcker、2022 9.1%ピーク）
-- [x] Task 10: us/09_equity_recent.html — S&P500 2000-2019チャート + 注釈（ドットコム崩壊、住宅バブル、リーマン、QE回復、2018下落）
-- [x] Task 11: us/10_equity_current.html — S&P500 2020-2026チャート + 注釈（COVID、AI相場、2024最高値、2025調整等）
-- [x] Task 12: us/11_bond_market.html — 米国債発行残高チャート（1980-2026, $trillion）+ 注釈（GFC膨張、QE、2024 35T突破）
-- [x] Task 13: us/12_short_rates.html — Fed Funds vs SOFR vs T-Bill 3M 短期金利チャート
+## Phase 1: 各国の01_central_bank.html に「国別サマリーダッシュボード」を追加
+各ページの `<article>` 冒頭、見出しの直後に挿入する。含めるもの:
+- **Key Stats カード**: 中銀設立年 / 通貨 / 主要指数 / 政策金利 / 10年債利回り / GDP順位
+- **20ページナビゲーションビジュアル**: 6カテゴリ（金融政策/マクロ/株式/債券・金利・為替/金融制度/総括）×該当ページへのリンクカード
+- **Historical Highlights タイムライン**: その国の歴史上の重要10イベント（短い縦タイムライン）
 
-## Phase 2: 日本（JP）— 漏れ埋め
-- [x] Task 14: japan/03_fiscal_policy.html — 債務/GDP推移（1980-2026, %）+ 注釈（バブル崩壊財政出動、コロナ、260%超）
-- [x] Task 15: japan/04_employment.html — 失業率推移（1980-2026）+ 注釈（バブル期2%、失業率5.5%ピーク2002、2.4%最低）
-- [x] Task 16: japan/05_inflation.html — CPI推移（1970-2026）+ 注釈（オイルショック、デフレ期、2024 2%超え）
-- [x] Task 17: japan/09_equity_recent.html, japan/10_equity_current.html — Nikkei 2000-2019, 2020-2026チャート両方
-- [x] Task 18: japan/11_bond_market.html — JGB発行残高 + 日銀保有比率チャート
+- [ ] Task 2: us/01_central_bank.html にサマリーダッシュボード追加（Fed 1913、USD、S&P500、Dual mandate、主要危機: 1907、1929、1987、2000、2008、2020、2023 SVB）
+- [ ] Task 3: japan/01_central_bank.html にサマリーダッシュボード追加（BOJ 1882、JPY、日経225、ゼロ金利/YCC/QQE、バブル崩壊1990、金融危機1997、アベノミクス2013、2024マイナス金利解除）
+- [ ] Task 4: eurozone/01_central_bank.html にサマリーダッシュボード追加（ECB 1998、EUR、Stoxx50、物価単一目標、ERM危機1992、ユーロ導入1999、欧州債務危機2010）
+- [ ] Task 5: uk/01_central_bank.html にサマリーダッシュボード追加（BOE 1694、GBP、FTSE100、Big Bang 1986、Black Wednesday 1992、Brexit 2016、LDI危機2022）
+- [ ] Task 6: switzerland/01_central_bank.html にサマリーダッシュボード追加（SNB 1907、CHF、SMI、CHFショック2015、UBS救済2008、CS破綻2023）
+- [ ] Task 7: australia/01_central_bank.html にサマリーダッシュボード追加（RBA 1960、AUD、ASX200、30年無景気後退、資源ブーム2011、2024-2026金利動向）
+- [ ] Task 8: newzealand/01_central_bank.html にサマリーダッシュボード追加（RBNZ 1934、NZD、NZX50、世界初IT 1990、Orr辞任2025、Breman就任）
+- [ ] Task 9: canada/01_central_bank.html にサマリーダッシュボード追加（BOC 1934、CAD、TSX、GFC耐性、2024先進国一番乗り利下げ）
+- [ ] Task 10: sweden/01_central_bank.html にサマリーダッシュボード追加（Riksbank 1668 世界最古、SEK、OMX30、1990s銀行危機、マイナス金利先駆者2015）
+- [ ] Task 11: norway/01_central_bank.html にサマリーダッシュボード追加（Norges Bank 1816、NOK、OBX、石油発見1969、GPFG世界最大SWF、1990s銀行危機）
 
-## Phase 3: ユーロ圏（EU）— 漏れ埋め
-- [x] Task 19: eurozone/03_fiscal_policy.html — ユーロ圏債務/GDP推移 + PIIGSとコアの対比
-- [x] Task 20: eurozone/04_employment.html, eurozone/05_inflation.html — 失業率・HICP推移
-- [x] Task 21: eurozone/09_equity_recent.html, eurozone/10_equity_current.html — Stoxx 50 2000-2019, 2020-2026
+## Phase 2: 未図解セクションの一括ビジュアル化
 
-## Phase 4: 英国（UK）— 漏れ埋め
-- [x] Task 22: uk/03_fiscal_policy.html, uk/04_employment.html, uk/05_inflation.html
-- [x] Task 23: uk/09_equity_recent.html, uk/10_equity_current.html — FTSE100 期間別
+### Task 粒度: 1タスク = 1国の「残り未図解ページ全て」。
+対象ページ（各国）: 07_equity_early, 08_equity_modern, 16_banking, 17_corporate, 18_regulation, 19_trade, 20_lessons
+既にチャートがある場合はスキップ。無い場合は最低1図解を追加。
 
-## Phase 5: スイス（CH）— 漏れ埋め
-- [x] Task 24: switzerland/03_fiscal_policy.html, switzerland/04_employment.html, switzerland/05_inflation.html
-- [x] Task 25: switzerland/06_equity_overview.html, switzerland/09_equity_recent.html, switzerland/10_equity_current.html — SMI チャート
+推奨図解タイプ:
+- **07_equity_early**: 取引所設立タイムライン（縦）+ 戦前株価チャート（ある場合）
+- **08_equity_modern**: 1980-1990s株価チャート（年次）+ 主要イベント注釈
+- **16_banking**: 主要銀行の時価総額/資産バーチャート + 銀行数推移
+- **17_corporate**: セクター構成円グラフ（時価総額ベース）+ トップ10企業バー
+- **18_regulation**: 規制変遷タイムライン（縦、カード形式）
+- **19_trade**: 貿易相手国バーチャート + 経常収支/GDP推移ライン
+- **20_lessons**: キーラーニングのインフォグラフィック（数値カード + アイコン）
 
-## Phase 6: 豪州（AU）— 漏れ埋め
-- [x] Task 26: australia/03_fiscal_policy.html, australia/04_employment.html, australia/05_inflation.html
-- [x] Task 27: australia/09_equity_recent.html, australia/10_equity_current.html, australia/13_long_rates.html
+- [ ] Task 12: 米国（US） — us/07, us/08, us/16, us/17, us/18, us/19, us/20 を順にチェックし、未図解のものに最低1図解追加
+- [ ] Task 13: 日本（JP） — japan/07, japan/08, japan/16, japan/17, japan/18, japan/19, japan/20
+- [ ] Task 14: ユーロ圏（EU） — eurozone/07, eurozone/08, eurozone/16, eurozone/17, eurozone/18, eurozone/19, eurozone/20
+- [ ] Task 15: 英国（UK） — uk/07, uk/08, uk/16, uk/17, uk/18, uk/19, uk/20
+- [ ] Task 16: スイス（CH） — switzerland/07, switzerland/08, switzerland/16, switzerland/17, switzerland/18, switzerland/19, switzerland/20
+- [ ] Task 17: 豪州（AU） — australia/07, australia/08, australia/16, australia/17, australia/18, australia/19, australia/20
+- [ ] Task 18: NZ — newzealand/07, newzealand/08, newzealand/16, newzealand/17, newzealand/18, newzealand/19, newzealand/20
+- [ ] Task 19: カナダ — canada/07, canada/08, canada/16, canada/17, canada/18, canada/19, canada/20
+- [ ] Task 20: スウェーデン — sweden/07, sweden/08, sweden/16, sweden/17, sweden/18, sweden/19, sweden/20
+- [ ] Task 21: ノルウェー — norway/07, norway/08, norway/16, norway/17, norway/18, norway/19, norway/20
 
-## Phase 7: NZ — 漏れ埋め
-- [x] Task 28: newzealand/03_fiscal_policy.html, newzealand/04_employment.html, newzealand/05_inflation.html
-- [x] Task 29: newzealand/06_equity_overview.html, newzealand/14_currency.html
-
-## Phase 8: カナダ — 漏れ埋め
-- [x] Task 30: canada/03_fiscal_policy.html, canada/04_employment.html, canada/05_inflation.html
-- [x] Task 31: canada/06_equity_overview.html, canada/09_equity_recent.html, canada/10_equity_current.html
-
-## Phase 9: 北欧 — 漏れ埋め
-- [x] Task 32: sweden/03_fiscal_policy.html, sweden/04_employment.html, sweden/05_inflation.html
-- [x] Task 33: sweden/06_equity_overview.html, sweden/14_currency.html
-- [x] Task 34: norway/03_fiscal_policy.html, norway/04_employment.html, norway/05_inflation.html
-- [x] Task 35: norway/06_equity_overview.html (OBX), norway/15_crises.html
-
-## Phase 10: 監査と最終
-- [x] Task 36: 全200ページをスキャンし、`grep -L 'svg-chart' *.html` で「chart要素を一切持たないページ」リストを作成（progress.txtに記録）。明らかにビジュアル化が必要なページ（07/08/16/17/18/19/20）に最低1つはチャートまたはタイムラインを追加可能か検討
-- [x] Task 37: 全 02_policy_rate / 06_equity_overview ページを再度スキャン。注釈ラベル数が10超のファイルがあれば再修正
-- [x] Task 38: progress.txt にPhase 2の最終サマリーを記載（追加チャート総数、修正ファイル数、残課題）
+## Phase 3: 監査
+- [ ] Task 22: 全200ページを再スキャン。`grep -L 'svg-chart\|summary-dashboard\|pie-chart\|donut-chart\|historical-timeline' page.html` で「いかなるビジュアル要素も持たないページ」を抽出。見つかったページに最低1つ追加
+- [ ] Task 23: us/08_equity_modern.html（ユーザー指摘ページ）を明示的に確認。1980s〜1990sのS&P500チャート（対数軸）が入っており、Black Monday 1987, Plaza 1985, LTCM 1998 等の注釈が上下交互配置で読みやすく表示されていることを確認。無ければ修正
+- [ ] Task 24: progress.txt に Phase 3 の最終サマリー記載
 
 ## Constraints
-- **外部CDN/library禁止** — 純粋なインラインSVG + Vanilla JS
-- **データはハードコード** — 月次/年次代表値の配列
-- **既存テキスト・テーブル削除禁止** — チャートは追加挿入のみ
-- **注釈は6個以下を推奨** — 多すぎたら主要なものだけに絞る
-- **ラベル位置は上下交互** — 連続するラベルが重ならないように
-- **チャート1つあたり viewBox="0 0 800 420"** 推奨。下部40pxは注釈用余白を確保
-- **数値はWebSearchで確認可能** — 推測しない
+- 既存チャート・テキストは削除しない。追加のみ
+- データはハードコード。外部CDN/library禁止
+- サマリーダッシュボードは高さ圧縮（scroll多発を避ける）
+- 注釈ラベルは6個以下、上下交互配置のルールをPhase 2のchart挿入でも守る
+- 1タスクで7ファイルも修正するTask 12-21は重いので、既に図解があるページはスキップして時間短縮
 
 ## Notes
-### 注釈衝突回避アルゴリズム（charts.jsに実装）
-```javascript
-// イベントをX座標でソート → ラベルを上下交互配置 → 縦衝突したらY方向にオフセット
-function placeAnnotations(events, chartWidth) {
-  const sorted = [...events].sort((a, b) => a.x - b.x);
-  return sorted.map((ev, i) => ({
-    ...ev,
-    labelY: i % 2 === 0 ? ev.y - 30 : ev.y + 30,  // 上下交互
-    labelAnchor: ev.x < 60 ? 'start' : ev.x > chartWidth - 60 ? 'end' : 'middle'
-  }));
-}
+### サマリーダッシュボードHTML構造例
+```html
+<section class="summary-dashboard">
+  <div class="dashboard-stats">
+    <div class="dashboard-stat">
+      <div class="stat-label">中央銀行</div>
+      <div class="stat-value">Federal Reserve</div>
+      <div class="stat-sub">Established 1913</div>
+    </div>
+    <!-- ... more stats ... -->
+  </div>
+  <div class="dashboard-nav-grid">
+    <!-- 6カテゴリ × ページリンクカード -->
+  </div>
+  <div class="dashboard-highlights">
+    <h3>Historical Highlights</h3>
+    <!-- 縦タイムライン -->
+  </div>
+</section>
 ```
 
-### 検証コマンド
+### 検証
 ```bash
-# チャート数カウント
-grep -c '<svg class="svg-chart"' [file.html]
-# 注釈数カウント
-grep -c 'chart-annotation' [file.html]
+# 全ページのビジュアル要素カウント
+for f in us japan eurozone uk switzerland australia newzealand canada sweden norway; do
+  grep -c '<svg' $f/*.html | grep ':0' && echo "$f has charts missing"
+done
 ```

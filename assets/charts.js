@@ -422,13 +422,337 @@
     return built.figure;
   }
 
+  // ---------- Phase 3 additions ----------
+
+  function renderPieChart(containerId, opts) {
+    var container = document.getElementById(containerId);
+    if (!container) return null;
+    var slices = (opts && opts.slices) || [];
+    var title = (opts && opts.title) || '';
+    var caption = (opts && opts.caption) || '';
+    var size = 320, cx = 160, cy = 160, r = 120;
+    var total = slices.reduce(function (s, x) { return s + (+x.value || 0); }, 0);
+    var fig = document.createElement('figure');
+    fig.className = 'chart-figure pie-chart';
+    if (title) {
+      var cap = document.createElement('figcaption');
+      cap.className = 'chart-title';
+      cap.textContent = title;
+      fig.appendChild(cap);
+    }
+    var svg = el('svg', {
+      class: 'svg-chart', viewBox: '0 0 640 340', preserveAspectRatio: 'xMidYMid meet'
+    });
+    var angle = -Math.PI / 2;
+    slices.forEach(function (s, i) {
+      var frac = total > 0 ? (s.value / total) : 0;
+      var next = angle + frac * Math.PI * 2;
+      var x1 = cx + r * Math.cos(angle), y1 = cy + r * Math.sin(angle);
+      var x2 = cx + r * Math.cos(next), y2 = cy + r * Math.sin(next);
+      var large = frac > 0.5 ? 1 : 0;
+      var color = s.color || DEFAULT_COLORS[i % DEFAULT_COLORS.length];
+      el('path', {
+        d: 'M ' + cx + ',' + cy + ' L ' + x1 + ',' + y1 + ' A ' + r + ',' + r + ' 0 ' + large + ' 1 ' + x2 + ',' + y2 + ' Z',
+        fill: color, stroke: '#0a0e1a', 'stroke-width': 2
+      }, svg);
+      // legend
+      var ly = 40 + i * 24;
+      el('rect', { x: 340, y: ly, width: 14, height: 14, fill: color }, svg);
+      var lt = el('text', {
+        x: 360, y: ly + 12, 'font-size': 12, fill: '#e8e8e8'
+      }, svg);
+      lt.textContent = s.label + ' — ' + (frac * 100).toFixed(1) + '%';
+      angle = next;
+    });
+    fig.appendChild(svg);
+    if (caption) {
+      var p = document.createElement('p');
+      p.className = 'chart-caption';
+      p.textContent = caption;
+      fig.appendChild(p);
+    }
+    container.appendChild(fig);
+    return fig;
+  }
+
+  function renderDonutChart(containerId, opts) {
+    var o = Object.assign({}, opts || {});
+    var fig = renderPieChart(containerId, o);
+    if (!fig) return null;
+    // overlay inner circle
+    var svg = fig.querySelector('svg');
+    if (svg) {
+      el('circle', { cx: 160, cy: 160, r: 60, fill: '#0a0e1a' }, svg);
+      if (o.centerLabel) {
+        var t = el('text', {
+          x: 160, y: 165, 'text-anchor': 'middle', 'font-size': 16, fill: '#00d4aa', 'font-weight': 'bold'
+        }, svg);
+        t.textContent = o.centerLabel;
+      }
+    }
+    fig.classList.add('donut-chart');
+    return fig;
+  }
+
+  function renderHorizontalBarChart(containerId, opts) {
+    var container = document.getElementById(containerId);
+    if (!container) return null;
+    var bars = (opts && opts.bars) || [];
+    var title = (opts && opts.title) || '';
+    var caption = (opts && opts.caption) || '';
+    var unit = (opts && opts.unit) || '';
+    var max = Math.max.apply(null, bars.map(function (b) { return +b.value || 0; }));
+    var fig = document.createElement('figure');
+    fig.className = 'chart-figure horizontal-bar';
+    if (title) {
+      var fc = document.createElement('figcaption');
+      fc.className = 'chart-title';
+      fc.textContent = title;
+      fig.appendChild(fc);
+    }
+    var h = Math.max(220, bars.length * 34 + 40);
+    var svg = el('svg', {
+      class: 'svg-chart', viewBox: '0 0 800 ' + h, preserveAspectRatio: 'xMidYMid meet'
+    });
+    var labelW = 160, barStart = labelW + 10, barMaxW = 800 - barStart - 80;
+    bars.forEach(function (b, i) {
+      var y = 20 + i * 34;
+      var w = max > 0 ? (b.value / max) * barMaxW : 0;
+      var color = b.color || DEFAULT_COLORS[i % DEFAULT_COLORS.length];
+      var lt = el('text', {
+        x: labelW, y: y + 18, 'text-anchor': 'end', 'font-size': 12, fill: '#e8e8e8'
+      }, svg);
+      lt.textContent = b.label;
+      el('rect', {
+        x: barStart, y: y + 4, width: w, height: 22, fill: color, rx: 2
+      }, svg);
+      var vt = el('text', {
+        x: barStart + w + 6, y: y + 20, 'font-size': 11, fill: '#a0a0a0'
+      }, svg);
+      vt.textContent = (b.value.toLocaleString ? b.value.toLocaleString() : b.value) + unit;
+    });
+    fig.appendChild(svg);
+    if (caption) {
+      var p = document.createElement('p');
+      p.className = 'chart-caption';
+      p.textContent = caption;
+      fig.appendChild(p);
+    }
+    container.appendChild(fig);
+    return fig;
+  }
+
+  function renderStackedBar(containerId, opts) {
+    var container = document.getElementById(containerId);
+    if (!container) return null;
+    var categories = (opts && opts.categories) || [];
+    var series = (opts && opts.series) || []; // [{name,color,values:[]}]
+    var title = (opts && opts.title) || '';
+    var caption = (opts && opts.caption) || '';
+    var fig = document.createElement('figure');
+    fig.className = 'chart-figure stacked-bar';
+    if (title) {
+      var fc = document.createElement('figcaption');
+      fc.className = 'chart-title';
+      fc.textContent = title;
+      fig.appendChild(fc);
+    }
+    var svg = el('svg', {
+      class: 'svg-chart', viewBox: '0 0 800 420', preserveAspectRatio: 'xMidYMid meet'
+    });
+    var plotL = 60, plotR = 780, plotT = 40, plotB = 340;
+    var n = categories.length;
+    var bw = (plotR - plotL) / n * 0.7;
+    var step = (plotR - plotL) / n;
+    // compute totals
+    var totals = categories.map(function (_, i) {
+      return series.reduce(function (s, sr) { return s + (+sr.values[i] || 0); }, 0);
+    });
+    var max = Math.max.apply(null, totals) || 1;
+    // axes
+    el('line', { x1: plotL, y1: plotB, x2: plotR, y2: plotB, stroke: '#333' }, svg);
+    el('line', { x1: plotL, y1: plotT, x2: plotL, y2: plotB, stroke: '#333' }, svg);
+    categories.forEach(function (cat, i) {
+      var cx = plotL + step * (i + 0.5);
+      var yBase = plotB;
+      series.forEach(function (sr, si) {
+        var v = +sr.values[i] || 0;
+        var hh = (v / max) * (plotB - plotT);
+        el('rect', {
+          x: cx - bw / 2, y: yBase - hh, width: bw, height: hh,
+          fill: sr.color || DEFAULT_COLORS[si % DEFAULT_COLORS.length]
+        }, svg);
+        yBase -= hh;
+      });
+      var lt = el('text', {
+        x: cx, y: plotB + 16, 'text-anchor': 'middle', 'font-size': 11, fill: '#a0a0a0'
+      }, svg);
+      lt.textContent = cat;
+    });
+    // legend
+    series.forEach(function (sr, si) {
+      var lx = plotL + si * 140;
+      el('rect', { x: lx, y: 10, width: 12, height: 12, fill: sr.color || DEFAULT_COLORS[si % DEFAULT_COLORS.length] }, svg);
+      var lt = el('text', { x: lx + 18, y: 20, 'font-size': 11, fill: '#e8e8e8' }, svg);
+      lt.textContent = sr.name;
+    });
+    fig.appendChild(svg);
+    if (caption) {
+      var p = document.createElement('p');
+      p.className = 'chart-caption';
+      p.textContent = caption;
+      fig.appendChild(p);
+    }
+    container.appendChild(fig);
+    return fig;
+  }
+
+  function renderHistoricalTimeline(containerId, opts) {
+    var container = document.getElementById(containerId);
+    if (!container) return null;
+    var events = (opts && opts.events) || [];
+    var title = (opts && opts.title) || '';
+    var wrap = document.createElement('figure');
+    wrap.className = 'chart-figure historical-timeline';
+    if (title) {
+      var fc = document.createElement('figcaption');
+      fc.className = 'chart-title';
+      fc.textContent = title;
+      wrap.appendChild(fc);
+    }
+    var ul = document.createElement('ul');
+    ul.className = 'historical-timeline-list';
+    events.forEach(function (ev) {
+      var li = document.createElement('li');
+      li.className = 'historical-timeline-item';
+      var yr = document.createElement('div');
+      yr.className = 'ht-year';
+      yr.textContent = ev.year;
+      var card = document.createElement('div');
+      card.className = 'ht-card';
+      var t = document.createElement('div');
+      t.className = 'ht-title';
+      t.textContent = ev.title || '';
+      var d = document.createElement('div');
+      d.className = 'ht-desc';
+      d.textContent = ev.desc || '';
+      card.appendChild(t);
+      card.appendChild(d);
+      li.appendChild(yr);
+      li.appendChild(card);
+      ul.appendChild(li);
+    });
+    wrap.appendChild(ul);
+    container.appendChild(wrap);
+    return wrap;
+  }
+
+  function renderSummaryDashboard(containerId, opts) {
+    var container = document.getElementById(containerId);
+    if (!container) return null;
+    var o = opts || {};
+    var section = document.createElement('section');
+    section.className = 'summary-dashboard';
+    if (o.heading) {
+      var h = document.createElement('h2');
+      h.className = 'dashboard-heading';
+      h.textContent = o.heading;
+      section.appendChild(h);
+    }
+    // stats
+    if (o.stats && o.stats.length) {
+      var statsWrap = document.createElement('div');
+      statsWrap.className = 'dashboard-stats';
+      o.stats.forEach(function (s) {
+        var card = document.createElement('div');
+        card.className = 'dashboard-stat';
+        var lab = document.createElement('div');
+        lab.className = 'stat-label';
+        lab.textContent = s.label || '';
+        var val = document.createElement('div');
+        val.className = 'stat-value';
+        val.textContent = s.value || '';
+        var sub = document.createElement('div');
+        sub.className = 'stat-sub';
+        sub.textContent = s.sub || '';
+        card.appendChild(lab);
+        card.appendChild(val);
+        card.appendChild(sub);
+        statsWrap.appendChild(card);
+      });
+      section.appendChild(statsWrap);
+    }
+    // nav grid
+    if (o.navGroups && o.navGroups.length) {
+      var nav = document.createElement('div');
+      nav.className = 'dashboard-nav-grid';
+      o.navGroups.forEach(function (g) {
+        var gd = document.createElement('div');
+        gd.className = 'dashboard-nav-group';
+        var gt = document.createElement('div');
+        gt.className = 'nav-group-title';
+        gt.textContent = g.title || '';
+        gd.appendChild(gt);
+        (g.links || []).forEach(function (lk) {
+          var a = document.createElement('a');
+          a.className = 'nav-link-card';
+          a.href = lk.href || '#';
+          a.textContent = lk.label || '';
+          gd.appendChild(a);
+        });
+        nav.appendChild(gd);
+      });
+      section.appendChild(nav);
+    }
+    // highlights
+    if (o.highlights && o.highlights.length) {
+      var hi = document.createElement('div');
+      hi.className = 'dashboard-highlights';
+      var ht = document.createElement('h3');
+      ht.textContent = o.highlightsTitle || 'Historical Highlights';
+      hi.appendChild(ht);
+      var ul = document.createElement('ul');
+      ul.className = 'historical-timeline-list compact';
+      o.highlights.forEach(function (ev) {
+        var li = document.createElement('li');
+        li.className = 'historical-timeline-item';
+        var yr = document.createElement('div');
+        yr.className = 'ht-year';
+        yr.textContent = ev.year;
+        var card = document.createElement('div');
+        card.className = 'ht-card';
+        var t = document.createElement('div');
+        t.className = 'ht-title';
+        t.textContent = ev.title || '';
+        var d = document.createElement('div');
+        d.className = 'ht-desc';
+        d.textContent = ev.desc || '';
+        card.appendChild(t);
+        card.appendChild(d);
+        li.appendChild(yr);
+        li.appendChild(card);
+        ul.appendChild(li);
+      });
+      hi.appendChild(ul);
+      section.appendChild(hi);
+    }
+    container.appendChild(section);
+    return section;
+  }
+
   // Export
   var api = {
     renderAnnotatedLineChart: renderAnnotatedLineChart,
     renderBarChart: renderBarChart,
     renderEventTimeline: renderEventTimeline,
     renderDualAxisChart: renderDualAxisChart,
-    renderGanttChart: renderGanttChart
+    renderGanttChart: renderGanttChart,
+    renderPieChart: renderPieChart,
+    renderDonutChart: renderDonutChart,
+    renderHorizontalBarChart: renderHorizontalBarChart,
+    renderStackedBar: renderStackedBar,
+    renderHistoricalTimeline: renderHistoricalTimeline,
+    renderSummaryDashboard: renderSummaryDashboard
   };
 
   global.G10Charts = api;
@@ -438,4 +762,10 @@
   global.renderEventTimeline = renderEventTimeline;
   global.renderDualAxisChart = renderDualAxisChart;
   global.renderGanttChart = renderGanttChart;
+  global.renderPieChart = renderPieChart;
+  global.renderDonutChart = renderDonutChart;
+  global.renderHorizontalBarChart = renderHorizontalBarChart;
+  global.renderStackedBar = renderStackedBar;
+  global.renderHistoricalTimeline = renderHistoricalTimeline;
+  global.renderSummaryDashboard = renderSummaryDashboard;
 })(typeof window !== 'undefined' ? window : this);
