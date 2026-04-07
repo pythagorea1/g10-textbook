@@ -100,3 +100,4 @@ Task 36 complete.
 - Remaining: qualitative pages (07/08/16-20) could get textual timelines; 11/12/13/15 charts for smaller G10 markets.
 Phase 2 COMPLETE.
 [2026-04-07T00:42:13Z] Task 1: Added Phase 3 chart helpers (renderPieChart/DonutChart/HorizontalBarChart/StackedBar/HistoricalTimeline/SummaryDashboard) to assets/charts.js and corresponding CSS (.summary-dashboard, .dashboard-stat, .dashboard-nav-grid, .historical-timeline-list, .pie-chart etc.) to assets/style.css. Infra ready for Phase 1 country dashboards.
+Tue Apr  7 09:43:17     2026 Task 2: us/01 summary dashboard added (Fed/USD/S&P500, 10 historical highlights)
