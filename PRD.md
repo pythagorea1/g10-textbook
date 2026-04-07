@@ -58,7 +58,7 @@
 
 ### Phase 1: クイズエンジン
 - [x] Task 9: assets/quiz.css を作成。Bloomberg風ダークテーマ。.quiz-container, .quiz-question, .quiz-choice, .quiz-choice.correct, .quiz-choice.wrong, .quiz-explanation, .quiz-progress, .quiz-score, .category-card, 結果画面 .quiz-result 等
-- [ ] Task 10: assets/quiz.js を作成。クラスQuizEngine: loadQuestions(category|all), shuffle, nextQuestion, submitAnswer, showExplanation, calculateScore, saveBestScore (localStorage), restart, getStats. 5択ボタン、解説パネル、進捗バーをレンダリング
+- [x] Task 10: assets/quiz.js を作成。クラスQuizEngine: loadQuestions(category|all), shuffle, nextQuestion, submitAnswer, showExplanation, calculateScore, saveBestScore (localStorage), restart, getStats. 5択ボタン、解説パネル、進捗バーをレンダリング
 
 ### Phase 2: メインページ
 - [ ] Task 11: summary/quiz.html を新規作成。レイアウト:

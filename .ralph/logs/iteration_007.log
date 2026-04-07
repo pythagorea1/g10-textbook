@@ -1,6 +1,6 @@
-=== Iteration 7 === 2026-04-07 15:13:53 ===
+=== Iteration 7 === 2026-04-07 19:06:23 ===
 Exit code: 0
-Duration: 76s
+Duration: 145s
 
-Task 7 complete. Added category filter (7 checkboxes + Clear button) to `summary/geopolitical_map.html`, wired to existing `GeoMap.setCategoryFilter()`, plus `.category-filter` styles in `assets/geomap.css`. 7 tasks remain.
+Task 7 complete: added `data/quiz/q_regulation.js` with 30 regulation & banking questions, marked PRD.md, committed.
 

@@ -170,3 +170,4 @@ Tue Apr  7 09:55:01     2026 Task 11: Added Norway country summary dashboard to 
 Tue Apr  7 19:11:12     2026 Task 8: q_geopolitics.js 30問追加
 
 [2026-04-07T10:12:43Z] Task 9: assets/quiz.css created — Bloomberg dark theme, category grid, quiz/choice/explanation/result styles
+[2026-04-07T10:14:24Z] Task 10: assets/quiz.js — QuizEngine class (start/renderStart/renderQuestion/submitAnswer/renderResult), shuffle, localStorage best scores, history, progress bar, 5-choice buttons, explanation panel with related link, restart.
