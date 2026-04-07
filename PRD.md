@@ -54,7 +54,7 @@ Phase 2では主要データページ（02, 06, 13, 14等）にチャートを�
 - [x] Task 18: NZ — newzealand/07, newzealand/08, newzealand/16, newzealand/17, newzealand/18, newzealand/19, newzealand/20
 - [x] Task 19: カナダ — canada/07, canada/08, canada/16, canada/17, canada/18, canada/19, canada/20
 - [x] Task 20: スウェーデン — sweden/07, sweden/08, sweden/16, sweden/17, sweden/18, sweden/19, sweden/20
-- [ ] Task 21: ノルウェー — norway/07, norway/08, norway/16, norway/17, norway/18, norway/19, norway/20
+- [x] Task 21: ノルウェー — norway/07, norway/08, norway/16, norway/17, norway/18, norway/19, norway/20
 
 ## Phase 3: 監査
 - [ ] Task 22: 全200ページを再スキャン。`grep -L 'svg-chart\|summary-dashboard\|pie-chart\|donut-chart\|historical-timeline' page.html` で「いかなるビジュアル要素も持たないページ」を抽出。見つかったページに最低1つ追加
