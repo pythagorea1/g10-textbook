@@ -86,7 +86,7 @@ G10通貨国を中心に、地政学リスクと金融市場の連動を直感�
 
 ### Phase 4: 統合・リンク追加
 - [x] Task 9: index.html の Quick Links と Country Cards 上部に「🌍 Geopolitical Map」リンクを追加。stats-bar の下、country-grid の上に大きめのバナーカードで配置
-- [ ] Task 10: 各国の 01_central_bank.html の Historical Highlights タイムラインに「→ Geopolitical Map で見る」リンクを追加（イベントごとに対応するイベントIDへリンクして該当年・イベントを自動選択）
+- [x] Task 10: 各国の 01_central_bank.html の Historical Highlights タイムラインに「→ Geopolitical Map で見る」リンクを追加（イベントごとに対応するイベントIDへリンクして該当年・イベントを自動選択）
 - [ ] Task 11: summary/g10_timeline.html（既存横断年表）にも「Geopolitical Map」へのリンクを追加
 
 ### Phase 5: 検証と最終調整
