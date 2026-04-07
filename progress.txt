@@ -106,3 +106,4 @@ Tue Apr  7 09:44:31     2026 Task 3: japan/01 summary dashboard added
 [2026-04-07T09:47:09+09:00] Task 5: added UK country summary dashboard to uk/01_central_bank.html
 [2026-04-07T09:48:22+09:00] Task 6: Switzerland summary dashboard added
 [iter8] Task 7: AU dashboard added
+[2026-04-07T09:50:47] Task 8: NZ summary dashboard added to newzealand/01_central_bank.html
