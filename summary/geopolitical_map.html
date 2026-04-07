@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geopolitical Map — G10 Textbook</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/geomap.css">
+</head>
+<body>
+<header class="page-header">
+  <nav class="breadcrumb"><a href="../index.html">← Home</a></nav>
+  <h1>🌍 Geopolitical Map (1970–2026)</h1>
+  <p class="subtitle">世界地図上で地政学イベントの国際的影響と資金・政策フローを可視化</p>
+</header>
+
+<section class="geomap-toolbar">
+  <div id="timeline" class="timeline-slider"></div>
+</section>
+
+<main class="geomap-layout">
+  <aside class="geomap-sidebar-left">
+    <h2>Events</h2>
+    <div id="event-list" class="event-list"></div>
+  </aside>
+
+  <section class="geomap-main">
+    <div id="world-map" class="world-map-container"></div>
+  </section>
+
+  <aside class="geomap-sidebar-right">
+    <h2>Detail</h2>
+    <div id="event-detail" class="event-detail-panel">
+      <p class="muted">イベントを選択すると詳細を表示します。</p>
+    </div>
+  </aside>
+</main>
+
+<footer class="page-footer">
+  <p>G10 Textbook · Pure SVG + Vanilla JS · Offline-ready</p>
+</footer>
+
+<script src="../assets/geomap.js"></script>
+<script>
+(async function () {
+  // Load world map SVG inline (avoid CORS on file://)
+  const mapContainer = document.getElementById('world-map');
+  try {
+    const res = await fetch('../assets/world_map.svg');
+    mapContainer.innerHTML = await res.text();
+  } catch (e) {
+    mapContainer.innerHTML = '<p class="error">世界地図SVGの読み込みに失敗しました。HTTPサーバー経由で開いてください (python -m http.server).</p>';
+  }
+
+  const map = new GeoMap({
+    mapContainer: '#world-map',
+    timelineContainer: '#timeline',
+    eventListContainer: '#event-list',
+    detailContainer: '#event-detail',
+    yearRange: [1970, 2026]
+  });
+
+  try {
+    await map.loadEvents('../data/geopolitical_events.json');
+  } catch (e) {
+    console.error('Failed to load events:', e);
+  }
+  if (typeof map.init === 'function') map.init();
+})();
+</script>
+</body>
+</html>

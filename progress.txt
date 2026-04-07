@@ -140,3 +140,4 @@ Tue Apr  7 09:55:01     2026 Task 11: Added Norway country summary dashboard to 
 [Tue Apr  7 15:11:43     2026] Task 4: Created assets/geomap.js — GeoMap class with loadEvents, renderTimelineSlider, renderEventList, highlightEvent, drawFlows (bezier+marker-end), drawArrow, updateDetailPanel, tooltips, category filter.
 
 [2026-04-07T15:12:44+09:00] Task 5: drawArrow bezier curvature improved (perpendicular control point) with flow-type color coding.
+[2026-04-07T06:13:46Z] Task 6: Created summary/geopolitical_map.html with timeline, event list, world map, detail panel layout. Loads world_map.svg inline via fetch and initializes GeoMap engine.
