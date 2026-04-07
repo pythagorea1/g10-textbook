@@ -24,7 +24,7 @@ Phase 2では主要データページ（02, 06, 13, 14等）にチャートを�
 - [x] Task 4: eurozone/01_central_bank.html にサマリーダッシュボード追加（ECB 1998、EUR、Stoxx50、物価単一目標、ERM危機1992、ユーロ導入1999、欧州債務危機2010）
 - [x] Task 5: uk/01_central_bank.html にサマリーダッシュボード追加（BOE 1694、GBP、FTSE100、Big Bang 1986、Black Wednesday 1992、Brexit 2016、LDI危機2022）
 - [x] Task 6: switzerland/01_central_bank.html にサマリーダッシュボード追加（SNB 1907、CHF、SMI、CHFショック2015、UBS救済2008、CS破綻2023）
-- [ ] Task 7: australia/01_central_bank.html にサマリーダッシュボード追加（RBA 1960、AUD、ASX200、30年無景気後退、資源ブーム2011、2024-2026金利動向）
+- [x] Task 7: australia/01_central_bank.html にサマリーダッシュボード追加（RBA 1960、AUD、ASX200、30年無景気後退、資源ブーム2011、2024-2026金利動向）
 - [ ] Task 8: newzealand/01_central_bank.html にサマリーダッシュボード追加（RBNZ 1934、NZD、NZX50、世界初IT 1990、Orr辞任2025、Breman就任）
 - [ ] Task 9: canada/01_central_bank.html にサマリーダッシュボード追加（BOC 1934、CAD、TSX、GFC耐性、2024先進国一番乗り利下げ）
 - [ ] Task 10: sweden/01_central_bank.html にサマリーダッシュボード追加（Riksbank 1668 世界最古、SEK、OMX30、1990s銀行危機、マイナス金利先駆者2015）
