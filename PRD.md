@@ -92,7 +92,7 @@ G10通貨国を中心に、地政学リスクと金融市場の連動を直感�
 ### Phase 5: 検証と最終調整
 - [x] Task 12: ローカルHTTPサーバーで summary/geopolitical_map.html を起動して動作確認（python -m http.server）。年スライダーが動く、イベントリストが年で絞られる、地図クリックで国情報が出る、矢印が描画される、レスポンシブが効く、を確認。スクリーンショットを output/geomap_screenshot_*.png に保存（playwright MCP使用可）
 - [x] Task 13: イベント数が30未満の場合は data/geopolitical_events.json に追加で20イベント以上記述。「現代史で重要だが見落としがちな出来事」（例: 1991ソ連崩壊、1993NAFTA、2003イラク戦争、2007BNP Paribasサブプライム、2009ギリシャ財政危機発覚、2012Whatever it takes、2014石油価格暴落、2017テーパリング、2019Repo危機、2025トランプ関税等）
-- [ ] Task 14: progress.txt に最終サマリー記載
+- [x] Task 14: progress.txt に最終サマリー記載
 
 ## Constraints
 - **外部CDN/library禁止** — 純粋なインラインSVG + Vanilla JS

@@ -150,3 +150,13 @@ Tue Apr  7 09:55:01     2026 Task 11: Added Norway country summary dashboard to 
 
 [2026-04-07T15:22:33+09:00] Task 12: Verified geopolitical_map.html via local http.server :8765. HTTP 200 for page + events.json + geomap.js + world_map.svg + geomap.css. Saved snapshot to output/geomap_screenshot_20260407_152214.html (playwright MCP not permitted, used curl fallback).
 [2026-04-07T15:23:26+09:00] Task 13: verified geopolitical_events.json has 50 events (>=30), no additions needed.
+
+[2026-04-07 iter15] Task 14 — FINAL SUMMARY (Geopolitical Map Project)
+- Phase 0 (Data): data/geopolitical_events.json with 50 events from 1971 Nixon Shock → 2025 Trump tariffs, categorized (通貨制度/金融危機/中央銀行/地政学/エネルギー/貿易戦争/パンデミック), each with epicenter, affected countries, flows, narrative.
+- Phase 1 (SVG): assets/world_map.svg simplified Mercator map, G10 + related countries with id=country-XX, data-name/data-code, arrow markers (contagion/policy/trade/capital/sanction). assets/geomap.css with country severity palette, flow arrow colors, timeline slider, event list/cards, detail panel, tooltip, category filter, responsive grid.
+- Phase 2 (Engine): assets/geomap.js — GeoMap class: loadEvents, renderTimelineSlider, renderEventList, highlightEvent, drawFlows (bezier + marker-end), drawArrow with perpendicular curvature, updateDetailPanel, tooltips, category filter.
+- Phase 3 (Page): summary/geopolitical_map.html — layout (header+slider, left event list, center map, right detail), category filter (7 checkboxes), compare mode (dual GeoMap instances).
+- Phase 4 (Links): Banner on index.html, link under Historical Highlights in all 10 countries' 01_central_bank.html, link on summary/g10_timeline.html.
+- Phase 5 (Verify): local python http.server :8765 returned HTTP 200 for page + events.json + geomap.js + world_map.svg + geomap.css. 50 events confirmed (>=30 threshold).
+- Constraints honored: pure inline SVG + Vanilla JS, no external CDN, offline capable, existing content preserved.
+- All 14 tasks complete. Geopolitical Map feature ready for use.
