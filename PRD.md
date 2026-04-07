@@ -1,99 +1,133 @@
-# Project: G10 Textbook — Visualization Phase 3 (全セクション図解 + 国別サマリー)
+# Project: G10 Textbook — Interactive Geopolitical World Map
 
 ## Overview
-Phase 2では主要データページ（02, 06, 13, 14等）にチャートを追加したが、まだ未図解のセクションが多い:
-- 07_equity_early, 08_equity_modern — 古い株価/取引所史
-- 16_banking, 17_corporate, 18_regulation, 19_trade, 20_lessons — 銀行・規制・貿易・総括
+新規ページ `summary/geopolitical_map.html` を作成。世界地図上で年・イベントを選択すると、そのイベントが各国に与えたインパクトと国際関係の流れ（資金/政策/外交フロー）を可視化する。
+G10通貨国を中心に、地政学リスクと金融市場の連動を直感的に追えるダッシュボード。
 
-本ループは以下を実現する:
-1. **全セクションに最低1つの図解を追加**（単純なチャートでなくとも、タイムライン・円グラフ・ピクトグラム・バーチャート等）
-2. **各国01_central_bank.htmlの先頭に「国別サマリーダッシュボード」を追加**（20ページの見取り図、主要指標、ハイライト）
+## 機能要件
+1. **インタラクティブ世界地図** — SVG。G10通貨国（US/EU/JP/UK/CH/AU/NZ/CA/SE/NO）と主要関連国（CN/RU/SA/UA等）を表示
+2. **タイムラインスライダー** — 1970-2026の年スライダー
+3. **イベント選択リスト** — 年に紐づくイベントをサイドパネルに表示。クリックで地図に反映
+4. **地図上の表現**:
+   - 影響国を色強度で表示（赤=深刻、橙=中、黄=軽微）
+   - 国間の関係を**矢印**（資金フロー/政策連動/制裁/外交）で結ぶ
+   - 影響国にツールチップ（具体的な数値・出来事）
+5. **イベント詳細パネル** — 選択イベントの背景・影響・教訓を表示
 
-## Phase 0: インフォグラフィック基盤
+## Tasks
 
-- [x] Task 1: assets/charts.js に以下の関数を追加: renderPieChart(containerId, slices), renderDonutChart, renderHorizontalBarChart, renderStackedBar, renderSummaryDashboard（country summary用の複合コンポーネント）, renderHistoricalTimeline（縦タイムライン、イベントカード形式）。既存のrenderAnnotatedLineChart等は残す。assets/style.css に .summary-dashboard, .dashboard-stat, .dashboard-highlight, .pie-chart, .donut-chart, .horizontal-bar などのスタイルを追加
+### Phase 0: データ設計（最優先・JSON生成）
+- [x] Task 1: data/geopolitical_events.json を新規作成。50+の地政学/金融イベントを以下のスキーマで定義
+```json
+{
+  "events": [
+    {
+      "id": "nixon_shock_1971",
+      "year": 1971,
+      "month": 8,
+      "title": "ニクソン・ショック（金兌換停止）",
+      "category": "通貨制度",
+      "severity": "critical",
+      "epicenter": "US",
+      "affected": [
+        {"country": "US", "impact": "critical", "note": "ドル防衛のため金兌換停止"},
+        {"country": "JP", "impact": "high", "note": "円が変動相場制へ移行"},
+        {"country": "EU", "impact": "high", "note": "欧州通貨もフロート化"}
+      ],
+      "flows": [
+        {"from": "US", "to": "JP", "type": "currency_pressure", "label": "ドル離れ"},
+        {"from": "US", "to": "EU", "type": "currency_pressure"}
+      ],
+      "narrative": "1971年8月15日、ニクソン大統領は金とドルの兌換停止を発表..."
+    }
+  ]
+}
+```
+カテゴリー: 通貨制度/金融危機/中央銀行/地政学/エネルギー/貿易戦争/パンデミック
+重要イベント例:
+- 1971 ニクソン・ショック
+- 1973 第1次オイルショック
+- 1979 第2次オイルショック・Volcker利上げ
+- 1985 プラザ合意
+- 1987 ブラックマンデー
+- 1989 ベルリンの壁崩壊
+- 1990 日本バブル崩壊
+- 1992 ERM危機・ブラックウェンズデー
+- 1994 メキシコ危機
+- 1997 アジア通貨危機
+- 1998 LTCM・ロシア危機
+- 2000 ドットコム崩壊
+- 2001 9/11
+- 2008 リーマンショック
+- 2010 欧州ソブリン危機
+- 2011 福島原発事故
+- 2014 ロシアのクリミア併合
+- 2015 SNB CHFショック・チャイナショック
+- 2016 Brexit投票・トランプ当選
+- 2018 米中貿易戦争
+- 2020 COVID-19
+- 2022 ロシアのウクライナ侵攻・エネルギー危機
+- 2023 SVB/CS破綻・銀行危機
+- 2024 日銀マイナス金利解除・中東緊張
+- 2025 トランプ関税
 
-## Phase 1: 各国の01_central_bank.html に「国別サマリーダッシュボード」を追加
-各ページの `<article>` 冒頭、見出しの直後に挿入する。含めるもの:
-- **Key Stats カード**: 中銀設立年 / 通貨 / 主要指数 / 政策金利 / 10年債利回り / GDP順位
-- **20ページナビゲーションビジュアル**: 6カテゴリ（金融政策/マクロ/株式/債券・金利・為替/金融制度/総括）×該当ページへのリンクカード
-- **Historical Highlights タイムライン**: その国の歴史上の重要10イベント（短い縦タイムライン）
+### Phase 1: 世界地図SVG基盤
+- [ ] Task 2: assets/world_map.svg を作成。簡略化された世界地図SVG（数十カ国の polygons、各国に id="country-XX" を持たせる）。G10は精度高く、その他は簡略化。Mercator風のviewBox。各国にdefault fillと.affected, .epicenter等のクラス用意。data-name属性に英語国名
+- [ ] Task 3: assets/geomap.css を作成（または既存style.cssに追記）。.world-map基本スタイル、.country base/hover/affected-low/mid/high/critical/epicenterの色定義、.flow-arrow stroke styles、.event-list、.event-card、.event-detail-panel、.timeline-slider のスタイル
 
-- [x] Task 2: us/01_central_bank.html にサマリーダッシュボード追加（Fed 1913、USD、S&P500、Dual mandate、主要危機: 1907、1929、1987、2000、2008、2020、2023 SVB）
-- [x] Task 3: japan/01_central_bank.html にサマリーダッシュボード追加（BOJ 1882、JPY、日経225、ゼロ金利/YCC/QQE、バブル崩壊1990、金融危機1997、アベノミクス2013、2024マイナス金利解除）
-- [x] Task 4: eurozone/01_central_bank.html にサマリーダッシュボード追加（ECB 1998、EUR、Stoxx50、物価単一目標、ERM危機1992、ユーロ導入1999、欧州債務危機2010）
-- [x] Task 5: uk/01_central_bank.html にサマリーダッシュボード追加（BOE 1694、GBP、FTSE100、Big Bang 1986、Black Wednesday 1992、Brexit 2016、LDI危機2022）
-- [x] Task 6: switzerland/01_central_bank.html にサマリーダッシュボード追加（SNB 1907、CHF、SMI、CHFショック2015、UBS救済2008、CS破綻2023）
-- [x] Task 7: australia/01_central_bank.html にサマリーダッシュボード追加（RBA 1960、AUD、ASX200、30年無景気後退、資源ブーム2011、2024-2026金利動向）
-- [x] Task 8: newzealand/01_central_bank.html にサマリーダッシュボード追加（RBNZ 1934、NZD、NZX50、世界初IT 1990、Orr辞任2025、Breman就任）
-- [x] Task 9: canada/01_central_bank.html にサマリーダッシュボード追加（BOC 1934、CAD、TSX、GFC耐性、2024先進国一番乗り利下げ）
-- [x] Task 10: sweden/01_central_bank.html にサマリーダッシュボード追加（Riksbank 1668 世界最古、SEK、OMX30、1990s銀行危機、マイナス金利先駆者2015）
-- [x] Task 11: norway/01_central_bank.html にサマリーダッシュボード追加（Norges Bank 1816、NOK、OBX、石油発見1969、GPFG世界最大SWF、1990s銀行危機）
+### Phase 2: インタラクティブ地図エンジン
+- [ ] Task 4: assets/geomap.js を作成。クラスGeoMap with: loadEvents(jsonUrl), renderTimelineSlider(containerId, yearRange), renderEventList(containerId, year), highlightEvent(eventId), drawFlows(flows), updateDetailPanel(event), tooltips. SVG操作、矢印は path/marker-end で描画。年スライダーはinput[type=range]で実装
+- [ ] Task 5: assets/geomap.js に矢印描画ロジック追加。drawArrow(fromCountryId, toCountryId, type) — 国の中心座標から bezier curve で矢印を描く。flowタイプによって色分け（contagion=赤、policy=青、trade=緑、capital=橙）
 
-## Phase 2: 未図解セクションの一括ビジュアル化
+### Phase 3: メインページ作成
+- [ ] Task 6: summary/geopolitical_map.html を新規作成。レイアウト: 上部にタイトル+年スライダー、左サイドにイベントリスト、中央に世界地図SVG、右サイドにイベント詳細パネル。レスポンシブ対応（モバイルは縦積み）。assets/geomap.js, assets/world_map.svg をロード
+- [ ] Task 7: summary/geopolitical_map.html に「カテゴリーフィルター」追加（通貨制度/金融危機/地政学/エネルギー等のチェックボックス）。フィルターでイベントリストを絞り込む
+- [ ] Task 8: summary/geopolitical_map.html に「比較モード」追加（2つのイベントを並べてマップを2分割表示できるようにする）。任意機能だが入れると深い分析可能
 
-### Task 粒度: 1タスク = 1国の「残り未図解ページ全て」。
-対象ページ（各国）: 07_equity_early, 08_equity_modern, 16_banking, 17_corporate, 18_regulation, 19_trade, 20_lessons
-既にチャートがある場合はスキップ。無い場合は最低1図解を追加。
+### Phase 4: 統合・リンク追加
+- [ ] Task 9: index.html の Quick Links と Country Cards 上部に「🌍 Geopolitical Map」リンクを追加。stats-bar の下、country-grid の上に大きめのバナーカードで配置
+- [ ] Task 10: 各国の 01_central_bank.html の Historical Highlights タイムラインに「→ Geopolitical Map で見る」リンクを追加（イベントごとに対応するイベントIDへリンクして該当年・イベントを自動選択）
+- [ ] Task 11: summary/g10_timeline.html（既存横断年表）にも「Geopolitical Map」へのリンクを追加
 
-推奨図解タイプ:
-- **07_equity_early**: 取引所設立タイムライン（縦）+ 戦前株価チャート（ある場合）
-- **08_equity_modern**: 1980-1990s株価チャート（年次）+ 主要イベント注釈
-- **16_banking**: 主要銀行の時価総額/資産バーチャート + 銀行数推移
-- **17_corporate**: セクター構成円グラフ（時価総額ベース）+ トップ10企業バー
-- **18_regulation**: 規制変遷タイムライン（縦、カード形式）
-- **19_trade**: 貿易相手国バーチャート + 経常収支/GDP推移ライン
-- **20_lessons**: キーラーニングのインフォグラフィック（数値カード + アイコン）
-
-- [x] Task 12: 米国（US） — us/07, us/08, us/16, us/17, us/18, us/19, us/20 を順にチェックし、未図解のものに最低1図解追加
-- [x] Task 13: 日本（JP） — japan/07, japan/08, japan/16, japan/17, japan/18, japan/19, japan/20
-- [x] Task 14: ユーロ圏（EU） — eurozone/07, eurozone/08, eurozone/16, eurozone/17, eurozone/18, eurozone/19, eurozone/20
-- [x] Task 15: 英国（UK） — uk/07, uk/08, uk/16, uk/17, uk/18, uk/19, uk/20
-- [x] Task 16: スイス（CH） — switzerland/07, switzerland/08, switzerland/16, switzerland/17, switzerland/18, switzerland/19, switzerland/20
-- [x] Task 17: 豪州（AU） — australia/07, australia/08, australia/16, australia/17, australia/18, australia/19, australia/20
-- [x] Task 18: NZ — newzealand/07, newzealand/08, newzealand/16, newzealand/17, newzealand/18, newzealand/19, newzealand/20
-- [x] Task 19: カナダ — canada/07, canada/08, canada/16, canada/17, canada/18, canada/19, canada/20
-- [x] Task 20: スウェーデン — sweden/07, sweden/08, sweden/16, sweden/17, sweden/18, sweden/19, sweden/20
-- [x] Task 21: ノルウェー — norway/07, norway/08, norway/16, norway/17, norway/18, norway/19, norway/20
-
-## Phase 3: 監査
-- [x] Task 22: 全200ページを再スキャン。`grep -L 'svg-chart\|summary-dashboard\|pie-chart\|donut-chart\|historical-timeline' page.html` で「いかなるビジュアル要素も持たないページ」を抽出。見つかったページに最低1つ追加
-- [x] Task 23: us/08_equity_modern.html（ユーザー指摘ページ）を明示的に確認。1980s〜1990sのS&P500チャート（対数軸）が入っており、Black Monday 1987, Plaza 1985, LTCM 1998 等の注釈が上下交互配置で読みやすく表示されていることを確認。無ければ修正
-- [x] Task 24: progress.txt に Phase 3 の最終サマリー記載
+### Phase 5: 検証と最終調整
+- [ ] Task 12: ローカルHTTPサーバーで summary/geopolitical_map.html を起動して動作確認（python -m http.server）。年スライダーが動く、イベントリストが年で絞られる、地図クリックで国情報が出る、矢印が描画される、レスポンシブが効く、を確認。スクリーンショットを output/geomap_screenshot_*.png に保存（playwright MCP使用可）
+- [ ] Task 13: イベント数が30未満の場合は data/geopolitical_events.json に追加で20イベント以上記述。「現代史で重要だが見落としがちな出来事」（例: 1991ソ連崩壊、1993NAFTA、2003イラク戦争、2007BNP Paribasサブプライム、2009ギリシャ財政危機発覚、2012Whatever it takes、2014石油価格暴落、2017テーパリング、2019Repo危機、2025トランプ関税等）
+- [ ] Task 14: progress.txt に最終サマリー記載
 
 ## Constraints
-- 既存チャート・テキストは削除しない。追加のみ
-- データはハードコード。外部CDN/library禁止
-- サマリーダッシュボードは高さ圧縮（scroll多発を避ける）
-- 注釈ラベルは6個以下、上下交互配置のルールをPhase 2のchart挿入でも守る
-- 1タスクで7ファイルも修正するTask 12-21は重いので、既に図解があるページはスキップして時間短縮
+- **外部CDN/library禁止** — 純粋なインラインSVG + Vanilla JS
+- **オフライン動作** — file://でも動くこと（fetch JSONはローカル相対パスでOK、ただしCORS問題があるためJSONではなくinline scriptで埋め込む選択肢も考慮）
+- **既存ページに干渉しない** — 新規ページとして作成。既存のCSS/JSを破壊しない
+- **データはハードコード or ローカルJSON** — fetch失敗対策にinlineフォールバックも検討
+- **G10中心** — その他の国は影響国として登場するときのみ表示
 
 ## Notes
-### サマリーダッシュボードHTML構造例
-```html
-<section class="summary-dashboard">
-  <div class="dashboard-stats">
-    <div class="dashboard-stat">
-      <div class="stat-label">中央銀行</div>
-      <div class="stat-value">Federal Reserve</div>
-      <div class="stat-sub">Established 1913</div>
-    </div>
-    <!-- ... more stats ... -->
-  </div>
-  <div class="dashboard-nav-grid">
-    <!-- 6カテゴリ × ページリンクカード -->
-  </div>
-  <div class="dashboard-highlights">
-    <h3>Historical Highlights</h3>
-    <!-- 縦タイムライン -->
-  </div>
-</section>
+
+### 矢印タイプと色
+| type | 色 | 用途 |
+|------|---|------|
+| contagion | #ff6b6b (赤) | 危機伝播 |
+| policy | #5b8def (青) | 政策連動・協調介入 |
+| trade | #00d4aa (緑) | 貿易・関税 |
+| capital | #ff9f43 (橙) | 資金フロー |
+| sanction | #ffd93d (黄) | 制裁 |
+
+### 国Severity色
+| severity | 色 |
+|----------|---|
+| epicenter | #ff4444 (濃赤、震源地) |
+| critical | #ff6b6b (赤) |
+| high | #ff9f43 (橙) |
+| medium | #ffd93d (黄) |
+| low | #4ecdc4 (薄緑) |
+| neutral | #2a2a4a (グレー) |
+
+### 動作確認手順
+```bash
+cd C:/Users/PC_user/OneDrive/G10_research/g10_textbook
+python -m http.server 8080
+# ブラウザで http://localhost:8080/summary/geopolitical_map.html
 ```
 
-### 検証
-```bash
-# 全ページのビジュアル要素カウント
-for f in us japan eurozone uk switzerland australia newzealand canada sweden norway; do
-  grep -c '<svg' $f/*.html | grep ':0' && echo "$f has charts missing"
-done
-```
+### CORS対策
+file://でJSON fetchが効かない場合、events JSONを別の.jsファイルとして書き出してwindow.GEOPOLITICAL_EVENTS = {...}でグローバルに設定する方法も可。

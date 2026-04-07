@@ -1,8 +1,8 @@
-# G10 Textbook — Visualization Phase 3 (全セクション図解 + 国別サマリー)
+# G10 Textbook — Interactive Geopolitical World Map
 
 ## Project
-全セクションに最低1つの図解（チャート・タイムライン・円グラフ・インフォグラフィック等）を追加する。
-各国の01_central_bank.html先頭にサマリーダッシュボードを追加する。
+新規ページ summary/geopolitical_map.html を作成。世界地図上で年・イベント選択により地政学イベントの国際的影響を可視化する。
+純SVG + Vanilla JS、外部CDN禁止、オフライン動作必須。
 
 ## CRITICAL: 注釈ラベル配置ルール
 チャート上の注釈ラベルが重ならないよう、以下を厳守:

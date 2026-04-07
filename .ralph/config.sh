@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# G10 Textbook Visualization Phase 3
-MAX_ITERATIONS=40
+# G10 Textbook — Geopolitical Map
+MAX_ITERATIONS=25
 COOLDOWN_SECONDS=5
 MAX_CONSECUTIVE_ERRORS=10
 CLAUDE_MODEL="opus"

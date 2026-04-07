@@ -1,0 +1,932 @@
+{
+  "events": [
+    {
+      "id": "nixon_shock_1971",
+      "year": 1971,
+      "month": 8,
+      "title": "ニクソン・ショック（金兌換停止）",
+      "category": "通貨制度",
+      "severity": "critical",
+      "epicenter": "US",
+      "affected": [
+        {"country": "US", "impact": "critical", "note": "ドル防衛のため金兌換停止を一方的に発表"},
+        {"country": "JP", "impact": "high", "note": "円が変動相場制へ移行、1$=360円体制崩壊"},
+        {"country": "EU", "impact": "high", "note": "欧州通貨もフロート化、スネーク制度へ"},
+        {"country": "UK", "impact": "high", "note": "ポンドも変動相場制へ"},
+        {"country": "CH", "impact": "medium", "note": "スイスフランは安全通貨化の端緒"}
+      ],
+      "flows": [
+        {"from": "US", "to": "JP", "type": "currency_pressure", "label": "ドル離れ"},
+        {"from": "US", "to": "EU", "type": "currency_pressure", "label": "ドル離れ"},
+        {"from": "US", "to": "UK", "type": "currency_pressure"}
+      ],
+      "narrative": "1971年8月15日、ニクソン大統領は金とドルの兌換停止を発表。ブレトンウッズ体制は崩壊し、主要通貨は変動相場制へ移行した。"
+    },
+    {
+      "id": "oil_shock_1_1973",
+      "year": 1973,
+      "month": 10,
+      "title": "第1次オイルショック",
+      "category": "エネルギー",
+      "severity": "critical",
+      "epicenter": "SA",
+      "affected": [
+        {"country": "SA", "impact": "critical", "note": "OPEC原油価格4倍、禁輸措置"},
+        {"country": "US", "impact": "high", "note": "スタグフレーション突入"},
+        {"country": "JP", "impact": "critical", "note": "狂乱物価、インフレ率23%"},
+        {"country": "EU", "impact": "high", "note": "インフレ加速、日曜運転禁止"},
+        {"country": "UK", "impact": "high", "note": "3日間労働制導入"}
+      ],
+      "flows": [
+        {"from": "SA", "to": "US", "type": "sanction", "label": "原油禁輸"},
+        {"from": "SA", "to": "JP", "type": "sanction", "label": "原油制限"},
+        {"from": "SA", "to": "EU", "type": "sanction"}
+      ],
+      "narrative": "第4次中東戦争を契機にOPECが原油価格を引き上げ、イスラエル支援国への禁輸を発動。先進国は戦後初のマイナス成長に陥った。"
+    },
+    {
+      "id": "oil_shock_2_1979",
+      "year": 1979,
+      "month": 1,
+      "title": "第2次オイルショック / Volcker利上げ",
+      "category": "エネルギー",
+      "severity": "critical",
+      "epicenter": "US",
+      "affected": [
+        {"country": "US", "impact": "critical", "note": "FF金利20%、インフレ退治"},
+        {"country": "JP", "impact": "medium", "note": "省エネで乗り切り"},
+        {"country": "EU", "impact": "high", "note": "インフレ再燃"},
+        {"country": "UK", "impact": "high", "note": "サッチャリズム開始"}
+      ],
+      "flows": [
+        {"from": "US", "to": "EU", "type": "policy", "label": "金融引締連動"},
+        {"from": "US", "to": "JP", "type": "capital", "label": "資金米国回帰"}
+      ],
+      "narrative": "イラン革命で原油再高騰、ボルカーFRB議長はインフレ退治のため政策金利を20%まで引き上げた。"
+    },
+    {
+      "id": "plaza_accord_1985",
+      "year": 1985,
+      "month": 9,
+      "title": "プラザ合意",
+      "category": "通貨制度",
+      "severity": "high",
+      "epicenter": "US",
+      "affected": [
+        {"country": "US", "impact": "high", "note": "ドル高是正合意、貿易赤字削減狙い"},
+        {"country": "JP", "impact": "critical", "note": "円急騰240→120、バブル経済の芽"},
+        {"country": "EU", "impact": "high", "note": "独マルクも急騰"},
+        {"country": "UK", "impact": "medium", "note": "ポンド上昇"}
+      ],
+      "flows": [
+        {"from": "US", "to": "JP", "type": "policy", "label": "ドル高是正"},
+        {"from": "US", "to": "EU", "type": "policy", "label": "協調介入"}
+      ],
+      "narrative": "G5がNYプラザホテルで会合、ドル高是正に合意。円は2年で半値に。日本はその後の金融緩和でバブルへ。"
+    },
+    {
+      "id": "black_monday_1987",
+      "year": 1987,
+      "month": 10,
+      "title": "ブラックマンデー",
+      "category": "金融危機",
+      "severity": "high",
+      "epicenter": "US",
+      "affected": [
+        {"country": "US", "impact": "critical", "note": "NYダウ1日で-22.6%"},
+        {"country": "JP", "impact": "high", "note": "日経-14.9%"},
+        {"country": "UK", "impact": "high", "note": "FTSE-10%超"},
+        {"country": "EU", "impact": "high", "note": "独仏市場も暴落"}
+      ],
+      "flows": [
+        {"from": "US", "to": "JP", "type": "contagion"},
+        {"from": "US", "to": "UK", "type": "contagion"},
+        {"from": "US", "to": "EU", "type": "contagion"}
+      ],
+      "narrative": "1987年10月19日、NY株式市場が1日で22%暴落。プログラム取引が暴落を増幅、世界同時株安に発展した。"
+    },
+    {
+      "id": "berlin_wall_1989",
+      "year": 1989,
+      "month": 11,
+      "title": "ベルリンの壁崩壊",
+      "category": "地政学",
+      "severity": "high",
+      "epicenter": "EU",
+      "affected": [
+        {"country": "EU", "impact": "critical", "note": "東西ドイツ統一、マルク統合"},
+        {"country": "US", "impact": "medium", "note": "冷戦終結、平和の配当"},
+        {"country": "RU", "impact": "critical", "note": "東欧圏崩壊の前兆"}
+      ],
+      "flows": [
+        {"from": "EU", "to": "RU", "type": "policy", "label": "冷戦終結"}
+      ],
+      "narrative": "1989年11月9日、ベルリンの壁が崩壊。東西冷戦終結への流れが決定的となり、翌年ドイツは再統一を果たした。"
+    },
+    {
+      "id": "japan_bubble_burst_1990",
+      "year": 1990,
+      "month": 1,
+      "title": "日本バブル崩壊",
+      "category": "金融危機",
+      "severity": "critical",
+      "epicenter": "JP",
+      "affected": [
+        {"country": "JP", "impact": "critical", "note": "日経38915→半値、失われた30年開始"},
+        {"country": "US", "impact": "low", "note": "日本マネー撤退"},
+        {"country": "EU", "impact": "low", "note": "不動産価格に波及"}
+      ],
+      "flows": [
+        {"from": "JP", "to": "US", "type": "capital", "label": "資金回帰"}
+      ],
+      "narrative": "1989年末38915円でピークの日経平均は1990年から崩落。地価も90年代前半から下落し、日本は長期デフレに陥った。"
+    },
+    {
+      "id": "soviet_collapse_1991",
+      "year": 1991,
+      "month": 12,
+      "title": "ソビエト連邦崩壊",
+      "category": "地政学",
+      "severity": "critical",
+      "epicenter": "RU",
+      "affected": [
+        {"country": "RU", "impact": "critical", "note": "ソ連解体、ルーブル暴落"},
+        {"country": "US", "impact": "medium", "note": "単極支配時代到来"},
+        {"country": "EU", "impact": "high", "note": "東欧諸国の自由化"}
+      ],
+      "flows": [
+        {"from": "RU", "to": "EU", "type": "capital", "label": "資本逃避"}
+      ],
+      "narrative": "1991年12月、ソビエト連邦解体。冷戦時代が完全に終焉し、ロシアと旧ソ連諸国は市場経済への痛みを伴う移行期に入った。"
+    },
+    {
+      "id": "erm_crisis_1992",
+      "year": 1992,
+      "month": 9,
+      "title": "ERM危機・ブラックウェンズデー",
+      "category": "通貨制度",
+      "severity": "high",
+      "epicenter": "UK",
+      "affected": [
+        {"country": "UK", "impact": "critical", "note": "ポンドERM離脱、ソロスが10億ドル獲得"},
+        {"country": "EU", "impact": "high", "note": "ERM変動幅拡大を余儀なくされる"},
+        {"country": "CH", "impact": "medium", "note": "安全通貨として流入"}
+      ],
+      "flows": [
+        {"from": "UK", "to": "EU", "type": "contagion", "label": "通貨売り"}
+      ],
+      "narrative": "1992年9月16日、英国はポンド防衛に失敗しERMから離脱。ジョージ・ソロスがポンド売りで巨額利益を上げた。"
+    },
+    {
+      "id": "nafta_1994",
+      "year": 1994,
+      "month": 1,
+      "title": "NAFTA発効",
+      "category": "貿易戦争",
+      "severity": "medium",
+      "epicenter": "US",
+      "affected": [
+        {"country": "US", "impact": "medium", "note": "北米自由貿易圏成立"},
+        {"country": "CA", "impact": "medium", "note": "対米輸出拡大"}
+      ],
+      "flows": [
+        {"from": "US", "to": "CA", "type": "trade", "label": "自由貿易"}
+      ],
+      "narrative": "1994年1月1日、米加墨のNAFTAが発効。北米経済統合の基盤となり、サプライチェーン再編を促した。"
+    },
+    {
+      "id": "mexico_crisis_1994",
+      "year": 1994,
+      "month": 12,
+      "title": "メキシコ通貨危機（テキーラ危機）",
+      "category": "金融危機",
+      "severity": "high",
+      "epicenter": "US",
+      "affected": [
+        {"country": "US", "impact": "medium", "note": "500億ドル救済パッケージ主導"},
+        {"country": "CA", "impact": "low", "note": "NAFTAパートナーとして影響"}
+      ],
+      "flows": [
+        {"from": "US", "to": "CA", "type": "contagion"}
+      ],
+      "narrative": "1994年12月、メキシコペソが急落。米国は500億ドルの救済を主導し、中南米全域へ危機が波及した。"
+    },
+    {
+      "id": "asian_crisis_1997",
+      "year": 1997,
+      "month": 7,
+      "title": "アジア通貨危機",
+      "category": "金融危機",
+      "severity": "critical",
+      "epicenter": "JP",
+      "affected": [
+        {"country": "JP", "impact": "critical", "note": "山一證券破綻、金融システム動揺"},
+        {"country": "US", "impact": "medium", "note": "IMF救済主導"},
+        {"country": "AU", "impact": "high", "note": "豪ドル急落"},
+        {"country": "NZ", "impact": "high", "note": "NZドル急落"}
+      ],
+      "flows": [
+        {"from": "JP", "to": "AU", "type": "contagion"},
+        {"from": "JP", "to": "NZ", "type": "contagion"}
+      ],
+      "narrative": "タイバーツ切下げを契機にアジア通貨が連鎖暴落。日本の金融機関も巨額不良債権で山一證券等が破綻した。"
+    },
+    {
+      "id": "ltcm_russia_1998",
+      "year": 1998,
+      "month": 8,
+      "title": "LTCM破綻・ロシア危機",
+      "category": "金融危機",
+      "severity": "critical",
+      "epicenter": "RU",
+      "affected": [
+        {"country": "RU", "impact": "critical", "note": "デフォルト、ルーブル暴落"},
+        {"country": "US", "impact": "high", "note": "LTCM救済、FRB緊急利下げ"},
+        {"country": "EU", "impact": "high", "note": "独国債に逃避"}
+      ],
+      "flows": [
+        {"from": "RU", "to": "US", "type": "contagion", "label": "LTCM危機"},
+        {"from": "RU", "to": "EU", "type": "capital", "label": "質への逃避"}
+      ],
+      "narrative": "ロシアがデフォルト宣言、ヘッジファンドLTCMが破綻寸前に。FRBは緊急利下げと救済を組織した。"
+    },
+    {
+      "id": "euro_launch_1999",
+      "year": 1999,
+      "month": 1,
+      "title": "ユーロ導入",
+      "category": "通貨制度",
+      "severity": "high",
+      "epicenter": "EU",
+      "affected": [
+        {"country": "EU", "impact": "critical", "note": "11カ国で共通通貨ユーロ発足"},
+        {"country": "UK", "impact": "medium", "note": "不参加、独自路線"},
+        {"country": "CH", "impact": "medium", "note": "周辺国として影響大"}
+      ],
+      "flows": [
+        {"from": "EU", "to": "UK", "type": "policy"},
+        {"from": "EU", "to": "CH", "type": "policy"}
+      ],
+      "narrative": "1999年1月1日、欧州11カ国で単一通貨ユーロが発足。2002年には現金流通も始まった。"
+    },
+    {
+      "id": "dotcom_bust_2000",
+      "year": 2000,
+      "month": 3,
+      "title": "ドットコム・バブル崩壊",
+      "category": "金融危機",
+      "severity": "high",
+      "epicenter": "US",
+      "affected": [
+        {"country": "US", "impact": "critical", "note": "NASDAQ 5048→1114、-78%"},
+        {"country": "JP", "impact": "high", "note": "IT関連株も暴落"},
+        {"country": "EU", "impact": "high", "note": "ノイアマルクト崩壊"}
+      ],
+      "flows": [
+        {"from": "US", "to": "JP", "type": "contagion"},
+        {"from": "US", "to": "EU", "type": "contagion"}
+      ],
+      "narrative": "2000年3月NASDAQが5048でピーク、以後2年で78%下落。IT関連企業の多くが経営破綻した。"
+    },
+    {
+      "id": "nine_eleven_2001",
+      "year": 2001,
+      "month": 9,
+      "title": "9/11 同時多発テロ",
+      "category": "地政学",
+      "severity": "critical",
+      "epicenter": "US",
+      "affected": [
+        {"country": "US", "impact": "critical", "note": "WTC崩落、NYSE4日間停止"},
+        {"country": "UK", "impact": "high", "note": "対テロ戦争参加"},
+        {"country": "EU", "impact": "medium", "note": "緊急利下げ協調"},
+        {"country": "JP", "impact": "medium", "note": "円高・株安"}
+      ],
+      "flows": [
+        {"from": "US", "to": "UK", "type": "policy", "label": "対テロ連携"},
+        {"from": "US", "to": "EU", "type": "policy", "label": "協調利下げ"}
+      ],
+      "narrative": "2001年9月11日、米同時多発テロ発生。世界市場は急落、FRBは緊急利下げを実施、対テロ戦争が始まった。"
+    },
+    {
+      "id": "iraq_war_2003",
+      "year": 2003,
+      "month": 3,
+      "title": "イラク戦争開戦",
+      "category": "地政学",
+      "severity": "high",
+      "epicenter": "US",
+      "affected": [
+        {"country": "US", "impact": "high", "note": "対イラク軍事行動"},
+        {"country": "UK", "impact": "high", "note": "有志連合参加"},
+        {"country": "SA", "impact": "medium", "note": "原油価格上昇圧力"}
+      ],
+      "flows": [
+        {"from": "US", "to": "UK", "type": "policy", "label": "有志連合"}
+      ],
+      "narrative": "2003年3月、米英主導でイラク戦争開戦。原油価格は上昇、地政学リスクプレミアムが拡大した。"
+    },
+    {
+      "id": "bnp_paribas_2007",
+      "year": 2007,
+      "month": 8,
+      "title": "BNP Paribasサブプライム凍結",
+      "category": "金融危機",
+      "severity": "high",
+      "epicenter": "EU",
+      "affected": [
+        {"country": "EU", "impact": "high", "note": "BNPが傘下ファンド3本を凍結、世界的信用収縮の始まり"},
+        {"country": "US", "impact": "high", "note": "サブプライム危機表面化"},
+        {"country": "UK", "impact": "high", "note": "ノーザンロック取付騒ぎ"}
+      ],
+      "flows": [
+        {"from": "EU", "to": "US", "type": "contagion"},
+        {"from": "EU", "to": "UK", "type": "contagion"}
+      ],
+      "narrative": "2007年8月9日、BNP Paribasがサブプライム関連3ファンドの換金停止を発表。世界的な信用収縮の発火点となった。"
+    },
+    {
+      "id": "lehman_shock_2008",
+      "year": 2008,
+      "month": 9,
+      "title": "リーマンショック",
+      "category": "金融危機",
+      "severity": "critical",
+      "epicenter": "US",
+      "affected": [
+        {"country": "US", "impact": "critical", "note": "Lehman破綻、GDP-4.3%"},
+        {"country": "JP", "impact": "critical", "note": "日経-42%、円急騰"},
+        {"country": "EU", "impact": "critical", "note": "銀行システム動揺"},
+        {"country": "UK", "impact": "critical", "note": "RBS国有化"},
+        {"country": "CH", "impact": "high", "note": "UBS政府救済"},
+        {"country": "AU", "impact": "high", "note": "豪ドル急落"},
+        {"country": "CA", "impact": "high", "note": "原油急落で打撃"}
+      ],
+      "flows": [
+        {"from": "US", "to": "JP", "type": "contagion"},
+        {"from": "US", "to": "EU", "type": "contagion"},
+        {"from": "US", "to": "UK", "type": "contagion"},
+        {"from": "US", "to": "CH", "type": "contagion"}
+      ],
+      "narrative": "2008年9月15日、リーマン・ブラザーズが破綻。世界的金融危機が深刻化し、各国は協調利下げと財政出動に走った。"
+    },
+    {
+      "id": "greece_crisis_2009",
+      "year": 2009,
+      "month": 10,
+      "title": "ギリシャ財政危機発覚",
+      "category": "金融危機",
+      "severity": "high",
+      "epicenter": "EU",
+      "affected": [
+        {"country": "EU", "impact": "critical", "note": "ギリシャ赤字隠蔽、ユーロ危機の火種"},
+        {"country": "CH", "impact": "medium", "note": "CHF買い圧力"}
+      ],
+      "flows": [
+        {"from": "EU", "to": "CH", "type": "capital", "label": "CHFへ逃避"}
+      ],
+      "narrative": "2009年10月、ギリシャ政権交代で財政赤字が実際はGDPの12.7%と判明。欧州ソブリン危機の発端となった。"
+    },
+    {
+      "id": "euro_sovereign_2010",
+      "year": 2010,
+      "month": 5,
+      "title": "欧州ソブリン危機",
+      "category": "金融危機",
+      "severity": "critical",
+      "epicenter": "EU",
+      "affected": [
+        {"country": "EU", "impact": "critical", "note": "PIIGS国債急落、EFSF設立"},
+        {"country": "CH", "impact": "high", "note": "CHF急騰で輸出打撃"},
+        {"country": "UK", "impact": "medium", "note": "英銀エクスポージャー懸念"}
+      ],
+      "flows": [
+        {"from": "EU", "to": "CH", "type": "capital", "label": "CHFへ逃避"}
+      ],
+      "narrative": "2010年5月、ギリシャ・アイルランド・ポルトガルへの救済が相次ぎ、欧州ソブリン危機が本格化した。"
+    },
+    {
+      "id": "fukushima_2011",
+      "year": 2011,
+      "month": 3,
+      "title": "東日本大震災・福島原発事故",
+      "category": "地政学",
+      "severity": "critical",
+      "epicenter": "JP",
+      "affected": [
+        {"country": "JP", "impact": "critical", "note": "M9.0、津波、原発事故"},
+        {"country": "US", "impact": "medium", "note": "サプライチェーン寸断"},
+        {"country": "EU", "impact": "medium", "note": "独が脱原発決定"}
+      ],
+      "flows": [
+        {"from": "JP", "to": "US", "type": "contagion", "label": "サプライ寸断"},
+        {"from": "JP", "to": "EU", "type": "policy", "label": "脱原発波及"}
+      ],
+      "narrative": "2011年3月11日、M9.0の東日本大震災と福島第一原発事故。円は安全通貨として急騰、G7は協調介入を実施した。"
+    },
+    {
+      "id": "whatever_it_takes_2012",
+      "year": 2012,
+      "month": 7,
+      "title": "ドラギ 'Whatever it takes'",
+      "category": "中央銀行",
+      "severity": "high",
+      "epicenter": "EU",
+      "affected": [
+        {"country": "EU", "impact": "critical", "note": "ECBがユーロ防衛を公約、危機鎮静"},
+        {"country": "CH", "impact": "medium", "note": "CHF圧力緩和"}
+      ],
+      "flows": [
+        {"from": "EU", "to": "CH", "type": "policy"}
+      ],
+      "narrative": "2012年7月26日、ドラギECB総裁が『ユーロを守るためなら何でもする』と宣言。欧州危機は劇的に沈静化した。"
+    },
+    {
+      "id": "taper_tantrum_2013",
+      "year": 2013,
+      "month": 5,
+      "title": "テーパー・タントラム",
+      "category": "中央銀行",
+      "severity": "medium",
+      "epicenter": "US",
+      "affected": [
+        {"country": "US", "impact": "medium", "note": "バーナンキがQE縮小示唆、長期金利急騰"},
+        {"country": "JP", "impact": "medium", "note": "新興国通貨急落"}
+      ],
+      "flows": [
+        {"from": "US", "to": "JP", "type": "capital"}
+      ],
+      "narrative": "2013年5月、バーナンキFRB議長がQE縮小を示唆。米長期金利が急騰し、新興国から資金が流出した。"
+    },
+    {
+      "id": "crimea_annexation_2014",
+      "year": 2014,
+      "month": 3,
+      "title": "ロシアのクリミア併合",
+      "category": "地政学",
+      "severity": "high",
+      "epicenter": "RU",
+      "affected": [
+        {"country": "RU", "impact": "critical", "note": "欧米から経済制裁"},
+        {"country": "EU", "impact": "high", "note": "対ロ制裁、エネルギー依存問題"},
+        {"country": "US", "impact": "medium", "note": "制裁主導"}
+      ],
+      "flows": [
+        {"from": "EU", "to": "RU", "type": "sanction", "label": "制裁"},
+        {"from": "US", "to": "RU", "type": "sanction", "label": "制裁"}
+      ],
+      "narrative": "2014年3月、ロシアがクリミア半島を併合。欧米はロシアに対する段階的な経済制裁を発動した。"
+    },
+    {
+      "id": "oil_crash_2014",
+      "year": 2014,
+      "month": 10,
+      "title": "原油価格暴落",
+      "category": "エネルギー",
+      "severity": "high",
+      "epicenter": "SA",
+      "affected": [
+        {"country": "SA", "impact": "high", "note": "OPECが減産見送り、シェア戦略"},
+        {"country": "CA", "impact": "high", "note": "カナダドル急落"},
+        {"country": "NO", "impact": "high", "note": "NOKも急落、財政圧迫"},
+        {"country": "RU", "impact": "critical", "note": "ルーブル暴落"}
+      ],
+      "flows": [
+        {"from": "SA", "to": "CA", "type": "contagion"},
+        {"from": "SA", "to": "NO", "type": "contagion"},
+        {"from": "SA", "to": "RU", "type": "contagion"}
+      ],
+      "narrative": "2014年後半、原油価格が100ドルから40ドル台まで急落。産油国通貨は軒並み売られ、資源国経済を直撃した。"
+    },
+    {
+      "id": "snb_shock_2015",
+      "year": 2015,
+      "month": 1,
+      "title": "SNB CHFショック",
+      "category": "中央銀行",
+      "severity": "high",
+      "epicenter": "CH",
+      "affected": [
+        {"country": "CH", "impact": "critical", "note": "EURCHFフロア撤廃、CHF20%急騰"},
+        {"country": "EU", "impact": "medium", "note": "EUR急落"}
+      ],
+      "flows": [
+        {"from": "CH", "to": "EU", "type": "currency_pressure"}
+      ],
+      "narrative": "2015年1月15日、SNBが突如EURCHF1.20フロアを撤廃。CHFは瞬間20%急騰、多くのFX業者が破綻した。"
+    },
+    {
+      "id": "china_shock_2015",
+      "year": 2015,
+      "month": 8,
+      "title": "チャイナショック（人民元切下げ）",
+      "category": "通貨制度",
+      "severity": "high",
+      "epicenter": "CN",
+      "affected": [
+        {"country": "CN", "impact": "critical", "note": "人民元3日連続切下げ"},
+        {"country": "AU", "impact": "high", "note": "資源需要懸念でAUD急落"},
+        {"country": "US", "impact": "medium", "note": "NY株急落"}
+      ],
+      "flows": [
+        {"from": "CN", "to": "AU", "type": "contagion"},
+        {"from": "CN", "to": "US", "type": "contagion"}
+      ],
+      "narrative": "2015年8月、中国人民銀行が人民元を3日連続切下げ。世界的リスクオフとなり、豪ドルや商品通貨が急落した。"
+    },
+    {
+      "id": "brexit_vote_2016",
+      "year": 2016,
+      "month": 6,
+      "title": "Brexit国民投票",
+      "category": "地政学",
+      "severity": "critical",
+      "epicenter": "UK",
+      "affected": [
+        {"country": "UK", "impact": "critical", "note": "離脱51.9%、ポンド1日-10%"},
+        {"country": "EU", "impact": "high", "note": "EU統合への逆風"},
+        {"country": "JP", "impact": "medium", "note": "円急騰、日経急落"}
+      ],
+      "flows": [
+        {"from": "UK", "to": "EU", "type": "policy", "label": "離脱"},
+        {"from": "UK", "to": "JP", "type": "contagion"}
+      ],
+      "narrative": "2016年6月23日、英国民投票でEU離脱派が勝利。ポンドは30年ぶり安値、キャメロン首相辞任を発表した。"
+    },
+    {
+      "id": "trump_election_2016",
+      "year": 2016,
+      "month": 11,
+      "title": "トランプ大統領選勝利",
+      "category": "地政学",
+      "severity": "high",
+      "epicenter": "US",
+      "affected": [
+        {"country": "US", "impact": "high", "note": "リフレ期待で株高ドル高"},
+        {"country": "JP", "impact": "medium", "note": "円安株高"},
+        {"country": "EU", "impact": "medium", "note": "対米関係不透明化"}
+      ],
+      "flows": [
+        {"from": "US", "to": "JP", "type": "capital"},
+        {"from": "US", "to": "EU", "type": "policy"}
+      ],
+      "narrative": "2016年11月8日、トランプが予想外に大統領選勝利。減税・規制緩和期待から米株は急騰、ドルも上昇した。"
+    },
+    {
+      "id": "us_china_trade_2018",
+      "year": 2018,
+      "month": 3,
+      "title": "米中貿易戦争開戦",
+      "category": "貿易戦争",
+      "severity": "high",
+      "epicenter": "US",
+      "affected": [
+        {"country": "US", "impact": "high", "note": "対中関税発動"},
+        {"country": "CN", "impact": "critical", "note": "報復関税、元安"},
+        {"country": "AU", "impact": "high", "note": "対中輸出打撃"},
+        {"country": "CA", "impact": "medium", "note": "鉄鋼関税"}
+      ],
+      "flows": [
+        {"from": "US", "to": "CN", "type": "trade", "label": "関税"},
+        {"from": "US", "to": "CA", "type": "trade"}
+      ],
+      "narrative": "2018年3月、トランプ政権が鉄鋼・アルミに25%関税。続いて対中301条関税を発動、米中貿易戦争が本格化した。"
+    },
+    {
+      "id": "repo_crisis_2019",
+      "year": 2019,
+      "month": 9,
+      "title": "米レポ市場危機",
+      "category": "中央銀行",
+      "severity": "medium",
+      "epicenter": "US",
+      "affected": [
+        {"country": "US", "impact": "high", "note": "レポ金利10%急騰、FRB緊急資金供給"}
+      ],
+      "flows": [],
+      "narrative": "2019年9月17日、米レポ金利が一時10%まで急騰。FRBは緊急に資金供給を実施、バランスシート再拡大へ転換した。"
+    },
+    {
+      "id": "covid_2020",
+      "year": 2020,
+      "month": 3,
+      "title": "COVID-19 パンデミック",
+      "category": "パンデミック",
+      "severity": "critical",
+      "epicenter": "CN",
+      "affected": [
+        {"country": "CN", "impact": "critical", "note": "武漢ロックダウン発端"},
+        {"country": "US", "impact": "critical", "note": "NY株-34%、FRB緊急ゼロ金利"},
+        {"country": "EU", "impact": "critical", "note": "ロックダウン、PEPP導入"},
+        {"country": "JP", "impact": "high", "note": "緊急事態宣言"},
+        {"country": "UK", "impact": "critical", "note": "BOE緊急利下げ、QE拡大"},
+        {"country": "AU", "impact": "high", "note": "RBA初のQE実施"},
+        {"country": "CA", "impact": "high", "note": "BOCもゼロ金利へ"},
+        {"country": "CH", "impact": "medium", "note": "SNB介入強化"},
+        {"country": "NZ", "impact": "high", "note": "RBNZ QE導入"},
+        {"country": "SE", "impact": "medium", "note": "独自の緩やか対策"},
+        {"country": "NO", "impact": "high", "note": "原油急落と二重打撃"}
+      ],
+      "flows": [
+        {"from": "CN", "to": "US", "type": "contagion"},
+        {"from": "CN", "to": "EU", "type": "contagion"},
+        {"from": "CN", "to": "JP", "type": "contagion"},
+        {"from": "US", "to": "EU", "type": "policy", "label": "協調緩和"}
+      ],
+      "narrative": "2020年3月、WHOがパンデミック宣言。世界的ロックダウンで市場暴落、各国中銀は前例ない大規模緩和を実施した。"
+    },
+    {
+      "id": "gamestop_2021",
+      "year": 2021,
+      "month": 1,
+      "title": "GameStop スクイーズ",
+      "category": "金融危機",
+      "severity": "low",
+      "epicenter": "US",
+      "affected": [
+        {"country": "US", "impact": "medium", "note": "個人投資家がヘッジファンド追い詰める"}
+      ],
+      "flows": [],
+      "narrative": "2021年1月、Redditの個人投資家がGME株を買い上げ、空売りヘッジファンドが巨額損失。市場構造の変化を象徴した。"
+    },
+    {
+      "id": "ukraine_war_2022",
+      "year": 2022,
+      "month": 2,
+      "title": "ロシアのウクライナ侵攻",
+      "category": "地政学",
+      "severity": "critical",
+      "epicenter": "RU",
+      "affected": [
+        {"country": "RU", "impact": "critical", "note": "大規模侵攻、SWIFT排除"},
+        {"country": "EU", "impact": "critical", "note": "エネルギー危機、インフレ加速"},
+        {"country": "US", "impact": "high", "note": "制裁主導、LNG輸出拡大"},
+        {"country": "UK", "impact": "high", "note": "制裁・軍事支援"},
+        {"country": "NO", "impact": "high", "note": "ガス最大供給国に"},
+        {"country": "CH", "impact": "medium", "note": "中立政策見直し"}
+      ],
+      "flows": [
+        {"from": "RU", "to": "EU", "type": "sanction"},
+        {"from": "US", "to": "RU", "type": "sanction"},
+        {"from": "NO", "to": "EU", "type": "trade", "label": "ガス供給"}
+      ],
+      "narrative": "2022年2月24日、ロシアがウクライナに全面侵攻。欧米は前例なき制裁を発動、エネルギー価格が急騰した。"
+    },
+    {
+      "id": "fed_hike_2022",
+      "year": 2022,
+      "month": 3,
+      "title": "FRB急激利上げ開始",
+      "category": "中央銀行",
+      "severity": "high",
+      "epicenter": "US",
+      "affected": [
+        {"country": "US", "impact": "high", "note": "1年で0→5.25%"},
+        {"country": "JP", "impact": "high", "note": "円150円台、日米金利差"},
+        {"country": "EU", "impact": "high", "note": "ECBも利上げ転換"}
+      ],
+      "flows": [
+        {"from": "US", "to": "JP", "type": "capital", "label": "金利差拡大"},
+        {"from": "US", "to": "EU", "type": "policy"}
+      ],
+      "narrative": "2022年3月、FRBは利上げを開始。40年ぶりインフレ退治のため、1年で500bp以上の急速利上げを実施した。"
+    },
+    {
+      "id": "boe_gilt_2022",
+      "year": 2022,
+      "month": 9,
+      "title": "英国債危機（Truss ミニ予算）",
+      "category": "金融危機",
+      "severity": "high",
+      "epicenter": "UK",
+      "affected": [
+        {"country": "UK", "impact": "critical", "note": "Truss減税で英国債暴落、ポンド最安値"},
+        {"country": "EU", "impact": "medium", "note": "Gilt危機が波及懸念"}
+      ],
+      "flows": [
+        {"from": "UK", "to": "EU", "type": "contagion"}
+      ],
+      "narrative": "2022年9月、トラス政権の大型減税発表で英国債が暴落、ポンドは史上最安値。BOE緊急介入、トラス首相は45日で辞任した。"
+    },
+    {
+      "id": "svb_cs_2023",
+      "year": 2023,
+      "month": 3,
+      "title": "SVB/Credit Suisse 銀行危機",
+      "category": "金融危機",
+      "severity": "high",
+      "epicenter": "US",
+      "affected": [
+        {"country": "US", "impact": "critical", "note": "SVB破綻、地銀連鎖不安"},
+        {"country": "CH", "impact": "critical", "note": "UBSがCS吸収合併"},
+        {"country": "EU", "impact": "high", "note": "欧州銀行株動揺"}
+      ],
+      "flows": [
+        {"from": "US", "to": "CH", "type": "contagion"},
+        {"from": "US", "to": "EU", "type": "contagion"}
+      ],
+      "narrative": "2023年3月、SVB破綻に続きCredit Suisseが経営危機。UBSによる緊急救済合併でグローバルSIB一角が消滅した。"
+    },
+    {
+      "id": "boj_exit_2024",
+      "year": 2024,
+      "month": 3,
+      "title": "日銀マイナス金利解除",
+      "category": "中央銀行",
+      "severity": "high",
+      "epicenter": "JP",
+      "affected": [
+        {"country": "JP", "impact": "critical", "note": "17年ぶり利上げ、YCC終了"},
+        {"country": "US", "impact": "medium", "note": "キャリートレード巻戻し懸念"}
+      ],
+      "flows": [
+        {"from": "JP", "to": "US", "type": "capital"}
+      ],
+      "narrative": "2024年3月、日銀が17年ぶりに利上げ、マイナス金利・YCCを終了。異次元緩和からの正常化が始まった。"
+    },
+    {
+      "id": "nikkei_ath_2024",
+      "year": 2024,
+      "month": 2,
+      "title": "日経平均 34年ぶり最高値更新",
+      "category": "金融危機",
+      "severity": "low",
+      "epicenter": "JP",
+      "affected": [
+        {"country": "JP", "impact": "medium", "note": "1989年の38915円を突破"}
+      ],
+      "flows": [],
+      "narrative": "2024年2月22日、日経平均は38915円を突破、34年ぶりに史上最高値を更新した。"
+    },
+    {
+      "id": "yen_carry_unwind_2024",
+      "year": 2024,
+      "month": 8,
+      "title": "円キャリー巻戻し暴落",
+      "category": "金融危機",
+      "severity": "high",
+      "epicenter": "JP",
+      "affected": [
+        {"country": "JP", "impact": "critical", "note": "日経1日-12.4%、史上最大下げ幅"},
+        {"country": "US", "impact": "high", "note": "Nasdaq急落"}
+      ],
+      "flows": [
+        {"from": "JP", "to": "US", "type": "contagion"}
+      ],
+      "narrative": "2024年8月5日、日銀追加利上げと米雇用統計悪化で円キャリー巻戻し。日経平均は史上最大の下げ幅を記録した。"
+    },
+    {
+      "id": "middle_east_2024",
+      "year": 2024,
+      "month": 10,
+      "title": "中東緊張・イラン直接攻撃",
+      "category": "地政学",
+      "severity": "high",
+      "epicenter": "SA",
+      "affected": [
+        {"country": "SA", "impact": "high", "note": "原油価格変動"},
+        {"country": "US", "impact": "medium", "note": "防空支援"},
+        {"country": "EU", "impact": "medium", "note": "エネルギー不安"}
+      ],
+      "flows": [
+        {"from": "SA", "to": "EU", "type": "trade"}
+      ],
+      "narrative": "2024年10月、イランがイスラエルへミサイル直接攻撃。中東全面戦争懸念で原油は一時急騰した。"
+    },
+    {
+      "id": "trump_tariff_2025",
+      "year": 2025,
+      "month": 4,
+      "title": "トランプ相互関税",
+      "category": "貿易戦争",
+      "severity": "critical",
+      "epicenter": "US",
+      "affected": [
+        {"country": "US", "impact": "critical", "note": "全世界に相互関税発表、株式急落"},
+        {"country": "CN", "impact": "critical", "note": "125%関税報復"},
+        {"country": "EU", "impact": "high", "note": "20%関税"},
+        {"country": "JP", "impact": "high", "note": "24%関税発表"},
+        {"country": "CA", "impact": "high", "note": "USMCA枠外品目に関税"},
+        {"country": "UK", "impact": "medium", "note": "10%関税"},
+        {"country": "AU", "impact": "medium", "note": "10%関税"}
+      ],
+      "flows": [
+        {"from": "US", "to": "CN", "type": "trade", "label": "相互関税"},
+        {"from": "US", "to": "EU", "type": "trade"},
+        {"from": "US", "to": "JP", "type": "trade"},
+        {"from": "US", "to": "CA", "type": "trade"}
+      ],
+      "narrative": "2025年4月2日、トランプ大統領が『解放の日』として全世界に相互関税を発表。世界株式は歴史的急落となった。"
+    },
+    {
+      "id": "riksbank_neg_2015",
+      "year": 2015,
+      "month": 2,
+      "title": "Riksbank マイナス金利導入",
+      "category": "中央銀行",
+      "severity": "medium",
+      "epicenter": "SE",
+      "affected": [
+        {"country": "SE", "impact": "high", "note": "政策金利-0.10%、世界初の先進国マイナス"},
+        {"country": "NO", "impact": "medium", "note": "NOKも緩和圧力"}
+      ],
+      "flows": [
+        {"from": "SE", "to": "NO", "type": "policy"}
+      ],
+      "narrative": "2015年2月、スウェーデン中銀がマイナス金利を導入。先進国中銀の非伝統的政策の先駆けとなった。"
+    },
+    {
+      "id": "norway_wealth_2022",
+      "year": 2022,
+      "month": 6,
+      "title": "ノルウェー政府年金基金 史上最大損失",
+      "category": "金融危機",
+      "severity": "medium",
+      "epicenter": "NO",
+      "affected": [
+        {"country": "NO", "impact": "high", "note": "GPFG 1740億ドル損失、半年で-14.4%"}
+      ],
+      "flows": [],
+      "narrative": "2022年上半期、世界最大級のソブリン・ウェルス・ファンドであるノルウェー政府年金基金が史上最大の評価損を計上した。"
+    },
+    {
+      "id": "rbnz_first_hike_2021",
+      "year": 2021,
+      "month": 10,
+      "title": "RBNZ 先進国で先陣利上げ",
+      "category": "中央銀行",
+      "severity": "medium",
+      "epicenter": "NZ",
+      "affected": [
+        {"country": "NZ", "impact": "high", "note": "7年ぶり利上げ、先進国初のコロナ後出口"},
+        {"country": "AU", "impact": "medium", "note": "RBAへの利上げ圧力"}
+      ],
+      "flows": [
+        {"from": "NZ", "to": "AU", "type": "policy"}
+      ],
+      "narrative": "2021年10月、RBNZが先進国で先陣を切り利上げ。コロナ緩和からの出口戦略のモデルケースとなった。"
+    },
+    {
+      "id": "canada_oil_sands_2016",
+      "year": 2016,
+      "month": 5,
+      "title": "Fort McMurray 山火事・原油供給ショック",
+      "category": "エネルギー",
+      "severity": "low",
+      "epicenter": "CA",
+      "affected": [
+        {"country": "CA", "impact": "high", "note": "オイルサンド生産1日100万バレル停止"}
+      ],
+      "flows": [],
+      "narrative": "2016年5月、カナダ・アルバータ州の大規模山火事でオイルサンド生産が大幅停止、原油市場に一時的供給ショック。"
+    },
+    {
+      "id": "abenomics_2013",
+      "year": 2013,
+      "month": 4,
+      "title": "異次元緩和（アベノミクス）開始",
+      "category": "中央銀行",
+      "severity": "high",
+      "epicenter": "JP",
+      "affected": [
+        {"country": "JP", "impact": "critical", "note": "黒田日銀が量的・質的緩和導入、円安株高"},
+        {"country": "US", "impact": "medium", "note": "円キャリー復活"}
+      ],
+      "flows": [
+        {"from": "JP", "to": "US", "type": "capital", "label": "円キャリー"}
+      ],
+      "narrative": "2013年4月4日、黒田新総裁が異次元緩和を発表。2年で資金供給2倍、円は80円から一気に100円超へ。"
+    },
+    {
+      "id": "scotland_ref_2014",
+      "year": 2014,
+      "month": 9,
+      "title": "スコットランド独立住民投票",
+      "category": "地政学",
+      "severity": "medium",
+      "epicenter": "UK",
+      "affected": [
+        {"country": "UK", "impact": "high", "note": "否決55%、連合国家維持"}
+      ],
+      "flows": [],
+      "narrative": "2014年9月18日、スコットランド独立住民投票は反対55%で否決。ポンドはボラティリティ上昇後に持ち直した。"
+    },
+    {
+      "id": "ecb_qe_2015",
+      "year": 2015,
+      "month": 3,
+      "title": "ECB QE開始",
+      "category": "中央銀行",
+      "severity": "high",
+      "epicenter": "EU",
+      "affected": [
+        {"country": "EU", "impact": "critical", "note": "月600億ユーロ資産購入開始"},
+        {"country": "CH", "impact": "high", "note": "CHF圧力、SNBフロア放棄の遠因"}
+      ],
+      "flows": [
+        {"from": "EU", "to": "CH", "type": "policy"}
+      ],
+      "narrative": "2015年3月、ECBが月600億ユーロの量的緩和を開始。遅れてのQE導入で欧州危機からの脱却を図った。"
+    }
+  ]
+}

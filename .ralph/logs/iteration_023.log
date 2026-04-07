@@ -1,6 +1,6 @@
-=== Iteration 23 === 2026-04-07 08:12:30 ===
+=== Iteration 23 === 2026-04-07 10:36:18 ===
 Exit code: 0
-Duration: 127s
+Duration: 60s
 
-Task 23 complete. Added FTSE 100 charts to uk/09 (2000-2019, 6 annotations) and uk/10 (2020-2025, 4 annotations).
+Task 23 complete. us/08_equity_modern.html already has the required chart with Plaza 1985, Black Monday 1987, and LTCM 1998 annotations properly alternating with background rects.
 

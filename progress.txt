@@ -132,3 +132,4 @@ Tue Apr  7 09:55:01     2026 Task 11: Added Norway country summary dashboard to 
 - Phase 3 audit: Task 22 injected svg-chart into 38 previously-blank pages; Task 23 verified us/08 S&P 1980-1999 chart with Plaza/BlackMonday/LTCM annotations alternating labels
 - Result: 200/200 pages now carry at least one visual element (svg-chart, summary-dashboard, pie-chart, donut-chart, or historical-timeline)
 - Constraints honored: no external CDN, inline SVG only, existing content preserved, annotation rules (<=6 events, alternating, <=10 chars) followed.
+[Tue Apr  7 15:07:28     2026] Task 1: created data/geopolitical_events.json with 50 geopolitical/financial events (1971 Nixon -> 2025 Trump tariffs)
