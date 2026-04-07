@@ -16,6 +16,17 @@
 
 <section class="geomap-toolbar">
   <div id="timeline" class="timeline-slider"></div>
+  <div id="category-filter" class="category-filter">
+    <span class="category-filter-label">Category:</span>
+    <label><input type="checkbox" value="通貨制度"> 通貨制度</label>
+    <label><input type="checkbox" value="金融危機"> 金融危機</label>
+    <label><input type="checkbox" value="中央銀行"> 中央銀行</label>
+    <label><input type="checkbox" value="地政学"> 地政学</label>
+    <label><input type="checkbox" value="エネルギー"> エネルギー</label>
+    <label><input type="checkbox" value="貿易戦争"> 貿易戦争</label>
+    <label><input type="checkbox" value="パンデミック"> パンデミック</label>
+    <button type="button" id="category-filter-clear" class="category-filter-clear">Clear</button>
+  </div>
 </section>
 
 <main class="geomap-layout">
@@ -66,6 +77,19 @@
     console.error('Failed to load events:', e);
   }
   if (typeof map.init === 'function') map.init();
+
+  // Category filter wiring
+  const filterEl = document.getElementById('category-filter');
+  const checkboxes = filterEl.querySelectorAll('input[type=checkbox]');
+  const applyFilter = () => {
+    const active = Array.from(checkboxes).filter(c => c.checked).map(c => c.value);
+    map.setCategoryFilter(active);
+  };
+  checkboxes.forEach(c => c.addEventListener('change', applyFilter));
+  document.getElementById('category-filter-clear').addEventListener('click', () => {
+    checkboxes.forEach(c => { c.checked = false; });
+    applyFilter();
+  });
 })();
 </script>
 </body>

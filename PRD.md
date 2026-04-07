@@ -81,7 +81,7 @@ G10通貨国を中心に、地政学リスクと金融市場の連動を直感�
 
 ### Phase 3: メインページ作成
 - [x] Task 6: summary/geopolitical_map.html を新規作成。レイアウト: 上部にタイトル+年スライダー、左サイドにイベントリスト、中央に世界地図SVG、右サイドにイベント詳細パネル。レスポンシブ対応（モバイルは縦積み）。assets/geomap.js, assets/world_map.svg をロード
-- [ ] Task 7: summary/geopolitical_map.html に「カテゴリーフィルター」追加（通貨制度/金融危機/地政学/エネルギー等のチェックボックス）。フィルターでイベントリストを絞り込む
+- [x] Task 7: summary/geopolitical_map.html に「カテゴリーフィルター」追加（通貨制度/金融危機/地政学/エネルギー等のチェックボックス）。フィルターでイベントリストを絞り込む
 - [ ] Task 8: summary/geopolitical_map.html に「比較モード」追加（2つのイベントを並べてマップを2分割表示できるようにする）。任意機能だが入れると深い分析可能
 
 ### Phase 4: 統合・リンク追加
