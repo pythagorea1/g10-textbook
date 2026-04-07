@@ -57,7 +57,7 @@ Phase 2では主要データページ（02, 06, 13, 14等）にチャートを�
 - [x] Task 21: ノルウェー — norway/07, norway/08, norway/16, norway/17, norway/18, norway/19, norway/20
 
 ## Phase 3: 監査
-- [ ] Task 22: 全200ページを再スキャン。`grep -L 'svg-chart\|summary-dashboard\|pie-chart\|donut-chart\|historical-timeline' page.html` で「いかなるビジュアル要素も持たないページ」を抽出。見つかったページに最低1つ追加
+- [x] Task 22: 全200ページを再スキャン。`grep -L 'svg-chart\|summary-dashboard\|pie-chart\|donut-chart\|historical-timeline' page.html` で「いかなるビジュアル要素も持たないページ」を抽出。見つかったページに最低1つ追加
 - [ ] Task 23: us/08_equity_modern.html（ユーザー指摘ページ）を明示的に確認。1980s〜1990sのS&P500チャート（対数軸）が入っており、Black Monday 1987, Plaza 1985, LTCM 1998 等の注釈が上下交互配置で読みやすく表示されていることを確認。無ければ修正
 - [ ] Task 24: progress.txt に Phase 3 の最終サマリー記載
 
