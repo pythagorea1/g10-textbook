@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>G10 Quiz Mode — 教科書クイズ</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/quiz.css">
+</head>
+<body>
+<nav class="top-nav">
+  <a href="../index.html">← ホーム</a>
+  <span class="nav-title">📝 Quiz Mode</span>
+</nav>
+
+<main id="quiz-root" class="quiz-root"></main>
+
+<!-- Quiz data -->
+<script src="../data/quiz/q_central_bank.js"></script>
+<script src="../data/quiz/q_equity.js"></script>
+<script src="../data/quiz/q_fx.js"></script>
+<script src="../data/quiz/q_bonds.js"></script>
+<script src="../data/quiz/q_crises.js"></script>
+<script src="../data/quiz/q_macro.js"></script>
+<script src="../data/quiz/q_regulation.js"></script>
+<script src="../data/quiz/q_geopolitics.js"></script>
+
+<!-- Quiz engine -->
+<script src="../assets/quiz.js"></script>
+<script>
+  (function () {
+    const root = document.getElementById('quiz-root');
+    const engine = new window.QuizEngine(root);
+
+    // Support ?category=xxx&size=10 query params
+    const params = new URLSearchParams(window.location.search);
+    const cat = params.get('category');
+    const size = params.get('size') || '10';
+
+    if (cat && window.QUIZ_CATEGORIES.some((c) => c.key === cat)) {
+      engine.start(cat, size);
+    } else {
+      engine.renderStart();
+    }
+  })();
+</script>
+</body>
+</html>
