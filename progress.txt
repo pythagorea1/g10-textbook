@@ -255,3 +255,34 @@
   - Photo gallery uses flexbox with center justification, 100x120px with object-fit:cover
   - Inserted between ECB presidents table and Executive Board section
   - All existing text, tables, Gantt chart, and other content fully preserved
+
+## 2026-04-11 — Task 4.1: uk/02_policy_rate.html + uk/05_inflation.html — BOE Bank Rate + CPI Monthly
+- **uk/02_policy_rate.html**: Replaced hardcoded inline SVG chart with ChartBuilder.lines() using monthly data
+  - 615 monthly data points: Jan 1975 – Mar 2026 (month-end Bank Rate values)
+  - Source: Bank of England Official Bank Rate History via Essential Mortgages comprehensive change list
+  - Covers: MLR era (1975-1981), Band 1 dealing rate (1981-1985), base rate (1985-1997), Bank Rate (1997-)
+  - 1981-1985 period uses actual market-determined rates (fractional values like 12.69%, 15.13%)
+  - Key turning points verified:
+    - 1979 Nov: 17.00% (Thatcher/Howe anti-inflation shock, near all-time high)
+    - 1992 Sep: Black Wednesday ERM crisis (briefly 15% intraday, settled 8.88% post-exit)
+    - 2003 Jul: 3.50% cycle trough
+    - 2009 Mar: 0.50% (315-year low, held 7+ years)
+    - 2020 Mar: 0.10% (COVID emergency, absolute record low)
+    - 2023 Aug: 5.25% (16-year high, 14 consecutive hikes)
+    - 2025 Dec: 3.75% (latest cut in gradual easing cycle)
+  - 6 annotations: 17%ピーク, ERM離脱, 3.5%底, GFC 0.5%, LDI危機, 5.25%
+  - yRange [0, 18], yStep 2 for clean grid showing full rate range
+- **uk/05_inflation.html**: Replaced hardcoded inline SVG chart with ChartBuilder.lines() using monthly data
+  - 674 monthly data points: Jan 1970 – Feb 2026
+  - Source: ONS RPI YoY (1970-1988, mm23/czbh series), rateinflation.com CPI YoY (1989-2026)
+  - RPI used pre-1989 (CPI not measured); CPI from 1989 onward (BOE official target measure from 2003)
+  - Key turning points verified:
+    - 1975 Aug: 26.9% (post-war RPI peak, oil shock + wage spiral)
+    - 1980 Apr: 21.8% (VAT hike 8%→15% + second oil shock)
+    - 1992 Apr: 4.7% → 2.9% Aug (inflation target introduction)
+    - 2015 Mar-Apr: -0.01% to -0.12% (near-deflation, oil price collapse)
+    - 2022 Oct: 11.05% (41-year CPI high, energy crisis)
+    - 2025 Apr: 3.53% (NIC hike pass-through)
+  - 6 annotations: 26.9%ピーク, 21.8%, IT導入, -0.1%底, 11.1%, 3.5%
+  - yRange [-2, 28], yStep 5 for clean grid spanning deflation to 1975 peak
+- Existing text content, tables, and all other sections fully preserved in both files
