@@ -131,3 +131,29 @@
   - 6 annotations: 1974 狂乱物価25%, 1980 第二次OS 8.6%, 1995 デフレ突入, 2009 -2.6%, 2014 消費税8%, 2023 30年ぶり4.4%
   - yRange [-5, 26], yStep 5 for clean grid spanning oil shock highs to deflationary lows
 - Existing text content, tables, and all other sections fully preserved in both files
+
+## 2026-04-11 — Task 2.2: japan/13_long_rates.html — JGB Yields Monthly + 2s10s/5s30s Spreads
+- Replaced hardcoded inline SVG chart with 5 ChartBuilder-powered charts using monthly data
+- **Multi-maturity yield chart**: ChartBuilder.lines() with 5 series (2Y, 5Y, 10Y, 20Y, 30Y)
+  - 315 monthly data points per maturity: Jan 2000 – Mar 2026
+  - Source: Ministry of Finance Japan (mof.go.jp/english/policy/jgbs/reference/interest_rate/)
+  - Shared JavaScript variables (jpY2, jpY5, jpY10, jpY20, jpY30) to avoid data duplication
+  - 6 annotations: VaRショック, GFC, QQE開始, YCC導入, YCC撤廃, 10Y 2.37%
+- **10Y JGB dedicated timeline chart**: ChartBuilder.lines() with single 10Y series
+  - yRange [-0.5, 2.5] to focus on post-2000 range
+  - 6 annotations: 0.54% 最低 (May 2003), VaRショック, -0.24% (Jun 2016), -0.28% (Aug 2019), YCC撤廃, 2.37% (Mar 2026)
+- **2s10s yield spread chart**: ChartBuilder.spread() (10Y - 2Y)
+  - Japan's 2s10s remained positive throughout (min ~3bp Aug 2019), reflecting ZIRP/NIRP suppressing short end
+  - Key annotations: VaRショック前の縮小, 利上げ期, QQE, YCC, YCC修正, 正常化
+- **5s30s curve steepness chart**: ChartBuilder.spread() (30Y - 5Y)
+  - Reflects life insurer ALM demand in super-long zone
+  - Min spread 0.45% (Jun 2016), max ~2.0% (Oct 2001)
+  - Key annotations: 最低0.9%, GFC, YCC, 0.5%縮小, 正常化, 1.8%
+- **Compound return chart**: ChartBuilder.compound() (2Y, 10Y, 30Y) — preserved from original
+- Key data verified via WebSearch:
+  - 10Y min: -0.28% (Aug 2019 monthly), intraday low -0.29% (Jul 2016)
+  - 10Y Mar 2026: 2.37% (near 30-year high)
+  - 30Y Mar 2026: 3.64% (record high territory)
+  - VaR Shock: 10Y 0.54% (May 2003) → 1.43% (Aug 2003)
+  - YCC period: Sep 2016 – Mar 2024
+- Existing text content, tables, and all other sections fully preserved
