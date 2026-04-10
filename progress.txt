@@ -666,3 +666,17 @@
 - Verified: Both files contain ChartBuilder.lines() invocations (grep confirmed)
 - Verified: 240 monthly values for S&P (matches expected 20×12), 91 sparse points for DJIA
 - All existing text content, sections, tables, key stats, and footers fully preserved
+
+## 2026-04-11 — Task 10.2: us/09_equity_recent.html + us/10_equity_current.html — S&P 500 Monthly ChartBuilder Charts
+- **us/09_equity_recent.html**: Replaced inline hand-drawn SVG year-end-only chart with ChartBuilder.lines `sp500-2000s-2010s`
+  - 240 monthly closes 2000-01 to 2019-12 (20 years × 12), reusing the FRED/Multpl S&P 500 month-end series already validated in us/06_equity_overview.html
+  - Log scale `yRange: [600, 3500]` to span the GFC bottom (677) to 2019 ATH (3231) cleanly
+  - 6 annotations: 2000.25 Dot-com Peak, 2002.75 Low -49%, 2007.75 GFC Peak, 2009.167 底 666, 2013.917 +32%, 2018.917 Q4 -19%
+  - Captures full Lost Decade volatility, GFC crash, post-2009 QE bull run that the previous 20-point year-end SVG hid
+- **us/10_equity_current.html**: Replaced approximate 16-point inline SVG (with manually positioned annotations) with ChartBuilder.lines `sp500-2020s`
+  - 76 monthly closes 2020-01 to 2026-04, same FRED-aligned dataset as 06_equity_overview
+  - Linear yRange [2400, 7200] step 600 — captures COVID bottom (2652) to 2026 ~6850
+  - 6 annotations: 2020.167 COVID -34%, 2021.917 ATH, 2022.75 -25%, 2023.0 AI rally start, 2024.917 NVIDIA $3.4T, 2025.25 関税ショック (Apr 2025 Liberation Day -12%)
+  - Now actually shows the 2025-04 tariff drawdown (5980 → 5370 in 4 months) which the previous SVG only labeled but did not visually plot accurately
+- All key stats, sections (Sec 1-7 for Page 10, Sec 1-5 for Page 9), tables, lists, and footer sources fully preserved
+- Verified: Both files contain ChartBuilder.lines() (grep), and the legacy `<svg class="svg-chart">` blocks are removed (`grep svg-chart` returns 0)

@@ -66,7 +66,7 @@
 
 ### Phase 10: US — Remaining Pages (07-20) Monthly Upgrade
 - [x] Task 10.1: us/07_equity_early.html + us/08_equity_modern.html — 既存SVGチャートをChartBuilder月次化（Dow Jones 1896-1950, S&P 1950-2000）
-- [ ] Task 10.2: us/09_equity_recent.html + us/10_equity_current.html — S&P 500月次データ化（2000-2020, 2020-2026）
+- [x] Task 10.2: us/09_equity_recent.html + us/10_equity_current.html — S&P 500月次データ化（2000-2020, 2020-2026）
 - [ ] Task 10.3: us/11_bond_market.html + us/12_short_rates.html — 既存SVGをChartBuilder月次化（bond yield, 3M T-bill等）
 - [ ] Task 10.4: us/14_currency.html + us/15_crises.html — DXY月次化 + 危機期間のチャート月次化
 - [ ] Task 10.5: us/16_banking.html + us/17_corporate.html — 銀行セクター/企業指標の月次化
