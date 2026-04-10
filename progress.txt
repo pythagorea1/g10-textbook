@@ -84,3 +84,25 @@
 - 6 annotations: Dot-com Low, GFC Peak, GFC Low, COVID -34%, Bear -25%, AI ATH
 - Div ID changed from 'sp500-quarterly' to 'sp500-monthly'
 - Existing text content, tables, long-term SVG chart, and all other sections fully preserved
+
+## 2026-04-10 — Task 1.6: us/01_central_bank.html — Fed Chair Photos & Policy Episodes
+- Added photo gallery with 7 Fed chair portraits from Wikipedia Commons (public domain / US gov works)
+  - William McChesney Martin Jr. (1951-1970): commons/6/6d/William_McChesney_Martin_jr.jpg
+  - Arthur Burns (1970-1978): commons/thumb/d/d7/ArthurBurns_USArmyPhoto_1955.jpg/200px
+  - Paul Volcker (1979-1987): commons/7/73/Paulvolcker.jpg
+  - Alan Greenspan (1987-2006): commons/thumb/e/e9/Alan_Greenspan_color_photo_portrait.jpg/200px
+  - Ben Bernanke (2006-2014): commons/thumb/3/3f/Ben_Bernanke_official_portrait.jpg/200px
+  - Janet Yellen (2014-2018): commons/thumb/f/f4/Janet_Yellen_official_Federal_Reserve_portrait.jpg/200px
+  - Jerome Powell (2018-2026): commons/thumb/9/92/Jerome_H._Powell,_Federal_Reserve_Chair.jpg/200px
+- Added 7 detailed policy episode info-boxes with famous quotes and historical anecdotes:
+  - Martin: "Punch bowl" metaphor, LBJ ranch confrontation story
+  - Burns: Nixon tapes political pressure, Great Inflation, diary revelations
+  - Volcker: 20%+ FF rate, tractor protest at Fed, $57k salary sacrifice story
+  - Greenspan: "Irrational exuberance", Black Monday response, Fedspeak mastery
+  - Bernanke: Great Depression scholar vs GFC, "no economy on Monday" warning, Nobel Prize 2022
+  - Yellen: First female chair, labor market dashboard approach, gradual normalization
+  - Powell: "Keep at it" Jackson Hole 2022, "transitory" misjudgment, fastest hikes since Volcker
+- Photos displayed as 100x120px with object-fit:cover, rounded corners, dark border
+- Photo gallery uses flexbox with center justification, responsive wrap
+- Inserted between existing Fed Chairs table and FOMC members section
+- All existing text, tables, Gantt chart, and other content fully preserved

@@ -23,7 +23,7 @@
 - [x] Task 1.3: us/04_employment.html — 失業率を月次データ化（1948-2026）。NFP/失業率の主要転換点を注釈
 - [x] Task 1.4: us/13_long_rates.html — 2Y/5Y/10Y/30Y利回りを月次化。新規: 2s10sスプレッド + 5s30sスプレッドチャートを追加。逆イールド期間をハイライト
 - [x] Task 1.5: us/06_equity_overview.html — S&P 500を月次データ化（2000-2026, 300+点）。既存四半期チャートを置き換え
-- [ ] Task 1.6: us/01_central_bank.html — 歴代Fed議長（Martin, Burns, Volcker, Greenspan, Bernanke, Yellen, Powell）の写真URL（Wikipedia Commons）と印象的な政策エピソード・名言を追加
+- [x] Task 1.6: us/01_central_bank.html — 歴代Fed議長（Martin, Burns, Volcker, Greenspan, Bernanke, Yellen, Powell）の写真URL（Wikipedia Commons）と印象的な政策エピソード・名言を追加
 
 ### Phase 2: Japan Charts — Monthly Upgrade
 - [ ] Task 2.1: japan/02_policy_rate.html + japan/05_inflation.html — BOJ政策金利 + CPI月次化
