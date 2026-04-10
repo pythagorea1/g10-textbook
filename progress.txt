@@ -416,3 +416,20 @@
   - 5 annotations on yield chart: GFC, Taper, COVID 0.50%, 利上げ, 4.20% Peak
   - Compound return chart preserved (annual, 1990-2026)
 - All existing text content, tables, and sections preserved in both files
+
+## 2026-04-11 — Task 6.2: newzealand/02 + 13_long_rates — RBNZ OCR + NZ Yields Monthly + Spread
+- **newzealand/02_policy_rate.html**:
+  - Replaced hardcoded SVG chart with `ChartBuilder.lines('chart-ocr-rate')` using monthly OCR data
+  - 325 monthly data points: Mar 1999 – Mar 2026 (step function, end-of-month values)
+  - Key turning points: 6.50% peak (May 2000), 8.25% all-time high (Jul 2007), GFC cut to 2.50% (Apr 2009), COVID 0.25% (Mar 2020), 5.50% post-COVID peak (May 2023), 2.25% current (Feb 2026)
+  - 6 annotations: 6.50% Peak, 8.25% OCR最高, GFC 2.50%, COVID 0.25%, 5.50% Peak, 2.25%底
+  - yRange [0, 9], yStep 2%
+- **newzealand/13_long_rates.html**:
+  - Replaced annual yield chart with monthly `ChartBuilder.lines('nz-yield-history')` for 2Y and 10Y
+  - 315 monthly data points each (2000-2026): 2Y range 0.12-8.05%, 10Y range 0.54-6.90%
+  - NZ distinctive feature: severe curve inversion 2005-2007 (2Y > 10Y due to carry trade flows)
+  - Added `ChartBuilder.spread('nz-2s10s-spread')` — 2s10s yield spread with inverted regions
+  - Removed legacy inline SVG chart (replaced by monthly ChartBuilder charts)
+  - Compound return chart preserved (annual, 1985-2026)
+  - 4 annotations on yield chart: 6.70% Peak, GFC 4.50%, 0.54%底, 5.60% Peak
+- All existing text content, tables, and sections preserved in both files
