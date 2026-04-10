@@ -606,3 +606,21 @@
 - 5 annotations: GFC Start (2007.75), SNB -0.75% (2015), BOJ -0.1% (2016), COVID (2020.25), Fed 5.33% (2023.5)
 - yRange [-1, 9], yStep 1% for clean grid including negative territory
 - All existing text content fully preserved
+
+## 2026-04-11 — Task 9.1: Caption/Annotation Consistency Review & Fix
+- Audited all 67 ChartBuilder calls across 36 HTML files (10 countries × policy_rate/inflation/equity/long_rates + index.html)
+- **Issue found**: 6 files had empty JS `caption: ''` with captions in external HTML `<p class="chart-caption">` elements, while all other upgraded files had captions inside the ChartBuilder JS call (Pattern A)
+  - Pattern A (correct): `<div id="chart-xxx"></div>` + JS `caption: 'text'` — chart-builder renders caption
+  - Pattern B (inconsistent): `<figure><div id="chart-xxx"></div><p class="chart-caption">text</p></figure>` + JS `caption: ''` — redundant nested figure
+- **Fixed 6 files** by moving caption text into JS and removing redundant HTML wrapper:
+  - uk/02_policy_rate.html: '出典: Bank of England Official Bank Rate History...'
+  - uk/05_inflation.html: '出典: ONS (RPI 1970-1988, CPI 1989-2026)...'
+  - switzerland/02_policy_rate.html: '出典: SNB Press Releases / Quarterly Bulletins...'
+  - australia/02_policy_rate.html: '出典: RBA Cash Rate Target...'
+  - canada/02_policy_rate.html: '出典: Bank of Canada, cbrates.com, FRED...'
+  - newzealand/02_policy_rate.html: '出典: RBNZ...'
+- **Annotation counts**: All 67 charts at or below 6-annotation limit ✓
+- **Data ranges**: No inconsistencies found across countries ✓
+- **Caption sources**: All charts now have non-empty captions with source attribution ✓
+- **No duplicate captions**: Removed HTML `<p>` + `<figure>` wrapper, caption now rendered solely by chart-builder.js ✓
+- Verified: `grep caption: ''` returns 0 matches across entire project

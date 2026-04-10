@@ -94,14 +94,11 @@
         </div>
       </div>
 
-      <figure class="chart-figure">
-        <div id="chart-boc-rate"></div>
-        <p class="chart-caption">出典: Bank of Canada, cbrates.com, FRED IRSTCB01CAM156N. 月末値ベース、1975年1月〜2026年3月（615点）。計9回275bpの利下げでG7最積極緩和。</p>
-      </figure>
+      <div id="chart-boc-rate"></div>
       <script>
       ChartBuilder.lines('chart-boc-rate', {
         title: 'BOC Policy Rate (月次, 1975-2026)',
-        caption: '',
+        caption: '出典: Bank of Canada, cbrates.com, FRED IRSTCB01CAM156N. 月末値ベース、1975年1月〜2026年3月（615点）。計9回275bpの利下げでG7最積極緩和。',
         yUnit: '%',
         yStep: 5,
         yRange: [0, 22],

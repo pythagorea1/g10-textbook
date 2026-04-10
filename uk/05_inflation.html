@@ -150,14 +150,11 @@
           </tbody>
         </table>
 
-        <figure class="chart-figure">
-          <div id="chart-uk-cpi"></div>
-          <p class="chart-caption">出典: ONS (RPI 1970-1988, CPI 1989-2026). 月次前年比。70年代スタグフレーション、92年ターゲット導入後安定、2022年再燃。</p>
-        </figure>
+        <div id="chart-uk-cpi"></div>
         <script>
         ChartBuilder.lines('chart-uk-cpi', {
           title: 'UK インフレ率 (RPI/CPI 前年比, 月次, 1970-2026)',
-          caption: '',
+          caption: '出典: ONS (RPI 1970-1988, CPI 1989-2026). 月次前年比。70年代スタグフレーション、92年ターゲット導入後安定、2022年再燃。',
           yUnit: '%',
           yStep: 5,
           yRange: [-2, 28],

@@ -94,14 +94,11 @@
         </div>
       </div>
 
-      <figure class="chart-figure">
-        <div id="chart-bank-rate"></div>
-        <p class="chart-caption">出典: Bank of England Official Bank Rate History. 月末値ベース（1975年1月〜2026年3月、615点）。1981-85年のMLR/Band 1期間は市場連動で頻繁に変動。</p>
-      </figure>
+      <div id="chart-bank-rate"></div>
       <script>
       ChartBuilder.lines('chart-bank-rate', {
         title: 'UK Bank Rate (月次, 1975-2026)',
-        caption: '',
+        caption: '出典: Bank of England Official Bank Rate History. 月末値ベース（1975年1月〜2026年3月、615点）。1981-85年のMLR/Band 1期間は市場連動で頻繁に変動。',
         yUnit: '%',
         yStep: 2,
         yRange: [0, 18],

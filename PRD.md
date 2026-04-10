@@ -61,7 +61,7 @@
 - [x] Task 8.3: index.html — G10政策金利比較チャート（月次、全10中銀）
 
 ### Phase 9: Final Polish
-- [ ] Task 9.1: 全チャートの注釈・キャプション統一レビュー。データ不整合修正
+- [x] Task 9.1: 全チャートの注釈・キャプション統一レビュー。データ不整合修正
 - [ ] Task 9.2: summary/g10_timeline.html 更新 — 新チャートへのリンク追加
 
 ## Constraints

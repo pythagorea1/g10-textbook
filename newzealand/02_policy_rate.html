@@ -95,14 +95,11 @@
         </div>
       </div>
 
-      <figure class="chart-figure">
-        <div id="chart-ocr-rate"></div>
-        <p class="chart-caption">出典: RBNZ. 月末値ベース、1999年3月〜2026年3月（325点）。OCR導入以来の全サイクルを月次で描画。</p>
-      </figure>
+      <div id="chart-ocr-rate"></div>
       <script>
       ChartBuilder.lines('chart-ocr-rate', {
         title: 'RBNZ Official Cash Rate (月次, 1999-2026)',
-        caption: '',
+        caption: '出典: RBNZ. 月末値ベース、1999年3月〜2026年3月（325点）。OCR導入以来の全サイクルを月次で描画。',
         yUnit: '%',
         yStep: 2,
         yRange: [0, 9],

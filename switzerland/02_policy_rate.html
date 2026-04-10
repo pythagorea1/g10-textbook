@@ -94,14 +94,11 @@
         </div>
       </div>
 
-      <figure class="chart-figure">
-        <div id="chart-snb-rate"></div>
-        <p class="chart-caption">出典: SNB Press Releases / Quarterly Bulletins. 月末値ベース（1975年1月〜2026年3月、615点）。1975-1999年は割引率、2000-2019年はLIBOR目標レンジ中央値、2019年以降はSNB政策金利。</p>
-      </figure>
+      <div id="chart-snb-rate"></div>
       <script>
       ChartBuilder.lines('chart-snb-rate', {
         title: 'SNB Policy Rate (月次, 1975-2026)',
-        caption: '',
+        caption: '出典: SNB Press Releases / Quarterly Bulletins. 月末値ベース（1975年1月〜2026年3月、615点）。1975-1999年は割引率、2000-2019年はLIBOR目標レンジ中央値、2019年以降はSNB政策金利。',
         yUnit: '%',
         yStep: 1,
         yRange: [-1, 8],
