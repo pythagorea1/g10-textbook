@@ -106,3 +106,28 @@
 - Photo gallery uses flexbox with center justification, responsive wrap
 - Inserted between existing Fed Chairs table and FOMC members section
 - All existing text, tables, Gantt chart, and other content fully preserved
+
+## 2026-04-10 — Task 2.1: japan/02_policy_rate.html + japan/05_inflation.html — BOJ Policy Rate + CPI Monthly
+- **japan/02_policy_rate.html**: Replaced hardcoded SVG chart with ChartBuilder.lines() call using monthly data
+  - 495 monthly data points: Jan 1985 – Mar 2026
+  - Covers: discount rate era (1985-1994), call rate era (1995-), ZIRP (1999), QE (2001-2006), NIRP (2016-2024), normalization (2024-)
+  - Key turning points verified via WebSearch/BOJ official data:
+    - 1990 Aug: peak 6.00% (bubble-era tightening)
+    - 1999 Feb: ZIRP ~0% (first central bank to adopt zero rates)
+    - 2016 Feb: -0.10% (NIRP introduced)
+    - 2024 Mar: end NIRP → 0-0.10%
+    - 2024 Jul: 0.25%, 2025 Jan: 0.50%, 2025 Dec: 0.75%
+  - 6 annotations: 1990 バブル退治6%, 1999 ZIRP導入, 2008 GFC 0.1%, 2016 マイナス金利, 2024 マイナス解除, 2025 0.75%
+  - yRange [-1, 7], yStep 1 for clean grid showing negative rate territory
+- **japan/05_inflation.html**: Replaced hardcoded SVG chart with ChartBuilder.lines() call using monthly data
+  - 662 monthly data points: Jan 1971 – Feb 2026 (rateinflation.com, sourced from Statistics Bureau of Japan)
+  - Key turning points verified:
+    - 1974 Feb: peak 25.0% (狂乱物価 / Runaway Prices era)
+    - 1980 Sep: 8.6% (2nd oil shock)
+    - 1995 Mar: first negative CPI reading (-0.3%) marking deflation entry
+    - 2009 Oct: -2.6% (GFC-driven deflation trough)
+    - 2014 Apr: 3.4% (consumption tax hike 5%→8%)
+    - 2023 Jan: 4.4% (30-year high, global inflation wave)
+  - 6 annotations: 1974 狂乱物価25%, 1980 第二次OS 8.6%, 1995 デフレ突入, 2009 -2.6%, 2014 消費税8%, 2023 30年ぶり4.4%
+  - yRange [-5, 26], yStep 5 for clean grid spanning oil shock highs to deflationary lows
+- Existing text content, tables, and all other sections fully preserved in both files
