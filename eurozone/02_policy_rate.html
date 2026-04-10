@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eurozone - Policy Rate History | G10 Markets Textbook</title>
   <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
   <script defer src="../assets/charts.js"></script>
 </head>
 <body>
@@ -93,62 +94,59 @@
         </div>
       </div>
 
-      <figure class="chart-figure">
-        <figcaption class="chart-title">ECB Main Refinancing Operations Rate (1999-2026)</figcaption>
-        <svg class="svg-chart" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet">
-          <g class="chart-grid">
-            <line x1="60" y1="50" x2="60" y2="360" stroke="rgba(255,255,255,0.2)"/>
-            <line x1="60" y1="360" x2="780" y2="360" stroke="rgba(255,255,255,0.2)"/>
-            <line x1="60" y1="298" x2="780" y2="298" stroke="rgba(255,255,255,0.05)"/>
-            <line x1="60" y1="236" x2="780" y2="236" stroke="rgba(255,255,255,0.05)"/>
-            <line x1="60" y1="174" x2="780" y2="174" stroke="rgba(255,255,255,0.05)"/>
-            <line x1="60" y1="112" x2="780" y2="112" stroke="rgba(255,255,255,0.05)"/>
-            <line x1="60" y1="50" x2="780" y2="50" stroke="rgba(255,255,255,0.05)"/>
-          </g>
-          <g class="chart-axis" fill="rgba(255,255,255,0.6)" font-size="10">
-            <text x="55" y="364" text-anchor="end">0%</text>
-            <text x="55" y="302" text-anchor="end">1%</text>
-            <text x="55" y="240" text-anchor="end">2%</text>
-            <text x="55" y="178" text-anchor="end">3%</text>
-            <text x="55" y="116" text-anchor="end">4%</text>
-            <text x="55" y="54" text-anchor="end">5%</text>
-            <text x="60" y="380">1999</text>
-            <text x="220" y="380">2005</text>
-            <text x="380" y="380">2011</text>
-            <text x="540" y="380">2017</text>
-            <text x="700" y="380">2023</text>
-          </g>
-          <path class="chart-line" fill="none" stroke="#00d4aa" stroke-width="2.2"
-            d="M 60,174 L 87,66 L 113,159 L 167,236 L 220,221 L 273,112 L 313,97 L 325,205 L 336,298 L 393,267 L 420,314 L 471,351 L 513,360 L 593,360 L 687,329 L 698,205 L 718,81 L 738,97 L 751,165 L 765,227 L 780,227"/>
-          <g class="chart-annotation">
-            <circle cx="87" cy="66" r="4" fill="#ff6b6b"/>
-            <line x1="87" y1="66" x2="87" y2="40" stroke="#ff6b6b" stroke-width="1"/>
-            <text x="87" y="35" text-anchor="middle" fill="#ff6b6b" font-size="11">2000 ITバブル 4.75%</text>
-            <circle cx="313" cy="97" r="4" fill="#ff6b6b"/>
-            <line x1="313" y1="97" x2="313" y2="60" stroke="#ff6b6b" stroke-width="1"/>
-            <text x="313" y="55" text-anchor="middle" fill="#ff6b6b" font-size="11">2008-07 物議の利上げ 4.25%</text>
-            <circle cx="336" cy="298" r="4" fill="#4ecdc4"/>
-            <line x1="336" y1="298" x2="336" y2="330" stroke="#4ecdc4" stroke-width="1"/>
-            <text x="336" y="345" text-anchor="middle" fill="#4ecdc4" font-size="11">2009 GFC底 1.0%</text>
-            <circle cx="393" cy="267" r="4" fill="#ff6b6b"/>
-            <line x1="393" y1="267" x2="393" y2="240" stroke="#ff6b6b" stroke-width="1"/>
-            <text x="393" y="234" text-anchor="middle" fill="#ff6b6b" font-size="11">2011 トリシェ利上げ</text>
-            <circle cx="471" cy="351" r="4" fill="#4ecdc4"/>
-            <line x1="471" y1="351" x2="471" y2="325" stroke="#4ecdc4" stroke-width="1"/>
-            <text x="471" y="320" text-anchor="middle" fill="#4ecdc4" font-size="11">2014 マイナス金利導入</text>
-            <circle cx="687" cy="329" r="4" fill="#ff6b6b"/>
-            <line x1="687" y1="329" x2="640" y2="345" stroke="#ff6b6b" stroke-width="1"/>
-            <text x="635" y="358" text-anchor="end" fill="#ff6b6b" font-size="11">2022-07 11年ぶり利上げ</text>
-            <circle cx="718" cy="81" r="4" fill="#ff6b6b"/>
-            <line x1="718" y1="81" x2="718" y2="55" stroke="#ff6b6b" stroke-width="1"/>
-            <text x="718" y="50" text-anchor="middle" fill="#ff6b6b" font-size="11">2023-09 ピーク 4.50%</text>
-            <circle cx="765" cy="227" r="4" fill="#4ecdc4"/>
-            <line x1="765" y1="227" x2="765" y2="200" stroke="#4ecdc4" stroke-width="1"/>
-            <text x="780" y="195" text-anchor="end" fill="#4ecdc4" font-size="11">2025-06 2.15%</text>
-          </g>
-        </svg>
-        <p class="chart-caption">出典: ECB "Key ECB interest rates". 主要リファイナンス金利（MRO）の推移。2024年9月のフレームワーク改革以降、MRO-DFR差は15bpに縮小。</p>
-      </figure>
+      <div id="ecb-mro-monthly"></div>
+      <script>
+      (function(){
+        /* ECB Main Refinancing Operations Rate — monthly end-of-month values, Jan 1999 – Mar 2026 (327 points)
+           Source: ECB "Key ECB interest rates"; FRED ECBMRRFR; global-rates.com */
+        var mro = [
+          /* 1999 */ 3.00,3.00,3.00,2.50,2.50,2.50,2.50,2.50,2.50,2.50,3.00,3.00,
+          /* 2000 */ 3.00,3.25,3.50,3.75,3.75,4.25,4.25,4.25,4.50,4.75,4.75,4.75,
+          /* 2001 */ 4.75,4.75,4.75,4.75,4.50,4.50,4.50,4.25,3.75,3.75,3.25,3.25,
+          /* 2002 */ 3.25,3.25,3.25,3.25,3.25,3.25,3.25,3.25,3.25,3.25,3.25,2.75,
+          /* 2003 */ 2.75,2.75,2.50,2.50,2.50,2.00,2.00,2.00,2.00,2.00,2.00,2.00,
+          /* 2004 */ 2.00,2.00,2.00,2.00,2.00,2.00,2.00,2.00,2.00,2.00,2.00,2.00,
+          /* 2005 */ 2.00,2.00,2.00,2.00,2.00,2.00,2.00,2.00,2.00,2.00,2.00,2.25,
+          /* 2006 */ 2.25,2.25,2.50,2.50,2.50,2.75,2.75,3.00,3.00,3.25,3.25,3.50,
+          /* 2007 */ 3.50,3.50,3.75,3.75,3.75,4.00,4.00,4.00,4.00,4.00,4.00,4.00,
+          /* 2008 */ 4.00,4.00,4.00,4.00,4.00,4.00,4.25,4.25,4.25,3.75,3.25,2.50,
+          /* 2009 */ 2.00,2.00,1.50,1.25,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,
+          /* 2010 */ 1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,
+          /* 2011 */ 1.00,1.00,1.00,1.25,1.25,1.25,1.50,1.50,1.50,1.50,1.25,1.00,
+          /* 2012 */ 1.00,1.00,1.00,1.00,1.00,1.00,0.75,0.75,0.75,0.75,0.75,0.75,
+          /* 2013 */ 0.75,0.75,0.75,0.75,0.50,0.50,0.50,0.50,0.50,0.50,0.25,0.25,
+          /* 2014 */ 0.25,0.25,0.25,0.25,0.25,0.15,0.15,0.15,0.05,0.05,0.05,0.05,
+          /* 2015 */ 0.05,0.05,0.05,0.05,0.05,0.05,0.05,0.05,0.05,0.05,0.05,0.05,
+          /* 2016 */ 0.05,0.05,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,
+          /* 2017 */ 0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,
+          /* 2018 */ 0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,
+          /* 2019 */ 0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,
+          /* 2020 */ 0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,
+          /* 2021 */ 0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,
+          /* 2022 */ 0.00,0.00,0.00,0.00,0.00,0.00,0.50,0.50,1.25,2.00,2.00,2.50,
+          /* 2023 */ 2.50,3.00,3.50,3.50,3.75,4.00,4.25,4.25,4.50,4.50,4.50,4.50,
+          /* 2024 */ 4.50,4.50,4.50,4.50,4.50,4.25,4.25,4.25,3.65,3.40,3.40,3.15,
+          /* 2025 */ 2.90,2.90,2.65,2.40,2.40,2.15,2.15,2.15,2.15,2.15,2.15,2.15,
+          /* 2026 */ 2.15,2.15,2.15
+        ];
+        ChartBuilder.lines('ecb-mro-monthly', {
+          title: 'ECB Main Refinancing Operations Rate (1999-2026)',
+          caption: '出典: ECB "Key ECB interest rates". 主要リファイナンス金利（MRO）月末値。2024年9月のフレームワーク改革以降、MRO-DFR差は15bpに縮小。',
+          yRange: [0, 5],
+          yStep: 1,
+          yUnit: '%',
+          series: [{ name: 'MRO Rate', color: '#00d4aa', start: 1999.0, step: 1/12, values: mro }],
+          annotations: [
+            { x: 2000+9/12, label: 'IT 4.75%' },
+            { x: 2008+6/12, label: '物議 4.25%' },
+            { x: 2009+4/12, label: 'GFC底 1.0%', color: '#4ecdc4' },
+            { x: 2014+5/12, label: 'マイナス金利', color: '#4ecdc4' },
+            { x: 2022+6/12, label: '利上げ再開' },
+            { x: 2023+8/12, label: 'ピーク4.50%' }
+          ]
+        });
+      })();
+      </script>
 
       <h2>ECBの政策金利体系</h2>
       <p>ECBの政策金利は3つの主要金利で構成される「金利コリドー」（interest rate corridor）システムを採用している。<sup class="ref">[1]</sup></p>
@@ -323,6 +321,7 @@
   });
   </script>
 
+  <script src="../assets/enhancer.js"></script>
   <script src="../assets/tts-reader.js"></script>
 </body>
 </html>

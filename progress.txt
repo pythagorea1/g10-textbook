@@ -192,3 +192,36 @@
   - Photo gallery uses flexbox with center justification, 100x120px with object-fit:cover
   - Inserted between existing governors table and policy committee section
   - All existing text, tables, Gantt chart, and other content fully preserved
+
+## 2026-04-11 — Task 3.1: eurozone/02_policy_rate.html + eurozone/05_inflation.html — ECB MRO + HICP Monthly
+- **eurozone/02_policy_rate.html**: Replaced hardcoded inline SVG chart with ChartBuilder.lines() using monthly data
+  - 327 monthly data points: Jan 1999 – Mar 2026 (ECB MRO rate, month-end values)
+  - Source: ECB "Key ECB interest rates", FRED ECBMRRFR, global-rates.com
+  - Complete rate change history reconstructed from ECB decision dates
+  - Key turning points verified:
+    - Oct 2000: 4.75% peak (IT bubble tightening, Jun 2000 +50bp hike)
+    - Jun 2003: 2.00% trough (post-dot-com, post-9/11)
+    - Jul 2008: 4.25% (controversial hike 3 months before Lehman)
+    - May 2009: 1.00% (GFC trough)
+    - Jun 2014: 0.15% (negative DFR introduced), Sep 2014: 0.05%
+    - Mar 2016: 0.00% (MRO reached zero)
+    - Jul 2022: 0.50% (11-year first hike, +50bp)
+    - Sep 2023: 4.50% (cycle peak, 10 hikes totaling +450bp)
+    - Sep 2024: 3.65% (framework reform, MRO-DFR narrowed from 50bp to 15bp)
+    - Jun 2025: 2.15% (8th cut, DFR 2.00%), held through Apr 2026
+  - 6 annotations: IT 4.75%, 物議 4.25%, GFC底 1.0%, マイナス金利, 利上げ再開, ピーク4.50%
+  - yRange [0, 5], yStep 1 for clean grid
+- **eurozone/05_inflation.html**: Replaced hardcoded inline SVG chart with ChartBuilder.lines() using monthly data
+  - 351 monthly data points: Jan 1997 – Mar 2026 (HICP YoY annual rate of change)
+  - Source: rateinflation.com (Eurostat HICP), Eurostat flash estimates for 2026
+  - Key turning points verified:
+    - Jul 2008: 4.06% (oil price peak, commodity super-cycle)
+    - Jul 2009: -0.66% (GFC deflation trough)
+    - Jan 2015: -0.60% (low inflation era, QE trigger)
+    - Sep 2020: -0.32% (COVID demand shock deflation)
+    - Oct 2022: 10.61% (all-time high, energy crisis + Ukraine conflict)
+    - 2025: 1.9-2.5% range (near ECB 2% target)
+    - Mar 2026: 2.50% (Eurostat flash, energy price rebound)
+  - 6 annotations: 原油高 4.1%, GFC -0.7%, -0.6%底, COVID, 10.6%ピーク, 2%近傍
+  - yRange [-2, 12], yStep 2 for clean grid spanning deflation to 2022 peak
+- Existing text content, tables, and all other sections fully preserved in both files

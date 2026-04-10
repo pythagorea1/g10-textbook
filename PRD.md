@@ -31,7 +31,7 @@
 - [x] Task 2.3: japan/06_equity_overview.html — 日経225月次化 + japan/01_central_bank.html — 歴代総裁写真・政策エピソード
 
 ### Phase 3: Eurozone Charts — Monthly Upgrade
-- [ ] Task 3.1: eurozone/02_policy_rate.html + eurozone/05_inflation.html — ECB主要金利 + HICP月次化
+- [x] Task 3.1: eurozone/02_policy_rate.html + eurozone/05_inflation.html — ECB主要金利 + HICP月次化
 - [ ] Task 3.2: eurozone/13_long_rates.html — Bund利回り月次化 + 2s10sスプレッド
 - [ ] Task 3.3: eurozone/06_equity_overview.html — DAX月次化 + eurozone/01_central_bank.html — 歴代ECB総裁写真
 
