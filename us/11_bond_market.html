@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>United States - Bond Market | G10 Markets Textbook</title>
   <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
   <script defer src="../assets/charts.js"></script>
 </head>
 <body>
@@ -552,70 +553,37 @@
       <p class="source-note">※歴代総裁のタカ/ハト分類等、市場の評価に基づく記述は市場コンセンサスを参考としたものであり、絶対的な評価ではありません。</p>
     </footer>
 
-    <figure class="chart-figure">
-      <figcaption class="chart-title">U.S. Treasury Debt Outstanding (1980-2026, $ trillion)</figcaption>
-      <svg class="svg-chart" viewBox="0 0 800 420" preserveAspectRatio="xMidYMid meet">
-        <g class="chart-grid">
-          <line x1="60" y1="50" x2="60" y2="340" stroke="#444" stroke-width="1"/>
-          <line x1="60" y1="340" x2="780" y2="340" stroke="#444" stroke-width="1"/>
-          <line x1="60" y1="267.5" x2="780" y2="267.5" stroke="#333" stroke-dasharray="2,3"/>
-          <line x1="60" y1="195" x2="780" y2="195" stroke="#333" stroke-dasharray="2,3"/>
-          <line x1="60" y1="122.5" x2="780" y2="122.5" stroke="#333" stroke-dasharray="2,3"/>
-          <text x="55" y="343" text-anchor="end" fill="#888" font-size="10">0</text>
-          <text x="55" y="270" text-anchor="end" fill="#888" font-size="10">10T</text>
-          <text x="55" y="198" text-anchor="end" fill="#888" font-size="10">20T</text>
-          <text x="55" y="125" text-anchor="end" fill="#888" font-size="10">30T</text>
-          <text x="55" y="53" text-anchor="end" fill="#888" font-size="10">40T</text>
-        </g>
-        <path class="chart-line" fill="none" stroke="#00d4aa" stroke-width="2"
-          d="M 60,340 L 138.3,326.9 L 216.5,316.8 L 294.8,304.5 L 373.0,298.7 L 451.3,282.7 L 498.2,267.5 L 529.5,242.1 L 560.8,224.0 L 607.8,208.1 L 654.7,184.1 L 686.0,139.2 L 717.3,112.3 L 748.6,82.6 L 780,60.9"/>
-        <g class="chart-annotation">
-          <circle cx="75" cy="338" r="4" fill="#ff6b6b"/>
-          <line x1="75" y1="338" x2="75" y2="308" stroke="#ff6b6b" stroke-width="1"/>
-          <rect x="40" y="296" width="90" height="14" fill="#000" fill-opacity="0.7"/>
-          <text x="75" y="306" text-anchor="middle" fill="#ff6b6b" font-size="10">1981 Reagan</text>
-        </g>
-        <g class="chart-annotation">
-          <circle cx="295" cy="304.5" r="4" fill="#4dabf7"/>
-          <line x1="295" y1="304.5" x2="295" y2="334" stroke="#4dabf7" stroke-width="1"/>
-          <rect x="255" y="334" width="80" height="14" fill="#000" fill-opacity="0.7"/>
-          <text x="295" y="344" text-anchor="middle" fill="#4dabf7" font-size="10">90s Clinton</text>
-        </g>
-        <g class="chart-annotation">
-          <circle cx="498" cy="267.5" r="4" fill="#ff6b6b"/>
-          <line x1="498" y1="267.5" x2="498" y2="237" stroke="#ff6b6b" stroke-width="1"/>
-          <rect x="458" y="225" width="80" height="14" fill="#000" fill-opacity="0.7"/>
-          <text x="498" y="235" text-anchor="middle" fill="#ff6b6b" font-size="10">2008 GFC+QE</text>
-        </g>
-        <g class="chart-annotation">
-          <circle cx="639" cy="195" r="4" fill="#ffd43b"/>
-          <line x1="639" y1="195" x2="639" y2="225" stroke="#ffd43b" stroke-width="1"/>
-          <rect x="604" y="225" width="70" height="14" fill="#000" fill-opacity="0.7"/>
-          <text x="639" y="235" text-anchor="middle" fill="#ffd43b" font-size="10">2017 TCJA</text>
-        </g>
-        <g class="chart-annotation">
-          <circle cx="686" cy="139.2" r="4" fill="#ff6b6b"/>
-          <line x1="686" y1="139.2" x2="686" y2="109" stroke="#ff6b6b" stroke-width="1"/>
-          <rect x="636" y="97" width="100" height="14" fill="#000" fill-opacity="0.7"/>
-          <text x="686" y="107" text-anchor="middle" fill="#ff6b6b" font-size="10">2020 COVID +$5T</text>
-        </g>
-        <g class="chart-annotation">
-          <circle cx="748.6" cy="82.6" r="4" fill="#00d4aa"/>
-          <line x1="748.6" y1="82.6" x2="748.6" y2="112" stroke="#00d4aa" stroke-width="1"/>
-          <rect x="708" y="112" width="80" height="14" fill="#000" fill-opacity="0.7"/>
-          <text x="748.6" y="122" text-anchor="middle" fill="#00d4aa" font-size="10">2024 $35T</text>
-        </g>
-        <g class="chart-axis" fill="#888" font-size="10">
-          <text x="60" y="360">1980</text>
-          <text x="216.5" y="360" text-anchor="middle">1990</text>
-          <text x="373" y="360" text-anchor="middle">2000</text>
-          <text x="529.5" y="360" text-anchor="middle">2010</text>
-          <text x="686" y="360" text-anchor="middle">2020</text>
-          <text x="780" y="360" text-anchor="end">2026</text>
-        </g>
-      </svg>
-      <p class="chart-caption">出典: U.S. Treasury, FRED. 総債務残高(marketable + non-marketable)。1980年 約$0.9T → 2024年 $35T突破、2026年見通し $38T超。</p>
-    </figure>
+    <!-- U.S. Treasury Debt Outstanding (1980-2026, annual $ trillion) -->
+    <div id="us-treasury-debt"></div>
+    <script>
+    ChartBuilder.lines('us-treasury-debt', {
+      title: 'U.S. Treasury Debt Outstanding (1980-2026, $ trillion)',
+      caption: '出典: U.S. Treasury Fiscal Data, FRED (GFDEBTN). 年末総債務残高(marketable + non-marketable)。1980年 $0.9T → 2024年 $35T突破、2025年末 $36T超、2026年見通し $37T超。',
+      yRange: [0, 40],
+      yStep: 5,
+      yUnit: 'T',
+      series: [{
+        name: 'Gross Federal Debt',
+        color: '#00d4aa', width: 2.2,
+        start: 1980, step: 1,
+        values: [
+          0.91, 1.00, 1.14, 1.38, 1.57, 1.82, 2.13, 2.35, 2.60, 2.86,
+          3.23, 3.67, 4.07, 4.41, 4.69, 4.97, 5.22, 5.41, 5.53, 5.66,
+          5.67, 5.81, 6.23, 6.78, 7.38, 7.93, 8.51, 9.01, 10.03, 11.91,
+          13.56, 14.79, 16.07, 16.74, 17.82, 18.15, 19.57, 20.24, 21.52, 22.72,
+          26.95, 28.43, 30.93, 33.17, 35.46, 36.22, 37.40
+        ]
+      }],
+      annotations: [
+        { year: 1981, label: 'Reagan減税',  color: '#ff6b6b' },
+        { year: 1998, label: 'Clinton黒字', color: '#4ecdc4' },
+        { year: 2008, label: 'GFC+QE',      color: '#ff6b6b' },
+        { year: 2017, label: 'TCJA減税',    color: '#ffd93d' },
+        { year: 2020, label: 'COVID +$5T',  color: '#ff6b6b' },
+        { year: 2024, label: '$35T突破',    color: '#00d4aa' }
+      ]
+    });
+    </script>
   </main>
 
   <script>
@@ -640,6 +608,7 @@
       });
     });
   </script>
+  <script src="../assets/enhancer.js"></script>
   <script src="../assets/tts-reader.js"></script>
 </body>
 </html>

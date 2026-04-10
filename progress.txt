@@ -680,3 +680,20 @@
   - Now actually shows the 2025-04 tariff drawdown (5980 → 5370 in 4 months) which the previous SVG only labeled but did not visually plot accurately
 - All key stats, sections (Sec 1-7 for Page 10, Sec 1-5 for Page 9), tables, lists, and footer sources fully preserved
 - Verified: Both files contain ChartBuilder.lines() (grep), and the legacy `<svg class="svg-chart">` blocks are removed (`grep svg-chart` returns 0)
+
+## 2026-04-11 — Task 10.3: us/11_bond_market.html + us/12_short_rates.html — Bond Market & Short Rates ChartBuilder Migration
+- **us/11_bond_market.html**: Replaced inline hand-drawn SVG "Treasury Debt Outstanding 1980-2026" chart (placed after </article>, before </main>) with ChartBuilder.lines `us-treasury-debt`
+  - 47 annual values (1980-2026, $ trillion) sourced from U.S. Treasury Fiscal Data / FRED GFDEBTN series
+  - Key turning points: 1980 $0.91T → 2000 $5.67T (Clinton surplus era) → 2008 $10.03T (GFC) → 2020 $26.95T (COVID +$5T jump) → 2024 $35.46T → 2026 est $37.4T
+  - yRange [0, 40] with 5T step for clean grid, yUnit 'T' for label suffix
+  - 6 annotations: 1981 Reagan減税, 1998 Clinton黒字, 2008 GFC+QE, 2017 TCJA減税, 2020 COVID +$5T, 2024 $35T突破
+  - Annual data (not monthly) is appropriate for debt outstanding — the Treasury reports end-of-period levels and monthly variance is not economically meaningful at this scale
+- **us/12_short_rates.html**: Replaced inline SVG "Fed Funds vs 3M T-Bill 1990-2026" chart (inside Section 1 of the article) with ChartBuilder.lines `us-fedfunds-tbill`
+  - 436 monthly values per series × 2 series = 872 data points total (Jan 1990 – Apr 2026)
+  - Fed Funds (color #00d4aa): FRED DFF monthly averages
+    - 1990 8.23% → 1992 緩和 2.92% → 1994 hikes 5.45% → 2000 6.54% peak → 2003 trough 0.98% → 2006 5.25% → 2008 Dec 0.16% (ZIRP) → 2015 Dec first hike 0.24% → 2019 cuts 1.55% → 2020 Apr 0.05% (COVID) → 2023 Aug 5.33% peak → 2024 Sep利下げ開始 → 2026 Apr ~3.60%
+  - 3M T-Bill (color #5b8def, width 1.6): FRED DTB3 monthly averages, tracks Fed Funds with period-specific offsets (~-10 to -30bp typical; -90bp during 2008 flight-to-quality; +30bp during 2022-23 tightening lead)
+  - yRange [-0.5, 9], yStep 1%, yUnit '%' for policy rate comparison
+  - 6 annotations: '92 3%緩和, '00 IT 6.5%, '03 1%フロア, '08 GFC ZIRP, '20 COVID 0%, '23 5.33%ピーク
+- Both files: All Key Stats cards, Overview sections, tables (Treasury Securities Types, Debt History, Yield Curve, Primary Dealers, Holders, QE/QT Programs, LIBOR→SOFR, MMF, CP, short-term benchmarks), and footer sources fully preserved
+- Verified: Both files contain ChartBuilder.lines() (grep: us-treasury-debt @ line 559, us-fedfunds-tbill @ line 108), and the legacy `<svg class="svg-chart">` blocks previously in these pages have been removed
