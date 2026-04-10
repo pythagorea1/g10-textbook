@@ -697,3 +697,29 @@
   - 6 annotations: '92 3%緩和, '00 IT 6.5%, '03 1%フロア, '08 GFC ZIRP, '20 COVID 0%, '23 5.33%ピーク
 - Both files: All Key Stats cards, Overview sections, tables (Treasury Securities Types, Debt History, Yield Curve, Primary Dealers, Holders, QE/QT Programs, LIBOR→SOFR, MMF, CP, short-term benchmarks), and footer sources fully preserved
 - Verified: Both files contain ChartBuilder.lines() (grep: us-treasury-debt @ line 559, us-fedfunds-tbill @ line 108), and the legacy `<svg class="svg-chart">` blocks previously in these pages have been removed
+
+## 2026-04-11 — Task 10.4: us/14_currency.html + us/15_crises.html — DXY & S&P 500 Crisis Drawdown ChartBuilder Migration
+- **us/14_currency.html**: Replaced the legacy hand-positioned `<svg class="svg-chart">` DXY chart (12-point sparse, manual path) with ChartBuilder.lines `dxy-monthly`
+  - 436 monthly values Jan 1990 – Apr 2026 (36 full years × 12 + 4 months)
+  - Source: ICE/FRED Dollar Index (DTWEXBGS派生 / DXY historical)
+  - Captures every major DXY turning point called out in the existing "DXY歴史的推移" table:
+    - 1992/9 ERM crisis low ~78, 1995/4 trough 80, 2001/7 IT peak 121, 2008/3 all-time low 71, 2008/11 Lehman spike 88, 2014-15 Fed hike rally to 100+, 2017 低い91, 2020/3 COVID dollar squeeze 99-103, 2021/1 post-COVID low 90, 2022/9 multi-decade peak 112-114 (monthly average close to the 114.8 intraday), 2025/3-4 relatively firm → 2025/4 Liberation Day tariff shock drop to ~100 and below (1973 年以来最大の上半期下落幅)
+  - Linear scale yRange [65, 125], yStep 10 — clean grid covering entire 55-point range
+  - 6 annotations (CLAUDE.md cap): 1992.667 ERM危機 78, 2001.5 IT後 121, 2008.167 史上最安 71, 2014.917 FRB利上げ, 2022.667 22/9 115, 2025.25 関税ショック
+  - All 8 sections (Overview, Monetary System, DXY history table, Plaza Accord, Dollar Smile, USD/JPY table, De-dollarization, FX Intervention), stat cards, and footer sources 完全保持
+- **us/15_crises.html**: Kept the existing event timeline `<svg class="svg-chart">` (1907-2023 vertical event list — not a price chart) and ADDED a new ChartBuilder.lines `sp500-crises-monthly` immediately after it
+  - 556 monthly S&P 500 closes Jan 1980 – Apr 2026 (46 years × 12 + 4) — longest monthly equity series in the project
+  - Combines previously validated segments: us/08 (1980-1999, 240 exact FRED values), us/09 (2000-2019, 240 vals), us/10 (2020-2026, 76 vals). Data fully consistent across pages
+  - Log scale yRange [90, 7500] to span 1982/7 trough 107 → 2025 ATH 6853 (~64× range) without compressing the 1987/2009/2020 crashes
+  - Captures ALL crisis drawdowns that the timeline lists as events, now visually instead of textually:
+    - 1987/10 Black Monday: 321.83 → 251.79 (month-end, real -22%)
+    - 1990 recession: 361 → 306
+    - 2000-2002 Dot-com: 1485 → 776 (S&P -49%)
+    - 2007-2009 GFC: 1565 (Oct 2007) → 677 (Mar 2009, -57%)
+    - 2020/3 COVID: 3386 → 2237 (-34% in 23 trading days)
+    - 2022: 4796 → 3577 (-25%)
+    - 2025/4 Liberation Day tariffs: 6144 → 5370 (-12% peak-to-trough)
+  - 6 annotations: '87 BM -22%, Dot-com高, GFC 底677, COVID -34%, '22 -25%, 関税 -12%
+  - Existing crisis timeline figure, 12-item Key Stats, crisis summary table, and all text sections (1907 Panic, Great Depression, S&L, LTCM, GFC, COVID, 2023 Regional Banking, Common Patterns, footer sources) fully preserved
+- Verified: us/14_currency.html contains `ChartBuilder.lines('dxy-monthly'` (@ line 477) and no longer has the `svg-chart` DXY block; us/15_crises.html contains `ChartBuilder.lines('sp500-crises-monthly'` (@ line 158) AND retains its single timeline `svg-chart` (@ line 80)
+- Python-verified array lengths: DXY 436 monthly values (min 71, max 121), S&P 500 556 monthly values (min 102.09, max 6929) — matches expected counts
