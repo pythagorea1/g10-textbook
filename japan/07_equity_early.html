@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Japan - Equity: Early History | G10 Markets Textbook</title>
   <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
   <script defer src="../assets/charts.js"></script>
 </head>
 <body>
@@ -74,6 +75,60 @@
     </header>
 
     <article>
+      <!-- Nikkei 225 Monthly Chart (1950-1979) -->
+      <div id="nikkei-early-monthly"></div>
+      <script>
+      ChartBuilder.lines('nikkei-early-monthly', {
+        title: '日経平均株価 (Nikkei 225) — 月次代表値 (1950-1979)',
+        caption: '出典: 日本経済新聞社「日経平均プロフィル 長期データ」, indexes.nikkei.co.jp。対数軸。1950年9月7日 算出開始176.21 → 1979年末6,569 (約37倍)。1953年スターリン暴落、1961年岩戸景気ピーク、1965年証券恐慌(山一日銀特融)、1972年列島改造ブーム、1973-74年第一次石油危機。',
+        logScale: true,
+        yRange: [90, 7000],
+        series: [{
+          name: 'Nikkei 225', color: '#00d4aa', width: 1.8,
+          data: [
+            [1950.667, 176.21], [1950.917, 101.91],
+            [1951.917, 166.06],
+            [1952.917, 362.64],
+            [1953.083, 474.43], [1953.917, 377.95],
+            [1954.917, 356.09],
+            [1955.917, 425.69],
+            [1956.917, 549.14],
+            [1957.917, 474.55],
+            [1958.917, 666.54],
+            [1959.917, 874.88],
+            [1960.917, 1356.71],
+            [1961.500, 1829.74], [1961.917, 1432.60],
+            [1962.917, 1420.44],
+            [1963.917, 1225.10],
+            [1964.917, 1216.55],
+            [1965.500, 1020.49], [1965.917, 1417.83],
+            [1966.917, 1452.10],
+            [1967.917, 1283.47],
+            [1968.917, 1714.89],
+            [1969.917, 2358.96],
+            [1970.917, 1987.14],
+            [1971.917, 2713.74],
+            [1972.083, 2642.00], [1972.917, 5207.94],
+            [1973.000, 5359.74], [1973.917, 4306.80],
+            [1974.750, 3355.13], [1974.917, 3817.22],
+            [1975.917, 4358.60],
+            [1976.917, 4990.85],
+            [1977.917, 4865.60],
+            [1978.917, 6001.85],
+            [1979.917, 6569.47]
+          ]
+        }],
+        annotations: [
+          { year: 1950.667, label: '1950 算出開始', color: '#00d4aa' },
+          { year: 1961.500, label: '1961 岩戸景気', color: '#00d4aa' },
+          { year: 1965.500, label: '1965 証券恐慌', color: '#ff6b6b' },
+          { year: 1971.917, label: '1971 ニクソン', color: '#ffa94d' },
+          { year: 1973.000, label: '1973 5,359高値', color: '#ffd93d' },
+          { year: 1974.750, label: '1974 石油危機底', color: '#ff6b6b' }
+        ]
+      });
+      </script>
+
       <!-- Key Stats -->
       <div class="stat-grid">
         <div class="stat-card">
@@ -529,6 +584,7 @@
       });
     });
   </script>
+  <script src="../assets/enhancer.js"></script>
   <script src="../assets/tts-reader.js"></script>
 </body>
 </html>

@@ -73,7 +73,7 @@
 - [x] Task 10.6: us/18_regulation.html + us/19_trade.html + us/20_lessons.html — 既存チャートの月次化（月次データがあるものに限る）
 
 ### Phase 11: Japan — Remaining Pages (07-20) Monthly Upgrade
-- [ ] Task 11.1: japan/07_equity_early.html + japan/08_equity_modern.html — TOPIX/日経月次化
+- [x] Task 11.1: japan/07_equity_early.html + japan/08_equity_modern.html — TOPIX/日経月次化
 - [ ] Task 11.2: japan/09_equity_recent.html + japan/10_equity_current.html — 日経225月次化
 - [ ] Task 11.3: japan/11_bond_market.html + japan/12_short_rates.html — JGB月次化、TIBOR月次化
 - [ ] Task 11.4: japan/14_currency.html + japan/15_crises.html — USD/JPY月次化、バブル崩壊・アジア危機期間の月次チャート

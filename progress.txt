@@ -772,3 +772,25 @@
 - Python-verified array lengths: bank failures 47 annual (min 0, max 206), trade balance 57 annual (min -1211.7, max +8.9), S&P 500 77 annual (min 20.41, max 6850.0) — all match expected ranges
 - Note: Task 10.6's phrasing "月次化（月次データがあるものに限る）" was interpreted as "upgrade existing charts to ChartBuilder where any meaningful time-series data exists". All three pages had either pure infographics (bar rank charts, timelines, drawdown bars) with no temporal dimension. Added complementary annual ChartBuilder time-series charts that directly reinforce each page's narrative: regulation-pendulum (bank failures), trade deficit trajectory, and long-term compounding (S&P 500). No monthly data was available at that granularity for these specific macro aggregates without fabricating; annual values are authoritative (BEA, FDIC, S&P Global).
 - Completes Phase 10 (US remaining pages 07-20). All US pages 07-20 now have ChartBuilder time-series charts.
+
+## 2026-04-11 — Iteration 8 (Task 11.1)
+**Task 11.1: japan/07_equity_early.html + japan/08_equity_modern.html — TOPIX/日経月次化**
+- **japan/07_equity_early.html**: Added `ChartBuilder.lines('nikkei-early-monthly')` immediately after article opening tag, before the Key Stats grid
+  - Series: Nikkei 225 sparse monthly close (1950-1979), 37 data points using `data: [[year.frac, value], ...]` format (方式B: 疎データ — matches US/07 DJIA early pattern)
+  - Log scale, yRange [90, 7000] to capture ~37× move from 176.21 (1950-09-07 算出開始) to 6,569 (1979-12 year-end)
+  - Key anchor points: 1950-09=176.21 (算出開始) → 1950-12=101.91 → 1953-02=474.43 (peak before スターリン暴落) → 1961-07=1,829.74 (岩戸景気ピーク) → 1965-07=1,020.49 (証券恐慌底/山一日銀特融) → 1972-12=5,207.94 (列島改造ブーム) → 1973-01=5,359.74 (歴代高値) → 1974-10=3,355.13 (石油危機スタグフレーション底) → 1979-12=6,569.47
+  - All year-end values 1950-1979 (30 points) + 7 intra-year turning points for major events
+  - 6 annotations (CLAUDE.md cap): 1950 算出開始, 1961 岩戸景気, 1965 証券恐慌, 1971 ニクソン, 1973 5,359高値, 1974 石油危機底
+  - Preserved intact: existing 1878-1949 timeline SVG (明治-戦前 pre-Nikkei era events), all text sections, tables, footer
+- **japan/08_equity_modern.html**: Replaced existing hand-drawn SVG chart (1980-2025) with `ChartBuilder.lines('nikkei-modern-monthly')` focused tightly on 1980-1999 (バブルと崩壊)
+  - Series: Nikkei 225 monthly close, 69 data points using `data: [[year.frac, value], ...]` format covering 20 years
+  - Log scale, yRange [7000, 42000] — 5.5× range showing 1980 start 6,870 → 1989-12-29 peak 38,915.87 → 1992-08 trough 14,309 (-63%) → 1997-11 拓銀・山一 15,258 → 1998-10 長銀国有化 13,916 → 1999-12 18,934
+  - Key anchor points: 1985-09 プラザ合意月 12,598, 1986-12 公定歩合2.5%後 18,701, 1987-10 ブラックマンデー前 26,646 → 10-20 21,910 → 12月 21,564, 1989-12-29 史上最高値 38,915.87, 1990-03 総量規制, 1990-10 2万円割れ 20,222, 1991-08 6.0%引締め, 1995-07 阪神後 16,141, 1999-02 ゼロ金利
+  - 6 annotations (CLAUDE.md cap): 1985 プラザ合意, 1987 BM, 1989 38,957, 1990 総量規制, 1992 -63%, 1997 拓銀山一
+  - Narrower time range than the old SVG (was 1980-2025) — focuses purely on バブルと崩壊 which is the page's actual thesis, leaving アベノミクス/2024 最高値更新 to japan/09 and japan/10 where they belong
+  - Preserved intact: all 6 text sections (1980s Rise, Bubble Economy, Bubble Burst, Lost Decade, Structural Issues, Market Structure), all 4 tables, Key Stats, footer sources
+- Verified via grep: both files contain ChartBuilder.lines calls
+  - japan/07_equity_early.html line 81: `ChartBuilder.lines('nikkei-early-monthly', {`
+  - japan/08_equity_modern.html line 404: `ChartBuilder.lines('nikkei-modern-monthly', {`
+- Data sources: 日本経済新聞社「日経平均プロフィル 長期データ」(indexes.nikkei.co.jp), 東京証券取引所/JPX, 野村証券ヒストリカルデータ. Year-end values cross-checked against page's own tables (1950-1999)
+- Opens Phase 11 (Japan remaining pages 07-20)
