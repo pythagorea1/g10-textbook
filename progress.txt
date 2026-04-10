@@ -66,3 +66,21 @@
   - 6 annotations for key spread regime changes
 - Key turning points verified: 2000 inversion, 2003 steep, 2006-07 Conundrum inversion, 2009 steep +280bp, 2022-23 deep inversion (-93bp peak Jul 2023), 2024 un-inversion
 - Existing text content, tables, compound return chart, and all other sections fully preserved
+
+## 2026-04-10 — Task 1.5: us/06_equity_overview.html — S&P 500 Monthly Chart
+- Replaced quarterly S&P 500 chart (107 sparse data points) with monthly data (316 points)
+- Changed from `data: [[year, value], ...]` sparse format to `start: 2000.0, step: 1/12, values: [...]` dense format
+- 316 monthly data points: Jan 2000 – Apr 2026 (Multpl.com, sourced from S&P Dow Jones Indices)
+- Key turning points verified via WebSearch:
+  - Dot-com bottom: Oct 2002 = 855 (S&P lost 49% from Mar 2000 peak)
+  - Pre-GFC peak: Oct 2007 = 1540
+  - GFC bottom: Mar 2009 = 757 (intraday low 666 on Mar 6, 2009)
+  - COVID crash: Mar 2020 = 2652 (S&P -34% from Feb peak)
+  - 2022 Bear bottom: Oct 2022 = 3726 (S&P -25% from Jan peak)
+  - 2025 tariff crash: Apr 2025 = 5370 (Liberation Day tariffs Apr 2-3)
+  - AI rally ATH: Jan 2026 = 6929
+- Log scale retained for better visualization of long-term growth
+- yRange expanded from [600, 6500] to [600, 7500] to accommodate 2026 highs
+- 6 annotations: Dot-com Low, GFC Peak, GFC Low, COVID -34%, Bear -25%, AI ATH
+- Div ID changed from 'sp500-quarterly' to 'sp500-monthly'
+- Existing text content, tables, long-term SVG chart, and all other sections fully preserved
