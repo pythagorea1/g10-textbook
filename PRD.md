@@ -56,7 +56,7 @@
 - [x] Task 7.3: sweden/06 + norway/06 — OMXS30 + OBX月次化。各国01に総裁情報追加
 
 ### Phase 8: Top Page & Cross-Country Comparison
-- [ ] Task 8.1: index.html — G10 10Y国債利回り比較チャート（10本線、月次、2000-2026）
+- [x] Task 8.1: index.html — G10 10Y国債利回り比較チャート（10本線、月次、2000-2026）
 - [ ] Task 8.2: index.html — G10主要株式指数パフォーマンス比較（2000年=100にリベース、月次）
 - [ ] Task 8.3: index.html — G10政策金利比較チャート（月次、全10中銀）
 

@@ -544,3 +544,24 @@
     - Ida Wolden Bache (2022-present): commons/thumb/9/9d/Ida_Wolden_Bache
   - 3 policy episodes: Gjedrem IT introduction + oil economy, Olsen G10 first hiker + GPFG 1T USD, Bache first female governor + 4.50% hike
 - All existing text content, tables, and sections preserved in all files
+
+## 2026-04-11 — Task 8.1: index.html — G10 10Y Government Bond Yield Comparison Chart
+- Added `<script src="assets/chart-builder.js">` to index.html head section
+- Created new "G10 10-Year Government Bond Yields" section with ChartBuilder.lines() call
+- 10 series × 315 monthly data points each (Jan 2000 – Mar 2026):
+  - US (Treasury 10Y) — #00d4aa, width 2.2 (highlighted as benchmark)
+  - Japan (JGB 10Y) — #ff6b6b
+  - Germany (Bund 10Y) — #5b8def
+  - UK (Gilt 10Y) — #ffd93d
+  - Switzerland (Conf 10Y) — #a78bfa
+  - Australia (ACGB 10Y) — #ff9f43
+  - New Zealand (NZGB 10Y) — #4ecdc4
+  - Canada (CGB 10Y) — #f472b6
+  - Sweden (SGB 10Y) — #74c0fc
+  - Norway (NGB 10Y) — #d770ad
+- Data sourced from existing 13_long_rates.html pages (all previously verified via WebSearch)
+- Sweden data extended with Jan-Mar 2026 values (2.76, 2.80, 2.77) based on Riksbank/TradingEconomics
+- yRange [-1.5, 8], yStep 1%, to accommodate Japan's near-zero/negative and NZ/AU/Norway high yields
+- 5 annotations: GFC (2008.75), Draghi "Whatever" (2012.6), Brexit/BOJ YCC (2016.5), COVID (2020.25), Inflation (2022.5)
+- Chart placed between Policy Rate Comparison section and Overview Table
+- All existing content (country cards, TOC, tables, scripts) fully preserved
