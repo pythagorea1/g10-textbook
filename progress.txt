@@ -46,3 +46,23 @@
 - 6 annotations: 1953 2.5%, 1975 9.0%, 1982 10.8%, 2000 3.8% (green), 2009 10.0%, COVID 14.8%
 - yRange [0, 16], yStep 2% for clean grid accommodating COVID spike
 - Existing text content, tables, stat cards, and all other sections fully preserved; only chart figure replaced
+
+## 2026-04-10 — Task 1.4: us/13_long_rates.html — Multi-Maturity Yields + Spread Charts
+- Upgraded multi-maturity yield chart from annual to monthly data (Jan 2000 - Mar 2026)
+  - 4 series (2Y, 5Y, 10Y, 30Y) × 315 monthly data points each
+  - Data sourced from FRED GS2/GS5/GS10/GS30 via multpl.com (monthly averages)
+  - 30Y has 47 null values for Feb 2002-Jan 2006 (Treasury suspended 30Y bond issuance)
+  - Shared JavaScript variables (usY2, usY5, usY10, usY30) to avoid data duplication across charts
+- Replaced hardcoded inline SVG (Section 2: 10Y Timeline) with ChartBuilder.lines() call
+  - 10Y monthly data from 2000-2026 with 6 key annotations
+  - Annotations: 2003 low, 2006 Conundrum, GFC, 2012 low, COVID 0.6%, 2023 peak
+- Added new 2s10s yield spread chart using ChartBuilder.spread()
+  - 10Y minus 2Y spread, monthly, with positive/negative area coloring
+  - Highlights inverted yield curve periods: 2000, 2006-07, 2022-23 deep inversion
+  - 6 annotations including "Deep Inv" for 2022 and "Un-invert" for 2024
+- Added new 5s30s yield spread chart using ChartBuilder.spread()
+  - 30Y minus 5Y spread, monthly, with gap during 30Y issuance suspension
+  - Shows curve steepness dynamics: post-GFC steepening, taper tantrum, recent flattening
+  - 6 annotations for key spread regime changes
+- Key turning points verified: 2000 inversion, 2003 steep, 2006-07 Conundrum inversion, 2009 steep +280bp, 2022-23 deep inversion (-93bp peak Jul 2023), 2024 un-inversion
+- Existing text content, tables, compound return chart, and all other sections fully preserved
