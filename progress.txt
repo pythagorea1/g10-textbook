@@ -157,3 +157,38 @@
   - VaR Shock: 10Y 0.54% (May 2003) → 1.43% (Aug 2003)
   - YCC period: Sep 2016 – Mar 2024
 - Existing text content, tables, and all other sections fully preserved
+
+## 2026-04-11 — Task 2.3: japan/06_equity_overview.html + japan/01_central_bank.html
+- **japan/06_equity_overview.html**: Replaced quarterly Nikkei 225 chart with monthly data using ChartBuilder.lines()
+  - 316 monthly data points: Jan 2000 – Apr 2026 (source: sensexindia.in / Nikkei Inc)
+  - Changed from `data: [[year, value], ...]` sparse format to `start: 2000.0, step: 1/12, values: [...]` dense format
+  - Div ID changed from 'nikkei-quarterly' to 'nikkei-monthly'
+  - Key turning points verified via WebSearch:
+    - Apr 2003: 7,831 (post-IT-bubble bottom)
+    - Oct 2008: 8,577 (GFC crash, intraday low 6,995 on Oct 28)
+    - Mar 2020: 18,917 (COVID crash, -32% from Jan peak)
+    - Feb 2024: 39,166 (34-year high, finally surpassed 1989 bubble peak of 38,957)
+    - Jul 2024: 42,224 (ATH at the time), Aug 2024 crash to 31,458 intraday (8/5)
+    - Feb 2026: 58,528 (new ATH)
+  - Log scale retained, yRange expanded from [6000, 45000] to [6000, 65000] to accommodate 2026 highs
+  - 6 annotations: 底値7,831, GFC 8,577, アベノミクス, COVID -32%, 34年ぶり最高値, ATH 58,528
+- **japan/01_central_bank.html**: Added BOJ governor photo gallery and 8 detailed policy episode boxes
+  - 5 governor portraits from Wikipedia Commons:
+    - 速水優 (Masaru Hayami): commons/thumb/5/5c/Masaru_Hayami.jpg/200px
+    - 福井俊彦 (Toshihiko Fukui): commons/thumb/a/a0/Toshihiko_Fukui.jpg/200px
+    - 白川方明 (Masaaki Shirakawa): commons/thumb/d/df/Masaaki_Shirakawa_2012.jpg/200px
+    - 黒田東彦 (Haruhiko Kuroda): commons/thumb/1/17/Haruhiko_Kuroda_at_ADB_Philippines_(crop).jpg/200px
+    - 植田和男 (Kazuo Ueda): commons/thumb/b/be/BOJ_governor_Kazuo_Ueda_(cropped).jpg/200px
+  - 3 earlier governors (Sumita, Mieno, Matsushita) included with text episodes but no photos (not available on Wikipedia Commons)
+  - 8 policy episode info-boxes with color-coded borders matching Gantt chart colors:
+    - 澄田: バブル醸成、2.5%据え置き、日経3倍膨張
+    - 三重野: 「平成の鬼平」、6%利上げ、Bloomberg追悼記事
+    - 松下: 住専問題、山一・拓銀破綻、日銀特融
+    - 速水: ゼロ金利パイオニア、2000年8月解除の失敗、世界初QE
+    - 福井: 出口戦略成功、村上ファンド1000万円出資問題
+    - 白川: 三重苦(リーマン・震災・円高)、安倍圧力、異例の早期辞任、著書「中央銀行」
+    - 黒田: 黒田バズーカ、ハロウィン緩和、マイナス金利サプライズ、YCC、総資産5倍超膨張
+    - 植田: MIT博士、三大政策一挙解除、令和ブラックマンデー、データ依存の正常化
+  - Photo gallery uses flexbox with center justification, 100x120px with object-fit:cover
+  - Inserted between existing governors table and policy committee section
+  - All existing text, tables, Gantt chart, and other content fully preserved

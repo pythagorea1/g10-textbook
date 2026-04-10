@@ -28,7 +28,7 @@
 ### Phase 2: Japan Charts — Monthly Upgrade
 - [x] Task 2.1: japan/02_policy_rate.html + japan/05_inflation.html — BOJ政策金利 + CPI月次化
 - [x] Task 2.2: japan/13_long_rates.html — JGB利回り月次化 + 2s10s/5s30sスプレッド追加。YCC期間をハイライト
-- [ ] Task 2.3: japan/06_equity_overview.html — 日経225月次化 + japan/01_central_bank.html — 歴代総裁写真・政策エピソード
+- [x] Task 2.3: japan/06_equity_overview.html — 日経225月次化 + japan/01_central_bank.html — 歴代総裁写真・政策エピソード
 
 ### Phase 3: Eurozone Charts — Monthly Upgrade
 - [ ] Task 3.1: eurozone/02_policy_rate.html + eurozone/05_inflation.html — ECB主要金利 + HICP月次化
