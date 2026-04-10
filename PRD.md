@@ -64,6 +64,63 @@
 - [x] Task 9.1: 全チャートの注釈・キャプション統一レビュー。データ不整合修正
 - [x] Task 9.2: summary/g10_timeline.html 更新 — 新チャートへのリンク追加
 
+### Phase 10: US — Remaining Pages (07-20) Monthly Upgrade
+- [x] Task 10.1: us/07_equity_early.html + us/08_equity_modern.html — 既存SVGチャートをChartBuilder月次化（Dow Jones 1896-1950, S&P 1950-2000）
+- [ ] Task 10.2: us/09_equity_recent.html + us/10_equity_current.html — S&P 500月次データ化（2000-2020, 2020-2026）
+- [ ] Task 10.3: us/11_bond_market.html + us/12_short_rates.html — 既存SVGをChartBuilder月次化（bond yield, 3M T-bill等）
+- [ ] Task 10.4: us/14_currency.html + us/15_crises.html — DXY月次化 + 危機期間のチャート月次化
+- [ ] Task 10.5: us/16_banking.html + us/17_corporate.html — 銀行セクター/企業指標の月次化
+- [ ] Task 10.6: us/18_regulation.html + us/19_trade.html + us/20_lessons.html — 既存チャートの月次化（月次データがあるものに限る）
+
+### Phase 11: Japan — Remaining Pages (07-20) Monthly Upgrade
+- [ ] Task 11.1: japan/07_equity_early.html + japan/08_equity_modern.html — TOPIX/日経月次化
+- [ ] Task 11.2: japan/09_equity_recent.html + japan/10_equity_current.html — 日経225月次化
+- [ ] Task 11.3: japan/11_bond_market.html + japan/12_short_rates.html — JGB月次化、TIBOR月次化
+- [ ] Task 11.4: japan/14_currency.html + japan/15_crises.html — USD/JPY月次化、バブル崩壊・アジア危機期間の月次チャート
+- [ ] Task 11.5: japan/16_banking.html + japan/17_corporate.html + japan/18_regulation.html + japan/19_trade.html + japan/20_lessons.html — 残り全ページ月次化
+
+### Phase 12: Eurozone — Remaining Pages (07-20) Monthly Upgrade
+- [ ] Task 12.1: eurozone/07_equity_early.html + eurozone/08_equity_modern.html — 欧州株式月次化
+- [ ] Task 12.2: eurozone/09_equity_recent.html + eurozone/10_equity_current.html — Euro Stoxx/DAX月次化
+- [ ] Task 12.3: eurozone/11_bond_market.html + eurozone/12_short_rates.html — Bund月次化、EURIBOR月次化
+- [ ] Task 12.4: eurozone/14_currency.html + eurozone/15_crises.html — EUR/USD月次化、ユーロ危機月次チャート
+- [ ] Task 12.5: eurozone/16_banking.html + eurozone/17_corporate.html + eurozone/18_regulation.html + eurozone/19_trade.html + eurozone/20_lessons.html — 残り月次化
+
+### Phase 13: UK — Remaining Pages (07-20) Monthly Upgrade
+- [ ] Task 13.1: uk/07_equity_early.html + uk/08_equity_modern.html — FT All-Share/FTSE月次化
+- [ ] Task 13.2: uk/09_equity_recent.html + uk/10_equity_current.html — FTSE 100月次化
+- [ ] Task 13.3: uk/11_bond_market.html + uk/12_short_rates.html — Gilt月次化、SONIA月次化
+- [ ] Task 13.4: uk/14_currency.html + uk/15_crises.html — GBP月次化、ERM crisis等月次化
+- [ ] Task 13.5: uk/16_banking.html + uk/17_corporate.html + uk/18_regulation.html + uk/19_trade.html + uk/20_lessons.html — 残り月次化
+
+### Phase 14: Switzerland + Australia — Remaining Pages
+- [ ] Task 14.1: switzerland/07-10 (equity) — SMI月次化
+- [ ] Task 14.2: switzerland/11, 12, 14, 15 — Swiss bonds, SARON, CHF, crises月次化
+- [ ] Task 14.3: switzerland/16-20 — 残り月次化
+- [ ] Task 14.4: australia/07-10 (equity) — ASX 200月次化
+- [ ] Task 14.5: australia/11, 12, 14, 15 — AU bonds, BBSW, AUD, crises月次化
+- [ ] Task 14.6: australia/16-20 — 残り月次化
+
+### Phase 15: Canada + New Zealand — Remaining Pages
+- [ ] Task 15.1: canada/07-10 (equity) — TSX月次化
+- [ ] Task 15.2: canada/11, 12, 14, 15 — Canada bonds, CAD, crises月次化
+- [ ] Task 15.3: canada/16-20 — 残り月次化
+- [ ] Task 15.4: newzealand/07-10 (equity) — NZX月次化
+- [ ] Task 15.5: newzealand/11, 12, 14, 15 — NZ bonds, NZD, crises月次化
+- [ ] Task 15.6: newzealand/16-20 — 残り月次化
+
+### Phase 16: Sweden + Norway — Remaining Pages
+- [ ] Task 16.1: sweden/07-10 (equity) — OMX月次化
+- [ ] Task 16.2: sweden/11, 12, 14, 15 — SGB, STIBOR, SEK, crises月次化
+- [ ] Task 16.3: sweden/16-20 — 残り月次化
+- [ ] Task 16.4: norway/07-10 (equity) — OBX月次化
+- [ ] Task 16.5: norway/11, 12, 14, 15 — NGB, NOK, crises月次化
+- [ ] Task 16.6: norway/16-20 — 残り月次化
+
+### Phase 17: Final Verification
+- [ ] Task 17.1: 全10ヵ国の07-20ページを確認し、ChartBuilder月次化が完了していないチャートをリストアップして追加アップグレード
+- [ ] Task 17.2: 注釈の重複や表示崩れをチェック・修正
+
 ## Constraints
 - **外部CDN/library禁止** — 純粋なインラインSVG + Vanilla JS + chart-builder.js
 - **データはハードコード** — 月次代表値を配列で埋め込む

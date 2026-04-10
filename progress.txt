@@ -641,3 +641,28 @@
 - Verified: All 65 href targets confirmed to exist in the file system
 - Verified: 8 table open/close tags balanced, HTML structure intact
 - **All 30 tasks across Phases 0–9 are now complete** ✓
+
+## 2026-04-11 — Phase 10-17 Started
+- Phase 0-9 completed (index, 01, 02, 04, 05, 06, 13 pages for all countries)
+- New phases added for remaining pages (07-20) across all 10 countries
+- Goal: Upgrade all remaining inline SVG charts to ChartBuilder monthly format
+
+## 2026-04-11 — Task 10.1: us/07_equity_early.html + us/08_equity_modern.html — DJIA & S&P 500 ChartBuilder Charts
+- **us/07_equity_early.html**: Added new ChartBuilder.lines chart `djia-monthly` after the existing timeline figure
+  - 91 sparse data points covering DJIA from 1896-05 (40.94 — index inception) to 1979-12 (838.74)
+  - Sparse format `data: [[year+month/12, value], ...]` for efficiency over 84-year span
+  - Annual end-of-year close + key crisis months: 1907 panic (53), 1929-09 peak (381.17), 1932-07 bottom (41.22), 1937-03 peak (194.40), 1938-03 low (98.95), 1966-02 first 1000 attempt (995.15)
+  - Log scale with yRange [30, 1100] to span 30x range
+  - 6 annotations: 1907 Panic, 1929 Peak 381, 1932 Low 41, 1954 Recovery, 1972 Dow 1000, 1974 Bear -45%
+  - Existing timeline SVG figure preserved (it's an event timeline, not a price chart)
+- **us/08_equity_modern.html**: Replaced inline hand-drawn SVG path chart with ChartBuilder.lines `sp500-modern-monthly`
+  - 240 monthly close values (1980-01 to 1999-12, exactly 20 years × 12 months)
+  - Source: FRED SP500 / S&P Dow Jones month-end close
+  - Dense format `start: 1980.0, step: 1/12, values: [...]`
+  - Captures full bull market: 1982-08 trough 109.61 → 1999-12 1469.25 (~13.4×)
+  - Includes 1987 Black Monday (Oct: 274.08 → 251.79 = roughly captured at month-end), Plaza Accord 1985, 1990 recession, 1996 Greenspan "irrational exuberance", 1999 dot-com peak
+  - Log scale with yRange [90, 1600]
+  - 6 annotations: 1982 Bull Start, Plaza Accord, 1987 Crash -22%, 1990 Recession, Irrational Exuberance, 1999 Dot-com
+- Verified: Both files contain ChartBuilder.lines() invocations (grep confirmed)
+- Verified: 240 monthly values for S&P (matches expected 20×12), 91 sparse points for DJIA
+- All existing text content, sections, tables, key stats, and footers fully preserved
