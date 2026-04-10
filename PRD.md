@@ -18,7 +18,7 @@
 - [x] Task 0.1: chart-builder.js をアップグレード — monthly軸（年.月の小数表記対応）、spreadチャート自動計算（2系列の差分をplot）、凡例の改善、x軸の年月ラベル。新API: `ChartBuilder.spread(id, {title, seriesA, seriesB, ...})` を追加。ゼロラインを描画し、マイナス領域を赤く塗る
 
 ### Phase 1: US Charts — Monthly Upgrade
-- [ ] Task 1.1: us/02_policy_rate.html — FF金利を月次データ化（1954-2026, ~860点）。WebSearchで主要転換点の正確な日付と値を確認。既存年次チャートを置き換え
+- [x] Task 1.1: us/02_policy_rate.html — FF金利を月次データ化（1954-2026, ~860点）。WebSearchで主要転換点の正確な日付と値を確認。既存年次チャートを置き換え
 - [ ] Task 1.2: us/05_inflation.html — CPI前年比を月次データ化（1960-2026）。既存年次チャートを置き換え
 - [ ] Task 1.3: us/04_employment.html — 失業率を月次データ化（1948-2026）。NFP/失業率の主要転換点を注釈
 - [ ] Task 1.4: us/13_long_rates.html — 2Y/5Y/10Y/30Y利回りを月次化。新規: 2s10sスプレッド + 5s30sスプレッドチャートを追加。逆イールド期間をハイライト

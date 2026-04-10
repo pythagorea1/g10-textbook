@@ -17,3 +17,12 @@
 - Added `xAxisStep()` helper: smarter x-axis label spacing for different time spans (1-80+ years)
 - Extended COLORS array from 8 to 10 entries for G10 comparisons
 - All existing APIs (`lines`, `compound`) remain fully backward compatible
+
+## 2026-04-10 — Task 1.1: us/02_policy_rate.html — FF Rate Monthly Chart
+- Replaced hardcoded SVG annual chart with `ChartBuilder.lines()` call using monthly data
+- 861 monthly data points: Jul 1954 – Mar 2026 (FRED FEDFUNDS series)
+- Data verified via WebSearch: 1954-2003 from FRED archive, 2003-2026 from FOMC rate change dates
+- Key turning points verified: Volcker peak 19.10% (Jun 1981), ZIRP 0.16% (Dec 2008), COVID 0.05% (Apr 2020), 2023 peak 5.33% (Aug 2023)
+- 6 annotations: Volcker 19%, 1993 3% low, 2003 1% low, GFC→ZIRP, COVID 0%, 2023 5.33% peak
+- yRange [0, 21], yStep 5% for clean grid lines
+- Existing text content fully preserved; only chart figure replaced
