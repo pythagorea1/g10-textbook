@@ -42,8 +42,8 @@
 
 ### Phase 5: Switzerland + Australia — Monthly Upgrade
 - [x] Task 5.1: switzerland/02 + 13_long_rates — SNB金利 + Swiss yields月次化 + スプレッド
-- [ ] Task 5.2: australia/02 + 13_long_rates — RBA cash rate + AU yields月次化 + スプレッド
-- [ ] Task 5.3: switzerland/06 + australia/06 — SMI + ASX月次化。各国01_central_bank に総裁情報追加
+- [x] Task 5.2: australia/02 + 13_long_rates — RBA cash rate + AU yields月次化 + スプレッド
+- [x] Task 5.3: switzerland/06 + australia/06 — SMI + ASX月次化。各国01_central_bank に総裁情報追加
 
 ### Phase 6: Canada + New Zealand — Monthly Upgrade
 - [ ] Task 6.1: canada/02 + 13_long_rates — BOC rate + Canada yields月次化 + スプレッド

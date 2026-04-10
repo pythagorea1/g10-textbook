@@ -375,3 +375,26 @@
   - 2s10s spread chart added using ChartBuilder.spread()
   - 30Y hardcoded SVG replaced with ChartBuilder.lines() (sparse annual data)
   - All existing text, tables, and sections fully preserved
+
+## 2026-04-11 — Task 5.3: switzerland/06 + australia/06 — SMI + ASX Monthly + Governor Photos
+- **switzerland/06_equity_overview.html**: Upgraded SMI chart to monthly (315 data points, Jan 2000 – Mar 2026)
+  - Replaced quarterly ChartBuilder.lines() with monthly using start/step/values format
+  - Source: SIX Group, Wikipedia annual SMI development table
+  - Key turning points verified: Mar 2003 bottom 3675, Jun 2007 peak 9548, Mar 2009 GFC 4235, Jan 2015 CHF shock, Mar 2020 COVID 8160, Dec 2021 ATH 12876
+  - 6 annotations added with verified dates/values
+  - logScale: true, yRange [3500, 14000]
+- **australia/06_equity_overview.html**: Upgraded ASX 200 chart to monthly (315 data points, Jan 2000 – Mar 2026)
+  - Replaced quarterly chart with monthly using start/step/values format
+  - Source: S&P DJI, ASX, Yahoo Finance
+  - Key turning points: Nov 2007 peak 6828, Mar 2009 GFC bottom 3145, Mar 2020 COVID 4546, Feb 2025 ATH 8535
+  - 5 annotations added
+  - logScale: true, yRange [2500, 9000]
+- **switzerland/01_central_bank.html**: Added SNB governor photos + policy episodes
+  - 4 governor photos from Wikipedia Commons: Roth, Hildebrand, Jordan, Schlegel
+  - 4 detailed policy episode cards covering 2001-2026
+  - Highlights: UBS rescue (Roth), EUR/CHF floor (Hildebrand), CHF shock + CS crisis (Jordan), rate normalization (Schlegel)
+- **australia/01_central_bank.html**: Added RBA governor photos + policy episodes
+  - 4 governor photos from Wikipedia Commons: Macfarlane, Stevens, Lowe, Bullock
+  - 4 detailed policy episode cards covering 1996-2026
+  - Highlights: inflation targeting formalization (Macfarlane), GFC response (Stevens), COVID/YCC debacle (Lowe), first female governor + dual board reform (Bullock)
+- All existing text content preserved in all files

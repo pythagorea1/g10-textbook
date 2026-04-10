@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Switzerland - Central Bank Timeline | G10 Markets Textbook</title>
   <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
   <script defer src="../assets/charts.js"></script>
 </head>
 <body>
@@ -280,6 +281,50 @@
             </tr>
           </tbody>
         </table>
+
+        <!-- Governor Photos -->
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;margin:1.5rem 0;justify-content:center;">
+          <div style="text-align:center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Jean-Pierre_Roth.jpg/200px-Jean-Pierre_Roth.jpg"
+                 alt="Jean-Pierre Roth" style="width:100px;height:120px;object-fit:cover;border-radius:8px;border:1px solid rgba(255,255,255,0.1);">
+            <div style="font-size:0.75rem;color:#a0a0b0;margin-top:0.3rem;">J-P Roth<br>2001-2009</div>
+          </div>
+          <div style="text-align:center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Philipp_Hildebrand%2C_2005_%28cropped%29.png/200px-Philipp_Hildebrand%2C_2005_%28cropped%29.png"
+                 alt="Philipp Hildebrand" style="width:100px;height:120px;object-fit:cover;border-radius:8px;border:1px solid rgba(255,255,255,0.1);">
+            <div style="font-size:0.75rem;color:#a0a0b0;margin-top:0.3rem;">Hildebrand<br>2010-2012</div>
+          </div>
+          <div style="text-align:center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Thomas_Jordan.jpg/200px-Thomas_Jordan.jpg"
+                 alt="Thomas Jordan" style="width:100px;height:120px;object-fit:cover;border-radius:8px;border:1px solid rgba(255,255,255,0.1);">
+            <div style="font-size:0.75rem;color:#a0a0b0;margin-top:0.3rem;">T. Jordan<br>2012-2024</div>
+          </div>
+          <div style="text-align:center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Schlegel_Martin.jpg/200px-Schlegel_Martin.jpg"
+                 alt="Martin Schlegel" style="width:100px;height:120px;object-fit:cover;border-radius:8px;border:1px solid rgba(255,255,255,0.1);">
+            <div style="font-size:0.75rem;color:#a0a0b0;margin-top:0.3rem;">M. Schlegel<br>2024-現在</div>
+          </div>
+        </div>
+
+        <!-- Policy Episodes -->
+        <div style="display:grid;gap:1rem;margin:1.5rem 0;">
+          <div style="background:rgba(78,205,196,0.08);border-left:3px solid #4ecdc4;padding:1rem;border-radius:0 8px 8px 0;">
+            <strong style="color:#4ecdc4;">ジャン＝ピエール・ロート (2001-2009)</strong>
+            <p style="margin:0.5rem 0 0;font-size:0.9rem;color:#c8c8d0;">2008年金融危機でUBSが600億CHFの不良資産を抱え経営危機に陥った際、連邦政府と協調して救済パッケージを主導。SNBが380億ドルの特別目的会社（StabFund）を設立してUBSの有毒資産を買い取るという前例のない措置を実施した。結果的にStabFundは利益を出して清算され、「世界で最も成功した銀行救済」と評価された。退任時に政策金利をゼロ近傍まで引き下げ、次のヒルデブラント時代への橋渡しを行った。</p>
+          </div>
+          <div style="background:rgba(255,107,107,0.08);border-left:3px solid #ff6b6b;padding:1rem;border-radius:0 8px 8px 0;">
+            <strong style="color:#ff6b6b;">フィリップ・ヒルデブラント (2010-2012)</strong>
+            <p style="margin:0.5rem 0 0;font-size:0.9rem;color:#c8c8d0;">2011年9月6日、EUR/CHF為替レートに1.20の下限を設定する歴史的決定を下した。「SNBはもはやスイスフランの大幅な過大評価を容認しない。1ユーロ=1.20フランを無制限の外貨購入で守る」と宣言。市場はこの「無制限介入」の覚悟に驚愕した。しかし2012年1月、妻のインサイダー取引疑惑（妻が大量の米ドル購入をSNB介入直前に実行）が発覚し辞任に追い込まれた。その後BlackRockの副会長に就任。</p>
+          </div>
+          <div style="background:rgba(0,212,170,0.08);border-left:3px solid #00d4aa;padding:1rem;border-radius:0 8px 8px 0;">
+            <strong style="color:#00d4aa;">トーマス・ジョルダン (2012-2024)</strong>
+            <p style="margin:0.5rem 0 0;font-size:0.9rem;color:#c8c8d0;">SNB史上最も波乱に満ちた議長。2015年1月15日、何の前触れもなくEUR/CHF 1.20下限を撤廃し「CHFショック」を引き起こした。フランは対ユーロで一時30%急騰、為替ブローカーが複数破綻し、世界の金融市場に衝撃が走った。「予告すれば投機筋に搾取される」と正当化したが、前日まで「下限維持」を公言していたため信認問題に。同時にマイナス金利-0.75%を導入（世界最低）。2022年にインフレ対応で利上げに転換、2023年3月にはクレディ・スイス破綻時にUBSによる救済買収を週末48時間で取りまとめた。2024年9月退任。</p>
+          </div>
+          <div style="background:rgba(167,139,250,0.08);border-left:3px solid #a78bfa;padding:1rem;border-radius:0 8px 8px 0;">
+            <strong style="color:#a78bfa;">マルティン・シュレーゲル (2024-現在)</strong>
+            <p style="margin:0.5rem 0 0;font-size:0.9rem;color:#c8c8d0;">ジョルダン退任後の2024年10月に就任。就任直後から利下げサイクルを継続し、2025年6月までに政策金利を0%まで引き下げた。マイナス金利の再導入には慎重姿勢を示しつつ、CHF高圧力への対応として為替介入の選択肢を維持。UBS一強体制下の金融安定性確保という新たな課題にも直面している。</p>
+          </div>
+        </div>
       </section>
 
       <!-- 現在の理事会 -->
@@ -530,6 +575,7 @@
       });
     });
   </script>
+  <script src="../assets/enhancer.js"></script>
   <script src="../assets/tts-reader.js"></script>
 </body>
 </html>
