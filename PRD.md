@@ -38,7 +38,7 @@
 ### Phase 4: UK Charts — Monthly Upgrade
 - [x] Task 4.1: uk/02_policy_rate.html + uk/05_inflation.html — BOE Bank Rate + CPI月次化
 - [x] Task 4.2: uk/13_long_rates.html — Gilt利回り月次化 + 2s10s/5s30sスプレッド
-- [ ] Task 4.3: uk/06_equity_overview.html — FTSE 100月次化 + uk/01_central_bank.html — 歴代BOE総裁写真
+- [x] Task 4.3: uk/06_equity_overview.html — FTSE 100月次化 + uk/01_central_bank.html — 歴代BOE総裁写真
 
 ### Phase 5: Switzerland + Australia — Monthly Upgrade
 - [ ] Task 5.1: switzerland/02 + 13_long_rates — SNB金利 + Swiss yields月次化 + スプレッド

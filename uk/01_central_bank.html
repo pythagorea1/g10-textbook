@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UK - Central Bank Timeline | G10 Markets Textbook</title>
   <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
   <script defer src="../assets/charts.js"></script>
 </head>
 <body>
@@ -261,6 +262,59 @@
             </tr>
           </tbody>
         </table>
+
+        <!-- Governor Photos -->
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;margin:1.5rem 0;justify-content:center;">
+          <div style="text-align:center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Lord_Kingsdown.jpg/200px-Lord_Kingsdown.jpg"
+                 alt="Robin Leigh-Pemberton" style="width:100px;height:120px;object-fit:cover;border-radius:8px;border:1px solid rgba(255,255,255,0.1);">
+            <div style="font-size:0.75rem;color:#a0a0b0;margin-top:0.3rem;">Leigh-Pemberton<br>1983-1993</div>
+          </div>
+          <div style="text-align:center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Edward_George_%282000%29.jpg/200px-Edward_George_%282000%29.jpg"
+                 alt="Eddie George" style="width:100px;height:120px;object-fit:cover;border-radius:8px;border:1px solid rgba(255,255,255,0.1);">
+            <div style="font-size:0.75rem;color:#a0a0b0;margin-top:0.3rem;">Eddie George<br>1993-2003</div>
+          </div>
+          <div style="text-align:center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Official_portrait_of_Lord_King_of_Lothbury_crop_2%2C_2024.jpg/200px-Official_portrait_of_Lord_King_of_Lothbury_crop_2%2C_2024.jpg"
+                 alt="Mervyn King" style="width:100px;height:120px;object-fit:cover;border-radius:8px;border:1px solid rgba(255,255,255,0.1);">
+            <div style="font-size:0.75rem;color:#a0a0b0;margin-top:0.3rem;">Mervyn King<br>2003-2013</div>
+          </div>
+          <div style="text-align:center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Mark_Carney_-_World_Economic_Forum_Annual_Meeting_2012.jpg/200px-Mark_Carney_-_World_Economic_Forum_Annual_Meeting_2012.jpg"
+                 alt="Mark Carney" style="width:100px;height:120px;object-fit:cover;border-radius:8px;border:1px solid rgba(255,255,255,0.1);">
+            <div style="font-size:0.75rem;color:#a0a0b0;margin-top:0.3rem;">Mark Carney<br>2013-2020</div>
+          </div>
+          <div style="text-align:center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Andrew_Bailey_and_Jane_Hartley_%28Andrew_Bailey_3x4_cropped%29.jpg/200px-Andrew_Bailey_and_Jane_Hartley_%28Andrew_Bailey_3x4_cropped%29.jpg"
+                 alt="Andrew Bailey" style="width:100px;height:120px;object-fit:cover;border-radius:8px;border:1px solid rgba(255,255,255,0.1);">
+            <div style="font-size:0.75rem;color:#a0a0b0;margin-top:0.3rem;">Andrew Bailey<br>2020-現在</div>
+          </div>
+        </div>
+
+        <!-- Policy Episodes -->
+        <div style="display:grid;gap:1rem;margin:1.5rem 0;">
+          <div style="background:rgba(78,205,196,0.08);border-left:3px solid #4ecdc4;padding:1rem;border-radius:0 8px 8px 0;">
+            <strong style="color:#4ecdc4;">ロビン・リー＝ペンバートン (1983-1993)</strong>
+            <p style="margin:0.5rem 0 0;font-size:0.9rem;color:#c8c8d0;">ビッグバン(1986年)を総裁として監督し、シティ金融街の国際化を主導。1990年10月にERM(欧州為替相場メカニズム)加入を実現したが、わずか2年後のブラック・ウェンズデー(1992年9月16日)でポンド防衛に失敗しERM離脱。ジョージ・ソロスが「イングランド銀行を破った男」として10億ポンドを稼いだ日の総裁として記憶される。退任後ケント州の自邸に戻り、男爵(Baron Kingsdown)の称号を得た。</p>
+          </div>
+          <div style="background:rgba(255,107,107,0.08);border-left:3px solid #ff6b6b;padding:1rem;border-radius:0 8px 8px 0;">
+            <strong style="color:#ff6b6b;">エディ・ジョージ "Steady Eddie" (1993-2003)</strong>
+            <p style="margin:0.5rem 0 0;font-size:0.9rem;color:#c8c8d0;">ERM離脱後のインフレターゲット導入直後に総裁就任。1997年5月、ブラウン蔵相が就任4日目にBOE独立性を付与した際の初代MPC議長。「これは330年の歴史で最も重要な変化だ」と語った。堅実な人柄から市場で「Steady Eddie」(堅実エディ)の愛称で親しまれた。LTCM危機(1998年)では冷静な対応で市場を安定化。退任後男爵(Baron George)の称号を得るが、2009年に67歳で逝去。</p>
+          </div>
+          <div style="background:rgba(255,107,107,0.08);border-left:3px solid #ff6b6b;padding:1rem;border-radius:0 8px 8px 0;">
+            <strong style="color:#ff6b6b;">マーヴィン・キング (2003-2013)</strong>
+            <p style="margin:0.5rem 0 0;font-size:0.9rem;color:#c8c8d0;">ノーザンロック取付騒ぎ(2007年9月)で英国150年ぶりの銀行取付に直面。当初「モラルハザード」を理由に救済に消極的で政治的批判を浴びたが、GFCの深刻化に伴い量的緩和(QE)を2009年3月に導入(初回750億ポンド)。QEは最終的に3,750億ポンドまで拡大。退任後の著書『The End of Alchemy』(2016年)で「金融システムは根本的に壊れている。二度とこのような危機を起こしてはならない」と主張。男爵(Baron King of Lothbury)の称号を得た。</p>
+          </div>
+          <div style="background:rgba(0,212,170,0.08);border-left:3px solid #00d4aa;padding:1rem;border-radius:0 8px 8px 0;">
+            <strong style="color:#00d4aa;">マーク・カーニー "Unreliable Boyfriend" (2013-2020)</strong>
+            <p style="margin:0.5rem 0 0;font-size:0.9rem;color:#c8c8d0;">カナダ人として初の外国人BOE総裁（カナダ中銀総裁から転任）。就任直後にフォワードガイダンスを導入し「失業率が7%に下がるまで利上げしない」と表明。しかし予想以上に早く達成され方針修正を余儀なくされ、議員から「Unreliable boyfriend(頼りにならない彼氏)」と揶揄された。2016年Brexit投票後、即座にGBP安定化措置を実施。「気候変動は金融安定への最大の脅威」と中銀総裁として世界で初めて警鐘を鳴らした先駆者。2025年にカナダ首相に就任。</p>
+          </div>
+          <div style="background:rgba(167,139,250,0.08);border-left:3px solid #a78bfa;padding:1rem;border-radius:0 8px 8px 0;">
+            <strong style="color:#a78bfa;">アンドリュー・ベイリー (2020-現在)</strong>
+            <p style="margin:0.5rem 0 0;font-size:0.9rem;color:#c8c8d0;">FCA(金融行為規制機構)長官から転任し、就任初日からCOVID-19パンデミックに直面。2度の緊急利下げで0.10%まで引き下げ(BOE 325年史上最低)。2022年9月のトラス首相「ミニ・バジェット」でGilt市場が崩壊(LDI危機)し、£195億の緊急国債買入で年金基金の連鎖破綻を阻止。翌日の声明「金融安定のためにあらゆる措置を取る」で市場を沈静化。その後5.25%まで急速に利上げ(16年ぶり高水準、14回連続)し、2024年8月から利下げサイクルに転換。任期は2028年3月まで。</p>
+          </div>
+        </div>
       </section>
 
       <!-- MPC -->
@@ -614,6 +668,7 @@
       });
     });
   </script>
+  <script src="../assets/enhancer.js"></script>
   <script src="../assets/tts-reader.js"></script>
 </body>
 </html>

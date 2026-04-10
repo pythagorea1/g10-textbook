@@ -315,3 +315,40 @@
   - 2020 low: 10Y ~0.25% monthly average (Aug 2020), intraday low 0.07%
   - 2007 pre-GFC peak: BOE rate 5.75%, 10Y ~5.21%
 - Existing text content, tables (gilt timeline, Gilt-Bund spread), and all other sections fully preserved
+
+## 2026-04-11 — Task 4.3: uk/06_equity_overview.html + uk/01_central_bank.html
+- **uk/06_equity_overview.html**: Replaced quarterly FTSE 100 chart with monthly data using ChartBuilder.lines()
+  - 316 monthly data points: Jan 2000 – Apr 2026 (source: Wikipedia year-end, FTSE Russell quarterly data)
+  - Changed from `data: [[year, value], ...]` sparse quarterly format to `start: 2000.0, step: 1/12, values: [...]` dense monthly format
+  - Div ID changed from 'ftse-quarterly' to 'ftse-monthly'
+  - Key turning points verified via WebSearch:
+    - Mar 2003: 3,613 (dot-com bottom, FTSE -49% from 1999 peak of 6,930)
+    - Mar 2009: 3,926 (GFC bottom, intraday low 3,460 on Mar 6)
+    - Jun 2016: 6,100 (Brexit vote, but rapid recovery due to GBP weakness)
+    - Mar 2020: 5,672 (COVID crash, intraday low 4,993 on Mar 23)
+    - Sep 2022: 6,894 (LDI/mini-budget crisis)
+    - Jan 2025: 8,679 (new ATH at that time)
+    - Apr 2025: 7,680 (Liberation Day tariff crash, intraday low ~7,535)
+    - Dec 2025: 9,931 (year-end, +21.5% for the year)
+    - Jan 2026: 10,200 (broke 10,000 for first time)
+    - Feb 2026: 10,800 (ATH close 10,911 on Feb 27, intraday 10,935)
+  - Log scale retained, yRange expanded from [3000, 9000] to [3000, 11500] to accommodate 2025-2026 rally
+  - 6 annotations: 底値3613, GFC底3926, Brexit投票, COVID -25%, LDI危機, ATH 10900
+  - Updated stat card: ATH from ~10,000 to ~10,900 (Feb 2026)
+  - Updated milestone table: 2025 year-end correctly shown as 9,931
+- **uk/01_central_bank.html**: Added BOE governor photo gallery and 5 detailed policy episode boxes
+  - 5 governor portraits from Wikipedia Commons:
+    - Robin Leigh-Pemberton: commons/thumb/c/c8/Lord_Kingsdown.jpg/200px
+    - Eddie George: commons/thumb/1/11/Edward_George_%282000%29.jpg/200px
+    - Mervyn King: commons/thumb/d/db/Official_portrait_of_Lord_King_of_Lothbury_crop_2%2C_2024.jpg/200px
+    - Mark Carney: commons/thumb/a/ab/Mark_Carney_-_World_Economic_Forum_Annual_Meeting_2012.jpg/200px
+    - Andrew Bailey: commons/thumb/e/e2/Andrew_Bailey_and_Jane_Hartley_%28Andrew_Bailey_3x4_cropped%29.jpg/200px
+  - 5 policy episode info-boxes with color-coded borders matching Gantt chart colors:
+    - Leigh-Pemberton: ビッグバン1986年監督、ERM加入(1990)と離脱(1992)、ソロスに10億ポンド
+    - Eddie George: 「Steady Eddie」愛称、BOE独立性獲得(1997)の初代MPC議長、「330年で最も重要な変化」
+    - Mervyn King: ノーザンロック取付騒ぎ、モラルハザード議論、QE導入3750億ポンド、著書『The End of Alchemy』
+    - Mark Carney: 外国人初のBOE総裁、「Unreliable boyfriend」フォワードガイダンス、気候変動警鐘、2025年カナダ首相
+    - Andrew Bailey: COVID初日の緊急利下げ0.10%(325年最低)、LDI危機£195億緊急買入、5.25%利上げ
+  - Photo gallery uses flexbox with center justification, 100x120px with object-fit:cover
+  - Inserted between existing governors table and MPC section
+  - All existing text, tables, Gantt chart, and other content fully preserved
