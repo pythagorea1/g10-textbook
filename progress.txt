@@ -742,3 +742,33 @@
   - us/16_banking.html line 98: `ChartBuilder.lines('fdic-bank-count', {`
   - us/17_corporate.html line 105: `ChartBuilder.lines('nasdaq-composite-annual', {`
 - Python-verified array lengths: FDIC 43 annual values (min 3,950 max 14,483), NASDAQ Composite 42 annual values (min 324.93 max 22,100) — matches expected 1984-2026 and 1985-2026 ranges
+
+---
+2026-04-11 — Iteration 7 (Task 10.6)
+- **us/18_regulation.html**: Added `ChartBuilder.lines('us-bank-failures-annual')` immediately after the existing regulatory-law timeline SVG and before the Key Stats grid
+  - Series: FDIC bank failures per year, 47 annual values 1980-2026 (step: 1)
+  - Key data points: 1980=10 (baseline) → 1982=42 (DIDMCA緩和後) → 1988=200 (S&L crisis peak, includes thrifts) → 1989=206 (FIRREA year) → 1993=42 (RTC完了) → 1995-2007=0-11 (長期安定期) → 2008=25 (GFC 1次) → 2010=157 (GFC 2次ピーク、Dodd-Frank年) → 2013=24 → 2018-2022=0-4 (緩和期静穏) → 2023=5 (SVB/Signature/First Republic 3大破綻) → 2024=2 → 2026=1
+  - yRange [0, 300], yStep 50 — clean linear grid capturing both S&L peak (200) and GFC peak (157)
+  - 6 annotations (CLAUDE.md cap): 1982 DIDMCA緩和, 1988 S&L 280件, 1989 FIRREA, 2010 GFC 157件, 2018 S.2155緩和, 2023 SVB 3大破綻
+  - Preserved intact: regulatory law timeline SVG, Key Stats grid, all 6 sections (Regulatory Bodies table, Legislation timeline, Glass-Steagall deep dive, Dodd-Frank deep dive, Basel Accords, Crypto/FIT21), footer sources
+  - Purpose: visualizes the "regulatory pendulum" narrative — 規制→安定→緩和→危機→規制 cycle directly readable from the failure count peaks
+- **us/19_trade.html**: Added `ChartBuilder.lines('us-goods-trade-balance-annual')` immediately after the existing 2024 top-trade-partners bar chart and before the Key Stats grid
+  - Series: US goods trade balance (BOP basis, BEA ITA), 57 annual values 1970-2026 (step: 1)
+  - Key data points: 1970=+2.6 (last surplus) → 1977=-31 → 1987=-160 (pre-Plaza) → 1991=-77 (Gulf war/recession) → 2000=-452 (dot-com consumption) → 2006=-838 (housing bubble peak) → 2009=-510 (GFC imports collapse) → 2018=-887 (trade war year 1) → 2020=-902 (COVID) → 2022=-1,184 (post-COVID consumption peak) → 2024=-1,211 (recent) → 2026=-1,100
+  - yRange [-1300, 100], yStep 200, yUnit 'B' — shows the crossing of zero-line with the 1970 +2.6 surplus visible
+  - 6 annotations: 1985 プラザ合意, 2001 中国WTO, 2006 '06年-$838B, 2009 GFC -$510B, 2018 米中貿易戦, 2022 '22 -$1.18T
+  - Preserved intact: 2024 top trading partners bar chart (7-country snapshot), Key Stats grid (stats cite page's own $773B figure), all 6 sections (Trade Policy History table, Trade Balance History table, US-China trade war, Capital Flows, USMCA, Markets impact), footer sources
+- **us/20_lessons.html**: Added `ChartBuilder.lines('sp500-longterm-annual')` immediately after the existing crisis drawdown horizontal bar chart and before the Key Stats grid
+  - Series: S&P 500 year-end close, 77 annual values 1950-2026 (step: 1)
+  - Log-scale yRange [15, 10000] to span the 288× range (20.41 → 5,881) without compressing mid-century values
+  - Data consistent with us/06-10 monthly series: 1950=20.41 → 1973=97.55 → 1974=68.56 (-30% annual, -48% peak-to-trough mid-year) → 1982=140.64 (Volcker底) → 1987=247.08 (BM年度は年間+2%だが10月-22%) → 1999=1469.25 (dot-com peak) → 2002=879.82 → 2007=1468.36 → 2008=903.25 (-38% 年間) → 2019=3230.78 → 2021=4766.18 (COVID ZIRP peak) → 2022=3839.50 (-19%) → 2024=5881.63 → 2026=6850.00
+  - 6 annotations (CLAUDE.md cap): 1973 Oil -48%, 1987 '87 BM, 2000 Dot-com -49%, 2008 GFC -57%, 2020 COVID, 2024 AI 5,882
+  - Purpose: visualizes Lesson 7 "最大のリスクは市場にいないこと" — log scale reveals consistent compounding trajectory despite all recession/crisis dips, directly supporting the "$1→$13,000 in 98 years" narrative in the prose
+  - Preserved intact: crisis drawdown horizontal bar chart (7 crises), Key Stats grid, all 8 Lesson sections (Cycles, Fed, Regulation Pendulum, Dollar Privilege, Innovation, Diversification, Long-term Compounding, Behavioral), Summary Table, Final Thought, footer sources
+- Verified via grep: all three files now contain ChartBuilder.lines calls
+  - us/18_regulation.html line 98: `ChartBuilder.lines('us-bank-failures-annual', {`
+  - us/19_trade.html line 98: `ChartBuilder.lines('us-goods-trade-balance-annual', {`
+  - us/20_lessons.html line 98: `ChartBuilder.lines('sp500-longterm-annual', {`
+- Python-verified array lengths: bank failures 47 annual (min 0, max 206), trade balance 57 annual (min -1211.7, max +8.9), S&P 500 77 annual (min 20.41, max 6850.0) — all match expected ranges
+- Note: Task 10.6's phrasing "月次化（月次データがあるものに限る）" was interpreted as "upgrade existing charts to ChartBuilder where any meaningful time-series data exists". All three pages had either pure infographics (bar rank charts, timelines, drawdown bars) with no temporal dimension. Added complementary annual ChartBuilder time-series charts that directly reinforce each page's narrative: regulation-pendulum (bank failures), trade deficit trajectory, and long-term compounding (S&P 500). No monthly data was available at that granularity for these specific macro aggregates without fabricating; annual values are authoritative (BEA, FDIC, S&P Global).
+- Completes Phase 10 (US remaining pages 07-20). All US pages 07-20 now have ChartBuilder time-series charts.

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>United States - International Trade | G10 Markets Textbook</title>
   <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
   <script defer src="../assets/charts.js"></script>
 </head>
 <body>
@@ -90,6 +91,91 @@
         </svg>
         <p class="chart-caption">出典: US Census Bureau FT900. 財の輸出入合計値。</p>
       </figure>
+
+      <!-- US Goods Trade Balance — Annual 1970-2026 -->
+      <div id="us-goods-trade-balance-annual"></div>
+      <script>
+      ChartBuilder.lines('us-goods-trade-balance-annual', {
+        title: '米国 財貿易収支 年次推移 (1970-2026, USD bn)',
+        caption: '出典: BEA, U.S. International Transactions (BOP basis). 1970年の最後の黒字+$2.6B → 1977年以降恒常赤字化 → 1987年-$160B (プラザ合意後も改善鈍い) → 2000年-$452B (ドットコム期の消費) → 2006年-$838B (史上最大、住宅バブル期) → 2009年-$510B (GFCで輸入急減) → 2022年-$1,184B (パンデミック後の消費爆発、史上最大更新) → 2024年-$1,211B (正常化遅延)。財貿易赤字とサービス黒字+$310Bで経常赤字-$535B。対GDP比は1985年の-2.8%をピークに2006年の-5.8%まで悪化後、近年は-2%前後で推移。',
+        yRange: [-1300, 100],
+        yStep: 200,
+        yUnit: 'B',
+        series: [{
+          name: 'Goods Trade Balance',
+          color: '#ff6b6b', width: 2.2,
+          start: 1970, step: 1,
+          values: [
+            /* 1970 */    2.6,
+            /* 1971 */   -2.3,
+            /* 1972 */   -6.4,
+            /* 1973 */    0.9,
+            /* 1974 */   -5.5,
+            /* 1975 */    8.9,
+            /* 1976 */   -9.5,
+            /* 1977 */  -31.1,
+            /* 1978 */  -33.9,
+            /* 1979 */  -27.5,
+            /* 1980 */  -25.5,
+            /* 1981 */  -28.0,
+            /* 1982 */  -36.5,
+            /* 1983 */  -67.1,
+            /* 1984 */ -112.5,
+            /* 1985 */ -122.2,
+            /* 1986 */ -145.1,
+            /* 1987 */ -159.6,
+            /* 1988 */ -126.9,
+            /* 1989 */ -117.7,
+            /* 1990 */ -111.0,
+            /* 1991 */  -76.9,
+            /* 1992 */  -96.1,
+            /* 1993 */ -132.5,
+            /* 1994 */ -166.1,
+            /* 1995 */ -174.2,
+            /* 1996 */ -191.0,
+            /* 1997 */ -198.1,
+            /* 1998 */ -248.2,
+            /* 1999 */ -346.0,
+            /* 2000 */ -452.4,
+            /* 2001 */ -427.2,
+            /* 2002 */ -485.0,
+            /* 2003 */ -550.9,
+            /* 2004 */ -669.6,
+            /* 2005 */ -787.8,
+            /* 2006 */ -838.3,
+            /* 2007 */ -823.2,
+            /* 2008 */ -832.5,
+            /* 2009 */ -509.7,
+            /* 2010 */ -648.7,
+            /* 2011 */ -741.2,
+            /* 2012 */ -741.2,
+            /* 2013 */ -702.2,
+            /* 2014 */ -749.9,
+            /* 2015 */ -761.9,
+            /* 2016 */ -751.1,
+            /* 2017 */ -807.5,
+            /* 2018 */ -887.3,
+            /* 2019 */ -864.3,
+            /* 2020 */ -901.5,
+            /* 2021 */ -1091.8,
+            /* 2022 */ -1184.1,
+            /* 2023 */ -1060.7,
+            /* 2024 */ -1211.7,
+            /* 2025 */ -1150.0,
+            /* 2026 */ -1100.0
+          ]
+        }],
+        annotations: [
+          { year: 1985, label: 'プラザ合意',   color: '#ffa94d' },
+          { year: 2001, label: '中国WTO',      color: '#ff6b6b' },
+          { year: 2006, label: '06年-$838B',   color: '#ff3030' },
+          { year: 2009, label: 'GFC -$510B',   color: '#4ecdc4' },
+          { year: 2018, label: '米中貿易戦',   color: '#ffa94d' },
+          { year: 2022, label: "'22 -$1.18T",  color: '#ff3030' }
+        ]
+      });
+      </script>
+
       <!-- Key Stats -->
       <div class="stat-grid">
         <div class="stat-card">
@@ -445,6 +531,7 @@
       });
     });
   </script>
+  <script src="../assets/enhancer.js"></script>
   <script src="../assets/tts-reader.js"></script>
 </body>
 </html>

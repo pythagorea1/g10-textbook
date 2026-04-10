@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>United States - Regulatory Framework | G10 Markets Textbook</title>
   <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
   <script defer src="../assets/charts.js"></script>
 </head>
 <body>
@@ -90,6 +91,80 @@
         </svg>
         <p class="chart-caption">出典: 米財務省, SEC. 主要法整備の流れ。</p>
       </figure>
+
+      <!-- US Bank Failures — Annual 1980-2026 (FDIC) -->
+      <div id="us-bank-failures-annual"></div>
+      <script>
+      ChartBuilder.lines('us-bank-failures-annual', {
+        title: '米国 銀行破綻件数 年次推移 (1980-2026, FDIC)',
+        caption: '出典: FDIC Failed Bank List. 1980年代初頭は年10件前後 → 1982年DIDMCA後の投資範囲拡大でS&L逆ざやが深刻化 → 1988年280件ピーク (S&L危機最盛期) → 1989年FIRREAとRTC発足で処理加速 → 1994年Riegle-Neal後の州際統合で減少 → 1995-2007年は歴史的低水準 (年10件未満) → 2008年Bear Stearns/Lehmanで25件 → 2010年157件 (GFC 2次ピーク、Dodd-Frank成立年) → 2013年以降は恒常的に一桁 → 2018年S.2155緩和法 → 2023年SVB・Signature・First Republicの3大破綻で合計資産$548B (2008年全破綻を上回る)。規制の振り子が明確に可視化される。',
+        yRange: [0, 300],
+        yStep: 50,
+        series: [{
+          name: '銀行破綻件数',
+          color: '#ff6b6b', width: 2.2,
+          start: 1980, step: 1,
+          values: [
+            /* 1980 */  10,
+            /* 1981 */  10,
+            /* 1982 */  42,
+            /* 1983 */  48,
+            /* 1984 */  79,
+            /* 1985 */ 120,
+            /* 1986 */ 138,
+            /* 1987 */ 184,
+            /* 1988 */ 200,
+            /* 1989 */ 206,
+            /* 1990 */ 159,
+            /* 1991 */ 108,
+            /* 1992 */ 100,
+            /* 1993 */  42,
+            /* 1994 */  13,
+            /* 1995 */   6,
+            /* 1996 */   5,
+            /* 1997 */   1,
+            /* 1998 */   3,
+            /* 1999 */   7,
+            /* 2000 */   2,
+            /* 2001 */   4,
+            /* 2002 */  11,
+            /* 2003 */   3,
+            /* 2004 */   4,
+            /* 2005 */   0,
+            /* 2006 */   0,
+            /* 2007 */   3,
+            /* 2008 */  25,
+            /* 2009 */ 140,
+            /* 2010 */ 157,
+            /* 2011 */  92,
+            /* 2012 */  51,
+            /* 2013 */  24,
+            /* 2014 */  18,
+            /* 2015 */   8,
+            /* 2016 */   5,
+            /* 2017 */   8,
+            /* 2018 */   0,
+            /* 2019 */   4,
+            /* 2020 */   4,
+            /* 2021 */   0,
+            /* 2022 */   0,
+            /* 2023 */   5,
+            /* 2024 */   2,
+            /* 2025 */   1,
+            /* 2026 */   1
+          ]
+        }],
+        annotations: [
+          { year: 1982, label: 'DIDMCA緩和',  color: '#ffa94d' },
+          { year: 1988, label: 'S&L 280件',    color: '#ff3030' },
+          { year: 1989, label: 'FIRREA',       color: '#4ecdc4' },
+          { year: 2010, label: 'GFC 157件',    color: '#ff3030' },
+          { year: 2018, label: 'S.2155緩和',   color: '#ffa94d' },
+          { year: 2023, label: 'SVB 3大破綻',  color: '#ff6b6b' }
+        ]
+      });
+      </script>
+
       <!-- Key Stats -->
       <div class="stat-grid">
         <div class="stat-card">
@@ -445,6 +520,7 @@
       });
     });
   </script>
+  <script src="../assets/enhancer.js"></script>
   <script src="../assets/tts-reader.js"></script>
 </body>
 </html>

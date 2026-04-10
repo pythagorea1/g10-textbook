@@ -70,7 +70,7 @@
 - [x] Task 10.3: us/11_bond_market.html + us/12_short_rates.html — 既存SVGをChartBuilder月次化（bond yield, 3M T-bill等）
 - [x] Task 10.4: us/14_currency.html + us/15_crises.html — DXY月次化 + 危機期間のチャート月次化
 - [x] Task 10.5: us/16_banking.html + us/17_corporate.html — 銀行セクター/企業指標の月次化
-- [ ] Task 10.6: us/18_regulation.html + us/19_trade.html + us/20_lessons.html — 既存チャートの月次化（月次データがあるものに限る）
+- [x] Task 10.6: us/18_regulation.html + us/19_trade.html + us/20_lessons.html — 既存チャートの月次化（月次データがあるものに限る）
 
 ### Phase 11: Japan — Remaining Pages (07-20) Monthly Upgrade
 - [ ] Task 11.1: japan/07_equity_early.html + japan/08_equity_modern.html — TOPIX/日経月次化
