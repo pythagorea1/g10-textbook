@@ -26,3 +26,12 @@
 - 6 annotations: Volcker 19%, 1993 3% low, 2003 1% low, GFC→ZIRP, COVID 0%, 2023 5.33% peak
 - yRange [0, 21], yStep 5% for clean grid lines
 - Existing text content fully preserved; only chart figure replaced
+
+## 2026-04-10 — Task 1.2: us/05_inflation.html — CPI YoY Monthly Chart
+- Replaced hardcoded SVG annual chart with `ChartBuilder.lines()` call using monthly data
+- 794 monthly data points: Jan 1960 – Feb 2026 (CPI-U 12-month percent change)
+- Data sourced from inflationdata.com (BLS CPI-U underlying), cross-verified with FRED CPIAUCSL
+- Key turning points verified: 1974 Oil Shock 12.34% (Dec), 1980 Peak 14.76% (Mar), Volcker disinflation to 2.58% (Jun 1983), GFC deflation -2.10% (Jul 2009), 2022 surge 9.06% (Jun), current 2.41% (Feb 2026)
+- 6 annotations: 1974 Oil 12%, Peak 14.8%, Disinfl 2.6%, GFC -2.1%, 2022 9.1%, 2026 2.4%
+- yRange [-5, 15], yStep 5 for clean grid showing negative territory (2009, 2015 deflation)
+- Existing text content, tables, and all other sections fully preserved; only chart figure replaced
