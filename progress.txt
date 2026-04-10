@@ -225,3 +225,33 @@
   - 6 annotations: 原油高 4.1%, GFC -0.7%, -0.6%底, COVID, 10.6%ピーク, 2%近傍
   - yRange [-2, 12], yStep 2 for clean grid spanning deflation to 2022 peak
 - Existing text content, tables, and all other sections fully preserved in both files
+
+## 2026-04-11 — Task 3.3: eurozone/06_equity_overview.html + eurozone/01_central_bank.html
+- **eurozone/06_equity_overview.html**: Replaced quarterly DAX chart with monthly data using ChartBuilder.lines()
+  - 316 monthly data points: Jan 2000 – Apr 2026 (source: Deutsche Börse, Yahoo Finance)
+  - Changed from `data: [[year, value], ...]` sparse format to `start: 2000.0, step: 1/12, values: [...]` dense format
+  - Div ID changed from 'dax-quarterly' to 'dax-monthly'
+  - Key turning points verified via WebSearch / Wikipedia DAX article:
+    - Mar 2003: 2,424 (dot-com bubble bottom, DAX -73% from 2000 peak of 8,136)
+    - Feb 2009: 3,844 (GFC monthly low), Mar close 4,084
+    - Mar 2020: 9,936 (COVID crash, -38% from Jan peak)
+    - Sep 2022: 12,114 (2022 bear market bottom)
+    - Jan 2026: 25,421 (ATH closing, per Wikipedia)
+    - Apr 2026: ~23,865 (current)
+  - Year-end closes verified: 2000 (6,434), 2002 (2,893), 2003 (3,965), 2008 (4,810), 2024 (19,909), 2025 (24,490)
+  - Log scale retained, yRange expanded from [2000, 24000] to [2000, 28000] to accommodate 2026 ATH
+  - 6 annotations: 底値2424, GFC底3844, Whatever it takes, COVID -38%, Bear底12114, ATH 25421
+- **eurozone/01_central_bank.html**: Added ECB president photo gallery and 4 detailed policy episode boxes
+  - 4 president portraits from Wikipedia Commons:
+    - Wim Duisenberg: commons/2/2a/Wim_Duisenberg.jpg
+    - Jean-Claude Trichet: commons/4/48/Jean-Claude_Trichet_2011_(cropped).jpg
+    - Mario Draghi: commons/c/c7/Mario_Draghi_in_2021_crop.jpg
+    - Christine Lagarde: commons/d/d6/Lagarde_ECB_Portrait_2019.jpg
+  - 4 policy episode info-boxes with color-coded borders matching Gantt chart colors:
+    - Duisenberg: ユーロの産婆役、ドイセンベルク・コンプロマイズ、ユーロ安0.823ドル
+    - Trichet: "Vigilance"シグナル、2008年7月の利上げ政策ミス、2011年利上げ、BNP危機対応
+    - Draghi: "Whatever it takes"伝説スピーチ、OMT未発動の抑止力、マイナス金利・QE導入、スーパーマリオ
+    - Lagarde: 初の女性・非中銀出身総裁、PEPP 1.85兆EUR、スプレッド失言、ECB史上最速+450bp利上げ
+  - Photo gallery uses flexbox with center justification, 100x120px with object-fit:cover
+  - Inserted between ECB presidents table and Executive Board section
+  - All existing text, tables, Gantt chart, and other content fully preserved

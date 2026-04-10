@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eurozone - Central Bank Timeline | G10 Markets Textbook</title>
   <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
   <script defer src="../assets/charts.js"></script>
 </head>
 <body>
@@ -337,6 +338,50 @@
             </tr>
           </tbody>
         </table>
+      </div>
+
+      <!-- ECB Presidents Photo Gallery -->
+      <div style="display:flex;gap:1.2rem;flex-wrap:wrap;margin:1.5rem 0;justify-content:center;">
+        <div style="text-align:center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Wim_Duisenberg.jpg/200px-Wim_Duisenberg.jpg"
+               alt="Wim Duisenberg" style="width:100px;height:120px;object-fit:cover;border-radius:8px;border:1px solid rgba(255,255,255,0.1);">
+          <div style="font-size:0.75rem;color:#a0a0b0;margin-top:0.3rem;">Duisenberg<br>1998-2003</div>
+        </div>
+        <div style="text-align:center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Jean-Claude_Trichet_2011_%28cropped%29.jpg/200px-Jean-Claude_Trichet_2011_%28cropped%29.jpg"
+               alt="Jean-Claude Trichet" style="width:100px;height:120px;object-fit:cover;border-radius:8px;border:1px solid rgba(255,255,255,0.1);">
+          <div style="font-size:0.75rem;color:#a0a0b0;margin-top:0.3rem;">Trichet<br>2003-2011</div>
+        </div>
+        <div style="text-align:center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Mario_Draghi_in_2021_crop.jpg/200px-Mario_Draghi_in_2021_crop.jpg"
+               alt="Mario Draghi" style="width:100px;height:120px;object-fit:cover;border-radius:8px;border:1px solid rgba(255,255,255,0.1);">
+          <div style="font-size:0.75rem;color:#a0a0b0;margin-top:0.3rem;">Draghi<br>2011-2019</div>
+        </div>
+        <div style="text-align:center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lagarde_ECB_Portrait_2019.jpg/200px-Lagarde_ECB_Portrait_2019.jpg"
+               alt="Christine Lagarde" style="width:100px;height:120px;object-fit:cover;border-radius:8px;border:1px solid rgba(255,255,255,0.1);">
+          <div style="font-size:0.75rem;color:#a0a0b0;margin-top:0.3rem;">Lagarde<br>2019-現在</div>
+        </div>
+      </div>
+
+      <!-- ECB Presidents Policy Episodes -->
+      <div style="display:grid;gap:1rem;margin:1.5rem 0;">
+        <div style="border-left:3px solid #4ecdc4;padding:0.8rem 1rem;background:rgba(78,205,196,0.06);border-radius:0 8px 8px 0;">
+          <strong style="color:#4ecdc4;">🇳🇱 ドイセンベルク (1998-2003) — ユーロの産婆役</strong>
+          <p style="margin:0.5rem 0 0;font-size:0.9rem;line-height:1.6;">オランダ中銀総裁からECB初代総裁に就任。ユーロ現金流通（2002年）を監督した。しかし就任時からフランスとの政治取引が付きまとう——仏独の妥協で「4年で辞任し後任をフランス人に」との非公式合意があったとされる（「ドイセンベルク・コンプロマイズ」）。実際に2003年に辞任。ユーロはドル対比で1999年の1.17から2000年10月に0.823まで下落し、「弱い通貨」の烙印を押された。記者会見でユーロ安について聞かれた際の曖昧な回答が市場の不安を増幅させた。2005年、南仏の別荘のプールで死去（65歳）。</p>
+        </div>
+        <div style="border-left:3px solid #ff6b6b;padding:0.8rem 1rem;background:rgba(255,107,107,0.06);border-radius:0 8px 8px 0;">
+          <strong style="color:#ff6b6b;">🇫🇷 トリシェ (2003-2011) — "Vigilance"のタカ派</strong>
+          <p style="margin:0.5rem 0 0;font-size:0.9rem;line-height:1.6;">フランス銀行（Banque de France）総裁から就任。記者会見で「strong vigilance」という言葉を使うと「次回利上げ」のシグナルとなる独自のフォワードガイダンス手法を確立。2008年7月、リーマン破綻3ヶ月前に利上げ（3.25%→4.25%）を決行し「歴史的政策ミス」と批判された。さらに2011年4月・7月にもユーロ圏債務危機の最中に利上げ（1.0%→1.5%）を実施——これもドラギ就任後すぐに撤回された。一方、2007年8月のBNPパリバ・ショック時には即座に950億ユーロの流動性を供給し、FRBより迅速な危機対応と評価された。</p>
+        </div>
+        <div style="border-left:3px solid #00d4aa;padding:0.8rem 1rem;background:rgba(0,212,170,0.06);border-radius:0 8px 8px 0;">
+          <strong style="color:#00d4aa;">🇮🇹 ドラギ (2011-2019) — "Whatever it takes"</strong>
+          <p style="margin:0.5rem 0 0;font-size:0.9rem;line-height:1.6;">2012年7月26日ロンドンでの伝説的スピーチ：<em>"Within our mandate, the ECB is ready to do whatever it takes to preserve the euro. And believe me, it will be enough."</em> この一文でユーロ危機は事実上終結。イタリア・スペイン国債利回りは即座に急低下し、「スーパーマリオ」の異名を得た。OMT（無制限国債買入プログラム）を発表——実際には一度も発動されなかったが、存在自体が抑止力となった。2014年6月マイナス金利（預金ファシリティ-0.10%）導入は主要中銀初。2015年1月QE開始で月額600億ユーロの資産買入。ブンデスバンクのヴァイトマン総裁は一貫して反対票を投じたが、ドラギは少数意見を押し切り続けた。退任後イタリア首相（2021-22年）を務め、2024年にはEU競争力に関する「ドラギ報告書」を発表。</p>
+        </div>
+        <div style="border-left:3px solid #a78bfa;padding:0.8rem 1rem;background:rgba(167,139,250,0.06);border-radius:0 8px 8px 0;">
+          <strong style="color:#a78bfa;">🇫🇷 ラガルド (2019-現在) — 「インフレの怪物」退治</strong>
+          <p style="margin:0.5rem 0 0;font-size:0.9rem;line-height:1.6;">IMF専務理事から転身した初の非中央銀行家出身・初の女性ECB総裁。就任直後のCOVID危機でPEPP（1.85兆ユーロ）を創設。しかし2020年3月の記者会見で「スプレッドを縮小するのはECBの仕事ではない」と発言し、イタリア国債が急落する大失言（翌日撤回）。2022年7月、11年ぶりの利上げを+50bpサプライズで開始。「transitory（一時的）」との見方を長く維持した後、ECB史上最速の引き締めサイクル（+450bp、14ヶ月）を断行。2024年6月から利下げに転換。任期は2027年10月まで。弁護士出身で、記者会見では「私はフクロウ（owl）——タカでもハトでもない」と自称。</p>
+        </div>
       </div>
 
       <h2>現在のECB役員会 (Executive Board)</h2>
@@ -723,6 +768,7 @@
   });
   </script>
 
+  <script src="../assets/enhancer.js"></script>
   <script src="../assets/tts-reader.js"></script>
 </body>
 </html>
