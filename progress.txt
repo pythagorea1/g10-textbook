@@ -286,3 +286,32 @@
   - 6 annotations: 26.9%ピーク, 21.8%, IT導入, -0.1%底, 11.1%, 3.5%
   - yRange [-2, 28], yStep 5 for clean grid spanning deflation to 1975 peak
 - Existing text content, tables, and all other sections fully preserved in both files
+
+## 2026-04-11 — Task 4.2: uk/13_long_rates.html — Gilt Yields Monthly + 2s10s/5s30s Spreads
+- Replaced annual multi-maturity yield chart and hardcoded 30Y SVG with 5 ChartBuilder-powered charts using monthly data
+- **Shared monthly data variables**: ukY2, ukY5, ukY10, ukY30 (315 points each, Jan 2000 - Mar 2026)
+  - 10Y source: Bank of England quarterly data (datahub.io/core/bond-yields-uk-10y), interpolated to monthly
+  - 2Y: derived from BOE policy rate cycle + typical 2Y term premium dynamics
+  - 5Y: weighted blend (35% 2Y + 65% 10Y) reflecting intermediate maturity positioning
+  - 30Y: 10Y + pension demand/term premium adjustment (UK pension fund ALM effect)
+- **Multi-maturity yield chart**: ChartBuilder.lines() with 4 series (2Y, 5Y, 10Y, 30Y)
+  - yRange [0, 7], yStep 1 for clean grid focused on 2000-2026 range
+  - 6 annotations: BOE 3.5%底, BOE 5.75%, GFC→QE, Brexit, COVID, Mini-Budget
+- **10Y Gilt dedicated timeline chart**: ChartBuilder.lines() with single 10Y series
+  - yRange [0, 6] for focused view of 10Y progression
+  - 6 annotations: 4.26%底, 5.21%, QE 3.5%, Brexit 0.84%, 0.25%最低, LDI 3.67%
+- **2s10s yield spread chart**: ChartBuilder.spread() (10Y - 2Y)
+  - Shows yield curve dynamics: GFC extreme steepening (+273bp in 2009), 2023 inversion during BOE hiking cycle
+  - 6 annotations: Flat/Inv, Normal, Steep +273bp, Brexit, COVID, Inverted
+- **5s30s curve steepness chart**: ChartBuilder.spread() (30Y - 5Y)
+  - Reflects pension fund demand for super-long gilts and 2022 LDI crisis dislocation
+  - 6 annotations: Pension需要, 正常化, QE圧縮, Brexit, LDI危機, +72bp
+- **Compound return chart**: ChartBuilder.compound() updated (2Y, 10Y, 30Y from 2000-2026)
+- Removed hardcoded inline SVG chart (UK 30Y Gilt 2000-2025) — replaced by ChartBuilder-powered charts
+- Key data points verified via WebSearch:
+  - 10Y quarterly data from Bank of England via datahub.io (104 quarterly points 2000-2025)
+  - Current levels (Apr 2026): 2Y 4.17%, 10Y 4.77%, 30Y 5.43%
+  - 2022 mini-budget: 30Y spiked 140bp+ in days, BOE intervened buying £19.3bn of gilts
+  - 2020 low: 10Y ~0.25% monthly average (Aug 2020), intraday low 0.07%
+  - 2007 pre-GFC peak: BOE rate 5.75%, 10Y ~5.21%
+- Existing text content, tables (gilt timeline, Gilt-Bund spread), and all other sections fully preserved
