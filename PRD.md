@@ -58,7 +58,7 @@
 ### Phase 8: Top Page & Cross-Country Comparison
 - [x] Task 8.1: index.html — G10 10Y国債利回り比較チャート（10本線、月次、2000-2026）
 - [x] Task 8.2: index.html — G10主要株式指数パフォーマンス比較（2000年=100にリベース、月次）
-- [ ] Task 8.3: index.html — G10政策金利比較チャート（月次、全10中銀）
+- [x] Task 8.3: index.html — G10政策金利比較チャート（月次、全10中銀）
 
 ### Phase 9: Final Polish
 - [ ] Task 9.1: 全チャートの注釈・キャプション統一レビュー。データ不整合修正

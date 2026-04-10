@@ -582,3 +582,27 @@
 - Consistent color scheme matching bond yield chart: same color per country
 - Chart placed between bond yield comparison section and Overview Table
 - All existing content fully preserved
+
+## 2026-04-11 — Task 8.3: index.html — G10 Policy Rate Comparison Chart (Verification & Polish)
+- Verified existing G10 policy rate comparison chart (added in prior iteration) against current data
+- 10 central banks: Fed, ECB, BOJ, BOE, SNB, RBA, RBNZ, BOC, Riksbank, Norges Bank
+- 315 monthly data points per country (Jan 2000 – Mar 2026) using ChartBuilder.lines()
+- WebSearch verified all 10 end-of-period (Mar 2026) rates are accurate:
+  - Fed: 3.58% (target 3.50-3.75%, held Mar 2026) ✓
+  - ECB MRR: 2.15% (held since Jun 2025 cut) ✓
+  - BOJ: 0.75% (hiked Dec 2025, held Mar 2026) ✓
+  - BOE: 3.75% (held Mar 2026, cut from 4.50% in 2025) ✓
+  - SNB: 0.00% (at zero since Jun 2025) ✓
+  - RBA: 4.10% (hiked Feb+Mar 2026) ✓
+  - RBNZ: 2.25% (held Apr 2026, cut from 5.50%) ✓
+  - BOC: 2.25% (held Mar 2026) ✓
+  - Riksbank: 1.75% (held, 4th straight meeting) ✓
+  - Norges Bank: 4.00% (held Mar 2026) ✓
+- Updated bar chart "Current Policy Rates" to reflect Mar 2026 values (was stale from ~2024)
+  - Fixed: USD 4.50→3.58, EUR 2.65→2.15, JPY 0.50→0.75, GBP 4.50→3.75, CHF 0.25→0.00,
+    NZD 3.75→2.25, CAD 2.75→2.25, SEK 2.25→1.75, NOK 4.50→4.00
+- Added `class="overview-section"` to section tag for consistency with Task 8.1/8.2 sections
+- Updated section description to reference monthly line chart comparison
+- 5 annotations: GFC Start (2007.75), SNB -0.75% (2015), BOJ -0.1% (2016), COVID (2020.25), Fed 5.33% (2023.5)
+- yRange [-1, 9], yStep 1% for clean grid including negative territory
+- All existing text content fully preserved
