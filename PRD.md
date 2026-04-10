@@ -52,8 +52,8 @@
 
 ### Phase 7: Sweden + Norway — Monthly Upgrade
 - [x] Task 7.1: sweden/02 + 13_long_rates — Riksbank repo rate + SGB yields月次化 + スプレッド
-- [ ] Task 7.2: norway/02 + 13_long_rates — Norges Bank rate + NGB yields月次化 + スプレッド
-- [ ] Task 7.3: sweden/06 + norway/06 — OMXS30 + OBX月次化。各国01に総裁情報追加
+- [x] Task 7.2: norway/02 + 13_long_rates — Norges Bank rate + NGB yields月次化 + スプレッド
+- [x] Task 7.3: sweden/06 + norway/06 — OMXS30 + OBX月次化。各国01に総裁情報追加
 
 ### Phase 8: Top Page & Cross-Country Comparison
 - [ ] Task 8.1: index.html — G10 10Y国債利回り比較チャート（10本線、月次、2000-2026）

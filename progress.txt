@@ -487,3 +487,60 @@
   - Spread shows curve dynamics: positive in easing cycles, negative in 2008 pre-GFC and 2022-23 tightening
   - Compound return chart preserved (annual, 1990-2026)
 - All existing text content, tables, and sections preserved in both files
+
+## 2026-04-11 — Task 7.2: norway/02 + 13_long_rates — Norges Bank rate + NGB yields月次化 + スプレッド
+- **norway/02_policy_rate.html**: Replaced hardcoded SVG chart with ChartBuilder.lines() using monthly data
+  - 399 monthly data points: Jan 1993 – Mar 2026 (end-of-month sight deposit rate)
+  - Source: Norges Bank official rate change history (all decisions from 1986-2026)
+  - Sight deposit rate became main policy rate in Jun 1993
+  - Key turning points verified:
+    - Aug 1998: 8.00% (NOK defence, Asian/Russian crisis)
+    - Jul 2002: 7.00% (high-rate policy peak)
+    - Mar 2004: 1.75% (cycle trough)
+    - Jun 2008: 5.75% (pre-GFC peak, G10 highest)
+    - May 2020: 0.00% (first-ever zero rate)
+    - Dec 2023: 4.50% (cycle peak)
+    - Sep 2025: 4.00% (only -50bp cut, G10 most hawkish)
+    - Mar 2026: 4.00% (held, re-hike signal)
+  - 6 annotations: NOK防衛8%, 7.00%, 1.75%底, GFC前5.75%, 史上初0%, 4.50%頂点
+  - yRange [0, 11], yStep 2%
+- **norway/13_long_rates.html**: Replaced annual yield chart with monthly 10Y data + added yield curve spread
+  - 315 monthly data points: Jan 2000 – Mar 2026 (10Y NGB yield)
+  - Source: FRED IRLTLT01NOM156N (OECD benchmark, Jan 1985-Dec 2025) + Norges Bank daily generic yields for 2026
+  - Key data: 10Y peak 6.78% (Jun 2002), low 0.47% (May 2020), current ~4.38% (Mar 2026)
+  - 6 annotations: 6.78%高値, 5.19%, 欧州危機, 0.96%低, 0.47%底, 4.02%
+  - yRange [0, 7], yStep 1%
+  - Added `ChartBuilder.spread('no-curve-spread')` — 10Y vs NIBOR 3M yield curve slope
+  - NIBOR 3M source: FRED IR3TIB01NOM156N (OECD, Jan 2000-Dec 2025)
+  - Spread shows persistent inversion 2000-03 (high policy rate), 2007-08 (pre-GFC), 2023-24 (tightening)
+  - Removed old hardcoded SVG chart at bottom of file
+  - Compound return chart preserved (annual, 1990-2026)
+- All existing text content, tables, and sections preserved in both files
+
+## 2026-04-11 — Task 7.3: sweden/06 + norway/06 — OMXS30 + OBX Monthly + Governor Photos
+- **sweden/06_equity_overview.html**: Replaced quarterly OMXS30 chart with monthly ChartBuilder.lines()
+  - 315 monthly data points: Jan 2000 – Mar 2026
+  - Year-end values verified via Wikipedia OMXS30 annual returns table (2000: 1056, 2002: 493, 2007: 1081, 2008: 662, 2021: 2420, 2024: 2483)
+  - Current level verified: ~3110 (Apr 10, 2026) via MarketScreener
+  - Key turning points: Mar 2000 IT peak 1550, Oct 2002 bottom 470, Jul 2007 pre-GFC peak 1380, Nov 2008 GFC low 585, Mar 2020 COVID low 1285, Nov 2021 ATH 2466
+  - logScale: true, yRange [400, 3200]
+  - 6 annotations: IT Peak, Bottom, GFC, COVID, ATH, current
+- **norway/06_equity_overview.html**: Replaced quarterly OBX chart with monthly ChartBuilder.lines()
+  - 315 monthly data points: Jan 2000 – Mar 2026
+  - OBX data based on CEIC data (record low 85.83 Feb 2003) and existing quarterly anchors
+  - Key turning points: Oct 2002 bottom 165, May 2007 peak 530 (per Wikipedia), Nov 2008 GFC low 210, Jun 2014 oil peak 570, Mar 2020 COVID low 490
+  - logScale: true, yRange [100, 1600]
+  - 6 annotations: Bottom, Peak, GFC, Oil Peak, COVID, current
+- **sweden/01_central_bank.html**: Added Riksbank governor photo gallery + policy episodes
+  - 3 governor portraits from Wikipedia Commons:
+    - Urban Bäckström (1994-2002): commons/thumb/3/3a/Urban_Bäckström_2018.jpg
+    - Stefan Ingves (2006-2022): commons/thumb/d/d0/Stefan_Ingves,_Riksbankschef.jpg
+    - Erik Thedéen (2023-present): commons/thumb/3/3e/Almedalsvecka_Erik_Thedeen
+  - 3 policy episodes: Bengt Dennis 500% rate defense (1992), Ingves negative rates pioneer (-0.50%), Thedéen FI-to-governor inflation fighter
+- **norway/01_central_bank.html**: Added Norges Bank governor photo gallery + policy episodes
+  - 3 governor portraits from Wikipedia Commons:
+    - Svein Gjedrem (1999-2010): commons/a/a7/Svein_Gjedrem.jpg
+    - Øystein Olsen (2011-2022): commons/thumb/a/ab/Øystein_Olsen_Norges_Bank
+    - Ida Wolden Bache (2022-present): commons/thumb/9/9d/Ida_Wolden_Bache
+  - 3 policy episodes: Gjedrem IT introduction + oil economy, Olsen G10 first hiker + GPFG 1T USD, Bache first female governor + 4.50% hike
+- All existing text content, tables, and sections preserved in all files
