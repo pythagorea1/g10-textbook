@@ -624,3 +624,20 @@
 - **Caption sources**: All charts now have non-empty captions with source attribution ✓
 - **No duplicate captions**: Removed HTML `<p>` + `<figure>` wrapper, caption now rendered solely by chart-builder.js ✓
 - Verified: `grep caption: ''` returns 0 matches across entire project
+
+## 2026-04-11 — Task 9.2: summary/g10_timeline.html — Chart Navigation Links (Phase 9 Final)
+- Added new **Section 9: Chart Navigation** to g10_timeline.html
+  - Section 9.1: G10 Cross-Country Comparison chart links (policy rate, 10Y yield, equity index) → index.html anchors
+  - Section 9.2: Full 10-country × 6-category chart navigation table with links to:
+    - Central bank governor photos & episodes (01_central_bank.html)
+    - Monthly policy rate charts (02_policy_rate.html)
+    - Monthly inflation charts (05_inflation.html)
+    - Employment/unemployment charts (04_employment.html, US only)
+    - Yield curves & 2s10s/5s30s spread charts (13_long_rates.html)
+    - Monthly equity index charts (06_equity_overview.html)
+- Expanded top country-strip navigation:
+  - Added second row with 3 G10 comparison chart links (green accent border)
+  - Added "全チャート一覧 ↓" anchor link to jump to Section 9 chart table (yellow accent)
+- Verified: All 65 href targets confirmed to exist in the file system
+- Verified: 8 table open/close tags balanced, HTML structure intact
+- **All 30 tasks across Phases 0–9 are now complete** ✓

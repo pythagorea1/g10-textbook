@@ -62,7 +62,7 @@
 
 ### Phase 9: Final Polish
 - [x] Task 9.1: 全チャートの注釈・キャプション統一レビュー。データ不整合修正
-- [ ] Task 9.2: summary/g10_timeline.html 更新 — 新チャートへのリンク追加
+- [x] Task 9.2: summary/g10_timeline.html 更新 — 新チャートへのリンク追加
 
 ## Constraints
 - **外部CDN/library禁止** — 純粋なインラインSVG + Vanilla JS + chart-builder.js

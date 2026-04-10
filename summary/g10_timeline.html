@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>G10 Summary Timeline | G10 Markets Textbook</title>
   <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
   <style>
     /* Timeline-specific overrides */
     body { display: block; }
@@ -261,6 +262,12 @@
     <a href="../canada/01_central_bank.html">🇨🇦 Canada</a>
     <a href="../sweden/01_central_bank.html">🇸🇪 Sweden</a>
     <a href="../norway/01_central_bank.html">🇳🇴 Norway</a>
+  </div>
+  <div class="country-strip" style="margin-top:0;">
+    <a href="../index.html#g10-policy-rate-comparison" style="border-color:var(--accent-green);color:var(--accent-green);">G10 政策金利比較</a>
+    <a href="../index.html#g10-10y-comparison" style="border-color:var(--accent-green);color:var(--accent-green);">G10 10Y利回り比較</a>
+    <a href="../index.html#g10-equity-comparison" style="border-color:var(--accent-green);color:var(--accent-green);">G10 株式指数比較</a>
+    <a href="#table-chart-nav" style="border-color:var(--accent-yellow);color:var(--accent-yellow);">全チャート一覧 ↓</a>
   </div>
 
   <!-- ====================================================== -->
@@ -1492,6 +1499,131 @@
   </article>
 
   <!-- ====================================================== -->
+  <!-- Section 9: Chart Navigation — Links to Upgraded Charts  -->
+  <!-- ====================================================== -->
+  <h2 class="section-header">9. チャートナビゲーション — Chart Navigation</h2>
+  <p class="section-desc">本プロジェクトで月次データ化・新規追加されたチャートへのリンク集。各国の政策金利、インフレ率、雇用、利回りスプレッド、株式指数、中央銀行総裁情報、およびG10横断比較チャートに直接アクセス可能。</p>
+
+  <!-- 9.1 G10 Cross-Country Comparison Charts (index.html) -->
+  <h3 style="color:var(--accent-green); margin:1.5rem 0 0.8rem; font-family:var(--font-mono); font-size:1rem;">9.1 G10横断比較チャート — Cross-Country Comparisons</h3>
+  <div class="country-strip" style="justify-content:flex-start;">
+    <a href="../index.html#g10-policy-rate-comparison">G10 政策金利比較</a>
+    <a href="../index.html#g10-10y-comparison">G10 10Y国債利回り比較</a>
+    <a href="../index.html#g10-equity-comparison">G10 株式指数パフォーマンス比較</a>
+  </div>
+
+  <!-- 9.2 Country Charts by Category -->
+  <h3 style="color:var(--accent-green); margin:1.5rem 0 0.8rem; font-family:var(--font-mono); font-size:1rem;">9.2 各国チャート — Country Charts by Category</h3>
+
+  <div class="mega-table-wrap">
+    <table class="compare-table" id="table-chart-nav">
+      <thead>
+        <tr>
+          <th>国 Country</th>
+          <th>中央銀行・総裁</th>
+          <th>政策金利 (月次)</th>
+          <th>インフレ率 (月次)</th>
+          <th>雇用・失業率 (月次)</th>
+          <th>利回り・スプレッド</th>
+          <th>株式指数 (月次)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>🇺🇸 US</td>
+          <td><a href="../us/01_central_bank.html" style="color:var(--accent-teal)">Fed議長写真・エピソード</a></td>
+          <td><a href="../us/02_policy_rate.html" style="color:var(--accent-teal)">FF Rate (1954–)</a></td>
+          <td><a href="../us/05_inflation.html" style="color:var(--accent-teal)">CPI YoY (1960–)</a></td>
+          <td><a href="../us/04_employment.html" style="color:var(--accent-teal)">失業率 (1948–)</a></td>
+          <td><a href="../us/13_long_rates.html" style="color:var(--accent-teal)">2Y/5Y/10Y/30Y + 2s10s/5s30s</a></td>
+          <td><a href="../us/06_equity_overview.html" style="color:var(--accent-teal)">S&P 500 (2000–)</a></td>
+        </tr>
+        <tr>
+          <td>🇯🇵 Japan</td>
+          <td><a href="../japan/01_central_bank.html" style="color:var(--accent-teal)">日銀総裁写真・エピソード</a></td>
+          <td><a href="../japan/02_policy_rate.html" style="color:var(--accent-teal)">BOJ Rate (1985–)</a></td>
+          <td><a href="../japan/05_inflation.html" style="color:var(--accent-teal)">CPI YoY (1971–)</a></td>
+          <td>—</td>
+          <td><a href="../japan/13_long_rates.html" style="color:var(--accent-teal)">JGB + 2s10s/5s30s + YCC</a></td>
+          <td><a href="../japan/06_equity_overview.html" style="color:var(--accent-teal)">日経225 (1985–)</a></td>
+        </tr>
+        <tr>
+          <td>🇪🇺 Eurozone</td>
+          <td><a href="../eurozone/01_central_bank.html" style="color:var(--accent-teal)">ECB総裁写真・エピソード</a></td>
+          <td><a href="../eurozone/02_policy_rate.html" style="color:var(--accent-teal)">ECB MRO (1999–)</a></td>
+          <td><a href="../eurozone/05_inflation.html" style="color:var(--accent-teal)">HICP YoY (1997–)</a></td>
+          <td>—</td>
+          <td><a href="../eurozone/13_long_rates.html" style="color:var(--accent-teal)">Bund + 2s10s</a></td>
+          <td><a href="../eurozone/06_equity_overview.html" style="color:var(--accent-teal)">DAX (1990–)</a></td>
+        </tr>
+        <tr>
+          <td>🇬🇧 UK</td>
+          <td><a href="../uk/01_central_bank.html" style="color:var(--accent-teal)">BOE総裁写真・エピソード</a></td>
+          <td><a href="../uk/02_policy_rate.html" style="color:var(--accent-teal)">Bank Rate (1694–)</a></td>
+          <td><a href="../uk/05_inflation.html" style="color:var(--accent-teal)">CPI YoY (1989–)</a></td>
+          <td>—</td>
+          <td><a href="../uk/13_long_rates.html" style="color:var(--accent-teal)">Gilt + 2s10s/5s30s</a></td>
+          <td><a href="../uk/06_equity_overview.html" style="color:var(--accent-teal)">FTSE 100 (1984–)</a></td>
+        </tr>
+        <tr>
+          <td>🇨🇭 Switzerland</td>
+          <td><a href="../switzerland/01_central_bank.html" style="color:var(--accent-teal)">SNB総裁写真・エピソード</a></td>
+          <td><a href="../switzerland/02_policy_rate.html" style="color:var(--accent-teal)">SNB Rate (2000–)</a></td>
+          <td>—</td>
+          <td>—</td>
+          <td><a href="../switzerland/13_long_rates.html" style="color:var(--accent-teal)">Swiss + 2s10s</a></td>
+          <td><a href="../switzerland/06_equity_overview.html" style="color:var(--accent-teal)">SMI (1988–)</a></td>
+        </tr>
+        <tr>
+          <td>🇦🇺 Australia</td>
+          <td><a href="../australia/01_central_bank.html" style="color:var(--accent-teal)">RBA総裁写真・エピソード</a></td>
+          <td><a href="../australia/02_policy_rate.html" style="color:var(--accent-teal)">Cash Rate (1990–)</a></td>
+          <td>—</td>
+          <td>—</td>
+          <td><a href="../australia/13_long_rates.html" style="color:var(--accent-teal)">ACGB + 2s10s</a></td>
+          <td><a href="../australia/06_equity_overview.html" style="color:var(--accent-teal)">ASX 200 (1992–)</a></td>
+        </tr>
+        <tr>
+          <td>🇳🇿 New Zealand</td>
+          <td><a href="../newzealand/01_central_bank.html" style="color:var(--accent-teal)">RBNZ総裁写真・エピソード</a></td>
+          <td><a href="../newzealand/02_policy_rate.html" style="color:var(--accent-teal)">OCR (1999–)</a></td>
+          <td>—</td>
+          <td>—</td>
+          <td><a href="../newzealand/13_long_rates.html" style="color:var(--accent-teal)">NZGB + 2s10s</a></td>
+          <td><a href="../newzealand/06_equity_overview.html" style="color:var(--accent-teal)">NZX 50 (2003–)</a></td>
+        </tr>
+        <tr>
+          <td>🇨🇦 Canada</td>
+          <td><a href="../canada/01_central_bank.html" style="color:var(--accent-teal)">BOC総裁写真・エピソード</a></td>
+          <td><a href="../canada/02_policy_rate.html" style="color:var(--accent-teal)">Overnight Rate (2001–)</a></td>
+          <td>—</td>
+          <td>—</td>
+          <td><a href="../canada/13_long_rates.html" style="color:var(--accent-teal)">Canada + 2s10s</a></td>
+          <td><a href="../canada/06_equity_overview.html" style="color:var(--accent-teal)">TSX (1975–)</a></td>
+        </tr>
+        <tr>
+          <td>🇸🇪 Sweden</td>
+          <td><a href="../sweden/01_central_bank.html" style="color:var(--accent-teal)">Riksbank総裁写真・エピソード</a></td>
+          <td><a href="../sweden/02_policy_rate.html" style="color:var(--accent-teal)">Repo Rate (1994–)</a></td>
+          <td>—</td>
+          <td>—</td>
+          <td><a href="../sweden/13_long_rates.html" style="color:var(--accent-teal)">SGB + 2s10s</a></td>
+          <td><a href="../sweden/06_equity_overview.html" style="color:var(--accent-teal)">OMXS30 (1986–)</a></td>
+        </tr>
+        <tr>
+          <td>🇳🇴 Norway</td>
+          <td><a href="../norway/01_central_bank.html" style="color:var(--accent-teal)">Norges Bank総裁写真・エピソード</a></td>
+          <td><a href="../norway/02_policy_rate.html" style="color:var(--accent-teal)">Sight Deposit Rate (1991–)</a></td>
+          <td>—</td>
+          <td>—</td>
+          <td><a href="../norway/13_long_rates.html" style="color:var(--accent-teal)">NGB + 2s10s</a></td>
+          <td><a href="../norway/06_equity_overview.html" style="color:var(--accent-teal)">OBX (1996–)</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ====================================================== -->
   <!-- Sources                                                 -->
   <!-- ====================================================== -->
   <footer class="sources">
@@ -1572,6 +1704,7 @@ document.querySelectorAll('.compare-table th, .mega-table th').forEach(th => {
 });
 </script>
 
+  <script src="../assets/enhancer.js"></script>
   <script src="../assets/tts-reader.js"></script>
 </body>
 </html>
