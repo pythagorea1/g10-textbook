@@ -398,3 +398,21 @@
   - 4 detailed policy episode cards covering 1996-2026
   - Highlights: inflation targeting formalization (Macfarlane), GFC response (Stevens), COVID/YCC debacle (Lowe), first female governor + dual board reform (Bullock)
 - All existing text content preserved in all files
+
+## 2026-04-11 — Task 6.1: canada/02 + canada/13 — BOC Rate + Canada Yields Monthly + Spreads
+- **canada/02_policy_rate.html**: Replaced hardcoded SVG chart with `ChartBuilder.lines()` monthly data
+  - 615 monthly data points: Jan 1975 – Mar 2026 (Bank Rate / Overnight Target)
+  - Pre-1997: Bank Rate approximated from Bank of Canada archives, Statistics Canada
+  - 1997-2026: Exact rate changes from cbrates.com verified against Bank of Canada official dates
+  - Key turning points verified: 1981 Aug 21.03% peak, 1990 Mar 13.05% Crow peak, 2009 Apr 0.25% ELB, 2020 Mar COVID 0.25%, 2023 Jul 5.00% peak, 2025 Oct 2.25%
+  - 6 annotations: 1981 21.03% Peak, 1990 Crow 13%, 1995 Quebec, 2009 0.25% ELB, 2020 COVID, 2023 5.00% Peak
+- **canada/13_long_rates.html**: Upgraded yield chart to monthly + added spread charts
+  - Replaced annual GoC yield chart (2Y/5Y/10Y/30Y) with monthly data (2000-2026, 315 pts each)
+  - Data sourced from FRED IRLTLT01CAM156N, Bank of Canada bond yields, countryeconomy.com
+  - 2025-2026 monthly verified from countryeconomy.com (e.g., 10Y: Apr 2.88%, Jul 3.45%, Mar 2026 3.47%)
+  - Added `ChartBuilder.spread('ca-2s10s-spread')` — 2s10s yield spread with inverted regions
+  - Added `ChartBuilder.spread('ca-5s30s-spread')` — 5s30s yield spread for super-long term
+  - Removed old crude 30Y SVG chart (now covered in main yield chart)
+  - 5 annotations on yield chart: GFC, Taper, COVID 0.50%, 利上げ, 4.20% Peak
+  - Compound return chart preserved (annual, 1990-2026)
+- All existing text content, tables, and sections preserved in both files
