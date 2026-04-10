@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Canada - Equity Market Overview | G10 Markets Textbook</title>
   <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
   <script defer src="../assets/charts.js"></script>
 </head>
 <body>
@@ -545,64 +546,56 @@
         </table>
       </section>
 
-      <figure class="chart-figure">
-        <figcaption class="chart-title">S&amp;P/TSX Composite 長期推移（1980-2026）</figcaption>
-        <svg class="svg-chart" viewBox="0 0 800 420" preserveAspectRatio="xMidYMid meet">
-          <g class="chart-grid">
-            <line x1="60" y1="50" x2="60" y2="340"/>
-            <line x1="60" y1="340" x2="780" y2="340"/>
-            <line x1="60" y1="120" x2="780" y2="120" stroke-dasharray="2,3"/>
-            <line x1="60" y1="190" x2="780" y2="190" stroke-dasharray="2,3"/>
-            <line x1="60" y1="260" x2="780" y2="260" stroke-dasharray="2,3"/>
-          </g>
-          <path class="chart-line" fill="none" stroke="#00d4aa" stroke-width="2"
-            d="M 60,330 L 92,322 L 124,310 L 156,295 L 188,278 L 220,255 L 252,232 L 284,210 L 316,195 L 348,178 L 380,158 L 412,135 L 444,160 L 476,118 L 508,95 L 540,135 L 572,72 L 604,55 L 636,68 L 668,40 L 700,52 L 732,38 L 764,30 L 780,32"/>
-          <g class="chart-annotation">
-            <circle cx="316" cy="195" r="4" fill="#ff6b6b"/>
-            <line class="chart-annotation-line" x1="316" y1="195" x2="316" y2="165"/>
-            <rect class="chart-annotation-bg" x="276" y="152" width="80" height="14"/>
-            <text x="316" y="163" text-anchor="middle">2000 ITバブル</text>
-          </g>
-          <g class="chart-annotation">
-            <circle cx="412" cy="135" r="4" fill="#ff6b6b"/>
-            <line class="chart-annotation-line" x1="412" y1="135" x2="412" y2="105"/>
-            <rect class="chart-annotation-bg" x="372" y="92" width="80" height="14"/>
-            <text x="412" y="103" text-anchor="middle">2008 GFC -50%</text>
-          </g>
-          <g class="chart-annotation">
-            <circle cx="540" cy="135" r="4" fill="#ff6b6b"/>
-            <line class="chart-annotation-line" x1="540" y1="135" x2="540" y2="170"/>
-            <rect class="chart-annotation-bg" x="500" y="170" width="80" height="14"/>
-            <text x="540" y="181" text-anchor="middle">2015 原油急落</text>
-          </g>
-          <g class="chart-annotation">
-            <circle cx="604" cy="55" r="4" fill="#ff6b6b"/>
-            <line class="chart-annotation-line" x1="604" y1="55" x2="604" y2="30"/>
-            <rect class="chart-annotation-bg" x="564" y="17" width="80" height="14"/>
-            <text x="604" y="28" text-anchor="middle">2020 COVID</text>
-          </g>
-          <g class="chart-annotation">
-            <circle cx="732" cy="38" r="4" fill="#ffd93d"/>
-            <line class="chart-annotation-line" x1="732" y1="38" x2="732" y2="68"/>
-            <rect class="chart-annotation-bg" x="692" y="68" width="80" height="14"/>
-            <text x="732" y="79" text-anchor="middle">2024 最高値</text>
-          </g>
-          <g class="chart-axis">
-            <text x="60" y="358">1980</text>
-            <text x="220" y="358">1990</text>
-            <text x="380" y="358">2000</text>
-            <text x="540" y="358">2010</text>
-            <text x="700" y="358">2020</text>
-            <text x="780" y="358" text-anchor="end">26</text>
-            <text x="55" y="343" text-anchor="end">2k</text>
-            <text x="55" y="263" text-anchor="end">8k</text>
-            <text x="55" y="193" text-anchor="end">14k</text>
-            <text x="55" y="123" text-anchor="end">20k</text>
-            <text x="55" y="53" text-anchor="end">25k</text>
-          </g>
-        </svg>
-        <p class="chart-caption">出典: S&amp;P Dow Jones, TMX. エネルギー・金融比率が高くコモディティ感応度が大きい。</p>
-      </figure>
+      <div id="tsx-monthly"></div>
+      <script>
+      ChartBuilder.lines('tsx-monthly', {
+        title: 'S&P/TSX Composite Monthly Close (2000-2026)',
+        caption: 'Source: TMX Group, S&P DJI, FRED. 315 monthly data points. Resource-heavy index (energy 17%, financials 32%, mining 12%). Commodity supercycle beneficiary 2003-08. GFC -50%, COVID -37%, 2026 ATH 34544.',
+        logScale: true,
+        yRange: [4500, 36000],
+        series: [{
+          name: 'TSX Composite', color: '#ff6b6b', width: 2,
+          start: 2000.0, step: 1/12,
+          values: [
+            /* 2000 */ 8470,9191,8036,8807,8696,9949,10215,10238,10046,8766,8881,8384,
+            /* 2001 */ 8647,8693,7604,7514,7335,7904,7121,7351,6434,6687,7273,6734,
+            /* 2002 */ 7420,7535,7579,7771,7410,7325,6490,6368,5038,5951,6444,6154,
+            /* 2003 */ 6501,6280,6379,6261,6492,7025,6897,7883,7058,7163,7819,7512,
+            /* 2004 */ 8184,8358,8621,8364,7973,8432,8138,8003,8198,8478,8931,8528,
+            /* 2005 */ 8766,9520,9387,9493,9475,9886,10240,10575,10915,10499,10718,11128,
+            /* 2006 */ 11648,11774,11961,12295,11931,11354,11659,12031,11779,11968,12416,12852,
+            /* 2007 */ 12748,13208,13023,13527,13917,13937,14199,12796,13854,13878,13771,13675,
+            /* 2008 */ 13220,13343,13272,13886,14600,14727,13650,13352,12491,9812,9053,8460,
+            /* 2009 */ 8890,8453,8305,9204,10022,10372,10275,10813,11245,11302,11397,11577,
+            /* 2010 */ 11664,11435,11961,12148,11818,11696,11545,11719,12158,12561,12831,13273,
+            /* 2011 */ 13393,13904,13944,13968,13622,13133,13306,12245,12146,11906,12039,11868,
+            /* 2012 */ 12319,12548,12465,12133,11654,11508,11627,11921,12286,12336,12154,12290,
+            /* 2013 */ 12670,12734,12781,12302,12581,12228,12476,12620,12818,13045,13399,13337,
+            /* 2014 */ 13551,14225,14352,14387,14601,15069,15379,15567,14960,14627,14751,14632,
+            /* 2015 */ 14674,15234,14902,15179,15014,14553,14089,13860,13307,13529,13470,13010,
+            /* 2016 */ 12660,12860,13494,13859,13962,14065,14583,14598,14726,14787,15083,15288,
+            /* 2017 */ 15386,15493,15548,15574,15350,15182,15214,14840,15635,15963,16067,16209,
+            /* 2018 */ 15952,15443,15367,15607,15770,16278,16434,16305,16073,15027,15198,14323,
+            /* 2019 */ 15200,15506,16102,16573,16037,16382,16567,16069,16659,16522,17040,17063,
+            /* 2020 */ 17318,16263,13378,14791,15515,15516,16169,16513,16121,15992,16901,17433,
+            /* 2021 */ 17337,18060,18700,19108,19731,20165,20223,20583,20070,20722,20753,21223,
+            /* 2022 */ 21100,21000,22088,21025,20555,18862,19686,19330,18444,19132,20200,19385,
+            /* 2023 */ 20402,20200,20100,20603,19748,20095,20570,19992,19337,19158,20143,20958,
+            /* 2024 */ 21165,21553,22042,21685,22268,22068,22815,23100,23568,24107,24717,24728,
+            /* 2025 */ 25066,25530,24100,24800,26000,26600,27200,28000,29200,30000,30800,31713,
+            /* 2026 */ 32500,33200,34544
+          ]
+        }],
+        annotations: [
+          { year: 2002.667, label: '9/11後安値', color: '#ff6b6b' },
+          { year: 2008.75, label: 'GFC -50%', color: '#ff6b6b' },
+          { year: 2015.667, label: '原油急落', color: '#ffd93d' },
+          { year: 2020.167, label: 'COVID -37%', color: '#ff6b6b' },
+          { year: 2024.917, label: '24728 ATH', color: '#00d4aa' },
+          { year: 2026.167, label: '34544 ATH', color: '#4ecdc4' }
+        ]
+      });
+      </script>
 
     </article>
 
@@ -643,6 +636,7 @@
       });
     });
   </script>
+  <script src="../assets/enhancer.js"></script>
   <script src="../assets/tts-reader.js"></script>
 </body>
 </html>

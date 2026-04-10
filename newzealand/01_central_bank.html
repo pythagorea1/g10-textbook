@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>New Zealand - Central Bank Timeline | G10 Markets Textbook</title>
   <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
   <script defer src="../assets/charts.js"></script>
 </head>
 <body>
@@ -286,6 +287,45 @@
             </tr>
           </tbody>
         </table>
+
+        <!-- Governor Photos -->
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;margin:1.5rem 0;justify-content:center;">
+          <div style="text-align:center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Don.Brash.jpg/200px-Don.Brash.jpg"
+                 alt="Don Brash" style="width:100px;height:120px;object-fit:cover;border-radius:8px;border:1px solid rgba(255,255,255,0.1);">
+            <div style="font-size:0.75rem;color:#a0a0b0;margin-top:0.3rem;">D. Brash<br>1988-2002</div>
+          </div>
+          <div style="text-align:center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Alan_Bollard_cropped_MPS2008-06-05_10-14-57.jpg/200px-Alan_Bollard_cropped_MPS2008-06-05_10-14-57.jpg"
+                 alt="Alan Bollard" style="width:100px;height:120px;object-fit:cover;border-radius:8px;border:1px solid rgba(255,255,255,0.1);">
+            <div style="font-size:0.75rem;color:#a0a0b0;margin-top:0.3rem;">A. Bollard<br>2002-2012</div>
+          </div>
+          <div style="text-align:center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Graeme_Wheeler_%28cropped%29.jpg/200px-Graeme_Wheeler_%28cropped%29.jpg"
+                 alt="Graeme Wheeler" style="width:100px;height:120px;object-fit:cover;border-radius:8px;border:1px solid rgba(255,255,255,0.1);">
+            <div style="font-size:0.75rem;color:#a0a0b0;margin-top:0.3rem;">G. Wheeler<br>2012-2017</div>
+          </div>
+        </div>
+
+        <!-- Policy Episodes -->
+        <div style="display:grid;gap:1rem;margin:1.5rem 0;">
+          <div style="background:rgba(255,107,107,0.08);border-left:3px solid #ff6b6b;padding:1rem;border-radius:0 8px 8px 0;">
+            <strong style="color:#ff6b6b;">ドン・ブラッシュ (1988-2002) — 世界初のインフレターゲット</strong>
+            <p style="margin:0.5rem 0 0;font-size:0.9rem;">1990年、財務大臣との政策目標合意書（PTA）により世界初のインフレターゲット（0-2%）を導入。当時20%超だったインフレ率を任期中に1-3%圏内に安定させた。「中央銀行総裁個人がインフレ目標達成に責任を負う」という革新的な仕組みは、その後カナダ、英国、豪州など世界中の中銀に波及。14年の長期在任で中銀独立性の世界的モデルを確立した。</p>
+          </div>
+          <div style="background:rgba(0,212,170,0.08);border-left:3px solid #00d4aa;padding:1rem;border-radius:0 8px 8px 0;">
+            <strong style="color:#00d4aa;">アラン・ボラード (2002-2012) — GFC対応と住宅バブル抑制</strong>
+            <p style="margin:0.5rem 0 0;font-size:0.9rem;">2004-2007年の住宅価格高騰に対しOCRを8.25%まで引き上げ（G10最高水準）、キウイドルのキャリートレード対象化を招いた。GFC時には2008年7月-2009年4月にOCRを8.25%→2.50%へ575bp利下げ。2010年には世界に先駆けて利上げに転じるなど、小国ながら機動的な金融政策運営を実践した。</p>
+          </div>
+          <div style="background:rgba(255,217,61,0.08);border-left:3px solid #ffd93d;padding:1rem;border-radius:0 8px 8px 0;">
+            <strong style="color:#ffd93d;">エイドリアン・オア (2018-2025) — デュアルマンデートとCOVID対応</strong>
+            <p style="margin:0.5rem 0 0;font-size:0.9rem;">2019年にMPC（金融政策委員会）制度を導入し、総裁単独決定から委員会制へ移行。2020年3月にOCRを1.00%→0.25%へ緊急利下げし、RBNZ初のLSAP（大規模資産購入）を実施。インフレ急騰後は2021年10月から計525bp利上げ（5.50%、G10最高水準タイ）。2025年3月に政府との対立から突然辞任。</p>
+          </div>
+          <div style="background:rgba(167,139,250,0.08);border-left:3px solid #a78bfa;padding:1rem;border-radius:0 8px 8px 0;">
+            <strong style="color:#a78bfa;">アナ・ブレマン (2025年12月-現在) — RBNZ史上初の女性・外国人総裁</strong>
+            <p style="margin:0.5rem 0 0;font-size:0.9rem;">スウェーデン出身、前リクスバンク第一副総裁。RBNZ90年の歴史で初の女性総裁かつ初の外国人総裁。2026年2月の初会合でOCR 2.25%据え置きを決定し、「データに基づく透明性の高い政策運営」を表明。国際経験と学術的バックグラウンド（ストックホルム商科大博士）を活かした独自の視点が期待される。</p>
+          </div>
+        </div>
       </section>
 
       <!-- 現在の金融政策委員会 -->
@@ -648,6 +688,7 @@
     });
   </script>
 
+  <script src="../assets/enhancer.js"></script>
   <script src="../assets/tts-reader.js"></script>
 </body>
 </html>

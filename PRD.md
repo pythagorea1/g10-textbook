@@ -48,10 +48,10 @@
 ### Phase 6: Canada + New Zealand — Monthly Upgrade
 - [x] Task 6.1: canada/02 + 13_long_rates — BOC rate + Canada yields月次化 + スプレッド
 - [x] Task 6.2: newzealand/02 + 13_long_rates — RBNZ OCR + NZ yields月次化 + スプレッド
-- [ ] Task 6.3: canada/06 + newzealand/06 — TSX + NZX月次化。各国01に総裁情報追加
+- [x] Task 6.3: canada/06 + newzealand/06 — TSX + NZX月次化。各国01に総裁情報追加
 
 ### Phase 7: Sweden + Norway — Monthly Upgrade
-- [ ] Task 7.1: sweden/02 + 13_long_rates — Riksbank repo rate + SGB yields月次化 + スプレッド
+- [x] Task 7.1: sweden/02 + 13_long_rates — Riksbank repo rate + SGB yields月次化 + スプレッド
 - [ ] Task 7.2: norway/02 + 13_long_rates — Norges Bank rate + NGB yields月次化 + スプレッド
 - [ ] Task 7.3: sweden/06 + norway/06 — OMXS30 + OBX月次化。各国01に総裁情報追加
 

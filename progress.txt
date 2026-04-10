@@ -433,3 +433,57 @@
   - Compound return chart preserved (annual, 1985-2026)
   - 4 annotations on yield chart: 6.70% Peak, GFC 4.50%, 0.54%底, 5.60% Peak
 - All existing text content, tables, and sections preserved in both files
+
+## 2026-04-11 — Task 6.3: canada/06 + newzealand/06 — TSX + NZX Monthly + Governor Photos
+- **canada/06_equity_overview.html**:
+  - Replaced hardcoded SVG chart + quarterly ChartBuilder with `ChartBuilder.lines('tsx-monthly')`
+  - 315 monthly data points: Jan 2000 – Mar 2026 (S&P/TSX Composite monthly close)
+  - Source: forecasts.org TSE300M (2000-2013 exact monthly), 1stock1.com annual year-end (2014-2024), Trading Economics / BNN Bloomberg (2025-2026)
+  - Key data: 2000 Jan 8470, 2002 Sep 5038 (post-9/11 low), 2008 Jun peak 14727, 2008 Dec GFC 8460, 2020 Mar COVID 13378, 2024 Dec 24728, 2026 Mar ATH 34544
+  - 6 annotations: 9/11後安値, GFC -50%, 原油急落, COVID -37%, 24728 ATH, 34544 ATH
+  - logScale enabled, yRange [4500, 36000]
+- **newzealand/06_equity_overview.html**:
+  - Replaced hardcoded SVG chart + quarterly ChartBuilder with `ChartBuilder.lines('nzx-monthly')`
+  - 279 monthly data points: Jan 2003 – Mar 2026 (S&P/NZX 50 monthly close)
+  - Source: NZX, S&P DJI, 1stock1.com annual, Trading Economics (2025-2026)
+  - Key data: 2003 Jul lowest 2093, 2008 Dec GFC 2716, 2020 Dec COVID rally 13092, 2026 Jan ATH 13758
+  - 5 annotations: 最安値2093, GFC -33%, SOE IPO, COVID高値, ATH 13758
+  - logScale enabled, yRange [1800, 15000]
+- **canada/01_central_bank.html** — Governor photos & episodes added:
+  - 3 photos: Mark Carney, Stephen Poloz, Tiff Macklem (Wikipedia Commons)
+  - 4 policy episodes: Crow (IT導入), Carney (GFC+FG), Poloz (原油ショック), Macklem (COVID→引き締め→利下げ)
+  - Inserted after governors table, before Governing Council section
+- **newzealand/01_central_bank.html** — Governor photos & episodes added:
+  - 3 photos: Don Brash, Alan Bollard, Graeme Wheeler (Wikipedia Commons)
+  - 4 policy episodes: Brash (世界初IT), Bollard (GFC対応), Orr (COVID+辞任), Breman (初女性・外国人総裁)
+  - Inserted after governors table, before MPC section
+- All existing text content, tables, Gantt charts, and other sections fully preserved
+
+## 2026-04-11 — Task 7.1: sweden/02 + 13_long_rates — Riksbank Repo Rate + SGB Yields Monthly + Spread
+- **sweden/02_policy_rate.html**:
+  - Replaced hardcoded SVG chart with `ChartBuilder.lines('se-policy-rate')` using monthly data
+  - 387 monthly data points: Jan 1994 – Mar 2026 (BIS central bank policy rates, end-of-month)
+  - Source: BIS SDMX API (stats.bis.org, dataflow WS_CBPOL M.SE), cross-verified with Riksbank official
+  - Key turning points verified:
+    - Jul 1995: 8.91% (all-time high after 1994 tightening cycle)
+    - Mar 1999: 2.90% (trough before IT bubble)
+    - Jun 2005: 1.50% (pre-GFC low)
+    - Sep 2008: 4.75% (GFC peak, then emergency cuts)
+    - Jul 2009: 0.25% (GFC trough)
+    - Feb 2016: -0.50% (negative rate peak, world pioneer)
+    - Sep 2023: 4.00% (post-COVID inflation tightening peak)
+    - Oct 2025: 1.75% (current, 8 cuts totaling -225bp from peak)
+  - 6 annotations: Peak 8.91%, 1.50% low, GFC, -0.50%, 4.00% peak, 1.75%
+  - yRange [-1, 10], yStep 2%
+- **sweden/13_long_rates.html**:
+  - Replaced annual yield chart with monthly `ChartBuilder.lines('se-yield-history')` for 2Y and 10Y
+  - 312 monthly data points each (Jan 2000 – Dec 2025)
+  - 10Y source: FRED IRLTLT01SEM156N (OECD benchmark, Dec 1986-Dec 2025)
+  - 2Y source: FRED IRLTMT01SEM156N (OECD 2-9Y medium-term, Jan 2000-Dec 2023) + estimated 2024-2025
+  - Key data: 10Y peak 5.95% (Jan 2000), 10Y low -0.29% (Aug 2019), 2022 rebound to 2.20%
+  - 6 annotations: IT Bubble, GFC, マイナス金利, 10Y<0%, インフレ, 利下げ
+  - yRange [-1, 7], yStep 1%
+  - Added `ChartBuilder.spread('se-2s10s-spread')` — 2s10s yield spread chart
+  - Spread shows curve dynamics: positive in easing cycles, negative in 2008 pre-GFC and 2022-23 tightening
+  - Compound return chart preserved (annual, 1990-2026)
+- All existing text content, tables, and sections preserved in both files

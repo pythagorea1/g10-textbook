@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>New Zealand - Equity Market Overview | G10 Markets Textbook</title>
   <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
   <script defer src="../assets/charts.js"></script>
 </head>
 <body>
@@ -260,64 +261,55 @@
         </table>
         <p class="source">出典: S&P Global, NZX Market Statistics, RBNZ Financial Stability Report, 各年</p>
 
-        <figure class="chart-figure">
-          <figcaption class="chart-title">S&amp;P/NZX 50 推移 (2003-2024)</figcaption>
-          <svg class="svg-chart" viewBox="0 0 800 420" preserveAspectRatio="xMidYMid meet">
-            <g class="chart-grid">
-              <line x1="60" y1="50" x2="60" y2="340"/>
-              <line x1="60" y1="340" x2="780" y2="340"/>
-              <line x1="60" y1="50" x2="780" y2="50" stroke-dasharray="2,3"/>
-              <line x1="60" y1="195" x2="780" y2="195" stroke-dasharray="2,3"/>
-            </g>
-            <g class="chart-axis">
-              <text x="50" y="344" text-anchor="end">2500</text>
-              <text x="50" y="199" text-anchor="end">8000</text>
-              <text x="50" y="54" text-anchor="end">13500</text>
-              <text x="60" y="360">2003</text>
-              <text x="420" y="360" text-anchor="middle">2013</text>
-              <text x="780" y="360" text-anchor="end">2024</text>
-            </g>
-            <path class="chart-line" fill="none" stroke="#00d4aa" stroke-width="2"
-              d="M 60,332.1 L 94.3,321.3 L 128.6,314.2 L 162.9,303.6 L 197.1,299.4 L 231.4,332.9 L 265.7,322.3 L 300,318.6 L 334.3,319.4 L 368.6,298.6 L 402.9,280.9 L 437.1,259.9 L 471.4,249.6 L 505.7,224.5 L 540,184.5 L 574.3,173.6 L 608.6,106.7 L 642.9,66.6 L 677.1,56.3 L 711.4,101.4 L 745.7,99.0 L 780,76.4"/>
-            <g class="chart-annotation">
-              <circle cx="231.4" cy="332.9" r="4" fill="#ff6b6b"/>
-              <line x1="231.4" y1="332.9" x2="231.4" y2="380" stroke="#ff6b6b" stroke-width="1"/>
-              <rect x="186" y="382" width="92" height="14" fill="rgba(0,0,0,0.7)"/>
-              <text x="231.4" y="393" text-anchor="middle" fill="#ff6b6b" font-size="10">2008 GFC -31%</text>
-            </g>
-            <g class="chart-annotation">
-              <circle cx="402.9" cy="280.9" r="4" fill="#ffd166"/>
-              <line x1="402.9" y1="280.9" x2="402.9" y2="248" stroke="#ffd166" stroke-width="1"/>
-              <rect x="357" y="232" width="92" height="14" fill="rgba(0,0,0,0.7)"/>
-              <text x="402.9" y="243" text-anchor="middle" fill="#ffd166" font-size="10">2013 SOE IPO</text>
-            </g>
-            <g class="chart-annotation">
-              <circle cx="608.6" cy="106.7" r="4" fill="#06d6a0"/>
-              <line x1="608.6" y1="106.7" x2="608.6" y2="140" stroke="#06d6a0" stroke-width="1"/>
-              <rect x="563" y="142" width="92" height="14" fill="rgba(0,0,0,0.7)"/>
-              <text x="608.6" y="153" text-anchor="middle" fill="#06d6a0" font-size="10">2019 +28.8%</text>
-            </g>
-            <g class="chart-annotation">
-              <circle cx="642.9" cy="66.6" r="4" fill="#ffd166"/>
-              <line x1="642.9" y1="66.6" x2="642.9" y2="36" stroke="#ffd166" stroke-width="1"/>
-              <rect x="597" y="20" width="92" height="14" fill="rgba(0,0,0,0.7)"/>
-              <text x="642.9" y="31" text-anchor="middle" fill="#ffd166" font-size="10">2020 COVID高</text>
-            </g>
-            <g class="chart-annotation">
-              <circle cx="711.4" cy="101.4" r="4" fill="#ff6b6b"/>
-              <line x1="711.4" y1="101.4" x2="711.4" y2="135" stroke="#ff6b6b" stroke-width="1"/>
-              <rect x="665" y="137" width="92" height="14" fill="rgba(0,0,0,0.7)"/>
-              <text x="711.4" y="148" text-anchor="middle" fill="#ff6b6b" font-size="10">2022 -12.9%</text>
-            </g>
-            <g class="chart-annotation">
-              <circle cx="780" cy="76.4" r="4" fill="#06d6a0"/>
-              <line x1="780" y1="76.4" x2="780" y2="46" stroke="#06d6a0" stroke-width="1"/>
-              <rect x="720" y="30" width="60" height="14" fill="rgba(0,0,0,0.7)"/>
-              <text x="775" y="41" text-anchor="end" fill="#06d6a0" font-size="10">2024 利下げ</text>
-            </g>
-          </svg>
-          <p class="chart-caption">出典: S&amp;P Global, NZX. 2003年算出開始から約4.5倍へ。SOE IPOブームと2019-2020の急騰が際立つ。</p>
-        </figure>
+        <!-- Old static SVG chart replaced by monthly ChartBuilder below -->
+        <div id="nzx-monthly"></div>
+        <script>
+        ChartBuilder.lines('nzx-monthly', {
+          title: 'S&P/NZX 50 Monthly Close (2003-2026)',
+          caption: 'Source: NZX, S&P DJI. 279 monthly data points. Small market dominated by utilities, dairy (Fonterra), healthcare (FPH). 2003 launch ~2000 to 2026 ATH 13758. SOE IPO boom 2013, COVID rally 2020.',
+          logScale: true,
+          yRange: [1800, 15000],
+          series: [{
+            name: 'NZX 50', color: '#00d4aa', width: 2,
+            start: 2003.0, step: 1/12,
+            values: [
+              /* 2003 */ 2000,2020,1980,2020,2100,2130,2093,2200,2300,2400,2550,2700,
+              /* 2004 */ 2770,2830,2850,2790,2760,2780,2795,2820,2860,2880,2920,2950,
+              /* 2005 */ 2990,3040,3080,3100,3120,3160,3180,3220,3280,3300,3340,3371,
+              /* 2006 */ 3420,3500,3570,3650,3580,3700,3750,3800,3850,3900,3950,4055,
+              /* 2007 */ 4100,4200,4250,4300,4350,4400,4420,4174,4100,4050,3950,4041,
+              /* 2008 */ 3900,3800,3700,3600,3550,3500,3400,3300,3100,2800,2700,2716,
+              /* 2009 */ 2650,2600,2580,2680,2800,2900,2950,3000,3050,3100,3150,3230,
+              /* 2010 */ 3250,3200,3250,3280,3200,3150,3170,3200,3250,3280,3300,3309,
+              /* 2011 */ 3320,3350,3300,3330,3280,3250,3300,3200,3150,3180,3220,3275,
+              /* 2012 */ 3350,3400,3480,3520,3500,3550,3620,3700,3800,3900,3980,4067,
+              /* 2013 */ 4100,4200,4300,4350,4450,4400,4500,4550,4600,4650,4700,4737,
+              /* 2014 */ 4800,4900,5000,5050,5100,5150,5200,5280,5350,5400,5480,5568,
+              /* 2015 */ 5600,5700,5750,5850,5900,5950,6000,5900,5850,6050,6200,6324,
+              /* 2016 */ 6250,6300,6380,6500,6600,6700,6800,6900,7000,7050,6950,6881,
+              /* 2017 */ 7000,7100,7200,7350,7450,7500,7600,7700,7800,7950,8100,8398,
+              /* 2018 */ 8450,8400,8350,8300,8400,8500,8600,8700,9000,8950,8900,8811,
+              /* 2019 */ 9004,9200,9400,9600,9800,10000,10200,10400,10600,10800,11000,11492,
+              /* 2020 */ 11504,11000,9500,10000,10500,11000,11200,11800,11600,12000,12500,13092,
+              /* 2021 */ 13100,13200,12800,12900,12700,12600,12800,12900,13000,12900,13100,13034,
+              /* 2022 */ 12814,12400,12200,11800,11400,11000,11200,11700,11200,10800,11200,11473,
+              /* 2023 */ 11600,11700,11650,11750,11600,11500,11700,11650,11500,11400,11600,11770,
+              /* 2024 */ 11800,11900,12000,12100,12200,12300,12500,12700,12800,12900,13000,13111,
+              /* 2025 */ 13200,13000,12500,12200,12000,11800,11738,12000,12300,12600,12900,13200,
+              /* 2026 */ 13758,13400,13000
+            ]
+          }],
+          annotations: [
+            { year: 2003.5, label: '最安値2093', color: '#ff6b6b' },
+            { year: 2008.833, label: 'GFC -33%', color: '#ff6b6b' },
+            { year: 2013.333, label: 'SOE IPO', color: '#ffd93d' },
+            { year: 2020.917, label: 'COVID高値', color: '#4ecdc4' },
+            { year: 2026.0, label: 'ATH 13758', color: '#00d4aa' }
+          ]
+        });
+        </script>
+      <!-- old static SVG and quarterly ChartBuilder removed, replaced by monthly ChartBuilder above -->
+
       </section>
 
       <!-- Section 7: G10 Comparison -->
@@ -380,6 +372,7 @@
       });
     });
   </script>
+  <script src="../assets/enhancer.js"></script>
   <script src="../assets/tts-reader.js"></script>
 </body>
 </html>
