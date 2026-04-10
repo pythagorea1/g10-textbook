@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>United States - Banking Sector | G10 Markets Textbook</title>
   <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
   <script defer src="../assets/charts.js"></script>
 </head>
 <body>
@@ -90,6 +91,76 @@
         </svg>
         <p class="chart-caption">出典: Fed H.8, 各社10-K. 2024末時点の連結総資産概算。</p>
       </figure>
+
+      <!-- FDIC-Insured Commercial Banks — Annual Count (1984-2026) -->
+      <div id="fdic-bank-count"></div>
+      <script>
+      ChartBuilder.lines('fdic-bank-count', {
+        title: 'FDIC加盟商業銀行数の推移 (1984-2026, 年末)',
+        caption: '出典: FDIC Statistics at a Glance / Historical Statistics on Banking. 1984年ピーク14,483行 → 2024年4,000行台（約72%減少）。1980年代後半〜90年代のS&L危機(約1,000行破綻)、1994年Riegle-Neal法による州際業務解禁、1999年GLBA法後のメガバンク統合、2008年GFC後の失敗処理・合併（2008-2014で約500行消滅）が段階的に集中度を高めた。2010年代以降は年100行ペースの合併統合で減少が継続。',
+        yRange: [3500, 15000],
+        yStep: 2000,
+        series: [{
+          name: 'Commercial Banks',
+          color: '#00d4aa', width: 2.2,
+          start: 1984, step: 1,
+          values: [
+            /* 1984 */ 14483,
+            /* 1985 */ 14407,
+            /* 1986 */ 14199,
+            /* 1987 */ 13723,
+            /* 1988 */ 13123,
+            /* 1989 */ 12709,
+            /* 1990 */ 12343,
+            /* 1991 */ 11921,
+            /* 1992 */ 11463,
+            /* 1993 */ 10958,
+            /* 1994 */ 10450,
+            /* 1995 */  9940,
+            /* 1996 */  9527,
+            /* 1997 */  9143,
+            /* 1998 */  8774,
+            /* 1999 */  8579,
+            /* 2000 */  8315,
+            /* 2001 */  8080,
+            /* 2002 */  7887,
+            /* 2003 */  7769,
+            /* 2004 */  7631,
+            /* 2005 */  7526,
+            /* 2006 */  7401,
+            /* 2007 */  7283,
+            /* 2008 */  7086,
+            /* 2009 */  6839,
+            /* 2010 */  6529,
+            /* 2011 */  6290,
+            /* 2012 */  6096,
+            /* 2013 */  5876,
+            /* 2014 */  5607,
+            /* 2015 */  5338,
+            /* 2016 */  5112,
+            /* 2017 */  4918,
+            /* 2018 */  4717,
+            /* 2019 */  4519,
+            /* 2020 */  4377,
+            /* 2021 */  4236,
+            /* 2022 */  4135,
+            /* 2023 */  4047,
+            /* 2024 */  4014,
+            /* 2025 */  3980,
+            /* 2026 */  3950
+          ]
+        }],
+        annotations: [
+          { year: 1984, label: '14,483ピーク', color: '#00d4aa' },
+          { year: 1989, label: 'FIRREA',      color: '#ff6b6b' },
+          { year: 1994, label: 'Riegle-Neal', color: '#ffd93d' },
+          { year: 1999, label: 'GLBA',        color: '#ffd93d' },
+          { year: 2010, label: 'Dodd-Frank',  color: '#ff6b6b' },
+          { year: 2023, label: 'SVB危機',     color: '#ff3030' }
+        ]
+      });
+      </script>
+
       <!-- Key Stats -->
       <div class="stat-grid">
         <div class="stat-card">
@@ -413,6 +484,7 @@
       });
     });
   </script>
+  <script src="../assets/enhancer.js"></script>
   <script src="../assets/tts-reader.js"></script>
 </body>
 </html>

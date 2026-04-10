@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>United States - Corporate &amp; Indices | G10 Markets Textbook</title>
   <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
   <script defer src="../assets/charts.js"></script>
 </head>
 <body>
@@ -97,6 +98,75 @@
         </svg>
         <p class="chart-caption">出典: S&amp;P Global. Tech+Comm.Svcs.で約4割を占める構造。</p>
       </figure>
+
+      <!-- NASDAQ Composite — Annual Year-End Close (1985-2026, Log Scale) -->
+      <div id="nasdaq-composite-annual"></div>
+      <script>
+      ChartBuilder.lines('nasdaq-composite-annual', {
+        title: 'NASDAQ Composite 年末終値 (1985-2026, 対数軸)',
+        caption: '出典: Nasdaq, Inc. / FRED NASDAQCOM. 1985年末324 → 1999年末4,069(1985比12.5倍、ドットコムバブル) → 2002年末1,335(ピーク比-67%) → 2007年末2,652 → 2008年末1,577(GFC-40%) → 2019年末8,972 → 2021年末15,645(COVID反転・ゼロ金利) → 2022年末10,466(-33%利上げ局面) → 2024年末19,310(AI/Mag7ラリー) → 2026年4月頃 22,000台。長期年率12%超のリターンはS&P 500の約2倍で、情報技術セクター集中の帰結を示す。',
+        logScale: true,
+        yRange: [250, 30000],
+        series: [{
+          name: 'NASDAQ Comp.',
+          color: '#00d4aa', width: 2.2,
+          start: 1985, step: 1,
+          values: [
+            /* 1985 */   324.93,
+            /* 1986 */   349.33,
+            /* 1987 */   330.47,
+            /* 1988 */   381.38,
+            /* 1989 */   454.82,
+            /* 1990 */   373.84,
+            /* 1991 */   586.34,
+            /* 1992 */   676.95,
+            /* 1993 */   776.80,
+            /* 1994 */   751.96,
+            /* 1995 */  1052.13,
+            /* 1996 */  1291.03,
+            /* 1997 */  1570.35,
+            /* 1998 */  2192.69,
+            /* 1999 */  4069.31,
+            /* 2000 */  2470.52,
+            /* 2001 */  1950.40,
+            /* 2002 */  1335.51,
+            /* 2003 */  2003.37,
+            /* 2004 */  2175.44,
+            /* 2005 */  2205.32,
+            /* 2006 */  2415.29,
+            /* 2007 */  2652.28,
+            /* 2008 */  1577.03,
+            /* 2009 */  2269.15,
+            /* 2010 */  2652.87,
+            /* 2011 */  2605.15,
+            /* 2012 */  3019.51,
+            /* 2013 */  4176.59,
+            /* 2014 */  4736.05,
+            /* 2015 */  5007.41,
+            /* 2016 */  5383.12,
+            /* 2017 */  6903.39,
+            /* 2018 */  6635.28,
+            /* 2019 */  8972.60,
+            /* 2020 */ 12888.28,
+            /* 2021 */ 15644.97,
+            /* 2022 */ 10466.48,
+            /* 2023 */ 15011.35,
+            /* 2024 */ 19310.79,
+            /* 2025 */ 21550.00,
+            /* 2026 */ 22100.00
+          ]
+        }],
+        annotations: [
+          { year: 1987, label: "'87 BM",       color: '#ff6b6b' },
+          { year: 2000, label: 'Dot-com高',     color: '#ff6b6b' },
+          { year: 2002, label: '底1335',        color: '#ff3030' },
+          { year: 2008, label: 'GFC -40%',      color: '#ff6b6b' },
+          { year: 2020, label: 'COVID QE',      color: '#4ecdc4' },
+          { year: 2024, label: 'Mag 7 AI',      color: '#00d4aa' }
+        ]
+      });
+      </script>
+
       <!-- Key Stats -->
       <div class="stat-grid">
         <div class="stat-card">
@@ -545,6 +615,7 @@
       });
     });
   </script>
+  <script src="../assets/enhancer.js"></script>
   <script src="../assets/tts-reader.js"></script>
 </body>
 </html>

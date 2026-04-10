@@ -723,3 +723,22 @@
   - Existing crisis timeline figure, 12-item Key Stats, crisis summary table, and all text sections (1907 Panic, Great Depression, S&L, LTCM, GFC, COVID, 2023 Regional Banking, Common Patterns, footer sources) fully preserved
 - Verified: us/14_currency.html contains `ChartBuilder.lines('dxy-monthly'` (@ line 477) and no longer has the `svg-chart` DXY block; us/15_crises.html contains `ChartBuilder.lines('sp500-crises-monthly'` (@ line 158) AND retains its single timeline `svg-chart` (@ line 80)
 - Python-verified array lengths: DXY 436 monthly values (min 71, max 121), S&P 500 556 monthly values (min 102.09, max 6929) — matches expected counts
+
+---
+2026-04-11 — Iteration 6 (Task 10.5)
+- **us/16_banking.html**: Added `ChartBuilder.lines('fdic-bank-count')` immediately after the existing "米国主要銀行 総資産" bar chart figure and before the Key Stats grid
+  - Series: FDIC-insured commercial bank count, 43 annual year-end values 1984-2026, step: 1
+  - Key data points: 1984=14,483 (all-time peak) → 1989=12,709 (FIRREA/S&L crisis) → 1994=10,450 (Riegle-Neal interstate banking) → 1999=8,579 (GLBA) → 2008=7,086 → 2014=5,607 (Dodd-Frank era consolidation) → 2020=4,377 (COVID accelerated M&A) → 2024=4,014 → 2026=3,950 (projection)
+  - yRange [3500, 15000], yStep 2000 — clean linear grid capturing the ~72% cumulative decline
+  - 6 annotations (CLAUDE.md cap): 1984 14,483ピーク, 1989 FIRREA, 1994 Riegle-Neal, 1999 GLBA, 2010 Dodd-Frank, 2023 SVB危機
+  - Preserved intact: top bar chart figure (Big 4+ assets), Key Stats grid, all 9 sections (Introduction, Eras Timeline, Major Banks, S&L Crisis, GFC Banking, TBTF, 2023 SVB, Community Banks, Fintech), footer sources
+- **us/17_corporate.html**: Added `ChartBuilder.lines('nasdaq-composite-annual')` immediately after the sector pie chart figure and before the Key Stats grid
+  - Series: NASDAQ Composite year-end close, 42 annual values 1985-2026, step: 1
+  - Log-scale yRange [250, 30000] to span the ~68× range (324 → 22,100) without compressing 1987/2000/2008 crashes
+  - Captures the full tech-concentration narrative: 1985 start 324.93 → 1999 Dot-com peak 4,069 → 2002 trough 1,335 (-67% peak-to-trough) → 2007 re-peak 2,652 → 2008 GFC 1,577 (-40%) → 2019 8,972 → 2021 COVID/ZIRP peak 15,645 → 2022 10,466 (-33% hiking cycle) → 2024 AI/Mag 7 rally 19,310 → 2026/04 ~22,100
+  - 6 annotations (CLAUDE.md cap): 1987 '87 BM, 2000 Dot-com高, 2002 底1335, 2008 GFC -40%, 2020 COVID QE, 2024 Mag 7 AI
+  - Preserved intact: sector pie chart figure, Key Stats grid, all 7 sections (Sector Evolution table, DJIA components table, Magnificent 7 table, Corporate Icons, Index Methodology, Buyback history), footer sources
+- Verified: both files contain the new ChartBuilder.lines calls via grep
+  - us/16_banking.html line 98: `ChartBuilder.lines('fdic-bank-count', {`
+  - us/17_corporate.html line 105: `ChartBuilder.lines('nasdaq-composite-annual', {`
+- Python-verified array lengths: FDIC 43 annual values (min 3,950 max 14,483), NASDAQ Composite 42 annual values (min 324.93 max 22,100) — matches expected 1984-2026 and 1985-2026 ranges
