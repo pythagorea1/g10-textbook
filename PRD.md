@@ -41,7 +41,7 @@
 - [x] Task 4.3: uk/06_equity_overview.html — FTSE 100月次化 + uk/01_central_bank.html — 歴代BOE総裁写真
 
 ### Phase 5: Switzerland + Australia — Monthly Upgrade
-- [ ] Task 5.1: switzerland/02 + 13_long_rates — SNB金利 + Swiss yields月次化 + スプレッド
+- [x] Task 5.1: switzerland/02 + 13_long_rates — SNB金利 + Swiss yields月次化 + スプレッド
 - [ ] Task 5.2: australia/02 + 13_long_rates — RBA cash rate + AU yields月次化 + スプレッド
 - [ ] Task 5.3: switzerland/06 + australia/06 — SMI + ASX月次化。各国01_central_bank に総裁情報追加
 

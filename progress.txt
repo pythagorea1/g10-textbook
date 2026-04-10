@@ -352,3 +352,26 @@
   - Photo gallery uses flexbox with center justification, 100x120px with object-fit:cover
   - Inserted between existing governors table and MPC section
   - All existing text, tables, Gantt chart, and other content fully preserved
+
+## 2026-04-11 — Task 5.1: switzerland/02_policy_rate.html + switzerland/13_long_rates.html — SNB Rate + Swiss Yields Monthly + Spread
+- **switzerland/02_policy_rate.html**: Replaced hardcoded inline SVG chart with ChartBuilder.lines() using monthly data
+  - 615 monthly data points: Jan 1975 – Mar 2026
+  - Source: SNB Press Releases, Quarterly Bulletins, global-rates.com, TradingEconomics
+  - 1975-1999: Discount rate (Diskontosatz) monthly approximation
+  - 2000-2019: 3-month CHF LIBOR target range midpoint
+  - 2019-2026: SNB Policy Rate (official since Jun 2019)
+  - Key turning points verified:
+    - 1991 Mar-Sep: 7.00% peak (real estate bubble, SNB highest ever)
+    - 2003 Mar: 0.25% (LIBOR target trough, range 0.00-0.75%)
+    - 2015 Jan: -0.75% (world's lowest, floor removal same day)
+    - 2022 Jun-Sep: negative rate era ends, +0.50%
+    - 2023 Jun: 1.75% (cycle peak)
+    - 2024 Mar: G10 first to cut, 2025 Jun: 0.00%
+  - 6 annotations: 7%ピーク, 0.25%底, -0.75%, マイナス解除, 1.75%, 0.00%
+  - yRange [-1, 8], yStep 1
+- **switzerland/13_long_rates.html**: Upgraded yield charts to monthly + added 2s10s spread
+  - Yield chart: 2Y + 10Y, 315 monthly points each (Jan 2000 – Mar 2026)
+  - Source: FRED IRLTLT01CHM156N, SNB data portal, TradingEconomics
+  - 2s10s spread chart added using ChartBuilder.spread()
+  - 30Y hardcoded SVG replaced with ChartBuilder.lines() (sparse annual data)
+  - All existing text, tables, and sections fully preserved
