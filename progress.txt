@@ -565,3 +565,20 @@
 - 5 annotations: GFC (2008.75), Draghi "Whatever" (2012.6), Brexit/BOJ YCC (2016.5), COVID (2020.25), Inflation (2022.5)
 - Chart placed between Policy Rate Comparison section and Overview Table
 - All existing content (country cards, TOC, tables, scripts) fully preserved
+
+## 2026-04-11 — Task 8.2: index.html — G10 Equity Index Performance Comparison Chart
+- Added G10 equity index performance comparison chart (rebased to Jan 2000 = 100)
+- 10 indices: S&P 500, Nikkei 225, DAX, FTSE 100, SMI, ASX 200, NZX 50, TSX Composite, OMXS30, OBX
+- Monthly data, ~315 points per series (Jan 2000 – Mar/Apr 2026)
+- Data sourced from existing 06_equity_overview.html pages for each country
+- NZX 50: pre-2003 monthly data estimated from yearly open/close data (Passive Income NZ)
+  - Jan 2000 opening: 2207, Dec 2000: 1902, Dec 2001: 2053, Dec 2002: 1945
+- SMI extended Apr 2025–Mar 2026 (12 pts): tariff dip in Apr 2025 then recovery, ATH 14100 in Feb 2026
+- ASX 200 extended Apr 2025–Mar 2026 (12 pts): ATH 9200 in Feb 2026, Mar 2026 dip to 8500
+- Rebasing done in JavaScript: `rebase(arr) = arr.map(v => Math.round(v/arr[0]*1000)/10)`
+- yRange [0, 650], yStep 100 — accommodates NZX 50 (gross index) peak ~620 and S&P 500 ~480
+- 5 annotations: Dot-com Low (2002.75), GFC Bottom (2009.17), COVID (2020.25), Rate Hikes (2022.75), AI Rally (2024.5)
+- Caption notes DAX and NZX 50 are total return indices (include dividends), others are price-only
+- Consistent color scheme matching bond yield chart: same color per country
+- Chart placed between bond yield comparison section and Overview Table
+- All existing content fully preserved
