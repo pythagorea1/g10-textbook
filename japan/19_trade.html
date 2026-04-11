@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Japan - International Trade | G10 Markets Textbook</title>
   <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
   <script defer src="../assets/charts.js"></script>
 </head>
 <body>
@@ -335,6 +336,80 @@
         </p>
       </section>
 
+      <!-- Japan Trade Balance — Annual 1980-2026 -->
+      <div id="japan-trade-balance-annual"></div>
+      <script>
+      ChartBuilder.lines('japan-trade-balance-annual', {
+        title: '日本 貿易収支 年次推移 (1980-2026, 兆円)',
+        caption: '出典: 財務省「貿易統計」、「国際収支統計」。1980年代半ばに急拡大し1986年15.5兆円の最大黒字 (プラザ合意期) → 円高進行で輸出採算悪化も1990年代前半は10兆円台を維持 → 1998年アジア通貨危機時に円安で16兆円へ → 2000年代前半は12兆円前後 → 2007年14.3兆円 (中国向け輸出好調) → 2008年GFCで4.2兆円へ急減 → 2011年東日本大震災で戦後初の年間貿易赤字 (-2.5兆円) → 原発停止で燃料輸入急増 → 2014年赤字ピーク-12.8兆円 → 2016-18年は小幅黒字に回復 → 2022年ウクライナ侵攻・円安で-20兆円の史上最大赤字 → 2024年も-4兆円前後で推移。「貿易立国」日本は2011年以降、所得収支黒字に経常収支を依存する「投資立国」へ構造転換した。',
+        yRange: [-22, 20],
+        yStep: 5,
+        yUnit: '兆',
+        series: [{
+          name: '貿易収支',
+          color: '#00d4aa', width: 2.2,
+          start: 1980, step: 1,
+          values: [
+            /* 1980 */   2.1,
+            /* 1981 */   8.7,
+            /* 1982 */   6.9,
+            /* 1983 */   9.9,
+            /* 1984 */  13.7,
+            /* 1985 */  13.0,
+            /* 1986 */  15.5,
+            /* 1987 */  12.6,
+            /* 1988 */  11.2,
+            /* 1989 */   8.8,
+            /* 1990 */  10.1,
+            /* 1991 */  13.6,
+            /* 1992 */  15.8,
+            /* 1993 */  15.0,
+            /* 1994 */  14.6,
+            /* 1995 */  12.3,
+            /* 1996 */   9.0,
+            /* 1997 */  12.3,
+            /* 1998 */  16.1,
+            /* 1999 */  14.0,
+            /* 2000 */  12.7,
+            /* 2001 */   8.5,
+            /* 2002 */  11.6,
+            /* 2003 */  12.3,
+            /* 2004 */  13.9,
+            /* 2005 */  11.6,
+            /* 2006 */  11.0,
+            /* 2007 */  14.3,
+            /* 2008 */   4.2,
+            /* 2009 */   5.3,
+            /* 2010 */   9.5,
+            /* 2011 */  -2.5,
+            /* 2012 */  -6.9,
+            /* 2013 */ -11.5,
+            /* 2014 */ -12.8,
+            /* 2015 */  -2.8,
+            /* 2016 */   5.8,
+            /* 2017 */   4.9,
+            /* 2018 */   1.2,
+            /* 2019 */   0.1,
+            /* 2020 */   3.9,
+            /* 2021 */   1.6,
+            /* 2022 */ -20.0,
+            /* 2023 */  -9.3,
+            /* 2024 */  -4.0,
+            /* 2025 */  -3.0,
+            /* 2026 */  -2.0
+          ]
+        }],
+        annotations: [
+          { year: 1985, label: 'プラザ合意',  color: '#ffa94d' },
+          { year: 1998, label: 'アジア危機',  color: '#4ecdc4' },
+          { year: 2008, label: 'GFC',         color: '#4ecdc4' },
+          { year: 2011, label: '震災赤字化',  color: '#ff6b6b' },
+          { year: 2014, label: '原発停止',    color: '#ff3030' },
+          { year: 2022, label: "'22 -20兆",   color: '#ff3030' }
+        ]
+      });
+      </script>
+
       <figure class="chart-figure">
         <figcaption class="chart-title">日本の主要貿易相手国 (2024, 輸出入合計シェア)</figcaption>
         <svg class="svg-chart" viewBox="0 0 800 420" preserveAspectRatio="xMidYMid meet">
@@ -410,6 +485,7 @@
       });
     });
   </script>
+  <script src="../assets/enhancer.js"></script>
   <script src="../assets/tts-reader.js"></script>
 </body>
 </html>

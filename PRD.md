@@ -77,7 +77,7 @@
 - [x] Task 11.2: japan/09_equity_recent.html + japan/10_equity_current.html — 日経225月次化
 - [x] Task 11.3: japan/11_bond_market.html + japan/12_short_rates.html — JGB月次化、TIBOR月次化
 - [x] Task 11.4: japan/14_currency.html + japan/15_crises.html — USD/JPY月次化、バブル崩壊・アジア危機期間の月次チャート
-- [ ] Task 11.5: japan/16_banking.html + japan/17_corporate.html + japan/18_regulation.html + japan/19_trade.html + japan/20_lessons.html — 残り全ページ月次化
+- [x] Task 11.5: japan/16_banking.html + japan/17_corporate.html + japan/18_regulation.html + japan/19_trade.html + japan/20_lessons.html — 残り全ページ月次化
 
 ### Phase 12: Eurozone — Remaining Pages (07-20) Monthly Upgrade
 - [ ] Task 12.1: eurozone/07_equity_early.html + eurozone/08_equity_modern.html — 欧州株式月次化

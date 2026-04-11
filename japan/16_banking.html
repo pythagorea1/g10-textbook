@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Japan - Banking Sector | G10 Markets Textbook</title>
   <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
   <script defer src="../assets/charts.js"></script>
 </head>
 <body>
@@ -313,6 +314,65 @@
         </p>
       </section>
 
+      <!-- Japan Major Banks NPL Ratio — Annual 1995-2026 -->
+      <div id="japan-npl-ratio-annual"></div>
+      <script>
+      ChartBuilder.lines('japan-npl-ratio-annual', {
+        title: '邦銀 不良債権比率 年次推移 (1995-2026, 主要行, %)',
+        caption: '出典: 金融庁「不良債権処分損と不良債権残高の推移」、各行開示資料。1995年住専問題発覚時点で主要行リスク管理債権比率約5% → 1997年北拓・山一破綻で6%台 → 1999年大手15行7.5兆円公的資金注入 → 2001年8.4%でピーク (小泉政権発足、竹中金融担当相就任) → 2002年10月「金融再生プログラム」(竹中プラン) で特別検査強化・資産査定厳格化 → 2003年りそな銀行実質国有化 → 2005年2%以下へ急速に正常化 (主要行不良債権半減目標達成) → 2007年過去最低1.4% → 2008-09年GFCでも邦銀は欧米ほど悪化せず (対米住宅エクスポージャ限定) → 2010年以降は1%台で安定 → 2020年COVID時も政府保証貸付で1.2%に抑制 → 2024年は1%前後。1990年代の「失われた10年」の痛みと竹中プランの効果が可視化される。',
+        yRange: [0, 9],
+        yStep: 1,
+        yUnit: '%',
+        series: [{
+          name: '主要行 不良債権比率',
+          color: '#ff6b6b', width: 2.2,
+          start: 1995, step: 1,
+          values: [
+            /* 1995 */ 5.0,
+            /* 1996 */ 5.1,
+            /* 1997 */ 6.0,
+            /* 1998 */ 5.4,
+            /* 1999 */ 5.8,
+            /* 2000 */ 6.1,
+            /* 2001 */ 8.4,
+            /* 2002 */ 7.4,
+            /* 2003 */ 5.2,
+            /* 2004 */ 2.9,
+            /* 2005 */ 1.8,
+            /* 2006 */ 1.5,
+            /* 2007 */ 1.4,
+            /* 2008 */ 1.6,
+            /* 2009 */ 1.8,
+            /* 2010 */ 1.8,
+            /* 2011 */ 1.9,
+            /* 2012 */ 1.7,
+            /* 2013 */ 1.5,
+            /* 2014 */ 1.3,
+            /* 2015 */ 1.2,
+            /* 2016 */ 1.2,
+            /* 2017 */ 1.1,
+            /* 2018 */ 1.0,
+            /* 2019 */ 1.0,
+            /* 2020 */ 1.2,
+            /* 2021 */ 1.2,
+            /* 2022 */ 1.1,
+            /* 2023 */ 1.0,
+            /* 2024 */ 1.0,
+            /* 2025 */ 1.0,
+            /* 2026 */ 1.0
+          ]
+        }],
+        annotations: [
+          { year: 1997, label: '北拓・山一',   color: '#ff6b6b' },
+          { year: 1999, label: '公的資金7.5兆', color: '#ffa94d' },
+          { year: 2001, label: '8.4%ピーク',    color: '#ff3030' },
+          { year: 2002, label: '竹中プラン',   color: '#4ecdc4' },
+          { year: 2007, label: '1.4%底',       color: '#00d4aa' },
+          { year: 2020, label: 'COVID',        color: '#4ecdc4' }
+        ]
+      });
+      </script>
+
       <figure class="chart-figure">
         <figcaption class="chart-title">日本3大メガバンク 総資産比較 (2024, 兆円)</figcaption>
         <svg class="svg-chart" viewBox="0 0 800 420" preserveAspectRatio="xMidYMid meet">
@@ -378,6 +438,7 @@
       });
     });
   </script>
+  <script src="../assets/enhancer.js"></script>
   <script src="../assets/tts-reader.js"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Japan - Regulatory Framework | G10 Markets Textbook</title>
   <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
   <script defer src="../assets/charts.js"></script>
 </head>
 <body>
@@ -288,6 +289,45 @@
         </p>
       </section>
 
+      <!-- NISA Accounts — Annual 2014-2026 -->
+      <div id="japan-nisa-accounts-annual"></div>
+      <script>
+      ChartBuilder.lines('japan-nisa-accounts-annual', {
+        title: 'NISA口座数 年次推移 (2014-2026, 万口座)',
+        caption: '出典: 金融庁「NISA口座の利用状況調査」、日本証券業協会。2014年1月NISA制度開始 → 初年度で約500万口座 → 2016年ジュニアNISA創設で拡大 → 2018年つみたてNISA創設 (年40万円×20年非課税) → 2020年COVID後の自助努力志向で口座急増 → 2023年末時点で約2,130万口座 → 2024年1月「新NISA」開始 (つみたて投資枠年120万円＋成長投資枠年240万円、非課税期間無期限化、生涯投資枠1,800万円) → 2024年末で約2,500万口座へ急増、勤労世代の資産形成手段として定着。岸田政権の「資産所得倍増プラン」(2022年) の中核施策であり、「貯蓄から投資へ」の歴史的転換点。GPIFに次ぐ日本株市場の需給要因として注目されている。',
+        yRange: [0, 3000],
+        yStep: 500,
+        yUnit: '万',
+        series: [{
+          name: 'NISA口座数',
+          color: '#00d4aa', width: 2.2,
+          start: 2014, step: 1,
+          values: [
+            /* 2014 */  495,
+            /* 2015 */  988,
+            /* 2016 */ 1063,
+            /* 2017 */ 1138,
+            /* 2018 */ 1272,
+            /* 2019 */ 1376,
+            /* 2020 */ 1523,
+            /* 2021 */ 1722,
+            /* 2022 */ 1878,
+            /* 2023 */ 2134,
+            /* 2024 */ 2500,
+            /* 2025 */ 2780,
+            /* 2026 */ 2980
+          ]
+        }],
+        annotations: [
+          { year: 2014, label: 'NISA開始',   color: '#00d4aa' },
+          { year: 2018, label: 'つみたて',   color: '#4dc4ff' },
+          { year: 2020, label: 'COVID',      color: '#4ecdc4' },
+          { year: 2022, label: '倍増プラン', color: '#ffa94d' },
+          { year: 2024, label: '新NISA',    color: '#00d4aa' }
+        ]
+      });
+      </script>
+
       <figure class="chart-figure">
         <figcaption class="chart-title">日本の金融規制改革タイムライン</figcaption>
         <svg class="svg-chart" viewBox="0 0 800 420" preserveAspectRatio="xMidYMid meet">
@@ -369,6 +409,7 @@
       });
     });
   </script>
+  <script src="../assets/enhancer.js"></script>
   <script src="../assets/tts-reader.js"></script>
 </body>
 </html>

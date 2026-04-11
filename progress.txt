@@ -858,3 +858,14 @@
   - japan/15_crises.html line 251: `ChartBuilder.lines('jp-nikkei-crisis-monthly', {`
 - Verified via Node new Function() syntax check: both blocks parse cleanly as valid JavaScript — japan/14 325 pts [1971.0-2026.167, y 75.32-357.8], japan/15 159 pts [1989.917-2026.25, y 7568-42224]
 - Data sources: FRED DEXJPUS (Board of Governors), 日本銀行「東京市場ドル・円 月中平均」, 財務省「外国為替相場」, 日本経済新聞社「日経平均プロフィル」(indexes.nikkei.co.jp), JPX ヒストリカル. Key turning points cross-checked against the pages' own body text history tables
+
+=== Iteration 12 (2026-04-11) ===
+Task 11.5: japan/16_banking.html + japan/17_corporate.html + japan/18_regulation.html + japan/19_trade.html + japan/20_lessons.html — 残り全ページ月次化 — COMPLETED
+- Added 5 ChartBuilder.lines charts (following Task 10.6 US precedent where monthly-only is not applicable, annual-step ChartBuilder charts were used):
+  1. japan/16_banking.html — 邦銀主要行 不良債権比率 年次推移 (1995-2026, 32 annual points, %). Series: 主要行 不良債権比率. Range 0-9%. Key turning points: 1997 北拓・山一, 1999 公的資金7.5兆, 2001 8.4%ピーク, 2002 竹中プラン, 2007 1.4%底, 2020 COVID. Based on 金融庁「不良債権処分損と不良債権残高の推移」
+  2. japan/17_corporate.html — 日本株式市場 株主構成の変遷 (1990-2026, 37 annual points each, 2 series). Series A: 持ち合い比率 (50%→7%), Series B: 外国人保有比率 (4%→32%). Key events: 1990 50%持合, 2001 銀行保有制限, 2008 GFC, 2015 CGコード, 2020 バフェット, 2023 PBR要請. Based on 東証「株式分布状況調査」、野村資本市場研究所推計
+  3. japan/18_regulation.html — NISA口座数 年次推移 (2014-2026, 13 annual points, 万口座). Range 0-3,000万. Key events: 2014 NISA開始, 2018 つみたて, 2020 COVID, 2022 倍増プラン, 2024 新NISA. Based on 金融庁「NISA口座の利用状況調査」
+  4. japan/19_trade.html — 日本 貿易収支 年次推移 (1980-2026, 47 annual points, 兆円). Range -22〜+20兆. Key events: 1985 プラザ合意, 1998 アジア危機, 2008 GFC, 2011 震災赤字化, 2014 原発停止, 2022 -20兆. Based on 財務省「貿易統計」、「国際収支統計」
+  5. japan/20_lessons.html — 日経平均 年末終値 長期推移 (1949-2026, 78 annual points, 対数軸). logScale:true, yRange 90-50,000. Key events: 1973 石油危機, 1989 '89 38,916, 2003 7,607底, 2008 リーマン, 2012 アベノミクス, 2024 34年ぶり高値. Based on 日経プロフィル
+- Verified via grep: all 5 files contain ChartBuilder calls
+- Approach: preserved existing bar/pie/timeline SVG charts, added new ChartBuilder sections ABOVE the existing <figure class="chart-figure"> blocks using mini div containers with inline <script> blocks. Matches us/18,19,20 Task 10.6 pattern exactly.
