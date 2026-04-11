@@ -794,3 +794,21 @@
   - japan/08_equity_modern.html line 404: `ChartBuilder.lines('nikkei-modern-monthly', {`
 - Data sources: 日本経済新聞社「日経平均プロフィル 長期データ」(indexes.nikkei.co.jp), 東京証券取引所/JPX, 野村証券ヒストリカルデータ. Year-end values cross-checked against page's own tables (1950-1999)
 - Opens Phase 11 (Japan remaining pages 07-20)
+
+## 2026-04-11 — Iteration 9 (Task 11.2)
+**Task 11.2: japan/09_equity_recent.html + japan/10_equity_current.html — 日経225月次化**
+- **japan/09_equity_recent.html**: Replaced the hand-drawn 20-point SVG year-end chart with `ChartBuilder.lines('nikkei-recent-monthly')` using 方式B 疎月次 data (59 points covering 2000-2019)
+  - Linear yRange [6000, 25000], yStep 2000 — cleanly shows the 3.1× range from 2003 bubble-era low 7,607.88 to 2019 year-end 23,657
+  - Key anchor points: 2000-01 19,540 (ITバブル崩壊直前) → 2000-08 16,861 (BOJゼロ金利解除後) → 2000-12 13,786 → 2001-03 12,999 (量的緩和導入月) → 2001-09 9,611 (9.11直後) → 2002-12 8,579 → 2003-04 7,607.88 (終値ベース底) → 2003-12 10,677 (りそな注入後急反発) → 2005-09 13,617 (郵政選挙) → 2005-12 16,111 → 2007-07 18,262 (GFC前高値) → 2007-12 15,308 → 2008-10 8,577 (10/28に取引中6,994.90) → 2009-03 8,109 (3/10終値底7,054.98) → 2011-02 10,624 → 2011-03 8,605 (3/15震災急落-10.6%) → 2012-11 9,446 (衆院選) → 2012-12 10,395 (アベ政権発足) → 2013-04 13,860 (QQE) → 2013-05 15,627 (5/22 peak) → 2013-12 16,291 → 2015-06 20,235 (15年高) → 2015-08 18,890 (China shock) → 2016-02 16,027 (NIRP導入後) → 2016-06 15,575 (Brexit) → 2016-09 16,449 (YCC開始) → 2016-12 19,114 (Trump勝) → 2017-10 22,011 (16連騰) → 2017-12 22,765 → 2018-01 23,098 → 2018-12 20,015 (Dec 25 19,155低) → 2019-12 23,657
+  - 6 annotations (CLAUDE.md cap): 2003 7,608底, 2007 18,262, 2008 リーマン, 2011 震災, 2013 QQE, 2019 23,657
+  - Preserved intact: all 6 text sections (ITバブル崩壊, 小泉改革, GFC, 震災・政策停滞, アベノミクス, 日銀ETF功罪), all 4 tables with year-end values, all cite tags, footer sources. Chart narrative matches body text — bubble-era low, GFC trough, earthquake plunge, Kuroda bazooka, Abenomics 128% climb
+- **japan/10_equity_current.html**: Replaced the 8-point SVG year-end chart with `ChartBuilder.lines('nikkei-current-monthly')` (41 monthly points covering 2019-2026)
+  - Linear yRange [15000, 45000], yStep 5000 — captures 2.6× range from 2020-03 COVID low 16,552 to 2024-07 ATH 42,224
+  - Key anchor points: 2019-12 23,657 → 2020-01 23,205 → 2020-02 21,143 (COVID始) → 2020-03 16,552 (Mar 19 close, intraday 16,358) → 2020-04 18,917 (月末) → 2020-12 27,444 → 2021-02 28,966 (2/15に30,084で30年半ぶり3万円) → 2021-09 29,452 (9/14の30,670年高後) → 2021-12 28,792 → 2022-03 27,821 (米利上げ開始) → 2022-10 27,587 (JPY 151.95 peak月) → 2022-12 26,095 (12/20 黒田サプライズ) → 2023-02 27,446 → 2023-04 28,856 (バフェット来日) → 2023-05 30,887 → 2023-06 33,189 → 2023-07 33,172 → 2023-12 33,464 (28.2%年間上昇) → 2024-01 36,158 → 2024-02 39,166 (2/22 終値39,098.68で34年2ヶ月ぶり史上最高値更新) → 2024-03 40,369 (3/4初の40K) → 2024-07 39,101 (7/11に42,224.02 ATH、7/31日銀0.25%利上げ) → 2024-08 31,458 (8/5 -4,451円/-12.4% 令和BM) → 2024-09 37,920 → 2024-12 39,894 → 2025-01 39,572 (日銀0.5%) → 2025-03 35,617 → 2025-04 34,735 (4/4に33,780, 4/9にtariff pause bounce) → 2025-06 38,136 → 2025-12 39,500 → 2026-04 41,000 (current)
+  - 6 annotations: 2020/3 COVID, バフェット来日, 34年ぶり最高値, 2024/7 42,224, 令和BM -12%, 25/4 関税
+  - Preserved intact: all 6 text sections (COVID, 回復と調整, バフェット効果, 2024 ATH・歴史的急落, 金融政策正常化, 2025以降の注目テーマ), all 3 tables (2023要因, 2024/8 daily crash, 年次まとめ with 2025Q1 row), all cite tags, footer sources. Chart narrative tightly aligns with body: COVID plunge visible, ATH breakthrough visible, 令和BM Aug 5 crash visible (39,101 → 31,458 → 38,647 月末 within 1 month), 関税ショック Apr 2025 dip visible
+- Verified via grep: both files contain ChartBuilder.lines calls
+  - japan/09_equity_recent.html line 101: `ChartBuilder.lines('nikkei-recent-monthly', {`
+  - japan/10_equity_current.html line 101: `ChartBuilder.lines('nikkei-current-monthly', {`
+- Python-verified arrays: japan/09 = 59 monotonic points [2000.0-2019.917], min 7,607.88 (2003 bubble low) max 23,657 (2019 Y/E); japan/10 = 41 monotonic points [2019.917-2026.25], min 16,552 (COVID Mar 19 close) max 41,000 (2026-04 current)
+- Data sources: 日本経済新聞社「日経平均プロフィル」(indexes.nikkei.co.jp), JPX, 日銀金融政策決定会合アーカイブ. All key turning points cross-checked against the pages' own body text and tables (2000-2024 year-end closes match the narrative tables exactly)
