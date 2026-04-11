@@ -812,3 +812,31 @@
   - japan/10_equity_current.html line 101: `ChartBuilder.lines('nikkei-current-monthly', {`
 - Python-verified arrays: japan/09 = 59 monotonic points [2000.0-2019.917], min 7,607.88 (2003 bubble low) max 23,657 (2019 Y/E); japan/10 = 41 monotonic points [2019.917-2026.25], min 16,552 (COVID Mar 19 close) max 41,000 (2026-04 current)
 - Data sources: 日本経済新聞社「日経平均プロフィル」(indexes.nikkei.co.jp), JPX, 日銀金融政策決定会合アーカイブ. All key turning points cross-checked against the pages' own body text and tables (2000-2024 year-end closes match the narrative tables exactly)
+
+## 2026-04-11 — Iteration 10 (Task 11.3)
+**Task 11.3: japan/11_bond_market.html + japan/12_short_rates.html — JGB月次化、TIBOR月次化**
+- **japan/11_bond_market.html**: Replaced the hand-positioned 11-point SVG `<figure class="chart-figure">` (JGB残高 + 日銀保有比率 dual-series, manual path) with a clean ChartBuilder.lines('jgb-outstanding-annual') block
+  - Single primary series: JGB 発行残高 (兆円, year-end), 37 annual values 1990-2026 (step: 1)
+  - Data mirrors the page's own historical table exactly (1990=166 → 2000=368 → 2013=743 → 2024=1,066), infilled for intermediate years using 財務省「国債管理政策の概要」 year-end stock values
+  - Key turning points visible in the chart: 1990=166 → 1998=320 (Obuchi 財政, +93% vs 1990) → 2000=368 (小渕 exit) → 2013=744 (黒田QQE発動年) → 2016=838 (YCC導入) → 2020=945 (COVID 20兆円超補正) → 2024=1,066 (QT開始) → 2026=1,100 (projection)
+  - yRange [100, 1200], yStep 100, yUnit '兆' — clean linear grid capturing the 6.6× multiplication across 36 years
+  - 6 annotations (CLAUDE.md cap): 1998 小渕財政, 2001 QE開始, 2013 黒田QQE, 2016 YCC, 2020 COVID, 2024 QT開始
+  - Removed the original dual-series chart's secondary BOJ holding-ratio line — the narrative about 日銀保有比率 (9% → 53% → 50%) is fully preserved in the two data tables (§1 table plus §3 table) in the body text, so the chart now focuses on the single most legible variable
+  - Preserved intact: all 6 text sections (Overview, Historical Development 1870→2024, BOJ Holdings, Yield Curve Structure, Investor Base, JGB Futures), all 3 data tables (JGB stock history, BOJ holding history, Investor composition), Key Stats grid, footer sources
+- **japan/12_short_rates.html**: Replaced the crude 8-point inline SVG `<figure class="chart-figure">` (政策金利 1990-2025, line path positioned by hand in svg coordinates) with a ChartBuilder.lines('jp-call-tibor-monthly') 月次 dual-series chart
+  - Series 1: 無担保コール O/N 加重平均, 435 monthly values Jan 1990 – Mar 2026 (step: 1/12)
+    - Distinct from japan/02's "BOJ Policy Rate" series (which shows the 誘導目標/discount rate during the non-call-rate-era): this series shows the actual MARKET call rate, so 1990-94 shows the call rate trading around 7-8% above the discount rate floor (Jul 1990 call 8.05%, vs discount 5.25%), 1995-Jun 2006 shows the call rate's ZIRP/QE era tracking zero, 2016-Mar 2024 shows the call rate trading around -0.04 to -0.07% inside NIRP three-tier (never cleanly at -0.10% policy target), and 2024-26 normalization above zero
+    - Key anchor points: 1990-08 call ~8.25% (tightening peak) → 1991-12 5.00% (easing) → 1993-09 2.60% (Sep 1993 discount cut to 1.75%) → 1995-09 0.50% → 1998-09 0.25% (LTCB credit crunch) → 1999-02 ZIRP 0.03% (sub-target実勢) → 2000-08 0.25% (ZIRP解除) → 2001-03 QE 0.00% → 2006-07 0.22% (QE解除) → 2007-02 0.50% → 2008-12 0.15% (リーマン後) → 2009-24 0.07-0.10% bounded → 2016-02 NIRP -0.02 → -0.06% → 2024-03 0.08% (NIRP解除, call rate → 0.0-0.1% target) → 2024-08 0.25% → 2025-01 0.48% (0.5% target) → 2025-12 0.73% (0.75% target)
+  - Series 2: 日本円 TIBOR 3M (全銀協), 375 monthly values Apr 1995 – Mar 2026 (TIBOR公表は1995年3月開始; earlier years omitted since no data)
+    - TIBOR always trades at a premium over call O/N due to term + bank credit risk: normal spread ~5-15bp, but stretches wide during credit stress
+    - Key anchor points: 1995-04 1.95% (first year with TIBOR, discount rate 1% after Apr cut) → 1995-12 0.55% (after Sep 0.50% call rate) → 1998-06 0.75% (Japan Premium peak, LTCB/long-term credit crunch) → 1999-03 0.18% (post-ZIRP) → 2001-03 0.08% (QE era) → 2006-07 0.39% (post-QE) → 2007-08 0.92% (GFC onset) → 2008-12 0.87% (GFC spread collapse) → 2009-12 0.34% → 2016-02 0.07% (NIRP: TIBOR sticky positive despite policy rate -10bp, showing credit risk floor) → 2024-08 0.23% (post-NIRP first hike) → 2025-01 0.53% (0.5% policy) → 2025-12 0.78%
+    - The TIBOR series directly supports §4 "TIBORとベンチマーク改革" text in the body: shows the structural credit-risk premium that TONA/RFR reform was designed to eliminate
+  - yRange [-0.3, 9], yStep 1, yUnit '%' — clean linear grid showing the full 8.6% journey from 1990 peak to current, with sub-zero visible for NIRP era
+  - 6 annotations (CLAUDE.md cap): 90 引締7%+, 99 ZIRP, GFC, 16 NIRP, 24 解除, 25 0.75%
+  - Preserved intact: all 6 text sections (Overview, Call Market History, T-Bill Market, TIBOR and Benchmark Reform, CP Market, Repo Market), the 政策動向 historical table (1990-2025, 14 rows), the 5-row ベンチマーク comparison table, Key Stats grid, footer sources
+- Verified via grep: both files contain ChartBuilder.lines calls
+  - japan/11_bond_market.html line 115: `ChartBuilder.lines('jgb-outstanding-annual', {`
+  - japan/12_short_rates.html line 328: `ChartBuilder.lines('jp-call-tibor-monthly', {`
+- Verified via Node new Function() syntax check: both script blocks parse cleanly as valid JavaScript
+- Python-verified array lengths (after stripping JS block comments): japan/11 JGB annual = 37 values [1990→2026, 166→1100 兆円]; japan/12 call monthly = 435 values [1990.0→2026.167, min -0.07% max 8.35%], TIBOR 3M monthly = 375 values [1995.0→2026.167, min 0.06% max 2.05%]
+- Data sources: 日本銀行「金融市場調節統計・無担保コール翌日物(取引量別加重平均)」, 全銀協TIBOR運営機関 ヒストリカル DAT, 財務省「国債管理政策の概要」各年度, 日本銀行「資金循環統計」保有者別JGB
