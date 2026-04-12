@@ -1,0 +1,20 @@
+# Ralph loop state
+.ralph/
+
+# Temp files
+_temp_*
+^
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+*.swp
+*.swo
+*~
+
+# Build artifacts
+output/
+artifacts/
