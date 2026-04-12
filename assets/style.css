@@ -207,7 +207,7 @@ a:hover {
 /* --- Article Content --- */
 article {
   max-width: 100%;
-  overflow-x: hidden;
+  min-width: 0;
 }
 article h2 {
   font-size: 1.5rem;
@@ -650,19 +650,26 @@ sup.ref:hover {
   .stat-card .stat-label {
     font-size: 0.7rem;
   }
-  /* Tables: ensure scroll container works */
+  /* Tables: scrollable container */
   .table-container {
-    max-width: 100%;
+    max-width: calc(100vw - 1.6rem);
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    margin-left: -0.2rem;
+    margin-right: -0.2rem;
   }
   table {
-    font-size: 0.75rem;
-    min-width: 400px;
+    font-size: 0.72rem;
   }
   th, td {
-    padding: 0.35rem 0.45rem;
+    padding: 0.3rem 0.4rem;
+    white-space: nowrap;
+  }
+  /* Last column (description) can wrap */
+  td:last-child, th:last-child {
     white-space: normal;
+    min-width: 100px;
+    max-width: 140px;
     word-break: break-word;
   }
   /* Info boxes */
