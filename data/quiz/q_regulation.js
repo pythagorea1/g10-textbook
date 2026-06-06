@@ -9,7 +9,8 @@ window.QUIZ_QUESTIONS_REGULATION = [
     choices: ["Dodd-Frank法", "Glass-Steagall法", "Sarbanes-Oxley法", "Gramm-Leach-Bliley法", "McFadden法"],
     answer: 1,
     explanation: "1933年Glass-Steagall法(銀行法)は大恐慌後に成立し、預金取扱の商業銀行と証券業務の投資銀行を分離した。1999年のGramm-Leach-Bliley法で事実上撤廃された。",
-    related: "us/07_regulation.html"
+    related: "us/18_regulation.html",
+    country: "us"
   },
   {
     id: "reg-glass-2",
@@ -19,7 +20,8 @@ window.QUIZ_QUESTIONS_REGULATION = [
     choices: ["Riegle-Neal法", "Gramm-Leach-Bliley法", "Volcker Rule", "FDICIA", "CRA"],
     answer: 1,
     explanation: "1999年Gramm-Leach-Bliley法(金融サービス近代化法)により、商業銀行・投資銀行・保険会社の統合が可能になった。Citigroup誕生の追認でもあった。",
-    related: "us/07_regulation.html"
+    related: "us/18_regulation.html",
+    country: "us"
   },
   {
     id: "reg-df-1",
@@ -29,7 +31,8 @@ window.QUIZ_QUESTIONS_REGULATION = [
     choices: ["Dodd-Frank法", "Sarbanes-Oxley法", "TARP", "Glass-Steagall法", "EESA"],
     answer: 0,
     explanation: "Dodd-Frank Wall Street Reform and Consumer Protection Act(2010年7月成立)はリーマンショック後の包括的金融規制改革。Volcker Rule、CFPB設立、SIFI規制等を含む。",
-    related: "us/07_regulation.html"
+    related: "us/18_regulation.html",
+    country: "us"
   },
   {
     id: "reg-volcker-1",
@@ -39,7 +42,8 @@ window.QUIZ_QUESTIONS_REGULATION = [
     choices: ["Basel Rule", "Volcker Rule", "Taylor Rule", "Basel III", "Bagehot Rule"],
     answer: 1,
     explanation: "Volcker Rule(2014年施行)は預金取扱銀行の自己勘定取引(proprietary trading)とヘッジファンド・PE投資を原則禁止。ポール・ボルカー元FRB議長の提唱。",
-    related: "us/07_regulation.html"
+    related: "us/18_regulation.html",
+    country: "us"
   },
   {
     id: "reg-cfpb-1",
@@ -49,7 +53,8 @@ window.QUIZ_QUESTIONS_REGULATION = [
     choices: ["FDIC", "OCC", "CFPB", "FSOC", "OFR"],
     answer: 2,
     explanation: "CFPB(Consumer Financial Protection Bureau)は2011年発足。住宅ローン・クレジットカード等の消費者金融商品を監督。エリザベス・ウォーレン議員の提唱で設立された。",
-    related: "us/07_regulation.html"
+    related: "us/18_regulation.html",
+    country: "us"
   },
   {
     id: "reg-basel-1",
@@ -59,7 +64,8 @@ window.QUIZ_QUESTIONS_REGULATION = [
     choices: ["IMF", "G20", "バーゼル銀行監督委員会", "FSB", "OECD"],
     answer: 2,
     explanation: "バーゼル銀行監督委員会(BCBS)はBIS(国際決済銀行)内に1974年設置。Basel I(1988)、Basel II(2004)、Basel III(2010)を策定。主要国の中銀・監督当局で構成。",
-    related: "us/07_regulation.html"
+    related: "us/18_regulation.html",
+    country: "us"
   },
   {
     id: "reg-basel3-1",
@@ -69,7 +75,8 @@ window.QUIZ_QUESTIONS_REGULATION = [
     choices: ["2.0%", "3.5%", "4.5%", "6.0%", "8.0%"],
     answer: 2,
     explanation: "Basel III最低基準はCET1 4.5%、Tier1 6.0%、総自己資本8.0%。加えて資本保全バッファー2.5%、カウンターシクリカルバッファー、G-SIBsサーチャージがある。",
-    related: "us/07_regulation.html"
+    related: "us/18_regulation.html",
+    country: "us"
   },
   {
     id: "reg-gsib-1",
@@ -79,7 +86,8 @@ window.QUIZ_QUESTIONS_REGULATION = [
     choices: ["BIS", "IMF", "FSB(金融安定理事会)", "World Bank", "OECD"],
     answer: 2,
     explanation: "FSB(Financial Stability Board)はBCBSと協力し毎年G-SIBsリストを公表。2024年版ではJPMorgan Chaseが最上位バケット。追加資本要件が課される。",
-    related: "us/07_regulation.html"
+    related: "us/18_regulation.html",
+    country: "us"
   },
   {
     id: "reg-sox-1",
@@ -89,7 +97,8 @@ window.QUIZ_QUESTIONS_REGULATION = [
     choices: ["Dodd-Frank法", "Sarbanes-Oxley法", "Glass-Steagall法", "Gramm-Leach-Bliley法", "JOBS法"],
     answer: 1,
     explanation: "Sarbanes-Oxley法(SOX法、2002年)は上場企業の内部統制・CEO/CFOの財務諸表署名義務・PCAOB設立等を定めた。会計不正を受けた企業ガバナンス強化法。",
-    related: "us/07_regulation.html"
+    related: "us/18_regulation.html",
+    country: "us"
   },
   {
     id: "reg-mifid-1",
@@ -99,7 +108,8 @@ window.QUIZ_QUESTIONS_REGULATION = [
     choices: ["MiFID I", "MiFID II", "EMIR", "AIFMD", "UCITS V"],
     answer: 1,
     explanation: "MiFID II(Markets in Financial Instruments Directive II)は2018年1月3日施行。投資リサーチのアンバンドリング、ダークプール制限、取引報告強化等を導入。",
-    related: "eurozone/07_regulation.html"
+    related: "eurozone/18_regulation.html",
+    country: "eurozone"
   },
   {
     id: "reg-emir-1",
@@ -109,7 +119,8 @@ window.QUIZ_QUESTIONS_REGULATION = [
     choices: ["銀証分離", "自己資本比率", "OTCデリバの中央清算・報告", "消費者保護", "バンカー報酬上限"],
     answer: 2,
     explanation: "EMIR(European Market Infrastructure Regulation、2012年)は店頭(OTC)デリバティブの中央清算機関(CCP)経由の清算、取引情報報告、リスク軽減措置を義務化。",
-    related: "eurozone/07_regulation.html"
+    related: "eurozone/18_regulation.html",
+    country: "eurozone"
   },
   {
     id: "reg-ubs-1",
@@ -119,7 +130,8 @@ window.QUIZ_QUESTIONS_REGULATION = [
     choices: ["Julius Baer", "Pictet", "UBS", "Raiffeisen", "Vontobel"],
     answer: 2,
     explanation: "2023年3月19日、スイス政府・SNB・FINMAの仲介のもとUBSがCredit SuisseをCHF30億で買収。AT1債CHF160億は全額無価値化。167年の歴史を持つCSは消滅した。",
-    related: "switzerland/07_regulation.html"
+    related: "switzerland/16_banking.html",
+    country: "switzerland"
   },
   {
     id: "reg-cs-at1-1",
@@ -129,7 +141,8 @@ window.QUIZ_QUESTIONS_REGULATION = [
     choices: ["優先債", "劣後債", "AT1(CoCo債)", "カバードボンド", "MTN"],
     answer: 2,
     explanation: "AT1(Additional Tier1)債は自己資本算入される永久劣後債で、資本毀損時に元本削減or株式転換される。CSではAT1保有者が株主より先に全損となり、法的論争を招いた。",
-    related: "switzerland/07_regulation.html"
+    related: "switzerland/18_regulation.html",
+    country: "switzerland"
   },
   {
     id: "reg-finma-1",
@@ -139,7 +152,8 @@ window.QUIZ_QUESTIONS_REGULATION = [
     choices: ["SNB", "FINMA", "ESMA", "BaFin", "FCA"],
     answer: 1,
     explanation: "FINMA(Swiss Financial Market Supervisory Authority)は2009年設立。銀行・保険・証券・資産運用を一元監督。UBS/CS統合も主導した。",
-    related: "switzerland/07_regulation.html"
+    related: "switzerland/18_regulation.html",
+    country: "switzerland"
   },
   {
     id: "reg-fca-1",
@@ -149,7 +163,8 @@ window.QUIZ_QUESTIONS_REGULATION = [
     choices: ["FSA", "FCA", "PRA", "BoE", "SEC"],
     answer: 1,
     explanation: "FCA(Financial Conduct Authority)は2013年、旧FSA分割で誕生。行為規制を担当。健全性規制はBOE傘下のPRA(Prudential Regulation Authority)が担う双峰型(twin peaks)。",
-    related: "uk/07_regulation.html"
+    related: "uk/18_regulation.html",
+    country: "uk"
   },
   {
     id: "reg-fsa-1",
@@ -159,7 +174,8 @@ window.QUIZ_QUESTIONS_REGULATION = [
     choices: ["日本銀行", "金融庁", "財務省", "経産省", "証券取引等監視委員会"],
     answer: 1,
     explanation: "金融庁(FSA、Financial Services Agency)は2000年発足。銀行・証券・保険の監督、金融制度企画を担う。日銀は金融政策・考査を担当する別組織。",
-    related: "japan/07_regulation.html"
+    related: "japan/18_regulation.html",
+    country: "japan"
   },
   {
     id: "reg-big4-us-1",
@@ -169,7 +185,8 @@ window.QUIZ_QUESTIONS_REGULATION = [
     choices: ["JPMorgan Chase", "Bank of America", "Wells Fargo", "Citigroup", "Goldman Sachs"],
     answer: 4,
     explanation: "米Big4はJPMorgan Chase、Bank of America、Wells Fargo、Citigroup。Goldman SachsとMorgan Stanleyは伝統的に投資銀行で、2008年危機時にBHCへ転換した。",
-    related: "us/07_regulation.html"
+    related: "us/16_banking.html",
+    country: "us"
   },
   {
     id: "reg-big3-jp-1",
@@ -179,7 +196,8 @@ window.QUIZ_QUESTIONS_REGULATION = [
     choices: ["三菱UFJ銀行", "三井住友銀行", "みずほ銀行", "りそな銀行", "該当なし(3行とも含まれる)"],
     answer: 3,
     explanation: "日本3メガはMUFG、SMBC、みずほ。りそなHDは4位の銀行グループだがメガバンクには含まれない。大手行再編は1990年代末-2000年代に進んだ。",
-    related: "japan/07_regulation.html"
+    related: "japan/16_banking.html",
+    country: "japan"
   },
   {
     id: "reg-big5-uk-1",
@@ -189,7 +207,8 @@ window.QUIZ_QUESTIONS_REGULATION = [
     choices: ["HSBC", "Barclays", "Lloyds Banking Group", "NatWest Group", "Standard Chartered"],
     answer: 4,
     explanation: "英Big4はHSBC、Barclays、Lloyds、NatWest(旧RBS)。Standard Charteredは英籍だがアジア・アフリカ中心でリテール基盤が薄く、Big4には含めない。",
-    related: "uk/07_regulation.html"
+    related: "uk/16_banking.html",
+    country: "uk"
   },
   {
     id: "reg-ecb-ssm-1",
@@ -199,7 +218,8 @@ window.QUIZ_QUESTIONS_REGULATION = [
     choices: ["SRM", "SSM", "EDIS", "ESRB", "EBA"],
     answer: 1,
     explanation: "SSM(Single Supervisory Mechanism、単一監督メカニズム)は2014年11月発足。ECBがユーロ圏の重要銀行約110行を直接監督する。銀行同盟の第1の柱。",
-    related: "eurozone/07_regulation.html"
+    related: "eurozone/18_regulation.html",
+    country: "eurozone"
   },
   {
     id: "reg-srm-1",
@@ -209,7 +229,8 @@ window.QUIZ_QUESTIONS_REGULATION = [
     choices: ["SSM", "SRM", "EDIS", "ELA", "ESM"],
     answer: 1,
     explanation: "SRM(Single Resolution Mechanism、単一破綻処理メカニズム)は2016年全面稼働。SRB(破綻処理理事会)とSRF(破綻処理基金)で構成。銀行同盟の第2の柱。",
-    related: "eurozone/07_regulation.html"
+    related: "eurozone/18_regulation.html",
+    country: "eurozone"
   },
   {
     id: "reg-fdic-1",
@@ -219,7 +240,8 @@ window.QUIZ_QUESTIONS_REGULATION = [
     choices: ["$100,000", "$150,000", "$250,000", "$500,000", "無制限"],
     answer: 2,
     explanation: "FDIC(連邦預金保険公社)の預金保険上限は1口座当たり$250,000。2008年以降恒久化された。2023年SVB破綻時は全預金が特例で保護された。",
-    related: "us/07_regulation.html"
+    related: "us/18_regulation.html",
+    country: "us"
   },
   {
     id: "reg-svb-1",
@@ -229,7 +251,8 @@ window.QUIZ_QUESTIONS_REGULATION = [
     choices: ["1位", "2位", "3位", "5位", "10位"],
     answer: 1,
     explanation: "SVB(Silicon Valley Bank)は資産約$209Bで、2008年WaMu($307B)に次ぐ米史上2番目の銀行破綻。その後FRC($229B)が抜き、2023年単年で3大破綻が発生した。",
-    related: "us/06_crises.html"
+    related: "us/15_crises.html",
+    country: "us"
   },
   {
     id: "reg-stress-1",
@@ -239,7 +262,8 @@ window.QUIZ_QUESTIONS_REGULATION = [
     choices: ["CCAR", "SLR", "LCR", "NSFR", "FRTB"],
     answer: 0,
     explanation: "CCAR(Comprehensive Capital Analysis and Review)はDodd-Frank法に基づくFRBの年次ストレステスト。$100B以上の銀行が対象。結果次第で配当・自社株買いが制限される。",
-    related: "us/07_regulation.html"
+    related: "us/18_regulation.html",
+    country: "us"
   },
   {
     id: "reg-lcr-1",
@@ -249,7 +273,8 @@ window.QUIZ_QUESTIONS_REGULATION = [
     choices: ["LCR", "NSFR", "SLR", "CET1", "LR"],
     answer: 0,
     explanation: "LCR(Liquidity Coverage Ratio、流動性カバレッジ比率)は30日間のストレスシナリオ下で高品質流動資産/純資金流出を100%以上保つ規制。長期版がNSFR(安定調達比率)。",
-    related: "us/07_regulation.html"
+    related: "us/18_regulation.html",
+    country: "us"
   },
   {
     id: "reg-aml-1",
@@ -259,7 +284,8 @@ window.QUIZ_QUESTIONS_REGULATION = [
     choices: ["Patriot Act", "Bank Secrecy Act", "FCPA", "OFAC Act", "FATCA"],
     answer: 1,
     explanation: "Bank Secrecy Act(BSA、1970年)は金融機関にCTR(現金取引報告)・SAR(疑わしい取引報告)義務を課す米国AML法の基礎。2001年Patriot Actで強化された。",
-    related: "us/07_regulation.html"
+    related: "us/18_regulation.html",
+    country: "us"
   },
   {
     id: "reg-canada-1",
@@ -269,7 +295,8 @@ window.QUIZ_QUESTIONS_REGULATION = [
     choices: ["BoC", "OSFI", "CDIC", "IIROC", "CSA"],
     answer: 1,
     explanation: "OSFI(Office of the Superintendent of Financial Institutions)は1987年設立、カナダの連邦認可銀行・保険会社の健全性を監督。Big5銀行(RBC、TD、Scotiabank、BMO、CIBC)を規制する。",
-    related: "canada/07_regulation.html"
+    related: "canada/18_regulation.html",
+    country: "canada"
   },
   {
     id: "reg-aus-1",
@@ -279,7 +306,8 @@ window.QUIZ_QUESTIONS_REGULATION = [
     choices: ["RBA", "APRA", "ASIC", "AUSTRAC", "ACCC"],
     answer: 1,
     explanation: "APRA(Australian Prudential Regulation Authority)は1998年設立で銀行・保険・年金の健全性監督。行為規制はASIC、金融政策はRBAという三峰体制(twin peaks+中銀)。",
-    related: "australia/07_regulation.html"
+    related: "australia/18_regulation.html",
+    country: "australia"
   },
   {
     id: "reg-nordic-1",
@@ -289,7 +317,8 @@ window.QUIZ_QUESTIONS_REGULATION = [
     choices: ["SEB", "Swedbank", "Handelsbanken", "Nordea", "DNB"],
     answer: 3,
     explanation: "Nordeaは1997年以降の北欧4国銀行統合で誕生した北欧最大の金融グループ。2018年本店をストックホルムからヘルシンキ(ユーロ圏・SSM下)へ移転した。",
-    related: "sweden/07_regulation.html"
+    related: "sweden/16_banking.html",
+    country: "sweden"
   },
   {
     id: "reg-bail-in-1",
@@ -299,6 +328,7 @@ window.QUIZ_QUESTIONS_REGULATION = [
     choices: ["bail-out", "bail-in", "bridge bank", "P&A", "open bank assistance"],
     answer: 1,
     explanation: "bail-in(債権者負担)は納税者負担のbail-out(公的資金注入)に対し、株主・劣後債・一部シニア債の元本削減/株式転換で損失吸収する枠組み。EU BRRD、米OLAの中核。",
-    related: "eurozone/07_regulation.html"
+    related: "eurozone/18_regulation.html",
+    country: "eurozone"
   }
 ];

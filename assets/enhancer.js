@@ -1,15 +1,35 @@
 /**
  * G10 Textbook — Reading Enhancer
- * Auto-generates: page TOC, reading progress bar, section highlighting
+ * Auto-generates: page TOC, reading progress bar, section highlighting,
+ * per-country identity (body[data-country] + .country-banner + flag chips)
  * No dependencies. Works with file:// protocol.
  */
 (function () {
   'use strict';
 
+  /* ---- Per-country identity data (2026-06 upgrade) ---- */
+  var COUNTRY_INFO = {
+    us:          { flag: '🇺🇸', jp: 'アメリカ', en: 'United States' },
+    eurozone:    { flag: '🇪🇺', jp: 'ユーロ圏', en: 'Eurozone' },
+    japan:       { flag: '🇯🇵', jp: '日本', en: 'Japan' },
+    uk:          { flag: '🇬🇧', jp: 'イギリス', en: 'United Kingdom' },
+    switzerland: { flag: '🇨🇭', jp: 'スイス', en: 'Switzerland' },
+    australia:   { flag: '🇦🇺', jp: 'オーストラリア', en: 'Australia' },
+    newzealand:  { flag: '🇳🇿', jp: 'ニュージーランド', en: 'New Zealand' },
+    canada:      { flag: '🇨🇦', jp: 'カナダ', en: 'Canada' },
+    sweden:      { flag: '🇸🇪', jp: 'スウェーデン', en: 'Sweden' },
+    norway:      { flag: '🇳🇴', jp: 'ノルウェー', en: 'Norway' }
+  };
+
   document.addEventListener('DOMContentLoaded', init);
 
   function init() {
     setupMobileSidebar();
+
+    // Country identity must run BEFORE the article/heading guards:
+    // the banner appears even on pages with <2 headings.
+    setupCountryIdentity();
+    decorateCountryChips();
 
     var article = document.querySelector('article');
     if (!article) return;
@@ -21,8 +41,75 @@
     createProgressBar();
     createInlineToc(headings, article);
 
-    if (window.innerWidth >= 1400) {
-      createSidebarToc(headings);
+    setupSidebarToc(headings);
+  }
+
+  /* ---- Per-country identity: data-country, banner, flag chips ---- */
+  function detectCountryKey() {
+    // Pages live exactly one level deep: <root>/<country>/<page>.html
+    var parts = location.pathname.split('/');
+    if (parts.length < 2) return null;
+    var dir = parts[parts.length - 2];
+    try { dir = decodeURIComponent(dir); } catch (err) { /* keep raw */ }
+    dir = dir.toLowerCase();
+    return COUNTRY_INFO.hasOwnProperty(dir) ? dir : null;
+  }
+
+  function makeEl(tag, className, text) {
+    var node = document.createElement(tag);
+    node.className = className;
+    if (text) node.textContent = text;
+    return node;
+  }
+
+  function setupCountryIdentity() {
+    var key = detectCountryKey();
+    if (!key || !document.body) return;
+    document.body.setAttribute('data-country', key);
+
+    if (document.querySelector('.country-banner')) return; // idempotent
+    var info = COUNTRY_INFO[key];
+
+    var banner = makeEl('div', 'country-banner');
+    banner.setAttribute('role', 'note');
+    banner.appendChild(makeEl('span', 'country-banner-flag', info.flag));
+    banner.appendChild(makeEl('span', 'country-banner-name', info.jp + ' · ' + info.en));
+
+    var chapter = '';
+    var pageTitle = document.querySelector('.page-title');
+    if (pageTitle) {
+      chapter = pageTitle.textContent.trim();
+    } else if (document.title) {
+      chapter = document.title.trim();
+    }
+    if (chapter) {
+      banner.appendChild(makeEl('span', 'country-banner-chapter', chapter));
+    }
+
+    var breadcrumb = document.querySelector('.breadcrumb');
+    if (breadcrumb && breadcrumb.parentNode) {
+      breadcrumb.parentNode.insertBefore(banner, breadcrumb);
+    } else {
+      var header = document.querySelector('.content header') || document.querySelector('header');
+      if (header) {
+        header.insertBefore(banner, header.firstChild);
+      }
+    }
+  }
+
+  function decorateCountryChips() {
+    var chips = document.querySelectorAll('.country-chip');
+    for (var i = 0; i < chips.length; i++) {
+      var chip = chips[i];
+      if (chip.textContent.indexOf('\uD83C') !== -1) continue; // flag already present
+      var href = chip.getAttribute('href') || '';
+      var m = href.match(/(?:^|\/)(us|eurozone|japan|uk|switzerland|australia|newzealand|canada|sweden|norway)\//);
+      if (m && COUNTRY_INFO[m[1]]) {
+        chip.insertBefore(
+          document.createTextNode(COUNTRY_INFO[m[1]].flag + ' '),
+          chip.firstChild
+        );
+      }
     }
   }
 
@@ -180,7 +267,35 @@
     }
   }
 
-  /* ---- Sticky Sidebar TOC (wide screens) ---- */
+  /* ---- Sticky Sidebar TOC (wide screens) ----
+     Responsive: created/removed live via matchMedia change events
+     (previously a one-shot window.innerWidth check at load). */
+  function setupSidebarToc(headings) {
+    if (!window.matchMedia) {
+      if (window.innerWidth >= 1400) createSidebarToc(headings);
+      return;
+    }
+    var mq = window.matchMedia('(min-width: 1400px)');
+    var toc = null;
+
+    function sync() {
+      if (mq.matches && !toc) {
+        toc = createSidebarToc(headings);
+      } else if (!mq.matches && toc) {
+        if (toc._tocObserver) toc._tocObserver.disconnect();
+        if (toc.parentNode) toc.parentNode.removeChild(toc);
+        toc = null;
+      }
+    }
+
+    sync();
+    if (typeof mq.addEventListener === 'function') {
+      mq.addEventListener('change', sync);
+    } else if (typeof mq.addListener === 'function') {
+      mq.addListener(sync); // older Safari fallback
+    }
+  }
+
   function createSidebarToc(headings) {
     var sidebar = document.createElement('nav');
     sidebar.className = 'auto-toc-sidebar';
@@ -221,7 +336,10 @@
       for (var k = 0; k < headings.length; k++) {
         observer.observe(headings[k]);
       }
+      sidebar._tocObserver = observer;
     }
+
+    return sidebar;
   }
 
   /* ---- Smooth scroll helper ---- */

@@ -18,7 +18,7 @@
     epicenter: 'epicenter',
     critical: 'affected-critical',
     high: 'affected-high',
-    medium: 'affected-mid',
+    medium: 'affected-medium',
     low: 'affected-low'
   };
 
@@ -29,6 +29,25 @@
     capital: '#ff9f43',
     sanction: '#ffd93d',
     currency_pressure: '#ff9f43'
+  };
+
+  // JP labels used to render "related" textbook links in the detail panel.
+  const COUNTRY_JP = {
+    us: '米国', eurozone: 'ユーロ圏', japan: '日本', uk: '英国',
+    switzerland: 'スイス', australia: '豪州', newzealand: 'ニュージーランド',
+    canada: 'カナダ', sweden: 'スウェーデン', norway: 'ノルウェー'
+  };
+  const CHAPTER_JP = {
+    '01_central_bank': '中央銀行', '02_policy_rate': '政策金利',
+    '03_fiscal_policy': '財政政策', '04_employment': '雇用',
+    '05_inflation': 'インフレ', '06_equity_overview': '株式概観',
+    '07_equity_early': '株式(初期)', '08_equity_modern': '株式(現代)',
+    '09_equity_recent': '株式(近年)', '10_equity_current': '株式(現在)',
+    '11_bond_market': '債券市場', '12_short_rates': '短期金利',
+    '13_long_rates': '長期金利', '14_currency': '通貨',
+    '15_crises': '危機', '16_banking': '銀行',
+    '17_corporate': '企業', '18_regulation': '規制',
+    '19_trade': '貿易', '20_lessons': '教訓'
   };
 
   class GeoMap {
@@ -85,20 +104,32 @@
     renderEventList(year) {
       const el = document.querySelector(this.opts.eventListContainer);
       if (!el) return;
-      let events = this.events.filter(ev => ev.year === year);
-      if (this.categoryFilter.size > 0) {
-        events = events.filter(ev => this.categoryFilter.has(ev.category));
-      }
+      // Pool = all events passing the active category filter
+      const pool = this.categoryFilter.size > 0
+        ? this.events.filter(ev => this.categoryFilter.has(ev.category))
+        : this.events;
+      let events = pool.filter(ev => ev.year === year);
+      let fallbackNote = '';
       if (events.length === 0) {
-        // Fallback: nearest events
-        const nearest = this.events
+        // Fallback 1: widen to a ±2 year window (still respecting the filter)
+        let nearest = pool
           .map(ev => ({ ev, diff: Math.abs(ev.year - year) }))
-          .sort((a, b) => a.diff - b.diff)
-          .slice(0, 5)
-          .map(x => x.ev);
-        events = nearest;
+          .filter(x => x.diff <= 2)
+          .sort((a, b) => a.diff - b.diff);
+        // Fallback 2: nearest 5 overall (still respecting the filter)
+        if (nearest.length === 0) {
+          nearest = pool
+            .map(ev => ({ ev, diff: Math.abs(ev.year - year) }))
+            .sort((a, b) => a.diff - b.diff)
+            .slice(0, 5);
+        }
+        events = nearest.slice(0, 5).map(x => x.ev);
+        if (events.length > 0) {
+          const yrs = Array.from(new Set(events.map(e => e.year))).sort((a, b) => a - b);
+          fallbackNote = `<p class="event-list-fallback">— 近接イベントを表示中 (${yrs.join(', ')})</p>`;
+        }
       }
-      el.innerHTML = events.map(ev => `
+      el.innerHTML = fallbackNote + events.map(ev => `
         <div class="event-card" data-event-id="${ev.id}">
           <div class="event-card-year">${ev.year}${ev.month ? '-' + String(ev.month).padStart(2, '0') : ''}</div>
           <div class="event-card-title">${this._esc(ev.title)}</div>
@@ -135,7 +166,7 @@
       const svg = this._getSvg();
       if (!svg) return;
       svg.querySelectorAll('[id^="country-"]').forEach(el => {
-        el.classList.remove('epicenter', 'affected-critical', 'affected-high', 'affected-mid', 'affected-low');
+        el.classList.remove('epicenter', 'affected-critical', 'affected-high', 'affected-medium', 'affected-mid', 'affected-low');
       });
       const fg = svg.querySelector('#flow-layer');
       if (fg) fg.innerHTML = '';
@@ -259,7 +290,26 @@
         <ul class="detail-affected">
           ${(ev.affected || []).map(a => `<li><strong>${a.country}</strong> (${a.impact}): ${this._esc(a.note || '')}</li>`).join('')}
         </ul>
+        ${this._renderRelated(ev)}
       `;
+    }
+
+    _renderRelated(ev) {
+      const rel = Array.isArray(ev.related) ? ev.related : [];
+      if (rel.length === 0) return '';
+      const links = rel.map(href =>
+        `<a class="detail-related-link" href="${this._esc(href)}">📖 ${this._esc(this._relatedLabel(href))}</a>`
+      ).join('');
+      return `<div class="detail-related"><h4>📖 教科書で読む</h4>${links}</div>`;
+    }
+
+    _relatedLabel(href) {
+      const m = String(href).match(/(?:^|\/)([a-z]+)\/(\d{2}_[a-z_]+)\.html(?:[#?].*)?$/);
+      if (m && COUNTRY_JP[m[1]]) {
+        return COUNTRY_JP[m[1]] + '・' + (CHAPTER_JP[m[2]] || m[2]);
+      }
+      if (/g10_timeline\.html/.test(href)) return 'G10タイムライン';
+      return String(href).replace(/^(\.\.\/)+/, '').replace(/\.html.*$/, '');
     }
 
     _attachMapHandlers() {

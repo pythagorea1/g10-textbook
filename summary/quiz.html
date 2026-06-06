@@ -32,10 +32,16 @@
     const root = document.getElementById('quiz-root');
     const engine = new window.QuizEngine(root);
 
-    // Support ?category=xxx&size=10 query params
+    // Support ?category=xxx&size=10&country=JP query params
+    // country accepts ISO-ish codes (US, EU, JP, UK, CH, AU, NZ, CA, SE, NO)
+    // or full names (japan, eurozone, ...) — case-insensitive.
     const params = new URLSearchParams(window.location.search);
     const cat = params.get('category');
     const size = params.get('size') || '10';
+    const country = window.QUIZ_RESOLVE_COUNTRY
+      ? window.QUIZ_RESOLVE_COUNTRY(params.get('country'))
+      : null;
+    if (country) engine.setCountry(country);
 
     if (cat && window.QUIZ_CATEGORIES.some((c) => c.key === cat)) {
       engine.start(cat, size);

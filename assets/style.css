@@ -1095,8 +1095,8 @@ figcaption.chart-title {
 }
 /* ---------- Phase 3: summary dashboard, pie/donut, horizontal bar, historical timeline ---------- */
 .summary-dashboard {
-  background: #0f141f;
-  border: 1px solid #1f2937;
+  background: var(--bg-sidebar);
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 20px;
   margin: 16px 0 24px;
@@ -1104,8 +1104,8 @@ figcaption.chart-title {
 .summary-dashboard .dashboard-heading {
   margin: 0 0 14px;
   font-size: 18px;
-  color: #00d4aa;
-  border-bottom: 1px solid #1f2937;
+  color: var(--accent-green);
+  border-bottom: 1px solid var(--border-color);
   padding-bottom: 8px;
 }
 .dashboard-stats {
@@ -1116,8 +1116,8 @@ figcaption.chart-title {
 }
 .dashboard-stat {
   background: #141a26;
-  border: 1px solid #1f2937;
-  border-left: 3px solid #00d4aa;
+  border: 1px solid var(--border-color);
+  border-left: 3px solid var(--accent-green);
   padding: 10px 12px;
   border-radius: 4px;
 }
@@ -1129,13 +1129,13 @@ figcaption.chart-title {
 }
 .dashboard-stat .stat-value {
   font-size: 16px;
-  color: #e8e8e8;
+  color: var(--text-primary);
   font-weight: 600;
   margin: 4px 0 2px;
 }
 .dashboard-stat .stat-sub {
   font-size: 11px;
-  color: #a0a0a0;
+  color: var(--text-secondary);
 }
 .dashboard-nav-grid {
   display: grid;
@@ -1145,13 +1145,13 @@ figcaption.chart-title {
 }
 .dashboard-nav-group {
   background: #141a26;
-  border: 1px solid #1f2937;
+  border: 1px solid var(--border-color);
   border-radius: 4px;
   padding: 10px;
 }
 .nav-group-title {
   font-size: 11px;
-  color: #ffd93d;
+  color: var(--accent-yellow);
   text-transform: uppercase;
   margin-bottom: 6px;
   letter-spacing: 0.5px;
@@ -1162,21 +1162,21 @@ figcaption.chart-title {
   color: #9cc7ff;
   text-decoration: none;
   padding: 3px 0;
-  border-bottom: 1px dashed #1f2937;
+  border-bottom: 1px dashed var(--border-color);
 }
 .nav-link-card:last-child { border-bottom: none; }
-.nav-link-card:hover { color: #00d4aa; }
+.nav-link-card:hover { color: var(--accent-green); }
 
 .dashboard-highlights h3 {
   margin: 6px 0 10px;
   font-size: 14px;
-  color: #ffd93d;
+  color: var(--accent-yellow);
 }
 .historical-timeline-list {
   list-style: none;
   padding: 0 0 0 12px;
   margin: 0;
-  border-left: 2px solid #1f2937;
+  border-left: 2px solid var(--border-color);
 }
 .historical-timeline-list.compact .historical-timeline-item { margin-bottom: 6px; }
 .historical-timeline-item {
@@ -1194,13 +1194,13 @@ figcaption.chart-title {
   top: 12px;
   width: 10px;
   height: 10px;
-  background: #00d4aa;
+  background: var(--accent-green);
   border-radius: 50%;
-  border: 2px solid #0f141f;
+  border: 2px solid var(--bg-sidebar);
 }
 .ht-year {
   font-size: 12px;
-  color: #ffd93d;
+  color: var(--accent-yellow);
   font-weight: 600;
   min-width: 52px;
   flex-shrink: 0;
@@ -1208,12 +1208,12 @@ figcaption.chart-title {
 .ht-card { flex: 1; }
 .ht-title {
   font-size: 12px;
-  color: #e8e8e8;
+  color: var(--text-primary);
   font-weight: 600;
 }
 .ht-desc {
   font-size: 11px;
-  color: #a0a0a0;
+  color: var(--text-secondary);
   line-height: 1.4;
 }
 
@@ -1526,4 +1526,306 @@ article li strong {
   .tldr-label { color: #333; }
   details.section-detail { border-color: #ccc; }
   details.section-detail[open] .detail-content { border-top-color: #ccc; }
+}
+
+/* ============================================================
+   ===== 2026-06 Interactive Learning Upgrade =====
+   (1) Activate silently-failing classes already used in markup
+   (2) Per-country identity (--country-accent, .country-banner)
+   (3) Memory components (.mnemonic-box, .key-number, .drawdown-badge)
+   (4) Color-blind redundancy (arrow prefixes on hike/cut cells)
+   (5) Accessibility & polish (:focus-visible, reduced-motion,
+       scroll hints, dashboard tokenization)
+   Append-only block. Do not reorder earlier rules.
+   ============================================================ */
+
+/* --- (1) Previously-undefined classes used in existing markup --- */
+td.highlight-red, span.highlight-red {
+  color: var(--accent-red);
+  font-weight: 600;
+  background: rgba(255,107,107,0.08);
+}
+td.highlight-orange, span.highlight-orange {
+  color: var(--accent-orange);
+  font-weight: 600;
+  background: rgba(255,159,67,0.08);
+}
+td.highlight-green, span.highlight-green {
+  color: var(--accent-green);
+  font-weight: 600;
+  background: rgba(0,212,170,0.08);
+}
+td.highlight-blue, span.highlight-blue {
+  color: var(--accent-blue);
+  font-weight: 600;
+  background: rgba(91,141,239,0.08);
+}
+/* Row-level variants — markup also puts these classes on <tr> */
+tbody tr.highlight-red    { background: rgba(255,107,107,0.08); }
+tbody tr.highlight-orange { background: rgba(255,159,67,0.08); }
+tbody tr.highlight-green  { background: rgba(0,212,170,0.08); }
+tbody tr.highlight-blue   { background: rgba(91,141,239,0.08); }
+tbody tr.highlight-red:hover    { background: rgba(255,107,107,0.15); }
+tbody tr.highlight-orange:hover { background: rgba(255,159,67,0.15); }
+tbody tr.highlight-green:hover  { background: rgba(0,212,170,0.15); }
+tbody tr.highlight-blue:hover   { background: rgba(91,141,239,0.15); }
+/* Left accent bar + emphasized first cell for highlighted rows
+   (box-shadow works under border-collapse where border-left fails) */
+tr.highlight-red > td:first-child    { color: var(--accent-red);    font-weight: 600; box-shadow: inset 3px 0 0 var(--accent-red); }
+tr.highlight-orange > td:first-child { color: var(--accent-orange); font-weight: 600; box-shadow: inset 3px 0 0 var(--accent-orange); }
+tr.highlight-green > td:first-child  { color: var(--accent-green);  font-weight: 600; box-shadow: inset 3px 0 0 var(--accent-green); }
+tr.highlight-blue > td:first-child   { color: var(--accent-blue);   font-weight: 600; box-shadow: inset 3px 0 0 var(--accent-blue); }
+
+.event-crisis { color: var(--accent-orange); font-weight: 600; }
+/* Sibling classes found in markup but never defined */
+.event-rate-hike, .highlight-rate-hike { color: var(--accent-red); font-weight: 600; }
+.event-rate-cut { color: var(--accent-blue); font-weight: 600; }
+.cell-up { color: var(--accent-red); }
+.cell-down { color: var(--accent-blue); }
+tbody tr.highlight-row { background: rgba(255,217,61,0.06); }
+
+/* .data-table — many pages use it WITHOUT a .table-container wrapper;
+   give it the container's intentional framing, reset when wrapped */
+table.data-table {
+  width: 100%;
+  margin: 1.5rem 0 2rem;
+  border: 1px solid var(--border-color);
+}
+.table-container table.data-table { margin: 0; border: none; }
+
+/* --- (2) Per-country identity ---
+   Final palette (readable on #1a1a2e, pairwise distinct):
+   us #4f86f7 star-spangled blue | eurozone #ffd93d EU gold
+   japan #ff5d6c rising-sun crimson | uk #b07cff royal purple
+   switzerland #ff8a80 light swiss coral | australia #ffa94d outback amber
+   newzealand #2ec4b6 NZ turquoise | canada #f76707 maple orange
+   sweden #8ec5ff nordic sky blue | norway #69db7c aurora green */
+body[data-country="us"]          { --country-accent: #4f86f7; --country-accent-soft: rgba(79,134,247,0.12); }
+body[data-country="eurozone"]    { --country-accent: #ffd93d; --country-accent-soft: rgba(255,217,61,0.12); }
+body[data-country="japan"]       { --country-accent: #ff5d6c; --country-accent-soft: rgba(255,93,108,0.12); }
+body[data-country="uk"]          { --country-accent: #b07cff; --country-accent-soft: rgba(176,124,255,0.12); }
+body[data-country="switzerland"] { --country-accent: #ff8a80; --country-accent-soft: rgba(255,138,128,0.12); }
+body[data-country="australia"]   { --country-accent: #ffa94d; --country-accent-soft: rgba(255,169,77,0.12); }
+body[data-country="newzealand"]  { --country-accent: #2ec4b6; --country-accent-soft: rgba(46,196,182,0.12); }
+body[data-country="canada"]      { --country-accent: #f76707; --country-accent-soft: rgba(247,103,7,0.12); }
+body[data-country="sweden"]      { --country-accent: #8ec5ff; --country-accent-soft: rgba(142,197,255,0.12); }
+body[data-country="norway"]      { --country-accent: #69db7c; --country-accent-soft: rgba(105,219,124,0.12); }
+
+/* Country tinting — fallbacks keep the default green theme intact */
+body[data-country] article h2 {
+  border-left-color: var(--country-accent, var(--accent-green));
+  background: linear-gradient(90deg, var(--country-accent-soft, rgba(0,212,170,0.05)) 0%, transparent 60%);
+}
+body[data-country] .page-title {
+  border-left: 4px solid var(--country-accent, var(--accent-green));
+  padding-left: 0.85rem;
+}
+body[data-country] .sidebar-link.active {
+  color: var(--country-accent, var(--accent-green));
+  border-left-color: var(--country-accent, var(--accent-green));
+  background: var(--country-accent-soft, rgba(0,212,170,0.06));
+}
+body[data-country] .country-chip.active {
+  border-color: var(--country-accent, var(--accent-green));
+  color: var(--country-accent, var(--accent-green));
+  background: var(--country-accent-soft, rgba(0,212,170,0.1));
+}
+body[data-country] .breadcrumb a:hover {
+  color: var(--country-accent, var(--accent-teal));
+}
+body[data-country] .stat-card:hover {
+  border-color: var(--country-accent, var(--border-hover));
+}
+body[data-country] article blockquote {
+  border-left-color: var(--country-accent, var(--accent-teal));
+}
+
+/* Country banner (injected by enhancer.js above the breadcrumb) */
+.country-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.45rem 0.9rem;
+  margin-bottom: 0.7rem;
+  background: var(--country-accent-soft, rgba(0,212,170,0.12));
+  border-left: 3px solid var(--country-accent, var(--accent-green));
+  border-radius: 0 6px 6px 0;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+.country-banner-flag {
+  font-size: 1.15rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.country-banner-name {
+  font-weight: 700;
+  color: var(--country-accent, var(--accent-green));
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+.country-banner-chapter {
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 55%;
+}
+
+/* --- (3) Memory components --- */
+.mnemonic-box {
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 1.2rem 1.4rem;
+  margin: 1.8rem 0;
+  background:
+    linear-gradient(var(--bg-card), var(--bg-card)) padding-box,
+    linear-gradient(135deg,
+      var(--country-accent, var(--accent-green)) 0%,
+      rgba(255,255,255,0.07) 55%,
+      var(--country-accent-soft, rgba(0,212,170,0.3)) 100%) border-box;
+}
+.mnemonic-box::after { content: ''; display: block; clear: both; }
+.mnemonic-icon {
+  float: left;
+  font-size: 2rem;
+  line-height: 1;
+  margin: 0.15rem 0.9rem 0.5rem 0;
+}
+.mnemonic-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--country-accent, var(--accent-green));
+  margin-bottom: 0.35rem;
+}
+.mnemonic-body {
+  font-size: 0.92rem;
+  color: var(--text-primary);
+  line-height: 1.75;
+}
+.mnemonic-body p:last-child { margin-bottom: 0; }
+
+.key-number-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 1.5rem 0 2rem;
+}
+.key-number {
+  display: inline-block;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-top: 3px solid var(--country-accent, var(--accent-green));
+  border-radius: 10px;
+  padding: 0.85rem 1.2rem 0.7rem;
+  text-align: center;
+  min-width: 110px;
+}
+.key-number-value {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--country-accent, var(--accent-green));
+  font-variant-numeric: tabular-nums;
+}
+.key-number-label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+  line-height: 1.45;
+}
+
+.drawdown-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--accent-red);
+  background: rgba(255,107,107,0.12);
+  border: 1px solid rgba(255,107,107,0.35);
+  border-radius: 999px;
+  padding: 0.05rem 0.6rem;
+  line-height: 1.6;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+.drawdown-badge.recovery {
+  color: var(--accent-green);
+  background: rgba(0,212,170,0.12);
+  border-color: rgba(0,212,170,0.35);
+}
+
+/* --- (4) Color-blind redundancy ---
+   Verified 2026-06: zero literal arrows inside cell/rate hike/cut
+   elements project-wide (uk/02 literals use .cell-up/.cell-down).
+   Scoped to td/span — a ::before on <tr> would create an anonymous
+   cell and shift table columns. */
+td.cell-hike::before, span.cell-hike::before,
+td.rate-hike::before, span.rate-hike::before { content: '\25B2\00A0'; }
+td.cell-cut::before, span.cell-cut::before,
+td.rate-cut::before, span.rate-cut::before { content: '\25BC\00A0'; }
+
+/* --- (5) Accessibility & polish --- */
+a:focus-visible, button:focus-visible, summary:focus-visible, th:focus-visible {
+  outline: 2px solid var(--accent-teal);
+  outline-offset: 2px;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+  html { scroll-behavior: auto; }
+}
+
+/* Right-edge scroll hint for horizontally scrollable containers.
+   Two background layers behind content: a fixed dark fade at the
+   right edge (scroll) hidden by a cover glued to the content's end
+   (local) — hint auto-disappears when fully scrolled / no overflow. */
+@media (max-width: 900px) {
+  .table-container {
+    background-image:
+      linear-gradient(270deg, #1a1a2e 30%, rgba(26,26,46,0)),
+      linear-gradient(270deg, rgba(0,0,0,0.55), rgba(0,0,0,0));
+    background-position: right center, right center;
+    background-size: 32px 100%, 16px 100%;
+    background-repeat: no-repeat;
+    background-attachment: local, scroll;
+  }
+}
+@media (max-width: 480px) {
+  .chart-figure {
+    background-color: rgba(255,255,255,0.02);
+    background-image:
+      linear-gradient(270deg, #1a1a2e 30%, rgba(26,26,46,0)),
+      linear-gradient(270deg, rgba(0,0,0,0.55), rgba(0,0,0,0));
+    background-position: right center, right center;
+    background-size: 28px 100%, 14px 100%;
+    background-repeat: no-repeat;
+    background-attachment: local, scroll;
+  }
+}
+
+/* Responsive tweaks for the new components */
+@media (max-width: 600px) {
+  .country-banner { padding: 0.4rem 0.7rem; font-size: 0.75rem; }
+  .country-banner-chapter { display: none; }
+  .key-number-value { font-size: 1.7rem; }
+  .key-number { min-width: 90px; padding: 0.7rem 0.9rem 0.55rem; }
+  .mnemonic-box { padding: 1rem; }
+  .mnemonic-icon { font-size: 1.6rem; margin-right: 0.7rem; }
+}
+@media print {
+  .country-banner { display: none; }
+  .mnemonic-box { border-color: #ccc; background: #f8f8f8; }
+  .key-number { border-color: #ccc; background: #fff; }
+  .key-number-value, .mnemonic-title { color: #111; }
 }

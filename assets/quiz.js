@@ -16,6 +16,59 @@
   const LS_BEST = (k) => `g10quiz_best_${k}`;
   const LS_HISTORY = 'g10quiz_history';
   const LS_TOTAL = 'g10quiz_total_correct';
+  const LS_MISSED = 'g10quiz_missed';
+  const MISSED_CAP = 200;
+
+  // ---- Country mode -------------------------------------------------------
+  const COUNTRY_META = {
+    us:          { flag: '🇺🇸', name: 'アメリカ' },
+    eurozone:    { flag: '🇪🇺', name: 'ユーロ圏' },
+    japan:       { flag: '🇯🇵', name: '日本' },
+    uk:          { flag: '🇬🇧', name: 'イギリス' },
+    switzerland: { flag: '🇨🇭', name: 'スイス' },
+    australia:   { flag: '🇦🇺', name: 'オーストラリア' },
+    newzealand:  { flag: '🇳🇿', name: 'ニュージーランド' },
+    canada:      { flag: '🇨🇦', name: 'カナダ' },
+    sweden:      { flag: '🇸🇪', name: 'スウェーデン' },
+    norway:      { flag: '🇳🇴', name: 'ノルウェー' },
+  };
+  const COUNTRY_ALIASES = {
+    us: 'us', usa: 'us', 'united states': 'us', america: 'us',
+    eu: 'eurozone', ez: 'eurozone', euro: 'eurozone', eurozone: 'eurozone',
+    jp: 'japan', jpn: 'japan', japan: 'japan',
+    uk: 'uk', gb: 'uk', gbr: 'uk', 'united kingdom': 'uk', britain: 'uk',
+    ch: 'switzerland', che: 'switzerland', switzerland: 'switzerland',
+    au: 'australia', aus: 'australia', australia: 'australia',
+    nz: 'newzealand', nzl: 'newzealand', newzealand: 'newzealand', 'new zealand': 'newzealand',
+    ca: 'canada', can: 'canada', canada: 'canada',
+    se: 'sweden', swe: 'sweden', sweden: 'sweden',
+    no: 'norway', nor: 'norway', norway: 'norway',
+  };
+  function resolveCountry(raw) {
+    if (!raw) return null;
+    const key = String(raw).trim().toLowerCase();
+    return COUNTRY_ALIASES[key] || null;
+  }
+
+  // ---- Missed-question pool (wrong-answer review) -------------------------
+  function getMissed() {
+    try {
+      const a = JSON.parse(localStorage.getItem(LS_MISSED) || '[]');
+      return Array.isArray(a) ? a : [];
+    } catch (e) { return []; }
+  }
+  function saveMissed(arr) {
+    localStorage.setItem(LS_MISSED, JSON.stringify(arr.slice(0, MISSED_CAP)));
+  }
+  function addMissed(id) {
+    const a = getMissed();
+    if (a.indexOf(id) === -1) { a.unshift(id); saveMissed(a); }
+  }
+  function removeMissed(id) {
+    const a = getMissed();
+    const i = a.indexOf(id);
+    if (i >= 0) { a.splice(i, 1); saveMissed(a); }
+  }
 
   function shuffle(arr) {
     const a = arr.slice();
@@ -26,13 +79,16 @@
     return a;
   }
 
-  function getQuestions(categoryKey) {
+  function getQuestions(categoryKey, country) {
+    let qs;
     if (categoryKey === 'all') {
-      return CATEGORIES.flatMap((c) => (window[c.global] || []).map((q) => ({ ...q, _cat: c.key })));
+      qs = CATEGORIES.flatMap((c) => (window[c.global] || []).map((q) => ({ ...q, _cat: c.key })));
+    } else {
+      const cat = CATEGORIES.find((c) => c.key === categoryKey);
+      qs = cat ? (window[cat.global] || []).map((q) => ({ ...q, _cat: cat.key })) : [];
     }
-    const cat = CATEGORIES.find((c) => c.key === categoryKey);
-    if (!cat) return [];
-    return (window[cat.global] || []).map((q) => ({ ...q, _cat: cat.key }));
+    if (country) qs = qs.filter((q) => q.country === country);
+    return qs;
   }
 
   function getBest(key) {
@@ -68,15 +124,17 @@
       this.submitted = false;
       this.sessionSize = 10;
       this.category = 'all';
+      this.country = null;        // country filter key (e.g. 'japan') or null
+      this.reviewMode = false;    // true when replaying missed questions
+      this.sessionWrong = [];     // questions answered wrong this session
+      this.catStats = {};         // per-category {correct, total} this session
     }
 
-    start(category, size) {
-      this.category = category;
-      this.sessionSize = size;
-      let qs = getQuestions(category);
-      qs = shuffle(qs);
-      if (size !== 'all') qs = qs.slice(0, Number(size));
-      this.questions = qs;
+    setCountry(key) {
+      this.country = key || null;
+    }
+
+    _resetSession() {
       this.idx = 0;
       this.correct = 0;
       this.wrong = 0;
@@ -84,21 +142,70 @@
       this.bestStreak = 0;
       this.selected = null;
       this.submitted = false;
+      this.sessionWrong = [];
+      this.catStats = {};
+    }
+
+    start(category, size) {
+      this.category = category;
+      this.sessionSize = size;
+      this.reviewMode = false;
+      let qs = getQuestions(category, this.country);
+      qs = shuffle(qs);
+      if (size !== 'all') qs = qs.slice(0, Number(size));
+      this.questions = qs;
+      this._resetSession();
+      this.renderQuestion();
+    }
+
+    // Session built from previously-missed questions (g10quiz_missed)
+    startReview(size) {
+      const pool = getMissed();
+      let qs = getQuestions('all', this.country).filter((q) => pool.indexOf(q.id) !== -1);
+      if (qs.length === 0) return this.renderStart();
+      this.category = 'review';
+      this.sessionSize = size || 'all';
+      this.reviewMode = true;
+      qs = shuffle(qs);
+      if (this.sessionSize !== 'all') qs = qs.slice(0, Number(this.sessionSize));
+      this.questions = qs;
+      this._resetSession();
       this.renderQuestion();
     }
 
     renderStart() {
+      const country = this.country;
       const cards = CATEGORIES.map((c) => {
-        const count = (window[c.global] || []).length;
+        const count = getQuestions(c.key, country).length;
         const best = getBest(c.key);
         const bestTxt = best != null ? `Best ${best}%` : '— Best未記録';
-        return `<button class="category-card" data-cat="${c.key}">
+        return `<button class="category-card" data-cat="${c.key}" ${count === 0 ? 'disabled' : ''}>
           <div class="cat-icon">${c.icon}</div>
           <div class="cat-name">${c.name}</div>
           <div class="cat-meta">${count}問 · ${bestTxt}</div>
         </button>`;
       }).join('');
       const allBest = getBest('all');
+
+      // Country-mode banner
+      let countryBanner = '';
+      if (country && COUNTRY_META[country]) {
+        const m = COUNTRY_META[country];
+        countryBanner = `<div class="quiz-country-banner">
+          国別モード: <strong>${m.flag} ${m.name}</strong>
+          <a class="quiz-country-clear" href="quiz.html">✕ フィルター解除</a>
+        </div>`;
+      }
+
+      // Wrong-answer review button (only when missed pool has matching questions)
+      const missedPool = getMissed();
+      const missedCount = missedPool.length
+        ? getQuestions('all', country).filter((q) => missedPool.indexOf(q.id) !== -1).length
+        : 0;
+      const reviewBtn = missedCount > 0
+        ? `<button class="btn-review">🔁 間違えた問題を復習 (${missedCount}問)</button>`
+        : '';
+
       this.root.innerHTML = `
         <div class="quiz-container">
           <header class="quiz-header">
@@ -106,6 +213,7 @@
             <p class="quiz-sub">カテゴリーを選んで学習開始。5択・解説付き・スコア記録。</p>
             ${allBest != null ? `<p class="quiz-best-banner">🏆 ALLベスト: ${allBest}%</p>` : ''}
           </header>
+          ${countryBanner}
           <section class="quiz-settings">
             <label>出題数:
               <select id="quiz-size">
@@ -118,6 +226,7 @@
           <section class="category-grid">${cards}</section>
           <div class="quiz-all-row">
             <button class="btn-all" data-cat="all">🎲 全カテゴリーランダム</button>
+            ${reviewBtn}
           </div>
         </div>`;
       this.root.querySelectorAll('[data-cat]').forEach((el) => {
@@ -125,6 +234,11 @@
           const size = this.root.querySelector('#quiz-size').value;
           this.start(el.dataset.cat, size);
         });
+      });
+      const rv = this.root.querySelector('.btn-review');
+      if (rv) rv.addEventListener('click', () => {
+        const size = this.root.querySelector('#quiz-size').value;
+        this.startReview(size);
       });
     }
 
@@ -183,6 +297,20 @@
       if (isCorrect) { this.correct++; this.streak++; this.bestStreak = Math.max(this.bestStreak, this.streak); }
       else { this.wrong++; this.streak = 0; }
 
+      // Per-category session stats (for result-screen breakdown)
+      const ck = q._cat || 'other';
+      if (!this.catStats[ck]) this.catStats[ck] = { correct: 0, total: 0 };
+      this.catStats[ck].total++;
+      if (isCorrect) this.catStats[ck].correct++;
+
+      // Wrong-answer pool: add on miss; in review mode, remove on correct
+      if (isCorrect) {
+        if (this.reviewMode) removeMissed(q.id);
+      } else {
+        addMissed(q.id);
+        this.sessionWrong.push(q);
+      }
+
       this.root.querySelectorAll('.quiz-choice').forEach((el) => {
         const i = Number(el.dataset.i);
         el.disabled = true;
@@ -215,7 +343,9 @@
     renderResult() {
       const total = this.questions.length;
       const pct = total > 0 ? Math.round((this.correct / total) * 100) : 0;
-      setBest(this.category, pct);
+      // Don't pollute category best scores with review sessions or
+      // country-filtered (smaller-pool) sessions.
+      if (!this.reviewMode && !this.country) setBest(this.category, pct);
       addTotalCorrect(this.correct);
       pushHistory({ ts: Date.now(), category: this.category, correct: this.correct, total, pct });
 
@@ -225,21 +355,63 @@
       else if (pct >= 70) grade = 'B';
       else if (pct < 50) grade = 'D';
 
+      // Per-category accuracy breakdown
+      const catRows = Object.keys(this.catStats).map((k) => {
+        const c = CATEGORIES.find((x) => x.key === k);
+        const s = this.catStats[k];
+        const p = s.total > 0 ? Math.round((s.correct / s.total) * 100) : 0;
+        const cls = p >= 80 ? 'ok' : (p >= 50 ? 'mid' : 'ng');
+        return `<div class="result-cat-row">
+          <span class="result-cat-name">${c ? c.icon + ' ' + c.name : k}</span>
+          <span class="result-cat-score ${cls}">${s.correct}/${s.total} (${p}%)</span>
+        </div>`;
+      }).join('');
+      const catPanel = catRows
+        ? `<div class="result-cats"><h2>カテゴリー別正答率</h2>${catRows}</div>`
+        : '';
+
+      // Weakest pages: top-3 related links among this session's missed questions
+      const relCount = {};
+      this.sessionWrong.forEach((q) => {
+        if (q.related) relCount[q.related] = (relCount[q.related] || 0) + 1;
+      });
+      const topRel = Object.keys(relCount)
+        .sort((a, b) => relCount[b] - relCount[a])
+        .slice(0, 3);
+      const weakPanel = topRel.length
+        ? `<div class="result-weak">
+            <h2>弱点ページを復習しよう</h2>
+            ${topRel.map((rel) => {
+              const seg = rel.split('/')[0];
+              const m = COUNTRY_META[seg];
+              const label = (m ? m.flag + ' ' : '🌍 ') + rel.replace(/\.html$/, '');
+              return `<a class="quiz-related result-weak-link" href="../${rel}">📘 ${label} (${relCount[rel]}問ミス) →</a>`;
+            }).join('')}
+          </div>`
+        : '';
+
+      const restartLabel = this.reviewMode ? '🔁 復習をもう一度' : '🔄 同じカテゴリーで再挑戦';
       this.root.innerHTML = `
         <div class="quiz-container">
           <div class="quiz-result">
-            <h1>📊 結果</h1>
+            <h1>${this.reviewMode ? '📊 復習結果' : '📊 結果'}</h1>
             <div class="result-grade grade-${grade}">${grade}</div>
             <div class="result-score">${this.correct} / ${total} 正解</div>
             <div class="result-pct">${pct}%</div>
             <div class="result-meta">最高連続正解: ${this.bestStreak}</div>
+            ${this.reviewMode ? `<div class="result-meta">正解した問題は復習プールから削除されました (残り${getMissed().length}問)</div>` : ''}
+            ${catPanel}
+            ${weakPanel}
             <div class="result-actions">
-              <button class="btn-restart">🔄 同じカテゴリーで再挑戦</button>
+              <button class="btn-restart">${restartLabel}</button>
               <button class="btn-home">← カテゴリー選択へ</button>
             </div>
           </div>
         </div>`;
-      this.root.querySelector('.btn-restart').addEventListener('click', () => this.start(this.category, this.sessionSize));
+      this.root.querySelector('.btn-restart').addEventListener('click', () => {
+        if (this.reviewMode) this.startReview(this.sessionSize);
+        else this.start(this.category, this.sessionSize);
+      });
       this.root.querySelector('.btn-home').addEventListener('click', () => this.renderStart());
     }
 
@@ -252,4 +424,6 @@
 
   window.QuizEngine = QuizEngine;
   window.QUIZ_CATEGORIES = CATEGORIES;
+  window.QUIZ_COUNTRY_META = COUNTRY_META;
+  window.QUIZ_RESOLVE_COUNTRY = resolveCountry;
 })();

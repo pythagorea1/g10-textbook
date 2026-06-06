@@ -24,13 +24,36 @@
 }
 
 .world-map .country.affected-low      { fill: #4ecdc4; }
-.world-map .country.affected-medium   { fill: #ffd93d; }
+.world-map .country.affected-medium,
+.world-map .country.affected-mid      { fill: #ffd93d; } /* .affected-mid kept as legacy alias */
 .world-map .country.affected-high     { fill: #ff9f43; }
 .world-map .country.affected-critical { fill: #ff6b6b; }
 .world-map .country.epicenter {
   fill: #ff4444;
   stroke: #ffffff;
   stroke-width: 1.5;
+  animation: geomap-epicenter-pulse 1.6s ease-in-out infinite;
+}
+
+/* Epicenter pulse */
+@keyframes geomap-epicenter-pulse {
+  0%   { stroke-width: 1.2; stroke-opacity: 1; }
+  50%  { stroke-width: 3;   stroke-opacity: 0.45; }
+  100% { stroke-width: 1.2; stroke-opacity: 1; }
+}
+
+/* Flow-arrow draw-on (animates dasharray so the sanction dash attribute
+   is restored once the animation ends) */
+@keyframes geomap-flow-draw {
+  from { stroke-dasharray: 0 1400; opacity: 0.3; }
+  to   { stroke-dasharray: 1400 0; opacity: 0.85; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .world-map .country.epicenter,
+  .flow-arrow {
+    animation: none;
+  }
 }
 
 /* Flow arrows between countries */
@@ -40,6 +63,7 @@
   stroke-linecap: round;
   opacity: 0.85;
   pointer-events: none;
+  animation: geomap-flow-draw 0.8s ease-out 1;
 }
 .flow-arrow.contagion { stroke: #ff6b6b; }
 .flow-arrow.policy    { stroke: #5b8def; }
@@ -297,6 +321,60 @@
   height: 14px;
   border-radius: 3px;
   border: 1px solid #0a0a1a;
+  flex: 0 0 auto;
+}
+.geomap-legend-title {
+  font-weight: 600;
+  color: #8ab4ff;
+}
+.geomap-legend-sep {
+  width: 1px;
+  align-self: stretch;
+  background: #2a2a4a;
+  margin: 0 2px;
+}
+.geomap-legend-line {
+  display: block;
+  flex: 0 0 auto;
+}
+
+/* Fallback note shown when the event list falls back to nearby years */
+.event-list-fallback {
+  margin: 0 0 8px 0;
+  padding: 6px 8px;
+  background: #1e1e3a;
+  border-left: 3px solid #ffd93d;
+  border-radius: 4px;
+  color: #ffd93d;
+  font-size: 0.75rem;
+}
+
+/* "📖 教科書で読む" related links in the detail panel */
+.detail-related {
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px dashed #2a2a4a;
+}
+.detail-related h4 {
+  margin: 0 0 6px 0;
+  color: #e0e0e8;
+  font-size: 0.85rem;
+}
+.detail-related-link {
+  display: inline-block;
+  margin: 0 6px 6px 0;
+  padding: 4px 10px;
+  background: #0a0a1a;
+  border: 1px solid #2a2a4a;
+  border-radius: 4px;
+  color: #5b8def;
+  font-size: 0.78rem;
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s;
+}
+.detail-related-link:hover {
+  border-color: #00d4aa;
+  color: #00d4aa;
 }
 
 /* Category filter */
