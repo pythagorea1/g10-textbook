@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="stylesheet" href="../assets/quiz.css">
 </head>
-<body>
+<body class="quiz-body">
 <nav class="top-nav">
   <a href="../index.html">← ホーム</a>
   <span class="nav-title">📝 Quiz Mode</span>
@@ -30,23 +30,30 @@
 <script>
   (function () {
     const root = document.getElementById('quiz-root');
-    const engine = new window.QuizEngine(root);
+    try {
+      const engine = new window.QuizEngine(root);
 
-    // Support ?category=xxx&size=10&country=JP query params
-    // country accepts ISO-ish codes (US, EU, JP, UK, CH, AU, NZ, CA, SE, NO)
-    // or full names (japan, eurozone, ...) — case-insensitive.
-    const params = new URLSearchParams(window.location.search);
-    const cat = params.get('category');
-    const size = params.get('size') || '10';
-    const country = window.QUIZ_RESOLVE_COUNTRY
-      ? window.QUIZ_RESOLVE_COUNTRY(params.get('country'))
-      : null;
-    if (country) engine.setCountry(country);
+      // Support ?category=xxx&size=10&country=JP query params
+      // country accepts ISO-ish codes (US, EU, JP, UK, CH, AU, NZ, CA, SE, NO)
+      // or full names (japan, eurozone, ...) — case-insensitive.
+      const params = new URLSearchParams(window.location.search);
+      const cat = params.get('category');
+      const size = params.get('size') || '10';
+      const country = window.QUIZ_RESOLVE_COUNTRY
+        ? window.QUIZ_RESOLVE_COUNTRY(params.get('country'))
+        : null;
+      if (country) engine.setCountry(country);
 
-    if (cat && window.QUIZ_CATEGORIES.some((c) => c.key === cat)) {
-      engine.start(cat, size);
-    } else {
-      engine.renderStart();
+      if (cat && window.QUIZ_CATEGORIES.some((c) => c.key === cat)) {
+        engine.start(cat, size);
+      } else {
+        engine.renderStart();
+      }
+    } catch (e) {
+      // Never leave the page blank (e.g. fully-blocked localStorage)
+      if (root) {
+        root.innerHTML = '<div class="quiz-container"><p class="quiz-sub">⚠️ クイズの初期化に失敗しました。ページを再読み込みしてください。</p></div>';
+      }
     }
   })();
 </script>

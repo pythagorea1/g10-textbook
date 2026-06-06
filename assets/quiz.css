@@ -20,6 +20,9 @@
   font-family: -apple-system, "Segoe UI", "Hiragino Sans", "Yu Gothic UI", sans-serif;
   margin: 0;
   min-height: 100vh;
+  /* style.css sets body{display:flex} for sidebar layouts — quiz page is a
+     single column, so restore normal flow. */
+  display: block;
 }
 
 .quiz-container {
@@ -69,6 +72,16 @@
   cursor: pointer;
   transition: all 0.15s ease;
   border-radius: 2px;
+  /* <button> does NOT inherit color/font from body — set explicitly,
+     otherwise titles render UA-black on the dark panel. */
+  color: var(--quiz-text);
+  font-family: inherit;
+  text-align: left;
+}
+
+.category-card:disabled {
+  opacity: 0.45;
+  cursor: default;
 }
 
 .category-card:hover {
@@ -87,6 +100,7 @@
   font-size: 15px;
   font-weight: 600;
   margin-bottom: 6px;
+  color: var(--quiz-text);
 }
 
 .category-card .cat-meta {
@@ -490,6 +504,18 @@
   border-radius: 2px;
 }
 .quiz-country-clear:hover { color: var(--quiz-red); border-color: var(--quiz-red); }
+
+/* ===== Empty-deck notice (e.g. category × country with no questions) ===== */
+.quiz-empty-notice {
+  background: rgba(255, 209, 102, 0.08);
+  border: 1px solid var(--quiz-yellow);
+  border-left: 4px solid var(--quiz-yellow);
+  color: var(--quiz-yellow);
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  border-radius: 2px;
+}
 
 /* ===== Wrong-answer review button ===== */
 .quiz-all-row {

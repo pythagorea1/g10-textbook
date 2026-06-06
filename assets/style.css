@@ -1204,6 +1204,8 @@ figcaption.chart-title {
   font-weight: 600;
   min-width: 52px;
   flex-shrink: 0;
+  display: inline-block;
+  margin-right: 6px;
 }
 .ht-card { flex: 1; }
 .ht-title {

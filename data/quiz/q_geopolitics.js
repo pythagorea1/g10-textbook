@@ -306,8 +306,8 @@ window.QUIZ_QUESTIONS_GEOPOLITICS = [
     choices: ["軍事派遣", "EUと同等の経済制裁採用", "NATO加盟申請", "国交断絶", "ルーブル取引禁止"],
     answer: 1,
     explanation: "2022年2月28日、スイスは中立政策の例外としてEUと同等の対露制裁を採用。ロシア中銀資産の凍結にも参加し、「金融中立」の伝統から歴史的な方針転換となった。",
-    related: "summary/geopolitical_map.html",
-    country: "general"
+    related: "switzerland/14_currency.html",
+    country: "switzerland"
   },
   {
     id: "geo-abe-1",
@@ -317,8 +317,8 @@ window.QUIZ_QUESTIONS_GEOPOLITICS = [
     choices: ["小泉純一郎", "安倍晋三", "麻生太郎", "菅義偉", "岸田文雄"],
     answer: 1,
     explanation: "安倍晋三首相(第2次政権2012-2020)は2014年7月に集団的自衛権の限定的行使を閣議決定、2015年に平和安全法制を成立。日米同盟強化とQuad枠組みの基礎を築いた。",
-    related: "summary/geopolitical_map.html",
-    country: "general"
+    related: "japan/19_trade.html",
+    country: "japan"
   },
   {
     id: "geo-quad-1",

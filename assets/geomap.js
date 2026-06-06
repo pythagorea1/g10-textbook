@@ -2,14 +2,23 @@
  * GeoMap — Interactive Geopolitical World Map Engine
  * Pure Vanilla JS, no external dependencies.
  *
- * Usage:
+ * Usage (file:// safe — this is how summary/geopolitical_map.html loads it):
+ *   <script src="../data/geopolitical_events.js"></script>  <!-- sets window.GEOPOLITICAL_EVENTS -->
+ *   <script src="../assets/geomap.js"></script>
  *   const map = new GeoMap({
  *     mapContainer: '#world-map',
  *     timelineContainer: '#timeline',
  *     eventListContainer: '#event-list',
  *     detailContainer: '#event-detail'
  *   });
- *   map.loadEvents('../data/geopolitical_events.json').then(() => map.init());
+ *   map.events = window.GEOPOLITICAL_EVENTS.events;  // no fetch — works on file://
+ *   map.init();
+ *
+ * Alternative (http(s) only): map.loadEvents('../data/geopolitical_events.json')
+ * .then(() => map.init()); — fetch() fails on file://, in which case loadEvents
+ * falls back to window.GEOPOLITICAL_EVENTS if the script tag above is present.
+ * data/geopolitical_events.json is a generated twin of geopolitical_events.js;
+ * regenerate it from the .js when events change.
  */
 (function (global) {
   'use strict';
@@ -165,7 +174,10 @@
     _clearMap() {
       const svg = this._getSvg();
       if (!svg) return;
-      svg.querySelectorAll('[id^="country-"]').forEach(el => {
+      // Include .epicenter / [class*="affected-"] so mirrored multi-path
+      // highlights (e.g. JP's islands, cloned compare maps) are cleared too,
+      // not just the primary [id^="country-"] path of each country.
+      svg.querySelectorAll('[id^="country-"], .epicenter, [class*="affected-"]').forEach(el => {
         el.classList.remove('epicenter', 'affected-critical', 'affected-high', 'affected-medium', 'affected-mid', 'affected-low');
       });
       const fg = svg.querySelector('#flow-layer');

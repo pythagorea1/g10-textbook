@@ -135,7 +135,9 @@
     try {
       var a;
       try { a = JSON.parse(localStorage.getItem(LS_MISSED) || '[]'); } catch (e) { a = []; }
-      if (!a || typeof a.length !== 'number') a = [];
+      // quiz.js getMissed と同じ Array.isArray 判定 — 破損値 (JSON文字列等) は
+      // 新しい配列で上書きして自己修復する
+      if (!Array.isArray(a)) a = [];
       if (a.indexOf(id) === -1) {
         a.unshift(id);
         localStorage.setItem(LS_MISSED, JSON.stringify(a.slice(0, MISSED_CAP)));
@@ -216,6 +218,14 @@
 
   function renderWidget(article, page, questions) {
     ensureStyles();
+    // 二重インクルード対策: 自分の closure-local な widgetEl だけでなく、
+    // ドキュメント内の既存 .recall-box を全て除去してから挿入する
+    try {
+      var existing = document.querySelectorAll('.recall-box');
+      for (var k = 0; k < existing.length; k++) {
+        if (existing[k].parentNode) existing[k].parentNode.removeChild(existing[k]);
+      }
+    } catch (e) { /* ignore */ }
     if (widgetEl && widgetEl.parentNode) widgetEl.parentNode.removeChild(widgetEl);
     var box = el('section', 'recall-box');
     widgetEl = box;
@@ -246,8 +256,9 @@
   function renderDone(body, page, questions, saved) {
     clearEl(body);
     var row = el('div', 'recall-done');
+    // saved.correct が欠損/破損していても 'undefined/3' とは表示しない
     row.appendChild(el('span', 'recall-done-text',
-      '✓ 完了済み (' + saved.correct + '/' + saved.answered + ') —'));
+      '✓ 完了済み (' + (saved.correct | 0) + '/' + saved.answered + ') —'));
     var btn = el('button', 'recall-retry', 'もう一度');
     btn.setAttribute('type', 'button');
     btn.addEventListener('click', function () {

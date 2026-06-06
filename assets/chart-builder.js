@@ -21,6 +21,12 @@
  * Interactivity (added automatically after render):
  *   - hover/touch crosshair snapping to nearest data month + tooltip with per-series values
  *   - legend click toggles a series on/off
+ *
+ * RESOLUTION LIMIT (tooltip): the crosshair/tooltip indexes points by MONTH key
+ * (Math.round(x * 12)), so hover resolution is MONTHLY. Sub-monthly data (daily/
+ * weekly x values) collapses onto the same month key — only the last point per
+ * series per month survives in the tooltip. The drawn lines are unaffected
+ * (every supplied point is rendered); this limit applies to hover lookup only.
  */
 var ChartBuilder = (function () {
   'use strict';
@@ -35,6 +41,13 @@ var ChartBuilder = (function () {
   /* ---- helpers ---- */
   function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
   function escAttr(s) { return esc(s).replace(/"/g,'&quot;'); }
+
+  /* Only #hex or rgb()/rgba() colors may be interpolated into SVG attributes
+   * (attribute-injection hardening); anything else falls back to the default. */
+  var COLOR_RE = /^(#[0-9a-fA-F]{3,8}|rgba?\([\d.,\s%]+\))$/;
+  function safeColor(c, fallback) {
+    return (typeof c === 'string' && COLOR_RE.test(c)) ? c : fallback;
+  }
   function fmt(n, decimals) {
     if (Math.abs(n) >= 1e6) return (n / 1e6).toFixed(1) + 'M';
     if (Math.abs(n) >= 1e4) return (n / 1e3).toFixed(0) + 'k';
@@ -66,6 +79,9 @@ var ChartBuilder = (function () {
   }
 
   function niceStep(range, targetTicks) {
+    /* degenerate/invalid range guard: a 0/negative/non-finite range would return
+     * a step of 0 and make the grid-line for-loops never terminate (page freeze) */
+    if (!(range > 0) || !isFinite(range)) return 1;
     var rough = range / targetTicks;
     var mag = Math.pow(10, Math.floor(Math.log10(rough)));
     var res = rough / mag;
@@ -77,7 +93,11 @@ var ChartBuilder = (function () {
 
   /* Expand {start, step, values} or {data} to [[year,val],...] */
   function expandSeries(s) {
-    if (Array.isArray(s.data)) return s.data;
+    if (Array.isArray(s.data)) {
+      /* drop null/undefined pairs (sparse gaps) — they would corrupt the
+       * y-range (null coerces to 0) and crash the tooltip formatter */
+      return s.data.filter(function (p) { return p && p[1] !== null && p[1] !== undefined; });
+    }
     var out = [];
     var step = s.step || 1;
     for (var i = 0; i < s.values.length; i++) {
@@ -122,7 +142,7 @@ var ChartBuilder = (function () {
       var x2 = Math.min(b.to, xMax);
       if (!(x2 > x1)) return; /* fully outside xRange */
       var X1 = sx(x1), X2 = sx(x2);
-      var fill = b.color || '#5b8def';
+      var fill = safeColor(b.color, '#5b8def');
       var op = b.color ? 0.10 : 0.07;
       out += '<rect x="' + X1.toFixed(1) + '" y="' + PAD.t + '" width="' + (X2 - X1).toFixed(1) +
              '" height="' + plotH + '" fill="' + fill + '" fill-opacity="' + op + '"/>';
@@ -136,9 +156,18 @@ var ChartBuilder = (function () {
   }
 
   /* ---- annotation engine ----
+   * - annotations whose x falls outside the plot are skipped entirely (line AND
+   *   label) with a 2px tolerance, so the tiny float overshoot of monthly
+   *   end-points (e.g. annotation 2026.167 vs data ending 2026.1666) still draws
    * - alternating above/below placement (even index above the plot top, odd below)
    * - 10px labels on a dark bg rect sized for CJK text (estTextWidth)
    * - same-side labels within 80px horizontally are stacked vertically in 12px steps
+   * - COLLISION FIX: in addition to the 80px x-proximity rule, the POST-CLAMP label
+   *   rects [rx, rx+w] are interval-tested against already-placed same-side rects
+   *   on the same level — edge-clamped labels can never share a slot
+   * - top-side labels stack upward (40, 28, 16); a level that would leave the
+   *   viewBox top (ty < 11) continues DOWNWARD into the plot instead of
+   *   collapsing onto y=11
    * - BOTTOM-LABEL FIX: bottom labels are placed INSIDE the plot just above the x-axis
    *   (y = PAD.t + plotH - 8, stacking upward), so they can never collide with the
    *   x-axis tick labels rendered below the axis at y = PAD.t + plotH + 16.
@@ -146,25 +175,46 @@ var ChartBuilder = (function () {
    * - optional href wraps marker + label in <a> for deep-linking to textbook pages
    */
   function renderAnnotations(annotations, sx, plotH) {
+    var plotW = W - PAD.l - PAD.r;
     var placedTop = [], placedBot = [];
+    /* top-side y for a stack level: upward while it fits, then down into the plot */
+    function topY(level) {
+      var ty = PAD.t - 8 - level * 12;
+      if (ty >= 11) return ty;
+      var over = Math.ceil((11 - ty) / 12);
+      return PAD.t - 8 + over * 12;
+    }
     var out = '<g class="chart-annotation" font-size="10">';
     annotations.forEach(function (a, ai) {
       var ax = sx(a.year !== undefined ? a.year : a.x);
+      /* skip out-of-range annotations entirely (<=2px float overshoot allowed) */
+      if (!isFinite(ax) || ax < PAD.l - 2 || ax > PAD.l + plotW + 2) return;
       var above = ai % 2 === 0;
-      var col = a.color || '#ff6b6b';
+      var col = safeColor(a.color, '#ff6b6b');
       var label = a.label || '';
       var w = estTextWidth(label, 10) + 6; /* ~3px padding each side */
+      var rx = ax - w / 2;
+      if (rx < 2) rx = 2;
+      if (rx + w > W - 2) rx = W - 2 - w;
       var placed = above ? placedTop : placedBot;
       var level = 0;
       placed.forEach(function (pp) {
         if (Math.abs(ax - pp.x) < 80 && pp.level >= level) level = pp.level + 1;
       });
-      placed.push({ x: ax, level: level });
-      var ty = above ? (PAD.t - 8 - level * 12) : (PAD.t + plotH - 8 - level * 12);
-      if (ty < 11) ty = 11; /* keep inside viewBox top */
-      var rx = ax - w / 2;
-      if (rx < 2) rx = 2;
-      if (rx + w > W - 2) rx = W - 2 - w;
+      /* bump further while the post-clamp rect intersects an already-placed
+       * same-side rect on the same level (catches edge-clamped collisions) */
+      var clash = true;
+      while (clash) {
+        clash = false;
+        for (var pi = 0; pi < placed.length; pi++) {
+          var pp = placed[pi];
+          if (pp.level === level && rx < pp.rx + pp.w && pp.rx < rx + w) {
+            level++; clash = true; break;
+          }
+        }
+      }
+      placed.push({ x: ax, level: level, rx: rx, w: w });
+      var ty = above ? topY(level) : (PAD.t + plotH - 8 - level * 12);
       var tx = rx + w / 2;
       var grp = '<line x1="' + ax.toFixed(1) + '" y1="' + PAD.t + '" x2="' + ax.toFixed(1) +
                 '" y2="' + (PAD.t + plotH) + '" stroke="' + col +
@@ -390,7 +440,7 @@ var ChartBuilder = (function () {
 
     svg += '<g font-size="11" class="cb-legend">';
     series.forEach(function (s, idx) {
-      var color = s.color || COLORS[idx % COLORS.length];
+      var color = safeColor(s.color, COLORS[idx % COLORS.length]);
       var row = Math.floor(idx / itemsPerRow);
       var col = idx % itemsPerRow;
       var itemW = Math.min(plotW / Math.min(series.length, itemsPerRow), maxItemW);
@@ -431,7 +481,13 @@ var ChartBuilder = (function () {
       });
     });
 
+    /* Degenerate-range guards: empty/all-null series leave Infinity bounds */
+    if (!isFinite(xMin) || !isFinite(xMax)) { xMin = 0; xMax = 1; }
+    if (!isFinite(yMin) || !isFinite(yMax)) { yMin = 0; yMax = 1; }
+
     if (cfg.xRange) { xMin = cfg.xRange[0]; xMax = cfg.xRange[1]; }
+    /* single-point / constant-x guard: avoid 0-division in sx */
+    if (!(xMax > xMin)) xMax = xMin + 1;
     if (cfg.yRange) { yMin = cfg.yRange[0]; yMax = cfg.yRange[1]; }
     else {
       var pad = (yMax - yMin) * 0.08;
@@ -439,18 +495,22 @@ var ChartBuilder = (function () {
       yMax = Math.ceil((yMax + pad) * 2) / 2;
       if (yMin < 0 && cfg.yUnit === '%') yMin = Math.min(yMin, -1);
     }
+    /* constant-series guard: yMin===yMax after rounding would freeze the
+     * grid loops (step 0) and NaN the y-scale */
+    if (!(yMax > yMin)) yMax = yMin + 1;
 
     function sx(x) { return PAD.l + ((x - xMin) / (xMax - xMin)) * plotW; }
     function sy(y) {
       if (logY) {
         var lo = Math.log10(Math.max(yMin, 1));
-        var hi = Math.log10(yMax);
+        var hi = Math.log10(Math.max(yMax, 1));
+        if (hi - lo < 1e-9) hi = lo + 1; /* all values < 1 -> degenerate log range */
         return PAD.t + plotH - ((Math.log10(Math.max(y, 1)) - lo) / (hi - lo)) * plotH;
       }
       return PAD.t + plotH - ((y - yMin) / (yMax - yMin)) * plotH;
     }
 
-    var colors = cfg.series.map(function (s, idx) { return s.color || COLORS[idx % COLORS.length]; });
+    var colors = cfg.series.map(function (s, idx) { return safeColor(s.color, COLORS[idx % COLORS.length]); });
     var sortedSeries = expanded.map(function (pts) {
       return pts.slice().sort(function (a, b) { return a[0] - b[0]; });
     });
@@ -462,8 +522,8 @@ var ChartBuilder = (function () {
       svg += renderBands(cfg.bands, sx, xMin, xMax, plotH);
     }
 
-    /* Grid */
-    var yStep = cfg.yStep || niceStep(yMax - yMin, 5);
+    /* Grid (ignore cfg.yStep unless > 0 — 0/negative steps never terminate) */
+    var yStep = cfg.yStep > 0 ? cfg.yStep : niceStep(yMax - yMin, 5);
     svg += '<g class="chart-grid">';
     svg += '<line x1="'+PAD.l+'" y1="'+PAD.t+'" x2="'+PAD.l+'" y2="'+(PAD.t+plotH)+'" stroke="rgba(255,255,255,0.15)"/>';
     svg += '<line x1="'+PAD.l+'" y1="'+(PAD.t+plotH)+'" x2="'+(PAD.l+plotW)+'" y2="'+(PAD.t+plotH)+'" stroke="rgba(255,255,255,0.15)"/>';
@@ -701,6 +761,10 @@ var ChartBuilder = (function () {
 
     if (cfg.xRange) { xMin = cfg.xRange[0]; xMax = cfg.xRange[1]; }
     if (cfg.yRange) { yMin = cfg.yRange[0]; yMax = cfg.yRange[1]; }
+    /* degenerate-range guards (single point / equal yRange): avoid 0-division
+     * scales and non-terminating grid loops */
+    if (!(xMax > xMin)) xMax = xMin + 1;
+    if (!(yMax > yMin)) yMax = yMin + 1;
 
     function sx(x) { return PAD.l + ((x - xMin) / (xMax - xMin)) * plotW; }
     function sy(y) { return PAD.t + plotH - ((y - yMin) / (yMax - yMin)) * plotH; }
@@ -725,8 +789,8 @@ var ChartBuilder = (function () {
       svg += renderBands(cfg.bands, sx, xMin, xMax, plotH);
     }
 
-    /* Grid */
-    var yStep = cfg.yStep || niceStep(yMax - yMin, 5);
+    /* Grid (ignore cfg.yStep unless > 0 — 0/negative steps never terminate) */
+    var yStep = cfg.yStep > 0 ? cfg.yStep : niceStep(yMax - yMin, 5);
     svg += '<g class="chart-grid">';
     svg += '<line x1="' + PAD.l + '" y1="' + PAD.t + '" x2="' + PAD.l + '" y2="' + (PAD.t + plotH) + '" stroke="rgba(255,255,255,0.15)"/>';
     svg += '<line x1="' + PAD.l + '" y1="' + (PAD.t + plotH) + '" x2="' + (PAD.l + plotW) + '" y2="' + (PAD.t + plotH) + '" stroke="rgba(255,255,255,0.15)"/>';
@@ -836,8 +900,8 @@ var ChartBuilder = (function () {
       seriesPts: [spreadPts],
       seriesInfo: [{ name: spreadName, color: '#ffd93d', map: index.maps[0] }],
       extraRows: [
-        { name: cfg.long.name, color: cfg.long.color || '#00d4aa', map: longMap },
-        { name: cfg.short.name, color: cfg.short.color || '#5b8def', map: shortMap }
+        { name: cfg.long.name, color: safeColor(cfg.long.color, '#00d4aa'), map: longMap },
+        { name: cfg.short.name, color: safeColor(cfg.short.color, '#5b8def'), map: shortMap }
       ],
       keys: index.keys, keyX: index.keyX, annual: index.annual,
       xMin: xMin, xMax: xMax, yMin: yMin, yMax: yMax, logScale: false,

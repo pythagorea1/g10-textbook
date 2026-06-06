@@ -19,6 +19,17 @@
   const LS_MISSED = 'g10quiz_missed';
   const MISSED_CAP = 200;
 
+  // ---- Safe localStorage --------------------------------------------------
+  // Safari private mode throws QuotaExceededError on setItem; fully-blocked
+  // storage can throw on the localStorage accessor itself. Reads fall back to
+  // null and writes become no-ops so the quiz keeps working without storage.
+  function safeGet(key) {
+    try { return window.localStorage.getItem(key); } catch (e) { return null; }
+  }
+  function safeSet(key, value) {
+    try { window.localStorage.setItem(key, value); } catch (e) { /* ignore */ }
+  }
+
   // ---- Country mode -------------------------------------------------------
   const COUNTRY_META = {
     us:          { flag: '🇺🇸', name: 'アメリカ' },
@@ -53,12 +64,12 @@
   // ---- Missed-question pool (wrong-answer review) -------------------------
   function getMissed() {
     try {
-      const a = JSON.parse(localStorage.getItem(LS_MISSED) || '[]');
+      const a = JSON.parse(safeGet(LS_MISSED) || '[]');
       return Array.isArray(a) ? a : [];
     } catch (e) { return []; }
   }
   function saveMissed(arr) {
-    localStorage.setItem(LS_MISSED, JSON.stringify(arr.slice(0, MISSED_CAP)));
+    safeSet(LS_MISSED, JSON.stringify(arr.slice(0, MISSED_CAP)));
   }
   function addMissed(id) {
     const a = getMissed();
@@ -92,23 +103,23 @@
   }
 
   function getBest(key) {
-    const v = localStorage.getItem(LS_BEST(key));
+    const v = safeGet(LS_BEST(key));
     return v ? Number(v) : null;
   }
   function setBest(key, pct) {
     const prev = getBest(key);
-    if (prev == null || pct > prev) localStorage.setItem(LS_BEST(key), String(pct));
+    if (prev == null || pct > prev) safeSet(LS_BEST(key), String(pct));
   }
   function pushHistory(entry) {
     let h = [];
-    try { h = JSON.parse(localStorage.getItem(LS_HISTORY) || '[]'); } catch (e) {}
+    try { h = JSON.parse(safeGet(LS_HISTORY) || '[]'); } catch (e) {}
     h.unshift(entry);
     h = h.slice(0, 10);
-    localStorage.setItem(LS_HISTORY, JSON.stringify(h));
+    safeSet(LS_HISTORY, JSON.stringify(h));
   }
   function addTotalCorrect(n) {
-    const cur = Number(localStorage.getItem(LS_TOTAL) || '0') + n;
-    localStorage.setItem(LS_TOTAL, String(cur));
+    const cur = Number(safeGet(LS_TOTAL) || '0') + n;
+    safeSet(LS_TOTAL, String(cur));
   }
 
   class QuizEngine {
@@ -162,7 +173,7 @@
     startReview(size) {
       const pool = getMissed();
       let qs = getQuestions('all', this.country).filter((q) => pool.indexOf(q.id) !== -1);
-      if (qs.length === 0) return this.renderStart();
+      if (qs.length === 0) return this.renderStart('この組み合わせの問題はありません');
       this.category = 'review';
       this.sessionSize = size || 'all';
       this.reviewMode = true;
@@ -173,7 +184,7 @@
       this.renderQuestion();
     }
 
-    renderStart() {
+    renderStart(notice) {
       const country = this.country;
       const cards = CATEGORIES.map((c) => {
         const count = getQuestions(c.key, country).length;
@@ -206,6 +217,11 @@
         ? `<button class="btn-review">🔁 間違えた問題を復習 (${missedCount}問)</button>`
         : '';
 
+      // Optional notice (e.g. empty deck for the chosen category × country)
+      const noticeHtml = notice
+        ? `<div class="quiz-empty-notice">⚠️ ${notice}</div>`
+        : '';
+
       this.root.innerHTML = `
         <div class="quiz-container">
           <header class="quiz-header">
@@ -214,6 +230,7 @@
             ${allBest != null ? `<p class="quiz-best-banner">🏆 ALLベスト: ${allBest}%</p>` : ''}
           </header>
           ${countryBanner}
+          ${noticeHtml}
           <section class="quiz-settings">
             <label>出題数:
               <select id="quiz-size">
@@ -243,6 +260,9 @@
     }
 
     renderQuestion() {
+      // Empty deck (e.g. ?category=bonds&country=NO): back to start screen
+      // with a notice — never record a 0/0 result in history/best scores.
+      if (this.questions.length === 0) return this.renderStart('この組み合わせの問題はありません');
       if (this.idx >= this.questions.length) return this.renderResult();
       const q = this.questions[this.idx];
       const total = this.questions.length;
@@ -390,6 +410,17 @@
           </div>`
         : '';
 
+      // Remaining review questions, scoped to the current country filter
+      // (same expression renderStart uses for the review-button count).
+      let reviewRemainHtml = '';
+      if (this.reviewMode) {
+        const remainPool = getMissed();
+        const remain = remainPool.length
+          ? getQuestions('all', this.country).filter((q) => remainPool.indexOf(q.id) !== -1).length
+          : 0;
+        reviewRemainHtml = `<div class="result-meta">正解した問題は復習プールから削除されました (残り${remain}問)</div>`;
+      }
+
       const restartLabel = this.reviewMode ? '🔁 復習をもう一度' : '🔄 同じカテゴリーで再挑戦';
       this.root.innerHTML = `
         <div class="quiz-container">
@@ -399,7 +430,7 @@
             <div class="result-score">${this.correct} / ${total} 正解</div>
             <div class="result-pct">${pct}%</div>
             <div class="result-meta">最高連続正解: ${this.bestStreak}</div>
-            ${this.reviewMode ? `<div class="result-meta">正解した問題は復習プールから削除されました (残り${getMissed().length}問)</div>` : ''}
+            ${reviewRemainHtml}
             ${catPanel}
             ${weakPanel}
             <div class="result-actions">
@@ -417,8 +448,8 @@
 
     getStats() {
       let h = [];
-      try { h = JSON.parse(localStorage.getItem(LS_HISTORY) || '[]'); } catch (e) {}
-      return { history: h, totalCorrect: Number(localStorage.getItem(LS_TOTAL) || '0') };
+      try { h = JSON.parse(safeGet(LS_HISTORY) || '[]'); } catch (e) {}
+      return { history: h, totalCorrect: Number(safeGet(LS_TOTAL) || '0') };
     }
   }
 

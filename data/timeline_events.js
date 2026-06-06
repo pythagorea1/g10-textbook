@@ -338,7 +338,7 @@ window.G10_TIMELINE_EVENTS = {
     ,{ year: 2024, month: 5, country: 'sweden', cat: 'cut', label: 'Riksbank利下げ', detail: '5月に利下げを開始し年末2.50%へ。景気低迷とSEK安の板挟みが続いた。', link: '../sweden/02_policy_rate.html' }
     ,{ year: 2024, country: 'norway', cat: 'milestone', label: 'NB据置4.50%', detail: 'NOK安によるインフレ警戒から2024年は4.50%で据置き。G10で最もタカ派的な中銀の一つとなった。', link: '../norway/02_policy_rate.html' }
     ,{ year: 2025, month: 4, country: 'us', cat: 'war', label: '相互関税ショック', detail: '4月2日発表の「相互関税」で世界市場が動揺。FF金利は4.25-4.50%で据置きが続き、AI相場は変動をはらみつつ継続した。', link: '../us/19_trade.html' }
-    ,{ year: 2025, country: 'eurozone', cat: 'cut', label: 'ECB 2.65%', detail: '利下げを継続し預金金利は2.65%へ。インフレは目標近辺まで鈍化した。', link: '../eurozone/02_policy_rate.html' }
+    ,{ year: 2025, country: 'eurozone', cat: 'cut', label: 'ECB利下げ継続', detail: '利下げを継続し、春にMRO 2.65%（預金金利2.50%）へ。6月の最終利下げでMRO 2.15%・預金金利2.00%に到達し打ち止めとなった。インフレは目標近辺まで鈍化した。', link: '../eurozone/02_policy_rate.html' }
     ,{ year: 2025, month: 3, country: 'eurozone', cat: 'reform', label: '独債務ブレーキ改革', detail: '3月にドイツが債務ブレーキ（Schuldenbremse）を改革し、国防・インフラへ5,000億ユーロの特別基金を創設。欧州財政の歴史的転換となった。', link: '../eurozone/03_fiscal_policy.html' }
     ,{ year: 2025, month: 1, country: 'japan', cat: 'hike', label: 'BOJ 0.50%', detail: '1月に0.50%へ利上げ。春闘賃上げ5%超と円安是正が「金利ある世界」への回帰を後押しした。', link: '../japan/02_policy_rate.html' }
     ,{ year: 2025, month: 2, country: 'uk', cat: 'cut', label: 'BOE 4.50%', detail: '2月に4.50%へ利下げ。成長停滞とインフレ残存のスタグフレーション懸念が重石となった。', link: '../uk/02_policy_rate.html' }
@@ -347,6 +347,15 @@ window.G10_TIMELINE_EVENTS = {
     ,{ year: 2025, country: 'newzealand', cat: 'cut', label: 'RBNZ 3.50%', detail: '利下げを継続し3.50%へ。景気のもたつきが続いた。', link: '../newzealand/02_policy_rate.html' }
     ,{ year: 2025, month: 3, country: 'canada', cat: 'cut', label: 'BOC 2.75%', detail: '3月に2.75%へ利下げ。対米関税リスクが見通しを曇らせた。', link: '../canada/02_policy_rate.html' }
     ,{ year: 2025, country: 'sweden', cat: 'cut', label: 'Riksbank 2.25%', detail: '利下げを継続し2.25%へ。中立金利の近辺に到達した。', link: '../sweden/02_policy_rate.html' }
-    ,{ year: 2025, country: 'norway', cat: 'milestone', label: 'NB 4.50%据置', detail: '4.50%の据置きを続けG10最高水準を維持。GPFGはNOK18兆超と世界最大のSWFであり続けた。', link: '../norway/02_policy_rate.html' }
+    ,{ year: 2025, month: 3, country: 'norway', cat: 'milestone', label: 'NB 4.50%据置', detail: '年前半は4.50%の据置きを続けG10最高水準を維持。GPFGはNOK19兆超と世界最大のSWFであり続けた。', link: '../norway/02_policy_rate.html' }
+    ,{ year: 2025, month: 6, country: 'switzerland', cat: 'cut', label: 'SNB 0.00%へ', detail: '6月に政策金利を0.00%へ引下げ、利下げサイクルを完了。CHF高とゼロ近傍のインフレが続き、マイナス金利復帰の瀬戸際で踏みとどまった。', link: '../switzerland/02_policy_rate.html' }
+    ,{ year: 2025, month: 6, country: 'norway', cat: 'cut', label: 'NB利下げ開始', detail: '6月にG10最後発で利下げを開始。2025年中に2回の利下げで4.50%から4.00%へ引下げたが、なおG10最高水準を維持した。', link: '../norway/02_policy_rate.html' }
+    ,{ year: 2025, month: 9, country: 'us', cat: 'cut', label: 'Fed利下げ再開', detail: '9月にFOMCが利下げを再開し、10月・12月と連続で引下げ。FF金利は年末に3.50-3.75%（実効約3.65%）となった。', link: '../us/02_policy_rate.html' }
+    ,{ year: 2025, month: 9, country: 'sweden', cat: 'cut', label: 'Riksbank 1.75%', detail: '9月に1.75%へ利下げし、緩和サイクルの最終到達点に。低迷する景気の下支えを優先した。', link: '../sweden/02_policy_rate.html' }
+    ,{ year: 2025, month: 10, country: 'canada', cat: 'cut', label: 'BOC 2.25%', detail: '10月に2.25%へ利下げし打ち止め。対米関税の逆風下で景気を下支えした。', link: '../canada/02_policy_rate.html' }
+    ,{ year: 2025, month: 11, country: 'newzealand', cat: 'cut', label: 'RBNZ 2.25%', detail: '11月に2.25%へ利下げし緩和サイクルの底に到達。景気のもたつきに対応した。', link: '../newzealand/02_policy_rate.html' }
+    ,{ year: 2025, month: 12, country: 'japan', cat: 'hike', label: 'BOJ 0.75%利上げ', detail: '12月に0.75%へ追加利上げ。賃金と物価の好循環を確認し、「金利ある世界」への正常化を一段と進めた。', link: '../japan/02_policy_rate.html' }
+    ,{ year: 2025, month: 12, country: 'uk', cat: 'cut', label: 'BOE 3.75%へ', detail: '12月に3.75%へ利下げ。粘着的なサービスインフレを睨みつつ、漸進的な緩和を続けた。', link: '../uk/02_policy_rate.html' }
+    ,{ year: 2026, month: 3, country: 'australia', cat: 'hike', label: 'RBA 4.10%再利上げ', detail: '3月17日に政策金利を4.10%へ引上げ。2025年の底3.60%からの再引き締めで、利下げ局面のG10では異例の逆方向の動きとなった。', link: '../australia/02_policy_rate.html' }
   ]
 };

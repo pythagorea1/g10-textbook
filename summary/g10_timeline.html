@@ -60,6 +60,10 @@
       margin-bottom: 1rem;
       line-height: 1.6;
     }
+    /* Jump-nav targets must clear the sticky control bar */
+    .section-header, #table-chart-nav {
+      scroll-margin-top: 130px;
+    }
 
     /* Mega table */
     .mega-table-wrap {
@@ -375,6 +379,7 @@
     @media print {
       .tl-swim-wrap, .tl-controls, .tl-jumpnav { display: none !important; }
       .tl-mobile-list { display: block !important; }
+      #mega-timeline-wrap { max-height: none; overflow: visible; }
     }
   </style>
 </head>
@@ -390,7 +395,7 @@
       G10通貨国（米国・ユーロ圏・日本・英国・スイス・豪州・NZ・カナダ・スウェーデン・ノルウェー）の金融市場史を年代別に横断比較。<br>
       政策金利、株価指数、主要イベントを一覧し、グローバル金融システムの相互連関を俯瞰する。
     </p>
-    <p class="hero-lede">1668年から2026年まで — 10カ国・295イベントを1つの時間軸で</p>
+    <p class="hero-lede">1907年から2026年まで — 300超のイベントを1つの時間軸で（中央銀行史は1668年から）</p>
   </div>
 
   <nav class="tl-jumpnav" aria-label="セクションジャンプ">
@@ -427,9 +432,9 @@
   <!-- ====================================================== -->
   <!-- Section 0: Interactive Swimlane Timeline (Phase 2)      -->
   <!-- ====================================================== -->
-  <h2 class="section-header" id="sec-swimlane">⏱ G10 スイムレーン年表 — Interactive Timeline (1907–2025)</h2>
+  <h2 class="section-header" id="sec-swimlane">⏱ G10 スイムレーン年表 — Interactive Timeline (1907–2026)</h2>
   <p class="section-desc">
-    295イベントを11レーン（🌍 グローバル + 10カ国）×1つの時間軸にプロット。<strong>マーカーをクリック</strong>すると解説カードと教科書リンクが開く。
+    304イベントを11レーン（🌍 グローバル + 10カ国）×1つの時間軸にプロット。<strong>マーカーをクリック</strong>すると解説カードと教科書リンクが開く。
     分類・国・期間・検索で絞り込み可能。◆=危機、■=戦争・地政学、●=その他。オレンジの縦線は世界全体を揺らした危機（1929・1987・2008・2020…）。
   </p>
 
@@ -496,7 +501,7 @@
           <th>設立年</th>
           <th>現総裁/議長</th>
           <th>タカ/ハト</th>
-          <th>政策金利 (2025)</th>
+          <th>政策金利 (2026年3月)</th>
           <th>インフレ目標</th>
           <th>通貨</th>
           <th>特記事項</th>
@@ -505,37 +510,37 @@
       <tbody>
         <tr>
           <td>🇸🇪 Sweden</td><td>Sveriges Riksbank</td><td>1668</td>
-          <td>エリック・セデン (Erik Thedéen)</td><td>🦅</td><td>2.25%</td><td>2.0% CPIF</td><td>SEK</td>
+          <td>エリック・セデン (Erik Thedéen)</td><td>🦅</td><td>1.75%</td><td>2.0% CPIF</td><td>SEK</td>
           <td>世界最古の中央銀行。マイナス金利先駆者（-0.50%, 2015-2019）。e-krona CBDC実験</td>
         </tr>
         <tr>
           <td>🇬🇧 UK</td><td>Bank of England</td><td>1694</td>
-          <td>アンドリュー・ベイリー (Andrew Bailey)</td><td>🕊️</td><td>4.50%</td><td>2.0% CPI</td><td>GBP</td>
+          <td>アンドリュー・ベイリー (Andrew Bailey)</td><td>🕊️</td><td>3.75%</td><td>2.0% CPI</td><td>GBP</td>
           <td>1997年独立。MPC 9名。インフレターゲット1992年導入。Old Lady of Threadneedle Street</td>
         </tr>
         <tr>
           <td>🇫🇷🇩🇪 Eurozone</td><td>ECB (Bundesbank 1957)</td><td>1998 (1957)</td>
-          <td>クリスティーヌ・ラガルド (Christine Lagarde)</td><td>🕊️</td><td>2.65%</td><td>2.0% HICP</td><td>EUR</td>
+          <td>クリスティーヌ・ラガルド (Christine Lagarde)</td><td>🕊️</td><td>2.15% (MRO)</td><td>2.0% HICP</td><td>EUR</td>
           <td>Bundesbank 1957年設立→ECB 1998年。20カ国統合金融政策。Whatever It Takes 2012</td>
         </tr>
         <tr>
           <td>🇳🇴 Norway</td><td>Norges Bank</td><td>1816</td>
-          <td>イーダ・ヴォルデン・バッケ (Ida Wolden Bache)</td><td>🦅</td><td>4.50%</td><td>2.0% CPI</td><td>NOK</td>
-          <td>GPFG（NOK 18T+, 世界最大SWF）運用。初の女性総裁。石油経済の二重課題</td>
+          <td>イーダ・ヴォルデン・バッケ (Ida Wolden Bache)</td><td>🦅</td><td>4.00%</td><td>2.0% CPI</td><td>NOK</td>
+          <td>GPFG（NOK 19.7兆+ 2024年末, 世界最大SWF）運用。初の女性総裁。石油経済の二重課題</td>
         </tr>
         <tr>
           <td>🇯🇵 Japan</td><td>日本銀行 (Bank of Japan)</td><td>1882</td>
-          <td>植田和男 (Kazuo Ueda)</td><td>🕊️→🦅</td><td>0.50%</td><td>2.0% CPI</td><td>JPY</td>
+          <td>植田和男 (Kazuo Ueda)</td><td>🕊️→🦅</td><td>0.75%</td><td>2.0% CPI</td><td>JPY</td>
           <td>QQE/YCC/マイナス金利の実験場。2024年マイナス金利解除。デフレ30年からの脱却</td>
         </tr>
         <tr>
           <td>🇨🇭 Switzerland</td><td>Swiss National Bank</td><td>1907</td>
-          <td>マルティン・シュレーゲル (Martin Schlegel)</td><td>🕊️</td><td>0.25%</td><td>0-2% CPI</td><td>CHF</td>
+          <td>マルティン・シュレーゲル (Martin Schlegel)</td><td>🕊️</td><td>0.00%</td><td>0-2% CPI</td><td>CHF</td>
           <td>2015年CHFショック（EUR/CHF 1.20下限撤廃）。セーフヘイブン通貨。2022年CS危機→UBS強制合併</td>
         </tr>
         <tr>
           <td>🇺🇸 US</td><td>Federal Reserve</td><td>1913</td>
-          <td>ジェローム・パウエル (Jerome Powell)</td><td>中立→🦅</td><td>4.25-4.50%</td><td>2.0% PCE (AIT)</td><td>USD</td>
+          <td>ジェローム・パウエル (Jerome Powell)</td><td>中立→🦅</td><td>3.50-3.75%</td><td>2.0% PCE (AIT)</td><td>USD</td>
           <td>基軸通貨管理。QE先駆者。FOMCドットプロット。世界の金利サイクルの起点</td>
         </tr>
         <tr>
@@ -545,12 +550,12 @@
         </tr>
         <tr>
           <td>🇨🇦 Canada</td><td>Bank of Canada</td><td>1934</td>
-          <td>ティフ・マックレム (Tiff Macklem)</td><td>🕊️→中立</td><td>2.75%</td><td>2.0% CPI (1-3%)</td><td>CAD</td>
+          <td>ティフ・マックレム (Tiff Macklem)</td><td>🕊️→中立</td><td>2.25%</td><td>2.0% CPI (1-3%)</td><td>CAD</td>
           <td>1991年インフレターゲット導入（G7初）。CORRA移行完了。住宅市場リスク管理</td>
         </tr>
         <tr>
           <td>🇳🇿 New Zealand</td><td>RBNZ</td><td>1934</td>
-          <td>エイドリアン・オア (Adrian Orr)</td><td>🕊️→🦅</td><td>3.50%</td><td>1-3% CPI (中心2%)</td><td>NZD</td>
+          <td>アナ・ブレマン (Anna Breman)</td><td>🕊️→🦅</td><td>2.25%</td><td>1-3% CPI (中心2%)</td><td>NZD</td>
           <td>1990年世界初のインフレターゲット。二重責務（物価安定+最大持続可能雇用）2018年追加。LVR政策</td>
         </tr>
       </tbody>
@@ -1307,16 +1312,16 @@
         </tr>
         <tr data-decade="2020">
           <td class="year-col">2025</td>
-          <td>FF金利4.25-4.50%。関税政策（相互関税）。AI相場継続</td>
-          <td>ECB DFR 2.65%。独Schuldenbremse改革€500B</td>
-          <td>BOJ 0.50%。春闘5%+。円安是正</td>
-          <td>BOE 4.50%。スタグフレーション懸念</td>
-          <td>SNB 0.25%。UBS統合進行</td>
-          <td><span class="ev-cut">RBA利下げ</span> 4.10%</td>
-          <td>RBNZ 3.50%</td>
-          <td>BOC 2.75%。関税リスク</td>
-          <td>Riksbank 2.25%</td>
-          <td>Norges Bank 4.50%。GPFG NOK18T+</td>
+          <td><span class="ev-cut">FRB利下げ再開</span> 9月から3回で3.50-3.75%。関税政策（相互関税）。AI相場継続</td>
+          <td><span class="ev-cut">ECB利下げ打ち止め</span> 6月 MRO 2.15%（DFR 2.00%）。独Schuldenbremse改革€500B</td>
+          <td><span class="ev-hike">BOJ利上げ</span> 1月0.50%→12月0.75%。春闘5%+。円安是正</td>
+          <td><span class="ev-cut">BOE利下げ継続</span> 12月3.75%。スタグフレーション懸念</td>
+          <td><span class="ev-cut">SNB 0.00%へ</span>（6月）。UBS統合進行</td>
+          <td><span class="ev-cut">RBA利下げ</span> 3.60%へ</td>
+          <td><span class="ev-cut">RBNZ利下げ</span> 11月2.25%</td>
+          <td><span class="ev-cut">BOC 2.25%</span>（10月）。関税リスク</td>
+          <td><span class="ev-cut">Riksbank 1.75%</span>（9月）</td>
+          <td><span class="ev-cut">Norges Bank利下げ開始</span> 4.00%。GPFG NOK19.7T+</td>
         </tr>
       </tbody>
     </table>
@@ -1334,16 +1339,16 @@
     if (typeof ChartBuilder === 'undefined' || !document.getElementById('g10-rates-annual')) return;
     /* Year-end policy rates 2000-2025, transcribed from #table-rates below (26 values per series) */
     var RATES = {
-      Fed:      [6.50,1.75,1.25,1.00,2.25,4.25,5.25,4.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.50,0.75,1.50,2.50,1.75,0.25,0.25,4.50,5.50,4.50,4.50],
-      ECB:      [4.75,3.25,2.75,2.00,2.00,2.25,3.50,4.00,2.50,1.00,1.00,1.00,0.75,0.25,-0.20,-0.30,-0.40,-0.40,-0.40,-0.50,-0.50,-0.50,2.00,4.00,3.00,2.65],
-      BOJ:      [0.25,0.10,0.10,0.10,0.10,0.10,0.25,0.50,0.10,0.10,0.10,0.10,0.10,0.10,0.10,0.10,-0.10,-0.10,-0.10,-0.10,-0.10,-0.10,-0.10,-0.10,0.25,0.50],
-      BOE:      [6.00,4.00,4.00,3.75,4.75,4.50,5.00,5.50,2.00,0.50,0.50,0.50,0.50,0.50,0.50,0.50,0.25,0.50,0.75,0.75,0.10,0.25,3.50,5.25,4.75,4.50],
-      SNB:      [3.50,1.75,0.75,0.25,0.75,1.00,2.00,2.75,0.50,0.25,0.25,0.00,0.00,0.00,-0.25,-0.75,-0.75,-0.75,-0.75,-0.75,-0.75,-0.75,1.00,1.75,0.50,0.25],
-      RBA:      [6.25,4.25,4.75,5.25,5.25,5.50,6.25,6.75,4.25,3.75,4.75,4.25,3.00,2.50,2.50,2.00,1.50,1.50,1.50,0.75,0.10,0.10,3.10,4.35,4.35,4.10],
-      RBNZ:     [6.50,4.75,5.75,5.00,6.50,7.25,7.25,8.25,5.00,2.50,3.00,2.50,2.50,2.50,3.50,2.50,1.75,1.75,1.75,1.00,0.25,0.75,4.25,5.50,4.25,3.50],
-      BOC:      [5.75,2.00,2.75,2.75,2.50,3.25,4.25,4.25,1.50,0.25,1.00,1.00,1.00,1.00,1.00,0.50,0.50,1.00,1.75,1.75,0.25,0.25,4.25,5.00,3.25,2.75],
-      Riksbank: [4.00,3.75,3.75,2.75,2.00,1.50,3.00,4.00,2.00,0.25,1.25,1.75,1.00,0.75,0.00,-0.35,-0.50,-0.50,-0.25,0.00,0.00,0.00,2.50,4.00,2.50,2.25],
-      Norges:   [7.00,6.50,6.50,2.25,1.75,2.25,3.50,5.25,3.00,1.50,2.00,1.75,1.50,1.50,1.25,0.75,0.50,0.50,0.75,1.50,0.00,0.50,2.75,4.50,4.50,4.50]
+      Fed:      [6.50,1.75,1.25,1.00,2.25,4.25,5.25,4.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.50,0.75,1.50,2.50,1.75,0.25,0.25,4.50,5.50,4.50,3.65],
+      ECB:      [4.75,3.25,2.75,2.00,2.00,2.25,3.50,4.00,2.50,1.00,1.00,1.00,0.75,0.25,-0.20,-0.30,-0.40,-0.40,-0.40,-0.50,-0.50,-0.50,2.00,4.00,3.00,2.00],
+      BOJ:      [0.25,0.10,0.10,0.10,0.10,0.10,0.25,0.50,0.10,0.10,0.10,0.10,0.10,0.10,0.10,0.10,-0.10,-0.10,-0.10,-0.10,-0.10,-0.10,-0.10,-0.10,0.25,0.75],
+      BOE:      [6.00,4.00,4.00,3.75,4.75,4.50,5.00,5.50,2.00,0.50,0.50,0.50,0.50,0.50,0.50,0.50,0.25,0.50,0.75,0.75,0.10,0.25,3.50,5.25,4.75,3.75],
+      SNB:      [3.50,1.75,0.75,0.25,0.75,1.00,2.00,2.75,0.50,0.25,0.25,0.00,0.00,0.00,-0.25,-0.75,-0.75,-0.75,-0.75,-0.75,-0.75,-0.75,1.00,1.75,0.50,0.00],
+      RBA:      [6.25,4.25,4.75,5.25,5.25,5.50,6.25,6.75,4.25,3.75,4.75,4.25,3.00,2.50,2.50,2.00,1.50,1.50,1.50,0.75,0.10,0.10,3.10,4.35,4.35,3.60],
+      RBNZ:     [6.50,4.75,5.75,5.00,6.50,7.25,7.25,8.25,5.00,2.50,3.00,2.50,2.50,2.50,3.50,2.50,1.75,1.75,1.75,1.00,0.25,0.75,4.25,5.50,4.25,2.25],
+      BOC:      [5.75,2.00,2.75,2.75,2.50,3.25,4.25,4.25,1.50,0.25,1.00,1.00,1.00,1.00,1.00,0.50,0.50,1.00,1.75,1.75,0.25,0.25,4.25,5.00,3.25,2.25],
+      Riksbank: [4.00,3.75,3.75,2.75,2.00,1.50,3.00,4.00,2.00,0.25,1.25,1.75,1.00,0.75,0.00,-0.35,-0.50,-0.50,-0.25,0.00,0.00,0.00,2.50,4.00,2.50,1.75],
+      Norges:   [7.00,6.50,6.50,2.25,1.75,2.25,3.50,5.25,3.00,1.50,2.00,1.75,1.50,1.50,1.25,0.75,0.50,0.50,0.75,1.50,0.00,0.50,2.75,4.50,4.50,4.00]
     };
     ChartBuilder.lines('g10-rates-annual', {
       title: 'G10 政策金利 年末値 (2000–2025)',
@@ -1363,9 +1368,9 @@
         { name: 'Norges',   color: '#d770ad', start: 2000, step: 1, values: RATES.Norges }
       ],
       bands: [
-        { from: 2000, to: 2007, label: '大平穏期', color: '#2ec4b6' },
-        { from: 2008, to: 2021, label: '危機とゼロ金利', color: '#b07cff' },
-        { from: 2022, to: 2025, label: 'インフレと正常化', color: '#ff5d6c' }
+        { from: 2000, to: 2007, color: '#2ec4b6' },
+        { from: 2008, to: 2021, color: '#b07cff' },
+        { from: 2022, to: 2025, color: '#ff5d6c' }
       ],
       annotations: [
         { year: 2008.7, label: 'GFC', color: '#ff9f43' },
@@ -1420,7 +1425,7 @@
         <tr><td class="year-col">2022</td><td style="color:var(--accent-red)">4.50</td><td style="color:var(--accent-red)">2.00</td><td>-0.10</td><td style="color:var(--accent-red)">3.50</td><td style="color:var(--accent-red)">1.00</td><td style="color:var(--accent-red)">3.10</td><td style="color:var(--accent-red)">4.25</td><td style="color:var(--accent-red)">4.25</td><td style="color:var(--accent-red)">2.50</td><td style="color:var(--accent-red)">2.75</td></tr>
         <tr><td class="year-col">2023</td><td style="color:var(--accent-red)">5.50</td><td style="color:var(--accent-red)">4.00</td><td>-0.10</td><td style="color:var(--accent-red)">5.25</td><td style="color:var(--accent-red)">1.75</td><td style="color:var(--accent-red)">4.35</td><td style="color:var(--accent-red)">5.50</td><td style="color:var(--accent-red)">5.00</td><td style="color:var(--accent-red)">4.00</td><td style="color:var(--accent-red)">4.50</td></tr>
         <tr><td class="year-col">2024</td><td style="color:var(--accent-blue)">4.50</td><td style="color:var(--accent-blue)">3.00</td><td style="color:var(--accent-red)">0.25</td><td style="color:var(--accent-blue)">4.75</td><td style="color:var(--accent-blue)">0.50</td><td>4.35</td><td style="color:var(--accent-blue)">4.25</td><td style="color:var(--accent-blue)">3.25</td><td style="color:var(--accent-blue)">2.50</td><td>4.50</td></tr>
-        <tr><td class="year-col">2025</td><td>4.50</td><td>2.65</td><td>0.50</td><td>4.50</td><td>0.25</td><td style="color:var(--accent-blue)">4.10</td><td style="color:var(--accent-blue)">3.50</td><td style="color:var(--accent-blue)">2.75</td><td>2.25</td><td>4.50</td></tr>
+        <tr><td class="year-col">2025</td><td style="color:var(--accent-blue)">3.75</td><td style="color:var(--accent-blue)">2.00</td><td style="color:var(--accent-red)">0.75</td><td style="color:var(--accent-blue)">3.75</td><td style="color:var(--accent-blue)">0.00</td><td style="color:var(--accent-blue)">3.60</td><td style="color:var(--accent-blue)">2.25</td><td style="color:var(--accent-blue)">2.25</td><td style="color:var(--accent-blue)">1.75</td><td style="color:var(--accent-blue)">4.00</td></tr>
       </tbody>
     </table>
   </div>
@@ -1700,9 +1705,9 @@
           <td>2.4%</td><td>2.2%</td><td>2.7%</td><td>1.5%</td><td>3.0%</td>
         </tr>
         <tr>
-          <td>政策金利</td>
-          <td>4.50%</td><td>2.65%</td><td>0.50%</td><td>4.50%</td><td>0.25%</td>
-          <td>4.10%</td><td>3.50%</td><td>2.75%</td><td>2.25%</td><td>4.50%</td>
+          <td>政策金利 (2025年末)</td>
+          <td>3.50-3.75%</td><td>2.15% (MRO)</td><td>0.75%</td><td>3.75%</td><td>0.00%</td>
+          <td>3.60%</td><td>2.25%</td><td>2.25%</td><td>1.75%</td><td>4.00%</td>
         </tr>
         <tr>
           <td>10Y国債利回り</td>
@@ -1954,8 +1959,11 @@ document.querySelectorAll('.compare-table th, .mega-table th').forEach(th => {
     rows.sort((a, b) => {
       const aVal = a.children[idx] ? a.children[idx].textContent.trim() : '';
       const bVal = b.children[idx] ? b.children[idx].textContent.trim() : '';
-      const aNum = parseFloat(aVal.replace(/[^0-9.\-]/g, ''));
-      const bNum = parseFloat(bVal.replace(/[^0-9.\-]/g, ''));
+      // 最初の数値だけを取り出す（"1998 (1957)" が 19981957 にならないように）
+      const aMatch = aVal.match(/-?\d+(\.\d+)?/);
+      const bMatch = bVal.match(/-?\d+(\.\d+)?/);
+      const aNum = aMatch ? parseFloat(aMatch[0]) : NaN;
+      const bNum = bMatch ? parseFloat(bMatch[0]) : NaN;
       if (!isNaN(aNum) && !isNaN(bNum)) {
         return asc ? aNum - bNum : bNum - aNum;
       }
@@ -1969,7 +1977,7 @@ document.querySelectorAll('.compare-table th, .mega-table th').forEach(th => {
 <script>
 /* ============================================================
  * G10 Interactive Swimlane Timeline (Phase 2)
- * Renders window.G10_TIMELINE_EVENTS (295 events / 8 eras) as an
+ * Renders window.G10_TIMELINE_EVENTS (304 events / 8 eras) as an
  * 11-lane horizontal SVG timeline + mobile/print era-grouped list.
  * Pure vanilla JS, file://-safe, no external libs.
  * ============================================================ */
@@ -2300,14 +2308,21 @@ document.querySelectorAll('.compare-table th, .mega-table th').forEach(th => {
     scroller.scrollLeft = Math.max(0, sx(1970) - 110);
   }
 
-  /* hint fades on first scroll or after 6s */
+  /* hint fades on first USER scroll or after 6s */
   function hideHint() { if (hint) hint.classList.add('hide'); }
-  scroller.addEventListener('scroll', hideHint, { once: true });
-  setTimeout(hideHint, 6000);
 
   /* ---- initial render: full period, auto-scrolled to the modern era ---- */
   render();
   scrollToModern();
+  /* attach the once-only hint listener only AFTER the programmatic
+     scrollToModern() has settled, so the hint is not consumed instantly
+     (scroll events fire before rAF callbacks in the rendering steps) */
+  requestAnimationFrame(function () {
+    requestAnimationFrame(function () {
+      scroller.addEventListener('scroll', hideHint, { once: true });
+    });
+  });
+  setTimeout(hideHint, 6000);
 
   /* ============================================================
    * Table fixes: 「元の順序に戻す」 restore links for sortable tables
