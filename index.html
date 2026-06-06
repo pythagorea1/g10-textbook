@@ -185,27 +185,6 @@
       margin: 0.8rem auto 0;
       line-height: 1.8;
     }
-    .hero-badges {
-      display: flex;
-      justify-content: center;
-      gap: 0.6rem;
-      margin-top: 1.4rem;
-      flex-wrap: wrap;
-    }
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      padding: 0.35rem 0.85rem;
-      font-size: 0.75rem;
-      font-family: var(--font-mono);
-      background: rgba(0,212,170,0.08);
-      border: 1px solid rgba(0,212,170,0.2);
-      border-radius: 20px;
-      color: var(--accent-green);
-    }
-    .hero-badge .num { font-weight: 700; }
-
     /* ===== Stats Dashboard ===== */
     .stats-bar {
       display: grid;
@@ -576,18 +555,160 @@
     }
     .index-footer a:hover { color: var(--accent-green); }
 
-    /* ===== Animations ===== */
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(16px); }
-      to { opacity: 1; transform: translateY(0); }
+    /* ===== Hero Timeline Ribbon (1668-2024) ===== */
+    .hero-ribbon {
+      background: linear-gradient(180deg, #0f1530 0%, #0d1228 100%);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      padding: 0.7rem 1.5rem 2.6rem;
     }
-    .animate-in {
-      opacity: 0;
-      animation: fadeInUp 0.5s ease forwards;
+    .hero-ribbon-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
     }
-    .delay-1 { animation-delay: 0.1s; }
-    .delay-2 { animation-delay: 0.2s; }
-    .delay-3 { animation-delay: 0.3s; }
+    .hero-ribbon-scroll { flex: 1; min-width: 0; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .ribbon-svg { display: block; width: 100%; min-width: 880px; height: 90px; }
+    .ribbon-axis { stroke: rgba(255,255,255,0.18); stroke-width: 2; stroke-linecap: round; }
+    .ribbon-node { cursor: pointer; text-decoration: none; }
+    .ribbon-node circle { stroke: #0f1530; stroke-width: 2; transition: r 0.2s ease; }
+    .ribbon-node:hover circle, .ribbon-node:focus circle { r: 9px; }
+    .ribbon-node .rn-year {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      transition: font-size 0.2s ease;
+    }
+    .ribbon-node .rn-label { font-size: 10px; fill: #9aa3bd; transition: fill 0.2s ease, font-size 0.2s ease; }
+    .ribbon-node:hover .rn-year, .ribbon-node:focus .rn-year { font-size: 12.5px; }
+    .ribbon-node:hover .rn-label, .ribbon-node:focus .rn-label { fill: #f4f4fa; font-size: 11px; }
+    .ribbon-cta {
+      flex-shrink: 0;
+      display: inline-block;
+      padding: 0.55rem 1.1rem;
+      font-size: 0.82rem;
+      font-weight: 700;
+      font-family: var(--font-mono);
+      color: #0a0f1f;
+      background: linear-gradient(90deg, var(--accent-green), var(--accent-teal));
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 4px 16px rgba(0,212,170,0.25);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .ribbon-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 22px rgba(0,212,170,0.4);
+      text-decoration: none;
+      color: #0a0f1f;
+    }
+    @media (max-width: 768px) {
+      .hero-ribbon { padding: 0.5rem 1rem 2.2rem; }
+      .hero-ribbon-inner { flex-direction: column; align-items: stretch; gap: 0.8rem; }
+      .ribbon-cta { text-align: center; }
+    }
+
+    /* ===== Live G10 Snapshot strip (uses resurrected .stats-bar) ===== */
+    .g10-snapshot-wrap { padding-bottom: 2.6rem; }
+    .g10-snapshot-wrap .stats-bar { margin: 0; }
+    .snapshot-note {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      margin: 0.6rem 0 0;
+      text-align: right;
+    }
+
+    /* ===== Continue-reading / quiz best-score chips on tiles ===== */
+    .main-tile .tile-continue,
+    .main-tile .tile-bestscore {
+      display: inline-block;
+      margin-top: 0.7rem;
+      padding: 0.35rem 0.7rem;
+      font-size: 0.74rem;
+      font-family: var(--font-mono);
+      border-radius: 6px;
+    }
+    .tile-continue {
+      color: var(--accent-green);
+      background: rgba(0,212,170,0.08);
+      border: 1px solid rgba(0,212,170,0.3);
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .tile-continue:hover { background: rgba(0,212,170,0.18); }
+    .tile-bestscore {
+      color: #ffd93d;
+      background: rgba(255,217,61,0.08);
+      border: 1px solid rgba(255,217,61,0.3);
+    }
+
+    /* ===== Country card read-progress ===== */
+    .country-card .card-progress {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 0.7rem;
+    }
+    .country-card .card-progress-track {
+      flex: 1;
+      height: 4px;
+      background: rgba(255,255,255,0.07);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .country-card .card-progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent-green), var(--accent-teal));
+      border-radius: 2px;
+      transition: width 0.6s ease;
+    }
+    .country-card .card-progress-badge {
+      font-size: 0.66rem;
+      font-family: var(--font-mono);
+      color: var(--text-muted);
+      flex-shrink: 0;
+    }
+
+    /* ===== Search match count ===== */
+    .search-count {
+      font-size: 0.74rem;
+      font-family: var(--font-mono);
+      color: var(--text-muted);
+      margin: -0.8rem 0 1rem;
+    }
+
+    /* ===== Collapsible TOC (details/summary, built by JS) ===== */
+    .toc-country > details > summary {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      list-style: none;
+    }
+    .toc-country > details > summary::-webkit-details-marker { display: none; }
+    .toc-country > details > summary::after {
+      content: '\25B8';
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      flex-shrink: 0;
+      transition: transform 0.2s ease;
+    }
+    .toc-country > details[open] > summary::after { transform: rotate(90deg); }
+    .toc-country summary .toc-country-title { flex: 1; margin-bottom: 0; }
+    .toc-progress-badge {
+      font-size: 0.68rem;
+      font-family: var(--font-mono);
+      color: var(--text-muted);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 0.1rem 0.5rem;
+      flex-shrink: 0;
+    }
+    .toc-progress-badge.has-read {
+      color: var(--accent-green);
+      border-color: rgba(0,212,170,0.4);
+    }
 
     /* ===== Responsive ===== */
     @media (max-width: 768px) {
@@ -617,7 +738,75 @@
   </p>
 </header>
 
+<!-- ===== Hero Timeline Ribbon: 1668-2024 milestones (clickable) ===== -->
+<section class="hero-ribbon" aria-label="金融史マイルストーン年表 1668-2024">
+  <div class="hero-ribbon-inner">
+    <div class="hero-ribbon-scroll">
+      <svg class="ribbon-svg" viewBox="0 0 1100 90" preserveAspectRatio="xMidYMid meet" role="img" aria-label="1668年リクスバンク設立から2022-24年利上げサイクルまでの10大マイルストーン">
+        <line class="ribbon-axis" x1="25" y1="45" x2="1075" y2="45"/>
+        <a href="sweden/01_central_bank.html" class="ribbon-node">
+          <circle cx="55" cy="45" r="6" fill="#00d4aa"/>
+          <text class="rn-label" x="55" y="20" text-anchor="middle">Riksbank設立</text>
+          <text class="rn-year" x="55" y="34" text-anchor="middle" fill="#00d4aa">1668</text>
+        </a>
+        <a href="uk/01_central_bank.html" class="ribbon-node">
+          <circle cx="165" cy="45" r="6" fill="#00d4aa"/>
+          <text class="rn-year" x="165" y="61" text-anchor="middle" fill="#00d4aa">1694</text>
+          <text class="rn-label" x="165" y="75" text-anchor="middle">BOE設立</text>
+        </a>
+        <a href="us/01_central_bank.html" class="ribbon-node">
+          <circle cx="275" cy="45" r="6" fill="#00d4aa"/>
+          <text class="rn-label" x="275" y="20" text-anchor="middle">Fed設立</text>
+          <text class="rn-year" x="275" y="34" text-anchor="middle" fill="#00d4aa">1913</text>
+        </a>
+        <a href="us/14_currency.html" class="ribbon-node">
+          <circle cx="385" cy="45" r="6" fill="#4ecdc4"/>
+          <text class="rn-year" x="385" y="61" text-anchor="middle" fill="#4ecdc4">1944</text>
+          <text class="rn-label" x="385" y="75" text-anchor="middle">ブレトンウッズ</text>
+        </a>
+        <a href="us/14_currency.html" class="ribbon-node">
+          <circle cx="495" cy="45" r="6" fill="#ff9f43"/>
+          <text class="rn-label" x="495" y="20" text-anchor="middle">ニクソンショック</text>
+          <text class="rn-year" x="495" y="34" text-anchor="middle" fill="#ff9f43">1971</text>
+        </a>
+        <a href="japan/14_currency.html" class="ribbon-node">
+          <circle cx="605" cy="45" r="6" fill="#4ecdc4"/>
+          <text class="rn-year" x="605" y="61" text-anchor="middle" fill="#4ecdc4">1985</text>
+          <text class="rn-label" x="605" y="75" text-anchor="middle">プラザ合意</text>
+        </a>
+        <a href="eurozone/01_central_bank.html" class="ribbon-node">
+          <circle cx="715" cy="45" r="6" fill="#00d4aa"/>
+          <text class="rn-label" x="715" y="20" text-anchor="middle">ユーロ誕生</text>
+          <text class="rn-year" x="715" y="34" text-anchor="middle" fill="#00d4aa">1999</text>
+        </a>
+        <a href="us/15_crises.html" class="ribbon-node">
+          <circle cx="825" cy="45" r="6" fill="#ff6b6b"/>
+          <text class="rn-year" x="825" y="61" text-anchor="middle" fill="#ff6b6b">2008</text>
+          <text class="rn-label" x="825" y="75" text-anchor="middle">リーマン破綻</text>
+        </a>
+        <a href="summary/geopolitical_map.html#event=covid_2020" class="ribbon-node">
+          <circle cx="935" cy="45" r="6" fill="#ff9f43"/>
+          <text class="rn-label" x="935" y="20" text-anchor="middle">COVIDショック</text>
+          <text class="rn-year" x="935" y="34" text-anchor="middle" fill="#ff9f43">2020</text>
+        </a>
+        <a href="us/02_policy_rate.html" class="ribbon-node">
+          <circle cx="1045" cy="45" r="6" fill="#ff6b6b"/>
+          <text class="rn-year" x="1045" y="61" text-anchor="middle" fill="#ff6b6b">2022-24</text>
+          <text class="rn-label" x="1045" y="75" text-anchor="middle">利上げと正常化</text>
+        </a>
+      </svg>
+    </div>
+    <a class="ribbon-cta" href="summary/g10_timeline.html">年表をひらく &rarr;</a>
+  </div>
+</section>
+
 <div class="index-container">
+
+  <!-- ===== Live G10 Snapshot Strip (computed at runtime from chart data tails) ===== -->
+  <section class="g10-snapshot-wrap" id="g10SnapshotWrap" hidden aria-label="G10最新スナップショット">
+    <div class="stats-bar" id="g10Snapshot"></div>
+    <p class="snapshot-note">※ 2026年3月時点、本ページのチャート月次データ最終値から自動算出。米国はFF金利誘導目標レンジ中点。</p>
+  </section>
 
   <!-- ===== 3 Main Action Tiles (primary CTAs) ===== -->
   <section class="main-tiles">
@@ -653,8 +842,9 @@
 
     <div class="search-box">
       <span class="search-icon">&#x1F50D;</span>
-      <input type="text" id="countrySearch" placeholder="Search countries... (e.g. Japan, USD, Fed)">
+      <input type="text" id="countrySearch" placeholder="検索: 国名、通貨、トピック（例: プラザ合意)">
     </div>
+    <div class="search-count" id="searchCount" hidden aria-live="polite"></div>
 
     <div class="country-grid" id="countryGrid">
 
@@ -856,6 +1046,18 @@
       /* Norges Bank Sight Deposit Rate — Norges Bank, Jan 2000–Mar 2026 (315 pts) */
       var norges=[5.5,5.5,5.5,5.75,5.75,6.25,6.25,6.75,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,6.5,6.5,6.5,6.5,6.5,6.5,6.5,7,7,7,7,7,6.5,6,6,5.5,5,5,4,4,3,2.5,2.5,2.5,2.25,2,2,1.75,1.75,1.75,1.75,1.75,1.75,1.75,1.75,1.75,1.75,1.75,1.75,1.75,1.75,1.75,2,2,2,2,2,2.25,2.25,2.25,2.25,2.5,2.5,2.75,2.75,2.75,3,3,3,3.25,3.5,3.75,3.75,4,4,4.25,4.5,4.5,4.75,5,5,5,5.25,5.25,5.25,5.25,5.5,5.5,5.75,5.75,5.75,5.75,4.75,4.75,3,3,2.5,2,2,1.5,1.25,1.25,1.25,1.25,1.5,1.5,1.75,1.75,1.75,1.75,1.75,2,2,2,2,2,2,2,2,2,2,2,2,2.25,2.25,2.25,2.25,2.25,2.25,2.25,1.75,1.75,1.75,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.25,1.25,1.25,1.25,1.25,1.25,1,1,1,0.75,0.75,0.75,0.75,0.75,0.75,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.75,0.75,0.75,0.75,0.75,0.75,1,1,1,1.25,1.25,1.25,1.5,1.5,1.5,1.5,1.5,1.5,0.25,0.25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.25,0.25,0.25,0.5,0.5,0.5,0.75,0.75,0.75,1.25,1.25,1.75,2.25,2.25,2.5,2.75,2.75,2.75,3,3,3.25,3.75,3.75,4,4.25,4.25,4.25,4.5,4.5,4.5,4.5,4.5,4.5,4.5,4.5,4.5,4.5,4.5,4.5,4.5,4.5,4.5,4.5,4.5,4.5,4.25,4.25,4.25,4,4,4,4,4,4,4];
 
+      /* Single source of truth: expose latest policy-rate tails for the
+         snapshot strip & #rateBars so bars and chart can never diverge. */
+      window.G10_LATEST = window.G10_LATEST || {};
+      window.G10_LATEST.policy = {
+        USD: us[us.length - 1],     EUR: ecb[ecb.length - 1],
+        JPY: boj[boj.length - 1],   GBP: boe[boe.length - 1],
+        CHF: snb[snb.length - 1],   AUD: rba[rba.length - 1],
+        NZD: rbnz[rbnz.length - 1], CAD: boc[boc.length - 1],
+        SEK: riks[riks.length - 1], NOK: norges[norges.length - 1]
+      };
+      window.G10_LATEST.policyAsOf = '2026年3月';
+
       ChartBuilder.lines("g10-policy-rate-comparison", {
         title: "G10 Central Bank Policy Rates (2000-2026, Monthly)",
         caption: "Source: Federal Reserve, ECB, BOJ, BOE, SNB, RBA, RBNZ, BOC, Riksbank, Norges Bank. 315 monthly data points per country. GFC triggered synchronized rate cuts to near zero; ECB/BOJ/SNB/Riksbank entered negative territory 2014-2021; 2022 saw the most aggressive synchronized tightening cycle in decades.",
@@ -875,11 +1077,11 @@
           { name: "Norges Bank", color: "#d770ad", start: 2000.0, step: 1/12, values: norges }
         ],
         annotations: [
-          { year: 2007.75, label: "GFC Start", color: "#ff6b6b" },
-          { year: 2015.0, label: "SNB -0.75%", color: "#a78bfa" },
-          { year: 2016.083, label: "BOJ -0.1%", color: "#ff6b6b" },
-          { year: 2020.25, label: "COVID", color: "#4ecdc4" },
-          { year: 2023.5, label: "Fed 5.33%", color: "#00d4aa" }
+          { year: 2007.75, label: "GFC開始 2007", color: "#ff6b6b" },
+          { year: 2015.0, label: "SNB -0.75% 2015", color: "#a78bfa" },
+          { year: 2016.083, label: "BOJ -0.1% 2016", color: "#ff6b6b" },
+          { year: 2020.25, label: "COVID 2020", color: "#4ecdc4" },
+          { year: 2023.5, label: "Fed 5.33% 2023", color: "#00d4aa" }
         ]
       });
     })();
@@ -933,11 +1135,11 @@
           { name: 'Norway', color: '#d770ad', start: 2000.0, step: 1/12, values: no }
         ],
         annotations: [
-          { year: 2008.75, label: 'GFC', color: '#ff6b6b' },
-          { year: 2012.583, label: 'Draghi', color: '#5b8def' },
-          { year: 2016.5, label: 'Brexit/BOJ YCC', color: '#ffd93d' },
-          { year: 2020.25, label: 'COVID', color: '#4ecdc4' },
-          { year: 2022.5, label: 'Inflation', color: '#ff9f43' }
+          { year: 2008.75, label: 'GFC 2008', color: '#ff6b6b' },
+          { year: 2012.583, label: 'Draghi 2012', color: '#5b8def' },
+          { year: 2016.5, label: 'Brexit/YCC 2016', color: '#ffd93d' },
+          { year: 2020.25, label: 'COVID 2020', color: '#4ecdc4' },
+          { year: 2022.5, label: 'インフレ 2022', color: '#ff9f43' }
         ]
       });
     })();
@@ -973,6 +1175,13 @@
       /* OBX — monthly avg, Jan 2000–Mar 2026 (315 pts) */
       var obx=[350,365,380,365,375,375,370,380,360,345,340,330,327,315,295,305,310,300,285,275,240,250,265,275,285,280,300,285,260,220,210,215,180,165,180,175,165,155,150,170,180,190,200,210,205,215,220,225,235,245,245,250,245,255,260,255,265,270,278,285,291,300,305,310,320,335,345,355,365,370,382,395,411,425,440,460,420,415,430,442,450,465,475,480,485,490,495,510,522,530,535,510,520,530,490,475,410,420,390,420,450,430,420,400,340,235,210,240,220,200,195,240,260,270,290,310,320,315,325,340,345,340,360,370,345,340,355,350,370,378,375,385,400,410,405,410,395,380,380,340,305,340,330,345,365,380,389,385,365,375,380,395,410,416,415,420,435,440,450,445,465,455,470,478,490,495,505,510,520,530,540,545,557,570,585,575,560,520,490,465,440,460,470,480,490,475,465,430,415,440,430,425,395,390,420,440,445,435,465,475,480,490,505,525,540,555,560,570,575,580,590,585,600,620,635,650,670,660,655,680,700,710,720,730,740,700,690,680,701,720,730,745,730,750,770,740,780,790,810,830,854,830,490,580,620,650,670,690,680,670,740,790,790,830,870,900,930,960,980,1000,1021,1050,1080,1060,1100,1080,1131,1120,1100,1050,1072,1090,1060,1080,1100,1072,1093,1080,1070,1090,1100,1130,1157,1140,1120,1100,1140,1177,1190,1210,1230,1220,1250,1240,1260,1230,1270,1250,1280,1300,1320,1340,1360,1370,1380,1400,1410,1400,1420,1440,1460,1480,1500,1520,1510];
 
+      /* Expose equity tails (raw index levels) for the snapshot strip. */
+      window.G10_LATEST = window.G10_LATEST || {};
+      window.G10_LATEST.equity = {
+        sp500:  { first: sp500[0],  last: sp500[sp500.length - 1] },
+        nikkei: { first: nikkei[0], last: nikkei[nikkei.length - 1] }
+      };
+
       ChartBuilder.lines('g10-equity-comparison', {
         title: 'G10 Equity Index Performance (2000-2026, Jan 2000 = 100)',
         caption: 'Source: S&P, TSE, Deutsche Börse, LSE, SIX, ASX, NZX, TMX, Nasdaq Nordic, Oslo Børs. Rebased to 100 at Jan 2000. US equities dramatically outperformed all G10 peers. DAX and NZX 50 are total return indices (include dividends); others are price return only.',
@@ -991,11 +1200,11 @@
           { name: 'OBX', color: '#d770ad', start: 2000.0, step: 1/12, values: rebase(obx) }
         ],
         annotations: [
-          { year: 2002.75, label: 'Dot-com Low', color: '#ff6b6b' },
-          { year: 2009.17, label: 'GFC Bottom', color: '#ff9f43' },
-          { year: 2020.25, label: 'COVID', color: '#4ecdc4' },
-          { year: 2022.75, label: 'Rate Hikes', color: '#a78bfa' },
-          { year: 2024.5, label: 'AI Rally', color: '#00d4aa' }
+          { year: 2002.75, label: 'ITバブル底 2002', color: '#ff6b6b' },
+          { year: 2009.17, label: 'GFC底 2009', color: '#ff9f43' },
+          { year: 2020.25, label: 'COVID 2020', color: '#4ecdc4' },
+          { year: 2022.75, label: '利上げ 2022', color: '#a78bfa' },
+          { year: 2024.5, label: 'AI相場 2024', color: '#00d4aa' }
         ]
       });
     })();
@@ -1743,33 +1952,180 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // === Country Search ===
+  // === 読書履歴 (localStorage 'g10_read' — enhancer.js が各国ページで記録) ===
+  var COUNTRY_JP = {
+    us: '米国', eurozone: 'ユーロ圏', japan: '日本', uk: '英国',
+    switzerland: 'スイス', australia: '豪州', newzealand: 'NZ',
+    canada: 'カナダ', sweden: 'スウェーデン', norway: 'ノルウェー'
+  };
+  var readMap = {};
+  try {
+    readMap = JSON.parse(localStorage.getItem('g10_read') || '{}') || {};
+    if (typeof readMap !== 'object' || Array.isArray(readMap)) readMap = {};
+  } catch (e) { readMap = {}; }
+
+  // 国別既読ページ数
+  var readCount = {};
+  Object.keys(readMap).forEach(function(k) {
+    var c = k.split('/')[0];
+    if (COUNTRY_JP[c]) readCount[c] = (readCount[c] || 0) + 1;
+  });
+
+  // (a) READ タイル: 「続きから」リンク（最終訪問ページ）
+  var lastKey = null, lastTs = -1;
+  Object.keys(readMap).forEach(function(k) {
+    var t = Number(readMap[k]);
+    if (isFinite(t) && t > lastTs) { lastTs = t; lastKey = k; }
+  });
+  if (lastKey) {
+    var seg = lastKey.split('/');
+    var contCountry = seg[0], contFile = seg[1] || '';
+    var chapM = contFile.match(/^(\d+)/);
+    var readTile = document.querySelector('.main-tile.tile-textbook');
+    if (readTile && COUNTRY_JP[contCountry] && chapM && /^[\w.\-]+\.html?$/.test(contFile)) {
+      var cont = document.createElement('div');
+      cont.className = 'tile-continue';
+      cont.setAttribute('role', 'link');
+      cont.setAttribute('tabindex', '0');
+      cont.textContent = '続きから: ' + COUNTRY_JP[contCountry] + ' ' + parseInt(chapM[1], 10) + '章 →';
+      var contHref = contCountry + '/' + contFile;
+      cont.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        location.href = contHref;
+      });
+      cont.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); location.href = contHref; }
+      });
+      readTile.appendChild(cont);
+    }
+  }
+
+  // (b) 各 country-card に既読プログレスバー + n/20 バッジ
+  document.querySelectorAll('.country-card').forEach(function(card) {
+    var m = (card.getAttribute('href') || '').match(/^([a-z]+)\//);
+    if (!m || !COUNTRY_JP[m[1]]) return;
+    var n = Math.min(readCount[m[1]] || 0, 20);
+    var prog = document.createElement('div');
+    prog.className = 'card-progress';
+    prog.innerHTML =
+      '<div class="card-progress-track"><div class="card-progress-fill" style="width:' + (n / 20 * 100) + '%"></div></div>' +
+      '<span class="card-progress-badge">' + n + '/20</span>';
+    card.appendChild(prog);
+  });
+
+  // (c) クイズタイル: ベストスコア平均 (localStorage g10quiz_best_*)
+  var bestVals = [];
+  try {
+    for (var li = 0; li < localStorage.length; li++) {
+      var lk = localStorage.key(li);
+      if (lk && lk.indexOf('g10quiz_best_') === 0) {
+        var lv = Number(localStorage.getItem(lk));
+        if (isFinite(lv)) bestVals.push(lv);
+      }
+    }
+  } catch (e) { /* localStorage unavailable */ }
+  if (bestVals.length) {
+    var bestAvg = Math.round(bestVals.reduce(function(a, b) { return a + b; }, 0) / bestVals.length);
+    var quizTile = document.querySelector('.main-tile.tile-quiz');
+    if (quizTile) {
+      var bs = document.createElement('div');
+      bs.className = 'tile-bestscore';
+      bs.textContent = 'ベスト平均 ' + bestAvg + '%（' + bestVals.length + 'カテゴリ）';
+      quizTile.appendChild(bs);
+    }
+  }
+
+  // === TOC 折りたたみ: 各 .toc-country を <details><summary> 化 (200リンクは保持) ===
+  document.querySelectorAll('#toc .toc-country').forEach(function(block) {
+    var details = document.createElement('details');
+    details.className = 'toc-details';
+    while (block.firstChild) details.appendChild(block.firstChild);
+    var summary = document.createElement('summary');
+    var title = details.querySelector('.toc-country-title');
+    if (title) summary.appendChild(title);
+    var titleLink = summary.querySelector('a');
+    var cm = titleLink ? (titleLink.getAttribute('href') || '').match(/^([a-z]+)\//) : null;
+    if (cm && COUNTRY_JP[cm[1]]) {
+      var n = Math.min(readCount[cm[1]] || 0, 20);
+      var badge = document.createElement('span');
+      badge.className = 'toc-progress-badge' + (n > 0 ? ' has-read' : '');
+      badge.textContent = n + '/20';
+      summary.appendChild(badge);
+    }
+    details.insertBefore(summary, details.firstChild);
+    block.appendChild(details);
+  });
+
+  // === Country & TOC Search (国カード + 全目次リンクを横断フィルタ) ===
   var searchInput = document.getElementById('countrySearch');
   var cards = document.querySelectorAll('.country-card');
+  var searchCount = document.getElementById('searchCount');
   if (searchInput) {
     searchInput.addEventListener('input', function() {
       var q = this.value.toLowerCase().trim();
+
+      // 国カード
+      var cardHits = 0;
       cards.forEach(function(card) {
         var text = (card.textContent + ' ' + (card.getAttribute('data-search') || '')).toLowerCase();
-        card.style.display = (!q || text.indexOf(q) !== -1) ? '' : 'none';
+        var show = (!q || text.indexOf(q) !== -1);
+        card.style.display = show ? '' : 'none';
+        if (show && q) cardHits++;
       });
+
+      // 目次リンク
+      var linkHits = 0;
+      document.querySelectorAll('#toc .toc-country').forEach(function(block) {
+        var title = block.querySelector('.toc-country-title');
+        var titleMatch = !!(q && title && title.textContent.toLowerCase().indexOf(q) !== -1);
+        var anyVisible = false;
+        block.querySelectorAll('.toc-links li').forEach(function(li) {
+          var a = li.querySelector('a');
+          var show = !q || titleMatch || (a && a.textContent.toLowerCase().indexOf(q) !== -1);
+          li.style.display = show ? '' : 'none';
+          if (show) { anyVisible = true; if (q) linkHits++; }
+        });
+        // 空になったカテゴリ見出しを隠す
+        block.querySelectorAll('.toc-category').forEach(function(catEl) {
+          var ul = catEl.nextElementSibling;
+          var hasVisible = false;
+          if (ul) {
+            ul.querySelectorAll('li').forEach(function(li) {
+              if (li.style.display !== 'none') hasVisible = true;
+            });
+          }
+          catEl.style.display = (!q || hasVisible) ? '' : 'none';
+        });
+        // 空の国ブロックを隠し、ヒットした国は自動展開
+        block.style.display = anyVisible ? '' : 'none';
+        var det = block.querySelector('details');
+        if (det) det.open = !!q && anyVisible;
+      });
+
+      if (searchCount) {
+        if (q) {
+          searchCount.hidden = false;
+          searchCount.textContent = '一致: 国カード ' + cardHits + '件 / 目次リンク ' + linkHits + '件';
+        } else {
+          searchCount.hidden = true;
+        }
+      }
     });
   }
 
-  // === Policy Rate Bars (as of March 2026) ===
-  var rates = [
-    { label: 'USD', rate: 3.58, color: '#5b8def' },
-    { label: 'EUR', rate: 2.15, color: '#ffd93d' },
-    { label: 'JPY', rate: 0.75, color: '#ff6b6b' },
-    { label: 'GBP', rate: 3.75, color: '#4ecdc4' },
-    { label: 'CHF', rate: 0.00, color: '#ff9f43' },
-    { label: 'AUD', rate: 4.10, color: '#00d4aa' },
-    { label: 'NZD', rate: 2.25, color: '#a78bfa' },
-    { label: 'CAD', rate: 2.25, color: '#f472b6' },
-    { label: 'SEK', rate: 1.75, color: '#38bdf8' },
-    { label: 'NOK', rate: 4.00, color: '#fb923c' }
-  ];
-  var maxRate = Math.max.apply(null, rates.map(function(r) { return r.rate; }));
+  // === Policy Rate Bars — window.G10_LATEST.policy (チャート月次データの最終値) から導出。
+  //     バーとチャートが乖離しない単一ソース。値のハードコード禁止。 ===
+  var RATE_BAR_COLORS = {
+    USD: '#5b8def', EUR: '#ffd93d', JPY: '#ff6b6b', GBP: '#4ecdc4', CHF: '#ff9f43',
+    AUD: '#00d4aa', NZD: '#a78bfa', CAD: '#f472b6', SEK: '#38bdf8', NOK: '#fb923c'
+  };
+  var RATE_BAR_ORDER = ['USD', 'EUR', 'JPY', 'GBP', 'CHF', 'AUD', 'NZD', 'CAD', 'SEK', 'NOK'];
+  var policyLatest = (window.G10_LATEST && window.G10_LATEST.policy) || null;
+  var rates = policyLatest ? RATE_BAR_ORDER.map(function(c) {
+    return { label: c, rate: Number(policyLatest[c]) || 0, color: RATE_BAR_COLORS[c] };
+  }) : [];
+  var maxRate = rates.length ? Math.max.apply(null, rates.map(function(r) { return r.rate; })) : 0;
   var barsContainer = document.getElementById('rateBars');
   if (barsContainer) {
     rates.forEach(function(r) {
@@ -1781,6 +2137,47 @@ document.addEventListener('DOMContentLoaded', function() {
         '<div class="rate-bar-bg"><div class="rate-bar-fill" style="width:' + pct + '%;background:' + r.color + '"><span>' + r.rate.toFixed(2) + '%</span></div></div>';
       barsContainer.appendChild(row);
     });
+  }
+
+  // === Live G10 Snapshot Strip — window.G10_LATEST から実行時に算出 ===
+  var snapWrap = document.getElementById('g10SnapshotWrap');
+  var snap = document.getElementById('g10Snapshot');
+  if (snapWrap && snap && policyLatest) {
+    var hi = null, lo = null;
+    RATE_BAR_ORDER.forEach(function(c) {
+      var r = Number(policyLatest[c]);
+      if (!isFinite(r)) return;
+      if (!hi || r > hi.rate) hi = { ccy: c, rate: r };
+      if (!lo || r < lo.rate) lo = { ccy: c, rate: r };
+    });
+    var cells = [
+      { label: 'Fed (米国)', value: policyLatest.USD.toFixed(2) + '%', sub: 'FF金利※' },
+      { label: 'ECB (ユーロ圏)', value: policyLatest.EUR.toFixed(2) + '%', sub: 'MRO金利' },
+      { label: 'BOJ (日本)', value: policyLatest.JPY.toFixed(2) + '%', sub: '無担保コールON' }
+    ];
+    if (hi && lo) {
+      cells.push({
+        label: '最高金利国',
+        value: hi.ccy + ' ' + hi.rate.toFixed(2) + '%',
+        sub: '最低は ' + lo.ccy + ' ' + lo.rate.toFixed(2) + '%'
+      });
+    }
+    var eq = window.G10_LATEST.equity;
+    if (eq && eq.sp500 && eq.sp500.first > 0) {
+      var spChg = Math.round((eq.sp500.last / eq.sp500.first - 1) * 100);
+      cells.push({ label: 'S&P 500', value: (spChg >= 0 ? '+' : '') + spChg + '%', sub: '2000年1月比' });
+    }
+    if (eq && eq.nikkei && eq.nikkei.first > 0) {
+      var nkChg = Math.round((eq.nikkei.last / eq.nikkei.first - 1) * 100);
+      cells.push({ label: '日経225', value: (nkChg >= 0 ? '+' : '') + nkChg + '%', sub: '2000年1月比' });
+    }
+    snap.innerHTML = cells.map(function(c) {
+      return '<div class="stat-cell">' +
+        '<div class="stat-label">' + c.label + '</div>' +
+        '<div class="stat-value">' + c.value + '</div>' +
+        '<div class="stat-sub">' + c.sub + '</div></div>';
+    }).join('');
+    snapWrap.hidden = false;
   }
 
   // === Scroll animation (Intersection Observer) ===

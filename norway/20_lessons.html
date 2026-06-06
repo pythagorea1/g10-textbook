@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Norway - Key Lessons | G10 Markets Textbook</title>
   <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
   <script defer src="../assets/charts.js"></script>
 </head>
 <body>
@@ -79,17 +80,51 @@
         <h2>教訓1: GPFGモデル — 資源の呪い（オランダ病）は制度設計で回避できる</h2>
         <div class="stat-grid">
           <div class="stat-card">
-            <div class="stat-value">NOK 18T+</div>
-            <div class="stat-label">GPFG運用資産 — 世界最大のSWF</div>
+            <div class="stat-value">NOK ~20兆</div>
+            <div class="stat-label">GPFG運用資産 — 世界最大のSWF（約2兆ドル、2026年3月末時点）</div>
           </div>
           <div class="stat-card">
             <div class="stat-value">GDP 300%+</div>
             <div class="stat-label">純国際投資ポジション</div>
           </div>
         </div>
-        <p>資源国の大半は「資源の呪い」に苦しむ。石油収入が国内に流入すると、通貨高・製造業衰退・財政規律の緩み・汚職が蔓延する。ノルウェーはGPFG（政府年金基金グローバル）という制度的イノベーションにより、この問題を回避した唯一のG10国家である。</p>
+        <p>資源国の大半は「資源の呪い」に苦しむ。石油収入が国内に流入すると、通貨高・製造業衰退・財政規律の緩み・汚職が蔓延する。ノルウェーはGPFG（政府年金基金グローバル）という制度的イノベーションにより、この問題を回避した唯一のG10国家である。GPFGの市場価値は2024年12月に初めてNOK 20兆を突破し、2025年末にはNOK 21.27兆に達した。2026年第1四半期は-1.9%のリターンで、2026年3月末時点の運用資産はNOK 19,998bn（約20兆クローネ、約2兆ドル）である（出典: NBIM）。</p>
         <p>GPFGの核心は、(1) 石油収入を100%海外資産に転換する、(2) 財政支出は運用収益の期待値（3%ルール、handlingsregelen）の範囲内に限定する、(3) 運用を政治的介入から隔離する（NBIMの独立性）、の3原則にある。この仕組みにより、石油資源の枯渇後も基金の運用収益が国家を支え続けることが想定されている。</p>
         <p><strong>他国への示唆:</strong> 豪州・カナダなど資源依存度の高いG10国はGPFGモデルを参照すべきだが、ノルウェーの成功は小国・高い社会的合意・長期的政治安定という前提条件に支えられており、単純な模倣は困難である。</p>
+
+        <!-- GPFG Market Value Growth Chart -->
+        <div id="gpfg-growth"></div>
+        <script>
+        ChartBuilder.lines('gpfg-growth', {
+          title: 'GPFG 運用資産の推移 (1998-2026, 年末値, NOK兆)',
+          caption: '出典: NBIM（ノルウェー銀行投資管理部門）年次報告および公式サイト掲載の市場価値データ。各年末の市場価値（2026年のみ3月末値 NOK 19,998bn）。1996年の初回繰入（約NOK 20億）から30年で約20兆クローネ（約2兆ドル）へ。2008年GFCの運用リターンは-23%だったが、石油収入の流入とNOK安により年末値はむしろ増加した。2014-16年の原油下落期には初の政府純引き出しが発生。10兆突破（2019年10月）まで23年、20兆突破（2024年12月）までは次のわずか5年 — 複利と継続入金の威力を示す。2026年Q1は-1.9%のリターンで一時的にNOK 20兆を割り込んだ。',
+          yRange: [0, 22],
+          yStep: 2,
+          yUnit: '兆',
+          series: [{
+            name: 'GPFG 市場価値 (NOK兆)',
+            color: '#00d4aa', width: 2.2,
+            data: [
+              [1998, 0.17], [2000, 0.39], [2002, 0.61], [2004, 1.02],
+              [2006, 1.78], [2008, 2.28], [2010, 3.08], [2012, 3.82],
+              [2014, 6.43], [2016, 7.51], [2018, 8.26], [2019, 10.09],
+              [2020, 10.91], [2021, 12.34], [2022, 12.43], [2023, 15.77],
+              [2024, 19.74], [2025, 21.27], [2026, 20.0]
+            ]
+          }],
+          bands: [
+            { from: 2014, to: 2016.5, label: '原油下落期', color: '#ff9f43' }
+          ],
+          annotations: [
+            { year: 2008, label: 'GFC -23%', color: '#ff9f43' },
+            { year: 2014, label: '原油暴落', color: '#ff9f43' },
+            { year: 2019.8, label: '10兆突破', color: '#00d4aa' },
+            { year: 2022, label: '株債同時安', color: '#ff9f43' },
+            { year: 2024.9, label: '20兆突破', color: '#00d4aa' },
+            { year: 2026, label: 'Q1 -1.9%', color: '#5b8def' }
+          ]
+        });
+        </script>
       </section>
 
       <!-- Lesson 2 -->
@@ -151,9 +186,9 @@
       <!-- Lesson 9 -->
       <section>
         <h2>教訓9: NATO・地政学リスクの再評価 — KongsbergとNorwegian Defence</h2>
-        <p>ロシアとの国境を接するNATO唯一のノルウェーは、2022年以降、地政学的に極めて重要な位置づけを獲得した。防衛セクター（Kongsberg +300%、Nammo受注急増）の急成長は、地政学リスクが株式市場に与える影響の好例である。</p>
+        <p>ロシアとの国境を接するNATO唯一のノルウェーは、2022年以降、地政学的に極めて重要な位置づけを獲得した。防衛セクター（Kongsberg 約10倍、Nammo受注急増）の急成長は、地政学リスクが株式市場に与える影響の好例である。</p>
         <p>ノルウェーは1949年のNATO創設メンバーであり、冷戦期には北大西洋の「前線国家」であった。冷戦終結後の「平和の配当」期間を経て、2022年のウクライナ侵攻は北極圏の安全保障環境を一変させた。フィンランド・スウェーデンのNATO加盟（2023-24年）により、北欧全体がNATOの一体的な防衛圏となった。</p>
-        <p><strong>市場影響:</strong> Kongsbergの株価は2020年からの4年間で約4倍に上昇し、Oslo Børsのセクター構成を変化させている。防衛セクターは石油・サーモンに続く「第3の柱」として認識されつつある。</p>
+        <p><strong>市場影響:</strong> Kongsbergの株価は2020年初から2026年半ばまでの6年余りで約10倍に上昇し（2025年末時点でも約8.5倍。株価高騰を受け2025年6月に1対5の株式分割を実施）、Oslo Børsのセクター構成を変化させている。防衛セクターは石油・サーモンに続く「第3の柱」として認識されつつある。</p>
       </section>
 
       <!-- Lesson 10 -->
@@ -180,7 +215,7 @@
             <tr><td>6</td><td>ペトロカレンシー</td><td>NOK-石油相関、GPFG通貨安定効果</td><td>G10最強の石油相関</td></tr>
             <tr><td>7</td><td>変動金利住宅ローン</td><td>95%変動、金融政策即効性</td><td>G10最高の変動金利比率</td></tr>
             <tr><td>8</td><td>エネルギー転換</td><td>Equinor改名、洋上風力、CCS</td><td>石油国のグリーン移行テスト</td></tr>
-            <tr><td>9</td><td>地政学リスク再評価</td><td>Kongsberg 4倍、NATO北極圏</td><td>防衛セクター急成長</td></tr>
+            <tr><td>9</td><td>地政学リスク再評価</td><td>Kongsberg 約10倍 (2020→26)、NATO北極圏</td><td>防衛セクター急成長</td></tr>
             <tr><td>10</td><td>小国開放経済</td><td>EU否決2回、EEA、繁栄</td><td>EU非加盟で最も繁栄した国</td></tr>
           </tbody>
         </table>
@@ -194,6 +229,19 @@
         <p>しかし、この成功には以下の前提条件があることを忘れてはならない: (1) 小規模な人口（550万人）による社会的合意の形成しやすさ、(2) 高い社会的信頼（Nordic Trust）、(3) 石油資源という運、(4) 冷戦期からの安定した民主主義。ノルウェー・モデルは「理想的な資源国」のテンプレートであるが、その再現可能性は限定的である。</p>
 
         <p>トレーダーにとって、ノルウェー市場は「石油価格へのベータ」と「世界で最も健全な財政のアルファ」の組み合わせとして理解される。OSEBX（Oslo Børs Benchmark Index）は石油・サーモン・防衛という3つのテーマ投資の交差点であり、GPFGの存在は「国家デフォルトリスクがほぼゼロ」という安全弁を提供する。ノルウェーは小国であるが、その市場メカニズムと制度設計は、G10全体の中で最も示唆に富む事例の一つである。</p>
+
+        <!-- Key Numbers -->
+        <div class="key-number-row">
+          <div class="key-number"><span class="key-number-value">NOK ~20兆</span><span class="key-number-label">GPFG運用資産（約2兆ドル、2026年3月末時点）— 世界最大のSWF</span></div>
+          <div class="key-number"><span class="key-number-value">~1.5%</span><span class="key-number-label">GPFGが保有する世界の上場株式の割合 — 約60カ国・7,000社超に分散</span></div>
+          <div class="key-number"><span class="key-number-value">4.00%</span><span class="key-number-label">Norges Bank政策金利（2026年3月時点）— G10で最高水準級を維持</span></div>
+        </div>
+
+        <div class="mnemonic-box">
+          <span class="mnemonic-icon">🧠</span>
+          <div class="mnemonic-title">覚え方: 「石油を株に変えた国」</div>
+          <div class="mnemonic-body">ノルウェーは北海油田の収入を国内でほぼ使わず、100%海外の株式・債券・不動産に転換し続けてきた。結果、GPFGは世界の上場株式の約1.5%を保有 — 「世界中の会社の100株に1.5株はノルウェー国民のもの」と覚える。人口約550万人で割ると国民1人あたり約NOK 360万（約5,000万円）。石油はいつか枯れるが、配当は枯れない — これが「資源の呪い」への最良の解答である。</div>
+        </div>
       </section>
 
       <!-- Sources -->
@@ -220,8 +268,8 @@
           <g>
             <rect x="40" y="60" width="230" height="110" rx="8" fill="#0f172a" stroke="#00d4aa" stroke-width="2"/>
             <text x="155" y="95" text-anchor="middle" fill="#00d4aa" font-size="14" font-weight="bold">GPFG</text>
-            <text x="155" y="125" text-anchor="middle" fill="#e2e8f0" font-size="24" font-weight="bold">$1.7T+</text>
-            <text x="155" y="150" text-anchor="middle" fill="#94a3b8" font-size="11">世界最大SWF</text>
+            <text x="155" y="125" text-anchor="middle" fill="#e2e8f0" font-size="24" font-weight="bold">~$2T</text>
+            <text x="155" y="150" text-anchor="middle" fill="#94a3b8" font-size="11">世界最大SWF (2026)</text>
             <rect x="285" y="60" width="230" height="110" rx="8" fill="#0f172a" stroke="#fbbf24" stroke-width="2"/>
             <text x="400" y="95" text-anchor="middle" fill="#fbbf24" font-size="14" font-weight="bold">石油輸出GDP比</text>
             <text x="400" y="125" text-anchor="middle" fill="#e2e8f0" font-size="24" font-weight="bold">~20%</text>
@@ -275,6 +323,8 @@
       });
     });
   </script>
+  <script src="../assets/enhancer.js"></script>
+  <script defer src="../assets/recall.js"></script>
   <script src="../assets/tts-reader.js"></script>
 </body>
 </html>

@@ -30,6 +30,7 @@
     // the banner appears even on pages with <2 headings.
     setupCountryIdentity();
     decorateCountryChips();
+    recordReadProgress();
 
     var article = document.querySelector('article');
     if (!article) return;
@@ -95,6 +96,24 @@
         header.insertBefore(banner, header.firstChild);
       }
     }
+  }
+
+  /* ---- Read-progress tracking (localStorage 'g10_read') ----
+     Maps "<country>/<filename>" -> epoch ms of the latest visit.
+     Consumed by index.html (continue-reading tile, per-country progress). */
+  function recordReadProgress() {
+    var key = detectCountryKey();
+    if (!key) return;
+    var parts = location.pathname.split('/');
+    var file = parts[parts.length - 1];
+    try { file = decodeURIComponent(file); } catch (err) { /* keep raw */ }
+    if (!file || !/\.html?$/i.test(file)) return;
+    try {
+      var read = JSON.parse(localStorage.getItem('g10_read') || '{}');
+      if (!read || typeof read !== 'object' || Array.isArray(read)) read = {};
+      read[key + '/' + file] = Date.now();
+      localStorage.setItem('g10_read', JSON.stringify(read));
+    } catch (err) { /* localStorage unavailable (private mode etc.) */ }
   }
 
   function decorateCountryChips() {

@@ -75,6 +75,26 @@
     </header>
 
     <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">38,915円</div>
+          <div class="stat-label">日経平均 史上最高値（1989年末、2024年2月まで34年間未更新）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">-87%</div>
+          <div class="stat-label">商業地価の最大下落率（ピーク比）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">約100兆円</div>
+          <div class="stat-label">不良債権処理損失の累計（1990年代〜2005年）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">1997年11月</div>
+          <div class="stat-label">拓銀・山一が同月破綻 — 戦後最悪の金融危機月</div>
+        </div>
+      </div>
+
       <!-- Crisis Timeline Overview -->
       <section>
         <h2>1. 日本の金融危機年表</h2>
@@ -144,6 +164,70 @@
         </table>
       </section>
 
+      <!-- Crisis Comparison: Nikkei drawdown & recovery -->
+      <section>
+        <h2>主要危機の比較 — 日経平均下落率と回復年数</h2>
+        <p>
+          各危機を「日経平均の下落率」と「危機前の高値を取り戻すまでの年数」で並べると、バブル崩壊の異質さが一目で分かる。通常の危機は数年で回復するが、バブル崩壊だけは回復に34年を要した。
+        </p>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>危機</th>
+              <th>期間</th>
+              <th>日経平均下落率</th>
+              <th>回復までの年数</th>
+              <th>政策対応</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="highlight-red">バブル崩壊</td>
+              <td>1990-2003</td>
+              <td><span class="drawdown-badge">-80%</span> 38,915円→7,608円</td>
+              <td class="highlight-red">34年（2024年2月に更新）</td>
+              <td>公定歩合6%→0.5%、ゼロ金利（1999）・量的緩和（2001）へ</td>
+            </tr>
+            <tr>
+              <td class="highlight-orange">銀行危機</td>
+              <td>1997-98</td>
+              <td><span class="drawdown-badge">-38%</span> 20,681円→12,879円</td>
+              <td>約3年（2000年春に一時回復→IT崩壊で再下落）</td>
+              <td>金融再生法・早期健全化法、公的資金約7.5兆円、長銀・日債銀国有化</td>
+            </tr>
+            <tr>
+              <td>ITバブル崩壊</td>
+              <td>2000-01</td>
+              <td><span class="drawdown-badge">-53%</span> 20,833円→9,775円</td>
+              <td>15年（2015年6月に「ITバブル超え」）</td>
+              <td>2000年8月のゼロ金利解除を撤回、2001年3月 量的緩和（QE）導入</td>
+            </tr>
+            <tr>
+              <td class="highlight-orange">GFC（リーマン）</td>
+              <td>2008-09</td>
+              <td><span class="drawdown-badge">-61%</span> 18,261円→7,055円</td>
+              <td>約7年半（2015年2月）</td>
+              <td>利下げ0.5%→0.1%、CP・社債買入れ、約15兆円の景気対策</td>
+            </tr>
+            <tr>
+              <td>東日本大震災</td>
+              <td>2011</td>
+              <td><span class="drawdown-badge">-18%</span> 10,434円→8,605円（3営業日）</td>
+              <td>約2年（2013年初）</td>
+              <td>日銀 約100兆円の緊急流動性供給、G7協調円売り介入</td>
+            </tr>
+            <tr>
+              <td>COVID-19</td>
+              <td>2020</td>
+              <td><span class="drawdown-badge">-31%</span> 24,083円→16,553円</td>
+              <td>約10か月（2020年11月）</td>
+              <td>ETF買入れ年12兆円へ倍増、政府 約77兆円の経済対策</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="font-size:0.85rem; opacity:0.8;">注: 下落率は日経平均の終値ベース（危機前高値→安値）。回復年数はその高値水準を終値で再び上回るまでの期間。</p>
+      </section>
+
       <!-- Section 2: Bubble and Collapse -->
       <section>
         <h2>2. バブル経済とその崩壊（1985-1992年）</h2>
@@ -177,6 +261,13 @@
         <p>
           1997年11月、日本の金融史上最も深刻な月を迎えた。三洋証券がコール市場でデフォルトし（戦後初のインターバンク市場でのデフォルト）、北海道拓殖銀行が経営破綻（都市銀行として戦後初の破綻）、そして準大手証券の山一證券が自主廃業を発表した。山一證券の野澤正平社長が記者会見で「社員は悪くありません」と涙ながらに訴えた映像は、日本の金融危機を象徴するシーンとなった。
         </p>
+
+        <div class="mnemonic-box">
+          <span class="mnemonic-icon">🧠</span>
+          <div class="mnemonic-title">記憶のフック：「山一の涙」— 1997年11月</div>
+          <div class="mnemonic-body">三洋証券デフォルト→拓銀破綻→山一自主廃業が同じ1か月に連鎖。野澤社長の「社員は悪くありません」という涙の自主廃業会見は、戦後最大級の破綻であると同時に、「銀行・証券は潰さない」護送船団方式の終焉を告げた瞬間として覚えよう。</div>
+        </div>
+
         <p>
           1998年には日本長期信用銀行（長銀）と日本債券信用銀行（日債銀）が相次いで国有化された。この一連の破綻は「ジャパン・プレミアム」と呼ばれる日本の銀行に対するリスクプレミアムを生み出し、海外市場での円資金調達コストが上昇した。
         </p>
@@ -191,6 +282,21 @@
         <p>
           りそな危機を転機として、小泉政権の竹中平蔵金融担当大臣のもとで不良債権処理が加速した。「金融再生プログラム」により、主要銀行の不良債権比率は2002年3月の8.4%から2005年3月には2.9%まで低下し、約10年に及んだ銀行危機はようやく終息に向かった。
         </p>
+
+        <div class="key-number-row">
+          <div class="key-number">
+            <span class="key-number-value">1,500兆円</span>
+            <span class="key-number-label">バブル崩壊による資産毀損（株式+不動産、GDP約3年分）</span>
+          </div>
+          <div class="key-number">
+            <span class="key-number-value">約7.5兆円</span>
+            <span class="key-number-label">1998-99年 主要行への公的資金注入</span>
+          </div>
+          <div class="key-number">
+            <span class="key-number-value">8.4%→2.9%</span>
+            <span class="key-number-label">主要行の不良債権比率（2002年3月→2005年3月）</span>
+          </div>
+        </div>
       </section>
 
       <!-- Section 4: 1927 Crisis -->
@@ -305,11 +411,11 @@
         ]
       }],
       annotations: [
-        { year: 1989.92, label: '89/12 38,915', color: '#ff6b6b' },
-        { year: 1998.00, label: '98 銀行危機',  color: '#ff6b6b' },
-        { year: 2003.33, label: '03/4 底7,608', color: '#4ecdc4' },
-        { year: 2008.83, label: '08 リーマン',  color: '#ff6b6b' },
-        { year: 2011.25, label: '11/3 震災',    color: '#ff6b6b' },
+        { year: 1989.92, label: '89/12 38,915', color: '#ff6b6b', href: '#sec-2-バブル経済とその崩壊-1985-1992年' },
+        { year: 1998.00, label: '98 銀行危機',  color: '#ff6b6b', href: '#sec-1997-1998年の金融危機' },
+        { year: 2003.33, label: '03/4 底7,608', color: '#4ecdc4', href: '#sec-りそな危機と不良債権処理の完了-2003年' },
+        { year: 2008.83, label: '08 リーマン',  color: '#ff6b6b', href: '#sec-リーマンショック-2008年' },
+        { year: 2011.25, label: '11/3 震災',    color: '#ff6b6b', href: '#sec-東日本大震災-2011年' },
         { year: 2024.50, label: '24/7 42,224',  color: '#4ecdc4' }
       ]
     });
@@ -333,6 +439,11 @@
       </ol>
       <p class="note">注: 経済データは各時点の概算値。不良債権比率等は金融庁公表データに基づく。</p>
     </footer>
+
+    <nav class="page-nav">
+      <a href="14_currency.html" class="prev">円の歴史 (History of the Japanese Yen)</a>
+      <a href="16_banking.html" class="next">日本の銀行セクター (Japanese Banking Sector)</a>
+    </nav>
   </main>
 
   <script>
@@ -356,6 +467,7 @@
     });
   </script>
   <script src="../assets/enhancer.js"></script>
+  <script defer src="../assets/recall.js"></script>
   <script src="../assets/tts-reader.js"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sweden - Financial Crises | G10 Markets Textbook</title>
   <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
   <script defer src="../assets/charts.js"></script>
 </head>
 <body>
@@ -97,6 +98,32 @@
       <p>
         スウェーデンは小国ながら、20世紀から21世紀にかけて世界金融史に深く刻まれる複数の危機を経験してきた。1932年のクロイガー事件（Kreuger Crash）は世界恐慌期における最大級の企業詐欺であり、1990年代初頭の銀行危機は「バッドバンク」モデルの原型として2008年の世界金融危機（GFC）における各国の政策対応に直接的な影響を与えた。スウェーデンの危機管理モデルは、迅速な介入、透明性、損失の早期認識という3原則に基づき、IMFや各国中央銀行から「危機管理の教科書」として参照され続けている。本章では、クロイガー事件から2023年のSBB（Samhallsbyggnadsbolaget）ショックまで、スウェーデンが直面した主要な金融危機を体系的に分析する。
       </p>
+
+      <!-- Key Numbers: 一撃で記憶に残る数字 -->
+      <div class="key-number-row">
+        <div class="key-number">
+          <span class="key-number-value">500%</span>
+          <span class="key-number-label">1992年9月16日 限界貸出金利（通貨防衛）</span>
+        </div>
+        <div class="key-number">
+          <span class="key-number-value">-95%</span>
+          <span class="key-number-label">Ericsson株 2000-02（ITバブル崩壊）</span>
+        </div>
+        <div class="key-number">
+          <span class="key-number-value">-96%</span>
+          <span class="key-number-label">SBB株 2021-23（金利ショック）</span>
+        </div>
+        <div class="key-number">
+          <span class="key-number-value">2行</span>
+          <span class="key-number-label">1990-93危機で国有化された大手銀行（Nordbanken・Gota Bank）</span>
+        </div>
+      </div>
+
+      <div class="mnemonic-box">
+        <span class="mnemonic-icon">&#x1F9E0;</span>
+        <div class="mnemonic-title">「500%の夜」&mdash; 1992年9月16日</div>
+        <div class="mnemonic-body">ポンドとリラがERMを離脱した「ブラック・ウェンズデー」の同日、リクスバンクは固定相場を守るため限界貸出金利を年率<strong>500%</strong>へ引き上げた &mdash; 史上最高水準の通貨防衛金利。しかしわずか2か月後の11月19日、ペッグは放棄されクローナは変動相場制へ。「市場と戦う中央銀行は最後には負ける」を象徴する一夜として記憶せよ。</div>
+      </div>
 
       <!-- ============================================================ -->
       <!-- Section 1: Crisis Timeline Overview -->
@@ -356,6 +383,40 @@
           しかし、3Gライセンスオークション（欧州各国で総額US$100B以上が支払われた）後の通信事業者の財務悪化、設備投資の急激な削減、そして2000年3月のエリクソンのアルバカーキ工場火災（主要サプライヤーの半導体工場）が重なり、エリクソンの株価は壊滅的な下落を開始した。2000年3月のピーク約SEK 100から2002年10月にはSEK 5を下回り、<strong>下落率は-95%</strong>に達した。携帯端末事業の分離（ソニーとの合弁「Sony Ericsson」設立、2001年10月）、数万人規模のリストラ、そして事業構造の抜本的転換を余儀なくされた。
         </p>
 
+        <!-- Ericsson 2000-2002 collapse chart (ChartBuilder) -->
+        <div id="se-ericsson-collapse-2000-02"></div>
+        <script>
+        ChartBuilder.lines('se-ericsson-collapse-2000-02', {
+          title: 'Ericsson B株 1999-2003 — ITバブル崩壊で-95%超（対数スケール）',
+          caption: '出典: Nasdaq Stockholm; Internetmuseum; Ericsson "The bubble bursts". 株式分割（2000年5月、4:1）調整後のSEK建て。2000年3月6日に726クローナ（分割調整後 約181）でピークを付け、2001年3月の業績警告、3G投資急減、2002年9月のSEK 30B緊急増資を経て、2002年10月に約SEK 3.6まで下落（ピーク比 約-98%）。2001年10月には携帯端末事業をSony Ericssonに分離。対数スケール表示。',
+          logScale: true,
+          yRange: [3, 220],
+          yUnit: '',
+          series: [{
+            name: 'Ericsson B (SEK, 分割調整後)',
+            color: '#ff9f43', width: 2,
+            data: [
+              [1999.00, 45], [1999.25, 48], [1999.50, 60], [1999.75, 75], [1999.92, 110],
+              [2000.10, 150], [2000.18, 181], [2000.30, 155], [2000.45, 168], [2000.60, 160],
+              [2000.75, 120], [2000.92, 105],
+              [2001.10, 85], [2001.25, 55], [2001.50, 55], [2001.70, 45], [2001.92, 55],
+              [2002.10, 45], [2002.30, 30], [2002.50, 15], [2002.65, 8],
+              [2002.77, 3.6], [2002.92, 6], [2003.00, 7]
+            ]
+          }],
+          bands: [
+            { from: 2000.18, to: 2002.80, label: 'ITバブル崩壊', color: '#ff9f43' }
+          ],
+          annotations: [
+            { year: 2000.18, label: '00/3 ピーク181', color: '#ff9f43' },
+            { year: 2001.25, label: '01/3 業績警告', color: '#ff6b6b' },
+            { year: 2001.79, label: '01/10 Sony Ericsson', color: '#4ecdc4' },
+            { year: 2002.60, label: '02/9 緊急増資', color: '#5b8def' },
+            { year: 2002.77, label: '02/10 底3.6 -95%超', color: '#ff6b6b' }
+          ]
+        });
+        </script>
+
         <h3>広範なテレコム・IT・セクターの崩壊</h3>
         <p>
           エリクソン以外にも、スウェーデンのIT・テレコム関連企業は軒並み壊滅的な株価下落を経験した。テリアソネラ（Telia、現Telia Company）は2000年のIPO価格SEK 85から2002年にはSEK 20以下に暴落した。フレームテクノロジー（Framtidsteknologi）などの新興IT企業の多くは完全に消滅した。キスタ・サイエンス・シティ（Kista Science City）のテック・ハブは空室率が急上昇し、「IT墓場」と呼ばれた。
@@ -485,6 +546,37 @@
             </tr>
           </tbody>
         </table>
+
+        <!-- SBB 2021-2023 collapse chart (ChartBuilder) -->
+        <div id="se-sbb-collapse-2021-23"></div>
+        <script>
+        ChartBuilder.lines('se-sbb-collapse-2021-23', {
+          title: 'SBB B株 2020-2023 — 金利ショックで-96%',
+          caption: '出典: Nasdaq Stockholm; TradingView (OMXSTO:SBB_B); S&P Global Ratings. SBB B株は2021年11月22日に史上最高値SEK 69.4を付けた後、2022年4月のリクスバンク利上げ開始（レポレート0%→引き上げ）で高レバレッジ・モデルが崩壊。2023年5月のS&P格下げ（BBB-→BB+、投資適格喪失）で暴落が加速し、2023年秋にはSEK 2.3-2.9まで下落（ピーク比 約-96%）。',
+          yRange: [0, 75],
+          yStep: 15,
+          yUnit: '',
+          series: [{
+            name: 'SBB B (SEK)',
+            color: '#5b8def', width: 2,
+            data: [
+              [2020.00, 25], [2020.20, 17], [2020.50, 22], [2020.92, 29],
+              [2021.20, 32], [2021.50, 39], [2021.70, 48], [2021.89, 68], [2021.95, 62],
+              [2022.10, 50], [2022.27, 38], [2022.40, 25], [2022.55, 14], [2022.70, 20], [2022.92, 17],
+              [2023.10, 16], [2023.35, 5.5], [2023.50, 4.5], [2023.72, 2.9], [2023.78, 2.3], [2023.92, 3.5]
+            ]
+          }],
+          bands: [
+            { from: 2022.27, to: 2023.92, label: '利上げサイクル', color: '#ff6b6b' }
+          ],
+          annotations: [
+            { year: 2021.89, label: '21/11 ピーク68', color: '#00d4aa' },
+            { year: 2022.27, label: '22/4 利上げ開始', color: '#ff6b6b' },
+            { year: 2023.35, label: '23/5 格下げBB+', color: '#ff9f43' },
+            { year: 2023.78, label: '23/9 底2.3 -96%', color: '#ff6b6b' }
+          ]
+        });
+        </script>
 
         <p>
           SBBの問題は同社に限定されなかった。カステルム（Castellum）、ファストファシャー・バスタッド（Fastighets AB Balder）、その他の北欧不動産会社も軒並み株価が50-70%下落した。スウェーデンの商業不動産セクター全体で社債スプレッドが急拡大し、社債市場の流動性が枯渇した。変動金利住宅ローンの利払い負担は家計を直撃し、住宅価格はピーク（2022年初）から約15-20%下落した。
@@ -657,25 +749,40 @@
         <p class="source"><cite>[28] IMF, "Systemic Banking Crises Revisited", Laeven &amp; Valencia, WP/18/206, 2018; [29] BIS Annual Reports, various years; [30] OECD, "Financial Crisis: Past, Present and Policy Responses", 2012.</cite></p>
       </section>
 
-    
-<figure class="chart-figure">
-  <figcaption class="chart-title">瑞 主要危機</figcaption>
-  <svg class="svg-chart" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet">
-    <g class="chart-grid">
-      <line x1="60" y1="50" x2="60" y2="340" stroke="#3a4a5e"/>
-      <line x1="60" y1="340" x2="780" y2="340" stroke="#3a4a5e"/>
-      <line x1="60" y1="340.0" x2="780" y2="340.0" stroke="#243244" stroke-width="0.5"/><text x="54" y="343.0" text-anchor="end" fill="#8fa3bf" font-size="10">-50.6</text><line x1="60" y1="267.5" x2="780" y2="267.5" stroke="#243244" stroke-width="0.5"/><text x="54" y="270.5" text-anchor="end" fill="#8fa3bf" font-size="10">99.6</text><line x1="60" y1="195.0" x2="780" y2="195.0" stroke="#243244" stroke-width="0.5"/><text x="54" y="198.0" text-anchor="end" fill="#8fa3bf" font-size="10">249.7</text><line x1="60" y1="122.5" x2="780" y2="122.5" stroke="#243244" stroke-width="0.5"/><text x="54" y="125.5" text-anchor="end" fill="#8fa3bf" font-size="10">399.9</text><line x1="60" y1="50.0" x2="780" y2="50.0" stroke="#243244" stroke-width="0.5"/><text x="54" y="53.0" text-anchor="end" fill="#8fa3bf" font-size="10">550.0</text>
-    </g>
-    <path class="chart-line" d="M 60.0,74.2 L 106.5,311.7 L 431.6,313.7 L 594.2,315.8 L 780.0,313.7" fill="none" stroke="#00d4aa" stroke-width="2"/>
-    <g class="chart-annotation"><circle cx="60.0" cy="74.2" r="4" fill="#ff6b6b"/><line x1="60.0" y1="74.2" x2="60.0" y2="59.2" stroke="#ff6b6b" stroke-width="1"/><rect x="22.0" y="45.2" width="76" height="14" fill="rgba(10,15,25,0.85)" rx="2"/><text x="60.0" y="56.2" text-anchor="middle" fill="#ff6b6b" font-size="10">500%防衛</text></g><g class="chart-annotation"><circle cx="594.2" cy="315.8" r="4" fill="#ff6b6b"/><line x1="594.2" y1="315.8" x2="594.2" y2="330.8" stroke="#ff6b6b" stroke-width="1"/><rect x="556.2" y="332.8" width="76" height="14" fill="rgba(10,15,25,0.85)" rx="2"/><text x="594.2" y="343.8" text-anchor="middle" fill="#ff6b6b" font-size="10">NIRP</text></g>
-    <g class="chart-axis">
-      <text x="60" y="360" fill="#8fa3bf" font-size="10">1992</text>
-      <text x="780" y="360" text-anchor="end" fill="#8fa3bf" font-size="10">2023</text>
-      <text x="420" y="385" text-anchor="middle" fill="#8fa3bf" font-size="11">Repo %</text>
-    </g>
-  </svg>
-  <p class="chart-caption">Repo %</p>
-</figure>
+
+      <!-- 1992 krona defense chart (ChartBuilder) — replaces auto-generated placeholder -->
+      <div id="se-krona-defense-1990-93"></div>
+      <script>
+      ChartBuilder.lines('se-krona-defense-1990-93', {
+        title: 'スウェーデン 1992年通貨防衛 — 限界貸出金利500%',
+        caption: '出典: Riksbank "Interest rate 500% – the krona floats" (Historical timeline); Riksbank "From crises to targeting inflation". リクスバンクの限界貸出金利（marginal rate）、対数スケール。1990年10月に17%、1991年12月のマルカ切下げ余波で17.5%へ。1992年9月8日に16%→24%、9月9日に75%、そしてポンド・リラがERMを離脱した9月16日に年率500%へ引き上げ。9月21日に50%へ戻し段階的に引き下げたが防衛は失敗、11月19日にECUペッグを放棄して変動相場制へ移行（年末12.5%）。1993年はインフレ目標導入とともに約9%まで緩和。',
+        logScale: true,
+        yRange: [8, 600],
+        yUnit: '%',
+        series: [{
+          name: '限界貸出金利',
+          color: '#ff6b6b', width: 2,
+          data: [
+            [1990.00, 14], [1990.50, 15], [1990.78, 17],
+            [1991.00, 16], [1991.37, 13], [1991.60, 11.5], [1991.85, 11.5], [1991.94, 17.5],
+            [1992.05, 13.5], [1992.20, 12.5], [1992.45, 12.5], [1992.64, 16],
+            [1992.687, 24], [1992.690, 75], [1992.710, 500], [1992.723, 50],
+            [1992.760, 24], [1992.820, 20], [1992.886, 12.5],
+            [1993.00, 11.5], [1993.25, 10], [1993.50, 9]
+          ]
+        }],
+        bands: [
+          { from: 1992.60, to: 1992.92, label: '通貨防衛戦', color: '#ff6b6b' }
+        ],
+        annotations: [
+          { year: 1990.78, label: '90/10 17%', color: '#ff9f43' },
+          { year: 1991.94, label: '91/12 17.5%', color: '#ff9f43' },
+          { year: 1992.71, label: '92/9 500%!!', color: '#ff6b6b' },
+          { year: 1992.886, label: '92/11 変動相場制', color: '#4ecdc4' },
+          { year: 1993.40, label: '93 緩和へ', color: '#5b8def' }
+        ]
+      });
+      </script>
 
     </article>
 
@@ -774,6 +881,8 @@
     });
   </script>
 
+  <script src="../assets/enhancer.js"></script>
+  <script defer src="../assets/recall.js"></script>
   <script src="../assets/tts-reader.js"></script>
 </body>
 </html>

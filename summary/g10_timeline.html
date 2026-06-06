@@ -6,6 +6,7 @@
   <title>G10 Summary Timeline | G10 Markets Textbook</title>
   <link rel="stylesheet" href="../assets/style.css">
   <script src="../assets/chart-builder.js"></script>
+  <script src="../data/timeline_events.js"></script>
   <style>
     /* Timeline-specific overrides */
     body { display: block; }
@@ -235,6 +236,146 @@
       .mega-table { font-size: 0.68rem; }
       .mega-table td { min-width: 90px; font-size: 0.65rem; }
     }
+
+    /* ================================================== */
+    /* Phase 2: Interactive Swimlane Timeline + page fixes */
+    /* ================================================== */
+    .hero-lede {
+      color: var(--accent-yellow);
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      margin-top: 0.6rem;
+      letter-spacing: 0.03em;
+    }
+
+    /* Section jump nav (pills) */
+    .tl-jumpnav { display: flex; flex-wrap: wrap; gap: 0.4rem; justify-content: center; margin: 0.9rem 0 0.3rem; }
+    .tl-jumpnav a {
+      display: inline-block; padding: 0.22rem 0.62rem;
+      border: 1px solid var(--border-color); border-radius: 999px;
+      background: var(--bg-card); color: var(--text-secondary);
+      font-family: var(--font-mono); font-size: 0.72rem; text-decoration: none;
+      transition: all var(--transition);
+    }
+    .tl-jumpnav a:hover { border-color: var(--accent-teal); color: var(--accent-teal); }
+
+    /* Sticky control bar */
+    .tl-controls {
+      position: sticky; top: 0; z-index: 60;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color); border-radius: 8px;
+      padding: 0.55rem 0.8rem; margin: 1rem 0 0.8rem;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+    }
+    .tl-ctrl-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem; margin: 0.25rem 0; }
+    .tl-ctrl-label { font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted); margin-right: 0.15rem; }
+    .tl-chip {
+      background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 999px;
+      padding: 0.16rem 0.58rem; font-size: 0.74rem; cursor: pointer;
+      font-family: var(--font-mono); color: var(--text-primary);
+      transition: opacity .15s, transform .1s;
+    }
+    .tl-chip:hover { transform: translateY(-1px); }
+    .tl-chip.off { opacity: 0.28; filter: grayscale(0.7); }
+    .tl-zoom, #tl-reset {
+      background: var(--bg-card); border: 1px solid var(--border-color);
+      color: var(--text-secondary); border-radius: 4px;
+      padding: 0.18rem 0.55rem; font-size: 0.72rem; cursor: pointer; font-family: var(--font-mono);
+    }
+    .tl-zoom.active { background: var(--accent-teal); color: var(--bg-primary); border-color: var(--accent-teal); }
+    #tl-reset:hover { border-color: var(--accent-yellow); color: var(--accent-yellow); }
+    #tl-search {
+      background: var(--bg-card); border: 1px solid var(--border-color);
+      color: var(--text-primary); border-radius: 4px;
+      padding: 0.24rem 0.5rem; font-size: 0.78rem; width: 240px; font-family: var(--font-mono);
+    }
+    #tl-search-count { font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-yellow); min-width: 80px; }
+
+    /* Swimlane */
+    .tl-swim-wrap {
+      position: relative; border: 1px solid var(--border-color); border-radius: 8px;
+      background: var(--bg-card); margin-bottom: 0.9rem; overflow: hidden;
+    }
+    .tl-swim-scroll { overflow-x: auto; overflow-y: hidden; }
+    .tl-canvas { position: relative; }
+    #tl-svg-host { position: absolute; top: 0; left: 0; }
+    #tl-svg-host svg { display: block; }
+    .tl-lane-labels { position: sticky; left: 0; z-index: 6; width: 96px; pointer-events: none; }
+    .tl-lane-label {
+      height: 46px; display: flex; align-items: center; gap: 6px; padding-left: 10px;
+      font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-secondary);
+      background: linear-gradient(90deg, var(--bg-card) 0%, var(--bg-card) 62%, transparent 100%);
+    }
+    .tl-ev { cursor: pointer; transform-box: fill-box; transform-origin: center; transition: transform .12s ease; }
+    .tl-ev:hover { transform: scale(1.7); }
+    .tl-tooltip {
+      position: absolute; z-index: 8; pointer-events: none; display: none;
+      background: rgba(10,14,20,0.95); border: 1px solid var(--border-color); border-radius: 6px;
+      padding: 0.28rem 0.55rem; font-size: 0.74rem; color: var(--text-primary); white-space: nowrap;
+    }
+    .tl-popover {
+      position: absolute; z-index: 9; width: 300px;
+      background: var(--bg-secondary); border: 1px solid var(--accent-teal); border-radius: 8px;
+      padding: 0.7rem 0.85rem; box-shadow: 0 10px 28px rgba(0,0,0,0.55);
+      font-size: 0.8rem; line-height: 1.6;
+    }
+    .tl-popover .tl-pop-date { font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-yellow); }
+    .tl-popover h4 { margin: 0.15rem 0 0.3rem; font-size: 0.95rem; color: var(--text-primary); }
+    .tl-popover p { margin: 0.35rem 0 0.45rem; color: var(--text-secondary); font-size: 0.78rem; }
+    .tl-pop-cat {
+      display: inline-block; border-radius: 999px; padding: 0.05rem 0.5rem;
+      font-size: 0.68rem; font-family: var(--font-mono); color: #0d1117; font-weight: 700;
+    }
+    .tl-pop-link { color: var(--accent-teal); font-size: 0.78rem; text-decoration: none; font-family: var(--font-mono); }
+    .tl-pop-link:hover { color: var(--accent-green); }
+    .tl-pop-close {
+      position: absolute; top: 4px; right: 8px; background: none; border: none;
+      color: var(--text-muted); font-size: 1rem; cursor: pointer; line-height: 1;
+    }
+    .tl-pop-close:hover { color: var(--accent-red); }
+    .tl-hint {
+      position: absolute; top: 8px; right: 12px; z-index: 7;
+      background: rgba(0,0,0,0.55); color: var(--accent-yellow);
+      padding: 0.18rem 0.6rem; border-radius: 999px;
+      font-size: 0.72rem; font-family: var(--font-mono);
+      transition: opacity .6s; pointer-events: none;
+    }
+    .tl-hint.hide { opacity: 0; }
+
+    /* Mobile / print fallback: era-grouped vertical list */
+    .tl-mobile-list { display: none; }
+    .tl-era-group { margin: 1rem 0 1.4rem; padding-left: 0.8rem; border-left: 4px solid var(--border-color); }
+    .tl-era-group > h3 { font-family: var(--font-mono); font-size: 0.95rem; margin: 0 0 0.6rem; }
+    .timeline-item.reform::before { background: var(--accent-teal); }
+    .timeline-item.milestone::before { background: var(--accent-green); }
+    .timeline-item.war::before { background: #e74c3c; }
+    .tl-mobile-list details { margin: 0.2rem 0; }
+    .tl-mobile-list summary { cursor: pointer; color: var(--text-muted); font-size: 0.76rem; }
+    .tl-mobile-list .timeline-content p { margin: 0.3rem 0; font-size: 0.82rem; }
+    .tl-ev-link { color: var(--accent-teal); font-size: 0.76rem; text-decoration: none; font-family: var(--font-mono); }
+
+    /* Table fixes */
+    #mega-timeline-wrap { max-height: 70vh; overflow-y: auto; }
+    .tl-sort-note {
+      font-size: 0.6rem; color: var(--text-muted); border: 1px solid var(--border-color);
+      border-radius: 4px; padding: 0 4px; margin-left: 4px; font-weight: normal; vertical-align: middle;
+    }
+    .tl-restore-link {
+      background: none; border: none; color: var(--accent-blue); font-size: 0.74rem;
+      cursor: pointer; font-family: var(--font-mono); padding: 0;
+      display: inline-block; margin: -1.4rem 0 1.6rem;
+    }
+    .tl-restore-link:hover { color: var(--accent-teal); text-decoration: underline; }
+
+    @media (max-width: 768px) {
+      .tl-swim-wrap { display: none; }
+      .tl-mobile-list { display: block; }
+      #tl-search { width: 100%; }
+    }
+    @media print {
+      .tl-swim-wrap, .tl-controls, .tl-jumpnav { display: none !important; }
+      .tl-mobile-list { display: block !important; }
+    }
   </style>
 </head>
 <body>
@@ -249,7 +390,20 @@
       G10通貨国（米国・ユーロ圏・日本・英国・スイス・豪州・NZ・カナダ・スウェーデン・ノルウェー）の金融市場史を年代別に横断比較。<br>
       政策金利、株価指数、主要イベントを一覧し、グローバル金融システムの相互連関を俯瞰する。
     </p>
+    <p class="hero-lede">1668年から2026年まで — 10カ国・295イベントを1つの時間軸で</p>
   </div>
+
+  <nav class="tl-jumpnav" aria-label="セクションジャンプ">
+    <a href="#sec-cb">①中銀比較</a>
+    <a href="#sec-mega">②メガ年表</a>
+    <a href="#sec-rates">③政策金利</a>
+    <a href="#sec-equity">④株式</a>
+    <a href="#sec-currency">⑤通貨制度</a>
+    <a href="#sec-crises">⑥危機比較</a>
+    <a href="#sec-structure">⑦構造</a>
+    <a href="#sec-themes">⑧テーマ解説</a>
+    <a href="#sec-chartnav">⑨チャートNav</a>
+  </nav>
 
   <div class="country-strip">
     <a href="../us/01_central_bank.html">🇺🇸 US</a>
@@ -271,9 +425,66 @@
   </div>
 
   <!-- ====================================================== -->
+  <!-- Section 0: Interactive Swimlane Timeline (Phase 2)      -->
+  <!-- ====================================================== -->
+  <h2 class="section-header" id="sec-swimlane">⏱ G10 スイムレーン年表 — Interactive Timeline (1907–2025)</h2>
+  <p class="section-desc">
+    295イベントを11レーン（🌍 グローバル + 10カ国）×1つの時間軸にプロット。<strong>マーカーをクリック</strong>すると解説カードと教科書リンクが開く。
+    分類・国・期間・検索で絞り込み可能。◆=危機、■=戦争・地政学、●=その他。オレンジの縦線は世界全体を揺らした危機（1929・1987・2008・2020…）。
+  </p>
+
+  <div class="tl-controls" id="tl-controls">
+    <div class="tl-ctrl-row">
+      <span class="tl-ctrl-label">分類:</span>
+      <button class="tl-chip tl-cat-chip" data-cat="crisis" style="border-color:#ff9f43;color:#ff9f43;">◆ 危機</button>
+      <button class="tl-chip tl-cat-chip" data-cat="hike" style="border-color:#ff6b6b;color:#ff6b6b;">● 利上げ</button>
+      <button class="tl-chip tl-cat-chip" data-cat="cut" style="border-color:#5b8def;color:#5b8def;">● 利下げ</button>
+      <button class="tl-chip tl-cat-chip" data-cat="reform" style="border-color:#4ecdc4;color:#4ecdc4;">● 改革</button>
+      <button class="tl-chip tl-cat-chip" data-cat="milestone" style="border-color:#00d4aa;color:#00d4aa;">● マイルストーン</button>
+      <button class="tl-chip tl-cat-chip" data-cat="war" style="border-color:#e74c3c;color:#e74c3c;">■ 戦争・地政学</button>
+    </div>
+    <div class="tl-ctrl-row">
+      <span class="tl-ctrl-label">国:</span>
+      <button class="tl-chip tl-country-chip" data-country="global">🌍 全体</button>
+      <button class="tl-chip tl-country-chip" data-country="us">🇺🇸 US</button>
+      <button class="tl-chip tl-country-chip" data-country="eurozone">🇪🇺 EUR</button>
+      <button class="tl-chip tl-country-chip" data-country="japan">🇯🇵 JPN</button>
+      <button class="tl-chip tl-country-chip" data-country="uk">🇬🇧 UK</button>
+      <button class="tl-chip tl-country-chip" data-country="switzerland">🇨🇭 CHE</button>
+      <button class="tl-chip tl-country-chip" data-country="australia">🇦🇺 AUS</button>
+      <button class="tl-chip tl-country-chip" data-country="newzealand">🇳🇿 NZ</button>
+      <button class="tl-chip tl-country-chip" data-country="canada">🇨🇦 CAN</button>
+      <button class="tl-chip tl-country-chip" data-country="sweden">🇸🇪 SWE</button>
+      <button class="tl-chip tl-country-chip" data-country="norway">🇳🇴 NOR</button>
+    </div>
+    <div class="tl-ctrl-row">
+      <input type="search" id="tl-search" placeholder="イベント検索（例: マイナス金利）">
+      <span id="tl-search-count"></span>
+      <span class="tl-ctrl-label" style="margin-left:auto;">期間:</span>
+      <button class="tl-zoom active" data-zoom="full">全期間</button>
+      <button class="tl-zoom" data-zoom="postwar">戦後 1945-</button>
+      <button class="tl-zoom" data-zoom="m1971">1971-</button>
+      <button class="tl-zoom" data-zoom="m2000">2000-</button>
+      <button id="tl-reset">リセット</button>
+    </div>
+  </div>
+
+  <div class="tl-swim-wrap">
+    <div class="tl-hint" id="tl-hint">← スクロールで過去へ</div>
+    <div class="tl-swim-scroll" id="tl-swim-scroll">
+      <div class="tl-canvas" id="tl-canvas">
+        <div id="tl-svg-host"></div>
+        <div class="tl-lane-labels" id="tl-lane-labels"></div>
+        <div class="tl-tooltip" id="tl-tooltip"></div>
+      </div>
+    </div>
+  </div>
+  <div class="tl-mobile-list" id="tl-mobile-list"></div>
+
+  <!-- ====================================================== -->
   <!-- Section 1: Central Bank Founding Timeline               -->
   <!-- ====================================================== -->
-  <h2 class="section-header">1. 中央銀行設立年表 — Central Bank Founding Timeline</h2>
+  <h2 class="section-header" id="sec-cb">1. 中央銀行設立年表 — Central Bank Founding Timeline</h2>
   <p class="section-desc">G10各国の中央銀行設立は17世紀のリクスバンク（1668年）から20世紀のRBNZ（1934年）まで約270年にわたる。設立順に各国の中央銀行制度の特徴を比較する。</p>
 
   <div class="mega-table-wrap">
@@ -349,7 +560,7 @@
   <!-- ====================================================== -->
   <!-- Section 2: Major Historical Events Cross-Country        -->
   <!-- ====================================================== -->
-  <h2 class="section-header">2. G10横断年表 — Cross-Country Timeline (1900–2025)</h2>
+  <h2 class="section-header" id="sec-mega">2. G10横断年表 — Cross-Country Timeline (1900–2025)</h2>
   <p class="section-desc">
     主要な金融イベントを年代順に10カ国横断で比較。<span class="ev-crisis">危機</span> / <span class="ev-hike">利上げ</span> / <span class="ev-cut">利下げ</span> / <span class="ev-reform">改革</span> / <span class="ev-milestone">マイルストーン</span> / <span class="ev-war">戦争・地政学</span> で色分け。
   </p>
@@ -365,7 +576,7 @@
 
   <div class="filter-bar">
     <label>年代フィルター:</label>
-    <select id="decade-filter">
+    <select id="decade-filter" onchange="filterDecade()">
       <option value="all">全期間</option>
       <option value="1900">1900年代</option>
       <option value="1910">1910年代</option>
@@ -385,11 +596,11 @@
     <button onclick="resetFilter()">リセット</button>
   </div>
 
-  <div class="mega-table-wrap">
+  <div class="mega-table-wrap" id="mega-timeline-wrap">
     <table class="mega-table" id="mega-timeline">
       <thead>
         <tr>
-          <th>年</th>
+          <th>年 <span class="tl-sort-note">年代順固定</span></th>
           <th>🇺🇸 US</th>
           <th>🇪🇺 Eurozone</th>
           <th>🇯🇵 Japan</th>
@@ -1114,8 +1325,57 @@
   <!-- ====================================================== -->
   <!-- Section 3: Policy Rate Comparison                       -->
   <!-- ====================================================== -->
-  <h2 class="section-header">3. 政策金利比較 — Policy Rate Comparison (2000–2025)</h2>
-  <p class="section-desc">G10各国の政策金利を年末値で比較。金融政策の協調と乖離が明確に読み取れる。2008年GFC後の超低金利時代、2022年以降の同時利上げサイクルに注目。</p>
+  <h2 class="section-header" id="sec-rates">3. 政策金利比較 — Policy Rate Comparison (2000–2025)</h2>
+  <p class="section-desc">G10各国の政策金利を年末値で比較。金融政策の協調と乖離が明確に読み取れる。2008年GFC後の超低金利時代、2022年以降の同時利上げサイクルに注目。下のチャートは下表（年末値）の可視化 — 凡例クリックで系列の表示/非表示を切替できる。</p>
+
+  <div id="g10-rates-annual" style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:8px;padding:1.5rem;margin-bottom:1.2rem;"></div>
+  <script>
+  (function () {
+    if (typeof ChartBuilder === 'undefined' || !document.getElementById('g10-rates-annual')) return;
+    /* Year-end policy rates 2000-2025, transcribed from #table-rates below (26 values per series) */
+    var RATES = {
+      Fed:      [6.50,1.75,1.25,1.00,2.25,4.25,5.25,4.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.50,0.75,1.50,2.50,1.75,0.25,0.25,4.50,5.50,4.50,4.50],
+      ECB:      [4.75,3.25,2.75,2.00,2.00,2.25,3.50,4.00,2.50,1.00,1.00,1.00,0.75,0.25,-0.20,-0.30,-0.40,-0.40,-0.40,-0.50,-0.50,-0.50,2.00,4.00,3.00,2.65],
+      BOJ:      [0.25,0.10,0.10,0.10,0.10,0.10,0.25,0.50,0.10,0.10,0.10,0.10,0.10,0.10,0.10,0.10,-0.10,-0.10,-0.10,-0.10,-0.10,-0.10,-0.10,-0.10,0.25,0.50],
+      BOE:      [6.00,4.00,4.00,3.75,4.75,4.50,5.00,5.50,2.00,0.50,0.50,0.50,0.50,0.50,0.50,0.50,0.25,0.50,0.75,0.75,0.10,0.25,3.50,5.25,4.75,4.50],
+      SNB:      [3.50,1.75,0.75,0.25,0.75,1.00,2.00,2.75,0.50,0.25,0.25,0.00,0.00,0.00,-0.25,-0.75,-0.75,-0.75,-0.75,-0.75,-0.75,-0.75,1.00,1.75,0.50,0.25],
+      RBA:      [6.25,4.25,4.75,5.25,5.25,5.50,6.25,6.75,4.25,3.75,4.75,4.25,3.00,2.50,2.50,2.00,1.50,1.50,1.50,0.75,0.10,0.10,3.10,4.35,4.35,4.10],
+      RBNZ:     [6.50,4.75,5.75,5.00,6.50,7.25,7.25,8.25,5.00,2.50,3.00,2.50,2.50,2.50,3.50,2.50,1.75,1.75,1.75,1.00,0.25,0.75,4.25,5.50,4.25,3.50],
+      BOC:      [5.75,2.00,2.75,2.75,2.50,3.25,4.25,4.25,1.50,0.25,1.00,1.00,1.00,1.00,1.00,0.50,0.50,1.00,1.75,1.75,0.25,0.25,4.25,5.00,3.25,2.75],
+      Riksbank: [4.00,3.75,3.75,2.75,2.00,1.50,3.00,4.00,2.00,0.25,1.25,1.75,1.00,0.75,0.00,-0.35,-0.50,-0.50,-0.25,0.00,0.00,0.00,2.50,4.00,2.50,2.25],
+      Norges:   [7.00,6.50,6.50,2.25,1.75,2.25,3.50,5.25,3.00,1.50,2.00,1.75,1.50,1.50,1.25,0.75,0.50,0.50,0.75,1.50,0.00,0.50,2.75,4.50,4.50,4.50]
+    };
+    ChartBuilder.lines('g10-rates-annual', {
+      title: 'G10 政策金利 年末値 (2000–2025)',
+      caption: '出典: 各国中央銀行（年末時点の近似値、下表と同一データ）。2008年GFCで一斉にゼロへ、2014-19年はマイナス金利圏（ECB/SNB/BOJ/Riksbank）、2022年に史上最速の同時利上げ、2024年から利下げ転換。',
+      yRange: [-1, 9], yStep: 1, yUnit: '%',
+      endLabels: false,
+      series: [
+        { name: 'Fed',      color: '#00d4aa', start: 2000, step: 1, values: RATES.Fed, width: 2.2 },
+        { name: 'ECB',      color: '#5b8def', start: 2000, step: 1, values: RATES.ECB },
+        { name: 'BOJ',      color: '#ff6b6b', start: 2000, step: 1, values: RATES.BOJ },
+        { name: 'BOE',      color: '#ffd93d', start: 2000, step: 1, values: RATES.BOE },
+        { name: 'SNB',      color: '#a78bfa', start: 2000, step: 1, values: RATES.SNB },
+        { name: 'RBA',      color: '#ff9f43', start: 2000, step: 1, values: RATES.RBA },
+        { name: 'RBNZ',     color: '#4ecdc4', start: 2000, step: 1, values: RATES.RBNZ },
+        { name: 'BOC',      color: '#f472b6', start: 2000, step: 1, values: RATES.BOC },
+        { name: 'Riksbank', color: '#74c0fc', start: 2000, step: 1, values: RATES.Riksbank },
+        { name: 'Norges',   color: '#d770ad', start: 2000, step: 1, values: RATES.Norges }
+      ],
+      bands: [
+        { from: 2000, to: 2007, label: '大平穏期', color: '#2ec4b6' },
+        { from: 2008, to: 2021, label: '危機とゼロ金利', color: '#b07cff' },
+        { from: 2022, to: 2025, label: 'インフレと正常化', color: '#ff5d6c' }
+      ],
+      annotations: [
+        { year: 2008.7, label: 'GFC', color: '#ff9f43' },
+        { year: 2015,   label: 'SNB -0.75%', color: '#a78bfa' },
+        { year: 2022.5, label: '同時利上げ', color: '#ff6b6b' },
+        { year: 2024.5, label: '利下げ転換', color: '#5b8def' }
+      ]
+    });
+  })();
+  </script>
 
   <div class="mega-table-wrap">
     <table class="mega-table" id="table-rates">
@@ -1168,7 +1428,7 @@
   <!-- ====================================================== -->
   <!-- Section 4: Equity Index Comparison                      -->
   <!-- ====================================================== -->
-  <h2 class="section-header">4. 主要株価指数比較 — Equity Index Milestones</h2>
+  <h2 class="section-header" id="sec-equity">4. 主要株価指数比較 — Equity Index Milestones</h2>
   <p class="section-desc">各国の代表的株価指数の主要マイルストーン。バブル・暴落・史上最高値の時期と水準を横断比較。</p>
 
   <div class="mega-table-wrap">
@@ -1251,7 +1511,7 @@
   <!-- ====================================================== -->
   <!-- Section 5: Currency & Monetary System                   -->
   <!-- ====================================================== -->
-  <h2 class="section-header">5. 通貨制度の変遷 — Monetary System Evolution</h2>
+  <h2 class="section-header" id="sec-currency">5. 通貨制度の変遷 — Monetary System Evolution</h2>
   <p class="section-desc">金本位制からブレトンウッズ、変動相場制への移行をG10各国で比較。通貨制度の選択が金融政策の自由度を決定する。</p>
 
   <div class="mega-table-wrap">
@@ -1315,7 +1575,7 @@
   <!-- ====================================================== -->
   <!-- Section 6: Financial Crises Comparison                  -->
   <!-- ====================================================== -->
-  <h2 class="section-header">6. 主要金融危機の影響比較 — Crisis Impact Comparison</h2>
+  <h2 class="section-header" id="sec-crises">6. 主要金融危機の影響比較 — Crisis Impact Comparison</h2>
   <p class="section-desc">G10各国への主要金融危機の影響度を比較。GDP成長率低下、株価下落率、失業率ピークで定量化。</p>
 
   <div class="mega-table-wrap">
@@ -1398,7 +1658,7 @@
   <!-- ====================================================== -->
   <!-- Section 7: Structural Comparison                        -->
   <!-- ====================================================== -->
-  <h2 class="section-header">7. 構造比較 — Structural Comparison (2024-2025)</h2>
+  <h2 class="section-header" id="sec-structure">7. 構造比較 — Structural Comparison (2024-2025)</h2>
   <p class="section-desc">G10各国の経済・金融構造の現在のスナップショット。</p>
 
   <div class="mega-table-wrap">
@@ -1471,7 +1731,7 @@
   <!-- ====================================================== -->
   <!-- Section 8: Key Cross-Country Themes                     -->
   <!-- ====================================================== -->
-  <h2 class="section-header">8. 横断テーマ — Cross-Country Themes</h2>
+  <h2 class="section-header" id="sec-themes">8. 横断テーマ — Cross-Country Themes</h2>
 
   <article style="line-height:1.8; color:var(--text-primary); max-width:1000px;">
 
@@ -1501,7 +1761,7 @@
   <!-- ====================================================== -->
   <!-- Section 9: Chart Navigation — Links to Upgraded Charts  -->
   <!-- ====================================================== -->
-  <h2 class="section-header">9. チャートナビゲーション — Chart Navigation</h2>
+  <h2 class="section-header" id="sec-chartnav">9. チャートナビゲーション — Chart Navigation</h2>
   <p class="section-desc">本プロジェクトで月次データ化・新規追加されたチャートへのリンク集。各国の政策金利、インフレ率、雇用、利回りスプレッド、株式指数、中央銀行総裁情報、およびG10横断比較チャートに直接アクセス可能。</p>
 
   <!-- 9.1 G10 Cross-Country Comparison Charts (index.html) -->
@@ -1680,7 +1940,9 @@ function resetFilter() {
 }
 
 // Simple table sort for compare tables
+// NOTE: #mega-timeline は年代順固定（ソートすると年表の意味が壊れるため対象外）
 document.querySelectorAll('.compare-table th, .mega-table th').forEach(th => {
+  if (th.closest('#mega-timeline')) return;
   th.style.cursor = 'pointer';
   th.addEventListener('click', function() {
     const table = this.closest('table');
@@ -1702,6 +1964,372 @@ document.querySelectorAll('.compare-table th, .mega-table th').forEach(th => {
     rows.forEach(row => tbody.appendChild(row));
   });
 });
+</script>
+
+<script>
+/* ============================================================
+ * G10 Interactive Swimlane Timeline (Phase 2)
+ * Renders window.G10_TIMELINE_EVENTS (295 events / 8 eras) as an
+ * 11-lane horizontal SVG timeline + mobile/print era-grouped list.
+ * Pure vanilla JS, file://-safe, no external libs.
+ * ============================================================ */
+(function () {
+  'use strict';
+  var DATA = (typeof window !== 'undefined' && window.G10_TIMELINE_EVENTS) ? window.G10_TIMELINE_EVENTS : null;
+
+  /* ---- layout constants & pure positioning math (node-testable) ---- */
+  var W = 2600, PAD_L = 100, PAD_R = 40, LANE_H = 46, TOP = 30, AXIS_H = 46;
+  var LANES = [
+    { key: 'global',      flag: '🌍', name: '全体' },
+    { key: 'us',          flag: '🇺🇸', name: 'US' },
+    { key: 'eurozone',    flag: '🇪🇺', name: 'EUR' },
+    { key: 'japan',       flag: '🇯🇵', name: 'JPN' },
+    { key: 'uk',          flag: '🇬🇧', name: 'UK' },
+    { key: 'switzerland', flag: '🇨🇭', name: 'CHE' },
+    { key: 'australia',   flag: '🇦🇺', name: 'AUS' },
+    { key: 'newzealand',  flag: '🇳🇿', name: 'NZ' },
+    { key: 'canada',      flag: '🇨🇦', name: 'CAN' },
+    { key: 'sweden',      flag: '🇸🇪', name: 'SWE' },
+    { key: 'norway',      flag: '🇳🇴', name: 'NOR' }
+  ];
+  var CAT = {
+    crisis:    { label: '危機',                 color: '#ff9f43' },
+    hike:      { label: '利上げ',           color: '#ff6b6b' },
+    cut:       { label: '利下げ',           color: '#5b8def' },
+    reform:    { label: '改革',                 color: '#4ecdc4' },
+    milestone: { label: 'マイルストーン', color: '#00d4aa' },
+    war:       { label: '戦争・地政学',       color: '#e74c3c' }
+  };
+  var DOMAINS = { full: [1904, 2027], postwar: [1944, 2027], m1971: [1970, 2027], m2000: [1999, 2027] };
+
+  function xScale(domain) {
+    var k = (W - PAD_L - PAD_R) / (domain[1] - domain[0]);
+    return function (yf) { return PAD_L + (yf - domain[0]) * k; };
+  }
+  function evYearFloat(e) { return e.year + (((e.month || 6) - 0.5) / 12); }
+  function laneIndexOf(country, laneKeys) { return laneKeys.indexOf(country); }
+  function stackRow(rows, x, minGap) {
+    /* rows = per-lane array of "last marker x" per visual row; reuse first row >= minGap away */
+    for (var i = 0; i < rows.length; i++) {
+      if (x - rows[i] >= minGap) { rows[i] = x; return i; }
+    }
+    rows.push(x);
+    return rows.length - 1;
+  }
+
+  /* expose pure math for node-based verification harness */
+  if (typeof window !== 'undefined') {
+    window.__TL_MATH__ = {
+      W: W, PAD_L: PAD_L, PAD_R: PAD_R, LANE_H: LANE_H, TOP: TOP, AXIS_H: AXIS_H,
+      LANES: LANES, CAT: CAT, DOMAINS: DOMAINS,
+      xScale: xScale, evYearFloat: evYearFloat, laneIndexOf: laneIndexOf, stackRow: stackRow
+    };
+  }
+
+  if (typeof document === 'undefined' || !document.getElementById('tl-svg-host') || !DATA) return;
+
+  /* ---- DOM refs ---- */
+  var host = document.getElementById('tl-svg-host');
+  var canvas = document.getElementById('tl-canvas');
+  var labelsEl = document.getElementById('tl-lane-labels');
+  var tooltip = document.getElementById('tl-tooltip');
+  var scroller = document.getElementById('tl-swim-scroll');
+  var hint = document.getElementById('tl-hint');
+  var searchEl = document.getElementById('tl-search');
+  var countEl = document.getElementById('tl-search-count');
+  var mobileEl = document.getElementById('tl-mobile-list');
+
+  /* ---- state ---- */
+  var state = { cats: {}, countries: {}, q: '', zoom: 'full' };
+  Object.keys(CAT).forEach(function (c) { state.cats[c] = true; });
+  LANES.forEach(function (l) { state.countries[l.key] = true; });
+
+  var placed = [];   /* rendered markers: {x, y, ev} */
+  var popEl = null;  /* current popover */
+
+  function esc(s) {
+    return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+  function dateStr(e) { return e.month ? (e.year + '年' + e.month + '月') : (e.year + '年'); }
+  function laneMeta(key) {
+    for (var i = 0; i < LANES.length; i++) if (LANES[i].key === key) return LANES[i];
+    return null;
+  }
+  function passes(e, dom) {
+    if (!state.cats[e.cat] || !state.countries[e.country]) return false;
+    var yf = evYearFloat(e);
+    if (yf < dom[0] || yf > dom[1]) return false;
+    if (state.q) {
+      var hay = (e.label + ' ' + (e.detail || '')).toLowerCase();
+      if (hay.indexOf(state.q.toLowerCase()) === -1) return false;
+    }
+    return true;
+  }
+
+  /* ---- popover ---- */
+  function closePopover() {
+    if (popEl && popEl.parentNode) popEl.parentNode.removeChild(popEl);
+    popEl = null;
+  }
+  function showPopover(p) {
+    closePopover();
+    var e = p.ev, c = CAT[e.cat], lm = laneMeta(e.country);
+    var pop = document.createElement('div');
+    pop.className = 'tl-popover';
+    pop.innerHTML =
+      '<button class="tl-pop-close" aria-label="閉じる">×</button>' +
+      '<div class="tl-pop-date">【' + dateStr(e) + '】 ' + (lm ? lm.flag + ' ' + esc(lm.name) : '') + '</div>' +
+      '<h4>' + esc(e.label) + '</h4>' +
+      '<span class="tl-pop-cat" style="background:' + c.color + ';">' + c.label + '</span>' +
+      '<p>' + esc(e.detail || '') + '</p>' +
+      (e.link ? '<a class="tl-pop-link" href="' + esc(e.link) + '">📖 教科書で読む →</a>' : '');
+    canvas.appendChild(pop);
+    pop.querySelector('.tl-pop-close').addEventListener('click', function (ev) { ev.stopPropagation(); closePopover(); });
+    /* clamp to visible viewport of the scroll wrapper */
+    var vw = scroller.clientWidth, sl = scroller.scrollLeft;
+    var pw = pop.offsetWidth, ph = pop.offsetHeight;
+    var left = Math.max(sl + PAD_L, Math.min(p.x - pw / 2, sl + vw - pw - 12));
+    var top = p.y + 16;
+    var ch = canvas.offsetHeight;
+    if (top + ph > ch - 4) top = p.y - ph - 16;
+    if (top < 4) top = 4;
+    pop.style.left = left + 'px';
+    pop.style.top = top + 'px';
+    popEl = pop;
+  }
+
+  /* ---- swimlane SVG render ---- */
+  function render() {
+    closePopover();
+    tooltip.style.display = 'none';
+    var dom = DOMAINS[state.zoom];
+    var sx = xScale(dom);
+    var lanes = LANES.filter(function (l) { return state.countries[l.key]; });
+    var laneKeys = lanes.map(function (l) { return l.key; });
+    var lanesH = lanes.length * LANE_H;
+    var H = TOP + lanesH + AXIS_H;
+    var shown = DATA.events.filter(function (e) { return passes(e, dom); });
+    placed = [];
+
+    var svg = ['<svg width="' + W + '" height="' + H + '" viewBox="0 0 ' + W + ' ' + H + '" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="G10 スイムレーン年表">'];
+
+    /* era bands (translucent, full lane height) + era labels on top */
+    DATA.eras.forEach(function (era) {
+      var a = Math.max(era.from, dom[0]), b = Math.min(era.to, dom[1]);
+      if (b - a <= 0) return;
+      var x1 = sx(a), x2 = sx(b);
+      svg.push('<rect x="' + x1.toFixed(1) + '" y="' + TOP + '" width="' + (x2 - x1).toFixed(1) + '" height="' + lanesH + '" fill="' + era.color + '" fill-opacity="0.08"/>');
+      if (x2 - x1 > 70) {
+        svg.push('<text x="' + (x1 + 6).toFixed(1) + '" y="19" fill="' + era.color + '" font-size="11" font-family="monospace" opacity="0.95">' + esc(era.label) + ' ' + era.from + '–' + era.to + '</text>');
+      }
+    });
+
+    /* lane shading + separators */
+    lanes.forEach(function (l, i) {
+      var y = TOP + i * LANE_H;
+      if (i % 2 === 1) svg.push('<rect x="0" y="' + y + '" width="' + W + '" height="' + LANE_H + '" fill="rgba(255,255,255,0.022)"/>');
+      svg.push('<line x1="0" y1="' + (y + LANE_H) + '" x2="' + W + '" y2="' + (y + LANE_H) + '" stroke="rgba(255,255,255,0.06)"/>');
+    });
+    svg.push('<line x1="0" y1="' + TOP + '" x2="' + W + '" y2="' + TOP + '" stroke="rgba(255,255,255,0.10)"/>');
+
+    /* decade/5y gridlines + year axis */
+    var span = dom[1] - dom[0];
+    var step = span >= 90 ? 10 : 5;
+    for (var y0 = Math.ceil(dom[0] / step) * step; y0 <= dom[1]; y0 += step) {
+      var gx = sx(y0);
+      var major = (y0 % 10 === 0);
+      svg.push('<line x1="' + gx.toFixed(1) + '" y1="' + TOP + '" x2="' + gx.toFixed(1) + '" y2="' + (TOP + lanesH) + '" stroke="rgba(255,255,255,' + (major ? '0.09' : '0.045') + ')"/>');
+      svg.push('<text x="' + gx.toFixed(1) + '" y="' + (TOP + lanesH + 18) + '" text-anchor="middle" fill="#8b949e" font-size="11" font-family="monospace">' + y0 + '</text>');
+    }
+
+    /* "world is shaking" lines: global-lane crisis events pierce all lanes */
+    shown.forEach(function (e) {
+      if (e.country === 'global' && e.cat === 'crisis') {
+        var wx = sx(evYearFloat(e));
+        svg.push('<line x1="' + wx.toFixed(1) + '" y1="' + TOP + '" x2="' + wx.toFixed(1) + '" y2="' + (TOP + lanesH) + '" stroke="#ff9f43" stroke-width="2" opacity="0.16"/>');
+      }
+    });
+
+    /* markers (with same-lane vertical stacking when < 12px apart) */
+    var DY = [0, -13, 13, -21, 21];
+    var byLane = {};
+    laneKeys.forEach(function (k) { byLane[k] = []; });
+    shown.forEach(function (e) { if (byLane[e.country]) byLane[e.country].push(e); });
+    laneKeys.forEach(function (k, li) {
+      var evs = byLane[k].slice().sort(function (a, b) { return evYearFloat(a) - evYearFloat(b); });
+      var rows = [];
+      evs.forEach(function (e) {
+        var x = sx(evYearFloat(e));
+        var r = stackRow(rows, x, 12);
+        var cy = TOP + li * LANE_H + LANE_H / 2 + DY[r % DY.length];
+        var idx = placed.length;
+        placed.push({ x: x, y: cy, ev: e });
+        var c = CAT[e.cat].color;
+        if (e.cat === 'war') {
+          svg.push('<rect class="tl-ev" data-i="' + idx + '" x="' + (x - 4.5).toFixed(1) + '" y="' + (cy - 4.5).toFixed(1) + '" width="9" height="9" fill="' + c + '" stroke="rgba(0,0,0,0.45)" stroke-width="1"/>');
+        } else if (e.cat === 'crisis') {
+          svg.push('<path class="tl-ev" data-i="' + idx + '" d="M ' + x.toFixed(1) + ' ' + (cy - 7).toFixed(1) + ' L ' + (x + 7).toFixed(1) + ' ' + cy.toFixed(1) + ' L ' + x.toFixed(1) + ' ' + (cy + 7).toFixed(1) + ' L ' + (x - 7).toFixed(1) + ' ' + cy.toFixed(1) + ' Z" fill="' + c + '" stroke="rgba(0,0,0,0.45)" stroke-width="1"/>');
+        } else {
+          svg.push('<circle class="tl-ev" data-i="' + idx + '" cx="' + x.toFixed(1) + '" cy="' + cy.toFixed(1) + '" r="5" fill="' + c + '" stroke="rgba(0,0,0,0.4)" stroke-width="1"/>');
+        }
+      });
+    });
+
+    if (!lanes.length) {
+      svg.push('<text x="' + (PAD_L + 40) + '" y="60" fill="#8b949e" font-size="13">国チップを選択してください</text>');
+    }
+    svg.push('</svg>');
+
+    canvas.style.width = W + 'px';
+    canvas.style.height = H + 'px';
+    host.innerHTML = svg.join('');
+
+    /* sticky lane label column (HTML overlay, pinned left) */
+    labelsEl.style.paddingTop = TOP + 'px';
+    labelsEl.style.height = (TOP + lanesH) + 'px';
+    labelsEl.innerHTML = lanes.map(function (l) {
+      return '<div class="tl-lane-label"><span>' + l.flag + '</span>' + esc(l.name) + '</div>';
+    }).join('');
+
+    /* shown / search-hit counter */
+    countEl.textContent = state.q ? (shown.length + '件ヒット') : (shown.length + '/' + DATA.events.length + '件');
+
+    renderMobile(shown);
+  }
+
+  /* ---- mobile / print fallback: era-grouped vertical list ---- */
+  function renderMobile(shown) {
+    var groups = DATA.eras.map(function (era) { return { era: era, items: [] }; });
+    var other = { era: { label: 'その他', color: '#8b949e', from: '', to: '' }, items: [] };
+    shown.forEach(function (e) {
+      for (var i = 0; i < groups.length; i++) {
+        if (e.year >= groups[i].era.from && e.year <= groups[i].era.to) { groups[i].items.push(e); return; }
+      }
+      other.items.push(e);
+    });
+    groups.push(other);
+    mobileEl.innerHTML = groups.filter(function (g) { return g.items.length; }).map(function (g) {
+      var hdr = '<h3 style="color:' + g.era.color + ';">' + esc(g.era.label) + (g.era.from !== '' ? ' (' + g.era.from + '–' + g.era.to + ')' : '') + '</h3>';
+      var items = g.items.slice().sort(function (a, b) { return evYearFloat(a) - evYearFloat(b); }).map(function (e) {
+        var c = CAT[e.cat], lm = laneMeta(e.country);
+        return '<div class="timeline-item ' + e.cat + '">' +
+          '<div class="timeline-date">' + dateStr(e) + ' ・ ' + (lm ? lm.flag + ' ' + esc(lm.name) : '') +
+          ' <span class="tl-pop-cat" style="background:' + c.color + ';">' + c.label + '</span></div>' +
+          '<div class="timeline-content"><h4>' + esc(e.label) + '</h4>' +
+          (e.detail ? '<details><summary>詳細</summary><p>' + esc(e.detail) + '</p></details>' : '') +
+          (e.link ? '<a class="tl-ev-link" href="' + esc(e.link) + '">📖 教科書で読む →</a>' : '') +
+          '</div></div>';
+      }).join('');
+      return '<div class="tl-era-group" style="border-left-color:' + g.era.color + ';">' + hdr + '<div class="timeline">' + items + '</div></div>';
+    }).join('');
+  }
+
+  /* ---- hover tooltip + click popover (event delegation on the SVG host) ---- */
+  host.addEventListener('mouseover', function (ev) {
+    var t = ev.target.closest ? ev.target.closest('.tl-ev') : null;
+    if (!t) return;
+    var p = placed[+t.getAttribute('data-i')];
+    if (!p) return;
+    tooltip.innerHTML = '<strong>' + esc(p.ev.label) + '</strong> <span style="color:#8b949e;">(' + dateStr(p.ev) + ')</span>';
+    tooltip.style.display = 'block';
+    var tw = tooltip.offsetWidth;
+    var lx = p.x + 12;
+    var maxX = scroller.scrollLeft + scroller.clientWidth;
+    if (lx + tw > maxX - 8) lx = p.x - tw - 12;
+    tooltip.style.left = lx + 'px';
+    tooltip.style.top = Math.max(2, p.y - 30) + 'px';
+  });
+  host.addEventListener('mouseout', function (ev) {
+    if (ev.target.closest && ev.target.closest('.tl-ev')) tooltip.style.display = 'none';
+  });
+  host.addEventListener('click', function (ev) {
+    var t = ev.target.closest ? ev.target.closest('.tl-ev') : null;
+    if (!t) return;
+    ev.stopPropagation();
+    var p = placed[+t.getAttribute('data-i')];
+    if (p) showPopover(p);
+  });
+  document.addEventListener('click', function (ev) {
+    if (popEl && !popEl.contains(ev.target)) closePopover();
+  });
+  document.addEventListener('keydown', function (ev) {
+    if (ev.key === 'Escape') closePopover();
+  });
+
+  /* ---- controls wiring ---- */
+  document.querySelectorAll('.tl-cat-chip').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var c = btn.getAttribute('data-cat');
+      state.cats[c] = !state.cats[c];
+      btn.classList.toggle('off', !state.cats[c]);
+      render();
+    });
+  });
+  document.querySelectorAll('.tl-country-chip').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var c = btn.getAttribute('data-country');
+      state.countries[c] = !state.countries[c];
+      btn.classList.toggle('off', !state.countries[c]);
+      render();
+    });
+  });
+  document.querySelectorAll('.tl-zoom').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      state.zoom = btn.getAttribute('data-zoom');
+      document.querySelectorAll('.tl-zoom').forEach(function (b) { b.classList.toggle('active', b === btn); });
+      render();
+    });
+  });
+  searchEl.addEventListener('input', function () {
+    state.q = searchEl.value.trim();
+    render();
+  });
+  document.getElementById('tl-reset').addEventListener('click', function () {
+    Object.keys(state.cats).forEach(function (c) { state.cats[c] = true; });
+    Object.keys(state.countries).forEach(function (c) { state.countries[c] = true; });
+    state.q = ''; searchEl.value = '';
+    state.zoom = 'full';
+    document.querySelectorAll('.tl-cat-chip, .tl-country-chip').forEach(function (b) { b.classList.remove('off'); });
+    document.querySelectorAll('.tl-zoom').forEach(function (b) { b.classList.toggle('active', b.getAttribute('data-zoom') === 'full'); });
+    render();
+    scrollToModern();
+  });
+
+  function scrollToModern() {
+    var sx = xScale(DOMAINS[state.zoom]);
+    scroller.scrollLeft = Math.max(0, sx(1970) - 110);
+  }
+
+  /* hint fades on first scroll or after 6s */
+  function hideHint() { if (hint) hint.classList.add('hide'); }
+  scroller.addEventListener('scroll', hideHint, { once: true });
+  setTimeout(hideHint, 6000);
+
+  /* ---- initial render: full period, auto-scrolled to the modern era ---- */
+  render();
+  scrollToModern();
+
+  /* ============================================================
+   * Table fixes: 「元の順序に戻す」 restore links for sortable tables
+   * (#mega-timeline is excluded from sorting and needs no link)
+   * ============================================================ */
+  document.querySelectorAll('.compare-table, .mega-table').forEach(function (table) {
+    if (table.id === 'mega-timeline') return;
+    var tbody = table.querySelector('tbody');
+    if (!tbody) return;
+    var orig = Array.prototype.slice.call(tbody.children);
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'tl-restore-link';
+    btn.textContent = '↩ 元の順序に戻す';
+    btn.addEventListener('click', function () {
+      orig.forEach(function (row) { tbody.appendChild(row); });
+      table.querySelectorAll('th').forEach(function (th) { delete th.dataset.sort; });
+    });
+    var wrap = table.closest('.mega-table-wrap') || table;
+    wrap.insertAdjacentElement('afterend', btn);
+  });
+})();
 </script>
 
   <script src="../assets/enhancer.js"></script>
