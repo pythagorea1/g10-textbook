@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>イスラエル - Long-term Rates | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
+  <script defer src="../assets/charts.js"></script>
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇮🇱 イスラエル</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. 中央銀行</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. 政策金利</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. 財政政策</a>
+      <a href="04_employment.html" class="sidebar-link">04. 雇用</a>
+      <a href="05_inflation.html" class="sidebar-link">05. インフレ</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. 株式市場概観</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. 株式(初期)</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. 株式(近代)</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. 株式(現代)</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. 株式(現在)</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. 債券市場</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. 短期金利</a>
+      <a href="13_long_rates.html" class="sidebar-link active">13. 長期金利</a>
+      <a href="14_currency.html" class="sidebar-link">14. 通貨</a>
+      <a href="15_crises.html" class="sidebar-link">15. 金融危機</a>
+      <a href="16_banking.html" class="sidebar-link">16. 銀行制度</a>
+      <a href="17_corporate.html" class="sidebar-link">17. 企業・コーポレート</a>
+      <a href="18_regulation.html" class="sidebar-link">18. 規制</a>
+      <a href="19_trade.html" class="sidebar-link">19. 貿易</a>
+      <a href="20_lessons.html" class="sidebar-link">20. 教訓</a>
+      <a href="21_geopolitical_risk.html" class="sidebar-link">21. 地政学リスク</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">G10</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+      <div class="sidebar-section-title">地政学・新興地域</div>
+      <div class="country-flags">
+        <a href="../taiwan/01_central_bank.html" class="country-chip">TW</a>
+        <a href="../hongkong/01_central_bank.html" class="country-chip">HK</a>
+        <a href="../china/01_central_bank.html" class="country-chip">CN</a>
+        <a href="../northkorea/01_central_bank.html" class="country-chip">KP</a>
+        <a href="../vietnam/01_central_bank.html" class="country-chip">VN</a>
+        <a href="../singapore/01_central_bank.html" class="country-chip">SG</a>
+        <a href="../iran/01_central_bank.html" class="country-chip">IR</a>
+        <a href="../israel/01_central_bank.html" class="country-chip active">IL</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 ホーム</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10横断年表</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">イスラエル</a>
+        <span class="sep">/</span>
+        長期金利と国債市場
+      </div>
+      <h1 class="page-title">🇮🇱 長期金利と国債市場</h1>
+      <p class="page-subtitle">10年国債、戦時リスクプレミアムと強い財政・物価連動債の遺産</p>
+    </header>
+
+    <article>
+<!-- Chapter 13: Long-term Rates and Government Bonds (Israel) -->
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">1〜3%</div>
+    <div class="stat-label">インフレ目標帯（長期金利の名目アンカー）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value" style="color:var(--accent-green);">1.9%</div>
+    <div class="stat-label">CPI（2026/4、9か月連続で目標帯内）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value" style="color:var(--accent-blue);">約69.8%</div>
+    <div class="stat-label">政府債務対GDP（G7の123.7%比で低位）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">3種</div>
+    <div class="stat-label">国債の建て付け（Shahar・Galil・Gilon）</div>
+  </div>
+</div>
+
+<p>
+イスラエルの長期金利、すなわち10年国債利回りは、3つの力のせめぎ合いで決まる。第一に<strong>インフレ期待</strong>（目標1〜3%、現在は1.9%と良好にアンカーされている）、第二に<strong>戦時の地政学リスクプレミアム</strong>（戦争・格付け見通しの悪化が利回りを押し上げる方向）、第三に<strong>強固な財政・外貨準備という信用力</strong>（債務対GDP約70%、外貨準備約2,345億ドル＝GDP比38.2%が利回りを押し下げる方向）である。さらに米国長期金利との連動とシェケル相場が加わる。本章では、この長期金利を形づくる国債市場の構造を整理する。
+</p>
+
+<!-- Chart: Modern-era CPI anchoring long rates -->
+<div id="israel-long-cpi"></div>
+<script>
+ChartBuilder.lines('israel-long-cpi', {
+  title: 'インフレ率(CPI前年比)の目標帯回帰 2015-2026',
+  caption: '出典: 中央統計局(CBS)・Bank of Israel・TradingEconomics。確証は2022ピーク約5%超・2025=2.5%・2026/4=1.9%(目標1〜3%帯内、9か月連続)。インフレが目標帯に定着したことが長期金利の低位安定と利下げ局面の前提となった。',
+  yUnit: '%',
+  yStep: 1,
+  yRange: [-2, 6],
+  series: [{
+    name: 'CPI前年比',
+    color: '#ffd93d',
+    data: [
+      [2015,-1.0],[2020,-0.6],[2022,5.3],[2023,3.0],[2024,3.0],[2025,2.5],[2026.33,1.9]
+    ]
+  }],
+  annotations: [
+    { year: 2022, label: '22 5%超', color: '#ff6b6b' },
+    { year: 2026.33, label: '26 1.9%', color: '#00d4aa' }
+  ]
+});
+</script>
+
+<section>
+  <h2>1. 国債の3つの建て付け — 物価連動債はハイパーインフレの遺産</h2>
+  <p>
+  イスラエル国債（政府債）は、利払い・元本の決まり方で3種類に分かれる。これらの名称はそのまま市場の用語として定着している。
+  </p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>名称</th>
+          <th>タイプ</th>
+          <th>特徴・意義</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Shahar（シャハル）</strong></td>
+          <td>固定利付・名目</td>
+          <td>通常の固定金利国債。名目10年利回りのベンチマークを形成する中核</td>
+        </tr>
+        <tr class="highlight-blue">
+          <td><strong>Galil（ガリル）</strong></td>
+          <td>物価連動（CPI連動）</td>
+          <td>元本・利払いがCPIに連動。1984年約450%のハイパーインフレの記憶から、物価連動債の発行が制度として根付いた</td>
+        </tr>
+        <tr>
+          <td><strong>Gilon（ギロン）</strong></td>
+          <td>変動利付</td>
+          <td>短期金利（Makam/Telbor）に連動する変動クーポン債。金利上昇局面で需要</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>
+  特筆すべきは<strong>Galil（物価連動債）の存在感</strong>である。1984年に年率約450%という激烈なハイパーインフレを経験したイスラエルでは、投資家が「名目元本がインフレで溶ける」恐怖を制度として記憶している。その結果、国債市場に占める物価連動債の比率が他の先進国より高い時期が長く続き、これは<strong>ハイパーインフレ脱出（1985年安定化計画）の遺産</strong>そのものである。名目債（Shahar）と物価連動債（Galil）の利回り差から市場の期待インフレ率（ブレークイーブン）を読めるのも、この厚い物価連動市場ゆえである。
+  </p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">「Shahar・Galil・Gilon」</div>
+    <div class="mnemonic-body">イスラエル国債の三兄弟を覚えよ。<strong>Shahar=固定（名目）</strong>、<strong>Galil=物価連動</strong>、<strong>Gilon=変動</strong>。とりわけGalil（物価連動債）が厚いのは、1984年450%ハイパーインフレの<strong>トラウマの制度化</strong>である。歴史が金融商品の形を決めた好例。</div>
+  </div>
+</section>
+
+<section>
+  <h2>2. 長期金利を動かす3つの力</h2>
+  <p>
+  10年国債利回りの方向は、相反する力のバランスで決まる。
+  </p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>力</th>
+          <th>方向</th>
+          <th>内容</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight-green">
+          <td>インフレのアンカー</td>
+          <td>利回り↓</td>
+          <td>CPIが目標1〜3%帯に定着（2026/4=1.9%、9か月連続）。期待インフレが安定し名目利回りを抑える</td>
+        </tr>
+        <tr class="highlight-red">
+          <td>戦時リスクプレミアム</td>
+          <td>利回り↑</td>
+          <td>2023/10戦争・対イラン紛争で財政赤字・防衛費増。格付け見通しの悪化が上乗せを要求</td>
+        </tr>
+        <tr class="highlight-blue">
+          <td>財政・準備の信用力</td>
+          <td>利回り↓</td>
+          <td>債務対GDP約70%(G7比低位)・外貨準備約2,345億ドル(GDP比38.2%)が信認を支える</td>
+        </tr>
+        <tr>
+          <td>米金利・為替</td>
+          <td>両方向</td>
+          <td>米10年債利回りと連動。シェケル高(2026に1993年以来最強)はインフレ抑制を通じ利回り低下方向に働く</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>
+  2023〜2024年の戦時には、財政赤字拡大と格付け会社（S&amp;P等）の見通し引下げで戦時リスクプレミアムが膨らんだ。しかし2025〜2026年にかけて、停戦観測・シェケル高・インフレ沈静が重なると、強い財政・準備の信用力が再評価され、長期金利には低下圧力が働いた。<strong>「戦時下でも好況」</strong>という2026年のパラドックス（第15・21章）は、長期金利市場にも表れており、リスクプレミアムの剥落（地政学の織り込み解消）が利回りと株高・通貨高を同時にもたらした。
+  </p>
+</section>
+
+<section>
+  <h2>3. 格付けと「戦時下の信認」</h2>
+  <p>
+  イスラエル国債の信認を測るのが格付けである。2023年の<strong>司法制度改革を巡る大規模抗議</strong>でハイテク資金流出懸念から格付け見通しが悪化し、続く2023/10の戦争でさらに圧力がかかった。だが、低い債務対GDP比、潤沢な外貨準備、ハイテク・ガス輸出という構造的な強みが下支えとなり、S&amp;P Global Ratingsは見通しを<strong>Stable（安定的）</strong>に置く局面まで回復した。
+  </p>
+  <p>
+  ここにイスラエル長期金利の本質がある。<strong>戦争という巨大なリスク要因を抱えながら、それを上回る財政規律と成長力で投資家の信認を維持する</strong> — このバランスが10年利回りに凝縮されている。1985年の安定化計画で確立した財政・金融規律（第20章）の遺産が、半世紀近くを経てなお戦時の国債市場を支えているのである。
+  </p>
+</section>
+
+<section>
+  <h2>出典・参考文献</h2>
+  <ol>
+    <li>Bank of Israel, 国債市場・Government bonds (Shahar/Galil/Gilon) 解説; Annual Report 2024</li>
+    <li>S&amp;P Global Ratings, Israel sovereign rating（見通しStable）; IMF DataMapper（債務対GDP約69.8%）</li>
+    <li>中央統計局(CBS) / TradingEconomics, CPI前年比（2026/4=1.9%）; 外貨準備約2,345億ドル（Economy of Israel）</li>
+    <li>ファクトシート§2・§3(d)・§6（11債券・13長期金利のメモ）</li>
+  </ol>
+</section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+
+    </footer>
+
+    <nav class="page-nav">
+      <a href="12_short_rates.html" class="prev">短期金利</a>
+      <a href="14_currency.html" class="next">通貨</a>
+    </nav>
+  </main>
+
+  <script src="../assets/enhancer.js"></script>
+  <script defer src="../assets/recall.js"></script>
+  <script src="../assets/tts-reader.js"></script>
+</body>
+</html>

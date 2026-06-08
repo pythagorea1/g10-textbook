@@ -9,6 +9,9 @@
  *   event: {year, month?, country, cat, label, detail, link}
  *     country: 'us'|'eurozone'|'japan'|'uk'|'switzerland'|'australia'
  *              |'newzealand'|'canada'|'sweden'|'norway'|'global'
+ *              // 地政学・新興地域 (8 regions, added):
+ *              |'taiwan'|'hongkong'|'china'|'northkorea'|'vietnam'
+ *              |'singapore'|'iran'|'israel'
  *     cat: 'crisis'|'hike'|'cut'|'reform'|'milestone'|'war'
  *     link: relative path FROM summary/
  *
@@ -357,5 +360,120 @@ window.G10_TIMELINE_EVENTS = {
     ,{ year: 2025, month: 12, country: 'japan', cat: 'hike', label: 'BOJ 0.75%利上げ', detail: '12月に0.75%へ追加利上げ。賃金と物価の好循環を確認し、「金利ある世界」への正常化を一段と進めた。', link: '../japan/02_policy_rate.html' }
     ,{ year: 2025, month: 12, country: 'uk', cat: 'cut', label: 'BOE 3.75%へ', detail: '12月に3.75%へ利下げ。粘着的なサービスインフレを睨みつつ、漸進的な緩和を続けた。', link: '../uk/02_policy_rate.html' }
     ,{ year: 2026, month: 3, country: 'australia', cat: 'hike', label: 'RBA 4.10%再利上げ', detail: '3月17日に政策金利を4.10%へ引上げ。2025年の底3.60%からの再引き締めで、利下げ局面のG10では異例の逆方向の動きとなった。', link: '../australia/02_policy_rate.html' }
+    // ============================================================
+    // 地政学・新興地域 (8 regions) — taiwan/hongkong/china/northkorea/
+    //   vietnam/singapore/iran/israel。出典: data/regions/<key>_facts.md §4
+    // ============================================================
+    // ---- 台湾 taiwan 🇹🇼 ----
+    ,{ year: 1990, month: 2, country: 'taiwan', cat: 'crisis', label: '台湾株バブル崩壊', detail: 'TAIEXが2月に12,682の史上最高値を付けた後、同年10月に2,560まで約-80%暴落。戦後最大の株式バブル崩壊で、個人投資家文化の原点となった。', link: '../taiwan/15_crises.html' }
+    ,{ year: 1996, month: 3, country: 'taiwan', cat: 'war', label: '第3次海峡危機', detail: '李登輝総統の訪米に反発した中国が台湾近海でミサイル演習を実施。株価急落と資本流出を招き、米空母派遣に至った両岸リスクの原型となった。', link: '../taiwan/21_geopolitical_risk.html' }
+    ,{ year: 1997, country: 'taiwan', cat: 'crisis', label: 'アジア危機波及', detail: 'アジア通貨危機でTWDは28.7から33台へ下落。ただし高い外貨準備と低い対外債務で相対的に軽傷にとどまった。', link: '../taiwan/15_crises.html' }
+    ,{ year: 2000, month: 2, country: 'taiwan', cat: 'crisis', label: 'ITバブル台湾', detail: 'TAIEXが2月に10,202のドットコム天井を付けた後、2001年に3,446へ急落。輸出と半導体を直撃し、初の本格的な景気後退を招いた。', link: '../taiwan/15_crises.html' }
+    ,{ year: 2008, month: 11, country: 'taiwan', cat: 'crisis', label: 'リーマン台湾直撃', detail: 'リーマンショックでTAIEXは11月21日に3,955の底へ。CBCは重貼現率を3.625%から1.25%へ約250bp利下げした。', link: '../taiwan/15_crises.html' }
+    ,{ year: 2010, month: 6, country: 'taiwan', cat: 'reform', label: '両岸ECFA署名', detail: '6月に中国とECFA(両岸経済協力枠組協議)に署名し、対中経済統合が深化。後に「過度の対中依存」との批判を招いた。', link: '../taiwan/21_geopolitical_risk.html' }
+    ,{ year: 2014, month: 3, country: 'taiwan', cat: 'reform', label: 'ひまわり運動', detail: '対中サービス貿易協定に反発した学生らが立法院を占拠。対中経済統合にブレーキをかけ、脱中国志向の世論を強めた。', link: '../taiwan/21_geopolitical_risk.html' }
+    ,{ year: 2020, month: 3, country: 'taiwan', cat: 'cut', label: '重貼現率1.125%', detail: 'COVID-19対応で重貼現率を1.125%へ引下げ、記録的低水準とした。一方で在宅需要により半導体と輸出はV字回復した。', link: '../taiwan/02_policy_rate.html' }
+    ,{ year: 2022, month: 8, country: 'taiwan', cat: 'war', label: 'ペロシ訪台', detail: '8月のペロシ米下院議長訪台に対し中国が大規模軍事演習を実施(第4次台湾海峡危機)。ミサイルが台湾上空を通過し封鎖シナリオ懸念が高まった。', link: '../taiwan/21_geopolitical_risk.html' }
+    ,{ year: 2024, month: 3, country: 'taiwan', cat: 'hike', label: 'CBC利上げ2%', detail: '3月に重貼現率を2.00%へ引上げ、2008年以来の高水準とした。電気料金引上げに伴うインフレ期待の抑制が名目だった。', link: '../taiwan/02_policy_rate.html' }
+    ,{ year: 2024, month: 5, country: 'taiwan', cat: 'war', label: '頼清徳就任演習', detail: '5月の頼清徳(DPP)総統就任に対し中国が「聯合利剣2024」演習を実施。両岸緊張の常態化を印象づけた。', link: '../taiwan/21_geopolitical_risk.html' }
+    ,{ year: 2025, month: 5, country: 'taiwan', cat: 'milestone', label: 'TWDアジア最強', detail: '2025年のTWDは年初来+12%でアジア最強通貨に。5月には一時29.17まで急騰し、輸出企業や生保の為替損益が論点となった。', link: '../taiwan/14_currency.html' }
+    ,{ year: 2026, month: 1, country: 'taiwan', cat: 'milestone', label: 'TAIEX3万突破', detail: 'AI・半導体需要に沸いたTAIEXが1月5日に史上初の30,000を突破。歴史的株高でTSMCが指数の約42%を占めた。', link: '../taiwan/06_equity_overview.html' }
+    // ---- 香港 hongkong 🇭🇰 ----
+    ,{ year: 1983, month: 10, country: 'hongkong', cat: 'reform', label: 'HKドルペッグ導入', detail: '中英交渉と主権不安でHKドルが一時9.6まで急落。10月17日に1米ドル=7.80の連繋為替相場制度(LERS)を導入し信認を回復した。', link: '../hongkong/14_currency.html' }
+    ,{ year: 1987, month: 10, country: 'hongkong', cat: 'crisis', label: '香港4日間閉鎖', detail: 'ブラックマンデーでハンセン指数が急落し、香港取引所は決済危機を避けるため4営業日の閉鎖に踏み切り国際的批判を浴びた。', link: '../hongkong/15_crises.html' }
+    ,{ year: 1993, month: 4, country: 'hongkong', cat: 'milestone', label: 'HKMA設立', detail: '4月に外貨基金弁公室と銀行業監理処を統合して香港金融管理局(HKMA)が発足。独立した金融政策権限は持たず通貨ボードを運営する。', link: '../hongkong/01_central_bank.html' }
+    ,{ year: 1997, month: 7, country: 'hongkong', cat: 'milestone', label: '香港返還', detail: '7月1日に英国から中国へ返還され「一国二制度」が始動。だが直後にアジア通貨危機が直撃した。', link: '../hongkong/21_geopolitical_risk.html' }
+    ,{ year: 1998, month: 8, country: 'hongkong', cat: 'crisis', label: '98ダブルプレイ', detail: '投機筋が通貨ショートと株先物ショートを連動させる「ダブルプレイ」を仕掛けた。政府は外貨基金で約HK$1,180億を投じてHSI構成銘柄を買い支え撃退した。', link: '../hongkong/15_crises.html' }
+    ,{ year: 2003, month: 3, country: 'hongkong', cat: 'crisis', label: 'SARS危機', detail: 'SARS流行で経済が停止し失業率は8.3%へ上昇。観光・小売・不動産が打撃を受け、ハンセン指数は約8,400の底をつけた。', link: '../hongkong/15_crises.html' }
+    ,{ year: 2014, month: 9, country: 'hongkong', cat: 'reform', label: '雨傘運動', detail: '9月から普通選挙を求める大規模な抗議「雨傘運動」が発生。同年開始の滬港通(Stock Connect)による対中資本接続と政治緊張が同時進行した。', link: '../hongkong/21_geopolitical_risk.html' }
+    ,{ year: 2018, month: 1, country: 'hongkong', cat: 'milestone', label: 'ハンセン最高値', detail: '1月にハンセン指数が33,000台の史上最高値圏(ザラ場33,484)へ。中国本土マネーの流入が追い風となった。', link: '../hongkong/06_equity_overview.html' }
+    ,{ year: 2019, month: 6, country: 'hongkong', cat: 'war', label: '2019香港デモ', detail: '6月から逃亡犯条例改正案に反対する大規模デモが続発。観光・小売・不動産に打撃を与え、資本流出懸念を高めた。', link: '../hongkong/21_geopolitical_risk.html' }
+    ,{ year: 2020, month: 6, country: 'hongkong', cat: 'reform', label: '国家安全法施行', detail: '6月末に国家安全法(NSL)が施行され、米国は香港の特別貿易地位を剥奪(大統領令13936)。外資の地域本部撤退や人材流出への懸念が強まった。', link: '../hongkong/21_geopolitical_risk.html' }
+    ,{ year: 2022, month: 10, country: 'hongkong', cat: 'crisis', label: 'テック株急落', detail: '不動産・テック規制と本土景気減速でハンセン指数は2021年2月の約31,084から2022年10月に約14,687(2009年来安値)へ急落した。', link: '../hongkong/15_crises.html' }
+    ,{ year: 2024, month: 3, country: 'hongkong', cat: 'reform', label: '基本法23条', detail: '3月に基本法23条に基づく国家安全条例が成立し、域内独自の安全立法が完成。報道・データ・司法独立へのガバナンス懸念が再燃した。', link: '../hongkong/21_geopolitical_risk.html' }
+    ,{ year: 2025, country: 'hongkong', cat: 'milestone', label: 'IPO世界首位', detail: 'DeepSeek相場と南向き資金の流入でハンセン指数が回復し、HKEXは2019年以来となる世界IPO調達額1位(US$365億)に復帰した。', link: '../hongkong/06_equity_overview.html' }
+    // ---- 中国 china 🇨🇳 ----
+    ,{ year: 1994, month: 1, country: 'china', cat: 'reform', label: '人民元レート統一', detail: '1月に公定と調整市場の二重相場を統一し、実効的に8.7元へ切下げた。輸出競争力を高めた一方、24%の高インフレも誘発した。', link: '../china/14_currency.html' }
+    ,{ year: 1997, country: 'china', cat: 'milestone', label: '元切下げ回避', detail: 'アジア通貨危機の中で中国は人民元を8.28に維持して切下げを見送り、地域の安定に貢献して国際的な信認を獲得した。', link: '../china/14_currency.html' }
+    ,{ year: 2001, month: 12, country: 'china', cat: 'milestone', label: 'WTO加盟', detail: '12月にWTOへ加盟し「世界の工場」化が加速。輸出・FDIブームと対米黒字拡大の起点となった。', link: '../china/19_trade.html' }
+    ,{ year: 2005, month: 7, country: 'china', cat: 'reform', label: '人民元改革2005', detail: '7月に8.28のドルペッグを管理変動相場へ移行し、8.11へ+2.1%切上げた。緩やかな元高の開始であり、米中通商摩擦の火種ともなった。', link: '../china/14_currency.html' }
+    ,{ year: 2007, month: 10, country: 'china', cat: 'crisis', label: '上海株バブル', detail: '上海総合指数が10月に6,092の史上最高値へ。個人投資家の熱狂後、GFCで約-70%の暴落に転じた。', link: '../china/15_crises.html' }
+    ,{ year: 2008, month: 11, country: 'china', cat: 'reform', label: '4兆元刺激策', detail: '11月に4兆元(約5,860億ドル)の景気刺激策を発動しGFCを乗り切ったが、インフラ・不動産・地方政府債務の膨張という後年の禍根を残した。', link: '../china/03_fiscal_policy.html' }
+    ,{ year: 2015, month: 6, country: 'china', cat: 'crisis', label: '中国株暴落', detail: '6月に上海総合5,178のピークから約-32%暴落し、約18兆元が消失。レバレッジ(信用取引)の巻き戻しが下落を増幅した。', link: '../china/15_crises.html' }
+    ,{ year: 2015, month: 8, country: 'china', cat: 'reform', label: '人民元切下げ', detail: '8月の「811改革」で基準値の市場化と切下げを断行。資本流出が加速し、外貨準備は約4兆ドルから3兆ドル台へ急減した。', link: '../china/14_currency.html' }
+    ,{ year: 2018, month: 3, country: 'china', cat: 'war', label: '米中貿易戦争', detail: '3月の通商法301条に基づく対中関税で米中貿易戦争が開戦。関税の応酬とサプライチェーン再編、デカップリング論を招いた。', link: '../china/21_geopolitical_risk.html' }
+    ,{ year: 2020, month: 1, country: 'china', cat: 'crisis', label: '武漢コロナ封鎖', detail: '1月に武漢で都市封鎖が始まり世界的パンデミックの起点に。その後のゼロコロナ政策(〜2022年)が景気を長く圧迫した。', link: '../china/15_crises.html' }
+    ,{ year: 2021, month: 9, country: 'china', cat: 'crisis', label: '恒大危機', detail: '「三道紅線」規制下で恒大集団(負債3,000億ドル超)の債務危機が表面化。不動産バブル崩壊の起点となり、家計資産と地方財政に波及した。', link: '../china/15_crises.html' }
+    ,{ year: 2024, month: 9, country: 'china', cat: 'cut', label: 'バズーカ刺激策', detail: '9月にRRR-50bpと8,000億元規模の株式支援を含む大型緩和を発動。CSI300は週+16%(2008年以来)と急騰し一時テクニカル強気相場入りした。', link: '../china/02_policy_rate.html' }
+    ,{ year: 2025, month: 5, country: 'china', cat: 'cut', label: 'PBoC追加緩和', detail: '5月に7日リバースレポを1.40%へ10bp引下げ、LPR1年は3.0%と過去最低圏。デフレ圧力と不動産不況への対応が続いた。', link: '../china/02_policy_rate.html' }
+    // ---- 北朝鮮 northkorea 🇰🇵 ----
+    ,{ year: 1984, country: 'northkorea', cat: 'crisis', label: '対外債務不履行', detail: '1970年代の西側借入が工業化失敗で焦げ付き、1984年に債務リスケに失敗してデフォルトが確定。元利は現在約30億ドルに膨らんでいる。', link: '../northkorea/15_crises.html' }
+    ,{ year: 1991, country: 'northkorea', cat: 'crisis', label: 'ソ連崩壊援助減', detail: 'ソ連崩壊で友好価格貿易と石油供給が消滅し、経済の支柱を喪失。続く大飢饉の遠因となった。', link: '../northkorea/15_crises.html' }
+    ,{ year: 1994, country: 'northkorea', cat: 'crisis', label: '苦難の行軍', detail: '1994〜98年の大飢饉で推計24万〜350万人が餓死。配給制が崩壊し、闇市場(チャンマダン)が自然発生して市場経済化の起点となった。', link: '../northkorea/15_crises.html' }
+    ,{ year: 2002, month: 7, country: 'northkorea', cat: 'reform', label: '7・1経済措置', detail: '7月の「7・1経済管理改善措置」で公定為替・物価を現実化し、企業の独立採算を部分導入。市場を事実上黙認した。', link: '../northkorea/14_currency.html' }
+    ,{ year: 2006, month: 10, country: 'northkorea', cat: 'war', label: '初の核実験', detail: '10月に初の核実験を実施し、国連安保理決議1718による制裁レジームが始動した。', link: '../northkorea/21_geopolitical_risk.html' }
+    ,{ year: 2009, month: 11, country: 'northkorea', cat: 'reform', label: 'デノミ実施', detail: '11月に100旧:1新のデノミネーションを断行。1週間でウォンは約-96%、市場米価は3日で約3倍となりハイパーインフレと混乱を招いた。担当の財政部長は翌年処刑された。', link: '../northkorea/14_currency.html' }
+    ,{ year: 2017, country: 'northkorea', cat: 'war', label: '核実験→制裁強化', detail: 'ICBM試射と第6回核実験(水爆)を受け、国連は石炭・繊維禁輸や石油精製品の上限を課す「最大限の圧力」決議(2371/2375/2397)を採択した。', link: '../northkorea/21_geopolitical_risk.html' }
+    ,{ year: 2020, country: 'northkorea', cat: 'crisis', label: 'COVID国境封鎖', detail: 'COVID-19で国境を封鎖し中朝貿易は$0.3〜0.5Bへ崩壊。逆説的に輸入消失で外貨需要が減りウォン高となった。', link: '../northkorea/15_crises.html' }
+    ,{ year: 2024, country: 'northkorea', cat: 'milestone', label: '8年ぶり高成長', detail: '韓国銀行(BOK)推計で2024年の実質GDPは+3.7%と2016年以来の高成長。対露輸出や鉱工業・建設が牽引した。', link: '../northkorea/20_lessons.html' }
+    ,{ year: 2024, month: 3, country: 'northkorea', cat: 'war', label: '対露軍事協力', detail: 'ウクライナ戦争でロシアへ砲弾・ミサイル・兵士を供給。3月にはロシアが国連専門家パネルを拒否権で廃止し、制裁監視機能が消滅した。', link: '../northkorea/21_geopolitical_risk.html' }
+    ,{ year: 2025, month: 2, country: 'northkorea', cat: 'crisis', label: 'Bybit15億窃取', detail: '2月にLazarus(APT38)がBybitから15億ドルを窃取し暗号資産史上最大の窃盗に。2017年以降の累計は60億ドルを超え核ミサイル資金へ転用されている。', link: '../northkorea/21_geopolitical_risk.html' }
+    ,{ year: 2026, month: 4, country: 'northkorea', cat: 'crisis', label: 'ウォン暴落', detail: '対中貿易再開期待による外貨需要で闇レートが急騰し、4月12日に史上初の70,100ウォン/ドルを突破(2週間で+29.3%)。ハイパーインフレ懸念が再燃した。', link: '../northkorea/14_currency.html' }
+    // ---- ベトナム vietnam 🇻🇳 ----
+    ,{ year: 1986, country: 'vietnam', cat: 'reform', label: 'ドイモイ政策', detail: '第6回党大会でドイモイ(刷新)政策を採択し、計画経済から市場経済への転換に着手。700%超のハイパーインフレからの脱却を目指した。', link: '../vietnam/20_lessons.html' }
+    ,{ year: 1986, country: 'vietnam', cat: 'crisis', label: '超インフレ700%', detail: 'ドイモイ前夜にインフレ率が700%超のハイパーインフレに達した。価格・為替自由化とドン切下げ(1989)で1995年に17%へ沈静化した。', link: '../vietnam/05_inflation.html' }
+    ,{ year: 1995, country: 'vietnam', cat: 'milestone', label: '米越国交正常化', detail: '米国との国交正常化とASEAN加盟を実現し、西側の資本と貿易への開放が本格化した。', link: '../vietnam/21_geopolitical_risk.html' }
+    ,{ year: 2000, month: 7, country: 'vietnam', cat: 'milestone', label: 'HOSE開設', detail: '7月にホーチミン証券取引所(HOSE)が開設され、VN-Indexが基準値100で算出を開始。資本市場が誕生した。', link: '../vietnam/06_equity_overview.html' }
+    ,{ year: 2007, country: 'vietnam', cat: 'milestone', label: 'WTO加盟', detail: 'WTO加盟で外資流入ブームが起き、VN-Indexは1,170の最初のバブルピークへ。過熱は翌年の暴落の前段となった。', link: '../vietnam/19_trade.html' }
+    ,{ year: 2008, country: 'vietnam', cat: 'crisis', label: '08株暴落-66%', detail: '世界金融危機と国内インフレ23%が重なりVN-Indexは約-66%暴落。SBVは再融資金利を14%へ引上げ、ドンも切下げた。', link: '../vietnam/15_crises.html' }
+    ,{ year: 2011, country: 'vietnam', cat: 'hike', label: '金利15%へ', detail: 'インフレ18.7%と国際収支危機に対し政策金利を15%へ引上げ、ドンを約9%切下げた。銀行の不良債権が急増した。', link: '../vietnam/02_policy_rate.html' }
+    ,{ year: 2013, country: 'vietnam', cat: 'crisis', label: '銀行不良債権', detail: '不動産バブル崩壊で銀行の不良債権が深刻化し、2013年に資産管理会社VAMCを設立。銀行再編と不良債権処理が進んだ。', link: '../vietnam/16_banking.html' }
+    ,{ year: 2018, country: 'vietnam', cat: 'milestone', label: 'China+1受益', detail: '米中貿易戦争を機に生産移転の「China+1」でベトナムが最大級の受益国に。製造業FDIと輸出が急拡大した。', link: '../vietnam/21_geopolitical_risk.html' }
+    ,{ year: 2022, country: 'vietnam', cat: 'crisis', label: '社債危機VN急落', detail: 'Van Thinh Phat/SCB事件と社債市場危機でVN-Indexは約1,530から874へ暴落。SBVはFX防衛で6.0%へ再利上げした。', link: '../vietnam/15_crises.html' }
+    ,{ year: 2023, country: 'vietnam', cat: 'cut', label: 'SBV利下げ4.5%', detail: 'SBVが年内4回の利下げで再融資金利を4.5%へ。不動産・社債の救済策とあわせ市場が安定化に向かった。', link: '../vietnam/02_policy_rate.html' }
+    ,{ year: 2025, month: 7, country: 'vietnam', cat: 'reform', label: '米越関税合意', detail: '7月に米越が関税で合意(一般20%・積替40%)。当初の46%脅威からは軽減されたが、輸出依存経済への重しとなった。', link: '../vietnam/21_geopolitical_risk.html' }
+    ,{ year: 2026, month: 9, country: 'vietnam', cat: 'milestone', label: 'FTSE新興格上げ', detail: 'FTSE Russellによる新興市場(Secondary Emerging)への格上げが9月21日に発効予定。資金流入期待でVN-Indexは2025年に+41%、2026年に史上最高を更新した。', link: '../vietnam/06_equity_overview.html' }
+    // ---- シンガポール singapore 🇸🇬 ----
+    ,{ year: 1965, month: 8, country: 'singapore', cat: 'milestone', label: 'シンガポール独立', detail: '8月にマレーシアから分離独立。水・食料・市場を隣国に依存する都市国家として出発し、構造的脆弱性の原点となった。', link: '../singapore/20_lessons.html' }
+    ,{ year: 1971, country: 'singapore', cat: 'milestone', label: 'MAS設立', detail: 'シンガポール金融管理庁(MAS)が設立され中央銀行機能を一元化。後に統合金融規制と外貨準備運用も兼ねる特異な機関となった。', link: '../singapore/01_central_bank.html' }
+    ,{ year: 1973, country: 'singapore', cat: 'reform', label: 'SGD変動相場', detail: 'SGDを変動相場へ移行し、マレーシアとの通貨同盟を解消。独自の通貨政策の起点となった。', link: '../singapore/14_currency.html' }
+    ,{ year: 1981, country: 'singapore', cat: 'reform', label: '為替政策採用', detail: '政策金利を持たず為替(S$NEER)バンドを唯一の金融政策手段とする枠組みを採用。以後のシンガポール金融政策の核となった。', link: '../singapore/02_policy_rate.html' }
+    ,{ year: 1985, country: 'singapore', cat: 'crisis', label: '初の景気後退', detail: '高賃金・高コストを背景に独立後初のリセッション(Q3 GDP -3.5%)。賃金抑制やCPF減免で対応した。', link: '../singapore/15_crises.html' }
+    ,{ year: 1997, country: 'singapore', cat: 'crisis', label: 'アジア通貨危機', detail: 'アジア通貨危機で1998年の成長は+0.4%へ失速。ただしSGDは域内で相対的に底堅さを保った。', link: '../singapore/15_crises.html' }
+    ,{ year: 1999, country: 'singapore', cat: 'milestone', label: 'SGX発足', detail: '証券取引所(SES)とデリバティブ取引所(SIMEX)が合併しSGXが発足。株式とデリバティブを統合したアジア初級の上場取引所となった。', link: '../singapore/06_equity_overview.html' }
+    ,{ year: 2003, country: 'singapore', cat: 'crisis', label: 'SARS流行', detail: 'SARS流行で観光・航空が打撃を受け、STIは1,200台へ下落。その後は短期間でV字回復した。', link: '../singapore/15_crises.html' }
+    ,{ year: 2008, country: 'singapore', cat: 'crisis', label: 'リーマン-63%', detail: 'GFCでSTIは2007年10月の3,906から2009年3月に1,457へ約-63%下落。MASは為替政策のスロープをゼロに緩和した。', link: '../singapore/15_crises.html' }
+    ,{ year: 2020, month: 3, country: 'singapore', cat: 'cut', label: 'MASゼロ緩和', detail: 'COVID-19でMASがS$NEERのスロープをゼロにし中心も引下げる同時緩和を実施。為替ベースの異例の大幅緩和だった。', link: '../singapore/02_policy_rate.html' }
+    ,{ year: 2022, country: 'singapore', cat: 'hike', label: '為替引締め', detail: 'CPI総合6.1%のインフレに対し、MASが年内複数回(オフサイクル含む)バンドの再センターとスロープ急傾斜で実質的な「利上げ」を実施した。', link: '../singapore/02_policy_rate.html' }
+    ,{ year: 2023, country: 'singapore', cat: 'reform', label: '巨額マネロン摘発', detail: 'S$30億規模のマネーロンダリング事件を摘発。富裕層資金流入の影が露呈し、AML/CFT規制の大幅強化につながった。', link: '../singapore/18_regulation.html' }
+    ,{ year: 2026, month: 2, country: 'singapore', cat: 'milestone', label: 'STI5000突破', detail: '2月にSTIが初の5,000台へ。銀行・REIT・AI関連需要が牽引し、5月には史上最高値約5,072を記録した。', link: '../singapore/06_equity_overview.html' }
+    // ---- イラン iran 🇮🇷 ----
+    ,{ year: 1979, country: 'iran', cat: 'war', label: 'イラン革命', detail: 'イラン革命と米大使館人質事件で資本逃避が起き、リアルが急落開始。米国の資産凍結と初期制裁を招いた。', link: '../iran/21_geopolitical_risk.html' }
+    ,{ year: 1980, country: 'iran', cat: 'war', label: 'イラン・イラク戦争', detail: '1980〜88年のイラン・イラク戦争で財政が破綻し、インフレと石油インフラの毀損が続いた。', link: '../iran/21_geopolitical_risk.html' }
+    ,{ year: 1995, country: 'iran', cat: 'war', label: '米国の包括禁輸', detail: '米クリントン政権が包括的な禁輸を発動し、投資と貿易が遮断。インフレは約50%に高止まりした。', link: '../iran/21_geopolitical_risk.html' }
+    ,{ year: 2012, country: 'iran', cat: 'crisis', label: 'SWIFT遮断', detail: 'EUの石油禁輸と主要イラン銀行のSWIFT遮断で石油輸出が半減。リアルは数日で約13,000から36,000へ約-50%急落した。', link: '../iran/14_currency.html' }
+    ,{ year: 2015, month: 7, country: 'iran', cat: 'milestone', label: 'JCPOA核合意', detail: '7月の核合意(JCPOA)で制裁解除期待が高まり、リアルは約30,000で安定、インフレは一桁に低下しTEDPIXも上昇した。', link: '../iran/21_geopolitical_risk.html' }
+    ,{ year: 2018, month: 5, country: 'iran', cat: 'war', label: 'JCPOA離脱', detail: '5月にトランプ政権がJCPOAを離脱し制裁を再発動(最大限の圧力)。リアルは公定42,000から9月に15万へ崩壊した。', link: '../iran/21_geopolitical_risk.html' }
+    ,{ year: 2020, country: 'iran', cat: 'crisis', label: '株バブル崩壊', detail: '政府主導の株式誘導で殺到した個人投資家によりTEDPIXが急騰した後、市場史上最大の約-42%暴落となった。', link: '../iran/15_crises.html' }
+    ,{ year: 2022, month: 9, country: 'iran', cat: 'war', label: 'アミニ抗議運動', detail: '9月のマフサ・アミニ死亡をきっかけに全国デモが拡大。政情不安でリアルは40万超へ一段安となり、ネットも遮断された。', link: '../iran/21_geopolitical_risk.html' }
+    ,{ year: 2025, month: 6, country: 'iran', cat: 'war', label: '12日間戦争', detail: '6月13日のイスラエル先制攻撃に始まる「12日間戦争」で米国がフォルドゥ核施設を爆撃(6/22)、6/24に停戦。核施設毀損と安全保障環境の激変を招いた。', link: '../iran/21_geopolitical_risk.html' }
+    ,{ year: 2025, month: 9, country: 'iran', cat: 'war', label: '制裁全面復活', detail: 'E3がスナップバックを発動し、9月27日にJCPOA下で解除されていた国連制裁が全面復活。国際的孤立が一段と深まった。', link: '../iran/21_geopolitical_risk.html' }
+    ,{ year: 2025, month: 10, country: 'iran', cat: 'reform', label: '通貨4ゼロ削除', detail: '10月に議会が「4つのゼロを削除」する通貨改革(1新単位=10,000旧リアル)を最終可決。通貨信認低下の象徴となった。', link: '../iran/14_currency.html' }
+    ,{ year: 2026, month: 2, country: 'iran', cat: 'war', label: '2026イラン戦争', detail: '2月に米・イスラエルが対イラン攻撃を開始しハメネイ師が死亡、ホルムズ海峡封鎖の応酬に発展。原油と地政学リスクが世界に波及した。', link: '../iran/21_geopolitical_risk.html' }
+    ,{ year: 2026, month: 6, country: 'iran', cat: 'crisis', label: 'リアル崩壊180万', detail: '戦争の激化で自由市場レートが約180万リアル/ドルへ加速崩壊(2018年の公定42,000比で40倍超)。慢性高インフレがハイパー一歩手前まで進んだ。', link: '../iran/14_currency.html' }
+    // ---- イスラエル israel 🇮🇱 ----
+    ,{ year: 1984, country: 'israel', cat: 'crisis', label: '超インフレ450%', detail: '1984年に年率約450%のハイパーインフレに達した。旧シェケルは暴落し、経済安定化が急務となった。', link: '../israel/05_inflation.html' }
+    ,{ year: 1985, month: 7, country: 'israel', cat: 'reform', label: '経済安定化計画', detail: '7月の経済安定化計画でインフレを急速に沈静化(月次11%→翌年1%)。BOIの独立性と財政規律が確立し、世界的な教科書事例となった。', link: '../israel/20_lessons.html' }
+    ,{ year: 1986, country: 'israel', cat: 'reform', label: '新シェケル導入', detail: '旧シェケルを1000:1で置換して新シェケル(ILS)を導入。ハイパーインフレからの通貨再建を完了した。', link: '../israel/14_currency.html' }
+    ,{ year: 1991, country: 'israel', cat: 'milestone', label: 'ソ連移民流入', detail: '湾岸戦争と前後してソ連崩壊により100万人規模の移民が流入。豊富な技術人材が後のハイテク立国の土台となった。', link: '../israel/04_employment.html' }
+    ,{ year: 1993, country: 'israel', cat: 'milestone', label: 'オスロ合意', detail: 'オスロ合意による和平期待で外資流入と市場開放が進み、シェケルが安定化。2026年の「1993年以来の最強」の基準年となった。', link: '../israel/21_geopolitical_risk.html' }
+    ,{ year: 2000, country: 'israel', cat: 'crisis', label: 'インティファーダ', detail: '第2次インティファーダとITバブル崩壊が重なり景気が後退。シェケルは約4.9の最弱圏となり株価も急落した。', link: '../israel/15_crises.html' }
+    ,{ year: 2008, month: 11, country: 'israel', cat: 'crisis', label: 'リーマン-46%', detail: 'リーマンショックでTA-35は-46.2%下落し、11月20日に史上最安値590.96を記録。BOIは金利を0.5%へ引下げた。', link: '../israel/15_crises.html' }
+    ,{ year: 2019, month: 12, country: 'israel', cat: 'milestone', label: 'ガス田生産開始', detail: '12月にLeviathan天然ガス田が生産を開始。エネルギー自給とエジプト・ヨルダンへの輸出で経常・財政を構造的に改善した。', link: '../israel/19_trade.html' }
+    ,{ year: 2020, country: 'israel', cat: 'milestone', label: 'アブラハム合意', detail: 'UAE・バーレーンなどとの国交正常化「アブラハム合意」で地域経済統合の期待が高まった。COVID下でBOI金利は0.10%を維持した。', link: '../israel/21_geopolitical_risk.html' }
+    ,{ year: 2023, month: 10, country: 'israel', cat: 'war', label: 'ガザ戦争開戦', detail: '10月7日のハマス奇襲でガザ戦争が開戦。シェケルは10月27日に4.08(11年ぶり安値)へ下落し、長期の戦時経済に入った。', link: '../israel/21_geopolitical_risk.html' }
+    ,{ year: 2023, month: 10, country: 'israel', cat: 'reform', label: 'BOI為替介入', detail: '戦争開始直後にBOIが最大300億ドルの外貨売り介入(10月に82億ドル実売)と150億ドルのSWAPを発表し、シェケルを防衛した。', link: '../israel/14_currency.html' }
+    ,{ year: 2025, month: 6, country: 'israel', cat: 'war', label: '対イラン戦争', detail: '6月の「12日間戦争」でイラン核・軍施設を奇襲し、米国も核施設を爆撃。だが市場は早期に織り込みを解消し、株高・通貨高へ転じた。', link: '../israel/21_geopolitical_risk.html' }
+    ,{ year: 2026, month: 5, country: 'israel', cat: 'milestone', label: 'TA35史上最高値', detail: '戦時下にもかかわらずTA-35は2025年に約+50%、2026年5月6日に史上最高4,628.97を記録。リスクプレミアム剥落と資金回帰が背景となった。', link: '../israel/06_equity_overview.html' }
   ]
 };

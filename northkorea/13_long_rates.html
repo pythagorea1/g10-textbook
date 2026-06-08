@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>北朝鮮 - Long-term Rates | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
+  <script defer src="../assets/charts.js"></script>
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇰🇵 北朝鮮</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. 中央銀行</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. 政策金利</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. 財政政策</a>
+      <a href="04_employment.html" class="sidebar-link">04. 雇用</a>
+      <a href="05_inflation.html" class="sidebar-link">05. インフレ</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. 株式市場概観</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. 株式(初期)</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. 株式(近代)</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. 株式(現代)</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. 株式(現在)</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. 債券市場</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. 短期金利</a>
+      <a href="13_long_rates.html" class="sidebar-link active">13. 長期金利</a>
+      <a href="14_currency.html" class="sidebar-link">14. 通貨</a>
+      <a href="15_crises.html" class="sidebar-link">15. 金融危機</a>
+      <a href="16_banking.html" class="sidebar-link">16. 銀行制度</a>
+      <a href="17_corporate.html" class="sidebar-link">17. 企業・コーポレート</a>
+      <a href="18_regulation.html" class="sidebar-link">18. 規制</a>
+      <a href="19_trade.html" class="sidebar-link">19. 貿易</a>
+      <a href="20_lessons.html" class="sidebar-link">20. 教訓</a>
+      <a href="21_geopolitical_risk.html" class="sidebar-link">21. 地政学リスク</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">G10</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+      <div class="sidebar-section-title">地政学・新興地域</div>
+      <div class="country-flags">
+        <a href="../taiwan/01_central_bank.html" class="country-chip">TW</a>
+        <a href="../hongkong/01_central_bank.html" class="country-chip">HK</a>
+        <a href="../china/01_central_bank.html" class="country-chip">CN</a>
+        <a href="../northkorea/01_central_bank.html" class="country-chip active">KP</a>
+        <a href="../vietnam/01_central_bank.html" class="country-chip">VN</a>
+        <a href="../singapore/01_central_bank.html" class="country-chip">SG</a>
+        <a href="../iran/01_central_bank.html" class="country-chip">IR</a>
+        <a href="../israel/01_central_bank.html" class="country-chip">IL</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 ホーム</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10横断年表</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">北朝鮮</a>
+        <span class="sep">/</span>
+        長期金利 — 5カ年計画とデフォルト国家
+      </div>
+      <h1 class="page-title">🇰🇵 長期金利 — 5カ年計画とデフォルト国家</h1>
+      <p class="page-subtitle">主権金利が観測できない国 — 1970年代デフォルトと約30億ドルの未払い債務</p>
+    </header>
+
+    <article>
+<!-- Key Stats -->
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="stat-value">観測不能</div>
+      <div class="stat-label">主権長期金利。国債利回り曲線も格付けも存在しない</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">約30億USD</div>
+      <div class="stat-label">1970年代対外債務の元利合計(現在も未払い、一部が投機的に取引)</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">1974-80</div>
+      <div class="stat-label">西側からの借入が工業化失敗で事実上デフォルトへ</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">5カ年計画</div>
+      <div class="stat-label">長期資本配分は金利ではなく国家計画で決定</div>
+    </div>
+  </div>
+
+  <section>
+    <h2>1. 「主権長期金利」が存在しない国</h2>
+    <p>
+      長期金利の章では通常、10年国債利回りを軸に「市場が政府の信用と将来のインフレをどう評価しているか」を読む。北朝鮮にはこの10年国債利回りに当たるものが<strong>原理的に存在しない</strong>。理由は二つある。第一に、長期の資本配分は債券市場ではなく<strong>国家5カ年計画(および各種の「○カ年計画」)</strong>が物量で決める。どの工場に・どの鉱山に・どのダムに資源を何年かけて投じるかは、金利による収益性判断ではなく党と内閣の計画で割当てられる。第二に、北朝鮮は対外的に孤立し、機能する国債市場も信用格付けも持たない。
+    </p>
+    <p>
+      したがって本章は、観測できない主権長期金利の代理として、<strong>(1)北朝鮮が「踏み倒し常習国」となった対外債務の歴史</strong>と、<strong>(2)国内向けに試みられて失敗した「公債」</strong>を扱う。長期金利が存在しないこと自体が、この国の信用力と資本市場の不在を雄弁に物語る。
+    </p>
+
+    <div class="mnemonic-box">
+      <span class="mnemonic-icon">🧠</span>
+      <div class="mnemonic-title">記憶のフック: 「利回りがない=信用がない」</div>
+      <div class="mnemonic-body">
+        国債利回りは「お金を貸してくれる相手」がいて初めて成立する。1980年代に対外債務をデフォルトして以来、北朝鮮には長期の貸し手がいない。長期金利の不在は、低金利の証ではなく、市場から締め出された証である。
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>2. 対外債務デフォルトの歴史 — 30億ドルの「踏み倒し」</h2>
+    <p>
+      意外に思われるが、北朝鮮も一度だけ国際資本市場の扉を叩いたことがある。1970年代前半、工業化を急ぐため西側から大規模に借入れた。ユーロ債等での借入(<strong>6.8億ドイツマルク+4.55億スイスフラン</strong>)に加え、フランスや日本の銀行団からも融資を受けた。ところが導入した西側プラントは石油危機後の環境で採算が取れず、輸出も伸びなかった。<strong>1974〜80年にかけて事実上のデフォルト</strong>に陥り、北朝鮮は「踏み倒し常習国」という評判を国際金融界で確立してしまう。
+    </p>
+    <p>
+      1984年に債務リスケジュール交渉が決裂してデフォルトが確定。1988年にはロンドン・クラブ(民間債権者団)が仲裁に持ち込み支払いを求める判断を得たが、北朝鮮は応じなかった。延滞利息が積み上がり、<strong>当初の元本は現在では元利合計で約30億ドル規模の未払い債務</strong>に膨らんでいる。この債権は回収可能性がほぼ無いにもかかわらず、ごく一部が「将来の体制転換・正常化に賭ける」投機的な対象として極めて薄い市場で取引されてきた。
+    </p>
+
+    <div class="table-container">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>年</th>
+            <th>出来事</th>
+            <th>結果</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1970s前半</td>
+            <td>西側から借入(6.8億DM+4.55億CHF、仏・日銀行団融資)</td>
+            <td>工業化を急いだプラント導入</td>
+          </tr>
+          <tr>
+            <td>1974-80</td>
+            <td class="highlight-orange">石油危機後に採算割れ・輸出不振</td>
+            <td class="highlight-orange">事実上のデフォルトへ</td>
+          </tr>
+          <tr>
+            <td>1984</td>
+            <td class="highlight-red">リスケ交渉決裂</td>
+            <td class="highlight-red">デフォルト確定</td>
+          </tr>
+          <tr>
+            <td>1988</td>
+            <td>ロンドン・クラブが仲裁判断取得</td>
+            <td>北朝鮮は支払い拒否</td>
+          </tr>
+          <tr>
+            <td>現在</td>
+            <td class="highlight-red">元利合計 約30億USDが未払い</td>
+            <td>一部が投機的に薄く取引される</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>3. 国内「公債」の試みと失敗 — 人民生活公債</h2>
+    <p>
+      対外的に借りられないなら国内で資金を集めればよい。2003年、北朝鮮は<strong>「人民生活公債」</strong>を発行した。これは通常の利付き国債ではなく、抽選で当選すれば償還される<strong>宝くじ型の公債</strong>だった。住民の手元資金(特に市場で蓄積された現金)を吸い上げ、財政の穴埋めと余剰購買力の回収を狙ったものだが、強制割当に近い形で押し付けられ、当選・償還の不透明さもあって住民の信頼を得られず、<strong>事実上失敗</strong>した。
+    </p>
+    <p>
+      この一件は、長期金利の不在が単なる「市場の未発達」ではなく、<strong>政府と住民の間に信頼の基盤がない</strong>ことの表れであることを示す。利付き債が成立するには「政府は約束した利息と元本を必ず返す」という信認が要る。デフォルトの歴史とデノミによる資産没収を経験した住民にとって、政府の長期の約束は信用に値しないのである。
+    </p>
+  </section>
+
+  <section>
+    <h2>4. 長期資本配分の実像 — 計画・軍需・対外援助</h2>
+    <p>
+      では長期の資金(インフラ・重工業・軍需)はどう賄われているのか。第一に<strong>国家計画による物量割当</strong>。収益率や金利で測られず、党の優先順位(軍事優先=先軍/国防経済)で決まる。第二に<strong>外部からの資源</strong>。歴史的には旧ソ連・中国の友好価格貿易と援助が支柱だったが、1991年のソ連崩壊で援助が途絶し経済の支柱を失った。近年は<strong>対露軍事協力</strong>(砲弾・ミサイル供与の見返りに食料・エネルギー・技術・外貨)が新たな外部資源として浮上している。第三に<strong>違法な外貨獲得</strong>(鉱物の密輸、海外派遣労働者、暗号資産の窃取)が、正規の長期資金調達の代替となっている。
+    </p>
+    <p>
+      まとめると、北朝鮮の「長期金利」は数値として存在しないが、その不在の背後には<strong>デフォルト→国際資本市場からの排除→計画と違法外貨への依存</strong>という因果がある。長期金利曲線の代わりに、この国は制裁と地政学の力学で資本を回している。詳しくは19章(貿易)・21章(地政学リスク)で扱う。
+    </p>
+  </section>
+
+  <section>
+    <h2>出典</h2>
+    <ul>
+      <li>Time「Pulling The Plug」/ PIIE「Debt follies」/ Tandfonline「A brief encounter: North Korea in the Eurocurrency market 1973-80」(1970s債務デフォルト、元利約30億USD)</li>
+      <li>Wikipedia「Economy of North Korea」(国家計画、人民生活公債、対露協力)</li>
+      <li>韓国銀行「北朝鮮GDP推計」(2024)</li>
+    </ul>
+  </section>
+
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+
+    </footer>
+
+    <nav class="page-nav">
+      <a href="12_short_rates.html" class="prev">短期金利</a>
+      <a href="14_currency.html" class="next">通貨</a>
+    </nav>
+  </main>
+
+  <script src="../assets/enhancer.js"></script>
+  <script defer src="../assets/recall.js"></script>
+  <script src="../assets/tts-reader.js"></script>
+</body>
+</html>

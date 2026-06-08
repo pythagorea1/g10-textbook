@@ -1,0 +1,106 @@
+<!-- Key Stats -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">5,178</div>
+    <div class="stat-label">上海総合の高値 (2015年6月12日)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value"><span class="drawdown-badge">-32%</span></div>
+    <div class="stat-label">2015年バブル崩壊 (約3週間で)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">18兆元</div>
+    <div class="stat-label">2015年崩壊で消失した時価総額</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">4日</div>
+    <div class="stat-label">サーキットブレーカーが廃止されるまで (2016年1月)</div>
+  </div>
+</div>
+
+<p>2015年、中国株は再びバブルと崩壊を経験した。今度の主役は<strong>「信用取引（融資融券／レバレッジ）」</strong>だった。借金で株を買う個人投資家が相場を5,178まで押し上げ、その巻き戻しが約-32%の暴落を引き起こした。さらに2016年初には、暴落を防ぐはずの<strong>サーキットブレーカー</strong>がわずか4営業日で廃止に追い込まれるという、制度設計の失敗まで重なった<cite>[1]</cite>。</p>
+
+<div class="key-number-row">
+  <div class="key-number"><span class="key-number-value">5178</span><span class="key-number-label">2015年6月の高値</span></div>
+  <div class="key-number"><span class="key-number-value">18兆元</span><span class="key-number-label">崩壊で消失した時価総額</span></div>
+  <div class="key-number"><span class="key-number-value">2655</span><span class="key-number-label">2016年初の安値圏</span></div>
+</div>
+
+<!-- Chart: SSE recent era 2013-2020 -->
+<div id="china-sse-recent"></div>
+<script>
+ChartBuilder.lines('china-sse-recent', {
+  title: '上海総合指数 2013-2020 — レバレッジ・バブル(5178)と崩壊、サーキットブレーカー失敗',
+  caption: '出典: 上海証券取引所(SSE)。2014-15年に信用取引(融資融券)主導で2,100→5,178へ急騰。2015年6月12日の5,178高値から約3週間で-32%、約18兆元が消失。2016年1月のサーキットブレーカーは4営業日で廃止。',
+  yUnit: '',
+  yRange: [0, 5500],
+  yStep: 1000,
+  series: [{
+    name: '上海総合指数',
+    color: '#ffd93d',
+    data: [[2013, 2100], [2014, 2050], [2014.92, 3235], [2015.45, 5178], [2015.67, 3507], [2016.0, 2655], [2016.5, 2900], [2017, 3100], [2018.0, 3500], [2018.92, 2494], [2019.5, 2900], [2020.17, 2660]]
+  }],
+  annotations: [
+    { year: 2015.45, label: '15年 5178', color: '#ff6b6b' },
+    { year: 2015.67, label: '崩壊 -32%', color: '#5b8def' },
+    { year: 2016.0, label: 'CB失敗', color: '#ff6b6b' },
+    { year: 2018.92, label: '貿易戦争', color: '#5b8def' }
+  ]
+});
+</script>
+
+<section>
+  <h2>2014-15年 — 「レバレッジ・バブル」の膨張</h2>
+  <p>2014年後半から2015年前半にかけて、中国株は急騰した。今回の燃料は<strong>信用取引（融資融券）</strong>——証券会社や、規制の緩いネット金融（場外配資）から借金をして株を買う動きだった。政府系メディアが株高を「改革の成果」と煽ったこともあり、個人投資家がレバレッジをかけて殺到。上海総合指数は2014年末の3,200台から、<strong>2015年6月12日に5,178</strong>へと半年で急騰した<cite>[2]</cite>。</p>
+  <p>借金で買い上げる相場は、上昇局面では加速装置として働くが、下落局面では<strong>「追証（強制ロスカット）→売り→さらなる下落→追証」</strong>という負の連鎖を生む。バブルは、その内部に自壊のメカニズムを抱えていた。</p>
+</section>
+
+<section>
+  <h2>2015年夏 — 約-32%、18兆元の消失</h2>
+  <p>2015年6月、当局が場外配資（違法な信用供与）の規制に乗り出すと、相場は崩落を始めた。レバレッジの巻き戻しが連鎖し、上海総合指数は6月12日の5,178高値から、<strong>わずか約3週間で約-32%</strong>下落。市場全体で<strong>約18兆元（当時のGDPの約4分の1に相当）</strong>の時価総額が消失したとされる<cite>[3]</cite>。</p>
+  <p>当局は前例のない規模の市場介入を行った。<strong>「国家隊」</strong>による大型株の買い支え、新規上場（IPO）の一時停止、大株主の売却禁止、空売り規制、そして金利・準備率の引き下げ——あらゆる手段が動員された。この大規模介入は一定の下支え効果を持った一方、「市場は自由ではなく当局が操作するもの」という印象を内外に残し、市場の信認を損ねた。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">2015年＝「借金で作ったバブル」</div>
+    <div class="mnemonic-body">2007年バブルが「熱狂」なら、2015年バブルは<strong>「レバレッジ（融資融券・場外配資）」</strong>が主役。借金で買い上げ、追証で投げ売る——上げも下げも増幅された。約3週間で-32%、18兆元が消えた。レバレッジ相場の怖さを示す教科書的事例。</div>
+  </div>
+</section>
+
+<section>
+  <h2>2016年1月 — サーキットブレーカー4日で廃止</h2>
+  <p>暴落の再発を防ぐため、当局は2016年1月1日から<strong>サーキットブレーカー（CB）</strong>を導入した。CSI300指数が前日比±5%でいったん取引を15分停止し、±7%で当日の取引を終日停止する仕組みである。ところが、これが裏目に出た<cite>[4]</cite>。</p>
+  <p>導入初日の1月4日、株価は5%下落でいったん停止、再開後さらに下げて7%に達し終日停止。投資家は<strong>「停止される前に売っておこう」</strong>と先を争って売る「磁石効果（magnet effect）」が働き、かえって下落を加速させた。1月7日にはわずか開始30分足らずで全面停止に追い込まれ、当局は<strong>導入からわずか4営業日でサーキットブレーカーを廃止</strong>するという異例の事態となった。制度設計の失敗として、世界の市場関係者に強い印象を残した。</p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>時期</th><th>上海総合</th><th>出来事</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>2014年末</td><td>約3,235</td><td>信用取引主導の上昇開始</td></tr>
+        <tr class="highlight-row"><td>2015年6月12日</td><td class="highlight-orange">5,178</td><td>バブルのピーク</td></tr>
+        <tr><td>2015年7月初</td><td>約3,500</td><td>約3週間で-32%、18兆元消失</td></tr>
+        <tr><td>2016年1月</td><td>約2,655</td><td>サーキットブレーカー導入即日廃止</td></tr>
+        <tr><td>2018年12月</td><td>2,494</td><td>米中貿易戦争で下落</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>2018年 — 米中貿易戦争の重し</h2>
+  <p>2016年に底入れした後、中国株は2018年初にかけて緩やかに回復したが、新たな逆風が吹いた。<strong>2018年3月に始まった米中貿易戦争</strong>である。トランプ政権による対中関税（通商法301条）と中国の報復関税の応酬は、輸出企業の業績懸念とサプライチェーン再編（デカップリング）への不安を高め、上海総合指数は2018年12月に<strong>2,494</strong>まで下落した<cite>[5]</cite>。</p>
+  <p>2015年のレバレッジ・バブル崩壊、2016年のサーキットブレーカー失敗、2018年の貿易戦争——この時代の中国株は、<strong>「内なる投機リスク」と「外からの地政学リスク」</strong>の両方に翻弄された。当局の市場管理能力への疑問符と、米中対立という構造的逆風が、その後の中国株の重しとなっていく。次章では、不動産不況と2024年の刺激策をめぐる「現在」の相場を扱う<cite>[1]</cite>。</p>
+</section>
+
+<footer class="sources">
+  <h3>出典・参考文献</h3>
+  <ol>
+    <li>上海証券取引所(SSE) 指数データ、Wikipedia「2015-2016 Chinese stock market turbulence」</li>
+    <li>2014-15年の信用取引(融資融券・場外配資)主導の株高に関する報道・研究</li>
+    <li>2015年夏の株バブル崩壊・国家隊介入・18兆元消失に関する報道</li>
+    <li>2016年1月サーキットブレーカー導入・即日廃止に関する分析</li>
+    <li>米中貿易戦争(2018年〜)の株式市場への影響、既存ID `us_china_trade_2018`</li>
+  </ol>
+</footer>

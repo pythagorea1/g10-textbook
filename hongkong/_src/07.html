@@ -1,0 +1,124 @@
+      <!-- ============ KEY STATS ============ -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">1969年</div>
+          <div class="stat-label">ハンセン指数 算出開始</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">▲90%超</div>
+          <div class="stat-label">1973年バブル崩壊（1,774→150）<span class="drawdown-badge">-91%</span></div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">4営業日</div>
+          <div class="stat-label">1987年ブラックマンデーで取引所を全面閉鎖</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">4取引所</div>
+          <div class="stat-label">乱立した取引所を1986年にHKSEへ統合</div>
+        </div>
+      </div>
+
+      <section>
+        <h2>香港株式市場の黎明 — 投機と混乱の時代</h2>
+        <p>香港の証券取引の歴史は19世紀にさかのぼるが、近代的な株式市場として動き出すのは戦後である。1960年代後半、香港の高度成長を背景に株式投資が大衆化し、<strong>1969年11月24日にハンセン指数の算出が開始</strong>された（基準値100＝1964年7月31日）。これは香港経済が植民地の交易港から、独自の資本市場を持つ経済圏へと脱皮しつつあった象徴だった<cite>[1]</cite>。</p>
+        <p>だが黎明期の香港市場は、規制が未整備なまま投機熱だけが先行する危うい市場でもあった。1969年以降、香港証券取引所（HKSE）以外に遠東交易所・金銀証券交易所・九龍証券交易所が次々と開設され、<strong>4つの取引所が乱立</strong>。上場基準も投資家保護も甘いまま、空前の株式ブームが膨らんでいった。</p>
+      </section>
+
+      <!-- ============ CHART: EARLY HSI ============ -->
+      <section>
+        <h2>初期のハンセン指数 1987–1998</h2>
+        <p>下のチャートは、ハンセン指数の初期（記録の残る1987年以降）の推移である。1987年のブラックマンデー、1993年のH株登場による急騰、そして1997年返還とその後のアジア危機への暴落が刻まれている。1973年の伝説的バブル崩壊はこの範囲の前にあたる。</p>
+        <div id="hk-hsi-early"></div>
+        <script>
+        ChartBuilder.lines('hk-hsi-early', {
+          title: 'ハンセン指数 初期 1987–1998（年次・転換点近似）',
+          caption: '出典: Hang Seng Indexes、HKEX。1973年バブル崩壊（1,774→150、▲90%超）はこの範囲の前。1987年ブラックマンデーでは取引所を4営業日閉鎖した。',
+          yUnit: '',
+          yRange: [0, 18000],
+          yStep: 3000,
+          series: [{
+            name: 'ハンセン指数',
+            color: '#00d4aa',
+            data: [[1987,2302],[1990,3024],[1993,11888],[1994,8191],[1997.08,16820],[1998.08,6660]]
+          }],
+          annotations: [
+            { year: 1987.8, label: '87 暴落', color: '#ff6b6b' },
+            { year: 1993, label: '93 H株', color: '#ffd93d' },
+            { year: 1997.6, label: '97 返還', color: '#00d4aa' },
+            { year: 1998.6, label: '98 危機', color: '#ff6b6b' }
+          ]
+        });
+        </script>
+      </section>
+
+      <section>
+        <h2>1973年バブル崩壊 — 香港市場の原体験</h2>
+        <p>香港株式市場の集合的記憶に最も深く刻まれているのが、<strong>1973年のバブル崩壊</strong>である。1972年から1973年初頭にかけて、香港は史上空前の株式ブームに沸いた。一般市民が借金をして株を買い、株券の印刷が需要に追いつかないほどだったという。ハンセン指数は1973年3月9日に<strong>1,774.96</strong>のピークを付けた<cite>[2]</cite>。</p>
+        <p>しかし偽造株券事件、石油危機、過熱への警戒が重なり、バブルは一瞬で弾けた。指数は1974年12月までに<strong>150ポイント</strong>へと暴落し、<strong>下落率は実に90%超</strong>に達した。多くの個人投資家が破産し、香港社会に深い傷を残した。</p>
+        <div class="mnemonic-box">
+          <span class="mnemonic-icon">💥</span>
+          <div class="mnemonic-title">1,774 → 150（▲91%）</div>
+          <div class="mnemonic-body">わずか1年半でハンセン指数は約9割を失った。この壊滅的な経験が、香港の証券規制整備（証券監理委員会の前身の設置など）の出発点となった。「規制なき市場は自壊する」という教訓は、後の香港の市場制度の礎になる。</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>1980年代 — 制度整備と取引所統合</h2>
+        <p>1973年の教訓と、その後の度重なる混乱を経て、香港は市場インフラの近代化に着手した。最大の改革が、乱立していた4つの取引所の統合である。</p>
+        <div class="timeline">
+          <div class="timeline-item crisis">
+            <div class="timeline-date">1973</div>
+            <div class="timeline-content">
+              <h4>バブル崩壊</h4>
+              <p>HSI 1,774→150（▲90%超）。規制未整備の市場の危うさが露呈。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">1980</div>
+            <div class="timeline-content">
+              <h4>香港聯合交易所（HKSE）設立合意</h4>
+              <p>4取引所の統合方針が決定。投資家保護と上場基準の統一を目指す。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">1986.04</div>
+            <div class="timeline-content">
+              <h4>取引所統合・取引開始</h4>
+              <p>統合された香港聯合交易所が単一市場として始動。電子取引・国際標準化への第一歩。</p>
+            </div>
+          </div>
+          <div class="timeline-item crisis">
+            <div class="timeline-date">1987.10</div>
+            <div class="timeline-content">
+              <h4>ブラックマンデーと取引所閉鎖</h4>
+              <p>世界株安のなか、香港は取引所を4営業日全面閉鎖。先物決済危機を招き国際的批判を浴びる。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>1987年ブラックマンデー — 取引所4日間閉鎖の汚点</h2>
+        <p>1987年10月19日、ニューヨーク発の「ブラックマンデー」が世界を襲うと、香港市場も暴落した。ここで香港は重大な判断ミスを犯す。取引所と先物取引所の経営陣は、損失の連鎖を恐れて<strong>10月20日から4営業日にわたり市場を全面閉鎖</strong>したのである<cite>[3]</cite>。</p>
+        <p>この閉鎖は裏目に出た。市場が再開した10月26日、堰を切ったように売りが殺到し、ハンセン指数は<strong>1日で約33%下落</strong>。先物市場では決済不能（デフォルト）が続出し、保証機構が破綻寸前に追い込まれた。政府は緊急の救済融資を余儀なくされた。市場を閉じても投げ売りは止められず、むしろ流動性を断って混乱を深めるという「閉鎖の失敗」は、後の世界の取引所運営の反面教師となった。この事件は香港の市場ガバナンス改革（Davison報告書に基づく取引所・規制の抜本見直し）を促し、<strong>1989年の証券先物委員会（SFC）設立</strong>へとつながった。</p>
+        <div class="key-number-row">
+          <div class="key-number"><span class="key-number-value">▲33%</span><span class="key-number-label">再開初日の下落（閉鎖が裏目に）</span></div>
+          <div class="key-number"><span class="key-number-value">先物危機</span><span class="key-number-label">決済不能続出、保証機構が破綻寸前</span></div>
+          <div class="key-number"><span class="key-number-value">SFC設立</span><span class="key-number-label">1989年、独立した証券規制当局が誕生</span></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>黎明期の市場文化 — 仙股と投機の街</h2>
+        <p>初期の香港市場を語るうえで欠かせないのが、その独特な「投機文化」である。額面の小さい超低位株（いわゆる<strong>「仙股（cent stocks／ペニー株）」</strong>が大量に存在し、個人投資家が短期売買を繰り返す活況が市場の地肌を成していた。株式分割や増資で株価を意図的に低く保ち、出来高を膨らませる慣行は、後に株主価値の希薄化（ダイリューション）問題として規制の対象となっていく。</p>
+        <div class="mnemonic-box">
+          <span class="mnemonic-icon">🎲</span>
+          <div class="mnemonic-title">「炒股」の街</div>
+          <div class="mnemonic-body">香港では株式投機を「炒股（チャオグー）」と呼び、競馬と並ぶ大衆の関心事だった。1973年バブルはこの熱狂が暴走した結果であり、1987年の取引所閉鎖は「混乱を止めようとして混乱を増幅した」失敗だった。<strong>熱狂と未整備が生んだ2度の災厄</strong>が、香港を規律ある市場へと向かわせた。</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>初期香港市場が残した教訓</h2>
+        <p>1969年から1990年までの香港株式市場は、「投機の暴走 → 崩壊 → 制度整備」というサイクルを2度（1973年と1987年）経験した。この苦い学習の過程で、香港は取引所の統合、独立規制当局（SFC）の創設、決済・保証制度の強化を成し遂げた。皮肉にも、これらの危機が香港を<strong>規律ある国際金融センター</strong>へと鍛え上げる原動力となった。次章では、こうして整備された市場の上で1990年代に花開く「中国プレイ」 —— H株時代の幕開けと1997年返還、そしてアジア通貨危機 —— を追う。</p>
+      </section>

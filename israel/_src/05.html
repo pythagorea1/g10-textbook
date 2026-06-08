@@ -1,0 +1,115 @@
+<!-- Key Stats -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">約450%</div>
+    <div class="stat-label">ピークインフレ率 (1984年)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">1985年7月</div>
+    <div class="stat-label">経済安定化計画 (数か月で沈静)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">1.9%</div>
+    <div class="stat-label">現在のCPI (2026年4月, 目標帯内)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">9か月</div>
+    <div class="stat-label">CPIが目標1〜3%帯に連続して収まる期間</div>
+  </div>
+</div>
+
+<p>イスラエルのインフレ史は、世界の経済学の教科書に載る2つの物語からなる。前半は<strong>1980年代の年率約450%というハイパーインフレ</strong>と、それを数か月で鎮めた<strong>1985年の経済安定化計画</strong>——「ハイパーインフレからの脱出」の世界的な成功事例である。後半は、その規律を受け継いだ現在の<strong>目標1〜3%を9か月連続で達成するインフレターゲッター</strong>としての姿。本章ではこの劇的な転換を2枚のチャートで追う。</p>
+
+<!-- Chart 1: Hyperinflation and stabilization -->
+<div id="israel-hyperinflation"></div>
+<script>
+ChartBuilder.lines('israel-hyperinflation', {
+  title: 'ハイパーインフレと安定化 — CPI前年比 1980-1998 (%)',
+  caption: '出典: Wikipedia "1985 Israel Economic Stabilization Plan" / CBS / BOI。1984年に約450%でピーク、1985年7月の安定化計画で四半期インフレが月次11%→翌年1%へ急沈静。1986年に新シェケル(旧1000:1)導入。1980/1991/1998の年次値は史実トレンドに基づく代表概算。',
+  yUnit: '%',
+  yStep: 100,
+  yRange: [0, 500],
+  series: [{
+    name: 'CPI(前年比)',
+    color: '#ff6b6b',
+    data: [[1980,131],[1984,450],[1985,185],[1986,20],[1991,18],[1998,5.4]]
+  }],
+  annotations: [
+    { year: 1984, label: 'ピーク450', color: '#ff6b6b' },
+    { year: 1985, label: '安定化計画', color: '#ffd93d' },
+    { year: 1986, label: '新シェケル', color: '#00d4aa' }
+  ]
+});
+</script>
+
+<section>
+  <h2>ハイパーインフレの時代（1970s–1985）</h2>
+  <p>1970〜80年代のイスラエルは、慢性的な高インフレに苦しんだ。第4次中東戦争（1973年）・イラン革命（1979年）に伴う2度のオイルショック、巨額の防衛費と財政赤字、そしてそれを中央銀行のマネタイズ（紙幣増刷）で賄う構造が、インフレを年々加速させた。さらに<strong>賃金・物価・為替の自動スライド制（インデクセーション）</strong>が物価上昇を機械的に増幅し、インフレがインフレを呼ぶ悪循環に陥った<cite>[1]</cite>。</p>
+  <p>1984年、CPI上昇率は<strong>年率約450%</strong>に達し、1985年末には1,000%超に達するとの予測まで出た。人々は給料を受け取ると即座にドルや物に換え、価格は週単位・日単位で書き換えられた。通貨（旧シェケル）への信認は崩壊寸前であった。</p>
+</section>
+
+<section>
+  <h2>1985年経済安定化計画 — 教科書的成功</h2>
+  <p>1985年7月、Peres挙国一致内閣は<strong>経済安定化計画（Economic Stabilization Plan）</strong>を断行した。その処方箋は、ハイパーインフレ対策の古典として今も引用される<cite>[2]</cite>。</p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>施策</th><th>内容</th><th>狙い</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>賃金・物価・為替の凍結</td><td>主要価格を一斉に固定</td><td>インデクセーションの悪循環を断ち切る</td></tr>
+        <tr><td>財政赤字の大幅削減</td><td>政府支出カット・補助金削減</td><td>インフレの根本原因を除去</td></tr>
+        <tr><td class="highlight-orange">赤字マネタイズの禁止</td><td>政府のBOI借入を法的に制限</td><td>紙幣増刷によるインフレを遮断</td></tr>
+        <tr><td>シェケルの対ドル固定</td><td>為替を名目アンカーに</td><td>期待インフレの安定化</td></tr>
+        <tr><td>新シェケル導入(1986)</td><td>旧シェケルを1000:1で置換</td><td>通貨への信認回復</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>効果は劇的だった。<strong>四半期の月次インフレ率は計画前の11%前後から、翌年には約1%へと急速に沈静</strong>した。1986年の年間CPIは約20%まで低下し、その後も年々低下していった。重要なのは、この成功が単なる物価凍結ではなく、<strong>財政・金融の規律という「根本治療」</strong>を伴った点である。賃金物価凍結だけでは凍結解除後にインフレが再燃するが、赤字マネタイズの禁止という制度改革がインフレ期待を恒久的に変えたのである<cite>[3]</cite>。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">450% → 1%：ハイパーインフレ脱出の公式</div>
+    <div class="mnemonic-body">イスラエル1985の教訓 = <strong>「価格凍結（時間稼ぎ）＋財政赤字削減＋中央銀行マネタイズの法的禁止（根本治療）」を同時に打つ</strong>。一時的な凍結だけでは再燃する。財政と金融の規律を制度に埋め込んだから、450%が数か月で1%台に落ちた。世界のハイパーインフレ対策の教科書事例。</div>
+  </div>
+</section>
+
+<!-- Chart 2: Modern inflation within target band -->
+<div id="israel-inflation-modern"></div>
+<script>
+ChartBuilder.lines('israel-inflation-modern', {
+  title: '現代のインフレ — CPIと目標帯 1〜3% (2015-2026)',
+  caption: '出典: CBS / BOI / TradingEconomics。2015・2020はデフレ気味、2022に約5%超のピーク、2025=2.5%、2026年4月=1.9%で目標1〜3%帯内（9か月連続）。青の2本線が目標帯の上限3%・下限1%。',
+  yUnit: '%',
+  yStep: 1,
+  yRange: [-2, 6],
+  series: [
+    { name: 'CPI(前年比)', color: '#00d4aa', data: [[2015,-1.0],[2020,-0.6],[2022,5.3],[2023,3.0],[2024,3.0],[2025,2.5],[2026.33,1.9]] },
+    { name: '目標上限3%', color: '#5b8def', data: [[2015,3],[2026.33,3]] },
+    { name: '目標下限1%', color: '#5b8def', data: [[2015,1],[2026.33,1]] }
+  ],
+  annotations: [
+    { year: 2015, label: 'デフレ気味', color: '#ffd93d' },
+    { year: 2022, label: 'ピーク5%超', color: '#ff6b6b' },
+    { year: 2026.33, label: '1.9%', color: '#00d4aa' }
+  ]
+});
+</script>
+
+<section>
+  <h2>現代のインフレ — 目標帯のなかの安定</h2>
+  <p>安定化計画以降、イスラエルのインフレは構造的に低位安定し、1992年に正式導入されたインフレ目標制（1〜3%）の下で先進国型の物価環境を実現した。2010年代半ばには<strong>デフレ気味（2015年-1.0%、2020年-0.6%）</strong>になる局面すらあり、これがBOIの0.10%という超低金利を正当化した<cite>[4]</cite>。</p>
+  <p>コロナ後の世界的インフレ波及で<strong>2022年には約5%超</strong>とピークをつけたが、BOIの利上げとシェケル高により急速に沈静し、2025年=2.5%、<strong>2026年4月=1.9%</strong>と目標帯のほぼ中央に収まった。CPIが目標1〜3%帯に9か月連続で収まっている事実は、BOIのインフレターゲティングが機能していることの証左である。かつて450%を経験した国が、いまや「インフレが1.9%で安定しすぎて利下げできる」局面にあるという対比こそ、イスラエル経済の規律の成果である。</p>
+</section>
+
+<footer class="sources">
+  <h3>出典・参考文献</h3>
+  <ol>
+    <li>Wikipedia "Israeli old shekel"、オイルショック・インデクセーションの悪循環、1984≈450%</li>
+    <li>Wikipedia "1985 Israel Economic Stabilization Plan"、Brookings（Peres安定化）、月次11%→1%</li>
+    <li>NBER / World Bank（安定化政策の評価）、赤字マネタイズ禁止の制度効果</li>
+    <li>CBS（中央統計局）・BOI・TradingEconomics（2015〜2026 CPI、2026/4=1.9%・目標帯9か月連続）</li>
+  </ol>
+</footer>

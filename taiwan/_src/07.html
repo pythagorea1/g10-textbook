@@ -1,0 +1,102 @@
+<!-- Key Stats -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">1962年</div>
+    <div class="stat-label">台湾証券取引所（TWSE）取引開始</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">12,682</div>
+    <div class="stat-label">1990/2 バブル天井（intraday）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">-80%</div>
+    <div class="stat-label">同年10月 2,560へ <span class="drawdown-badge">-80%</span></div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">8か月</div>
+    <div class="stat-label">天井から大底までの暴落期間</div>
+  </div>
+</div>
+
+<section>
+  <h2>市場の誕生（1962）</h2>
+  <p>台湾証券取引所（TWSE / 臺灣證券交易所）は1961年に設立され、<strong>1962年に取引を開始</strong>した。戦後の国民党政権下で、農地改革で土地を失った地主層への補償（公営企業株の交付）が初期の上場株の母体となり、資本市場の形成が進んだ。1966年を基準（100）とする加権指数（TAIEX、第06章）が市場の体温計となった。当初は上場銘柄も投資家も限られ、市場は静かなものだったが、1980年代後半、台湾経済の高度成長と過剰流動性が、世界の金融史に残る大バブルを生むことになる。</p>
+</section>
+
+<!-- Early TAIEX: bubble + dotcom -->
+<div id="tw-taiex-early"></div>
+<script>
+ChartBuilder.lines('tw-taiex-early', {
+  title: 'TAIEX 黎明期 1986-2001（バブル天井とITバブル）',
+  caption: '出典: TWSE / Wikipedia "TAIEX"。アンカー（1986≈1000、1990/2 12,682天井、1990/10 2,560、2000/2 10,202、2001 3,446）は史実、中間は代表値（スムージング）。',
+  yUnit: '',
+  yStep: 2000,
+  yRange: [0, 14000],
+  series: [{
+    name: 'TAIEX',
+    color: '#ffd93d',
+    data: [
+      [1986, 1000],[1987, 2300],[1988, 5100],[1989, 9600],[1990.02, 12682],
+      [1990.10, 2560],[1991, 4600],[1992, 3400],[1993, 6000],[1995, 5000],
+      [1996, 6900],[1997, 8700],[1998, 6400],[1999, 8400],[2000.02, 10202],[2001, 3446]
+    ]
+  }],
+  annotations: [
+    { year: 1990.02, label: '90 12682', color: '#ff6b6b' },
+    { year: 1990.10, label: '90 -80%', color: '#ff9f43' },
+    { year: 2000.02, label: '00 10202', color: '#5b8def' },
+    { year: 2001, label: '01 3446', color: '#00d4aa' }
+  ]
+});
+</script>
+
+<section>
+  <h2>1980年代後半の狂騒</h2>
+  <p>1980年代後半、台湾は<strong>輸出主導の高度成長と巨額の貿易黒字</strong>を背景に、空前のカネ余りに沸いた。プラザ合意（1985）後のTWD高、金融自由化、そして個人の旺盛な投機意欲が結びつき、株価は天井知らずに上昇した。TAIEXは1986年の約1,000から、1990年2月には<strong>12,682</strong>（intraday）へと、わずか4年で<strong>12倍</strong>以上に達した。</p>
+  <p>この時期の台湾は「全民炒股（国民総株式投機）」と呼ばれる熱狂のさなかにあった。主婦も学生も会社員も証券会社の店頭（號子）に詰めかけ、企業の実態とかけ離れたPERで株が売買された。賭博と見分けのつかない投機、「地下号子」やインサイダー、相場操縦が横行し、株式は実体経済から完全に乖離した「マネーゲーム」と化していた。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">12,682 → 2,560：戦後アジア最大級のバブル崩壊</div>
+    <div class="mnemonic-body">
+      <p>1990年2月の天井<strong>12,682</strong>から、わずか8か月後の同年10月には<strong>2,560</strong>へ。下落率は<strong>約-80%</strong>。日本のバブル崩壊（日経 -63%）をも上回る暴落で、台湾の「個人投資家文化」と「ボラティリティの高さ」の原点となった。覚え方は「<strong>イチ・ニ・ロク・ハチ・ニ（12682）から、ニ・ゴ・ロク・マル（2560）へ8か月</strong>」。</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>大崩壊（1990）</h2>
+  <p>1990年、過熱した相場は崩壊した。金融引き締め、湾岸危機による原油高、そして何より行き過ぎた投機の自律反転が引き金となり、TAIEXは2月の天井12,682から<strong>同年10月に2,560まで暴落</strong>した。下落率は約-80%。多くの個人投資家が財産を失い、社会問題化した。この戦後アジア最大級の株式バブル崩壊は、台湾人の投資行動に深い刻印を残し、「株は短期で大きく動くもの」「政府が市場を支える（後の国安基金＝政府系安定化基金）」という認識を定着させた。</p>
+  <p>暴落後、市場は1990年代を通じて4,000〜8,000台のレンジで乱高下を繰り返しながら回復していった。1995〜1996年には第3次台湾海峡危機（第15・21章）で再び急落するなど、経済要因と地政学要因の両方に揺さぶられる台湾株の宿命が、この時期にすでに現れていた。</p>
+</section>
+
+<section>
+  <h2>ITバブルへの助走（1990年代後半）</h2>
+  <p>1990年代後半、台湾経済は労働集約型の軽工業から、半導体・PC・電子部品へと産業構造を大転換させた。TSMC（1987設立、後に上場）やUMCに代表される半導体ファウンドリ、エイサーやホンハイ（鴻海）といったハイテク企業が台頭し、台湾は「世界のIT工場」としての地位を確立していった。この産業転換が株式市場を再び押し上げ、世界的なドットコム・ブームと共鳴して、TAIEXは2000年2月に<strong>10,202</strong>へと再上昇する。</p>
+  <p>しかしこのITバブルもまた長くは続かなかった。2000年のドットコム崩壊と2001年の戦後初の本格的景気後退で、TAIEXは<strong>2001年に3,446</strong>まで急落する。1990年のバブル崩壊からわずか10年で、台湾株は二度目の「天井からの大暴落」を経験した。この続きは第08章（近代）で追う。</p>
+
+  <div class="key-number-row">
+    <div class="key-number">
+      <span class="key-number-value">12倍</span>
+      <span class="key-number-label">1986→1990の上昇（約1000→12682）</span>
+    </div>
+    <div class="key-number">
+      <span class="key-number-value">號子</span>
+      <span class="key-number-label">証券店頭に群がる個人投資家文化</span>
+    </div>
+    <div class="key-number">
+      <span class="key-number-value">国安基金</span>
+      <span class="key-number-label">後に整備される政府系市場安定化基金</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>出典・参考文献</h2>
+  <ol>
+    <li>台湾証券取引所（TWSE）, 沿革・市場史 <a href="https://www.twse.com.tw/en/">twse.com.tw</a></li>
+    <li>Wikipedia, "TAIEX"（1990/2 天井12,682.41、同年10月2,560への暴落）</li>
+    <li>Wikipedia, "Economy of Taiwan"（1980年代後半のバブルと産業転換）</li>
+    <li>各種市場史資料（個人投資家文化・全民炒股・第3次台湾海峡危機1995-96）</li>
+  </ol>
+</section>

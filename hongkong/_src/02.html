@@ -1,0 +1,171 @@
+      <!-- ============ KEY STATS ============ -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">4.00%</div>
+          <div class="stat-label">HKMA基準金利（2025年12月設定、2026年3月据置）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">+50bp</div>
+          <div class="stat-label">基準金利＝Fed下限＋50bp（公式の一部）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">5.75%</div>
+          <div class="stat-label">直近ピーク（2023年8月、Fed引締めに連動）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">0.50%</div>
+          <div class="stat-label">直近の底（2008–15年、2020–22年も）</div>
+        </div>
+      </div>
+
+      <div class="key-number-row">
+        <div class="key-number"><span class="key-number-value">0回</span><span class="key-number-label">HKMAが「自分の判断」で行った利上げ/利下げ</span></div>
+        <div class="key-number"><span class="key-number-value">不可能の三角形</span><span class="key-number-label">固定相場・自由な資本移動・独立金融政策は同時に2つまで</span></div>
+        <div class="key-number"><span class="key-number-value">Fed追随</span><span class="key-number-label">香港の金利は米国の金利が決める</span></div>
+      </div>
+
+      <section>
+        <h2>香港には「政策金利」が存在しない</h2>
+        <p>本章のテーマは、他のすべての国の章と決定的に異なる。日本銀行やFedは、景気・物価を見て政策金利を「決める」。だが<strong>香港にはその意味での政策金利が存在しない</strong>。HKMAは香港の景気が良かろうと悪かろうと、自分の判断で利上げ・利下げをすることができない。なぜか。答えは経済学で最も有名な制約のひとつ、<strong>「不可能の三角形（Impossible Trinity）」</strong>にある<cite>[1]</cite>。</p>
+
+        <div class="mnemonic-box">
+          <span class="mnemonic-icon">🔺</span>
+          <div class="mnemonic-title">不可能の三角形（マンデル＝フレミングのトリレンマ）</div>
+          <div class="mnemonic-body">
+            ①為替の安定（固定相場）、②自由な資本移動、③独立した金融政策 —— この3つは<strong>同時に2つまでしか実現できない</strong>。<br>
+            香港は国際金融センターとして②（資本移動の自由）を手放せず、通貨ボードで①（固定相場）を選んだ。その結果、<strong>③（独立金融政策）を放棄せざるを得ない</strong>。これが「香港に政策金利がない」ことの正体である。
+          </div>
+        </div>
+
+        <p>香港が放棄した「③独立金融政策」は、どこかへ消えたわけではない。それは香港ドルがペッグする相手国、すなわち<strong>米国Fedに丸ごと移譲された</strong>。Fedが利上げすれば香港の金利も上がり、Fedが利下げすれば香港の金利も下がる。香港の金融政策はワシントンで決まるのである。</p>
+      </section>
+
+      <!-- ============ CHART: HKMA BASE RATE HISTORY ============ -->
+      <section>
+        <h2>HKMA基準金利の歴史 — Fedの完全な影</h2>
+        <p>下のチャートは、香港の基準金利（Base Rate、1998年の割引窓口導入以降）の推移である。米国の政策金利の動きと並べると、ほぼ完全に重なる。香港の景気循環とは無関係に、金利が上下していることがわかる<cite>[2]</cite>。</p>
+        <div id="hk-base-rate"></div>
+        <script>
+        ChartBuilder.lines('hk-base-rate', {
+          title: 'HKMA基準金利 1998–2026（年末近似、Fed連動）',
+          caption: '出典: HKMA Base Rate プレスリリース、BIS Papers No.73「Monetary operations under the Currency Board」。1998年の割引窓口（Discount Window）導入以降の基準金利。1990年代前半はHIBOR概算。Fed連動が原則のため、米国の利上げ・利下げサイクルとほぼ完全に一致する。',
+          yUnit: '%',
+          yRange: [0, 9],
+          yStep: 1,
+          series: [{
+            name: 'HKMA Base Rate',
+            color: '#00d4aa',
+            data: [[1998,8.5],[2000,8.0],[2001,4.25],[2003,2.5],[2006,6.75],[2008,3.5],[2009,0.5],[2012,0.5],[2015,0.5],[2016,0.75],[2017,1.75],[2018,2.75],[2019,2.875],[2020,0.5],[2021,0.5],[2022,4.75],[2023,5.75],[2024,4.75],[2025,4.00],[2026.03,4.00]]
+          }],
+          annotations: [
+            { year: 1998, label: '98 8.5%', color: '#ff6b6b' },
+            { year: 2001, label: '01 急低下', color: '#5b8def' },
+            { year: 2009, label: '09 0.5%底', color: '#5b8def' },
+            { year: 2016, label: '16 反転', color: '#ff9f43' },
+            { year: 2020, label: '20 COVID', color: '#5b8def' },
+            { year: 2023, label: '23 5.75%', color: '#ff6b6b' }
+          ]
+        });
+        </script>
+        <p>とりわけ2022–2023年の動きは象徴的だった。Fedがインフレ退治のため政策金利を史上最速で5.25–5.50%まで引き上げると、香港の基準金利も連動して<strong>0.5%から5.75%へ約1年半で急騰</strong>した。問題は、この時期の香港経済が決して過熱していなかったことである。デモ・コロナ・不動産不況で内需は弱含んでいたにもかかわらず、香港の住宅ローン金利や企業借入コストはFedの都合で跳ね上がった。これが次に述べる「金利輸入の罠」である。</p>
+      </section>
+
+      <section>
+        <h2>基準金利はどう決まるのか — 機械的な公式</h2>
+        <p>香港にも形式上は「基準金利（Base Rate）」がある。これは割引窓口（Discount Window）で銀行がHKMAから翌日物資金を借りる際の金利であり、香港の金利の天井として機能する。だがその水準は裁量ではなく、次の公式で<strong>自動的に</strong>決まる<cite>[1]</cite>。</p>
+
+        <div class="mnemonic-box">
+          <span class="mnemonic-icon">🧮</span>
+          <div class="mnemonic-title">基準金利の公式</div>
+          <div class="mnemonic-body">
+            <strong>基準金利 ＝ MAX（ ① 米FF金利目標レンジの下限 ＋ 50bp ， ② 直近5営業日のHIBOR翌日物・1か月物の平均 ）</strong><br>
+            通常は①が効く。2026年4月時点はFed下限3.50%＋0.50%＝<strong>4.00%</strong>。HKMAの会合は「決定」ではなく「米国の決定への対応（response）」と表現される。
+          </div>
+        </div>
+
+        <p>実際、HKMAが基準金利を変更するプレスリリースの定型タイトルは「<strong>HKMA's Response to US Fed's Interest Rate Decision</strong>（米Fedの金利決定へのHKMAの対応）」である。「対応」という言葉が、香港の金融政策の主体性のなさを端的に物語っている。2025年12月11日にFed追随で4.00%へ引き下げ、2026年3月19日・4月30日の会合では4.00%で据え置かれた<cite>[3]</cite>。</p>
+      </section>
+
+      <section>
+        <h2>金利の3層構造 — Base Rate・HIBOR・実効金利</h2>
+        <p>香港の金利には3つのレイヤーがある。Base Rateは「天井」、HIBORは「市場の体温」、そして実際の借入金利が「家計・企業の現実」である。</p>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>金利</th>
+                <th>性格</th>
+                <th>決まり方</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="highlight-blue">基準金利（Base Rate）</td>
+                <td>HKMAの割引窓口金利＝金利の上限</td>
+                <td>Fed下限＋50bp の公式（機械的）</td>
+              </tr>
+              <tr>
+                <td class="highlight-orange">HIBOR</td>
+                <td>銀行間取引金利＝市場流動性の温度計</td>
+                <td>総決済残高（Aggregate Balance）の増減で変動。為替防衛で残高が縮むと急騰</td>
+              </tr>
+              <tr>
+                <td>実効金利（プライム・H+）</td>
+                <td>住宅ローン・企業向け実勢金利</td>
+                <td>プライムレート連動 or 「HIBOR＋スプレッド（H+）」連動、上限「H-cap」付き</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>注意すべきは、Base RateとHIBORが必ずしも一致しない点である。HIBORは香港の銀行システムの流動性（総決済残高）で決まるため、為替がペッグの弱サイド（7.85）に張り付いてHKMAが香港ドルを吸収するとHIBORが急騰し、逆に資金が流入すると総決済残高が膨らんでHIBORが急落する。2022–23年にはHIBORが米SOFRを上回る場面と下回る場面が交錯し、為替防衛で総決済残高がHK$3,000億超から1,000億未満へ急縮小した（→第12章で詳述）<cite>[4]</cite>。</p>
+      </section>
+
+      <section>
+        <h2>「金利輸入の罠」 — 経済と金融政策の乖離</h2>
+        <p>不可能の三角形の代償が最も鮮明に現れるのが、<strong>景気と金利の方向がずれる</strong>局面である。理想的な金融政策なら、景気が悪い時に利下げして支える。だが香港は利下げできない。Fedが利上げ中なら、香港も問答無用で利上げになる。</p>
+        <div class="key-number-row">
+          <div class="key-number"><span class="key-number-value">2022–23</span><span class="key-number-label">内需が弱いのにFed連動で金利急騰 → 不動産直撃</span></div>
+          <div class="key-number"><span class="key-number-value">▲30%</span><span class="key-number-label">不動産価格の2021年ピークからの下落（金利急騰が一因）</span></div>
+          <div class="key-number"><span class="key-number-value">最優先</span><span class="key-number-label">それでも通貨防衛（ペッグ維持）が常に景気より優先</span></div>
+        </div>
+        <p>2022–2023年、香港は逃亡犯条例デモの後遺症とコロナ後遺症で景気が低迷していたにもかかわらず、Fedの猛烈な引き締めにより住宅ローン金利が跳ね上がった。本来なら緩和すべき局面で引き締めを「輸入」させられたのである。これが香港住民が通貨ボードに対して抱く最大の不満であり、「ペッグは香港経済より米国経済に最適化されている」という批判の根拠となっている。それでもHKMAは一貫して<strong>為替の安定こそが香港の繁栄の基盤</strong>であり、金利変動の痛みはそのコストとして受け入れるべきだという立場を崩さない<cite>[5]</cite>。</p>
+      </section>
+
+      <section>
+        <h2>なぜ香港はペッグを捨てて自前の金利を持たないのか</h2>
+        <p>「独立金融政策が欲しいならペッグをやめればいい」という議論は繰り返し起きる。だが香港がそれを選ばない理由は明確である。</p>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>論点</th>
+                <th>ペッグ維持のメリット</th>
+                <th>ペッグ放棄のリスク</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>信認</td>
+                <td>43年間無傷の実績。投機筋を寄せ付けない</td>
+                <td>変動相場への移行＝信認の不連続、資本逃避の引き金になりうる</td>
+              </tr>
+              <tr>
+                <td>金融ハブ機能</td>
+                <td>為替リスクなしで巨額の国際資金を扱える</td>
+                <td>為替変動が貿易・金融取引のコストを高める</td>
+              </tr>
+              <tr>
+                <td>制度の単純さ</td>
+                <td>ルールが透明で、裁量による誤りが起きない</td>
+                <td>独自の金融政策には高度な判断力と信認が必要</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>人民元ペッグや通貨バスケットへの移行も議論されてきたが、いずれも実現していない。香港にとってペッグは単なる為替制度ではなく、<strong>「法の支配と自由市場を備えた国際金融センター」という香港のアイデンティティそのもの</strong>と結びついている。金利の自律性を放棄してでも為替の信認を守る —— それが香港の選択なのである。</p>
+      </section>
+
+      <section>
+        <h2>まとめ — ワシントンで決まる香港の金利</h2>
+        <p>香港の「政策金利」は、香港では決まらない。不可能の三角形のもとで、固定相場と自由な資本移動を選んだ香港は、金融政策の自律性をFedに譲り渡した。基準金利は「Fed下限＋50bp」という機械的な公式で動き、HKMAの会合は「決定」ではなく「米国への対応」である。この構造を理解すれば、香港の不動産・株式・銀行のすべてが、なぜ太平洋の向こうのFOMCの決定に揺さぶられるのかが見えてくる。次章以降の財政・雇用・インフレも、すべてこの「自前の金融政策がない」という制約のもとで読み解かれる。</p>
+      </section>

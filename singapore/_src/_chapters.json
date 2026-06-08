@@ -1,0 +1,117 @@
+{
+  "01": {
+    "title_ja": "シンガポール① 中央銀行 (MAS)",
+    "title_en": "Singapore 01: Central Bank (MAS)",
+    "subtitle": "政策金利を持たない四位一体の金融当局 — 為替で物価を操る"
+  },
+  "02": {
+    "title_ja": "シンガポール② 為替ベース金融政策",
+    "title_en": "Singapore 02: Exchange-Rate-Based Monetary Policy",
+    "subtitle": "政策金利は存在しない — S$NEERバンドの傾き・幅・中心で運営"
+  },
+  "03": {
+    "title_ja": "シンガポール③ 財政政策",
+    "title_en": "Singapore 03: Fiscal Policy",
+    "subtitle": "均衡規律と巨額準備金 — NIRCが歳出の2割、純政府債務ゼロ"
+  },
+  "04": {
+    "title_ja": "シンガポール④ 雇用",
+    "title_en": "Singapore 04: Employment",
+    "subtitle": "完全雇用に近い低失業・外国人依存・CPF強制積立"
+  },
+  "05": {
+    "title_ja": "シンガポール⑤ インフレ",
+    "title_en": "Singapore 05: Inflation",
+    "subtitle": "MASコアと輸入物価 — 為替で抑える輸入インフレ"
+  },
+  "06": {
+    "title_ja": "シンガポール⑥ 株式市場概観",
+    "title_en": "Singapore 06: Equity Market Overview",
+    "subtitle": "SGX・STI30銘柄 — 銀行3行とREITの高配当インカム市場"
+  },
+  "07": {
+    "title_ja": "シンガポール⑦ 株式市場(初期)",
+    "title_en": "Singapore 07: Equity Market (Early)",
+    "subtitle": "マラヤ取引所からSESへ・1973年市場分離・CLOB問題"
+  },
+  "08": {
+    "title_ja": "シンガポール⑧ 株式市場(近代)",
+    "title_en": "Singapore 08: Equity Market (Modern)",
+    "subtitle": "1999年SGX発足・SIMEXのデリバティブ・2007年ピーク3,906"
+  },
+  "09": {
+    "title_ja": "シンガポール⑨ 株式市場(現代)",
+    "title_en": "Singapore 09: Equity Market (Recent)",
+    "subtitle": "GFCで-63%・レンジ相場・S-REIT台頭による「インカム市場」化"
+  },
+  "10": {
+    "title_ja": "シンガポール⑩ 株式市場(現在)",
+    "title_en": "Singapore 10: Equity Market (Current)",
+    "subtitle": "2026年に初の5,000突破・最高値5,072・上場枯渇という影"
+  },
+  "11": {
+    "title_ja": "シンガポール⑪ 債券市場",
+    "title_en": "Singapore 11: Bond Market",
+    "subtitle": "AAAなのに「資金調達でない国債」・純政府債務ゼロ・SGS/SSB"
+  },
+  "12": {
+    "title_ja": "短期金利とSORA",
+    "title_en": "Short-term Rates",
+    "subtitle": "政策金利を持たない国で短期金利はどう決まるか — SIBORからSORAへ",
+    "sources_html": "<ol>\n        <li>MAS, 「為替を中心とした金融政策の枠組み（Exchange Rate-Based Monetary Policy）」金融政策声明 <a href=\"https://www.mas.gov.sg\">mas.gov.sg</a></li>\n        <li>BIS Papers No.73, \"An exchange-rate-centred monetary policy system: the case of Singapore\"; MAS, Macroeconomic Review</li>\n        <li>MAS, Monetary Policy Statement 2026-04-14 / 2025-01-24（S$NEERスロープの調整）</li>\n        <li>MAS, SORAへの移行・SIBOR/SORの廃止（2024-01-01）<a href=\"https://www.mas.gov.sg\">mas.gov.sg</a></li>\n      </ol>"
+  },
+  "13": {
+    "title_ja": "長期金利とSGS",
+    "title_en": "Long-term Rates",
+    "subtitle": "AAAの国債を「資金繰りのためでなく」発行する理由",
+    "sources_html": "<ol>\n        <li>MOF（財務省）, 政府証券の発行枠組み（ネット政府債務ゼロの論点）<a href=\"https://www.mof.gov.sg\">mof.gov.sg</a></li>\n        <li>MAS, SGS・SSB・MAS Bills・アジア・ダラー債市場、SGS 10年利回り <a href=\"https://www.mas.gov.sg\">mas.gov.sg</a></li>\n      </ol>"
+  },
+  "14": {
+    "title_ja": "通貨：シンガポールドル",
+    "title_en": "Currency",
+    "subtitle": "為替こそが金融政策 — S$NEERバンドと完全交換性",
+    "sources_html": "<ol>\n        <li>MAS, 「為替を中心とした金融政策の枠組み」金融政策声明 <a href=\"https://www.mas.gov.sg\">mas.gov.sg</a></li>\n        <li>MAS, Monetary Policy Statement 2026-04-14 / 2025-01-24</li>\n        <li>MAS, シンガポールドルの管理フロート史（1967 ブルネイ通貨交換協定、1973 フロート、1981 NEER枠組み）</li>\n        <li>FRED (EXSIUS), exchange-rates.org, tradingeconomics（USD/SGD）; 1997年アジア通貨危機</li>\n      </ol>"
+  },
+  "15": {
+    "title_ja": "金融危機の歴史",
+    "title_en": "Financial Crises",
+    "subtitle": "外から来る危機と、準備金で立ち上がる都市国家",
+    "sources_html": "<ol>\n        <li>MAS, 為替政策と危機対応（スロープ・中心の調整）<a href=\"https://www.mas.gov.sg\">mas.gov.sg</a></li>\n        <li>MAS, 為替ベース金融政策の枠組みと歴史</li>\n        <li>1997年アジア通貨危機; FRED / tradingeconomics（USD/SGD・STI）</li>\n        <li>危機史: NLB（1985年リセッション）、LKYSPP（危機管理ケース）、SG101（1997–2009）、Wikipedia（COVID-19 in Singapore）</li>\n        <li>SGX / FTSE Russell / 報道（STI 5,000突破 2026-02、史上最高値 2026-05）: thesmartinvestor, mothership</li>\n      </ol>"
+  },
+  "16": {
+    "title_ja": "銀行制度",
+    "title_en": "Banking System",
+    "subtitle": "地場3行・アジア・ダラー市場・MAS統合監督",
+    "sources_html": "<ol>\n        <li>SGX / 報道（STI構成・銀行株）: thesmartinvestor</li>\n        <li>DBS・OCBC・UOB 各行開示、国際金融センター（IFC）関連報道</li>\n        <li>MAS, 統合金融監督・アジア・ダラー市場（ACU, 1968年）<a href=\"https://www.mas.gov.sg\">mas.gov.sg</a></li>\n        <li>MAS, デジタルバンク免許（2020年）・フィンテック政策</li>\n      </ol>"
+  },
+  "17": {
+    "title_ja": "企業・コーポレート",
+    "title_en": "Corporate & Indices",
+    "subtitle": "Temasek系GLC・S-REIT・三つの準備金運用者",
+    "sources_html": "<ol>\n        <li>SGX / 報道（STI構成・上場社数・S$50億活性化策）: thesmartinvestor, thefinance.sg</li>\n        <li>DBS・OCBC・UOB／多国籍企業の地域統括拠点（RHQ）関連報道</li>\n        <li>香港からの資産運用・ファミリーオフィス移転に関する報道</li>\n        <li>MOF（財務省）, 準備金（MAS・GIC・Temasek）<a href=\"https://www.mof.gov.sg\">mof.gov.sg</a></li>\n        <li>Temasek Review 2025（純ポートフォリオ S$434bn、1974年設立）<a href=\"https://www.temasek.com.sg\">temasek.com.sg</a></li>\n        <li>MOF, NIRC・Budget 2025（NIRC FY2026 ≈ S$28.5bn）</li>\n      </ol>"
+  },
+  "18": {
+    "title_ja": "金融規制",
+    "title_en": "Regulation",
+    "subtitle": "育てる規制と締める規制 — VCC・PSA・AML/CFT",
+    "sources_html": "<ol>\n        <li>MAS, 統合金融監督 <a href=\"https://www.mas.gov.sg\">mas.gov.sg</a></li>\n        <li>MAS, VCC（可変資本会社, 2020）・ファミリーオフィス税制（13O/13U, 2029年まで延長）・決済サービス法（PSA, 2019）</li>\n        <li>2023年 S$30億マネーロンダリング事件、AML/CFT強化に関する報道・MAS資料</li>\n        <li>MAS, デジタル・ペイメント・トークン（DPT）規制・フィンテック政策</li>\n      </ol>"
+  },
+  "19": {
+    "title_ja": "貿易",
+    "title_en": "International Trade",
+    "subtitle": "貿易はGDPの3倍 — 中継貿易立国とFTA網",
+    "sources_html": "<ol>\n        <li>Enterprise Singapore / SingStat, 貿易統計・中継貿易（貿易/GDP 300%超、PSA港）</li>\n        <li>The Diplomat / Modern Diplomacy, マラッカ海峡チョークポイント</li>\n        <li>CPTPP・RCEP・各FTA（MTI / Enterprise Singapore）<a href=\"https://www.mti.gov.sg\">mti.gov.sg</a></li>\n      </ol>"
+  },
+  "20": {
+    "title_ja": "教訓",
+    "title_en": "Key Lessons",
+    "subtitle": "制約を戦略に変えた小国開放経済の知恵",
+    "sources_html": "<ol>\n        <li>MAS, 為替ベース金融政策の枠組み <a href=\"https://www.mas.gov.sg\">mas.gov.sg</a></li>\n        <li>MAS, Macroeconomic Review; BIS Papers No.73</li>\n        <li>MTI / SingStat, GDP成長（2025年 +5.0%、2026年Q1 +6.0% y/y）</li>\n        <li>シンガポール開発モデルに関する文献（LKYSPP 等）</li>\n        <li>RSIS・SG101, 食料・水・エネルギー安全保障</li>\n      </ol>"
+  },
+  "21": {
+    "title_ja": "地政学リスク",
+    "title_en": "Geopolitical Risk",
+    "subtitle": "マラッカ海峡・米中バランシング・供給脆弱性",
+    "sources_html": "<ol>\n        <li>MAS, Monetary Policy Statement 2026-04-14（中東・エネルギー由来のインフレ上方修正）<a href=\"https://www.mas.gov.sg\">mas.gov.sg</a></li>\n        <li>The Diplomat / RealClearDefense / Modern Diplomacy, マラッカ海峡チョークポイント（年10万隻超、海上原油の約29%、貿易額約$3.5兆）</li>\n        <li>RSIS・SG101, 都市国家の供給脆弱性（食料・水・エネルギー）</li>\n        <li>中東／ホルムズ情勢とエネルギー価格・運賃（報道・MAS Macroeconomic Review）</li>\n        <li>米中バランシング・南シナ海・ASEAN中立に関する分析（The Diplomat 等）</li>\n        <li>ジョホール・シンガポール経済特区（JS-SEZ）・FPDA・対馬来関係（報道）</li>\n      </ol>"
+  }
+}

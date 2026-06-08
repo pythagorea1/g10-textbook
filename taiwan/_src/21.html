@@ -1,0 +1,342 @@
+<!-- Chapter 21: Geopolitical Risk (Taiwan) — FLAGSHIP -->
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value" style="color:var(--accent-red);">両岸有事</div>
+    <div class="stat-label">最大のテールリスク（武力侵攻・海上封鎖）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value" style="color:var(--accent-orange);">4回</div>
+    <div class="stat-label">台湾海峡危機（直近は2022ペロシ・2024聯合利剣）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value" style="color:var(--accent-blue);">44%→27%</div>
+    <div class="stat-label">対中+香港輸出比率の低下（デリスキング）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">十数か国</div>
+    <div class="stat-label">正式な外交承認国（国連非加盟）</div>
+  </div>
+</div>
+
+<p>
+台湾の地政学リスクは、本テキストの全章を貫く通奏低音である。金利（第12章）も通貨（第14章）も危機（第15章）も、究極的には<strong>「中国は台湾を武力で統一するのか」</strong>という問いの影の下にある。本章では、台湾が直面する地政学リスクを体系的に分類し、それぞれが市場（株・通貨・CDS・サプライチェーン）へどう波及するか、どの国が関係するかを整理する。台湾は、世界で最も「地政学が金融価格に織り込まれた」市場の一つである。
+</p>
+
+<!-- Chart: TWD volatility around geopolitical / tariff events 2024-2026 -->
+<div id="taiwan-geo-twd"></div>
+<script>
+ChartBuilder.lines('taiwan-geo-twd', {
+  title: 'TWD/USD と地政学・通商イベント 2024-2026',
+  caption: '出典: CBC外為履歴、TradingEconomics、exchangerates.org.uk。上方向＝TWD安（ドル高）。2025/5の29.17(アジア最強)・2026/3の32.13は確証値。頼清徳就任演習・トランプ関税の局面で為替が大きく振れた。',
+  yUnit: '',
+  yStep: 1,
+  yRange: [28, 33],
+  xRange: [2024, 2026.5],
+  series: [{
+    name: 'TWD/USD',
+    color: '#ffd93d',
+    data: [
+      [2024, 32.1],[2025.333, 29.17],[2025.917, 31.09],[2026.167, 32.13],[2026.417, 31.60]
+    ]
+  }],
+  annotations: [
+    { year: 2024.333, label: '頼就任演習', color: '#ff6b6b' },
+    { year: 2025.333, label: '25最強29', color: '#00d4aa' },
+    { year: 2026.167, label: '関税安32', color: '#ff9f43' }
+  ]
+});
+</script>
+
+<section>
+  <h2>1. 地政学リスクの全体像 — 8つのリスク</h2>
+  <p>
+  台湾の地政学リスクは相互に連関する8つに整理できる。中核は両岸（中台）有事だが、それは半導体・米中対立・通商・エネルギー・外交承認といった複数のリスクと絡み合っている。
+  </p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>リスク</th>
+          <th>背景</th>
+          <th>市場への波及</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight-red">
+          <td>① 両岸統一圧力・武力侵攻</td>
+          <td>中国が台湾を自国領と主張、武力行使を放棄せず</td>
+          <td>株・通貨急落、CDS急騰、サプライチェーン分断</td>
+        </tr>
+        <tr class="highlight-orange">
+          <td>② 半導体の地政学的中心性</td>
+          <td>TSMCが世界の先端ロジック生産の大半を担う</td>
+          <td>有事＝世界の電子産業停止。抑止力かつ標的</td>
+        </tr>
+        <tr class="highlight-orange">
+          <td>③ 米中テクノ覇権の板挟み</td>
+          <td>米の対中先端半導体・装置規制</td>
+          <td>最大市場(中国)と最大同盟(米)の間で選択を迫られる</td>
+        </tr>
+        <tr class="highlight-orange">
+          <td>④ 対米通商・関税リスク</td>
+          <td>トランプ相互関税(2025)・半導体232条調査</td>
+          <td>対米輸出依存への打撃、TWD変動</td>
+        </tr>
+        <tr class="highlight-red">
+          <td>⑤ エネルギー・海上輸送の脆弱性</td>
+          <td>エネルギーをほぼ全量輸入、海上封鎖に脆弱</td>
+          <td>封鎖シナリオで即時に発電・物流停止</td>
+        </tr>
+        <tr class="highlight-blue">
+          <td>⑥ 対中経済依存の縮小・再編</td>
+          <td>対中+香港比率44%(2020)→27%(2025)</td>
+          <td>ECFA見直し・中国の経済的威圧（農水産品停止）</td>
+        </tr>
+        <tr>
+          <td>⑦ 国際的地位・外交承認の制約</td>
+          <td>国連非加盟、正式国交国は十数か国</td>
+          <td>国際金融機関アクセス・条約締結の制約</td>
+        </tr>
+        <tr class="highlight-orange">
+          <td>⑧ 「今日のウクライナ、明日の台湾」</td>
+          <td>武力による現状変更への国際的警戒</td>
+          <td>防衛費増・同盟強化・有事シナリオの市場織り込み</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="source"><cite>出典: ファクトシート§5、CSIS ChinaPower、Wikipedia "Fourth Taiwan Strait Crisis"、Defense News。</cite></p>
+</section>
+
+<section>
+  <h2>2. リスク・マトリクス — 発生確率 × 影響度</h2>
+  <p>
+  各リスクを「発生確率」と「市場・経済への影響度」の二軸で評価する。右上（高確率・高影響）ほど警戒度が高い。最大のテールリスクである武力侵攻は「確率は相対的に低いが影響は壊滅的」という典型的なテールリスクである。
+  </p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>リスク</th>
+          <th>発生確率</th>
+          <th>影響度</th>
+          <th>時間軸</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight-red">
+          <td>武力侵攻（全面侵攻）</td>
+          <td>低〜中</td>
+          <td>壊滅的（テール）</td>
+          <td>中長期</td>
+        </tr>
+        <tr class="highlight-red">
+          <td>海上封鎖・隔離（quarantine）</td>
+          <td>中</td>
+          <td>非常に高い</td>
+          <td>中期</td>
+        </tr>
+        <tr class="highlight-orange">
+          <td>軍事演習・威圧（グレーゾーン）</td>
+          <td>高（常態化）</td>
+          <td>中（一時的）</td>
+          <td>常時</td>
+        </tr>
+        <tr class="highlight-orange">
+          <td>対米関税（半導体232条等）</td>
+          <td>中〜高</td>
+          <td>中〜高</td>
+          <td>短期</td>
+        </tr>
+        <tr class="highlight-orange">
+          <td>米中テクノ規制の板挟み</td>
+          <td>高（継続中）</td>
+          <td>中〜高</td>
+          <td>継続</td>
+        </tr>
+        <tr class="highlight-blue">
+          <td>中国の経済的威圧</td>
+          <td>高</td>
+          <td>低〜中（限定的）</td>
+          <td>断続的</td>
+        </tr>
+        <tr>
+          <td>外交的孤立の深化</td>
+          <td>中</td>
+          <td>中（構造的）</td>
+          <td>長期</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">「確率は低いが影響は壊滅的」</div>
+    <div class="mnemonic-body">台湾の武力侵攻リスクは典型的な<strong>テールリスク</strong> — 発生確率は低〜中だが、起きれば世界の半導体供給途絶という壊滅的影響。一方、軍事演習・経済的威圧は<strong>高確率だが影響は限定的</strong>。投資家は「狼少年効果」で演習に慣れる一方、真のテールへの備えを怠るという罠に陥りやすい。</div>
+  </div>
+</section>
+
+<section>
+  <h2>3. 市場への波及経路（トランスミッション）</h2>
+  <p>
+  地政学ショックは、4つの経路で台湾市場と世界経済に伝播する。
+  </p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>経路</th>
+          <th>メカニズム</th>
+          <th>観測指標</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>① 株式市場</td>
+          <td>外国人投資家の資金流出、TSMC株急落でTAIEX全体が下落</td>
+          <td>TAIEX、TSMC株価、外国人売買動向</td>
+        </tr>
+        <tr>
+          <td>② 通貨（TWD）</td>
+          <td>資本フライトでTWD急落、または有事回避でCBCが介入</td>
+          <td>TWD/USD、外貨準備、CBC介入</td>
+        </tr>
+        <tr>
+          <td>③ 信用リスク（CDS）</td>
+          <td>台湾ソブリンCDS・保険料の上昇、リスクプレミアム拡大</td>
+          <td>台湾CDSスプレッド</td>
+        </tr>
+        <tr class="highlight-red">
+          <td>④ サプライチェーン</td>
+          <td>半導体供給の途絶懸念が世界の製造業・株式に波及</td>
+          <td>半導体在庫・リードタイム、世界ハイテク株</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>
+  上のチャートが示すように、2024-2026年のTWDは地政学・通商イベントに敏感に反応した。2024年5月の頼清徳総統就任に伴う中国の「聯合利剣2024」演習、2025年のトランプ相互関税とAI半導体黒字によるTWDのアジア最強通貨化（29.17）、そして2026年の関税圧力下での反落（32台）。台湾では、地政学が金利ではなく<strong>為替と株式のボラティリティ</strong>に直接表れる（第12・14章で見た「金利で吸収しない経済」の帰結）。
+  </p>
+</section>
+
+<section>
+  <h2>4. 関係国マップ — 誰が台湾リスクの当事者か</h2>
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>国・地域</th>
+          <th>立場・役割</th>
+          <th>台湾への影響経路</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight-red">
+          <td>🇨🇳 中国</td>
+          <td>統一を目指す当事者。軍事・経済両面で圧力</td>
+          <td>軍事演習・封鎖能力・経済的威圧・ECFA</td>
+        </tr>
+        <tr class="highlight-blue">
+          <td>🇺🇸 米国</td>
+          <td>事実上の安全保障の後ろ盾、最大の輸出先（2025〜）</td>
+          <td>武器供与・半導体規制・関税・CHIPS法</td>
+        </tr>
+        <tr>
+          <td>🇯🇵 日本</td>
+          <td>「台湾有事は日本有事」。供給網分散の受け皿</td>
+          <td>JASM熊本工場、安全保障協力</td>
+        </tr>
+        <tr>
+          <td>🇰🇷 韓国</td>
+          <td>半導体の競合かつ供給網の一部</td>
+          <td>メモリ半導体での補完・競合</td>
+        </tr>
+        <tr>
+          <td>🇳🇱 オランダ</td>
+          <td>ASMLが半導体製造装置(EUV)を独占供給</td>
+          <td>対中装置輸出規制の鍵を握る</td>
+        </tr>
+        <tr class="highlight-orange">
+          <td>🇺🇦 ウクライナ</td>
+          <td>「今日のウクライナ、明日の台湾」のアナロジー元</td>
+          <td>有事シナリオの市場織り込みの参照点</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>5. 海峡危機の年表と「狼少年効果」</h2>
+  <p>
+  台湾海峡危機は周期的に再来する。重要なのは、市場が繰り返される演習に<strong>慣れていく（鈍麻する）</strong>一方で、真の有事のテールリスクは消えていないという緊張関係である。
+  </p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>年</th>
+          <th>危機</th>
+          <th>市場の反応</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1995-96</td>
+          <td>第3次危機（李登輝訪米→ミサイル演習）</td>
+          <td>株急落・資本流出、米空母派遣で沈静化</td>
+        </tr>
+        <tr class="highlight-orange">
+          <td>2022.08</td>
+          <td>第4次危機（ペロシ訪台→大規模演習）</td>
+          <td>ミサイル台湾上空通過、地政学プレミアム顕在化</td>
+        </tr>
+        <tr>
+          <td>2024.05,10</td>
+          <td>聯合利剣2024（頼清徳就任）</td>
+          <td>11発のミサイル発射。緊張の常態化、市場の反応は鈍化</td>
+        </tr>
+        <tr class="highlight-red">
+          <td>2026〜</td>
+          <td>封鎖試行シナリオ（報道）</td>
+          <td>「隔離(quarantine)」など非戦争型圧力への警戒</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>
+  2022年のペロシ訪台後、中国は台湾を取り囲む大規模演習を行い、ミサイルが台湾上空を通過した。2024年の頼清徳総統就任時には「聯合利剣2024A/B」演習と11発のミサイル発射が続いた。市場はこれらに当初急落しつつも回復してきたが、それは<strong>「狼少年効果」</strong> — 警告の反復による鈍麻 — を生む。真の有事の際、この慢心が市場の急変動（テールイベント）を増幅させるリスクがある。
+  </p>
+</section>
+
+<section>
+  <h2>6. 結論 — 地政学が価格になる市場</h2>
+  <p>
+  台湾は、地政学リスクが恒常的に金融価格へ織り込まれる稀有な市場である。最大のテールリスク（武力侵攻）は確率こそ低いが影響は壊滅的であり、世界の半導体供給という形で全世界に波及する。台湾はこのリスクを、(1)シリコン・シールド（抑止力としての半導体）、(2)対中デリスキング（44%→27%）、(3)同盟強化と供給網分散、(4)高い外貨準備による耐性、で管理しようとしている。だが、これらの盾はいずれも完全ではない。台湾を投資・分析する者は、財務諸表やマクロ指標と並べて、常に<strong>台湾海峡の温度計</strong>を読まねばならない。
+  </p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">台湾の地政学リスクを一文で</div>
+    <div class="mnemonic-body">「世界の半導体の心臓が、地政学の断層線の上に置かれている。」 — 台湾リスクは台湾だけのリスクではなく、<strong>世界経済全体のテールリスク</strong>である。だからこそ抑止力(シリコン・シールド)が働き、だからこそ標的になる。</div>
+  </div>
+</section>
+
+<section>
+  <h2>出典・参考文献</h2>
+  <ol>
+    <li>ファクトシート§5（地政学リスク）; CSIS ChinaPower（第4次台湾海峡危機トラッキング）</li>
+    <li>Wikipedia, "Fourth Taiwan Strait Crisis"; NPR / NBC News（2022ペロシ後ミサイル演習）</li>
+    <li>Defense News, 2026年 封鎖試行シナリオ報道; 各種防衛・安全保障分析</li>
+    <li>ING THINK / 財政部, 対中+香港比率44%(2020)→27%(2025); トランプ相互関税・半導体232条</li>
+    <li>CBC外為履歴・TradingEconomics（TWD/USD）; 本テキスト第14・15・17・19章</li>
+  </ol>
+</section>

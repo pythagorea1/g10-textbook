@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ユーロ圏 - Geopolitical Risk | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
+  <script defer src="../assets/charts.js"></script>
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇪🇺 ユーロ圏</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. 中央銀行</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. 政策金利</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. 財政政策</a>
+      <a href="04_employment.html" class="sidebar-link">04. 雇用</a>
+      <a href="05_inflation.html" class="sidebar-link">05. インフレ</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. 株式市場概観</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. 株式(初期)</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. 株式(近代)</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. 株式(現代)</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. 株式(現在)</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. 債券市場</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. 短期金利</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. 長期金利</a>
+      <a href="14_currency.html" class="sidebar-link">14. 通貨</a>
+      <a href="15_crises.html" class="sidebar-link">15. 金融危機</a>
+      <a href="16_banking.html" class="sidebar-link">16. 銀行制度</a>
+      <a href="17_corporate.html" class="sidebar-link">17. 企業・コーポレート</a>
+      <a href="18_regulation.html" class="sidebar-link">18. 規制</a>
+      <a href="19_trade.html" class="sidebar-link">19. 貿易</a>
+      <a href="20_lessons.html" class="sidebar-link">20. 教訓</a>
+      <a href="21_geopolitical_risk.html" class="sidebar-link active">21. 地政学リスク</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">G10</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip active">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+      <div class="sidebar-section-title">地政学・新興地域</div>
+      <div class="country-flags">
+        <a href="../taiwan/01_central_bank.html" class="country-chip">TW</a>
+        <a href="../hongkong/01_central_bank.html" class="country-chip">HK</a>
+        <a href="../china/01_central_bank.html" class="country-chip">CN</a>
+        <a href="../northkorea/01_central_bank.html" class="country-chip">KP</a>
+        <a href="../vietnam/01_central_bank.html" class="country-chip">VN</a>
+        <a href="../singapore/01_central_bank.html" class="country-chip">SG</a>
+        <a href="../iran/01_central_bank.html" class="country-chip">IR</a>
+        <a href="../israel/01_central_bank.html" class="country-chip">IL</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 ホーム</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10横断年表</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">ユーロ圏</a>
+        <span class="sep">/</span>
+        ユーロ圏㉑ 地政学リスク
+      </div>
+      <h1 class="page-title">🇪🇺 ユーロ圏㉑ 地政学リスク</h1>
+      <p class="page-subtitle">対露エネルギー依存・ウクライナ戦争・域内分断・対中デリスキング</p>
+    </header>
+
+    <article>
+<!-- Chapter 21: Geopolitical Risk (Eurozone / EU) -->
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value" style="color:var(--accent-red);">45%→13%</div>
+    <div class="stat-label">EUガス輸入に占めるロシア産比率（2021→2025）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value" style="color:var(--accent-orange);">2022.02</div>
+    <div class="stat-label">ウクライナ侵攻 — 欧州安全保障の地殻変動</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value" style="color:var(--accent-blue);">デリスキング</div>
+    <div class="stat-label">対中「デカップリングせず、リスク低減」</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">域内分断</div>
+    <div class="stat-label">財政・エネルギー・移民を巡る27か国の不協和音</div>
+  </div>
+</div>
+
+<p>
+ユーロ圏（EU）の地政学リスクは、その成り立ちに根ざしている。EUは経済統合体でありながら、外交・安全保障・エネルギーでは加盟国がなお主権を握る。この「経済は一体、戦略は分散」という構造が、地政学ショックに際して<strong>27か国の合意形成の遅さ</strong>として顕在化する。2022年のウクライナ侵攻は、安価なロシア産エネルギーと米国の安全保障に依存してきた欧州の戦後モデルを根底から揺さぶった。本章では、EUが直面する地政学リスクを波及経路とともに整理する。
+</p>
+
+<!-- Chart: Russian gas share of EU gas imports 2021->2027 plan -->
+<div id="eu-geo-rugas"></div>
+<script>
+ChartBuilder.lines('eu-geo-rugas', {
+  title: 'EUガス輸入に占めるロシア産比率 2021-2027（脱ロシア）',
+  caption: '出典: 欧州委員会、Bruegel、Ember。パイプライン＋LNG合算ベース。侵攻前の約45%から2023年に15%へ急落。2024年はLNG輸入増で一時19%へ反発したが、EUは2027年末までにロシア産ガスの全面禁止を計画（→0%目標）。',
+  yUnit: '%',
+  yStep: 10,
+  yRange: [0, 50],
+  xRange: [2021, 2027.5],
+  series: [{
+    name: 'ロシア産比率',
+    color: '#ff6b6b',
+    data: [
+      [2021, 45],[2022, 24],[2023, 15],[2024, 19],[2025, 13],[2027, 0]
+    ]
+  }],
+  annotations: [
+    { year: 2022, label: '侵攻', color: '#ff6b6b' },
+    { year: 2022.7, label: 'NS爆破', color: '#ff9f43' },
+    { year: 2024, label: 'LNG増19%', color: '#ff9f43' },
+    { year: 2027, label: '全面禁止', color: '#00d4aa' }
+  ]
+});
+</script>
+
+<section>
+  <h2>1. 対露エネルギー依存からの脱却 — 戦後モデルの終焉</h2>
+  <p>
+  侵攻前、EUは天然ガス輸入の約45%をロシアに依存していた。ドイツの製造業競争力は、ロシアからの安価なパイプライン・ガスを前提に築かれていた。2022年の侵攻と同年9月のノルドストリーム爆破は、この前提を一夜にして崩壊させた。EUは緊急にLNG（米国・カタール）への転換、ノルウェー産パイプライン・ガスの増量、需要削減で対応し、ロシア産比率は2023年に15%へ急落した（第19章参照）。
+  </p>
+  <p>
+  代償は大きかった。2022年の天然ガス・電力価格の暴騰は記録的なインフレを招き、ECBは「Whatever it takes」から一転して急激な利上げを迫られた（第15章）。エネルギー安全保障が<strong>金融政策とインフレを直接左右する</strong>ことを、欧州は痛みとともに学んだ。EUは2027年末までにロシア産ガスの全面禁止を計画しているが、2024年にLNG経由で比率が一時反発したように、「脱ロシア」は直線的には進まない。
+  </p>
+</section>
+
+<section>
+  <h2>2. リスク・マトリクス — 要因 × 蓋然性 × 波及経路</h2>
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>リスク要因</th>
+          <th>蓋然性</th>
+          <th>市場・経済への影響経路</th>
+          <th>関連国/地域</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight-red">
+          <td>ウクライナ戦争の長期化・拡大</td>
+          <td>高（継続中）</td>
+          <td>エネルギー・防衛費、難民、財政負担、東欧の安全保障</td>
+          <td>🇷🇺 ロシア・🇺🇦 ウクライナ</td>
+        </tr>
+        <tr class="highlight-red">
+          <td>対露エネルギー依存の残存</td>
+          <td>中</td>
+          <td>ガス・電力価格スパイク→インフレ・ECB政策、産業競争力</td>
+          <td>🇷🇺 ロシア・🇳🇴 ノルウェー</td>
+        </tr>
+        <tr class="highlight-orange">
+          <td>米国の安全保障コミット低下</td>
+          <td>中〜高</td>
+          <td>NATO負担再交渉、防衛費GDP比の急増、財政圧迫</td>
+          <td>🇺🇸 米国</td>
+        </tr>
+        <tr class="highlight-blue">
+          <td>対中デリスキングと報復</td>
+          <td>高</td>
+          <td>EV・重要鉱物の供給網、対中輸出規制、報復関税</td>
+          <td>🇨🇳 中国</td>
+        </tr>
+        <tr class="highlight-orange">
+          <td>域内分断（財政・移民・法の支配）</td>
+          <td>高（構造的）</td>
+          <td>合意形成の遅延、ソブリン・スプレッド拡大、ユーロ懐疑</td>
+          <td>（域内：独仏 vs 南欧・東欧）</td>
+        </tr>
+        <tr>
+          <td>中東・紅海の海運途絶</td>
+          <td>中</td>
+          <td>スエズ迂回でコスト・納期増、原油・インフレ</td>
+          <td>🇮🇷 イラン・🇮🇱 イスラエル</td>
+        </tr>
+        <tr>
+          <td>米国の関税・通商摩擦</td>
+          <td>中〜高</td>
+          <td>対米輸出（独自動車等）への打撃、ユーロ変動</td>
+          <td>🇺🇸 米国</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="source"><cite>出典: 欧州委員会、Bruegel、Ember、本テキスト第15・19章。</cite></p>
+</section>
+
+<section>
+  <h2>3. 市場への波及経路（トランスミッション）</h2>
+  <p>
+  EUの地政学ショックは、単一通貨ユーロという「半完成の統合」を通じて増幅される。財政は各国別なのに金融政策は一体であるため、ショックは<strong>域内のソブリン・スプレッド（独伊・独仏の利回り差）</strong>として表面化する。
+  </p>
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>経路</th><th>メカニズム</th><th>観測指標</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>① エネルギー価格</td>
+          <td>ガス・電力価格→生産者物価→HICP→ECB政策</td>
+          <td>TTFガス価格、HICP、ECB政策金利</td>
+        </tr>
+        <tr class="highlight-orange">
+          <td>② ソブリン・スプレッド</td>
+          <td>分断・財政懸念で周縁国の利回りが独国債から乖離</td>
+          <td>伊独・仏独10年スプレッド、TPI発動</td>
+        </tr>
+        <tr>
+          <td>③ 為替（ユーロ）</td>
+          <td>エネルギー収支悪化・成長格差でユーロ安／高</td>
+          <td>EUR/USD、貿易収支</td>
+        </tr>
+        <tr class="highlight-blue">
+          <td>④ 供給網（対中）</td>
+          <td>重要鉱物・EV・医薬原料の中国依存が露呈</td>
+          <td>重要原材料の対中依存度、CRMA進捗</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>4. 対中デリスキングと「戦略的自律」</h2>
+  <p>
+  EUは対中政策で米国ほど対決的ではない。「デカップリング（切り離し）ではなくデリスキング（リスク低減）」を掲げ、重要鉱物・EV・医薬品など特定分野の過度な対中依存だけを是正しようとする。2024年には中国製EVへの相殺関税を発動した一方、輸出市場としての中国を手放すつもりはない。この「是々非々」は、対中強硬を求める米国と、巨大市場を重視する独企業との間で<strong>EUが板挟みになる</strong>構造を生む。
+  </p>
+  <p>
+  根底にあるのは「戦略的自律（strategic autonomy）」という野心である。米国の安全保障、ロシアのエネルギー、中国のサプライチェーン — この三つの依存から脱し、欧州自身の防衛・産業・エネルギー基盤を築けるか。ウクライナ戦争はこの問いを先送り不能にした。
+  </p>
+</section>
+
+<section>
+  <h2>5. 結論 — 統合の試練としての地政学</h2>
+  <p>
+  EUの地政学リスクの本質は「統合の不完全さ」にある。経済は一体でも、外交・安全保障・エネルギーが分散しているため、ショックのたびに27か国の合意形成という時間のかかるプロセスを要する。しかし歴史的に、EUは<strong>危機のたびに統合を一段深めて</strong>きた（ソブリン危機→ESM・銀行同盟、COVID→共同債）。ウクライナ戦争も、共同防衛調達・エネルギー連帯・拡大（ウクライナ加盟交渉）という形で統合を前進させる触媒になりうる。投資家は、EUの地政学リスクを「分断の危険」と「統合の触媒」という二面で読む必要がある。
+  </p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">EUの地政学リスクを一文で</div>
+    <div class="mnemonic-body">「経済は一体、戦略は分散。」 — EUの地政学リスクは外敵だけでなく、<strong>27か国の合意形成の遅さ</strong>そのもの。だが欧州は危機のたびに統合を深めてきた。分断と統合のどちらが勝つかが、ユーロとソブリン・スプレッドを左右する。</div>
+  </div>
+</section>
+
+<section>
+  <h2>関連ページ</h2>
+  <ul>
+    <li><a href="../summary/geopolitical_map.html">🗺 地政学マップ（G10横断・全リスク俯瞰）</a></li>
+    <li><a href="../china/21_geopolitical_risk.html">🇨🇳 中国の地政学リスク（デリスキングの対岸）</a></li>
+    <li><a href="../iran/21_geopolitical_risk.html">🇮🇷 イラン（紅海・ホルムズ・エネルギー）</a></li>
+    <li><a href="../israel/21_geopolitical_risk.html">🇮🇱 イスラエル（中東・海運リスク）</a></li>
+    <li><a href="19_trade.html">第19章 貿易（脱ロシア・デリスキング）</a> ／ <a href="15_crises.html">第15章 金融危機</a></li>
+  </ul>
+</section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+      <ol>
+        <li>European Commission, "REPowerEU" / 欧州委員会（ロシア産ガス段階的禁止 2027年末）</li>
+        <li>Bruegel, "Europe urgently needs a common strategy on Russian gas," 2025</li>
+        <li>Ember, "The final push for EU Russian gas phase-out," 2025（ロシア産ガス比率の推移）</li>
+        <li>European Commission, "Economic Security Strategy" / "De-risking"（対中デリスキング・中国製EV相殺関税 2024）</li>
+        <li>ECB, "Transmission Protection Instrument (TPI)"（ソブリン・スプレッド対応）</li>
+        <li>本テキスト第15章（欧州ソブリン危機）・第19章（貿易・脱ロシア・デリスキング）</li>
+      </ol>
+    </footer>
+
+    <nav class="page-nav">
+      <a href="20_lessons.html" class="prev">教訓</a>
+      <a href="../summary/g10_timeline.html" class="next">G10横断年表</a>
+    </nav>
+  </main>
+
+  <script src="../assets/enhancer.js"></script>
+  <script defer src="../assets/recall.js"></script>
+  <script src="../assets/tts-reader.js"></script>
+</body>
+</html>

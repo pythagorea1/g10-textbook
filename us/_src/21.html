@@ -1,0 +1,198 @@
+<!-- Chapter 21: Geopolitical Risk (United States) -->
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value" style="color:var(--accent-blue);">基軸通貨</div>
+    <div class="stat-label">米国の最大の地政学的資産（かつ武器）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value" style="color:var(--accent-red);">71%→57%</div>
+    <div class="stat-label">世界外貨準備に占めるドル比率（2000→2025）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value" style="color:var(--accent-orange);">米中</div>
+    <div class="stat-label">21世紀を規定する大国間競争の主軸</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">$36兆超</div>
+    <div class="stat-label">連邦債務 — 債務上限の政治化というセルフ・ゴール</div>
+  </div>
+</div>
+
+<p>
+米国の地政学リスクは、他国とは性質が根本的に異なる。他国にとって地政学リスクは「外から降ってくるショック」だが、米国にとっては<strong>自らが世界秩序の設計者・執行者である</strong>がゆえのリスクである。基軸通貨ドル、世界最大の軍事力、SWIFTと米銀システムへのアクセス権 — これらは米国の「特権」であると同時に、それを<strong>武器化（weaponization）</strong>すれば長期的に自らの土台を蝕む諸刃の剣でもある。本章では、米国が抱える地政学リスクを、市場・経済への波及経路とともに整理する。
+</p>
+
+<!-- Chart: USD share of global FX reserves (de-dollarization / weaponization) -->
+<div id="us-geo-dxyshare"></div>
+<script>
+ChartBuilder.lines('us-geo-dxyshare', {
+  title: '世界外貨準備に占める米ドル比率 1999-2025（脱ドル化）',
+  caption: '出典: IMF COFER。配分済み準備に占める米ドル比率。2001年の約72%ピークから2025年Q4の56.8%へ長期低下。GFC・対露制裁・ロシア準備凍結を経て、各国中銀は準備通貨を漸進的に多様化（ユーロ約20%、人民元約2%、金の比率上昇）。',
+  yUnit: '%',
+  yStep: 5,
+  yRange: [50, 75],
+  xRange: [1999, 2026],
+  series: [{
+    name: 'USDシェア',
+    color: '#5b8def',
+    data: [
+      [1999, 71.0],[2001, 72.0],[2004, 65.5],[2008, 63.8],[2010, 62.0],
+      [2013, 61.2],[2015, 65.0],[2018, 61.7],[2020, 58.9],[2022, 58.4],
+      [2024, 57.8],[2025, 56.8]
+    ]
+  }],
+  annotations: [
+    { year: 2008, label: 'GFC', color: '#ff9f43' },
+    { year: 2014, label: '対露制裁', color: '#ff9f43' },
+    { year: 2022, label: '準備凍結', color: '#ff6b6b' },
+    { year: 2025, label: '56.8%', color: '#ff6b6b' }
+  ]
+});
+</script>
+
+<section>
+  <h2>1. 基軸通貨の武器化と「脱ドル化」リスク</h2>
+  <p>
+  米ドルが世界の基軸通貨である事実は、米国に巨大な特権（exorbitant privilege）を与える。米国は自国通貨で国債を発行でき、制裁を通じて他国を国際金融システムから締め出すことができる。2022年のロシア中央銀行準備凍結（約3,000億ドル）は、この力を史上最大規模で発動した瞬間だった。
+  </p>
+  <p>
+  しかしこの「武器化」は副作用を伴う。各国中銀は「自国の準備もいつか凍結されうる」と学習し、ドル以外の準備資産（金、人民元、ユーロ）への分散を加速させた。上のチャートが示すドル比率の長期低下は、その緩慢だが確実な帰結である。脱ドル化は一夜にして起きないが、米国の<strong>最大の地政学的資産が、政策の使い方次第で逓減しうる</strong>という構造的リスクを示している。
+  </p>
+  <h3>債務上限という「セルフ・ゴール」</h3>
+  <p>
+  皮肉なことに、ドルと米国債への信認を最も脅かすのは外敵ではなく国内政治である。債務上限（debt ceiling）の引き上げを巡る政争は周期的に米国債のテクニカル・デフォルト懸念を生み、2011年にはS&amp;Pが米国を初めて格下げ（AAA→AA+）、2023年にはFitchも続いた。「自国でコントロールできるはずのリスクを自ら政治化する」この構造は、基軸通貨国にしか許されない危険な賭けである。
+  </p>
+</section>
+
+<section>
+  <h2>2. リスク・マトリクス — 要因 × 蓋然性 × 波及経路</h2>
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>リスク要因</th>
+          <th>蓋然性</th>
+          <th>市場・経済への影響経路</th>
+          <th>関連国/地域</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight-red">
+          <td>米中テクノ・貿易対立</td>
+          <td>高（継続中）</td>
+          <td>関税→インフレ・供給網寸断、先端半導体・レアアース規制の応酬</td>
+          <td>🇨🇳 中国・🇹🇼 台湾</td>
+        </tr>
+        <tr class="highlight-red">
+          <td>台湾有事への防衛コミット</td>
+          <td>中</td>
+          <td>軍事介入リスク、株・債券の急変動、半導体供給途絶</td>
+          <td>🇹🇼 台湾・🇨🇳 中国・🇯🇵 日本</td>
+        </tr>
+        <tr class="highlight-orange">
+          <td>対露制裁の長期化・第三国波及</td>
+          <td>高</td>
+          <td>エネルギー・穀物価格、二次制裁による分断</td>
+          <td>🇷🇺 ロシア・🇪🇺 EU</td>
+        </tr>
+        <tr class="highlight-orange">
+          <td>基軸通貨の武器化→脱ドル化</td>
+          <td>中（構造的）</td>
+          <td>準備通貨の多様化、長期金利の上昇圧力、ドル信認</td>
+          <td>🇨🇳 中国・BRICS</td>
+        </tr>
+        <tr class="highlight-orange">
+          <td>債務上限・政府閉鎖の政治化</td>
+          <td>高（周期的）</td>
+          <td>米国債テクニカル・デフォルト懸念、格下げ、Tビルのリスクプレミアム</td>
+          <td>（国内政治）</td>
+        </tr>
+        <tr>
+          <td>中東紛争（イラン核・ホルムズ）</td>
+          <td>中</td>
+          <td>原油スパイク、海上輸送保険料、インフレ再燃</td>
+          <td>🇮🇷 イラン・🇮🇱 イスラエル</td>
+        </tr>
+        <tr>
+          <td>同盟関係の不確実性</td>
+          <td>中〜高</td>
+          <td>NATO・同盟負担の再交渉、地政学プレミアムの上昇</td>
+          <td>🇪🇺 EU・🇯🇵 日本</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="source"><cite>出典: IMF COFER、米財務省、CRS「U.S.-China Trade Relations」、本テキスト第15・19章。</cite></p>
+</section>
+
+<section>
+  <h2>3. 市場への波及経路（トランスミッション）</h2>
+  <p>
+  米国の地政学ショックは、他国と逆向きに伝播することが多い。世界がリスクオフになると、震源が米国であっても資金は米国債とドルに逃げ込む（「フライト・トゥ・クオリティ」）。これが米国の地政学リスクを特異にしている — <strong>自らがショックの震源でありながら、同時に世界の安全資産でもある</strong>。
+  </p>
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>経路</th><th>メカニズム</th><th>観測指標</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>① 安全資産フロー</td>
+          <td>リスクオフで米国債・ドルへ逃避（震源が米国でも）</td>
+          <td>10年債利回り、DXY、VIX</td>
+        </tr>
+        <tr>
+          <td>② 制裁・金融インフラ</td>
+          <td>SWIFT遮断・資産凍結による相手国・第三国への打撃</td>
+          <td>制裁対象国のCDS・通貨、ドル決済シェア</td>
+        </tr>
+        <tr>
+          <td>③ コモディティ</td>
+          <td>中東・対露制裁で原油・LNG・穀物が変動</td>
+          <td>WTI/Brent、天然ガス、CPI</td>
+        </tr>
+        <tr class="highlight-orange">
+          <td>④ 信認・格付け</td>
+          <td>債務上限政治化で米国債の格下げ・プレミアム上昇</td>
+          <td>米国ソブリン格付け、CDS、入札動向</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>4. 米中対立 — 21世紀の構造的軸</h2>
+  <p>
+  2018年の通商法301条に基づく対中関税に始まった米中対立は、貿易戦争から技術覇権（半導体・AI・量子）、軍事（台湾・南シナ海）、金融へと多面化した。米国は先端半導体・製造装置の対中輸出規制（2022年〜）で中国の技術的台頭を抑え込もうとし、中国はレアアースやガリウム等の重要鉱物で報復カードを握る。第19章で見た「デカップリング／デリスキング」は、この対立の経済的表現である。
+  </p>
+  <p>
+  最大のフラッシュポイントは<strong>台湾</strong>である。米国は「戦略的曖昧さ」を保ちつつ台湾防衛にコミットしており、台湾有事は米中の直接衝突に発展しうる唯一のシナリオである。世界の先端半導体の大半を台湾が生産する以上、有事は世界経済の心臓を止める。詳細は台湾・中国の地政学リスク章を参照。
+  </p>
+</section>
+
+<section>
+  <h2>5. 結論 — 設計者ゆえのリスク</h2>
+  <p>
+  米国の地政学リスクは「世界秩序の設計者・執行者」という立場そのものに内在する。基軸通貨と制裁という強力な武器は、使えば使うほど長期的に自らの土台（ドル信認、同盟の結束）を摩耗させうる。投資家にとって重要なのは、米国が<strong>ショックの震源でありながら世界の避難所でもある</strong>という二重性を理解することだ。リスクオフ局面でドルと米国債が買われる限り、米国の地政学的特権は当面揺るがない。しかしドル準備比率の緩慢な低下は、その特権が永遠ではないことを静かに告げている。
+  </p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">米国の地政学リスクを一文で</div>
+    <div class="mnemonic-body">「武器（ドル・制裁）を使うほど、その武器は鈍る。」 — 米国の地政学的特権は、使い方次第で逓減する自己消費型の資産である。最大の敵はしばしば<strong>債務上限を巡る自国の政治</strong>でもある。</div>
+  </div>
+</section>
+
+<section>
+  <h2>関連ページ</h2>
+  <ul>
+    <li><a href="../summary/geopolitical_map.html">🗺 地政学マップ（G10横断・全リスク俯瞰）</a></li>
+    <li><a href="../china/21_geopolitical_risk.html">🇨🇳 中国の地政学リスク（米中対立の対岸）</a></li>
+    <li><a href="../taiwan/21_geopolitical_risk.html">🇹🇼 台湾の地政学リスク（防衛コミットの焦点）</a></li>
+    <li><a href="../iran/21_geopolitical_risk.html">🇮🇷 イラン（制裁・ホルムズ海峡）</a></li>
+    <li><a href="../israel/21_geopolitical_risk.html">🇮🇱 イスラエル（中東紛争）</a></li>
+    <li><a href="19_trade.html">第19章 貿易（米中デカップリング）</a> ／ <a href="15_crises.html">第15章 金融危機</a></li>
+  </ul>
+</section>

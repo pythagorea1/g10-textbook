@@ -1,0 +1,148 @@
+<!-- Key Stats -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">4.50%</div>
+    <div class="stat-label">現在の再融資金利（2023/6〜据置）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">3.00%</div>
+    <div class="stat-label">割引金利（金利回廊の下限）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">15%級</div>
+    <div class="stat-label">2011年のピーク（高インフレ・国際収支危機）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">4.0%</div>
+    <div class="stat-label">過去最低（2020年COVID対応）</div>
+  </div>
+</div>
+
+<section>
+  <h2>二つの政策金利：再融資金利と割引金利</h2>
+  <p>SBVの政策金利は単一ではない。中核は (1) <strong>再融資金利（refinancing rate）＝4.50%</strong>と (2) <strong>割引金利（discount rate）＝3.00%</strong>の二本立てで、両者が金利回廊の上限・下限を形づくる。再融資金利はSBVが市中銀行へ資金を供給する際の主たる基準で、政策スタンスを示すシグナルとして最も注目される。さらにSBVは預金金利の上限（とくに短期）や、銀行ごとの<strong>信用成長枠</strong>（第01章）を併用し、金利と量の両面から金融を運営する。</p>
+  <p>先進国の政策金利が0.25%刻みで微調整されるのに対し、ベトナムの政策金利は<strong>1%刻みで大きく動く</strong>のが特徴だ。インフレが二桁に達すれば一気に数%引き上げ、危機が去れば一気に下げる。これは、金融市場が浅く金利の波及（トランスミッション）が不完全なため、小幅な変更では効きにくいという新興国特有の事情を反映している。</p>
+</section>
+
+<!-- Policy rate long-term chart -->
+<div id="vn-rate-long"></div>
+<script>
+ChartBuilder.lines('vn-rate-long', {
+  title: 'ベトナム 政策金利（再融資金利）推移 2008-2026',
+  caption: '出典: State Bank of Vietnam / TradingEconomics / DBS / 中央銀行誌。2008・2011のピーク水準は文献により14〜15%で揺れ。年次代表値で長期サイクルを表示。',
+  yUnit: '%',
+  yStep: 2,
+  yRange: [0, 16],
+  series: [{
+    name: '再融資金利',
+    color: '#00d4aa',
+    data: [
+      [2008, 14.0],[2009, 7.0],[2011, 15.0],[2012, 9.0],[2013, 7.0],
+      [2014, 6.5],[2016, 6.25],[2019, 6.25],[2020.83, 4.0],[2022.83, 6.0],
+      [2023.5, 4.5],[2024, 4.5],[2025, 4.5],[2026, 4.5]
+    ]
+  }],
+  annotations: [
+    { year: 2008, label: '08 14%', color: '#ff6b6b' },
+    { year: 2011, label: '11 15%', color: '#ff6b6b' },
+    { year: 2020.83, label: '20 4.0%', color: '#5b8def' },
+    { year: 2022.83, label: '22 6.0%', color: '#ff9f43' },
+    { year: 2023.5, label: '23 利下げ', color: '#00d4aa' },
+    { year: 2026, label: '26 4.5%', color: '#00d4aa' }
+  ]
+});
+</script>
+
+<section>
+  <h2>利上げ・利下げサイクルの読み方</h2>
+  <p>ベトナムの政策金利史は、4つの大きな局面に分けると記憶しやすい。いずれも「インフレ・為替・成長」のどれを守るかで方向が決まっている。</p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>時期</th>
+          <th>動き</th>
+          <th>背景・狙い</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2008</td>
+          <td class="cell-hike">14%へ急騰</td>
+          <td>世界金融危機＋国内インフレ23%。過熱と物価を抑制</td>
+        </tr>
+        <tr>
+          <td>2011</td>
+          <td class="cell-hike">15%へ再急騰</td>
+          <td>インフレ18.7%・国際収支危機。ドン切下げと併用</td>
+        </tr>
+        <tr>
+          <td>2012-2019</td>
+          <td class="cell-cut">7%→6.25%へ段階低下</td>
+          <td>インフレ沈静・銀行不良債権処理。緩やかな緩和</td>
+        </tr>
+        <tr class="highlight-blue">
+          <td>2020</td>
+          <td class="cell-cut">4.0%へ（過去最低）</td>
+          <td>COVID対応。成長下支えの大幅緩和</td>
+        </tr>
+        <tr class="highlight-orange">
+          <td>2022</td>
+          <td class="cell-hike">6.0%へ</td>
+          <td>Fed利上げ・ドル高で資本流出。為替防衛の利上げ</td>
+        </tr>
+        <tr class="highlight-green">
+          <td>2023-2026</td>
+          <td class="cell-cut">4.5%へ→据置</td>
+          <td>2023年に4回利下げ。社債・不動産救済と成長重視。以後据置</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">「インフレで急上げ、危機で急下げ」</div>
+    <div class="mnemonic-body">
+      <p>2008・2011の<strong>インフレ急騰では14〜15%へ一気に利上げ</strong>、COVID（2020）では<strong>4.0%まで急下げ</strong>、ドル高（2022）では<strong>為替を守るため利上げ</strong>に逆走、そして2023年に4回連続で利下げして<strong>4.5%</strong>に。先進国のような微調整ではなく、振り子のように大きく振れるのがベトナム流。</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>2022年「為替のための利上げ」という逆説</h2>
+  <p>2022年は特異な年だった。国内インフレは3%台と落ち着いていたにもかかわらず、SBVは政策金利を4.0%から6.0%へ引き上げた。理由は物価ではなく<strong>為替</strong>である。FRBの猛烈な利上げでドルが世界的に独歩高となり、新興国から資本が流出。ドンに減価圧力がかかり、SBVは外貨準備を取り崩して介入する一方、内外金利差を縮めてドンを守るために利上げに踏み切った。金融政策が「物価のため」ではなく「為替のため」に動く——これは資本フローに翻弄される新興国中銀の宿命を象徴する。</p>
+  <p>2023年に入りドル高が一服すると、SBVは一転して年4回の利下げを断行し、4.5%へ戻した。Van Thinh Phat事件（第15章）後の社債・不動産危機で冷え込んだ国内景気と、政府の高成長目標を支える狙いだった。為替が落ち着けば直ちに成長支援へ——優先順位の素早い切替えが、SBVの行動原理をよく表している。</p>
+</section>
+
+<section>
+  <h2>2026年の論点：据え置きか、追加利上げか</h2>
+  <p>2023年6月以降、再融資金利は4.50%で据え置かれている。2026年も基調は据え置きと見られるが、論点は二つある。第一に<strong>インフレの上振れ</strong>——2025年に約3.6%だったCPIは2026年に約5%へ加速する見込みで、政府目標（&lt;4.5%）を上回れば引き締めバイアスがかかる。第二に<strong>為替と資本フロー</strong>——2026年9月のFTSE新興市場格上げ（第06・10章）でパッシブ資金が流入する一方、ドンは2026年6月時点で約26,330 VND/USDと過去最安値圏にあり、減価が続けば再び「為替のための利上げ」観測が浮上する。市場では2026年後半に+25bpの利上げを織り込む向きもある。</p>
+
+  <div class="key-number-row">
+    <div class="key-number">
+      <span class="key-number-value">1%刻み</span>
+      <span class="key-number-label">先進国の0.25%刻みと違う大きな変更幅</span>
+    </div>
+    <div class="key-number">
+      <span class="key-number-value">+25bp?</span>
+      <span class="key-number-label">2026後半に利上げ観測（インフレ・為替次第）</span>
+    </div>
+    <div class="key-number">
+      <span class="key-number-value">信用枠</span>
+      <span class="key-number-label">金利と並ぶもう一つの引締めレバー</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>出典・参考文献</h2>
+  <ol>
+    <li>State Bank of Vietnam, "Interest Rates"（再融資金利4.50%・割引金利3.00%, 2023/6〜） <a href="https://www.sbv.gov.vn/">sbv.gov.vn</a></li>
+    <li>TradingEconomics, "Vietnam Interest Rate"（時系列）</li>
+    <li>DBS / MUFG Research, "Vietnam — SBV policy outlook 2025-2026"</li>
+    <li>IMF, "Vietnam: 2025 Article IV Consultation", 2025-09</li>
+    <li>World Bank, "Vietnam — Inflation & policy stance", 2025-2026</li>
+  </ol>
+</section>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>香港 - Short-term Rates | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
+  <script defer src="../assets/charts.js"></script>
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇭🇰 香港</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. 中央銀行</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. 政策金利</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. 財政政策</a>
+      <a href="04_employment.html" class="sidebar-link">04. 雇用</a>
+      <a href="05_inflation.html" class="sidebar-link">05. インフレ</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. 株式市場概観</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. 株式(初期)</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. 株式(近代)</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. 株式(現代)</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. 株式(現在)</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. 債券市場</a>
+      <a href="12_short_rates.html" class="sidebar-link active">12. 短期金利</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. 長期金利</a>
+      <a href="14_currency.html" class="sidebar-link">14. 通貨</a>
+      <a href="15_crises.html" class="sidebar-link">15. 金融危機</a>
+      <a href="16_banking.html" class="sidebar-link">16. 銀行制度</a>
+      <a href="17_corporate.html" class="sidebar-link">17. 企業・コーポレート</a>
+      <a href="18_regulation.html" class="sidebar-link">18. 規制</a>
+      <a href="19_trade.html" class="sidebar-link">19. 貿易</a>
+      <a href="20_lessons.html" class="sidebar-link">20. 教訓</a>
+      <a href="21_geopolitical_risk.html" class="sidebar-link">21. 地政学リスク</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">G10</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+      <div class="sidebar-section-title">地政学・新興地域</div>
+      <div class="country-flags">
+        <a href="../taiwan/01_central_bank.html" class="country-chip">TW</a>
+        <a href="../hongkong/01_central_bank.html" class="country-chip active">HK</a>
+        <a href="../china/01_central_bank.html" class="country-chip">CN</a>
+        <a href="../northkorea/01_central_bank.html" class="country-chip">KP</a>
+        <a href="../vietnam/01_central_bank.html" class="country-chip">VN</a>
+        <a href="../singapore/01_central_bank.html" class="country-chip">SG</a>
+        <a href="../iran/01_central_bank.html" class="country-chip">IR</a>
+        <a href="../israel/01_central_bank.html" class="country-chip">IL</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 ホーム</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10横断年表</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">香港</a>
+        <span class="sep">/</span>
+        香港の短期金利（HIBOR・基準金利）
+      </div>
+      <h1 class="page-title">🇭🇰 香港の短期金利（HIBOR・基準金利）</h1>
+      <p class="page-subtitle">Fedに連動する基準金利、HIBOR、総決済残高と通貨防衛の自動調整</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">4.00%</div>
+          <div class="stat-label">HKMA基準金利 (2026年3〜4月、Fed追随)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" style="color:var(--accent-red);">5.75%</div>
+          <div class="stat-label">直近ピーク (2023年8月)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" style="color:var(--accent-blue);">0.50%</div>
+          <div class="stat-label">底値 (2008-15・2020-22)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" style="color:var(--accent-orange);">+50bp</div>
+          <div class="stat-label">基準金利＝Fed下限＋50bp</div>
+        </div>
+      </div>
+
+      <p>
+        香港の短期金利は、世界の主要金融センターの中でも特異な構造を持つ。香港金融管理局（HKMA）は中央銀行ではなく<strong>通貨ボード（カレンシーボード）</strong>を運営する機関であり、独立した金融政策を持たない。米ドルに7.75〜7.85でペッグする連繋為替相場制度（LERS）と自由な資本移動を維持する代償として、香港は金利の自律的決定権を放棄している。これがいわゆる<strong>「不可能の三角形（Impossible Trinity）」</strong>の帰結であり、香港の短期金利は事実上、米連邦準備制度（Fed）の金融政策を「輸入」する形で決まる。
+      </p>
+
+      <div class="key-number-row">
+        <div class="key-number">
+          <span class="key-number-value">7.75-7.85</span>
+          <span class="key-number-label">USDペッグ帯（中心7.80）</span>
+        </div>
+        <div class="key-number">
+          <span class="key-number-value">HK$1,000億未満</span>
+          <span class="key-number-label">2023年初の総決済残高（2022年初はHK$3,000億超）</span>
+        </div>
+        <div class="key-number">
+          <span class="key-number-value">41回</span>
+          <span class="key-number-label">2022年5〜12月の弱サイド介入回数</span>
+        </div>
+      </div>
+
+      <div class="mnemonic-box">
+        <span class="mnemonic-icon">🧠</span>
+        <div class="mnemonic-title">「香港に利上げ会議は存在しない」</div>
+        <div class="mnemonic-body">日本やユーロ圏のような金融政策決定会合は香港にない。基準金利（Base Rate）はFedのFOMC決定の<strong>数時間後</strong>に自動的に調整される。2022〜23年、Fedが11会合連続で利上げすると、香港の借入コストは景気とは無関係に5.75%まで跳ね上がった。「Fedがくしゃみをすれば香港が風邪をひく」を金利の章として記憶せよ。</div>
+      </div>
+
+      <!-- ============================================================ -->
+      <section>
+        <h2>1. 基準金利（Base Rate）の決定メカニズム</h2>
+        <p>
+          香港の政策金利に最も近いものが<strong>基準金利（Base Rate）</strong>である。これは1998年9月のLERS「7つの技術的措置」で導入された割引窓口（Discount Window）の貸出金利であり、銀行がHKMAから日中・翌日物の流動性を借りる際の金利を規定する。重要なのは、この金利が会議で「決定」されるのではなく、<strong>公式の算式に従って機械的に設定される</strong>点である。
+        </p>
+
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>要素</th>
+                <th>内容</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>算式</td>
+                <td>次の<strong>高い方</strong>を採用：<br>(i) 米FF金利目標レンジ<strong>下限＋50bp</strong>、または<br>(ii) 翌日物・1ヶ月物HIBORの5日移動平均</td>
+              </tr>
+              <tr>
+                <td>通常時</td>
+                <td>(i)が拘束的＝実質的に「Fed下限＋50bp」。例：Fed 3.50〜3.75%なら基準金利4.00%</td>
+              </tr>
+              <tr>
+                <td>ストレス時</td>
+                <td>HIBORが急騰すると(ii)が上回り、Fed据置でも香港金利が上昇しうる</td>
+              </tr>
+              <tr>
+                <td>役割</td>
+                <td>割引窓口の上限金利として銀行間翌日物金利の天井を画定</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          この算式の含意は重大である。平時には基準金利は「Fed下限＋50bp」に固定され、香港はFedの利上げ・利下げをそのまま追随する。一方、投機やストレスでHIBORが急騰した局面では、HIBOR項が拘束的となり、Fedが動かなくても香港の借入コストが独自に上昇する「自律的な引締め」が発生する。後者は通貨防衛の自動安定化メカニズムでもある。
+        </p>
+        <p class="source"><cite>出典: HKMA, "How the Base Rate is determined under the Linked Exchange Rate System"; HKMA press releases (2025-12-11, 2026-03-19).</cite></p>
+      </section>
+
+      <!-- 基準金利の歴史チャート -->
+      <div id="hk-base-rate-1998-2026"></div>
+      <script>
+      ChartBuilder.lines('hk-base-rate-1998-2026', {
+        title: '香港 基準金利（Base Rate）1998-2026 — Fed連動の歴史',
+        caption: '出典: HKMA Base Rate プレスリリース各回。1998年9月の割引窓口導入以降の基準金利（年末近似）。1990年代前半はHIBOR概算。Fed連動が原則で、2008-15年と2020-22年のゼロ金利期に0.50%、Fed引締めで2023年8月に5.75%（Fed 5.25-5.50%＋50bp相当）。2025年12月にFed追随で4.00%、2026年3月据置。',
+        yUnit: '%',
+        yRange: [0, 9],
+        series: [{
+          name: '基準金利 (%)',
+          color: '#00d4aa', width: 2,
+          data: [
+            [1998, 8.5],[2000, 8.0],[2001, 4.25],[2003, 2.5],[2006, 6.75],[2008, 3.5],
+            [2009, 0.5],[2012, 0.5],[2015, 0.5],[2016, 0.75],[2017, 1.75],[2018, 2.75],
+            [2019, 2.875],[2020, 0.5],[2021, 0.5],[2022, 4.75],[2023, 5.75],[2024, 4.75],
+            [2025, 4.00],[2026.25, 4.00]
+          ]
+        }],
+        bands: [
+          { from: 2009, to: 2015.5, label: 'ゼロ金利期', color: '#5b8def' },
+          { from: 2022, to: 2024, label: 'Fed引締め', color: '#ff6b6b' }
+        ],
+        annotations: [
+          { year: 1998, label: '98 8.5%', color: '#ff6b6b' },
+          { year: 2009, label: '09 底0.5%', color: '#5b8def' },
+          { year: 2020, label: '20 COVID', color: '#5b8def' },
+          { year: 2023, label: '23 5.75%', color: '#ff6b6b' },
+          { year: 2025, label: '25 4.0%', color: '#ffd93d' }
+        ]
+      });
+      </script>
+
+      <!-- ============================================================ -->
+      <section>
+        <h2>2. HIBOR — 香港銀行間取引金利</h2>
+        <p>
+          <strong>HIBOR（Hong Kong Interbank Offered Rate）</strong>は、香港の銀行間市場で資金を融通する際の金利であり、香港経済の実際の借入コストを決める基準である。香港銀行公会（HKAB）が午前11時時点で複数の参照銀行の呈示レートを集計して算出し、翌日物（O/N）から12ヶ月物まで複数の期間が公表される。住宅ローン、企業融資、デリバティブの大半がHIBORを参照する。
+        </p>
+        <p>
+          基準金利がFedに連動して階段状に動くのに対し、HIBORは<strong>香港の銀行間流動性</strong>に応じて日々変動する。流動性が潤沢なら低く、逼迫すれば急騰する。この流動性を左右する最重要変数が、次節で述べる<strong>総決済残高（Aggregate Balance）</strong>である。
+        </p>
+
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>金利</th>
+                <th>決まり方</th>
+                <th>用途</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>基準金利 (Base Rate)</td>
+                <td>算式（Fed下限＋50bp等）で機械的に設定</td>
+                <td>割引窓口、HIBORの天井</td>
+              </tr>
+              <tr>
+                <td>HIBOR (1M/3M)</td>
+                <td>銀行間流動性で日々変動</td>
+                <td>住宅ローン（H＋）、企業融資の基準</td>
+              </tr>
+              <tr>
+                <td>Best Lending Rate（プライム）</td>
+                <td>各銀行が設定、変更頻度は低い（粘着的）</td>
+                <td>プライム連動住宅ローン（P−）の基準</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="source"><cite>出典: Hong Kong Association of Banks (HKAB), HIBOR fixing methodology; HKMA。</cite></p>
+      </section>
+
+      <!-- ============================================================ -->
+      <section>
+        <h2>3. 総決済残高（Aggregate Balance）と通貨防衛</h2>
+        <p>
+          通貨ボードの肝は、HIBORを動かす「量」のメカニズムにある。<strong>総決済残高</strong>とは、銀行がHKMAに保有する決済口座残高の合計＝銀行システム全体の翌日物流動性を指す。HKMAはこの残高の伸縮を通じて間接的にHIBORを操作する。
+        </p>
+        <p>
+          仕組みはこうだ。HKDが弱サイド7.85に達すると、HKMAは<strong>弱サイド兌換保証（Weak-side Convertibility Undertaking）</strong>を発動し、市場からHKDを買い・米ドルを売る。これにより総決済残高が縮小して銀行間流動性が枯渇し、HIBORが上昇する。HIBORの上昇はHKDの保有妙味を高め、資金がHKDに回帰して為替が中心へ戻る。逆にHKDが強サイド7.75に達すれば、HKMAはHKDを売り・米ドルを買い、総決済残高を拡大してHIBORを押し下げる。これが通貨ボードの<strong>自動調整メカニズム</strong>である。
+        </p>
+
+        <div class="mnemonic-box">
+          <span class="mnemonic-icon">🧠</span>
+          <div class="mnemonic-title">2022-23年の「流動性吸い上げ」</div>
+          <div class="mnemonic-body">Fedの猛烈な利上げで米金利がHIBORを上回ると、HKDを借りて米ドル資産で運用する<strong>キャリートレード</strong>が活発化し、HKDが弱サイド7.85に張り付いた。HKMAは2022年5〜12月だけで<strong>41回・HK$2,420億</strong>の弱サイド介入を実施。総決済残高はHK$3,000億超から<strong>HK$1,000億未満</strong>へ約7割縮小し、HIBORを米金利に追いつかせた。「為替を守るために流動性を犠牲にする」が通貨ボードの掟。</div>
+        </div>
+        <p class="source"><cite>出典: HKMA, Weak-side Convertibility Undertaking 介入記録 (2022-2023); Eddie Yue, "Operation of LERS" (2023-05); BIS Papers No.73。</cite></p>
+      </section>
+
+      <!-- ============================================================ -->
+      <section>
+        <h2>4. HIBOR-SOFR乖離とキャリートレードの罠</h2>
+        <p>
+          香港短期金利の固有論点が、<strong>HIBORと米SOFR（あるいはFF金利）の乖離</strong>である。基準金利はFedに即座に追随するが、実際の銀行間金利であるHIBORは流動性次第で米金利に遅れて追随する。2022〜23年のように<strong>HIBOR &lt; 米金利</strong>の状態が続くと、安いHKDを借りて高い米ドル資産で運用するキャリートレードが膨らみ、HKDが売られて弱サイドへ向かう。
+        </p>
+        <p>
+          この乖離は最終的に総決済残高の縮小（前節）を通じて解消されるが、調整には時間がかかり、その間は「為替は弱いのに国内流動性は逼迫してHIBORが乱高下する」という不安定な局面が生じる。2023年には1ヶ月物HIBORが一時5%を超え、住宅ローン保有者の返済負担を直撃した。逆に2024〜25年の利下げ局面では資金が流入してHIBORが急低下し、強サイド7.75に接触する場面もあった。香港の短期金利は<strong>為替・流動性・米金利の三つ巴</strong>で動くことを理解する必要がある。
+        </p>
+        <p class="source"><cite>出典: HKMA; Xinhua (2025-07, HKD防衛); Reuters/Econotimes (2025-05, 強サイド介入US$7.8bn)。</cite></p>
+      </section>
+
+      <!-- ============================================================ -->
+      <section>
+        <h2>5. まとめ — 自律性なき短期金利</h2>
+        <p>
+          香港の短期金利は、(1)Fedに連動する基準金利、(2)流動性で変動するHIBOR、(3)粘着的なプライムレートの3層からなる。いずれも香港自身の景気判断では動かず、米国の金融政策と通貨防衛の都合で決まる。好況期にFedが利下げすればさらに過熱し、不況期にFedが利上げすれば景気を冷やす——金利が経済の安定化ではなく不安定化に働きうるのが、通貨ボードを採用した香港が払い続ける代償である。
+        </p>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+<ol>
+<li>HKMA, "How the Base Rate is determined under the Linked Exchange Rate System".</li>
+<li>HKMA, Base Rate press releases (2025-12-11, 2026-03-19).</li>
+<li>Hong Kong Association of Banks (HKAB), HIBOR fixing methodology.</li>
+<li>Eddie Yue, "Operation of the LERS", HKMA inSight (2023-05).</li>
+<li>BIS Papers No.73, "Monetary operations under the Currency Board".</li>
+<li>Xinhua (2025-07, HKD defence); Reuters/Econotimes (2025-05, strong-side intervention).</li>
+</ol>
+    </footer>
+
+    <nav class="page-nav">
+      <a href="11_bond_market.html" class="prev">債券市場</a>
+      <a href="13_long_rates.html" class="next">長期金利</a>
+    </nav>
+  </main>
+
+  <script src="../assets/enhancer.js"></script>
+  <script defer src="../assets/recall.js"></script>
+  <script src="../assets/tts-reader.js"></script>
+</body>
+</html>

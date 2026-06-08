@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ベトナム - Financial Crises | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
+  <script defer src="../assets/charts.js"></script>
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇻🇳 ベトナム</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. 中央銀行</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. 政策金利</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. 財政政策</a>
+      <a href="04_employment.html" class="sidebar-link">04. 雇用</a>
+      <a href="05_inflation.html" class="sidebar-link">05. インフレ</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. 株式市場概観</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. 株式(初期)</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. 株式(近代)</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. 株式(現代)</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. 株式(現在)</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. 債券市場</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. 短期金利</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. 長期金利</a>
+      <a href="14_currency.html" class="sidebar-link">14. 通貨</a>
+      <a href="15_crises.html" class="sidebar-link active">15. 金融危機</a>
+      <a href="16_banking.html" class="sidebar-link">16. 銀行制度</a>
+      <a href="17_corporate.html" class="sidebar-link">17. 企業・コーポレート</a>
+      <a href="18_regulation.html" class="sidebar-link">18. 規制</a>
+      <a href="19_trade.html" class="sidebar-link">19. 貿易</a>
+      <a href="20_lessons.html" class="sidebar-link">20. 教訓</a>
+      <a href="21_geopolitical_risk.html" class="sidebar-link">21. 地政学リスク</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">G10</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+      <div class="sidebar-section-title">地政学・新興地域</div>
+      <div class="country-flags">
+        <a href="../taiwan/01_central_bank.html" class="country-chip">TW</a>
+        <a href="../hongkong/01_central_bank.html" class="country-chip">HK</a>
+        <a href="../china/01_central_bank.html" class="country-chip">CN</a>
+        <a href="../northkorea/01_central_bank.html" class="country-chip">KP</a>
+        <a href="../vietnam/01_central_bank.html" class="country-chip active">VN</a>
+        <a href="../singapore/01_central_bank.html" class="country-chip">SG</a>
+        <a href="../iran/01_central_bank.html" class="country-chip">IR</a>
+        <a href="../israel/01_central_bank.html" class="country-chip">IL</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 ホーム</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10横断年表</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">ベトナム</a>
+        <span class="sep">/</span>
+        ベトナム⑮ 金融危機
+      </div>
+      <h1 class="page-title">🇻🇳 ベトナム⑮ 金融危機</h1>
+      <p class="page-subtitle">1986ハイパーインフレ・2008・2011・2012-13・2022社債の5つの顔</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">700%超</div>
+          <div class="stat-label">1986年ドイモイ前夜のハイパーインフレ（CPI年率）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">-66%級</div>
+          <div class="stat-label">2008年 VN-Index暴落（世界金融危機＋国内インフレ23%）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">18.7%</div>
+          <div class="stat-label">2011年インフレ — 国際収支危機で政策金利15%・ドン切下げ</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">1,530→874</div>
+          <div class="stat-label">2022年 Van Thinh Phat／社債危機でのVN-Index暴落</div>
+        </div>
+      </div>
+
+      <section>
+        <h2>1. ベトナム危機史の「5つの顔」</h2>
+        <p>
+          ベトナムの金融危機史は、欧米型の「銀行取り付け」というより、急成長と体制移行の歪みが噴き出す形で現れてきた。整理すると<strong>(1)1986年のハイパーインフレ、(2)2008年の世界金融危機＋国内インフレ、(3)2011年の国際収支危機、(4)2012〜13年の銀行不良債権危機、(5)2022年の社債・不動産危機（Van Thinh Phat事件）</strong>という5つのエピソードに集約される。いずれも、インフレ・為替・銀行・資本市場のどこかが過熱と反動を起こした局面だ。まずは全体の年表を見よう。
+        </p>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>年</th>
+                <th>出来事</th>
+                <th>影響</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1986</td>
+                <td class="event-crisis">ドイモイ採択／ハイパーインフレ(~700%超)</td>
+                <td>計画経済→市場経済へ転換、物価暴騰からの脱却に着手</td>
+              </tr>
+              <tr>
+                <td>1989</td>
+                <td class="highlight-green">価格・為替自由化、ドン大幅切下げで公定≒市場へ統一</td>
+                <td>インフレ沈静化の起点、輸出競争力回復</td>
+              </tr>
+              <tr>
+                <td>1997–98</td>
+                <td>アジア通貨危機</td>
+                <td>資本未開放で直撃回避、ただし輸出・FDI鈍化、ドン段階切下げ</td>
+              </tr>
+              <tr>
+                <td>2000.07</td>
+                <td>ホーチミン証券取引所(HOSE)開設、VN-Index=100</td>
+                <td>資本市場の誕生</td>
+              </tr>
+              <tr>
+                <td>2007</td>
+                <td class="highlight-orange">WTO加盟、VN-Index 1,170でバブルピーク</td>
+                <td>外資流入ブーム → 過熱</td>
+              </tr>
+              <tr>
+                <td>2008</td>
+                <td class="event-crisis">世界金融危機＋国内インフレ23%</td>
+                <td>VN-Index -66%級暴落、政策金利14%へ、ドン切下げ</td>
+              </tr>
+              <tr>
+                <td>2011</td>
+                <td class="event-crisis">インフレ18.7%・国際収支危機</td>
+                <td>政策金利15%、ドン約9%切下げ、不良債権急増</td>
+              </tr>
+              <tr>
+                <td>2012–13</td>
+                <td class="event-crisis">銀行不良債権危機 → VAMC設立(2013)</td>
+                <td>不動産バブル崩壊処理、銀行再編の始動</td>
+              </tr>
+              <tr>
+                <td>2020</td>
+                <td class="highlight-orange">COVID-19</td>
+                <td>一時マイナス成長懸念→底堅い回復、政策金利4.0%へ</td>
+              </tr>
+              <tr>
+                <td>2022</td>
+                <td class="event-crisis">Van Thinh Phat／SCB事件＋社債危機、Fed利上げ</td>
+                <td>VN-Index 1,530→874暴落、政策金利6.0%へ、社債デフォルト連鎖</td>
+              </tr>
+              <tr>
+                <td>2023</td>
+                <td class="highlight-green">SBV 4回利下げで4.5%、不動産・社債救済策</td>
+                <td>市場安定化、回復基調へ</td>
+              </tr>
+              <tr>
+                <td>2025–26</td>
+                <td class="highlight-green">FTSE新興市場格上げ決定（2026/9発効予定）</td>
+                <td>パッシブ資金流入期待でVN-Index史上最高更新</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>2. VN-Index で見る「ブーム＆バスト」</h2>
+        <p>
+          ベトナム株式市場は<strong>個人投資家比率が極端に高く（売買の8〜9割）</strong>、上昇も下落も増幅されやすい。次のチャートは2000年のHOSE開設（基準値100）から2026年までのVN-Indexの長期推移だ。2007年の最初のバブルと2008年の暴落、2021年の個人投資家ブーム、2022年の社債危機による急落、そして2025〜26年の史上最高値更新が一目で分かる。
+        </p>
+
+        <div id="vn-crises-vnindex"></div>
+        <script>
+        ChartBuilder.lines('vn-crises-vnindex', {
+          title: 'VN-Index 長期チャート (2000-2026)',
+          caption: '出典: HOSE / VietnamPlus / VietnamNet / CEIC / TradingEconomics。2000年開設(基準100)→2007年3月場中1,170でバブルピーク→2008年に-66%級暴落→2021年末1,498(個人ブーム)→2022年Van Thinh Phat/社債危機で1,530→874へ→2023-25回復、2025年末1,784(+41%)→2026年に史上最高~1,900。⚠古い年末値(2007/08/09/12/18/20/21/22)は公開データからの代表値で確定値は要再照合。',
+          yUnit: '',
+          yRange: [0, 2000],
+          yStep: 500,
+          series: [{
+            name: 'VN-Index',
+            color: '#00d4aa', width: 2.2,
+            data: [[2000.58, 100], [2006, 752], [2007, 927], [2008, 316], [2009, 495], [2012, 414], [2017, 984], [2018, 893], [2020, 1103], [2021, 1498], [2022, 1007], [2023, 1130], [2024, 1267], [2025, 1784], [2026.29, 1929]]
+          }],
+          annotations: [
+            { year: 2007, label: '07バブル', color: '#ffd93d' },
+            { year: 2008, label: '08-66%', color: '#ff6b6b' },
+            { year: 2021, label: '21個人', color: '#5b8def' },
+            { year: 2022, label: '22社債危機', color: '#ff6b6b' },
+            { year: 2026.29, label: '史上最高', color: '#00d4aa' }
+          ]
+        });
+        </script>
+      </section>
+
+      <section>
+        <h2>3. 主要危機の比較 — 下落率と性質</h2>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>危機</th>
+                <th>時期</th>
+                <th>下落率（VN-Index）</th>
+                <th>性質・教訓</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="highlight-red">2008 GFC＋国内インフレ</td>
+                <td>2007.03–2009.02</td>
+                <td><span class="drawdown-badge">-80%級</span> 1,170→235</td>
+                <td>WTO加盟後の外資ブームが過熱。世界危機＋CPI23%で総崩れ</td>
+              </tr>
+              <tr>
+                <td class="highlight-orange">2011 国際収支危機</td>
+                <td>2010–2011</td>
+                <td><span class="drawdown-badge">-20%級</span></td>
+                <td>高インフレ・ドン切下げ・政策金利15%。銀行不良債権の種に</td>
+              </tr>
+              <tr>
+                <td class="highlight-red">2022 社債・不動産危機</td>
+                <td>2022.04–2022.11</td>
+                <td><span class="drawdown-badge">-43%</span> 1,530→874</td>
+                <td>Van Thinh Phat事件＋社債デフォルト連鎖＋Fed利上げ</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          ⚠下落率は場中ピーク／ボトムを基準にした概算（年末値ベースとは一致しない）。2008年は2007年3月の場中ピーク1,170から2009年2月の底~235まで、実に8割級の暴落だった。
+        </p>
+      </section>
+
+      <section>
+        <h2>4. 1986年：ハイパーインフレとドイモイの起点</h2>
+        <p>
+          ベトナム危機史の「原点」は、戦後の計画経済が行き詰まった<strong>1986年のハイパーインフレ（CPI年率700%超）</strong>だ。配給制と価格統制が機能不全に陥り、物価が暴騰した。この危機こそが、同年の第6回党大会で<strong>「ドイモイ（Đổi Mới＝刷新）」</strong>政策を採択させた直接の引き金である。1989年の価格・為替自由化とドン大幅切下げを経て、インフレは1995年には17%まで沈静化した。<strong>「ハイパーインフレを市場化で克服した」</strong>という経験が、その後のベトナムの政策の原点になっている。
+        </p>
+      </section>
+
+      <section>
+        <h2>5. 2008年：世界金融危機＋国内インフレ23%の「ダブルパンチ」</h2>
+        <p>
+          2007年のWTO加盟は外資流入ブームを招き、VN-Indexは2007年3月に場中<strong>1,170</strong>のバブルピークをつけた。だが2008年、世界金融危機と<strong>国内インフレ23%</strong>が同時に襲い、SBVは政策金利を14%へ急上昇させ、ドンも切下げた。VN-Indexは2009年2月の底~235まで、ピークから<strong>8割級</strong>という凄まじい暴落を喫した。資本がまだ十分開放されていなかったことが、かろうじて「全面的な通貨危機」への発展を防いだ。
+        </p>
+      </section>
+
+      <section>
+        <h2>6. 2011年・2012-13年：国際収支危機と銀行不良債権、VAMCの誕生</h2>
+        <p>
+          2011年、ベトナムは再び<strong>インフレ18.7%・国際収支危機</strong>に見舞われた。政策金利は15%へ、ドンは約9%切下げられた。高金利と不動産バブル崩壊で銀行の<strong>不良債権（NPL）が急増</strong>し、2012〜13年に銀行不良債権危機へと発展する。これに対しベトナムは2013年、不良債権の受け皿となる<strong>資産管理会社「VAMC（Vietnam Asset Management Company）」</strong>を設立した。VAMCは不良債権を簿価で買い取って銀行のバランスシートを一時的に浄化する仕組みで、銀行再編の起点となった（→第16章）。
+        </p>
+      </section>
+
+      <section>
+        <h2>7. 2022年：Van Thinh Phat／社債危機 — 「ベトナム版・信用バブル崩壊」</h2>
+        <p>
+          直近最大の危機が2022年だ。コロナ後の低金利下で<strong>社債（corporate bond）市場が2020〜21年に急拡大</strong>したが、その多くが不動産デベロッパーの資金調達であり、開示や担保が不透明だった。2022年、不動産大手<strong>Van Thinh Phat（VTP）グループ会長の逮捕と、関連する商業銀行SCBの取り付け騒ぎ</strong>が金融システムを揺さぶった。同時にFRBの利上げでドル高・資金引き締めが進み、<strong>VN-Indexは4月の約1,530から11月には約874へ（約-43%）暴落</strong>、社債のデフォルトが連鎖した。
+        </p>
+        <p>
+          当局は2023年、社債の償還繰り延べを認める政令（Decree 08）など緊急措置を打ち、SBVは4回の利下げで政策金利を6.0%→4.5%へ戻した。これにより市場は2023〜25年に回復し、2025年末には<strong>VN-Indexが+41%の1,784</strong>まで戻した。この危機は、急拡大した信用市場の不透明さと、当局の反汚職キャンペーン（"Blazing Furnace"）が交差した「ベトナム版・信用バブル崩壊」だった。
+        </p>
+        <div class="mnemonic-box">
+          <span class="mnemonic-icon">🧠</span>
+          <div class="mnemonic-title">覚え方：ベトナム危機「5つの顔」</div>
+          <div class="mnemonic-body">
+            ①<strong>1986</strong>ハイパーインフレ（→ドイモイの起点）、②<strong>2008</strong>GFC＋CPI23%（VN-Index -8割級）、③<strong>2011</strong>国際収支危機（金利15%・ドン切下げ）、④<strong>2012-13</strong>銀行不良債権（VAMC設立）、⑤<strong>2022</strong>Van Thinh Phat／社債危機（1,530→874）。共通項は<strong>「急成長の信用膨張→過熱→反動」</strong>。資本が部分的に閉じていたことが全面的通貨危機を防いだ。
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+<ol><li>Facts and Details / Wikipedia(Đổi Mới) / FAO / 政府ポータル — ドイモイ・ハイパーインフレ史</li><li>HOSE / VietnamPlus / VietnamNet / VIR / TheInvestor — VN-Index 2024-2026</li><li>CEIC / TradingEconomics / Investing.com / Wise — VN-Index・USD/VND 時系列</li><li>FiinRatings / FiinGroup Banking Report 2025 / VietnamNews — 銀行・不良債権・VAMC</li><li>CNBC / TIME / Lowy Institute / MUFG Research / Vietnam-Briefing — 米越関税合意 2025-07</li></ol>
+    </footer>
+
+    <nav class="page-nav">
+      <a href="14_currency.html" class="prev">通貨</a>
+      <a href="16_banking.html" class="next">銀行制度</a>
+    </nav>
+  </main>
+
+  <script src="../assets/enhancer.js"></script>
+  <script defer src="../assets/recall.js"></script>
+  <script src="../assets/tts-reader.js"></script>
+</body>
+</html>

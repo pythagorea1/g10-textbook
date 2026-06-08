@@ -1,0 +1,131 @@
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">中所得の罠</div>
+          <div class="stat-label">高成長から先進国入りへの「壁」を越えられるか</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">24% → 0%</div>
+          <div class="stat-label">1994年の高インフレから2025年のデフレ寸前へ</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">投資依存</div>
+          <div class="stat-label">不動産・インフラ偏重モデルの限界が露呈</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">人口減</div>
+          <div class="stat-label">「豊かになる前に老いる」人口動態リスク</div>
+        </div>
+      </div>
+
+      <section>
+        <h2>1. 高成長モデルの「賞味期限」</h2>
+        <p>
+          中国は1980年代以降、年率二桁に迫る高成長で人類史上最速級の経済発展を遂げた。その原動力は<strong>「高貯蓄→高投資→輸出」</strong>のモデルだった。だが、この成長モデルには賞味期限があった。投資の限界生産性が低下し、不動産・インフラへの過剰投資が<strong>債務の山と過剰生産能力</strong>を残したのだ。一人当たり所得が先進国水準に届かないまま成長が鈍化する——いわゆる<strong>「中所得国の罠」</strong>を越えられるかが、中国経済の最大の問いとなっている。
+        </p>
+        <p>
+          世界2位の経済となった中国の減速は、もはや国内問題にとどまらない。内需失速は<strong>コモディティ輸出国（豪州・ブラジル）や対中輸出国</strong>に波及し、世界経済の重しとなる。中国の「教訓」は、世界全体の教訓でもある。
+        </p>
+      </section>
+
+      <section>
+        <h2>2. 高インフレからデフレへ — 物価の長い弧</h2>
+        <p>
+          中国の物価史は、改革開放期の<strong>高インフレ（1994年に24.3%）</strong>から、現代の<strong>デフレ圧力（2023〜25年はほぼ0%、PPIは長期マイナス）</strong>へという、大きな弧を描いてきた。かつては「成長の過熱を冷ますこと」が課題だったが、いまや「<strong>需要不足とデフレをいかに食い止めるか</strong>」が課題だ。この転換こそ、中国が日本型の長期停滞リスク（第13章「日本化」）に直面していることを物語る。
+        </p>
+
+        <div id="china-lessons-cpi"></div>
+        <script>
+        ChartBuilder.lines('china-lessons-cpi', {
+          title: '中国 CPIインフレ率の長期推移 (1988-2026, 前年比%)',
+          caption: '出典: 国家統計局(NBS)、Macrotrends/World Bank。1988年18.8%・1994年24.3%(改革開放期の過熱ピーク)→1999年-1.4%(アジア危機後のデフレ)→2008年5.9%→2009年GFCで-0.7%→2019年2.9%(アフリカ豚熱で豚肉急騰)→2023-25年はほぼ0%でPPIは長期マイナス＝構造的デフレ圧力。Q1 2026は+0.9%。「過熱の抑制」から「需要不足との戦い」へと課題が反転した歴史を示す。',
+          yUnit: '%',
+          yRange: [-3, 26],
+          yStep: 4,
+          series: [{
+            name: 'CPI（前年比）',
+            color: '#ff9f43', width: 2.2,
+            data: [[1988, 18.8], [1994, 24.3], [1998, -0.8], [1999, -1.4], [2004, 3.9], [2007, 4.8], [2008, 5.9], [2009, -0.7], [2011, 5.4], [2015, 1.4], [2019, 2.9], [2020, 2.5], [2021, 0.9], [2022, 2.0], [2023, 0.2], [2024, 0.2], [2025, 0.0], [2026.17, 0.9]]
+          }],
+          annotations: [
+            { year: 1994, label: '24.3%', color: '#ff6b6b' },
+            { year: 1999, label: '-1.4%', color: '#5b8def' },
+            { year: 2008, label: '5.9%', color: '#ff9f43' },
+            { year: 2019, label: '豚肉2.9%', color: '#ffd93d' },
+            { year: 2025, label: 'デフレ0%', color: '#00d4aa' }
+          ]
+        });
+        </script>
+      </section>
+
+      <section>
+        <h2>3. 中国から学ぶ「7つの教訓」</h2>
+        <p>
+          中国経済の歩みは、世界の政策担当者と投資家に多くの教訓を残してきた。
+        </p>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>教訓</th>
+                <th>内容</th>
+                <th>含意</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="highlight-blue">① 投資主導の限界</td>
+                <td>不動産・インフラ偏重は債務と過剰能力を残す</td>
+                <td>消費・サービスへの転換が不可避</td>
+              </tr>
+              <tr>
+                <td class="highlight-red">② バブルの代償</td>
+                <td>2007・2015の株、2021〜の不動産</td>
+                <td>レバレッジと資産価格の管理が要</td>
+              </tr>
+              <tr>
+                <td class="highlight-red">③ デフレと日本化</td>
+                <td>需要不足・人口減・資産下落の連鎖</td>
+                <td>早期・十分な需要喚起が肝心</td>
+              </tr>
+              <tr>
+                <td class="highlight-orange">④ 隠れ債務</td>
+                <td>地方政府・LGFVの「見えない負債」</td>
+                <td>透明性なき債務はシステム不安に</td>
+              </tr>
+              <tr>
+                <td class="highlight-orange">⑤ 統制と市場の緊張</td>
+                <td>規制の振り子（テック・不動産）</td>
+                <td>政策の予見性が信認を左右する</td>
+              </tr>
+              <tr>
+                <td class="highlight-green">⑥ 為替の自制</td>
+                <td>1997年アジア危機で切下げず</td>
+                <td>急激な切下げは資本流出を招く</td>
+              </tr>
+              <tr>
+                <td class="highlight-blue">⑦ 人口動態</td>
+                <td>人口減・高齢化が成長の天井に</td>
+                <td>「豊かになる前に老いる」リスク</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>4. 「統制」と「市場」の永遠の綱引き</h2>
+        <p>
+          中国経済の本質的な緊張は、<strong>「効率を生む市場」と「安定を保つ統制」</strong>のせめぎ合いにある。市場化は成長と活力をもたらすが、バブルや格差、資本流出のリスクを伴う。統制は安定をもたらすが、効率を損ない、信認を冷やす。中国はこの二つの間で振り子のように揺れ続けてきた。
+        </p>
+        <p>
+          投資家にとっての最大の教訓は、<strong>「中国を理解するには、財務指標だけでなく政策・政治の論理を読まねばならない」</strong>ということだ。GDP成長率（2025年・2026年Q1とも公式+5.0%）という数字の裏で、デフレ・不動産・地方債務・人口減という構造的逆風が進行している。表の数字と裏の構造、その両方を見ることが、世界2位の経済を読み解く鍵となる。
+        </p>
+        <div class="mnemonic-box">
+          <span class="mnemonic-icon">🧠</span>
+          <div class="mnemonic-title">覚え方：「速く豊かに」から「持続と分配」へ</div>
+          <div class="mnemonic-body">
+            中国の物語は「いかに速く豊かになるか」から「<strong>いかに持続し、いかに分配するか</strong>」へと主題が移った。高インフレ→デフレ、投資依存→過剰債務、高成長→人口減。鍵となる問いは一つ——<strong>中所得の罠と日本化を、統制を保ちつつ越えられるか</strong>。これが2026年以降の中国を見る視点だ。
+          </div>
+        </div>
+      </section>

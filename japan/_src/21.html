@@ -1,0 +1,191 @@
+<!-- Chapter 21: Geopolitical Risk (Japan) -->
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value" style="color:var(--accent-red);">台湾有事</div>
+    <div class="stat-label">「台湾有事は日本有事」— 最大のテールリスク</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value" style="color:var(--accent-orange);">¥5.4→9.0兆</div>
+    <div class="stat-label">防衛費（FY2022→FY2026）— 戦後最大の転換</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value" style="color:var(--accent-blue);">2%目標</div>
+    <div class="stat-label">防衛費GDP比 — 「1%枠」を破り2027年へ</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">エネルギー</div>
+    <div class="stat-label">化石燃料の輸入依存度ほぼ9割、海上輸送に脆弱</div>
+  </div>
+</div>
+
+<p>
+日本の地政学リスクは、地理的宿命に根ざしている。資源を持たず、エネルギーと食料を海上輸送に依存し、しかも中国・北朝鮮・ロシアという三つの核保有国に囲まれている。戦後日本はこのリスクを<strong>日米同盟という「借り物の抑止力」</strong>と「専守防衛・防衛費GDP比1%枠」という抑制的な安全保障政策で管理してきた。だが2022年、ウクライナ侵攻と中国の台頭、北朝鮮のミサイル開発を受けて、日本は安保3文書を改定し、戦後最大の防衛政策転換に踏み切った。本章では、日本が直面する地政学リスクを市場への波及経路とともに整理する。
+</p>
+
+<!-- Chart: Japan defense budget surge FY2013-FY2026 -->
+<div id="jp-geo-defense"></div>
+<script>
+ChartBuilder.lines('jp-geo-defense', {
+  title: '日本の防衛費 FY2013-FY2026（戦後最大の防衛力整備）',
+  caption: '出典: 防衛省予算、USNI News、Bloomberg、Nippon.com。米軍再編経費等を含む防衛関係費（兆円）。2022年の安保3文書改定を境に急増し、FY2022の¥5.4兆からFY2026は約¥9.0兆へ。政府はFY2027にGDP比2%（NATO基準）到達を目標とする。',
+  yUnit: '兆円',
+  yStep: 1,
+  yRange: [4, 10],
+  xRange: [2013, 2026.5],
+  series: [{
+    name: '防衛関係費',
+    color: '#ff6b6b',
+    data: [
+      [2013, 4.7],[2016, 5.1],[2019, 5.3],[2021, 5.3],[2022, 5.4],
+      [2023, 6.8],[2024, 7.9],[2025, 8.7],[2026, 9.04]
+    ]
+  }],
+  annotations: [
+    { year: 2022, label: '安保3文書', color: '#ff6b6b' },
+    { year: 2024, label: '反撃能力', color: '#ff9f43' },
+    { year: 2026, label: '過去最大9兆', color: '#ff9f43' }
+  ]
+});
+</script>
+
+<section>
+  <h2>1. 台湾有事 — 「日本有事」としてのテールリスク</h2>
+  <p>
+  日本の地政学リスクの中核は台湾有事である。台湾と与那国島は約110kmしか離れておらず、台湾海峡の封鎖や武力衝突は、(1)シーレーン（日本のエネルギー・物流の生命線）の途絶、(2)在日米軍の自動的な関与、(3)半導体供給網の崩壊を同時に引き起こす。「台湾有事は日本有事」という認識は、いまや日本の安全保障論の前提である。
+  </p>
+  <p>
+  さらに日本経済は中国に深く結びついている。中国は日本にとって最大の貿易相手であり（第19章）、レアアース・重要部材の供給源でもある。2010年の尖閣沖衝突後のレアアース禁輸、2023年の福島処理水を巡る水産物禁輸など、中国は<strong>経済的威圧（economic coercion）</strong>を繰り返し発動してきた。台湾有事はこの経済依存を一瞬で「人質」に転じさせる。
+  </p>
+</section>
+
+<section>
+  <h2>2. リスク・マトリクス — 要因 × 蓋然性 × 波及経路</h2>
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>リスク要因</th>
+          <th>蓋然性</th>
+          <th>市場・経済への影響経路</th>
+          <th>関連国/地域</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight-red">
+          <td>台湾有事（武力衝突・海上封鎖）</td>
+          <td>低〜中（テール）</td>
+          <td>シーレーン途絶、株急落・円急変、半導体供給崩壊、保険料急騰</td>
+          <td>🇹🇼 台湾・🇨🇳 中国・🇺🇸 米国</td>
+        </tr>
+        <tr class="highlight-orange">
+          <td>対中経済依存と経済的威圧</td>
+          <td>高</td>
+          <td>レアアース・部材の禁輸、水産物等の輸入停止、サプライ寸断</td>
+          <td>🇨🇳 中国</td>
+        </tr>
+        <tr class="highlight-red">
+          <td>エネルギー・食料の輸入依存</td>
+          <td>高（構造的）</td>
+          <td>原油・LNG価格→貿易赤字・円安、ホルムズ／マラッカの海運リスク</td>
+          <td>🇮🇷 イラン・中東・🇨🇳 中国</td>
+        </tr>
+        <tr class="highlight-orange">
+          <td>北朝鮮の核・ミサイル</td>
+          <td>高（常態化）</td>
+          <td>ミサイル発射でリスクオフ・一時的円高、防衛費増</td>
+          <td>🇰🇵 北朝鮮</td>
+        </tr>
+        <tr class="highlight-blue">
+          <td>日米同盟の不確実性</td>
+          <td>中</td>
+          <td>負担増要求、駐留経費・防衛費増、安全保障コストの財政化</td>
+          <td>🇺🇸 米国</td>
+        </tr>
+        <tr>
+          <td>対露関係（北方領土・サハリン）</td>
+          <td>中</td>
+          <td>制裁参加によるエネルギー権益（サハリン）リスク</td>
+          <td>🇷🇺 ロシア</td>
+        </tr>
+        <tr>
+          <td>防衛費増の財政負担</td>
+          <td>高</td>
+          <td>増税・国債増発、金利・円相場、財政の持続性</td>
+          <td>（国内）</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="source"><cite>出典: 防衛白書、防衛省予算、IEA、本テキスト第15・19章。</cite></p>
+</section>
+
+<section>
+  <h2>3. 市場への波及経路（トランスミッション）</h2>
+  <p>
+  日本の地政学ショックは、平時には「安全資産・円高」、有事には「資源輸入国・円安」という<strong>二つの顔</strong>を持つ。北朝鮮のミサイルや世界的リスクオフ局面では、低金利の円が買われ円高に振れる（リスクオフの円買い）。しかし台湾有事のように日本自身が当事者となるシナリオでは、シーレーン途絶とエネルギー価格高騰で逆に円が急落しうる。
+  </p>
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>経路</th><th>メカニズム</th><th>観測指標</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>① 為替（円）</td>
+          <td>平時はリスクオフの円買い、有事は資源高・当事者化で円売り</td>
+          <td>USD/JPY、貿易収支、実質金利差</td>
+        </tr>
+        <tr class="highlight-red">
+          <td>② シーレーン・エネルギー</td>
+          <td>海上輸送途絶でLNG・原油の調達難、発電・物流停止</td>
+          <td>LNG・原油価格、海上保険料、在庫</td>
+        </tr>
+        <tr>
+          <td>③ 株式・サプライ網</td>
+          <td>半導体・部材の対中・対台依存が露呈、輸出株が変動</td>
+          <td>日経平均、半導体関連株、外国人売買</td>
+        </tr>
+        <tr class="highlight-orange">
+          <td>④ 財政・金利</td>
+          <td>防衛費増の財源（増税・国債）が金利・信認に波及</td>
+          <td>10年JGB利回り、防衛費GDP比、格付け</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>4. 戦後最大の転換 — 安保3文書と防衛費2%</h2>
+  <p>
+  上のチャートが示すのは、戦後日本の安全保障政策の地殻変動である。1976年以来、防衛費は「GDP比1%」を事実上の上限としてきた。だが2022年12月の安保3文書（国家安全保障戦略・国家防衛戦略・防衛力整備計画）改定で、政府は(1)反撃能力（敵基地攻撃能力）の保有、(2)防衛費を5年で総額43兆円へ、(3)FY2027にGDP比2%（NATO基準）到達、を決定した。FY2022の¥5.4兆からFY2026の約¥9.0兆へ — わずか4年で防衛費はほぼ倍増した。
+  </p>
+  <p>
+  この転換は財政に新たな緊張をもたらす。財源を増税・歳出改革・国債のどれで賄うかは未決着で、世界最大級の政府債務を抱える日本にとって、防衛費増は<strong>地政学リスクが財政・金利リスクへ転化する</strong>経路となる。一方で北朝鮮は2024-2026年にも弾道ミサイルや多連装ロケットの発射を繰り返し（2023年8月には日本上空通過の事例も）、防衛力強化の政治的正当性を提供し続けている。
+  </p>
+</section>
+
+<section>
+  <h2>5. 結論 — 借り物の抑止から自前の備えへ</h2>
+  <p>
+  日本の地政学リスクの本質は「地理は変えられない」ことにある。資源なき海洋国家として中国・北朝鮮・ロシアに囲まれ、エネルギーと食料を海上輸送に委ねる構造は不変である。戦後日本はこれを日米同盟と1%枠で管理してきたが、中国の台頭と米国コミットの不確実性が、日本に<strong>自前の備え</strong>を迫っている。防衛費の倍増はその表れだが、それは同時に財政・金利という別のリスクを呼び込む。投資家は、円相場を読む際に金利差だけでなく<strong>台湾海峡の温度計</strong>を併せて見る必要がある。
+  </p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">日本の地政学リスクを一文で</div>
+    <div class="mnemonic-body">「資源なき海洋国家が、三つの核保有国に囲まれている。」 — 日本の地政学リスクは地理的宿命であり、台湾有事は<strong>シーレーン・同盟・半導体</strong>を同時に直撃する。「借り物の抑止」から「自前の備え」への転換は、地政学リスクを財政・金利リスクへと転化させる。</div>
+  </div>
+</section>
+
+<section>
+  <h2>関連ページ</h2>
+  <ul>
+    <li><a href="../summary/geopolitical_map.html">🗺 地政学マップ（G10横断・全リスク俯瞰）</a></li>
+    <li><a href="../taiwan/21_geopolitical_risk.html">🇹🇼 台湾の地政学リスク（台湾有事の震源）</a></li>
+    <li><a href="../china/21_geopolitical_risk.html">🇨🇳 中国の地政学リスク（経済的威圧・対中依存）</a></li>
+    <li><a href="../northkorea/21_geopolitical_risk.html">🇰🇵 北朝鮮の地政学リスク（核・ミサイル）</a></li>
+    <li><a href="19_trade.html">第19章 貿易（対中依存・経済安保）</a> ／ <a href="15_crises.html">第15章 金融危機</a></li>
+  </ul>
+</section>

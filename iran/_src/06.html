@@ -1,0 +1,116 @@
+<!-- Key Stats -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">TEDPIX</div>
+    <div class="stat-label">テヘラン証取の総合株価指数</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">約407万</div>
+    <div class="stat-label">TEDPIX 最高水準 (2026年1月, pt)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">4取引所</div>
+    <div class="stat-label">TSE・IFB・IME・IRENEX</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">個人主体</div>
+    <div class="stat-label">外国人アクセスは制裁で極小</div>
+  </div>
+</div>
+
+<p>イランの株式市場は、世界で最も特異な市場の一つである。<strong>「高インフレ下で名目株価が天井知らずに上がり、個人投資家が殺到し、外国人はほぼ締め出され、政府が相場を誘導する」</strong>——そのどれもが、欧米や日本の常識とは異なる。本章では、テヘラン証券取引所（TSE）を中心とする市場の地図、主要指数TEDPIX、そして「名目vs実質/ドル建ての罠」という、イラン株を理解する最重要の論点を描く<cite>[1]</cite>。</p>
+
+<div class="key-number-row">
+  <div class="key-number"><span class="key-number-value">TEDPIX</span><span class="key-number-label">テヘラン証取 総合指数（Dividend &amp; Price）</span></div>
+  <div class="key-number"><span class="key-number-value">インフレ避難</span><span class="key-number-label">株は資産防衛の主要手段</span></div>
+  <div class="key-number"><span class="key-number-value">名目の罠</span><span class="key-number-label">名目最高値≠ドル建てリターン</span></div>
+</div>
+
+<!-- Chart: TEDPIX long-term -->
+<div id="iran-tedpix-longterm"></div>
+<script>
+ChartBuilder.lines('iran-tedpix-longterm', {
+  title: 'TEDPIX 長期 2013-2026 — 高インフレで名目は天井知らず、しかし2020年に-42%暴落',
+  caption: '出典: テヘラン証券取引所 (TSE) / Trading Economics / Tehran Times。2019年末に当時の最高値約51万pt → 2020年8月にバブル天井約210万pt（個人投資家殺到）→ 2020年秋に市場史上最大の約-42%暴落 → 2021-22年は横ばい → 高インフレで名目最高値を更新し2026年1月に約407万pt → 2026年2月の戦争で調整。名目の急騰の多くは通貨価値の崩壊を映す点に注意（10章で詳述）。',
+  yUnit: '',
+  yStep: 1000000,
+  yRange: [0, 4500000],
+  series: [{
+    name: 'TEDPIX (名目, pt)',
+    color: '#00d4aa',
+    data: [[2013,80000],[2017,96000],[2019,512000],[2020.08,2100000],[2020.12,1200000],[2021,1350000],[2022,1450000],[2023,2050000],[2024,2300000],[2025,3850000],[2026.01,4071000],[2026.02,3652000]]
+  }],
+  annotations: [
+    { year: 2019, label: '19年最高', color: '#5b8def' },
+    { year: 2020.08, label: 'バブル天井', color: '#ffd93d' },
+    { year: 2020.12, label: '-42%暴落', color: '#ff6b6b' },
+    { year: 2023, label: '名目更新', color: '#ff9f43' },
+    { year: 2026.01, label: '407万', color: '#00d4aa' }
+  ]
+});
+</script>
+
+<section>
+  <h2>市場の地図 — 4つの取引所</h2>
+  <p>イランの資本市場は、株式・商品・エネルギーを扱う複数の取引所から成る。中核は<strong>テヘラン証券取引所（Tehran Stock Exchange, TSE）</strong>で、その総合指数が<strong>TEDPIX</strong>（配当＋価格を反映する総合指数）である。新興・店頭銘柄は<strong>イラン・ファラ・ブールス（Iran Fara Bourse, IFB/IFEX）</strong>が扱う。さらに、商品を扱う<strong>イラン商品取引所（IME）</strong>、石油・エネルギー製品を扱う<strong>イラン・エネルギー取引所（IRENEX）</strong>がある<cite>[2]</cite>。</p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>取引所</th><th>略称</th><th>扱うもの</th></tr>
+      </thead>
+      <tbody>
+        <tr class="highlight-row"><td>テヘラン証券取引所</td><td>TSE</td><td>主要上場株（指数＝TEDPIX）</td></tr>
+        <tr><td>イラン・ファラ・ブールス</td><td>IFB / IFEX</td><td>店頭・新興銘柄、債券・スクーク</td></tr>
+        <tr><td>イラン商品取引所</td><td>IME</td><td>金属・石化・農産品など商品</td></tr>
+        <tr><td>イラン・エネルギー取引所</td><td>IRENEX</td><td>石油・ガス・電力などエネルギー</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>証券市場の監督は<strong>証券取引機構（Securities and Exchange Organization, SEO）</strong>が担う。資本市場は、制裁で国際金融から切り離されたイランにとって、国内資金を企業や政府の資金調達に振り向ける貴重な装置であり、近年その重要性はむしろ高まっている。</p>
+</section>
+
+<section>
+  <h2>イラン株を動かす3つの力</h2>
+
+  <h3>① インフレヘッジとしての株式</h3>
+  <p>イラン株最大の駆動力は、皮肉にも<strong>高インフレ</strong>である。預金の実質金利が深いマイナス（02章）で、外貨や金の保有も制約があるなか、人々は購買力を守る手段として株式に殺到する。企業の資産・売上が名目で膨らむため、株価も名目で上がりやすい。つまりイラン株は「成長期待」よりも「インフレ避難」で買われる側面が強い<cite>[3]</cite>。</p>
+
+  <h3>② 個人投資家の圧倒的比率</h3>
+  <p>イラン株は<strong>個人投資家の比率が極めて高い</strong>。とりわけ2020年には、政府の株式誘導策もあって数百万人の個人が新規に市場へ参入した。個人主体の市場は、噂・政策期待・群集心理に反応しやすく、ボラティリティが高い。2020年のバブルと暴落（09章）は、その典型である。</p>
+
+  <h3>③ 政府の介入と株式誘導</h3>
+  <p>イラン政府は、財政・民営化・国民への資産配分の手段として株式市場を積極的に使ってきた。原則44条に基づく国有企業の上場（08章）、国民への「正義株（Justice Shares）」の配布などがその例だ。相場が政策に強く左右される「政策相場」の色彩が濃く、外国人投資家は制裁でほぼ締め出されているため、需給は国内要因でほぼ完結する<cite>[4]</cite>。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">イラン株＝「インフレ避難所」</div>
+    <div class="mnemonic-body">①<strong>高インフレ</strong>から逃げる資金が株に殺到／②<strong>個人投資家</strong>が主体でボラティリティ大／③<strong>政府が誘導</strong>する政策相場。だから名目株価は上がりやすい。でも「上がった＝儲かった」とは限らない（次項の罠）。</div>
+  </div>
+</section>
+
+<section>
+  <h2>最重要論点 — 「名目vs実質/ドル建ての罠」</h2>
+  <p>イラン株を理解するうえで、絶対に外してはならないのが<strong>「名目の上昇に騙されるな」</strong>という原則である。上のチャートでTEDPIXは2013年の8万ptから2026年の400万pt超へと、名目で約50倍に膨らんだ。一見、驚異的なリターンに見える。だが同じ期間、リアルは1ドル＝3.2万から180万へと約56倍に下落している<cite>[5]</cite>。</p>
+  <p>つまり、<strong>株価の名目上昇の大半は、通貨価値の崩壊（インフレ・リアル安）を映しているにすぎない</strong>。ドル建て・実質ベースで見れば、イラン株のリターンはずっと小さく、局面によってはマイナスにさえなる。「名目最高値更新」というニュースを実質リターンと混同してはいけない——この罠を見抜けるかどうかが、高インフレ国の株式を読む分かれ目だ。詳細は10章で、名目とドル建ての推移を並べて検証する。</p>
+
+  <span class="drawdown-badge">2020年 -42%</span>
+  <p>なお、名目で上がり続けるイラン株も、暴落と無縁ではない。2020年秋には、個人投資家の熱狂が反転し、市場史上最大の約-42%の暴落が起きた（09章）。インフレ避難所であっても、バブルと崩壊のサイクルは免れないのである。</p>
+</section>
+
+<section>
+  <h2>外国人アクセス — 制裁の壁</h2>
+  <p>イラン株のもう一つの特徴は、<strong>外国人投資家のアクセスが極めて小さい</strong>ことだ。制裁により、国際的な決済・送金・カストディ（証券保管）が困難で、グローバルなインデックス（MSCI新興国指数など）にも組み入れられていない。このため、イラン株の需給はほぼ国内で完結し、海外の市場変動から相対的に切り離されている。良く言えば「外的ショックに鈍感」、悪く言えば「世界の資本にアクセスできない孤立した市場」である<cite>[2]</cite>。</p>
+  <p>続く07〜10章では、このユニークな市場の歩みを時系列で追う。TSEの黎明（07章 初期）、民営化による拡大（08章 近代）、2020年のバブルと-42%暴落（09章 現代）、そして高インフレ下の名目最高値と戦争の影（10章 現在）——イラン株の歴史は、制裁経済とインフレ経済が株式市場をどう歪めるかの、生きた教材である。</p>
+</section>
+
+<footer class="sources">
+  <h3>出典・参考文献</h3>
+  <ol>
+    <li>テヘラン証券取引所 (TSE) <a href="https://www.tse.ir/">tse.ir</a>、証券取引機構 (SEO)</li>
+    <li>TSE・IFB・IME・IRENEXの役割、外国人アクセス制限に関する解説</li>
+    <li>高インフレ・マイナス実質金利下のインフレヘッジとしての株式需要</li>
+    <li>原則44条の民営化、正義株（Justice Shares）、政府の株式誘導に関する報道</li>
+    <li>Trading Economics / Tehran Times（TEDPIX）、為替史（リアル/USD）との比較</li>
+  </ol>
+</footer>

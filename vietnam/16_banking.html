@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ベトナム - Banking System | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
+  <script defer src="../assets/charts.js"></script>
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇻🇳 ベトナム</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. 中央銀行</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. 政策金利</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. 財政政策</a>
+      <a href="04_employment.html" class="sidebar-link">04. 雇用</a>
+      <a href="05_inflation.html" class="sidebar-link">05. インフレ</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. 株式市場概観</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. 株式(初期)</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. 株式(近代)</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. 株式(現代)</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. 株式(現在)</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. 債券市場</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. 短期金利</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. 長期金利</a>
+      <a href="14_currency.html" class="sidebar-link">14. 通貨</a>
+      <a href="15_crises.html" class="sidebar-link">15. 金融危機</a>
+      <a href="16_banking.html" class="sidebar-link active">16. 銀行制度</a>
+      <a href="17_corporate.html" class="sidebar-link">17. 企業・コーポレート</a>
+      <a href="18_regulation.html" class="sidebar-link">18. 規制</a>
+      <a href="19_trade.html" class="sidebar-link">19. 貿易</a>
+      <a href="20_lessons.html" class="sidebar-link">20. 教訓</a>
+      <a href="21_geopolitical_risk.html" class="sidebar-link">21. 地政学リスク</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">G10</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+      <div class="sidebar-section-title">地政学・新興地域</div>
+      <div class="country-flags">
+        <a href="../taiwan/01_central_bank.html" class="country-chip">TW</a>
+        <a href="../hongkong/01_central_bank.html" class="country-chip">HK</a>
+        <a href="../china/01_central_bank.html" class="country-chip">CN</a>
+        <a href="../northkorea/01_central_bank.html" class="country-chip">KP</a>
+        <a href="../vietnam/01_central_bank.html" class="country-chip active">VN</a>
+        <a href="../singapore/01_central_bank.html" class="country-chip">SG</a>
+        <a href="../iran/01_central_bank.html" class="country-chip">IR</a>
+        <a href="../israel/01_central_bank.html" class="country-chip">IL</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 ホーム</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10横断年表</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">ベトナム</a>
+        <span class="sep">/</span>
+        ベトナム⑯ 銀行制度
+      </div>
+      <h1 class="page-title">🇻🇳 ベトナム⑯ 銀行制度</h1>
+      <p class="page-subtitle">二層制・国有4大行・VAMC・不動産向け与信~24%の集中</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">二層制</div>
+          <div class="stat-label">1988年にSBVと商業銀行を分離（中央銀行＋商業銀行）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">国有4大行</div>
+          <div class="stat-label">Vietcombank・BIDV・VietinBank・Agribank が中核</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">VAMC 2013</div>
+          <div class="stat-label">不良債権の受け皿となる資産管理会社を設立</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">約24%</div>
+          <div class="stat-label">不動産向け融資が総与信に占める比率 — 集中リスク</div>
+        </div>
+      </div>
+
+      <section>
+        <h2>1. 「二層制」への移行 — 1988年の制度改革</h2>
+        <p>
+          社会主義国の銀行は伝統的に、中央銀行が商業銀行を兼ねる<strong>「一層制（モノバンク）」</strong>だった。ベトナムもドイモイ前はそうだったが、<strong>1988年に中央銀行（SBV）と商業銀行を分離する「二層制」へ移行</strong>した。これは計画経済から市場経済への転換を支える金融インフラの近代化であり、ベトナム危機史の年表（第15章）にも刻まれる重要な節目だ。以降、SBVは金融政策・監督に専念し、商業銀行が預金・融資を担う体制になった。
+        </p>
+      </section>
+
+      <section>
+        <h2>2. 主要プレイヤー — 国有4大行と民間銀行</h2>
+        <p>
+          ベトナムの銀行システムは、<strong>国有商業銀行（SOCB）の「4大行（Big 4）」</strong>が資産規模で中核を占め、その周りに上場民間銀行が並ぶ構造だ。
+        </p>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>銀行</th>
+                <th>区分</th>
+                <th>特徴</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="highlight-blue">Agribank</td>
+                <td>国有（完全国有）</td>
+                <td>農業・農村金融。最大級の店舗網、未上場</td>
+              </tr>
+              <tr>
+                <td class="highlight-blue">Vietcombank (VCB)</td>
+                <td>国有（政府過半）</td>
+                <td>貿易金融に強み、時価総額最大級・優良行の代表</td>
+              </tr>
+              <tr>
+                <td class="highlight-blue">BIDV</td>
+                <td>国有（政府過半）</td>
+                <td>資産規模最大級、インフラ・企業金融</td>
+              </tr>
+              <tr>
+                <td class="highlight-blue">VietinBank (CTG)</td>
+                <td>国有（政府過半）</td>
+                <td>企業・個人融資の大手</td>
+              </tr>
+              <tr>
+                <td class="highlight-orange">Techcombank・VPBank 他</td>
+                <td>民間（上場）</td>
+                <td>個人・不動産・消費者金融で成長、HOSEの主力銘柄</td>
+              </tr>
+              <tr>
+                <td class="highlight-red">SCB</td>
+                <td>民間 → 当局管理下</td>
+                <td>2022年Van Thinh Phat事件で取り付け、特別管理に</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>3. 銀行統制の要 — 「信用成長枠」</h2>
+        <p>
+          ベトナムの銀行を理解するうえで欠かせないのが、第12章で触れた<strong>信用成長枠（credit growth quota）</strong>だ。SBVは各銀行に年間の与信増加率の上限を割り当てる。優良で自己資本の厚い銀行には多めの枠が、リスクの高い銀行には少なめの枠が配分される。これは金利だけでは抑えきれない過剰融資（特に不動産向け）を<strong>直接コントロール</strong>する量的ツールであり、ベトナムの銀行経営を強く規定する。
+        </p>
+      </section>
+
+      <section>
+        <h2>4. 2012-13年の不良債権危機とVAMC</h2>
+        <p>
+          2011年の国際収支危機と不動産バブル崩壊で、ベトナムの銀行は<strong>不良債権（NPL）の急増</strong>に直面した。これに対し政府は2013年、<strong>VAMC（Vietnam Asset Management Company）</strong>を設立。VAMCが銀行から不良債権を買い取り、バランスシートを一時的に浄化する仕組みだ。ただしVAMCは「特別債券」と引き換えに簿価で買い取る方式が中心で、根本的な損失処理を先送りする面もあり、不良債権処理は長期化した。これは日本の不良債権処理や中国のVAMC（華融など）とも比較できる、新興国の銀行再編の典型例だ。
+        </p>
+      </section>
+
+      <section>
+        <h2>5. Basel II と資本の厚み</h2>
+        <p>
+          ベトナムの銀行は国際基準への対応を進めているが、<strong>Basel IIを完全達成しているのは一部の有力行のみ</strong>で、全体としては自己資本の積み増しが課題だ。特に国有4大行は政府の増資ペースに資本充実が左右されやすい。急速な与信拡大に資本がついていけないため、SBVは信用成長枠で量を抑える——という構図になっている。FTSE格上げ（2026年）に伴う市場の国際化は、銀行のガバナンスと開示の改善も促す。
+        </p>
+      </section>
+
+      <section>
+        <h2>6. 最大のリスク — 不動産への与信集中</h2>
+        <p>
+          ベトナムの銀行が抱える構造的リスクは<strong>不動産への与信集中</strong>だ。不動産関連向けが総与信の<strong>約24%</strong>を占めるとされ、住宅ローンとデベロッパー向けを合わせると影響はさらに大きい。2022年のVan Thinh Phat／SCB事件は、まさにこの「銀行と不動産・社債の絡み合い」が表面化した危機だった。不動産価格の調整は、銀行のNPL→信用収縮→経済全体へと波及しうるため、SBVは信用成長枠と監督でこのリスクを抑え込もうとしている。
+        </p>
+        <div class="mnemonic-box">
+          <span class="mnemonic-icon">🧠</span>
+          <div class="mnemonic-title">覚え方：ベトナム銀行「4大行・枠・不動産」</div>
+          <div class="mnemonic-body">
+            <strong>二層制</strong>は1988年から。中核は国有<strong>4大行</strong>（Agribank・Vietcombank・BIDV・VietinBank）＋民間（Techcombank等）。SBVは<strong>信用成長枠</strong>で各行の与信を量的に統制。最大リスクは<strong>不動産向け与信~24%</strong>の集中（2022年SCB事件が象徴）。不良債権処理の受け皿が<strong>VAMC（2013）</strong>。
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+<ol><li>State Bank of Vietnam (SBV) 公式 — 金利・為替 (sbv.gov.vn)</li><li>FiinRatings / FiinGroup Banking Report 2025 / VietnamNews — 銀行・不良債権・VAMC</li><li>IMF — 2025 Article IV Consultation (PR 25/296)、World Economic Outlook 2026</li></ol>
+    </footer>
+
+    <nav class="page-nav">
+      <a href="15_crises.html" class="prev">金融危機</a>
+      <a href="17_corporate.html" class="next">企業・コーポレート</a>
+    </nav>
+  </main>
+
+  <script src="../assets/enhancer.js"></script>
+  <script defer src="../assets/recall.js"></script>
+  <script src="../assets/tts-reader.js"></script>
+</body>
+</html>

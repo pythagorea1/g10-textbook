@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>北朝鮮 - Trade | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
+  <script defer src="../assets/charts.js"></script>
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇰🇵 北朝鮮</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. 中央銀行</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. 政策金利</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. 財政政策</a>
+      <a href="04_employment.html" class="sidebar-link">04. 雇用</a>
+      <a href="05_inflation.html" class="sidebar-link">05. インフレ</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. 株式市場概観</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. 株式(初期)</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. 株式(近代)</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. 株式(現代)</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. 株式(現在)</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. 債券市場</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. 短期金利</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. 長期金利</a>
+      <a href="14_currency.html" class="sidebar-link">14. 通貨</a>
+      <a href="15_crises.html" class="sidebar-link">15. 金融危機</a>
+      <a href="16_banking.html" class="sidebar-link">16. 銀行制度</a>
+      <a href="17_corporate.html" class="sidebar-link">17. 企業・コーポレート</a>
+      <a href="18_regulation.html" class="sidebar-link">18. 規制</a>
+      <a href="19_trade.html" class="sidebar-link active">19. 貿易</a>
+      <a href="20_lessons.html" class="sidebar-link">20. 教訓</a>
+      <a href="21_geopolitical_risk.html" class="sidebar-link">21. 地政学リスク</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">G10</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+      <div class="sidebar-section-title">地政学・新興地域</div>
+      <div class="country-flags">
+        <a href="../taiwan/01_central_bank.html" class="country-chip">TW</a>
+        <a href="../hongkong/01_central_bank.html" class="country-chip">HK</a>
+        <a href="../china/01_central_bank.html" class="country-chip">CN</a>
+        <a href="../northkorea/01_central_bank.html" class="country-chip active">KP</a>
+        <a href="../vietnam/01_central_bank.html" class="country-chip">VN</a>
+        <a href="../singapore/01_central_bank.html" class="country-chip">SG</a>
+        <a href="../iran/01_central_bank.html" class="country-chip">IR</a>
+        <a href="../israel/01_central_bank.html" class="country-chip">IL</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 ホーム</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10横断年表</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">北朝鮮</a>
+        <span class="sep">/</span>
+        貿易 — 対中98%依存と瀬取り・対露輸出
+      </div>
+      <h1 class="page-title">🇰🇵 貿易 — 対中98%依存と瀬取り・対露輸出</h1>
+      <p class="page-subtitle">制裁で縮む合法貿易、密輸の拡大、武器と引き換えの外貨</p>
+    </header>
+
+    <article>
+<!-- Key Stats -->
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="stat-value">約98%</div>
+      <div class="stat-label">対外貿易に占める中国の比率(2024)。構造的な対中依存</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">約27.4億USD</div>
+      <div class="stat-label">中朝貿易額(2025、双方向合計)。COVID後の回復途上</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">約3〜5億USD</div>
+      <div class="stat-label">COVID封鎖時(2020-21)の中朝貿易。ピーク比で約1/15に崩壊</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">300万発超</div>
+      <div class="stat-label">対露供与の砲弾(推計)。武器と引き換えに外貨・食料・技術</div>
+    </div>
+  </div>
+
+  <section>
+    <h2>1. 構造的な対中依存 — 「貿易の98%が中国」</h2>
+    <p>
+      北朝鮮の貿易を一言で表せば<strong>「中国一辺倒」</strong>である。国連制裁で多くの輸出入が禁じられた結果、合法的な対外貿易はほぼ中国に集約され、<strong>2024年には対外貿易の約98%が中国相手</strong>となった。原油・食料・消費財・機械はほとんどが中国経由で入り、北朝鮮の輸出(鉱物・繊維・水産物など、ただし多くは制裁対象)も主に中国向けだ。この極端な一国依存は、経済安全保障上の重大な脆弱性を意味する。中国の出入国・税関政策一つで、北朝鮮の物価・闇レートが乱高下するからである(2026年のウォン暴落も対中貿易再開期待が一因とされる)。
+    </p>
+
+    <div class="key-number-row">
+      <div class="key-number"><span class="key-number-value">98%</span><span class="key-number-label">対外貿易に占める中国(2024)。生命線</span></div>
+      <div class="key-number"><span class="key-number-value">原油</span><span class="key-number-label">中国からの供給が経済の死活を握る</span></div>
+      <div class="key-number"><span class="key-number-value">対中レバレッジ</span><span class="key-number-label">税関・国境政策が闇レート・物価を左右</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>2. 中朝貿易額の推移 — 制裁とCOVIDの傷跡</h2>
+    <p>
+      株価指数が存在しない北朝鮮では、経済の「景況」を映す代理指標として<strong>中朝貿易額</strong>が用いられる。長期推移を追うと、北朝鮮経済が外的ショックでどう揺さぶられてきたかが見える。2000年代に拡大して<strong>2014年に約69億ドルでピーク</strong>を打った後、(1)2017〜18年の国連制裁(石炭・鉄・繊維・水産物の禁輸)で半減、(2)2020〜21年のCOVID国境封鎖で<strong>3〜5億ドルへ崩壊</strong>(ピーク比約1/15)、(3)2022年以降に回復し2025年は約27.4億ドル——という軌跡を描く。制裁とパンデミックという二つのショックの傷跡が、はっきりと刻まれている。
+    </p>
+
+    <div id="nk19-china-trade"></div>
+    <script>
+    ChartBuilder.lines('nk19-china-trade', {
+      title: '中朝貿易額 2000-2025($十億, 双方向合計, 景況プロキシ)',
+      caption: '出典: 中国税関 / KOTRA 推計。公開株式指数が無いため貿易額を経済活動の代理指標に。2000-2014は概算。2014ピーク→2017-18制裁→2020-21 COVID封鎖で崩壊→回復。',
+      yUnit: '',
+      yRange: [0, 7.5],
+      series: [{
+        name: '中朝貿易額($B)',
+        color: '#00d4aa', width: 2,
+        data: [[2000,0.49],[2005,1.58],[2008,2.79],[2011,5.6],[2014,6.86],[2016,6.06],[2017,5.0],[2018,2.7],[2019,2.8],[2020,0.54],[2021,0.32],[2022,1.03],[2023,2.3],[2024,2.2],[2025,2.74]]
+      }],
+      annotations: [
+        {year:2014, label:'ピーク6.9', color:'#00d4aa'},
+        {year:2017, label:'対北制裁', color:'#ff9f43'},
+        {year:2020, label:'COVID封鎖', color:'#5b8def'},
+        {year:2025, label:'回復2.7', color:'#ffd93d'}
+      ]
+    });
+    </script>
+  </section>
+
+  <section>
+    <h2>3. 制裁と「合法貿易の縮小」 — 密輸・瀬取りの拡大</h2>
+    <p>
+      2006年の第1回核実験以降、国連安保理は核・ミサイル開発の資金源を断つため<strong>段階的に貿易を制限</strong>してきた。2017年の「最大限の圧力」では、決議2371で石炭・鉄・水産物を全面禁輸、決議2375で原油供給に上限・繊維輸出禁止・海外労働者の新規受入禁止、決議2397で石油精製品を年50万バレルに制限——と、北朝鮮の合法的な外貨源がほぼ網羅的に封じられた。
+    </p>
+    <p>
+      合法貿易が縮小した分、北朝鮮は<strong>違法・脱法的な貿易</strong>へ傾斜した。代表が公海上で船から船へ石油や石炭を積み替える<strong>「瀬取り(ship-to-ship transfer)」</strong>であり、衛星で監視されながらも繰り返されてきた。石炭の積出港偽装、輸出品の原産地ロンダリング、そして暗号資産の窃取(21章)など、制裁を回避する手口が外貨獲得の中心になっている。制裁が合法貿易を縮小させ、その分だけ地下経済を肥大させるという構造である。
+    </p>
+
+    <div class="table-container">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>決議(年)</th>
+            <th>主な禁輸・制限</th>
+            <th>狙い</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1718 (2006)</td>
+            <td>奢侈品・武器関連の禁輸開始</td>
+            <td>制裁レジームの起点</td>
+          </tr>
+          <tr>
+            <td>2270/2321 (2016)</td>
+            <td>石炭・鉄鉱石の輸出に上限</td>
+            <td>核実験への段階的圧力</td>
+          </tr>
+          <tr>
+            <td class="highlight-red">2371 (2017)</td>
+            <td>石炭・鉄・水産物を全面禁輸</td>
+            <td>主要外貨源の遮断</td>
+          </tr>
+          <tr>
+            <td class="highlight-red">2375 (2017)</td>
+            <td>原油上限・繊維禁輸・労働者新規禁止</td>
+            <td>エネルギーと労働輸出の制限</td>
+          </tr>
+          <tr>
+            <td class="highlight-red">2397 (2017)</td>
+            <td>石油精製品を年50万バレルに制限</td>
+            <td>燃料の締め付け</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>4. 対露貿易の新興 — 武器と引き換えの外貨</h2>
+    <p>
+      2022年のロシアによるウクライナ侵攻以降、北朝鮮の貿易地図に新たな軸が加わった。<strong>対露軍事協力</strong>である。北朝鮮はロシアへ砲弾・ミサイル・さらには兵士まで供給し(推計で<strong>1万コンテナ超、砲弾300万発超</strong>)、見返りに食料・エネルギー・技術・外貨を得ているとされる。これは(1)対中一辺倒だった依存先の分散、(2)制裁で細った外貨源の補填、という二重の意味をもつ。
+    </p>
+    <p>
+      決定的だったのが2024年3月、<strong>ロシアが国連の専門家パネル(PoE)を拒否権で廃止</strong>したこと(13対1、中国棄権)である。これにより制裁の監視機能が失われ、対露武器供与の隠蔽が容易になったと批判される。対露協力は、北朝鮮にとって制裁の包囲網に開いた「抜け穴」であり、地政学(ウクライナ戦争)が北朝鮮の貿易と外貨に直結する事例である(21章で詳述)。
+    </p>
+
+    <div class="mnemonic-box">
+      <span class="mnemonic-icon">🧠</span>
+      <div class="mnemonic-title">記憶のフック: 制裁は地下経済を太らせる</div>
+      <div class="mnemonic-body">
+        合法貿易を封じても外貨需要は消えない。だから北朝鮮は瀬取り・原産地偽装・暗号資産窃取・対露武器輸出へと迂回する。制裁は合法貿易を縮小させるが、その分だけ地下経済と対露・対中依存を肥大させる。
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>出典</h2>
+    <ul>
+      <li>韓国銀行 / KOTRA / 中国税関(中朝貿易額、対中98%依存)</li>
+      <li>Arms Control Association「UN Security Council Resolutions on North Korea」(決議1718/2270/2321/2371/2375/2397)</li>
+      <li>CSIS「Russia&#39;s Veto: Dismembering the UN Sanctions Regime」/ UN News (2024-03-28)(PoE廃止、対露武器供与)</li>
+      <li>各種報道(瀬取り、対露砲弾300万発超・1万コンテナ超)</li>
+    </ul>
+  </section>
+
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+
+    </footer>
+
+    <nav class="page-nav">
+      <a href="18_regulation.html" class="prev">規制</a>
+      <a href="20_lessons.html" class="next">教訓</a>
+    </nav>
+  </main>
+
+  <script src="../assets/enhancer.js"></script>
+  <script defer src="../assets/recall.js"></script>
+  <script src="../assets/tts-reader.js"></script>
+</body>
+</html>

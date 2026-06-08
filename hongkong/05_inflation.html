@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>香港 - Inflation | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
+  <script defer src="../assets/charts.js"></script>
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇭🇰 香港</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. 中央銀行</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. 政策金利</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. 財政政策</a>
+      <a href="04_employment.html" class="sidebar-link">04. 雇用</a>
+      <a href="05_inflation.html" class="sidebar-link active">05. インフレ</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. 株式市場概観</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. 株式(初期)</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. 株式(近代)</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. 株式(現代)</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. 株式(現在)</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. 債券市場</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. 短期金利</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. 長期金利</a>
+      <a href="14_currency.html" class="sidebar-link">14. 通貨</a>
+      <a href="15_crises.html" class="sidebar-link">15. 金融危機</a>
+      <a href="16_banking.html" class="sidebar-link">16. 銀行制度</a>
+      <a href="17_corporate.html" class="sidebar-link">17. 企業・コーポレート</a>
+      <a href="18_regulation.html" class="sidebar-link">18. 規制</a>
+      <a href="19_trade.html" class="sidebar-link">19. 貿易</a>
+      <a href="20_lessons.html" class="sidebar-link">20. 教訓</a>
+      <a href="21_geopolitical_risk.html" class="sidebar-link">21. 地政学リスク</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">G10</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+      <div class="sidebar-section-title">地政学・新興地域</div>
+      <div class="country-flags">
+        <a href="../taiwan/01_central_bank.html" class="country-chip">TW</a>
+        <a href="../hongkong/01_central_bank.html" class="country-chip active">HK</a>
+        <a href="../china/01_central_bank.html" class="country-chip">CN</a>
+        <a href="../northkorea/01_central_bank.html" class="country-chip">KP</a>
+        <a href="../vietnam/01_central_bank.html" class="country-chip">VN</a>
+        <a href="../singapore/01_central_bank.html" class="country-chip">SG</a>
+        <a href="../iran/01_central_bank.html" class="country-chip">IR</a>
+        <a href="../israel/01_central_bank.html" class="country-chip">IL</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 ホーム</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10横断年表</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">香港</a>
+        <span class="sep">/</span>
+        インフレ
+      </div>
+      <h1 class="page-title">🇭🇰 インフレ</h1>
+      <p class="page-subtitle">1998–2004年の長期デフレとペッグ下の物価調整</p>
+    </header>
+
+    <article>
+      <!-- ============ KEY STATS ============ -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">+1.4%</div>
+          <div class="stat-label">2025年平均CPI上昇率（低位安定）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">+1.8%</div>
+          <div class="stat-label">2026年 政府予測（ヘッドライン）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">▲4.0%</div>
+          <div class="stat-label">過去最大級のデフレ（1999年）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">+11.6%</div>
+          <div class="stat-label">高インフレ期のピーク（1991年）</div>
+        </div>
+      </div>
+
+      <div class="key-number-row">
+        <div class="key-number"><span class="key-number-value">独立金融政策なし</span><span class="key-number-label">インフレ目標を持てない（ペッグの帰結）</span></div>
+        <div class="key-number"><span class="key-number-value">1998–2004</span><span class="key-number-label">先進地域で稀な「長期デフレ」を経験</span></div>
+        <div class="key-number"><span class="key-number-value">実質為替で調整</span><span class="key-number-label">名目為替が固定 → 物価が動いて調整する</span></div>
+      </div>
+
+      <section>
+        <h2>香港のインフレは「金融政策」で決まらない</h2>
+        <p>通常の国では、中央銀行がインフレ率を目標（多くは2%）に誘導するために金利を上下させる。だが香港にはその手段がない。為替が米ドルに固定され、金利はFedに従属するため、HKMAは<strong>インフレ目標を掲げることができない</strong>。香港の物価は、輸入物価（米ドル建ての世界の物価）、家賃・サービス価格、そして中国本土の物価動向によって受動的に決まる<cite>[1]</cite>。</p>
+        <p>このため香港のインフレ史は、金融政策の歴史というより、<strong>固定相場のもとで経済が「物価」を通じて調整した記録</strong>として読むべきである。とりわけ1998年から2004年にかけての長期デフレは、先進地域では極めて稀な現象であり、通貨ボード制度の本質を理解する最良の教材である。</p>
+      </section>
+
+      <!-- ============ CHART: INFLATION HISTORY ============ -->
+      <section>
+        <h2>インフレ率の歴史 — 二桁高インフレから長期デフレへ</h2>
+        <div id="hk-inflation"></div>
+        <script>
+        ChartBuilder.lines('hk-inflation', {
+          title: '香港 消費者物価上昇率 1991–2026（総合CPI、前年比%）',
+          caption: '出典: 香港統計処（Census & Statistics Department）、World Bank、IMF。1998–2004年の長期デフレ（累積▲12%）が最大の特徴。古い年次は概数。デフレ期を帯で示す。',
+          yUnit: '%',
+          yRange: [-5, 13],
+          yStep: 2,
+          series: [{
+            name: 'CPI（前年比）',
+            color: '#5b8def',
+            data: [[1991,11.6],[1994,8.8],[1997,5.8],[1998,2.8],[1999,-4.0],[2000,-3.8],[2002,-3.0],[2003,-2.6],[2004,-0.4],[2008,4.3],[2011,5.3],[2013,4.3],[2016,2.4],[2019,2.9],[2020,0.3],[2021,1.6],[2022,1.9],[2023,2.1],[2024,1.7],[2025,1.4],[2026,1.8]]
+          }],
+          bands: [{ from: 1998, to: 2004, label: 'デフレ期', color: '#ff6b6b' }],
+          annotations: [
+            { year: 1991, label: '91 二桁', color: '#ff6b6b' },
+            { year: 1999, label: '99 デフレ', color: '#5b8def' },
+            { year: 2003, label: '03 SARS', color: '#ff9f43' },
+            { year: 2011, label: '11 +5.3%', color: '#ff6b6b' },
+            { year: 2020, label: '20 +0.3%', color: '#00d4aa' },
+            { year: 2025, label: '25 +1.4%', color: '#00d4aa' }
+          ]
+        });
+        </script>
+      </section>
+
+      <section>
+        <h2>1980年代末〜90年代前半 — 高インフレの時代</h2>
+        <p>返還前の香港は、二桁に迫る高インフレを経験していた。1991年にはCPIが<strong>+11.6%</strong>に達した。この時期は香港経済が高度成長し、不動産・賃料が高騰、中国本土の改革開放にともなう活況が物価を押し上げた。米国の金利が高めだったこともペッグを通じて作用したが、それ以上に内需の過熱と資産価格の上昇が物価を牽引した時代であった。</p>
+      </section>
+
+      <section>
+        <h2>1998–2004年の長期デフレ — 通貨ボードの「調整弁」</h2>
+        <p>香港のインフレ史で最も重要なのが、アジア通貨危機後の<strong>長期デフレ</strong>である。1998年9月から2004年にかけて物価は持続的に下落し、累積で約<strong>▲12%</strong>に達した。1999年・2000年には前年比で<strong>▲4%前後</strong>という、先進地域では考えられない物価下落を記録した<cite>[2]</cite>。</p>
+
+        <div class="mnemonic-box">
+          <span class="mnemonic-icon">📉</span>
+          <div class="mnemonic-title">なぜ香港は長期デフレに陥ったのか</div>
+          <div class="mnemonic-body">
+            アジア通貨危機で周辺国の通貨が暴落するなか、香港ドルだけは米ドルにペッグして<strong>高止まり</strong>した。為替が動かせない以上、香港は競争力を取り戻すために<strong>国内の物価・賃金・家賃を下げる（内的減価）</strong>しかなかった。これが「実質為替レートの調整」であり、その痛みがデフレとして現れた。<strong>名目為替を固定する代償を、物価で払った</strong>のである。
+          </div>
+        </div>
+
+        <p>このデフレは、同時期の不動産バブル崩壊（1997年ピークから住宅価格が▲50〜60%下落）と相互に増幅し合った。資産価格の下落が逆資産効果を生み、消費を冷やし、さらに物価を押し下げる。2003年のSARSが追い打ちをかけ、失業率は8.3%に達した。デフレからの本格的脱却は、SARS後の景気回復と中国本土からの個人旅行解禁（自由行）による消費回復を待たねばならなかった（2004年〜）。</p>
+
+        <div class="key-number-row">
+          <div class="key-number"><span class="key-number-value">▲12%</span><span class="key-number-label">1998–2004年の累積物価下落</span></div>
+          <div class="key-number"><span class="key-number-value">▲50–60%</span><span class="key-number-label">同期の住宅価格下落（資産デフレ）</span></div>
+          <div class="key-number"><span class="key-number-value">内的減価</span><span class="key-number-label">為替の代わりに賃金・家賃が下落して調整</span></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>2005年以降 — デフレ脱却と低位安定</h2>
+        <p>デフレ脱却後の香港は、おおむね穏やかなインフレに転じた。2008年（+4.3%）、2011年（+5.3%）には世界的な資源高・資産インフレで上振れしたが、構造的には<strong>低位安定</strong>が基調である。2020年のコロナ期には+0.3%まで鈍化し、以降は<strong>+1〜2%</strong>のレンジで推移している。2025年平均は<strong>+1.4%</strong>、政府の2026年予測はヘッドライン+1.8%・基調+1.7%で、4月の基調CPIは+1.6%だった<cite>[3]</cite>。</p>
+        <p>近年のインフレが落ち着いている背景には、①不動産価格の下落（家賃の下押し）、②中国本土からの安価な財・サービスの流入、③内需の弱さがある。一方で、米国のインフレ動向はペッグと輸入物価を通じて香港に伝播する。ここでも香港の物価は、自国の金融政策ではなく外部要因 —— とりわけ米国と中国 —— に左右される構造が見て取れる。</p>
+      </section>
+
+      <section>
+        <h2>香港のインフレを読む3つの視点</h2>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>視点</th>
+                <th>メカニズム</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="highlight-blue">輸入物価（対米）</td>
+                <td>米ドルペッグのため、米国のインフレと為替を通じて世界の物価を取り込む</td>
+              </tr>
+              <tr>
+                <td class="highlight-orange">家賃・サービス</td>
+                <td>不動産価格の動向がCPIの大きな部分（住居費）を左右する</td>
+              </tr>
+              <tr>
+                <td class="highlight-green">対中流入</td>
+                <td>中国本土からの安価な財・サービス・食品の供給が物価を抑制</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>まとめ — 物価で払うペッグの代償</h2>
+        <p>香港にはインフレ目標も、それを動かす金利政策もない。物価は輸入物価・家賃・対中流入によって受動的に決まる。1998–2004年の長期デフレは、為替を固定したまま競争力を回復するために物価・賃金・家賃を下げざるを得なかった「内的減価」の記録であり、通貨ボードの本質を体現する出来事だった。現在の+1〜2%の低位安定は穏やかに見えるが、その背後には不動産下落と対中流入という構造要因がある。香港のインフレを読むことは、固定相場の代償を読むことに等しい。</p>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+<ol>
+<li>香港統計処（Census &amp; Statistics Department）, 消費者物価指数（CPI） <a href="https://www.censtatd.gov.hk/">censtatd.gov.hk</a></li>
+<li>World Bank, 「Inflation, consumer prices (Hong Kong SAR)」; IMF Hong Kong SAR DataMapper</li>
+<li>hkeconomy.gov.hk, 香港政府 経済見通し（2026年予測）; Statista</li>
+</ol>
+    </footer>
+
+    <nav class="page-nav">
+      <a href="04_employment.html" class="prev">雇用</a>
+      <a href="06_equity_overview.html" class="next">株式市場概観</a>
+    </nav>
+  </main>
+
+  <script src="../assets/enhancer.js"></script>
+  <script defer src="../assets/recall.js"></script>
+  <script src="../assets/tts-reader.js"></script>
+</body>
+</html>

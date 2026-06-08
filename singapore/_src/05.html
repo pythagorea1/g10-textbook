@@ -1,0 +1,101 @@
+<!-- Key Stats -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">1.8%</div>
+    <div class="stat-label">CPI総合インフレ率(2026年4月, y/y)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">1.4%</div>
+    <div class="stat-label">MASコアインフレ率(2026年4月, y/y)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">6.1%</div>
+    <div class="stat-label">CPI総合のピーク(2022年・年平均)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">1.5〜2.5%</div>
+    <div class="stat-label">2026年インフレ見通し(上方修正後)</div>
+  </div>
+</div>
+
+<p>シンガポールのインフレを理解する鍵は、<strong>「MASコアインフレ」という独自指標</strong>と、<strong>輸入物価＝為替への高い感応度</strong>にある。超開放経済であるシンガポールでは、国内インフレの相当部分が輸入価格（エネルギー・食料）に由来し、それを為替政策（第2章）でコントロールするという構図になっている。本章では、長期のインフレ史とコア指標の意味を解説する<cite>[1]</cite>。</p>
+
+<div class="key-number-row">
+  <div class="key-number"><span class="key-number-value">MASコア</span><span class="key-number-label">住居費・自家用車費を除く政策の主指標</span></div>
+  <div class="key-number"><span class="key-number-value">輸入物価</span><span class="key-number-label">エネルギー・食料の輸入価格が基調を左右</span></div>
+  <div class="key-number"><span class="key-number-value">為替で抑制</span><span class="key-number-label">S$高で輸入インフレを抑えるのがMAS流</span></div>
+</div>
+
+<!-- Chart: long-term inflation history -->
+<div id="sg-inflation-history"></div>
+<script>
+ChartBuilder.lines('sg-inflation-history', {
+  title: 'シンガポール CPI総合インフレ率(年平均) 1974-2026',
+  caption: '出典: SingStat / IMF / World Bank。1974年の第一次石油危機で20%超、2008年GFC前6.6%、2015-16年は原油安・住居安でデフレ、2022年にGST引上げ前・エネルギー高で6.1%のピーク。古い年次(1974/1980/1985/1990)は概算。',
+  yUnit: '%',
+  yStep: 5,
+  yRange: [-2, 24],
+  series: [{
+    name: 'CPI総合(年平均)',
+    color: '#ff6b6b',
+    data: [[1974,22.3],[1980,8.5],[1985,0.5],[1990,3.5],[1998,-0.3],[2008,6.6],[2009,0.6],[2011,5.2],[2012,4.6],[2015,-0.5],[2016,-0.5],[2019,0.6],[2020,-0.2],[2021,2.3],[2022,6.1],[2023,4.8],[2024,2.4],[2025,0.6],[2026.25,1.8]]
+  }],
+  annotations: [
+    { year: 1974, label: '74油危機', color: '#ffd93d' },
+    { year: 2008, label: 'GFC前6.6', color: '#ff9f43' },
+    { year: 2015, label: 'デフレ', color: '#5b8def' },
+    { year: 2022, label: 'ピーク6.1', color: '#ff6b6b' },
+    { year: 2026.25, label: '現在1.8', color: '#00d4aa' }
+  ]
+});
+</script>
+
+<section>
+  <h2>MASコアインフレ — なぜ「住居費と車を除く」のか</h2>
+  <p>MASが金融政策の主指標とするのは、CPI総合ではなく<strong>「MASコアインフレ」</strong>である。これはCPI総合から<strong>住居費（帰属家賃）と自家用車関連費</strong>を除いた指標だ。なぜこの2つを除くのか。シンガポールでは住宅も自動車も政策的に管理されているからである。住宅は大半が公営（HDB）で、自動車保有は<strong>COE（Certificate of Entitlement、車両保有権利証）</strong>の入札価格に大きく左右される。これらは金融政策ではコントロールできない要因であり、需要・供給の基調インフレを見るためにあえて除外する<cite>[2]</cite>。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">MASコアの「除外2項目」</div>
+    <div class="mnemonic-body">米国コアCPI＝<strong>食料とエネルギーを除く</strong>。MASコア＝<strong>住居費(帰属家賃)と自家用車費を除く</strong>。理由は、住宅はHDB・車はCOE入札と、どちらも政策で人為的に動くから。基調を読むために「金融政策が効かないもの」を外している。</div>
+  </div>
+
+  <h3>COEと住居費 — 「除外される」特殊要因</h3>
+  <p>なぜ自家用車費が除外されるのか。シンガポールでは、自動車を保有するには<strong>COE（車両保有権利証）</strong>を入札で取得しなければならない。COEの発行枠は政府が管理し、価格は需給で激しく変動する（時に車両本体価格を超える）。これは金融政策とは無関係に動く人為的な価格であり、CPI総合を大きく揺らす。同様に、住居費（帰属家賃）も大半が公営住宅（HDB）であり政策の影響を強く受ける。MASコアは、こうした<strong>「政策で人為的に動き、金融政策では制御できない」要因</strong>を除くことで、需要・供給の基調的なインフレ圧力を浮かび上がらせる設計になっている。</p>
+</section>
+
+<section>
+  <h2>インフレ史の節目 — 石油危機からデフレ、再加速まで</h2>
+  <p>上のグラフが示すように、シンガポールのインフレは輸入物価ショックに敏感に反応してきた。</p>
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>時期</th><th>CPI総合(概数)</th><th>背景</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1974</td><td class="highlight-red">約22%</td><td>第一次石油危機。輸入エネルギー価格の暴騰</td></tr>
+        <tr><td>2008</td><td class="highlight-orange">6.6%</td><td>世界的な資源・食料高（GFC直前）</td></tr>
+        <tr><td>2015-16</td><td class="highlight-blue">-0.5%</td><td>原油安・住居費下落によるデフレ。MASが緩和</td></tr>
+        <tr><td>2022</td><td class="highlight-red">6.1%</td><td>コロナ後の需要回復＋エネルギー高＋GST引上げ前</td></tr>
+        <tr><td>2025</td><td class="highlight-green">約0.6%</td><td>コア2%割れ定着。MASは1月に緩和</td></tr>
+        <tr><td>2026/4</td><td>1.8%</td><td>中東・エネルギー由来で見通しを上方修正</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>2022年のピーク（総合6.1%・コア約4.1%）は、コロナ後の需要回復、エネルギー・食料高、そして2023年のGST引上げを前にした駆け込み需要などが重なったものだ。MASはこれに対し、為替政策で実質的な連続引締めを行った。2025年にはコアインフレが2%を割り込んで落ち着いたが、2026年に入ると<strong>中東情勢の緊迫による原油・天然ガス・燃料価格の上昇</strong>が輸入インフレを押し上げ、MASは2026年のインフレ見通しを1.0〜2.0%から<strong>1.5〜2.5%へ上方修正</strong>、4月のMPSで為替スロープをわずかに引き上げた<cite>[3]</cite>。</p>
+</section>
+
+<section>
+  <h2>輸入インフレと為替政策の連動</h2>
+  <p>シンガポールのインフレは、その大部分が<strong>輸入価格</strong>に起因する。食料の90%超、エネルギーのほぼ全量を輸入に頼るため、原油高や食料高、そしてS$安はそのまま国内物価に転嫁される。だからこそMASは「強い通貨（S$高）」を金融引締めの手段とする。S$が他通貨に対して上昇すれば、ドル建ての輸入価格はS$換算で安くなり、輸入インフレが抑えられるからだ。</p>
+  <p>このメカニズムは、需要主導のインフレ（賃金・サービス価格）に対しては効きにくいという弱点も併せ持つ。それでもシンガポールは、為替政策と財政政策（GST、補助金）を組み合わせ、輸入物価ショックを巧みに吸収してきた。インフレ管理は、小国開放経済における政策運営の試金石なのである。</p>
+</section>
+
+<footer class="sources">
+  <h3>出典・参考文献</h3>
+  <ol>
+    <li>Department of Statistics Singapore (SingStat)「Consumer Price Index」 <a href="https://www.singstat.gov.sg/">singstat.gov.sg</a></li>
+    <li>MAS「MAS Core Inflation」定義、Macroeconomic Review、BIS Papers No.142</li>
+    <li>MAS Monetary Policy Statement 2026-04-14、tradingeconomics(CPI)</li>
+  </ol>
+</footer>

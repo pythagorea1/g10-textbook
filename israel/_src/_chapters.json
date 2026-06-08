@@ -1,0 +1,107 @@
+{
+  "01": {
+    "subtitle": "インフレターゲッター — 1985安定化のDNAと300億ドル介入の二刀流",
+    "title_en": "Israel 01: Central Bank (Bank of Israel)",
+    "title_ja": "イスラエル① イスラエル銀行 (BOI)"
+  },
+  "02": {
+    "subtitle": "二桁高金利→0.10%→ピーク4.75%→「戦時の据え置き」→3.75%",
+    "title_en": "Israel 02: Policy Rate History",
+    "title_ja": "イスラエル② 政策金利の歴史"
+  },
+  "03": {
+    "subtitle": "戦時でも債務対GDP約70% — 1985規律の遺産と米国援助",
+    "title_en": "Israel 03: Fiscal Policy",
+    "title_ja": "イスラエル③ 財政政策"
+  },
+  "04": {
+    "subtitle": "失業率3.2%の裏側 — 予備役動員ショックとハレディ・アラブの二極化",
+    "title_en": "Israel 04: Employment",
+    "title_ja": "イスラエル④ 雇用"
+  },
+  "05": {
+    "subtitle": "1984年450%→1985安定化→現在1.9% — ハイパーインフレ脱出の教科書",
+    "title_en": "Israel 05: Inflation",
+    "title_ja": "イスラエル⑤ インフレ"
+  },
+  "06": {
+    "subtitle": "TA-35・TASE・二重上場 — 戦時下でも世界最強クラスの市場",
+    "title_en": "Israel 06: Equity Market Overview",
+    "title_ja": "イスラエル⑥ 株式市場概観"
+  },
+  "07": {
+    "subtitle": "1992基準=100・100万人移民・ドットコム期とインティファーダ",
+    "title_en": "Israel 07: Equity Market (Early)",
+    "title_ja": "イスラエル⑦ 株式市場(初期)"
+  },
+  "08": {
+    "subtitle": "GFCで-46.2%・最安値590.96→2009年+74.9%の記録的反発",
+    "title_en": "Israel 08: Equity Market (Modern)",
+    "title_ja": "イスラエル⑧ 株式市場(近代)"
+  },
+  "09": {
+    "subtitle": "低金利下の堅調・2017年TA-35化・Leviathanガス田生産開始",
+    "title_en": "Israel 09: Equity Market (2010s)",
+    "title_ja": "イスラエル⑨ 株式市場(現代)"
+  },
+  "10": {
+    "subtitle": "戦時下の最強市場 — 2025年約+50%・2026年史上最高4,629",
+    "title_en": "Israel 10: Equity Market (2020s)",
+    "title_ja": "イスラエル⑩ 株式市場(現在)"
+  },
+  "11": {
+    "subtitle": "Shahar・Galil・Gilon — 物価連動債はハイパーインフレの遺産",
+    "title_en": "Israel 11: Bond Market",
+    "title_ja": "イスラエル⑪ 債券市場"
+  },
+  "12": {
+    "subtitle": "BOI金利を錨とするMakam・Telbor、戦時の長期据置と利下げ局面入り",
+    "title_en": "Short-term Rates",
+    "title_ja": "短期金利と短期金融市場"
+  },
+  "13": {
+    "subtitle": "10年国債、戦時リスクプレミアムと強い財政・物価連動債の遺産",
+    "title_en": "Long-term Rates",
+    "title_ja": "長期金利と国債市場"
+  },
+  "14": {
+    "subtitle": "1985安定化から2002最弱4.9、2026に1993年以来最強の2.96へ",
+    "title_en": "Currency (ILS)",
+    "title_ja": "通貨：新シェケル"
+  },
+  "15": {
+    "subtitle": "ハイパーインフレ・戦争・GFCが交錯する二重構造の危機史",
+    "title_en": "Financial Crises & Wars",
+    "title_ja": "金融危機と戦争"
+  },
+  "16": {
+    "subtitle": "Hapoalim・Leumiら寡占の高収益銀行と戦時レジリエンス",
+    "title_en": "Banking Sector",
+    "title_ja": "銀行制度"
+  },
+  "17": {
+    "subtitle": "Startup Nation — R&D世界一、ユニコーンと米上場ハイテク",
+    "title_en": "Corporate & Startup Nation",
+    "title_ja": "企業とコーポレート"
+  },
+  "18": {
+    "subtitle": "ISAの監督・ハイテク優遇税制・対イラン制裁順守",
+    "title_en": "Regulatory Framework",
+    "title_ja": "規制の枠組み"
+  },
+  "19": {
+    "subtitle": "ハイテク・サービス輸出とLeviathanガス、シェケル高と紅海リスク",
+    "title_en": "International Trade",
+    "title_ja": "国際貿易"
+  },
+  "20": {
+    "subtitle": "1985安定化・R&D立国・戦時レジリエンスという3つの教訓",
+    "title_en": "Key Lessons",
+    "title_ja": "イスラエル市場の教訓"
+  },
+  "21": {
+    "subtitle": "対イラン核という最大テールリスクと市場への波及経路",
+    "title_en": "Geopolitical Risk",
+    "title_ja": "地政学リスク"
+  }
+}

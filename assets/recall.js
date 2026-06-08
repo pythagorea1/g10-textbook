@@ -14,11 +14,15 @@
   var MISSED_CAP = 200;
 
   var COUNTRY_KEYS = ['us', 'eurozone', 'japan', 'uk', 'switzerland',
-    'australia', 'newzealand', 'canada', 'sweden', 'norway'];
+    'australia', 'newzealand', 'canada', 'sweden', 'norway',
+    'taiwan', 'hongkong', 'china', 'northkorea', 'vietnam',
+    'singapore', 'iran', 'israel'];
   var COUNTRY_NAMES = {
     us: 'アメリカ', eurozone: 'ユーロ圏', japan: '日本', uk: 'イギリス',
     switzerland: 'スイス', australia: 'オーストラリア', newzealand: 'ニュージーランド',
-    canada: 'カナダ', sweden: 'スウェーデン', norway: 'ノルウェー'
+    canada: 'カナダ', sweden: 'スウェーデン', norway: 'ノルウェー',
+    taiwan: '台湾', hongkong: '香港', china: '中国', northkorea: '北朝鮮',
+    vietnam: 'ベトナム', singapore: 'シンガポール', iran: 'イラン', israel: 'イスラエル'
   };
   // [ファイル名, グローバル変数名] — summary/quiz.html と同じデータソース
   var DATA_FILES = [

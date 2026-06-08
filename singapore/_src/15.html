@@ -1,0 +1,155 @@
+<!-- ===== 15 金融危機 / Financial Crises ===== -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">-63%</div>
+    <div class="stat-label">STI 世界金融危機（2007→2009）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">+0.4%</div>
+    <div class="stat-label">1998年 成長率（アジア危機）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">-3.9%</div>
+    <div class="stat-label">2020年 成長率（COVID）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">S$30億</div>
+    <div class="stat-label">2023年 マネロン摘発規模</div>
+  </div>
+</div>
+
+<section>
+  <h2>都市国家の宿命としての「外からの危機」</h2>
+  <p>1965年にマレーシアから分離独立したシンガポールは、水・食料・市場・エネルギーをほぼすべて外部に依存する都市国家として出発した。この<strong>構造的脆弱性</strong>が、シンガポールの危機史の通奏低音である。同国の危機はほとんどが「自国の金融バブルの崩壊」ではなく、<strong>外部ショック（地域危機・パンデミック・世界金融危機）の波及</strong>として訪れた<cite>[3][4]</cite>。</p>
+  <p>下のチャートはSTI（海峡時報指数）の長期推移である。SARS、世界金融危機、COVID-19という外部ショックのたびに急落し、そのたびに<strong>V字回復</strong>してきた。2026年には史上初の5,000台、そして史上最高値の約5,072に到達した。回復力（レジリエンス）こそがシンガポール市場の最大の特徴である<cite>[5]</cite>。</p>
+
+  <div id="sg-sti-crises"></div>
+  <script>
+  ChartBuilder.lines('sg-sti-crises', {
+    title: 'STI（海峡時報指数）長期推移 1998–2026 — 危機とV字回復',
+    caption: '出典: SGX、FTSE Russell、報道。1998/8起点885.26、2007/10ピーク3906、2009/3 GFC底1457、2026/2に初の5000突破、2026/5に史上最高値≈5072。一部の中間点は概算。',
+    yUnit: '',
+    yRange: [500, 5500],
+    yStep: 500,
+    series: [{
+      name: 'STI',
+      color: '#00d4aa',
+      data: [[1998.583,885],[2000,2580],[2003.167,1213],[2007.75,3906],[2009.167,1457],
+             [2011,3200],[2015,2880],[2018.333,3640],[2020.167,2233],[2021,3100],
+             [2023,3240],[2024,3800],[2026.083,5017],[2026.333,5072]]
+    }],
+    annotations: [
+      { year: 1998.583, label: 'アジア危機', color: '#ff6b6b' },
+      { year: 2003.167, label: 'SARS', color: '#ff9f43' },
+      { year: 2007.75, label: 'ピーク3906', color: '#ffd93d' },
+      { year: 2009.167, label: 'GFC底', color: '#ff6b6b' },
+      { year: 2020.167, label: 'COVID底', color: '#5b8def' },
+      { year: 2026.333, label: '最高値5072', color: '#00d4aa' }
+    ]
+  });
+  </script>
+</section>
+
+<section>
+  <h2>主要危機の年表</h2>
+  <div class="timeline">
+    <div class="timeline-item crisis">
+      <div class="timeline-date">1985</div>
+      <div class="timeline-content">
+        <h4>独立後初のリセッション</h4>
+        <p>高賃金・高コスト構造が原因でQ3 GDPが約-3.5%。外需でなく国内コスト要因の危機だった点が特異。賃金抑制とCPF雇用主拠出の一時減免で対応し、これがその後の「機動的な賃金・コスト政策」の原型になった。</p>
+      </div>
+    </div>
+    <div class="timeline-item crisis">
+      <div class="timeline-date">1997–98</div>
+      <div class="timeline-content">
+        <h4>アジア通貨危機</h4>
+        <p>タイ・バーツ暴落に始まる地域危機。1990年代前半に年約9%だった成長は1998年に約+0.4%へ失速。ただしSGDは域内で相対的に底堅く、最安でも約1.79。マレーシア株の決済を巡る<strong>CLOB凍結問題</strong>が二国間の火種となった。</p>
+      </div>
+    </div>
+    <div class="timeline-item crisis">
+      <div class="timeline-date">2003</div>
+      <div class="timeline-content">
+        <h4>SARS流行</h4>
+        <p>観光・航空・小売が直撃を受け、STIは1,200台へ下落。しかし封じ込めの成功とともに短期でV字回復。「感染症ショックに弱い都市国家」という教訓は、後のCOVID対応に生かされた。</p>
+      </div>
+    </div>
+    <div class="timeline-item crisis">
+      <div class="timeline-date">2008–09</div>
+      <div class="timeline-content">
+        <h4>世界金融危機（GFC）</h4>
+        <p>STIは2007年10月の3,906から2009年3月の1,457へ<strong>約-63%</strong>暴落。輸出依存の経済は2009年にマイナス成長へ。MASは為替政策のスロープをゼロに寝かせて緩和し、政府はジョブ・クレジット制度などで雇用を下支えした。</p>
+      </div>
+    </div>
+    <div class="timeline-item crisis">
+      <div class="timeline-date">2020</div>
+      <div class="timeline-content">
+        <h4>COVID-19</h4>
+        <p>2020年成長は約-3.9%。MASはスロープをゼロにし、さらに<strong>バンドの中心を当時のNEER水準まで引き下げる「同時緩和」</strong>という異例の一手を打った。政府は複数次の大型予算（準備金の取り崩しを含む）で対応し、翌年には急回復した。</p>
+      </div>
+    </div>
+    <div class="timeline-item crisis">
+      <div class="timeline-date">2023</div>
+      <div class="timeline-content">
+        <h4>S$30億 マネーロンダリング摘発事件</h4>
+        <p>シンガポール史上最大級の資金洗浄事件。富裕層・資金の流入という光の裏面が露呈し、AML/CFT（マネロン・テロ資金対策）規制の大幅強化につながった。金融危機ではないが、ハブとしての評判リスクを突きつけた転換点。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>STIの主要ドローダウン</h2>
+  <p>外部ショックのたびにSTIは大きく下落したが、回復に要した時間は危機の性質によって異なる<cite>[5]</cite>。</p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>危機</th><th>下落</th><th>水準の動き</th><th>性質</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>世界金融危機 2007–09</td>
+          <td><span class="drawdown-badge">-63%</span></td>
+          <td>3,906 → 1,457</td>
+          <td>世界的な金融システム危機の波及</td>
+        </tr>
+        <tr>
+          <td>COVID-19 2020</td>
+          <td><span class="drawdown-badge">-30%</span></td>
+          <td>約3,200 → 約2,233</td>
+          <td>パンデミックによる需要・物流の急停止</td>
+        </tr>
+        <tr>
+          <td>ドットコム調整 2000–03</td>
+          <td><span class="drawdown-badge">-53%</span></td>
+          <td>約2,580 → 約1,213</td>
+          <td>ITバブル崩壊＋SARSの複合</td>
+        </tr>
+        <tr>
+          <td>アジア通貨危機 1997–98</td>
+          <td><span class="drawdown-badge">-60%</span></td>
+          <td>1990年代高値 → 885</td>
+          <td>地域通貨・資本フローの危機</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">記憶のフック：「危機は外から、回復は準備金から」</div>
+    <div class="mnemonic-body">シンガポールの危機はほぼ全て外部ショック（地域危機・SARS・GFC・COVID）。自前の信用バブル崩壊型ではない。そして回復の原資は、平時に積み上げた巨額の準備金（MAS／GIC／Temasek）。「外から殴られても、貯金で立ち上がる都市国家」と覚えよう。COVIDで建国以来初めて準備金を本格取り崩したのは象徴的だった。</div>
+  </div>
+</section>
+
+<section>
+  <h2>為替政策という「危機対応の道具箱」</h2>
+  <p>政策金利を持たないシンガポールは、危機対応も<strong>為替政策で行う</strong>。これは他国にない独自の道具箱である<cite>[1][2]</cite>。</p>
+  <ul>
+    <li><strong>緩和</strong>：スロープを寝かせる（増価をゼロに）／必要なら中心を引き下げる（re-centring down）。GFC（2009）とCOVID（2020）で発動。</li>
+    <li><strong>引締め</strong>：スロープを立てる／中心を引き上げる。2022年のインフレ急騰時に複数回（オフサイクル含む）発動し、SGD増価で輸入インフレを抑えた。</li>
+    <li><strong>財政の出動</strong>：憲法上の準備金を取り崩す権限（大統領の同意が必要）。COVIDでは建国以来初めて本格的に発動された。</li>
+  </ul>
+  <p>金利・量・為替・財政のうち、シンガポールは<strong>為替と財政（準備金）</strong>を主軸に危機をしのいできた。小国開放経済が大国と異なる危機管理モデルを構築した好例であり、第20章「教訓」の中核テーマでもある<cite>[2][4]</cite>。</p>
+</section>

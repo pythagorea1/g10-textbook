@@ -1,0 +1,124 @@
+<!-- Key Stats -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">1.74%</div>
+    <div class="stat-label">CPI前年比（2026年4月）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">≈47%</div>
+    <div class="stat-label">歴史的ピーク（1974年オイルショック）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">2%の壁</div>
+    <div class="stat-label">2022-24年に2%超でCBC警戒</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">デフレ気味</div>
+    <div class="stat-label">2009・2015・2020はマイナス圏</div>
+  </div>
+</div>
+
+<section>
+  <h2>構造的な低インフレ国</h2>
+  <p>台湾は、日本やスイスと並ぶ<strong>構造的低インフレ国</strong>である。1990年代以降、CPI前年比はおおむね0〜2%の狭いレンジに収まり、ハイパーインフレも持続的な高インフレも経験していない。背景には、(1) 開放経済ゆえに国際商品市況を素直に反映する一方で内需の過熱が起きにくいこと、(2) CBCがTWD相場を管理して輸入インフレを抑えること、(3) 電気・公共料金の政策的な価格抑制——がある。低インフレこそが、CBCが重貼現率を低く・小刻みにしか動かさない（第02章）最大の前提である。</p>
+</section>
+
+<!-- CPI history chart -->
+<div id="tw-cpi"></div>
+<script>
+ChartBuilder.lines('tw-cpi', {
+  title: '台湾 インフレ率（CPI前年比, %）1974-2026',
+  caption: '出典: DGBAS（行政院主計総処）/ TradingEconomics。1974・1980のピークは代表値、2026/4=1.74%は確証。オイルショック期を除けば長期的に0〜3%の低インフレ。',
+  yUnit: '%',
+  yStep: 10,
+  yRange: [-5, 50],
+  series: [{
+    name: 'CPI前年比',
+    color: '#ff9f43',
+    data: [
+      [1974, 47.5],[1980, 19.0],[1990, 4.1],[1998, 1.7],[2001, 0.0],[2009, -0.87],
+      [2011, 1.4],[2015, -0.3],[2018, 1.4],[2020, -0.2],[2022, 2.95],[2023, 2.5],
+      [2024, 2.2],[2025, 2.0],[2026.04, 1.74]
+    ]
+  }],
+  annotations: [
+    { year: 1974, label: '74 +47%', color: '#ff6b6b' },
+    { year: 1980, label: '80 石油危機', color: '#ff9f43' },
+    { year: 2009, label: '09 デフレ', color: '#5b8def' },
+    { year: 2022, label: '22 +2.95%', color: '#ffd93d' },
+    { year: 2026.04, label: '26 1.74%', color: '#00d4aa' }
+  ]
+});
+</script>
+
+<section>
+  <h2>歴史のピークはオイルショック</h2>
+  <p>台湾のインフレ史で唯一の極端な局面が、1970年代の二度のオイルショックである。エネルギーをほぼ全量輸入に依存する台湾では、原油価格の急騰がただちに国内物価へ波及し、<strong>1974年にはCPIが約47%</strong>という戦後最悪の水準に達した。1980年の第二次オイルショックでも約19%を記録している。この経験は、台湾が「エネルギー安全保障＝物価安定」という認識を深め、外貨準備の積み増しと省エネ・産業高度化を進める原点となった。</p>
+  <p>1980年代以降はインフレが沈静化し、1990年代には4%前後、2000年代以降は0〜2%台へと低下した。2009年（リーマン後）、2015年（原油安）、2020年（COVID初期）には<strong>マイナス圏（デフレ気味）</strong>に沈む局面もあり、台湾はむしろ「インフレが起きにくい」経済として推移してきた。</p>
+</section>
+
+<section>
+  <h2>2022-2024年の「2%の壁」</h2>
+  <p>世界的なインフレ局面で、台湾のCPIも2022年に<strong>2.95%</strong>と約14年ぶりの高さに達した。2023年2.5%、2024年2.2%と、CBCが警戒線とみなす2%を3年連続で上回ったことが、CBCの段階的利上げ（2022〜2024）の背景となった。とりわけ2024年3月の2.00%への利上げは、同年4月の電気料金引き上げに伴うインフレ期待を抑える予防的措置であった（第02・03章参照）。</p>
+  <p>2025年にはCPIが2%前後へ低下し、2026年3月には1.20%、4月には<strong>1.74%</strong>と落ち着いた。CBCが2026年に重貼現率を2.00%で据え置いている背景には、このインフレ沈静がある。AIブームによる高成長下でもインフレが暴れないのは、TWD高（輸入物価の抑制）と構造的な物価安定の賜物である。</p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>時期</th>
+          <th>CPI</th>
+          <th>局面</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight-red">
+          <td>1974</td>
+          <td>≈47%</td>
+          <td>第一次オイルショック（歴史的ピーク）</td>
+        </tr>
+        <tr>
+          <td>2009</td>
+          <td>-0.87%</td>
+          <td>リーマン後のデフレ</td>
+        </tr>
+        <tr>
+          <td>2015</td>
+          <td>-0.3%</td>
+          <td>原油安によるデフレ</td>
+        </tr>
+        <tr class="highlight-orange">
+          <td>2022</td>
+          <td>2.95%</td>
+          <td>世界的インフレ（約14年ぶり高水準）</td>
+        </tr>
+        <tr class="highlight-green">
+          <td>2026/4</td>
+          <td>1.74%</td>
+          <td>沈静化（CBCは2.00%据置）</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>低インフレを支える3つの仕組み</h2>
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">台湾のインフレが暴れない理由</div>
+    <div class="mnemonic-body">
+      <p>(1) <strong>TWD相場の管理</strong>——CBCが為替を安定させ輸入物価を抑える。(2) <strong>電気・公共料金の規制</strong>——政策的に価格を抑える（その分、財政・台電が負担）。(3) <strong>需要の過熱が起きにくい開放経済</strong>——成長は外需主導で、賃金・内需インフレ圧力が弱い。逆に言えば、エネルギー価格と為替が崩れると物価は一気に動く（1974年の教訓）。</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>出典・参考文献</h2>
+  <ol>
+    <li>行政院主計総処（DGBAS, ROC）, 消費者物価指数（CPI）統計</li>
+    <li>TradingEconomics, "Taiwan Inflation Rate"（2026/4 1.74%、3月1.20%）</li>
+    <li>Statista, "Taiwan: Inflation rate 1980-2030"</li>
+    <li>CBC, 物価情勢に関する声明（電気料金とインフレ期待、2024年）</li>
+  </ol>
+</section>

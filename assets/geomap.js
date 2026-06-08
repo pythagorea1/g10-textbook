@@ -44,7 +44,10 @@
   const COUNTRY_JP = {
     us: '米国', eurozone: 'ユーロ圏', japan: '日本', uk: '英国',
     switzerland: 'スイス', australia: '豪州', newzealand: 'ニュージーランド',
-    canada: 'カナダ', sweden: 'スウェーデン', norway: 'ノルウェー'
+    canada: 'カナダ', sweden: 'スウェーデン', norway: 'ノルウェー',
+    // 地政学・新興地域グループ
+    taiwan: '台湾', hongkong: '香港', china: '中国', northkorea: '北朝鮮',
+    vietnam: 'ベトナム', singapore: 'シンガポール', iran: 'イラン', israel: 'イスラエル'
   };
   const CHAPTER_JP = {
     '01_central_bank': '中央銀行', '02_policy_rate': '政策金利',
@@ -56,7 +59,8 @@
     '13_long_rates': '長期金利', '14_currency': '通貨',
     '15_crises': '危機', '16_banking': '銀行',
     '17_corporate': '企業', '18_regulation': '規制',
-    '19_trade': '貿易', '20_lessons': '教訓'
+    '19_trade': '貿易', '20_lessons': '教訓',
+    '21_geopolitical_risk': '地政学リスク'
   };
 
   class GeoMap {

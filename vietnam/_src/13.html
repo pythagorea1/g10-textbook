@@ -1,0 +1,124 @@
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">約3〜3.5%</div>
+          <div class="stat-label">10年国債利回りの近年水準（推計・⚠要確認）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">低位・安定</div>
+          <div class="stat-label">先進国より変動が小さく、国内要因で完結しやすい</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">銀行が主役</div>
+          <div class="stat-label">国債の主要保有者は商業銀行（captive demand）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">外国人 限定</div>
+          <div class="stat-label">外国人保有比率は低い → FTSE格上げで変化余地</div>
+        </div>
+      </div>
+
+      <div class="key-number-row">
+        <div class="key-number"><span class="key-number-value">約3〜3.5%</span><span class="key-number-label">10年国債利回りの近年水準（推計・⚠要確認）</span></div>
+        <div class="key-number"><span class="key-number-value">4.5%</span><span class="key-number-label">政策金利（再融資）= 長期金利の「天井」</span></div>
+        <div class="key-number"><span class="key-number-value">35〜40%</span><span class="key-number-label">公的債務のGDP比 = 管理可能な水準</span></div>
+        <div class="key-number"><span class="key-number-value">2026/9</span><span class="key-number-label">FTSE格上げ → 外国人の国債参加に変化余地</span></div>
+      </div>
+
+      <section>
+        <h2>1. ベトナムの長期金利は「低位・安定」</h2>
+        <p>
+          ベトナムの長期金利の中心は<strong>10年物のベトナム国債（VGB: Vietnam Government Bond）利回り</strong>だ。新興国というと高金利・高ボラティリティを連想しがちだが、ベトナムの10年利回りは近年<strong>3〜3.5%程度（推計）</strong>と、むしろ低位で安定している。これはインフレが3%台で落ち着き、政策金利が4.5%に据え置かれていること、そして後述する<strong>国内銀行の旺盛な国債需要</strong>が利回りを押し下げているためだ。
+        </p>
+        <p>
+          ⚠注記: 本書では近年の10年利回りを「約3〜3.5%」と推計しているが、確定値は一次データ（SBV／State Treasury／Bloomberg等）での再照合が必要だ。短期の市場金利は2022年の対ドル防衛局面で一時上振れし、2023年以降の緩和で再び低下した。
+        </p>
+      </section>
+
+      <section>
+        <h2>2. なぜ低いのか — 政策金利とインフレが「天井」を決める</h2>
+        <p>
+          長期金利は理論上、「将来の短期金利の予想＋期間プレミアム」で決まる。ベトナムでは政策金利（再融資4.5%）とインフレ（CPI 3%台）が安定しているため、10年利回りもその近辺に落ち着く。下のチャートは、確認済みの<strong>政策金利（再融資金利）とCPI（前年比）</strong>を並べたものだ。10年国債利回りは概ねこの2本のあいだ〜やや下の領域（3〜3.5%）に位置すると考えてよい。
+        </p>
+
+        <div id="vn-long-backdrop"></div>
+        <script>
+        ChartBuilder.lines('vn-long-backdrop', {
+          title: '政策金利 vs インフレ — 長期金利の背景 (2008-2026, %)',
+          caption: '出典: SBV（再融資金利）、ベトナム国家統計局／IMF／World Bank（CPI）。10年国債利回りは概ねこの2本の間〜やや下（約3〜3.5%、⚠推計）に位置する。2008年・2011年のインフレ急騰期には長期金利も二桁へ押し上げられた。',
+          yUnit: '%',
+          yRange: [0, 25],
+          yStep: 5,
+          series: [
+            { name: '再融資金利(政策)', color: '#5b8def', width: 2.2,
+              data: [[2008, 14.0], [2009, 7.0], [2011, 15.0], [2012, 9.0], [2013, 7.0], [2014, 6.5], [2016, 6.25], [2019, 6.25], [2020.8, 4.0], [2022.8, 6.0], [2023.5, 4.5], [2024, 4.5], [2025, 4.5], [2026, 4.5]] },
+            { name: 'CPI(前年比)', color: '#ff9f43', width: 2.2,
+              data: [[2008, 23.0], [2011, 18.7], [2015, 0.6], [2020, 3.2], [2022, 3.2], [2023, 3.3], [2024, 3.6], [2025, 3.6], [2026, 5.0]] }
+          ],
+          annotations: [
+            { year: 2008, label: 'CPI23%', color: '#ff6b6b' },
+            { year: 2011, label: 'CPI18.7%', color: '#ff6b6b' },
+            { year: 2026, label: 'CPI~5%', color: '#ffd93d' }
+          ]
+        });
+        </script>
+      </section>
+
+      <section>
+        <h2>3. 国債の「主役」は誰か — captive demand の構造</h2>
+        <p>
+          ベトナム国債の最大の保有者は<strong>国内の商業銀行</strong>だ。銀行は流動性規制や担保需要から国債を恒常的に買い続けるため、利回りには下押し圧力がかかる。これは「捕囚的な需要（captive demand）」と呼ばれ、日本などでも見られる構造だが、ベトナムでは特に顕著だ。次の表は、長期金利を取り巻く主要プレイヤーと特徴をまとめたものである。
+        </p>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>論点</th>
+                <th>状況</th>
+                <th>長期金利への含意</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="highlight-blue">主要保有者</td>
+                <td>国内商業銀行が中心</td>
+                <td>恒常的な需要 → 利回りを押し下げ</td>
+              </tr>
+              <tr>
+                <td>発行体</td>
+                <td>国庫（State Treasury）が中心</td>
+                <td>公的債務はGDP比35〜40%と管理可能</td>
+              </tr>
+              <tr>
+                <td class="highlight-orange">外国人保有</td>
+                <td>限定的（資本勘定の部分規制）</td>
+                <td>外部ショックの伝染は相対的に小さい</td>
+              </tr>
+              <tr>
+                <td>流動性</td>
+                <td>浅く、社債は特に薄い</td>
+                <td>価格発見が不十分、ボラは突発的</td>
+              </tr>
+              <tr>
+                <td class="highlight-green">FTSE格上げ</td>
+                <td>2026年9月 新興市場入り予定</td>
+                <td>将来的に外国人の国債需要拡大の余地</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>4. 外国人保有とFTSE格上げの含意</h2>
+        <p>
+          資本勘定が部分的に規制されているため、ベトナム国債の外国人保有比率は低い。これは「外部ショックで急に資金が逃げにくい」という安定要因である半面、「価格発見が国内の都合で歪みやすい」という弱点でもある。<strong>2026年9月のFTSE Russell新興市場（Secondary Emerging）格上げ</strong>は主に株式市場の話だが、ベトナム市場全体への外国人アクセス改善（決済T+2化、プレファンディング撤廃など）が進めば、中長期的には国債市場への外国人参加も増え、長期金利の決定メカニズムが「より市場的」に変化していく可能性がある。
+        </p>
+        <div class="mnemonic-box">
+          <span class="mnemonic-icon">🧠</span>
+          <div class="mnemonic-title">覚え方：ベトナム長期金利「低・安・内」</div>
+          <div class="mnemonic-body">
+            <strong>低</strong>位（10年~3〜3.5%、⚠推計）＝インフレ3%台＋政策金利4.5%が天井。<strong>安</strong>定＝国内銀行のcaptive demandが利回りを抑える。<strong>内</strong>＝外国人保有が低く、決定が国内要因で完結しやすい。例外は2008・2011のインフレ急騰期で、このときは長期金利も二桁へ跳ねた。FTSE格上げ後は「より市場的」へ移行余地。
+          </div>
+        </div>
+      </section>

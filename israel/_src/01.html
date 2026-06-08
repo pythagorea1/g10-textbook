@@ -1,0 +1,122 @@
+<!-- Key Stats -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">1954年</div>
+    <div class="stat-label">イスラエル銀行 (BOI) 設立</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">Amir Yaron</div>
+    <div class="stat-label">総裁 (アミール・ヤロン, 2018就任・2023再任)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">1〜3%</div>
+    <div class="stat-label">インフレ目標 (インフレターゲット制)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">3.75%</div>
+    <div class="stat-label">政策金利 (BOI金利, 2026年5月〜)</div>
+  </div>
+</div>
+
+<p>イスラエル銀行（Bank of Israel, <strong>BOI</strong>、ヘブライ語 בנק ישראל）は、人口約980万の小国にして「<strong>スタートアップ国家</strong>」を金融面で支える中央銀行である。FRBやECBと同じく<strong>単一の政策金利（BOI金利）でインフレ目標1〜3%を狙うシンプルなインフレターゲッター</strong>でありながら、慢性的なハイパーインフレを1985年に克服した独自の歴史と、対イラン・地域紛争という地政学リスクの常在という、他のG10には無い文脈を抱える。本章ではBOIの成り立ち、独立性確立の歴史、金融政策の枠組み、そして「戦時下の好況」という2026年の特異な状況を整理する。</p>
+
+<div class="key-number-row">
+  <div class="key-number"><span class="key-number-value">1954</span><span class="key-number-label">BOI設立（建国は1948年）</span></div>
+  <div class="key-number"><span class="key-number-value">1985</span><span class="key-number-label">経済安定化計画でBOIの規律・独立性が確立</span></div>
+  <div class="key-number"><span class="key-number-value">2010</span><span class="key-number-label">新「イスラエル銀行法」で独立性を法制化</span></div>
+</div>
+
+<!-- Chart: BOI's inflation-targeting framework — policy rate vs CPI -->
+<div id="israel-boi-framework"></div>
+<script>
+ChartBuilder.lines('israel-boi-framework', {
+  title: 'BOIのインフレ目標運営 — 政策金利 vs CPI (2015-2026)',
+  caption: '出典: イスラエル銀行 (BOI) press releases / TradingEconomics。BOIは政策金利を上下させてCPIを目標1〜3%帯に収める典型的なインフレターゲッター。2015〜21年は0.10%の記録的低水準、2022年から利上げ、2023年5月にピーク4.75%、2025年11月から利下げ局面に転じ2026年5月は3.75%。CPIは2026年4月時点1.9%で目標帯内。',
+  yUnit: '%',
+  yStep: 1,
+  yRange: [-2, 6],
+  series: [
+    { name: 'BOI政策金利', color: '#00d4aa', data: [[2015,0.10],[2020,0.10],[2022,0.35],[2023.42,4.75],[2024,4.5],[2025.83,4.25],[2026.42,3.75]] },
+    { name: 'CPI(前年比)', color: '#ff6b6b', data: [[2015,-1.0],[2020,-0.6],[2022,5.3],[2023,3.0],[2024,3.0],[2025,2.5],[2026.33,1.9]] }
+  ],
+  annotations: [
+    { year: 2015, label: '0.10%底', color: '#5b8def' },
+    { year: 2023.42, label: 'ピーク4.75', color: '#ff6b6b' },
+    { year: 2026.42, label: '3.75%', color: '#00d4aa' }
+  ]
+});
+</script>
+
+<section>
+  <h2>BOIとは何か — 小国のインフレターゲッター</h2>
+  <p>BOIは1954年、独立から6年後に設立された。当初は新興国の中央銀行にありがちな、財政赤字のファイナンス（政府への直接融資）や為替管理を担う「政府の財布」としての性格が強かった。1970〜80年代の慢性インフレ（後述）は、まさにこの財政従属が招いた帰結であった。BOIが現在のような<strong>物価の番人</strong>へと生まれ変わる転機が、1985年の経済安定化計画である<cite>[1]</cite>。</p>
+  <p>現在のBOIの使命は、優先順位の明確な階層構造になっている。①<strong>物価の安定（インフレ目標1〜3%）</strong>を最優先とし、②それを損なわない範囲で<strong>成長・雇用の支援</strong>、③<strong>金融システムの安定</strong>を担う。これはイングランド銀行やノルウェー中銀に近い、明示的なインフレターゲット制である。意思決定は総裁を含む6名の<strong>金融委員会（Monetary Committee）</strong>が行い、年8回の金利決定会合を開く。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">BOIを一言で</div>
+    <div class="mnemonic-body">FRB型の<strong>素直なインフレターゲッター（目標1〜3%）</strong>。ただし2つの「クセ」がある — ①<strong>1985年のハイパーインフレ克服</strong>という規律のDNA、②<strong>為替介入を主要ツールとして堂々と使う</strong>（シェケル高で輸出ハイテクを守る）。地政学リスクが常に背景にある中央銀行。</div>
+  </div>
+</section>
+
+<section>
+  <h2>沿革年表 — 財政従属から独立へ</h2>
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>年</th><th>出来事</th><th>意味</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1948</td><td>イスラエル建国</td><td>当初は英委任統治期のパレスチナ・ポンドを継承</td></tr>
+        <tr><td>1954</td><td>イスラエル銀行法でBOI設立</td><td>中央銀行業務を開始（初代総裁 David Horowitz）</td></tr>
+        <tr><td>1970s–80s</td><td>慢性的な二桁〜三桁インフレ</td><td>財政赤字のマネタイズ・賃金物価スライドが悪循環</td></tr>
+        <tr><td class="highlight-orange">1985</td><td><strong>経済安定化計画</strong>（Peres政権）</td><td>年率450%のインフレを数か月で沈静。BOIの規律確立の原点</td></tr>
+        <tr><td>1986</td><td>新シェケル(ILS)を旧シェケルと1000:1で導入</td><td>通貨への信認回復</td></tr>
+        <tr><td>1992</td><td>インフレ目標制を正式導入</td><td>世界でも早期のインフレターゲッターの一つ</td></tr>
+        <tr><td class="highlight-blue">2010</td><td>新「イスラエル銀行法」施行</td><td>金融委員会制を導入し、独立性を法的に明文化</td></tr>
+        <tr><td>2018</td><td>Amir Yaron が総裁就任（2023年に2期目再任）</td><td>ウォートン校教授出身の経済学者</td></tr>
+        <tr><td>2023</td><td>ハマス戦争で最大300億ドルの外貨売り介入を発表</td><td>戦時のシェケル防衛。介入が主要ツールであることを実証</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>BOIの独立性は、最初から保証されていたわけではない。1985年の安定化計画で<strong>政府がBOIからの借入（赤字のマネタイズ）を法律で制限</strong>したことが、物価安定の制度的基盤となった。さらに2010年の新銀行法は、金利決定を総裁の個人裁量から<strong>6名の金融委員会の合議</strong>へ移し、政策の透明性と独立性を一段と高めた。Stanley Fischer（2005–2013総裁、後にFRB副議長）の時代に国際的な評価が確立し、リーマンショック後の機敏な利下げ・利上げで「世界最高の中央銀行総裁」とも評された<cite>[2]</cite>。</p>
+</section>
+
+<section>
+  <h2>金融政策の枠組み — 金利＋為替介入の二刀流</h2>
+  <p>BOIの政策の柱は2つある。第一は<strong>BOI金利（政策金利）</strong>で、これがインフレ目標達成の主役である（詳細は第2章）。第二が<strong>為替介入</strong>であり、ここがイスラエルの特徴である。輸出主導のハイテク経済にとって過度なシェケル高は逆風となるため、BOIは平時から外貨を買い増し、有事には外貨を売ってシェケルを支える。結果として<strong>外貨準備は約2,345億ドル（対GDP約38%）</strong>という、経済規模に比して極めて潤沢な水準に達している<cite>[3]</cite>。</p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>手段</th><th>役割</th><th>2026年初の状況</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>BOI金利（政策金利）</td><td><strong>インフレ目標1〜3%達成の主役</strong></td><td class="highlight-green">3.75%（利下げ局面）</td></tr>
+        <tr><td>外貨介入</td><td>シェケルの安定・輸出競争力の維持</td><td>準備約2,345億ドル（対GDP38%）</td></tr>
+        <tr><td>マクロプルーデンス</td><td>住宅ローン規制(LTV上限)・銀行監督</td><td>銀行監督庁がBOI内に常設</td></tr>
+        <tr><td>フォワードガイダンス</td><td>金融委員会の声明・四半期予測</td><td>戦時の不確実性で慎重姿勢</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>2023年の300億ドル介入 — 中央銀行が戦争に備える</h3>
+  <p>2023年10月7日のハマス奇襲でシェケルが急落（10月27日に1ドル=4.08シェケル、11年ぶり安値）すると、BOIは即座に<strong>最大300億ドルの外貨売り介入プログラム</strong>と<strong>150億ドルのスワップ枠</strong>を発表した。実際に10月だけで約82億ドルを売却し、シェケルの底割れを防いだ。潤沢な外貨準備が「戦時の保険」として機能した好例であり、平時の地道な外貨買い増しが有事のレジリエンスを生むという、小国中央銀行の知恵を示している<cite>[4]</cite>。</p>
+</section>
+
+<section>
+  <h2>2026年のBOI — 「戦時下の好況」を運営する</h2>
+  <p>2026年のBOIが直面するのは、教科書には無い逆説的な状況である。2023年10月のガザ戦争、2025年6月の対イラン「12日間戦争」、2026年2月の紛争再燃を経てなお、<strong>イスラエル株（TA-35）は世界最強クラスのリターンを上げ、シェケルは1993年以来の最強、成長は加速見込み</strong>という「戦時下の好況」が現出している。戦争の不確実性で長く据え置かれた政策金利（4.5%を14会合維持）は、停戦観測・シェケル高・インフレ沈静を受けて2025年11月から利下げ局面に入り、2026年5月には3.75%まで低下した<cite>[5]</cite>。</p>
+  <p>BOIにとっての論点は明快である。地政学プレミアムが剥落して資金が回帰し、シェケル高がインフレを抑える——この追い風が続けば利下げ余地は広がる。だが対イラン情勢が再燃すればシェケルは再び急落し、介入と据え置きを迫られる。<strong>金利の方向を決めるのが経済指標ではなく「中東情勢」だという点</strong>が、BOIを他のインフレターゲッターから際立たせている。次章では、この政策金利の歴史をより詳しく追う。</p>
+</section>
+
+<footer class="sources">
+  <h3>出典・参考文献</h3>
+  <ol>
+    <li>Wikipedia "1985 Israel Economic Stabilization Plan"、Brookings（Peres安定化）、NBER/World Bank（安定化政策）</li>
+    <li>イスラエル銀行 (BOI) 公式「About the Bank / Governors」、新イスラエル銀行法 (2010)</li>
+    <li>Economy of Israel (Wikipedia)（外貨準備2,345億ドル・対GDP38.2%）、BOI Foreign Exchange Reserves</li>
+    <li>Central Banking / Times of Israel / Al Jazeera / Reuters（2023/10 最大300億ドル介入・82億ドル実売・150億ドルスワップ）</li>
+    <li>BOI press releases (2026/1・5)、Research Department Staff Forecast 2026/1、CNBC 2026/4/30、MEI 2026/4</li>
+  </ol>
+</footer>

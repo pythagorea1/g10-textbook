@@ -1,0 +1,115 @@
+<!-- Key Stats -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">10,202</div>
+    <div class="stat-label">2000/2 ドットコム天井</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">3,446</div>
+    <div class="stat-label">2001 ITバブル崩壊後の急落</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">9,809</div>
+    <div class="stat-label">2007 GFC前のピーク圏</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">TSMC上場</div>
+    <div class="stat-label">半導体ファウンドリ産業の中核が市場を主導</div>
+  </div>
+</div>
+
+<section>
+  <h2>ドットコム天井と急落（2000-2001）</h2>
+  <p>21世紀の幕開けとともに、台湾株は二度目の「天井からの急落」を経験した。世界的なドットコム・ブームに乗ってTAIEXは<strong>2000年2月に10,202</strong>へと上昇したが、米ナスダックの崩壊と歩調を合わせて反落。さらに台湾は<strong>2001年に戦後初の本格的な景気後退（GDPマイナス成長）</strong>に陥り、輸出と半導体が直撃を受けた。TAIEXは<strong>2001年に3,446</strong>まで急落した。同年は初の本格的政権交代（陳水扁政権、2000年就任）の混乱も重なり、CBCは重貼現率を4.625%から2%超へと急速に引き下げて景気を下支えした（第02章）。</p>
+</section>
+
+<!-- Modern era TAIEX 2000-2011 -->
+<div id="tw-taiex-modern"></div>
+<script>
+ChartBuilder.lines('tw-taiex-modern', {
+  title: 'TAIEX 近代 2000-2011（ITバブル崩壊からGFCまで）',
+  caption: '出典: TWSE / Wikipedia "TAIEX"。アンカー（2000/2 10,202、2001 3,446、2007 9,809、2008/11 3,955、2011 7,072）は史実、中間は代表値。',
+  yUnit: '',
+  yStep: 2000,
+  yRange: [2000, 11000],
+  series: [{
+    name: 'TAIEX',
+    color: '#5b8def',
+    data: [
+      [2000.02, 10202],[2001, 3446],[2002, 4452],[2003, 4500],[2004, 6140],
+      [2005, 6100],[2006, 7820],[2007, 9809],[2008.05, 9000],[2008.11, 3955],
+      [2009, 8188],[2010, 8972],[2011, 7072]
+    ]
+  }],
+  annotations: [
+    { year: 2000.02, label: '00 10202', color: '#ff9f43' },
+    { year: 2007, label: '07 9809', color: '#00d4aa' },
+    { year: 2008.11, label: '08 底3955', color: '#ff6b6b' },
+    { year: 2011, label: '11 7072', color: '#ffd93d' }
+  ]
+});
+</script>
+
+<section>
+  <h2>半導体産業の勃興</h2>
+  <p>2000年代の台湾株を理解する鍵は、<strong>半導体ファウンドリ産業の確立</strong>である。TSMC（台湾積体電路製造）とUMC（聯華電子）は、「設計と製造の分離」というファウンドリ・モデルを世界に広め、自社で設計をせず他社の設計を受託生産するという新しいビジネスモデルで急成長した。これにより台湾は、米国のファブレス（設計専業）企業の最大の製造拠点となり、世界の半導体サプライチェーンの心臓部へと駆け上がった。</p>
+  <p>この産業構造の高度化は、TAIEXの性格を根本から変えた。1980年代までの投機色の濃い「マネーゲーム市場」から、世界のハイテク・サイクルに連動する「半導体景気の鏡」へと変質したのである。以降、TAIEXは米フィラデルフィア半導体指数（SOX）やナスダックと高い相関を持つようになり、「台湾株＝世界の半導体需要の先行指標」という見方が定着していった。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">ファウンドリ・モデルが台湾を変えた</div>
+    <div class="mnemonic-body">
+      <p>TSMC/UMCが確立した「<strong>設計と製造の分離</strong>」（ファウンドリ＝製造専業）が、台湾を世界の半導体製造拠点に押し上げた。2000年代にTAIEXは投機市場から「<strong>半導体景気の鏡</strong>」へと変質。以降、台湾株はナスダック・SOX指数と連動し、世界のIT需要の先行指標として読まれるようになる。</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>GFC前の回復とリーマンショック（2003-2008）</h2>
+  <p>2003年のSARS収束後、世界経済の回復とハイテク需要の拡大を受けて、TAIEXは着実に値を戻した。2003年の約4,500から、2007年には<strong>9,809</strong>まで上昇し、2000年の天井に迫った。両岸関係も2008年の馬英九政権発足で改善期待が高まり、後のECFA（両岸経済協力枠組協議、第09章）への助走が始まった。</p>
+  <p>しかし2008年9月のリーマン・ブラザーズ破綻が、すべてを暗転させた。世界貿易の急収縮は、輸出依存度の高い台湾を真正面から直撃した。TAIEXは<strong>2008年11月21日に3,955.43という大底</strong>を打った。これは2007年ピークからの約-60%にあたる暴落である。この続きとGFCからの回復は、第09章（現代）で詳述する。</p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>時期</th>
+          <th>TAIEX</th>
+          <th>局面</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight-orange">
+          <td>2000/2</td>
+          <td>10,202</td>
+          <td>ドットコム天井</td>
+        </tr>
+        <tr class="highlight-red">
+          <td>2001</td>
+          <td>3,446</td>
+          <td>ITバブル崩壊・戦後初の本格的後退</td>
+        </tr>
+        <tr>
+          <td>2003-2007</td>
+          <td>4,500 → 9,809</td>
+          <td>SARS後の回復・半導体需要拡大</td>
+        </tr>
+        <tr class="highlight-blue">
+          <td>2008/11</td>
+          <td>3,955</td>
+          <td>リーマンショックの大底</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>出典・参考文献</h2>
+  <ol>
+    <li>台湾証券取引所（TWSE）, TAIEX historical data <a href="https://www.twse.com.tw/en/">twse.com.tw</a></li>
+    <li>Wikipedia, "TAIEX"（2000/2 10,202、2008/11/21 大底3,955.43）</li>
+    <li>Wikipedia, "Economy of Taiwan"（2001年の景気後退、半導体産業の確立）</li>
+    <li>CBC, Annual Report 2009（GFCと利下げ）</li>
+  </ol>
+</section>

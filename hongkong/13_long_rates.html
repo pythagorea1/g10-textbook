@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>香港 - Long-term Rates | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
+  <script defer src="../assets/charts.js"></script>
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇭🇰 香港</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. 中央銀行</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. 政策金利</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. 財政政策</a>
+      <a href="04_employment.html" class="sidebar-link">04. 雇用</a>
+      <a href="05_inflation.html" class="sidebar-link">05. インフレ</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. 株式市場概観</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. 株式(初期)</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. 株式(近代)</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. 株式(現代)</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. 株式(現在)</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. 債券市場</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. 短期金利</a>
+      <a href="13_long_rates.html" class="sidebar-link active">13. 長期金利</a>
+      <a href="14_currency.html" class="sidebar-link">14. 通貨</a>
+      <a href="15_crises.html" class="sidebar-link">15. 金融危機</a>
+      <a href="16_banking.html" class="sidebar-link">16. 銀行制度</a>
+      <a href="17_corporate.html" class="sidebar-link">17. 企業・コーポレート</a>
+      <a href="18_regulation.html" class="sidebar-link">18. 規制</a>
+      <a href="19_trade.html" class="sidebar-link">19. 貿易</a>
+      <a href="20_lessons.html" class="sidebar-link">20. 教訓</a>
+      <a href="21_geopolitical_risk.html" class="sidebar-link">21. 地政学リスク</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">G10</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+      <div class="sidebar-section-title">地政学・新興地域</div>
+      <div class="country-flags">
+        <a href="../taiwan/01_central_bank.html" class="country-chip">TW</a>
+        <a href="../hongkong/01_central_bank.html" class="country-chip active">HK</a>
+        <a href="../china/01_central_bank.html" class="country-chip">CN</a>
+        <a href="../northkorea/01_central_bank.html" class="country-chip">KP</a>
+        <a href="../vietnam/01_central_bank.html" class="country-chip">VN</a>
+        <a href="../singapore/01_central_bank.html" class="country-chip">SG</a>
+        <a href="../iran/01_central_bank.html" class="country-chip">IR</a>
+        <a href="../israel/01_central_bank.html" class="country-chip">IL</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 ホーム</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10横断年表</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">香港</a>
+        <span class="sep">/</span>
+        香港の長期金利と住宅ローン
+      </div>
+      <h1 class="page-title">🇭🇰 香港の長期金利と住宅ローン</h1>
+      <p class="page-subtitle">米国債から輸入される長期金利、政府債券プログラム、H＋・P−・H-cap</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">米国債</div>
+          <div class="stat-label">香港長期金利の事実上のアンカー</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" style="color:var(--accent-green);">H＋ / P−</div>
+          <div class="stat-label">住宅ローンの2大方式</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" style="color:var(--accent-blue);">グリーン債</div>
+          <div class="stat-label">政府発行の長期債の中核</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" style="color:var(--accent-orange);">薄い</div>
+          <div class="stat-label">国内ソブリン長期債市場の厚み</div>
+        </div>
+      </div>
+
+      <p>
+        香港には、米国債やドイツ国債、日本国債のような「政府の長期借入を映す巨大な国債イールドカーブ」が事実上存在しない。基本法107条の均衡財政原則と歴史的な財政黒字により、政府は長期資金を借りる必要がほとんどなかったからである。その結果、香港の<strong>長期金利は国内で形成されず、ペッグを通じて米国債から「輸入」される</strong>。本章では、この特異な長期金利構造と、住宅ローン・政府債券プログラムを通じた家計・市場への波及を扱う。
+      </p>
+
+      <div class="key-number-row">
+        <div class="key-number">
+          <span class="key-number-value">107条</span>
+          <span class="key-number-label">基本法の均衡財政原則</span>
+        </div>
+        <div class="key-number">
+          <span class="key-number-value">H-cap</span>
+          <span class="key-number-label">HIBOR連動ローンの金利上限</span>
+        </div>
+        <div class="key-number">
+          <span class="key-number-value">~70%</span>
+          <span class="key-number-label">変動金利型が大半の住宅ローン</span>
+        </div>
+      </div>
+
+      <div class="mnemonic-box">
+        <span class="mnemonic-icon">🧠</span>
+        <div class="mnemonic-title">「香港の30年金利はワシントンで決まる」</div>
+        <div class="mnemonic-body">ペッグと自由な資本移動の下では、香港の長期金利が米国債利回りから大きく乖離すれば、即座に裁定取引（資本移動）が乖離を消してしまう。住宅ローンも社債もHIBOR（＝Fed連動）か米国債を基準にする以上、香港の長期借入コストは<strong>米FOMCと米債券市場</strong>が決めている。これが通貨ボードの「金利輸入」の核心。</div>
+      </div>
+
+      <!-- ============================================================ -->
+      <section>
+        <h2>1. なぜ国内長期金利が形成されないのか</h2>
+        <p>
+          長期金利は本来、政府が長期国債を大量に発行し、その利回りがベンチマークとなって形成される。しかし香港政府は伝統的に巨額の財政準備を抱え、借入の必要が乏しかった。流通する政府関連債券は、もっぱら金融管理目的の<strong>外貨基金手形・債券（Exchange Fund Bills and Notes, EFBN）</strong>であり、これは財政赤字のファイナンスではなく、銀行間流動性の調節と通貨ボード運営のために発行される。
+        </p>
+        <p>
+          このため香港の長期金利は、(1)ペッグを通じて<strong>米国債利回り</strong>に連動し、(2)国内では<strong>HIBOR</strong>（短期、Fed連動）が借入コストの実勢を決める、という二重構造になる。長短いずれの金利も香港の景気循環ではなく米国の金融環境に従う。
+        </p>
+        <p class="source"><cite>出典: HKMA, Exchange Fund Bills and Notes Programme; 基本法107条。</cite></p>
+      </section>
+
+      <!-- ============================================================ -->
+      <section>
+        <h2>2. 政府債券プログラム — 流動性管理とリテール</h2>
+        <p>
+          国債市場が薄い一方で、香港政府・HKMAは複数の債券プログラムを運営している。これらは資金調達というより<strong>市場育成・流動性供給・国民への利益還元</strong>を目的とする点が特徴的である。
+        </p>
+
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>債券</th>
+                <th>性格</th>
+                <th>目的・特徴</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>外貨基金手形・債券 (EFBN)</td>
+                <td>HKMA発行</td>
+                <td>銀行間流動性調節、通貨ボード運営。実質的なベンチマーク・カーブ</td>
+              </tr>
+              <tr>
+                <td>政府グリーンボンド</td>
+                <td>ソブリン</td>
+                <td>世界最大級のソブリン・グリーン債発行体。多通貨・多年限で香港を国際債券ハブに</td>
+              </tr>
+              <tr>
+                <td>iBond（インフレ連動債）</td>
+                <td>リテール</td>
+                <td>CPI連動の利子。インフレヘッジを国民に提供</td>
+              </tr>
+              <tr>
+                <td>Silver Bond（銀色債券）</td>
+                <td>リテール（高齢者向け）</td>
+                <td>60歳以上向け、最低利率保証。高齢化対応の資産形成支援</td>
+              </tr>
+              <tr>
+                <td>点心債（Dim Sum Bond）</td>
+                <td>オフショア人民元 (CNH)</td>
+                <td>香港で発行される人民元建て債。中国の資本市場開放の窓口</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          特に<strong>政府グリーンボンド</strong>は、近年の香港が国際的な持続可能金融ハブを目指す象徴であり、複数通貨・最長30年超の年限で発行されている。<strong>点心債</strong>は、香港がオフショア人民元（CNH）の最大拠点である地位を活かした商品で、中国本土の資本規制下で人民元建て長期資金を調達できる数少ない場として機能する。
+        </p>
+        <p class="source"><cite>出典: HKMA, Government Green Bond Programme; HKSAR Government Bond Programme (iBond/Silver Bond)。</cite></p>
+      </section>
+
+      <!-- ============================================================ -->
+      <section>
+        <h2>3. 住宅ローン — H＋・P−・H-cap</h2>
+        <p>
+          長期金利が家計に最も直接的に作用するのが住宅ローンである。香港の住宅ローンは大きく2方式に分かれ、いずれも変動金利型が大半を占める。
+        </p>
+
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>方式</th>
+                <th>基準金利</th>
+                <th>特徴</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>HIBOR連動（H＋）</strong></td>
+                <td>1ヶ月物HIBOR ＋ 一定スプレッド</td>
+                <td>HIBORに直結。低金利期は割安だが、2022-23の急騰で返済負担増</td>
+              </tr>
+              <tr>
+                <td><strong>金利上限（H-cap）</strong></td>
+                <td>プライム − 一定幅</td>
+                <td>H＋方式に付される<strong>上限</strong>。HIBOR急騰時に実効金利がプライム基準に切替わり家計を保護</td>
+              </tr>
+              <tr>
+                <td><strong>プライム連動（P−）</strong></td>
+                <td>Best Lending Rate − 一定幅</td>
+                <td>プライムは粘着的なため金利変動が緩やか。安定志向の借り手向け</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          多くのローンは「H＋方式だが、HIBORが急騰したらH-cap（プライム基準の上限）に切り替わる」というハイブリッド設計になっている。2022〜23年のFed利上げでHIBORが5%超に急騰した際、多くの借り手がこのH-capに張り付き、実効金利が天井に達した。変動金利が主流である香港の家計は、金利を「輸入」する通貨ボードの下で、米国の金融政策ショックを直接受け止める構造になっている。
+        </p>
+        <p class="source"><cite>出典: HKMA; 香港の主要銀行住宅ローン商品約款; SCMP。</cite></p>
+      </section>
+
+      <!-- 住宅ローン金利環境チャート（基準金利 2015-2026） -->
+      <div id="hk-mortgage-rate-env-2015-26"></div>
+      <script>
+      ChartBuilder.lines('hk-mortgage-rate-env-2015-26', {
+        title: '香港 基準金利 2015-2026 — 住宅ローン環境の急変',
+        caption: '出典: HKMA Base Rate プレスリリース各回。住宅ローン金利（HIBOR連動H＋／プライム連動P−）の土台となる基準金利の推移。2020-21年の0.50%から2023年8月に5.75%へ急騰し、H-cap（プライム基準の上限）に張り付く借り手が続出。2025年12月にFed追随で4.00%へ低下。香港の家計が米金融政策ショックを直接受ける構造を示す。',
+        yUnit: '%',
+        yRange: [0, 7],
+        series: [{
+          name: '基準金利 (%)',
+          color: '#5b8def', width: 2,
+          data: [
+            [2015, 0.5],[2016, 0.75],[2017, 1.75],[2018, 2.75],[2019, 2.875],
+            [2020, 0.5],[2021, 0.5],[2022, 4.75],[2023, 5.75],[2024, 4.75],
+            [2025, 4.00],[2026.25, 4.00]
+          ]
+        }],
+        bands: [
+          { from: 2022, to: 2024, label: 'Fed引締め', color: '#ff6b6b' }
+        ],
+        annotations: [
+          { year: 2020, label: '20 0.5%', color: '#5b8def' },
+          { year: 2023, label: '23 5.75%', color: '#ff6b6b' },
+          { year: 2025, label: '25 4.0%', color: '#ffd93d' }
+        ]
+      });
+      </script>
+
+      <!-- ============================================================ -->
+      <section>
+        <h2>4. まとめ — 借りる必要のない政府、輸入される長期金利</h2>
+        <p>
+          香港の長期金利は、財政黒字ゆえに国内国債市場が育たず、ペッグを通じて米国債とHIBORから決定される。政府債券プログラムは資金調達ではなく市場育成・国民還元・人民元ハブ機能のために存在し、家計はH＋／P−／H-capという変動金利商品を通じて米金融政策の波を直接被る。「自国の金利を自国で決められない」という通貨ボードの本質は、短期金利のみならず長期金利・住宅ローンにまで貫かれている。
+        </p>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+<ol>
+<li>HKMA, Exchange Fund Bills and Notes Programme.</li>
+<li>HKMA, Government Green Bond Programme.</li>
+<li>HKSAR Government Bond Programme (iBond / Silver Bond).</li>
+<li>基本法 第107条（均衡財政原則）.</li>
+<li>香港主要銀行の住宅ローン商品約款; SCMP.</li>
+</ol>
+    </footer>
+
+    <nav class="page-nav">
+      <a href="12_short_rates.html" class="prev">短期金利</a>
+      <a href="14_currency.html" class="next">通貨</a>
+    </nav>
+  </main>
+
+  <script src="../assets/enhancer.js"></script>
+  <script defer src="../assets/recall.js"></script>
+  <script src="../assets/tts-reader.js"></script>
+</body>
+</html>

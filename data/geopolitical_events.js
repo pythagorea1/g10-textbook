@@ -2094,6 +2094,441 @@ window.GEOPOLITICAL_EVENTS = {
     "../eurozone/01_central_bank.html",
     "../eurozone/02_policy_rate.html"
    ]
+  },
+  {
+   "id": "taiwan_strait_crisis_1996",
+   "year": 1996,
+   "month": 3,
+   "title": "第三次台湾海峡危機",
+   "category": "地政学",
+   "severity": "high",
+   "epicenter": "TW",
+   "affected": [
+    { "country": "TW", "impact": "critical", "note": "中国がミサイル演習、TAIEX急落・資本流出" },
+    { "country": "CN", "impact": "high", "note": "李登輝訪米に反発、台湾近海へミサイル発射" },
+    { "country": "US", "impact": "high", "note": "空母2隻を台湾海峡へ派遣し抑止" },
+    { "country": "JP", "impact": "medium", "note": "シーレーン・地域安全保障への懸念" }
+   ],
+   "flows": [
+    { "from": "CN", "to": "TW", "type": "contagion", "label": "ミサイル演習" },
+    { "from": "US", "to": "TW", "type": "policy", "label": "空母派遣" }
+   ],
+   "narrative": "1995-96年、李登輝総統の訪米に中国が反発し台湾近海でミサイル演習を実施。米国は空母2隻を派遣し、両岸地政学リスクの原型となった。",
+   "related": [
+    "../taiwan/21_geopolitical_risk.html",
+    "../taiwan/15_crises.html"
+   ]
+  },
+  {
+   "id": "pelosi_taiwan_2022",
+   "year": 2022,
+   "month": 8,
+   "title": "ペロシ訪台・第四次台湾海峡危機",
+   "category": "地政学",
+   "severity": "high",
+   "epicenter": "TW",
+   "affected": [
+    { "country": "TW", "impact": "high", "note": "中国が大規模軍事演習、ミサイルが上空を通過" },
+    { "country": "CN", "impact": "high", "note": "ペロシ訪台に反発し台湾包囲演習を実施" },
+    { "country": "US", "impact": "medium", "note": "下院議長訪台で米中関係が緊迫" },
+    { "country": "JP", "impact": "medium", "note": "EEZ内にミサイル着弾、防衛議論が加速" }
+   ],
+   "flows": [
+    { "from": "US", "to": "TW", "type": "policy", "label": "ペロシ訪台" },
+    { "from": "CN", "to": "TW", "type": "contagion", "label": "封鎖演習" }
+   ],
+   "narrative": "2022年8月、ペロシ米下院議長が訪台。中国は台湾を包囲する大規模軍事演習で対抗し、ミサイルが日本のEEZにも着弾、地政学プレミアムが顕在化した。",
+   "related": [
+    "../taiwan/21_geopolitical_risk.html",
+    "../taiwan/10_equity_current.html"
+   ]
+  },
+  {
+   "id": "taiwan_silicon_shield_2024",
+   "year": 2024,
+   "month": 2,
+   "title": "半導体サプライチェーンとシリコン・シールド",
+   "category": "貿易戦争",
+   "severity": "medium",
+   "epicenter": "TW",
+   "affected": [
+    { "country": "TW", "impact": "critical", "note": "TSMCが世界の先端半導体を寡占、有事=供給途絶リスク" },
+    { "country": "US", "impact": "high", "note": "CHIPS法でアリゾナ工場を誘致し供給分散" },
+    { "country": "JP", "impact": "high", "note": "TSMC熊本(JASM)第1工場が稼働" },
+    { "country": "CN", "impact": "medium", "note": "先端半導体規制で締め出され自給化を加速" }
+   ],
+   "flows": [
+    { "from": "TW", "to": "US", "type": "trade", "label": "分散生産" },
+    { "from": "TW", "to": "JP", "type": "trade", "label": "JASM熊本" }
+   ],
+   "narrative": "TSMCが世界の先端ロジック半導体を寡占し、台湾有事が世界の電子産業を止める『シリコン・シールド』を形成。各国は熊本・アリゾナへ生産分散を進めた。",
+   "related": [
+    "../taiwan/21_geopolitical_risk.html",
+    "../taiwan/19_trade.html"
+   ]
+  },
+  {
+   "id": "hk_handover_1997",
+   "year": 1997,
+   "month": 7,
+   "title": "香港返還・一国二制度開始",
+   "category": "地政学",
+   "severity": "high",
+   "epicenter": "HK",
+   "affected": [
+    { "country": "HK", "impact": "high", "note": "英から中国へ主権返還、直後にアジア危機が直撃" },
+    { "country": "UK", "impact": "medium", "note": "155年の植民地統治が終了" },
+    { "country": "CN", "impact": "medium", "note": "一国二制度で国際金融ハブを獲得" }
+   ],
+   "flows": [
+    { "from": "UK", "to": "HK", "type": "policy", "label": "主権返還" },
+    { "from": "CN", "to": "HK", "type": "policy", "label": "一国二制度" }
+   ],
+   "narrative": "1997年7月1日、香港が英国から中国へ返還され『一国二制度』が始まった。直後にアジア通貨危機が直撃し、98年には政府が株式市場へ介入して投機筋を撃退した。",
+   "related": [
+    "../hongkong/21_geopolitical_risk.html",
+    "../hongkong/15_crises.html"
+   ]
+  },
+  {
+   "id": "hk_nsl_capital_flight_2020",
+   "year": 2020,
+   "month": 6,
+   "title": "香港国家安全法と資本流出",
+   "category": "地政学",
+   "severity": "high",
+   "epicenter": "HK",
+   "affected": [
+    { "country": "HK", "impact": "critical", "note": "国安法施行、米が特別貿易地位を剥奪、人材流出" },
+    { "country": "US", "impact": "medium", "note": "大統領令13936で香港優遇を撤廃・制裁" },
+    { "country": "CN", "impact": "medium", "note": "統制強化で国際金融ハブの質に懸念" },
+    { "country": "SG", "impact": "high", "note": "富裕層資金・人材の受け皿に" }
+   ],
+   "flows": [
+    { "from": "US", "to": "HK", "type": "sanction", "label": "特別地位剥奪" },
+    { "from": "HK", "to": "SG", "type": "capital", "label": "資本・人材流出" }
+   ],
+   "narrative": "2020年6月、中国が香港国家安全法を施行。米国は香港の特別貿易地位を剥奪し、富裕層の資金と人材がシンガポールへ流出した。",
+   "related": [
+    "../hongkong/21_geopolitical_risk.html",
+    "../hongkong/10_equity_current.html"
+   ]
+  },
+  {
+   "id": "china_evergrande_2021",
+   "year": 2021,
+   "month": 9,
+   "title": "中国恒大集団 債務危機",
+   "category": "金融危機",
+   "severity": "high",
+   "epicenter": "CN",
+   "affected": [
+    { "country": "CN", "impact": "critical", "note": "負債3,000億ドル超、不動産バブル崩壊の起点" },
+    { "country": "HK", "impact": "high", "note": "ハンセン不動産株が急落、24年に香港高裁が清算命令" },
+    { "country": "AU", "impact": "medium", "note": "鉄鉱石需要懸念で資源株安" },
+    { "country": "JP", "impact": "low", "note": "中国減速リスクとして波及" }
+   ],
+   "flows": [
+    { "from": "CN", "to": "HK", "type": "contagion", "label": "不動産株安" },
+    { "from": "CN", "to": "AU", "type": "contagion", "label": "資源需要減" }
+   ],
+   "narrative": "2021年9月、負債3,000億ドルを超える中国恒大集団の債務危機が表面化。不動産バブル崩壊の起点となり、碧桂園破綻へと連鎖、資源国にも波及した。",
+   "related": [
+    "../china/21_geopolitical_risk.html",
+    "../china/15_crises.html"
+   ]
+  },
+  {
+   "id": "us_china_chip_war_2022",
+   "year": 2022,
+   "month": 10,
+   "title": "米中半導体戦争（先端輸出規制）",
+   "category": "貿易戦争",
+   "severity": "high",
+   "epicenter": "US",
+   "affected": [
+    { "country": "US", "impact": "high", "note": "10月に対中の先端半導体・製造装置の輸出規制を発動" },
+    { "country": "CN", "impact": "critical", "note": "先端GPU・EUVを締め出され自給化を加速、希土類で対抗" },
+    { "country": "TW", "impact": "high", "note": "最大市場と最大同盟の板挟み" },
+    { "country": "JP", "impact": "medium", "note": "蘭とともに装置規制に同調" },
+    { "country": "VN", "impact": "medium", "note": "米中対立でChina+1の生産移転が加速、FDI流入" }
+   ],
+   "flows": [
+    { "from": "US", "to": "CN", "type": "sanction", "label": "輸出規制" },
+    { "from": "CN", "to": "US", "type": "trade", "label": "希土類カード" },
+    { "from": "CN", "to": "VN", "type": "trade", "label": "生産移転" }
+   ],
+   "narrative": "2022年10月、米国が対中の先端半導体・製造装置の包括的輸出規制を発動。中国は自給化と希土類・ガリウム規制で対抗し、生産はベトナム等へ移転、技術デカップリングが本格化した。",
+   "related": [
+    "../china/21_geopolitical_risk.html",
+    "../china/19_trade.html"
+   ]
+  },
+  {
+   "id": "nk_nuclear_test_2006",
+   "year": 2006,
+   "month": 10,
+   "title": "北朝鮮 初の核実験",
+   "category": "地政学",
+   "severity": "high",
+   "epicenter": "KP",
+   "affected": [
+    { "country": "KP", "impact": "critical", "note": "初の核実験、国連決議1718で制裁レジーム開始" },
+    { "country": "JP", "impact": "high", "note": "有事の質への逃避で円買い・株安" },
+    { "country": "US", "impact": "medium", "note": "対北制裁と6者協議を主導" },
+    { "country": "CN", "impact": "medium", "note": "後ろ盾だが安保理制裁に同調" }
+   ],
+   "flows": [
+    { "from": "US", "to": "KP", "type": "sanction", "label": "国連制裁" },
+    { "from": "KP", "to": "JP", "type": "contagion", "label": "有事リスク" }
+   ],
+   "narrative": "2006年10月、北朝鮮が初の核実験を実施。国連安保理決議1718で制裁レジームが始まり、以後の実験ごとに制裁が積み上がった。",
+   "related": [
+    "../northkorea/21_geopolitical_risk.html",
+    "../northkorea/15_crises.html"
+   ]
+  },
+  {
+   "id": "nk_nuclear_icbm_2017",
+   "year": 2017,
+   "month": 9,
+   "title": "北朝鮮 水爆実験・ICBM",
+   "category": "地政学",
+   "severity": "high",
+   "epicenter": "KP",
+   "affected": [
+    { "country": "KP", "impact": "critical", "note": "第6回核実験(水爆)とICBM試射、最大限の圧力" },
+    { "country": "JP", "impact": "high", "note": "ミサイルが日本上空を通過、J-ALERT発令" },
+    { "country": "US", "impact": "high", "note": "本土到達能力に警戒、制裁2371/2375/2397" },
+    { "country": "CN", "impact": "medium", "note": "石炭・繊維・石油の禁輸に同調" }
+   ],
+   "flows": [
+    { "from": "KP", "to": "JP", "type": "contagion", "label": "上空通過" },
+    { "from": "US", "to": "KP", "type": "sanction", "label": "最大限の圧力" }
+   ],
+   "narrative": "2017年、北朝鮮が水爆実験とICBM試射を強行。ミサイルは日本上空を通過し、国連は石炭・石油・繊維を網羅する『最大限の圧力』制裁を科した。",
+   "related": [
+    "../northkorea/21_geopolitical_risk.html",
+    "../northkorea/15_crises.html"
+   ]
+  },
+  {
+   "id": "nk_missile_barrage_2022",
+   "year": 2022,
+   "month": 11,
+   "title": "北朝鮮 過去最多のミサイル乱射",
+   "category": "地政学",
+   "severity": "medium",
+   "epicenter": "KP",
+   "affected": [
+    { "country": "KP", "impact": "high", "note": "年間で過去最多の弾道ミサイルを発射" },
+    { "country": "JP", "impact": "high", "note": "IRBMが上空通過、J-ALERT・避難呼びかけ" },
+    { "country": "US", "impact": "medium", "note": "米韓合同演習への対抗" }
+   ],
+   "flows": [
+    { "from": "KP", "to": "JP", "type": "contagion", "label": "ミサイル発射" }
+   ],
+   "narrative": "2022年、北朝鮮は年間で過去最多の弾道ミサイルを発射。IRBMが日本列島上空を通過しJ-ALERTが発令されるなど、地域の緊張が高まった。",
+   "related": [
+    "../northkorea/21_geopolitical_risk.html",
+    "../japan/15_crises.html"
+   ]
+  },
+  {
+   "id": "nk_russia_arms_2024",
+   "year": 2024,
+   "month": 6,
+   "title": "北朝鮮の対露軍事協力",
+   "category": "地政学",
+   "severity": "medium",
+   "epicenter": "KP",
+   "affected": [
+    { "country": "KP", "impact": "high", "note": "砲弾・兵士をロシアへ供与、見返りに食料・技術・外貨" },
+    { "country": "RU", "impact": "high", "note": "ウクライナ戦争で北朝鮮の弾薬・兵力に依存" },
+    { "country": "EU", "impact": "medium", "note": "戦況長期化への懸念" },
+    { "country": "US", "impact": "medium", "note": "制裁監視パネルの露拒否権廃止に反発" }
+   ],
+   "flows": [
+    { "from": "KP", "to": "RU", "type": "trade", "label": "砲弾・兵士" },
+    { "from": "RU", "to": "KP", "type": "capital", "label": "食料・技術・外貨" }
+   ],
+   "narrative": "2024年、北朝鮮とロシアが包括的戦略パートナー条約を締結。北朝鮮は砲弾・兵士をウクライナ戦線へ供与し、見返りに食料・技術・外貨を得て対中依存の分散を図った。",
+   "related": [
+    "../northkorea/21_geopolitical_risk.html",
+    "../northkorea/19_trade.html"
+   ]
+  },
+  {
+   "id": "iran_jcpoa_2015",
+   "year": 2015,
+   "month": 7,
+   "title": "イラン核合意（JCPOA）締結",
+   "category": "地政学",
+   "severity": "medium",
+   "epicenter": "IR",
+   "affected": [
+    { "country": "IR", "impact": "high", "note": "制裁の段階解除でリアル安定・インフレ一桁化" },
+    { "country": "US", "impact": "medium", "note": "オバマ政権が主導、中東緊張が一時緩和" },
+    { "country": "EU", "impact": "medium", "note": "E3が交渉、イラン市場再開に期待" },
+    { "country": "SA", "impact": "low", "note": "イラン原油復帰で供給増・油価圧力" }
+   ],
+   "flows": [
+    { "from": "US", "to": "IR", "type": "policy", "label": "制裁解除" },
+    { "from": "EU", "to": "IR", "type": "trade", "label": "市場再開" }
+   ],
+   "narrative": "2015年7月、イランと米欧(P5+1)が核合意(JCPOA)を締結。制裁の段階解除でリアルが安定しインフレは一桁に低下、原油輸出が回復した。",
+   "related": [
+    "../iran/21_geopolitical_risk.html",
+    "../iran/15_crises.html"
+   ]
+  },
+  {
+   "id": "iran_jcpoa_exit_2018",
+   "year": 2018,
+   "month": 5,
+   "title": "米のJCPOA離脱・制裁再発動",
+   "category": "地政学",
+   "severity": "high",
+   "epicenter": "IR",
+   "affected": [
+    { "country": "IR", "impact": "critical", "note": "リアル崩壊・インフレ再加速、石油輸出が激減" },
+    { "country": "US", "impact": "medium", "note": "トランプ政権が離脱、最大限の圧力へ" },
+    { "country": "EU", "impact": "medium", "note": "合意維持を模索もINSTEXは不発" },
+    { "country": "CN", "impact": "low", "note": "イラン原油の最大の買い手として迂回輸入" }
+   ],
+   "flows": [
+    { "from": "US", "to": "IR", "type": "sanction", "label": "制裁再発動" },
+    { "from": "IR", "to": "CN", "type": "trade", "label": "影の船団" }
+   ],
+   "narrative": "2018年5月、トランプ政権がJCPOAを離脱し制裁を再発動。リアルは崩壊しインフレが再加速、イランは中国向け『影の船団』で輸出を延命した。",
+   "related": [
+    "../iran/21_geopolitical_risk.html",
+    "../iran/14_currency.html"
+   ]
+  },
+  {
+   "id": "hormuz_tanker_2019",
+   "year": 2019,
+   "month": 6,
+   "title": "ホルムズ海峡 タンカー攻撃",
+   "category": "エネルギー",
+   "severity": "medium",
+   "epicenter": "IR",
+   "affected": [
+    { "country": "IR", "impact": "high", "note": "制裁下で緊張、米無人機撃墜・タンカー攻撃の応酬" },
+    { "country": "SA", "impact": "high", "note": "アブカイク石油施設攻撃で一時生産が半減" },
+    { "country": "JP", "impact": "medium", "note": "原油輸入の大半が通過、海上安全に懸念" },
+    { "country": "CN", "impact": "medium", "note": "最大の原油輸入国としてシーレーンに依存" },
+    { "country": "US", "impact": "medium", "note": "海上有志連合で航行を護衛" }
+   ],
+   "flows": [
+    { "from": "IR", "to": "SA", "type": "contagion", "label": "施設攻撃" },
+    { "from": "IR", "to": "JP", "type": "contagion", "label": "原油高リスク" }
+   ],
+   "narrative": "2019年、ホルムズ海峡周辺でタンカー攻撃や米無人機撃墜が相次ぎ、サウジのアブカイク施設攻撃で生産が一時半減。世界の海上原油の約2割が通る要衝のリスクが意識された。",
+   "related": [
+    "../iran/21_geopolitical_risk.html",
+    "../china/21_geopolitical_risk.html"
+   ]
+  },
+  {
+   "id": "red_sea_houthi_2023",
+   "year": 2023,
+   "month": 11,
+   "title": "紅海・フーシ派 商船攻撃",
+   "category": "エネルギー",
+   "severity": "high",
+   "epicenter": "IR",
+   "affected": [
+    { "country": "IR", "impact": "high", "note": "支援するフーシ派が紅海の商船を攻撃" },
+    { "country": "IL", "impact": "high", "note": "エイラート港の機能低下、ガザ戦争に連動" },
+    { "country": "EU", "impact": "high", "note": "スエズ迂回(喜望峰)で海運コスト・納期が増大" },
+    { "country": "US", "impact": "medium", "note": "有志連合『繁栄の守護者』で護衛・報復" },
+    { "country": "SG", "impact": "medium", "note": "アジア-欧州航路の迂回でハブ物流に影響" }
+   ],
+   "flows": [
+    { "from": "IR", "to": "IL", "type": "contagion", "label": "商船攻撃" },
+    { "from": "IR", "to": "EU", "type": "trade", "label": "スエズ迂回" }
+   ],
+   "narrative": "2023年11月以降、イランが支援するフーシ派が紅海で商船を攻撃。スエズ運河を避けた喜望峰迂回で海運コストと納期が膨らみ、世界の物流網が混乱した。",
+   "related": [
+    "../iran/21_geopolitical_risk.html",
+    "../israel/21_geopolitical_risk.html"
+   ]
+  },
+  {
+   "id": "gaza_war_2023",
+   "year": 2023,
+   "month": 10,
+   "title": "ガザ戦争（10/7ハマス奇襲）",
+   "category": "地政学",
+   "severity": "high",
+   "epicenter": "IL",
+   "affected": [
+    { "country": "IL", "impact": "critical", "note": "10/7奇襲後の長期戦時経済、予備役動員・防衛費増" },
+    { "country": "US", "impact": "high", "note": "軍事支援と国連での外交的擁護" },
+    { "country": "IR", "impact": "medium", "note": "『抵抗の枢軸』(ハマス・ヒズボラ・フーシ)の背後" },
+    { "country": "EU", "impact": "low", "note": "エネルギー・人道・難民で影響" }
+   ],
+   "flows": [
+    { "from": "IR", "to": "IL", "type": "contagion", "label": "代理勢力" },
+    { "from": "US", "to": "IL", "type": "policy", "label": "軍事支援" }
+   ],
+   "narrative": "2023年10月7日のハマス奇襲を機にガザ戦争が勃発。予備役動員による労働供給ショックと防衛費増で戦時経済入りしたが、ハイテク輸出が下支えした。",
+   "related": [
+    "../israel/21_geopolitical_risk.html",
+    "../israel/15_crises.html"
+   ]
+  },
+  {
+   "id": "iran_israel_war_2025",
+   "year": 2025,
+   "month": 6,
+   "title": "イラン・イスラエル『12日間戦争』",
+   "category": "地政学",
+   "severity": "critical",
+   "epicenter": "IR",
+   "affected": [
+    { "country": "IR", "impact": "critical", "note": "核・軍施設を奇襲され、米がフォルドゥを爆撃" },
+    { "country": "IL", "impact": "critical", "note": "先制攻撃後にイランの弾道ミサイル550発超で報復" },
+    { "country": "US", "impact": "high", "note": "6/22に核施設をGBU-57で爆撃、6/24停戦を仲介" },
+    { "country": "SA", "impact": "medium", "note": "原油・地政学プレミアム急騰の波及" },
+    { "country": "EU", "impact": "medium", "note": "エネルギー・安全保障リスク" }
+   ],
+   "flows": [
+    { "from": "IL", "to": "IR", "type": "contagion", "label": "核施設攻撃" },
+    { "from": "IR", "to": "IL", "type": "contagion", "label": "弾道ミサイル" },
+    { "from": "US", "to": "IR", "type": "contagion", "label": "核施設爆撃" }
+   ],
+   "narrative": "2025年6月13〜24日、イスラエルがイランの核・軍施設を奇襲し、イランは弾道ミサイル550発超で報復。米国が6/22にフォルドゥ核施設を爆撃し、6/24に停戦に至った。",
+   "related": [
+    "../iran/21_geopolitical_risk.html",
+    "../israel/21_geopolitical_risk.html"
+   ]
+  },
+  {
+   "id": "singapore_malacca_2023",
+   "year": 2023,
+   "month": 1,
+   "title": "シンガポール・マラッカ海峡シーレーン",
+   "category": "地政学",
+   "severity": "medium",
+   "epicenter": "SG",
+   "affected": [
+    { "country": "SG", "impact": "critical", "note": "マラッカ海峡の戦略的要衝・アジア金融ハブ" },
+    { "country": "CN", "impact": "high", "note": "原油輸入の大半がマラッカ経由(マラッカのジレンマ)" },
+    { "country": "JP", "impact": "high", "note": "中東原油のシーレーンが集約する要衝" },
+    { "country": "HK", "impact": "medium", "note": "金融ハブを巡る競合・資金移動" }
+   ],
+   "flows": [
+    { "from": "SG", "to": "CN", "type": "trade", "label": "マラッカ海峡" },
+    { "from": "HK", "to": "SG", "type": "capital", "label": "資金移動" }
+   ],
+   "narrative": "シンガポールはマラッカ海峡という世界有数のチョークポイントを扼するアジア金融ハブ。中国は原油輸入の大半がここを通る『マラッカのジレンマ』を抱え、シーレーン安全保障が要となる。",
+   "related": [
+    "../singapore/21_geopolitical_risk.html",
+    "../singapore/19_trade.html"
+   ]
   }
  ]
 };

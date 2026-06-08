@@ -1,0 +1,240 @@
+      <!-- ============ KEY STATS ============ -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">1993年</div>
+          <div class="stat-label">HKMA設立（外貨基金弁公室と銀行業監理処を統合）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">7.75–7.85</div>
+          <div class="stat-label">米ドルペッグ帯（中心レート7.80、1983年開始）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">3行</div>
+          <div class="stat-label">発券銀行（HSBC・StanChart・BOCHK）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">100%</div>
+          <div class="stat-label">発券は米ドルで全額裏付け（通貨ボード）</div>
+        </div>
+      </div>
+
+      <div class="key-number-row">
+        <div class="key-number"><span class="key-number-value">なし</span><span class="key-number-label">独立した金融政策（利上げ/利下げの裁量）</span></div>
+        <div class="key-number"><span class="key-number-value">外貨基金</span><span class="key-number-label">通貨ボードの心臓部（Exchange Fund）</span></div>
+        <div class="key-number"><span class="key-number-value">2047年</span><span class="key-number-label">「一国二制度」基本法の保証期限</span></div>
+      </div>
+
+      <section>
+        <h2>香港金融管理局（HKMA）とは何か</h2>
+        <p>香港金融管理局（Hong Kong Monetary Authority、<strong>HKMA</strong>／香港金融管理局）は、1993年4月1日に<strong>外貨基金弁公室（Office of the Exchange Fund）</strong>と<strong>銀行業監理処（Office of the Commissioner of Banking）</strong>を統合して設立された、香港特別行政区の通貨・金融当局である。一般には「香港の中央銀行」と紹介されるが、これは正確ではない。HKMAは<strong>金利を自律的に決める権限を持たない</strong>。香港ドルは米ドルに固定（ペッグ）されており、HKMAの最大の使命は、その固定相場を機械的なルールで守り抜くことにある<cite>[1]</cite>。</p>
+        <p>この体制を<strong>通貨ボード制度（Currency Board）</strong>と呼ぶ。中央銀行が経済情勢を見て金融政策を「判断」するのに対し、通貨ボードは外貨準備に応じて自国通貨を「機械的に」発行・回収する。香港はこの古典的な仕組みを、世界最大級の国際金融センターで運用しているという点で極めて特異な存在である。</p>
+
+        <div class="mnemonic-box">
+          <span class="mnemonic-icon">🧠</span>
+          <div class="mnemonic-title">HKMAを一言でいうと</div>
+          <div class="mnemonic-body">「金利を決めない中央銀行」。HKMAは経済を見て利上げ・利下げを判断するのではなく、米ドルとの固定レート（7.75–7.85）を守る<strong>自動販売機</strong>のように動く。金融政策はFed（米連邦準備制度）に丸ごと「輸入」している。</div>
+        </div>
+      </section>
+
+      <!-- ============ CHART: HKD/USD PEG HISTORY ============ -->
+      <section>
+        <h2>通貨ボードの全史 — 香港ドルはこうして固定された</h2>
+        <p>HKMAの存在意義を理解するには、香港ドルの為替史を見るのが最も早い。1974年から1983年まで香港ドルは変動相場だったが、中英交渉（香港返還交渉）への不安から信認が崩れ、1983年9月には1米ドル＝約9.6香港ドルまで急落した。この通貨危機を受けて、1983年10月17日に<strong>7.80でのペッグ</strong>が導入され、通貨ボード体制が確立された<cite>[2]</cite>。</p>
+        <div id="hk-peg-history"></div>
+        <script>
+        ChartBuilder.lines('hk-peg-history', {
+          title: '香港ドル / 米ドル 為替レート 1972–2026（変動相場→7.80ペッグ→7.75-7.85帯）',
+          caption: '出典: HKMA「Linked Exchange Rate System」、Wikipedia「Linked exchange rate system in Hong Kong」。値が大きいほど香港ドル安。1983年9月の信認危機で約9.6まで急落→10/17に7.80ペッグ確立。2005年に7.75（強サイド）-7.85（弱サイド）の対称兌換帯を導入。',
+          yUnit: '',
+          yRange: [4.5, 10],
+          yStep: 1,
+          series: [{
+            name: 'HKD/USD',
+            color: '#00d4aa',
+            data: [[1972,5.65],[1974,5.085],[1978,4.70],[1981,5.13],[1983.09,9.60],[1983.10,7.80],[1990,7.80],[1998.09,7.75],[2005,7.78],[2008,7.75],[2016,7.76],[2018,7.85],[2020,7.75],[2022.10,7.85],[2023,7.83],[2024,7.81],[2025.05,7.75],[2025.07,7.85],[2026.01,7.78]]
+          }],
+          annotations: [
+            { year: 1983.6, label: '83 危機9.6', color: '#ff6b6b' },
+            { year: 1998.9, label: '98 強7.75', color: '#5b8def' },
+            { year: 2005, label: '05 帯確立', color: '#00d4aa' },
+            { year: 2018.5, label: '18 弱7.85', color: '#ff9f43' },
+            { year: 2025.5, label: '25 強7.75', color: '#5b8def' }
+          ]
+        });
+        </script>
+        <p>1983年以降、香港ドルは43年間にわたって一度もペッグを離脱していない。1998年のアジア通貨危機、2008年のリーマン・ショック、2019年の大規模デモ、2020年の国家安全法施行といった激動を経ても、7.75–7.85の帯はびくともしなかった。これは世界の固定相場制のなかでも傑出した持続性であり、HKMAの最大の実績である。</p>
+      </section>
+
+      <section>
+        <h2>通貨ボードの仕組み — 「自動兌換」のメカニズム</h2>
+        <p>HKMAが裁量を持たない代わりに、香港ドルの価値は<strong>自動兌換保証（Convertibility Undertaking, CU）</strong>という機械的なルールで守られる。2005年5月に確立した「3つの改善（Three Refinements）」以降、ルールは次の通りである<cite>[2]</cite>。</p>
+
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>サイド</th>
+                <th>レート</th>
+                <th>HKMAの行動</th>
+                <th>結果</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="highlight-blue">強サイド（Strong-side CU）</td>
+                <td>7.75</td>
+                <td>香港ドル買い需要が強すぎる時、銀行に米ドルを渡し香港ドルを発行（売却）</td>
+                <td>香港ドル供給↑＝総決済残高↑、HIBOR低下</td>
+              </tr>
+              <tr>
+                <td class="highlight-red">弱サイド（Weak-side CU）</td>
+                <td>7.85</td>
+                <td>香港ドル売り圧力が強い時、米ドルを売って香港ドルを回収</td>
+                <td>香港ドル供給↓＝総決済残高↓、HIBOR上昇</td>
+              </tr>
+              <tr>
+                <td>中心レート</td>
+                <td>7.80</td>
+                <td>介入不要（自由市場で帯内を浮動）</td>
+                <td>—</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>このメカニズムの肝は、為替を守る代わりに<strong>国内金利（HIBOR）と銀行間流動性（総決済残高 Aggregate Balance）が犠牲になる</strong>という点である。香港ドルが弱くなると、HKMAは香港ドルを買い上げて市場から吸収するため、銀行システムの流動性が縮小し、金利が自然に上昇する。すると金利の高い香港ドルを保有する妙味が増し、為替が中心へ戻る。逆もまた然り。<strong>為替を固定するために、金利が完全に自由化されている</strong>のである。</p>
+
+        <div class="mnemonic-box">
+          <span class="mnemonic-icon">⚖️</span>
+          <div class="mnemonic-title">守るものと、犠牲にするもの</div>
+          <div class="mnemonic-body">HKMAは「為替（7.75–7.85）」を絶対に守る。その代償として「国内金利」と「銀行間流動性」を市場に明け渡す。だから香港の金利は香港の景気とは無関係に、米国の金利に連動して動く（→第02章 不可能の三角形）。</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>外貨基金（Exchange Fund） — 通貨ボードの心臓部</h2>
+        <p>通貨ボードを物理的に支えているのが<strong>外貨基金（Exchange Fund）</strong>である。1935年の通貨条例で設立されたこの基金は、発券された香港ドルの全額を裏付ける米ドル資産を保有し、為替防衛の弾薬庫となる。総資産はHK$4兆（米ドル換算で4,000億ドル）超の規模とされ、世界有数の公的ファンドである<cite>[3]</cite>。</p>
+        <p>外貨基金は次の3つの口座構造で管理される。</p>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>口座（ポートフォリオ）</th>
+                <th>役割</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="highlight-green">Backing Portfolio（裏付け資産）</td>
+                <td>発行済み香港ドル（マネタリーベース）を100%以上カバーする米ドル流動資産。通貨ボードの根幹</td>
+              </tr>
+              <tr>
+                <td>Investment Portfolio（投資資産）</td>
+                <td>香港の長期的な財政力を維持するための運用（債券・株式中心）</td>
+              </tr>
+              <tr>
+                <td>Long-Term Growth Portfolio（長期成長）</td>
+                <td>プライベートエクイティ・不動産等への分散投資（2009年〜）</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>1998年のアジア通貨危機では、この外貨基金が「最終兵器」として使われた。投機筋が通貨と株式を同時に売り浴びせる「ダブルプレイ」を仕掛けた際、香港政府はHKMAを通じて約HK$1,180億（当時の外貨基金資産の約18%）を株式市場に投入し、ハンセン指数構成33銘柄を買い支えて投機筋を撃退した（→第08章・第15章で詳述）。中央銀行を持たない香港にとって、外貨基金こそが「最後の貸し手」に最も近い存在である<cite>[4]</cite>。</p>
+      </section>
+
+      <section>
+        <h2>発券銀行 — お札を刷るのは民間銀行</h2>
+        <p>香港のもう一つの特異点は、紙幣を中央銀行ではなく<strong>3つの民間発券銀行（Note-Issuing Banks）</strong>が発行することである。HKMA自身は紙幣を刷らない。</p>
+        <div class="key-number-row">
+          <div class="key-number"><span class="key-number-value">HSBC</span><span class="key-number-label">香港上海銀行（最大の発券シェア）</span></div>
+          <div class="key-number"><span class="key-number-value">StanChart</span><span class="key-number-label">スタンダードチャータード銀行（香港）</span></div>
+          <div class="key-number"><span class="key-number-value">BOCHK</span><span class="key-number-label">中国銀行（香港）＝中国系の象徴</span></div>
+        </div>
+        <p>各発券銀行は、紙幣を発行する際に<strong>発行額と等価の米ドル</strong>を外貨基金に預け入れ、その引き換えに<strong>債務証書（Certificate of Indebtedness, CI）</strong>を受け取る。つまり香港ドル紙幣の1枚1枚が、外貨基金に積まれた米ドルで裏付けられている。これが「100%米ドル裏付け」の実体である。なお<strong>10香港ドル紙幣のみは香港政府が直接発行</strong>し、硬貨も政府発行である。3行が異なるデザインの同額紙幣を流通させる光景は、香港特有のものである<cite>[1]</cite>。</p>
+      </section>
+
+      <section>
+        <h2>HKMAは何をするのか — 4つの役割</h2>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>役割</th>
+                <th>内容</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="highlight-blue">通貨の安定</td>
+                <td>連繋為替相場制度（LERS）の運営。7.75–7.85帯の防衛が最優先ミッション</td>
+              </tr>
+              <tr>
+                <td>銀行システムの健全性</td>
+                <td>認可銀行・制限ライセンス銀行・預金受入会社の三層構造を監督（→第16章）</td>
+              </tr>
+              <tr>
+                <td>金融インフラ</td>
+                <td>決済システム（RTGS）、債券決済（CMU）、人民元クリアリングの運営</td>
+              </tr>
+              <tr>
+                <td>外貨基金の運用</td>
+                <td>準備資産の管理と運用。財政準備の一部もここに預託される</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>注目すべきは、この一覧に「金融政策（金利の決定）」が含まれていないことである。HKMAの「基準金利（Base Rate）」は存在するが、それは独自判断で決めるものではなく、米国FedのFF金利下限に＋50bpを足すか、HIBORの5日移動平均のいずれか高い方、という<strong>機械的な公式</strong>で算出される（→第02章）。HKMAは金融政策の「主体」ではなく「中継器」なのである。</p>
+      </section>
+
+      <section>
+        <h2>歴代トップと制度の歩み</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">1935</div>
+            <div class="timeline-content">
+              <h4>外貨基金（Exchange Fund）設立</h4>
+              <p>通貨条例に基づき、香港ドルの裏付け資産を管理する基金として創設。現在の通貨ボードの礎。</p>
+            </div>
+          </div>
+          <div class="timeline-item cut">
+            <div class="timeline-date">1974–1983</div>
+            <div class="timeline-content">
+              <h4>変動相場時代</h4>
+              <p>香港ドルは変動相場。だが中英交渉の不安で信認が低下し、為替が乱高下する。</p>
+            </div>
+          </div>
+          <div class="timeline-item crisis">
+            <div class="timeline-date">1983.10.17</div>
+            <div class="timeline-content">
+              <h4>7.80ペッグ導入</h4>
+              <p>信認危機（一時9.6香港ドル）を受け、米ドルペッグ＝通貨ボード制度を確立。香港金融の背骨が決まる。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">1993.04.01</div>
+            <div class="timeline-content">
+              <h4>HKMA設立</h4>
+              <p>外貨基金弁公室と銀行業監理処を統合。初代総裁はジョセフ・ヤム（任志剛、1993–2009）。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2005.05</div>
+            <div class="timeline-content">
+              <h4>「3つの改善」</h4>
+              <p>強サイド7.75・弱サイド7.85の対称兌換帯を確立。為替の上下限が明示された。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2009→2019→現在</div>
+            <div class="timeline-content">
+              <h4>総裁の継承</h4>
+              <p>ノーマン・チャン（陳徳霖、2009–2019）、エディ・ユー（余偉文、2019–）。一貫してペッグ堅持の路線を継承。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>まとめ — 中央銀行なき金融ハブ</h2>
+        <p>HKMAは「中央銀行」と紹介されることが多いが、その本質は<strong>通貨ボードの運営者</strong>である。金利を決める裁量を放棄する代わりに、米ドルとの固定相場という揺るぎない信認の錨（いかり）を手に入れた。この選択がもたらす光（為替の絶対的安定）と影（金融政策の自律性の喪失）が、香港経済のすべての章を貫く通奏低音となる。次章では、その「影」の正体 —— なぜ香港は自分で金利を決められないのか —— を「不可能の三角形」から解き明かす。</p>
+      </section>

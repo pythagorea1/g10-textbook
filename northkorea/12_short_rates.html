@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>北朝鮮 - Short-term Rates | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
+  <script defer src="../assets/charts.js"></script>
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇰🇵 北朝鮮</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. 中央銀行</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. 政策金利</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. 財政政策</a>
+      <a href="04_employment.html" class="sidebar-link">04. 雇用</a>
+      <a href="05_inflation.html" class="sidebar-link">05. インフレ</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. 株式市場概観</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. 株式(初期)</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. 株式(近代)</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. 株式(現代)</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. 株式(現在)</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. 債券市場</a>
+      <a href="12_short_rates.html" class="sidebar-link active">12. 短期金利</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. 長期金利</a>
+      <a href="14_currency.html" class="sidebar-link">14. 通貨</a>
+      <a href="15_crises.html" class="sidebar-link">15. 金融危機</a>
+      <a href="16_banking.html" class="sidebar-link">16. 銀行制度</a>
+      <a href="17_corporate.html" class="sidebar-link">17. 企業・コーポレート</a>
+      <a href="18_regulation.html" class="sidebar-link">18. 規制</a>
+      <a href="19_trade.html" class="sidebar-link">19. 貿易</a>
+      <a href="20_lessons.html" class="sidebar-link">20. 教訓</a>
+      <a href="21_geopolitical_risk.html" class="sidebar-link">21. 地政学リスク</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">G10</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+      <div class="sidebar-section-title">地政学・新興地域</div>
+      <div class="country-flags">
+        <a href="../taiwan/01_central_bank.html" class="country-chip">TW</a>
+        <a href="../hongkong/01_central_bank.html" class="country-chip">HK</a>
+        <a href="../china/01_central_bank.html" class="country-chip">CN</a>
+        <a href="../northkorea/01_central_bank.html" class="country-chip active">KP</a>
+        <a href="../vietnam/01_central_bank.html" class="country-chip">VN</a>
+        <a href="../singapore/01_central_bank.html" class="country-chip">SG</a>
+        <a href="../iran/01_central_bank.html" class="country-chip">IR</a>
+        <a href="../israel/01_central_bank.html" class="country-chip">IL</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 ホーム</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10横断年表</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">北朝鮮</a>
+        <span class="sep">/</span>
+        短期金利 — 金利なき経済と私金融(サグムン)
+      </div>
+      <h1 class="page-title">🇰🇵 短期金利 — 金利なき経済と私金融(サグムン)</h1>
+      <p class="page-subtitle">金利が存在しない指令経済で、現金退蔵と闇の高利貸しが資金市場を代替する</p>
+    </header>
+
+    <article>
+<!-- Key Stats -->
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="stat-value">該当なし</div>
+      <div class="stat-label">政策金利・短期市場金利 — 公開市場操作もインターバンク市場も存在しない</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">単一銀行</div>
+      <div class="stat-label">朝鮮中央銀行が発券・出納・配給原資を一手に担うmonobank体制</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">現金・外貨退蔵</div>
+      <div class="stat-label">住民は銀行に預けず、現金とドル・人民元を手元に「マットレス預金」</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">私金融(サグムン)</div>
+      <div class="stat-label">非公式の高利貸し・市場間融通が短期資金市場を代替</div>
+    </div>
+  </div>
+
+  <section>
+    <h2>1. 「金利のない経済」という出発点</h2>
+    <p>
+      他のG10諸国の章では、中央銀行が政策金利を上下させ、その金利が翌日物→3カ月物→2年物へと波及していく仕組みを学んできた。北朝鮮にはその出発点である<strong>政策金利そのものが存在しない</strong>。資金は価格(金利)ではなく、国家計画による物量の割当てで配分される建前だからである。投資・消費・原材料は中央の計画当局が「いくら必要か」を決め、朝鮮中央銀行はその計画に沿って資金を出納・発券するだけの存在だ。
+    </p>
+    <p>
+      このため「短期金利」を主題とする本章では、市場で観測される金利曲線の代わりに、<strong>金利が機能しない経済で短期資金がどう融通されるか</strong>を扱う。結論を先取りすれば、(1)公式銀行は預金・貸出の金融仲介機能をほとんど果たさず、(2)住民は通貨を信用せず現金・外貨で退蔵し、(3)その空白を非公式の高利貸し「サグムン(私金融)」が埋めている。
+    </p>
+
+    <div class="mnemonic-box">
+      <span class="mnemonic-icon">🧠</span>
+      <div class="mnemonic-title">記憶のフック: 金利の代わりに「物量割当」と「インフレ税」</div>
+      <div class="mnemonic-body">
+        北朝鮮では金利が資金配分をしない。代わりに(1)計画当局が物量で割当て、(2)通貨を持ち続けると物価高で価値が目減りする「インフレ税」が、事実上のマイナス実質金利として住民を外貨退蔵へ追い立てる。金利表ではなく米価とドルレートが「短期金利」を語る。
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>2. なぜ預金が成立しないのか — 銀行不信の構造</h2>
+    <p>
+      正常な経済では、預金金利が「現在の消費を我慢して将来に回す対価」として機能する。北朝鮮ではこの前提が二重に崩れている。第一に、<strong>2009年11月のデノミネーション(通貨改革)で住民の銀行・通貨への信頼が決定的に失われた</strong>。100旧ウォン=1新ウォンの交換に上限(10万ウォン)が設けられ、上限を超える現金資産は事実上没収された。コツコツ貯めた住民ほど打撃を受け、「政府に預けた財産は取り上げられる」という記憶が刻まれた。
+    </p>
+    <p>
+      第二に、預金しても受け取れる名目金利は物価上昇に遠く及ばない。公式統計は存在しないが、市場(チャンマダン)の米価や闇市場のドルレートを物価の代理指標として見ると、ウォン建て資産は時期によって急速に価値を失う。2024年初に約8,500ウォンだった闇市場の1ドルは、<strong>2026年4月に約70,100ウォン</strong>(2週間で+29.3%)まで暴落した。ウォンで現金を持つことは、高率の「インフレ税」を払い続けることに等しい。
+    </p>
+
+    <div class="key-number-row">
+      <div class="key-number"><span class="key-number-value">2009</span><span class="key-number-label">デノミで上限超の現金が没収 → 銀行・通貨不信の起点</span></div>
+      <div class="key-number"><span class="key-number-value">10万W</span><span class="key-number-label">交換上限。超過分は紙くずに(後に一部緩和も信頼は崩壊)</span></div>
+      <div class="key-number"><span class="key-number-value">USD/CNY</span><span class="key-number-label">住民の価値保存手段。ウォンより米ドル・人民元を退蔵</span></div>
+    </div>
+
+    <p>
+      結果として、住民は給与や市場での売上をウォンのまま寝かせず、できるだけ早く米ドルや人民元、あるいは現物(米・電化製品・不動産の使用権)に換える。これが「マットレス預金」=銀行を通さない現金・外貨の手元退蔵であり、金融仲介を経由しないため、社会全体の貯蓄が銀行を通じて投資へ回る回路が断たれている。
+    </p>
+  </section>
+
+  <section>
+    <h2>3. 短期資金市場の代替 — 私金融(サグムン)とドンジュ</h2>
+    <p>
+      公式銀行が貸出機能を果たさない以上、商売の元手や緊急の資金需要は非公式に調達するしかない。ここで登場するのが<strong>「ドンジュ(錢主)」と呼ばれる新興の資金保有者</strong>と、彼らが営む高利の私的金融「サグムン(私金融)」である。市場での仕入れ資金、密貿易の運転資金、賄賂の立替えなどが、人的信用と担保(現物・使用権)を頼りに、極めて高い金利で短期に融通される。
+    </p>
+    <p>
+      これは正常な経済の短期金融市場(コール市場・CP市場)に対応する、北朝鮮版の「インフォーマルな短期資金市場」と言える。ただし(1)金利は当局が決める政策金利ではなく当事者間の交渉と信用リスクで決まり、(2)法的保護がなく取締りの対象でもあるため金利には「摘発リスク・プレミアム」が乗り、(3)規模・水準を示す公式統計は存在しない。下表で正常な経済との対比を整理する。
+    </p>
+
+    <div class="table-container">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>機能</th>
+            <th>正常な経済(G10)</th>
+            <th>北朝鮮</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>金利の決定主体</td>
+            <td>中央銀行の政策金利 → 市場で裁定</td>
+            <td class="highlight-red">存在しない。国家計画が物量で割当</td>
+          </tr>
+          <tr>
+            <td>翌日物・短期市場</td>
+            <td>インターバンク/コール市場</td>
+            <td class="highlight-red">なし。代替=私金融(サグムン)の相対取引</td>
+          </tr>
+          <tr>
+            <td>貸し手</td>
+            <td>銀行・MMF・短資会社</td>
+            <td class="highlight-orange">ドンジュ(錢主)など民間の資金保有者</td>
+          </tr>
+          <tr>
+            <td>金利を動かす要因</td>
+            <td>政策金利・インフレ期待・信用リスク</td>
+            <td class="highlight-orange">信用リスク+摘発リスク+為替・物価変動</td>
+          </tr>
+          <tr>
+            <td>家計の貯蓄先</td>
+            <td>銀行預金・投信・債券</td>
+            <td class="highlight-red">現金・外貨・現物の手元退蔵(マットレス預金)</td>
+          </tr>
+          <tr>
+            <td>実質金利</td>
+            <td>名目金利−インフレ率</td>
+            <td class="highlight-red">ウォン保有は大幅マイナス(インフレ税)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>4. 「短期金利」をどう読むか — 米価とドルレートが温度計</h2>
+    <p>
+      正常な経済では、短期金利の上昇は「金融引き締め・資金逼迫」のシグナルだ。北朝鮮で同じ役割を果たすのが<strong>市場の米価と闇市場のドルレート</strong>である。ウォンが売られて米価・ドルレートが急騰する局面は、住民から見れば「ウォンを持つコストが急上昇している」=実質金利が大きくマイナスに振れている状態に相当する。逆に2020〜2021年のCOVID国境封鎖期には、輸入が途絶して外貨需要が消え、逆説的にウォン高(1ドル≒5,000ウォン)・物価安定が起きた。資金市場の代わりに、これらの代理指標が経済の引き締め・緩和を語っている。
+    </p>
+    <p>
+      要するに北朝鮮の「短期金利」は、中央銀行のボタン一つではなく、<strong>住民の通貨不信・外貨退蔵・私金融の摘発リスク・対中貿易の資金需要</strong>といった非公式な力で決まる。次章(13 長期金利)では、同じ「市場が存在しない」前提のまま、長期の資本配分=国家5カ年計画と、観測不能な主権長期金利の代理として対外債務問題を扱う。
+    </p>
+  </section>
+
+  <section>
+    <h2>出典</h2>
+    <ul>
+      <li>韓国銀行 (Bank of Korea)「北朝鮮GDP推計」(2024)</li>
+      <li>Daily NK / NK News Exchange Rate Tracker(闇市場レート, 2026-04: 約70,100 KPW/USD)</li>
+      <li>Wikipedia「2009 North Korean currency reform」/ PIIE「North Korea&#39;s Failed Currency Reform」</li>
+      <li>Wikipedia「Economy of North Korea」「Jangmadang」/ The Diplomat (2025-12)「North Korea&#39;s Jangmadang Free Markets」(ドンジュ・私金融)</li>
+    </ul>
+  </section>
+
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+
+    </footer>
+
+    <nav class="page-nav">
+      <a href="11_bond_market.html" class="prev">債券市場</a>
+      <a href="13_long_rates.html" class="next">長期金利</a>
+    </nav>
+  </main>
+
+  <script src="../assets/enhancer.js"></script>
+  <script defer src="../assets/recall.js"></script>
+  <script src="../assets/tts-reader.js"></script>
+</body>
+</html>

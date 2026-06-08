@@ -18,7 +18,16 @@
     newzealand:  { flag: '🇳🇿', jp: 'ニュージーランド', en: 'New Zealand' },
     canada:      { flag: '🇨🇦', jp: 'カナダ', en: 'Canada' },
     sweden:      { flag: '🇸🇪', jp: 'スウェーデン', en: 'Sweden' },
-    norway:      { flag: '🇳🇴', jp: 'ノルウェー', en: 'Norway' }
+    norway:      { flag: '🇳🇴', jp: 'ノルウェー', en: 'Norway' },
+    /* 地政学・新興地域 (2026-06 expansion) */
+    taiwan:      { flag: '🇹🇼', jp: '台湾', en: 'Taiwan' },
+    hongkong:    { flag: '🇭🇰', jp: '香港', en: 'Hong Kong' },
+    china:       { flag: '🇨🇳', jp: '中国', en: 'China' },
+    northkorea:  { flag: '🇰🇵', jp: '北朝鮮', en: 'North Korea' },
+    vietnam:     { flag: '🇻🇳', jp: 'ベトナム', en: 'Vietnam' },
+    singapore:   { flag: '🇸🇬', jp: 'シンガポール', en: 'Singapore' },
+    iran:        { flag: '🇮🇷', jp: 'イラン', en: 'Iran' },
+    israel:      { flag: '🇮🇱', jp: 'イスラエル', en: 'Israel' }
   };
 
   document.addEventListener('DOMContentLoaded', init);
@@ -122,7 +131,7 @@
       var chip = chips[i];
       if (chip.textContent.indexOf('\uD83C') !== -1) continue; // flag already present
       var href = chip.getAttribute('href') || '';
-      var m = href.match(/(?:^|\/)(us|eurozone|japan|uk|switzerland|australia|newzealand|canada|sweden|norway)\//);
+      var m = href.match(/(?:^|\/)(us|eurozone|japan|uk|switzerland|australia|newzealand|canada|sweden|norway|taiwan|hongkong|china|northkorea|vietnam|singapore|iran|israel)\//);
       if (m && COUNTRY_INFO[m[1]]) {
         chip.insertBefore(
           document.createTextNode(COUNTRY_INFO[m[1]].flag + ' '),

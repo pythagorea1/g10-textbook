@@ -1,0 +1,107 @@
+{
+  "01": {
+    "subtitle": "独立しない中央銀行 — 利子なき「利益率」と制裁下の準備運用",
+    "title_en": "Iran 01: Central Bank (CBI)",
+    "title_ja": "イラン① イラン中央銀行 (CBI)"
+  },
+  "02": {
+    "subtitle": "政策金利なき金利体系 — 預金17%・貸出24%と深いマイナス実質金利",
+    "title_en": "Iran 02: Policy Rate History",
+    "title_ja": "イラン② 政策金利の歴史"
+  },
+  "03": {
+    "subtitle": "石油依存45%・補助金・中銀ファイナンスが生む慢性インフレ",
+    "title_en": "Iran 03: Fiscal Policy",
+    "title_ja": "イラン③ 財政政策"
+  },
+  "04": {
+    "subtitle": "失業9.2%の裏 — 若年・女性・高学歴失業と頭脳流出",
+    "title_en": "Iran 04: Employment",
+    "title_ja": "イラン④ 雇用"
+  },
+  "05": {
+    "subtitle": "40%超が常態 — 制裁・通貨安・中銀ファイナンスの本丸",
+    "title_en": "Iran 05: Inflation",
+    "title_ja": "イラン⑤ インフレ"
+  },
+  "06": {
+    "subtitle": "TEDPIXと4取引所、インフレ避難所と「名目の罠」",
+    "title_en": "Iran 06: Equity Market Overview",
+    "title_ja": "イラン⑥ 株式市場概観"
+  },
+  "07": {
+    "subtitle": "TSE1967設立・革命・戦争による停滞と1990年代の再生",
+    "title_en": "Iran 07: Equity Market (Early)",
+    "title_ja": "イラン⑦ 株式市場(初期)"
+  },
+  "08": {
+    "subtitle": "原則44条の民営化とJCPOA・2018制裁が揺らす市場",
+    "title_en": "Iran 08: Equity Market (Modern)",
+    "title_ja": "イラン⑧ 株式市場(近代)"
+  },
+  "09": {
+    "subtitle": "2020年バブル(210万pt)と市場史上最大の-42%暴落・正義株",
+    "title_en": "Iran 09: Equity Market (Recent)",
+    "title_ja": "イラン⑨ 株式市場(現代)"
+  },
+  "10": {
+    "subtitle": "名目最高値407万ptとドル建て下落 —「名目の罠」と2026戦争",
+    "title_en": "Iran 10: Equity Market (Current)",
+    "title_ja": "イラン⑩ 株式市場(現在)"
+  },
+  "11": {
+    "subtitle": "利子なきスクーク・30%証券・制裁による国際的孤立",
+    "title_en": "Iran 11: Bond Market",
+    "title_ja": "イラン⑪ 債券市場"
+  },
+  "12": {
+    "title_ja": "イラン⑫ 短期金利（利益率）",
+    "title_en": "Short-term Rates",
+    "subtitle": "政策金利なき国 — 預金17%・貸出24%の「利益率」と深いマイナス実質金利"
+  },
+  "13": {
+    "title_ja": "イラン⑬ 長期金利",
+    "title_en": "Long-term Rates",
+    "subtitle": "国債利回り曲線が無い国 — スクークとインフレ期待、為替が信用の物差し"
+  },
+  "14": {
+    "title_ja": "イラン⑭ 通貨（リアル）",
+    "title_en": "Currency (Rial)",
+    "subtitle": "多重為替と闇レート、トマン口語、4ゼロ削除、SWIFT遮断、2026年180万への崩壊"
+  },
+  "15": {
+    "title_ja": "イラン⑮ 金融危機",
+    "title_en": "Financial Crises",
+    "subtitle": "革命・制裁・2020株暴落・2026戦争 — 地政学が起点の危機年表"
+  },
+  "16": {
+    "title_ja": "イラン⑯ 銀行制度",
+    "title_en": "Banking System",
+    "subtitle": "イスラム銀行・コルレス喪失・FATFブラックリスト・国営の脆弱性"
+  },
+  "17": {
+    "title_ja": "イラン⑰ 企業・コーポレート",
+    "title_en": "Corporate",
+    "subtitle": "国有・宗教財団(bonyad)・IRGC系の三層支配と原則44条民営化の実態"
+  },
+  "18": {
+    "title_ja": "イラン⑱ 規制",
+    "title_en": "Regulation",
+    "subtitle": "外貨統制(NIMA/ETS)・輸入優先順位制・価格統制・SEO・制裁コンプライアンス"
+  },
+  "19": {
+    "title_ja": "イラン⑲ 貿易",
+    "title_en": "Trade",
+    "subtitle": "石油・対中依存・影の船団(70→550隻)・人民元決済と東方シフト"
+  },
+  "20": {
+    "title_ja": "イラン⑳ 教訓",
+    "title_en": "Lessons",
+    "subtitle": "制裁適応の限界・名目の罠・多重為替の歪み・資源依存・為替は信用の体温計"
+  },
+  "21": {
+    "title_ja": "イラン㉑ 地政学リスク",
+    "title_en": "Geopolitical Risk",
+    "subtitle": "核/制裁サイクル・対イスラエル戦争・ホルムズ封鎖・後継問題のリスクマトリクス"
+  }
+}

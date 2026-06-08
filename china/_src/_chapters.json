@@ -1,0 +1,107 @@
+{
+  "01": {
+    "subtitle": "独立しない中央銀行 — 国務院傘下で成長・物価・金融安定を担う",
+    "title_en": "China 01: Central Bank (PBoC)",
+    "title_ja": "中国① 中国人民銀行 (PBoC)"
+  },
+  "02": {
+    "subtitle": "二桁高金利から過去最低へ — 7日リバースレポ・LPR・RRRの多層構造",
+    "title_en": "China 02: Policy Rate History",
+    "title_ja": "中国② 政策金利の歴史"
+  },
+  "03": {
+    "subtitle": "中央は低債務、地方は隠れ債務58-60兆元 — 「灰色のサイ」",
+    "title_en": "China 03: Fiscal Policy",
+    "title_ja": "中国③ 財政政策"
+  },
+  "04": {
+    "subtitle": "失業率5%の安定の裏 — 若年失業・戸籍制度・人口減少",
+    "title_en": "China 04: Employment",
+    "title_ja": "中国④ 雇用"
+  },
+  "05": {
+    "subtitle": "1994年24%の高インフレから2020年代のデフレ圧力へ",
+    "title_en": "China 05: Inflation",
+    "title_ja": "中国⑤ インフレ"
+  },
+  "06": {
+    "subtitle": "A株・H株、Stock Connect、国家隊 — 「政策相場」の地図",
+    "title_en": "China 06: Equity Market Overview",
+    "title_ja": "中国⑥ 株式市場概観"
+  },
+  "07": {
+    "subtitle": "1990年取引所開設・南巡講話・WTO加盟・株式分置改革",
+    "title_en": "China 07: Equity Market (Early)",
+    "title_ja": "中国⑦ 株式市場(黎明期)"
+  },
+  "08": {
+    "subtitle": "2007年6092バブル、GFCで-70%、4兆元リバウンド",
+    "title_en": "China 08: Equity Market (Modern)",
+    "title_ja": "中国⑧ 株式市場(近代)"
+  },
+  "09": {
+    "subtitle": "2015年レバレッジ・バブル5178と崩壊、サーキットブレーカー失敗",
+    "title_en": "China 09: Equity Market (Recent)",
+    "title_ja": "中国⑨ 株式市場(現代)"
+  },
+  "10": {
+    "subtitle": "不動産不況の低迷から2024年バズーカ刺激策での反発へ",
+    "title_en": "China 10: Equity Market (Current)",
+    "title_ja": "中国⑩ 株式市場(現在)"
+  },
+  "11": {
+    "subtitle": "世界2位の市場、デフォルト神話の終焉、債券通、「日本化」",
+    "title_en": "China 11: Bond Market",
+    "title_ja": "中国⑪ 債券市場"
+  },
+  "12": {
+    "subtitle": "7日リバースレポ・DR007・RRR — 多層的な短期金利の枠組み",
+    "title_en": "Short-Term Rates",
+    "title_ja": "中国⑫ 短期金利"
+  },
+  "13": {
+    "subtitle": "二桁から3%へ — 長期金利の低下と「日本化」懸念",
+    "title_en": "Long-Term Rates",
+    "title_ja": "中国⑬ 長期金利"
+  },
+  "14": {
+    "subtitle": "管理変動相場・CNY/CNH・資本規制と人民元国際化",
+    "title_en": "Currency (RMB)",
+    "title_ja": "中国⑭ 通貨"
+  },
+  "15": {
+    "subtitle": "株バブル・通貨切下げ・不動産 — 中国危機の三つの顔",
+    "title_en": "Financial Crises",
+    "title_ja": "中国⑮ 金融危機"
+  },
+  "16": {
+    "subtitle": "四大行・政策性銀行・影の銀行と地方中小銀行リスク",
+    "title_en": "Banking System",
+    "title_ja": "中国⑯ 銀行制度"
+  },
+  "17": {
+    "subtitle": "国有と民営の二元・テック規制・VIE・共同富裕",
+    "title_en": "Corporate",
+    "title_ja": "中国⑰ 企業・コーポレート"
+  },
+  "18": {
+    "subtitle": "NFRA・CSRC・資本規制・海外上場とデータ安全",
+    "title_en": "Regulation",
+    "title_ja": "中国⑱ 規制"
+  },
+  "19": {
+    "subtitle": "世界の工場・米中関税戦争・希土類カード・一帯一路",
+    "title_en": "Trade",
+    "title_ja": "中国⑲ 貿易"
+  },
+  "20": {
+    "subtitle": "中所得の罠・投資依存の限界・デフレと日本化",
+    "title_en": "Lessons",
+    "title_ja": "中国⑳ 教訓"
+  },
+  "21": {
+    "subtitle": "米中対立・台湾・半導体・不動産債務・人民元国際化",
+    "title_en": "Geopolitical Risk",
+    "title_ja": "中国㉑ 地政学リスク"
+  }
+}

@@ -1,0 +1,261 @@
+<!-- Chapter 15: Financial Crises & Strait Crises (Taiwan) — FLAGSHIP -->
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value" style="color:var(--accent-red);">-80%</div>
+    <div class="stat-label">1990年バブル崩壊（12,682→2,560、8か月）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value" style="color:var(--accent-red);">3,955</div>
+    <div class="stat-label">2008/11 GFC底値（TAIEX）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value" style="color:var(--accent-orange);">4回</div>
+    <div class="stat-label">台湾海峡危機（1954/58/1996/2022）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value" style="color:var(--accent-green);">30,000</div>
+    <div class="stat-label">2026/1/5 史上初の大台突破（AIブーム）</div>
+  </div>
+</div>
+
+<p>
+台湾の危機史には、他のG10市場には見られない固有の二重構造がある。すなわち、<strong>金融・経済危機</strong>（バブル崩壊・通貨危機・世界不況）と、<strong>地政学的危機</strong>（台湾海峡危機）が交互に、ときに同時に市場を襲ってきた点である。投資家は常に「次の暴落は経済発か、北京発か」を見極めねばならない。本章では、1990年の戦後最大の株式バブル崩壊から、海峡危機、そして2024-25年のAIブームによる史上最高値まで、台湾市場を揺らした衝撃を体系的に整理する。
+</p>
+
+<!-- Chart: TAIEX long-term with crisis annotations -->
+<div id="taiwan-crises-taiex"></div>
+<script>
+ChartBuilder.lines('taiwan-crises-taiex', {
+  title: 'TAIEX 加権指数の長期と主要危機 1986-2026',
+  caption: '出典: 台湾証券取引所(TWSE) mi-5min-hist、Wikipedia "TAIEX"、Focus Taiwan/Taipei Times。1990天井はintraday 12,682、2008/11/21底は3,955.43、2025末28,963.60、2026/1/5に史上初30,000突破。中間年は代表概算。',
+  yUnit: '',
+  yStep: 5000,
+  yRange: [0, 32000],
+  series: [{
+    name: 'TAIEX',
+    color: '#00d4aa',
+    data: [
+      [1986, 1000],[1990.083, 12682],[1990.75, 2560],[1995, 5000],[2000.083, 10202],
+      [2001, 3446],[2003, 4500],[2007, 9809],[2008.833, 3955],[2011, 7072],
+      [2015, 8338],[2018, 9727],[2020.167, 8523],[2021, 18219],[2022.75, 12629],
+      [2023, 17931],[2024, 23035],[2025.917, 28964],[2026.0, 30000]
+    ]
+  }],
+  annotations: [
+    { year: 1990.083, label: '90 天井', color: '#ff6b6b' },
+    { year: 2000.083, label: '00 IT天井', color: '#ff6b6b' },
+    { year: 2008.833, label: '08 GFC底', color: '#ff6b6b' },
+    { year: 2020.167, label: '20 COVID', color: '#ff9f43' },
+    { year: 2026.0, label: '26 3万', color: '#00d4aa' }
+  ]
+});
+</script>
+
+<section>
+  <h2>1. 危機年表 — 経済危機と地政学危機の二重らせん</h2>
+  <p>
+  以下は1990年以降に台湾市場を揺らした主要な危機の一覧である。<span class="highlight-red">赤系</span>が金融・経済危機、<span class="highlight-orange">橙系</span>が地政学（海峡）危機を示す。両者が分かちがたく絡み合うのが台湾の特徴である。
+  </p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>年月</th>
+          <th>危機</th>
+          <th>市場への影響</th>
+          <th>性格</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight-red">
+          <td>1990.02-10</td>
+          <td>株式バブル崩壊</td>
+          <td>TAIEX 12,682 → 2,560（<span class="drawdown-badge">-80%</span>）</td>
+          <td>金融（投機バブル）</td>
+        </tr>
+        <tr class="highlight-orange">
+          <td>1995-96</td>
+          <td>第3次台湾海峡危機</td>
+          <td>株急落・資本流出・米空母派遣</td>
+          <td>地政学</td>
+        </tr>
+        <tr class="highlight-red">
+          <td>1997-98</td>
+          <td>アジア通貨危機</td>
+          <td>TWD 28.7→33台。だが相対的に軽傷</td>
+          <td>金融（通貨）</td>
+        </tr>
+        <tr class="highlight-red">
+          <td>2000.02-2001</td>
+          <td>ITバブル崩壊</td>
+          <td>TAIEX 10,202 → 3,446。初のマイナス成長</td>
+          <td>金融（IT・輸出）</td>
+        </tr>
+        <tr class="highlight-red">
+          <td>2008.09-11</td>
+          <td>リーマンショック</td>
+          <td>TAIEX 底 3,955。重貼現率 3.625%→1.25%</td>
+          <td>金融（世界不況）</td>
+        </tr>
+        <tr class="highlight-orange">
+          <td>2014.03</td>
+          <td>ひまわり学生運動</td>
+          <td>対中サービス貿易協定が頓挫。経済統合に急ブレーキ</td>
+          <td>地政学（対中世論）</td>
+        </tr>
+        <tr class="highlight-red">
+          <td>2020.03</td>
+          <td>COVID-19</td>
+          <td>TAIEX一時8,523。重貼現率1.125%（記録低）→在宅需要でV字</td>
+          <td>金融（パンデミック）</td>
+        </tr>
+        <tr class="highlight-orange">
+          <td>2022.08</td>
+          <td>第4次台湾海峡危機（ペロシ訪台）</td>
+          <td>中国大規模軍事演習・ミサイル台湾上空通過。地政学プレミアム顕在化</td>
+          <td>地政学</td>
+        </tr>
+        <tr class="highlight-orange">
+          <td>2024.05,10</td>
+          <td>頼清徳就任・聯合利剣2024</td>
+          <td>中国軍演習、10月に11発のミサイル発射。緊張の常態化</td>
+          <td>地政学</td>
+        </tr>
+        <tr class="highlight-green">
+          <td>2024-2025</td>
+          <td>AIブーム（危機の逆）</td>
+          <td>TAIEX +28.5%(24)・+25.7%(25)、年末28,964、2026/1に30,000</td>
+          <td>金融（集中リスク蓄積）</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="source"><cite>出典: TWSE、CBC Annual Report、Wikipedia "Fourth Taiwan Strait Crisis"、CSIS ChinaPower、Focus Taiwan。</cite></p>
+</section>
+
+<section>
+  <h2>2. 1990年 — 戦後最大の株式バブル崩壊</h2>
+  <p>
+  台湾の個人投資家文化の原点であり、いまだに語り継がれる伝説的暴落が1990年のバブル崩壊である。1980年代後半、急成長する輸出経済と過剰流動性、そして「全民炒股（国民総株式投機）」とも呼ばれた熱狂のなか、TAIEXはわずか数年で爆騰した。1986年に約1,000だった指数は、<strong>1990年2月にintraday 12,682</strong>の史上最高値に達した。
+  </p>
+  <p>
+  しかしバブルは同年崩壊する。金融引き締め、湾岸危機による原油高、そして過熱への警戒から、TAIEXは同年10月までに<strong>約2,560</strong>へ — わずか8か月で<span class="drawdown-badge">-80%</span>という凄まじい暴落を演じた。多くの個人投資家が破産し、この経験は台湾社会に「株は怖い、しかし無視できない」という独特の投資家心理を刻み込んだ。台湾の高い個人投資家比率と投機的な売買回転率の文化は、この1990年の記憶と切り離せない。
+  </p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">「12,682 → 2,560、8か月で-80%」</div>
+    <div class="mnemonic-body">1990年の台湾バブル崩壊は、ピーク<strong>12,682</strong>からボトム<strong>2,560</strong>へ8か月で<strong>-80%</strong>。日本のバブル崩壊(-80%は数年がかり)よりはるかに急峻だった。台湾の個人投資家文化と投機体質の原点として記憶せよ。</div>
+  </div>
+</section>
+
+<section>
+  <h2>3. 台湾固有の危機 — 海峡危機という「金融イベント」</h2>
+  <p>
+  他国の金融史にはない台湾固有の危機が<strong>台湾海峡危機</strong>である。中国は台湾を自国領と主張し武力行使を放棄しないため、両岸の軍事的緊張は周期的に市場を直撃する。台湾では、軍事演習やミサイル発射が日経平均で言う「リーマンショック」級の金融イベントとして扱われる。
+  </p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>危機</th>
+          <th>引き金</th>
+          <th>中国の行動</th>
+          <th>市場の反応</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>第3次（1995-96）</td>
+          <td>李登輝総統の訪米</td>
+          <td>台湾近海でミサイル演習</td>
+          <td>株急落・資本流出。米が空母2隻を派遣し沈静化</td>
+        </tr>
+        <tr class="highlight-orange">
+          <td>第4次（2022.08）</td>
+          <td>ペロシ米下院議長訪台</td>
+          <td>台湾を取り囲む大規模演習、ミサイルが台湾上空を通過</td>
+          <td>「封鎖シナリオ」懸念で地政学プレミアムが顕在化</td>
+        </tr>
+        <tr>
+          <td>聯合利剣2024（2024.05,10）</td>
+          <td>頼清徳総統の就任</td>
+          <td>「聯合利剣2024A/B」演習、10月に11発のミサイル発射</td>
+          <td>緊張の常態化。市場は織り込みつつも構造的リスク要因に</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>
+  注目すべきは、これらの地政学危機が必ずしも長期的な株安につながらない点である。市場は当初急落しても、軍事衝突に至らなければ比較的速やかに回復してきた。これが「狼少年効果」 — 演習が繰り返されるほど市場の反応が鈍麻する現象 — を生む一方、本当の有事の際にはその慢心が裏目に出るテールリスクを孕む（詳細は第21章）。
+  </p>
+</section>
+
+<section>
+  <h2>4. 危機への耐性 — なぜ台湾は「相対的に軽傷」で済んできたか</h2>
+  <p>
+  台湾は数々の危機を経験しながら、多くの場合「相対的に軽傷」で乗り切ってきた。1997-98年のアジア通貨危機では、周辺国の通貨・経済が壊滅的打撃を受けるなか、台湾は<strong>高い外貨準備と低い対外債務</strong>を盾にTWD下落を28.7→33台程度に抑え、銀行危機を回避した。GFC（2008年）でも、輸出の急減で株価は底値3,955まで沈んだが、健全な財政と金融システムにより比較的早期に立ち直った。
+  </p>
+
+  <div class="key-number-row">
+    <div class="key-number">
+      <span class="key-number-value">高外貨準備</span>
+      <span class="key-number-label">世界有数 — 通貨防衛の盾</span>
+    </div>
+    <div class="key-number">
+      <span class="key-number-value">低対外債務</span>
+      <span class="key-number-label">対外純資産国 — 資本流出に強い</span>
+    </div>
+    <div class="key-number">
+      <span class="key-number-value">健全財政</span>
+      <span class="key-number-label">低国家債務 — 財政出動の余地</span>
+    </div>
+  </div>
+
+  <p>
+  この「危機耐性」の源泉は、第12-14章で見た低金利・高貯蓄・経常黒字・為替管理という台湾の構造そのものである。だが2020年代の最大のリスクは、過去の金融危機とは性質が異なる。AIブームでTAIEXは30,000を突破したが、その上昇は<strong>TSMC一社にTAIEX時価総額の約42%が集中</strong>する極端な構造の上に成り立っている（第17章）。次の危機は、外貨準備では防げない「集中リスク」と「地政学」から来る可能性が高い。
+  </p>
+</section>
+
+<section>
+  <h2>5. 教訓 — 台湾市場の危機を読む3つの視点</h2>
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>視点</th>
+          <th>内容</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>① 二重の震源</td>
+          <td>暴落は「経済発（バブル・世界不況）」と「北京発（海峡危機）」の二系統。投資家は両方を常時監視する必要がある</td>
+        </tr>
+        <tr>
+          <td>② 為替に集中する調整</td>
+          <td>金利でショックを吸収しない構造（第12章）ゆえ、危機の調整はTWDと株価に集中する</td>
+        </tr>
+        <tr>
+          <td>③ 耐性の源泉と新リスク</td>
+          <td>外貨準備・低債務・健全財政が伝統的耐性を支える。だが集中リスク（TSMC42%）と地政学は従来の盾が効かない</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>出典・参考文献</h2>
+  <ol>
+    <li>台湾証券取引所（TWSE）, TAIEX historical data (twse.com.tw/en/indices/taiex/mi-5min-hist.html)</li>
+    <li>Wikipedia, "TAIEX"（1990バブル天井・GFC底）、"Fourth Taiwan Strait Crisis"; CSIS ChinaPower（第4次危機トラッキング）</li>
+    <li>中央銀行（ROC Taiwan）, Annual Report 2009（GFC対応）; CBC Discount Rate 履歴</li>
+    <li>Focus Taiwan / Taipei Times / Taiwan News, 2025年末28,963.60・2026/1/5に30,000突破の報道</li>
+    <li>NPR / NBC News, 2022年ペロシ訪台後の中国軍事演習; Defense News, 2024聯合利剣演習</li>
+  </ol>
+</section>

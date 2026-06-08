@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>イラン - Long-term Rates | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
+  <script defer src="../assets/charts.js"></script>
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇮🇷 イラン</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. 中央銀行</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. 政策金利</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. 財政政策</a>
+      <a href="04_employment.html" class="sidebar-link">04. 雇用</a>
+      <a href="05_inflation.html" class="sidebar-link">05. インフレ</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. 株式市場概観</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. 株式(初期)</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. 株式(近代)</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. 株式(現代)</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. 株式(現在)</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. 債券市場</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. 短期金利</a>
+      <a href="13_long_rates.html" class="sidebar-link active">13. 長期金利</a>
+      <a href="14_currency.html" class="sidebar-link">14. 通貨</a>
+      <a href="15_crises.html" class="sidebar-link">15. 金融危機</a>
+      <a href="16_banking.html" class="sidebar-link">16. 銀行制度</a>
+      <a href="17_corporate.html" class="sidebar-link">17. 企業・コーポレート</a>
+      <a href="18_regulation.html" class="sidebar-link">18. 規制</a>
+      <a href="19_trade.html" class="sidebar-link">19. 貿易</a>
+      <a href="20_lessons.html" class="sidebar-link">20. 教訓</a>
+      <a href="21_geopolitical_risk.html" class="sidebar-link">21. 地政学リスク</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">G10</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+      <div class="sidebar-section-title">地政学・新興地域</div>
+      <div class="country-flags">
+        <a href="../taiwan/01_central_bank.html" class="country-chip">TW</a>
+        <a href="../hongkong/01_central_bank.html" class="country-chip">HK</a>
+        <a href="../china/01_central_bank.html" class="country-chip">CN</a>
+        <a href="../northkorea/01_central_bank.html" class="country-chip">KP</a>
+        <a href="../vietnam/01_central_bank.html" class="country-chip">VN</a>
+        <a href="../singapore/01_central_bank.html" class="country-chip">SG</a>
+        <a href="../iran/01_central_bank.html" class="country-chip active">IR</a>
+        <a href="../israel/01_central_bank.html" class="country-chip">IL</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 ホーム</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10横断年表</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">イラン</a>
+        <span class="sep">/</span>
+        イラン⑬ 長期金利
+      </div>
+      <h1 class="page-title">🇮🇷 イラン⑬ 長期金利</h1>
+      <p class="page-subtitle">国債利回り曲線が無い国 — スクークとインフレ期待、為替が信用の物差し</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">存在せず</div>
+          <div class="stat-label">国際ソブリン債（ユーロ債）市場へのアクセス＝制裁で遮断</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">スクーク</div>
+          <div class="stat-label">利子付き国債に代わるイスラム債（sukuk）・参加証券が中心</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" style="color:var(--accent-orange);">~30%</div>
+          <div class="stat-label">国内イスラム証券の事実上の利回り水準（高インフレを反映）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" style="color:var(--accent-red);">なし</div>
+          <div class="stat-label">参照可能な「10年国債利回り曲線」が観測できない</div>
+        </div>
+      </div>
+
+      <p>
+        多くの国で「長期金利」と言えば10年国債利回りを指す。だがイランには、外国人が自由に売買できる長期国債も、それを束ねた利回り曲線（イールドカーブ）も事実上存在しない。理由は二つ――<strong>イスラム金融が利子付き債券（bond）を禁じている</strong>こと、そして<strong>制裁により国際資本市場（ユーロ債発行・海外投資家）から遮断されている</strong>ことだ。本章では「国債利回りが観測できない国」の長期金融を、その代替手段とインフレ期待から読み解く。
+      </p>
+
+      <div class="key-number-row">
+        <div class="key-number"><span class="key-number-value">0本</span><span class="key-number-label">流通する国際ユーロ債</span></div>
+        <div class="key-number"><span class="key-number-value">スクーク</span><span class="key-number-label">国内債務の中心形態</span></div>
+        <div class="key-number"><span class="key-number-value">~42%</span><span class="key-number-label">長期金利の真の正体＝インフレ期待</span></div>
+      </div>
+
+      <section>
+        <h2>1. なぜイランに「国債利回り曲線」が無いのか</h2>
+        <p>
+          長期金利は本来、「国が将来にわたって資金を借りるコスト」を映す。だがイランでは、その指標が三重の理由で観測しにくい。
+        </p>
+        <ul>
+          <li><strong>イスラム金融の制約</strong>：確定利子（リバー）が禁止されるため、固定クーポンの「国債(bond)」を発行できない。代わりに資産を裏付けとする<strong>スクーク(sukuk)</strong>や事業利益を分け合う<strong>参加証券(Musharakah)</strong>が使われる。</li>
+          <li><strong>制裁による国際市場からの遮断</strong>：イランは米・EU・国連の制裁下にあり、ロンドンやニューヨークでのユーロ債発行はほぼ不可能。外国機関投資家のアクセスも極小。</li>
+          <li><strong>超高インフレ</strong>：年40%超のインフレ下で「10年・20年の固定金利」を約束する長期市場は成立しにくい。投資家は長期を嫌い、短期・実物資産に逃げる。</li>
+        </ul>
+        <p>
+          その結果、イランには「ベンチマークとなる長期金利」が事実上存在しない。長期の資金調達は国内のイスラム証券と銀行融資、そして石油収入に依存し、海外発行はほぼ閉ざされている。
+        </p>
+      </section>
+
+      <section>
+        <h2>2. 利子なき長期金融の道具箱</h2>
+        <p>
+          利子付き国債が使えないイランでは、イスラム金融の枠内で設計された各種の証券が長期資金を調達する。代表的な道具は次の通り。
+        </p>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>道具</th>
+                <th>仕組み</th>
+                <th>性質・利回りの源泉</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="highlight-blue">スクーク (Sukuk)</td>
+                <td>資産（インフラ等）を裏付けに発行する「イスラム債」</td>
+                <td>利子でなく資産のリース料・利益を分配。事実上の長期債務</td>
+              </tr>
+              <tr>
+                <td>参加証券 (Musharakah)</td>
+                <td>事業の共同出資。利益・損失を出資比率で分担</td>
+                <td>プロジェクト・ファイナンス型の長期資金</td>
+              </tr>
+              <tr>
+                <td>イスラム財務証券</td>
+                <td>政府が発行する短中期の財務証券（割引方式）</td>
+                <td>国家の資金繰り。市場で売買され実勢利回りを示す</td>
+              </tr>
+              <tr>
+                <td class="highlight-red">高利付き証券(2024)</td>
+                <td>通貨防衛で発行した年30%相当の証券</td>
+                <td>市中資金をドル買いから国の証券へ吸収</td>
+              </tr>
+              <tr>
+                <td>銀行融資・石油収入</td>
+                <td>国営銀行の長期貸出と石油・ガス収入</td>
+                <td>長期資金の最大の供給源（市場外）</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          これらの国内イスラム証券の実勢利回りは、短期の利益率（貸出24%）と高インフレ期待を反映して、おおむね<strong>20%台後半〜30%程度</strong>とされる。だが二次市場の流動性は限られ、外国人はほぼ参加できない。
+        </p>
+      </section>
+
+      <section>
+        <h2>3. 長期金利の正体は「インフレ期待」</h2>
+        <p>
+          観測可能な長期国債利回りが無い以上、イランの「長期金利」を最もよく代理するのは<strong>インフレ率（とその期待）</strong>である。なぜなら、誰かに長期で資金を貸すとき、最低限インフレ分の購買力低下を補わなければ実質的に損をするからだ。下のチャートはイランのインフレ史であり、これが事実上の「長期金利の床」を形成してきた。
+        </p>
+        <div id="iran-long-inflation-anchor"></div>
+        <script>
+        ChartBuilder.lines('iran-long-inflation-anchor', {
+          title: 'イラン インフレ率の長期推移 (1995-2026, 年平均CPI %) ― 長期金利の真の床',
+          caption: '出典: SCI(イラン統計センター)、CBI、IMF。観測可能な長期国債利回りが存在しないイランでは、長期資金の最低要求利回り＝インフレ期待が長期金利を代理する。2016-17年のJCPOA効果で一桁化した後、2018年制裁再発動で再加速し40%超で高止まり。2019・2024年値は出典により振れ。',
+          yUnit: '%',
+          yRange: [0, 70],
+          yStep: 10,
+          series: [{
+            name: 'インフレ率(年平均CPI)',
+            color: '#ffd93d', width: 2.2,
+            data: [[1995,49.7],[2000,14],[2008,25],[2013,39],[2016,9],[2017,10],[2018,18],[2019,41],[2020,36],[2021,40],[2022,43.5],[2023,44.6],[2024,35],[2025,42],[2026,52]]
+          }],
+          annotations: [
+            { year: 2016, label: '16 JCPOA一桁', color: '#00d4aa' },
+            { year: 2018, label: '18 制裁再発', color: '#ff9f43' },
+            { year: 2023, label: '23 ~45%', color: '#ff6b6b' },
+            { year: 2026, label: '26 ~52%', color: '#b07cff' }
+          ]
+        });
+        </script>
+        <p>
+          このチャートが示すのは、イランの長期金融が直面する「壁」だ。仮に30%の証券を発行しても、インフレが40-50%なら<strong>実質利回りはマイナス</strong>。長期で固定金利を約束する投資家はほとんどおらず、結果として長期市場は痩せ細り、資金は短期・実物資産・外貨へと流れる。
+        </p>
+      </section>
+
+      <section>
+        <h2>4. 国際資本市場からの隔絶</h2>
+        <p>
+          通常の新興国は、外貨建てのソブリン債（ユーロ債）を発行して海外から長期資金を調達する。だがイランは2012年以降の制裁とSWIFTからの遮断、2025年9月の国連スナップバック（制裁全面復活）により、こうした<strong>国際市場での長期資金調達がほぼ不可能</strong>になっている。海外発行ができないということは、①対外的な「イラン10年債利回り」も存在せず、②CDS（信用デフォルト・スワップ）市場も極小で、③国の信用力を市場価格で測る術がないことを意味する。
+        </p>
+        <p>
+          このため、イランの「カントリーリスク」は債券スプレッドではなく、もっぱら<strong>闇ドルレート（リアルの対ドル価値）</strong>に映し出される（第14章）。リアルが崩落すれば、それは市場が突きつける「イラン国債の利回り急騰」と同じ意味を持つ。長期金利が観測できない国では、為替が信用の物差しになるのだ。
+        </p>
+        <div class="mnemonic-box">
+          <span class="mnemonic-icon">🧠</span>
+          <div class="mnemonic-title">覚え方：長期金利が無い国では「為替」が信用の物差し</div>
+          <div class="mnemonic-body">
+            イランには参照できる10年国債利回りもCDSも無い。だから国の信用不安は<strong>債券価格でなくリアル安</strong>に表れる。「国債利回りが見えない国を分析するときは、通貨を国債利回りの代わりに読む」――これが制裁下経済の鉄則だ。
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>5. 含意 ― 長期投資が育たない経済</h2>
+        <p>
+          長期金利市場の不在は、単なる金融上の不便にとどまらない。固定された長期金利という「価格シグナル」が無いため、企業は長期の設備投資資金を調達しにくく、年金・保険のような長期投資家の運用先も乏しい。結果として、貯蓄は<strong>短期・流動的・実物・外貨</strong>に偏り、長期の生産的投資が育ちにくい。これは制裁・高インフレ・イスラム金融という三つの制約が重なったイラン経済の構造的な弱点であり、第20章「教訓」で扱う「資源依存・短期志向の罠」の核心でもある。
+        </p>
+      </section>
+
+      <footer class="sources">
+        <h3>出典・参考文献</h3>
+        <ol>
+          <li>Central Bank of Iran (CBI), イスラム金融・スクーク関連資料.</li>
+          <li>SCI / IMF, インフレ率史（1995-2026）.</li>
+          <li>Consilium (EU理事会), 国連スナップバック（2025-09制裁全面復活）.</li>
+          <li>Iran International, 30%利付き証券（2024-02）.</li>
+        </ol>
+      </footer>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+
+    </footer>
+
+    <nav class="page-nav">
+      <a href="12_short_rates.html" class="prev">短期金利</a>
+      <a href="14_currency.html" class="next">通貨</a>
+    </nav>
+  </main>
+
+  <script src="../assets/enhancer.js"></script>
+  <script defer src="../assets/recall.js"></script>
+  <script src="../assets/tts-reader.js"></script>
+</body>
+</html>

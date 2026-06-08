@@ -1,0 +1,127 @@
+<!-- ===== 12 短期金利 / Short-term Rates ===== -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">SORA</div>
+    <div class="stat-label">唯一の主要ベンチマーク（2024年〜）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">≈2.0%</div>
+    <div class="stat-label">短期金利の概ねの水準（2026年）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">政策金利なし</div>
+    <div class="stat-label">MASは金利でなく為替を操作</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">2024/1/1</div>
+    <div class="stat-label">SIBOR/SOR 完全廃止</div>
+  </div>
+</div>
+
+<section>
+  <h2>金利を「決めない」中央銀行</h2>
+  <p>シンガポールの短期金利を理解する出発点は、<strong>MAS（シンガポール金融管理庁）が政策金利を一切設定しない</strong>という事実である。米FRBのFFレート、日銀の無担保コール翌日物のような「政策金利」は存在しない。MASの金融政策手段は<strong>シンガポールドルの名目実効為替レート（S$NEER）バンド</strong>ただ一つであり、国内短期金利はそこから<strong>内生的（endogenously）に決まる</strong><cite>[1]</cite>。</p>
+  <p>なぜそうなるのか。シンガポールは資本移動が完全に自由で、SGDは完全交換性を持つ小国開放経済である。経済学の「<strong>不可能の三角形（トリレンマ）</strong>」によれば、(1)自由な資本移動、(2)為替の安定（管理）、(3)独立した金融政策（金利の独自設定）の3つを同時には実現できない。MASは(1)と(2)を選び、(3)を放棄した。その結果、国内金利はおおむね<strong>「世界の金利（特に米ドル金利）− SGD増価期待」</strong>という金利平価（uncovered interest parity）の関係に縛られる<cite>[1][2]</cite>。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">記憶のフック：「金利は結果、為替が原因」</div>
+    <div class="mnemonic-body">他国は「金利を上げ下げ→為替が動く」。シンガポールは逆で「為替（NEERスロープ）を傾ける→金利がついてくる」。MASがSGD増価を速めれば、増価期待のぶんだけ国内金利は米金利より低くてよい、という金利平価が効く。だから2010年代の多くの局面でSORA系金利は米金利を下回って推移した。</div>
+  </div>
+</section>
+
+<section>
+  <h2>SGD短期金利の歴史（1998–2026）</h2>
+  <p>下のチャートは、3か月物の代表的な短期金利（かつてのSIBOR、現在は複利SORAに相当する水準）の推移である。値は各局面の代表値・概算で、グローバル金利サイクルとMASの為替政策の合成として動いてきた<cite>[2]</cite>。</p>
+
+  <div id="sg-shortrate"></div>
+  <script>
+  ChartBuilder.lines('sg-shortrate', {
+    title: 'シンガポール 短期金利の推移 1998–2026（3M SIBOR → SORA 相当、代表値・概算）',
+    caption: '出典: MAS（SORA）、市場データ。各点は局面の代表値で概算。政策金利は存在せず、グローバル金利＋為替政策の合成として内生的に決まる。',
+    yUnit: '%',
+    yRange: [0, 6],
+    yStep: 1,
+    series: [{
+      name: '3M金利 (SIBOR→SORA相当)',
+      color: '#00d4aa',
+      data: [[1998,5.0],[2001,2.0],[2004,1.0],[2007,2.5],[2009,0.7],[2012,0.4],
+             [2015,1.0],[2019,1.9],[2020,0.4],[2022,3.0],[2023,3.7],[2024,3.5],
+             [2025,2.8],[2026.06,2.0]]
+    }],
+    annotations: [
+      { year: 1998, label: 'アジア危機', color: '#ff6b6b' },
+      { year: 2009, label: 'GFC', color: '#ff9f43' },
+      { year: 2020, label: 'COVID 0.4%', color: '#5b8def' },
+      { year: 2023, label: '高水準3.7%', color: '#ffd93d' },
+      { year: 2024, label: 'SOR廃止', color: '#b07cff' },
+      { year: 2026.06, label: '≈2.0%', color: '#00d4aa' }
+    ]
+  });
+  </script>
+
+  <p>特徴的なのは、<strong>米金利が動くとSGD金利もほぼ連動して動く</strong>一方で、増価バンドの傾き（スロープ）が急なほど両者の差（金利スプレッド）が開く点である。2022年に世界的なインフレでFRBが急速に利上げすると、MASは「為替政策での実質的な引締め」（バンドの再センター＋スロープ急傾斜）で対応し、SGD短期金利も3%超へ跳ね上がった。これは金利を直接動かさずに金融環境を引き締めた好例である<cite>[2][3]</cite>。</p>
+</section>
+
+<section>
+  <h2>SIBORからSORAへ — ベンチマーク改革</h2>
+  <p>2024年1月1日、シンガポールは長年使われた銀行間調達金利<strong>SIBOR（Singapore Interbank Offered Rate）</strong>と、為替スワップ由来の<strong>SOR（Swap Offer Rate）</strong>を完全に廃止した。世界的なLIBOR改革（パネル銀行の見積もりに依存する金利は操作リスクがある）と歩調を合わせ、実取引に基づく<strong>SORA</strong>へ一本化したものである<cite>[4]</cite>。</p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>ベンチマーク</th><th>性質</th><th>状態</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>SORA</strong><br>Singapore Overnight Rate Average</td>
+          <td>実際の無担保翌日物取引の加重平均。MASが算出・公表。複利後方参照で住宅ローン等に使用</td>
+          <td><span class="highlight-green">現行・唯一の主要指標</span></td>
+        </tr>
+        <tr>
+          <td>SIBOR</td>
+          <td>パネル銀行の提示レートに依存（LIBOR型）。住宅ローンの主流だった</td>
+          <td><span class="highlight-red">2024/1/1 廃止</span></td>
+        </tr>
+        <tr>
+          <td>SOR</td>
+          <td>USD/SGDスワップから逆算した金利。米ドル金利と為替の影響を強く受ける</td>
+          <td><span class="highlight-red">2024/1/1 廃止</span></td>
+        </tr>
+        <tr>
+          <td>MAS Bills / SGS T-bills</td>
+          <td>MASが流動性調節に用いる短期国庫証券。リスクフリー金利の基準</td>
+          <td><span class="highlight-blue">現行</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>住宅ローンの世界では、かつて「3M SIBOR連動」が標準だったが、現在は<strong>複利SORA（Compounded SORA）連動</strong>が主流になった。後方参照型の複利平均のため、SIBOR時代より金利のブレが小さく透明性が高い。借り手にとっては、自分のローン金利が「過去3か月の翌日物の実績平均」で決まるイメージである<cite>[4]</cite>。</p>
+
+  <div class="key-number-row">
+    <div class="key-number">
+      <span class="key-number-value">2024/1/1</span>
+      <span class="key-number-label">SIBOR・SOR 廃止日</span>
+    </div>
+    <div class="key-number">
+      <span class="key-number-value">翌日物</span>
+      <span class="key-number-label">SORAの参照期間</span>
+    </div>
+    <div class="key-number">
+      <span class="key-number-value">複利後方参照</span>
+      <span class="key-number-label">住宅ローンの新標準</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>MASはどう短期金利を「微調整」するか</h2>
+  <p>政策金利を持たないとはいえ、MASは日々の短期金融市場を放置しているわけではない。MASは<strong>マネー・マーケット・オペレーション</strong>を通じて銀行システムの流動性を調節し、翌日物金利が極端に振れないようにしている<cite>[1][2]</cite>。</p>
+  <ul>
+    <li><strong>MAS Bills</strong>の発行・吸収による流動性のコントロール。</li>
+    <li><strong>FXスワップ</strong>（為替スワップ）でのSGD流動性供給・吸収。シンガポールは為替を起点にするため、金利調整も為替スワップ経由が大きい。</li>
+    <li><strong>常設ファシリティ（Standing Facility）</strong>による翌日物の上下限の画定。</li>
+  </ul>
+  <p>ただしこれらはあくまで<strong>「為替政策と整合的な範囲での微調整」</strong>であり、金利水準そのものを目標にしているわけではない。最終的な短期金利の趨勢は、米金利とSGD増価期待が決める。これが「政策金利を持たない国」の短期金利市場の本質である<cite>[2]</cite>。</p>
+</section>

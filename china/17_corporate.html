@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>中国 - Corporate | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
+  <script defer src="../assets/charts.js"></script>
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇨🇳 中国</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. 中央銀行</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. 政策金利</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. 財政政策</a>
+      <a href="04_employment.html" class="sidebar-link">04. 雇用</a>
+      <a href="05_inflation.html" class="sidebar-link">05. インフレ</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. 株式市場概観</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. 株式(初期)</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. 株式(近代)</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. 株式(現代)</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. 株式(現在)</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. 債券市場</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. 短期金利</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. 長期金利</a>
+      <a href="14_currency.html" class="sidebar-link">14. 通貨</a>
+      <a href="15_crises.html" class="sidebar-link">15. 金融危機</a>
+      <a href="16_banking.html" class="sidebar-link">16. 銀行制度</a>
+      <a href="17_corporate.html" class="sidebar-link active">17. 企業・コーポレート</a>
+      <a href="18_regulation.html" class="sidebar-link">18. 規制</a>
+      <a href="19_trade.html" class="sidebar-link">19. 貿易</a>
+      <a href="20_lessons.html" class="sidebar-link">20. 教訓</a>
+      <a href="21_geopolitical_risk.html" class="sidebar-link">21. 地政学リスク</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">G10</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+      <div class="sidebar-section-title">地政学・新興地域</div>
+      <div class="country-flags">
+        <a href="../taiwan/01_central_bank.html" class="country-chip">TW</a>
+        <a href="../hongkong/01_central_bank.html" class="country-chip">HK</a>
+        <a href="../china/01_central_bank.html" class="country-chip active">CN</a>
+        <a href="../northkorea/01_central_bank.html" class="country-chip">KP</a>
+        <a href="../vietnam/01_central_bank.html" class="country-chip">VN</a>
+        <a href="../singapore/01_central_bank.html" class="country-chip">SG</a>
+        <a href="../iran/01_central_bank.html" class="country-chip">IR</a>
+        <a href="../israel/01_central_bank.html" class="country-chip">IL</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 ホーム</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10横断年表</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">中国</a>
+        <span class="sep">/</span>
+        中国⑰ 企業・コーポレート
+      </div>
+      <h1 class="page-title">🇨🇳 中国⑰ 企業・コーポレート</h1>
+      <p class="page-subtitle">国有と民営の二元・テック規制・VIE・共同富裕</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">SOE vs 民営</div>
+          <div class="stat-label">国有企業と民営企業の「二元構造」が中国経済の骨格</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">2020.11</div>
+          <div class="stat-label">アント上場中止 — テック規制強化（プラットフォーム叩き）の号砲</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">VIE</div>
+          <div class="stat-label">外資規制を迂回する変動持分事業体（海外上場の標準スキーム）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">共同富裕</div>
+          <div class="stat-label">「Common Prosperity」— 格差是正と再分配の政策スローガン</div>
+        </div>
+      </div>
+
+      <section>
+        <h2>1. 国有企業（SOE）と民営企業の二元構造</h2>
+        <p>
+          中国の企業セクターを理解する出発点は、<strong>国有企業（SOE：State-Owned Enterprise）と民営企業（民企）の二元構造</strong>だ。エネルギー・通信・金融・鉄道などの「国民経済の命脈」は国有企業が握り、その多くは中央の国有資産監督管理委員会（SASAC）の管理下にある。一方、雇用・輸出・イノベーションの大半を担うのは民営企業（アリババ、テンセント、BYD、華為=ファーウェイなど）だ。
+        </p>
+        <p>
+          「<strong>国進民退（国有が進み民営が退く）</strong>」か「民営の活力重視」かは、時の政策によって振り子のように揺れる。資金調達でも、国有企業は国有銀行から有利な条件で借りやすく、民営は不利に置かれやすい（信用配分の偏り）。この非対称性が、中国経済の効率性を語るうえで繰り返し論点になる。
+        </p>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>論点</th>
+                <th>国有企業（SOE）</th>
+                <th>民営企業（民企）</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="highlight-blue">領域</td>
+                <td>エネルギー・通信・金融・鉄道など命脈産業</td>
+                <td>製造・小売・IT・EV・輸出</td>
+              </tr>
+              <tr>
+                <td>資金調達</td>
+                <td class="highlight-green">国有銀行から有利に借入</td>
+                <td class="highlight-orange">不利・高コストになりがち</td>
+              </tr>
+              <tr>
+                <td>経済への寄与</td>
+                <td>戦略・安定・政策実行</td>
+                <td>雇用・輸出・イノベーションの大半</td>
+              </tr>
+              <tr>
+                <td>ガバナンス</td>
+                <td>党委員会の関与・SASAC管理</td>
+                <td>創業者主導だが党の関与が強まる</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>2. 混合所有制改革と「党は企業の中に」</h2>
+        <p>
+          1990年代以降、当局は非効率な国有企業に民間資本を入れる<strong>「混合所有制改革（混改）」</strong>を進めてきた。狙いは経営効率の向上だが、同時に近年は<strong>党組織の企業内での役割強化</strong>が進み、上場企業の定款に党委員会の位置づけを明記する動きも広がった。さらに、戦略的に重要な民営企業に政府が少数株（いわゆる「黄金株／特殊管理株」）を取得し、影響力を確保する事例も現れている。つまり「所有」と「統治」の両面で、<strong>国家のプレゼンスは縮小ではなく深化</strong>しているのが実態だ。
+        </p>
+      </section>
+
+      <section>
+        <h2>3. テック規制強化（2020–21）の衝撃</h2>
+        <p>
+          2010年代に急成長したプラットフォーム企業（アリババ、テンセント、滴滴=ディディ、美団など）は、2020年末から<strong>一斉に規制の標的</strong>となった。号砲は2020年11月、<strong>アント・グループ（Ant Group）の超大型IPOが上場直前に突然中止</strong>された事件だ。以後、独占禁止・データ安全・金融リスク・未成年保護・教育産業（学習塾の非営利化）など、多方面で規制が強化された。
+        </p>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>時期</th>
+                <th>出来事</th>
+                <th>狙い・含意</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2020.11</td>
+                <td class="event-crisis">アント・グループIPO中止</td>
+                <td>金融リスク管理・創業者への警告</td>
+              </tr>
+              <tr>
+                <td>2021.04</td>
+                <td class="event-crisis">アリババに独禁法 約182億元の制裁金</td>
+                <td>「二者択一」など独占的慣行の是正</td>
+              </tr>
+              <tr>
+                <td>2021.07</td>
+                <td class="event-crisis">滴滴（DiDi）への審査・アプリ削除</td>
+                <td>データ安全・海外上場の管理（後述）</td>
+              </tr>
+              <tr>
+                <td>2021.07</td>
+                <td class="event-crisis">学習塾（教育）の非営利化「双減」</td>
+                <td>教育格差是正、関連株が暴落</td>
+              </tr>
+              <tr>
+                <td>2021–</td>
+                <td>ゲーム・未成年保護・アルゴリズム規制</td>
+                <td>社会的コントロールの強化</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          この一連の規制は、海外投資家に「<strong>中国企業への投資は政治リスクと不可分</strong>」という強烈な教訓を残し、中国株（特に米国上場のADR）のバリュエーションを長く押し下げた。2023年以降、当局は経済減速を受けて民営経済を再び支援する姿勢に転じたが、一度損なわれた信認の回復には時間がかかっている。
+        </p>
+      </section>
+
+      <section>
+        <h2>4. VIEストラクチャーと共同富裕</h2>
+        <p>
+          中国のテック企業の多くは、外資規制の厳しい業種（インターネット等）で海外上場するために<strong>VIE（Variable Interest Entity：変動持分事業体）</strong>という特殊なスキームを用いてきた。これは、海外の上場会社が中国国内の事業会社を「契約上」支配する仕組みで、株主は事業会社を直接所有していない。法的にグレーゾーンであり、当局が方針を変えれば一夜にして価値が毀損しうる<strong>構造的リスク</strong>を内包する。
+        </p>
+        <p>
+          こうした統制強化の背景にあるのが、習近平政権が掲げる<strong>「共同富裕（Common Prosperity）」</strong>だ。高成長で広がった格差を是正し、富を再分配するというスローガンで、テック大手や富裕層に「自発的な寄付」を促す圧力としても作用した。市場にとっては、<strong>企業の利益最大化より社会・政治目標が優先されうる</strong>ことを示すシグナルとなった。
+        </p>
+        <div class="mnemonic-box">
+          <span class="mnemonic-icon">🧠</span>
+          <div class="mnemonic-title">覚え方：中国企業は「市場 ＋ 党」で動く</div>
+          <div class="mnemonic-body">
+            中国企業の行動は、需給と利益だけでなく<strong>党・政府の政策目標</strong>に強く規定される。①SOEと民営の二元、②混改でも深まる党の関与、③2020-21テック規制の衝撃、④VIEの法的脆弱性、⑤共同富裕の再分配圧力——これらは「中国株のディスカウント（政治リスク・プレミアム）」の正体である。投資判断では、財務だけでなく<strong>政策の風向き</strong>を読む必要がある。
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+
+    </footer>
+
+    <nav class="page-nav">
+      <a href="16_banking.html" class="prev">銀行制度</a>
+      <a href="18_regulation.html" class="next">規制</a>
+    </nav>
+  </main>
+
+  <script src="../assets/enhancer.js"></script>
+  <script defer src="../assets/recall.js"></script>
+  <script src="../assets/tts-reader.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">存在しない</div>
+    <div class="stat-label">公開株式市場も証券取引所も存在しない</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">0社</div>
+    <div class="stat-label">上場企業ゼロ。すべての企業は国有または軍需</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">中朝貿易</div>
+    <div class="stat-label">「景況」の代理指標として用いる中朝貿易額</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">$2.74B</div>
+    <div class="stat-label">2025年の中朝貿易額（双方向合計）</div>
+  </div>
+</div>
+
+<section>
+  <h2>なぜ社会主義指令経済に株式市場が無いのか</h2>
+  <p>北朝鮮には株式市場が存在しない。証券取引所もなく、上場企業もゼロである。これは「まだ発展していないから」ではなく、<strong>体制原理そのものが株式市場を不要かつ禁忌としている</strong>からだ。株式市場とは、企業が不特定多数の投資家から資本を調達し、その所有権（株式）が市場で売買される仕組みである。しかし北朝鮮では生産手段の私有が原則として認められず、すべての企業は国有か軍需（第二経済委員会）に属する。資本の配分は市場ではなく<strong>国家の5カ年計画</strong>が担う。所有権を売買する市場は、その存在自体が私有財産制を前提とするため、社会主義指令経済とは根本的に相容れない<cite>[1]</cite>。</p>
+  <p>したがって本テキストの「株式市場」章（第6〜10章）は、北朝鮮については<strong>翻案</strong>して扱う。株価指数の代わりに経済全体の「景況」を映す代理指標として<strong>中朝貿易額</strong>を用い、株式市場の代替として近年台頭する<strong>非公式市場（チャンマダン）と私的資本蓄積</strong>の歴史を追う。第7〜10章で、市場の黎明（1990年代飢饉）から制度的定着、そして現在までを時系列で叙述する。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">記憶のフック：「指数の代わりに国境の貿易額」</div>
+    <div class="mnemonic-body">株価指数が無い北朝鮮で経済の体温を測るなら、中朝国境を越える貿易額が最も雄弁だ。対外貿易の約98%が中国相手であり、その増減は制裁・国境封鎖・体制の意思を映す。「北朝鮮のダウ平均は、中朝貿易額である」と覚えよう。</div>
+  </div>
+</section>
+
+<section>
+  <h2>資本配分の代替メカニズム</h2>
+  <p>市場経済では、株式・債券市場が貯蓄を投資へ振り向ける「資本配分」を担う。北朝鮮ではこれを国家計画が代替するが、その仕組みと近年の変化を整理すると次のようになる。</p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>機能</th>
+          <th>市場経済（株式市場）</th>
+          <th>北朝鮮の代替</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>資本調達</td>
+          <td>株式発行で広く資金を集める</td>
+          <td class="highlight-orange">国家予算からの計画的配分</td>
+        </tr>
+        <tr>
+          <td>所有権</td>
+          <td>株式として市場で売買</td>
+          <td class="highlight-red">国有が原則。私的売買は不可</td>
+        </tr>
+        <tr>
+          <td>価格発見</td>
+          <td>株価が企業価値を映す</td>
+          <td class="highlight-red">価格発見機能なし</td>
+        </tr>
+        <tr>
+          <td>私的投資の芽</td>
+          <td>個人が株式を保有</td>
+          <td class="highlight-blue">ドンジュが市場・不動産・サービスへ投資</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>注目すべきは表の最終行だ。1990年代以降、市場（チャンマダン）で富を蓄えた<strong>ドンジュ（錢主）</strong>と呼ばれる新興資本家層が現れ、私的に商業・運送・不動産・サービス業へ資金を投じ始めた。これは制度化された株式市場ではないが、<strong>「私的資本蓄積と投資」という資本市場の原初的機能</strong>が、国家の統制の隙間で芽生えていることを意味する。第7〜10章はこの萌芽の歴史である<cite>[2]</cite>。</p>
+</section>
+
+<section>
+  <h2>「景況指標」としての中朝貿易額</h2>
+  <p>株価指数の代わりに北朝鮮経済の浮き沈みを示すのが、下の中朝貿易額チャートである。対外貿易の約98%（2024年）を中国が占めるため、この一本のグラフが制裁・国境封鎖・体制の意思決定を映す「景気の鏡」となる。</p>
+
+  <div id="nk-china-trade"></div>
+  <script>
+  ChartBuilder.lines('nk-china-trade', {
+    title: '中朝貿易額 2000-2025（双方向合計・10億USD）＝景況の代替指標',
+    caption: '出典: KOTRA、中国税関統計、Daily NK。公開株式指数が存在しないため、経済の景況プロキシとして中朝貿易額を使用。2000-2014は概算。',
+    yUnit: '',
+    yRange: [0, 7.5],
+    series: [{
+      name: '中朝貿易額（10億USD）',
+      color: '#00d4aa',
+      data: [[2000, 0.49], [2005, 1.58], [2008, 2.79], [2011, 5.6], [2014, 6.86],
+        [2016, 6.06], [2017, 5.0], [2018, 2.7], [2019, 2.8], [2020, 0.54],
+        [2021, 0.32], [2022, 1.03], [2023, 2.3], [2024, 2.2], [2025, 2.74]]
+    }],
+    annotations: [
+      { year: 2014, label: 'ピーク6.9B', color: '#00d4aa' },
+      { year: 2018, label: '制裁で半減', color: '#ff9f43' },
+      { year: 2020.5, label: '封鎖崩壊', color: '#ff6b6b' },
+      { year: 2025, label: '回復2.7B', color: '#5b8def' }
+    ]
+  });
+  </script>
+
+  <p>このチャートは北朝鮮経済が外部要因にいかに翻弄されるかを示す。2014年に約69億ドルのピークを記録した後、2017年の国連制裁（石炭・繊維禁輸）で半減し、2020〜2021年のCOVID国境封鎖では<strong>わずか3〜5億ドルへ崩壊</strong>した。封鎖解除後は回復に転じ、2025年には約27億ドルまで戻している。株価指数のように日々動く市場はないが、この貿易額の起伏こそが北朝鮮の「景気循環」を物語る<cite>[3]</cite>。貿易の詳細は第19章で扱う。</p>
+
+  <div class="key-number-row">
+    <div class="key-number">
+      <span class="key-number-value">約98%</span>
+      <span class="key-number-label">対外貿易に占める中国の割合（2024）</span>
+    </div>
+    <div class="key-number">
+      <span class="key-number-value">$6.9B</span>
+      <span class="key-number-label">中朝貿易額のピーク（2014）</span>
+    </div>
+    <div class="key-number">
+      <span class="key-number-value">$0.32B</span>
+      <span class="key-number-label">COVID封鎖でのボトム（2021）</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>出典・参考文献</h2>
+  <ol>
+    <li>Wikipedia, "Economy of North Korea"（指令経済と国有制）</li>
+    <li>The Diplomat（2025-12）"North Korea's Jangmadang Free Markets"; Wikipedia, "Jangmadang"（ドンジュと私的資本）</li>
+    <li>KOTRA / 中国税関統計; Daily NK（中朝貿易額）</li>
+  </ol>
+</section>

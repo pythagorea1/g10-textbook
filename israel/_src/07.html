@@ -1,0 +1,91 @@
+<!-- Key Stats -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">1953年</div>
+    <div class="stat-label">TASE (テルアビブ証券取引所) 設立</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">1992年</div>
+    <div class="stat-label">TA指数の算出開始 (基準=100)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">約500</div>
+    <div class="stat-label">TA指数の2000年ドットコム期水準</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">100万人</div>
+    <div class="stat-label">1990年代の旧ソ連からの移民流入</div>
+  </div>
+</div>
+
+<p>イスラエル株式市場の「初期」を理解する鍵は、<strong>1985年の経済安定化計画と1990年代の大量移民</strong>という2つの転換にある。ハイパーインフレを克服して資本市場が機能し始め、旧ソ連から流入した100万人規模の高技能人材が後のハイテク立国の土台を築いた。本章では、TASEの発展、1992年の指数算出開始、そして2000年のドットコム期までを追う。</p>
+
+<!-- Chart: TA index early -->
+<div id="israel-ta35-early"></div>
+<script>
+ChartBuilder.lines('israel-ta35-early', {
+  title: 'TA指数の黎明期 1992-2002（基準=100）',
+  caption: '出典: TASE / Wikipedia "TA-35 Index"。確証アンカー: 1992年基準=100、2000年ドットコム期≈500。中間（1994-1998・2002）はアンカー間のスムージング代表値。1992年は安定化計画後に資本市場が機能し始めた時期と重なる。',
+  yUnit: '',
+  yStep: 100,
+  yRange: [0, 600],
+  series: [{
+    name: 'TA指数',
+    color: '#00d4aa',
+    data: [[1992,100],[1994,150],[1996,230],[1998,330],[2000,500],[2002,330]]
+  }],
+  annotations: [
+    { year: 1992, label: '基準100', color: '#5b8def' },
+    { year: 2000, label: 'IT期500', color: '#00d4aa' },
+    { year: 2002, label: 'インティファーダ', color: '#ff6b6b' }
+  ]
+});
+</script>
+
+<section>
+  <h2>安定化が生んだ資本市場（1985–1992）</h2>
+  <p>テルアビブ証券取引所（TASE）自体は1953年から存在したが、慢性インフレと国家統制の強い経済の下では、株式市場は資本配分の中心ではなかった。状況を変えたのが<strong>1985年の経済安定化計画</strong>である。インフレが沈静し、新シェケル（1986年）への信認が回復すると、はじめて「将来のキャッシュフローを長期で評価する」株式投資が成り立つ環境が整った<cite>[1]</cite>。</p>
+  <p>市場整備の象徴が、<strong>1992年のTA指数（基準=100）算出開始</strong>である。これは、安定化を経たイスラエルの資本市場が、国際基準のベンチマークを持つ「普通の市場」へと脱皮したことを意味した。以後、銀行・保険・通信・不動産といった伝統産業が指数の中心を成し、徐々にハイテク企業が加わっていく。</p>
+</section>
+
+<section>
+  <h2>100万人の移民 — ハイテク立国の人的資本</h2>
+  <p>1990年代初頭、ソ連崩壊に伴い<strong>旧ソ連圏から約100万人の移民</strong>がイスラエルに流入した。人口が一気に2割近く増えるこの大移民の中には、科学者・技術者・エンジニアが多数含まれていた。彼らの高い人的資本が、1990年代後半から2000年代にかけての<strong>ハイテク・スタートアップの爆発的成長</strong>の土台となった<cite>[2]</cite>。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">スタートアップ国家の起点は「移民」</div>
+    <div class="mnemonic-body">イスラエルのハイテク立国は偶然ではない。①1985安定化で<strong>安定した通貨・市場</strong>、②1990年代に旧ソ連から<strong>100万人の高技能移民</strong>、③軍（8200部隊など）で鍛えた<strong>技術人材</strong>——この3つが1990年代後半に重なり、スタートアップ国家が立ち上がった。「人的資本」こそ資源なき小国の最大の資産。</div>
+  </div>
+</section>
+
+<section>
+  <h2>ドットコム期とインティファーダ（1995–2002）</h2>
+  <p>1990年代後半、世界的なITブームのなかでイスラエルのハイテク企業も急成長し、TA指数は<strong>2000年に約500</strong>（1992年比5倍）まで上昇した。この時期、多くのイスラエル企業が米NASDAQへの上場を選び、「二重上場」構造の原型が形成された（第6章参照）<cite>[3]</cite>。</p>
+  <p>だが2000年代初頭、市場は二重の打撃を受ける。ひとつは<strong>世界的なITバブル崩壊</strong>、もうひとつが<strong>第2次インティファーダ（2000–2002年）</strong>という治安の急激な悪化である。観光・投資が冷え込み、シェケルは最弱圏（約4.9シェケル/ドル）まで下落、TA指数も大きく調整した。この「IT崩壊＋地政学ショック」の同時発生は、イスラエル市場が<strong>世界の景気循環と中東情勢の両方に晒される</strong>という固有の構造を、初めて鮮明に示した出来事であった。次章では、この調整からリーマンショックまでの「近代」を追う。</p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>時期</th><th>出来事</th><th>市場への影響</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1953</td><td>TASE設立</td><td>証券市場の制度的出発点</td></tr>
+        <tr><td>1985–86</td><td>経済安定化計画・新シェケル</td><td>株式投資が成立する環境が整う</td></tr>
+        <tr><td>1990s初</td><td>旧ソ連から100万人移民</td><td>ハイテク人材の流入</td></tr>
+        <tr><td>1992</td><td>TA指数算出開始（基準=100）</td><td>国際基準のベンチマーク誕生</td></tr>
+        <tr><td>1990s後半</td><td>ITブーム・NASDAQ上場ラッシュ</td><td>指数上昇・二重上場構造の形成</td></tr>
+        <tr><td>2000–2002</td><td>ITバブル崩壊＋第2次インティファーダ</td><td>指数調整・シェケル最弱圏</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<footer class="sources">
+  <h3>出典・参考文献</h3>
+  <ol>
+    <li>Wikipedia "TA-35 Index"（1992基準100）、TASE沿革、1985安定化計画</li>
+    <li>1990年代の旧ソ連移民（約100万人）、Startup Nation Central（人的資本論）</li>
+    <li>NASDAQ上場イスラエル企業の歴史、第2次インティファーダ（2000–2002）、ILS最弱圏4.9</li>
+  </ol>
+</footer>

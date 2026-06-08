@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>シンガポール - Short-term Rates | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
+  <script defer src="../assets/charts.js"></script>
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇸🇬 シンガポール</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. 中央銀行</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. 政策金利</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. 財政政策</a>
+      <a href="04_employment.html" class="sidebar-link">04. 雇用</a>
+      <a href="05_inflation.html" class="sidebar-link">05. インフレ</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. 株式市場概観</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. 株式(初期)</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. 株式(近代)</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. 株式(現代)</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. 株式(現在)</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. 債券市場</a>
+      <a href="12_short_rates.html" class="sidebar-link active">12. 短期金利</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. 長期金利</a>
+      <a href="14_currency.html" class="sidebar-link">14. 通貨</a>
+      <a href="15_crises.html" class="sidebar-link">15. 金融危機</a>
+      <a href="16_banking.html" class="sidebar-link">16. 銀行制度</a>
+      <a href="17_corporate.html" class="sidebar-link">17. 企業・コーポレート</a>
+      <a href="18_regulation.html" class="sidebar-link">18. 規制</a>
+      <a href="19_trade.html" class="sidebar-link">19. 貿易</a>
+      <a href="20_lessons.html" class="sidebar-link">20. 教訓</a>
+      <a href="21_geopolitical_risk.html" class="sidebar-link">21. 地政学リスク</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">G10</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+      <div class="sidebar-section-title">地政学・新興地域</div>
+      <div class="country-flags">
+        <a href="../taiwan/01_central_bank.html" class="country-chip">TW</a>
+        <a href="../hongkong/01_central_bank.html" class="country-chip">HK</a>
+        <a href="../china/01_central_bank.html" class="country-chip">CN</a>
+        <a href="../northkorea/01_central_bank.html" class="country-chip">KP</a>
+        <a href="../vietnam/01_central_bank.html" class="country-chip">VN</a>
+        <a href="../singapore/01_central_bank.html" class="country-chip active">SG</a>
+        <a href="../iran/01_central_bank.html" class="country-chip">IR</a>
+        <a href="../israel/01_central_bank.html" class="country-chip">IL</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 ホーム</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10横断年表</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">シンガポール</a>
+        <span class="sep">/</span>
+        短期金利とSORA
+      </div>
+      <h1 class="page-title">🇸🇬 短期金利とSORA</h1>
+      <p class="page-subtitle">政策金利を持たない国で短期金利はどう決まるか — SIBORからSORAへ</p>
+    </header>
+
+    <article>
+<!-- ===== 12 短期金利 / Short-term Rates ===== -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">SORA</div>
+    <div class="stat-label">唯一の主要ベンチマーク（2024年〜）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">≈2.0%</div>
+    <div class="stat-label">短期金利の概ねの水準（2026年）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">政策金利なし</div>
+    <div class="stat-label">MASは金利でなく為替を操作</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">2024/1/1</div>
+    <div class="stat-label">SIBOR/SOR 完全廃止</div>
+  </div>
+</div>
+
+<section>
+  <h2>金利を「決めない」中央銀行</h2>
+  <p>シンガポールの短期金利を理解する出発点は、<strong>MAS（シンガポール金融管理庁）が政策金利を一切設定しない</strong>という事実である。米FRBのFFレート、日銀の無担保コール翌日物のような「政策金利」は存在しない。MASの金融政策手段は<strong>シンガポールドルの名目実効為替レート（S$NEER）バンド</strong>ただ一つであり、国内短期金利はそこから<strong>内生的（endogenously）に決まる</strong><cite>[1]</cite>。</p>
+  <p>なぜそうなるのか。シンガポールは資本移動が完全に自由で、SGDは完全交換性を持つ小国開放経済である。経済学の「<strong>不可能の三角形（トリレンマ）</strong>」によれば、(1)自由な資本移動、(2)為替の安定（管理）、(3)独立した金融政策（金利の独自設定）の3つを同時には実現できない。MASは(1)と(2)を選び、(3)を放棄した。その結果、国内金利はおおむね<strong>「世界の金利（特に米ドル金利）− SGD増価期待」</strong>という金利平価（uncovered interest parity）の関係に縛られる<cite>[1][2]</cite>。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">記憶のフック：「金利は結果、為替が原因」</div>
+    <div class="mnemonic-body">他国は「金利を上げ下げ→為替が動く」。シンガポールは逆で「為替（NEERスロープ）を傾ける→金利がついてくる」。MASがSGD増価を速めれば、増価期待のぶんだけ国内金利は米金利より低くてよい、という金利平価が効く。だから2010年代の多くの局面でSORA系金利は米金利を下回って推移した。</div>
+  </div>
+</section>
+
+<section>
+  <h2>SGD短期金利の歴史（1998–2026）</h2>
+  <p>下のチャートは、3か月物の代表的な短期金利（かつてのSIBOR、現在は複利SORAに相当する水準）の推移である。値は各局面の代表値・概算で、グローバル金利サイクルとMASの為替政策の合成として動いてきた<cite>[2]</cite>。</p>
+
+  <div id="sg-shortrate"></div>
+  <script>
+  ChartBuilder.lines('sg-shortrate', {
+    title: 'シンガポール 短期金利の推移 1998–2026（3M SIBOR → SORA 相当、代表値・概算）',
+    caption: '出典: MAS（SORA）、市場データ。各点は局面の代表値で概算。政策金利は存在せず、グローバル金利＋為替政策の合成として内生的に決まる。',
+    yUnit: '%',
+    yRange: [0, 6],
+    yStep: 1,
+    series: [{
+      name: '3M金利 (SIBOR→SORA相当)',
+      color: '#00d4aa',
+      data: [[1998,5.0],[2001,2.0],[2004,1.0],[2007,2.5],[2009,0.7],[2012,0.4],
+             [2015,1.0],[2019,1.9],[2020,0.4],[2022,3.0],[2023,3.7],[2024,3.5],
+             [2025,2.8],[2026.06,2.0]]
+    }],
+    annotations: [
+      { year: 1998, label: 'アジア危機', color: '#ff6b6b' },
+      { year: 2009, label: 'GFC', color: '#ff9f43' },
+      { year: 2020, label: 'COVID 0.4%', color: '#5b8def' },
+      { year: 2023, label: '高水準3.7%', color: '#ffd93d' },
+      { year: 2024, label: 'SOR廃止', color: '#b07cff' },
+      { year: 2026.06, label: '≈2.0%', color: '#00d4aa' }
+    ]
+  });
+  </script>
+
+  <p>特徴的なのは、<strong>米金利が動くとSGD金利もほぼ連動して動く</strong>一方で、増価バンドの傾き（スロープ）が急なほど両者の差（金利スプレッド）が開く点である。2022年に世界的なインフレでFRBが急速に利上げすると、MASは「為替政策での実質的な引締め」（バンドの再センター＋スロープ急傾斜）で対応し、SGD短期金利も3%超へ跳ね上がった。これは金利を直接動かさずに金融環境を引き締めた好例である<cite>[2][3]</cite>。</p>
+</section>
+
+<section>
+  <h2>SIBORからSORAへ — ベンチマーク改革</h2>
+  <p>2024年1月1日、シンガポールは長年使われた銀行間調達金利<strong>SIBOR（Singapore Interbank Offered Rate）</strong>と、為替スワップ由来の<strong>SOR（Swap Offer Rate）</strong>を完全に廃止した。世界的なLIBOR改革（パネル銀行の見積もりに依存する金利は操作リスクがある）と歩調を合わせ、実取引に基づく<strong>SORA</strong>へ一本化したものである<cite>[4]</cite>。</p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>ベンチマーク</th><th>性質</th><th>状態</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>SORA</strong><br>Singapore Overnight Rate Average</td>
+          <td>実際の無担保翌日物取引の加重平均。MASが算出・公表。複利後方参照で住宅ローン等に使用</td>
+          <td><span class="highlight-green">現行・唯一の主要指標</span></td>
+        </tr>
+        <tr>
+          <td>SIBOR</td>
+          <td>パネル銀行の提示レートに依存（LIBOR型）。住宅ローンの主流だった</td>
+          <td><span class="highlight-red">2024/1/1 廃止</span></td>
+        </tr>
+        <tr>
+          <td>SOR</td>
+          <td>USD/SGDスワップから逆算した金利。米ドル金利と為替の影響を強く受ける</td>
+          <td><span class="highlight-red">2024/1/1 廃止</span></td>
+        </tr>
+        <tr>
+          <td>MAS Bills / SGS T-bills</td>
+          <td>MASが流動性調節に用いる短期国庫証券。リスクフリー金利の基準</td>
+          <td><span class="highlight-blue">現行</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>住宅ローンの世界では、かつて「3M SIBOR連動」が標準だったが、現在は<strong>複利SORA（Compounded SORA）連動</strong>が主流になった。後方参照型の複利平均のため、SIBOR時代より金利のブレが小さく透明性が高い。借り手にとっては、自分のローン金利が「過去3か月の翌日物の実績平均」で決まるイメージである<cite>[4]</cite>。</p>
+
+  <div class="key-number-row">
+    <div class="key-number">
+      <span class="key-number-value">2024/1/1</span>
+      <span class="key-number-label">SIBOR・SOR 廃止日</span>
+    </div>
+    <div class="key-number">
+      <span class="key-number-value">翌日物</span>
+      <span class="key-number-label">SORAの参照期間</span>
+    </div>
+    <div class="key-number">
+      <span class="key-number-value">複利後方参照</span>
+      <span class="key-number-label">住宅ローンの新標準</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>MASはどう短期金利を「微調整」するか</h2>
+  <p>政策金利を持たないとはいえ、MASは日々の短期金融市場を放置しているわけではない。MASは<strong>マネー・マーケット・オペレーション</strong>を通じて銀行システムの流動性を調節し、翌日物金利が極端に振れないようにしている<cite>[1][2]</cite>。</p>
+  <ul>
+    <li><strong>MAS Bills</strong>の発行・吸収による流動性のコントロール。</li>
+    <li><strong>FXスワップ</strong>（為替スワップ）でのSGD流動性供給・吸収。シンガポールは為替を起点にするため、金利調整も為替スワップ経由が大きい。</li>
+    <li><strong>常設ファシリティ（Standing Facility）</strong>による翌日物の上下限の画定。</li>
+  </ul>
+  <p>ただしこれらはあくまで<strong>「為替政策と整合的な範囲での微調整」</strong>であり、金利水準そのものを目標にしているわけではない。最終的な短期金利の趨勢は、米金利とSGD増価期待が決める。これが「政策金利を持たない国」の短期金利市場の本質である<cite>[2]</cite>。</p>
+</section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+<ol>
+        <li>MAS, 「為替を中心とした金融政策の枠組み（Exchange Rate-Based Monetary Policy）」金融政策声明 <a href="https://www.mas.gov.sg">mas.gov.sg</a></li>
+        <li>BIS Papers No.73, "An exchange-rate-centred monetary policy system: the case of Singapore"; MAS, Macroeconomic Review</li>
+        <li>MAS, Monetary Policy Statement 2026-04-14 / 2025-01-24（S$NEERスロープの調整）</li>
+        <li>MAS, SORAへの移行・SIBOR/SORの廃止（2024-01-01）<a href="https://www.mas.gov.sg">mas.gov.sg</a></li>
+      </ol>
+    </footer>
+
+    <nav class="page-nav">
+      <a href="11_bond_market.html" class="prev">債券市場</a>
+      <a href="13_long_rates.html" class="next">長期金利</a>
+    </nav>
+  </main>
+
+  <script src="../assets/enhancer.js"></script>
+  <script defer src="../assets/recall.js"></script>
+  <script src="../assets/tts-reader.js"></script>
+</body>
+</html>

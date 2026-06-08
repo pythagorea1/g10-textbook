@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>中国 - Financial Crises | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
+  <script defer src="../assets/charts.js"></script>
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇨🇳 中国</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. 中央銀行</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. 政策金利</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. 財政政策</a>
+      <a href="04_employment.html" class="sidebar-link">04. 雇用</a>
+      <a href="05_inflation.html" class="sidebar-link">05. インフレ</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. 株式市場概観</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. 株式(初期)</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. 株式(近代)</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. 株式(現代)</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. 株式(現在)</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. 債券市場</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. 短期金利</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. 長期金利</a>
+      <a href="14_currency.html" class="sidebar-link">14. 通貨</a>
+      <a href="15_crises.html" class="sidebar-link active">15. 金融危機</a>
+      <a href="16_banking.html" class="sidebar-link">16. 銀行制度</a>
+      <a href="17_corporate.html" class="sidebar-link">17. 企業・コーポレート</a>
+      <a href="18_regulation.html" class="sidebar-link">18. 規制</a>
+      <a href="19_trade.html" class="sidebar-link">19. 貿易</a>
+      <a href="20_lessons.html" class="sidebar-link">20. 教訓</a>
+      <a href="21_geopolitical_risk.html" class="sidebar-link">21. 地政学リスク</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">G10</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+      <div class="sidebar-section-title">地政学・新興地域</div>
+      <div class="country-flags">
+        <a href="../taiwan/01_central_bank.html" class="country-chip">TW</a>
+        <a href="../hongkong/01_central_bank.html" class="country-chip">HK</a>
+        <a href="../china/01_central_bank.html" class="country-chip active">CN</a>
+        <a href="../northkorea/01_central_bank.html" class="country-chip">KP</a>
+        <a href="../vietnam/01_central_bank.html" class="country-chip">VN</a>
+        <a href="../singapore/01_central_bank.html" class="country-chip">SG</a>
+        <a href="../iran/01_central_bank.html" class="country-chip">IR</a>
+        <a href="../israel/01_central_bank.html" class="country-chip">IL</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 ホーム</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10横断年表</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">中国</a>
+        <span class="sep">/</span>
+        中国⑮ 金融危機
+      </div>
+      <h1 class="page-title">🇨🇳 中国⑮ 金融危機</h1>
+      <p class="page-subtitle">株バブル・通貨切下げ・不動産 — 中国危機の三つの顔</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">6,092</div>
+          <div class="stat-label">上海総合 2007年10月バブルピーク → GFCで約-70%暴落</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">約18兆元</div>
+          <div class="stat-label">2015年株バブル崩壊で消失した時価総額（5178→約-32%）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">>3,000億ドル</div>
+          <div class="stat-label">恒大集団（Evergrande）の負債 — 不動産バブル崩壊の象徴</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">12兆元</div>
+          <div class="stat-label">2024年11月の地方政府隠れ債務 置換パッケージ（史上最大）</div>
+        </div>
+      </div>
+
+      <section>
+        <h2>1. 中国の危機年表 — バブル・通貨・不動産</h2>
+        <p>
+          中国の金融危機史は、欧米のような「銀行取り付け」型ではなく、<strong>(1)株式バブルの暴騰と崩壊、(2)為替・資本流出のショック、(3)不動産バブルとそれに連なる地方政府債務</strong>という三つの系統で理解できる。いずれも、急成長の歪みと当局のコントロールの限界が交差する局面で噴出した。以下の年表がその全体像である。
+        </p>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>年月</th>
+                <th>出来事</th>
+                <th>影響</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1994.01</td>
+                <td class="event-crisis">為替二重相場の統一（8.7元へ実効切下げ）</td>
+                <td>輸出競争力強化、その後の高インフレ(24%)も誘発</td>
+              </tr>
+              <tr>
+                <td>1997–98</td>
+                <td>アジア通貨危機（人民元は切下げず）</td>
+                <td class="highlight-green">8.28維持で地域安定に貢献、国際的信認を獲得</td>
+              </tr>
+              <tr>
+                <td>2001.12</td>
+                <td>WTO加盟</td>
+                <td>「世界の工場」化、輸出・FDIブーム、対米黒字の起点</td>
+              </tr>
+              <tr>
+                <td>2007.10</td>
+                <td class="event-crisis">上海総合6092バブルピーク</td>
+                <td>個人投資家の熱狂後、GFCで-70%暴落</td>
+              </tr>
+              <tr>
+                <td>2008.11</td>
+                <td>4兆元（約5,860億ドル）景気刺激策</td>
+                <td>GFCを乗り切るが、インフラ・不動産・地方債務膨張の遠因</td>
+              </tr>
+              <tr>
+                <td>2015.06–08</td>
+                <td class="event-crisis">株バブル崩壊 ＋ 8月人民元切下げ(811)</td>
+                <td>約18兆元消失、資本流出加速、外貨準備が約4→3兆ドル</td>
+              </tr>
+              <tr>
+                <td>2016.01</td>
+                <td class="event-crisis">サーキットブレーカー導入即日廃止</td>
+                <td>制度設計失敗、株続落、当局の市場管理能力を問われる</td>
+              </tr>
+              <tr>
+                <td>2018.03</td>
+                <td class="event-crisis">米中貿易戦争開戦（301条対中関税）</td>
+                <td>関税応酬、サプライチェーン再編、デカップリング論</td>
+              </tr>
+              <tr>
+                <td>2020.01</td>
+                <td class="event-crisis">COVID-19武漢発・都市封鎖</td>
+                <td>世界的パンデミックの起点、ゼロコロナが後年の景気を圧迫</td>
+              </tr>
+              <tr>
+                <td>2021.08</td>
+                <td class="event-crisis">三道紅線 ＋ 恒大集団債務危機表面化</td>
+                <td>不動産バブル崩壊の起点、家計資産・地方財政に波及</td>
+              </tr>
+              <tr>
+                <td>2023.10</td>
+                <td class="event-crisis">碧桂園（Country Garden）ドル債デフォルト</td>
+                <td>恒大に次ぐ最大手も破綻、危機の全面化</td>
+              </tr>
+              <tr>
+                <td>2024.01</td>
+                <td>恒大集団 香港高裁が清算命令</td>
+                <td>世界最大級の不動産デフォルト処理、同年8月上場廃止</td>
+              </tr>
+              <tr>
+                <td>2024.09</td>
+                <td class="highlight-green">「バズーカ」金融刺激策（RRR-50bp等）</td>
+                <td>CSI300が週+16%(2008年以来)、株が一時強気相場入り</td>
+              </tr>
+              <tr>
+                <td>2024.11</td>
+                <td>地方政府隠れ債務 12兆元 置換パッケージ</td>
+                <td>史上最大の地方債務対策（隠れ債務の約25%をカバー）</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>2. 上海総合指数で見る「バブルと崩壊」の歴史</h2>
+        <p>
+          中国株式市場の歴史は、世界でも稀に見る<strong>激しいブーム＆バスト</strong>の連続だ。個人投資家比率が高く、レバレッジ（信用取引=融資融券）が増幅装置となるため、上昇も下落も極端になる。次のグラフは、1990年の取引所再開から2026年までの上海総合指数の長期推移である。2007年と2015年の二つの巨大バブルと、それぞれの暴落が一目で分かる。
+        </p>
+
+        <div id="china-crises-sse"></div>
+        <script>
+        ChartBuilder.lines('china-crises-sse', {
+          title: '上海総合指数 長期チャート (1990-2026, 終値ベース)',
+          caption: '出典: 上海証券取引所、Trading Economics、Wikipedia(中国株バブル)。1990年再開(基準100)→2007年10月6092バブルピーク→GFCで2008年10月1728へ約-70%→4兆元刺激で2009年8月3478→2015年6月5178バブルピーク→2016年初サーキットブレーカー混乱で2655→2021年以降の不動産不況で低迷→2024年9月バズーカ刺激策で反発。⚠2025-26の3900-4057台はシミュレーション環境値で、2024年実勢(2700-3300台)から大幅高、最終稿前に再取得推奨。',
+          yUnit: '',
+          yRange: [0, 6500],
+          yStep: 1000,
+          series: [{
+            name: '上海総合指数',
+            color: '#ff6b6b', width: 2.2,
+            data: [[1990.92, 100], [1996, 900], [2000, 2073], [2005.42, 998], [2007.75, 6092], [2008.75, 1728], [2009.58, 3478], [2013, 2100], [2015.42, 5178], [2016.0, 2655], [2018.92, 2494], [2020.17, 2660], [2021.08, 3696], [2022.75, 2893], [2024.08, 2702], [2024.67, 3336], [2025.92, 3900], [2026.42, 4057]]
+          }],
+          annotations: [
+            { year: 2007.75, label: '6092ピーク', color: '#ffd93d' },
+            { year: 2008.75, label: 'GFC-70%', color: '#ff6b6b' },
+            { year: 2015.42, label: '15バブル', color: '#ff9f43' },
+            { year: 2016.0, label: 'CB混乱', color: '#b07cff' },
+            { year: 2024.67, label: '刺激策', color: '#00d4aa' }
+          ]
+        });
+        </script>
+      </section>
+
+      <section>
+        <h2>3. 主要危機の比較 — 下落率と性質</h2>
+        <p>
+          中国の三大株式危機を「下落率」と「性質」で並べると、それぞれの教訓が見えてくる。
+        </p>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>危機</th>
+                <th>期間</th>
+                <th>下落率（上海総合）</th>
+                <th>性質・教訓</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="highlight-red">2007 バブル崩壊</td>
+                <td>2007.10–2008.10</td>
+                <td><span class="drawdown-badge">-70%</span> 6092→1728</td>
+                <td>個人熱狂＋GFC。4兆元刺激で反発も債務膨張の種に</td>
+              </tr>
+              <tr>
+                <td class="highlight-orange">2015 株+通貨危機</td>
+                <td>2015.06–2016.01</td>
+                <td><span class="drawdown-badge">-49%</span> 5178→2655</td>
+                <td>信用取引バブル＋811切下げ。約18兆元消失・資本流出</td>
+              </tr>
+              <tr>
+                <td class="highlight-red">2021– 不動産危機</td>
+                <td>2021–継続</td>
+                <td><span class="drawdown-badge">-27%</span> 3696→2702</td>
+                <td>恒大・碧桂園破綻。家計資産・地方財政・デフレへ波及</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>4. 2015年：株バブルと通貨切下げの「複合危機」</h2>
+        <p>
+          2015年は中国にとって最も危険な年の一つだった。前半は信用取引（融資融券）を燃料に上海総合が5178まで暴騰したが、6月以降の規制強化で<strong>わずか1ヶ月で約-32%</strong>暴落。当局は「国家隊（こっかたい）」と呼ばれる政府系資金で大量の買い支えに入り、取引停止銘柄が続出した。その混乱の最中、8月の<strong>「811改革」で人民元を切下げ</strong>たことが、世界市場に「中国は景気が相当悪いのでは」という不安を波及させ、グローバルな株安（China Shock）を引き起こした。
+        </p>
+        <p>
+          翌2016年1月には、暴落を防ぐはずの<strong>サーキットブレーカー</strong>が逆に売りを加速させ、導入からわずか4日で廃止。当局の市場設計能力が問われる事態となった。一連の危機で外貨準備は約4兆ドルから3兆ドル近くまで急減し、資本規制の強化につながった。
+        </p>
+      </section>
+
+      <section>
+        <h2>5. 2021年〜：不動産バブル崩壊と「灰色のサイ」</h2>
+        <p>
+          現在進行形の最大の危機が不動産だ。2020年の<strong>「三道紅線（3つのレッドライン）」</strong>——不動産デベロッパーの過剰債務を抑える規制——を引き金に、2021年に<strong>恒大集団（Evergrande、負債3,000億ドル超）</strong>の危機が表面化。2023年には業界最大手の<strong>碧桂園（Country Garden）</strong>もドル債をデフォルトし、危機は全面化した。2024年1月、香港高等法院は恒大に清算を命じ、世界最大級の不動産デフォルト処理が始まった。
+        </p>
+        <p>
+          不動産は中国の家計資産の約7割を占めるとされ、その下落は<strong>「家計資産の減少→消費低迷→デフレ→地方財政（土地売却収入の激減）→LGFV債務」</strong>という負の連鎖を生む。これは突然来る「ブラックスワン」ではなく、見えていたのに対処が遅れた「<strong>灰色のサイ（grey rhino）</strong>」型のシステミックリスクだ。2024年11月、当局は史上最大の<strong>12兆元の地方債務置換パッケージ</strong>を打ち出したが、Fitchは隠れ債務の約25%しかカバーしないと評価した。
+        </p>
+        <div class="mnemonic-box">
+          <span class="mnemonic-icon">🧠</span>
+          <div class="mnemonic-title">覚え方：中国危機の「3つの顔」</div>
+          <div class="mnemonic-body">
+            ①<strong>株</strong>（2007・2015のブーム＆バスト、個人とレバレッジが増幅）、②<strong>通貨</strong>（2015の811切下げと資本流出）、③<strong>不動産</strong>（2021〜の恒大・碧桂園と地方政府債務）。欧米型の「銀行取り付け」より、<strong>資産バブルと隠れ債務</strong>が中国危機の主役。そして1997年アジア危機で「切下げなかった」自制も、中国危機史の重要な1ページだ。
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+
+    </footer>
+
+    <nav class="page-nav">
+      <a href="14_currency.html" class="prev">通貨</a>
+      <a href="16_banking.html" class="next">銀行制度</a>
+    </nav>
+  </main>
+
+  <script src="../assets/enhancer.js"></script>
+  <script defer src="../assets/recall.js"></script>
+  <script src="../assets/tts-reader.js"></script>
+</body>
+</html>

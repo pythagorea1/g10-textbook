@@ -1,0 +1,194 @@
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">7.80</div>
+          <div class="stat-label">中心レート (HKD/USD, 1983年〜)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" style="color:var(--accent-green);">7.75</div>
+          <div class="stat-label">強サイド兌換保証</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" style="color:var(--accent-red);">7.85</div>
+          <div class="stat-label">弱サイド兌換保証</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" style="color:var(--accent-orange);">100%</div>
+          <div class="stat-label">通貨発行の米ドル裏付け</div>
+        </div>
+      </div>
+
+      <p>
+        香港ドル（HKD）の物語は、世界で最も成功し、最も長く続いている<strong>カレンシーボード（通貨ボード）</strong>の物語である。1983年10月17日以来、香港ドルは米ドルに7.80で固定され、その後7.75〜7.85の対称帯へ発展した。中央銀行も独立金融政策も持たないこの制度は、規律と巨額の準備によって40年以上信認を維持し、アジア通貨危機の投機攻撃すら撃退してきた。本章は香港金融制度の<strong>背骨</strong>であり、他のすべての章（短期金利・長期金利・銀行・危機）の前提となる。
+      </p>
+
+      <div class="key-number-row">
+        <div class="key-number">
+          <span class="key-number-value">1983/10/17</span>
+          <span class="key-number-label">7.80ペッグ確立日</span>
+        </div>
+        <div class="key-number">
+          <span class="key-number-value">3行</span>
+          <span class="key-number-label">発券銀行（HSBC・StanChart・BOCHK）</span>
+        </div>
+        <div class="key-number">
+          <span class="key-number-value">9.60</span>
+          <span class="key-number-label">1983年信任危機での最安値</span>
+        </div>
+        <div class="key-number">
+          <span class="key-number-value">2005</span>
+          <span class="key-number-label">7.75-7.85帯の確立年</span>
+        </div>
+      </div>
+
+      <div class="mnemonic-box">
+        <span class="mnemonic-icon">🧠</span>
+        <div class="mnemonic-title">「紙幣を刷るたびに米ドルを金庫に入れる」</div>
+        <div class="mnemonic-body">香港の通貨発行は3つの民間発券銀行が行うが、HK$7.80を発行するたびに<strong>US$1.00</strong>を外貨基金に預け、Certificate of Indebtedness（負債証明書）を受け取る義務がある。つまり流通する香港ドルは<strong>100%米ドルで裏付け</strong>られている。これが「印刷機で景気対策」ができない理由であり、同時にペッグへの絶対的信認の源泉。$10紙幣だけは政府が発行する例外。</div>
+      </div>
+
+      <!-- ============================================================ -->
+      <section>
+        <h2>1. 通貨ボードとは何か</h2>
+        <p>
+          通貨ボードとは、自国通貨を特定の外貨（アンカー通貨）に固定レートで完全に兌換可能とし、流通する自国通貨を<strong>100%そのアンカー通貨の準備で裏付ける</strong>制度である。中央銀行のように裁量で通貨を発行したり金利を操作したりすることはできない。香港のアンカーは米ドル、運営主体はHKMAが管理する<strong>外貨基金（Exchange Fund）</strong>である。
+        </p>
+        <p>
+          通貨ボードの代償は<strong>金融政策の放棄</strong>である。経済学の「不可能の三角形（Impossible Trinity）」——(1)固定相場、(2)自由な資本移動、(3)独立金融政策の3つは同時に2つしか成立しない——のうち、香港は(1)と(2)を選び、(3)を捨てた。その見返りに、国際金融センターとしての為替安定性と完全な兌換性を得ている。
+        </p>
+        <p class="source"><cite>出典: HKMA, "Linked Exchange Rate System"; BIS Papers No.73, "Monetary operations under the Currency Board"。</cite></p>
+      </section>
+
+      <!-- HKD/USD 長期チャート -->
+      <div id="hk-hkd-usd-1972-2026"></div>
+      <script>
+      ChartBuilder.lines('hk-hkd-usd-1972-2026', {
+        title: '香港ドル 対米ドル 1972-2026 — 変動からペッグへ',
+        caption: '出典: HKMA; Wikipedia "Linked exchange rate system". HKD/USD（数値が大きいほどHKD安）。1974-83年は変動相場で、1983年9月の中英交渉に伴う信任危機で一時9.60まで急落。1983年10月17日に7.80ペッグを確立し、2005年5月に7.75（強サイド）-7.85（弱サイド）の対称帯へ。以降は帯内の微動のみ。',
+        yUnit: '',
+        yRange: [4.5, 10],
+        series: [{
+          name: 'HKD/USD',
+          color: '#00d4aa', width: 2,
+          data: [
+            [1972, 5.65],[1974, 5.085],[1978, 4.70],[1981, 5.13],[1983.7, 9.60],
+            [1983.8, 7.80],[1990, 7.80],[1998.7, 7.75],[2005, 7.78],[2008, 7.75],
+            [2016, 7.76],[2018, 7.85],[2020, 7.75],[2022.8, 7.85],[2023, 7.83],
+            [2024, 7.81],[2025.4, 7.75],[2025.55, 7.85],[2026.05, 7.78]
+          ]
+        }],
+        bands: [
+          { from: 1974, to: 1983.7, label: '変動相場', color: '#ff9f43' },
+          { from: 1983.8, to: 2026, label: 'ペッグ体制', color: '#00d4aa' }
+        ],
+        annotations: [
+          { year: 1983.7, label: '83 信任危機', color: '#ff6b6b' },
+          { year: 1983.8, label: '7.80導入', color: '#00d4aa' },
+          { year: 2005, label: '05 帯確立', color: '#5b8def' },
+          { year: 2025.4, label: '25 強7.75', color: '#00d4aa' },
+          { year: 2025.55, label: '25 弱7.85', color: '#ff6b6b' }
+        ]
+      });
+      </script>
+
+      <!-- ============================================================ -->
+      <section>
+        <h2>2. ペッグ確立への道（1972-1983）</h2>
+        <p>
+          香港ドルは常に固定されていたわけではない。1972年に英ポンドへのリンクから米ドル・リンク（5.65）へ移行し、1974年11月には変動相場制に移行した。1970年代後半は比較的安定していたが、1980年代初頭に転機が訪れる。
+        </p>
+        <p>
+          1982〜83年、香港の主権返還を巡る中英交渉（1997年に英国の租借が切れる新界の扱い）が緊迫すると、香港の将来への不安から資本が流出し、香港ドルは急落した。<strong>1983年9月、香港ドルは1日で米ドルに対して9.60近辺まで暴落</strong>（いわゆる「ブラック・サタデー」を含む信任危機）し、市民が商店でドル建て決済を求めるなど通貨への信頼が崩壊しかけた。これを受け、香港政府は<strong>1983年10月17日、7.80でのペッグ（連繋為替相場制度）を導入</strong>し、通貨を安定させた。発券銀行が米ドルを預けてCertificate of Indebtednessを取得する100%裏付けの仕組みもこのとき確立した。
+        </p>
+        <p class="source"><cite>出典: HKMA history; J. Greenwood (ペッグ制度の設計者), "Hong Kong's Link to the US Dollar"。</cite></p>
+      </section>
+
+      <!-- ============================================================ -->
+      <section>
+        <h2>3. 兌換保証帯（7.75-7.85）と発券銀行</h2>
+        <p>
+          当初のペッグは7.80の単一レートだったが、2005年5月、HKMAは<strong>「3つの改善（Three Refinements）」</strong>を導入し、現在の対称帯を確立した。
+        </p>
+
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>水準</th>
+                <th>名称</th>
+                <th>HKMAの行動</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="background:rgba(0,212,170,0.08);">
+                <td><strong>7.75</strong></td>
+                <td>強サイド兌換保証</td>
+                <td>HKDが強くなりすぎたら、HKMAはHKDを売り・米ドルを買う（流動性供給＝HIBOR低下）</td>
+              </tr>
+              <tr>
+                <td>7.80</td>
+                <td>中心レート</td>
+                <td>制度上の基準（直接の介入義務はなし）</td>
+              </tr>
+              <tr style="background:rgba(255,107,107,0.08);">
+                <td><strong>7.85</strong></td>
+                <td>弱サイド兌換保証</td>
+                <td>HKDが弱くなりすぎたら、HKMAはHKDを買い・米ドルを売る（流動性吸収＝HIBOR上昇）</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          通貨発行は、政府ではなく<strong>3つの発券銀行（Note-Issuing Banks）</strong>——HSBC、Standard Chartered Bank (HK)、Bank of China (Hong Kong)——が担う。各行は発券額に等しい米ドルを外貨基金に預けてCertificate of Indebtednessを取得するため、流通通貨は100%米ドルで裏付けられる（$10紙幣のみ政府が発行）。この民間銀行による発券と100%準備の組み合わせが、香港の通貨ボードを世界で最も信認の厚い固定相場制の一つにしている。
+        </p>
+        <p class="source"><cite>出典: HKMA, "Three Refinements to the LERS" (2005-05); HKMA, Note-Issuing Banks。</cite></p>
+      </section>
+
+      <!-- 兌換帯ズームチャート -->
+      <div id="hk-hkd-band-2016-26"></div>
+      <script>
+      ChartBuilder.lines('hk-hkd-band-2016-26', {
+        title: '兌換帯の中の香港ドル 2016-2026 — 7.75↔7.85',
+        caption: '出典: HKMA。7.75（強サイド）-7.85（弱サイド）帯内のHKD/USDの動き。2018-19・2022-23・2025年央は弱サイド7.85に接触してHKMAが弱サイド介入（流動性吸収）、2020-21・2025年5月は強サイド7.75に接触して強サイド介入（流動性供給）。完全兌換ゆえ闇レートは存在せず、すべて帯内で完結する。',
+        yUnit: '',
+        yRange: [7.74, 7.86],
+        yStep: 0.02,
+        series: [{
+          name: 'HKD/USD',
+          color: '#5b8def', width: 2,
+          data: [
+            [2016, 7.76],[2017, 7.81],[2018, 7.85],[2019, 7.83],[2020, 7.75],
+            [2021, 7.76],[2022.3, 7.83],[2022.8, 7.85],[2023, 7.83],[2024, 7.81],
+            [2025.4, 7.75],[2025.55, 7.85],[2026.05, 7.78]
+          ]
+        }],
+        annotations: [
+          { year: 2018, label: '18 弱7.85', color: '#ff6b6b' },
+          { year: 2020, label: '20 強7.75', color: '#00d4aa' },
+          { year: 2022.8, label: '22 弱7.85', color: '#ff6b6b' },
+          { year: 2025.4, label: '25 強7.75', color: '#00d4aa' }
+        ]
+      });
+      </script>
+
+      <!-- ============================================================ -->
+      <section>
+        <h2>4. ペッグの試練と信認</h2>
+        <p>
+          40年の歴史でペッグは何度も試された。最大の試練は<strong>1997-98年のアジア通貨危機</strong>で、投機筋が「ダブルプレイ（通貨ショート＋株先物ショート）」を仕掛けた（詳細は第15章）。HKMAは金利急騰を容認してHKDを守り、さらに1998年8月に外貨基金で株式市場に介入して投機筋を撃退、ペッグは死守された。2022-23年にはFed利上げで弱サイド7.85に張り付き、HKMAは41回・HK$2,420億の弱サイド介入で総決済残高を約7割縮小させた。いずれの局面でも、巨額の外貨準備（外貨基金は概念的にHK$4兆／US$4,000億超規模）と財政規律がペッグ信認の最終的な担保となった。
+        </p>
+
+        <h3>ペッグ解消論争</h3>
+        <p>
+          ペッグに対しては定期的に「解消すべき」との議論が起きる。論点は主に、(1)Fedに金融政策を縛られ香港の景気循環と乖離する「金利輸入の罠」、(2)将来的に人民元へリンクすべきとの政治的議論、(3)地政学リスク（米ドル決済の遮断シナリオ、第21章）である。しかしHKMAは一貫してペッグ維持を表明しており、巨額準備・財政規律・完全兌換という3条件が揃う限り、現実的な代替案は乏しいというのが大勢の見方である。突然の解消はかえって信認危機を招くため、香港にとってペッグは「降りられない自転車」となっている。
+        </p>
+        <p class="source"><cite>出典: HKMA, Eddie Yue/Norman Chan インサイト; Atlanta Fed/NBER ペッグ信認論文 (2025)。</cite></p>
+      </section>
+
+      <!-- ============================================================ -->
+      <section>
+        <h2>5. まとめ — 規律が生む安定</h2>
+        <p>
+          香港ドルのペッグは、「裁量を捨て、規律で信認を買う」制度である。100%の米ドル裏付け、3発券銀行、7.75-7.85の自動調整帯、そして巨額準備が、40年以上にわたり投機攻撃・金融危機・地政学緊張をくぐり抜けてきた。その代償は独立金融政策の放棄であり、香港経済は米国の金融サイクルに従属する。だが完全兌換と為替安定こそが国際金融センター香港の最大の資産であり、ペッグは香港の制度的アイデンティティそのものである。
+        </p>
+      </section>

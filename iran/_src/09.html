@@ -1,0 +1,106 @@
+<!-- Key Stats -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">約210万</div>
+    <div class="stat-label">2020年8月のバブル天井（TEDPIX, pt）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">-42%</div>
+    <div class="stat-label">2020年秋の暴落（市場史上最大）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">数百万人</div>
+    <div class="stat-label">2020年に殺到した新規個人投資家</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">正義株</div>
+    <div class="stat-label">政府による国民への株式配布</div>
+  </div>
+</div>
+
+<p>2020年は、イラン株式史上最も劇的な年だった。年初から夏にかけて<strong>TEDPIXは約190〜400%という常軌を逸した上昇</strong>を見せ、数百万人の個人投資家が市場に殺到した。しかし同年秋、バブルは弾け、市場は<strong>約-42%という史上最大の暴落</strong>を喫した。この熱狂と崩壊には、政府の株式誘導という人為的な要素が深く関わっていた。本章では、この「イラン版チューリップ・バブル」を解剖する<cite>[1]</cite>。</p>
+
+<div class="key-number-row">
+  <div class="key-number"><span class="key-number-value">210万</span><span class="key-number-label">2020年8月のTEDPIX天井（pt）</span></div>
+  <div class="key-number"><span class="key-number-value">-42%</span><span class="key-number-label">2020年秋の暴落幅（市場史上最大）</span></div>
+  <div class="key-number"><span class="key-number-value">政府誘導</span><span class="key-number-label">正義株・上場推奨が熱狂を煽った</span></div>
+</div>
+
+<!-- Chart: 2020 bubble and crash -->
+<div id="iran-tedpix-bubble"></div>
+<script>
+ChartBuilder.lines('iran-tedpix-bubble', {
+  title: 'TEDPIX 2019-2022 — 2020年バブル(約210万pt)と市場史上最大の-42%暴落',
+  caption: '出典: テヘラン証券取引所 (TSE) / Trading Economics。2019年末の約51万ptから2020年8月に約210万ptへ急騰（年初来+190〜400%）。政府の株式誘導と個人投資家の殺到がバブルを膨張させた。その後、2020年秋に市場史上最大の約-42%暴落。2021-22年は約135万〜145万ptで横ばいの「塩漬け」相場に。',
+  yUnit: '',
+  yStep: 500000,
+  yRange: [0, 2300000],
+  series: [{
+    name: 'TEDPIX (名目, pt)',
+    color: '#ff6b6b',
+    data: [[2019,512000],[2020.08,2100000],[2020.12,1200000],[2021,1350000],[2022,1450000]]
+  }],
+  annotations: [
+    { year: 2020.08, label: '天井210万', color: '#ffd93d' },
+    { year: 2020.12, label: '-42%暴落', color: '#ff6b6b' },
+    { year: 2021.5, label: '塩漬け', color: '#5b8def' }
+  ]
+});
+</script>
+
+<section>
+  <h2>熱狂の夏 — なぜ個人が殺到したのか</h2>
+  <p>2020年、イランは深刻な制裁とCOVID、そしてリアル安・高インフレに苦しんでいた。預金の実質金利は深いマイナス、外貨や金へのアクセスも制約があるなか、人々は購買力を守る最後の砦として<strong>株式市場に殺到</strong>した。新規の証券口座が爆発的に増え、これまで投資と無縁だった一般市民が、なけなしの資金を株に投じた<cite>[2]</cite>。</p>
+  <p>この熱狂を、政府が積極的に後押しした。財政難のなか、政府は国有企業株のファンド（ETF）売却を進め、メディアを通じて株式投資を奨励した。「株を買えば資産を守れる」というムードが社会全体を覆い、TEDPIXは年初から夏にかけて190〜400%（指標により幅）という、ファンダメンタルズでは説明できない急騰を演じた。2020年8月、指数は約<strong>210万pt</strong>のバブル天井を付ける。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">2020バブルの3要素</div>
+    <div class="mnemonic-body">①<strong>逃げ場のない資金</strong>（マイナス実質金利＋制裁で外貨・金が買いにくい）／②<strong>個人投資家の殺到</strong>（数百万人が新規参入）／③<strong>政府の誘導</strong>（ETF売却・投資奨励）。この3つが噛み合い、ファンダ無視の暴騰に。バブルの教科書的な構図がそろった。</div>
+  </div>
+</section>
+
+<section>
+  <h2>崩壊の秋 — 史上最大の-42%暴落</h2>
+  <p>2020年8月の天井を境に、相場は反転した。あまりに急激な上昇への警戒、利益確定売り、そして政府の株式誘導への不信が引き金となり、売りが売りを呼ぶ展開に。指数は<strong>約-42%</strong>という、テヘラン市場史上最大の暴落を記録した<cite>[3]</cite>。</p>
+
+  <span class="drawdown-badge">2020年秋 -42%</span>
+  <p>この暴落で、夏に高値で飛びついた数百万の個人投資家が大きな損失を被った。「政府を信じて株を買ったのに裏切られた」という怒りは、社会的・政治的な反発を生んだ。株価対策を求める声が高まり、政府は買い支えや取引制限などの対応に追われた。市場主導でなく政府が相場を煽り、崩壊後にその後始末に苦慮するという、イラン株の「政策相場」の負の側面が露呈した瞬間だった。</p>
+</section>
+
+<section>
+  <h2>「正義株」 — 国民への株式配布という実験</h2>
+  <p>イラン政府の株式政策を象徴するのが<strong>「正義株（Justice Shares / سهام عدالت）」</strong>である。これは、低所得層を中心とする数千万人の国民に、国有企業の株式を配布する制度で、富の再分配と株式の大衆化を狙ったものだった。2020年、政府はこの正義株の売買を解禁し、保有者が市場で換金できるようにした<cite>[4]</cite>。</p>
+  <p>正義株の解禁は、株式投資の裾野を一気に広げた一方で、2020年のバブルと暴落を増幅する一因にもなった。投資知識の乏しい多数の国民が市場に巻き込まれ、暴落で打撃を受けたからだ。「国民に株を配って資産を持たせる」という理念は美しいが、高インフレと政策誘導が絡む市場では、それが新たな金融リスクの源にもなり得るという教訓を残した。</p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>局面</th><th>時期</th><th>TEDPIX（概算）</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>上昇前夜</td><td>2019年末</td><td>約51万pt（当時の最高値）</td></tr>
+        <tr class="highlight-row"><td>バブル天井</td><td>2020年8月</td><td class="highlight-orange">約210万pt</td></tr>
+        <tr><td>暴落後</td><td>2020年末</td><td class="highlight-red">約120万pt（-42%）</td></tr>
+        <tr><td>塩漬け相場</td><td>2021-22年</td><td>約135万〜145万ptで横ばい</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>2020年が残した教訓</h2>
+  <p>2020年のバブルと暴落は、イラン株を理解する最大の教材である。第一に、<strong>高インフレ・マイナス実質金利は資金を株に押し出すが、それは健全な成長でなく投機的バブルになりやすい</strong>こと。第二に、<strong>政府が相場を誘導すると、熱狂を煽り、崩壊の責任も負うことになる</strong>こと。第三に、<strong>投資知識の乏しい個人が大量に市場へ流入すると、ボラティリティと社会的リスクが増幅される</strong>ことだ<cite>[5]</cite>。</p>
+  <p>暴落後、TEDPIXは2021-22年に約135万〜145万ptで長く低迷した（「塩漬け」相場）。しかし、その後の慢性高インフレが、再び名目株価を押し上げていく。次章（10章）では、2023年以降の名目最高値更新と、それを覆う「名目vs実質/ドル建ての罠」、そして2026年の戦争による乱高下を見ていく。</p>
+</section>
+
+<footer class="sources">
+  <h3>出典・参考文献</h3>
+  <ol>
+    <li>2020年TEDPIXバブル・暴落に関する報道・分析、Trading Economics（指数データ）</li>
+    <li>2020年の個人投資家殺到・新規口座急増、COVID・制裁下の資産防衛</li>
+    <li>2020年秋の約-42%暴落（市場史上最大）と政府の対応に関する報道</li>
+    <li>正義株（Justice Shares / سهام عدالت）の制度と2020年の売買解禁</li>
+    <li>政府の株式誘導の副作用、高インフレ下のバブル形成に関する分析</li>
+  </ol>
+</footer>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>シンガポール - Singapore 02: Exchange-Rate-Based Monetary Policy | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
+  <script defer src="../assets/charts.js"></script>
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇸🇬 シンガポール</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. 中央銀行</a>
+      <a href="02_policy_rate.html" class="sidebar-link active">02. 政策金利</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. 財政政策</a>
+      <a href="04_employment.html" class="sidebar-link">04. 雇用</a>
+      <a href="05_inflation.html" class="sidebar-link">05. インフレ</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. 株式市場概観</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. 株式(初期)</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. 株式(近代)</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. 株式(現代)</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. 株式(現在)</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. 債券市場</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. 短期金利</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. 長期金利</a>
+      <a href="14_currency.html" class="sidebar-link">14. 通貨</a>
+      <a href="15_crises.html" class="sidebar-link">15. 金融危機</a>
+      <a href="16_banking.html" class="sidebar-link">16. 銀行制度</a>
+      <a href="17_corporate.html" class="sidebar-link">17. 企業・コーポレート</a>
+      <a href="18_regulation.html" class="sidebar-link">18. 規制</a>
+      <a href="19_trade.html" class="sidebar-link">19. 貿易</a>
+      <a href="20_lessons.html" class="sidebar-link">20. 教訓</a>
+      <a href="21_geopolitical_risk.html" class="sidebar-link">21. 地政学リスク</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">G10</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+      <div class="sidebar-section-title">地政学・新興地域</div>
+      <div class="country-flags">
+        <a href="../taiwan/01_central_bank.html" class="country-chip">TW</a>
+        <a href="../hongkong/01_central_bank.html" class="country-chip">HK</a>
+        <a href="../china/01_central_bank.html" class="country-chip">CN</a>
+        <a href="../northkorea/01_central_bank.html" class="country-chip">KP</a>
+        <a href="../vietnam/01_central_bank.html" class="country-chip">VN</a>
+        <a href="../singapore/01_central_bank.html" class="country-chip active">SG</a>
+        <a href="../iran/01_central_bank.html" class="country-chip">IR</a>
+        <a href="../israel/01_central_bank.html" class="country-chip">IL</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 ホーム</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10横断年表</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">シンガポール</a>
+        <span class="sep">/</span>
+        シンガポール② 為替ベース金融政策
+      </div>
+      <h1 class="page-title">🇸🇬 シンガポール② 為替ベース金融政策</h1>
+      <p class="page-subtitle">政策金利は存在しない — S$NEERバンドの傾き・幅・中心で運営</p>
+    </header>
+
+    <article>
+<!-- Key Stats -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">政策金利<br>存在せず</div>
+    <div class="stat-label">S$NEERバンドが唯一の金融政策手段</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">傾き・幅・中心</div>
+    <div class="stat-label">操作する3つのパラメーター</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">年2回</div>
+    <div class="stat-label">金融政策声明 (MPS) — 4月・10月が主役</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">2026年4月</div>
+    <div class="stat-label">傾きを「わずかに引上げ」(やや引締め)</div>
+  </div>
+</div>
+
+<p>本章のテーマは、世界の金融政策の教科書で唯一無二の存在——<strong>「政策金利を持たない金融政策」</strong>である。FRBがFFレート、日銀が政策金利を上げ下げするのに対し、MASが動かすのは<strong>S$の名目実効為替レート（S$NEER）が動ける「バンド（許容帯）」</strong>そのものだ。利上げ・利下げという概念の代わりに、MASは為替の上昇スロープを「急にする／緩くする」ことで金融を引き締めたり緩めたりする<cite>[1]</cite>。</p>
+
+<div class="key-number-row">
+  <div class="key-number"><span class="key-number-value">1981</span><span class="key-number-label">為替バンド枠組みを採用した年</span></div>
+  <div class="key-number"><span class="key-number-value">NEER</span><span class="key-number-label">主要貿易相手国通貨に対する加重平均レート</span></div>
+  <div class="key-number"><span class="key-number-value">SORA</span><span class="key-number-label">国内短期金利は内生的に決まる（MASは設定しない）</span></div>
+</div>
+
+<section>
+  <h2>S$NEERバンドの仕組み — 3つのダイヤル</h2>
+  <p>MASは、S$NEER（貿易ウェイトで加重した実効為替レート）が一定の<strong>バンド（帯）</strong>の中で動くよう、外国為替市場に介入する。このバンドは3つのパラメーターで定義され、MASはこれらを調整することで金融政策を運営する。重要なのは、<strong>MASはこれら3つの正確な数値を一切公表しない</strong>という点だ。市場は介入の痕跡から推計するしかない。</p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>パラメーター</th><th>意味</th><th>動かすと…</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>傾き (slope)</strong></td><td>S$NEERが年率どれだけ上昇(appreciate)してよいか</td><td>急にする＝<span class="highlight-red">引締め</span>／緩くする＝<span class="highlight-green">緩和</span></td></tr>
+        <tr><td><strong>幅 (width)</strong></td><td>中心線から上下どこまで動けるか（市場推計±2%）</td><td>広げる＝変動許容（不確実性が高い局面）</td></tr>
+        <tr><td><strong>中心 (centre / re-centring)</strong></td><td>バンドそのものの水準（基準点）</td><td>上げる＝強力な<span class="highlight-red">引締め</span>／下げる＝強力な<span class="highlight-green">緩和</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">「金利の上げ下げ」を「傾きの調整」に翻訳する</div>
+    <div class="mnemonic-body">他国の<strong>利上げ</strong> ＝ シンガポールの<strong>傾きを急に（または中心を引上げ）</strong>＝S$高を促しインフレ抑制。他国の<strong>利下げ</strong> ＝ <strong>傾きを緩く／ゼロに（または中心を引下げ）</strong>＝S$安を許容し景気を支える。「強い通貨で輸入インフレを抑える」のがMAS流の引締めだ。</div>
+  </div>
+
+  <p>なぜ「傾き＝上昇方向」が基本なのか。シンガポールは慢性的に経常黒字で、生産性も高いため、S$は長期的に上昇トレンドにある。MASはこの上昇ペースを管理することで、輸入物価を通じて国内インフレをコントロールする。インフレを抑えたいときはS$をより速く上昇させ（傾きを急に）、景気を支えたいときは上昇を止める（傾きをゼロに）。これが「為替で金融を動かす」ということの実像である。</p>
+</section>
+
+<!-- Chart: S$NEER appreciation slope (illustrative / market estimate) -->
+<div id="sg-neer-slope"></div>
+<script>
+ChartBuilder.lines('sg-neer-slope', {
+  title: 'S$NEER 上昇スロープの推移（概念図・市場推計）1981-2026',
+  caption: '⚠ 概念図：MASはスロープ/幅/中心の正確な数値を公表しない。本グラフはING・MUFG等の市場推計と報道に基づく「説明用イラスト値」(年率appreciation %)であり、断定的な数値ではない。引締め＝傾きを急に、緩和＝傾きをゼロに、という方向性の理解が目的。出典: MAS MPS各回、市場推計。',
+  yUnit: '%',
+  yStep: 0.5,
+  yRange: [-0.5, 2.5],
+  series: [{
+    name: '推定appreciationスロープ(年率)',
+    color: '#b07cff',
+    data: [[1981,0],[1985,0],[1998,0],[2001,0],[2008,1.0],[2009,0],[2010,2.0],[2012,1.0],[2015,0.5],[2016,0],[2019,0.5],[2020.17,0],[2021,0],[2022.58,1.5],[2023,1.5],[2024,1.5],[2025.08,1.0],[2026.25,1.25]]
+  }],
+  annotations: [
+    { year: 2009, label: 'GFC 0%', color: '#5b8def' },
+    { year: 2020.17, label: 'COVID 0%', color: '#5b8def' },
+    { year: 2022.58, label: '引締1.5', color: '#ff6b6b' },
+    { year: 2025.08, label: '緩和1.0', color: '#00d4aa' },
+    { year: 2026.25, label: 'やや上げ', color: '#ff9f43' }
+  ]
+});
+</script>
+
+<section>
+  <h2>緩和と引締めの実例 — 危機ごとの対応</h2>
+  <p>政策金利がないため、MASの「利下げ」「利上げ」は次のように読み替えられる。上のグラフはあくまで市場推計だが、危機局面での方向性ははっきり読み取れる。</p>
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>時期</th><th>MASの動き</th><th>他国でいう…</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>2008-09 GFC</td><td>傾きをゼロに（S$上昇を停止）</td><td class="cell-cut">大幅利下げ</td></tr>
+        <tr><td>2015.01</td><td>オフサイクル緩和（傾きを縮小）</td><td class="cell-cut">利下げ</td></tr>
+        <tr><td>2020.03 COVID</td><td>傾きをゼロ＋中心を引下げ（二重緩和）</td><td class="cell-cut">緊急利下げ</td></tr>
+        <tr><td>2022</td><td>年内に複数回（オフサイクル含む）再センター＋傾き急傾斜</td><td class="cell-hike">連続利上げ</td></tr>
+        <tr><td>2025.01</td><td>約5年ぶり緩和（傾き1.5%→1.0%）</td><td class="cell-cut">利下げ</td></tr>
+        <tr><td>2026.04</td><td>傾きを「わずかに引上げ」、幅・中心は据置</td><td class="cell-hike">小幅利上げ</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>2022年のインフレ急騰局面では、MASは年内に通常会合に加えて<strong>オフサイクル（臨時）</strong>の引締めも行い、為替政策で実質的な「連続利上げ」を実現した。逆に2020年のCOVIDショックでは、傾きをゼロにすると同時にバンドの中心も引き下げる「二重緩和」で対応した。為替バンドは、金利政策に劣らぬ機動性を備えている<cite>[2]</cite>。</p>
+</section>
+
+<section>
+  <h2>国内金利は誰が決めるのか — 内生的なSORA</h2>
+  <p>「政策金利がない」なら、住宅ローンや預金の金利はどう決まるのか。答えは<strong>「市場とグローバル金利が決める」</strong>である。資本移動が完全に自由なシンガポールでは、国内短期金利は<strong>無担保翌日物金利の平均値であるSORA（Singapore Overnight Rate Average）</strong>をベンチマークとし、為替政策とグローバル（特に米国）の金利水準を反映して<strong>内生的に</strong>決まる。MASは金利目標を持たず、<strong>MAS Bills</strong>などで日々の流動性を調節するだけだ。</p>
+  <p>かつて広く使われたSIBOR/SORは2024年1月1日に完全廃止され、現在の変動金利住宅ローンは複利SORAに連動する。下のグラフが示すように、シンガポールの短期金利は米国の利上げ局面（2022-23年）では3%超まで上昇し、米利下げ局面（2025-26年）では低下した。<strong>金利は「結果」であって「政策手段」ではない</strong>——これがシンガポール金融政策を理解する最大の鍵である。</p>
+</section>
+
+<!-- Chart: domestic short rate (SIBOR -> SORA) -->
+<div id="sg-short-rate"></div>
+<script>
+ChartBuilder.lines('sg-short-rate', {
+  title: 'シンガポールの国内短期金利 (3M SIBOR→SORA) 1998-2026',
+  caption: '出典: MAS（SORA）、市場データ。国内金利はMASが設定するのではなく、為替政策＋グローバル金利を反映して内生的に決まる。米国の利上げ局面(2022-23)で3%超、利下げ局面(2025-26)で約2%へ。各点は概算[要確認]。',
+  yUnit: '%',
+  yStep: 1,
+  yRange: [0, 6],
+  series: [{
+    name: '国内短期金利(概算)',
+    color: '#00d4aa',
+    data: [[1998,5.0],[2001,2.0],[2004,1.0],[2007,2.5],[2009,0.7],[2015,1.0],[2019,1.9],[2020,0.4],[2022,3.0],[2023,3.7],[2024,3.5],[2025,2.8],[2026.5,2.0]]
+  }],
+  annotations: [
+    { year: 1998, label: 'アジア危機', color: '#ff6b6b' },
+    { year: 2009, label: 'GFC後', color: '#5b8def' },
+    { year: 2023, label: '利上局面', color: '#ff9f43' },
+    { year: 2026.5, label: '≈2.0%', color: '#00d4aa' }
+  ]
+});
+</script>
+
+<section>
+  <h2>2026年の金融政策スタンス</h2>
+  <p>2026年初、MASは2025年1月から続けたハト派（緩和）スタンスを微修正した。<strong>2026年4月14日のMPS</strong>で、MASは上昇スロープを「<strong>わずかに引き上げる（slight increase）</strong>」と決定し、バンドの幅と中心は変更しなかった。背景には、中東情勢の緊迫を受けた原油・天然ガス・燃料の輸入価格上昇があり、2026年のインフレ見通しが従来の1.0〜2.0%から<strong>1.5〜2.5%へ上方修正</strong>されたことがある。一方で2026年Q1のGDPはAI関連需要に牽引されて前年比+6.0%と力強く、緩やかな引締めを許容する余地があった<cite>[3]</cite>。</p>
+  <p>こうした「為替で物価を抑える」枠組みは、輸入インフレに対しては強力だが限界もある。需要側のインフレや資産バブルには直接効きにくく、グローバル金利との連動から逃れられない。それでもシンガポールは40年以上にわたりこの枠組みで低インフレと通貨安定を両立させてきた。小国開放経済における金融政策の一つの「解」として、世界の中央銀行が研究対象としている。</p>
+</section>
+
+<footer class="sources">
+  <h3>出典・参考文献</h3>
+  <ol>
+    <li>MAS「Exchange Rate-Based Monetary Policy」「Monetary Policy Statement」 <a href="https://www.mas.gov.sg/">mas.gov.sg</a></li>
+    <li>MAS Past Monetary Policy Decisions（2008/2015/2020/2022/2025各回）、BIS Papers No.73</li>
+    <li>MAS Monetary Policy Statement 2026-04-14、Macroeconomic Review (Apr 2026)、ING/MUFG市場推計</li>
+  </ol>
+</footer>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+
+    </footer>
+
+    <nav class="page-nav">
+      <a href="01_central_bank.html" class="prev">中央銀行</a>
+      <a href="03_fiscal_policy.html" class="next">財政政策</a>
+    </nav>
+  </main>
+
+  <script src="../assets/enhancer.js"></script>
+  <script defer src="../assets/recall.js"></script>
+  <script src="../assets/tts-reader.js"></script>
+</body>
+</html>

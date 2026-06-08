@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>中国 - Banking System | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
+  <script defer src="../assets/charts.js"></script>
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇨🇳 中国</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. 中央銀行</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. 政策金利</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. 財政政策</a>
+      <a href="04_employment.html" class="sidebar-link">04. 雇用</a>
+      <a href="05_inflation.html" class="sidebar-link">05. インフレ</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. 株式市場概観</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. 株式(初期)</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. 株式(近代)</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. 株式(現代)</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. 株式(現在)</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. 債券市場</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. 短期金利</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. 長期金利</a>
+      <a href="14_currency.html" class="sidebar-link">14. 通貨</a>
+      <a href="15_crises.html" class="sidebar-link">15. 金融危機</a>
+      <a href="16_banking.html" class="sidebar-link active">16. 銀行制度</a>
+      <a href="17_corporate.html" class="sidebar-link">17. 企業・コーポレート</a>
+      <a href="18_regulation.html" class="sidebar-link">18. 規制</a>
+      <a href="19_trade.html" class="sidebar-link">19. 貿易</a>
+      <a href="20_lessons.html" class="sidebar-link">20. 教訓</a>
+      <a href="21_geopolitical_risk.html" class="sidebar-link">21. 地政学リスク</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">G10</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+      <div class="sidebar-section-title">地政学・新興地域</div>
+      <div class="country-flags">
+        <a href="../taiwan/01_central_bank.html" class="country-chip">TW</a>
+        <a href="../hongkong/01_central_bank.html" class="country-chip">HK</a>
+        <a href="../china/01_central_bank.html" class="country-chip active">CN</a>
+        <a href="../northkorea/01_central_bank.html" class="country-chip">KP</a>
+        <a href="../vietnam/01_central_bank.html" class="country-chip">VN</a>
+        <a href="../singapore/01_central_bank.html" class="country-chip">SG</a>
+        <a href="../iran/01_central_bank.html" class="country-chip">IR</a>
+        <a href="../israel/01_central_bank.html" class="country-chip">IL</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 ホーム</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10横断年表</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">中国</a>
+        <span class="sep">/</span>
+        中国⑯ 銀行制度
+      </div>
+      <h1 class="page-title">🇨🇳 中国⑯ 銀行制度</h1>
+      <p class="page-subtitle">四大行・政策性銀行・影の銀行と地方中小銀行リスク</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">四大行</div>
+          <div class="stat-label">工商・建設・農業・中国銀行 — 世界最大級の国有商業銀行</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">3行</div>
+          <div class="stat-label">政策性銀行（国家開発銀・輸出入銀・農業発展銀）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">影の銀行</div>
+          <div class="stat-label">理財商品（WMP）・信託 — 規制外の与信膨張リスク</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">~9.0%</div>
+          <div class="stat-label">大手行の預金準備率（RRR）— 流動性調整の主要レバー</div>
+        </div>
+      </div>
+
+      <section>
+        <h2>1. 国家が支配する銀行システム</h2>
+        <p>
+          中国の銀行制度は、世界最大の銀行資産を擁しながら、その中核を<strong>国家が直接・間接に支配</strong>している点が最大の特徴だ。銀行は単なる営利企業ではなく、<strong>党・政府の政策目標（成長・雇用・産業政策）を実行する「信用配分の道具」</strong>でもある。市場原理と政策意図が常に綱引きする構造が、中国の金融システムを理解する鍵となる。
+        </p>
+        <p>
+          システムは大きく、(1)四大国有商業銀行、(2)政策性銀行、(3)株式制商業銀行・全国規模の中堅行、(4)地方中小銀行（都市商業銀行・農村商業銀行）、(5)規制の外側にある「影の銀行（シャドーバンキング）」、という層で構成される。
+        </p>
+        <div class="key-number-row">
+          <div class="key-number"><span class="key-number-value">4</span><span class="key-number-label">国有大手商業銀行（メガバンク）</span></div>
+          <div class="key-number"><span class="key-number-value">3</span><span class="key-number-label">政策性銀行（非営利の政策金融）</span></div>
+          <div class="key-number"><span class="key-number-value">数千</span><span class="key-number-label">地方中小銀行（システミック・リスクの温床）</span></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>2. 四大行と政策性銀行</h2>
+        <p>
+          中国の銀行界の頂点には<strong>「四大行」</strong>がそびえる。総資産で世界トップクラスに名を連ねる巨大行であり、いずれも国有が支配株主だ。これに加え、利益を目的とせず国家戦略を実行する<strong>政策性銀行</strong>が並ぶ。
+        </p>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>分類</th>
+                <th>銀行</th>
+                <th>役割・特徴</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="highlight-blue">四大商業銀行</td>
+                <td>工商銀行（ICBC）</td>
+                <td>世界最大級の総資産。商工業・個人向けの総合銀行</td>
+              </tr>
+              <tr>
+                <td class="highlight-blue">四大商業銀行</td>
+                <td>建設銀行（CCB）</td>
+                <td>インフラ・建設・住宅ローンに強み</td>
+              </tr>
+              <tr>
+                <td class="highlight-blue">四大商業銀行</td>
+                <td>農業銀行（ABC）</td>
+                <td>農村・地方ネットワークが広大</td>
+              </tr>
+              <tr>
+                <td class="highlight-blue">四大商業銀行</td>
+                <td>中国銀行（BOC）</td>
+                <td>国際業務・外為・貿易金融に伝統的強み</td>
+              </tr>
+              <tr>
+                <td class="highlight-orange">政策性銀行</td>
+                <td>国家開発銀行（CDB）</td>
+                <td>インフラ・一帯一路の主要な資金供給源</td>
+              </tr>
+              <tr>
+                <td class="highlight-orange">政策性銀行</td>
+                <td>中国輸出入銀行</td>
+                <td>輸出信用・対外融資（途上国インフラ）</td>
+              </tr>
+              <tr>
+                <td class="highlight-orange">政策性銀行</td>
+                <td>農業発展銀行</td>
+                <td>農業・食糧安全保障の政策金融</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>3. 「影の銀行」と理財商品（WMP）</h2>
+        <p>
+          中国の金融リスクを語るうえで欠かせないのが<strong>「影の銀行（シャドーバンキング）」</strong>だ。これは銀行のバランスシートの外側で行われる与信——典型的には<strong>理財商品（WMP：Wealth Management Products）</strong>や信託商品——を指す。預金より高い利回りを求める家計資金が流れ込み、その多くが不動産・地方融資平台（LGFV）に向かった。規制が及びにくく、満期のミスマッチ（短期資金で長期融資）を抱えるため、不動産不況が深まると<strong>償還不能・取り付け的な解約</strong>のリスクが顕在化する。
+        </p>
+        <p>
+          2023年には大手信託の<strong>中植系（Zhongzhi）グループ</strong>が巨額の支払い不能に陥り、影の銀行と不動産危機の連結が改めて意識された。当局はWMPの「元本保証の廃止（資管新規）」など規制を強化してきたが、規制と抜け道のいたちごっこが続いている。
+        </p>
+      </section>
+
+      <section>
+        <h2>4. 不良債権（NPL）と地方中小銀行リスク</h2>
+        <p>
+          公式統計では、中国の商業銀行の不良債権比率は1%台に抑えられている。しかし市場は、<strong>不動産・LGFV向けの「見えない不良債権」</strong>が公式値より大きいと疑っている。とりわけ脆弱なのが、地方政府と密接に結びついた<strong>都市商業銀行・農村商業銀行など数千の地方中小銀行</strong>だ。地方財政の悪化、不動産の不振、ガバナンスの弱さが重なり、一部では預金引き出し制限や合併・救済が起きている。
+        </p>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>リスク領域</th>
+                <th>内容</th>
+                <th>波及先</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="highlight-red">不動産向け融資</td>
+                <td>デベロッパー・住宅ローンの焦付き</td>
+                <td>四大行〜地方行の資産健全性</td>
+              </tr>
+              <tr>
+                <td class="highlight-red">LGFV債務</td>
+                <td>地方融資平台の借換え・利払い負担</td>
+                <td>地方行・地方財政の連鎖</td>
+              </tr>
+              <tr>
+                <td class="highlight-orange">影の銀行</td>
+                <td>WMP・信託の償還不能</td>
+                <td>家計資産・銀行の評判リスク</td>
+              </tr>
+              <tr>
+                <td class="highlight-orange">地方中小銀行</td>
+                <td>ガバナンス不全・集中リスク</td>
+                <td>地域的な取り付け・救済合併</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="mnemonic-box">
+          <span class="mnemonic-icon">🧠</span>
+          <div class="mnemonic-title">覚え方：「大きすぎて潰せない」＋「見えない不良債権」</div>
+          <div class="mnemonic-body">
+            四大行は国家の信用を背負う「大きすぎて潰せない」存在で、危機時には政府が支える。一方、本当のリスクは<strong>規制の外（影の銀行）</strong>と<strong>統計に表れにくい不動産・LGFV向け債権</strong>に潜む。公式NPL比率1%台を額面通り受け取らず、「地方中小銀行と影の銀行」を危機の前線として見るのが中国銀行制度の読み方だ。
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+
+    </footer>
+
+    <nav class="page-nav">
+      <a href="15_crises.html" class="prev">金融危機</a>
+      <a href="17_corporate.html" class="next">企業・コーポレート</a>
+    </nav>
+  </main>
+
+  <script src="../assets/enhancer.js"></script>
+  <script defer src="../assets/recall.js"></script>
+  <script src="../assets/tts-reader.js"></script>
+</body>
+</html>

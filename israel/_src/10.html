@@ -1,0 +1,105 @@
+<!-- Key Stats -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">4,628.97</div>
+    <div class="stat-label">TA-35 史上最高値 (2026年5月6日)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">約+50%</div>
+    <div class="stat-label">2025年の騰落率 (世界最強クラス)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">2.96</div>
+    <div class="stat-label">シェケル/ドル (1993年以来の最強, 2026)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">2023.10 / 2025.06</div>
+    <div class="stat-label">ガザ戦争・対イラン12日間戦争</div>
+  </div>
+</div>
+
+<p>2020年代のイスラエル株式市場は、経済史でも稀な現象を体現している——<strong>「戦時下の最強市場」</strong>である。2023年10月のガザ戦争、2025年6月の対イラン12日間戦争、2026年2月の紛争再燃という、本来なら株価を暴落させるはずの地政学ショックを次々と浴びながら、TA-35は2025年に約+50%上昇し、2026年5月に史上最高値4,628.97を記録した。本章では、この逆説のメカニズムを解く。</p>
+
+<!-- Chart: TA-35 2020s -->
+<div id="israel-ta35-2020s"></div>
+<script>
+ChartBuilder.lines('israel-ta35-2020s', {
+  title: 'TA-35「戦時下の最強市場」 2020-2026',
+  caption: '出典: countryeconomy / Times of Israel / CNBC / Wikipedia。確証アンカー: 2020/3 COVID安値≈1230、2021≈1700、2022≈1900、2023/10ガザ戦争≈1750、2024≈2700、2025/12≈3950、2026/5/6 史上最高4,628.97。2025年騰落率は出典により+44〜+53%（章本文では約+50%と幅で記述）。',
+  yUnit: '',
+  yStep: 1000,
+  yRange: [1000, 5000],
+  series: [{
+    name: 'TA-35',
+    color: '#00d4aa',
+    data: [[2020.17,1230],[2021,1700],[2022,1900],[2023.42,2000],[2023.75,1750],[2024,2700],[2025,3300],[2025.92,3950],[2026.33,4628.97]]
+  }],
+  bands: [
+    { from: 2023.78, to: 2026.5, label: '戦時', color: '#ff6b6b' }
+  ],
+  annotations: [
+    { year: 2023.75, label: 'ガザ戦争', color: '#ff6b6b' },
+    { year: 2025.45, label: '対イラン', color: '#ff9f43' },
+    { year: 2026.33, label: '最高4629', color: '#00d4aa' }
+  ]
+});
+</script>
+
+<section>
+  <h2>司法改革ショックと戦争前夜（2023上期）</h2>
+  <p>2023年前半、イスラエル市場を揺るがしたのは戦争ではなく<strong>国内政治</strong>であった。ネタニヤフ政権の<strong>司法制度改革</strong>を巡る大規模抗議が起き、ハイテク資金の海外流出懸念、シェケル下落、格付け見通しの悪化を招いた。「Startup Nationの法的・制度的安定性が損なわれる」という不安が、市場のリスクプレミアムを高めた<cite>[1]</cite>。皮肉にも、この国内の動揺が、まもなく訪れる戦争という外的ショックの前夜となった。</p>
+</section>
+
+<section>
+  <h2>2023年10月7日 — ガザ戦争開戦と急落、そして反転</h2>
+  <p>2023年10月7日のハマスの奇襲は、イスラエルに建国以来最大級の衝撃を与えた。市場は当然動揺し、シェケルは<strong>10月27日に1ドル=4.08（11年ぶり安値）</strong>まで急落、TA-35も下落した。BOIは即座に<strong>最大300億ドルの外貨売り介入</strong>を発表してシェケルを防衛した（第1・14章参照）<cite>[2]</cite>。</p>
+  <p>ところが、市場の反応は教科書通りではなかった。初期の動揺の後、TA-35は<strong>むしろ上昇に転じた</strong>。投資家は、①イスラエルの軍事的優位と経済のレジリエンス、②米国の支援、③ハイテク・防衛・ガスという構造的な強みを評価し、リスクプレミアムを徐々に剥落させていった。2024年にはTA-35は<strong>約2,700</strong>まで上昇し、戦時とは思えない強さを見せた。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">なぜ戦時に株が上がるのか — 「リスクプレミアムの剥落」</div>
+    <div class="mnemonic-body">戦争で株が上がる逆説の正体は<strong>「最悪シナリオの織り込み解消」</strong>。①開戦前から地政学リスクで割安だった、②実際の戦争でイスラエル経済が崩れないと分かった、③停戦観測で「最悪」が遠のいた——この時、積み上がっていたリスクプレミアムが一気に剥落して株が急騰する。<strong>恐怖が和らぐ過程そのものがリターンになる。</strong></div>
+  </div>
+</section>
+
+<section>
+  <h2>2025年6月 対イラン12日間戦争 — 市場は織り込み済み</h2>
+  <p>2025年6月13日、イスラエルはイランの核・軍事施設を奇襲し、イランは弾道ミサイル550発超で報復、米国が6月22日にイラン核施設を爆撃し、6月24日に停戦した(<strong>「12日間戦争」</strong>)。中東の全面戦争という、市場が最も恐れるシナリオが現実化したのである<cite>[3]</cite>。</p>
+  <p>だが、TA-35の反応は驚くほど冷静だった。市場は紛争を<strong>早期に織り込み解消</strong>し、停戦後はむしろ株高・通貨高が加速した。「イランとの直接戦争すら、イスラエル経済とその市場を屈服させられない」という認識が広がり、地政学プレミアムはさらに剥落した。シェケルは<strong>1993年以来の最強圏（約2.96シェケル/ドル）</strong>まで上昇し、外国人投資家の資金回帰が続いた。</p>
+
+  <div class="key-number-row">
+    <div class="key-number"><span class="key-number-value">+50%</span><span class="key-number-label">2025年のTA-35騰落率（約。世界最強クラス）</span></div>
+    <div class="key-number"><span class="key-number-value">4,629</span><span class="key-number-label">2026/5/6の史上最高値</span></div>
+    <div class="key-number"><span class="key-number-value">2.96</span><span class="key-number-label">シェケル/ドル（1993年以来の最強）</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>2026年 — 史上最高値と「好況のパラドックス」</h2>
+  <p>2026年2月にイランとの紛争が再燃し、Leviathanガス田が約1か月操業停止（4月3日再開）する局面もあったが、市場は底堅さを維持した。TA-35は<strong>2026年5月6日に史上最高値4,628.97</strong>を記録。CNBC（2026/4/30）は「戦時下でも好況」と報じ、GDP成長加速・潤沢な外貨準備・低い政府債務という強固なファンダメンタルズを背景に挙げた<cite>[4]</cite>。</p>
+  <p>この「好況のパラドックス」を支える要因を整理すると以下になる。だがリスクも明確である。<strong>剥落したリスクプレミアムは、対イラン情勢が本格再燃すれば一瞬で戻り、株安・シェケル安に振れる</strong>。2020年代のイスラエル市場は「最強」であると同時に、地政学を最大のボラティリティ源とする市場でもある。</p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>追い風（株高要因）</th><th>逆風・リスク</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>地政学リスクプレミアムの剥落</td><td>対イラン情勢の本格再燃でプレミアム復活</td></tr>
+        <tr><td>ハイテク・防衛・ガス輸出の構造的強さ</td><td>シェケル高による輸出ハイテクの逆風</td></tr>
+        <tr><td>外国人投資家の資金回帰</td><td>戦争長期化・財政悪化のテールリスク</td></tr>
+        <tr><td>低債務・潤沢な外貨準備・成長加速</td><td>剥落済みゆえ上値の伸びしろは限定的</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<footer class="sources">
+  <h3>出典・参考文献</h3>
+  <ol>
+    <li>2023上期 司法改革抗議（ハイテク資金流出懸念・格付け見通し悪化）、報道各社</li>
+    <li>Times of Israel / Central Banking（2023/10 最大300億ドル介入、ILS 10/27=4.08）、TASE</li>
+    <li>Britannica/Wikipedia "Twelve-Day War"（2025/6/13–24、米6/22爆撃、6/24停戦）</li>
+    <li>countryeconomy（史上最高4,628.97 @2026/5/6）、CNBC 2026/4/30「戦時下でも好況」、MEI 2026/4、Times of Israel（2025 +53%）</li>
+  </ol>
+</footer>

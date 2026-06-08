@@ -1,0 +1,160 @@
+<!-- Key Stats -->
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="stat-value">約70,100</div>
+      <div class="stat-label">闇市場 KPW/USD(2026-04-12、史上初の7万突破、2週間で+29.3%)</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">約8,900</div>
+      <div class="stat-label">国の取引・銀行レート KPW/USD(2024年末)。闇との乖離が拡大</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">100:1</div>
+      <div class="stat-label">2009年デノミの交換比率。1週間でウォン-96%、米価3日で約3倍</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">USD・CNY</div>
+      <div class="stat-label">市場の事実上の基軸。住民はドル・人民元で価値を保存(ドル化)</div>
+    </div>
+  </div>
+
+  <section>
+    <h2>1. 北朝鮮ウォン(KPW) — 国際市場で取引されない通貨</h2>
+    <p>
+      本テキストの中で、通貨はこの北朝鮮編の<strong>最重要章</strong>である。なぜなら、政策金利も株式市場も債券市場も存在しないこの国で、<strong>通貨だけが住民の体制への信認を映す唯一の「市場価格」</strong>だからだ。北朝鮮ウォン(コードKPW、記号₩、補助単位チョン)は<strong>非交換通貨</strong>であり、国際外為市場では取引されない。為替レートも一本ではなく、用途の異なる複数のレートが併存する。
+    </p>
+    <p>
+      最も重要な区別は次の二つだ。第一が<strong>闇市場レート(非公式市場レート)</strong>。市場(チャンマダン)やドンジュの間で実際に外貨が売買される実勢レートで、住民の経済活動を支配する。第二が<strong>国の取引・銀行レート</strong>(2024年末で約8,900ウォン/ドル)。さらに会計用・理論値として歴史的に約100〜130ウォン/ドルという中央銀行の名目公定レートも存在し、「公定」という言葉が複数の概念を指すため極めて混乱しやすい。本章では住民生活を映す闇市場レートを中心に読む。
+    </p>
+
+    <div class="key-number-row">
+      <div class="key-number"><span class="key-number-value">KPW</span><span class="key-number-label">非交換・管理通貨。国際市場で取引されない</span></div>
+      <div class="key-number"><span class="key-number-value">3種</span><span class="key-number-label">闇市場 / 取引・銀行(~8,900) / 名目公定(~100-130)</span></div>
+      <div class="key-number"><span class="key-number-value">+29.3%</span><span class="key-number-label">2026年4月、2週間でドルが対ウォン急騰</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>2. 闇市場レートの長期推移 — デノミ・安定・暴落</h2>
+    <p>
+      2009年デノミ後の新ウォン建てで闇市場のドルレートを追うと、3つの局面が見える。(1)<strong>2010〜2012年のハイパーインフレ</strong>(デノミ直後、1ドル数十ウォンから数千ウォンへ急騰)、(2)<strong>2013〜2020年の奇跡的な安定</strong>(約8,000ウォンで長期横ばい — 後述するドル化の好循環)、(3)<strong>2024年以降の再暴落</strong>(8,500→16,100→70,100ウォン)。特異なのが2020〜2021年で、COVID国境封鎖により輸入が途絶して外貨需要が消え、逆説的に<strong>ウォン高(約5,000ウォン)</strong>になった点である。
+    </p>
+
+    <div id="nk14-fx-blackmarket"></div>
+    <script>
+    ChartBuilder.lines('nk14-fx-blackmarket', {
+      title: '闇市場 USD/KPW 為替レート 2010-2026(新ウォン, 対数軸)',
+      caption: '出典: Daily NK / NK News 為替トラッカー、38 North。2009年デノミ後の新ウォン建て。値は脱北者ネットワーク報道由来で中間月は補間、誤差が大きい。2013-20の横ばいはドル化による安定期。',
+      yUnit: '',
+      logScale: true,
+      yRange: [30, 100000],
+      series: [{
+        name: '闇レート USD/KPW',
+        color: '#ff6b6b', width: 2,
+        data: [[2010.00,40],[2010.50,1000],[2010.92,1700],[2011.50,3000],[2012.00,6500],[2012.92,8000],[2013.50,8200],[2014.00,8000],[2015.00,8200],[2016.00,8100],[2017.00,8300],[2018.00,8100],[2019.00,8400],[2020.00,8200],[2020.92,6500],[2021.50,5000],[2022.00,5500],[2022.92,7800],[2023.50,8300],[2024.00,8500],[2024.75,16100],[2025.00,18000],[2025.60,40000],[2026.24,54200],[2026.28,70100]]
+      }],
+      annotations: [
+        {year:2012.0, label:'デノミ後高', color:'#ffd93d'},
+        {year:2020.92, label:'COVID won高', color:'#5b8def'},
+        {year:2024.75, label:'暴落開始', color:'#ff9f43'},
+        {year:2026.28, label:'70100突破', color:'#ff6b6b'}
+      ],
+      bands: [
+        {from:2013.0, to:2020.0, label:'ドル化安定期'}
+      ]
+    });
+    </script>
+  </section>
+
+  <section>
+    <h2>3. ドル化・元化 — 住民が選んだ「自前の通貨安定」</h2>
+    <p>
+      2013〜2020年の長期安定は政府の政策の成果ではなく、住民が自衛のために通貨を米ドル・人民元へ置き換えた<strong>「ドル化(dollarization)」</strong>の結果だった。2009年デノミで自国通貨への信頼を失った住民は、売買・貯蓄・大口取引を外貨建てで行うようになり、市場では<strong>米ドルと人民元が事実上の基軸通貨</strong>として定着した。外貨が経済に深く浸透すると、ウォンの発行量が増えても主要な取引が外貨建てのため、ウォンの対外価値が安定するという好循環が生まれた。
+    </p>
+    <p>
+      しかしドル化は安定と脆弱性を同時にもたらす逆説的な現象でもある。経済が外貨に依存すると、外貨の出入り(中朝貿易の増減、制裁、国境封鎖)一つでウォンが乱高下する。2024年以降の暴落は、対中貿易再開への期待などから外貨需要が急増し、ウォン売り・外貨買いが殺到したことが一因とされる。住民のウォン建て資産は実質的に大きく目減りし、ドル・人民元・現物を持つ者と持たない者の格差を広げた。
+    </p>
+
+    <div class="mnemonic-box">
+      <span class="mnemonic-icon">🧠</span>
+      <div class="mnemonic-title">記憶のフック: ドル化の逆説</div>
+      <div class="mnemonic-body">
+        住民が自国通貨を見限ってドル・人民元に逃げた結果、ウォンは皮肉にも一時「安定」した(2013-20)。だが外貨依存は外的ショックに弱い。外貨の流出入一つでウォンが暴落する(2024-26)。ドル化は安定と脆弱性の両方を運んでくる。
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>4. デノミの断絶を含む長期史 — 桁が変わった通貨</h2>
+    <p>
+      より長い時間軸で見ると、対USDレートには<strong>2009年デノミによる「桁の断絶」</strong>がある。1990年代までは名目公定で1ドル≒2.1ウォン前後に固定する建前だったが、2002年の「7・1経済管理改善措置」で公定レートが現実に近い水準へ大幅に切り下げられた。さらに2009年11月のデノミで100旧ウォン=1新ウォンへ「ゼロ2つ」を切り捨てたため、見かけの数字が一気に縮んだ(旧3,600→新36)。その直後にハイパーインフレが起き、新ウォン建てでも再び桁が跳ね上がった。下のチャートは対数軸でこの断絶を表現している。
+    </p>
+
+    <div id="nk14-fx-longterm"></div>
+    <script>
+    ChartBuilder.lines('nk14-fx-longterm', {
+      title: '対USD為替レート長期史 1990-2026(デノミ断絶含む, 対数軸)',
+      caption: '出典: 38 North、Daily NK ほか。〜2002は名目公定の建前値、2009.92はデノミ直後の新ウォン見かけ値。1990-2009の闇レートは断片的で桁の連続性に注意。',
+      yUnit: '',
+      logScale: true,
+      yRange: [1, 100000],
+      series: [{
+        name: 'USD/KPW',
+        color: '#00d4aa', width: 2,
+        data: [[1990,2.1],[2000,2.2],[2002,150],[2005,2900],[2009.4,3600],[2009.92,36],[2011,2500],[2013,8000],[2017,8300],[2020,8200],[2021.5,5000],[2024,8500],[2025.6,40000],[2026.28,70100]]
+      }],
+      annotations: [
+        {year:2002, label:'7・1措置', color:'#ffd93d'},
+        {year:2009.92, label:'2009デノミ', color:'#ff6b6b'},
+        {year:2026.28, label:'70100', color:'#ff6b6b'}
+      ]
+    });
+    </script>
+
+    <div class="table-container">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>レートの種類</th>
+            <th>水準(目安)</th>
+            <th>用途・意味</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="highlight-red">闇市場(非公式)レート</td>
+            <td class="highlight-red">約70,100(2026-04)</td>
+            <td>市場・住民の実勢。経済活動を支配する</td>
+          </tr>
+          <tr>
+            <td class="highlight-orange">国の取引・銀行レート</td>
+            <td>約8,900(2024末)</td>
+            <td>国営貿易・銀行決済で用いる。闇との乖離が拡大</td>
+          </tr>
+          <tr>
+            <td class="highlight-blue">名目公定レート</td>
+            <td>約100〜130</td>
+            <td>会計用・理論値。実取引にはほぼ使われない</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>5. まとめ — 通貨は体制の温度計</h2>
+    <p>
+      北朝鮮では、株価や金利ではなく<strong>通貨レートが体制への信認を映す唯一の市場シグナル</strong>である。2009年デノミは「政府が住民の資産を没収できる」ことを示し信頼を破壊した。2013〜2020年の安定はドル化という住民の自衛の産物であり、2024〜2026年の暴落はインフレ不安と外貨需要の急増を映す。物価高→市場統制の強化→住民の不満、という悪循環は体制リスクそのものだ。この視点は15章(危機)・18章(規制)・21章(地政学リスク)で繰り返し現れる。
+    </p>
+  </section>
+
+  <section>
+    <h2>出典</h2>
+    <ul>
+      <li>Daily NK「North Korea exchange rate hits all-time high」(2026-04: 70,100 KPW/USD、+29.3%/2週)</li>
+      <li>38 North「What&#39;s Up with North Korea&#39;s Skyrocketing Exchange Rates?」(2024-10: 公定8,900 vs 闇16,100)</li>
+      <li>Wikipedia「2009 North Korean currency reform」/ PIIE「North Korea&#39;s Failed Currency Reform」(100:1デノミ、-96%、米価3倍)</li>
+      <li>Daily NK / KEIA「Currency crisis drives North Koreans to dollar, yuan」(ドル化、2024-26暴落)/ Korea Times (2021)(COVID期のウォン高)</li>
+    </ul>
+  </section>
+

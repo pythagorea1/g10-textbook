@@ -1,0 +1,131 @@
+<!-- Key Stats -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">3.00%</div>
+    <div class="stat-label">LPR 1年物 (2024年10月〜、過去最低)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">3.50%</div>
+    <div class="stat-label">LPR 5年超物 (住宅ローン基準)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">1.40%</div>
+    <div class="stat-label">7日リバースレポ (主政策金利)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">10.98%</div>
+    <div class="stat-label">1996年の1年物貸出金利 (現代との対比)</div>
+  </div>
+</div>
+
+<p>中国の政策金利の歴史は、<strong>「二桁の高金利時代から、デフレ下の過去最低金利へ」</strong>という長期の低下トレンドに集約される。さらに近年は、PBoCが操作対象とする金利そのものを組み替えており、「どの金利が政策金利か」が時代によって変化してきた。本章では、1996年以降の借入コストの推移と、現在の多層的な金利体系を整理する。</p>
+
+<div class="key-number-row">
+  <div class="key-number"><span class="key-number-value">3.0%</span><span class="key-number-label">LPR 1年（企業向け基準）</span></div>
+  <div class="key-number"><span class="key-number-value">3.5%</span><span class="key-number-label">LPR 5年超（住宅ローン基準）</span></div>
+  <div class="key-number"><span class="key-number-value">1.4%</span><span class="key-number-label">7日リバースレポ（主政策金利）</span></div>
+  <div class="key-number"><span class="key-number-value">~9%</span><span class="key-number-label">預金準備率 RRR（大手行）</span></div>
+</div>
+
+<!-- Chart: long-run lending rate -> LPR + 7d reverse repo -->
+<div id="china-lending-lpr"></div>
+<script>
+ChartBuilder.lines('china-lending-lpr', {
+  title: '中国 借入コストの長期低下 — 1年物貸出基準金利→LPR(1年) と 7日リバースレポ 1996-2026',
+  caption: '出典: 中国人民銀行 (PBoC)。2019年8月のLPR改革までは1年物貸出基準金利、以降はLPR(1年)。補助線は2024年に主政策金利化した7日リバースレポ。1996年の10.98%から2025年の3.00%へ、約30年で長期低下。',
+  yUnit: '%',
+  yStep: 2,
+  yRange: [0, 12],
+  series: [
+    {
+      name: '貸出基準金利→LPR(1年)',
+      color: '#00d4aa',
+      data: [[1996, 10.98], [2002, 5.31], [2007, 7.47], [2008.92, 5.31], [2010, 5.81], [2011, 6.56], [2012, 6.00], [2014, 5.60], [2015, 4.35], [2017, 4.35], [2019.58, 4.25], [2020, 3.85], [2022, 3.65], [2023, 3.45], [2024.75, 3.10], [2025, 3.00], [2026, 3.00]]
+    },
+    {
+      name: '7日リバースレポ',
+      color: '#ff9f43',
+      data: [[2020, 2.20], [2022, 2.00], [2023, 1.80], [2024.75, 1.50], [2025.42, 1.40], [2026, 1.40]]
+    }
+  ],
+  annotations: [
+    { year: 1996, label: '96年 11%', color: '#ff6b6b' },
+    { year: 2008.92, label: 'GFC利下げ', color: '#5b8def' },
+    { year: 2019.58, label: 'LPR改革', color: '#ffd93d' },
+    { year: 2024.75, label: '過去最低', color: '#00d4aa' }
+  ]
+});
+</script>
+
+<section>
+  <h2>高金利時代からの長期低下</h2>
+  <p>改革開放期の中国は、しばしば二桁のインフレに見舞われ、それを抑え込むために高い政策金利が必要だった。1996年の1年物貸出基準金利は<strong>10.98%</strong>に達していた。1990年代後半のデフレ局面（1998-99年）で金利は段階的に引き下げられ、WTO加盟（2001年）後の高成長期にはインフレ・過熱抑制のために再び引き上げられ、2007年には7.47%まで上昇した<cite>[1]</cite>。</p>
+  <p>2008年のリーマン・ショックでは、4兆元の景気刺激策とあわせて貸出金利を5.31%へ急速に引き下げ、世界金融危機を乗り切った。その後は、成長率の鈍化と物価の落ち着きを背景に金利は緩やかな低下基調を続け、2015年には4.35%、そして2024年10月以降は<strong>LPR 1年物が3.00%</strong>という過去最低水準に達している。30年間で借入コストはほぼ3分の1以下になった計算だ。</p>
+</section>
+
+<section>
+  <h2>現在の多層的な金利体系</h2>
+  <p>中国の「政策金利」は単一ではない。目的別に複数の金利が併存し、PBoCはそれらを組み合わせて運営する。</p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>金利</th><th>水準 (2026年初)</th><th>誰のための金利か</th><th>備考</th></tr>
+      </thead>
+      <tbody>
+        <tr class="highlight-row"><td>7日リバースレポ (OMO)</td><td class="highlight-green">1.40%</td><td>銀行間市場（短期）</td><td>2024年に「主政策金利」へ格上げ</td></tr>
+        <tr><td>LPR 1年物</td><td>3.00%</td><td>企業向け貸出</td><td>2024年10月以降12ヶ月連続据置＝過去最低</td></tr>
+        <tr><td>LPR 5年超物</td><td>3.50%</td><td>住宅ローン</td><td>不動産支援の要、引下げ余地が焦点</td></tr>
+        <tr><td>MLF (1年)</td><td>補助手段化</td><td>銀行への中期流動性</td><td>かつてLPRの基準。主金利の座を譲る</td></tr>
+        <tr><td>RRR (大手行)</td><td>約9.0%</td><td>量的調整</td><td>2025年5月に50bp引下げ</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>2019年LPR改革 — 金利の伝達経路を整える</h3>
+  <p>2019年8月、PBoCは<strong>LPR（ローンプライムレート）改革</strong>を断行した。それまでの貸出基準金利は実勢から乖離し「形骸化」していた。新LPRは、18の銀行が報告するMLF金利への上乗せ幅（スプレッド）をもとに毎月20日に公表される仕組みで、政策金利の変更が実体経済の借入コストへ伝わる経路を強化した。これにより、PBoCがMLF金利を動かせばLPRが動き、企業・家計の借入金利が変わる、という欧米型に近い伝達が機能するようになった<cite>[2]</cite>。</p>
+
+  <h3>2024年「主政策金利」の移行</h3>
+  <p>2024年、PBoCは金融政策の操作枠組みをさらに整理し、<strong>7日物リバースレポ金利を「主政策金利」</strong>と明確に位置づけた。同時にMLFを補助的な流動性供給手段へと後退させ、「短期操作金利→市場金利→LPR→実体経済」という伝達経路を一本化した。2024年9月の包括緩和では7日レポを1.50%へ、2025年5月にはさらに1.40%へ引き下げ、据え置いている<cite>[3]</cite>。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">「主政策金利」が引っ越した</div>
+    <div class="mnemonic-body">かつての主役は<strong>MLF(1年)</strong>。2024年からは<strong>7日リバースレポ(1.40%)</strong>が主役に交代した。日銀の無担保コール、FRBのFFレートと同じ「短期の操作金利を主政策金利にする」という世界標準への接近。LPRはその下流に位置する「貸出の基準」である。</div>
+  </div>
+</section>
+
+<section>
+  <h2>主要な金利サイクル</h2>
+
+  <h3>1998-99 デフレ局面の利下げ</h3>
+  <p>アジア通貨危機の余波と国有企業改革に伴う需要不足で、中国は一時デフレ（CPIマイナス）に陥った。PBoCは貸出金利を段階的に引き下げ、内需を下支えした。人民元は切り下げず（後述の通貨章参照）、地域の通貨安競争を回避した。</p>
+
+  <h3>2008 リーマン・ショックと4兆元</h3>
+  <p>世界金融危機に対し、中国は<strong>4兆元（約5,860億ドル）の景気刺激策</strong>と急速な利下げ（貸出金利を7.47%→5.31%）で対応した。世界経済が底割れするなか中国の高成長が世界需要を支えた一方、インフラ・不動産・地方政府債務の膨張という後年の構造問題の遠因にもなった<cite>[4]</cite>。</p>
+
+  <h3>2020 COVIDと2024 バズーカ緩和</h3>
+  <p>2020年のパンデミック、そして2021年以降の不動産不況に対し、PBoCは金利・RRRの両面で緩和を継続した。2024年9月の「バズーカ」緩和ではRRR-50bp、政策金利-20bp、株式市場支援8,000億元のパッケージを打ち出し、CSI300は週ベースで約16%上昇（2008年以来の大きさ）した。2025年も緩和基調が続き、LPR・主政策金利はいずれも過去最低圏で推移している。</p>
+</section>
+
+<section>
+  <h2>緩和の制約 — 「日本化」とのレース</h2>
+  <p>金利が過去最低まで下がっても、中国経済はデフレ圧力（2025年CPI 0.0%）から脱し切れていない。これはかつての日本が経験した「低金利でも需要が戻らない」状況と酷似し、<strong>「日本化（Japanification）」</strong>のリスクとして論じられる。さらにPBoCの利下げには三つの制約が伴う<cite>[5]</cite>。</p>
+  <ul>
+    <li><strong>人民元安・資本流出</strong>：米国との金利差が拡大すると元安・資金流出を招くため、為替の安定とトレードオフになる。</li>
+    <li><strong>銀行の利ざや圧縮</strong>：貸出金利の低下は銀行の純金利マージン(NIM)を圧迫し、過去最低圏にある。利下げが金融仲介機能を損なう「リバーサル・レート」の懸念も。</li>
+    <li><strong>不動産・地方債務</strong>：低金利は救済になる一方、過剰投資・債務体質の温存にもなる。</li>
+  </ul>
+  <p>このため、中国の金利は「過去最低だが、欧米のようなゼロ・マイナス金利にまでは踏み込んでいない」という独特の位置にある。為替・資本規制・産業政策と一体で運営されるがゆえに、純粋な「物価ターゲット」だけで金利を決められないのが中国型金融政策の本質である。</p>
+</section>
+
+<footer class="sources">
+  <h3>出典・参考文献</h3>
+  <ol>
+    <li>中国人民銀行 (PBoC) 金利公告、Macrotrends/World Bank（貸出金利史）</li>
+    <li>PBoC「LPR改革」(2019年8月) 関連公告・解説</li>
+    <li>PBoC LPR公告(2025-12-22)、CNBC(2026-01/04 LPR据置)、Reuters / ABN AMRO（7日レポ・RRR）</li>
+    <li>4兆元景気刺激策(2008年11月) 関連報道、IMF Article IV</li>
+    <li>IMF 2025 Article IV Consultation with China (PR 26/053)、World Bank China Economic Update (2025年12月)</li>
+  </ol>
+</footer>

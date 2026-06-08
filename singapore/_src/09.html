@@ -1,0 +1,100 @@
+<!-- Key Stats -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">3,906</div>
+    <div class="stat-label">STIピーク(2007年10月)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">1,457</div>
+    <div class="stat-label">GFC底値(2009年3月)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value"><span class="drawdown-badge">-63%</span></div>
+    <div class="stat-label">GFCでのSTI下落率(ピーク比)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">REIT拡大</div>
+    <div class="stat-label">危機後の主役はS-REITと配当株へ</div>
+  </div>
+</div>
+
+<p>2007年から2024年にかけてのシンガポール株式市場は、<strong>世界金融危機（GFC）での大暴落と長い回復、そしてREIT市場の台頭</strong>に特徴づけられる。STIは2007年10月のピーク3,906からGFCで約-63%急落し、その後は欧米のような力強い最高値更新には至らず、長く3,000〜3,800のレンジで推移した。「成長より配当」という現在のSTIの性格が固まったのがこの時期である<cite>[1]</cite>。</p>
+
+<div class="key-number-row">
+  <div class="key-number"><span class="key-number-value">-63%</span><span class="key-number-label">GFCでのピークからの下落率</span></div>
+  <div class="key-number"><span class="key-number-value">レンジ相場</span><span class="key-number-label">回復後は3,000〜3,800で長く推移</span></div>
+  <div class="key-number"><span class="key-number-value">S-REIT</span><span class="key-number-label">この時期に高配当の主役として定着</span></div>
+</div>
+
+<!-- Chart: STI 2007-2024 GFC crash and recovery -->
+<div id="sg-sti-recent"></div>
+<script>
+ChartBuilder.lines('sg-sti-recent', {
+  title: 'STI 現代 2007-2024 — GFC暴落とレンジ相場',
+  caption: '出典: SGX / 報道。2007年10月のピーク3,906から2009年3月に1,457へ約-63%。その後は3,000〜3,800のレンジが続き、2020年COVIDで2,233へ下落（報道は「3年ぶり安値」、正確な底値は要確認）。中間点はスムージング。',
+  yUnit: '',
+  yStep: 1000,
+  yRange: [0, 4500],
+  series: [{
+    name: 'STI',
+    color: '#ff6b6b',
+    data: [[2007.75,3906],[2009.17,1457],[2011,3200],[2013,3200],[2015,2880],[2018.33,3640],[2020.17,2233],[2021,3100],[2023,3240],[2024,3800]]
+  }],
+  annotations: [
+    { year: 2007.75, label: '07高値', color: '#ffd93d' },
+    { year: 2009.17, label: 'GFC底', color: '#5b8def' },
+    { year: 2018.33, label: '18高値', color: '#00d4aa' },
+    { year: 2020.17, label: 'COVID底', color: '#ff9f43' }
+  ]
+});
+</script>
+
+<section>
+  <h2>主要危機のドローダウン — 輸出国の宿命</h2>
+  <p>シンガポールは貿易/GDP比が300%を超える超開放経済であるため、世界的なショックに対して株価が大きく振れる傾向がある。この現代期に起きた主要な下落を整理すると、輸出国シンガポールの「世界経済との連動性」が鮮明に見える。</p>
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>危機</th><th>高値→安値(概数)</th><th>下落率</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>世界金融危機 (2007-09)</td><td>3,906 → 1,457</td><td><span class="drawdown-badge">-63%</span></td></tr>
+        <tr><td>COVID-19 (2018高値→2020安値)</td><td>3,640 → 2,233</td><td><span class="drawdown-badge">-39%</span></td></tr>
+        <tr><td>欧州債務・中国減速 (2015)</td><td>3,640圏 → 2,880</td><td><span class="drawdown-badge">-21%</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>GFC — STIの「失われたピーク」</h2>
+  <p>2007年10月、STIは3,906の史上最高値を付けた。だがその直後、米国のサブプライム危機に端を発する世界金融危機（GFC）が世界を呑み込む。輸出依存度が極めて高いシンガポール経済は直撃を受け、STIは<strong>2009年3月に1,457まで暴落——ピークから約-63%</strong>という壮絶な下落となった。MASはこの局面で為替政策の上昇スロープをゼロにし（実質的な大幅利下げ）、政府も準備金を取り崩して景気下支えに動いた。実体経済でもGDPが大きく落ち込み、輸出と中継貿易に依存する都市国家の脆弱性が改めて露呈した。</p>
+  <p>注目すべきは、その後の回復が<strong>欧米ほど力強くなかった</strong>点だ。米国株がGFC後に何度も最高値を更新したのに対し、STIは2011年に3,200まで戻したものの、3,906のピークを長く回復できず、<strong>3,000〜3,800のレンジ相場</strong>に沈んだ。世界の金利・景気に連動する一方、テック成長株に乏しい指数構成が、米国型の急成長から取り残された一因である<cite>[2]</cite>。</p>
+</section>
+
+<section>
+  <h2>REIT市場の台頭 — 「インカム市場」への変質</h2>
+  <p>GFC後の低金利環境は、シンガポール株式市場の性格を大きく変えた。値上がり益が乏しいなか、投資家は<strong>高い分配金利回りを持つS-REIT</strong>へと資金を向けた。CapitaLand系・Mapletree系をはじめとするREITが次々と上場・拡大し、シンガポールはアジア最大級のREIT市場へと成長した。海外不動産を組み込むクロスボーダーREITも増え、SGXは「インカム投資のハブ」としての地位を固めた。</p>
+  <p>同時に、地場メガバンク3行（DBS・OCBC・UOB）の安定した高配当も、STIの「インカム性」を強めた。こうして、2007年以前の「成長を追う市場」から、<strong>「配当で稼ぐ市場」</strong>へとSTIの性格が変質したのが、この現代期の本質である。2020年のCOVIDショックでは一時2,233まで下落したが、配当の厚みと準備金の支えにより、市場は再び立ち直っていく。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">なぜSTIは「最高値更新」が遅れたのか</div>
+    <div class="mnemonic-body">米国＝<strong>GAFAなど成長株が指数を押し上げ</strong>、何度も最高値更新。STI＝<strong>銀行・REIT中心で成長エンジンに乏しく</strong>、GFCピーク3,906を15年以上回復できなかった。だが高配当という「守り」は強く、最終的に2026年の最高値更新へつながる。</div>
+  </div>
+</section>
+
+<section>
+  <h2>COVID-19 — 短期の急落と準備金の支え</h2>
+  <p>2020年3月、新型コロナウイルスのパンデミックは世界の株式市場を急落させ、STIも一時2,233付近（報道では「3年ぶり安値」、3月9日には-6.03%の急落）まで下落した。2018年5月の高値3,640からの下落率は約-39%に達した。だが回復は比較的速かった。MASは為替スロープをゼロにしたうえでバンドの中心も引き下げる「二重緩和」を実施し、政府は<strong>準備金を取り崩した複数次の巨額予算（Resilience／Solidarity Budget等）</strong>で雇用と企業を直接支えた。準備金という「ショック吸収バッファ」が、危機の深さを和らげたのである。</p>
+  <p>この現代期を通じてSTIが示したのは、<strong>「世界経済に強く連動して大きく下げるが、高配当と準備金という二重のクッションで立ち直る」</strong>という、輸出国シンガポール特有の市場性格だった。値上がり益で勝負する市場ではないが、危機への耐性は高い。この特性が、次章で見る2026年の歴史的な最高値更新の土台となる。</p>
+</section>
+
+<footer class="sources">
+  <h3>出典・参考文献</h3>
+  <ol>
+    <li>SGX / FTSE Russell「Straits Times Index」、GFC期のSTI動向報道 <a href="https://www.sgx.com/">sgx.com</a></li>
+    <li>MAS Monetary Policy Statement（2008-2009緩和）、S-REIT市場資料</li>
+    <li>COVID-19期のSTI下落報道（2020年3月「3年ぶり安値」）</li>
+  </ol>
+</footer>

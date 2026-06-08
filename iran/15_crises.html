@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>イラン - Financial Crises | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
+  <script defer src="../assets/charts.js"></script>
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇮🇷 イラン</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. 中央銀行</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. 政策金利</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. 財政政策</a>
+      <a href="04_employment.html" class="sidebar-link">04. 雇用</a>
+      <a href="05_inflation.html" class="sidebar-link">05. インフレ</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. 株式市場概観</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. 株式(初期)</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. 株式(近代)</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. 株式(現代)</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. 株式(現在)</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. 債券市場</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. 短期金利</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. 長期金利</a>
+      <a href="14_currency.html" class="sidebar-link">14. 通貨</a>
+      <a href="15_crises.html" class="sidebar-link active">15. 金融危機</a>
+      <a href="16_banking.html" class="sidebar-link">16. 銀行制度</a>
+      <a href="17_corporate.html" class="sidebar-link">17. 企業・コーポレート</a>
+      <a href="18_regulation.html" class="sidebar-link">18. 規制</a>
+      <a href="19_trade.html" class="sidebar-link">19. 貿易</a>
+      <a href="20_lessons.html" class="sidebar-link">20. 教訓</a>
+      <a href="21_geopolitical_risk.html" class="sidebar-link">21. 地政学リスク</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">G10</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+      <div class="sidebar-section-title">地政学・新興地域</div>
+      <div class="country-flags">
+        <a href="../taiwan/01_central_bank.html" class="country-chip">TW</a>
+        <a href="../hongkong/01_central_bank.html" class="country-chip">HK</a>
+        <a href="../china/01_central_bank.html" class="country-chip">CN</a>
+        <a href="../northkorea/01_central_bank.html" class="country-chip">KP</a>
+        <a href="../vietnam/01_central_bank.html" class="country-chip">VN</a>
+        <a href="../singapore/01_central_bank.html" class="country-chip">SG</a>
+        <a href="../iran/01_central_bank.html" class="country-chip active">IR</a>
+        <a href="../israel/01_central_bank.html" class="country-chip">IL</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 ホーム</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10横断年表</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">イラン</a>
+        <span class="sep">/</span>
+        イラン⑮ 金融危機
+      </div>
+      <h1 class="page-title">🇮🇷 イラン⑮ 金融危機</h1>
+      <p class="page-subtitle">革命・制裁・2020株暴落・2026戦争 — 地政学が起点の危機年表</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value" style="color:var(--accent-red);">2.5万倍</div>
+          <div class="stat-label">1979→2026のリアル対ドル減価倍率</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" style="color:var(--accent-red);">-42%</div>
+          <div class="stat-label">2020年 TEDPIX大暴落（市場史上最大級）<span class="drawdown-badge">-42%</span></div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" style="color:var(--accent-orange);">2012</div>
+          <div class="stat-label">SWIFT遮断＋EU石油禁輸 — 数日でリアル-50%</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" style="color:var(--accent-red);">2026</div>
+          <div class="stat-label">対イスラエル戦争でリアル147万→180万/USD</div>
+        </div>
+      </div>
+
+      <p>
+        イランの金融危機史は、欧米型の「銀行取り付け」や「資産バブル崩壊」とは性質が異なる。最大の震源はつねに<strong>地政学――革命・戦争・制裁</strong>であり、それが通貨（リアル）の急落とインフレ加速を通じて経済全体を揺さぶる。本章では、1979年の革命から2026年の対イスラエル戦争まで、イランが経験した主要危機を年表で俯瞰し、特に「制裁ショック」「2020年の株バブル崩壊」「2025-26年の戦争」という三つの軸を深掘りする。
+      </p>
+
+      <section>
+        <h2>1. 危機年表一覧 (1979-2026)</h2>
+        <p>以下はイランの主要な金融・経済危機を時系列で整理したものである。多くが核・制裁・戦争という地政学イベントを起点とする点に注目したい。</p>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>年</th>
+                <th>出来事</th>
+                <th>市場・経済への影響</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1979</td>
+                <td>イラン革命・米大使館人質事件</td>
+                <td>資本逃避でリアル急落開始、米による資産凍結・初期制裁</td>
+              </tr>
+              <tr>
+                <td>1980-88</td>
+                <td>イラン・イラク戦争</td>
+                <td>財政破綻・インフレ・石油インフラ毀損</td>
+              </tr>
+              <tr>
+                <td>1995</td>
+                <td>米クリントン政権が包括禁輸</td>
+                <td>投資・貿易遮断、インフレ約50%</td>
+              </tr>
+              <tr>
+                <td>2006-10</td>
+                <td>国連安保理 核制裁（1737等）</td>
+                <td>段階的締付け、対外金融アクセス制限</td>
+              </tr>
+              <tr style="background:rgba(255,107,107,0.10);">
+                <td>2012</td>
+                <td>EU石油禁輸＋<strong>SWIFT遮断</strong></td>
+                <td>石油輸出半減、リアル数日で約-50%（13,000→36,000）</td>
+              </tr>
+              <tr style="background:rgba(0,212,170,0.08);">
+                <td>2015-07</td>
+                <td><strong>JCPOA（核合意）締結</strong></td>
+                <td>制裁解除期待でリアル安定、インフレ一桁化、TEDPIX上昇</td>
+              </tr>
+              <tr style="background:rgba(255,107,107,0.10);">
+                <td>2018-05</td>
+                <td><strong>米JCPOA離脱・max pressure</strong></td>
+                <td>リアル崩壊（42,000→9月15万）、インフレ再加速</td>
+              </tr>
+              <tr>
+                <td>2019-20</td>
+                <td>COVID＋制裁、石油輸出激減</td>
+                <td>リアル25万へ、財政悪化</td>
+              </tr>
+              <tr style="background:rgba(255,107,107,0.14);">
+                <td>2020夏-秋</td>
+                <td><strong>TEDPIXバブル＆大暴落（-42%）</strong></td>
+                <td>個人投資家殺到後、市場史上最大級の暴落</td>
+              </tr>
+              <tr>
+                <td>2022-09</td>
+                <td>マフサ・アミニ抗議運動</td>
+                <td>政情不安、リアル40万超、ネット遮断</td>
+              </tr>
+              <tr>
+                <td>2023-24</td>
+                <td>制裁迂回（影の船団・対中石油）で延命</td>
+                <td>闇レート漸進下落、TEDPIX名目最高値更新</td>
+              </tr>
+              <tr style="background:rgba(255,159,67,0.10);">
+                <td>2024</td>
+                <td>イラン⇄イスラエル直接攻撃の応酬</td>
+                <td>全面戦争懸念、原油・リアルにリスクプレミアム</td>
+              </tr>
+              <tr style="background:rgba(255,107,107,0.10);">
+                <td>2025-06</td>
+                <td><strong>12日間戦争</strong>（米がフォルドゥ核施設爆撃）</td>
+                <td>核施設毀損、安全保障環境激変、リアル一段安</td>
+              </tr>
+              <tr>
+                <td>2025-09</td>
+                <td>E3が<strong>スナップバック</strong>発動</td>
+                <td>国連制裁が全面復活、孤立深化</td>
+              </tr>
+              <tr>
+                <td>2025-10</td>
+                <td>議会が通貨「4ゼロ削除」最終可決</td>
+                <td>信認低下の象徴、移行コスト</td>
+              </tr>
+              <tr style="background:rgba(255,107,107,0.14);">
+                <td>2026-02〜</td>
+                <td><strong>2026 Iran war</strong>（ハメネイ師死亡・ホルムズ封鎖の応酬）</td>
+                <td>リアル147万→180万/USDへ加速崩壊、原油・地政学が世界波及</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="source"><cite>出典: §4 危機年表（Britannica / Al Jazeera / France24 / Iran International / Consilium 等）。</cite></p>
+      </section>
+
+      <section>
+        <h2>2. 「制裁ショック」というイラン型危機の本質</h2>
+        <p>
+          イランの危機を読むカギは、<strong>「合意＝通貨高／制裁＝通貨安」という連動</strong>を理解することだ。2015年のJCPOA（核合意）では、制裁解除への期待からリアルが約30,000で安定し、インフレは一桁台に低下、TEDPIXは上昇した。逆に2018年の米離脱・制裁再発動では、リアルが42,000から9月に15万へ崩壊し、インフレが再加速した。イランでは外交ニュースが、そのまま為替・物価・株のニュースになる。
+        </p>
+        <div class="mnemonic-box">
+          <span class="mnemonic-icon">🧠</span>
+          <div class="mnemonic-title">覚え方：イラン危機の起点はほぼ「外交・戦争」</div>
+          <div class="mnemonic-body">
+            欧米の危機は不動産・銀行・株のバブル崩壊が主役。イランの危機は<strong>革命・戦争・制裁という地政学</strong>が主役で、それが通貨安→インフレ→実体経済という順で波及する。「合意でリアル高、制裁でリアル安」――この一行がイラン危機史の背骨だ。
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>3. 2012年 ― SWIFT遮断と通貨ツインクライシス</h2>
+        <p>
+          2012年は、金融制裁が「兵器」になることを世界に示した年だ。EUがイラン産原油の禁輸に踏み切り、同時に主要イラン銀行が国際決済網<strong>SWIFTから遮断</strong>された。石油輸出は半減し、外貨の流入が細る一方で、決済手段を失ったイランは輸入代金の支払いにも苦しんだ。市場はこれを「イラン経済の動脈遮断」と受け止め、闇レートは<strong>わずか数日で13,000から36,000へ（約-50%）</strong>急落した。
+        </p>
+        <p>
+          この危機は、制裁が①石油収入（フロー）と②決済手段（インフラ）の両面からイランを締め上げられることを実証した。以後、イランの危機対応は「いかに制裁を迂回して石油を売り、ドルなしで決済を回すか」という生存戦略に変わっていく（第19章）。
+        </p>
+      </section>
+
+      <section>
+        <h2>4. 2018年 ― JCPOA離脱と「最大圧力」</h2>
+        <p>
+          2015年のJCPOAで一度は息を吹き返したイラン経済は、2018年5月のトランプ政権によるJCPOA離脱と制裁再発動（max pressure）で再び崖から突き落とされた。補助公定42,000で固定されていたレートの裏で、闇レートは同年9月に<strong>約15万リアル/USD</strong>へ暴騰。インフレは再加速し、外国企業（トタル、プジョー等）は相次いでイランから撤退した。
+        </p>
+        <p>
+          この局面で生まれたのが、<strong>多重為替レートの極端な乖離</strong>だ。必需品輸入向けの安い公定（42,000）と、実勢の闇レートが何倍も開き、特権層が公定でドルを得て闇で売る巨大なレント（利権）構造が固定化した。為替の歪みが、そのまま政情不安（2022年アミニ抗議）の火種にもなっていく。
+        </p>
+      </section>
+
+      <section>
+        <h2>5. 2020年 ― TEDPIXバブルと-42%の大暴落</h2>
+        <p>
+          イラン株式市場史上、最も劇的な事件が2020年に起きた。COVID下で行き場を失った個人マネーと、政府による株式投資奨励（国民への株式配布＝「正義株」など）が重なり、TEDPIX（テヘラン証取総合指数）は2020年8月に約<strong>210万ポイント</strong>へと年初来で数倍に暴騰した。テヘランでは新規証券口座の開設が殺到し、まさに「国民総株主」のバブルとなった。
+        </p>
+        <p>
+          だが2020年秋、バブルは反転。指数は<strong>ピークから約-42%</strong>へと崩落し、これはイラン市場史上最大級の暴落となった。政府主導で個人を株式へ誘導した政策が、出口で大量の個人投資家を巻き込む「副作用」を生んだ典型例である。
+        </p>
+        <div id="iran-tedpix-bubble-crash"></div>
+        <script>
+        ChartBuilder.lines('iran-tedpix-bubble-crash', {
+          title: 'TEDPIX 2017-2026 ― 2020年バブル&-42%暴落と「名目最高値の罠」(対数)',
+          caption: '出典: Trading Economics / Tehran Times。2019末≈512,000→2020-08にバブル天井≈2,100,000→2020秋に約-42%暴落（市場史上最大級）→2023以降は高インフレで名目最高値を更新し2026-01に≈407万pt。名目の上昇はリアル安・インフレを映す部分が大きく、ドル建て・実質ではしばしば下落する「罠」に注意。対数スケール、pt。',
+          logScale: true,
+          yRange: [80000, 5000000],
+          yUnit: '',
+          series: [{
+            name: 'TEDPIX (pt)',
+            color: '#00d4aa', width: 2.2,
+            data: [[2017,96000],[2019,512000],[2020.08,2100000],[2020.12,1200000],[2021,1350000],[2022,1450000],[2023,2050000],[2024,2300000],[2025,3850000],[2026.01,4071000],[2026.02,3652000]]
+          }],
+          bands: [
+            { from: 2020.08, to: 2020.92, label: 'バブル崩壊', color: '#ff6b6b' }
+          ],
+          annotations: [
+            { year: 2019, label: '19 高値', color: '#5b8def' },
+            { year: 2020.08, label: '20/8 天井', color: '#ffd93d' },
+            { year: 2020.92, label: '-42%暴落', color: '#ff6b6b' },
+            { year: 2023, label: '名目復活', color: '#ff9f43' },
+            { year: 2026.01, label: '407万', color: '#b07cff' }
+          ]
+        });
+        </script>
+        <p>
+          注意すべきは、2023年以降のTEDPIX「名目最高値更新」の解釈だ。名目の上昇の多くは、<strong>リアルの価値崩壊（インフレ・通貨安）を反映した「見かけの上昇」</strong>であり、ドル建てや実質購買力で見ると、しばしば下落している。「名目最高値＝儲かった」と誤読しないことが、高インフレ国の株式を読む最大の鍵である（第10章で詳述）。
+        </p>
+      </section>
+
+      <section>
+        <h2>6. 2025-26年 ― 戦争・スナップバック・通貨の加速崩壊</h2>
+        <p>
+          近年のイランは、危機が立て続けに重なる「複合危機」の局面にある。2025年6月の<strong>12日間戦争</strong>（イスラエルの先制→米によるフォルドゥ核施設爆撃→停戦）で安全保障環境が激変し、続く8-9月にはE3（英仏独）が<strong>スナップバック</strong>を発動して、JCPOA下で解除されていた国連制裁が全面復活した。10月には通貨の「4ゼロ削除」が可決され、信認低下が象徴的に示された。
+        </p>
+        <p>
+          そして2026年2月、<strong>2026 Iran war</strong>が勃発。最高指導者ハメネイ師の死亡やホルムズ海峡封鎖の応酬という極限の地政学ショックの中で、闇レートは147万から180万リアル/USDへと加速崩壊した。戦争・体制移行・制裁全復活という三重苦が、すでに脆弱だったイラン金融を一段と追い詰めている（詳細は第21章）。
+        </p>
+      </section>
+
+      <section>
+        <h2>7. イラン危機の共通パターン</h2>
+        <div class="mnemonic-box">
+          <span class="mnemonic-icon">🧠</span>
+          <div class="mnemonic-title">覚え方：「地政学→通貨→物価→実体」の連鎖</div>
+          <div class="mnemonic-body">
+            イランの危機はほぼ例外なく、①<strong>地政学ショック</strong>（革命・戦争・制裁）→②<strong>リアル急落</strong>→③<strong>インフレ加速</strong>→④<strong>実体経済悪化と資産退避</strong>（ドル・金・不動産・株へ）という順で進む。危機の規模を測る最良の物差しは株価でも金利でもなく<strong>闇ドルレート</strong>。リアルが何倍になったかを見れば、危機の深さがわかる。
+          </div>
+        </div>
+      </section>
+
+      <footer class="sources">
+        <h3>出典・参考文献</h3>
+        <ol>
+          <li>Britannica / Wikipedia / Al Jazeera / France24, 12日間戦争（2025-06）・2026 Iran war・フォルドゥ爆撃.</li>
+          <li>Consilium (EU理事会) / 独外務省, スナップバック（E3通告2025-08-28→国連制裁復活2025-09-27）.</li>
+          <li>Trading Economics / Tehran Times, TEDPIX（2020バブル・暴落、385万→407万pt）.</li>
+          <li>Iran International / Bonbast, 闇レート（2012=36,000、2026 147万→180万）.</li>
+          <li>IMF / World Bank, 成長・インフレ推計.</li>
+        </ol>
+      </footer>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+
+    </footer>
+
+    <nav class="page-nav">
+      <a href="14_currency.html" class="prev">通貨</a>
+      <a href="16_banking.html" class="next">銀行制度</a>
+    </nav>
+  </main>
+
+  <script src="../assets/enhancer.js"></script>
+  <script defer src="../assets/recall.js"></script>
+  <script src="../assets/tts-reader.js"></script>
+</body>
+</html>

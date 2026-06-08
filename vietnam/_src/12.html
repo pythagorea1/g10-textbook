@@ -1,0 +1,126 @@
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">4.50%</div>
+          <div class="stat-label">再融資金利（refinancing rate） — 2023年6月以降の据え置き水準</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">3.00%</div>
+          <div class="stat-label">割引金利（discount rate） — コリドーの下限的役割</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">信用成長枠</div>
+          <div class="stat-label">銀行ごとの与信枠（credit growth quota）= 量的統制ツール</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">2022年</div>
+          <div class="stat-label">対ドル防衛で銀行間金利が一時急騰（FX防衛スパイク）</div>
+        </div>
+      </div>
+
+      <section>
+        <h2>1. ベトナムの短期金利は「価格」と「量」の二刀流</h2>
+        <p>
+          先進国の中央銀行が政策金利という<strong>「価格」</strong>一本でマネーを調節するのに対し、ベトナム国家銀行（SBV）は<strong>「価格（金利）」と「量（信用成長枠）」の二つのレバー</strong>を併用する。これはベトナムの金融政策を理解するうえで最も重要な特徴だ。インフレ・ターゲットを掲げる独立中銀ではなく、SBVは政府の一機関として<strong>成長・物価・為替・金融安定の多目的</strong>を同時に追う。短期金利はその一部にすぎない。
+        </p>
+        <p>
+          価格ツールの中心は、SBVが商業銀行に資金を供給するときの<strong>再融資金利（refinancing rate, 現行4.50%）</strong>と<strong>割引金利（discount rate, 現行3.00%）</strong>だ。さらに公開市場操作（OMO）でのリバースレポ金利が日々の銀行間市場（interbank）の翌日物金利を誘導する。
+        </p>
+      </section>
+
+      <section>
+        <h2>2. SBVの政策金利コリドー（2026年）</h2>
+        <p>
+          2026年時点のSBVの主要政策レートは次の通り。いずれも2023年6月の利下げ局面以降、据え置かれている。
+        </p>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>金利</th>
+                <th>水準</th>
+                <th>役割</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="highlight-blue">再融資金利（refinancing）</td>
+                <td>4.50%</td>
+                <td>主軸の政策金利。SBVが銀行へ資金供給する基準</td>
+              </tr>
+              <tr>
+                <td>割引金利（discount）</td>
+                <td>3.00%</td>
+                <td>適格手形の再割引。コリドーの下限的役割</td>
+              </tr>
+              <tr>
+                <td>OMOリバースレポ</td>
+                <td>変動</td>
+                <td>日々の銀行間翌日物金利を誘導する実務ツール</td>
+              </tr>
+              <tr>
+                <td class="highlight-orange">信用成長枠（quota）</td>
+                <td>%枠で配分</td>
+                <td>各行の年間与信増加率の上限 — ベトナム独自の量的統制</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>3. 政策金利の軌跡 — 危機ごとに大きく振れる</h2>
+        <p>
+          ベトナムの政策金利は、先進国のように小刻みに動くのではなく、<strong>危機のたびに数%単位で大きく振れる</strong>。インフレ急騰の2008年と2011年には二桁へ急上昇し、COVID期には史上最低の4.0%まで低下、2022年の対ドル防衛で再び引き上げ、2023年に一気に利下げという「ジェットコースター」型の歴史を描く。
+        </p>
+
+        <div id="vn-short-policy"></div>
+        <script>
+        ChartBuilder.lines('vn-short-policy', {
+          title: 'SBV 再融資金利の推移 (2008-2026, %)',
+          caption: '出典: State Bank of Vietnam、DBS、中央銀行誌。2008年・2011年のインフレ急騰時に14〜15%級へ急上昇 → COVID期(2020年10月)に4.0%へ低下 → 2022年に対FX防衛で6.0%へ再引上げ → 2023年6月に4回利下げで4.5%、以後据え置き。⚠2008/2011のピーク水準は文献により14〜15%で揺れ。',
+          yUnit: '%',
+          yRange: [0, 16],
+          yStep: 4,
+          series: [{
+            name: '再融資金利',
+            color: '#5b8def', width: 2.2,
+            data: [[2008, 14.0], [2009, 7.0], [2011, 15.0], [2012, 9.0], [2013, 7.0], [2014, 6.5], [2016, 6.25], [2019, 6.25], [2020.8, 4.0], [2022.8, 6.0], [2023.5, 4.5], [2024, 4.5], [2025, 4.5], [2026, 4.5]]
+          }],
+          annotations: [
+            { year: 2008, label: '08危機14%', color: '#ff6b6b' },
+            { year: 2011, label: '11危機15%', color: '#ff6b6b' },
+            { year: 2020.8, label: 'COVID4%', color: '#00d4aa' },
+            { year: 2022.8, label: 'FX防衛6%', color: '#ff9f43' },
+            { year: 2023.5, label: '利下げ4.5%', color: '#00d4aa' }
+          ]
+        });
+        </script>
+      </section>
+
+      <section>
+        <h2>4. 銀行間（interbank）金利と2022年のFX防衛スパイク</h2>
+        <p>
+          銀行同士が短期資金を融通し合う<strong>銀行間市場（interbank）</strong>の翌日物（overnight）金利は、SBVのOMOによって日々誘導される。平時は政策金利の近辺で安定するが、ストレス時には激しく跳ねる。最も劇的だったのが<strong>2022年後半</strong>だ。FRBの急速な利上げでドル高が進み、ドンに減価圧力がかかったため、SBVは外貨準備を取り崩してドル売り介入を行い、同時に<strong>政策金利を4.5%→6.0%へ二段階で引き上げた</strong>。市場からドン資金が吸収され、銀行間翌日物金利は一時的に急騰した。
+        </p>
+        <p>
+          このエピソードは、ベトナムの短期金利が<strong>国内インフレよりも「対ドルの為替防衛」に強く規定される</strong>ことを示す典型例だ。資本取引が部分的に規制されているとはいえ、ドル金利の動向（＝FRBの政策）がベトナムの短期金利の重しになる。
+        </p>
+      </section>
+
+      <section>
+        <h2>5. 信用成長枠（credit growth quota）— ベトナム独自の「量」の統制</h2>
+        <p>
+          ベトナムの金融政策で先進国に見られない最大の特徴が<strong>信用成長枠（credit growth quota / room）</strong>だ。SBVは毎年、銀行システム全体の与信増加率目標（例: 年+14〜16%級）を設定し、各銀行に<strong>個別の与信枠</strong>を配分する。枠を使い切った銀行は、たとえ金利を上げても新規融資を出せない。
+        </p>
+        <p>
+          これは、金利という「価格」だけでは制御しきれない<strong>過剰な信用膨張（特に不動産向け）</strong>を直接抑え込むための量的ツールだ。2012〜13年の不良債権危機や2022年の社債・不動産危機の教訓から、SBVは枠を年度途中で増減させ、景気と金融安定のバランスを取る。短期金利だけを見ていてはベトナムの金融環境は読めない——「金利は緩和的でも枠が締まっていれば信用は伸びない」という現象が起こりうる。
+        </p>
+        <div class="mnemonic-box">
+          <span class="mnemonic-icon">🧠</span>
+          <div class="mnemonic-title">覚え方：ベトナム短期金利の「二刀流」</div>
+          <div class="mnemonic-body">
+            ①<strong>価格</strong>＝再融資金利4.5%・割引3.0%・OMOで銀行間翌日物を誘導。②<strong>量</strong>＝信用成長枠（quota）で各行の与信増加率に上限。先進国は①だけだが、SBVは②も握る。そして短期金利は国内インフレ以上に<strong>「対ドル防衛」</strong>に振り回される（2022年の利上げ＝FRB追随）。
+          </div>
+        </div>
+      </section>

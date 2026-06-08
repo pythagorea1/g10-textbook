@@ -1,0 +1,120 @@
+<!-- Key Stats -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">1960年</div>
+    <div class="stat-label">イラン中央銀行 (CBI) 設立</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">17%</div>
+    <div class="stat-label">標準預金「利益率」 (2025年通年据置)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">24%</div>
+    <div class="stat-label">標準貸出「利益率」 (2025年)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">独立性 低</div>
+    <div class="stat-label">政府・最高指導者の強い影響下</div>
+  </div>
+</div>
+
+<p>イラン・イスラム共和国中央銀行（Central Bank of the Islamic Republic of Iran, <strong>CBI</strong> / بانک مرکزی）は、世界で最も厳しい制裁下にある中央銀行である。CBIを理解する鍵は3つ。第一に<strong>独立性が極めて低く</strong>、政府と最高指導者の経済方針を執行する機関であること。第二に<strong>イスラム金融</strong>の原則（利子＝リバーの禁止）のもとで、金利でなく「利益率（profit rate）」を行政的に設定すること。第三に、SWIFT遮断や資産凍結によって<strong>準備金の運用が制裁で縛られている</strong>こと。本章では、この特異な中央銀行の構造・沿革・現在地を整理する<cite>[1]</cite>。</p>
+
+<div class="key-number-row">
+  <div class="key-number"><span class="key-number-value">1960</span><span class="key-number-label">CBI設立（旧バンク・メリ・イランから中銀機能を分離）</span></div>
+  <div class="key-number"><span class="key-number-value">利子禁止</span><span class="key-number-label">イスラム金融＝「利益率」で運用（利子なし銀行法1983）</span></div>
+  <div class="key-number"><span class="key-number-value">多重為替</span><span class="key-number-label">公定・中央(ETS)・自由市場(闇)の三層を管理</span></div>
+</div>
+
+<!-- Chart: deposit "profit rate" vs inflation = financial repression -->
+<div id="iran-cbi-realrate"></div>
+<script>
+ChartBuilder.lines('iran-cbi-realrate', {
+  title: 'CBI標準預金「利益率」 vs インフレ率 2013-2026 — 深いマイナス実質金利（金融抑圧）',
+  caption: '出典: CBI（標準預金利益率）、SCI/CBI/IMF（CPI前年比）。CBIが設定する預金利益率（17%）はインフレ率（42〜52%）を大きく下回り、預金者の実質購買力は毎年大きく目減りする。これが資産を株・金・ドル・不動産へ逃避させる「金融抑圧」の構図。利益率は行政的に設定され、市場で決まる金利ではない。',
+  yUnit: '%',
+  yStep: 10,
+  yRange: [0, 55],
+  series: [
+    { name: 'CPI 前年比', color: '#ff6b6b', data: [[2013,39],[2016,9],[2017,10],[2018,18],[2019,41],[2020,36],[2021,40],[2022,43.5],[2023,44.6],[2024,35],[2025,42],[2026,52]] },
+    { name: '標準預金 利益率', color: '#00d4aa', data: [[2013,21],[2015,20],[2017,15],[2019,18],[2021,16],[2023,17],[2024,17],[2025,17],[2026,17]] }
+  ],
+  annotations: [
+    { year: 2016, label: 'JCPOA一桁', color: '#5b8def' },
+    { year: 2018, label: '制裁再開', color: '#ff9f43' },
+    { year: 2025, label: '実質-25%', color: '#ff6b6b' }
+  ]
+});
+</script>
+
+<section>
+  <h2>CBIとは — 制裁下の「独立しない」中央銀行</h2>
+  <p>CBIは1960年、それまで中央銀行機能と商業銀行業務を兼ねていた国営バンク・メリ・イラン（Bank Melli Iran）から中央銀行機能を分離して設立された。通貨リアル（IRR）の発行、外貨準備の管理、銀行監督、金融政策の運営を担う。しかし、その意思決定の実権は中央銀行自身にはなく、<strong>政府（大統領・経済相）と最高指導者</strong>の経済方針に従属する点が、欧米型の独立した中央銀行と決定的に異なる<cite>[1]</cite>。</p>
+  <p>金融政策の最高意思決定機関は<strong>「通貨・信用評議会（Money and Credit Council, MCC）」</strong>で、利益率・準備率・与信政策などを審議する。総裁は大統領が指名し、政権交代や政情によって頻繁に交代する。たとえば2022年12月にモハマド・レザ・ファルジン氏が総裁に就任したが、CBI総裁の在任は概して短く、政治的圧力にさらされやすい。2026年は戦時下で体制全体が流動的であり、中央銀行人事の予見可能性も低い。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">CBIの本質を一言で</div>
+    <div class="mnemonic-body">FRB＝政府から独立した物価の番人。CBI＝<strong>政府と最高指導者の経済方針を執行し、イスラム金融の「利益率」を設定し、制裁で運用を縛られた中央銀行</strong>。「独立性」「金利」「自由な準備運用」という欧米の3前提が、いずれもイランには当てはまらない。</div>
+  </div>
+</section>
+
+<section>
+  <h2>沿革年表 — 革命・戦争・制裁が刻んだ歴史</h2>
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>年</th><th>出来事</th><th>意味</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1960</td><td>CBI設立、リアルの発券を一元化</td><td>近代的中央銀行の成立</td></tr>
+        <tr><td>1979</td><td>イラン革命。銀行の国有化、米による資産凍結・初期制裁</td><td>資本逃避でリアル下落が始まる</td></tr>
+        <tr><td>1980-88</td><td>イラン・イラク戦争。財政破綻と高インフレ</td><td>中銀ファイナンス依存の原型</td></tr>
+        <tr><td>1983</td><td><strong>利子なし銀行法（Usury-Free Banking Act）</strong>制定</td><td>利子を禁じ「利益分配・利益率」へ移行</td></tr>
+        <tr><td>2012</td><td>主要イラン銀行が<strong>SWIFTから遮断</strong></td><td>国際決済網からの排除、準備運用の制約</td></tr>
+        <tr><td>2015</td><td>JCPOA（核合意）。一部資産凍結が解除</td><td>インフレ一桁化・リアル安定の短い好機</td></tr>
+        <tr><td>2018</td><td>米のJCPOA離脱・制裁再発動</td><td>リアル崩壊・インフレ再加速</td></tr>
+        <tr><td>2025-09</td><td>E3が<strong>スナップバック</strong>を発動、国連制裁が全面復活</td><td>孤立の深化</td></tr>
+        <tr><td>2025-10</td><td>議会が通貨の<strong>4ゼロ削除（リデノミ）</strong>を最終可決</td><td>通貨信認低下の象徴、移行コスト</td></tr>
+        <tr><td>2026-02〜</td><td>2026 Iran war。為替が急加速崩壊</td><td>戦時下の通貨防衛・流動性供給に追われる</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>この年表が示すように、CBIの歴史は「革命・戦争・制裁」という外的ショックの連続であり、平時の物価安定政策よりも、危機対応（資本逃避の防止、為替防衛、戦費の資金繰り）に追われ続けてきた。中央銀行ファイナンス（財政赤字の貨幣化）と高インフレの悪循環は、その構造的帰結である<cite>[2]</cite>。</p>
+</section>
+
+<section>
+  <h2>イスラム金融下の金融政策 — 「金利」でなく「利益率」</h2>
+  <p>イランの金融制度はイスラム法（シャリーア）に基づき、<strong>利子（リバー）の授受を禁じている</strong>。したがってCBIは、欧米のような「政策金利」を設定しない。代わりに、預金には「期待利益率（profit rate）」、融資には参加・分配契約（ムシャーラカ、ムラーバハ等）に基づく「利益率」を、通貨・信用評議会が行政的に決定する<cite>[3]</cite>。</p>
+  <p>2025年通年の標準的な水準は、<strong>預金利益率17%・貸出利益率24%・インターバンク市場金利は約24%</strong>であった。これらは「市場で決まる金利」ではなく、当局が定める管理された数字である点に注意が必要だ。次章（02 政策金利）で詳述するが、ベンチマークとなる単一の政策金利が存在しないことが、イランの金融政策の最大の特徴である。</p>
+  <p>そして上のチャートが示すとおり、預金利益率17%はインフレ率42〜52%をはるかに下回る。これは預金者にとって<strong>実質金利が大幅なマイナス（-25%前後）</strong>であることを意味し、銀行に預けた資金の購買力が毎年大きく失われる。この「金融抑圧」が、家計や企業の資産を株式・金・外貨・不動産へと逃避させ、TEDPIX（株価指数）の名目バブルや闇ドル需要の温床になっている。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">「利益率」と「実質マイナス金利」</div>
+    <div class="mnemonic-body">イランに「政策金利」はない。あるのは利子禁止下の<strong>行政設定の利益率（預金17%・貸出24%）</strong>。だがインフレが42〜52%なので、実質金利は深いマイナス。「預金していると毎年2割超目減りする」→ だから人々は株・金・ドルに逃げる。CBIの金融抑圧こそ、イラン金融市場を読む出発点。</div>
+  </div>
+</section>
+
+<section>
+  <h2>制裁が縛る中央銀行 — 準備運用と決済の遮断</h2>
+  <p>CBIが他の中央銀行と決定的に違うのは、<strong>外貨準備の運用と国際決済が制裁で物理的に制約されている</strong>点である。2012年に主要イラン銀行がSWIFTから遮断され、2025年のスナップバックで再強化された結果、CBIはドル基軸の国際金融システムから事実上排除されている。海外に保有する外貨準備の多くは凍結され、自由に動かせない状態が続く<cite>[4]</cite>。</p>
+  <p>この制約は、CBIの政策手段を著しく狭めている。為替介入の弾薬（自由に使える外貨準備）が乏しく、国際資本市場での起債もできない。決済は人民元建て・物々交換・ハワラ（非公式送金網）・暗号資産など非ドル手段に頼らざるを得ず、これが公定・中央（ETS）・自由市場という<strong>多重為替レートと巨大な闇レート乖離</strong>を生む土壌になっている（為替の詳細は14章）。CBIは「通貨の番人」でありながら、その武器庫の多くを制裁で封じられた中央銀行なのである。</p>
+</section>
+
+<section>
+  <h2>2026年 — 戦時下の中央銀行</h2>
+  <p>2026年初、CBIは極限的な環境に置かれている。2025年9月のスナップバックで国連制裁が全面復活し、2026年2月以降は「2026 Iran war」が進行中で、自由市場の為替レートは1ドル＝約147万リアル（2026年1月）から約180万リアル（2026年6月）へ加速崩壊した。CBIが報告したインフレ率は一時<strong>前年比65.8%</strong>に達し、慢性的な高インフレは「ハイパーインフレ一歩手前」の水準にある<cite>[5]</cite>。</p>
+  <p>さらに2025年10月には議会が通貨の<strong>「4ゼロ削除（リデノミネーション）」</strong>を最終可決した。新単位は1新単位＝1万旧リアルで、CBIは施行後2年以内に移行手続きを整える予定だが、新通貨名（リアル維持＋補助単位か、トマンへの置換か）は報道で割れており流動的である。通貨単位の桁を削る措置は、通貨信認の低下を象徴する出来事でもある。戦時下のCBIは、為替防衛・流動性供給・戦費の資金繰りという相反する要請の間で、極めて困難な舵取りを迫られている。</p>
+</section>
+
+<footer class="sources">
+  <h3>出典・参考文献</h3>
+  <ol>
+    <li>イラン中央銀行 (CBI) 公式サイト・沿革・政策利益率 <a href="https://www.cbi.ir/">cbi.ir</a></li>
+    <li>イラン・イラク戦争〜制裁期の財政・金融史に関する各種解説、IMF Article IV（イラン）</li>
+    <li>利子なし銀行法(1983)、通貨・信用評議会(MCC)による利益率設定の制度解説</li>
+    <li>US Treasury OFAC、SWIFT遮断(2012/2025)、外貨準備凍結に関する報道</li>
+    <li>CBI（インフレ65.8%報告）、Iran International（闇レート・4ゼロ削除可決）、SCI/IMF</li>
+  </ol>
+</footer>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>台湾 - Bond Market | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
+  <script defer src="../assets/charts.js"></script>
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇹🇼 台湾</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. 中央銀行</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. 政策金利</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. 財政政策</a>
+      <a href="04_employment.html" class="sidebar-link">04. 雇用</a>
+      <a href="05_inflation.html" class="sidebar-link">05. インフレ</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. 株式市場概観</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. 株式(初期)</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. 株式(近代)</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. 株式(現代)</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. 株式(現在)</a>
+      <a href="11_bond_market.html" class="sidebar-link active">11. 債券市場</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. 短期金利</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. 長期金利</a>
+      <a href="14_currency.html" class="sidebar-link">14. 通貨</a>
+      <a href="15_crises.html" class="sidebar-link">15. 金融危機</a>
+      <a href="16_banking.html" class="sidebar-link">16. 銀行制度</a>
+      <a href="17_corporate.html" class="sidebar-link">17. 企業・コーポレート</a>
+      <a href="18_regulation.html" class="sidebar-link">18. 規制</a>
+      <a href="19_trade.html" class="sidebar-link">19. 貿易</a>
+      <a href="20_lessons.html" class="sidebar-link">20. 教訓</a>
+      <a href="21_geopolitical_risk.html" class="sidebar-link">21. 地政学リスク</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">G10</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+      <div class="sidebar-section-title">地政学・新興地域</div>
+      <div class="country-flags">
+        <a href="../taiwan/01_central_bank.html" class="country-chip active">TW</a>
+        <a href="../hongkong/01_central_bank.html" class="country-chip">HK</a>
+        <a href="../china/01_central_bank.html" class="country-chip">CN</a>
+        <a href="../northkorea/01_central_bank.html" class="country-chip">KP</a>
+        <a href="../vietnam/01_central_bank.html" class="country-chip">VN</a>
+        <a href="../singapore/01_central_bank.html" class="country-chip">SG</a>
+        <a href="../iran/01_central_bank.html" class="country-chip">IR</a>
+        <a href="../israel/01_central_bank.html" class="country-chip">IL</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 ホーム</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10横断年表</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">台湾</a>
+        <span class="sep">/</span>
+        債券市場
+      </div>
+      <h1 class="page-title">🇹🇼 債券市場</h1>
+      <p class="page-subtitle">中央公債と生保、フォルモサ債の独特な世界</p>
+    </header>
+
+    <article>
+<!-- Key Stats -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">CGB</div>
+    <div class="stat-label">中央政府公債が債券市場の中核</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">相対的に小</div>
+    <div class="stat-label">市場規模は株式・銀行貸出に比べ小さい</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">生保</div>
+    <div class="stat-label">長期国債の主要な買い手（バイ&amp;ホールド）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">フォルモサ債</div>
+    <div class="stat-label">台湾で発行される外貨建て債券（特徴的）</div>
+  </div>
+</div>
+
+<section>
+  <h2>株式に隠れた債券市場</h2>
+  <p>台湾の資本市場は圧倒的に株式（TAIEX、第06〜10章）が主役であり、債券市場はその陰に隠れがちである。実際、台湾の債券市場は株式の時価総額や銀行貸出の残高に比べると<strong>相対的に小規模</strong>で、流動性も限定的である。これは、(1) 政府の健全財政・低債務（第03章）ゆえに国債の発行残高が抑えられてきたこと、(2) 企業の資金調達が銀行借入と株式に偏っていること——の裏返しでもある。</p>
+  <p>とはいえ、債券市場は金融システムの基盤であり、保険・年金マネーの運用先として、また金利の基準（イールドカーブ）の形成という点で重要である。台湾の債券市場は大きく、(1) 中央政府公債（CGB）、(2) 社債・金融債、(3) フォルモサ債（外貨建て）——の三層からなる。</p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>セグメント</th>
+          <th>発行体</th>
+          <th>特徴・主な買い手</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight-green">
+          <td>中央政府公債（CGB）</td>
+          <td>中央政府（財政部）</td>
+          <td>市場の中核。生保がバイ&amp;ホールド。利回りの基準</td>
+        </tr>
+        <tr>
+          <td>社債・金融債</td>
+          <td>企業・銀行</td>
+          <td>規模は限定的。優良大企業中心</td>
+        </tr>
+        <tr class="highlight-blue">
+          <td>フォルモサ債（國際債券）</td>
+          <td>主に外国企業・金融機関</td>
+          <td>台湾で発行される外貨建て（多くは米ドル）債券</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>生命保険会社という「長期国債の主」</h2>
+  <p>台湾の債券市場、とりわけ長期の中央政府公債（CGB）の最大の買い手は<strong>生命保険会社</strong>である。台湾の生保業界は、過去に販売した高い予定利率の貯蓄性保険商品で集めた巨額の資金を運用する必要があり、その負債（保険契約）の超長期性に見合う資産として長期債を選好する。低インフレ・低金利が長く続いた台湾では、国内債の利回りが生保の保証利回りを下回る「逆ざや」が構造問題となってきた。</p>
+  <p>このため台湾の生保は、より高い利回りを求めて<strong>巨額の外貨建て資産（主に米国債・米社債）</strong>を保有するに至った。その規模は台湾のGDPに匹敵するとも言われ、生保のバランスシートは事実上「TWDの負債を米ドル資産で運用する」巨大な為替リスクの塊となっている。CBCが為替の安定（第01・14章）に神経をとがらせ、TWDが急騰（2025年）すると生保が巨額の為替評価損とヘッジコストに直面するのは、この構造ゆえである。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">生保＝TWD負債を米ドル資産で運用する巨人</div>
+    <div class="mnemonic-body">
+      <p>台湾の生保は、国内の低金利では保証利回り（高い予定利率）を賄えず、<strong>米国債など巨額の外貨資産</strong>で運用。結果、業界全体が「TWD建ての負債 vs 米ドル建ての資産」という巨大な為替ミスマッチを抱える。だから<strong>TWDが急騰すると生保が打撃を受け</strong>、為替・金利・債券市場が一本の糸でつながる。台湾債券市場の主役は「政府」ではなく「生保」と覚える。</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>フォルモサ債（國際債券市場）</h2>
+  <p>台湾の債券市場で最も特徴的なのが<strong>フォルモサ債（Formosa bonds、國際債券）</strong>である。これは、台湾の取引所（櫃買センター/TPEx）に上場され、台湾で発行される<strong>外貨建て（多くは米ドル建て）の債券</strong>を指す。発行体の多くは外国の企業や金融機関で、台湾の生保や金融機関が抱える旺盛な外貨運用ニーズを取り込むために発行される。</p>
+  <p>フォルモサ債は、(1) 台湾の生保にとって為替ヘッジや海外投資枠の制約を回避しつつ外貨建て利回りを得る手段となり、(2) 発行体（外国企業）にとっては台湾の潤沢な貯蓄にアクセスする資金調達手段となる。米国の大手企業や金融機関がドル建てフォルモサ債を大量に発行してきた時期もあり、台湾は「自国通貨建ての国際金融センターではないが、外貨建て債券の独自市場を持つ」という珍しい立ち位置を確立した。</p>
+
+  <div class="key-number-row">
+    <div class="key-number">
+      <span class="key-number-value">CGB</span>
+      <span class="key-number-label">中央政府公債＝利回りの基準</span>
+    </div>
+    <div class="key-number">
+      <span class="key-number-value">逆ざや</span>
+      <span class="key-number-label">生保の保証利回り＞国内債利回り</span>
+    </div>
+    <div class="key-number">
+      <span class="key-number-value">米ドル建て</span>
+      <span class="key-number-label">フォルモサ債の多くは外貨建て</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>TWDの非国際化と債券市場</h2>
+  <p>台湾債券市場の規模が限定的であるもう一つの背景に、<strong>TWDの「非国際化」</strong>がある。CBCはオフショアでのTWD取引を厳しく制限し、TWDを国際的な調達・運用通貨にしない方針を貫いてきた（第14章）。このため、香港やシンガポールのような巨大なオフショア債券市場や、外国人による大規模なTWD建て債券発行は発達しなかった。台湾の債券市場が「内向き・生保主導・外貨建てフォルモサ債が補完する」という独特の構造を持つのは、この通貨政策の帰結である。</p>
+  <p>結果として、台湾のマネーフローは「国内の潤沢な貯蓄 → 生保 → 米ドル資産・フォルモサ債」という形で海外へ向かう。これは経常黒字を恒常的に積み上げる輸出大国の典型的な資本輸出の姿であり、債券市場・為替・経常収支・地政学が分かちがたく結びついた台湾金融の縮図である。</p>
+</section>
+
+<section>
+  <h2>出典・参考文献</h2>
+  <ol>
+    <li>櫃買センター（TPEx / Taipei Exchange）, 國際債券（Formosa Bonds）市場資料 <a href="https://www.tpex.org.tw/en/">tpex.org.tw</a></li>
+    <li>中央銀行(CBC), 債券市場・国庫業務に関する統計</li>
+    <li>Ministry of Finance, ROC（財政部）, 中央政府公債（CGB）発行統計</li>
+    <li>各種報道・分析（台湾生保の外貨資産・為替リスク、フォルモサ債市場、TWD非国際化）</li>
+  </ol>
+</section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+
+    </footer>
+
+    <nav class="page-nav">
+      <a href="10_equity_current.html" class="prev">株式(現在)</a>
+      <a href="12_short_rates.html" class="next">短期金利</a>
+    </nav>
+  </main>
+
+  <script src="../assets/enhancer.js"></script>
+  <script defer src="../assets/recall.js"></script>
+  <script src="../assets/tts-reader.js"></script>
+</body>
+</html>

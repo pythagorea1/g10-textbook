@@ -1,0 +1,138 @@
+<!-- Key Stats -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">1990年</div>
+    <div class="stat-label">上海・深圳両取引所の(再)開設</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">~4,057</div>
+    <div class="stat-label">上海総合指数 (2026年6月初, 要再検証)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">6,092</div>
+    <div class="stat-label">上海総合の史上最高値 (2007年10月, 終値)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">A/B/H株</div>
+    <div class="stat-label">投資家・通貨で分かれる株式の種類</div>
+  </div>
+</div>
+
+<p>中国株式市場は、<strong>「世界第2位の規模を持ちながら、外国人のアクセスが制限され、個人投資家の比率が高く、当局の介入が常態化した」</strong>独特の市場である。本章では、A株・B株・H株という株式の種類、上海・深圳・北京の取引所、外国人がアクセスする「沪港通（Stock Connect）」、そして相場を動かす「国家隊」の存在という、中国株を理解するための地図を描く<cite>[1]</cite>。</p>
+
+<div class="key-number-row">
+  <div class="key-number"><span class="key-number-value">A株</span><span class="key-number-label">本土・人民元建て（国内投資家中心）</span></div>
+  <div class="key-number"><span class="key-number-value">H株</span><span class="key-number-label">香港上場・外貨建て（外国人がアクセス可）</span></div>
+  <div class="key-number"><span class="key-number-value">3取引所</span><span class="key-number-label">上海・深圳・北京</span></div>
+</div>
+
+<!-- Chart: Shanghai Composite long-term -->
+<div id="china-sse-longterm"></div>
+<script>
+ChartBuilder.lines('china-sse-longterm', {
+  title: '上海総合指数 長期 1990-2026 — バブルと暴落を繰り返す「政策相場」',
+  caption: '出典: 上海証券取引所(SSE)、CSI、Trading Economics/GuruFocus。1990年=100で算出開始。2007年10月に6092の史上最高値→GFCで約-70%。2015年6月に5178→約-32%。2024年9月の刺激策で反発。⚠2025-26年の3,900→4,057は本教科書の2026年シミュレーション基準値で、実勢(2024年の2,700-3,300)から大きく上振れしており要再検証。',
+  yUnit: '',
+  yRange: [0, 6500],
+  yStep: 1000,
+  series: [{
+    name: '上海総合指数',
+    color: '#ff6b6b',
+    data: [[1990.92, 100], [1996, 900], [2000, 2073], [2005.42, 998], [2007.83, 6092], [2008.83, 1728], [2009.58, 3478], [2013, 2100], [2015.45, 5178], [2016.0, 2655], [2018.92, 2494], [2020.17, 2660], [2021.08, 3696], [2022.83, 2893], [2024.08, 2702], [2024.75, 3336], [2025.92, 3900], [2026.42, 4057]]
+  }],
+  annotations: [
+    { year: 2007.83, label: '07年 6092', color: '#ffd93d' },
+    { year: 2008.83, label: 'GFC -70%', color: '#5b8def' },
+    { year: 2015.45, label: '15年 5178', color: '#ffd93d' },
+    { year: 2021.08, label: '不動産', color: '#5b8def' },
+    { year: 2024.75, label: '刺激策', color: '#00d4aa' }
+  ]
+});
+</script>
+
+<section>
+  <h2>株式の種類 — A株・B株・H株・レッドチップ</h2>
+  <p>中国株を理解する最初の関門が、<strong>「同じ会社でも上場する市場・通貨・投資家層が違う」</strong>という分断構造である。歴史的経緯と資本規制から、株式はいくつかの種類に分かれている。</p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>種類</th><th>上場地</th><th>通貨</th><th>主な投資家</th></tr>
+      </thead>
+      <tbody>
+        <tr class="highlight-row"><td>A株</td><td>上海・深圳（本土）</td><td>人民元(CNY)</td><td>国内投資家中心（外国人は制限付き）</td></tr>
+        <tr><td>B株</td><td>上海・深圳（本土）</td><td>米ドル/香港ドル</td><td>当初は外国人向け（現在は縮小・形骸化）</td></tr>
+        <tr><td>H株</td><td>香港</td><td>香港ドル(HKD)</td><td>外国人・国際投資家</td></tr>
+        <tr><td>レッドチップ</td><td>香港</td><td>香港ドル</td><td>中国本土系だが香港等で登記された企業</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>同じ企業がA株（本土）とH株（香港）に重複上場することもあり、その場合、両者の株価には乖離が生じる（A株プレミアム／ディスカウント）。本土A株は人民元建てで国内投資家が中心、H株は外貨建てで外国人がアクセスできる、という<strong>「市場の二重構造」</strong>が、中国株の最大の特徴である<cite>[2]</cite>。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">A株・H株を一発で区別</div>
+    <div class="mnemonic-body"><strong>A株＝本土・人民元・国内投資家</strong>／<strong>H株＝香港・外貨・外国人OK</strong>。資本規制があるため、外国人は本土A株に直接は買いにくく、香港のH株や後述の「沪港通」経由でアクセスする。「同じ会社でも入口が違う」のが中国株。</div>
+  </div>
+</section>
+
+<section>
+  <h2>取引所と主要指数</h2>
+  <p>本土には<strong>上海証券取引所（SSE）・深圳証券取引所（SZSE）</strong>に加え、2021年に新設された<strong>北京証券取引所（BSE）</strong>がある。代表的な指数は次の通り。</p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>指数</th><th>対象</th><th>特徴</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>上海総合指数 (SSE Composite)</td><td>上海上場の全銘柄</td><td>1990年12月=100。中国株の代表的ベンチマーク</td></tr>
+        <tr><td>滬深300 (CSI 300)</td><td>上海・深圳の大型300銘柄</td><td>機関投資家の標準ベンチマーク</td></tr>
+        <tr><td>深圳成分指数</td><td>深圳上場の主要銘柄</td><td>新興・テック企業の比重が高い</td></tr>
+        <tr><td>創業板 (ChiNext)</td><td>深圳の新興成長企業</td><td>中国版ナスダックと呼ばれる</td></tr>
+        <tr><td>科創板 (STAR Market)</td><td>上海のハイテク企業</td><td>2019年新設、半導体等の「ハードテック」</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>外国人による本土A株へのアクセスは、かつての<strong>QFII／RQFII</strong>（適格機関投資家枠）に加え、2014年に開通した<strong>沪港通（Shanghai-Hong Kong Stock Connect）</strong>、2016年の深港通（深圳版）によって大きく広がった。これは香港経由で本土株を売買できる「相互接続」の仕組みで、外国人の本土株保有を可能にすると同時に、海外資金（「北向き資金」）の動向が相場を左右する重要な指標になった<cite>[3]</cite>。</p>
+</section>
+
+<section>
+  <h2>中国株を動かす3つの力</h2>
+
+  <h3>① 個人投資家（散戸）の高い比率</h3>
+  <p>中国本土株は<strong>個人投資家（散戸）の取引比率が極めて高い</strong>。出来高の大半を個人が占めるとされ、欧米や日本のような機関投資家主導の市場とは性格が異なる。これが、ファンダメンタルズよりも値動きや噂、政策期待に反応しやすい<strong>「投機的でボラティリティの高い相場」</strong>を生む。2007年や2015年のバブルも、個人投資家の熱狂と信用取引（融資融券）の膨張が増幅した。</p>
+
+  <h3>② 「国家隊」と当局介入</h3>
+  <p>中国株のもう一つの特徴が、<strong>「国家隊（こっかたい）」</strong>と呼ばれる政府系資金による株価下支えである。中国証金（中国証券金融）や国有ファンドが、相場急落時に大型株を買い支えることで知られる。2015年の株バブル崩壊時には大規模な買い支えが行われ、2024年9月にはPBoCが株式購入を支援する流動性ツール（最大8,000億元）まで創設した。<strong>「相場は政策しだい」</strong>という政策相場の色彩が濃いのが中国株である<cite>[4]</cite>。</p>
+
+  <h3>③ 規制・政策リスク</h3>
+  <p>当局の規制が一夜にして特定セクターの株価を吹き飛ばすこともある。2020-21年のアリババ・テンセントなどテック大手への規制強化、教育産業の事実上の非営利化などが典型例だ。「政策の追い風」も「政策の逆風」も極端に効くため、中国株では<strong>政府の意向を読むこと</strong>がファンダメンタルズ分析と同じくらい重要になる。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">中国株＝「政策相場」</div>
+    <div class="mnemonic-body">①<strong>個人投資家中心</strong>でボラティリティが高い／②急落時は<strong>「国家隊」</strong>が買い支える／③<strong>規制一つで</strong>セクターが暴騰・暴落する。だから中国株は「企業業績」より「党・政府の方針」で動く側面が大きい。上のチャートの激しい上下動は、その投機性と政策依存を物語る。</div>
+  </div>
+</section>
+
+<section>
+  <h2>長期チャートが語る「バブルと暴落の歴史」</h2>
+  <p>上のチャートが示すように、上海総合指数の歴史は<strong>「急騰と暴落の繰り返し」</strong>である。2007年10月に6,092（終値）の史上最高値を付けた後、世界金融危機で約-70%まで暴落。2015年6月には5,178まで急騰した後、約-32%の暴落（18兆元が消失）を経験した。2021年以降は不動産不況で低迷したが、2024年9月の「バズーカ」刺激策で反発に転じた<cite>[5]</cite>。</p>
+  <p>注目すべきは、<strong>2007年のピーク（6,092）を一度も更新できていない</strong>ことだ。経済規模は当時の数倍に拡大したにもかかわらず、株価は最高値を回復していない。これは、新規上場（IPO）による株式の希薄化、企業統治・配当政策の課題、そして投機と暴落のサイクルが投資家の長期的な信頼を損なってきたことを物語る。次章（07-10）で、この激動の各時代を時系列で詳しく追っていく。</p>
+
+  <p><em>※ 本チャートの2025-26年の水準（3,900→4,057）は本教科書の2026年シミュレーション基準値であり、実勢（2024年の2,700-3,300台）から大きく上振れしている。最新の実勢値は再検証が必要である。</em></p>
+</section>
+
+<footer class="sources">
+  <h3>出典・参考文献</h3>
+  <ol>
+    <li>上海証券取引所(SSE) <a href="https://english.sse.com.cn/">english.sse.com.cn</a>、CSI Index Co.</li>
+    <li>A株/B株/H株/レッドチップの区分に関する取引所資料</li>
+    <li>沪港通(Stock Connect, 2014年)・深港通(2016年)・QFII/RQFII 制度解説</li>
+    <li>「国家隊」による株価下支え、2024年9月PBoC株式支援ツールに関する報道</li>
+    <li>Trading Economics / GuruFocus（SSE/CSI300 2026-06値）、Wikipedia「Chinese stock bubble」</li>
+  </ol>
+</footer>

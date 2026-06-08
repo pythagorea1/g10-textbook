@@ -1,0 +1,122 @@
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">~6.8</div>
+          <div class="stat-label">USD/CNY（2026年H1、PBoC基準値ベース）<span class="highlight-orange">※要再確認</span></div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">±2%</div>
+          <div class="stat-label">毎朝の「基準値」から許される日中変動バンド（管理変動相場）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">CNY / CNH</div>
+          <div class="stat-label">オンショア（本土）/ オフショア（香港）の二つの人民元</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">e-CNY</div>
+          <div class="stat-label">デジタル人民元 — 中央銀行デジタル通貨の先行例</div>
+        </div>
+      </div>
+
+      <section>
+        <h2>1. 人民元は「管理された変動相場」</h2>
+        <p>
+          人民元（Renminbi, RMB／単位は元=yuan）は、完全な自由変動でも固定でもない<strong>「管理変動相場（managed float）」</strong>である。毎朝、PBoC（中国人民銀行）が「中間基準値（central parity / fixing）」を公表し、その日の取引は基準値から<strong>±2%</strong>の範囲内に制限される。基準値の決め方自体が当局の裁量を含むため、人民元は「市場が決める通貨」というより「<strong>当局が市場を使ってコントロールする通貨</strong>」だ。
+        </p>
+        <p>
+          通貨コードは二つある。<strong>CNY（オンショア）</strong>は本土で取引される人民元で、資本規制が厳しい。<strong>CNH（オフショア）</strong>は主に香港で取引され、より自由に売買できる。両者のレートは普段ほぼ一致するが、人民元に強い下落圧力がかかるとCNHが先に弱くなり、当局の介入余地を映す「ストレス指標」となる。
+        </p>
+        <div class="key-number-row">
+          <div class="key-number"><span class="key-number-value">±2%</span><span class="key-number-label">基準値からの日中変動バンド</span></div>
+          <div class="key-number"><span class="key-number-value">CNH</span><span class="key-number-label">香港オフショア＝市場ストレスの先行指標</span></div>
+          <div class="key-number"><span class="key-number-value">1994</span><span class="key-number-label">二重相場統一・実効切下げの起点</span></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>2. 人民元レートの歴史 — 切下げ、ペッグ、緩やかな元高</h2>
+        <p>
+          人民元の対ドルレートは、改革開放以降、いくつかの劇的な節目を経てきた。1994年に公定相場と調整市場相場を統一して実効的に大幅切下げ（約8.7元）、1997〜2005年はアジア通貨危機の中でも<strong>8.28元の事実上のドルペッグを維持</strong>して地域安定に貢献した。2005年7月の改革でペッグを離れ、以後は緩やかな元高が続いた。
+        </p>
+        <p>
+          転機は2015年8月の<strong>「811改革」</strong>——基準値の決め方を前日終値ベースに変える名目の市場化だったが、実態は切下げと受け止められ、巨額の資本流出と外貨準備の急減（約4兆→3兆ドル）を招いた。2019年8月には米中貿易戦争のさなかに<strong>「7」を突破（破7）</strong>。その後はレンジ内で推移している。
+        </p>
+
+        <div id="china-fx-usdcny"></div>
+        <script>
+        ChartBuilder.lines('china-fx-usdcny', {
+          title: 'USD/CNY 対ドル人民元レート史 (1980-2026, 上昇=元安)',
+          caption: '出典: PBoC fixing、Rhodium Group、Wikipedia(Renminbi)。1994年の二重相場統一で実効切下げ(8.7)。1997-2005はアジア危機でも8.28ペッグを維持。2005年7月改革で管理変動へ。2015年8月「811改革」で切下げ＋資本流出、外貨準備が約4→3兆ドルに急減。2019年8月に米中貿易戦争のさなか「7」突破(破7)。⚠2026年の6.8台はシミュレーション環境値で要再確認(2024-25実勢は7.1-7.3台)。',
+          yUnit: '',
+          yRange: [1, 9],
+          yStep: 1,
+          series: [{
+            name: 'USD/CNY（元/ドル）',
+            color: '#ffd93d', width: 2.4,
+            data: [[1980, 1.50], [1985, 2.94], [1990, 4.78], [1994, 8.70], [1997, 8.28], [2004, 8.28], [2005.58, 8.11], [2008, 6.83], [2011, 6.46], [2014, 6.05], [2015.67, 6.40], [2016.92, 6.95], [2019.67, 7.18], [2020.42, 7.13], [2022.75, 7.30], [2024, 7.24], [2025, 7.10], [2026.42, 6.80]]
+          }],
+          annotations: [
+            { year: 1994, label: '94統一', color: '#ff6b6b' },
+            { year: 2005.58, label: '05改革', color: '#5b8def' },
+            { year: 2015.67, label: '811切下げ', color: '#ff9f43' },
+            { year: 2019.67, label: '破7', color: '#ff6b6b' },
+            { year: 2026.42, label: '元高?', color: '#00d4aa' }
+          ]
+        });
+        </script>
+        <p>
+          <em>※グラフは「数値が大きいほど元安」。2026年の6.8台は本書のシミュレーション基準であり、2024〜25年の実勢（7.1〜7.3台）から大きく元高方向へ振れている点に留意。為替の直近値は最終的な再検証が必要。</em>
+        </p>
+      </section>
+
+      <section>
+        <h2>3. 資本規制と人民元の国際化</h2>
+        <p>
+          人民元が完全な国際通貨になりきれない最大の理由は、<strong>資本規制（capital controls）</strong>にある。当局は資本の自由な流出入を制限し、為替の安定と金融政策の自律性を優先している。経済学の「<strong>国際金融のトリレンマ</strong>」——「為替の安定」「資本移動の自由」「金融政策の独立」は同時に二つまでしか実現できない——のうち、中国は「資本移動の自由」を犠牲にして残り二つを取っている。
+        </p>
+        <p>
+          一方で当局は、ドル覇権への依存を減らすため人民元の国際化を推進している。手段は次の三つだ。
+        </p>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>手段</th>
+                <th>内容</th>
+                <th>狙い</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="highlight-blue">CIPS</td>
+                <td>人民元国際決済システム（SWIFT代替）</td>
+                <td>制裁リスクに備えた決済インフラの自立</td>
+              </tr>
+              <tr>
+                <td class="highlight-blue">通貨スワップ</td>
+                <td>各国中銀との二国間スワップ網</td>
+                <td>人民元の流動性供給・貿易決済の拡大</td>
+              </tr>
+              <tr>
+                <td class="highlight-green">e-CNY</td>
+                <td>デジタル人民元（中央銀行デジタル通貨）</td>
+                <td>決済の国産化・将来のクロスボーダー決済</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="mnemonic-box">
+          <span class="mnemonic-icon">🧠</span>
+          <div class="mnemonic-title">覚え方：トリレンマで「資本の自由」を捨てた</div>
+          <div class="mnemonic-body">
+            「為替安定・資本自由・金融独立」のうち二つしか取れない。中国は<strong>資本規制を維持</strong>することで、為替を管理しつつ独自の金融政策を続けている。だからこそ人民元はSDR構成通貨でありながら、貿易・準備通貨としてのシェアはドル・ユーロに遠く及ばない。人民元国際化（CIPS・e-CNY）は、その制約の中で「脱ドル」を少しずつ進める長期戦略だ。
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>4. 為替は「対外バランスの安全弁」</h2>
+        <p>
+          人民元レートは、貿易黒字（第19章）・資本フロー・金融政策（第12・13章）・地政学（第21章）が交差する結節点だ。元安は輸出競争力を高める一方、資本流出と「通貨安競争」批判を招く。元高は輸入を安くしデフレ圧力を強める。当局は基準値というハンドルを通じて、この綱引きを日々微調整している。2015年の教訓——急激な切下げは制御不能な資本流出を招く——以降、PBoCは「急がず、しかし方向性は持って」為替を動かす姿勢を堅持している。
+        </p>
+      </section>

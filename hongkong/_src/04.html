@@ -1,0 +1,142 @@
+      <!-- ============ KEY STATS ============ -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">3.7%</div>
+          <div class="stat-label">失業率（2026年2–4月、季節調整済）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">8.3%</div>
+          <div class="stat-label">過去最悪級（2003年SARS期）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">2.8%</div>
+          <div class="stat-label">直近の最低圏（2018年、ほぼ完全雇用）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">90%超</div>
+          <div class="stat-label">GDPに占めるサービス業の割合</div>
+        </div>
+      </div>
+
+      <div class="key-number-row">
+        <div class="key-number"><span class="key-number-value">構造的低失業</span><span class="key-number-label">平常時は3%前後＝ほぼ完全雇用</span></div>
+        <div class="key-number"><span class="key-number-value">サービス経済</span><span class="key-number-label">金融・貿易物流・観光・専門サービス中心</span></div>
+        <div class="key-number"><span class="key-number-value">人材流出</span><span class="key-number-label">2020年以降の専門職移民が新たな論点</span></div>
+      </div>
+
+      <section>
+        <h2>香港の労働市場 — 平常時はほぼ完全雇用</h2>
+        <p>香港の失業率は、平常時には<strong>3%前後</strong>という極めて低い水準で推移する。柔軟な労働市場、最低限の規制、サービス業中心の経済構造が、構造的な低失業を生んでいる。2026年2–4月の失業率は<strong>3.7%</strong>（季節調整済）で、歴史的にみればなお低位である<cite>[1]</cite>。だが、その安定した数字の裏で、香港の雇用は外的ショックに対して鋭く反応してきた。危機のたびに失業率は跳ね上がり、回復とともに再び沈む —— このボラティリティの大きさが香港労働市場のもう一つの顔である。</p>
+      </section>
+
+      <!-- ============ CHART: UNEMPLOYMENT HISTORY ============ -->
+      <section>
+        <h2>失業率の歴史 — 危機が刻んだ山と谷</h2>
+        <p>下のチャートは香港の失業率の長期推移である。アジア通貨危機後の調整、2003年のSARS、2019年のデモと2020年のコロナ —— 香港を襲った危機がそのまま雇用の山として現れている。</p>
+        <div id="hk-unemployment"></div>
+        <script>
+        ChartBuilder.lines('hk-unemployment', {
+          title: '香港 失業率 1997–2026（%、代表値・年次近似）',
+          caption: '出典: 香港統計処（Census & Statistics Department）労働力統計。主要転換点（2003年SARS、2018年最低圏、2021年コロナ後ピーク、現在）は実績に基づく。中間年は代表値・概数。',
+          yUnit: '%',
+          yRange: [0, 10],
+          yStep: 2,
+          series: [{
+            name: '失業率',
+            color: '#ff9f43',
+            data: [[1997,2.3],[1999,6.3],[2001,5.1],[2003,8.3],[2005,5.6],[2007,4.0],[2009,5.4],[2012,3.3],[2015,3.3],[2018,2.8],[2020,6.2],[2021,7.2],[2023,2.9],[2024,3.1],[2026,3.7]]
+          }],
+          annotations: [
+            { year: 2003, label: 'SARS 8.3%', color: '#ff6b6b' },
+            { year: 2018, label: '18 2.8%', color: '#00d4aa' },
+            { year: 2021, label: 'COVID7.2%', color: '#ff6b6b' },
+            { year: 2026, label: '現在3.7%', color: '#00d4aa' }
+          ]
+        });
+        </script>
+        <p>2003年のSARS（重症急性呼吸器症候群）危機では、観光・小売・飲食が壊滅し、失業率は<strong>8.3%前後</strong>という記録的水準まで上昇した。これは香港の労働市場が外部ショック、とりわけ観光・対面サービスへの依存ゆえに脆弱であることを示した象徴的な出来事である。逆に2018年には景気拡大と完全雇用に近い状態で失業率は<strong>2.8%</strong>まで低下した。</p>
+      </section>
+
+      <section>
+        <h2>雇用構造 — サービス業がほぼ全て</h2>
+        <p>香港は製造業をほぼ持たない（1980年代以降、生産拠点は珠江デルタ＝中国本土へ移転した）。GDPの90%超、雇用の大半をサービス業が占める典型的なポストインダストリアル経済である。</p>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>セクター</th>
+                <th>位置づけ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="highlight-blue">金融・保険</td>
+                <td>香港経済の看板。高付加価値雇用の中心。銀行・証券・資産運用・保険</td>
+              </tr>
+              <tr>
+                <td>貿易・物流</td>
+                <td>中継貿易ハブ。港湾・空港・倉庫・商社。雇用の裾野が広い</td>
+              </tr>
+              <tr>
+                <td>観光・小売・飲食</td>
+                <td>中国本土からの観光客に依存。危機時に最も打撃を受ける</td>
+              </tr>
+              <tr>
+                <td>専門サービス</td>
+                <td>法律・会計・コンサル・不動産。金融ハブを支える</td>
+              </tr>
+              <tr>
+                <td>公共・社会サービス</td>
+                <td>政府・教育・医療。雇用の安定弁</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>この構造は、金融と観光という「国際資金・人の流れ」に経済が直結していることを意味する。世界の景気や中国本土の動向、さらには政治情勢が、香港の雇用にダイレクトに伝わる。</p>
+      </section>
+
+      <section>
+        <h2>新たな論点 — 専門職の流出と人材獲得競争</h2>
+        <p>2019年の大規模デモ、2020年の国家安全法（NSL）施行を経て、香港では<strong>専門職・中間層の海外移住</strong>が顕著になった。とりわけ英国のBN(O)旅券ルートを通じた移民、カナダ・オーストラリアへの移住が進み、医療・教育・金融などの分野で人材流出が懸念された。これは失業率という指標には現れにくい「質的な労働供給の細り」であり、金融ハブとしての香港の競争力に関わる<cite>[2]</cite>。</p>
+        <div class="key-number-row">
+          <div class="key-number"><span class="key-number-value">BN(O)移民</span><span class="key-number-label">英国ルートでの専門職流出（2021年〜）</span></div>
+          <div class="key-number"><span class="key-number-value">人材誘致策</span><span class="key-number-label">高度人材通行証（Top Talent Pass）等で本土・海外から呼び戻し</span></div>
+          <div class="key-number"><span class="key-number-value">対星競争</span><span class="key-number-label">シンガポールとの人材・資金の獲得競争が激化</span></div>
+        </div>
+        <p>これに対し香港政府は、「高度人材通行証計画（Top Talent Pass Scheme）」などの人材誘致策を打ち出し、中国本土や海外からの専門人材の流入を促している。失業率の低さは「人手が足りている」ことを意味するのではなく、むしろ「働き手の絶対数が細っている」局面もありうる。香港の雇用統計は、シンガポールとの金融ハブ競争、対中統合、移民政策という地政学的な文脈のなかで読み解く必要がある。</p>
+      </section>
+
+      <section>
+        <h2>労働市場の構造的特徴 — 最低賃金・高齢化・外国人家事労働者</h2>
+        <p>香港の労働市場には、低失業という数字だけでは見えない3つの構造的特徴がある。</p>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>特徴</th>
+                <th>内容</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="highlight-orange">最低賃金（2011年導入）</td>
+                <td>長く「市場任せ」だった香港が初めて法定最低賃金を導入。低所得層の保護と労働コストの議論を生んだ</td>
+              </tr>
+              <tr>
+                <td class="highlight-blue">急速な高齢化</td>
+                <td>労働力人口の減少が構造的な人手不足を招き、低失業率の一因に。年金・介護負担も増大</td>
+              </tr>
+              <tr>
+                <td class="highlight-green">外国人家事労働者</td>
+                <td>フィリピン・インドネシア出身を中心に数十万人規模が住み込みで就労。共働きと専門職労働を下支えする香港特有の構造</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>とりわけ高齢化は、低失業率を「好景気の証」と単純に読むことを難しくする。働き手の絶対数が細るなかで失業率が低い状態は、経済の活力ではなく労働供給の制約を映している可能性があるためだ。香港の雇用統計は、人口動態と移民政策という長期トレンドのなかで解釈する必要がある。</p>
+      </section>
+
+      <section>
+        <h2>まとめ — 安定した数字の下の構造変化</h2>
+        <p>香港の失業率は平常時3%前後と低く、2026年は3.7%。柔軟な労働市場とサービス経済が構造的低失業を支える一方、SARS（8.3%）やコロナ（7.2%）のような外的ショックには鋭く反応する。近年は失業率という量的指標には表れにくい「専門職の流出」という質的な変化が進行しており、人材獲得競争のなかで香港が金融ハブの人的資本をどう維持するかが問われている。</p>
+      </section>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>香港 - Equity Market: 2000s | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
+  <script defer src="../assets/charts.js"></script>
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇭🇰 香港</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. 中央銀行</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. 政策金利</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. 財政政策</a>
+      <a href="04_employment.html" class="sidebar-link">04. 雇用</a>
+      <a href="05_inflation.html" class="sidebar-link">05. インフレ</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. 株式市場概観</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. 株式(初期)</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. 株式(近代)</a>
+      <a href="09_equity_recent.html" class="sidebar-link active">09. 株式(現代)</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. 株式(現在)</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. 債券市場</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. 短期金利</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. 長期金利</a>
+      <a href="14_currency.html" class="sidebar-link">14. 通貨</a>
+      <a href="15_crises.html" class="sidebar-link">15. 金融危機</a>
+      <a href="16_banking.html" class="sidebar-link">16. 銀行制度</a>
+      <a href="17_corporate.html" class="sidebar-link">17. 企業・コーポレート</a>
+      <a href="18_regulation.html" class="sidebar-link">18. 規制</a>
+      <a href="19_trade.html" class="sidebar-link">19. 貿易</a>
+      <a href="20_lessons.html" class="sidebar-link">20. 教訓</a>
+      <a href="21_geopolitical_risk.html" class="sidebar-link">21. 地政学リスク</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">G10</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+      <div class="sidebar-section-title">地政学・新興地域</div>
+      <div class="country-flags">
+        <a href="../taiwan/01_central_bank.html" class="country-chip">TW</a>
+        <a href="../hongkong/01_central_bank.html" class="country-chip active">HK</a>
+        <a href="../china/01_central_bank.html" class="country-chip">CN</a>
+        <a href="../northkorea/01_central_bank.html" class="country-chip">KP</a>
+        <a href="../vietnam/01_central_bank.html" class="country-chip">VN</a>
+        <a href="../singapore/01_central_bank.html" class="country-chip">SG</a>
+        <a href="../iran/01_central_bank.html" class="country-chip">IR</a>
+        <a href="../israel/01_central_bank.html" class="country-chip">IL</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 ホーム</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10横断年表</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">香港</a>
+        <span class="sep">/</span>
+        株式市場（現代）
+      </div>
+      <h1 class="page-title">🇭🇰 株式市場（現代）</h1>
+      <p class="page-subtitle">ITバブル・SARS・2007中国強気相場・GFC</p>
+    </header>
+
+    <article>
+      <!-- ============ KEY STATS ============ -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">~31,958</div>
+          <div class="stat-label">2007年10月 中国強気相場のピーク</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">~11,016</div>
+          <div class="stat-label">2008年10月 GFCの底<span class="drawdown-badge">-65%</span></div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">2003</div>
+          <div class="stat-label">SARSで景気停止・市場低迷（~8,409）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">大型IPO</div>
+          <div class="stat-label">中国の銀行・石油・通信が続々上場</div>
+        </div>
+      </div>
+
+      <section>
+        <h2>2000年代の香港市場 — 中国の高度成長を取引する</h2>
+        <p>2000年代の香港株式市場は、中国経済の歴史的な高度成長期と完全に同期して動いた。WTO加盟（2001年）で「世界の工場」となった中国の国有大企業が、香港を舞台に空前の規模のIPOを実施。香港市場は名実ともに<strong>「中国の資金調達センター」</strong>の地位を確立した。だがその道のりは、ITバブル崩壊、SARS、そしてグローバル金融危機（GFC）という3つの大波に翻弄された激動の10年でもあった<cite>[1]</cite>。</p>
+      </section>
+
+      <!-- ============ CHART: 2000s HSI ============ -->
+      <section>
+        <h2>ハンセン指数 2000–2015 — 大波の時代</h2>
+        <p>下のチャートは、ITバブル崩壊とSARSの谷、2007年の中国強気相場の頂、GFCの暴落、そしてその後のレンジ相場を示す。</p>
+        <div id="hk-hsi-2000s"></div>
+        <script>
+        ChartBuilder.lines('hk-hsi-2000s', {
+          title: 'ハンセン指数 2000–2015（IT・SARS・中国強気・GFC）',
+          caption: '出典: Hang Seng Indexes、HKEX、Macrotrends。2007年10月の中国強気相場ピーク（~31,958、終値/ザラ場で報道に幅）、2008年GFCで ~11,000 へ。2014年に滬港通開始。',
+          yUnit: '',
+          yRange: [0, 35000],
+          yStep: 5000,
+          series: [{
+            name: 'ハンセン指数',
+            color: '#00d4aa',
+            data: [[2000,15095],[2003.04,8409],[2007.10,31958],[2008.10,11016],[2011,18434],[2015.04,28000]]
+          }],
+          annotations: [
+            { year: 2003.3, label: 'SARS底', color: '#ff9f43' },
+            { year: 2007.8, label: '07 31958', color: '#ff6b6b' },
+            { year: 2008.8, label: '08 GFC', color: '#5b8def' },
+            { year: 2015.3, label: '15 滬港通', color: '#ffd93d' }
+          ]
+        });
+        </script>
+      </section>
+
+      <section>
+        <h2>2000–2003年 — ITバブル崩壊とSARSの二重苦</h2>
+        <p>2000年、世界的なITバブルのなかでハンセン指数は約15,000台にあったが、米ナスダックの崩壊とともに香港のテック関連株（当時は「dot-com」銘柄）も急落した。さらに香港はアジア危機後のデフレ（→第05章）からなお抜け出せておらず、景気は弱含んでいた。</p>
+        <p>そこへ追い打ちをかけたのが<strong>2003年のSARS（重症急性呼吸器症候群）</strong>である。3月から6月にかけて香港は感染拡大の中心地となり、観光・小売・飲食が壊滅。失業率は8.3%に達し、ハンセン指数は2003年4月に<strong>約8,409</strong>まで沈んだ。これが2000年代前半の底となった。しかしSARS収束後、中国本土からの個人旅行解禁（自由行）と中国経済の加速により、香港は急速に回復へ向かう<cite>[2]</cite>。</p>
+      </section>
+
+      <section>
+        <h2>2003–2007年 — 中国大型IPOブームと強気相場の頂点</h2>
+        <p>2000年代半ば、中国の巨大国有企業が香港で歴史的なIPOを次々と実施した。これらは世界最大級の資金調達となり、香港市場の時価総額を一気に押し上げた。</p>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>年</th>
+                <th>主な上場</th>
+                <th>意義</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2005</td>
+                <td>中国建設銀行</td>
+                <td>中国四大銀行の香港上場ラッシュの口火</td>
+              </tr>
+              <tr>
+                <td>2006</td>
+                <td>中国銀行・中国工商銀行（ICBC）</td>
+                <td>ICBCは当時世界最大のIPO（約US$220億）</td>
+              </tr>
+              <tr>
+                <td>2007</td>
+                <td>ペトロチャイナ等の主力</td>
+                <td>資源・エネルギー大手が時価総額を牽引</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>2007年、中国本土の過剰流動性が香港株に流れ込むとの観測（いわゆる「港股直通車」構想）も加わり、ハンセン指数は熱狂的な上昇相場に突入した。2007年10月30日には<strong>ザラ場で約31,958</strong>という当時の史上最高値圏に到達した<cite>[3]</cite>。中国の高成長を香港経由で取引するという物語が、市場を頂点へと押し上げた瞬間だった。</p>
+        <div class="mnemonic-box">
+          <span class="mnemonic-icon">🚄</span>
+          <div class="mnemonic-title">「港股直通車」という幻の夢</div>
+          <div class="mnemonic-body">2007年8月、中国当局が本土の個人投資家に香港株への直接投資を解禁するとの観測（「港股直通車＝香港株直通列車」）が浮上し、香港株は熱狂的に買われた。本土の巨額マネーが流れ込むとの期待である。結局この構想は当局の慎重姿勢で凍結されたが、「本土資金が香港株を押し上げる」という発想は、後年の<strong>滬港通・南向き資金</strong>として形を変えて実現することになる。</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>2008年 — グローバル金融危機（GFC）の直撃</h2>
+        <p>熱狂は1年と続かなかった。2008年9月のリーマン・ブラザーズ破綻を引き金に世界金融危機が爆発すると、香港市場も急落。ハンセン指数は2007年10月の約31,958から、<strong>2008年10月には約11,016</strong>まで暴落した（ピーク比▲65%）<cite>[4]</cite>。</p>
+        <div class="key-number-row">
+          <div class="key-number"><span class="key-number-value">▲65%</span><span class="key-number-label">2007ピーク→2008底の下落率</span></div>
+          <div class="key-number"><span class="key-number-value">ミニボンド問題</span><span class="key-number-label">リーマン関連債を個人に販売、社会問題化</span></div>
+          <div class="key-number"><span class="key-number-value">通貨防衛は無傷</span><span class="key-number-label">資金流入で為替は強サイド7.75に張り付き</span></div>
+        </div>
+        <p>GFCでは、香港の銀行がリーマン・ブラザーズの仕組み債（いわゆる「ミニボンド」）を一般個人に販売していたことが発覚し、大きな社会問題となった。一方で、世界的な低金利と中国の4兆元景気対策により資金が香港に流入し、香港ドルはペッグの強サイド（7.75）に張り付いた。GFCはペッグそのものを脅かさず、むしろ通貨ボードの強さを再確認させる結果となった。市場は2009年以降、中国の刺激策を背景にV字回復した。</p>
+      </section>
+
+      <section>
+        <h2>2010年代前半 — レンジ相場と対中接続の始まり</h2>
+        <p>GFC後の香港市場は、欧州債務危機（2011年）や中国の成長減速懸念で、おおむね18,000〜28,000のレンジで推移した。この時期の最大の制度的転換が、2014年の<strong>滬港通（Shanghai-Hong Kong Stock Connect）</strong>の開始である。これにより香港と上海の市場が相互接続され、本土投資家が香港株を買う「南向き資金」の時代が始まった（→第06章）<cite>[5]</cite>。</p>
+        <p>2014年の雨傘運動（民主化デモ）という政治的緊張と、資本市場の対中接続が同時進行したことは象徴的だった。2015年前半には本土発の流動性で香港株も急騰したが、同年夏の中国株バブル崩壊（上海総合指数の急落）に巻き込まれ、再び急落した。香港市場が中国本土の市場動向と一段と強く連動するようになったことを示す出来事であった。</p>
+        <div class="key-number-row">
+          <div class="key-number"><span class="key-number-value">2014.11</span><span class="key-number-label">滬港通開始＝南向き資金時代の幕開け</span></div>
+          <div class="key-number"><span class="key-number-value">雨傘運動</span><span class="key-number-label">政治緊張と対中接続が同時進行</span></div>
+          <div class="key-number"><span class="key-number-value">2015夏</span><span class="key-number-label">本土バブル崩壊に連動して急落</span></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>まとめ — 中国成長期の光と影</h2>
+        <p>2000年代の香港市場は、中国の高度成長を取引する「中国の資金調達センター」として黄金期を迎えた。中国四大銀行や資源大手の巨大IPOが市場を膨らませ、2007年には史上最高値圏（~31,958）に達した。だがITバブル崩壊・SARS・GFCという3つの大波が、この市場のボラティリティの大きさを繰り返し見せつけた。2014年の滬港通開始は、香港市場を本土と一層強く結びつける新時代の幕開けであり、次章で描く2018年以降の激動 —— 史上最高値圏から底値、そして復活 —— への伏線となる。</p>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+<ol>
+<li>Hang Seng Indexes / Macrotrends, ハンセン指数 年次・転換点</li>
+<li>HKEX, 中国大型IPO（建設銀行2005・ICBC/中国銀行2006）; SCMP</li>
+<li>HKMA / SFC, GFCとリーマン・ミニボンド問題（2008）; 滬港通開始（2014）</li>
+</ol>
+    </footer>
+
+    <nav class="page-nav">
+      <a href="08_equity_modern.html" class="prev">株式(近代)</a>
+      <a href="10_equity_current.html" class="next">株式(現在)</a>
+    </nav>
+  </main>
+
+  <script src="../assets/enhancer.js"></script>
+  <script defer src="../assets/recall.js"></script>
+  <script src="../assets/tts-reader.js"></script>
+</body>
+</html>

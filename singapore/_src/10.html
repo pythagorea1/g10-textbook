@@ -1,0 +1,100 @@
+<!-- Key Stats -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">5,016.76</div>
+    <div class="stat-label">STI初の5,000突破(2026年2月12日終値)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">~5,072</div>
+    <div class="stat-label">史上最高値(2026年5月)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">約+27%</div>
+    <div class="stat-label">12か月トータルリターン(2026年5月まで)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">S$50億</div>
+    <div class="stat-label">MASの株式市場活性化プログラム規模</div>
+  </div>
+</div>
+
+<p>2026年、シンガポール株式市場は歴史的な節目を迎えた。長くGFC前のピーク3,906を回復できずにいたSTIが、<strong>2026年2月12日に初めて5,000を突破（終値5,016.76）し、5月には史上最高値の約5,072</strong>を記録したのである。一方で、指数の活況とは裏腹に<strong>新規上場の枯渇と上場社数の減少</strong>という構造的な課題が深刻化し、MASはS$50億規模の活性化策に乗り出した。本章では、この「光と影」を描く<cite>[1]</cite>。</p>
+
+<div class="key-number-row">
+  <div class="key-number"><span class="key-number-value">5,000突破</span><span class="key-number-label">2026年2月、史上初の大台</span></div>
+  <div class="key-number"><span class="key-number-value">銀行・配当・AI</span><span class="key-number-label">上昇を牽引した3つの要因</span></div>
+  <div class="key-number"><span class="key-number-value">上場枯渇</span><span class="key-number-label">指数高騰の裏で新規上場が細る課題</span></div>
+</div>
+
+<!-- Chart: STI current surge -->
+<div id="sg-sti-current"></div>
+<script>
+ChartBuilder.lines('sg-sti-current', {
+  title: 'STI 現在 2023-2026 — 5,000突破と史上最高値',
+  caption: '出典: SGX / thesmartinvestor / mothership。2023年の約3,240から、銀行高配当・金利低下によるREIT復調・AI関連需要を背景に上昇。2026年2月12日に初の5,000突破(終値5,016.76)、5月に史上最高値約5,072。',
+  yUnit: '',
+  yStep: 500,
+  yRange: [3000, 5500],
+  series: [{
+    name: 'STI',
+    color: '#00d4aa',
+    data: [[2023,3240],[2023.5,3180],[2024,3800],[2024.5,3500],[2025,3900],[2025.5,4300],[2026.08,5017],[2026.33,5072]]
+  }],
+  annotations: [
+    { year: 2024, label: '24回復', color: '#5b8def' },
+    { year: 2026.08, label: '5000突破', color: '#ffd93d' },
+    { year: 2026.33, label: '最高5072', color: '#00d4aa' }
+  ]
+});
+</script>
+
+<section>
+  <h2>最高値更新を牽引した3つの力</h2>
+  <p>2026年のSTI最高値更新は、次の3つの要因が重なった結果である。</p>
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>牽引役</th><th>内容</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>銀行3行の高配当</td><td>DBS・OCBC・UOBが過去最高水準の利益と増配・自社株買い</td></tr>
+        <tr><td>金利低下とREIT復調</td><td>2025-26年の金利低下で、利上げ局面に沈んだS-REITに資金が回帰</td></tr>
+        <tr><td>AI関連需要</td><td>データセンター・半導体関連の需要が経済とテック関連株を押し上げ</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>マクロ環境も追い風だった。2026年Q1のGDPはAI関連需要に牽引されて前年比<strong>+6.0%</strong>と速報を上回り、12か月トータルリターンは約+27%に達した。「守りのインカム市場」と見られてきたSTIが、配当と金利低下、そしてAIテーマの三拍子で歴史的高値を更新したのである<cite>[2]</cite>。</p>
+</section>
+
+<section>
+  <h2>影 — 上場社数の減少と「listing drought」</h2>
+  <p>しかし、指数の活況の裏で深刻化しているのが<strong>新規上場の枯渇（listing drought）</strong>と<strong>上場廃止・非公開化の増加</strong>である。割安に放置された企業が買収されて市場を去り、有望なスタートアップは米国市場での上場を選ぶ傾向が強まった。SGXの上場社数は長期的な減少傾向にあり、「指数は最高値、しかし市場の厚みは細っている」という矛盾が表面化した。</p>
+  <p>これに対しMASは、<strong>S$50億規模の株式市場活性化プログラム</strong>を打ち出した。運用会社を通じてシンガポール株（特に中小型株）への投資を促し、上場誘致・税制優遇・市場流動性の向上を図る官民一体の取り組みである。最高値更新という「光」と、上場枯渇という「影」——シンガポール株式市場は、規模の小ささという宿命的な課題と向き合い続けている<cite>[3]</cite>。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">2026年STIの「光と影」</div>
+    <div class="mnemonic-body">光＝<strong>初の5,000突破・最高値5,072・+27%リターン</strong>（銀行・REIT・AI）。影＝<strong>新規上場の枯渇と上場社数の減少</strong>。だからMASがS$50億の活性化策を投入。「高い指数」と「痩せる市場」は別問題、と覚える。</div>
+  </div>
+</section>
+
+<section>
+  <h2>なぜ企業はSGXを去るのか</h2>
+  <p>上場枯渇の背景には、シンガポール株式市場の構造的なジレンマがある。第一に、<strong>バリュエーション（株価評価）の低さ</strong>だ。インカム重視で取引が薄い市場では成長株が割安に放置されやすく、企業は資金調達でも知名度でも不利になる。第二に、<strong>米国市場の引力</strong>。東南アジアの有望なテック企業の多くが、流動性とバリュエーションを求めてニューヨーク（NYSE・Nasdaq）での上場を選ぶ。第三に、<strong>非公開化の波</strong>。割安な上場企業がPEファンドや大株主に買収され、市場から退出していく。</p>
+  <p>MASの活性化プログラムは、この悪循環を断ち切る試みである。運用会社を通じた中小型株への資金供給、上場・税制インセンティブ、機関投資家の呼び込みによって、市場の流動性とバリュエーションを引き上げ、上場の魅力を回復させることを狙う。指数が史上最高値を更新するなかでなお市場の「厚み」を取り戻せるか——これが2026年のシンガポール株式市場に突きつけられた最大の問いである。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">「指数は最高値、上場は枯渇」の悪循環</div>
+    <div class="mnemonic-body">薄い取引→<strong>割安放置</strong>→企業は米国上場や非公開化を選ぶ→<strong>上場社数が減る</strong>→さらに薄くなる。この循環を断つため、MASがS$50億で中小型株に資金を流し込み、流動性とバリュエーションの底上げを狙う。最高値更新と市場縮小は同時に起こりうる。</div>
+  </div>
+</section>
+
+<footer class="sources">
+  <h3>出典・参考文献</h3>
+  <ol>
+    <li>SGX、thesmartinvestor / mothership / thefinance.sg（STI 5,000突破・最高値報道, 2026/2・5） <a href="https://www.sgx.com/">sgx.com</a></li>
+    <li>MTI / SingStat（2026Q1 GDP +6.0%）、SGXトータルリターン</li>
+    <li>MAS 株式市場活性化プログラム（Equity Market Development Programme, S$50億規模）関連発表</li>
+  </ol>
+</footer>

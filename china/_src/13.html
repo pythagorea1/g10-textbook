@@ -1,0 +1,133 @@
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">2%割れ</div>
+          <div class="stat-label">10年国債利回りが歴史的低水準に（デフレ・緩和局面）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">3.0% / 3.5%</div>
+          <div class="stat-label">LPR 1年物 / 5年超物（住宅ローン基準、過去最低・据置）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">「日本化」</div>
+          <div class="stat-label">低成長・デフレ・低金利の長期化リスク</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">世界2位</div>
+          <div class="stat-label">中国の債券市場規模（国債・地方債・政策金融債）</div>
+        </div>
+      </div>
+
+      <section>
+        <h2>1. 30年で「二桁→3%」へ — 金利の長期低下トレンド</h2>
+        <p>
+          中国の長期金利の物語は、一言でいえば<strong>「高成長・高インフレ時代の二桁金利から、低成長・デフレ時代の超低金利への大転換」</strong>である。1996年の1年物基準貸出金利は10.98%もあったが、改革開放の成熟、過剰投資の限界、そして2021年以降の不動産不況とデフレ圧力により、ベンチマーク金利は一貫して低下してきた。2019年のLPR改革を経て、2024年10月にLPR1年物は3.10%、2025年には<strong>3.0%</strong>（過去最低）に達し、12ヶ月連続で据え置かれている。
+        </p>
+        <p>
+          この長期低下は、長期国債利回りにも表れている。中国10年国債利回りは、デフレと金融緩和を背景に<strong>歴史的低水準（2%割れ局面）</strong>まで低下した。かつて「3〜4%が当たり前」だった中国の長期金利が、先進国の超低金利に接近しているのである。
+        </p>
+
+        <div id="china-longrate-benchmark"></div>
+        <script>
+        ChartBuilder.lines('china-longrate-benchmark', {
+          title: '中国 ベンチマーク金利の長期低下 (1年物貸出金利→LPR, 1996-2026, %)',
+          caption: '出典: 中国人民銀行、Macrotrends/World Bank。1996年の10.98%から、改革開放の成熟・過剰投資の限界・不動産不況・デフレ圧力を経て一貫して低下。2019年8月のLPR改革（MLF連動の市場ベース化）を経て、2024年10月3.10%、2025年に3.0%(過去最低)へ。長期国債利回りも連動して2%割れ局面まで低下し「日本化」懸念を呼んでいる。',
+          yUnit: '%',
+          yRange: [0, 12],
+          yStep: 2,
+          series: [{
+            name: '1年物基準貸出金利→LPR1年',
+            color: '#5b8def', width: 2.4,
+            data: [[1996, 10.98], [2002, 5.31], [2007, 7.47], [2008.92, 5.31], [2010, 5.81], [2011, 6.56], [2012, 6.00], [2014, 5.60], [2015, 4.35], [2017, 4.35], [2019.67, 4.25], [2020, 3.85], [2022, 3.65], [2023, 3.45], [2024.75, 3.10], [2025, 3.00], [2026, 3.00]]
+          }],
+          annotations: [
+            { year: 1996, label: '10.98%', color: '#ff6b6b' },
+            { year: 2011, label: '引締め', color: '#ff9f43' },
+            { year: 2019.67, label: 'LPR改革', color: '#ffd93d' },
+            { year: 2026, label: '3.0%最低', color: '#00d4aa' }
+          ]
+        });
+        </script>
+      </section>
+
+      <section>
+        <h2>2. LPRの二段構え — 1年物と5年超物</h2>
+        <p>
+          2019年8月のLPR（ローンプライムレート）改革で、PBoCは銀行の最優遇貸出金利を市場ベースで決める仕組みを導入した。現在のLPRは<strong>二本立て</strong>になっている点が重要だ。
+        </p>
+        <div class="key-number-row">
+          <div class="key-number"><span class="key-number-value">3.0%</span><span class="key-number-label">LPR 1年物（企業向け運転資金など）</span></div>
+          <div class="key-number"><span class="key-number-value">3.5%</span><span class="key-number-label">LPR 5年超物（住宅ローンの基準）</span></div>
+          <div class="key-number"><span class="key-number-value">12ヶ月</span><span class="key-number-label">連続据置（2025年〜2026年5月）</span></div>
+        </div>
+        <p>
+          5年超物LPRは<strong>住宅ローン金利の基準</strong>であり、不動産不況の最中、当局はこれを引き下げて住宅需要を下支えしようとしてきた。だが、金利を下げても住宅価格の下落予想が根強く、需要が戻らない——これは日本のバブル後と酷似した「効きにくい緩和」の典型である。
+        </p>
+      </section>
+
+      <section>
+        <h2>3. 「中国の日本化」論 — 似ている点・違う点</h2>
+        <p>
+          長期金利が歴史的低水準まで低下し、デフレ（2023〜25年のCPIはほぼ0%）が定着しつつある中国に対し、市場では<strong>「日本化（Japanification）」</strong>——すなわち1990年代以降の日本のような長期停滞・デフレ・ゼロ金利の道をたどるのではという議論が高まっている。両者の共通点と相違点を整理する。
+        </p>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>論点</th>
+                <th>日本（1990s〜）</th>
+                <th>中国（2021〜）</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="highlight-blue">引き金</td>
+                <td>株・不動産バブル崩壊</td>
+                <td>不動産バブル崩壊（恒大・碧桂園）</td>
+              </tr>
+              <tr>
+                <td>物価</td>
+                <td>長期デフレ</td>
+                <td class="highlight-red">CPIほぼ0%、PPIは長期マイナス</td>
+              </tr>
+              <tr>
+                <td>長期金利</td>
+                <td>ゼロ近傍まで低下</td>
+                <td>2%割れ局面まで低下</td>
+              </tr>
+              <tr>
+                <td>人口</td>
+                <td>高齢化・人口減</td>
+                <td class="highlight-orange">人口減少局面入り・高齢化加速</td>
+              </tr>
+              <tr>
+                <td>政策余地</td>
+                <td>金利下げ余地が枯渇</td>
+                <td>名目金利になお下げ余地あり</td>
+              </tr>
+              <tr>
+                <td>違い</td>
+                <td>成熟した高所得国・資本自由化</td>
+                <td class="highlight-green">中所得・資本規制・行政統制が残る</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="mnemonic-box">
+          <span class="mnemonic-icon">🧠</span>
+          <div class="mnemonic-title">覚え方：「バランスシート不況」の再来か</div>
+          <div class="mnemonic-body">
+            日本も中国も、家計・企業が「資産価格下落→負債返済優先→借入も消費もしない」というバランスシート不況に陥った。違いは、中国はまだ<strong>資本規制と行政統制</strong>で時間を稼げる一方、一人当たり所得が日本ほど高くないまま高齢化する「<strong>豊かになる前に老いる</strong>」リスクを抱える点だ。
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>4. 当局のジレンマ — 長期金利を「下げたいが上げたい」</h2>
+        <p>
+          2024〜25年にかけて、中国の長期国債には資金が殺到し、利回りが急低下した。これに対しPBoCは異例の警告を発した。長期金利が下がりすぎると、(1)銀行・保険のデュレーション・リスク（金利反転時の含み損）、(2)人民元安・資本流出、(3)「日本化」の固定化、を懸念したためだ。一方で景気下支えには低金利が必要——この<strong>「下げたいが、下がりすぎは困る」</strong>という綱引きが、2026年時点の長期金利政策の核心である。
+        </p>
+        <p>
+          中国の債券市場は世界第2位の規模を持ち、国債・地方債・政策性金融債・社債で構成される（詳細は第11章）。長期金利は単なるマクロ指標ではなく、地方政府債務（第3章）や銀行の健全性（第16章）とも直結する、システム全体の要となっている。<em>※2026年の10年国債利回りの具体値は本書編集時点で確定値を取得できておらず、「2%割れ局面」「歴史的低水準」という定性的表現にとどめている。</em>
+        </p>
+      </section>

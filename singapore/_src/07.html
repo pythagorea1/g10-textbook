@@ -1,0 +1,103 @@
+<!-- Key Stats -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">1973年</div>
+    <div class="stat-label">マレーシアとの株式市場が分離(KL/SES)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">885</div>
+    <div class="stat-label">STI改定起点(1998年8月31日)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">1998年</div>
+    <div class="stat-label">CLOB問題 — 対マレーシア株決済の凍結</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">SES</div>
+    <div class="stat-label">Stock Exchange of Singapore(旧取引所)</div>
+  </div>
+</div>
+
+<p>シンガポール株式市場の起源は、マレーシアとの分かちがたい結びつきにある。植民地時代の<strong>マラヤ証券取引所</strong>に遡り、1965年の分離独立後も両国の株式市場は一体だった。本章では、1973年の市場分離からSES（シンガポール証券取引所）時代、そして1998年のアジア通貨危機が生んだ<strong>CLOB問題</strong>までの「初期」を辿る<cite>[1]</cite>。</p>
+
+<div class="key-number-row">
+  <div class="key-number"><span class="key-number-value">マラヤ取引所</span><span class="key-number-label">英領時代の起源（マレーシアと共通）</span></div>
+  <div class="key-number"><span class="key-number-value">1973</span><span class="key-number-label">通貨同盟解消とともに株式市場も分離</span></div>
+  <div class="key-number"><span class="key-number-value">CLOB</span><span class="key-number-label">マレーシア株の場外取引・決済の仕組み</span></div>
+</div>
+
+<section>
+  <h2>マレーシアとの分離 — 1973年の市場分割</h2>
+  <p>シンガポールとマレーシアの証券市場は、もともと<strong>マラヤ証券取引所</strong>として一体で運営されていた。1965年にシンガポールがマレーシアから分離独立した後も、両国は通貨同盟と共通の株式市場を維持していた。しかし<strong>1973年</strong>、シンガポールがマレーシアとの通貨交換協定を解消し、S$を変動相場に移行させると、株式市場も<strong>クアラルンプール証券取引所（KLSE）とシンガポール証券取引所（SES）</strong>に分離した。これがシンガポール独自の株式市場の出発点である。</p>
+  <p>ただし両市場の銘柄は完全には分離されず、シンガポールではマレーシア企業の株式が引き続き取引され、マレーシアではシンガポール企業の株式が取引される「相互上場」の状態が長く続いた。この絡み合いが、後のCLOB問題の伏線となる。</p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>年</th><th>出来事</th><th>意味</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>英領期</td><td>マラヤ証券取引所として一体運営</td><td>両国共通の市場</td></tr>
+        <tr><td>1965</td><td>シンガポール分離独立</td><td>政治は分離、市場は当面一体</td></tr>
+        <tr><td>1973</td><td>通貨同盟解消、KLSE/SESに市場分離</td><td>独自市場の起点</td></tr>
+        <tr><td>1998</td><td>CLOB問題（後述）</td><td>マレーシア株の決済凍結</td></tr>
+        <tr><td>1999</td><td>SES＋SIMEXが合併しSGX発足</td><td>近代化の始まり（第8章）</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Chart: STI birth period -->
+<div id="sg-sti-early"></div>
+<script>
+ChartBuilder.lines('sg-sti-early', {
+  title: 'STI 黎明期 1998-2004 — 誕生・ドットコム・SARS',
+  caption: '出典: SGX / 報道。STIは1998年8月31日に885.26を起点に改定算出。2000年のドットコム期に約2,580へ上昇後、2003年のSARS流行で約1,213へ下落（短期V字回復）。中間点はスムージング。',
+  yUnit: '',
+  yStep: 500,
+  yRange: [0, 3000],
+  series: [{
+    name: 'STI',
+    color: '#5b8def',
+    data: [[1998.58,885],[2000,2580],[2001.5,1700],[2003.17,1213],[2004,1850]]
+  }],
+  annotations: [
+    { year: 1998.58, label: '起点885', color: '#00d4aa' },
+    { year: 2000, label: '00高値', color: '#ffd93d' },
+    { year: 2003.17, label: 'SARS底', color: '#ff6b6b' }
+  ]
+});
+</script>
+
+<section>
+  <h2>CLOB問題 — アジア通貨危機が暴いた相互依存</h2>
+  <p>1990年、SESは<strong>CLOB（Central Limit Order Book）International</strong>という仕組みを設け、シンガポール市場でマレーシア企業の株式を場外で取引できるようにした。これは多くの投資家にとって便利な存在となり、巨額のマレーシア株がシンガポール経由で売買されるようになった。</p>
+  <p>ところが<strong>1997-98年のアジア通貨危機</strong>のさなか、マレーシアが資本規制を導入すると、マレーシアは「CLOBでのマレーシア株取引は非公式で違法」との立場を取り、<strong>CLOBで保有されていた約170億リンギ規模のマレーシア株の決済・移管を凍結</strong>した。シンガポールの投資家は資産にアクセスできなくなり、両国間の外交問題にまで発展した。この問題は最終的に2000年に段階的解決が図られたが、<strong>「相互依存の市場が、危機時には政治リスクに転じる」</strong>という教訓を残した<cite>[2]</cite>。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">CLOB問題の教訓</div>
+    <div class="mnemonic-body">便利な「相互乗り入れ市場」も、危機が来れば<strong>国境＝政治リスク</strong>に変わる。マレーシアが資本規制を敷いた途端、シンガポールの投資家はマレーシア株を「人質」に取られた。市場の独立性とインフラ整備の重要性を、シンガポールが痛感した事件だった。</div>
+  </div>
+</section>
+
+<section>
+  <h2>パンエレクトリック危機 — 取引所が3日間閉鎖した日</h2>
+  <p>初期のSES時代を象徴するもう一つの事件が、<strong>1985年のパンエレクトリック（Pan-Electric Industries）危機</strong>である。海洋・造船関連の上場企業パンエレクトリックが、株式の先渡し契約（フォワード）に絡む巨額の債務を抱えて経営破綻すると、連鎖的な決済不能の懸念から市場はパニックに陥った。事態を重く見た当局は、<strong>1985年12月、シンガポール証券取引所（SES）とクアラルンプール証券取引所（KLSE）を3日間にわたり閉鎖</strong>した。これはシンガポール株式市場の歴史で取引所が閉鎖された数少ない事例である。</p>
+  <p>この危機は、証券会社の財務健全性、決済の確実性、清算機構の整備の重要性を浮き彫りにした。当局はこれを契機に証券会社の自己資本規制や決済システムを強化し、後のSGXによる近代的な清算・決済インフラ整備へとつながっていく。1985年は奇しくも独立後初のリセッション（GDP前年比マイナス）の年でもあり、シンガポール経済と市場が大きな試練を経験した年だった<cite>[3]</cite>。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">初期の2大事件で覚える</div>
+    <div class="mnemonic-body">①<strong>1985 パンエレクトリック危機</strong>＝1社の破綻で取引所が3日間閉鎖→決済・清算インフラ強化へ。②<strong>1998 CLOB問題</strong>＝マレーシア株の決済凍結→市場の独立性の重要性。どちらも「インフラと独立性」を学ぶ授業料だった。</div>
+  </div>
+</section>
+
+<footer class="sources">
+  <h3>出典・参考文献</h3>
+  <ol>
+    <li>SGX沿革、SES / SIMEX history <a href="https://www.sgx.com/">sgx.com</a></li>
+    <li>CLOB International凍結問題（1998-2000）に関する報道・学術資料</li>
+    <li>FTSE Russell「Straits Times Index」改定起点(1998-08-31, 885.26)</li>
+  </ol>
+</footer>

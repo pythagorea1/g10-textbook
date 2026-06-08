@@ -1,0 +1,103 @@
+<!-- Key Stats -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">1999年</div>
+    <div class="stat-label">SGX発足(SES＋SIMEX合併・株式会社化)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">1984年</div>
+    <div class="stat-label">SIMEX — アジア初の金融先物取引所</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">3,906</div>
+    <div class="stat-label">STIのピーク(2007年10月)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">2000年</div>
+    <div class="stat-label">SGXがアジア初の上場取引所として株式公開</div>
+  </div>
+</div>
+
+<p>1999年、シンガポールの株式市場は近代化の決定的な一歩を踏み出す。現物株のSES（シンガポール証券取引所）とデリバティブのSIMEX（シンガポール国際金融取引所）が合併し、<strong>SGX（Singapore Exchange）</strong>が発足したのである。SGXは現物とデリバティブを統合した「アジア初の上場取引所」として、2000年に自らもSGXに株式公開した。本章では、SGX発足とデリバティブの強みを軸に「近代」を描く<cite>[1]</cite>。</p>
+
+<div class="key-number-row">
+  <div class="key-number"><span class="key-number-value">SIMEX</span><span class="key-number-label">1984年設立のデリバティブ取引所（先物の強み）</span></div>
+  <div class="key-number"><span class="key-number-value">合併</span><span class="key-number-label">現物＋デリバティブを一つの取引所に統合</span></div>
+  <div class="key-number"><span class="key-number-value">上場</span><span class="key-number-label">取引所自身が上場する「demutualization」</span></div>
+</div>
+
+<!-- Chart: STI modern era rise to 2007 peak -->
+<div id="sg-sti-modern"></div>
+<script>
+ChartBuilder.lines('sg-sti-modern', {
+  title: 'STI 近代 1998-2008 — SGX発足からピーク3,906へ',
+  caption: '出典: SGX / 報道。1999年のSGX発足後、2000年ドットコム高値→2003年SARS底→世界的な信用拡大とアジア成長を背景に2007年10月にピーク3,906。中間点はスムージング。',
+  yUnit: '',
+  yStep: 1000,
+  yRange: [0, 4500],
+  series: [{
+    name: 'STI',
+    color: '#ffd93d',
+    data: [[1998.58,885],[2000,2580],[2003.17,1213],[2005,2200],[2006,2900],[2007.75,3906],[2008,3000]]
+  }],
+  annotations: [
+    { year: 2000, label: '00高値', color: '#5b8def' },
+    { year: 2003.17, label: 'SARS底', color: '#ff6b6b' },
+    { year: 2007.75, label: '07ピーク', color: '#00d4aa' }
+  ]
+});
+</script>
+
+<section>
+  <h2>SIMEX — アジアのデリバティブのパイオニア</h2>
+  <p>SGXの強さの源泉の一つが、デリバティブ部門の出自にある。<strong>SIMEX（Singapore International Monetary Exchange）は1984年に設立されたアジア初の金融先物取引所</strong>であり、米国シカゴのCME（シカゴ・マーカンタイル取引所）と相互決済リンクを結ぶなど、早くから国際的なデリバティブ取引の拠点となった。日経225先物をはじめ、アジアの株価指数先物を域内で先駆けて取り扱い、シンガポールを「アジアのリスク管理ハブ」へと押し上げた。</p>
+  <p>もっとも、SIMEXは1995年の<strong>ベアリングス銀行破綻事件</strong>の舞台にもなった。トレーダーのニック・リーソンがSIMEXと大阪で日経225先物に巨額の投機を行い、英国の名門ベアリングス銀行を破綻させた。この事件はデリバティブ取引のリスク管理・内部統制の重要性を世界に知らしめ、取引所の監督体制強化の契機となった<cite>[2]</cite>。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">SGXの二本柱</div>
+    <div class="mnemonic-body">SGX＝<strong>SES（現物株）＋SIMEX（デリバティブ）</strong>の合併体。現物株市場は小さくても、<strong>デリバティブ（株価指数先物・為替・商品）で世界有数</strong>。「小さな国内市場、大きな国際デリバティブ」がSGXのビジネスモデルだ。</div>
+  </div>
+</section>
+
+<section>
+  <h2>1999年合併とSGXの上場 — 「取引所が上場する」</h2>
+  <p>1999年12月、SESとSIMEXが合併してSGXが誕生した。これは単なる統合ではなく、会員制の相互組織から<strong>営利の株式会社へ転換（demutualization）</strong>し、2000年には<strong>SGX自身がSGXメインボードに上場</strong>するという画期的な動きだった。取引所が公開企業として上場するのはアジアで初めてであり、世界的にも先駆的な事例だった。</p>
+  <p>株式会社化により、SGXは収益性とガバナンスを重視する経営体へと変貌し、海外企業の上場誘致、デリバティブ商品の拡充、清算機関の整備などを積極的に進めた。2007年10月、STIは世界的な信用拡大とアジア成長を背景に<strong>3,906のピーク</strong>を記録する。だが、その直後に世界金融危機（GFC）が襲い、市場は次章で見る激しい下落へと転じることになる。</p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>年</th><th>出来事</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1984</td><td>SIMEX設立（アジア初の金融先物取引所）</td></tr>
+        <tr><td>1995</td><td>ベアリングス事件（SIMEXが舞台の一つ）</td></tr>
+        <tr><td>1999</td><td>SES＋SIMEX合併でSGX発足、株式会社化</td></tr>
+        <tr><td>2000</td><td>SGXがSGXに上場（アジア初の上場取引所）</td></tr>
+        <tr><td>2007.10</td><td>STIがピーク3,906を記録</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>「現物は小さく、デリバティブは大きく」 — SGXのビジネスモデル</h2>
+  <p>SGXの収益構造を理解するうえで重要なのは、<strong>現物株式市場の規模の小ささを、国際的なデリバティブ事業で補っている</strong>という点だ。人口600万人の国内現物市場には限界があるが、SGXはアジア各国の株価指数先物・為替（FX）先物・商品先物などを取り扱い、域内のリスク管理拠点としての地位を築いた。とりわけ日本・中国・インドなどアジア主要市場の株価指数先物では、海外投資家がアジアへのエクスポージャーをヘッジ・取得する場として高いシェアを持つ。</p>
+  <p>このモデルにより、SGXは「小さな国内市場の取引所」ではなく「<strong>アジアの国際デリバティブ・ハブ</strong>」として収益を多角化している。為替・金利・商品といった多資産にわたる清算機能を統合的に提供する点も強みだ。1999年の合併と株式会社化が、この多角化・国際化戦略を可能にしたといえる。一方で現物株市場の活性化は引き続き課題であり、その光と影は第10章で詳しく見る。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">SGXの逆説</div>
+    <div class="mnemonic-body">国内の現物株市場は小さい。それでもSGXが世界的に重要なのは、<strong>アジア各国の株価指数先物・FX・商品のデリバティブ取引</strong>を域内で一手に引き受けているから。「現物は小さく、デリバティブは大きく」——これがベアリングス事件をも乗り越えたSGXの生存戦略だ。</div>
+  </div>
+</section>
+
+<footer class="sources">
+  <h3>出典・参考文献</h3>
+  <ol>
+    <li>SGX「Our History」、SES / SIMEX合併資料 <a href="https://www.sgx.com/">sgx.com</a></li>
+    <li>ベアリングス銀行破綻(1995)、SIMEX関連の各種報道・解説</li>
+    <li>FTSE Russell「Straits Times Index」、STI 2007年ピーク報道</li>
+  </ol>
+</footer>

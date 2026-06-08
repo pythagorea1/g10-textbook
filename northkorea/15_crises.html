@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>北朝鮮 - Financial Crises | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
+  <script defer src="../assets/charts.js"></script>
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇰🇵 北朝鮮</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. 中央銀行</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. 政策金利</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. 財政政策</a>
+      <a href="04_employment.html" class="sidebar-link">04. 雇用</a>
+      <a href="05_inflation.html" class="sidebar-link">05. インフレ</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. 株式市場概観</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. 株式(初期)</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. 株式(近代)</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. 株式(現代)</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. 株式(現在)</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. 債券市場</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. 短期金利</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. 長期金利</a>
+      <a href="14_currency.html" class="sidebar-link">14. 通貨</a>
+      <a href="15_crises.html" class="sidebar-link active">15. 金融危機</a>
+      <a href="16_banking.html" class="sidebar-link">16. 銀行制度</a>
+      <a href="17_corporate.html" class="sidebar-link">17. 企業・コーポレート</a>
+      <a href="18_regulation.html" class="sidebar-link">18. 規制</a>
+      <a href="19_trade.html" class="sidebar-link">19. 貿易</a>
+      <a href="20_lessons.html" class="sidebar-link">20. 教訓</a>
+      <a href="21_geopolitical_risk.html" class="sidebar-link">21. 地政学リスク</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">G10</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+      <div class="sidebar-section-title">地政学・新興地域</div>
+      <div class="country-flags">
+        <a href="../taiwan/01_central_bank.html" class="country-chip">TW</a>
+        <a href="../hongkong/01_central_bank.html" class="country-chip">HK</a>
+        <a href="../china/01_central_bank.html" class="country-chip">CN</a>
+        <a href="../northkorea/01_central_bank.html" class="country-chip active">KP</a>
+        <a href="../vietnam/01_central_bank.html" class="country-chip">VN</a>
+        <a href="../singapore/01_central_bank.html" class="country-chip">SG</a>
+        <a href="../iran/01_central_bank.html" class="country-chip">IR</a>
+        <a href="../israel/01_central_bank.html" class="country-chip">IL</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 ホーム</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10横断年表</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">北朝鮮</a>
+        <span class="sep">/</span>
+        金融危機 — 苦難の行軍からウォン暴落まで
+      </div>
+      <h1 class="page-title">🇰🇵 金融危機 — 苦難の行軍からウォン暴落まで</h1>
+      <p class="page-subtitle">飢饉・デノミ・国境封鎖・通貨危機 — 4つの大危機の年表</p>
+    </header>
+
+    <article>
+<!-- Key Stats -->
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="stat-value">24万〜350万</div>
+      <div class="stat-label">「苦難の行軍」大飢饉(1994-98)の推計餓死者数(ピーク1997)</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">-96%</div>
+      <div class="stat-label">2009年デノミ後1週間のウォン価値下落。米価は3日で約3倍</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">$0.3〜0.5B</div>
+      <div class="stat-label">COVID国境封鎖(2020-23)で崩壊した中朝貿易額(ピークの約1/15)</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">70,100</div>
+      <div class="stat-label">2024-26通貨危機でのドル/ウォン到達点(2024初の約8倍)</div>
+    </div>
+  </div>
+
+  <section>
+    <h2>1. 北朝鮮の4大危機 — 年表で俯瞰する</h2>
+    <p>
+      他国の金融危機は「株価暴落」「銀行破綻」「ソブリン危機」という金融の言葉で語られる。北朝鮮の危機は<strong>飢饉・通貨改革・国境封鎖・通貨暴落</strong>という、より生存に直結した姿をとる。市場や金融システムが未発達なぶん、危機は金融の回路ではなく<strong>配給・通貨・国境という体制の根幹</strong>を直撃する。本章では(1)苦難の行軍(大飢饉)、(2)2009年デノミ、(3)COVID国境封鎖、(4)2024-26通貨危機を「4大危機」として扱う。
+    </p>
+
+    <div class="table-container">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>年</th>
+            <th>危機・転換点</th>
+            <th>影響度</th>
+            <th>主な影響</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1974-84</td>
+            <td class="event-crisis">対外債務デフォルト</td>
+            <td>重大</td>
+            <td>西側借入が採算割れ→踏み倒し。国際資本市場から排除</td>
+          </tr>
+          <tr>
+            <td>1991</td>
+            <td class="event-crisis">ソ連崩壊・援助途絶</td>
+            <td>壊滅的</td>
+            <td>友好価格貿易・石油供給が消滅。経済の支柱喪失</td>
+          </tr>
+          <tr>
+            <td>1994-98</td>
+            <td class="event-crisis">苦難の行軍(大飢饉)</td>
+            <td>壊滅的</td>
+            <td>推計24万〜350万人が餓死。配給崩壊→闇市場が自然発生</td>
+          </tr>
+          <tr>
+            <td>2002.07</td>
+            <td>7・1経済管理改善措置</td>
+            <td>転換点</td>
+            <td>公定為替・物価の現実化、市場の事実上の黙認</td>
+          </tr>
+          <tr>
+            <td>2006-17</td>
+            <td class="event-crisis">核実験と国連制裁の積み上げ</td>
+            <td>重大</td>
+            <td>石炭・鉄・繊維・石油・労働者を網羅的に禁輸</td>
+          </tr>
+          <tr>
+            <td>2009.11</td>
+            <td class="event-crisis">デノミネーション(100:1)</td>
+            <td>壊滅的</td>
+            <td>資産没収、ウォン-96%、ハイパーインフレ。責任者処刑</td>
+          </tr>
+          <tr>
+            <td>2020-23</td>
+            <td class="event-crisis">COVID国境封鎖</td>
+            <td>壊滅的</td>
+            <td>貿易が$0.3〜0.5Bへ崩壊。逆説的にウォン高・国家統制回帰</td>
+          </tr>
+          <tr>
+            <td>2024-26</td>
+            <td class="event-crisis">通貨危機の再来</td>
+            <td>深刻</td>
+            <td>闇レート8,500→70,100。ハイパーインフレ懸念再燃</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>2. 苦難の行軍(1994-98) — 市場経済化の逆説的な起点</h2>
+    <p>
+      1991年のソ連崩壊で友好価格の石油・物資が途絶し、続く水害も重なって、1994〜98年に北朝鮮は<strong>大飢饉「苦難の行軍」</strong>に陥った。推計24万〜350万人(ピークは1997年)が餓死したとされる(統計が極端に不透明なため幅が大きい)。決定的だったのは、国家の<strong>配給制(公的分配システム)が崩壊</strong>したことだ。配給に頼れなくなった住民は、生き延びるため自発的に物々交換と売買を始めた。
+    </p>
+    <p>
+      これが<strong>「チャンマダン(闇市場)」が自然発生した瞬間</strong>であり、皮肉にも北朝鮮の<strong>市場経済化の起点</strong>となった。飢饉という最悪の危機が、計画経済の外に「市場」という生存の回路を生んだのである。以降、市場は禁じても消えず、2002年の7・1措置で部分的に黙認され、2010年代には全国に400以上の公設市場として制度的に定着していく(詳細は06-10株式章の翻案を参照)。
+    </p>
+
+    <div class="mnemonic-box">
+      <span class="mnemonic-icon">🧠</span>
+      <div class="mnemonic-title">記憶のフック: 飢饉が市場を生んだ</div>
+      <div class="mnemonic-body">
+        苦難の行軍(1994-98)は単なる人道危機ではない。配給崩壊が住民を自発的な売買へ追いやり、チャンマダン(闇市場)を生んだ。北朝鮮の「市場の黎明」は、繁栄ではなく飢餓から始まった。市場は禁じても消えない。
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>3. 2009年デノミ — 自国民への通貨ショック</h2>
+    <p>
+      2009年11月30日、北朝鮮は突如<strong>デノミネーション(通貨改革)</strong>を実施した。100旧ウォン=1新ウォンへ「ゼロ2つ」を切り捨て、さらに新札への交換に1世帯<strong>10万ウォンの上限</strong>を設けた。狙いは、市場で富を蓄えたドンジュ(新興資本家)の現金資産を一掃し、市場の力を削ぐことにあったとされる。だが結果は破滅的だった。上限を超える現金は紙くずと化し、市場は大混乱に陥った。
+    </p>
+    <p>
+      公表値ベースで<strong>1週間でウォンの価値は約96%下落</strong>、市場の<strong>米価は3日で約3倍</strong>に跳ね上がった。物資の流通が止まり、ハイパーインフレと社会不安が広がった。北朝鮮当局は異例の事実上の謝罪に追い込まれ、責任を負わされた財政部長パク・ナムギは翌2010年に処刑された(スケープゴート)。デノミは「政府は住民の資産を一夜で奪える」という記憶を刻み、通貨・銀行への信頼を決定的に破壊した(14章・16章参照)。
+    </p>
+
+    <div class="key-number-row">
+      <div class="key-number"><span class="key-number-value">100:1</span><span class="key-number-label">旧→新ウォンの交換比率(2009-11-30)</span></div>
+      <div class="key-number"><span class="key-number-value">10万W</span><span class="key-number-label">交換上限。超過分の現金は事実上没収</span></div>
+      <div class="key-number"><span class="key-number-value">3倍/3日</span><span class="key-number-label">市場米価の急騰。ハイパーインフレ突入</span></div>
+      <div class="key-number"><span class="key-number-value">処刑</span><span class="key-number-label">責任者パク・ナムギ財政部長(2010)</span></div>
+    </div>
+
+    <p>
+      下のチャートは、物価の代理指標である<strong>市場(チャンマダン)の米価</strong>の推移である。公式インフレ統計が存在しないため、Daily NKが追跡する米価をプロキシとして用いる。デノミ直後の急騰、2013〜2020年の安定(約5,000ウォン/kg — ドル化の好循環)、2024年以降のウォン暴落に連動した再急騰という、為替と同じ3局面が読み取れる。
+    </p>
+
+    <div id="nk15-rice-price"></div>
+    <script>
+    ChartBuilder.lines('nk15-rice-price', {
+      title: '市場(チャンマダン)米価 2009-2026(KPW/kg, 物価プロキシ, 対数軸)',
+      caption: '出典: Daily NK 市場価格追跡。公式インフレ統計が無いため米価を物価の代理指標に。2024-26はウォン暴落連動の推定値で要追加検証。',
+      yUnit: '',
+      logScale: true,
+      yRange: [10, 30000],
+      series: [{
+        name: '米価 KPW/kg',
+        color: '#ffd93d', width: 2,
+        data: [[2009.92,20],[2010.50,600],[2011,1500],[2012,4000],[2013,5000],[2014,5000],[2016,5000],[2018,4800],[2020,5000],[2021.5,4200],[2023,6000],[2024,6500],[2024.75,9000],[2026.2,16000]]
+      }],
+      annotations: [
+        {year:2010.5, label:'デノミ後高', color:'#ff6b6b'},
+        {year:2014, label:'安定5000', color:'#00d4aa'},
+        {year:2026.2, label:'再急騰', color:'#ff9f43'}
+      ],
+      bands: [
+        {from:2013.0, to:2020.0, label:'安定期'}
+      ]
+    });
+    </script>
+  </section>
+
+  <section>
+    <h2>4. COVID国境封鎖(2020-23)と2024-26通貨危機</h2>
+    <p>
+      2020年1月、北朝鮮は新型コロナを理由に<strong>国境を完全封鎖</strong>した。対外貿易の生命線である中朝貿易は、2019年の約28億ドルから<strong>2020-21年には3〜5億ドルへ崩壊</strong>(ピーク比で約1/15)。物資不足が深刻化した一方、逆説的な現象が起きた。輸入が途絶して外貨の需要が消えたため、<strong>ウォンが上昇(1ドル≒5,000ウォン)</strong>したのだ。この「脱市場化(de-marketization)によるウォン高」は、外貨需要こそがウォン安の正体であることを示す重要な事例である。同時に当局は市場取締りを強化し、国家統制への回帰を進めた。
+    </p>
+    <p>
+      国境再開後の2024年以降、状況は反転する。対中貿易再開への期待などで外貨需要が急増し、<strong>闇レートは8,500(2024初)→16,100(2024.10)→40,000(2025.6)→54,200(2026.3)→70,100ウォン(2026.4)</strong>へ暴落した。わずか2週間で+29.3%という急落も記録し、ハイパーインフレ懸念が再燃している。これが現在進行形の「2024-26通貨危機」である。市場米価も連動して再急騰し、ウォン建て資産しか持たない庶民を直撃している。
+    </p>
+
+    <div class="table-container">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>危機</th>
+            <th>期間</th>
+            <th>規模</th>
+            <th>本質</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="highlight-red">苦難の行軍(飢饉)</td>
+            <td>1994-98</td>
+            <td><span class="drawdown-badge">24万〜350万人</span> 餓死</td>
+            <td>配給崩壊→闇市場の誕生</td>
+          </tr>
+          <tr>
+            <td class="highlight-red">2009年デノミ</td>
+            <td>2009.11</td>
+            <td><span class="drawdown-badge">-96%</span> ウォン価値(1週間)</td>
+            <td>資産没収→通貨・銀行不信</td>
+          </tr>
+          <tr>
+            <td class="highlight-orange">COVID国境封鎖</td>
+            <td>2020-23</td>
+            <td><span class="drawdown-badge">-80%超</span> 中朝貿易</td>
+            <td>逆説のウォン高・国家統制回帰</td>
+          </tr>
+          <tr>
+            <td class="highlight-red">2024-26通貨危機</td>
+            <td>2024-26</td>
+            <td><span class="drawdown-badge">約8倍</span> ドル/ウォン</td>
+            <td>外貨需要急増→ハイパーインフレ懸念</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>5. 危機から読む北朝鮮 — 共通する教訓</h2>
+    <p>
+      4大危機に共通するのは、<strong>金融市場ではなく体制の根幹(配給・通貨・国境)が震源</strong>であること、そして<strong>住民が常に最終的な調整弁</strong>にされることだ。飢饉では命が、デノミでは貯蓄が、封鎖では生活物資が、通貨危機では実質所得が奪われた。同時に、危機のたびに浮かび上がるのが<strong>「市場の粘り強さ」</strong>である。飢饉が市場を生み、デノミでも封鎖でも市場は完全には消えなかった。通貨は体制への信認の温度計であり、その温度が危機のたびに測られる。次章以降(16銀行・17企業・18規制)で、この危機が制度に残した刻印を見ていく。
+    </p>
+  </section>
+
+  <section>
+    <h2>出典</h2>
+    <ul>
+      <li>Wikipedia「1990s North Korean famine」/ 38 North 食料不安レポート(苦難の行軍、死者24万〜350万)</li>
+      <li>Wikipedia「2009 North Korean currency reform」「Pak Nam-gi」/ PIIE「North Korea&#39;s Failed Currency Reform」(100:1、-96%、米価3倍、責任者処刑)</li>
+      <li>Korea Times (2021)「How de-marketization is driving up value of North&#39;s won」(COVID期のウォン高逆説)</li>
+      <li>Daily NK「North Korea exchange rate hits all-time high」(2026-04: 70,100、+29.3%/2週)</li>
+      <li>Arms Control Association「UN Security Council Resolutions on North Korea」(制裁レジーム)</li>
+    </ul>
+  </section>
+
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+
+    </footer>
+
+    <nav class="page-nav">
+      <a href="14_currency.html" class="prev">通貨</a>
+      <a href="16_banking.html" class="next">銀行制度</a>
+    </nav>
+  </main>
+
+  <script src="../assets/enhancer.js"></script>
+  <script defer src="../assets/recall.js"></script>
+  <script src="../assets/tts-reader.js"></script>
+</body>
+</html>

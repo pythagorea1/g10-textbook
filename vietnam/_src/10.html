@@ -1,0 +1,111 @@
+<!-- Key Stats -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">~1,530</div>
+    <div class="stat-label">2022年4月のピーク</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">~874</div>
+    <div class="stat-label">2022年11月の底（社債危機）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">1,784.49</div>
+    <div class="stat-label">2025年末（年間+約41%）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">~1,900</div>
+    <div class="stat-label">2026年に史上最高更新</div>
+  </div>
+</div>
+
+<section>
+  <h2>2022年：Van Thinh Phat事件と社債危機</h2>
+  <p>2021年末に1,498へ駆け上がったVN-Indexは、2022年初に<strong>約1,530</strong>でピークを付けた後、年後半に劇的な暴落に見舞われた。引き金は<strong>Van Thinh Phat（VTP）／SCB事件</strong>である。不動産大手VTPの会長Truong My Lan氏が、傘下のサイゴン商業銀行（SCB）を通じた巨額の詐欺・横領で摘発され、これが<strong>社債（corporate bond）市場の危機</strong>へと連鎖した。2020〜2021年に急拡大していた不動産企業の社債が、償還不安と当局の規制強化（第11・18章）で売り叩かれ、デフォルト連鎖の恐怖が市場を覆った。</p>
+  <p>同時に、FRBの猛烈な利上げでドル高・資本流出が進み、SBVは為替防衛のため政策金利を6.0%へ引き上げた（第02章）。内憂外患のなか、VN-Indexは<strong>2022年11月に約874</strong>まで暴落——ピークから約4割超を失った。個人投資家の信用取引の投げ売り（margin call）が下落を増幅し、2021年の熱狂は一年で恐怖に転じた。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">「1530 → 874」社債危機の暴落 <span class="drawdown-badge">-43%</span></div>
+    <div class="mnemonic-body">
+      <p>2022年は<strong>Van Thinh Phat（VTP）／SCB事件</strong>が不動産社債危機に連鎖し、FRB利上げ・ドル高も重なってVN-Indexは<strong>1,530→874</strong>へ暴落。銀行・不動産・社債・個人の信用取引が一本の鎖でつながり、一角の破綻が市場全体を引きずり下ろした。ベトナム金融の「相互連関リスク」を象徴する事件。</p>
+    </div>
+  </div>
+</section>
+
+<!-- Equity 2021-2026 chart -->
+<div id="vn-eq-current"></div>
+<script>
+ChartBuilder.lines('vn-eq-current', {
+  title: 'VN-Index 2021-2026（社債危機→回復→史上最高）',
+  caption: '出典: HOSE / VietnamPlus / VietnamNet / TradingEconomics。2022.04ピーク・2022.11底は節目、2025末1,784.49は確定値、2026は~1,900（出典差あり）。',
+  yUnit: '',
+  yStep: 200,
+  yRange: [800, 2000],
+  series: [{
+    name: 'VN-Index',
+    color: '#00d4aa',
+    data: [
+      [2021.9, 1498],[2022.3, 1530],[2022.85, 874],[2023, 1130],
+      [2024, 1267],[2025, 1784],[2026.15, 1880],[2026.3, 1929]
+    ]
+  }],
+  annotations: [
+    { year: 2022.3, label: '22 1530', color: '#ffd93d' },
+    { year: 2022.85, label: '22 底874', color: '#ff6b6b' },
+    { year: 2025, label: '25 +41%', color: '#00d4aa' },
+    { year: 2026.3, label: '26 最高値', color: '#b07cff' }
+  ]
+});
+</script>
+
+<section>
+  <h2>2023-2025：回復と歴史的ラリー</h2>
+  <p>底入れは早かった。2023年、SBVは<strong>年4回の利下げで政策金利を4.5%へ戻し</strong>、政府は不動産・社債の救済策（社債のリスケを認めるDecree 08等、第11章）を矢継ぎ早に打ち出した。マクロ安定と政策支援を背景に、VN-Indexは2023年末に約1,130、2024年末に約1,267へと着実に回復した。</p>
+  <p>そして2025年、ベトナム株は<strong>年間+約41%</strong>という歴史的なラリーを演じ、年末は<strong>1,784.49</strong>で史上最高の年末値を記録した。原動力は二つ——(1) 2025年7月の<strong>米越関税合意</strong>で当初脅かされた46%という最悪シナリオが回避され（一般20%・積替40%）安心感が広がったこと、(2) <strong>FTSE新興市場格上げ</strong>（2026年9月発効予定）を見越したパッシブ資金流入の先取り期待である。</p>
+</section>
+
+<section>
+  <h2>2026年：史上最高値とFTSE格上げ</h2>
+  <p>勢いは2026年も続いた。VN-Indexは<strong>2026年2月に約1,880、4月初に約1,929</strong>と史上最高値を更新した（正確な水準は出典で差があり、~1,900前後と幅をもって理解するのが妥当）。市場の主役は明確に<strong>FTSE Russellの新興市場格上げ</strong>——2026年9月21日の発効を控え、新興国指数連動のファンドが組み入れを進めるとの観測が、外国人買いと指数押し上げの最大の触媒となっている。</p>
+  <p>ただし楽観一色ではない。(1) FTSE格上げに伴う<strong>ホットマネーの急な流出入</strong>はボラティリティとドンへの圧力を高める、(2) インフレの2026年上振れ（~5%）でSBVが利上げに転じれば逆風、(3) 対米関税が輸出企業の業績に重し——といったリスクが残る。2000年に100・2社で始まった市場が、社債危機の暴落を乗り越え、世界の新興市場の旗手として2,000の大台をうかがう。その歩みは、熱狂と崩壊を繰り返しながら成長するベトナム経済そのものの縮図である。</p>
+
+  <div class="key-number-row">
+    <div class="key-number">
+      <span class="key-number-value">+41%</span>
+      <span class="key-number-label">2025年のVN-Index年間リターン</span>
+    </div>
+    <div class="key-number">
+      <span class="key-number-value">2026/9/21</span>
+      <span class="key-number-label">FTSE新興市場格上げ発効予定</span>
+    </div>
+    <div class="key-number">
+      <span class="key-number-value">~1,900</span>
+      <span class="key-number-label">2026年の史上最高値（2,000をうかがう）</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>四半世紀の通算リターンという視点</h2>
+  <p>暴落と最高値を繰り返してきたVN-Indexだが、長い目で見れば驚異的な成長市場である。2000年の基準値100から2026年の~1,900まで、四半世紀でおよそ<strong>19倍</strong>——年率に均せば二桁の上昇である。途中には2008年の-66%級、2022年の-43%という二度の大暴落があったが、その都度、より高い水準へ回復してきた。背景にあるのは、製造業ハブ化・人口ボーナス・所得拡大という<strong>実体経済の長期成長</strong>である。</p>
+  <p>裏を返せば、ベトナム株は「高いリターンと引き換えに、二桁・場合によっては数十%の急落を定期的に飲み込む覚悟」を投資家に求める市場だということだ。個人投資家の比率が高くボラティリティが大きい構造（第06章）、地政学リスク（第21章）、為替（ドン）の減価——これらを理解したうえで、長期の成長ストーリーに賭けられるかが問われる。VN-Indexの歴史は、新興国投資の魅力とリスクを凝縮した教材である。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">「100→1900」と二度の大暴落</div>
+    <div class="mnemonic-body">
+      <p>2000年の100から2026年の~1,900へ、四半世紀で約<strong>19倍</strong>。だしその道のりは<strong>2008年-66%・2022年-43%</strong>という二度の大暴落を含む。高成長と高ボラは表裏一体——ベトナム株は「長期の成長に賭け、途中の急落に耐える」市場と理解する。</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>出典・参考文献</h2>
+  <ol>
+    <li>Ho Chi Minh Stock Exchange（HOSE）, VN-Index 履歴 <a href="https://www.hsx.vn/">hsx.vn</a></li>
+    <li>VietnamPlus / VietnamNet / VIR, "VN-Index 2025末 1,784.49（+41%）/ 2026年史上最高"</li>
+    <li>Reuters / CNBC, "Van Thinh Phat / Truong My Lan case・社債市場危機 2022"</li>
+    <li>FTSE Russell, "Vietnam reclassification to Secondary Emerging（2026/9/21発効予定）"</li>
+    <li>MUFG / Vietnam-Briefing, "米越関税合意 2025/7（一般20%・積替40%）"</li>
+  </ol>
+</section>

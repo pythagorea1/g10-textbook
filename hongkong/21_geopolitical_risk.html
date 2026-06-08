@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>香港 - Geopolitical Risk | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
+  <script defer src="../assets/charts.js"></script>
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇭🇰 香港</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. 中央銀行</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. 政策金利</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. 財政政策</a>
+      <a href="04_employment.html" class="sidebar-link">04. 雇用</a>
+      <a href="05_inflation.html" class="sidebar-link">05. インフレ</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. 株式市場概観</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. 株式(初期)</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. 株式(近代)</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. 株式(現代)</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. 株式(現在)</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. 債券市場</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. 短期金利</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. 長期金利</a>
+      <a href="14_currency.html" class="sidebar-link">14. 通貨</a>
+      <a href="15_crises.html" class="sidebar-link">15. 金融危機</a>
+      <a href="16_banking.html" class="sidebar-link">16. 銀行制度</a>
+      <a href="17_corporate.html" class="sidebar-link">17. 企業・コーポレート</a>
+      <a href="18_regulation.html" class="sidebar-link">18. 規制</a>
+      <a href="19_trade.html" class="sidebar-link">19. 貿易</a>
+      <a href="20_lessons.html" class="sidebar-link">20. 教訓</a>
+      <a href="21_geopolitical_risk.html" class="sidebar-link active">21. 地政学リスク</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">G10</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+      <div class="sidebar-section-title">地政学・新興地域</div>
+      <div class="country-flags">
+        <a href="../taiwan/01_central_bank.html" class="country-chip">TW</a>
+        <a href="../hongkong/01_central_bank.html" class="country-chip active">HK</a>
+        <a href="../china/01_central_bank.html" class="country-chip">CN</a>
+        <a href="../northkorea/01_central_bank.html" class="country-chip">KP</a>
+        <a href="../vietnam/01_central_bank.html" class="country-chip">VN</a>
+        <a href="../singapore/01_central_bank.html" class="country-chip">SG</a>
+        <a href="../iran/01_central_bank.html" class="country-chip">IR</a>
+        <a href="../israel/01_central_bank.html" class="country-chip">IL</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 ホーム</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10横断年表</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">香港</a>
+        <span class="sep">/</span>
+        香港の地政学リスク
+      </div>
+      <h1 class="page-title">🇭🇰 香港の地政学リスク</h1>
+      <p class="page-subtitle">米中対立の最前線、USD決済遮断、台湾有事波及、NSL・23条、対中依存と人材流出</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">米中</div>
+          <div class="stat-label">対立の最前線に立つ金融ハブ</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" style="color:var(--accent-red);">USD決済</div>
+          <div class="stat-label">ペッグの究極の脆弱性</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" style="color:var(--accent-orange);">台湾有事</div>
+          <div class="stat-label">巻き添え制裁シナリオ</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" style="color:var(--accent-blue);">人材流出</div>
+          <div class="stat-label">vs シンガポール競合</div>
+        </div>
+      </div>
+
+      <p>
+        香港の地政学リスクの本質は、<strong>「国際金融ハブとしての制度的価値」と「中国本土への政治・経済統合」の緊張</strong>にある。香港は西側資本と中国本土を結ぶ唯一無二の結節点であるがゆえに、米中対立の最前線に置かれ、両者の関係が悪化するたびにその地位そのものが標的となる。本章では、(1)米中対立と特別地位喪失、(2)米ドル決済遮断リスク、(3)台湾有事の巻き添え、(4)NSL・23条のガバナンスリスク、(5)対中過度依存、(6)資本・人材フライト、(7)金利輸入の罠——という7つの地政学リスクを体系化し、市場・経済への波及経路を整理する。
+      </p>
+
+      <div class="key-number-row">
+        <div class="key-number">
+          <span class="key-number-value">EO13936</span>
+          <span class="key-number-label">2020年 米による特別地位剥奪</span>
+        </div>
+        <div class="key-number">
+          <span class="key-number-value">-54%</span>
+          <span class="key-number-label">HSI 2021ピーク→2022底（政治・規制不安）</span>
+        </div>
+        <div class="key-number">
+          <span class="key-number-value">100%</span>
+          <span class="key-number-label">ペッグの米ドル準備依存度</span>
+        </div>
+        <div class="key-number">
+          <span class="key-number-value">BN(O)</span>
+          <span class="key-number-label">英国への移民経路（人材流出）</span>
+        </div>
+      </div>
+
+      <div class="mnemonic-box">
+        <span class="mnemonic-icon">🧠</span>
+        <div class="mnemonic-title">「ペッグの最大の敵は投機家ではなく地政学」</div>
+        <div class="mnemonic-body">1998年のダブルプレイ防衛が示したように、香港は<strong>投機的なペッグ攻撃には勝てる</strong>。巨額の米ドル準備があるからだ。だが、もし米国が政治的決断で香港の銀行を<strong>米ドル決済（USDクリアリング）から排除</strong>すれば、100%米ドル裏付けの通貨ボードは根幹から揺らぐ。準備があっても、その準備を「使える米ドル」として動かせなければ無意味——これがロシアのSWIFT排除（2022）を参照点とする香港の究極の脆弱性。市場ではなく政治が引き金を握る。</div>
+      </div>
+
+      <!-- ============================================================ -->
+      <section>
+        <h2>1. 地政学リスク・マトリクス</h2>
+        <p>
+          香港が直面する7つの主要な地政学リスクを、蓋然性・影響度・波及経路・関連国で整理する。いずれも「金融ハブの制度的価値」と「対中統合」の緊張から派生する。</p>
+
+        <div class="table-container">
+          <table class="data-table sortable">
+            <thead>
+              <tr>
+                <th data-sort>リスク</th>
+                <th data-sort>蓋然性</th>
+                <th data-sort>影響度</th>
+                <th>主な波及経路</th>
+                <th>関連国</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="background:rgba(255,159,67,0.10);">
+                <td><strong>①特別地位の喪失</strong></td>
+                <td><span class="highlight-red">高（実現済）</span></td>
+                <td><span class="highlight-orange">中〜高</span></td>
+                <td>対米輸出優遇消滅→再輸出機能低下→米企業地域本部撤退（▲8%）→FDI減</td>
+                <td>US, CN</td>
+              </tr>
+              <tr style="background:rgba(255,107,107,0.12);">
+                <td><strong>②USD決済遮断</strong></td>
+                <td><span class="highlight-green">低</span></td>
+                <td><span class="highlight-red">破滅的</span></td>
+                <td>USDクリアリング停止→ペッグ維持不能論→資本流出→金利急騰</td>
+                <td>US, CN</td>
+              </tr>
+              <tr style="background:rgba(255,107,107,0.12);">
+                <td><strong>③台湾有事の巻き添え</strong></td>
+                <td><span class="highlight-orange">中</span></td>
+                <td><span class="highlight-red">破滅的</span></td>
+                <td>対中包括制裁→香港経由の資金・貿易が標的→HSI急落・資本逃避</td>
+                <td>CN, TW, US, JP</td>
+              </tr>
+              <tr style="background:rgba(255,159,67,0.10);">
+                <td><strong>④NSL・23条ガバナンス</strong></td>
+                <td><span class="highlight-red">高（実現済）</span></td>
+                <td><span class="highlight-orange">中</span></td>
+                <td>ESG忌避・デューデリ困難化・人材流出→金融ハブの質的低下</td>
+                <td>CN, UK, US</td>
+              </tr>
+              <tr style="background:rgba(255,159,67,0.10);">
+                <td><strong>⑤対中過度依存</strong></td>
+                <td><span class="highlight-red">高</span></td>
+                <td><span class="highlight-orange">中〜高</span></td>
+                <td>本土不動産危機・成長減速→香港上場株・銀行エクスポージャー→ボラ拡大</td>
+                <td>CN</td>
+              </tr>
+              <tr style="background:rgba(91,141,239,0.10);">
+                <td><strong>⑥資本・人材フライト</strong></td>
+                <td><span class="highlight-orange">中</span></td>
+                <td><span class="highlight-orange">中</span></td>
+                <td>政治不安・課税優位喪失→AUM・FDI・金融雇用がシンガポールへ流出</td>
+                <td>SG, CN</td>
+              </tr>
+              <tr style="background:rgba(91,141,239,0.10);">
+                <td><strong>⑦金利輸入の罠</strong></td>
+                <td><span class="highlight-red">高（恒常）</span></td>
+                <td><span class="highlight-orange">中</span></td>
+                <td>Fed引締め→HK金利連動上昇→不動産・内需に打撃（通貨防衛が優先）</td>
+                <td>US</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="source"><cite>出典: 本テキスト ファクトシート §5; 米大統領令13936; Congress.gov（NSL/23条）。蓋然性・影響度は定性評価。</cite></p>
+      </section>
+
+      <!-- ハンセン指数 地政学チャート -->
+      <div id="hk-hsi-geopolitical-2018-26"></div>
+      <script>
+      ChartBuilder.lines('hk-hsi-geopolitical-2018-26', {
+        title: 'ハンセン指数と地政学イベント 2018-2026',
+        caption: '出典: Hang Seng Indexes; Macrotrends. 2018年1月の史上最高値圏（約33,154）から、米中貿易戦争・2019年デモ・2020年NSL（国家安全法）・本土規制強化が重なり、2022年10月に約14,687（2009年来安値）へ。2024年3月に基本法23条立法、その後DeepSeek相場・南向き資金で2026年初に約26,591へ回復。地政学イベントが香港市場の最大の変動要因となったことを示す。',
+        yUnit: '',
+        yRange: [10000, 35000],
+        series: [{
+          name: 'ハンセン指数',
+          color: '#00d4aa', width: 2,
+          data: [
+            [2018.05, 33154],[2019.0, 28000],[2019.7, 26000],[2020.0, 27231],
+            [2020.6, 24500],[2021.1, 31084],[2022.0, 23000],[2022.8, 14687],
+            [2023.0, 17047],[2024.05, 14800],[2024.25, 16500],[2024.6, 20060],
+            [2025.0, 25800],[2026.05, 26591],[2026.45, 24962]
+          ]
+        }],
+        bands: [
+          { from: 2020.5, to: 2026, label: 'NSL以降', color: '#b07cff' }
+        ],
+        annotations: [
+          { year: 2018.05, label: '18 高値', color: '#00d4aa' },
+          { year: 2019.7, label: '19 デモ', color: '#ff9f43' },
+          { year: 2020.6, label: '20 NSL', color: '#b07cff' },
+          { year: 2022.8, label: '22 底', color: '#ff6b6b' },
+          { year: 2024.25, label: '24 23条', color: '#ff9f43' },
+          { year: 2026.05, label: '26 回復', color: '#00d4aa' }
+        ]
+      });
+      </script>
+
+      <!-- ============================================================ -->
+      <section>
+        <h2>2. 米中対立と特別地位の喪失</h2>
+        <p>
+          香港の地政学リスクの起点は、<strong>米中対立の最前線</strong>に立つことである。2020年、米国は国家安全法施行を受けて大統領令13936を発し、香港の特別貿易・関税地位を剥奪、香港・中国当局者に制裁を科した（第19章参照）。これにより、香港が「中国だが中国ではない」という制度的差異から得ていた価値——対米輸出の優遇、独立した貿易主体としての扱い、ハイテク中継機能——が損なわれた。
+        </p>
+        <p>
+          波及経路は明確である。再輸出ハブ機能が低下し、米企業の地域統括拠点が見直され（過去10年で約▲8%）、米FDIが減少した。さらに重大なのは、金融面で<strong>「香港＝中国の延長」</strong>とみなされるリスクである。これは香港が独自に積み上げてきた国際金融センターとしての信認を、本土の政治リスクに巻き込む。米中対立が貿易→投資→金融へと波及するスペクトラムの上に、香港は常に置かれている。
+        </p>
+        <p class="source"><cite>出典: 米大統領令13936 (2020-07); Congress.gov; SCMP。</cite></p>
+      </section>
+
+      <!-- ============================================================ -->
+      <section>
+        <h2>3. 米ドル決済遮断リスク — ペッグの究極の脆弱性</h2>
+        <p>
+          最も蓋然性は低いが、最も影響が破滅的なテールリスクが<strong>米ドル決済（USDクリアリング）からの排除</strong>である。香港の通貨ボードは米ドル準備に100%依存しており、香港ドルの発行・兌換はすべて米ドルの保有と決済能力を前提とする。
+        </p>
+        <p>
+          仮に米国が地政学的決断として香港の主要銀行を二次制裁の対象とし、米ドル決済システムから排除すれば、(1)発券銀行のCertificate of Indebtedness取得（＝発券）が困難化し、(2)兌換保証の履行が揺らぎ、(3)「ペッグ維持不能」との見方から資本が流出、(4)HIBORが急騰して経済が凍りつく。これは1998年型の投機攻撃とは次元が異なる——準備があっても、その準備を「使える米ドル」として動かせなければ無意味だからである。<strong>2022年のロシアに対するSWIFT排除・準備凍結</strong>がこのシナリオの参照点であり、香港・中国当局が人民元国際化やデジタル人民元（e-CNY）、代替決済網を模索する背景にもなっている。現状は外貨基金の巨額準備と米中相互依存（米国にとっても香港排除は自傷的）が、このリスクを抑止している。
+        </p>
+        <p class="source"><cite>出典: ファクトシート §5; ロシアSWIFT排除 (2022) を参照シナリオとして。</cite></p>
+      </section>
+
+      <!-- ============================================================ -->
+      <section>
+        <h2>4. 台湾有事の巻き添えと対中依存</h2>
+        <p>
+          <strong>台湾海峡有事</strong>は、香港にとって直接の当事者ではないが、最大級の巻き添えリスクである。中台間の軍事衝突が発生すれば、西側は対中包括制裁を発動する可能性が高く、その際「中国の国際金融窓口」である香港は、資金・貿易の標的として真っ先に巻き込まれる。波及経路は、対中制裁→香港経由の資金・貿易が遮断→ハンセン急落・資本逃避→ペッグ防衛圧力、という連鎖である。
+        </p>
+        <p>
+          より日常的なリスクが<strong>対中過度依存</strong>である。ハンセン指数の構成、IPO、南向き資金は本土への依存を年々強めている。それゆえ本土の不動産危機（恒大2021〜）や成長減速は、香港上場株・銀行のエクスポージャーを通じて直接香港に伝染する。香港自身の不動産も2021年ピークから約30%下落した。統合は南向き資金（2025年2月だけでHK$1,410億流入）やIPO世界一位復帰（2025年US$365億）という果実をもたらす一方、本土と運命を共にする従属リスクを高める——この両面性が香港の構造的脆弱性である。
+        </p>
+        <p class="source"><cite>出典: ファクトシート §5; Bloomberg (2025-02 南向き); HKEX (2025 IPO)。</cite></p>
+      </section>
+
+      <!-- ============================================================ -->
+      <section>
+        <h2>5. NSL・23条と資本・人材フライト</h2>
+        <p>
+          <strong>2020年の国家安全法（NSL）</strong>と<strong>2024年3月の基本法23条立法</strong>は、香港のガバナンス・情報・司法独立に対する国際投資家の評価を変えた。短期的にはNSL後に本土資金の流入や本土企業のIPOが増えた側面もあるが、長期的には、(1)ESGファンドの忌避、(2)企業調査・データアクセスの制約によるデューデリジェンスの困難化、(3)報道・調査機関への萎縮効果、(4)専門職・人材の流出が懸念される。
+        </p>
+        <p>
+          人材面では、英国のBN(O)旅券保有者向け移民経路をはじめ、香港から専門職・富裕層の流出が進んだ。これは<strong>シンガポールとの金融ハブ競争</strong>と直結する。政治的安定・課税優位・中立性を求めるアジアの富裕層資金（AUM）やファミリーオフィスがシンガポールへ流れる動きが続く一方、香港は資本投資者入境制度の再開などで対抗し、2025年には本土IPO回帰で資金が一部戻る側面もある。香港の金融ハブとしての質は、制度的信認と人材の去就にかかっている。
+        </p>
+        <p class="source"><cite>出典: HKFP; Congress.gov（NSL/23条）; UK BN(O) scheme; SCMP（対シンガポール競合）。</cite></p>
+      </section>
+
+      <!-- ============================================================ -->
+      <section>
+        <h2>6. 地政学イベント年表</h2>
+        <div class="timeline">
+          <div class="timeline-item crisis">
+            <div class="timeline-date">2018-</div>
+            <div class="timeline-content">
+              <h4>米中貿易戦争・対中半導体規制</h4>
+              <p>関税合戦とハイテク規制が始まり、香港の中継・ハイテク機能に影。HSIは2018年1月の最高値圏から調整局面へ。</p>
+            </div>
+          </div>
+          <div class="timeline-item crisis">
+            <div class="timeline-date">2019</div>
+            <div class="timeline-content">
+              <h4>逃亡犯条例反対デモ</h4>
+              <p>大規模抗議が観光・小売・不動産を直撃。資本流出懸念が高まり、国際的に香港の政治リスクが顕在化。</p>
+            </div>
+          </div>
+          <div class="timeline-item crisis">
+            <div class="timeline-date">2020.06-07</div>
+            <div class="timeline-content">
+              <h4>国家安全法（NSL）施行 / 米EO13936</h4>
+              <p>本土が香港に直接安全立法を導入。米は特別貿易地位を剥奪し制裁。短期は本土IPO増、長期はFDI減・人材流出・ガバナンス懸念。</p>
+            </div>
+          </div>
+          <div class="timeline-item crisis">
+            <div class="timeline-date">2021-22</div>
+            <div class="timeline-content">
+              <h4>本土規制・不動産・テック売り</h4>
+              <p>本土の規制強化・不動産危機（恒大）・Fed利上げが重なり、HSIは2022年10月に約14,687（ピーク比-54%）へ。</p>
+            </div>
+          </div>
+          <div class="timeline-item crisis">
+            <div class="timeline-date">2024.03</div>
+            <div class="timeline-content">
+              <h4>基本法23条立法（国家安全条例）</h4>
+              <p>域内独自の安全立法が完成。報道・データ・司法独立への懸念が再燃し、制度的信認が問われる。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2025</div>
+            <div class="timeline-content">
+              <h4>DeepSeek相場・南向き資金 / IPO世界一位復帰</h4>
+              <p>本土テック再評価と南向き資金（2月HK$1,410億）でHSI回復。通年IPO調達US$365億で世界首位に。地政学リスクと資金回帰が併存。</p>
+            </div>
+          </div>
+        </div>
+        <p class="source"><cite>出典: ファクトシート §4-§5; Hang Seng Indexes; SCMP; Bloomberg。</cite></p>
+      </section>
+
+      <!-- ============================================================ -->
+      <section>
+        <h2>7. まとめ — 橋であることの宿命</h2>
+        <p>
+          香港の地政学リスクは、すべて「西側資本と中国本土を結ぶ橋」であることに由来する。橋であるがゆえに繁栄し、橋であるがゆえに両岸の対立に巻き込まれる。特別地位の喪失とNSL・23条はすでに現実化し、対中依存と金利輸入は恒常的な構造であり、台湾有事と米ドル決済遮断は低頻度・破滅的なテールリスクとして残る。香港の金融制度（ペッグ・銀行・準備）は技術的に頑健だが、その頑健性が及ばない領域——政治的決断と制度的信認——こそが、香港最大のリスクである。市場ではなく地政学が、香港の次の試練の引き金を握っている。
+        </p>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+<ol>
+<li>本テキスト 香港ファクトシート §4-§5.</li>
+<li>米大統領令13936 (2020-07); Congress.gov.</li>
+<li>HKFP; Safeguarding National Security Ordinance (Art.23, 2024-03); 2020 NSL.</li>
+<li>UK BN(O) immigration scheme.</li>
+<li>Hang Seng Indexes; Macrotrends; Bloomberg (2025-02); SCMP（対シンガポール競合）.</li>
+<li>ロシアSWIFT排除 (2022) を参照シナリオとして.</li>
+</ol>
+    </footer>
+
+    <nav class="page-nav">
+      <a href="20_lessons.html" class="prev">教訓</a>
+      <a href="../summary/g10_timeline.html" class="next">G10横断年表</a>
+    </nav>
+  </main>
+
+  <script src="../assets/enhancer.js"></script>
+  <script defer src="../assets/recall.js"></script>
+  <script src="../assets/tts-reader.js"></script>
+</body>
+</html>

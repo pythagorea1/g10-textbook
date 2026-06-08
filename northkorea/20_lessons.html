@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>北朝鮮 - Lessons | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
+  <script defer src="../assets/charts.js"></script>
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇰🇵 北朝鮮</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. 中央銀行</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. 政策金利</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. 財政政策</a>
+      <a href="04_employment.html" class="sidebar-link">04. 雇用</a>
+      <a href="05_inflation.html" class="sidebar-link">05. インフレ</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. 株式市場概観</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. 株式(初期)</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. 株式(近代)</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. 株式(現代)</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. 株式(現在)</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. 債券市場</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. 短期金利</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. 長期金利</a>
+      <a href="14_currency.html" class="sidebar-link">14. 通貨</a>
+      <a href="15_crises.html" class="sidebar-link">15. 金融危機</a>
+      <a href="16_banking.html" class="sidebar-link">16. 銀行制度</a>
+      <a href="17_corporate.html" class="sidebar-link">17. 企業・コーポレート</a>
+      <a href="18_regulation.html" class="sidebar-link">18. 規制</a>
+      <a href="19_trade.html" class="sidebar-link">19. 貿易</a>
+      <a href="20_lessons.html" class="sidebar-link active">20. 教訓</a>
+      <a href="21_geopolitical_risk.html" class="sidebar-link">21. 地政学リスク</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">G10</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+      <div class="sidebar-section-title">地政学・新興地域</div>
+      <div class="country-flags">
+        <a href="../taiwan/01_central_bank.html" class="country-chip">TW</a>
+        <a href="../hongkong/01_central_bank.html" class="country-chip">HK</a>
+        <a href="../china/01_central_bank.html" class="country-chip">CN</a>
+        <a href="../northkorea/01_central_bank.html" class="country-chip active">KP</a>
+        <a href="../vietnam/01_central_bank.html" class="country-chip">VN</a>
+        <a href="../singapore/01_central_bank.html" class="country-chip">SG</a>
+        <a href="../iran/01_central_bank.html" class="country-chip">IR</a>
+        <a href="../israel/01_central_bank.html" class="country-chip">IL</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 ホーム</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10横断年表</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">北朝鮮</a>
+        <span class="sep">/</span>
+        教訓 — 指令経済・核・制裁の閉鎖均衡
+      </div>
+      <h1 class="page-title">🇰🇵 教訓 — 指令経済・核・制裁の閉鎖均衡</h1>
+      <p class="page-subtitle">通貨は体制信認の温度計 — ドル化の安定と脆弱性の逆説</p>
+    </header>
+
+    <article>
+<!-- Key Stats -->
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="stat-value">閉鎖均衡</div>
+      <div class="stat-label">指令経済+核武装+制裁が固定化した低位安定</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">温度計</div>
+      <div class="stat-label">通貨レートが体制信認を映す唯一の市場シグナル</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">ドル化の逆説</div>
+      <div class="stat-label">安定と脆弱性を同時にもたらす</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">市場は不滅</div>
+      <div class="stat-label">禁じても飢饉・封鎖を越えて市場は生き残る</div>
+    </div>
+  </div>
+
+  <section>
+    <h2>1. 北朝鮮が教える5つの教訓</h2>
+    <p>
+      北朝鮮は本テキストの中で、<strong>「市場が存在しないとき経済はどう動くか」</strong>という極限の対照例である。政策金利も株式も債券も持たないこの国を学ぶことは、逆説的に、私たちが当たり前と思っている市場・通貨・制度の意味を照らし出す。ここまでの12〜19章を踏まえ、5つの教訓に総括する。
+    </p>
+
+    <div class="table-container">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>教訓</th>
+            <th>根拠となった章</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td class="highlight-blue">通貨は体制信認の温度計</td>
+            <td>14通貨・15危機</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td class="highlight-orange">ドル化は安定と脆弱性を同時に運ぶ</td>
+            <td>14通貨・16銀行</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td class="highlight-green">市場は禁じても消えない</td>
+            <td>15危機・17企業・18規制</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td class="highlight-red">制裁は合法貿易を縮め地下経済を太らせる</td>
+            <td>19貿易・21地政学</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td class="highlight-red">指令経済+核+制裁は「閉鎖均衡」に陥る</td>
+            <td>13長期金利・21地政学</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>2. 教訓1・2 — 通貨が語るすべて</h2>
+    <p>
+      株価も金利もないこの国で、<strong>通貨レートだけが住民の体制への信認をリアルタイムに映す市場価格</strong>だった。2009年デノミでの資産没収は信頼を破壊し、2024-26の暴落はインフレ不安を映した。物価高→市場統制強化→住民不満、という悪循環は通貨に最も鮮明に表れる。為替を見れば体制の体温が分かる——これが教訓1である。
+    </p>
+    <p>
+      教訓2は<strong>ドル化の逆説</strong>だ。自国通貨を見限った住民がドル・人民元へ逃避した結果、2013〜2020年にウォンは一時「安定」した。しかし外貨依存は外的ショックに弱い。外貨の流出入(貿易・制裁・国境封鎖)一つでウォンが乱高下する。ドル化は短期の安定と長期の脆弱性をワンセットで運んでくる。これは新興国全般の通貨政策にも通じる普遍的な教訓である。
+    </p>
+
+    <div class="mnemonic-box">
+      <span class="mnemonic-icon">🧠</span>
+      <div class="mnemonic-title">記憶のフック: 為替=体制の体温計</div>
+      <div class="mnemonic-body">
+        北朝鮮には景気指標も株価もない。だが闇市場のドル/ウォンが、住民の体制信認をそのまま映す。8,500→70,100(2024-26)の暴落は、単なる物価上昇ではなく「体制への不安が高まった」というシグナルとして読む。
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>3. 教訓3・4 — 市場の不滅と制裁の逆説</h2>
+    <p>
+      教訓3は<strong>「市場は禁じても消えない」</strong>。苦難の行軍(飢饉)で配給が崩れたとき、住民は自発的に市場(チャンマダン)を生んだ。2009年デノミも、COVID封鎖下の取締りも、市場を縮小させはしたが根絶できなかった。人々の生存と交換への欲求は、どんな統制よりも粘り強い。計画経済の理想に対する現実の反証として、北朝鮮の市場の不滅は強烈である。
+    </p>
+    <p>
+      教訓4は<strong>「制裁の逆説」</strong>。国連制裁は合法貿易を縮小させたが、外貨需要を消すことはできなかった。北朝鮮は瀬取り・原産地偽装・海外労働者・暗号資産窃取・対露武器輸出へと迂回した。制裁は合法経済を締め付けるほど、地下経済と非合法な外貨獲得(そして対中・対露依存)を肥大させる。制裁の設計には、この迂回の力学を織り込む必要がある——これは政策担当者への重い教訓である。
+    </p>
+  </section>
+
+  <section>
+    <h2>4. 教訓5 — 「閉鎖均衡」という罠</h2>
+    <p>
+      最後の教訓は、北朝鮮が陥っている<strong>「閉鎖均衡(closed equilibrium)」</strong>である。核武装は体制保証の切り札であると同時に、制裁を呼び込み合法経済を縮小させる。縮小した経済は違法外貨獲得への依存を深め、それがさらなる制裁を招く。一方で核を手放せば体制保証を失う——だから核を手放せない。指令経済・核武装・制裁の三者が、互いを固定化し合う<strong>低位の安定(抜け出せない均衡)</strong>に北朝鮮は嵌っている。
+    </p>
+    <p>
+      2024年の実質GDP+3.7%(8年ぶり高成長、対露協力が追い風)が示すように、この均衡は崩壊寸前というより、外部資源(中国・ロシア)に支えられて意外に粘り強い。しかし通貨暴落(2024-26)が示すように、その安定は薄氷の上にある。<strong>市場・通貨・制度という、私たちが当たり前に使う道具がいかに経済の血液であるか</strong>——北朝鮮はそれを「不在」によって最も雄弁に教える。21章では、この閉鎖均衡を支配する地政学リスクを総合的に分析する。
+    </p>
+  </section>
+
+  <section>
+    <h2>出典</h2>
+    <ul>
+      <li>韓国銀行「北朝鮮GDP推計」(2024: 実質GDP+3.7%、8年ぶり高成長)</li>
+      <li>本編12-19章および各章の出典(Daily NK、38 North、PIIE、CSIS、UN資料ほか)</li>
+    </ul>
+  </section>
+
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+
+    </footer>
+
+    <nav class="page-nav">
+      <a href="19_trade.html" class="prev">貿易</a>
+      <a href="21_geopolitical_risk.html" class="next">地政学リスク</a>
+    </nav>
+  </main>
+
+  <script src="../assets/enhancer.js"></script>
+  <script defer src="../assets/recall.js"></script>
+  <script src="../assets/tts-reader.js"></script>
+</body>
+</html>

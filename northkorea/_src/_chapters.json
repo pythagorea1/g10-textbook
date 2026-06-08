@@ -1,0 +1,107 @@
+{
+  "01": {
+    "title_ja": "北朝鮮① 中央銀行（朝鮮中央銀行）",
+    "title_en": "Central Bank (Central Bank of the DPRK)",
+    "subtitle": "金融政策なき「モノバンク」体制と2009年デノミ"
+  },
+  "02": {
+    "title_ja": "北朝鮮② 政策金利（計画金利・配給）",
+    "title_en": "Policy Rate (Planned Rates & Rationing)",
+    "subtitle": "金利なき経済と闇市場為替レートという代替指標"
+  },
+  "03": {
+    "title_ja": "北朝鮮③ 財政政策",
+    "title_en": "Fiscal Policy",
+    "subtitle": "無税国家の建前と市場課税・違法外貨の実像"
+  },
+  "04": {
+    "title_ja": "北朝鮮④ 雇用",
+    "title_en": "Employment",
+    "subtitle": "完全雇用の建前と非公式経済への労働シフト"
+  },
+  "05": {
+    "title_ja": "北朝鮮⑤ インフレ",
+    "title_en": "Inflation",
+    "subtitle": "CPIなき国の物価を映す市場米価と闇ドルレート"
+  },
+  "06": {
+    "title_ja": "北朝鮮⑥ 株式市場概観",
+    "title_en": "Equity Market Overview",
+    "subtitle": "なぜ指令経済に株式市場が無いのか／景況=中朝貿易額"
+  },
+  "07": {
+    "title_ja": "北朝鮮⑦ 株式市場（初期）",
+    "title_en": "Equity Market (Early)",
+    "subtitle": "1990年代飢饉が生んだチャンマダン＝市場の黎明"
+  },
+  "08": {
+    "title_ja": "北朝鮮⑧ 株式市場（近代）",
+    "title_en": "Equity Market (Modern)",
+    "subtitle": "2002年7・1措置とドンジュ（錢主）の登場"
+  },
+  "09": {
+    "title_ja": "北朝鮮⑨ 株式市場（現代）",
+    "title_en": "Equity Market (Contemporary)",
+    "subtitle": "2010年代のドル化と市場の制度的定着"
+  },
+  "10": {
+    "title_ja": "北朝鮮⑩ 株式市場（現在）",
+    "title_en": "Equity Market (Current)",
+    "subtitle": "COVID後の統制回帰と2024-26通貨暴落"
+  },
+  "11": {
+    "title_ja": "北朝鮮⑪ 債券市場",
+    "title_en": "Bond Market",
+    "subtitle": "債券市場が成立しない国の事例研究"
+  },
+  "12": {
+    "title_ja": "短期金利 — 金利なき経済と私金融(サグムン)",
+    "title_en": "Short-term Rates",
+    "subtitle": "金利が存在しない指令経済で、現金退蔵と闇の高利貸しが資金市場を代替する"
+  },
+  "13": {
+    "title_ja": "長期金利 — 5カ年計画とデフォルト国家",
+    "title_en": "Long-term Rates",
+    "subtitle": "主権金利が観測できない国 — 1970年代デフォルトと約30億ドルの未払い債務"
+  },
+  "14": {
+    "title_ja": "通貨 — 非交換ウォンと多重為替レート",
+    "title_en": "Currency",
+    "subtitle": "公定と闇の二重レート、ドル化、2009年デノミ、2024-26年の暴落"
+  },
+  "15": {
+    "title_ja": "金融危機 — 苦難の行軍からウォン暴落まで",
+    "title_en": "Financial Crises",
+    "subtitle": "飢饉・デノミ・国境封鎖・通貨危機 — 4つの大危機の年表"
+  },
+  "16": {
+    "title_ja": "銀行制度 — モノバンク体制と銀行不信",
+    "title_en": "Banking System",
+    "subtitle": "中央銀行と貿易銀行、現金・外貨決済、電子カードの登場"
+  },
+  "17": {
+    "title_ja": "企業・コーポレート — 国営・軍需・ドンジュの三層構造",
+    "title_en": "Corporate",
+    "subtitle": "上場企業なき経済で、軍と新興資本家ドンジュが外貨を稼ぐ"
+  },
+  "18": {
+    "title_ja": "規制 — 体制維持の道具としての統制",
+    "title_en": "Regulation",
+    "subtitle": "外貨・市場・移動の統制とデノミによる資産没収"
+  },
+  "19": {
+    "title_ja": "貿易 — 対中98%依存と瀬取り・対露輸出",
+    "title_en": "Trade",
+    "subtitle": "制裁で縮む合法貿易、密輸の拡大、武器と引き換えの外貨"
+  },
+  "20": {
+    "title_ja": "教訓 — 指令経済・核・制裁の閉鎖均衡",
+    "title_en": "Lessons",
+    "subtitle": "通貨は体制信認の温度計 — ドル化の安定と脆弱性の逆説"
+  },
+  "21": {
+    "title_ja": "地政学リスク — 核・サイバー・対露対中",
+    "title_en": "Geopolitical Risk",
+    "subtitle": "核ミサイルの経済論理、暗号資産窃取、対露協力、対中依存、国連制裁"
+  }
+}

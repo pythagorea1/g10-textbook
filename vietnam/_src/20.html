@@ -1,0 +1,109 @@
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">1986</div>
+          <div class="stat-label">ドイモイ（刷新）採択 — 計画経済から市場経済への転換</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">700%超 → 約4%</div>
+          <div class="stat-label">ハイパーインフレを市場化で克服した実績</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">China+1ハブ</div>
+          <div class="stat-label">製造業移転の最大受益国へ — 高成長の原動力</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">中所得の罠</div>
+          <div class="stat-label">対中依存・ガバナンス・熟練労働不足が今後の課題</div>
+        </div>
+      </div>
+
+      <section>
+        <h2>1. ドイモイ — 計画から市場への「移行成功例」</h2>
+        <p>
+          ベトナムの最大の教訓は、<strong>ドイモイ（Đổi Mới＝刷新、1986年採択）による計画経済から市場経済への移行が成功した</strong>ことだ。配給制と価格統制が機能不全に陥り、ハイパーインフレ（年率700%超）に苦しんだベトナムは、(1)農業の脱集団化と土地法改正、(2)価格・為替の自由化、(3)外資（FDI）と貿易への開放、(4)銀行の二層制化——という一連の改革で、わずか十数年で<strong>高成長の輸出国へ転換</strong>した。社会主義体制を維持しながら市場経済を導入した「漸進的移行」の代表例として、世界的に研究されている。
+        </p>
+      </section>
+
+      <section>
+        <h2>2. 「ハイパーインフレ克服」のチャート</h2>
+        <p>
+          ベトナムの教訓を最も雄弁に物語るのが、インフレ率の長期推移だ。1986年の700%超から、1989年の価格・為替自由化を経て1995年には17%へ、近年は3〜4%台へと劇的に沈静化した。<strong>「市場メカニズムの導入こそがハイパーインフレを終わらせた」</strong>——これがドイモイ最大の成果である。
+        </p>
+
+        <div id="vn-lessons-cpi"></div>
+        <script>
+        ChartBuilder.lines('vn-lessons-cpi', {
+          title: 'ベトナムのインフレ史 (1986-2026, CPI前年比, 対数軸)',
+          caption: '出典: IMF / World Bank / ベトナム国家統計局 / FAO・政府ポータル。ドイモイ前夜の1986年に年率700%超のハイパーインフレ → 1989年の価格・為替自由化で沈静化 → 1995年17% → 2008年(23%)・2011年(18.7%)に再燃 → 近年は3〜4%台で安定、2026年は~5%見込み。⚠1986年は453〜774%と出典差大のため「700%超」と表現。対数軸で表示。',
+          logScale: true,
+          yUnit: '%',
+          yRange: [0.4, 1000],
+          series: [{
+            name: 'CPI(前年比)',
+            color: '#ff6b6b', width: 2.2,
+            data: [[1986, 774], [1988, 400], [1995, 17], [2008, 23.0], [2011, 18.7], [2015, 0.6], [2020, 3.2], [2024, 3.6], [2026, 5.0]]
+          }],
+          annotations: [
+            { year: 1986, label: '700%超', color: '#ff6b6b' },
+            { year: 1995, label: '17%へ', color: '#ffd93d' },
+            { year: 2011, label: '再燃18.7', color: '#ff9f43' },
+            { year: 2024, label: '~4%安定', color: '#00d4aa' }
+          ]
+        });
+        </script>
+      </section>
+
+      <section>
+        <h2>3. China+1 — 製造業ハブ化という第二の成功</h2>
+        <p>
+          ベトナムの第二の教訓は、<strong>地政学の変化を成長機会に変えた</strong>ことだ。2018年の米中貿易戦争以降、企業が中国一極集中のリスクを避けようとする<strong>"China+1"</strong>の流れで、ベトナムは生産移転の最大の受益国の一つになった。安価で若い労働力、政治的安定、多数のFTA、そして米中の中間という地理——これらを活かして製造業FDIを呼び込み、輸出と雇用を拡大した。<strong>「大国の対立を、自国の産業政策で果実に変える」</strong>したたかさが、ベトナム成長戦略の核心だ。
+        </p>
+      </section>
+
+      <section>
+        <h2>4. これからの課題 — 中所得の罠・対中依存・ガバナンス</h2>
+        <p>
+          成功の裏で、ベトナムは新興国共通の難題に直面する。次の表が主要な課題だ。
+        </p>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>課題</th>
+                <th>内容</th>
+                <th>含意</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="highlight-orange">中所得国の罠</td>
+                <td>1人当たりGDP ~$4,700の下位中所得国</td>
+                <td>低賃金組立から高付加価値へ転換できるかが分水嶺</td>
+              </tr>
+              <tr>
+                <td class="highlight-red">対中・関税依存</td>
+                <td>中間財を中国に依存、対米黒字が関税の標的</td>
+                <td>積替40%関税・原産地規則で「真の現地化」を迫られる</td>
+              </tr>
+              <tr>
+                <td class="highlight-orange">熟練労働・電力不足</td>
+                <td>熟練人材の不足、急成長で電力需要が逼迫</td>
+                <td>2023年北部の停電が外資工場を直撃した教訓</td>
+              </tr>
+              <tr>
+                <td class="highlight-blue">ガバナンス・透明性</td>
+                <td>一党制、反汚職で経済幹部の摘発相次ぐ</td>
+                <td>FTSE/MSCI格上げや投資家信認の論点</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="mnemonic-box">
+          <span class="mnemonic-icon">🧠</span>
+          <div class="mnemonic-title">覚え方：ベトナムの教訓「移行・克服・受益」</div>
+          <div class="mnemonic-body">
+            ①<strong>移行</strong>＝ドイモイ(1986)で計画→市場へ漸進的に成功。②<strong>克服</strong>＝ハイパーインフレ(700%超)を市場化で~4%へ。③<strong>受益</strong>＝米中対立を"China+1"で製造業ハブ化に転換。課題は<strong>中所得の罠・対中依存・熟練/電力不足・ガバナンス</strong>。「大国の対立を果実に変えるが、依存も深まる」のがベトナムの宿命。
+          </div>
+        </div>
+      </section>

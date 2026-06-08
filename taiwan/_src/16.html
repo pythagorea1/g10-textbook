@@ -1,0 +1,166 @@
+<!-- Chapter 16: Banking Sector (Taiwan) -->
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value" style="color:var(--accent-red);">約8%</div>
+    <div class="stat-label">不良債権比率のピーク（2002年頃、代表値）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value" style="color:var(--accent-green);">&lt;0.3%</div>
+    <div class="stat-label">現在のNPL比率（健全化後）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value" style="color:var(--accent-orange);">過剰銀行</div>
+    <div class="stat-label">over-banking — 多すぎる銀行による過当競争</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">官民混在</div>
+    <div class="stat-label">公営・民営が並存する銀行構造</div>
+  </div>
+</div>
+
+<p>
+台湾の銀行制度は「健全だが収益性が低い」という逆説に特徴づけられる。資本は厚く不良債権は極めて少ないが、銀行が多すぎる<strong>「過剰銀行（over-banking）」</strong>による過当競争で、利ざやが薄く収益力は構造的に低い。この姿は、2000年代初頭の不良債権危機と、それを克服するための二度にわたる金融改革（金改）を経て形成された。
+</p>
+
+<!-- Chart: NPL ratio cleanup -->
+<div id="taiwan-banking-npl"></div>
+<script>
+ChartBuilder.lines('taiwan-banking-npl', {
+  title: '台湾 銀行不良債権(NPL)比率の推移 2000-2025（代表値）',
+  caption: '出典: 金融監督委員会(FSC)銀行局・各種統計を参照した代表値（概算）。2002年頃のピーク（約8%前後）から、第一次金融改革「258プログラム」等を経て1%未満へ低下したトレンドを示す。各年の正確な公表値ではない。',
+  yUnit: '%',
+  yStep: 2,
+  yRange: [0, 10],
+  series: [{
+    name: 'NPL比率(代表値)',
+    color: '#ff6b6b',
+    data: [
+      [2000, 5.3],[2001, 7.5],[2002, 8.0],[2003, 5.0],[2004, 3.8],
+      [2006, 2.1],[2008, 1.5],[2010, 0.6],[2013, 0.4],[2015, 0.23],
+      [2018, 0.24],[2020, 0.20],[2023, 0.16],[2025, 0.15]
+    ]
+  }],
+  annotations: [
+    { year: 2002, label: '02 ピーク', color: '#ff6b6b' },
+    { year: 2004, label: '258改革', color: '#00d4aa' },
+    { year: 2015, label: '健全化', color: '#00d4aa' }
+  ]
+});
+</script>
+
+<section>
+  <h2>1. 「過剰銀行」の起源</h2>
+  <p>
+  1991年、台湾は金融自由化の一環として民間銀行の新規設立を一挙に解禁した。これにより十数行の新銀行が短期間に誕生し、もともと存在した公営銀行と合わせて、人口・経済規模に対して<strong>銀行が過剰</strong>な状態が生まれた。銀行同士の貸出競争は激化し、利ざやは圧縮され、審査基準は緩んだ。これが2000年代初頭の不良債権問題の伏線となる。
+  </p>
+  <p>
+  台湾の銀行は、歴史的に<strong>公営（国有）と民営が並存</strong>してきた。大手公営銀行（台湾銀行、土地銀行、合作金庫など）は政府の信用を背景に安定した基盤を持つ一方、経営効率や収益性では民営に劣るとされた。この官民混在構造は、政治的配慮と効率性のせめぎ合いを内包し、改革の難しさの一因となった。
+  </p>
+</section>
+
+<section>
+  <h2>2. 不良債権危機と二度の金融改革</h2>
+  <p>
+  ITバブル崩壊（2000-01年）と過当競争のツケが回り、台湾の銀行不良債権比率は2002年頃に<strong>約8%</strong>（一部統計ではそれ以上）まで悪化した。これは銀行システムの健全性を脅かす水準であり、政府は二段階の金融改革に乗り出した。
+  </p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>改革</th>
+          <th>時期</th>
+          <th>目標</th>
+          <th>結果</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight-green">
+          <td>第一次金融改革<br>（一次金改・258プログラム）</td>
+          <td>2002-2003頃</td>
+          <td>「2年でNPL比率を5%未満、BIS自己資本比率を8%超に」</td>
+          <td>不良債権の大量処理・償却が進み、NPL比率は劇的に低下。健全化に成功</td>
+        </tr>
+        <tr class="highlight-orange">
+          <td>第二次金融改革<br>（二次金改）</td>
+          <td>2004-2006頃</td>
+          <td>銀行の統合・大型化（公営銀行の民営化・合併で数を減らす）</td>
+          <td>一部で金融持株会社への再編が進むも、政治的腐敗疑惑も絡み、過剰銀行の根本解消には至らず</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>
+  第一次金改は不良債権の処理という点で大きな成果を上げ、NPL比率はその後一貫して低下し、2010年代には<strong>1%を大きく下回る</strong>世界有数の健全さに達した。一方、銀行の数を減らして規模を拡大する第二次金改は、政治スキャンダルも絡んで頓挫気味となり、「過剰銀行」という構造問題は今日まで尾を引いている。
+  </p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">「一次金改は成功、二次金改は未完」</div>
+    <div class="mnemonic-body">台湾の金融改革は二段構え。<strong>第一次（NPL処理）</strong>は成功しNPL比率を8%→1%未満へ。<strong>第二次（銀行の統合・大型化）</strong>は政治問題で頓挫し、<strong>過剰銀行（over-banking）</strong>は今も残る。これが「健全だが低収益」という台湾の銀行の二面性の根源。</div>
+  </div>
+</section>
+
+<section>
+  <h2>3. 「健全だが低収益」という現在地</h2>
+  <p>
+  改革を経た台湾の銀行は、資本が厚く不良債権が極小という点で、世界でも屈指の健全性を誇る。しかし、依然として銀行数が多く、預貸利ざや（NIM）が薄いため、自己資本利益率（ROE）は国際水準を下回りがちである。低金利環境（第12-13章）も収益を圧迫する。
+  </p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>指標</th>
+          <th>評価</th>
+          <th>背景</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>健全性（資本・NPL）</td>
+          <td class="cell-positive">非常に高い</td>
+          <td>一次金改後のNPL極小化、厚い自己資本</td>
+        </tr>
+        <tr>
+          <td>収益性（NIM・ROE）</td>
+          <td class="cell-negative">低い</td>
+          <td>過剰銀行による過当競争、低金利環境</td>
+        </tr>
+        <tr>
+          <td>海外展開</td>
+          <td>限定的・ASEANシフト</td>
+          <td>国内市場の飽和を受け、新南向政策でASEAN進出を模索</td>
+        </tr>
+        <tr>
+          <td>システミックリスク</td>
+          <td class="cell-positive">低い</td>
+          <td>健全性とFSC監督。むしろリスクは生保の対外資産・為替に集中</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>
+  注目すべきは、台湾の金融システミックリスクの所在が銀行ではなく<strong>生命保険会社</strong>にシフトしている点である。生保は低い国内利回りを逃れて巨額の米国債等を保有しており（第13章）、TWD急騰局面では為替損が金融システムの新たな弱点となる。「銀行は健全、リスクは生保と為替へ」というのが2020年代台湾の金融地図である。
+  </p>
+</section>
+
+<section>
+  <h2>4. 中国の銀行業との対比</h2>
+  <p>
+  両岸関係の文脈では、台湾と中国の銀行制度の違いも重要である。中国の銀行が巨大な国有銀行を中心に不動産・地方政府債務という構造的リスクを抱えるのに対し、台湾の銀行は小粒で健全だが収益性に乏しい。台湾の銀行の対中エクスポージャー（中国本土での融資・投資）は、両岸リスク（第21章）の観点から規制当局（FSC、第18章）の厳重な監視対象となっている。
+  </p>
+</section>
+
+<section>
+  <h2>出典・参考文献</h2>
+  <ol>
+    <li>金融監督委員会（FSC）銀行局, 本国銀行 不良債権比率・自己資本比率統計, fsc.gov.tw</li>
+    <li>中央銀行（ROC Taiwan）, Financial Stability Report</li>
+    <li>台湾の金融改革（一次金改「258プログラム」・二次金改）に関する各種研究・報道</li>
+    <li>IMF, "Taiwan Province of China" 関連分析; 台湾生保の対外資産・為替リスクに関する市場レポート</li>
+  </ol>
+</section>

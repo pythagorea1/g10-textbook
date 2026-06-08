@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>中国 - China 01: Central Bank (PBoC) | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
+  <script defer src="../assets/charts.js"></script>
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇨🇳 中国</div>
+      <a href="01_central_bank.html" class="sidebar-link active">01. 中央銀行</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. 政策金利</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. 財政政策</a>
+      <a href="04_employment.html" class="sidebar-link">04. 雇用</a>
+      <a href="05_inflation.html" class="sidebar-link">05. インフレ</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. 株式市場概観</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. 株式(初期)</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. 株式(近代)</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. 株式(現代)</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. 株式(現在)</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. 債券市場</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. 短期金利</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. 長期金利</a>
+      <a href="14_currency.html" class="sidebar-link">14. 通貨</a>
+      <a href="15_crises.html" class="sidebar-link">15. 金融危機</a>
+      <a href="16_banking.html" class="sidebar-link">16. 銀行制度</a>
+      <a href="17_corporate.html" class="sidebar-link">17. 企業・コーポレート</a>
+      <a href="18_regulation.html" class="sidebar-link">18. 規制</a>
+      <a href="19_trade.html" class="sidebar-link">19. 貿易</a>
+      <a href="20_lessons.html" class="sidebar-link">20. 教訓</a>
+      <a href="21_geopolitical_risk.html" class="sidebar-link">21. 地政学リスク</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">G10</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+      <div class="sidebar-section-title">地政学・新興地域</div>
+      <div class="country-flags">
+        <a href="../taiwan/01_central_bank.html" class="country-chip">TW</a>
+        <a href="../hongkong/01_central_bank.html" class="country-chip">HK</a>
+        <a href="../china/01_central_bank.html" class="country-chip active">CN</a>
+        <a href="../northkorea/01_central_bank.html" class="country-chip">KP</a>
+        <a href="../vietnam/01_central_bank.html" class="country-chip">VN</a>
+        <a href="../singapore/01_central_bank.html" class="country-chip">SG</a>
+        <a href="../iran/01_central_bank.html" class="country-chip">IR</a>
+        <a href="../israel/01_central_bank.html" class="country-chip">IL</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 ホーム</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10横断年表</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">中国</a>
+        <span class="sep">/</span>
+        中国① 中国人民銀行 (PBoC)
+      </div>
+      <h1 class="page-title">🇨🇳 中国① 中国人民銀行 (PBoC)</h1>
+      <p class="page-subtitle">独立しない中央銀行 — 国務院傘下で成長・物価・金融安定を担う</p>
+    </header>
+
+    <article>
+<!-- Key Stats -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">1948年</div>
+    <div class="stat-label">中国人民銀行 (PBoC) 設立</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">1.40%</div>
+    <div class="stat-label">主政策金利 (7日リバースレポ, 2025年5月〜)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">約9.0%</div>
+    <div class="stat-label">大手行の預金準備率 (RRR, 2025年5月〜)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">潘功勝</div>
+    <div class="stat-label">行長 (Pan Gongsheng, 2026年時点)</div>
+  </div>
+</div>
+
+<p>中国人民銀行（People's Bank of China, <strong>PBoC</strong>）は、世界第2位の経済を金融面で操る中央銀行でありながら、欧米の中央銀行とは決定的に異なる性格を持つ。それは「<strong>独立した</strong>中央銀行」ではなく、共産党中央と国務院の経済政策を執行する「<strong>政府機関としての</strong>中央銀行」だという点である。本章では、PBoCの成り立ち、統治構造、そして近年「主政策金利」を組み替えた金融政策の枠組みを整理する。</p>
+
+<div class="key-number-row">
+  <div class="key-number"><span class="key-number-value">1948</span><span class="key-number-label">設立年（華北・北海・西北の3行を統合）</span></div>
+  <div class="key-number"><span class="key-number-value">1995</span><span class="key-number-label">「中国人民銀行法」で中央銀行として法制化</span></div>
+  <div class="key-number"><span class="key-number-value">国務院</span><span class="key-number-label">の指導下にある（独立性は限定的）</span></div>
+</div>
+
+<!-- Chart: 7-day reverse repo as the new "main policy rate" -->
+<div id="china-policy-repo"></div>
+<script>
+ChartBuilder.lines('china-policy-repo', {
+  title: '中国 主政策金利の低下 — 7日リバースレポ(OMO)金利 2020-2026',
+  caption: '出典: 中国人民銀行 (PBoC) 公開市場操作。2024年以降、PBoCは7日物リバースレポ金利を「主政策金利」と明確に位置づけ、MLF金利からの脱却を進めた。2025年5月に10bp引下げ後、1.40%で据え置き（2026年初時点）。',
+  yUnit: '%',
+  yStep: 0.5,
+  yRange: [1, 2.5],
+  series: [{
+    name: '7日リバースレポ金利',
+    color: '#00d4aa',
+    data: [[2020, 2.20], [2022, 2.00], [2023, 1.80], [2024.75, 1.50], [2025.42, 1.40], [2026, 1.40]]
+  }],
+  annotations: [
+    { year: 2024.75, label: '主金利化', color: '#5b8def' },
+    { year: 2025.42, label: '1.40%', color: '#00d4aa' }
+  ]
+});
+</script>
+
+<section>
+  <h2>PBoCとは何か — 「独立しない」中央銀行</h2>
+  <p>PBoCは1948年12月、国共内戦末期に華北銀行・北海銀行・西北農民銀行を統合して設立された。当初は「単一銀行制（モノバンク）」の中核として、中央銀行業務と商業銀行業務を一手に担っていた。改革開放後の1983年に国務院がPBoCを正式に中央銀行と決定し、1984年には商業銀行業務を中国工商銀行（ICBC）など専業銀行に分離。1995年の「<strong>中国人民銀行法</strong>」によって、ようやく法的に中央銀行としての地位が確立した<cite>[1]</cite>。</p>
+  <p>最大の特徴は<strong>独立性の低さ</strong>である。金融政策の最終決定権は国務院にあり、PBoCは党中央財経委員会・国務院の経済目標（成長率「約5%」など）に従属する。米FRBやECBのような「政府からの独立」は制度的に存在しない。金利・準備率の変更は国務院の承認を要し、為替政策・資本規制とも一体運用される。つまりPBoCは、物価の番人であると同時に、共産党の成長戦略の執行者でもある。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">PBoCの本質を一言で</div>
+    <div class="mnemonic-body">FRB＝政府から独立した物価の番人。PBoC＝<strong>国務院傘下で成長・雇用・物価・金融安定・為替・資本規制まで担う「総合執行機関」</strong>。だから利下げ一つにも産業政策・不動産政策・対外関係の思惑が絡む。「中央銀行の独立性」という欧米の前提が中国には当てはまらない。</div>
+  </div>
+</section>
+
+<section>
+  <h2>沿革年表 — モノバンクから二層構造、そして監督再編へ</h2>
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>年</th><th>出来事</th><th>意味</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1948</td><td>3行統合でPBoC設立、翌1949年に人民元を発行</td><td>建国前夜の通貨統一</td></tr>
+        <tr><td>1983</td><td>国務院がPBoCを中央銀行と決定</td><td>計画経済からの脱却の第一歩</td></tr>
+        <tr><td>1984</td><td>商業銀行業務をICBC等へ分離（二層銀行制へ）</td><td>「中央銀行＋商業銀行」の分業が成立</td></tr>
+        <tr><td>1995</td><td>「中国人民銀行法」制定</td><td>中央銀行として法制化、財政赤字の直接引受を禁止</td></tr>
+        <tr><td>1998</td><td>地方分行を9大経済圏の支店制に再編</td><td>地方政府からの政治的圧力の遮断を狙う</td></tr>
+        <tr><td>2003</td><td>銀行監督機能を銀監会(CBRC)に分離</td><td>監督と金融政策の分業</td></tr>
+        <tr><td>2018</td><td>銀監会・保監会を統合(銀保監会)、PBoCの規制権限を強化</td><td>マクロプルーデンス政策の中核化</td></tr>
+        <tr><td>2023</td><td>金融監督管理総局(NFRA)発足、監督を一元化</td><td>PBoCは金融政策とシステミックリスク監視に集中</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>2023年の機構改革では、銀行・保険に加えて証券以外の金融監督を<strong>国家金融監督管理総局（NFRA）</strong>に集約し、PBoCの地方分行体制も省レベルに再編された。これにより、PBoCは「金融政策＋システミックリスクの番人」、NFRAは「ミクロの健全性監督」、証監会（CSRC）は「証券市場監督」という三分業がほぼ固まった<cite>[2]</cite>。</p>
+</section>
+
+<section>
+  <h2>金融政策の枠組み — 「双柱」と多層的な金利体系</h2>
+  <p>PBoCは2017年以降、<strong>「双柱（そうちゅう）」</strong>と呼ばれる枠組みを掲げている。すなわち、①伝統的な<strong>金融政策</strong>（物価安定・成長支援）と、②<strong>マクロプルーデンス政策</strong>（金融システムの安定）の二本柱で経済を運営する考え方である。さらに目標自体が多元的で、物価だけでなく<strong>経済成長・雇用・国際収支のバランス</strong>までを同時に視野に入れる点が、単一目標（物価2%）型の欧米と大きく異なる。</p>
+  <p>政策手段も「単一の政策金利」ではなく、目的別の<strong>多層構造</strong>になっている。次章で金利水準の歴史を詳述するが、ここでは主要ツールの役割を整理しておく。</p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>手段</th><th>略称</th><th>役割</th><th>2026年初の水準</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>7日物リバースレポ</td><td>OMO</td><td><strong>主政策金利</strong>。短期市場金利を誘導</td><td class="highlight-green">1.40%</td></tr>
+        <tr><td>ローンプライムレート(1年)</td><td>LPR 1Y</td><td>企業向け貸出の基準金利</td><td>3.00%</td></tr>
+        <tr><td>ローンプライムレート(5年超)</td><td>LPR 5Y+</td><td>住宅ローンの基準金利</td><td>3.50%</td></tr>
+        <tr><td>中期貸出ファシリティ</td><td>MLF</td><td>1年物の中期流動性供給（主金利の座を譲った）</td><td>準補助手段へ</td></tr>
+        <tr><td>預金準備率</td><td>RRR</td><td>銀行が中央銀行に積む準備の比率（量的調整）</td><td>大手行 約9.0%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>2019年のLPR改革と2024年の「主金利」移行</h3>
+  <p>2019年8月、PBoCは<strong>LPR改革</strong>を実施した。それまで形骸化していた貸出基準金利に代えて、18行の見積もりをもとにMLF金利に上乗せ（スプレッド）して算出する市場ベースのLPRを導入し、実体経済の借入コストを政策金利に連動させる「金利の伝達経路」整備を進めた。さらに2024年には、PBoCは<strong>7日物リバースレポ金利を「主政策金利」</strong>と明確に格上げし、MLFを補助的手段へと後退させた。これは「短期の操作金利→市場金利→LPR→実体経済」という、より欧米型に近い伝達経路への接近を意味する<cite>[3]</cite>。</p>
+  <p>ただし、量的手段である<strong>RRR（預金準備率）</strong>の存在感は依然大きい。2024年9月の「バズーカ」緩和ではRRRを50bp引き下げて1兆元規模の流動性を供給し、2025年5月にも追加で50bp引き下げた。金利と量の両輪を併用する点も、中国型金融政策の特徴である。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">中国の金利体系を3層で覚える</div>
+    <div class="mnemonic-body">①<strong>7日リバースレポ1.40%</strong>＝短期の操作金利（FRBのFFレートに相当する主金利）／②<strong>LPR 1年3.0%・5年超3.5%</strong>＝企業・住宅ローンの基準／③<strong>RRR約9%</strong>＝量を絞る・緩めるダイヤル。「金利でも量でも動かせる」のが中国流。</div>
+  </div>
+</section>
+
+<section>
+  <h2>2026年のPBoC — デフレと不動産不況のなかの緩和</h2>
+  <p>2026年初の中国経済は、公式の実質GDP成長率は約5%を維持する一方で、CPIは2025年に前年比0.0%まで沈み、PPIは長期マイナスというデフレ圧力に直面している。不動産不況（恒大・碧桂園の破綻）と地方政府債務問題が需要を下押しし、PBoCは<strong>緩和スタンス</strong>を継続せざるを得ない。主政策金利は1.40%、LPRは1年3.0%・5年超3.5%といずれも過去最低圏にある<cite>[4]</cite>。</p>
+  <p>もっとも、PBoCの緩和余地は無限ではない。利下げは<strong>人民元安・資本流出・銀行の利ざや圧迫</strong>を招くため、為替の安定（管理変動相場）と金融システムの健全性とのトレードオフを常に意識する。米中の金利差、人民元の対ドル水準、不動産・地方債務リスクという複数の制約のなかで、PBoCは「成長は支えるが、緩めすぎない」という綱渡りを続けている。この姿は、かつての日本銀行が直面した「デフレと低金利の長期化（日本化）」の構図と重なる、と国際的にも論じられている。</p>
+</section>
+
+<footer class="sources">
+  <h3>出典・参考文献</h3>
+  <ol>
+    <li>中国人民銀行 (PBoC) 「中国人民銀行法」「PBoCの沿革」 <a href="http://www.pbc.gov.cn/">pbc.gov.cn</a></li>
+    <li>国務院機構改革(2018・2023年)、国家金融監督管理総局(NFRA) 設立関連報道</li>
+    <li>PBoC「金融政策枠組み」解説、LPR公告(2025-12-22)、Reuters / ABN AMRO（7日レポ・RRR）</li>
+    <li>国家統計局(NBS) 2025年通年・2026年Q1統計、IMF 2025 Article IV Consultation with China (PR 26/053)</li>
+  </ol>
+</footer>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+
+    </footer>
+
+    <nav class="page-nav">
+      <a href="../index.html" class="prev">ホーム</a>
+      <a href="02_policy_rate.html" class="next">政策金利</a>
+    </nav>
+  </main>
+
+  <script src="../assets/enhancer.js"></script>
+  <script defer src="../assets/recall.js"></script>
+  <script src="../assets/tts-reader.js"></script>
+</body>
+</html>

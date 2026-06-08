@@ -147,6 +147,22 @@
     stroke: #ffffff;
     stroke-width: 1.2;
   }
+  /* Marker dots for tiny states with no distinct world-map path (HK, SG). */
+  .world-map circle.marker-dot {
+    fill: #6a7aa5;
+    stroke: #0a1530;
+    stroke-width: 0.4;
+  }
+  .world-map circle.marker-dot:hover {
+    fill: #4a5a85;
+    stroke: #00d4aa;
+    stroke-width: 0.8;
+  }
+  .world-map text.marker-label {
+    fill: #9fb3d0;
+    pointer-events: none;
+    font-family: -apple-system, "Segoe UI", sans-serif;
+  }
 </style>
 </head>
 <body>
@@ -1020,7 +1036,12 @@
      d="M516.76,230.59l1.63,0.05l0.68,1.01h2.37l1.58-0.58l0.53,0.64l-1.05,1.38l-4.63,0.16l-0.84-1.11l-0.89-0.53L516.76,230.59L516.76,230.59z" /><path
      style="fill:#ffffff;stroke-width:0.001;fill-rule:evenodd;stroke:none"
      d="m 585.10725,311.17467 c 0,0 1.49132,0.16343 1.49132,0.16343"
-     id="path1" class="country" data-cid="path1" /><g class="flow-arrows"></g></svg>
+     id="path1" class="country" data-cid="path1" /><g id="extra-markers">
+<circle id="country-HK" class="country marker-dot" data-name="HK" cx="770" cy="258" r="3.4"/>
+<text class="marker-label" x="770" y="252" text-anchor="middle" font-size="7">HK</text>
+<circle id="country-SG" class="country marker-dot" data-name="SG" cx="743" cy="347" r="3.4"/>
+<text class="marker-label" x="743" y="357" text-anchor="middle" font-size="7">SG</text>
+</g><g class="flow-arrows"></g></svg>
 </div>
     <div id="world-map-b" class="world-map-container compare-pane" hidden></div>
     <div id="event-detail-b" class="event-detail-panel compare-pane" hidden>
@@ -1058,9 +1079,16 @@
   });
   // Non-G10 countries referenced by the events data (epicenters / flow endpoints).
   // These SVG paths carry no data-g10 attribute, so tag them by original id.
-  const EXTRA_COUNTRIES = { RU: 'russia', CN: 'china', SA: 'saudi' };
+  // 地政学・新興地域グループ: 台湾/北朝鮮/ベトナム/イラン/イスラエル/中国はインライン
+  // 世界地図に <path> が存在する → 元idで参照して country-XX に昇格。
+  // 香港(HK)/シンガポール(SG)は地図上のpathが無い極小国 → 別途マーカー丸を配置済み。
+  // 注: 'north korea' のようにidに空白を含むものがあるため属性セレクタで照合する。
+  const EXTRA_COUNTRIES = {
+    RU: 'russia', CN: 'china', SA: 'saudi',
+    TW: 'taiwan', KP: 'north korea', VN: 'vietnam', IR: 'iran', IL: 'israel'
+  };
   Object.keys(EXTRA_COUNTRIES).forEach(code => {
-    const path = svg.querySelector('#' + EXTRA_COUNTRIES[code]);
+    const path = svg.querySelector('[id="' + EXTRA_COUNTRIES[code] + '"]');
     if (!path) return;
     path.id = 'country-' + code;
     path.setAttribute('data-name', code);

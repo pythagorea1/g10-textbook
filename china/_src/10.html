@@ -1,0 +1,113 @@
+<!-- Key Stats -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">2,702</div>
+    <div class="stat-label">上海総合の安値圏 (2024年2月)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">+16%</div>
+    <div class="stat-label">CSI300の週間上昇 (2024年9月, 2008年以来)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">~4,057</div>
+    <div class="stat-label">上海総合 (2026年6月初, 要再検証)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">+約19%</div>
+    <div class="stat-label">上海総合 前年比 (2026年初時点)</div>
+  </div>
+</div>
+
+<p>2020年代の中国株は、<strong>「不動産不況・規制・米中対立による長い低迷から、2024年9月のバズーカ刺激策を機に反発へ」</strong>という展開をたどった。本章では、恒大ショックに始まる暗いトンネルと、当局が放った大規模刺激策、そしてハードテック政策（科創板・創業板）に支えられた2025-26年の相場を扱う<cite>[1]</cite>。</p>
+
+<div class="key-number-row">
+  <div class="key-number"><span class="key-number-value">2021.08</span><span class="key-number-label">恒大集団の債務危機が表面化</span></div>
+  <div class="key-number"><span class="key-number-value">2024.09</span><span class="key-number-label">「バズーカ」金融刺激策</span></div>
+  <div class="key-number"><span class="key-number-value">8000億元</span><span class="key-number-label">PBoCの株式市場支援ツール</span></div>
+</div>
+
+<!-- Chart: SSE current era 2019-2026 -->
+<div id="china-sse-current"></div>
+<script>
+ChartBuilder.lines('china-sse-current', {
+  title: '上海総合指数 2019-2026 — 不動産不況の低迷からバズーカ刺激策での反発',
+  caption: '出典: 上海証券取引所(SSE)、Trading Economics/GuruFocus。2021年以降の不動産規制・恒大危機で低迷し2024年2月に2,702の安値圏。2024年9月のバズーカ刺激策で底打ち反発。⚠2025-26年の3,900→4,057は本教科書の2026年シミュレーション基準値で、実勢から上振れしており要再検証。',
+  yUnit: '',
+  yRange: [2000, 4500],
+  yStep: 500,
+  series: [{
+    name: '上海総合指数',
+    color: '#00d4aa',
+    data: [[2019.5, 2900], [2020.17, 2660], [2020.92, 3473], [2021.08, 3696], [2021.92, 3640], [2022.83, 2893], [2023.5, 3200], [2024.08, 2702], [2024.75, 3336], [2025.0, 3350], [2025.92, 3900], [2026.42, 4057]]
+  }],
+  annotations: [
+    { year: 2021.08, label: '21年 高値', color: '#ffd93d' },
+    { year: 2024.08, label: '24年 底', color: '#5b8def' },
+    { year: 2024.75, label: '刺激策', color: '#00d4aa' },
+    { year: 2026.42, label: '26年 反発', color: '#00d4aa' }
+  ]
+});
+</script>
+
+<section>
+  <h2>2021年 — 不動産規制と恒大ショック</h2>
+  <p>2020年後半、当局は不動産バブルの抑制に本腰を入れ、デベロッパーの過剰債務を抑える<strong>「三道紅線（3つのレッドライン）」</strong>を導入した。資金繰りを断たれた最大手の一つ<strong>中国恒大集団（Evergrande）</strong>は、2021年8-9月に債務危機が表面化した（負債総額3,000億ドル超）。これが不動産バブル崩壊の起点となり、株式市場にも重い影を落とした<cite>[2]</cite>。</p>
+  <p>不動産は中国の家計資産の約7割を占める。住宅価格の下落は逆資産効果を通じて消費を冷やし、デベロッパーの土地購入の停止は地方財政を直撃した。2023年10月には<strong>碧桂園（Country Garden）</strong>もドル債をデフォルト、2024年1月には恒大が香港高裁から清算命令を受けた。世界最大級の不動産危機が、株式市場の長期低迷の背景にあった。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">恒大・碧桂園＝不動産バブル崩壊の象徴</div>
+    <div class="mnemonic-body"><strong>三道紅線（3レッドライン）</strong>で資金を断たれ、2021年に恒大、2023年に碧桂園が破綻。家計資産の約7割が住宅だから、その崩壊は消費・地方財政・銀行へ連鎖し、株式市場を3年間も低迷させた。中国株低迷の主因は「不動産」だと押さえる。</div>
+  </div>
+</section>
+
+<section>
+  <h2>2024年2月 — 2,702の底</h2>
+  <p>不動産不況、デフレ圧力、米中対立、そして政策の小出し感への失望から、中国株は売られ続けた。上海総合指数は<strong>2024年2月に2,702</strong>まで下落し、投資家の悲観はピークに達した。「中国株は投資対象として終わった」という論調すら見られ、海外投資家の資金流出（北向き資金の売り越し）が続いた<cite>[3]</cite>。</p>
+</section>
+
+<section>
+  <h2>2024年9月 — 「バズーカ」刺激策で底打ち</h2>
+  <p>2024年9月、当局は市場の予想を上回る規模の<strong>包括的な金融・株式支援パッケージ（通称「バズーカ」）</strong>を打ち出した。主な内容は次の通り<cite>[4]</cite>。</p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>手段</th><th>内容</th><th>狙い</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>預金準備率(RRR)</td><td class="cell-cut">50bp引下げ</td><td>約1兆元の流動性供給</td></tr>
+        <tr><td>政策金利</td><td class="cell-cut">引下げ</td><td>借入コストの低下</td></tr>
+        <tr><td>住宅ローン金利</td><td class="cell-cut">既存ローンも引下げ</td><td>家計負担の軽減</td></tr>
+        <tr class="highlight-row"><td>株式支援ツール</td><td>最大8,000億元</td><td>機関・企業の株式購入を後押し</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>とりわけ画期的だったのが、<strong>PBoCが株式購入を支援する専用の流動性ツール（最大8,000億元）</strong>を創設した点だ。中央銀行が株式市場の下支えに直接コミットする姿勢を鮮明にしたことで、市場心理は一変。<strong>CSI300は週ベースで約16%上昇（2008年以来の大きさ）</strong>し、上海総合指数も底打ち反発に転じた。一時はテクニカルな強気相場（直近安値から+20%超）入りも報じられた。</p>
+</section>
+
+<section>
+  <h2>2025-26年 — 反発とハードテック</h2>
+  <p>2024年9月の刺激策を起点に、中国株は2025年から2026年にかけて回復基調をたどった。本教科書の2026年基準では、上海総合指数は<strong>~4,057（2026年6月初、前年比+約19%）、CSI300は~4,900</strong>とされる。相場を牽引したのは、半導体・AI・EV・バッテリーといった<strong>「ハードテック」</strong>分野であり、その受け皿として<strong>科創板（STAR Market）・創業板（ChiNext）</strong>が政策的に重視された。米国の半導体輸出規制への対抗として国産化（自給自足）を進める「新質生産力」政策が、関連銘柄への資金を集めた<cite>[5]</cite>。</p>
+  <p>ただし、この反発には留意点がある。第一に、回復は<strong>政策（刺激策・国家隊・支援ツール）に支えられた面が大きく</strong>、デフレ・不動産不況という構造問題が解決したわけではない。第二に、中東情勢（イラン）など地政学リスクが2026年の中国株の重しになったとも報じられた。「政策相場」であるがゆえに、政策の持続性と構造改革の進展が、相場の持続力を左右する。</p>
+
+  <p><em>※ 本章の2025-26年の株価水準（上海総合 3,900→4,057、CSI300 ~4,900）は本教科書の2026年シミュレーション基準値であり、実勢（2024年の2,700-3,300台）から大きく上振れしている。最新の実勢値は再検証が必要である。</em></p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">2024.09バズーカ＝中国版「日銀ETF買い」の強化版</div>
+    <div class="mnemonic-body">RRR-50bp＋利下げ＋住宅ローン軽減に加え、<strong>PBoCが株購入を支える8,000億元ツール</strong>まで創設。中央銀行が株を下支えする姿勢を鮮明にし、CSI300は週+16%。だが「政策で作った反発」ゆえ、デフレ・不動産という土台が直らない限り持続力には疑問符が残る。</div>
+  </div>
+</section>
+
+<footer class="sources">
+  <h3>出典・参考文献</h3>
+  <ol>
+    <li>上海証券取引所(SSE)、Trading Economics / GuruFocus（SSE/CSI300 2026-06値）</li>
+    <li>三道紅線・恒大集団(Evergrande)債務危機(2021年)に関するFortune/CNN/CNBC報道</li>
+    <li>碧桂園(Country Garden)デフォルト(2023年)・恒大清算命令(2024年1月)に関する報道</li>
+    <li>2024年9月「バズーカ」金融刺激策・PBoC株式支援ツールに関する報道</li>
+    <li>2025-26年の中国株反発、科創板/創業板・「新質生産力」政策に関する報道</li>
+  </ol>
+</footer>

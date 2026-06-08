@@ -1,0 +1,131 @@
+<!-- ===== 14 通貨 / Currency ===== -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">≈1.289</div>
+    <div class="stat-label">USD/SGD（2026年6月）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">1981年</div>
+    <div class="stat-label">S$NEERバンド政策の採用</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">1 : 1</div>
+    <div class="stat-label">ブルネイドルとの交換協定（1967〜）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">闇レートなし</div>
+    <div class="stat-label">完全な変動・交換性通貨</div>
+  </div>
+</div>
+
+<section>
+  <h2>世界で最もユニークな金融政策手段：通貨そのもの</h2>
+  <p>シンガポールドル（SGD, S$）は、シンガポールの金融政策の<strong>手段そのもの</strong>である。多くの国では通貨は金融政策の「結果」だが、シンガポールでは<strong>通貨こそが操作対象</strong>だ。MASは1981年以降、<strong>S$NEER（名目実効為替レート）を一定の政策バンド内で管理する</strong>ことを唯一の金融政策手段としてきた<cite>[1][3]</cite>。</p>
+  <p>NEERは主要貿易相手国の通貨バスケットに対するSGDの加重平均レートである。MASはこのNEERを、傾きを持った帯（バンド）の中で動かす。政策の3つのつまみは次の通りで、いずれも<strong>正確な数値はMASが公表しない</strong>（市場推計のみ）<cite>[3]</cite>。</p>
+  <ul>
+    <li><strong>スロープ（slope）</strong>＝バンドの傾き＝SGDを年率どれだけ増価させるか。引締め＝急傾斜、緩和＝平坦化（ゼロ）。</li>
+    <li><strong>幅（width）</strong>＝バンドの上下幅。市場の標準推計は中心から±2%程度。</li>
+    <li><strong>中心（centre / re-centring）</strong>＝バンドそのものの位置。強い引締め時は中心を上方へ（再センター）。</li>
+  </ul>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">記憶のフック：「3つのつまみ — 傾き・幅・中心」</div>
+    <div class="mnemonic-body">スロープを立てる＝引締め（SGD増価を速める→輸入インフレ抑制）。スロープを寝かせる＝緩和。幅は許容するブレ。中心の上下シフト（re-centring）は最も強い一手。2022年はスロープ急傾斜＋中心上方シフトで「実質利上げ」、2025年1月は約5年ぶりにスロープを緩めて緩和、2026年4月はスロープをわずかに引き上げて中立〜ややタカへ。</div>
+  </div>
+</section>
+
+<section>
+  <h2>対米ドル為替レートの歴史</h2>
+  <p>下のチャートは対米ドルレート（上昇＝SGD安）の長期推移である。注目すべきは、輸入物価の安定を最優先する政策の下で、SGDが<strong>長期的に増価トレンド</strong>をたどってきたことだ。1980年代に2ドル超だったUSD/SGDは、2011年に最強の約1.20まで上昇（SGD高）した<cite>[3][4]</cite>。</p>
+
+  <div id="sg-usdsgd"></div>
+  <script>
+  ChartBuilder.lines('sg-usdsgd', {
+    title: '対米ドル為替レート USD/SGD 1981–2026（上昇＝SGD安）',
+    caption: '出典: MAS、FRED(EXSIUS)、exchange-rates.org。1981年以前と古い年代値は概算。1997–98アジア危機でも域内他通貨ほど崩れず、2011年に最強の約1.20。2026年6月 約1.289。',
+    yUnit: '',
+    yRange: [1.1, 2.3],
+    yStep: 0.2,
+    series: [{
+      name: 'USD/SGD',
+      color: '#00d4aa',
+      data: [[1981,2.10],[1985,2.20],[1990,1.81],[1997,1.48],[1998.08,1.79],
+             [2001,1.80],[2005,1.66],[2008,1.41],[2011,1.20],[2015,1.37],
+             [2016,1.45],[2020.25,1.43],[2022,1.36],[2024,1.34],[2026.42,1.289]]
+    }],
+    annotations: [
+      { year: 1985, label: '弱い局面', color: '#ff9f43' },
+      { year: 1998.08, label: 'アジア危機', color: '#ff6b6b' },
+      { year: 2011, label: '最強1.20', color: '#00d4aa' },
+      { year: 2020.25, label: 'COVID', color: '#5b8def' },
+      { year: 2026.42, label: '≈1.289', color: '#00d4aa' }
+    ]
+  });
+  </script>
+
+  <p>1997–98年のアジア通貨危機では、タイ・バーツやインドネシア・ルピアが暴落する中、SGDは最安でも約1.79にとどまり、<strong>域内で相対的な底堅さ</strong>を示した。これはMASが防衛的に通貨を「固定」したのではなく、ファンダメンタルズに沿った管理フロートを維持したためで、危機対応の成功例とされる<cite>[4]</cite>。</p>
+</section>
+
+<section>
+  <h2>通貨主権の確立：分離・交換協定・フロート</h2>
+  <p>SGDの歴史は、都市国家としての自立の歴史でもある<cite>[3]</cite>。</p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>年</th><th>出来事</th><th>意味</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1965</td>
+          <td>マレーシアから分離独立</td>
+          <td>水・食料・市場を依存する都市国家として出発</td>
+        </tr>
+        <tr>
+          <td>1967</td>
+          <td>SGD発行開始、ブルネイと<strong>1:1の通貨交換協定</strong></td>
+          <td>通貨主権の確立。当初は対ポンド／バスケット運用。協定は今も有効</td>
+        </tr>
+        <tr>
+          <td>1971</td>
+          <td>MAS設立</td>
+          <td>中央銀行機能を一元化</td>
+        </tr>
+        <tr>
+          <td>1973</td>
+          <td>フロート移行、マレーシアとの通貨同盟解消</td>
+          <td>独自通貨政策の起点</td>
+        </tr>
+        <tr>
+          <td><strong>1981</strong></td>
+          <td><strong>S$NEERバンドによる金融政策枠組みの採用</strong></td>
+          <td>以後、政策金利を持たず為替で運営。現在まで続く核</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>ブルネイドルとの<strong>通貨交換協定（Currency Interchangeability Agreement）</strong>は1967年以来一度も解消されておらず、両国では相手国の紙幣・硬貨を額面通り「慣習法上の法定通貨（customary tender）」として受け取れる。世界でも稀な恒久的1:1ペッグの例である<cite>[3]</cite>。</p>
+</section>
+
+<section>
+  <h2>「闇レート」が存在しない通貨</h2>
+  <p>新興国や統制経済では、公定レートと闇市場レートが乖離する二重構造がしばしば見られる。しかしSGDは<strong>完全な交換性（full convertibility）</strong>を持ち、資本移動も自由なため、<strong>闇レートという概念自体が存在しない</strong>。市場で誰でも、いつでも、ほぼ無制限に売買できる<cite>[3][4]</cite>。</p>
+  <p>その結果、SGDは外貨準備通貨・国際決済通貨としての信認も高い。MASの政策が「バンドの傾き」という抽象的な数値を公表しないにもかかわらず通貨が安定しているのは、市場がMASの一貫した行動とAAA級のファンダメンタルズを信頼しているからである。2026年は中東・エネルギー由来のインフレ見通し上方修正を受け、4月にスロープをわずかに引き上げ（=増価を速める＝輸入インフレ抑制）た。為替が金融政策そのものであることを改めて示す一手だった<cite>[2][3]</cite>。</p>
+
+  <div class="key-number-row">
+    <div class="key-number">
+      <span class="key-number-value">NEER</span>
+      <span class="key-number-label">操作対象（バスケット加重）</span>
+    </div>
+    <div class="key-number">
+      <span class="key-number-value">±2%</span>
+      <span class="key-number-label">バンド幅の市場推計</span>
+    </div>
+    <div class="key-number">
+      <span class="key-number-value">非公表</span>
+      <span class="key-number-label">スロープ・幅の正確値</span>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,107 @@
+{
+  "01": {
+    "subtitle": "為替も睨む中華民国中央銀行と重貼現率・4本柱の枠組み",
+    "title_en": "Central Bank (CBC)",
+    "title_ja": "中央銀行（CBC）"
+  },
+  "02": {
+    "subtitle": "重貼現率 — 漸進主義とCOVID 1.125%から2.00%への道",
+    "title_en": "Policy Rate History",
+    "title_ja": "政策金利の歴史"
+  },
+  "03": {
+    "subtitle": "健全財政の伝統と半導体・防衛の特別予算",
+    "title_en": "Fiscal Policy",
+    "title_ja": "財政政策"
+  },
+  "04": {
+    "subtitle": "失業率3%台の安定と、産業二極化・少子高齢化",
+    "title_en": "Employment",
+    "title_ja": "雇用"
+  },
+  "05": {
+    "subtitle": "構造的低インフレ国 — オイルショックから2%の壁へ",
+    "title_en": "Inflation",
+    "title_ja": "インフレ"
+  },
+  "06": {
+    "subtitle": "TAIEXとTSMC42%の超集中市場、時価総額世界5位へ",
+    "title_en": "Equity Market Overview",
+    "title_ja": "株式市場①概観"
+  },
+  "07": {
+    "subtitle": "1962年TWSE開設と1990年の12,682天井→暴落",
+    "title_en": "Equity: Early History",
+    "title_ja": "株式市場②黎明期"
+  },
+  "08": {
+    "subtitle": "ドットコム天井10,202と半導体ファウンドリの勃興",
+    "title_en": "Equity: Modern Era",
+    "title_ja": "株式市場③近代"
+  },
+  "09": {
+    "subtitle": "GFC底3,955からECFA・ひまわり・米中摩擦へ",
+    "title_en": "Equity: 2000s-2010s",
+    "title_ja": "株式市場④現代"
+  },
+  "10": {
+    "subtitle": "AIブームと史上初の30,000突破、世界5位の市場",
+    "title_en": "Equity: 2020s",
+    "title_ja": "株式市場⑤現在"
+  },
+  "11": {
+    "subtitle": "中央公債と生保、フォルモサ債の独特な世界",
+    "title_en": "Bond Market",
+    "title_ja": "債券市場"
+  },
+  "12": {
+    "title_ja": "短期金利と短期金融市場",
+    "title_en": "Short-term Rates",
+    "subtitle": "重貼現率を錨とするコール市場・NCD・公開市場操作、漸進主義の金利"
+  },
+  "13": {
+    "title_ja": "長期金利と国債市場",
+    "title_en": "Long-term Rates",
+    "subtitle": "10年公債利回りの構造的低位安定、生保需要・米金利連動・為替ヘッジ"
+  },
+  "14": {
+    "title_ja": "通貨：新台湾ドル",
+    "title_en": "Currency (TWD)",
+    "subtitle": "プラザ後の急騰からアジア最強通貨、平滑化介入と非国際化"
+  },
+  "15": {
+    "title_ja": "金融危機と海峡危機",
+    "title_en": "Financial Crises",
+    "subtitle": "株式バブル崩壊・通貨危機・両岸危機の二重らせん"
+  },
+  "16": {
+    "title_ja": "銀行制度",
+    "title_en": "Banking Sector",
+    "subtitle": "過剰銀行と不良債権、二度の金融改革、健全だが低収益"
+  },
+  "17": {
+    "title_ja": "企業とコーポレート",
+    "title_en": "Corporate & Indices",
+    "subtitle": "TSMC一強と半導体エコシステム、ファミリー支配の統治"
+  },
+  "18": {
+    "title_ja": "規制の枠組み",
+    "title_en": "Regulatory Framework",
+    "subtitle": "FSCの一元監督・外資規制・対中投資審査・半導体輸出管理"
+  },
+  "19": {
+    "title_ja": "国際貿易",
+    "title_en": "International Trade",
+    "subtitle": "超輸出依存とICT74%、対中依存の縮小と対米シフト"
+  },
+  "20": {
+    "title_ja": "台湾市場の教訓",
+    "title_en": "Key Lessons",
+    "subtitle": "シリコン・シールドと三重の集中、為替・地政学で調整する経済"
+  },
+  "21": {
+    "title_ja": "地政学リスク",
+    "title_en": "Geopolitical Risk",
+    "subtitle": "両岸有事という最大テールリスクと市場への波及経路"
+  }
+}

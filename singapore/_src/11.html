@@ -1,0 +1,100 @@
+<!-- Key Stats -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">AAA</div>
+    <div class="stat-label">SGS(シンガポール国債)の格付</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">約2.0〜2.1%</div>
+    <div class="stat-label">SGS 10年債利回り(2026年6月)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">純債務ゼロ</div>
+    <div class="stat-label">国債発行はあるが純政府債務は実質ゼロ</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">市場育成</div>
+    <div class="stat-label">発行目的は資金調達でなくベンチマーク提供</div>
+  </div>
+</div>
+
+<p>シンガポールの債券市場は、世界でも極めて珍しい原則の上に成り立っている。それは<strong>「政府は資金が必要ないのに国債を発行する」</strong>という原則だ。財政が黒字で巨額の準備金を持つシンガポールにとって、国債（SGS）は借金の手段ではなく、<strong>債券市場を育て、無リスク金利のベンチマークを提供するためのインフラ</strong>である。本章では、SGS・MAS Bills・SSBという債券の種類と、「純債務ゼロ」のAAA市場を解説する<cite>[1]</cite>。</p>
+
+<div class="key-number-row">
+  <div class="key-number"><span class="key-number-value">SGS</span><span class="key-number-label">Singapore Government Securities(国債)</span></div>
+  <div class="key-number"><span class="key-number-value">SSB</span><span class="key-number-label">個人向けのシンガポール貯蓄債券</span></div>
+  <div class="key-number"><span class="key-number-value">アジア・ダラー債</span><span class="key-number-label">外貨建て債券市場の拠点としての役割</span></div>
+</div>
+
+<section>
+  <h2>債券の種類 — SGS・MAS Bills・SSB</h2>
+  <p>シンガポールの公的債券は、目的と対象によって複数の種類に分かれる。いずれもAAA格付の信用を背景に、安全資産として機能する。</p>
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>商品</th><th>性格・対象</th><th>主目的</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>SGS（債券）</strong></td><td>2〜50年の利付国債。機関投資家中心</td><td>イールドカーブのベンチマーク提供</td></tr>
+        <tr><td><strong>T-bills</strong></td><td>1年以内の割引短期国債</td><td>短期の無リスク金利の基準</td></tr>
+        <tr><td><strong>MAS Bills</strong></td><td>MASが発行する短期証券</td><td>日々の流動性調節（金融調整）</td></tr>
+        <tr><td><strong>SSB</strong></td><td>個人向け。元本保証・途中換金可</td><td>国民の安全な貯蓄手段の提供</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>とりわけ<strong>SSB（Singapore Savings Bonds、シンガポール貯蓄債券）</strong>は、個人が少額から購入でき、いつでも元本割れなく換金できる設計で、CPF以外の安全な貯蓄手段として国民に広く利用されている。長く保有するほど利率が段階的に上がる「ステップアップ」構造が特徴だ<cite>[2]</cite>。</p>
+</section>
+
+<!-- Chart: rate environment relevant to bonds -->
+<div id="sg-rate-environment"></div>
+<script>
+ChartBuilder.lines('sg-rate-environment', {
+  title: 'シンガポールの金利環境(短期金利) 1998-2026',
+  caption: '出典: MAS（SORA）/市場データ。SGSの利回りは米国債に概ね連動しつつスプレッドが乗る。短期金利は米利上げ局面(2022-23)で3%超、利下げ局面(2025-26)で約2%へ低下。SGS 10年は2026年6月時点で約2.0-2.1%(AAA)。各点は概算[要確認]。',
+  yUnit: '%',
+  yStep: 1,
+  yRange: [0, 6],
+  series: [{
+    name: '短期金利(概算)',
+    color: '#5b8def',
+    data: [[1998,5.0],[2001,2.0],[2004,1.0],[2007,2.5],[2009,0.7],[2015,1.0],[2019,1.9],[2020,0.4],[2022,3.0],[2023,3.7],[2024,3.5],[2025,2.8],[2026.5,2.0]]
+  }],
+  annotations: [
+    { year: 2009, label: 'GFC後', color: '#00d4aa' },
+    { year: 2022, label: '利上局面', color: '#ff6b6b' },
+    { year: 2026.5, label: '≈2.0%', color: '#5b8def' }
+  ]
+});
+</script>
+
+<section>
+  <h2>「資金調達でない国債」の論理</h2>
+  <p>シンガポールのSGS発行は、財政赤字を埋めるためではない。法律により、SGS発行で調達した資金は政府の経常支出には使えず、準備金として運用される。つまり<strong>負債（SGS）と同額以上の運用資産が常に見合っている</strong>ため、シンガポールの<strong>純政府債務は実質ゼロ</strong>であり、最高格付AAAを維持している。発行の真の目的は次の通りだ。</p>
+  <ul>
+    <li><strong>無リスク金利のベンチマーク提供</strong> — 社債やローンの価格付けの基準となるイールドカーブを描く</li>
+    <li><strong>債券市場の流動性・厚みの育成</strong> — 国際金融センターに不可欠な債券インフラ</li>
+    <li><strong>機関投資家の運用ニーズ</strong> — CPF・保険会社など長期投資家に安全資産を供給</li>
+  </ul>
+  <p>SGSの利回りは、グローバルな安全資産である米国債に概ね連動し、これにシンガポール固有のスプレッドが乗る形で決まる。第2章で見たとおりMASは金利を直接設定しないため、長期金利も<strong>グローバル金利＋為替政策＋国内の需給</strong>によって内生的に決まる。CPFや保険会社の根強い需要が需給を下支えしている点も特徴だ<cite>[3]</cite>。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">SGSを一言で</div>
+    <div class="mnemonic-body">普通の国債＝<strong>政府が金を借りる手段</strong>。シンガポールのSGS＝<strong>金は要らないが市場のために発行する「ものさし」</strong>。調達金は運用に回すので純債務ゼロ。だから黒字国なのにAAA国債が存在するという、世界でも珍しい構図になる。</div>
+  </div>
+</section>
+
+<section>
+  <h2>アジア・ダラー債市場の拠点</h2>
+  <p>シンガポールは自国通貨建てのSGSだけでなく、<strong>外貨建て債券（とりわけ米ドル建て＝アジア・ダラー債）</strong>の発行・取引の拠点としても重要だ。アジア各国の政府・企業がシンガポールを通じて国際的な資金調達を行い、SGXや店頭市場で取引される。完全な交換性通貨・自由な資本移動・強固な法制度・税制優遇が、シンガポールを<strong>アジアの債券・資産運用ハブ</strong>たらしめている。</p>
+  <p>こうして、シンガポールの債券市場は「政府の借金市場」ではなく、<strong>「アジアの金融インフラ」</strong>として設計・運営されている。財政規律（第3章）・為替政策（第2章）・市場育成という3つの論理が、債券市場という一点で交差しているのである。</p>
+</section>
+
+<footer class="sources">
+  <h3>出典・参考文献</h3>
+  <ol>
+    <li>MAS「Singapore Government Securities (SGS)」「Singapore Savings Bonds」 <a href="https://www.mas.gov.sg/">mas.gov.sg</a></li>
+    <li>MAS / SGS website「SSB」、Government Securities Act関連</li>
+    <li>tradingeconomics（SGS 10年利回り）、MAS Annual Report（純政府債務・AAA格付）</li>
+  </ol>
+</footer>

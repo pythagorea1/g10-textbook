@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>イスラエル - Israel 02: Policy Rate History | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
+  <script defer src="../assets/charts.js"></script>
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇮🇱 イスラエル</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. 中央銀行</a>
+      <a href="02_policy_rate.html" class="sidebar-link active">02. 政策金利</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. 財政政策</a>
+      <a href="04_employment.html" class="sidebar-link">04. 雇用</a>
+      <a href="05_inflation.html" class="sidebar-link">05. インフレ</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. 株式市場概観</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. 株式(初期)</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. 株式(近代)</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. 株式(現代)</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. 株式(現在)</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. 債券市場</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. 短期金利</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. 長期金利</a>
+      <a href="14_currency.html" class="sidebar-link">14. 通貨</a>
+      <a href="15_crises.html" class="sidebar-link">15. 金融危機</a>
+      <a href="16_banking.html" class="sidebar-link">16. 銀行制度</a>
+      <a href="17_corporate.html" class="sidebar-link">17. 企業・コーポレート</a>
+      <a href="18_regulation.html" class="sidebar-link">18. 規制</a>
+      <a href="19_trade.html" class="sidebar-link">19. 貿易</a>
+      <a href="20_lessons.html" class="sidebar-link">20. 教訓</a>
+      <a href="21_geopolitical_risk.html" class="sidebar-link">21. 地政学リスク</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">G10</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+      <div class="sidebar-section-title">地政学・新興地域</div>
+      <div class="country-flags">
+        <a href="../taiwan/01_central_bank.html" class="country-chip">TW</a>
+        <a href="../hongkong/01_central_bank.html" class="country-chip">HK</a>
+        <a href="../china/01_central_bank.html" class="country-chip">CN</a>
+        <a href="../northkorea/01_central_bank.html" class="country-chip">KP</a>
+        <a href="../vietnam/01_central_bank.html" class="country-chip">VN</a>
+        <a href="../singapore/01_central_bank.html" class="country-chip">SG</a>
+        <a href="../iran/01_central_bank.html" class="country-chip">IR</a>
+        <a href="../israel/01_central_bank.html" class="country-chip active">IL</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 ホーム</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10横断年表</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">イスラエル</a>
+        <span class="sep">/</span>
+        イスラエル② 政策金利の歴史
+      </div>
+      <h1 class="page-title">🇮🇱 イスラエル② 政策金利の歴史</h1>
+      <p class="page-subtitle">二桁高金利→0.10%→ピーク4.75%→「戦時の据え置き」→3.75%</p>
+    </header>
+
+    <article>
+<!-- Key Stats -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">3.75%</div>
+    <div class="stat-label">現在のBOI金利 (2026年5月25日〜)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">4.75%</div>
+    <div class="stat-label">直近ピーク (2023年5月)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">0.10%</div>
+    <div class="stat-label">記録的低水準 (2015-2021年)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">14会合</div>
+    <div class="stat-label">戦時に4.5%を据え置いた回数</div>
+  </div>
+</div>
+
+<p>イスラエル銀行の政策金利（<strong>BOI金利</strong> / Base rate）は、インフレ目標1〜3%を達成するための唯一の主要レバーである。その軌跡は、GFC時の0.5%、2015〜21年の記録的な0.10%、コロナ期の据え置き、2022年からの急速な利上げ、そして2023年5月のピーク4.75%という、欧米とほぼ同期した「世界的な金融サイクル」を描く。だがイスラエル固有の論点は、<strong>戦争の不確実性ゆえに金利を動かさない「戦時の長期据え置き」</strong>にある。本章ではその歴史を追う。</p>
+
+<!-- Chart: BOI policy rate full history with era bands -->
+<div id="israel-policy-rate"></div>
+<script>
+ChartBuilder.lines('israel-policy-rate', {
+  title: 'イスラエル BOI政策金利の歴史 1998-2026',
+  caption: '出典: BOI「interest rate and the monetary tools」/ TradingEconomics / Times of Israel。1998〜2008の中間値は史実トレンドに基づく代表概算。確証点: 2009/4 GFC底0.5%、2015〜21=0.10%、2023/5 ピーク4.75%、2025/11から利下げ、2026/5=3.75%。1985年前後の旧シェケル・ハイパーインフレ期は名目金利が三桁で非連続のため除外。',
+  yUnit: '%',
+  yStep: 2,
+  yRange: [0, 12],
+  series: [{
+    name: 'BOI金利',
+    color: '#00d4aa',
+    data: [[1998,11.0],[2002,9.1],[2005,3.5],[2008.75,4.25],[2009.33,0.5],[2011,3.25],[2013,1.0],[2015,0.10],[2020.33,0.10],[2022.33,0.35],[2022.83,3.25],[2023.42,4.75],[2024.0,4.50],[2025.83,4.25],[2026.0,4.00],[2026.42,3.75]]
+  }],
+  bands: [
+    { from: 2015, to: 2021.9, label: '0.10%時代', color: '#5b8def' },
+    { from: 2023.78, to: 2026.5, label: '戦時', color: '#ff6b6b' }
+  ],
+  annotations: [
+    { year: 2002, label: 'IT不況9%', color: '#ff9f43' },
+    { year: 2009.33, label: 'GFC 0.5%', color: '#5b8def' },
+    { year: 2015, label: '0.10%', color: '#5b8def' },
+    { year: 2023.42, label: 'ピーク4.75', color: '#ff6b6b' },
+    { year: 2026.42, label: '3.75%', color: '#00d4aa' }
+  ]
+});
+</script>
+
+<section>
+  <h2>金利の歴史 — 高金利国から先進国型へ</h2>
+  <p>1990年代後半のイスラエルは、まだインフレ目標制への移行期にあり、政策金利は<strong>二桁（1998年に約11%）</strong>という新興国型の高水準にあった。インフレ抑制とシェケル防衛のために高い実質金利が必要だったのである。2000〜2002年の第2次インティファーダとITバブル崩壊期にも金利は9%前後と高く、景気後退とシェケル最弱圏（約4.9シェケル/ドル）が並存した<cite>[1]</cite>。</p>
+  <p>その後、インフレが構造的に低位安定すると金利水準も切り下がり、2005年には3.5%、Stanley Fischer総裁の下でイスラエルは「普通の先進国の金利」へと収斂していった。リーマンショック（2008年）でBOIは機敏に動き、<strong>2009年4月に0.5%という当時の最低水準</strong>まで引き下げた。その後の景気回復局面では2011年に3.25%まで戻すなど、機動的な政策運営が国際的に高く評価された。</p>
+</section>
+
+<section>
+  <h2>0.10%の時代（2015–2021）— 記録的な超低金利</h2>
+  <p>2010年代半ば、世界的なディスインフレと欧州危機の余波、そしてシェケル高への対応として、BOIは金利を<strong>0.10%</strong>という事実上の下限まで引き下げた。注目すべきは、<strong>コロナショック（2020年）でも0.10%を維持した</strong>点である。多くの中央銀行が追加緩和に動いたなか、BOIは既に下限近くにあったため、金利よりも量的緩和（国債買入）と為替介入で対応した。この約6年間の超低金利は、住宅価格の上昇や金融緩和への慣れという副作用も残した<cite>[2]</cite>。</p>
+
+  <div class="key-number-row">
+    <div class="key-number"><span class="key-number-value">0.10%</span><span class="key-number-label">2015〜2021年の政策金利（コロナ期も維持）</span></div>
+    <div class="key-number"><span class="key-number-value">+440bp</span><span class="key-number-label">2022〜23年の利上げ幅（0.10→4.75%）</span></div>
+    <div class="key-number"><span class="key-number-value">-100bp</span><span class="key-number-label">2025/11以降の利下げ幅（4.75→3.75%）</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>利上げサイクルと「戦時の据え置き」（2022–2025）</h2>
+  <p>2022年、世界的なインフレ急騰を受けてBOIは4月から利上げを開始し、わずか1年余りで<strong>0.10%から2023年5月の4.75%</strong>まで一気に引き上げた。ところが、ここからがイスラエル固有の展開である。利上げサイクルが一段落した直後の2023年10月、ハマス戦争が勃発した。通常なら景気減速で利下げに動く局面だが、BOIは<strong>戦争に伴うシェケル安・インフレ再燃・財政悪化のリスクを警戒し、2024年1月に一度だけ4.5%へ小幅利下げした後、4.5%を14会合にわたり据え置いた</strong><cite>[3]</cite>。</p>
+  <p>この「動かない」判断こそ、イスラエルの金融政策の核心である。戦時には①シェケル下落による輸入インフレ、②財政赤字拡大、③供給制約という上振れ圧力と、④景気下押しという下振れ圧力が同時に働く。不確実性が極端に高いとき、BOIは拙速な利下げを避け、為替介入で通貨を守りつつ金利を温存する戦略をとった。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">イスラエルの金利を動かすのは「戦況」</div>
+    <div class="mnemonic-body">普通のインフレターゲッターはCPIと雇用で金利を決める。だがBOIは<strong>「戦争の不確実性」で金利を据え置く</strong>のが固有のクセ。2023/10戦争後は利下げしたい局面でも4.5%を14会合キープ。停戦観測が出た2025/11にようやく利下げ再開。<strong>金利チャートは中東情勢のチャートでもある。</strong></div>
+  </div>
+</section>
+
+<section>
+  <h2>利下げ局面入り（2025–2026）</h2>
+  <p>2025年6月の対イラン「12日間戦争」が早期に停戦し、地政学プレミアムが剥落すると、シェケルは急騰しインフレは目標帯の下限近くまで沈静した。BOIはようやく<strong>2025年11月に約2年ぶりの利下げ（4.25%）</strong>に踏み切り、2026年1月に4.00%、2026年5月25日に3.75%へと段階的に引き下げた。シェケル高（2026年に1993年以来の最強圏=約2.96シェケル/ドル）が輸入物価を押し下げ、CPIを1.9%（2026年4月）まで沈静させたことが、利下げを後押しした<cite>[4]</cite>。</p>
+  <p>市場が注視するのは、この利下げがどこまで続くかである。インフレが目標帯内（9か月連続）で安定し、シェケル高が続く限り追加利下げの余地はあるが、対イラン情勢の再燃は一瞬で前提を覆す。「戦時下の好況」が続くか否かが、BOIの金利パスを左右する最大の変数である。</p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>時点</th><th>BOI金利</th><th>局面</th><th>背景</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>2009年4月</td><td class="highlight-blue">0.50%</td><td>GFC底</td><td>リーマン後の機敏な利下げ</td></tr>
+        <tr><td>2015〜21年</td><td class="highlight-blue">0.10%</td><td>超低金利</td><td>ディスインフレ・コロナ期も維持</td></tr>
+        <tr><td>2022年4月</td><td>0.35%</td><td>利上げ開始</td><td>世界的インフレ急騰に対応</td></tr>
+        <tr><td>2023年5月</td><td class="highlight-red">4.75%</td><td>ピーク</td><td>利上げサイクルの頂点</td></tr>
+        <tr><td>2024年1月〜</td><td>4.50%</td><td>戦時据え置き</td><td>4.5%を14会合維持</td></tr>
+        <tr><td>2025年11月</td><td>4.25%</td><td>利下げ再開</td><td>約2年ぶり。停戦・シェケル高</td></tr>
+        <tr><td>2026年1月</td><td>4.00%</td><td>利下げ継続</td><td>CPI目標帯内で安定</td></tr>
+        <tr><td>2026年5月</td><td class="highlight-green">3.75%</td><td>現在</td><td>シェケル高・インフレ1.9%</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<footer class="sources">
+  <h3>出典・参考文献</h3>
+  <ol>
+    <li>BOI「BOI interest rate and the monetary tools」時系列、TradingEconomics（過去金利）</li>
+    <li>BOI Monetary Policy Report、Stanley Fischer 期の政策レビュー</li>
+    <li>BOI press releases (2023–2025)、Times of Israel（戦時据え置き・14会合）</li>
+    <li>BOI press releases (2025/11・2026/1・2026/5/25)、TradingEconomics（3.75%・CPI1.9%）、CNBC 2026/4/30</li>
+  </ol>
+</footer>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+
+    </footer>
+
+    <nav class="page-nav">
+      <a href="01_central_bank.html" class="prev">中央銀行</a>
+      <a href="03_fiscal_policy.html" class="next">財政政策</a>
+    </nav>
+  </main>
+
+  <script src="../assets/enhancer.js"></script>
+  <script defer src="../assets/recall.js"></script>
+  <script src="../assets/tts-reader.js"></script>
+</body>
+</html>

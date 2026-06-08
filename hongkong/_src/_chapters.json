@@ -1,0 +1,128 @@
+{
+  "12": {
+    "title_ja": "香港の短期金利（HIBOR・基準金利）",
+    "title_en": "Short-term Rates",
+    "subtitle": "Fedに連動する基準金利、HIBOR、総決済残高と通貨防衛の自動調整",
+    "sources_html": "<ol>\n<li>HKMA, \"How the Base Rate is determined under the Linked Exchange Rate System\".</li>\n<li>HKMA, Base Rate press releases (2025-12-11, 2026-03-19).</li>\n<li>Hong Kong Association of Banks (HKAB), HIBOR fixing methodology.</li>\n<li>Eddie Yue, \"Operation of the LERS\", HKMA inSight (2023-05).</li>\n<li>BIS Papers No.73, \"Monetary operations under the Currency Board\".</li>\n<li>Xinhua (2025-07, HKD defence); Reuters/Econotimes (2025-05, strong-side intervention).</li>\n</ol>"
+  },
+  "13": {
+    "title_ja": "香港の長期金利と住宅ローン",
+    "title_en": "Long-term Rates",
+    "subtitle": "米国債から輸入される長期金利、政府債券プログラム、H＋・P−・H-cap",
+    "sources_html": "<ol>\n<li>HKMA, Exchange Fund Bills and Notes Programme.</li>\n<li>HKMA, Government Green Bond Programme.</li>\n<li>HKSAR Government Bond Programme (iBond / Silver Bond).</li>\n<li>基本法 第107条（均衡財政原則）.</li>\n<li>香港主要銀行の住宅ローン商品約款; SCMP.</li>\n</ol>"
+  },
+  "14": {
+    "title_ja": "香港ドルと通貨ボード制度",
+    "title_en": "Currency &amp; the Currency Board",
+    "subtitle": "100%米ドル裏付け、7.75-7.85兌換帯、3発券銀行、不可能の三角形、ペッグ論争",
+    "sources_html": "<ol>\n<li>HKMA, \"Linked Exchange Rate System\".</li>\n<li>HKMA, \"Three Refinements to the LERS\" (2005-05).</li>\n<li>HKMA, Note-Issuing Banks.</li>\n<li>BIS Papers No.73, \"Monetary operations under the Currency Board\".</li>\n<li>J. Greenwood, \"Hong Kong's Link to the US Dollar\".</li>\n<li>Atlanta Fed / NBER, peg credibility paper (2025).</li>\n<li>Wikipedia, \"Linked exchange rate system in Hong Kong\".</li>\n</ol>"
+  },
+  "15": {
+    "title_ja": "香港の金融危機史",
+    "title_en": "Financial Crises",
+    "subtitle": "1973バブル・1983通貨危機・1987閉鎖・1997-98ダブルプレイ・SARS・GFC・規制売り",
+    "sources_html": "<ol>\n<li>Hang Seng Indexes (hsi.com.hk); Macrotrends, Hang Seng historical.</li>\n<li>HKMA; Norman Chan, \"The 1998 Market Intervention\" (2019-09).</li>\n<li>HKEX, Tracker Fund of Hong Kong (2800).</li>\n<li>HK Census &amp; Statistics Department, CPI / unemployment.</li>\n<li>香港政府, CEPA (2003).</li>\n<li>Bloomberg (2025-02, DeepSeek相場・南向き資金); SCMP; RPRealtyPlus（不動産）.</li>\n</ol>"
+  },
+  "16": {
+    "title_ja": "香港の銀行制度",
+    "title_en": "Banking Sector",
+    "subtitle": "認可機関の3層構造、3発券銀行の寡占、最後の貸し手の限界、金利自由化と仮想銀行",
+    "sources_html": "<ol>\n<li>HKMA, \"Three-tier System of Authorized Institutions\".</li>\n<li>Banking Ordinance (Cap. 155).</li>\n<li>HKMA, Note-Issuing Banks; 各発券銀行年報.</li>\n<li>HKMA, Supervisory Policy Manual; Basel III implementation in Hong Kong.</li>\n<li>HKMA, \"Deregulation of Interest Rate Rules\" (2001).</li>\n<li>HKMA, Virtual Banking licences (2019).</li>\n</ol>"
+  },
+  "17": {
+    "title_ja": "香港の企業・コーポレート",
+    "title_en": "Corporate &amp; Conglomerates",
+    "subtitle": "不動産系同族財閥、HKEX、H株・レッドチップ、New World債務、本土SOE上場",
+    "sources_html": "<ol>\n<li>各社年報（CK Hutchison, Sun Hung Kai, Henderson, New World Development）.</li>\n<li>SCMP; Forbes（香港富豪ランキング）.</li>\n<li>HKEX 年報; HKEX, 2025年IPO統計.</li>\n<li>Hang Seng Indexes (HSCEI, HSTECH).</li>\n<li>Bloomberg; Reuters（2025年New World債務報道、進行中）.</li>\n</ol>"
+  },
+  "18": {
+    "title_ja": "香港の金融規制",
+    "title_en": "Regulatory Framework",
+    "subtitle": "SFC・HKMA二元監督、WVR・SPAC・特専テック章、米HFCAA、NSL・23条の影響",
+    "sources_html": "<ol>\n<li>SFC; HKMA; Securities and Futures Ordinance (Cap. 571).</li>\n<li>HKEX, Listing Rules（Chapter 8A WVR, 18A, 18C, SPAC）.</li>\n<li>HKEX, 2025 IPO統計.</li>\n<li>米PCAOB; Congress.gov, HFCAA (2020).</li>\n<li>HKFP; Congress.gov（NSL分析）; Safeguarding National Security Ordinance (Art.23, 2024-03).</li>\n</ol>"
+  },
+  "19": {
+    "title_ja": "香港の貿易",
+    "title_en": "International Trade",
+    "subtitle": "自由港・中継貿易・再輸出ハブ、対中ゲートウェイ、2020年特別地位剥奪、深圳の台頭",
+    "sources_html": "<ol>\n<li>HK Census &amp; Statistics Department, 貿易統計.</li>\n<li>HK Trade and Industry Department; CEPA (2003-).</li>\n<li>米大統領令13936 (2020-07); Congress.gov; 米商務省 輸出管理規則 (EAR).</li>\n<li>グレーターベイエリア（Greater Bay Area）構想.</li>\n<li>SCMP.</li>\n</ol>"
+  },
+  "20": {
+    "title_ja": "香港の教訓",
+    "title_en": "Key Lessons",
+    "subtitle": "信認＝規律＋準備、金利輸入の罠、対中統合の両面性、法の支配という見えない資産",
+    "sources_html": "<ol>\n<li>HKMA, LERS解説; BIS Papers No.73.</li>\n<li>IMF, Hong Kong SAR Article IV Consultation.</li>\n<li>Atlanta Fed / NBER, peg credibility paper (2025).</li>\n<li>Norman Chan, \"The 1998 Market Intervention\" (2019); HKEX, Tracker Fund of Hong Kong.</li>\n</ol>"
+  },
+  "21": {
+    "title_ja": "香港の地政学リスク",
+    "title_en": "Geopolitical Risk",
+    "subtitle": "米中対立の最前線、USD決済遮断、台湾有事波及、NSL・23条、対中依存と人材流出",
+    "sources_html": "<ol>\n<li>本テキスト 香港ファクトシート §4-§5.</li>\n<li>米大統領令13936 (2020-07); Congress.gov.</li>\n<li>HKFP; Safeguarding National Security Ordinance (Art.23, 2024-03); 2020 NSL.</li>\n<li>UK BN(O) immigration scheme.</li>\n<li>Hang Seng Indexes; Macrotrends; Bloomberg (2025-02); SCMP（対シンガポール競合）.</li>\n<li>ロシアSWIFT排除 (2022) を参照シナリオとして.</li>\n</ol>"
+  },
+  "01": {
+    "title_ja": "香港金融管理局（HKMA）",
+    "title_en": "Hong Kong Monetary Authority",
+    "subtitle": "中央銀行ではなく通貨ボードを運営する特異な通貨当局",
+    "sources_html": "<ol>\n<li>HKMA, 「Linked Exchange Rate System」「About the HKMA」 <a href=\"https://www.hkma.gov.hk/\">hkma.gov.hk</a></li>\n<li>Wikipedia, 「Linked exchange rate system in Hong Kong」; HKMA「Three Refinements (2005)」</li>\n<li>HKMA, 「Exchange Fund」月次統計・年次報告 <a href=\"https://www.hkma.gov.hk/eng/key-functions/reserves-management/\">hkma.gov.hk</a></li>\n<li>Norman Chan（陳徳霖）, 「The 1998 market operation」HKMA Insight, 2019-09</li>\n</ol>"
+  },
+  "02": {
+    "title_ja": "政策金利の仕組み",
+    "title_en": "Policy Rate / Currency Board",
+    "subtitle": "自律的金融政策の不在 — Fed追随と不可能の三角形",
+    "sources_html": "<ol>\n<li>HKMA, 「Base Rate」解説・割引窓口（Discount Window）の仕組み <a href=\"https://www.hkma.gov.hk/\">hkma.gov.hk</a></li>\n<li>BIS Papers No.73, 「Monetary operations under the Currency Board: the experience of Hong Kong」</li>\n<li>HKMA Press, 「HKMA's Response to US Fed's Interest Rate Decision」, 2025-12-11／2026-03-19／2026-04-30</li>\n<li>HKMA, 「Aggregate Balance と HIBOR」解説; Eddie Yue（余偉文）「LERS運用」2023-05</li>\n<li>Atlanta Fed / NBER, 「Hong Kong's currency board: credibility studies」, 2025</li>\n</ol>"
+  },
+  "03": {
+    "title_ja": "財政政策",
+    "title_en": "Fiscal Policy",
+    "subtitle": "簡素な低税制・均衡財政原則・巨額財政準備の揺らぎ",
+    "sources_html": "<ol>\n<li>基本法（Basic Law）第107条「量入為出・収支均衡」 <a href=\"https://www.basiclaw.gov.hk/\">basiclaw.gov.hk</a></li>\n<li>香港税務局（Inland Revenue Department）, 利得税・給与所得税の税率 <a href=\"https://www.ird.gov.hk/\">ird.gov.hk</a></li>\n<li>香港政府2026年度予算（Budget）; China Briefing 要約; news.gov.hk</li>\n<li>SCMP / RPRealtyPlus, 香港不動産価格と土地収入の動向, 2024–2025</li>\n</ol>"
+  },
+  "04": {
+    "title_ja": "雇用",
+    "title_en": "Employment",
+    "subtitle": "構造的低失業、SARSとパンデミックの衝撃、専門職の流出",
+    "sources_html": "<ol>\n<li>香港統計処（Census &amp; Statistics Department）, 労働力統計・失業率 <a href=\"https://www.censtatd.gov.hk/\">censtatd.gov.hk</a></li>\n<li>HKFP / SCMP, 専門職移民（BN(O)ルート）と人材誘致策（Top Talent Pass）, 2021–2025</li>\n</ol>"
+  },
+  "05": {
+    "title_ja": "インフレ",
+    "title_en": "Inflation",
+    "subtitle": "1998–2004年の長期デフレとペッグ下の物価調整",
+    "sources_html": "<ol>\n<li>香港統計処（Census &amp; Statistics Department）, 消費者物価指数（CPI） <a href=\"https://www.censtatd.gov.hk/\">censtatd.gov.hk</a></li>\n<li>World Bank, 「Inflation, consumer prices (Hong Kong SAR)」; IMF Hong Kong SAR DataMapper</li>\n<li>hkeconomy.gov.hk, 香港政府 経済見通し（2026年予測）; Statista</li>\n</ol>"
+  },
+  "06": {
+    "title_ja": "株式市場概観",
+    "title_en": "Equity Market Overview",
+    "subtitle": "ハンセン指数・HKEX・H株・南向き資金",
+    "sources_html": "<ol>\n<li>Hang Seng Indexes, 「Hang Seng Index / HSCEI / HSTECH」 <a href=\"https://www.hsi.com.hk/\">hsi.com.hk</a></li>\n<li>HKEX, 「Stock Connect（滬港通・深港通）」 <a href=\"https://www.hkex.com.hk/\">hkex.com.hk</a></li>\n<li>SCMP / Bloomberg, 「2025 IPO世界1位（US$365億）・南向き資金」, 2025; Macrotrends</li>\n</ol>"
+  },
+  "07": {
+    "title_ja": "株式市場（初期）",
+    "title_en": "Equity Market: Early History",
+    "subtitle": "1969年算出開始、1973年バブル崩壊、1987年取引所閉鎖",
+    "sources_html": "<ol>\n<li>Hang Seng Indexes, 「History of the Hang Seng Index」 <a href=\"https://www.hsi.com.hk/\">hsi.com.hk</a></li>\n<li>Wikipedia / SCMP, 「1973 Hong Kong stock market crash（1,774→150）」</li>\n<li>HKEX, 取引所統合（1986）と1987年ブラックマンデー閉鎖; Davison Report; SFC設立（1989）</li>\n</ol>"
+  },
+  "08": {
+    "title_ja": "株式市場（近代）",
+    "title_en": "Equity Market: Modern Era",
+    "subtitle": "1990年代のH株時代、1997返還、アジア危機と政府介入",
+    "sources_html": "<ol>\n<li>HKEX, 「H-share history（青島ビール初上場 1993）」 <a href=\"https://www.hkex.com.hk/\">hkex.com.hk</a></li>\n<li>HKMA, 「The 1998 market operation」; Norman Chan HKMA Insight, 2019</li>\n<li>Wikipedia, 「1997 Asian financial crisis」「Tracker Fund of Hong Kong (2800)」; Hang Seng Indexes</li>\n</ol>"
+  },
+  "09": {
+    "title_ja": "株式市場（現代）",
+    "title_en": "Equity Market: 2000s",
+    "subtitle": "ITバブル・SARS・2007中国強気相場・GFC",
+    "sources_html": "<ol>\n<li>Hang Seng Indexes / Macrotrends, ハンセン指数 年次・転換点</li>\n<li>HKEX, 中国大型IPO（建設銀行2005・ICBC/中国銀行2006）; SCMP</li>\n<li>HKMA / SFC, GFCとリーマン・ミニボンド問題（2008）; 滬港通開始（2014）</li>\n</ol>"
+  },
+  "10": {
+    "title_ja": "株式市場（現在）",
+    "title_en": "Equity Market: 2020s",
+    "subtitle": "史上最高値圏から底値、DeepSeek相場での復活",
+    "sources_html": "<ol>\n<li>Hang Seng Indexes / IG / BBN Times, ハンセン指数（2018最高値・2022底・2026）</li>\n<li>Congress.gov / 米大統領令13936（特別地位剥奪 2020）; HKFP「国家安全法（NSL）」</li>\n<li>Bloomberg, 「DeepSeek相場・南向きHK$1,410億（2025-02）」; SCMP「2025 IPO世界1位」</li>\n</ol>"
+  },
+  "11": {
+    "title_ja": "債券市場",
+    "title_en": "Bond Market",
+    "subtitle": "薄い国債市場、外貨基金手形、点心債、リテール債",
+    "sources_html": "<ol>\n<li>HKMA, 「Exchange Fund Bills and Notes (EFBN)」「Government Bond Programme」 <a href=\"https://www.hkma.gov.hk/\">hkma.gov.hk</a></li>\n<li>HKMA / HKEX, 「Dim Sum Bond（オフショアCNH債）・人民元国際化」</li>\n<li>香港政府, 「iBond / Silver Bond / Green Bond」リテール債・グリーンボンド <a href=\"https://www.hkgb.gov.hk/\">hkgb.gov.hk</a></li>\n<li>BIS / IMF, 香港債券市場と長期金利の対米連動</li>\n</ol>"
+  }
+}

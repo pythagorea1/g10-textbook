@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>中国 - Short-Term Rates | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
+  <script defer src="../assets/charts.js"></script>
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇨🇳 中国</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. 中央銀行</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. 政策金利</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. 財政政策</a>
+      <a href="04_employment.html" class="sidebar-link">04. 雇用</a>
+      <a href="05_inflation.html" class="sidebar-link">05. インフレ</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. 株式市場概観</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. 株式(初期)</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. 株式(近代)</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. 株式(現代)</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. 株式(現在)</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. 債券市場</a>
+      <a href="12_short_rates.html" class="sidebar-link active">12. 短期金利</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. 長期金利</a>
+      <a href="14_currency.html" class="sidebar-link">14. 通貨</a>
+      <a href="15_crises.html" class="sidebar-link">15. 金融危機</a>
+      <a href="16_banking.html" class="sidebar-link">16. 銀行制度</a>
+      <a href="17_corporate.html" class="sidebar-link">17. 企業・コーポレート</a>
+      <a href="18_regulation.html" class="sidebar-link">18. 規制</a>
+      <a href="19_trade.html" class="sidebar-link">19. 貿易</a>
+      <a href="20_lessons.html" class="sidebar-link">20. 教訓</a>
+      <a href="21_geopolitical_risk.html" class="sidebar-link">21. 地政学リスク</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">G10</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+      <div class="sidebar-section-title">地政学・新興地域</div>
+      <div class="country-flags">
+        <a href="../taiwan/01_central_bank.html" class="country-chip">TW</a>
+        <a href="../hongkong/01_central_bank.html" class="country-chip">HK</a>
+        <a href="../china/01_central_bank.html" class="country-chip active">CN</a>
+        <a href="../northkorea/01_central_bank.html" class="country-chip">KP</a>
+        <a href="../vietnam/01_central_bank.html" class="country-chip">VN</a>
+        <a href="../singapore/01_central_bank.html" class="country-chip">SG</a>
+        <a href="../iran/01_central_bank.html" class="country-chip">IR</a>
+        <a href="../israel/01_central_bank.html" class="country-chip">IL</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 ホーム</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10横断年表</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">中国</a>
+        <span class="sep">/</span>
+        中国⑫ 短期金利
+      </div>
+      <h1 class="page-title">🇨🇳 中国⑫ 短期金利</h1>
+      <p class="page-subtitle">7日リバースレポ・DR007・RRR — 多層的な短期金利の枠組み</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">1.40%</div>
+          <div class="stat-label">7日リバースレポ（OMO）= 主政策金利（2025年5月に10bp引下げ後据置）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">~9.0%</div>
+          <div class="stat-label">大手行の預金準備率（RRR、2025年5月に50bp引下げ）</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">DR007</div>
+          <div class="stat-label">預金機関間7日物レポ — 実質的な金融市場の体温計</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">多層構造</div>
+          <div class="stat-label">OMO・MLF・SLF・RRR・LPRが連動する独特の枠組み</div>
+        </div>
+      </div>
+
+      <section>
+        <h2>1. 中国の短期金利は「多層的」</h2>
+        <p>
+          欧米の中央銀行が単一の政策金利（FFレートやリファイナンス金利）を操作するのに対し、中国人民銀行（PBoC）は<strong>複数の道具を束ねて短期金利を誘導する</strong>。これは、市場メカニズムと量的・行政的コントロールが併存する中国金融システムの特徴を映している。短期金利の世界では「政策金利として何を見るか」が時代とともに変わってきた点が最大のポイントだ。
+        </p>
+        <p>
+          2024年以降、PBoCは<strong>7日物リバースレポ金利（公開市場操作=OMO金利）を「主政策金利」に格上げ</strong>し、ここからDR007（預金機関間7日物レポ金利）→SHIBOR→各種貸出金利へと波及させる「金利の伝達経路」を整備しようとしている。これは事実上、中国版の「政策金利の一本化」への移行であり、かつて中心だった1年物MLF（中期貸出ファシリティ）金利の役割は後退した。
+        </p>
+
+        <div class="key-number-row">
+          <div class="key-number"><span class="key-number-value">1.40%</span><span class="key-number-label">7日リバースレポ（主政策金利）</span></div>
+          <div class="key-number"><span class="key-number-value">~9.0%</span><span class="key-number-label">大手行RRR</span></div>
+          <div class="key-number"><span class="key-number-value">2024</span><span class="key-number-label">主政策金利を7日レポに移行</span></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>2. 短期金利の道具箱（マネー・マーケット・ツールキット）</h2>
+        <p>
+          PBoCの短期金利オペレーションは、価格（金利）と量（準備預金）の両面から構成される。次の表が中国の短期金利の「地図」である。
+        </p>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>道具</th>
+                <th>現行水準（2026年）</th>
+                <th>役割</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="highlight-blue">7日リバースレポ（OMO）</td>
+                <td>1.40%</td>
+                <td>主政策金利。公開市場操作で日々の流動性を供給</td>
+              </tr>
+              <tr>
+                <td>DR007</td>
+                <td>~1.4–1.5%</td>
+                <td>預金機関間レポ金利。市場の実勢を映す運営目標的指標</td>
+              </tr>
+              <tr>
+                <td>SHIBOR</td>
+                <td>翌日物〜1年物</td>
+                <td>上海銀行間貸出金利。銀行調達コストのベンチマーク</td>
+              </tr>
+              <tr>
+                <td>MLF（中期貸出ファシリティ）</td>
+                <td>1年物</td>
+                <td>銀行への中期資金供給。旧LPRのアンカー（役割は後退）</td>
+              </tr>
+              <tr>
+                <td>SLF（常設貸出ファシリティ）</td>
+                <td>翌日〜</td>
+                <td>金利コリドーの上限（流動性の最終的な出し手）</td>
+              </tr>
+              <tr>
+                <td class="highlight-orange">預金準備率（RRR）</td>
+                <td>大手行 ~9.0%</td>
+                <td>量的調整。引下げ＝市中への資金放出（長期資金）</td>
+              </tr>
+              <tr>
+                <td>PSL（担保補完貸出）</td>
+                <td>随時</td>
+                <td>政策性銀行への資金供給（インフラ・住宅向け）</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mnemonic-box">
+          <span class="mnemonic-icon">🧠</span>
+          <div class="mnemonic-title">覚え方：「価格」はOMO/DR007、「量」はRRR</div>
+          <div class="mnemonic-body">
+            金利（価格）を動かしたいときはOMO（7日リバースレポ）とMLF、流動性の総量（量）を動かしたいときはRRR（預金準備率）。RRRを「50bp引下げ」と聞いたら、それは政策金利の話ではなく<strong>銀行が中央銀行に積む準備預金を減らして約1兆元規模の資金を市中に放出する</strong>量的措置だと理解する。
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>3. 短期金利の歴史的低下 — 緩和の主役</h2>
+        <p>
+          中国の短期金利（7日リバースレポ）は、2020年のCOVID緩和以降、ほぼ一方向に低下してきた。不動産不況・内需低迷・デフレ圧力に対し、PBoCは小刻みな引下げを繰り返している。2024年9月の「バズーカ刺激策」では7日レポを20bp引下げて1.50%とし、2025年5月にさらに10bp引下げて<strong>1.40%</strong>とした。欧米が利上げ局面にあった2022〜23年も、中国は逆に緩和方向だった点が際立つ（=金融政策の「逆行」）。
+        </p>
+
+        <div id="china-shortrate-repo"></div>
+        <script>
+        ChartBuilder.lines('china-shortrate-repo', {
+          title: '中国 7日リバースレポ金利（主政策金利）の推移 (2020-2026, %)',
+          caption: '出典: 中国人民銀行、Reuters/ABN AMRO。2020年のCOVID緩和以降、不動産不況とデフレ圧力を背景に一方向に低下。2024年に「主政策金利」へ格上げされ、2024年9月のバズーカ刺激策で1.50%、2025年5月に1.40%へ。欧米の利上げ局面と逆行した点が特徴。',
+          yUnit: '%',
+          yRange: [1.0, 2.5],
+          yStep: 0.25,
+          series: [{
+            name: '7日リバースレポ（OMO）',
+            color: '#00d4aa', width: 2.4,
+            data: [[2020, 2.20], [2022, 2.00], [2023, 1.80], [2024.67, 1.50], [2025.42, 1.40], [2026, 1.40]]
+          }],
+          annotations: [
+            { year: 2020, label: 'COVID緩和', color: '#5b8def' },
+            { year: 2024.67, label: '1.50%', color: '#ffd93d' },
+            { year: 2025.42, label: '1.40%', color: '#ff6b6b' }
+          ]
+        });
+        </script>
+      </section>
+
+      <section>
+        <h2>4. なぜ短期金利が「効きにくい」のか</h2>
+        <p>
+          中国では、政策金利を下げても実体経済への波及（伝達）が弱いという構造問題がある。理由は三つある。第一に、<strong>銀行の貸出は信用配分（行政指導）に依存</strong>し、金利シグナルだけで動かない。第二に、家計・企業がデフレ予想から借入・消費に慎重になり、いわゆる「流動性の罠」的な状況にある。第三に、<strong>金利を下げすぎると人民元安・資本流出を招く</strong>ため、対外バランスとのトレードオフがある。
+        </p>
+        <p>
+          このため、PBoCは短期金利の引下げと並行して、RRR引下げ（量的措置）、再貸出・PSL（構造的措置）、株式市場支援ツール（証券会社向けスワップ）など、多様な手段を組み合わせる。短期金利は「主役の一人」だが、単独では景気を動かしきれないのが中国の現実だ。これは長期金利の章（第13章）で扱う「日本化」懸念とも直結する。
+        </p>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+
+    </footer>
+
+    <nav class="page-nav">
+      <a href="11_bond_market.html" class="prev">債券市場</a>
+      <a href="13_long_rates.html" class="next">長期金利</a>
+    </nav>
+  </main>
+
+  <script src="../assets/enhancer.js"></script>
+  <script defer src="../assets/recall.js"></script>
+  <script src="../assets/tts-reader.js"></script>
+</body>
+</html>

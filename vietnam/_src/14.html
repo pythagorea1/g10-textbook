@@ -1,0 +1,96 @@
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">₫ VND</div>
+          <div class="stat-label">ベトナム・ドン（đồng） — 管理変動相場制</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">±5%</div>
+          <div class="stat-label">中心レート（central reference rate）からの変動許容バンド</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">約26,330</div>
+          <div class="stat-label">USD/VND（2026年6月） — 一貫した緩やかな減価</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">2016年〜</div>
+          <div class="stat-label">日次の中心レート方式を導入（crawling peg の制度化）</div>
+        </div>
+      </div>
+
+      <div class="key-number-row">
+        <div class="key-number"><span class="key-number-value">10,640→26,330</span><span class="key-number-label">USD/VND（1993→2026）= 約30年でドンは対ドルで約4割の価値に</span></div>
+        <div class="key-number"><span class="key-number-value">±5%</span><span class="key-number-label">日次の中心レートからの変動許容バンド（2016年導入）</span></div>
+        <div class="key-number"><span class="key-number-value">約9%</span><span class="key-number-label">2011年の国際収支危機時のドン切下げ幅</span></div>
+        <div class="key-number"><span class="key-number-value">数%以内</span><span class="key-number-label">闇レートと公定レートの乖離（制裁国ではない）</span></div>
+      </div>
+
+      <section>
+        <h2>1. ベトナム・ドンは「管理変動相場」</h2>
+        <p>
+          ベトナム・ドン（VND, ₫）は、市場に完全に任せる変動相場でも、固定相場でもない<strong>「管理変動相場制（managed float / crawling peg）」</strong>だ。為替の方向性と速度を、ベトナム国家銀行（SBV）がコントロールする。具体的には、SBVが毎営業日<strong>「中心レート（central reference rate）」</strong>を公表し、市場の取引はその上下<strong>±5%のバンド内</strong>でのみ許される。バンドの端に達すればSBVが介入する。
+        </p>
+        <p>
+          この制度は<strong>2016年に導入</strong>された。それ以前は「固定＋時折まとめて切下げ」という運営で、切下げのたびに市場が混乱した。中心レートを日次で小刻みに動かす方式（crawling peg）に変えたことで、<strong>「一度に大きく切り下げる」ショックを避け、緩やかな減価を演出</strong>できるようになった。
+        </p>
+      </section>
+
+      <section>
+        <h2>2. USD/VND の長期史 — 一貫した「緩やかな減価」</h2>
+        <p>
+          ドンの歴史を一言でいえば<strong>「クローリング・デプリシエーション（緩やかな段階的減価）」</strong>だ。インフレ差・国際収支・ドル高局面のたびにドンは少しずつ売られ、対ドルレートは右肩上がり（＝ドン安）で推移してきた。1993年の約10,640から2026年6月の約26,330まで、約30年で<strong>ドンの対ドル価値はおよそ4割</strong>になった計算だ。
+        </p>
+
+        <div id="vn-fx-usdvnd"></div>
+        <script>
+        ChartBuilder.lines('vn-fx-usdvnd', {
+          title: 'USD/VND 長期チャート (1993-2026)',
+          caption: '出典: IMF / World Bank / SBV / 市場データ（TradingEconomics・Wise）。一貫した緩やかな減価。アジア危機後(1998)・2011年(高インフレ・国際収支圧力)・2022年(Fed利上げ・ドル高)に減価が加速。⚠ドイモイ以前(〜1989)は公定が極端に過大評価＋1985年デノミで連続性が乏しいため1993年以降を採用。値が大きいため軸は千単位(k)表示。',
+          yUnit: '',
+          yRange: [10000, 28000],
+          yStep: 4000,
+          series: [{
+            name: 'USD/VND',
+            color: '#ffd93d', width: 2.2,
+            data: [[1993, 10640], [1998, 13900], [2003, 15500], [2008, 16500], [2011, 20800], [2015, 22500], [2019, 23200], [2022, 24800], [2024, 25400], [2025.96, 25450], [2026.46, 26330]]
+          }],
+          annotations: [
+            { year: 1998, label: 'アジア危機', color: '#ff9f43' },
+            { year: 2011, label: '11切下げ', color: '#ff6b6b' },
+            { year: 2022, label: 'ドル高', color: '#ff6b6b' },
+            { year: 2026.46, label: '26,330', color: '#00d4aa' }
+          ]
+        });
+        </script>
+      </section>
+
+      <section>
+        <h2>3. なぜドンは一貫して減価するのか</h2>
+        <p>
+          理由は主に三つだ。第一に<strong>インフレ差</strong>——ベトナムのインフレは米国より高めに推移するため、購買力平価の調整としてドンは減価する。第二に<strong>貿易・資本構造</strong>——輸出は伸びるが、製造に必要な中間財・機械を中国などから大量輸入するため、対中赤字が恒常的な需給圧力になる。第三に<strong>政策的選好</strong>——SBVは輸出競争力を維持するため、急騰（ドン高）も急落も嫌い、「緩やかな減価」を許容してきた。
+        </p>
+        <p>
+          減価が加速した局面は明確だ。<strong>1998年</strong>のアジア通貨危機後（周辺国通貨の暴落に追随して段階的に切下げ）、<strong>2011年</strong>の高インフレ・国際収支危機（ドンを約9%切下げ）、そして<strong>2022年</strong>のFRB急速利上げによるドル高（外貨準備を取り崩して防衛）である。
+        </p>
+      </section>
+
+      <section>
+        <h2>4. 米「為替操作国」認定の歴史と、SBV介入の制約</h2>
+        <p>
+          ベトナムは対米貿易黒字が巨大なため、米財務省から<strong>「為替操作国（currency manipulator）」</strong>に一度指定された歴史を持つ（その後解除）。これはSBVの為替運営に独特の制約を課す。すなわち、ドン安を放置すれば「輸出を有利にするための通貨安誘導」とみなされ、逆にドル買い介入をすればその記録が監視リストの判定材料になる——という<strong>板挟み</strong>だ。SBVが「ドル売り（ドン買い）」方向の介入には積極的でも、「ドル買い（ドン安誘導）」には慎重にならざるをえないのは、この米国の視線があるためだ。
+        </p>
+      </section>
+
+      <section>
+        <h2>5. 闇レートが「ほぼ無い」理由</h2>
+        <p>
+          北朝鮮やイランのような制裁国では、公定レートと闇市場（black market）レートが数倍も乖離する「二重相場」が常態化する。だがベトナムは<strong>制裁国ではなく、闇レートと公定レートの乖離はごくわずか（数%以内）</strong>だ。金や現金両替の市場は存在するものの、貿易・送金・FDIが正規ルートで大量に回り、為替が概ね需給を反映しているため、闇レートが大きく開く理由がない。これは、ベトナムが<strong>「開かれた製造業輸出国」</strong>であることの裏返しでもある。
+        </p>
+        <div class="mnemonic-box">
+          <span class="mnemonic-icon">🧠</span>
+          <div class="mnemonic-title">覚え方：ドンは「緩やかに、ずっと安く」</div>
+          <div class="mnemonic-body">
+            VNDは<strong>管理変動</strong>＝SBVが日次「中心レート」を出し<strong>±5%バンド</strong>（2016年〜）。一貫した<strong>クローリング減価</strong>（インフレ差＋対中輸入赤字＋輸出重視）。加速局面は<strong>1998（アジア危機）・2011（切下げ）・2022（ドル高）</strong>。米「為替操作国」認定の歴史が介入を制約。闇レート乖離は小さい（制裁国ではない）。
+          </div>
+        </div>
+      </section>

@@ -1,0 +1,156 @@
+<!-- Chapter 14: Currency — Israeli New Shekel (Israel) -->
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value" style="color:var(--accent-green);">約2.96</div>
+    <div class="stat-label">ILS/USD（2026/6、1993年以来の最強）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value" style="color:var(--accent-red);">約4.9</div>
+    <div class="stat-label">史上最弱圏（2002、第2次インティファーダ）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">1000:1</div>
+    <div class="stat-label">1986年の新シェケル導入（旧シェケルを置換）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value" style="color:var(--accent-orange);">最大300億$</div>
+    <div class="stat-label">2023戦争時のBOI外貨売り介入枠</div>
+  </div>
+</div>
+
+<p>
+イスラエルの通貨は<strong>新シェケル（Israeli New Shekel、コード ILS、記号 ₪、NIS表記も一般的）</strong>である。1986年、年率約450%のハイパーインフレ（第15・20章）を収束させた1985年経済安定化計画の一環として、旧シェケル（IS）を<strong>1000:1</strong>で置き換えて誕生した。それから40年、新シェケルは中東の地政学リスクを一身に背負う通貨でありながら、2026年には<strong>1993年以来の最強水準（1USD≒2.96）</strong>に達した。本章では、ハイパーインフレの灰から生まれ、戦争のたびに試され、なお強さを増す稀有な通貨の軌跡を追う。
+</p>
+
+<!-- Chart: ILS/USD long-term history -->
+<div id="israel-currency-ils"></div>
+<script>
+ChartBuilder.lines('israel-currency-ils', {
+  title: 'ILS/USD 為替史 1986-2026（上=シェケル安）',
+  caption: '出典: Bank of Israel為替時系列、TradingEconomics、exchange-rates.org。値が大きいほどシェケル安。確証アンカーは2002最弱圏約4.9・2023/10/27=4.08(11年ぶり安値)・2026/6=2.96(1993年以来最強)。1986〜2015の年平均(特にクローリングペッグ期)は史実トレンドに基づく代表概算。',
+  yUnit: '',
+  yStep: 1,
+  yRange: [1, 5.5],
+  series: [{
+    name: 'ILS/USD',
+    color: '#5b8def',
+    data: [
+      [1986,1.5],[1990,2.0],[1995,3.0],[2002,4.9],[2008,3.6],[2009,3.8],
+      [2011,3.6],[2015,3.9],[2020,3.4],[2021,3.1],[2022,3.5],[2023.75,4.08],
+      [2024,3.7],[2025.92,3.3],[2026.42,2.96]
+    ]
+  }],
+  annotations: [
+    { year: 2002, label: '02 最弱4.9', color: '#ff6b6b' },
+    { year: 2023.75, label: '23戦争4.08', color: '#ff9f43' },
+    { year: 2026.42, label: '26 最強', color: '#00d4aa' }
+  ]
+});
+</script>
+
+<section>
+  <h2>1. 誕生 — ハイパーインフレの灰から（1985-86）</h2>
+  <p>
+  1980年代前半、イスラエルは年率3桁のハイパーインフレに沈んでいた。旧シェケルは価値を失い続け、<strong>1985年8月には1USD=IS 1,500</strong>に達した。同年7月、シモン・ペレス政権が断行した<strong>経済安定化計画</strong>（賃金・物価凍結、財政削減、為替固定）がインフレを劇的に沈静させ、1986年9月、価値が安定したところで<strong>旧シェケルを1000:1で切り下げた新シェケル</strong>が導入された。1USD≒1.5新シェケルでのスタートである。通貨単位の刷新は、単なるデノミではなく「規律への国家的コミットメント」の象徴だった。
+  </p>
+</section>
+
+<section>
+  <h2>2. クローリングペッグから変動相場へ — 試練の2002年</h2>
+  <p>
+  導入後しばらく、シェケルは対通貨バスケットに緩やかに連動する<strong>クローリングペッグ</strong>（為替バンドを徐々に切り下げる制度）で運営され、その後段階的に変動相場へ移行した。最大の試練は<strong>2000〜2002年</strong>に訪れる。第2次インティファーダ（パレスチナ蜂起）の暴力激化と世界的なITバブル崩壊が重なり、シェケルは<strong>1USD≒4.9</strong>という史上最弱圏まで売られた。地政学と景気後退が通貨を直撃した典型例である。
+  </p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>年</th>
+          <th>ILS/USD</th>
+          <th>局面</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1985/8</td>
+          <td>IS 1,500（旧）</td>
+          <td>ハイパーインフレのピーク</td>
+        </tr>
+        <tr>
+          <td>1986</td>
+          <td>約1.5</td>
+          <td>新シェケル導入（1000:1）</td>
+        </tr>
+        <tr class="highlight-red">
+          <td>2002</td>
+          <td>約4.9</td>
+          <td>第2次インティファーダ＋ITバブルで史上最弱圏</td>
+        </tr>
+        <tr>
+          <td>2020-2021</td>
+          <td>3.4 → 3.1</td>
+          <td>COVID後のハイテク好調でシェケル高</td>
+        </tr>
+        <tr class="highlight-orange">
+          <td>2023/10/27</td>
+          <td>4.08</td>
+          <td>ハマス戦争で11年ぶり安値、BOIが大規模介入</td>
+        </tr>
+        <tr class="highlight-green">
+          <td>2026/6</td>
+          <td>2.96</td>
+          <td>1993年以来の最強水準</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>3. 2023年の戦争とBOIの300億ドル介入</h2>
+  <p>
+  2023年10月7日のハマス奇襲とガザ戦争開戦は、シェケルを急落させた。<strong>10月27日には1USD=4.08（11年ぶり安値）</strong>に達し、2015年以来初めて4.0を超えた。これに対しBOIは、為替がインフレ目標制の補助手段であることを示す歴史的決断を下す。すなわち<strong>最大300億ドルの外貨売り介入枠（うち10月に82億ドルを実際に売却）と、150億ドルのドルSWAPライン</strong>を発表したのである。この潤沢な外貨準備（約2,345億ドル）を背景とした断固たる介入が、シェケルのパニック的下落を食い止めた。
+  </p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">「300億ドルの盾」</div>
+    <div class="mnemonic-body">2023年戦争でシェケルが4.08まで急落したとき、BOIは利下げではなく<strong>最大300億ドルの外貨売り介入</strong>でシェケルを支えた（10月に82億ドル実売）。金利は据え置き、為替は介入で守る — インフレターゲッターでありながら<strong>為替を補助ツールとして使い分ける</strong>のがイスラエル流。潤沢な外貨準備がこの選択を可能にした。</div>
+  </div>
+</section>
+
+<section>
+  <h2>4. 「戦時下の最強通貨」というパラドックス</h2>
+  <p>
+  最大の論点は、戦争が続くなかでシェケルが<strong>2026年に1993年以来の最強水準（≒2.96）</strong>へと駆け上がったことである。2025年に対ドル約+12.5%、2026年も年初来約+7%と、世界で最も強い通貨のひとつとなった。背景には、(1)停戦観測によるリスクプレミアムの剥落、(2)海外に逃げていた資金の回帰、(3)ハイテク輸出と天然ガス（Leviathan）輸出による経常収支の構造的改善、(4)BOIの利下げ余地がインフレ安定で生まれたこと、がある。
+  </p>
+  <p>
+  もっとも、シェケル高は無条件の朗報ではない。GDPの大きな部分を占める<strong>ハイテク輸出と観光には逆風</strong>であり、ドル建て収入を持つ企業の競争力を削ぐ。一方でシェケル高は輸入物価を下げてインフレを抑制し、BOIに利下げ余地を与える。<strong>「強すぎる通貨」をどう管理するか</strong>が、ハイパーインフレ・戦争を乗り越えたイスラエルが2026年に直面する、贅沢な悩みである。
+  </p>
+
+  <div class="key-number-row">
+    <div class="key-number">
+      <span class="key-number-value">+12.5%</span>
+      <span class="key-number-label">2025年の対ドル上昇率</span>
+    </div>
+    <div class="key-number">
+      <span class="key-number-value">+7%</span>
+      <span class="key-number-label">2026年初来（YTD）の上昇</span>
+    </div>
+    <div class="key-number">
+      <span class="key-number-value">1993年以来</span>
+      <span class="key-number-label">2.96という最強水準の歴史的位置</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>出典・参考文献</h2>
+  <ol>
+    <li>Bank of Israel, 為替時系列・2023外貨介入(最大300億ドル枠・150億ドルSWAP)発表; Annual Report 2024</li>
+    <li>Times of Israel / Central Banking / Reuters, 2023/10介入82億ドル・シェケル4.08(11年ぶり安値)</li>
+    <li>TradingEconomics / exchange-rates.org, ILS/USD≒2.96(2026/6、1993年以来最強)</li>
+    <li>Wikipedia "1985 Israel Economic Stabilization Plan" / "Israeli old shekel"（IS1,500・1000:1デノミ）; ファクトシート§3(c)・§4</li>
+  </ol>
+</section>

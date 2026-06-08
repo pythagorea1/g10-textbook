@@ -1,0 +1,136 @@
+<!-- Key Stats -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">700%超</div>
+    <div class="stat-label">ドイモイ前夜のハイパーインフレ（1986年）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">約3.6%</div>
+    <div class="stat-label">2025年のCPI（近年は安定）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">約5%</div>
+    <div class="stat-label">2026年見込み（やや上振れ）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">&lt;4.5%</div>
+    <div class="stat-label">政府のインフレ目標</div>
+  </div>
+</div>
+
+<section>
+  <h2>原点は「700%超のハイパーインフレ」</h2>
+  <p>ベトナムのインフレ史を理解する出発点は、計画経済が破綻した<strong>ドイモイ前夜のハイパーインフレ</strong>である。1980年代後半、配給制と価格統制が機能不全に陥り、1986年のインフレ率は<strong>700%超</strong>（出典により453%〜774%超と幅がある）という破滅的水準に達した。物価が日々跳ね上がり、ドンへの信認は失われた。この国家的危機こそが、1986年の<strong>ドイモイ（Đổi Mới＝刷新）</strong>政策——計画経済から市場経済への転換——を採択させた直接の引き金である。</p>
+  <p>その後、1989年の価格・為替自由化とドン切下げ、財政・金融規律の確立を経て、インフレは劇的に沈静化した。1995年には約17%まで低下し、ベトナムは「ハイパーインフレを克服した数少ない移行経済の成功例」となった。この記憶は今も政策の根底に流れており、SBVと政府が物価安定を強く意識する歴史的背景となっている。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">ハイパーインフレがドイモイを生んだ</div>
+    <div class="mnemonic-body">
+      <p>1986年の<strong>700%超</strong>という制御不能の物価高騰が、計画経済の限界を露わにし、<strong>ドイモイ（刷新）＝市場経済への転換</strong>を決断させた。インフレ克服の成功体験が、その後のベトナムの政策規律と「物価安定への執着」を形づくっている。インフレ史はそのまま<strong>体制転換の物語</strong>である。</p>
+    </div>
+  </div>
+</section>
+
+<!-- Inflation chart (1995-2026, hyperinflation excluded for scale) -->
+<div id="vn-cpi"></div>
+<script>
+ChartBuilder.lines('vn-cpi', {
+  title: 'ベトナム CPI（前年比）推移 1995-2026',
+  caption: '出典: IMF / World Bank / GSO。1986年の700%超ハイパーインフレはスケールの都合で本図から除外（本文参照）。2008・2011の二桁スパイク、近年の安定を表示。',
+  yUnit: '%',
+  yStep: 5,
+  yRange: [0, 25],
+  series: [{
+    name: 'CPI y/y',
+    color: '#ff9f43',
+    data: [
+      [1995, 17.0],[2001, 0.0],[2008, 23.0],[2011, 18.7],[2015, 0.6],
+      [2020, 3.2],[2022, 3.2],[2023, 3.3],[2024, 3.6],[2025, 3.6],[2026, 5.0]
+    ]
+  }],
+  annotations: [
+    { year: 1995, label: '95 17%', color: '#5b8def' },
+    { year: 2008, label: '08 23%', color: '#ff6b6b' },
+    { year: 2011, label: '11 18.7%', color: '#ff6b6b' },
+    { year: 2015, label: '15 0.6%', color: '#00d4aa' },
+    { year: 2026, label: '26 ~5%', color: '#ffd93d' }
+  ]
+});
+</script>
+
+<section>
+  <h2>2008・2011の再燃と、近年の安定</h2>
+  <p>インフレは一度克服されたが、二度大きく再燃した。<strong>2008年（約23%）</strong>は、世界的な資源高に国内の与信・投資ブームが重なって過熱したもので、SBVは再融資金利を14%級へ急騰させて対応した。<strong>2011年（約18.7%）</strong>は、緩和的政策の反動と国際収支圧力が重なり、政策金利15%・ドン切下げ・与信抑制という総力戦で鎮圧した。この二度の経験から、ベトナムは「成長を急ぎすぎると物価が暴れる」という教訓を刻んだ。</p>
+  <p>2015年には資源安で約0.6%まで低下し、以降は<strong>3%台の安定</strong>が続いている。食料・燃料がCPIに占めるウェイトが大きいため、米価や原油・電力料金の動きに振れやすいのが新興国らしい特徴だ。政府はインフレ目標を<strong>4.5%未満</strong>に置き、2025年は約3.6%とこれを下回った。</p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>時期</th>
+          <th>CPI（概数）</th>
+          <th>背景</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight-red">
+          <td>1986</td>
+          <td>700%超</td>
+          <td>計画経済破綻。ドイモイの引き金</td>
+        </tr>
+        <tr>
+          <td>1995</td>
+          <td>約17%</td>
+          <td>自由化・規律でハイパーインフレ克服後の安定途上</td>
+        </tr>
+        <tr class="highlight-orange">
+          <td>2008 / 2011</td>
+          <td>約23% / 約18.7%</td>
+          <td>資源高＋与信過熱で二桁再燃。急利上げで対応</td>
+        </tr>
+        <tr class="highlight-green">
+          <td>2015-2025</td>
+          <td>0.6%〜3.6%</td>
+          <td>低位安定。目標&lt;4.5%を概ね達成</td>
+        </tr>
+        <tr class="highlight-blue">
+          <td>2026（見込み）</td>
+          <td>約5%</td>
+          <td>賃金・電力・為替減価でやや上振れ</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>2026年の上振れリスク</h2>
+  <p>2026年のCPIは<strong>約5%</strong>と、政府目標（&lt;4.5%）をやや上回る見込みである。要因は三つ——(1) 高成長に伴う賃金・サービス価格の上昇、(2) 電力料金の引き上げ、(3) ドンの減価（2026年6月で約26,330 VND/USD）による輸入物価の上昇。食料・燃料ウェイトが高い構造ゆえ、原油やコメの国際価格が上振れれば一段の加速もありうる。インフレが目標を超えて定着すれば、SBVは据え置いてきた政策金利の引き上げ（第02章）を迫られる。物価・為替・金利は連動しており、2026年のインフレ動向はベトナム金融政策の最大の変数となる。</p>
+
+  <div class="key-number-row">
+    <div class="key-number">
+      <span class="key-number-value">1986年</span>
+      <span class="key-number-label">ハイパーインフレ→ドイモイ採択</span>
+    </div>
+    <div class="key-number">
+      <span class="key-number-value">食料・燃料</span>
+      <span class="key-number-label">CPIウェイトが高く外的ショックに敏感</span>
+    </div>
+    <div class="key-number">
+      <span class="key-number-value">~5%</span>
+      <span class="key-number-label">2026年見込み＝利上げ観測の火種</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>出典・参考文献</h2>
+  <ol>
+    <li>IMF, "Vietnam: 2025 Article IV Consultation" / WEO Apr 2026（CPI見通し）</li>
+    <li>World Bank, "Vietnam Economic Update — Inflation", 2025-2026</li>
+    <li>General Statistics Office of Vietnam（GSO）, "Consumer Price Index"</li>
+    <li>Facts and Details / Wikipedia "Đổi Mới"（1986ハイパーインフレ、453〜774%超）</li>
+    <li>FAO / 政府ポータル, 価格自由化・配給制廃止の経緯</li>
+  </ol>
+</section>

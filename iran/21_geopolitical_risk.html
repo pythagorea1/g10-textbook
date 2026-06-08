@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>イラン - Geopolitical Risk | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
+  <script defer src="../assets/charts.js"></script>
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇮🇷 イラン</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. 中央銀行</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. 政策金利</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. 財政政策</a>
+      <a href="04_employment.html" class="sidebar-link">04. 雇用</a>
+      <a href="05_inflation.html" class="sidebar-link">05. インフレ</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. 株式市場概観</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. 株式(初期)</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. 株式(近代)</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. 株式(現代)</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. 株式(現在)</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. 債券市場</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. 短期金利</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. 長期金利</a>
+      <a href="14_currency.html" class="sidebar-link">14. 通貨</a>
+      <a href="15_crises.html" class="sidebar-link">15. 金融危機</a>
+      <a href="16_banking.html" class="sidebar-link">16. 銀行制度</a>
+      <a href="17_corporate.html" class="sidebar-link">17. 企業・コーポレート</a>
+      <a href="18_regulation.html" class="sidebar-link">18. 規制</a>
+      <a href="19_trade.html" class="sidebar-link">19. 貿易</a>
+      <a href="20_lessons.html" class="sidebar-link">20. 教訓</a>
+      <a href="21_geopolitical_risk.html" class="sidebar-link active">21. 地政学リスク</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">G10</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+      <div class="sidebar-section-title">地政学・新興地域</div>
+      <div class="country-flags">
+        <a href="../taiwan/01_central_bank.html" class="country-chip">TW</a>
+        <a href="../hongkong/01_central_bank.html" class="country-chip">HK</a>
+        <a href="../china/01_central_bank.html" class="country-chip">CN</a>
+        <a href="../northkorea/01_central_bank.html" class="country-chip">KP</a>
+        <a href="../vietnam/01_central_bank.html" class="country-chip">VN</a>
+        <a href="../singapore/01_central_bank.html" class="country-chip">SG</a>
+        <a href="../iran/01_central_bank.html" class="country-chip active">IR</a>
+        <a href="../israel/01_central_bank.html" class="country-chip">IL</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 ホーム</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10横断年表</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">イラン</a>
+        <span class="sep">/</span>
+        イラン㉑ 地政学リスク
+      </div>
+      <h1 class="page-title">🇮🇷 イラン㉑ 地政学リスク</h1>
+      <p class="page-subtitle">核/制裁サイクル・対イスラエル戦争・ホルムズ封鎖・後継問題のリスクマトリクス</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value" style="color:var(--accent-red);">核 / 制裁</div>
+          <div class="stat-label">JCPOAサイクル — 「合意＝通貨高／制裁＝通貨安」の連動</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" style="color:var(--accent-red);">対イスラエル</div>
+          <div class="stat-label">2024攻撃応酬→2025 12日間戦争→2026 Iran war</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" style="color:var(--accent-orange);">~20%</div>
+          <div class="stat-label">ホルムズ海峡を通過する世界の海上原油の割合</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" style="color:var(--accent-orange);">後継問題</div>
+          <div class="stat-label">2026年ハメネイ師死亡 — 戦時下の権力移行リスク</div>
+        </div>
+      </div>
+
+      <p>
+        イランは「核・制裁・対イスラエル/対米・ホルムズ海峡」が複合する、世界有数の地政学震源である。ここで起きる出来事は、リアルの崩落やインフレ加速といった国内市場だけでなく、原油価格・世界的なリスクプレミアム・各国中央銀行の政策にまで波及する。本章では、イランの地政学リスクを七つに分解し、それぞれの市場・経済への波及経路と関連国を整理する。本章は第15章「金融危機」と一対の関係にある。
+      </p>
+
+      <div class="key-number-row">
+        <div class="key-number"><span class="key-number-value">48倍</span><span class="key-number-label">JCPOA上限比のウラン濃縮(IAEA報告)</span></div>
+        <div class="key-number"><span class="key-number-value">~20%</span><span class="key-number-label">ホルムズ通過の世界海上原油</span></div>
+        <div class="key-number"><span class="key-number-value">~90%</span><span class="key-number-label">イラン原油を買う中国の割合</span></div>
+        <div class="key-number"><span class="key-number-value">2026</span><span class="key-number-label">ハメネイ師死亡・体制移行</span></div>
+      </div>
+
+      <section>
+        <h2>1. リスクマトリクス ― 七つの地政学リスク</h2>
+        <p>
+          イランの地政学リスクを「発生確率」「市場への影響度」「主な波及経路」「関連国」で整理すると、次のマトリクスになる。最大の影響度を持つのは対イスラエル戦争とホルムズ封鎖、最も常在的な圧力は核・制裁サイクルである。
+        </p>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>リスク</th>
+                <th>確率</th>
+                <th>影響度</th>
+                <th>主な波及</th>
+                <th>関連国</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="background:rgba(255,107,107,0.12);">
+                <td>核 vs 制裁（JCPOAサイクル）</td>
+                <td class="highlight-red">高（常在）</td>
+                <td>高</td>
+                <td>リアル・インフレ・石油輸出を直接左右</td>
+                <td>US, EU(E3), IAEA, IL</td>
+              </tr>
+              <tr style="background:rgba(255,107,107,0.14);">
+                <td>対イスラエル直接戦争</td>
+                <td class="highlight-orange">中〜高</td>
+                <td class="highlight-red">極大</td>
+                <td>原油急騰・リアル急落・世界株安</td>
+                <td>IL, US, レバノン, 湾岸</td>
+              </tr>
+              <tr style="background:rgba(255,159,67,0.10);">
+                <td>ホルムズ海峡封鎖</td>
+                <td>中（戦時に上昇）</td>
+                <td class="highlight-red">極大</td>
+                <td>原油・LNG急騰→世界インフレ</td>
+                <td>SA, 湾岸, CN/JP/IN, US海軍</td>
+              </tr>
+              <tr>
+                <td>石油の制裁迂回（影の船団）</td>
+                <td>高（進行中）</td>
+                <td>中</td>
+                <td>制裁下の延命・OFAC追加制裁の応酬</td>
+                <td>CN, HK/UAE, US</td>
+              </tr>
+              <tr>
+                <td>SWIFT/ドル排除</td>
+                <td class="highlight-red">高（実現済）</td>
+                <td>中〜高</td>
+                <td>貿易の非ドル化・多重為替</td>
+                <td>US/EU, CN/RU</td>
+              </tr>
+              <tr>
+                <td>二重為替・国内政情</td>
+                <td>高</td>
+                <td>中</td>
+                <td>レント・腐敗・抗議運動（資本逃避）</td>
+                <td>国内主体（制裁が増幅）</td>
+              </tr>
+              <tr style="background:rgba(255,159,67,0.10);">
+                <td>後継・体制リスク（2026）</td>
+                <td class="highlight-orange">高（顕在化）</td>
+                <td>高</td>
+                <td>政策の予見性低下・資本逃避加速</td>
+                <td>IL, US</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>2. 核開発 vs 制裁 ― JCPOAサイクル</h2>
+        <p>
+          イラン地政学の背骨は、核開発と制裁の終わりなきサイクルだ。2015年のJCPOA（核合意）で制裁の段階解除が始まると、リアルは安定しインフレは一桁化、TEDPIXは上昇した。だが2018年の米離脱・制裁再発動で逆回転が始まり、2025年8-9月にはE3（英仏独）の<strong>スナップバック</strong>でJCPOA下で解除されていた国連制裁が全面復活した。IAEAはイランのウラン濃縮がJCPOA上限の<strong>約48倍</strong>に達したと報告している。
+        </p>
+        <p>
+          市場にとっての含意は明快だ。<strong>「合意＝通貨高、制裁＝通貨安」</strong>――外交の進展がそのまま為替・物価・株のニュースになる。イランの市場を読むには、まず核交渉の行方を読まねばならない。
+        </p>
+      </section>
+
+      <section>
+        <h2>3. 対イスラエル直接戦争 ― 代理戦から全面戦へ</h2>
+        <p>
+          長年、イランとイスラエルの対立は代理勢力（ヒズボラ・ハマス・フーシ）を介した「影の戦争」だった。だがそれは2024年4月・10月の直接攻撃の応酬を経て、2025年6月の<strong>12日間戦争</strong>へとエスカレートした。イスラエルの先制攻撃に続き、米軍がGBU-57バンカーバスターでフォルドゥ核施設を爆撃、6月24日に停戦した。さらに2026年2月、<strong>2026 Iran war</strong>が勃発し、最高指導者ハメネイ師の死亡とホルムズ海峡封鎖の応酬という極限状況に至った。
+        </p>
+        <p>
+          直接戦争の市場波及は最も激しい。原油急騰リスク、リアル急落、中東リスクプレミアムの上昇、グローバルな株安と安全資産（米国債・金・ドル・スイスフラン）への逃避を一斉に引き起こす。イラン情勢は、もはやイラン一国の問題ではなく、<strong>世界の金融市場を動かすマクロ変数</strong>である。
+        </p>
+      </section>
+
+      <section>
+        <h2>4. ホルムズ海峡封鎖 ― 世界経済の咽喉</h2>
+        <p>
+          ペルシャ湾の出口ホルムズ海峡は、<strong>世界の海上原油の約2割</strong>が通過する戦略的隘路だ。イランは有事のたびにこの海峡の封鎖を威嚇し、2026年の戦争では一部実行に及んだとされる。封鎖が現実化すれば、原油・LNG価格が急騰し、世界的なインフレ再燃→各国中央銀行の政策転換を強いる。とりわけ中東原油への依存度が高い<strong>日本・中国・インドなどアジアのエネルギー安全保障</strong>を直撃する。
+        </p>
+        <div class="mnemonic-box">
+          <span class="mnemonic-icon">🧠</span>
+          <div class="mnemonic-title">覚え方：イランの「最終兵器」は核ではなくホルムズ</div>
+          <div class="mnemonic-body">
+            イランが世界経済に最も直接的なダメージを与えられるのは、核実験ではなく<strong>ホルムズ海峡の封鎖</strong>。世界の海上原油の2割が通る咽喉を締めれば、原油急騰→世界インフレ→各国利上げという連鎖が起きる。ただし封鎖は自らの石油輸出も止め、中国（最大顧客）も困らせる「諸刃の剣」である。
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>5. 対中石油・SWIFT排除・後継問題</h2>
+        <p>
+          残る三つのリスクは、イランの「生存の構造」と「不確実性」に関わる。
+        </p>
+        <ul>
+          <li><strong>対中石油の制裁迂回</strong>：イラン原油の約9割を中国が購入し、影の船団（2020→2025で約70→550隻）が制裁下の延命を支える。米OFACの追加制裁との「いたちごっこ」が続く（第19章）。</li>
+          <li><strong>SWIFT/ドル排除</strong>：2012年のSWIFT遮断と2025年スナップバックで国際金融から隔離。貿易は人民元・物々交換・暗号資産へ非ドル化し、中ロが非ドル決済の受け皿になっている。</li>
+          <li><strong>後継・体制リスク</strong>：2026年のハメネイ師死亡と、戦時下での権力移行は、政策の予見可能性を著しく低下させ、リアルと資本逃避を加速させる最大の不確実性要因だ。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>6. 波及経路 ― 地政学とリアルの連動</h2>
+        <p>
+          イランの地政学リスクが市場に伝わる最短経路は、やはり<strong>通貨（リアル）</strong>だ。下のチャートは、主要な地政学イベントと闇レートの推移を重ねたものである。2015年のJCPOAで安定した後、2018年の米離脱、2022年のアミニ抗議、2025年の12日間戦争、2026年の戦争という地政学ショックのたびに、リアルが段差をつけて崩れてきたことが一目でわかる。
+        </p>
+        <div id="iran-geo-rial-events"></div>
+        <script>
+        ChartBuilder.lines('iran-geo-rial-events', {
+          title: '地政学イベントとリアル安 (2015-2026, 闇レート リアル/USD, 対数)',
+          caption: '出典: Iran International / Bonbast / Britannica / Consilium。地政学ショックとリアル安の連動を示す。2015年JCPOAで安定(約30,000)→2018年米離脱→2022年アミニ抗議→2025年12日間戦争・スナップバック→2026年戦争で約180万へ。2021-24中間値は概算、2026の点は検証済み。対数スケール。',
+          logScale: true,
+          yRange: [20000, 2500000],
+          yUnit: '',
+          series: [{
+            name: '闇レート リアル/USD',
+            color: '#ff6b6b', width: 2.2,
+            data: [[2015,30000],[2018.04,42000],[2018.09,150000],[2019,120000],[2020,250000],[2021,260000],[2022,400000],[2023,500000],[2024,700000],[2025,1050000],[2026.01,1470000],[2026.06,1798000]]
+          }],
+          bands: [
+            { from: 2015, to: 2018.04, label: 'JCPOA期(安定)', color: '#00d4aa' },
+            { from: 2018.04, to: 2026.06, label: '制裁・戦争期', color: '#ff6b6b' }
+          ],
+          annotations: [
+            { year: 2015, label: '15 JCPOA', color: '#00d4aa' },
+            { year: 2018.04, label: '18 米離脱', color: '#5b8def' },
+            { year: 2022, label: '22 デモ', color: '#b07cff' },
+            { year: 2025, label: '25 12日戦', color: '#ff9f43' },
+            { year: 2026.06, label: '26 戦争', color: '#ff6b6b' }
+          ]
+        });
+        </script>
+      </section>
+
+      <section>
+        <h2>7. まとめ ― 地政学が市場になる国</h2>
+        <p>
+          イランほど、地政学と金融市場が直結した国は珍しい。核交渉の一報がリアルを動かし、海峡の緊張が世界の原油価格を動かし、最高指導者の生死が資本逃避を左右する。G10諸国では中央銀行の政策金利がマクロ変数の中心だが、イランでは<strong>核・制裁・戦争という地政学そのものがマクロ変数</strong>なのだ。
+        </p>
+        <div class="mnemonic-box">
+          <span class="mnemonic-icon">🧠</span>
+          <div class="mnemonic-title">覚え方：「外（核・戦争・ホルムズ）」が「内（通貨・物価）」を動かす</div>
+          <div class="mnemonic-body">
+            イランのマクロ分析は<strong>地政学（外）→通貨（リアル）→物価・実体（内）</strong>の順で読む。金利や財政指標より、まず核交渉・対イスラエル・ホルムズの三点を見る。そして市場の答えはすべて<strong>闇ドルレート</strong>に集約される。これがイラン地政学リスク分析の出発点であり終着点だ。
+          </div>
+        </div>
+      </section>
+
+      <footer class="sources">
+        <h3>出典・参考文献</h3>
+        <ol>
+          <li>Britannica / Wikipedia / Al Jazeera / France24, 12日間戦争（2025-06）・2026 Iran war・フォルドゥ爆撃.</li>
+          <li>Consilium (EU理事会) / 独外務省, スナップバック（国連制裁復活2025-09-27）.</li>
+          <li>IAEA, ウラン濃縮報告（JCPOA上限の約48倍）.</li>
+          <li>EIA / 海事資料, ホルムズ海峡通過量（世界海上原油の約2割）.</li>
+          <li>Middle East Institute / Kharon / OFAC, 対中石油・影の船団（70→550隻）.</li>
+          <li>Iran International / Bonbast, 闇レート（2026 147万→180万）.</li>
+        </ol>
+      </footer>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+
+    </footer>
+
+    <nav class="page-nav">
+      <a href="20_lessons.html" class="prev">教訓</a>
+      <a href="../summary/g10_timeline.html" class="next">G10横断年表</a>
+    </nav>
+  </main>
+
+  <script src="../assets/enhancer.js"></script>
+  <script defer src="../assets/recall.js"></script>
+  <script src="../assets/tts-reader.js"></script>
+</body>
+</html>

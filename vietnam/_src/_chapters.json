@@ -1,0 +1,117 @@
+{
+  "01": {
+    "subtitle": "成長目標に従属する政府機関と、金利＋信用成長枠の二刀流",
+    "title_en": "Central Bank (SBV)",
+    "title_ja": "中央銀行（SBV）"
+  },
+  "02": {
+    "subtitle": "再融資金利4.5% — インフレで急上げ、危機で急下げの振り子",
+    "title_en": "Policy Rate History",
+    "title_ja": "政策金利の歴史"
+  },
+  "03": {
+    "subtitle": "低債務×公共投資×FDIで高成長を支える成長型財政",
+    "title_en": "Fiscal Policy",
+    "title_ja": "財政政策"
+  },
+  "04": {
+    "subtitle": "失業率2.22%の裏側 — 若い人口・インフォーマル・中所得国の罠",
+    "title_en": "Employment",
+    "title_ja": "雇用"
+  },
+  "05": {
+    "subtitle": "700%超のハイパーインフレがドイモイを生み、いま3%台へ",
+    "title_en": "Inflation",
+    "title_ja": "インフレ"
+  },
+  "06": {
+    "subtitle": "VN-Index・個人8-9割・FTSE新興格上げという構造転換点",
+    "title_en": "Equity Market Overview",
+    "title_ja": "株式市場①概観"
+  },
+  "07": {
+    "subtitle": "2000年HOSE開設、上場2社・基準100からの出発",
+    "title_en": "Equity: Early History",
+    "title_ja": "株式市場②黎明期"
+  },
+  "08": {
+    "subtitle": "2007年バブル1171→2008年-66%暴落→2009-2017の長い回復",
+    "title_en": "Equity: Modern Era",
+    "title_ja": "株式市場③近代"
+  },
+  "09": {
+    "subtitle": "貿易戦争の追い風・COVID底660・2021年F0ブームで1498",
+    "title_en": "Equity: 2000s-2010s",
+    "title_ja": "株式市場④現代"
+  },
+  "10": {
+    "subtitle": "2022年社債危機の暴落→2025年+41%→2026年史上最高~1900",
+    "title_en": "Equity: 2020s",
+    "title_ja": "株式市場⑤現在"
+  },
+  "11": {
+    "subtitle": "国債中心の浅い市場と、2022年不動産社債危機の教訓",
+    "title_en": "Bond Market",
+    "title_ja": "債券市場"
+  },
+  "12": {
+    "title_ja": "ベトナム⑫ 短期金利",
+    "title_en": "Short-Term Rates",
+    "subtitle": "再融資4.5%・割引3.0%・信用成長枠 — 金利と「量」の二刀流",
+    "sources_html": "<ol><li>State Bank of Vietnam (SBV) 公式 — 金利・為替 (sbv.gov.vn)</li><li>IMF — 2025 Article IV Consultation (PR 25/296)、World Economic Outlook 2026</li><li>CEIC / TradingEconomics / Investing.com / Wise — VN-Index・USD/VND 時系列</li></ol>"
+  },
+  "13": {
+    "title_ja": "ベトナム⑬ 長期金利",
+    "title_en": "Long-Term Rates",
+    "subtitle": "10年国債~3〜3.5% — 低位・安定と銀行のcaptive demand",
+    "sources_html": "<ol><li>State Bank of Vietnam (SBV) 公式 — 金利・為替 (sbv.gov.vn)</li><li>IMF — 2025 Article IV Consultation (PR 25/296)、World Economic Outlook 2026</li><li>World Bank — Vietnam Growth Forecast 2025-2027、Doi Moi reforms</li><li>CEIC / TradingEconomics / Investing.com / Wise — VN-Index・USD/VND 時系列</li></ol>"
+  },
+  "14": {
+    "title_ja": "ベトナム⑭ 通貨",
+    "title_en": "Currency (VND)",
+    "subtitle": "管理変動・中心レート±5%・一貫した緩やかな減価",
+    "sources_html": "<ol><li>State Bank of Vietnam (SBV) 公式 — 金利・為替 (sbv.gov.vn)</li><li>IMF — 2025 Article IV Consultation (PR 25/296)、World Economic Outlook 2026</li><li>World Bank — Vietnam Growth Forecast 2025-2027、Doi Moi reforms</li><li>CEIC / TradingEconomics / Investing.com / Wise — VN-Index・USD/VND 時系列</li></ol>"
+  },
+  "15": {
+    "title_ja": "ベトナム⑮ 金融危機",
+    "title_en": "Financial Crises",
+    "subtitle": "1986ハイパーインフレ・2008・2011・2012-13・2022社債の5つの顔",
+    "sources_html": "<ol><li>Facts and Details / Wikipedia(Đổi Mới) / FAO / 政府ポータル — ドイモイ・ハイパーインフレ史</li><li>HOSE / VietnamPlus / VietnamNet / VIR / TheInvestor — VN-Index 2024-2026</li><li>CEIC / TradingEconomics / Investing.com / Wise — VN-Index・USD/VND 時系列</li><li>FiinRatings / FiinGroup Banking Report 2025 / VietnamNews — 銀行・不良債権・VAMC</li><li>CNBC / TIME / Lowy Institute / MUFG Research / Vietnam-Briefing — 米越関税合意 2025-07</li></ol>"
+  },
+  "16": {
+    "title_ja": "ベトナム⑯ 銀行制度",
+    "title_en": "Banking System",
+    "subtitle": "二層制・国有4大行・VAMC・不動産向け与信~24%の集中",
+    "sources_html": "<ol><li>State Bank of Vietnam (SBV) 公式 — 金利・為替 (sbv.gov.vn)</li><li>FiinRatings / FiinGroup Banking Report 2025 / VietnamNews — 銀行・不良債権・VAMC</li><li>IMF — 2025 Article IV Consultation (PR 25/296)、World Economic Outlook 2026</li></ol>"
+  },
+  "17": {
+    "title_ja": "ベトナム⑰ 企業・コーポレート",
+    "title_en": "Corporate",
+    "subtitle": "国有 vs 民間財閥・Vingroup/VinFast・SOE改革(equitization)",
+    "sources_html": "<ol><li>Vingroup / VinFast IR — 企業章</li><li>HOSE / VietnamPlus / VietnamNet / VIR / TheInvestor — VN-Index 2024-2026</li><li>World Bank — Vietnam Growth Forecast 2025-2027、Doi Moi reforms</li></ol>"
+  },
+  "18": {
+    "title_ja": "ベトナム⑱ 規制",
+    "title_en": "Regulation",
+    "subtitle": "外資出資上限(FOL)・資本規制・FTSE格上げ(2026/9発効)",
+    "sources_html": "<ol><li>FTSE Russell / VietnamNet / VietnamPlus — 新興市場格上げ 2025-2026</li><li>HOSE / VietnamPlus / VietnamNet / VIR / TheInvestor — VN-Index 2024-2026</li><li>IMF — 2025 Article IV Consultation (PR 25/296)、World Economic Outlook 2026</li></ol>"
+  },
+  "19": {
+    "title_ja": "ベトナム⑲ 貿易",
+    "title_en": "Trade",
+    "subtitle": "輸出主導・米に売り中から買う・対米関税20%/40%・China+1",
+    "sources_html": "<ol><li>CNBC / TIME / Lowy Institute / MUFG Research / Vietnam-Briefing — 米越関税合意 2025-07</li><li>VietnamNews / Vietnam-Briefing — FDI 2025（新規登録384億ドル・実行276億ドル）</li><li>World Bank — Vietnam Growth Forecast 2025-2027、Doi Moi reforms</li></ol>"
+  },
+  "20": {
+    "title_ja": "ベトナム⑳ 教訓",
+    "title_en": "Lessons",
+    "subtitle": "ドイモイの移行成功・ハイパーインフレ克服・中所得の罠",
+    "sources_html": "<ol><li>Facts and Details / Wikipedia(Đổi Mới) / FAO / 政府ポータル — ドイモイ・ハイパーインフレ史</li><li>IMF — 2025 Article IV Consultation (PR 25/296)、World Economic Outlook 2026</li><li>World Bank — Vietnam Growth Forecast 2025-2027、Doi Moi reforms</li></ol>"
+  },
+  "21": {
+    "title_ja": "ベトナム㉑ 地政学リスク",
+    "title_en": "Geopolitical Risk",
+    "subtitle": "南シナ海・米中板挟み・積替40%関税・格上げ資本フロー",
+    "sources_html": "<ol><li>CNN / SCMP / The Diplomat / East Asia Forum / CFR — 南シナ海 2025-2026</li><li>CNBC / TIME / Lowy Institute / MUFG Research / Vietnam-Briefing — 米越関税合意 2025-07</li><li>IMF — 2025 Article IV Consultation (PR 25/296)、World Economic Outlook 2026</li><li>CEIC / TradingEconomics / Investing.com / Wise — VN-Index・USD/VND 時系列</li></ol>"
+  }
+}

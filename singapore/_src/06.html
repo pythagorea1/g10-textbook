@@ -1,0 +1,101 @@
+<!-- Key Stats -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">~5,072</div>
+    <div class="stat-label">STI史上最高値(2026年5月)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">30銘柄</div>
+    <div class="stat-label">STI(海峡時報指数)の構成銘柄数</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">銀行3行</div>
+    <div class="stat-label">DBS・OCBC・UOBが指数の最大ウェイト</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">REITハブ</div>
+    <div class="stat-label">アジア最大級のREIT(不動産投信)市場</div>
+  </div>
+</div>
+
+<p>シンガポール株式市場は、人口600万人足らずの都市国家でありながら、<strong>アジアを代表する国際金融センターの中核</strong>として機能している。その特徴は明快だ。代表指数<strong>STI（Straits Times Index、海峡時報指数）</strong>は<strong>銀行3行（DBS・OCBC・UOB）とREIT</strong>に高度に集中し、配当利回りの高さで知られる「インカム重視」の市場である。本章では、SGX・STI・銀行・REITという、シンガポール株を理解するための地図を描く<cite>[1]</cite>。</p>
+
+<div class="key-number-row">
+  <div class="key-number"><span class="key-number-value">SGX</span><span class="key-number-label">1999年にSES＋SIMEXが合併して発足した取引所</span></div>
+  <div class="key-number"><span class="key-number-value">DBS/OCBC/UOB</span><span class="key-number-label">指数を支配する地場メガバンク3行</span></div>
+  <div class="key-number"><span class="key-number-value">S-REIT</span><span class="key-number-label">高配当のREIT群がもう一つの主役</span></div>
+</div>
+
+<!-- Chart: STI long-term -->
+<div id="sg-sti-longterm"></div>
+<script>
+ChartBuilder.lines('sg-sti-longterm', {
+  title: 'STI(海峡時報指数) 長期 1998-2026 — 危機と最高値',
+  caption: '出典: SGX / FTSE Russell / 報道。1998年8月の改定起点885から、2007年10月にピーク3,906→GFCで約-63%。2020年COVIDで下落後、2026年2月に初の5,000突破、5月に史上最高値約5,072。節目以外の中間点はスムージング。',
+  yUnit: '',
+  yStep: 1000,
+  yRange: [0, 5500],
+  series: [{
+    name: 'STI',
+    color: '#00d4aa',
+    data: [[1998.58,885],[2000,2580],[2003.17,1213],[2007.75,3906],[2009.17,1457],[2011,3200],[2015,2880],[2018.33,3640],[2020.17,2233],[2021,3100],[2023,3240],[2024,3800],[2026.08,5017],[2026.33,5072]]
+  }],
+  annotations: [
+    { year: 2007.75, label: '07高値', color: '#ffd93d' },
+    { year: 2009.17, label: 'GFC底', color: '#ff6b6b' },
+    { year: 2020.17, label: 'COVID底', color: '#5b8def' },
+    { year: 2026.33, label: '最高5072', color: '#00d4aa' }
+  ]
+});
+</script>
+
+<section>
+  <h2>STI — 銀行とREITに集中した30銘柄</h2>
+  <p>STIはSGXメインボードに上場する代表30銘柄で構成される時価総額加重指数で、SPH・SGX・FTSE Russellが共同運営する。最大の特徴は<strong>セクター構成の偏り</strong>だ。指数の最大ウェイトを占めるのは<strong>地場メガバンク3行——DBS・OCBC・UOB</strong>であり、この3行だけで指数の半分近くを占める局面もある。次いで<strong>REIT（不動産投資信託）</strong>、通信（Singtel）、複合企業（Jardine系・Keppel）などが続く。テック・成長株が中心の米国指数とは対照的に、STIは<strong>金融・不動産・インカム（配当）</strong>に偏った保守的な指数である。</p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>主役</th><th>顔ぶれ</th><th>性格</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>地場銀行3行</td><td>DBS・OCBC・UOB</td><td>指数の最大ウェイト。高配当・高自己資本</td></tr>
+        <tr><td>S-REIT</td><td>CapitaLand系・Mapletree系等</td><td>アジア最大級。高い分配金利回り</td></tr>
+        <tr><td>通信・複合</td><td>Singtel・Keppel・Jardine系</td><td>テマセク系GLC（政府系企業）が多い</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">STIの正体を一言で</div>
+    <div class="mnemonic-body">米国のS&amp;P500＝<strong>テック成長株の指数</strong>。STI＝<strong>銀行3行＋REITの「高配当インカム指数」</strong>。値上がりより配当で稼ぐ性格で、金利・不動産市況に連動しやすい。だから「3行のDBS・OCBC・UOB」を覚えればSTIの半分が分かる。</div>
+  </div>
+</section>
+
+<section>
+  <h2>アジアのREITハブ — S-REIT市場</h2>
+  <p>シンガポールが世界的に存在感を放つ分野が<strong>REIT（S-REIT）</strong>である。2002年のCapitaMall Trust（現CapitaLand Integrated Commercial Trust）上場を皮切りに、シンガポールはアジア最大級のREIT市場へと発展した。シンガポール国内だけでなく、<strong>日本・中国・欧州・米国などの海外不動産を組み込んだクロスボーダーREIT</strong>が多数上場している点が特徴で、税制優遇（所得の90%以上を分配すれば法人課税が免除）と相まって、高い分配金利回りで世界の投資家を惹きつけている。</p>
+  <p>S-REITは金利に敏感だ。金利が上がれば借入コスト増と利回り魅力の低下で価格が下がり、金利が下がれば逆に上昇する。2022-23年の世界的な利上げ局面ではS-REITは大きく調整したが、2025-26年の金利低下局面では資金が戻り、STI全体の最高値更新を後押しした。</p>
+</section>
+
+<section>
+  <h2>二重上場とSGXの国際性</h2>
+  <p>SGXは、小さな国内市場を補うために<strong>国際性</strong>を武器としてきた。海外企業の<strong>二次上場（secondary listing）</strong>を積極的に受け入れ、デリバティブ（特にアジア株価指数先物）では世界有数のシェアを持つ。中国・東南アジア企業の上場誘致や、為替・金利・商品デリバティブのハブとしての地位は、現物株市場の規模を上回るSGXの強みだ。</p>
+  <p>一方で、後の章（第10章）で詳述するとおり、近年は<strong>新規上場の枯渇（listing drought）と上場社数の減少</strong>がSGXの構造的課題となっている。指数は最高値を更新する一方で、市場の厚みをどう取り戻すかが問われている。これがシンガポール株式市場の「光と影」である<cite>[2]</cite>。</p>
+</section>
+
+<section>
+  <h2>テマセク系GLCと「国家株主」</h2>
+  <p>STIを語るうえで欠かせないのが、<strong>テマセク（Temasek）が大株主を務める政府系企業（GLC：Government-Linked Companies）</strong>の存在感だ。通信のSingtel、複合のKeppel、航空のSingapore Airlines（SIA）など、シンガポールを代表する優良企業の多くは、政府系投資会社テマセクが筆頭級の株主となっている。これらの企業は、国家の戦略と株主規律の両方の下で経営される点が特徴で、安定配当と堅実な財務が「インカム市場」STIの性格を補強している。</p>
+  <p>もっとも、GLCは政治的な保護を受けているわけではなく、テマセクは純粋な投資リターンを追求する株主として振る舞う。国家が大株主でありながら市場規律が働く——この「国家資本主義と市場の両立」が、シンガポール株式市場の独特の風景を作っている。投資家にとっては、STIへの投資が事実上、シンガポールの銀行・不動産・国家系優良企業への分散投資となる構図である。</p>
+</section>
+
+<footer class="sources">
+  <h3>出典・参考文献</h3>
+  <ol>
+    <li>Singapore Exchange (SGX)、FTSE Russell「Straits Times Index」 <a href="https://www.sgx.com/">sgx.com</a></li>
+    <li>thesmartinvestor / mothership（STI 5,000突破・最高値報道）、MAS（S-REIT・上場活性化策）</li>
+    <li>SGX「S-REITs」、CapitaLand / Mapletree各REIT資料</li>
+  </ol>
+</footer>

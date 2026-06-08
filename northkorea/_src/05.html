@@ -1,0 +1,140 @@
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">統計なし</div>
+    <div class="stat-label">公式の物価指数（CPI）は存在しない</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">米価</div>
+    <div class="stat-label">物価の代理指標＝市場（チャンマダン）の白米価格</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">3倍/3日</div>
+    <div class="stat-label">2009年デノミ直後の米価急騰（ハイパーインフレ）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">約16,000</div>
+    <div class="stat-label">2026年初の市場米価（KPW/kg・概算）</div>
+  </div>
+</div>
+
+<section>
+  <h2>物価指数のない国の「インフレ」</h2>
+  <p>北朝鮮には消費者物価指数（CPI）が存在しない。国定価格は建前上固定されているため、公式統計の上では「インフレはない」ことになっている。しかし住民が実際に物を買うのは国定価格の配給所ではなく、市場（チャンマダン）であり、そこでの価格は需給と通貨価値に応じて激しく変動する。したがってインフレの実態を捉えるには、<strong>市場の白米価格</strong>と<strong>闇市場為替レート</strong>という二つの代理指標を読むしかない<cite>[1]</cite>。</p>
+  <p>米価が物価の代表選手として使われるのは、白米が北朝鮮の家計支出の中心を占め、市場で日常的に取引される最重要財だからである。Daily NK などの脱北者ネットワークが各地の市場米価を継続追跡しており、これが事実上の「北朝鮮CPI」となっている。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">記憶のフック：「米価とドルレートが二つの体温計」</div>
+    <div class="mnemonic-body">CPIのない北朝鮮で物価を測る二大指標が「市場米価」と「闇ドルレート」。両者はしばしば連動する — ウォンが暴落すれば輸入物資の米も値上がりするからだ。2026年の通貨暴落局面でも、米価とドルレートが揃って急騰した。「米とドル、二つの体温計で北朝鮮インフレを診る」と覚えよう。</div>
+  </div>
+</section>
+
+<section>
+  <h2>市場米価で見る三つのインフレ局面</h2>
+  <p>下のチャートは、2009年デノミ以降の市場白米価格（新ウォン建て・KPW/kg）の推移である。第2章の闇ドルレートと驚くほど似た三局面の軌跡を描く。</p>
+
+  <div id="nk-rice-price"></div>
+  <script>
+  ChartBuilder.lines('nk-rice-price', {
+    title: '市場（チャンマダン）白米価格 2009-2026（KPW/kg・対数）',
+    caption: '出典: Daily NK 市場米価追跡。新ウォン建て。2024-26の値はウォン暴落連動の概算で実数値は要追加検証。対数目盛。物価指数の代替指標。',
+    yUnit: '',
+    logScale: true,
+    yRange: [10, 100000],
+    series: [{
+      name: '白米価格（KPW/kg）',
+      color: '#ffd93d',
+      data: [[2009.92, 20], [2010.50, 600], [2011, 1500], [2012, 4000], [2013, 5000],
+        [2014, 5000], [2016, 5000], [2018, 4800], [2020, 5000], [2021.5, 4200],
+        [2023, 6000], [2024, 6500], [2024.75, 9000], [2026.2, 16000]]
+    }],
+    annotations: [
+      { year: 2009.92, label: 'デノミ直後', color: '#ff6b6b' },
+      { year: 2012, label: 'ハイパー', color: '#ff9f43' },
+      { year: 2020, label: '安定5千', color: '#00d4aa' },
+      { year: 2024.75, label: '再急騰', color: '#ff6b6b' },
+      { year: 2026.2, label: '1.6万/kg', color: '#ff6b6b' }
+    ]
+  });
+  </script>
+
+  <h3>第1局面：デノミ後のハイパーインフレ（2009-2012）</h3>
+  <p>2009年11月のデノミ直後、市場米価はいったん新20ウォン/kg程度にリセットされたが、わずか3日で約3倍に急騰した。資産没収で通貨への信頼が崩れ、住民が物（とりわけ食料）を抱え込んだためである。その後も米価は上昇を続け、2012〜2013年には約5,000ウォン/kgに達した — リセット直後から約250倍の上昇である<cite>[2]</cite>。</p>
+
+  <h3>第2局面：ドル化がもたらした物価安定（2013-2020）</h3>
+  <p>2013年から2020年にかけて、市場米価は約5,000ウォン/kgで驚くほど安定した。第2章で見た闇ドルレートの「8,000ウォン安定」と表裏一体の現象であり、ともに<strong>経済のドル化・元化</strong>が支えた安定だった。通貨が安定すれば物価も安定する — 中央銀行を介さずに「ドル本位の物価安定」が実現したという逆説である<cite>[3]</cite>。</p>
+
+  <h3>第3局面：2024-26の物価再燃</h3>
+  <p>2024年以降、ウォンの再暴落とともに市場米価も急騰した。概算では2024年の約6,500ウォンから2026年初には約16,000ウォン/kgへと跳ね上がったとされる。通貨価値の崩壊が直接住民の食卓を直撃しており、ハイパーインフレ懸念が再燃している。ただしこの局面の米価は闇レートからの推定値であり、実数の追加検証が必要である<cite>[1][4]</cite>。</p>
+
+  <div class="key-number-row">
+    <div class="key-number">
+      <span class="key-number-value">約250倍</span>
+      <span class="key-number-label">デノミ後リセット〜2013の米価上昇（20→5,000）</span>
+    </div>
+    <div class="key-number">
+      <span class="key-number-value">約7年</span>
+      <span class="key-number-label">ドル化が支えた「米価5,000ウォン」の安定期</span>
+    </div>
+    <div class="key-number">
+      <span class="key-number-value">約2.5倍</span>
+      <span class="key-number-label">2024→2026の米価上昇（6,500→16,000・概算）</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>インフレの正体：通貨価値の崩壊</h2>
+  <p>北朝鮮のインフレは、需要超過型でも賃金上昇型でもない。本質は<strong>通貨ウォンの対外価値の崩壊</strong>である。生活物資の多くを中国からの輸入に頼るため、ウォンが対ドル・対元で暴落すれば、輸入価格を通じて市場物価がそのまま跳ね上がる。中央銀行に物価安定の手段がなく、財政が違法外貨に依存する構造のもとでは、通貨防衛の余地は乏しい。インフレ抑制の唯一の事実上のメカニズムが「ドル化」であるという事実は、この国の金融の脆弱性を象徴している<cite>[3][4]</cite>。</p>
+</section>
+
+<section>
+  <h2>二つの物価プロキシの読み方</h2>
+  <p>物価指数を持たない北朝鮮では、本章で見た「市場米価」と第2章で見た「闇ドルレート」という二つの代理指標を組み合わせて物価を診断する。両者の関係を整理すると、北朝鮮インフレの構造が見えてくる。</p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>指標</th>
+          <th>測るもの</th>
+          <th>読み方の注意</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>市場米価（KPW/kg）</td>
+          <td>家計の体感物価（最重要財）</td>
+          <td>収穫期・端境期の季節変動を含む</td>
+        </tr>
+        <tr>
+          <td>闇ドルレート（KPW/USD）</td>
+          <td>通貨価値・輸入物価の先行指標</td>
+          <td class="highlight-orange">レートが先行し、米価が追随しやすい</td>
+        </tr>
+        <tr>
+          <td class="highlight-blue">米価÷ドルレート</td>
+          <td>ドル建ての実質米価</td>
+          <td class="highlight-blue">この比が一定なら「ウォン安主因」と判断</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>重要なのは、両者が<strong>しばしば連動する</strong>点である。ウォンがドルに対して暴落すると、輸入依存の米も値上がりする。逆に、米価がドルレート以上に跳ね上がれば、為替要因に加えて<strong>食料供給そのものの逼迫</strong>（不作・国境封鎖など）が起きていると読める。2026年の物価高は、ウォン暴落（通貨要因）が主導していると見られる<cite>[1][4]</cite>。</p>
+</section>
+
+<section>
+  <h2>データの信頼性という根本問題</h2>
+  <p>最後に強調すべきは、本章のすべての数値が<strong>推計・概算であり、大きな誤差を含む</strong>という点である。公式統計が存在しないため、米価も為替も、脱北者ネットワークや国境地帯の取材を通じてDaily NK等が収集した断片的なデータに頼る。地域差も大きく、平壌と地方、国境地帯と内陸では物価水準が異なる。とりわけ2024〜2026年の米価は闇レートからの推定値であり、実数の追加検証が欠かせない。「北朝鮮のインフレを語ることは、霧の中で温度を測るに等しい」——この不確実性こそが、閉鎖経済を分析する際の最大の制約である<cite>[1]</cite>。</p>
+</section>
+
+<section>
+  <h2>出典・参考文献</h2>
+  <ol>
+    <li>Daily NK 市場価格追跡; KEIA, "Barely Afloat: A Depreciating Won..."</li>
+    <li>Wikipedia, "2009 North Korean currency reform"; PIIE, "North Korea's Failed Currency Reform"（米価3日で3倍）</li>
+    <li>Korea Times, "How de-marketization is driving up value of North's won"（2021, ドル化と安定）</li>
+    <li>Daily NK, "North Korea exchange rate hits all-time high"（2026-04）; "Currency crisis drives North Koreans to dollar, yuan"</li>
+  </ol>
+</section>

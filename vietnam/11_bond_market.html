@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ベトナム - Bond Market | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
+  <script defer src="../assets/charts.js"></script>
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇻🇳 ベトナム</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. 中央銀行</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. 政策金利</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. 財政政策</a>
+      <a href="04_employment.html" class="sidebar-link">04. 雇用</a>
+      <a href="05_inflation.html" class="sidebar-link">05. インフレ</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. 株式市場概観</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. 株式(初期)</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. 株式(近代)</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. 株式(現代)</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. 株式(現在)</a>
+      <a href="11_bond_market.html" class="sidebar-link active">11. 債券市場</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. 短期金利</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. 長期金利</a>
+      <a href="14_currency.html" class="sidebar-link">14. 通貨</a>
+      <a href="15_crises.html" class="sidebar-link">15. 金融危機</a>
+      <a href="16_banking.html" class="sidebar-link">16. 銀行制度</a>
+      <a href="17_corporate.html" class="sidebar-link">17. 企業・コーポレート</a>
+      <a href="18_regulation.html" class="sidebar-link">18. 規制</a>
+      <a href="19_trade.html" class="sidebar-link">19. 貿易</a>
+      <a href="20_lessons.html" class="sidebar-link">20. 教訓</a>
+      <a href="21_geopolitical_risk.html" class="sidebar-link">21. 地政学リスク</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">G10</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+      <div class="sidebar-section-title">地政学・新興地域</div>
+      <div class="country-flags">
+        <a href="../taiwan/01_central_bank.html" class="country-chip">TW</a>
+        <a href="../hongkong/01_central_bank.html" class="country-chip">HK</a>
+        <a href="../china/01_central_bank.html" class="country-chip">CN</a>
+        <a href="../northkorea/01_central_bank.html" class="country-chip">KP</a>
+        <a href="../vietnam/01_central_bank.html" class="country-chip active">VN</a>
+        <a href="../singapore/01_central_bank.html" class="country-chip">SG</a>
+        <a href="../iran/01_central_bank.html" class="country-chip">IR</a>
+        <a href="../israel/01_central_bank.html" class="country-chip">IL</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 ホーム</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10横断年表</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">ベトナム</a>
+        <span class="sep">/</span>
+        債券市場
+      </div>
+      <h1 class="page-title">🇻🇳 債券市場</h1>
+      <p class="page-subtitle">国債中心の浅い市場と、2022年不動産社債危機の教訓</p>
+    </header>
+
+    <article>
+<!-- Key Stats -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">国債中心</div>
+    <div class="stat-label">政府債（government bond）が市場の中核</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">2020-21</div>
+    <div class="stat-label">社債市場が急拡大（不動産が主導）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">2022</div>
+    <div class="stat-label">不動産社債のデフォルト連鎖で危機</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">浅い・低流動性</div>
+    <div class="stat-label">市場は発展途上で流動性が課題</div>
+  </div>
+</div>
+
+<section>
+  <h2>国債が支える「浅い」債券市場</h2>
+  <p>ベトナムの債券市場は、株式（第06〜10章）に比べてまだ規模が小さく流動性も限られる「浅い」市場である。中核は<strong>政府債（government bond、国債）</strong>で、財政赤字の補填とインフラ投資の資金調達のために発行され、銀行・社会保険基金などが主たる買い手となる。国債利回りは市場金利の基準（ベンチマーク）を形成するが、外国人の保有比率は限定的で、取引の厚みは先進国に遠く及ばない。社債（corporate bond）は長く未発達だったが、2020年前後に急膨張し、そして急収縮した。その劇的な物語が、ベトナム債券市場を理解する最大の鍵である。</p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>セグメント</th>
+          <th>発行体</th>
+          <th>特徴・主な買い手</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight-green">
+          <td>政府債（国債）</td>
+          <td>財政省・ベトナム開発銀行等</td>
+          <td>市場の中核。銀行・社会保険が保有。利回りの基準</td>
+        </tr>
+        <tr>
+          <td>地方債・政府保証債</td>
+          <td>地方政府・政策金融機関</td>
+          <td>インフラ資金。規模は限定的</td>
+        </tr>
+        <tr class="highlight-orange">
+          <td>社債（corporate bond）</td>
+          <td>不動産・銀行・大企業</td>
+          <td>2020-21に急拡大→2022危機。私募(private placement)が大半</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>社債バブルの膨張と崩壊（2020-2022）</h2>
+  <p>2020〜2021年、ベトナムの社債市場は爆発的に拡大した。低金利環境と、銀行融資規制を回避したい<strong>不動産デベロッパー</strong>の旺盛な資金需要が重なり、不動産企業が高利回りの社債を大量発行した。その多くは<strong>私募（private placement）</strong>で、銀行や証券会社を通じて個人投資家にも販売された。「銀行預金より高利回り」という触れ込みで、リスクを十分理解しないリテール層にまで不動産社債が浸透していった。</p>
+  <p>この膨張は2022年に崩壊する。<strong>Van Thinh Phat（VTP）／SCB事件</strong>（第10・15章）を機に、不動産社債の信用不安が一気に表面化。当局の規制強化（後述のDecree 65）も重なり、償還資金を借り換えできない発行体が続出した。社債の<strong>デフォルト連鎖</strong>と償還繰り延べが広がり、株式市場の暴落（VN-Index 1,530→874）と二人三脚で金融システムを揺さぶった。銀行・不動産・社債・個人投資家が相互に絡み合う「連関リスク」が、ベトナム金融最大の脆弱性として露呈した瞬間だった。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">不動産社債が震源だった2022年危機</div>
+    <div class="mnemonic-body">
+      <p>2020-21の低金利下で、<strong>不動産デベロッパーが私募社債を乱発</strong>し個人にも販売。2022年のVTP事件で信用不安が爆発し、<strong>デフォルト連鎖</strong>に。社債危機が株式暴落とドン安・利上げを同時に呼び、ベトナム金融の「銀行=不動産=社債=個人」連関リスクを露わにした。</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>規制改革：Decree 65 と Decree 08</h2>
+  <p>危機を受け、政府は社債市場の規律と救済の両面で矢継ぎ早に動いた。流れを押さえておきたい。</p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>措置</th>
+          <th>時期</th>
+          <th>狙い</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Decree 153</td>
+          <td>2020</td>
+          <td>私募社債の発行を比較的緩く許容（膨張の制度的背景）</td>
+        </tr>
+        <tr class="highlight-orange">
+          <td>Decree 65</td>
+          <td>2022/9</td>
+          <td>適格投資家(professional investor)要件・情報開示を厳格化。規律強化</td>
+        </tr>
+        <tr class="highlight-green">
+          <td>Decree 08</td>
+          <td>2023/3</td>
+          <td>償還の繰り延べ・元利の現物（資産）弁済を容認。危機の時間稼ぎ救済</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>とりわけ<strong>Decree 08（2023年3月）</strong>は、デフォルト連鎖を食い止めるための緊急避難策だった。発行体と投資家の合意による償還期限の延長（最大2年）や、現金の代わりに不動産などの資産で弁済することを認め、市場の急性的な流動性危機に「時間」を与えた。これに2023年の利下げ（第02章）が加わり、社債市場は最悪期を脱した。一方、Decree 65は適格投資家の範囲を絞り、リスクを理解しない個人への私募社債販売を制限することで、再発防止と市場の健全化を図った。</p>
+</section>
+
+<section>
+  <h2>これからの債券市場</h2>
+  <p>危機を経て、ベトナムの債券市場は「量の膨張」から「質の整備」へと舵を切りつつある。論点は三つ——(1) <strong>格付け文化の定着</strong>（信用格付機関の育成と利用義務化で、投資家がリスクを価格に織り込めるようにする）、(2) <strong>機関投資家基盤の拡大</strong>（個人依存から、年金・保険・債券ファンドへ買い手を広げる）、(3) <strong>流動性と透明性の向上</strong>（私募中心から公募・取引所取引へ）。これらはFTSE/MSCIの市場格上げ（第06章）が求める資本市場の高度化とも軌を一にする。</p>
+  <p>株式市場の華やかさの陰で、債券市場の成熟は地味だが決定的に重要だ。企業が銀行融資だけに頼らず長期資金を調達でき、家計が預金以外の運用先を持ち、政府がインフラ資金を市場から調達する——成熟した債券市場は、ベトナムが下位中所得国から先進的な金融システムへ脱皮するための土台である。2022年の社債危機は痛烈な授業料だったが、その教訓を制度に刻めるかが今後を左右する。</p>
+
+  <div class="key-number-row">
+    <div class="key-number">
+      <span class="key-number-value">私募</span>
+      <span class="key-number-label">社債の大半が私募＝個人にもリスク拡散</span>
+    </div>
+    <div class="key-number">
+      <span class="key-number-value">Decree 08</span>
+      <span class="key-number-label">2023償還繰延・現物弁済で危機を緩和</span>
+    </div>
+    <div class="key-number">
+      <span class="key-number-value">格付け</span>
+      <span class="key-number-label">格付け文化の定着が今後の最大課題</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>出典・参考文献</h2>
+  <ol>
+    <li>Ministry of Finance Vietnam / HNX, 国債・社債発行統計</li>
+    <li>FiinRatings / FiinGroup, "Vietnam Corporate Bond Market Report"（2020-21膨張・2022危機）</li>
+    <li>Vietnam-Briefing / VIR, "Decree 65 (2022/9) / Decree 08 (2023/3) 社債規制改革"</li>
+    <li>Reuters, "Van Thinh Phat case と社債市場の混乱 2022"</li>
+    <li>ADB, "Asia Bond Monitor — Vietnam"</li>
+  </ol>
+</section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+
+    </footer>
+
+    <nav class="page-nav">
+      <a href="10_equity_current.html" class="prev">株式(現在)</a>
+      <a href="12_short_rates.html" class="next">短期金利</a>
+    </nav>
+  </main>
+
+  <script src="../assets/enhancer.js"></script>
+  <script defer src="../assets/recall.js"></script>
+  <script src="../assets/tts-reader.js"></script>
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ニュージーランド - Geopolitical Risk | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
+  <script defer src="../assets/charts.js"></script>
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇳🇿 ニュージーランド</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. 中央銀行</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. 政策金利</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. 財政政策</a>
+      <a href="04_employment.html" class="sidebar-link">04. 雇用</a>
+      <a href="05_inflation.html" class="sidebar-link">05. インフレ</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. 株式市場概観</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. 株式(初期)</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. 株式(近代)</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. 株式(現代)</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. 株式(現在)</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. 債券市場</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. 短期金利</a>
+      <a href="13_long_rates.html" class="sidebar-link">13. 長期金利</a>
+      <a href="14_currency.html" class="sidebar-link">14. 通貨</a>
+      <a href="15_crises.html" class="sidebar-link">15. 金融危機</a>
+      <a href="16_banking.html" class="sidebar-link">16. 銀行制度</a>
+      <a href="17_corporate.html" class="sidebar-link">17. 企業・コーポレート</a>
+      <a href="18_regulation.html" class="sidebar-link">18. 規制</a>
+      <a href="19_trade.html" class="sidebar-link">19. 貿易</a>
+      <a href="20_lessons.html" class="sidebar-link">20. 教訓</a>
+      <a href="21_geopolitical_risk.html" class="sidebar-link active">21. 地政学リスク</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">G10</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip active">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+      <div class="sidebar-section-title">地政学・新興地域</div>
+      <div class="country-flags">
+        <a href="../taiwan/01_central_bank.html" class="country-chip">TW</a>
+        <a href="../hongkong/01_central_bank.html" class="country-chip">HK</a>
+        <a href="../china/01_central_bank.html" class="country-chip">CN</a>
+        <a href="../northkorea/01_central_bank.html" class="country-chip">KP</a>
+        <a href="../vietnam/01_central_bank.html" class="country-chip">VN</a>
+        <a href="../singapore/01_central_bank.html" class="country-chip">SG</a>
+        <a href="../iran/01_central_bank.html" class="country-chip">IR</a>
+        <a href="../israel/01_central_bank.html" class="country-chip">IL</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 ホーム</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10横断年表</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">ニュージーランド</a>
+        <span class="sep">/</span>
+        ニュージーランド㉑ 地政学リスク
+      </div>
+      <h1 class="page-title">🇳🇿 ニュージーランド㉑ 地政学リスク</h1>
+      <p class="page-subtitle">対中貿易依存・Five Eyes・非AUKUS・太平洋島嶼</p>
+    </header>
+
+    <article>
+      <!-- Key Stats -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value">約28%</div>
+          <div class="stat-label">商品輸出の対中シェア（2024年）— 乳製品・木材で特に高依存</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">Five Eyes</div>
+          <div class="stat-label">米英加豪との機密情報同盟 — 安全保障の根幹</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">非AUKUS</div>
+          <div class="stat-label">軍事同盟AUKUSに不参加、Pillar II協力は議論段階</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">太平洋</div>
+          <div class="stat-label">クック諸島・島嶼での中国の影響力拡大という新前線</div>
+        </div>
+      </div>
+
+      <section>
+        <h2>1. ニュージーランドの地政学 — 「小国の独立外交」の綱渡り</h2>
+        <p>
+          ニュージーランド（NZ）の地政学リスクは、<strong>経済（対中依存）</strong>と<strong>安全保障（Five Eyes＝米英との価値観同盟）</strong>のあいだで独立した外交空間をどう保つか、という小国特有のジレンマである。輸出の約4分の1超を中国に依存しつつ、豪州と違いAUKUS軍事同盟には参加せず、対中関係の良好さを重視してきた。だが2025年以降、太平洋島嶼（クック諸島）での中国の影響力拡大が、NZの「裏庭」に新たな前線を開いた。
+        </p>
+      </section>
+
+      <section>
+        <h2>2. 地政学リスク・マトリクス</h2>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>リスク要因</th>
+                <th>蓋然性</th>
+                <th>市場・経済への影響経路</th>
+                <th>関連国/地域</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="highlight-red">対中貿易依存と経済的強制（「次はNZか」）</td>
+                <td>中</td>
+                <td>乳製品・木材需要 → 輸出・Fonterra乳価・NZD</td>
+                <td>中国</td>
+              </tr>
+              <tr>
+                <td class="highlight-orange">Five Eyes対中スタンスと経済の板挟み</td>
+                <td>高</td>
+                <td>対中批判 → 報復リスク／同盟内での立場圧力</td>
+                <td>米国・豪州・中国</td>
+              </tr>
+              <tr>
+                <td class="highlight-orange">太平洋島嶼での中国の影響力拡大</td>
+                <td>中</td>
+                <td>クック諸島・ソロモン等の協定 → 「裏庭」の戦略環境</td>
+                <td>中国・島嶼国</td>
+              </tr>
+              <tr>
+                <td class="highlight-blue">AUKUS Pillar II参加の是非</td>
+                <td>中</td>
+                <td>参加→対中関係悪化／不参加→同盟内孤立の二択</td>
+                <td>米国・英国・豪州</td>
+              </tr>
+              <tr>
+                <td class="highlight-blue">乳製品の単一市場・単一品目集中</td>
+                <td>高</td>
+                <td>中国の国内乳業政策・在庫調整 → 乳価・交易条件</td>
+                <td>中国・EU</td>
+              </tr>
+              <tr>
+                <td class="highlight-blue">台湾有事のシーレーン・貿易途絶</td>
+                <td>中</td>
+                <td>アジア向け輸出の物流停止・世界需要の急収縮</td>
+                <td>台湾・中国</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>3. 地政学イベント年表</h2>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>年</th>
+                <th>イベント</th>
+                <th>市場・経済への波及</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2008</td>
+                <td class="highlight-green">NZ・中国FTA（先進国初の対中FTA）</td>
+                <td>中国が最大の輸出市場に浮上・乳製品輸出が急拡大</td>
+              </tr>
+              <tr>
+                <td>2020–23</td>
+                <td class="event-crisis">豪州が中国の経済的強制を経験</td>
+                <td>「次はNZか」という対中依存リスクの先行事例に</td>
+              </tr>
+              <tr>
+                <td>2024</td>
+                <td class="highlight-green">NZ・EU FTA発効（50年ぶりのEU直接アクセス）</td>
+                <td>貿易多角化・対中依存の分散に寄与</td>
+              </tr>
+              <tr>
+                <td>2025.02</td>
+                <td class="event-crisis">中国海軍がタスマン海で実弾演習</td>
+                <td>近接海域での軍事活動・AUKUS接近論を刺激</td>
+              </tr>
+              <tr>
+                <td>2025.06</td>
+                <td class="event-crisis">クック諸島の対中戦略協定が発覚 → 開発資金停止</td>
+                <td>2001年協定の協議義務違反を主張・関係冷却</td>
+              </tr>
+              <tr>
+                <td>2026.04</td>
+                <td class="highlight-green">NZ・クック諸島が防衛・安保宣言に署名</td>
+                <td>NZを「防衛の第一パートナー」と確認・開発資金再開</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>4. 対中依存 — 乳製品と木材の「単一市場リスク」</h2>
+        <p>
+          中国はNZ最大の輸出市場で、2024年の商品輸出の約28%を占める。とりわけ<strong>乳製品（中国向けNZ$70億超）</strong>と<strong>木材（中国向けNZ$55億超、全木材輸出の9割以上）</strong>の中国依存は際立つ。2008年の対中FTA後、メラミン汚染事件を経て中国消費者のNZ産乳製品への信頼が高まり、輸出が一気に拡大した。半面、これは中国の<strong>国内乳業振興策・在庫調整・地政学</strong>に対するNZの脆弱性を意味する。豪州が2020〜23年に受けた経済的強制は、NZにとって「他人事ではない」先行事例として強く意識されている。
+        </p>
+
+        <div id="nz-geo-china"></div>
+        <script>
+        ChartBuilder.lines('nz-geo-china', {
+          title: 'ニュージーランド 商品輸出の対中シェア (2005-2024, %)',
+          caption: '出典: Stats NZ, MFAT に基づく近似。2008年の先進国初となる対中FTAを境にシェアが急拡大し、2010年代に20%超へ。乳製品(中国向けNZ$70億+)と木材(中国向けが全輸出の9割超)が牽引。2024年は約28%。豪州型の経済的強制への「次はNZか」という警戒が常に存在。年次は近似値。',
+          yUnit: '%',
+          yRange: [0, 35],
+          yStep: 5,
+          series: [{
+            name: '対中輸出シェア（%）',
+            color: '#38bdf8', width: 2.4,
+            data: [[2005, 5], [2008, 5], [2010, 11], [2013, 20], [2016, 22], [2019, 27], [2021, 28], [2024, 28]]
+          }],
+          annotations: [
+            { year: 2008, label: '対中FTA', color: '#00d4aa' },
+            { year: 2013, label: '20%突破', color: '#ffd93d' },
+            { year: 2024, label: '約28%', color: '#38bdf8' }
+          ]
+        });
+        </script>
+      </section>
+
+      <section>
+        <h2>5. Five Eyesと「独立外交」の緊張</h2>
+        <p>
+          NZは米英加豪とともに<strong>Five Eyes</strong>機密情報同盟の一員であり、安全保障の根幹をここに置く。だが経済を中国に依存するため、同盟内で最も<strong>対中批判に慎重な「アウトライアー」</strong>と評されてきた。NZは豪州と異なりAUKUSに参加しておらず、先端技術協力の<strong>Pillar IIへの参加可能性</strong>が国内で論争となっている。参加すれば対中関係が悪化し、不参加なら同盟内で孤立しかねない——小国の独立外交はこの二律背反の上にある。2025年2月の中国海軍によるタスマン海での実弾演習は、この議論を一気に現実味のあるものにした。
+        </p>
+      </section>
+
+      <section>
+        <h2>6. 太平洋島嶼 — 「裏庭」に開いた新前線</h2>
+        <p>
+          近年、NZの地政学リスクの重心は<strong>太平洋島嶼</strong>へ移りつつある。2025年6月、自由連合国である<strong>クック諸島</strong>が中国と「ブルーエコノミー」協力協定を結んだことが発覚し、NZは2001年協定の協議義務違反だとして開発資金を停止した。中国の影響力が港湾・造船・海上輸送インフラを通じてNZの「裏庭」に及ぶことへの警戒である。2026年4月、NZとクック諸島は防衛・安保宣言に署名し、クック諸島はNZを「防衛・安全保障の第一パートナー」と確認、開発資金も再開された。島嶼国の主権と大国間競争のはざまで、NZは地域秩序の要としての役割を問われている。
+        </p>
+      </section>
+
+      <section>
+        <h2>7. まとめ</h2>
+        <div class="mnemonic-box">
+          <span class="mnemonic-icon">🧠</span>
+          <div class="mnemonic-title">覚え方：「経済は中国、目は5つ（Five Eyes）、足元は太平洋」</div>
+          <div class="mnemonic-body">
+            NZの地政学は<strong>経済（対中28%・乳製品/木材の単一市場依存）</strong>と<strong>安全保障（Five Eyes、非AUKUS）</strong>の板挟みで読む。豪州の経済的強制は「次はNZか」の警鐘であり、貿易多角化（EU・英国FTA）が保険となる。そして<strong>太平洋島嶼（クック諸島）</strong>での中国の影響力拡大が、小国NZに「地域の要」としての新たな責務を突きつけている。
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>関連リンク</h2>
+        <ul>
+          <li><a href="../summary/geopolitical_map.html">🗺 地政学リスク・マップ（G10＋新興地域の横断ビュー）</a></li>
+          <li><a href="../china/21_geopolitical_risk.html">🇨🇳 中国㉑ 地政学リスク — 対中依存・太平洋進出の震源</a></li>
+          <li><a href="../taiwan/21_geopolitical_risk.html">🇹🇼 台湾㉑ 地政学リスク — 有事シーレーンとアジア貿易</a></li>
+          <li><a href="19_trade.html">🇳🇿 ニュージーランド⑲ 貿易 — 中国依存と多角化戦略の詳細</a></li>
+        </ul>
+      </section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+
+    </footer>
+
+    <nav class="page-nav">
+      <a href="20_lessons.html" class="prev">教訓</a>
+      <a href="../summary/g10_timeline.html" class="next">G10横断年表</a>
+    </nav>
+  </main>
+
+  <script src="../assets/enhancer.js"></script>
+  <script defer src="../assets/recall.js"></script>
+  <script src="../assets/tts-reader.js"></script>
+</body>
+</html>

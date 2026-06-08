@@ -1,0 +1,158 @@
+<!-- Key Stats -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">2.00%</div>
+    <div class="stat-label">現在の重貼現率（2024/3〜据置）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">1.125%</div>
+    <div class="stat-label">過去最低（2020/3 COVID）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">+12.5bp</div>
+    <div class="stat-label">2024/3利上げ幅（小刻みの漸進主義）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">2008年以来</div>
+    <div class="stat-label">2.00%は16年ぶりの高水準</div>
+  </div>
+</div>
+
+<section>
+  <h2>重貼現率という「政策金利」</h2>
+  <p>台湾の政策金利は <strong>重貼現率（discount rate / rediscount rate）</strong> である。これはCBCが市中銀行の手形を再割引する際に適用する金利で、FRBのFF金利のように「市場で形成される金利を誘導目標として張り付ける」タイプとは異なり、CBCが直接設定する公定金利である。CBCは年4回の理事会でこの水準を改定し、政策スタンスのシグナルとして用いる。</p>
+  <p>重貼現率の最大の特徴は、欧米中央銀行に比べて<strong>変動幅が極めて小さい「漸進主義」</strong>である。多くの局面で利上げ・利下げは±12.5bp（0.125%）や±25bpといった小刻みなステップで行われる。2022〜2023年に世界中の中央銀行が一気に+400〜525bpの利上げを断行したのに対し、CBCの累積利上げは1.125%→1.875%（+75bp相当）にとどまった。これは構造的な低インフレ国であることと、為替・量的手段を併用するため金利を大きく動かす必要が薄いことの反映である。</p>
+</section>
+
+<!-- CBC discount rate history chart -->
+<div id="tw-discount-rate"></div>
+<script>
+ChartBuilder.lines('tw-discount-rate', {
+  title: '台湾 重貼現率の歴史 2000-2026（CBC discount rate, %）',
+  caption: '出典: 中央銀行(CBC) Key Indicators – Discount Rate。2000〜2007の中間値と2022の月次刻みは代表値（概算）、主要アンカー（2008/9≈3.625%、2020/3 1.125%、2024/3 2.00%）は公式確証。',
+  yUnit: '%',
+  yStep: 0.5,
+  yRange: [0, 5],
+  series: [{
+    name: '重貼現率',
+    color: '#00d4aa',
+    data: [
+      [2000, 4.625],[2001, 2.125],[2003, 1.375],[2005, 2.25],[2007, 3.375],
+      [2008.09, 3.625],[2009.02, 1.25],[2010, 1.375],[2011, 1.875],[2015, 1.875],
+      [2016, 1.375],[2020.03, 1.125],[2022.02, 1.125],[2022.06, 1.50],[2022.12, 1.75],
+      [2023.03, 1.875],[2024.03, 2.00],[2025.12, 2.00],[2026.03, 2.00]
+    ]
+  }],
+  annotations: [
+    { year: 2001, label: '01 ITで急利下げ', color: '#ff9f43' },
+    { year: 2008.09, label: '08 3.625%', color: '#ff6b6b' },
+    { year: 2020.03, label: 'COVID 1.1%', color: '#5b8def' },
+    { year: 2022.06, label: '22 利上げ', color: '#ffd93d' },
+    { year: 2024.03, label: '24 2.0%', color: '#00d4aa' }
+  ]
+});
+</script>
+
+<section>
+  <h2>主要サイクル</h2>
+
+  <h3>ITバブル崩壊と急速利下げ（2000-2003）</h3>
+  <p>2000年初に4.625%だった重貼現率は、ITバブル崩壊と2001年の戦後初の本格的景気後退（GDPマイナス成長）を受けて急速に引き下げられた。輸出と半導体に依存する台湾経済はドットコム不況の直撃を受け、CBCは2001年だけで複数回の利下げを行い、2003年には1.375%まで低下した。同時期に初の政権交代（陳水扁政権）も重なり、CBCの機動的な緩和が景気を下支えした。</p>
+
+  <h3>リーマンショックと約250bp利下げ（2008-2009）</h3>
+  <p>世界金融危機（GFC）前のピークは2008年9月の<strong>3.625%</strong>であった。リーマン破綻後、輸出が急減し台湾経済が失速すると、CBCは2009年2月までに<strong>約250bp</strong>を一気に引き下げ、重貼現率は1.25%まで低下した。これはCBCの歴史でも最大級の利下げ局面であり、TAIEXがGFCの底（2008年11月の3,955）を打つ過程と重なる。</p>
+
+  <h3>COVIDの記録的低水準（2020）</h3>
+  <p>2020年3月、COVID-19パンデミックを受けてCBCは重貼現率を<strong>1.125%</strong>へ引き下げた。これはCBC史上の<strong>記録的低水準</strong>である。ただし在宅需要で半導体・電子機器の輸出がV字回復したため、台湾は主要国の中でいち早くプラス成長に復帰し、この低金利は2022年初まで据え置かれた。</p>
+
+  <h3>世界的引き締めと「電気料金利上げ」（2022-2024）</h3>
+  <p>2022年からの世界的インフレ局面で、CBCも漸進的に利上げを開始した。2022年中に1.125%→1.75%、2023年に1.875%へ。そして2024年3月、CBCはサプライズ的に<strong>+12.5bpの利上げで2.00%</strong>とした。これは2008年以来16年ぶりの高水準であり、名目上は同年4月の<strong>電気料金引き上げ</strong>に伴うインフレ期待を先回りで抑える「一回限り（one-time）の予防的措置」と位置づけられた（DBS・Capital Economicsの分析）。以降、2025年12月・2026年3月の会合まで2.00%で据え置かれている。</p>
+</section>
+
+<section>
+  <h2>主要金利改定の一覧</h2>
+  <div class="table-container">
+    <table class="data-table sortable">
+      <thead>
+        <tr>
+          <th>時期</th>
+          <th>重貼現率</th>
+          <th>方向</th>
+          <th>背景</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2000</td>
+          <td>4.625%</td>
+          <td></td>
+          <td>ITブーム期のピーク</td>
+        </tr>
+        <tr>
+          <td>2001-2003</td>
+          <td>2.125% → 1.375%</td>
+          <td class="cell-cut">急利下げ</td>
+          <td>ITバブル崩壊・戦後初の本格的景気後退</td>
+        </tr>
+        <tr>
+          <td>2008/9</td>
+          <td>3.625%</td>
+          <td class="cell-hike">GFC前ピーク</td>
+          <td>世界金融危機の直前</td>
+        </tr>
+        <tr class="highlight-blue">
+          <td>2009/2</td>
+          <td>1.25%</td>
+          <td class="cell-cut">約-250bp</td>
+          <td>リーマン後の輸出急減に対応</td>
+        </tr>
+        <tr class="highlight-blue">
+          <td>2020/3</td>
+          <td>1.125%</td>
+          <td class="cell-cut">記録的低水準</td>
+          <td>COVID-19パンデミック</td>
+        </tr>
+        <tr>
+          <td>2022/6-12</td>
+          <td>1.50% → 1.75%</td>
+          <td class="cell-hike">漸進利上げ</td>
+          <td>世界的インフレ・グローバル引き締め</td>
+        </tr>
+        <tr class="highlight-green">
+          <td>2024/3</td>
+          <td>2.00%</td>
+          <td class="cell-hike">+12.5bp</td>
+          <td>電気料金引上げのインフレ期待抑制（16年ぶり高水準）</td>
+        </tr>
+        <tr>
+          <td>2026/3</td>
+          <td>2.00%</td>
+          <td>据置</td>
+          <td>低インフレで様子見</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>なぜ振れ幅が小さいのか</h2>
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">CBCの「漸進主義」3つの理由</div>
+    <div class="mnemonic-body">
+      <p>(1) <strong>構造的低インフレ</strong>——台湾のCPIは長期的に2%前後で、利上げを急ぐ必要が薄い。(2) <strong>為替介入で代替</strong>——輸入インフレは金利よりTWD相場の管理で抑えるため、金利を大きく動かす誘因が小さい。(3) <strong>量的手段の併用</strong>——預金準備率や公開市場操作で流動性を細かく調整できる。結果として、重貼現率は「±12.5bpの世界」になる。</p>
+    </div>
+  </div>
+  <p>この漸進主義の裏返しが、グローバル局面での金利差リスクである。2022〜2024年に米FRBが5%超まで利上げする一方でCBCは2%前後にとどまったため、内外金利差が拡大し、TWDと資本フローに圧力がかかった。CBCは金利でフルに対抗するのではなく、為替介入と資本フロー管理でこれを吸収する——ここに台湾の金融政策の独自性が凝縮されている。</p>
+</section>
+
+<section>
+  <h2>出典・参考文献</h2>
+  <ol>
+    <li>中央銀行(CBC), "Key Indicators – Discount Rate" <a href="https://www.cbc.gov.tw/en/lp-695-2.html">cbc.gov.tw/en/lp-695-2</a></li>
+    <li>CBC, Annual Report 2009（GFC対応の利下げ）</li>
+    <li>TradingEconomics / FocusEconomics, "Taiwan Interest Rate"（2.00%据置、2024/3〜）</li>
+    <li>DBS / Capital Economics, "Taiwan: CBC delivers a surprise hike", 2024年3月（電気料金とone-time措置の解説）</li>
+  </ol>
+</section>

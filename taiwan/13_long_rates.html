@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>台湾 - Long-term Rates | G10 Markets Textbook</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/chart-builder.js"></script>
+  <script defer src="../assets/charts.js"></script>
+</head>
+<body>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="メニュー">☰</button>
+
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>G10 Markets</h2>
+      <div class="subtitle">Historical Textbook</div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">🇹🇼 台湾</div>
+      <a href="01_central_bank.html" class="sidebar-link">01. 中央銀行</a>
+      <a href="02_policy_rate.html" class="sidebar-link">02. 政策金利</a>
+      <a href="03_fiscal_policy.html" class="sidebar-link">03. 財政政策</a>
+      <a href="04_employment.html" class="sidebar-link">04. 雇用</a>
+      <a href="05_inflation.html" class="sidebar-link">05. インフレ</a>
+      <a href="06_equity_overview.html" class="sidebar-link">06. 株式市場概観</a>
+      <a href="07_equity_early.html" class="sidebar-link">07. 株式(初期)</a>
+      <a href="08_equity_modern.html" class="sidebar-link">08. 株式(近代)</a>
+      <a href="09_equity_recent.html" class="sidebar-link">09. 株式(現代)</a>
+      <a href="10_equity_current.html" class="sidebar-link">10. 株式(現在)</a>
+      <a href="11_bond_market.html" class="sidebar-link">11. 債券市場</a>
+      <a href="12_short_rates.html" class="sidebar-link">12. 短期金利</a>
+      <a href="13_long_rates.html" class="sidebar-link active">13. 長期金利</a>
+      <a href="14_currency.html" class="sidebar-link">14. 通貨</a>
+      <a href="15_crises.html" class="sidebar-link">15. 金融危機</a>
+      <a href="16_banking.html" class="sidebar-link">16. 銀行制度</a>
+      <a href="17_corporate.html" class="sidebar-link">17. 企業・コーポレート</a>
+      <a href="18_regulation.html" class="sidebar-link">18. 規制</a>
+      <a href="19_trade.html" class="sidebar-link">19. 貿易</a>
+      <a href="20_lessons.html" class="sidebar-link">20. 教訓</a>
+      <a href="21_geopolitical_risk.html" class="sidebar-link">21. 地政学リスク</a>
+    </div>
+    <div class="sidebar-country-nav">
+      <div class="sidebar-section-title">G10</div>
+      <div class="country-flags">
+        <a href="../us/01_central_bank.html" class="country-chip">US</a>
+        <a href="../eurozone/01_central_bank.html" class="country-chip">EU</a>
+        <a href="../japan/01_central_bank.html" class="country-chip">JP</a>
+        <a href="../uk/01_central_bank.html" class="country-chip">UK</a>
+        <a href="../switzerland/01_central_bank.html" class="country-chip">CH</a>
+        <a href="../australia/01_central_bank.html" class="country-chip">AU</a>
+        <a href="../newzealand/01_central_bank.html" class="country-chip">NZ</a>
+        <a href="../canada/01_central_bank.html" class="country-chip">CA</a>
+        <a href="../sweden/01_central_bank.html" class="country-chip">SE</a>
+        <a href="../norway/01_central_bank.html" class="country-chip">NO</a>
+      </div>
+      <div class="sidebar-section-title">地政学・新興地域</div>
+      <div class="country-flags">
+        <a href="../taiwan/01_central_bank.html" class="country-chip active">TW</a>
+        <a href="../hongkong/01_central_bank.html" class="country-chip">HK</a>
+        <a href="../china/01_central_bank.html" class="country-chip">CN</a>
+        <a href="../northkorea/01_central_bank.html" class="country-chip">KP</a>
+        <a href="../vietnam/01_central_bank.html" class="country-chip">VN</a>
+        <a href="../singapore/01_central_bank.html" class="country-chip">SG</a>
+        <a href="../iran/01_central_bank.html" class="country-chip">IR</a>
+        <a href="../israel/01_central_bank.html" class="country-chip">IL</a>
+      </div>
+    </div>
+    <div class="sidebar-section" style="margin-top:0.5rem; padding-top:0.5rem; border-top:1px solid var(--border-color);">
+      <a href="../index.html" class="sidebar-link">🏠 ホーム</a>
+      <a href="../summary/g10_timeline.html" class="sidebar-link">📊 G10横断年表</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <header>
+      <div class="breadcrumb">
+        <a href="../index.html">ホーム</a>
+        <span class="sep">/</span>
+        <a href="01_central_bank.html">台湾</a>
+        <span class="sep">/</span>
+        長期金利と国債市場
+      </div>
+      <h1 class="page-title">🇹🇼 長期金利と国債市場</h1>
+      <p class="page-subtitle">10年公債利回りの構造的低位安定、生保需要・米金利連動・為替ヘッジ</p>
+    </header>
+
+    <article>
+<!-- Chapter 13: Long-term Rates (Taiwan) -->
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">約1.6%</div>
+    <div class="stat-label">10年公債（CGB）利回りの近年水準（代表値）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value" style="color:var(--accent-blue);">約0.4%</div>
+    <div class="stat-label">2020年COVID局面の歴史的低水準（代表値）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">生保</div>
+    <div class="stat-label">長期国債の最大の保有主体（巨額の負債デュレーション）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">フォルモサ債</div>
+    <div class="stat-label">台湾で発行される外貨建債（Formosa Bonds）</div>
+  </div>
+</div>
+
+<p>
+台湾の長期金利 — 代表は<strong>10年中央政府公債（Central Government Bond, CGB）の利回り</strong> — は、世界的に見ても際立って低位で安定している。背景には、構造的な低インフレ（第5章）、高い国内貯蓄、そして<strong>生命保険会社による旺盛な長期国債需要</strong>がある。台湾の生保は契約者に約束した予定利率を満たすため長期の確定利付資産を大量に必要とし、限られた国債供給を奪い合う結果、利回りは押し下げられてきた。
+</p>
+
+<!-- Chart: 10Y CGB yield (representative) -->
+<div id="taiwan-longrate-cgb"></div>
+<script>
+ChartBuilder.lines('taiwan-longrate-cgb', {
+  title: '台湾 10年公債(CGB)利回りの長期推移 2000-2026（代表値）',
+  caption: '出典: TWSE債券市場/集中保管結算所、CBC、Investing.com等を参照した代表値（概算）。構造的低位安定のトレンド把握用で、各年の正確な終値ではない点に留意。低インフレ・高貯蓄・生保需要が利回りを押し下げてきた。',
+  yUnit: '%',
+  yStep: 1,
+  yRange: [0, 6],
+  series: [{
+    name: '10Y CGB利回り(代表値)',
+    color: '#5b8def',
+    data: [
+      [2000, 5.0],[2002, 2.2],[2003, 1.8],[2005, 1.9],[2007, 2.6],
+      [2008, 2.3],[2010, 1.4],[2012, 1.2],[2015, 1.0],[2016, 0.8],
+      [2019, 0.7],[2020, 0.4],[2022, 1.2],[2023, 1.2],[2024, 1.5],
+      [2025, 1.6],[2026, 1.6]
+    ]
+  }],
+  annotations: [
+    { year: 2003, label: '低インフレ', color: '#00d4aa' },
+    { year: 2008, label: 'GFC', color: '#ff6b6b' },
+    { year: 2020, label: 'COVID底', color: '#5b8def' },
+    { year: 2024, label: '世界利上波及', color: '#ff9f43' }
+  ]
+});
+</script>
+
+<section>
+  <h2>1. なぜ台湾の長期金利は世界最低水準なのか</h2>
+  <p>
+  台湾の10年国債利回りは、長くG10諸国の同年限を下回る水準にある。その構造的要因を整理する。
+  </p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>要因</th>
+          <th>メカニズム</th>
+          <th>効果</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>低インフレ体質</td>
+          <td>2%前後で安定するCPI。インフレ・プレミアムが小さい</td>
+          <td class="cell-cut">利回り低下</td>
+        </tr>
+        <tr>
+          <td>生保の長期需要</td>
+          <td>予定利率を満たすため長期確定利付資産を大量保有。国債を奪い合う</td>
+          <td class="cell-cut">利回り低下</td>
+        </tr>
+        <tr>
+          <td>高い国内貯蓄</td>
+          <td>経常黒字・高貯蓄率による資金余剰が債券に向かう</td>
+          <td class="cell-cut">利回り低下</td>
+        </tr>
+        <tr>
+          <td>健全財政・低国家債務</td>
+          <td>国債発行残高が相対的に小さく、信用リスク・需給プレミアムが低い</td>
+          <td class="cell-cut">利回り低下</td>
+        </tr>
+        <tr>
+          <td>米金利の波及</td>
+          <td>米国債利回りの上昇は為替・資本フローを通じて台湾長期金利を押し上げる</td>
+          <td class="cell-hike">利回り上昇要因</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>2. 米金利との連動と為替ヘッジコストの罠</h2>
+  <p>
+  台湾の長期金利を語る上で避けて通れないのが、<strong>生保による巨額の対外債券投資</strong>である。国内の低利回り環境で運用難に直面した台湾の生保は、より高い利回りを求めて米国債・米社債など外貨建資産に大量投資してきた。台湾は世界有数の対外純資産国であり、生保はその主要な担い手である。
+  </p>
+  <p>
+  しかしここに<strong>為替ヘッジコスト</strong>という落とし穴がある。米国債の利回りが台湾国債より高くても、TWD/USDの為替変動をヘッジするコスト（おおむね米台金利差に連動）を差し引くと、実質的な利回りメリットが圧縮される。さらに、ヘッジを十分にかけずに保有した部分は、TWDが急騰すると巨額の為替評価損を生む。2025年にTWDがアジア最強通貨へ急騰（一時29.17）した局面では、生保の為替損益とヘッジ比率が市場の最大の関心事となった。長期金利・為替・生保のバランスシートは、台湾では三位一体で動く。
+  </p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">「低い国内利回り → 海外へ → 為替リスク」</div>
+    <div class="mnemonic-body">台湾の生保は低い国内10年利回りから逃れて米国債へ向かうが、その代償が<strong>為替リスク</strong>。TWD急騰局面（2025年）では為替損が膨らみ、ヘッジコストが利回りメリットを食う。台湾の長期金利は「国内で低く、海外で為替に化ける」と覚えよ。</div>
+  </div>
+</section>
+
+<section>
+  <h2>3. 債券市場の規模と特徴 — フォルモサ債</h2>
+  <p>
+  台湾の債券市場は、株式市場や銀行部門に比べて相対的に小規模である。中核は中央政府公債（CGB）で、生保が最大の保有者となる。流動性は限定的で、満期保有目的の保有が多い。
+  </p>
+  <p>
+  台湾固有の論点が<strong>フォルモサ債（Formosa Bonds）</strong>である。これは台湾の債券市場で発行される外貨建（主に米ドル建）の債券を指し、海外の発行体（外国政府・国際機関・グローバル企業）が台湾の潤沢な資金 — とりわけ生保マネー — を狙って発行する。台湾の生保にとっては、為替リスクを国内市場で完結させつつ高利回りの外貨建資産を取得できる手段となり、市場は急拡大した。フォルモサ債は「台湾の余剰資金が世界に向かう窓口」であり、台湾の対外投資の大きさを象徴する存在である。
+  </p>
+
+  <div class="key-number-row">
+    <div class="key-number">
+      <span class="key-number-value">生保</span>
+      <span class="key-number-label">CGB・フォルモサ債の最大の買い手</span>
+    </div>
+    <div class="key-number">
+      <span class="key-number-value">米ドル建</span>
+      <span class="key-number-label">フォルモサ債の主要通貨</span>
+    </div>
+    <div class="key-number">
+      <span class="key-number-value">対外純資産大</span>
+      <span class="key-number-label">世界有数 — 余剰資金が海外債券へ</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>4. イールドカーブと金融政策の伝達</h2>
+  <p>
+  CBCの重貼現率（第12章）が低位で安定するため、短期金利も低い。生保需要で長期金利も低い。結果として台湾のイールドカーブは<strong>全体に低く、形状の変化も緩やか</strong>である。米国のように景気後退の前兆として逆イールド（長短金利の逆転）が劇的に議論されることは少ない。
+  </p>
+  <p>
+  ただし、低位安定は「金融政策の伝達が弱い」ことの裏返しでもある。金利を動かしても実体経済への効果が限定的なため、台湾の景気・物価は金利よりも<strong>外需（輸出）と為替</strong>に大きく左右される。半導体サイクル（第17章）と世界景気が台湾の長期金利を動かす最大の要因であり、CBCの金利操作はむしろ脇役にとどまる。これが「金利で調整しない経済」台湾の長期金利の本質である。
+  </p>
+</section>
+
+<section>
+  <h2>出典・参考文献</h2>
+  <ol>
+    <li>台湾証券取引所（TWSE）債券市場 / 集中保管結算所（TDCC）, 公債利回りデータ</li>
+    <li>中央銀行（ROC Taiwan）, 金利・対外投資統計, cbc.gov.tw</li>
+    <li>Investing.com / TradingEconomics, "Taiwan 10-Year Government Bond Yield"（代表値の参照）</li>
+    <li>各種市場レポート, 台湾生保の対外債券投資・フォルモサ債・為替ヘッジに関する解説</li>
+  </ol>
+</section>
+
+    </article>
+
+    <footer class="sources">
+      <h3>出典・参考文献</h3>
+
+    </footer>
+
+    <nav class="page-nav">
+      <a href="12_short_rates.html" class="prev">短期金利</a>
+      <a href="14_currency.html" class="next">通貨</a>
+    </nav>
+  </main>
+
+  <script src="../assets/enhancer.js"></script>
+  <script defer src="../assets/recall.js"></script>
+  <script src="../assets/tts-reader.js"></script>
+</body>
+</html>

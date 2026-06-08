@@ -1601,7 +1601,12 @@ table.data-table {
    japan #ff5d6c rising-sun crimson | uk #b07cff royal purple
    switzerland #ff8a80 light swiss coral | australia #ffa94d outback amber
    newzealand #2ec4b6 NZ turquoise | canada #f76707 maple orange
-   sweden #8ec5ff nordic sky blue | norway #69db7c aurora green */
+   sweden #8ec5ff nordic sky blue | norway #69db7c aurora green
+   --- 地政学・新興地域 (2026-06 expansion, 8 keys, pairwise-distinct ΔRGB ≥ 50 from all) ---
+   taiwan #38bdf8 TSMC sky-cyan | hongkong #f25fb0 bauhinia magenta
+   china #dc2626 中国红 deep red | northkorea #9aa7b5 austere steel-grey
+   vietnam #22c55e emerald jade | singapore #d946ef orchid (national flower)
+   iran #a3e635 lime | israel #818cf8 azure-indigo */
 body[data-country="us"]          { --country-accent: #4f86f7; --country-accent-soft: rgba(79,134,247,0.12); }
 body[data-country="eurozone"]    { --country-accent: #ffd93d; --country-accent-soft: rgba(255,217,61,0.12); }
 body[data-country="japan"]       { --country-accent: #ff5d6c; --country-accent-soft: rgba(255,93,108,0.12); }
@@ -1612,6 +1617,15 @@ body[data-country="newzealand"]  { --country-accent: #2ec4b6; --country-accent-s
 body[data-country="canada"]      { --country-accent: #f76707; --country-accent-soft: rgba(247,103,7,0.12); }
 body[data-country="sweden"]      { --country-accent: #8ec5ff; --country-accent-soft: rgba(142,197,255,0.12); }
 body[data-country="norway"]      { --country-accent: #69db7c; --country-accent-soft: rgba(105,219,124,0.12); }
+/* 地政学・新興地域 — 8 new regions */
+body[data-country="taiwan"]      { --country-accent: #38bdf8; --country-accent-soft: rgba(56,189,248,0.12); }
+body[data-country="hongkong"]    { --country-accent: #f25fb0; --country-accent-soft: rgba(242,95,176,0.12); }
+body[data-country="china"]       { --country-accent: #dc2626; --country-accent-soft: rgba(220,38,38,0.12); }
+body[data-country="northkorea"]  { --country-accent: #9aa7b5; --country-accent-soft: rgba(154,167,181,0.12); }
+body[data-country="vietnam"]     { --country-accent: #22c55e; --country-accent-soft: rgba(34,197,94,0.12); }
+body[data-country="singapore"]   { --country-accent: #d946ef; --country-accent-soft: rgba(217,70,239,0.12); }
+body[data-country="iran"]        { --country-accent: #a3e635; --country-accent-soft: rgba(163,230,53,0.12); }
+body[data-country="israel"]      { --country-accent: #818cf8; --country-accent-soft: rgba(129,140,248,0.12); }
 
 /* Country tinting — fallbacks keep the default green theme intact */
 body[data-country] article h2 {

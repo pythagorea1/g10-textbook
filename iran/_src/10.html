@@ -1,0 +1,103 @@
+<!-- Key Stats -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">約407万</div>
+    <div class="stat-label">TEDPIX 名目最高水準 (2026年1月, pt)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">+99%</div>
+    <div class="stat-label">名目上昇 (2023→2026年1月)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">約-32%</div>
+    <div class="stat-label">同期間のドル建てリターン（推計）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">2026戦争</div>
+    <div class="stat-label">乱高下・取引停止措置</div>
+  </div>
+</div>
+
+<p>2023年以降、TEDPIXは高インフレを追い風に名目最高値を次々と更新し、2026年1月には約<strong>407万pt</strong>に達した。ニュースの見出しだけ見れば「絶好調の株式市場」だ。しかし、本章で最も伝えたいのは<strong>「名目最高値の更新は、必ずしも投資家が豊かになったことを意味しない」</strong>という冷徹な事実である。同じ期間、ドル建て・実質では株価はむしろ下落していた。「名目vs実質/ドル建ての罠」を、データで解剖する<cite>[1]</cite>。</p>
+
+<div class="key-number-row">
+  <div class="key-number"><span class="key-number-value">名目+99%</span><span class="key-number-label">TEDPIX 2023→2026年1月（リアル建て）</span></div>
+  <div class="key-number"><span class="key-number-value">ドル-32%</span><span class="key-number-label">同期間のドル建て価値（推計）</span></div>
+  <div class="key-number"><span class="key-number-value">通貨崩壊</span><span class="key-number-label">名目上昇の正体はリアル安・インフレ</span></div>
+</div>
+
+<!-- Chart: nominal vs dollar-adjusted TEDPIX -->
+<div id="iran-tedpix-trap"></div>
+<script>
+ChartBuilder.lines('iran-tedpix-trap', {
+  title: 'TEDPIX「名目の罠」2023-2026 — リアル建ては+99%、しかしドル建てでは下落（2023=100）',
+  caption: '出典: TSE / Trading Economics（TEDPIX名目）、Iran International / Bonbast（自由市場リアル/USD）。両系列とも2023年=100に基準化。ドル建て＝名目TEDPIXを自由市場為替レートで割って算出（年末代表値による推計）。名目では約2倍になったが、ドル建て・実質ではむしろ目減りした——これが高インフレ国の株式の最大の罠。',
+  yUnit: '',
+  yStep: 50,
+  yRange: [0, 220],
+  series: [
+    { name: '名目 (リアル建て)', color: '#00d4aa', data: [[2023,100],[2024,112],[2025,188],[2026.01,199],[2026.02,178]] },
+    { name: 'ドル建て (推計)', color: '#ff6b6b', data: [[2023,100],[2024,80],[2025,89],[2026.01,68],[2026.02,57]] }
+  ],
+  annotations: [
+    { year: 2026.01, label: '名目+99%', color: '#00d4aa' },
+    { year: 2026.02, label: '戦争調整', color: '#5b8def' }
+  ]
+});
+</script>
+
+<section>
+  <h2>名目最高値の更新 — 高インフレが押し上げる株価</h2>
+  <p>2021-22年の「塩漬け」相場（09章）を経て、2023年以降のTEDPIXは再び上昇基調に入った。背景は明快だ。40%超の慢性高インフレと深いマイナス実質金利のもとで、リアルで現金・預金を持つことは購買力の喪失を意味する。逃げ場を求める資金が再び株式に向かい、企業の名目資産・売上の膨張も相まって、名目株価を押し上げた。2025年末には約385万pt（前年比約+42%）、2026年1月には約<strong>407万pt</strong>と、名目では文字どおり「天井知らず」の様相を呈した<cite>[2]</cite>。</p>
+  <p>だが、この名目上昇を額面どおりに「儲かった」と受け取るのは、高インフレ経済における最も典型的な誤りである。</p>
+</section>
+
+<section>
+  <h2>「名目の罠」 — ドル建てで見ると景色が一変する</h2>
+  <p>上のチャートは、TEDPIXを<strong>名目（リアル建て）</strong>と<strong>ドル建て（自由市場レートで換算）</strong>の2系列で、いずれも2023年=100として描いたものだ。名目では2026年1月に約199（＝+99%、ほぼ2倍）まで上がっている。ところが、同じ期間にリアルが1ドル50万→147万へと約3分の1に下落したため、<strong>ドル建てでは約68（＝-32%）まで下がっている</strong>。2026年2月の戦争局面ではさらに57近辺へ落ち込んだ<cite>[3]</cite>。</p>
+  <p>つまり、TEDPIXの名目上昇の大半は、企業価値の成長ではなく、<strong>通貨価値の崩壊（リアル安・インフレ）を映した「見かけの上昇」</strong>にすぎない。リアルという物差し自体が縮んでいるので、その物差しで測れば何でも大きく見えるのである。ドルや実質購買力という「縮まない物差し」で測り直すと、イラン株はこの間むしろ価値を失っていた。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">「名目最高値」に騙されない</div>
+    <div class="mnemonic-body">高インフレ国では<strong>名目株価↑の大半＝通貨価値↓の裏返し</strong>。TEDPIXは名目+99%でも、ドル建てでは-32%。「最高値更新」は豊かさでなく<strong>リアルの崩壊</strong>の証であることが多い。株のリターンは必ず<strong>ドル建て or 実質</strong>で検算する——これが高インフレ国投資の鉄則。</div>
+  </div>
+</section>
+
+<section>
+  <h2>2026年 — 戦争下の乱高下と取引停止</h2>
+  <p>2026年2月以降の戦争（2026 Iran war）は、株式市場にも直接の衝撃を与えた。安全保障環境の激変、ハメネイ師の死去による権力移行の不確実性、ホルムズ海峡をめぐる緊張が、相場を激しく揺さぶった。TEDPIXは2026年1月の約407万ptから2月下旬には約365万ptへ調整し、ドル建てではさらに大きく目減りした<cite>[4]</cite>。</p>
+  <p>こうした急変動局面では、当局が市場の混乱を抑えるために<strong>取引停止（サーキットブレーカー）や売買制限</strong>を発動することもある。市場の自由な価格形成より、社会的安定を優先する政策当局の介入姿勢が、危機時には一段と強まる。これもまた、政府の関与が大きいイラン株の特徴である。</p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>時点</th><th>TEDPIX名目（概算）</th><th>ドル建て指数 (2023=100)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>2023年</td><td>約205万pt</td><td>100</td></tr>
+        <tr><td>2024年</td><td>約230万pt</td><td class="highlight-red">約80</td></tr>
+        <tr><td>2025年末</td><td>約385万pt</td><td>約89</td></tr>
+        <tr class="highlight-row"><td>2026年1月</td><td class="highlight-green">約407万pt（名目最高）</td><td class="highlight-red">約68</td></tr>
+        <tr><td>2026年2月（戦争）</td><td>約365万pt</td><td class="highlight-red">約57</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>まとめ — イラン株が世界に教えること</h2>
+  <p>イラン株式市場の現在は、高インフレ経済における株式投資の本質を凝縮している。<strong>株式はインフレからの「相対的」な避難所にはなる</strong>——預金よりはマシだ。だが、<strong>通貨と経済の根本的な崩壊を、株式が完全に補償してくれるわけではない</strong>。名目の華々しさと、ドル建て・実質の地味な現実のギャップこそ、イラン株が世界の投資家に突きつける教訓である<cite>[5]</cite>。</p>
+  <p>制裁・戦争・通貨崩壊という構造問題が解けない限り、TEDPIXは名目で上がり続けても、それは「豊かさ」ではなく「通貨の死」を測る温度計であり続ける。イラン株を読むとは、数字の華やかさの裏にある通貨の悲鳴を聞き取ることなのである。</p>
+</section>
+
+<footer class="sources">
+  <h3>出典・参考文献</h3>
+  <ol>
+    <li>TSE / Trading Economics / Tehran Times（TEDPIX 385万→407万→365万pt）</li>
+    <li>2023-2026年の名目株価上昇と高インフレ・マイナス実質金利の関係</li>
+    <li>Iran International / Bonbast（自由市場リアル/USD）、ドル建て換算（年末代表値による推計）</li>
+    <li>2026 Iran war下の市場乱高下・取引停止措置に関する報道</li>
+    <li>名目vs実質/ドル建ての罠、高インフレ国における株式リターンの評価</li>
+  </ol>
+</footer>

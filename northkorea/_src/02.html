@@ -1,0 +1,148 @@
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">該当なし</div>
+    <div class="stat-label">公開市場操作も市場金利も存在しない「金利なき経済」</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">計画配給</div>
+    <div class="stat-label">資金は金利ではなく物量計画と国定価格で割当て</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">70,100</div>
+    <div class="stat-label">闇市場レートKPW/USD（2026年4月・史上最高）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">+29.3%</div>
+    <div class="stat-label">わずか2週間のウォン下落幅（2026年4月）</div>
+  </div>
+</div>
+
+<section>
+  <h2>「政策金利」が存在しない経済</h2>
+  <p>本テキストの他章では各国中央銀行の政策金利の歴史を追う。しかし北朝鮮には<strong>そもそも政策金利が存在しない</strong>。金利を上下させて景気や物価を調整するという発想自体が、指令経済の枠組みには組み込まれていないからだ。資金は金利という価格シグナルではなく、国家計画委員会が決定する<strong>物量計画・配給・国定価格</strong>によって配分される。</p>
+  <p>では、市場経済で政策金利が果たす「資源配分」と「物価安定」の役割を、北朝鮮では何が代替しているのか。答えは二つ — <strong>(1) 計画当局による物量割当て</strong>（投資・消費を量で配給）、そして<strong>(2) 為替管理</strong>（通貨価値の統制）である。したがって本章では、政策金利の代理指標として<strong>闇市場の対ドル為替レート</strong>を用い、それを通じて北朝鮮の「事実上の金融環境」を読み解く。</p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">記憶のフック：「金利の代わりに配給切符」</div>
+    <div class="mnemonic-body">市場経済では金利が「お金の値段」として資源を配分する。北朝鮮では国定価格と配給切符がそれを代替した。だが計画はしばしば現実とずれ、1990年代に配給が崩壊すると、価格シグナルの空白を埋めるべく闇市場（チャンマダン）が自然発生した。「金利を禁じた経済は、闇の価格を生む」と覚えよう。</div>
+  </div>
+</section>
+
+<section>
+  <h2>計画金利・国定価格による資源配分とその失敗</h2>
+  <p>建前上、北朝鮮の国営銀行にも預金・貸出に伴う「利子率」は存在する。しかしそれは市場で決まる金利ではなく、計画当局が会計目的で定める<strong>名目的・象徴的な数字</strong>に過ぎない。資金需要に応じて変動することはなく、企業の投資判断を律する機能も持たない。投資は計画で割り当てられ、消費財は国定価格と配給で供給される。</p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>論点</th>
+          <th>市場経済の金利</th>
+          <th>北朝鮮の計画・配給</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>資源配分</td>
+          <td>金利が需給を調整</td>
+          <td class="highlight-orange">物量計画が量で割当て</td>
+        </tr>
+        <tr>
+          <td>消費財価格</td>
+          <td>市場価格で変動</td>
+          <td class="highlight-red">国定価格（建前）＋市場価格（実態）</td>
+        </tr>
+        <tr>
+          <td>貯蓄の誘因</td>
+          <td>預金金利が報いる</td>
+          <td class="highlight-red">銀行不信で現金・外貨退蔵</td>
+        </tr>
+        <tr>
+          <td>景気調整</td>
+          <td>利上げ・利下げ</td>
+          <td>計画の改定（硬直的・遅い）</td>
+        </tr>
+        <tr>
+          <td>失敗の帰結</td>
+          <td>インフレ／不況</td>
+          <td class="highlight-red">配給崩壊・飢饉・闇市場の発生</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>計画金融の最大の欠陥は、価格が需給を反映しないため、過不足を是正するフィードバックが働かないことにある。1991年のソ連崩壊で友好価格貿易と石油供給が途絶えると、計画配給は支えを失い、1994〜1998年の大飢饉「苦難の行軍」へと至った。配給に頼れなくなった住民は自ら物資を売買し始め、これが北朝鮮の市場経済化の出発点となった<cite>[1]</cite>。</p>
+</section>
+
+<section>
+  <h2>政策金利の代替指標：闇市場為替レート</h2>
+  <p>北朝鮮で「金融政策の温度計」に最も近いのは、闇市場の対ドル為替レートである。通貨の対外価値は、住民の体制信認・インフレ期待・外貨需給を映し出す。下のチャートは2009年デノミ後の新ウォン建て闇レートの推移であり、北朝鮮経済の「事実上の金融サイクル」を3つの局面で示している。</p>
+
+  <div id="nk-blackmarket-fx"></div>
+  <script>
+  ChartBuilder.lines('nk-blackmarket-fx', {
+    title: '闇市場為替レート（USD/KPW）＝政策金利の代替指標 2010-2026（対数）',
+    caption: '出典: Daily NK、38 North、NK News Exchange Rate Tracker。新ウォン建て（2009デノミ後）。2024-26の月次パスは公表点をつないだ概算。対数目盛。値は脱北者ネットワーク報道由来で誤差を含む。',
+    yUnit: '',
+    logScale: true,
+    yRange: [10, 100000],
+    series: [{
+      name: 'KPW/USD（闇市場）',
+      color: '#00d4aa',
+      data: [[2010.00, 40], [2010.50, 1000], [2010.92, 1700], [2011.50, 3000],
+        [2012.00, 6500], [2012.92, 8000], [2013.50, 8200], [2014.00, 8000],
+        [2015.00, 8200], [2016.00, 8100], [2017.00, 8300], [2018.00, 8100],
+        [2019.00, 8400], [2020.00, 8200], [2020.92, 6500], [2021.50, 5000],
+        [2022.00, 5500], [2022.92, 7800], [2023.50, 8300], [2024.00, 8500],
+        [2024.75, 16100], [2025.00, 18000], [2025.60, 40000], [2026.24, 54200],
+        [2026.28, 70100]]
+    }],
+    annotations: [
+      { year: 2011, label: 'デノミ後↑', color: '#ff6b6b' },
+      { year: 2013.5, label: 'ドル化安定', color: '#00d4aa' },
+      { year: 2020.92, label: '封鎖で高', color: '#5b8def' },
+      { year: 2024.75, label: '再暴落', color: '#ff9f43' },
+      { year: 2026.28, label: '₩7万突破', color: '#ff6b6b' }
+    ]
+  });
+  </script>
+
+  <h3>第1局面：デノミ後ハイパーインフレ（2010-2012）</h3>
+  <p>2009年デノミ直後、新ウォンは1ドル＝約40ウォンで再スタートしたが、資産没収で信認を失った通貨は急落し、2012年末には約8,000ウォンへ — 実に約200倍の下落を演じた。計画当局が通貨を「リセット」しても、住民の信頼を取り戻せなければ価値は守れないことを示す典型例である<cite>[2]</cite>。</p>
+
+  <h3>第2局面：ドル化による「奇跡的安定」（2013-2019）</h3>
+  <p>2013年以降、闇レートは約8,000ウォン前後で約7年間も横ばいを続けた。皮肉なことに、この安定はウォンへの信頼回復ではなく<strong>経済のドル化・元化</strong>がもたらした。住民が取引や貯蓄をドル・人民元で行うことで、ウォンの流通量と需給が安定したのだ。当局が通貨を統制できなくなった結果として安定が生まれるという逆説である<cite>[3]</cite>。</p>
+
+  <h3>第3局面：COVID封鎖と2024-26の再暴落</h3>
+  <p>2020〜2023年のCOVID国境封鎖期は、輸入が途絶して外貨需要が消失したため、逆説的にウォン高（約5,000ウォン）が進んだ。しかし2024年以降、対中貿易の再開期待と外貨需要の急増でウォンは再び崩落。2024年初の約8,500から、2026年4月12日には史上初の<strong>7万100ウォン</strong>へ、わずか2週間で29.3%も下落した。ハイパーインフレ懸念が再燃している<cite>[4]</cite>。</p>
+
+  <div class="key-number-row">
+    <div class="key-number">
+      <span class="key-number-value">約200倍</span>
+      <span class="key-number-label">2010→2012のデノミ後ウォン下落（40→8,000）</span>
+    </div>
+    <div class="key-number">
+      <span class="key-number-value">約7年</span>
+      <span class="key-number-label">ドル化が支えた「8,000ウォン安定」期間</span>
+    </div>
+    <div class="key-number">
+      <span class="key-number-value">8.2倍</span>
+      <span class="key-number-label">2024年初→2026年4月のウォン暴落（8,500→70,100）</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>複数の「公定レート」という混乱</h2>
+  <p>北朝鮮の為替には複数のレジームが併存する。①住民が日々使う<strong>闇市場レート</strong>（2026年4月で約70,100）、②国が貿易・銀行取引に用いる<strong>取引レート</strong>（2024年末で約8,900）、そして③中央銀行が会計用に保持する歴史的な<strong>名目公定レート</strong>（理論値で約100〜130）である。この三層構造が「公定レート」をめぐる議論を著しく混乱させる。実生活を支配しているのは①の闇レートであり、住民の体感物価はこれに連動して動く<cite>[3]</cite>。</p>
+</section>
+
+<section>
+  <h2>出典・参考文献</h2>
+  <ol>
+    <li>Wikipedia, "Economy of North Korea"; "1990s North Korean famine"</li>
+    <li>Wikipedia, "2009 North Korean currency reform"; PIIE, "North Korea's Failed Currency Reform"</li>
+    <li>38 North, "What's Up with North Korea's Skyrocketing Exchange Rates?"（2024-10）; Korea Times（脱市場化とウォン高）</li>
+    <li>Daily NK, "North Korea exchange rate hits all-time high"（2026-04, 70,100 KPW/USD, +29.3%/2週）</li>
+  </ol>
+</section>

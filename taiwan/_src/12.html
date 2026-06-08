@@ -1,0 +1,213 @@
+<!-- Chapter 12: Short-term Rates (Taiwan) -->
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value">2.00%</div>
+    <div class="stat-label">重貼現率（2024/3以降据置・2008年以来の高水準）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value" style="color:var(--accent-blue);">1.125%</div>
+    <div class="stat-label">過去最低（2020/3 COVID）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value" style="color:var(--accent-orange);">±0.5%pt</div>
+    <div class="stat-label">主要利上げ/利下げの一回あたりの典型的振れ幅（漸進主義）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">4本柱</div>
+    <div class="stat-label">重貼現率＋準備率＋公開市場操作＋外為介入</div>
+  </div>
+</div>
+
+<p>
+台湾の短期金利は、米国のフェデラルファンド（FF）金利のような「単一の操作目標」を持たない点で独特である。中央銀行（Central Bank of the Republic of China (Taiwan)、略称 <strong>CBC</strong>）は、政策の中軸に<strong>重貼現率（rediscount rate／discount rate）</strong>を据えつつ、預金準備率・公開市場操作・外国為替介入を組み合わせて短期金融市場をコントロールする。重貼現率は「CBCが銀行に資金を貸し出す際の基準金利」であり、それ自体が市場で直接取引される金利ではないが、銀行間市場（コール市場）の金利水準を方向づける錨（アンカー）として機能する。
+</p>
+
+<div class="key-number-row">
+  <div class="key-number">
+    <span class="key-number-value">2.00%</span>
+    <span class="key-number-label">重貼現率の現行水準（2026年3月会合でも据置）</span>
+  </div>
+  <div class="key-number">
+    <span class="key-number-value">+12.5bp</span>
+    <span class="key-number-label">2024/3の利上げ幅（電気料金引上げによるインフレ期待抑制）</span>
+  </div>
+  <div class="key-number">
+    <span class="key-number-value">−250bp</span>
+    <span class="key-number-label">GFC局面の累計利下げ（2008/9→2009/2）</span>
+  </div>
+</div>
+
+<!-- Chart: Discount rate (short-rate anchor) -->
+<div id="taiwan-shortrate-discount"></div>
+<script>
+ChartBuilder.lines('taiwan-shortrate-discount', {
+  title: '台湾 重貼現率（短期金利の錨）2000-2026',
+  caption: '出典: 中央銀行(ROC Taiwan) Discount Rate 履歴 (cbc.gov.tw lp-695-2)、TradingEconomics。重貼現率はCBCが銀行へ貸し出す基準金利で、コール市場の天井近傍として機能する。2000-2007の中間値は代表概算、節目（2008/9・2020/3・2024/3）は確証値。',
+  yUnit: '%',
+  yStep: 0.5,
+  yRange: [0.5, 5],
+  series: [{
+    name: '重貼現率',
+    color: '#00d4aa',
+    data: [
+      [2000, 4.625],[2001, 2.125],[2003, 1.375],[2005, 2.25],[2007, 3.375],
+      [2008.667, 3.625],[2009.083, 1.25],[2010, 1.375],[2011, 1.875],[2015, 1.875],
+      [2016, 1.375],[2020.167, 1.125],[2022.083, 1.125],[2022.417, 1.50],[2022.917, 1.75],
+      [2023.167, 1.875],[2024.167, 2.00],[2025.917, 2.00],[2026.167, 2.00]
+    ]
+  }],
+  annotations: [
+    { year: 2008.667, label: 'GFC前3.6%', color: '#ff6b6b' },
+    { year: 2009.083, label: '09 利下げ', color: '#5b8def' },
+    { year: 2020.167, label: 'COVID 1.1%', color: '#5b8def' },
+    { year: 2024.167, label: '24 利上2.0%', color: '#00d4aa' }
+  ]
+});
+</script>
+
+<section>
+  <h2>1. 短期金融市場の構造 — 4つの操作手段</h2>
+  <p>
+  CBCの短期金利コントロールは、相互に補完し合う4つの手段から成る。完全なインフレ目標制（インフレ率を単一目標に金利を上下させる枠組み）ではなく、<strong>物価安定と為替安定の両方</strong>を重視するため、米欧の中央銀行よりも金利の振れ幅が小さい「漸進主義（gradualism）」が際立つ。
+  </p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>手段</th>
+          <th>役割</th>
+          <th>特徴</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>重貼現率</td>
+          <td>政策スタンスのシグナル</td>
+          <td>銀行がCBCから資金を借りる基準金利。四半期ごとの理事会（理監事聯席會議）で決定</td>
+        </tr>
+        <tr>
+          <td>預金準備率</td>
+          <td>マネー量の調整</td>
+          <td>銀行に課す法定準備の比率。インフレ・住宅貸出抑制で機動的に変更してきた</td>
+        </tr>
+        <tr>
+          <td>公開市場操作</td>
+          <td>日々の流動性微調整</td>
+          <td>CBC定期存單（<strong>NCD／譲渡性預金証書</strong>）の発行・償還で過剰流動性を吸収。台湾は構造的に資金余剰で、CBCは「吸収」側に立つことが多い</td>
+        </tr>
+        <tr>
+          <td>外国為替介入</td>
+          <td>新台湾ドル相場の平滑化</td>
+          <td>輸出依存経済を守るためTWDの急変動を抑制。米財務省「為替操作監視リスト」の常連となる一因</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>
+  とりわけ重要なのが<strong>NCD（負債性定期存單）による流動性吸収</strong>である。台湾は高貯蓄・経常黒字の構造から銀行システムに恒常的な余剰資金が滞留しやすく、CBCは大量のNCDを発行して余剰を吸い上げる「資金の吸収者」として振る舞う。これは流動性不足を埋めるために資金を供給する欧米の中央銀行とは逆方向のオペレーションであり、台湾の短期金利が低位で安定しやすい一因となっている。
+  </p>
+</section>
+
+<section>
+  <h2>2. 重貼現率とコール市場金利の関係</h2>
+  <p>
+  銀行間で翌日物（オーバーナイト）資金を融通するコール市場（隔夜拆款市場）の金利は、通常、重貼現率を上限としつつその下で推移する。重貼現率は「最後の貸し手」としてのコストを示すため、市場で資金を調達する方が安い限り、コールレートは重貼現率を下回る。CBCは公開市場操作で短期金利が重貼現率から大きく乖離しないよう誘導する。
+  </p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">「天井としての重貼現率、吸収するNCD」</div>
+    <div class="mnemonic-body">日米欧の中央銀行が資金を<strong>供給</strong>して短期金利を支えるのに対し、台湾のCBCは余剰資金を<strong>NCDで吸収</strong>する側に立つ。重貼現率は実際の取引金利というより<strong>市場金利の上限・シグナル</strong>として機能する — ここが台湾の短期金融市場を理解する鍵である。</div>
+  </div>
+</section>
+
+<section>
+  <h2>3. 利上げ・利下げサイクルの歴史</h2>
+  <p>
+  重貼現率の歴史は、台湾の景気循環と外的ショックの記録そのものである。注目すべきは、米国のような大幅な利上げ・利下げを避け、<strong>小刻みな調整</strong>で対応してきた点である。
+  </p>
+
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>時期</th>
+          <th>重貼現率</th>
+          <th>方向</th>
+          <th>背景</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2000-2001</td>
+          <td>4.625% → 2.125%</td>
+          <td class="cell-cut">急速利下げ</td>
+          <td>ITバブル崩壊・初の本格的景気後退。輸出と半導体が直撃</td>
+        </tr>
+        <tr>
+          <td>2004-2008</td>
+          <td>1.375% → 3.625%</td>
+          <td class="cell-hike">緩やかな利上げ</td>
+          <td>景気回復・グローバル拡大。GFC前の2008/9にピーク3.625%</td>
+        </tr>
+        <tr class="highlight-red">
+          <td>2008/9-2009/2</td>
+          <td>3.625% → 1.25%</td>
+          <td class="cell-cut">約250bp利下げ</td>
+          <td>リーマンショック。輸出急減への緊急対応</td>
+        </tr>
+        <tr>
+          <td>2010-2011</td>
+          <td>1.25% → 1.875%</td>
+          <td class="cell-hike">正常化</td>
+          <td>景気回復に伴う段階的引上げ</td>
+        </tr>
+        <tr class="highlight-blue">
+          <td>2020/3</td>
+          <td>1.375% → 1.125%</td>
+          <td class="cell-cut">記録的低水準</td>
+          <td>COVID-19。だが在宅需要で半導体・輸出はV字回復</td>
+        </tr>
+        <tr>
+          <td>2022/6-2022/12</td>
+          <td>1.125% → 1.75%</td>
+          <td class="cell-hike">世界的引締めに追随</td>
+          <td>グローバルなインフレ・利上げ局面。小刻みに引上げ</td>
+        </tr>
+        <tr class="highlight-orange">
+          <td>2024/3</td>
+          <td>1.875% → 2.00%</td>
+          <td class="cell-hike">+12.5bp</td>
+          <td>電気料金引上げに伴うインフレ期待抑制。2008年以来の高水準で据置継続</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>
+  2024年3月の<strong>+12.5bp</strong>という極小幅の利上げは、世界の中央銀行が数百bp規模で動いた2022-23年のサイクルと対照的である。CBCはこれを電気料金引上げに伴う二次的インフレを抑える「one-time措置」と位置づけた（DBS、Capital Economics）。以後、重貼現率は2.00%で据え置かれ、2026年3月会合でも変更はなかった。低インフレ・高貯蓄・経常黒字という構造が、台湾の短期金利を一貫して低位・安定に保っている。
+  </p>
+</section>
+
+<section>
+  <h2>4. なぜ台湾の短期金利は振れにくいのか</h2>
+  <p>
+  台湾の短期金利が構造的に低位で安定する理由は3つに整理できる。第一に、<strong>低インフレ体質</strong>。1974年（≈47%）・1980年（≈19%）のオイルショック期を除けば、CPIは長く2%前後かそれ以下で推移し、利上げの必要性が小さい。第二に、<strong>高貯蓄と経常黒字</strong>による恒常的な資金余剰。市場には資金が潤沢で、コール市場が逼迫しにくい。第三に、<strong>為替安定の優先</strong>。輸出依存経済を守るため、CBCは金利よりも為替の安定を重視し、急激な金利操作で資本フローを刺激することを避ける傾向がある。
+  </p>
+  <p>
+  この結果、台湾の短期金利は「動かない金利」とも揶揄されるほど安定するが、それは裏を返せば<strong>為替（第14章）と地政学（第21章）に調整の負荷が集中する</strong>ことを意味する。金利で吸収しない分のショックが、通貨と株式市場のボラティリティに表れるのが台湾市場の特徴である。
+  </p>
+</section>
+
+<section>
+  <h2>出典・参考文献</h2>
+  <ol>
+    <li>中央銀行（ROC Taiwan）, "Discount Rate" 履歴・SDDS Interest rates, <a href="https://www.cbc.gov.tw/en/lp-695-2.html">cbc.gov.tw/en/lp-695-2</a></li>
+    <li>中央銀行, "Open Market Operations / NCD" 解説, cbc.gov.tw</li>
+    <li>TradingEconomics, "Taiwan Interest Rate"; FocusEconomics, 金利据置(2025/12・2026)</li>
+    <li>DBS Group Research / Capital Economics, 2024年3月利上げ解説（one-time措置との位置づけ）</li>
+  </ol>
+</section>

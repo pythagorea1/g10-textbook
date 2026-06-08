@@ -1,0 +1,188 @@
+<!-- Chapter 21: Geopolitical Risk (United Kingdom) -->
+
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-value" style="color:var(--accent-orange);">Brexit</div>
+    <div class="stat-label">通商・規制・労働の自律と引き換えの摩擦</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value" style="color:var(--accent-red);">2.3%→2.5%</div>
+    <div class="stat-label">防衛費GDP比（2024→2027目標、2035に3.5%）</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value" style="color:var(--accent-blue);">Five Eyes</div>
+    <div class="stat-label">米英主導の情報同盟と対露・対中の最前線</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">紅海</div>
+    <div class="stat-label">スエズ／紅海の海運途絶とインフレ・通商</div>
+  </div>
+</div>
+
+<p>
+英国の地政学リスクは、「縮みゆく大国」という独特の立場に由来する。かつての帝国・基軸通貨国は、いまやGDPで世界6位前後、EUからも離脱した。それでも英国は国連安保理常任理事国、核保有国、Five Eyes（米英加豪NZの情報同盟）の中核、ロンドンという世界有数の金融センターを擁する。つまり<strong>実力以上の地政学的役割を担い続ける</strong>ことが、英国のリスクの源泉でもある。本章では、Brexit後の英国が直面する地政学リスクを波及経路とともに整理する。
+</p>
+
+<!-- Chart: UK defense spending % GDP 2014-2035 targets -->
+<div id="uk-geo-defense"></div>
+<script>
+ChartBuilder.lines('uk-geo-defense', {
+  title: '英国の防衛費 GDP比 2014-2035（NATO基準・目標含む）',
+  caption: '出典: 英政府 International Defence Expenditure 2025、House of Commons Library、NATO。2024年は2.33%、2025年見込み2.4%。政府は2027年までに2.5%、2035年までにNATO新目標3.5%への引き上げを確約。ウクライナ戦争が再軍備の触媒となった。',
+  yUnit: '%',
+  yStep: 0.5,
+  yRange: [1.5, 4],
+  xRange: [2014, 2035.5],
+  series: [{
+    name: '防衛費GDP比',
+    color: '#5b8def',
+    data: [
+      [2014, 2.1],[2017, 2.0],[2019, 2.0],[2022, 2.3],[2024, 2.33],
+      [2025, 2.4],[2027, 2.5],[2035, 3.5]
+    ]
+  }],
+  annotations: [
+    { year: 2022, label: 'ウクライナ', color: '#ff6b6b' },
+    { year: 2027, label: '2.5%確約', color: '#ff9f43' },
+    { year: 2035, label: 'NATO3.5%', color: '#00d4aa' }
+  ]
+});
+</script>
+
+<section>
+  <h2>1. Brexit後の通商と「主権の代償」</h2>
+  <p>
+  2020年に完了したBrexitは、英国に規制・通商・移民政策の自律を取り戻させた一方、最大の貿易相手であるEU市場との間に通関・規制の摩擦という恒久的なコストを課した（第19章）。英国は米国・インド・CPTPP（環太平洋）との新FTAで埋め合わせを図るが、地理的に近いEU市場の代替にはなりにくい。Brexitは「地政学的自律」と「経済的効率」のトレードオフを体現する事例である。
+  </p>
+  <p>
+  通貨面では、Brexitは2016年の国民投票直後にポンドを急落させ、その後も「ポンドのリスクプレミアム」として残存した。2022年のトラス政権下のミニ予算では、政治的信認の喪失がポンド急落とギルト（英国債）暴落（LDI危機、第15章）を招いた。英国の地政学・政治リスクは、しばしば<strong>通貨と国債の同時不安（双子の暴落）</strong>として現れる。
+  </p>
+</section>
+
+<section>
+  <h2>2. リスク・マトリクス — 要因 × 蓋然性 × 波及経路</h2>
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>リスク要因</th>
+          <th>蓋然性</th>
+          <th>市場・経済への影響経路</th>
+          <th>関連国/地域</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight-orange">
+          <td>Brexit後の対EU通商摩擦</td>
+          <td>高（構造的）</td>
+          <td>通関コスト・規制乖離→輸出減・投資減、ポンド・プレミアム</td>
+          <td>🇪🇺 EU</td>
+        </tr>
+        <tr class="highlight-red">
+          <td>対露制裁・ウクライナ支援</td>
+          <td>高（継続中）</td>
+          <td>防衛費増、エネルギー価格、ロンドンの露資金・凍結資産</td>
+          <td>🇷🇺 ロシア・🇺🇦 ウクライナ</td>
+        </tr>
+        <tr class="highlight-red">
+          <td>紅海・スエズの海運途絶</td>
+          <td>中</td>
+          <td>喜望峰迂回でコスト・納期増、輸入物価→インフレ</td>
+          <td>🇮🇷 イラン・🇮🇱 イスラエル</td>
+        </tr>
+        <tr class="highlight-blue">
+          <td>対中デリスキング（Five Eyes連携）</td>
+          <td>中〜高</td>
+          <td>5G/原発の中国排除、対中投資審査、金融センターの綱引き</td>
+          <td>🇨🇳 中国・🇭🇰 香港</td>
+        </tr>
+        <tr class="highlight-orange">
+          <td>政治・財政の信認ショック</td>
+          <td>中</td>
+          <td>ギルト利回り急騰・ポンド急落（LDI型の連鎖）</td>
+          <td>（国内政治）</td>
+        </tr>
+        <tr>
+          <td>スコットランド独立・連合王国の結束</td>
+          <td>中（低下）</td>
+          <td>長期的な国家分裂リスク、財政・通貨の不確実性</td>
+          <td>（国内）</td>
+        </tr>
+        <tr>
+          <td>米英「特別な関係」の変調</td>
+          <td>中</td>
+          <td>通商・安全保障の再交渉、AUKUS等の枠組み</td>
+          <td>🇺🇸 米国・🇦🇺 豪州</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="source"><cite>出典: 英政府 International Defence Expenditure 2025、House of Commons Library、本テキスト第15・19章。</cite></p>
+</section>
+
+<section>
+  <h2>3. 市場への波及経路（トランスミッション）</h2>
+  <p>
+  英国の地政学・政治リスクの特徴は、世界有数の金融センター（シティ）と双子の赤字（経常・財政）を抱えるため、海外資本への依存が高く、信認ショックに対して<strong>通貨と国債が同時に売られやすい</strong>点にある。これは2022年のLDI危機で劇的に実証された。
+  </p>
+  <div class="table-container">
+    <table class="data-table">
+      <thead>
+        <tr><th>経路</th><th>メカニズム</th><th>観測指標</th></tr>
+      </thead>
+      <tbody>
+        <tr class="highlight-orange">
+          <td>① 通貨・国債の同時不安</td>
+          <td>信認喪失で海外資本流出→ポンド安＋ギルト利回り急騰</td>
+          <td>GBP/USD、10年ギルト利回り</td>
+        </tr>
+        <tr>
+          <td>② 通商・サプライ網</td>
+          <td>Brexitの通関摩擦・紅海迂回で輸入物価上昇</td>
+          <td>輸出入額、CPI、海上運賃</td>
+        </tr>
+        <tr>
+          <td>③ 金融センター（シティ）</td>
+          <td>制裁・規制乖離・対中綱引きが金融サービス収支に影響</td>
+          <td>金融サービス輸出、ロンドンの上場・取引高</td>
+        </tr>
+        <tr>
+          <td>④ エネルギー</td>
+          <td>北海産の枯渇とLNG依存で価格変動に脆弱</td>
+          <td>天然ガス価格、エネルギー輸入額</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>4. 対露の最前線と再軍備</h2>
+  <p>
+  英国はウクライナ支援とロシア封じ込めの欧州側の主導国の一つである。ロンドンは長年ロシア富裕層の資金の受け皿（「ロンドングラード」）でもあったため、制裁と資産凍結は金融センターとしての評判と実利の双方に関わる。上のチャートが示すように、ウクライナ戦争を契機に英国は防衛費を2027年までにGDP比2.5%へ、2035年までにNATO新目標の3.5%へ引き上げると確約した。Five EyesとNATOの中核として、英国は「縮みゆく大国」でありながら対露・対中の最前線に立ち続ける。
+  </p>
+</section>
+
+<section>
+  <h2>5. 結論 — 実力以上の役割というリスク</h2>
+  <p>
+  英国の地政学リスクの本質は、「実力（経済規模）以上の地政学的役割を担い続ける」ことにある。安保理常任理事国、核保有、Five Eyes、世界的金融センター — これらの地位は影響力をもたらすと同時に、対露・対中・中東のあらゆる火種に当事者として関与させる。Brexitで効率を犠牲に自律を得た英国は、その自律をどう使うかを問われ続ける。投資家にとっての教訓は明快だ — 英国では<strong>政治・地政学の信認ショックが通貨と国債を同時に直撃する</strong>。シティの繁栄は、その信認の上に立っている。
+  </p>
+
+  <div class="mnemonic-box">
+    <span class="mnemonic-icon">🧠</span>
+    <div class="mnemonic-title">英国の地政学リスクを一文で</div>
+    <div class="mnemonic-body">「縮みゆく大国が、実力以上の役割を担う。」 — 英国の地政学リスクは、Five Eyes・核・金融センターという地位ゆえに世界の火種に当事者として関わること。信認が揺らげば<strong>ポンドとギルトが同時に売られる</strong>（LDI危機の教訓）。</div>
+  </div>
+</section>
+
+<section>
+  <h2>関連ページ</h2>
+  <ul>
+    <li><a href="../summary/geopolitical_map.html">🗺 地政学マップ（G10横断・全リスク俯瞰）</a></li>
+    <li><a href="../china/21_geopolitical_risk.html">🇨🇳 中国の地政学リスク（デリスキング・Five Eyes）</a></li>
+    <li><a href="../hongkong/21_geopolitical_risk.html">🇭🇰 香港（旧英領・金融センターの綱引き）</a></li>
+    <li><a href="../iran/21_geopolitical_risk.html">🇮🇷 イラン（紅海・ホルムズの海運リスク）</a></li>
+    <li><a href="19_trade.html">第19章 貿易（Brexitの通商影響）</a> ／ <a href="15_crises.html">第15章 金融危機（LDI危機）</a></li>
+  </ul>
+</section>

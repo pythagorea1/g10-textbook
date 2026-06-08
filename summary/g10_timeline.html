@@ -304,11 +304,12 @@
     .tl-canvas { position: relative; }
     #tl-svg-host { position: absolute; top: 0; left: 0; }
     #tl-svg-host svg { display: block; }
-    .tl-lane-labels { position: sticky; left: 0; z-index: 6; width: 96px; pointer-events: none; }
+    .tl-lane-labels { position: sticky; left: 0; z-index: 6; width: 112px; pointer-events: none; }
     .tl-lane-label {
       height: 46px; display: flex; align-items: center; gap: 6px; padding-left: 10px;
       font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-secondary);
-      background: linear-gradient(90deg, var(--bg-card) 0%, var(--bg-card) 62%, transparent 100%);
+      white-space: nowrap; overflow: hidden;
+      background: linear-gradient(90deg, var(--bg-card) 0%, var(--bg-card) 80%, transparent 100%);
     }
     .tl-ev { cursor: pointer; transform-box: fill-box; transform-origin: center; transition: transform .12s ease; }
     .tl-ev:hover { transform: scale(1.7); }
@@ -395,7 +396,7 @@
       G10通貨国（米国・ユーロ圏・日本・英国・スイス・豪州・NZ・カナダ・スウェーデン・ノルウェー）の金融市場史を年代別に横断比較。<br>
       政策金利、株価指数、主要イベントを一覧し、グローバル金融システムの相互連関を俯瞰する。
     </p>
-    <p class="hero-lede">1907年から2026年まで — 300超のイベントを1つの時間軸で（中央銀行史は1668年から）</p>
+    <p class="hero-lede">1907年から2026年まで — 400超のイベントを1つの時間軸で（中央銀行史は1668年から）</p>
   </div>
 
   <nav class="tl-jumpnav" aria-label="セクションジャンプ">
@@ -434,7 +435,7 @@
   <!-- ====================================================== -->
   <h2 class="section-header" id="sec-swimlane">⏱ G10 スイムレーン年表 — Interactive Timeline (1907–2026)</h2>
   <p class="section-desc">
-    304イベントを11レーン（🌍 グローバル + 10カ国）×1つの時間軸にプロット。<strong>マーカーをクリック</strong>すると解説カードと教科書リンクが開く。
+    407イベントを19レーン（🌍 グローバル + G10 10カ国 + 地政学・新興8地域）×1つの時間軸にプロット。<strong>マーカーをクリック</strong>すると解説カードと教科書リンクが開く。
     分類・国・期間・検索で絞り込み可能。◆=危機、■=戦争・地政学、●=その他。オレンジの縦線は世界全体を揺らした危機（1929・1987・2008・2020…）。
   </p>
 
@@ -461,6 +462,14 @@
       <button class="tl-chip tl-country-chip" data-country="canada">🇨🇦 CAN</button>
       <button class="tl-chip tl-country-chip" data-country="sweden">🇸🇪 SWE</button>
       <button class="tl-chip tl-country-chip" data-country="norway">🇳🇴 NOR</button>
+      <button class="tl-chip tl-country-chip" data-country="taiwan">🇹🇼 台湾</button>
+      <button class="tl-chip tl-country-chip" data-country="hongkong">🇭🇰 香港</button>
+      <button class="tl-chip tl-country-chip" data-country="china">🇨🇳 中国</button>
+      <button class="tl-chip tl-country-chip" data-country="northkorea">🇰🇵 北朝鮮</button>
+      <button class="tl-chip tl-country-chip" data-country="vietnam">🇻🇳 ベトナム</button>
+      <button class="tl-chip tl-country-chip" data-country="singapore">🇸🇬 シンガポール</button>
+      <button class="tl-chip tl-country-chip" data-country="iran">🇮🇷 イラン</button>
+      <button class="tl-chip tl-country-chip" data-country="israel">🇮🇱 イスラエル</button>
     </div>
     <div class="tl-ctrl-row">
       <input type="search" id="tl-search" placeholder="イベント検索（例: マイナス金利）">
@@ -1977,8 +1986,8 @@ document.querySelectorAll('.compare-table th, .mega-table th').forEach(th => {
 <script>
 /* ============================================================
  * G10 Interactive Swimlane Timeline (Phase 2)
- * Renders window.G10_TIMELINE_EVENTS (304 events / 8 eras) as an
- * 11-lane horizontal SVG timeline + mobile/print era-grouped list.
+ * Renders window.G10_TIMELINE_EVENTS (407 events / 8 eras) as a
+ * 19-lane horizontal SVG timeline + mobile/print era-grouped list.
  * Pure vanilla JS, file://-safe, no external libs.
  * ============================================================ */
 (function () {
@@ -1998,7 +2007,15 @@ document.querySelectorAll('.compare-table th, .mega-table th').forEach(th => {
     { key: 'newzealand',  flag: '🇳🇿', name: 'NZ' },
     { key: 'canada',      flag: '🇨🇦', name: 'CAN' },
     { key: 'sweden',      flag: '🇸🇪', name: 'SWE' },
-    { key: 'norway',      flag: '🇳🇴', name: 'NOR' }
+    { key: 'norway',      flag: '🇳🇴', name: 'NOR' },
+    { key: 'taiwan',      flag: '🇹🇼', name: '台湾' },
+    { key: 'hongkong',    flag: '🇭🇰', name: '香港' },
+    { key: 'china',       flag: '🇨🇳', name: '中国' },
+    { key: 'northkorea',  flag: '🇰🇵', name: '北朝鮮' },
+    { key: 'vietnam',     flag: '🇻🇳', name: 'ベトナム' },
+    { key: 'singapore',   flag: '🇸🇬', name: 'シンガポール' },
+    { key: 'iran',        flag: '🇮🇷', name: 'イラン' },
+    { key: 'israel',      flag: '🇮🇱', name: 'イスラエル' }
   ];
   var CAT = {
     crisis:    { label: '危機',                 color: '#ff9f43' },
